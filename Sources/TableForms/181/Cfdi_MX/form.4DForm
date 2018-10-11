@@ -1,0 +1,332 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "btn_cancelar",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onDrop",
+		"onBeforeKeystroke",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Área de grupo": {
+					"type": "groupBox",
+					"top": 115,
+					"left": 15,
+					"width": 504,
+					"height": 128,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Rutas a utilizar"
+				},
+				"Texto": {
+					"type": "text",
+					"top": 137,
+					"left": 30,
+					"width": 100,
+					"height": 18,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Certificado:"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 162,
+					"left": 30,
+					"width": 100,
+					"height": 18,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Número Certificado:"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 187,
+					"left": 30,
+					"width": 100,
+					"height": 18,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Llave pública:"
+				},
+				"vtACT_rutaCertificado": {
+					"type": "input",
+					"top": 137,
+					"left": 133,
+					"width": 359,
+					"height": 16,
+					"dataSource": "vtACT_rutaCertificado",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vtACT_llavePubCertificado": {
+					"type": "input",
+					"top": 187,
+					"left": 133,
+					"width": 359,
+					"height": 16,
+					"dataSource": "vtACT_llavePubCertificado",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vtACT_numeroCertificado": {
+					"type": "input",
+					"top": 162,
+					"left": 133,
+					"width": 359,
+					"height": 16,
+					"dataSource": "vtACT_numeroCertificado",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"btn_generar": {
+					"type": "button",
+					"top": 251,
+					"left": 352,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btn_generar",
+					"text": "Generar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/btn_generar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn_cancelar": {
+					"type": "button",
+					"top": 251,
+					"left": 439,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btn_cancelar",
+					"action": "cancel",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 212,
+					"left": 30,
+					"width": 100,
+					"height": 18,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Llave privada:"
+				},
+				"vtACT_llavePrivCertificado": {
+					"type": "input",
+					"top": 212,
+					"left": 133,
+					"width": 359,
+					"height": 16,
+					"dataSource": "vtACT_llavePrivCertificado",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"MultiRazones": {
+					"type": "dropdown",
+					"top": 32,
+					"left": 15,
+					"width": 263,
+					"height": 15,
+					"dataSource": "atACTcfg_Razones",
+					"focusable": false,
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/MultiRazones.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 16,
+					"left": 15,
+					"width": 179,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Generar documentos para"
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 16,
+					"left": 395,
+					"width": 59,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Proveedor"
+				},
+				"at_proveedores": {
+					"type": "dropdown",
+					"top": 52,
+					"left": 395,
+					"width": 124,
+					"height": 17,
+					"dataSource": "at_proveedores",
+					"focusable": false,
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"vt_proveedor": {
+					"type": "input",
+					"top": 32,
+					"left": 395,
+					"width": 124,
+					"height": 17,
+					"dataSource": "vt_proveedor",
+					"styleSheet": "XS_DialogObjects",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"cs_generaOnServer": {
+					"type": "checkbox",
+					"top": 54,
+					"left": 15,
+					"width": 313,
+					"height": 20,
+					"dataSource": "cs_generaOnServer",
+					"text": "Generar en el servidor",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/cs_generaOnServer.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"vtACT_rutaOnServer": {
+					"type": "input",
+					"top": 77,
+					"left": 133,
+					"width": 359,
+					"height": 16,
+					"dataSource": "vtACT_rutaOnServer",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 77,
+					"left": 30,
+					"width": 100,
+					"height": 16,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Ruta en servidor:"
+				}
+			}
+		}
+	]
+}

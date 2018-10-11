@@ -1,0 +1,1 @@
+IT_SetButtonState ((Self:C308->=1);->cb_PublicarResGralMinimo;->cb_PublicarResGralMedia;->cb_PublicarResGralMaximo)

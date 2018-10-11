@@ -1,0 +1,175 @@
+﻿{
+	"formSizeAnchor": "hl_ListaValores",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onDrop",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"hl_ListaValores": {
+					"type": "list",
+					"top": 0,
+					"left": 0,
+					"width": 186,
+					"height": 180,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "LV_ListaValores_hl",
+					"enterable": false,
+					"hideFocusRing": true,
+					"scrollbarVertical": "hidden",
+					"scrollbarHorizontal": "hidden",
+					"styleSheet": "Medium - 12",
+					"borderStyle": "none",
+					"method": "ObjectMethods/hl_ListaValores.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					]
+				},
+				"FlechaDerecha": {
+					"type": "button",
+					"top": 210,
+					"left": 0,
+					"width": 191,
+					"height": 26,
+					"action": "accept",
+					"shortcutKey": "[right arrow]",
+					"text": "FlechaDerecha",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"FlechaIzquierda": {
+					"type": "button",
+					"top": 239,
+					"left": 0,
+					"width": 191,
+					"height": 26,
+					"action": "accept",
+					"shortcutKey": "[left arrow]",
+					"text": "FlechaIzquierda",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"tabulacion": {
+					"type": "button",
+					"top": 268,
+					"left": 0,
+					"width": 191,
+					"height": 26,
+					"action": "accept",
+					"shortcutKey": "[Tab]",
+					"text": "tabulacion",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"retorno": {
+					"type": "button",
+					"top": 297,
+					"left": 0,
+					"width": 191,
+					"height": 26,
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"text": "retorno",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"enter": {
+					"type": "button",
+					"top": 326,
+					"left": 0,
+					"width": 191,
+					"height": 26,
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "enter",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón": {
+					"type": "button",
+					"top": 412,
+					"left": 20,
+					"width": 102,
+					"height": 22,
+					"dataSource": "Botón",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Botón",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

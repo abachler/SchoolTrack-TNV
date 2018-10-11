@@ -1,0 +1,117 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "xALP_EstadosFDP",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDoubleClick",
+		"onPluginArea",
+		"onCloseBox",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"xALP_EstadosFDP": {
+					"type": "plugin",
+					"top": 40,
+					"left": 13,
+					"width": 698,
+					"height": 286,
+					"dataSource": "xALP_EstadosFDP",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/xALP_EstadosFDP.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"bAddEFP": {
+					"type": "pictureButton",
+					"top": 12,
+					"left": 693,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bAddEFP",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bAddEFP.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bDelEFP": {
+					"type": "pictureButton",
+					"top": 12,
+					"left": 671,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bDelEFP",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bDelEFP.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"estados1": {
+					"type": "text",
+					"top": 12,
+					"left": 14,
+					"width": 87,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Estado por defecto:"
+				},
+				"estados0": {
+					"type": "dropdown",
+					"top": 12,
+					"left": 101,
+					"width": 200,
+					"height": 20,
+					"dataSource": "atACT_estados2",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/estados0.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

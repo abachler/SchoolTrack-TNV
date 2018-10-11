@@ -1,0 +1,17956 @@
+//%attributes = {"invisible":true}
+
+
+  //KRL_RELOADASREADONLY
+C_POINTER:C301(KRL_ReloadAsReadOnly ;$1)
+
+  //BM_CREATEREQUEST
+C_LONGINT:C283(BM_CreateRequest ;$0)
+C_TEXT:C284(BM_CreateRequest ;$1)
+C_TEXT:C284(BM_CreateRequest ;$2)
+C_TEXT:C284(BM_CreateRequest ;$3)
+C_BLOB:C604(BM_CreateRequest ;$4)
+C_TEXT:C284(BM_CreateRequest ;$5)
+
+  //BBL_CREATEUSERRECORD
+C_REAL:C285(BBL_CreateUserRecord ;$1)
+
+  //ACTCC_CREACUENTACORRIENTE
+C_BOOLEAN:C305(ACTcc_CreaCuentaCorriente ;$1)
+
+  //SQ_SEQNUMBER
+C_REAL:C285(SQ_SeqNumber ;$0)
+C_POINTER:C301(SQ_SeqNumber ;$1)
+C_BOOLEAN:C305(SQ_SeqNumber ;$2)
+
+  //AL_CREAREGISTROS
+C_REAL:C285(AL_CreaRegistros ;$1)
+
+  //HL_EXPANDALL
+C_LONGINT:C283(HL_ExpandAll ;$1)
+
+  //PP_UDFAMILYPARENT
+C_LONGINT:C283(PP_UDFamilyParent ;$1)
+C_TEXT:C284(PP_UDFamilyParent ;$2)
+
+  //ST_GETLINE
+C_TEXT:C284(ST_GetLine ;$0)
+C_TEXT:C284(ST_GetLine ;$1)
+C_REAL:C285(ST_GetLine ;$2)
+
+  //PERIODOS_LOADDATA
+C_LONGINT:C283(PERIODOS_LoadData ;$1)
+C_LONGINT:C283(PERIODOS_LoadData ;$2)
+C_REAL:C285(PERIODOS_LoadData ;$3)
+
+  //KRL_LOADRECORDLOOP
+C_BOOLEAN:C305(KRL_LoadRecordLoop ;$0)
+C_POINTER:C301(KRL_LoadRecordLoop ;$1)
+C_REAL:C285(KRL_LoadRecordLoop ;$2)
+
+  //AT_POPULATE
+C_POINTER:C301(AT_Populate ;$1)
+C_POINTER:C301(AT_Populate ;$2)
+
+  //SYS_SECS2DATE
+C_DATE:C307(SYS_Secs2Date ;$0)
+C_REAL:C285(SYS_Secs2Date ;$1)
+
+  //SYS_SECS2TIME
+C_TIME:C306(SYS_Secs2Time ;$0)
+C_REAL:C285(SYS_Secs2Time ;$1)
+
+
+  //AT_delete
+C_POINTER:C301(AT_Delete ;${-1})
+C_LONGINT:C283(AT_Delete ;$1)
+C_LONGINT:C283(AT_Delete ;$2)
+C_POINTER:C301(AT_Delete ;$3)
+C_POINTER:C301(AT_Delete ;$4)
+C_POINTER:C301(AT_Delete ;$5)
+C_POINTER:C301(AT_Delete ;$6)
+C_POINTER:C301(AT_Delete ;$7)
+C_POINTER:C301(AT_Delete ;$8)
+C_POINTER:C301(AT_Delete ;$9)
+C_POINTER:C301(AT_Delete ;$10)
+C_POINTER:C301(AT_Delete ;$11)
+C_POINTER:C301(AT_Delete ;$12)
+C_POINTER:C301(AT_Delete ;$13)
+C_POINTER:C301(AT_Delete ;$14)
+C_POINTER:C301(AT_Delete ;$15)
+C_POINTER:C301(AT_Delete ;$16)
+C_POINTER:C301(AT_Delete ;$17)
+C_POINTER:C301(AT_Delete ;$18)
+C_POINTER:C301(AT_Delete ;$19)
+C_POINTER:C301(AT_Delete ;$20)
+C_POINTER:C301(AT_Delete ;$21)
+C_POINTER:C301(AT_Delete ;$22)
+C_POINTER:C301(AT_Delete ;$23)
+C_POINTER:C301(AT_Delete ;$24)
+C_POINTER:C301(AT_Delete ;$25)
+C_POINTER:C301(AT_Delete ;$26)
+C_POINTER:C301(AT_Delete ;$27)
+C_POINTER:C301(AT_Delete ;$28)
+C_POINTER:C301(AT_Delete ;$29)
+C_POINTER:C301(AT_Delete ;$30)
+C_POINTER:C301(AT_Delete ;$31)
+C_POINTER:C301(AT_Delete ;$32)
+C_POINTER:C301(AT_Delete ;$33)
+C_POINTER:C301(AT_Delete ;$34)
+C_POINTER:C301(AT_Delete ;$35)
+C_POINTER:C301(AT_Delete ;$36)
+C_POINTER:C301(AT_Delete ;$37)
+C_POINTER:C301(AT_Delete ;$38)
+C_POINTER:C301(AT_Delete ;$39)
+C_POINTER:C301(AT_Delete ;$40)
+C_POINTER:C301(AT_Delete ;$41)
+C_POINTER:C301(AT_Delete ;$42)
+C_POINTER:C301(AT_Delete ;$43)
+C_POINTER:C301(AT_Insert ;${3})
+C_LONGINT:C283(AT_Insert ;$1)
+C_LONGINT:C283(AT_Insert ;$2)
+
+  //SYS_DATETIME2SECS
+C_REAL:C285(SYS_DateTime2Secs ;$0)
+C_DATE:C307(SYS_DateTime2Secs ;$1)
+C_TIME:C306(SYS_DateTime2Secs ;$2)
+C_REAL:C285(SYS_DateTime2Secs ;$3)
+
+  //KRL_READWRITE
+C_BOOLEAN:C305(KRL_ReadWrite ;$0)
+C_POINTER:C301(KRL_ReadWrite ;$1)
+
+  //KRL_RESETPREVIOUSRWMODE
+C_POINTER:C301(KRL_ResetPreviousRWMode ;$1)
+C_BOOLEAN:C305(KRL_ResetPreviousRWMode ;$2)
+
+  //AT_MULTIARRAYSEARCH
+C_LONGINT:C283(AT_MultiArraySearch ;$0)
+C_POINTER:C301(AT_MultiArraySearch ;${3})
+C_BOOLEAN:C305(AT_MultiArraySearch ;$1)
+C_POINTER:C301(AT_MultiArraySearch ;$2)
+
+  //AL_CREAREGISTROCONDUCTA
+C_REAL:C285(AL_CreaRegistroConducta ;$1)
+
+  //AL_CREAREGISTROSALUD
+C_REAL:C285(AL_CreaRegistroSalud ;$1)
+
+  //AL_CREAREGISTROEVALPERSONAL
+C_REAL:C285(AL_CreaRegistroEvalPersonal ;$1)
+C_TEXT:C284(AL_CreaRegistroEvalPersonal ;$2)
+
+  //CD_DLOG
+C_LONGINT:C283(CD_Dlog ;$0)
+C_LONGINT:C283(CD_Dlog ;$1)
+C_TEXT:C284(CD_Dlog ;$2)
+C_TEXT:C284(CD_Dlog ;$3)
+C_TEXT:C284(CD_Dlog ;$4)
+C_TEXT:C284(CD_Dlog ;$5)
+C_TEXT:C284(CD_Dlog ;$6)
+C_TEXT:C284(CD_Dlog ;$7)
+C_TEXT:C284(CD_Dlog ;$8)
+
+  //DT_GETWORKINGDAYS
+C_REAL:C285(DT_GetWorkingDays ;$0)
+C_DATE:C307(DT_GetWorkingDays ;$1)
+C_DATE:C307(DT_GetWorkingDays ;$2)
+C_POINTER:C301(DT_GetWorkingDays ;$3)
+
+  //DT_GETDATEFROMDAYMONTHYEAR
+C_DATE:C307(DT_GetDateFromDayMonthYear ;$0)
+C_LONGINT:C283(DT_GetDateFromDayMonthYear ;$1)
+C_LONGINT:C283(DT_GetDateFromDayMonthYear ;$2)
+C_LONGINT:C283(DT_GetDateFromDayMonthYear ;$3)
+
+  //DT_GETLASTDAY2
+C_REAL:C285(DT_GetLastDay2 ;$0)
+C_DATE:C307(DT_GetLastDay2 ;$1)
+
+  //IT_UTHERMOMETER
+C_LONGINT:C283(IT_UThermometer ;$0)
+C_REAL:C285(IT_UThermometer ;$1)
+C_REAL:C285(IT_UThermometer ;$2)
+C_TEXT:C284(IT_UThermometer ;$3)
+C_REAL:C285(IT_UThermometer ;$4)
+
+  //QRY_QUERYWITHARRAY
+C_LONGINT:C283(QRY_QueryWithArray ;$0)
+C_POINTER:C301(QRY_QueryWithArray ;$1)
+C_POINTER:C301(QRY_QueryWithArray ;$2)
+C_BOOLEAN:C305(QRY_QueryWithArray ;$3)
+
+  //SET_USESET
+C_TEXT:C284(SET_UseSet ;$1)
+C_TEXT:C284(SET_ClearSets ;${-1})
+C_TEXT:C284(SET_ClearSets ;$1)
+C_TEXT:C284(SET_ClearSets ;$2)
+C_TEXT:C284(SET_ClearSets ;$3)
+C_TEXT:C284(SET_ClearSets ;$4)
+C_TEXT:C284(SET_ClearSets ;$5)
+C_TEXT:C284(SET_ClearSets ;$6)
+C_TEXT:C284(SET_ClearSets ;$7)
+C_TEXT:C284(SET_ClearSets ;$8)
+C_TEXT:C284(SET_ClearSets ;$9)
+C_TEXT:C284(SET_ClearSets ;$10)
+C_TEXT:C284(SET_ClearSets ;$11)
+C_TEXT:C284(SET_ClearSets ;$12)
+C_TEXT:C284(SET_ClearSets ;$13)
+C_TEXT:C284(SET_ClearSets ;$14)
+C_TEXT:C284(SET_ClearSets ;$15)
+C_TEXT:C284(SET_ClearSets ;$16)
+
+  //AT_RESIZEARRAYS
+C_POINTER:C301(AT_ResizeArrays ;$1)
+C_LONGINT:C283(AT_ResizeArrays ;$2)
+
+  //SQ_GETLASTID
+C_POINTER:C301(SQ_getLastID ;$1)
+C_BOOLEAN:C305(SQ_getLastID ;$2)
+
+  //ST_LIMPIAROLESCHILENOS
+C_TEXT:C284(ST_limpiaRolesChilenos ;$0)
+C_TEXT:C284(ST_limpiaRolesChilenos ;$1)
+
+  //AL_CREAREGISTROSVACUNACION
+C_REAL:C285(AL_CreaRegistrosVacunacion ;$1)
+
+  //WDW_OPENDIALOGINDRAWER
+C_POINTER:C301(WDW_OpenDialogInDrawer ;$1)
+C_TEXT:C284(WDW_OpenDialogInDrawer ;$2)
+C_TEXT:C284(WDW_OpenDialogInDrawer ;$3)
+C_POINTER:C301(WDW_OpenDialogInDrawer ;$4)
+
+  //IT_DISPLAYUNLIMITEDTHERMO
+C_TEXT:C284(IT_DisplayUnlimitedThermo ;$1)
+C_LONGINT:C283(IT_DisplayUnlimitedThermo ;$2)
+C_LONGINT:C283(IT_DisplayUnlimitedThermo ;$3)
+C_TEXT:C284(IT_DisplayUnlimitedThermo ;$4)
+
+  //KRL_ISFIELDINDEXED
+C_BOOLEAN:C305(KRL_IsFieldIndexed ;$0)
+C_POINTER:C301(KRL_IsFieldIndexed ;$1)
+
+  //PREF_FGET
+C_TEXT:C284(PREF_fGet ;$0)
+C_REAL:C285(PREF_fGet ;$1)
+C_TEXT:C284(PREF_fGet ;$2)
+C_TEXT:C284(PREF_fGet ;$3)
+
+  //DBU_CREASESIONES
+C_BOOLEAN:C305(dbu_CreaSesiones ;$1)
+C_DATE:C307(dbu_CreaSesiones ;$2)
+C_DATE:C307(dbu_CreaSesiones ;$3)
+
+  //BM_CUENTAHORASDECLASE
+C_BOOLEAN:C305(BM_CuentaHorasDeClase ;$0)
+C_LONGINT:C283(BM_CuentaHorasDeClase ;$1)
+
+  //BM_CUENTAATRASOS
+C_BOOLEAN:C305(BM_CuentaAtrasos ;$0)
+C_LONGINT:C283(BM_CuentaAtrasos ;$1)
+
+  //BM_CUENTAANOTACIONES
+C_BOOLEAN:C305(BM_CuentaAnotaciones ;$0)
+C_LONGINT:C283(BM_CuentaAnotaciones ;$1)
+
+  //BM_CUENTACASTIGOS
+C_BOOLEAN:C305(BM_CuentaCastigos ;$0)
+C_LONGINT:C283(BM_CuentaCastigos ;$1)
+
+  //BM_CUENTASUSPENSIONES
+C_BOOLEAN:C305(BM_CuentaSuspensiones ;$0)
+C_LONGINT:C283(BM_CuentaSuspensiones ;$1)
+
+  //BM_JUSTIFICAINASISTENCIAS
+C_BOOLEAN:C305(BM_JustificaInasistencias ;$0)
+C_LONGINT:C283(BM_JustificaInasistencias ;$1)
+
+  //BM_CALCULAPROMEDIOSALUMNOS
+C_BOOLEAN:C305(BM_CalculaPromediosAlumnos ;$0)
+C_LONGINT:C283(BM_CalculaPromediosAlumnos ;$1)
+
+  //BM_CALCULASITUACIONFINALALUMNOS
+C_BOOLEAN:C305(BM_CalculaSituacionFinalAlumnos ;$0)
+C_LONGINT:C283(BM_CalculaSituacionFinalAlumnos ;$1)
+
+  //ACTCC_CALCULAMONTOS
+C_BOOLEAN:C305(ACTcc_CalculaMontos ;$0)
+C_LONGINT:C283(ACTcc_CalculaMontos ;$1)
+C_BOOLEAN:C305(ACTcc_CalculaMontos ;$2)
+
+  //ACTDC_DEPOSITACHEQUE
+C_BOOLEAN:C305(ACTdc_DepositaCheque ;$0)
+C_TEXT:C284(ACTdc_DepositaCheque ;$1)
+
+  //ACTDC_PRORROGACHEQUES
+C_BOOLEAN:C305(ACTdc_ProrrogaCheques ;$0)
+C_TEXT:C284(ACTdc_ProrrogaCheques ;$1)
+
+  //ACTDD_PROTESTACHEQUES
+C_BOOLEAN:C305(ACTdd_ProtestaCheques ;$0)
+C_TEXT:C284(ACTdd_ProtestaCheques ;$1)
+
+  //ACTDC_REEMPLAZARCHEQUES
+C_BOOLEAN:C305(ACTdc_ReemplazarCheques ;$0)
+C_BLOB:C604(ACTdc_ReemplazarCheques ;$1)
+
+  //ACTDC_CAMBIAUCHEQUES
+C_BOOLEAN:C305(ACTdc_CambiaUCheques ;$0)
+C_TEXT:C284(ACTdc_CambiaUCheques ;$1)
+
+  //ACTCC_BORRARCARGO
+C_BOOLEAN:C305(ACTcc_BorrarCargo ;$0)
+C_TEXT:C284(ACTcc_BorrarCargo ;$1)
+
+  //ACTCC_BORRARTRANSACCION
+C_BOOLEAN:C305(ACTcc_BorrarTransaccion ;$0)
+C_TEXT:C284(ACTcc_BorrarTransaccion ;$1)
+
+  //ACTCC_BORRARDOCDECARGO
+C_BOOLEAN:C305(ACTcc_BorrarDocdeCargo ;$0)
+C_TEXT:C284(ACTcc_BorrarDocdeCargo ;$1)
+
+  //ACTBOL_ANULADOCUMENTOS
+C_BOOLEAN:C305(ACTbol_AnulaDocumentos ;$0)
+C_TEXT:C284(ACTbol_AnulaDocumentos ;$1)
+
+  //BM_CALCULAPROMEDIOSCURSO
+C_BOOLEAN:C305(BM_CalculaPromediosCurso ;$0)
+C_LONGINT:C283(BM_CalculaPromediosCurso ;$1)
+
+  //ST_LOADMODULEFORMATEXCEPTIONS
+C_TEXT:C284(ST_LoadModuleFormatExceptions ;$1)
+
+  //PREF_FGETBLOB
+C_BLOB:C604(PREF_fGetBlob ;$0)
+C_REAL:C285(PREF_fGetBlob ;$1)
+C_TEXT:C284(PREF_fGetBlob ;$2)
+C_BLOB:C604(PREF_fGetBlob ;$3)
+
+  //PREF_SETBLOB
+C_REAL:C285(PREF_SetBlob ;$1)
+C_TEXT:C284(PREF_SetBlob ;$2)
+C_BLOB:C604(PREF_SetBlob ;$3)
+
+  //HL_COPYREFERENCEDLISTTOARRAY
+C_LONGINT:C283(HL_CopyReferencedListToArray ;$1)
+C_POINTER:C301(HL_CopyReferencedListToArray ;$2)
+C_POINTER:C301(HL_CopyReferencedListToArray ;$3)
+
+  //AT_TEXT2ARRAY
+C_POINTER:C301(AT_Text2Array ;$1)
+C_TEXT:C284(AT_Text2Array ;$2)
+C_TEXT:C284(AT_Text2Array ;$3)
+
+  //ACTCC_EMITEAVISOS
+C_BLOB:C604(ACTcc_EmiteAvisos ;$1)
+C_PICTURE:C286(ACTcc_EmiteAvisos ;$2)
+C_TEXT:C284(ACTcc_EmiteAvisos ;$3)
+C_TEXT:C284(ACTcc_EmiteAvisos ;$4)
+C_REAL:C285(ACTcc_EmiteAvisos ;$5)
+C_DATE:C307(ACTcc_EmiteAvisos ;$6)
+C_REAL:C285(ACTcc_EmiteAvisos ;$7)
+C_REAL:C285(ACTcc_EmiteAvisos ;$8)
+C_TEXT:C284(ACTcc_EmiteAvisos ;$9)
+
+  //ACTPGS_RECALCULARAVISOS
+C_POINTER:C301(ACTpgs_RecalcularAvisos ;$1)
+C_BOOLEAN:C305(ACTpgs_RecalcularAvisos ;$2)
+
+  //ACTPGS_RECALCULASALDOSAVISOS
+C_POINTER:C301(ACTpgs_RecalculaSaldosAvisos ;$1)
+C_BOOLEAN:C305(ACTpgs_RecalculaSaldosAvisos ;$2)
+
+  //ACTCFG_LOADCONFIGDATA
+C_REAL:C285(ACTcfg_LoadConfigData ;$1)
+
+  //ACTCC_ORDERCTASCTES
+C_REAL:C285(ACTcc_OrderCtasCtes ;$1)
+
+  //AS_CREASESIONES
+C_DATE:C307(AS_CreaSesiones ;$1)
+C_BOOLEAN:C305(AS_CreaSesiones ;$2)
+C_BOOLEAN:C305(AS_CreaSesiones ;$3)
+
+  //CD_THERMOMETRE
+C_LONGINT:C283(CD_THERMOMETRE ;$1)
+C_REAL:C285(CD_THERMOMETRE ;$2)
+C_TEXT:C284(CD_THERMOMETRE ;$3)
+C_REAL:C285(CD_THERMOMETRE ;$4)
+
+  //EM_ERRORMANAGER
+C_TEXT:C284(EM_ErrorManager ;$1)
+C_TEXT:C284(EM_ErrorManager ;$2)
+
+  //DATEISVALID
+C_BOOLEAN:C305(DateIsValid ;$0)
+C_DATE:C307(DateIsValid ;$1)
+C_LONGINT:C283(DateIsValid ;$2)
+C_LONGINT:C283(DateIsValid ;$3)
+
+  //KRL_DELETESELECTION
+C_LONGINT:C283(KRL_DeleteSelection ;$0)
+C_POINTER:C301(KRL_DeleteSelection ;$1)
+C_BOOLEAN:C305(KRL_DeleteSelection ;$2)
+C_TEXT:C284(KRL_DeleteSelection ;$3)
+
+  //AL_JUSTIFICAINASISTENCIAS
+C_BOOLEAN:C305(AL_JustificaInasistencias ;$0)
+C_REAL:C285(AL_JustificaInasistencias ;$1)
+
+  //AL_CALCULASITUACIONFINAL_CL
+C_BOOLEAN:C305(AL_CalculaSituacionfinal_cl ;$0)
+C_LONGINT:C283(AL_CalculaSituacionfinal_cl ;$1)
+
+  //ST_DECONCATENATE
+C_TEXT:C284(ST_Deconcatenate ;$0)
+C_POINTER:C301(ST_Deconcatenate ;${-1})
+C_TEXT:C284(ST_Deconcatenate ;$1)
+C_TEXT:C284(ST_Deconcatenate ;$2)
+C_POINTER:C301(ST_Deconcatenate ;$3)
+C_POINTER:C301(ST_Deconcatenate ;$4)
+C_POINTER:C301(ST_Deconcatenate ;$5)
+C_POINTER:C301(ST_Deconcatenate ;$6)
+C_POINTER:C301(ST_Deconcatenate ;$7)
+C_POINTER:C301(ST_Deconcatenate ;$8)
+C_POINTER:C301(ST_Deconcatenate ;$9)
+C_POINTER:C301(ST_Deconcatenate ;$10)
+C_POINTER:C301(ST_Deconcatenate ;$11)
+C_POINTER:C301(ST_Deconcatenate ;$12)
+C_POINTER:C301(ST_Deconcatenate ;$13)
+C_POINTER:C301(ST_Deconcatenate ;$14)
+C_POINTER:C301(ST_Deconcatenate ;$15)
+C_POINTER:C301(ST_Deconcatenate ;$16)
+C_POINTER:C301(ST_Deconcatenate ;$17)
+C_POINTER:C301(ST_Deconcatenate ;$18)
+C_POINTER:C301(ST_Deconcatenate ;$19)
+C_POINTER:C301(ST_Deconcatenate ;$20)
+C_POINTER:C301(ST_Deconcatenate ;$21)
+
+  //EVS_READSTYLEDATA
+C_LONGINT:C283(EVS_ReadStyleData ;$0)
+C_LONGINT:C283(EVS_ReadStyleData ;$1)
+
+  //AT_GETSUMARRAY
+C_REAL:C285(AT_GetSumArray ;$0)
+C_POINTER:C301(AT_GetSumArray ;$1)
+C_BOOLEAN:C305(AT_GetSumArray ;$2)
+
+  //KRL_POINTERDESCRIPTION
+C_TEXT:C284(KRL_PointerDescription ;$0)
+C_POINTER:C301(KRL_PointerDescription ;$1)
+
+  //ST_GETWORD
+C_TEXT:C284(ST_GetWord ;$0)
+C_TEXT:C284(ST_GetWord ;$1)
+C_LONGINT:C283(ST_GetWord ;$2)
+C_TEXT:C284(ST_GetWord ;$3)
+
+  //ACTUT_FFECHAVALIDA
+C_DATE:C307(ACTut_fFechaValida ;$0)
+C_DATE:C307(ACTut_fFechaValida ;$1)
+
+  //ACTCFG_LOADMATRIXITEMS
+C_REAL:C285(ACTcfg_loadMatrixItems ;$1)
+
+  //ACTCC_CALCULAMONTOITEM
+C_TEXT:C284(ACTcc_CalculaMontoItem ;$0)
+C_LONGINT:C283(ACTcc_CalculaMontoItem ;$1)
+C_LONGINT:C283(ACTcc_CalculaMontoItem ;$2)
+C_BOOLEAN:C305(ACTcc_CalculaMontoItem ;$3)
+C_DATE:C307(ACTcc_CalculaMontoItem ;$4)
+C_TEXT:C284(ACTcc_CalculaMontoItem ;$5)
+C_BOOLEAN:C305(ACTcc_CalculaMontoItem ;$6)
+C_REAL:C285(ACTcc_CalculaMontoItem ;$7)
+
+  //ACTCC_RECALCULACARGOSYDOCS
+C_REAL:C285(ACTcc_RecalculaCargosyDocs ;$1)
+C_REAL:C285(ACTcc_RecalculaCargosyDocs ;$2)
+C_REAL:C285(ACTcc_RecalculaCargosyDocs ;$3)
+C_DATE:C307(ACTcc_RecalculaCargosyDocs ;$4)
+C_DATE:C307(ACTcc_RecalculaCargosyDocs ;$5)
+C_BOOLEAN:C305(ACTcc_RecalculaCargosyDocs ;$6)
+C_BOOLEAN:C305(ACTcc_RecalculaCargosyDocs ;$7)
+C_BOOLEAN:C305(ACTcc_RecalculaCargosyDocs ;$8)
+C_DATE:C307(ACTcc_RecalculaCargosyDocs ;$9)
+C_REAL:C285(ACTcc_RecalculaCargosyDocs ;$10)
+
+  //ACTCC_CALCULADOCUMENTOCARGO
+C_REAL:C285(ACTcc_CalculaDocumentoCargo ;$0)
+C_LONGINT:C283(ACTcc_CalculaDocumentoCargo ;$1)
+C_DATE:C307(ACTcc_CalculaDocumentoCargo ;$2)
+
+  //ACTCC_EMISIONAVISOS
+C_REAL:C285(ACTcc_EmisionAvisos ;$1)
+C_BOOLEAN:C305(ACTcc_EmisionAvisos ;$2)
+C_POINTER:C301(ACTcc_EmisionAvisos ;$3)
+
+  //ACTCC_IMPRIMEAVISOS
+C_REAL:C285(ACTcc_ImprimeAvisos ;$1)
+C_BLOB:C604(ACTcc_ImprimeAvisos ;$2)
+C_TEXT:C284(ACTcc_ImprimeAvisos ;$3)
+C_REAL:C285(ACTcc_ImprimeAvisos ;$4)
+
+  //ACTAC_RECALCULAR
+C_REAL:C285(ACTac_Recalcular ;$1)
+C_DATE:C307(ACTac_Recalcular ;$2)
+C_BOOLEAN:C305(ACTac_Recalcular ;$3)
+C_BOOLEAN:C305(ACTac_Recalcular ;$4)
+
+  //ACTCFG_HABILITATRAMOSHIJOS
+C_BOOLEAN:C305(ACTcfg_Habilitatramoshijos ;$1)
+C_BOOLEAN:C305(ACTcfg_Habilitatramoshijos ;$2)
+C_BOOLEAN:C305(ACTcfg_Habilitatramoshijos ;$3)
+C_POINTER:C301(IT_SetButtonState ;${-1})
+C_BOOLEAN:C305(IT_SetButtonState ;$1)
+C_POINTER:C301(IT_SetButtonState ;$2)
+C_POINTER:C301(IT_SetButtonState ;$3)
+C_POINTER:C301(IT_SetButtonState ;$4)
+C_POINTER:C301(IT_SetButtonState ;$5)
+C_POINTER:C301(IT_SetButtonState ;$6)
+C_POINTER:C301(IT_SetButtonState ;$7)
+C_POINTER:C301(IT_SetButtonState ;$8)
+C_POINTER:C301(IT_SetButtonState ;$9)
+C_POINTER:C301(IT_SetButtonState ;$10)
+C_POINTER:C301(IT_SetButtonState ;$11)
+C_POINTER:C301(IT_SetButtonState ;$12)
+C_POINTER:C301(IT_SetEnterable ;${3})
+C_BOOLEAN:C305(IT_SetEnterable ;$1)
+C_LONGINT:C283(IT_SetEnterable ;$2)
+
+  //ACTCFG_HABILITAOPCIONESITEM
+C_BOOLEAN:C305(ACTcfg_HabilitaOpcionesItem ;$1)
+
+  //ACTCFG_LOADDATAMATRICES
+C_REAL:C285(ACTcfg_LoadDataMatrices ;$1)
+
+  //ALP_SETALTERNATELIGNECOLOR
+C_LONGINT:C283(ALP_SetAlternateLigneColor ;$1)
+C_REAL:C285(ALP_SetAlternateLigneColor ;$2)
+
+  //PREF_SET
+C_REAL:C285(PREF_Set ;$1)
+C_TEXT:C284(PREF_Set ;$2)
+C_TEXT:C284(PREF_Set ;$3)
+
+  //USR_CURRENTUSER
+C_TEXT:C284(USR_CurrentUser ;$0)
+
+  //SYS_GETMACHINETYPE
+C_TEXT:C284(SYS_GetMachineType ;$0)
+
+  //SYS_GETOS
+C_TEXT:C284(SYS_GetOS ;$0)
+
+  //AS_PropEval_Escritura
+C_LONGINT:C283(AS_PropEval_Escritura ;$1)
+
+  //AT_ISEQUAL
+C_LONGINT:C283(AT_IsEqual ;$0)
+C_POINTER:C301(AT_IsEqual ;$1)
+C_POINTER:C301(AT_IsEqual ;$2)
+
+  //NTA_PERCENTARRAY2STRGRADEARRAY
+C_POINTER:C301(NTA_PercentArray2StrGradeArray ;$1)
+C_POINTER:C301(NTA_PercentArray2StrGradeArray ;$2)
+C_LONGINT:C283(NTA_PercentArray2StrGradeArray ;$3)
+C_LONGINT:C283(NTA_PercentArray2StrGradeArray ;$4)
+
+  //IT_WAITFORTIME
+C_TIME:C306(IT_WaitForTime ;$1)
+
+  //AL_PROMEDIOUCHILE_CL
+C_REAL:C285(AL_PromedioUChile_cl ;$0)
+
+  //ACTCFG_SAVECONFIG
+C_REAL:C285(ACTcfg_SaveConfig ;$1)
+
+  //ACTUT_FVALORUF
+C_REAL:C285(ACTut_fValorUF ;$0)
+C_DATE:C307(ACTut_fValorUF ;$1)
+C_BOOLEAN:C305(ACTut_fValorUF ;$2)
+
+  //ACTUT_FVALORDIVISA
+C_REAL:C285(ACTut_fValorDivisa ;$0)
+C_TEXT:C284(ACTut_fValorDivisa ;$1)
+C_DATE:C307(ACTut_fValorDivisa ;$2)
+
+  //ACTCC_ORDENADOCSCARGOPORMONEDA
+C_REAL:C285(ACTcc_OrdenaDocsCargoporMoneda ;$0)
+C_REAL:C285(ACTcc_OrdenaDocsCargoporMoneda ;$1)
+C_REAL:C285(ACTcc_OrdenaDocsCargoporMoneda ;$2)
+C_REAL:C285(ACTcc_OrdenaDocsCargoporMoneda ;$3)
+
+  //NTA_GETVALUEFROMPCTCONVTABLE
+C_TEXT:C284(NTA_GetValueFromPctConvTable ;$0)
+C_REAL:C285(NTA_GetValueFromPctConvTable ;$1)
+C_REAL:C285(NTA_GetValueFromPctConvTable ;$2)
+
+  //NTA_CONVERTNUMVALUE
+C_REAL:C285(NTA_ConvertNumValue ;$0)
+C_REAL:C285(NTA_ConvertNumValue ;$1)
+C_REAL:C285(NTA_ConvertNumValue ;$2)
+C_REAL:C285(NTA_ConvertNumValue ;$3)
+C_REAL:C285(NTA_ConvertNumValue ;$4)
+C_REAL:C285(NTA_ConvertNumValue ;$5)
+C_REAL:C285(NTA_ConvertNumValue ;$6)
+C_REAL:C285(NTA_ConvertNumValue ;$7)
+C_REAL:C285(NTA_ConvertNumValue ;$8)
+C_REAL:C285(NTA_ConvertNumValue ;$9)
+C_BOOLEAN:C305(NTA_ConvertNumValue ;$10)
+
+  //NTA_ADJUSTINTERVAL
+C_REAL:C285(NTA_adjustInterval ;$0)
+C_REAL:C285(NTA_adjustInterval ;$1)
+C_REAL:C285(NTA_adjustInterval ;$2)
+C_REAL:C285(NTA_adjustInterval ;$3)
+C_POINTER:C301(AT_RedimArrays ;${2})
+C_LONGINT:C283(AT_RedimArrays ;$1)
+
+  //NTA_PERCENTVALUE2STRINGVALUE
+C_TEXT:C284(NTA_PercentValue2StringValue ;$0)
+C_REAL:C285(NTA_PercentValue2StringValue ;$1)
+C_LONGINT:C283(NTA_PercentValue2StringValue ;$2)
+C_LONGINT:C283(NTA_PercentValue2StringValue ;$3)
+C_POINTER:C301(NTA_PercentValue2StringValue ;$4)
+C_REAL:C285(NTA_PercentValue2StringValue ;$5)
+C_REAL:C285(NTA_PercentValue2StringValue ;$6)
+
+  //NTA_GETPCTVALUEFROMCONVTABLE
+C_REAL:C285(NTA_GetPctValueFromConvTable ;$0)
+C_REAL:C285(NTA_GetPctValueFromConvTable ;$1)
+C_REAL:C285(NTA_GetPctValueFromConvTable ;$2)
+
+  //NTA_STRINGVALUE2PERCENT
+C_REAL:C285(NTA_StringValue2Percent ;$0)
+C_TEXT:C284(NTA_StringValue2Percent ;$1)
+C_LONGINT:C283(NTA_StringValue2Percent ;$2)
+C_LONGINT:C283(NTA_StringValue2Percent ;$3)
+
+  //AS_FAVERAGE
+C_REAL:C285(AS_fAverage ;$0)
+C_POINTER:C301(AS_fAverage ;$1)
+
+  //AS_FMINIMUM
+C_REAL:C285(AS_fMinimum ;$0)
+C_POINTER:C301(AS_fMinimum ;$1)
+
+  //AS_FMAXIMUM
+C_REAL:C285(AS_fMaximum ;$0)
+C_POINTER:C301(AS_fMaximum ;$1)
+
+  //DHQR_PREPRINTINSTRUCTIONS
+C_POINTER:C301(dhQR_PrePrintInstructions ;$1)
+
+  //SYS_SELECTFOLDER
+C_TEXT:C284(SYS_SelectFolder ;$0)
+C_TEXT:C284(SYS_SelectFolder ;$1)
+
+  //NTA_CONVERTNUM2VALUE
+C_REAL:C285(NTA_convertNum2value ;$0)
+C_REAL:C285(NTA_convertNum2value ;$1)
+C_REAL:C285(NTA_convertNum2value ;$2)
+C_REAL:C285(NTA_convertNum2value ;$3)
+C_REAL:C285(NTA_convertNum2value ;$4)
+C_REAL:C285(NTA_convertNum2value ;$5)
+C_REAL:C285(NTA_convertNum2value ;$6)
+C_LONGINT:C283(NTA_convertNum2value ;$7)
+C_REAL:C285(NTA_convertNum2value ;$8)
+C_REAL:C285(NTA_convertNum2value ;$9)
+C_BOOLEAN:C305(NTA_convertNum2value ;$10)
+
+  //ACTCFG_ALLOWITEMS2MATRIX
+C_BOOLEAN:C305(ACTcfg_AllowItems2Matrix ;$0)
+C_REAL:C285(ACTcfg_AllowItems2Matrix ;$1)
+C_DATE:C307(ACTcfg_AllowItems2Matrix ;$2)
+C_REAL:C285(ACTcfg_AllowItems2Matrix ;$3)
+C_BOOLEAN:C305(ACTcfg_AllowItems2Matrix ;$4)
+
+  //QRY_QUERYEDITOR
+C_POINTER:C301(QRY_QueryEditor ;$1)
+
+  //DHQR_SETUNIVERS
+C_TEXT:C284(dhQR_SetUnivers ;$1)
+C_REAL:C285(dhQR_SetUnivers ;$2)
+C_POINTER:C301(SF_Subtable2Array ;${-1})
+C_POINTER:C301(SF_Subtable2Array ;$1)
+C_POINTER:C301(SF_Subtable2Array ;$2)
+C_POINTER:C301(SF_Subtable2Array ;$3)
+C_POINTER:C301(SF_Subtable2Array ;$4)
+C_POINTER:C301(SF_Subtable2Array ;$5)
+C_POINTER:C301(SF_Subtable2Array ;$6)
+C_POINTER:C301(SF_Subtable2Array ;$7)
+C_POINTER:C301(SF_Subtable2Array ;$8)
+C_POINTER:C301(SF_Subtable2Array ;$9)
+C_POINTER:C301(SF_Subtable2Array ;$10)
+C_POINTER:C301(SF_Subtable2Array ;$11)
+C_POINTER:C301(SF_Subtable2Array ;$12)
+C_POINTER:C301(SF_Subtable2Array ;$13)
+C_POINTER:C301(SF_Subtable2Array ;$14)
+C_POINTER:C301(SF_Subtable2Array ;$15)
+C_POINTER:C301(SF_Subtable2Array ;$16)
+C_POINTER:C301(SF_Subtable2Array ;$17)
+
+  //STR_BUSQUEDAESPECIAL
+C_POINTER:C301(STR_BusquedaEspecial ;$1)
+
+  //QRY_GETLOGICALCONNECTOR
+C_TEXT:C284(QRY_GetLogicalConnector ;$0)
+C_TEXT:C284(QRY_GetLogicalConnector ;$1)
+
+  //QRY_GETOPERATOR
+C_TEXT:C284(QRY_GetOperator ;$0)
+C_TEXT:C284(QRY_GetOperator ;$1)
+C_TEXT:C284(QRY_GetOperator ;$2)
+
+  //DT_DATE2NUM
+C_LONGINT:C283(DT_Date2Num ;$0)
+C_DATE:C307(DT_Date2Num ;$1)
+
+  //ACTBOL_EMITIRRECIBOS
+C_REAL:C285(ACTbol_EmitirRecibos ;$0)
+C_TEXT:C284(ACTbol_EmitirRecibos ;$1)
+C_REAL:C285(ACTbol_EmitirRecibos ;$2)
+C_TEXT:C284(ACTbol_EmitirRecibos ;$3)
+
+  //ACTBOL_GETDOCTRIBFROMPERSONA
+C_REAL:C285(ACTbol_GetDocTribFromPersona ;$0)
+C_LONGINT:C283(ACTbol_GetDocTribFromPersona ;$1)
+
+  //ACTBOL_NUMBERING
+C_REAL:C285(ACTbol_Numbering ;$0)
+C_REAL:C285(ACTbol_Numbering ;$1)
+C_TEXT:C284(ACTbol_Numbering ;$2)
+C_BOOLEAN:C305(ACTbol_Numbering ;$3)
+C_BOOLEAN:C305(ACTbol_Numbering ;$4)
+
+  //ACTBOL_PRINTBOLETASVR
+C_LONGINT:C283(ACTbol_PrintBoletasVR ;$0)
+C_TEXT:C284(ACTbol_PrintBoletasVR ;$1)
+C_BOOLEAN:C305(ACTbol_PrintBoletasVR ;$2)
+C_REAL:C285(ACTbol_PrintBoletasVR ;$3)
+C_BOOLEAN:C305(ACTbol_PrintBoletasVR ;$4)
+C_BOOLEAN:C305(ACTbol_PrintBoletasVR ;$5)
+C_REAL:C285(ACTbol_PrintBoletasVR ;$6)
+C_POINTER:C301(ACTbol_PrintBoletasVR ;$7)
+
+  //ACTBOL_PRINTBOLETASVR2
+C_BOOLEAN:C305(ACTbol_PrintBoletasVR2 ;$0)
+C_BOOLEAN:C305(ACTbol_PrintBoletasVR2 ;$1)
+C_TEXT:C284(ACTbol_PrintBoletasVR2 ;$2)
+
+  //ACTCFG_DOCTRIBCOMPLETE
+C_BOOLEAN:C305(ACTcfg_DocTribComplete ;$0)
+C_REAL:C285(ACTcfg_DocTribComplete ;$1)
+
+  //ACTCFG_MANAGEDTMODELPOPUP
+C_REAL:C285(ACTcfg_ManageDTModelPopUp ;$1)
+
+  //XALCB_EX_CFGMODBLOBITEMSHIJOS
+C_BOOLEAN:C305(xALCB_EX_cfgModBlobItemsHijos ;$0)
+C_LONGINT:C283(xALCB_EX_cfgModBlobItemsHijos ;$1)
+C_LONGINT:C283(xALCB_EX_cfgModBlobItemsHijos ;$2)
+
+  //ACTCFG_SEARCHCATDOCS
+C_BOOLEAN:C305(ACTcfg_SearchCatDocs ;$0)
+C_REAL:C285(ACTcfg_SearchCatDocs ;$1)
+C_REAL:C285(ACTcfg_SearchCatDocs ;$2)
+
+  //ACTPGS_CREACARGODESCTOESPECIAL
+C_REAL:C285(ACTpgs_CreaCargoDesctoEspecial ;$1)
+C_REAL:C285(ACTpgs_CreaCargoDesctoEspecial ;$2)
+C_REAL:C285(ACTpgs_CreaCargoDesctoEspecial ;$3)
+
+  //ACTPGS_EMITIRBOLETASVR
+C_REAL:C285(ACTpgs_EmitirBoletasVR ;$1)
+
+  //ACTPGS_INGRESARPAGOSVR
+C_REAL:C285(ACTpgs_IngresarPagosVR ;$1)
+
+  //ACTPGS_LOADCARGOSAVISO
+C_POINTER:C301(ACTpgs_LoadCargosAviso ;$1)
+
+
+  //XALCB_EX_CATEGORIAANOT
+C_BOOLEAN:C305(xALCB_EX_CategoriaAnot ;$0)
+C_LONGINT:C283(xALCB_EX_CategoriaAnot ;$1)
+C_LONGINT:C283(xALCB_EX_CategoriaAnot ;$2)
+
+  //XALCB_EX_MOTIVOANOTACIONES
+C_BOOLEAN:C305(xALCB_EX_MotivoAnotaciones ;$0)
+C_LONGINT:C283(xALCB_EX_MotivoAnotaciones ;$1)
+C_LONGINT:C283(xALCB_EX_MotivoAnotaciones ;$2)
+
+  //CAE_INICIALIZEUSERFIELDS
+C_TEXT:C284(CAE_InicializeUserFields ;$1)
+
+  //DHBWR_LOADLISTS
+C_TEXT:C284(dhBWR_LoadLists ;$1)
+
+  //HL_DESELECTALLELEMENTS
+C_LONGINT:C283(hl_DeselectAllElements ;$1)
+
+  //HL_REFERENCEDLIST2ARRAY
+C_LONGINT:C283(HL_ReferencedList2Array ;$1)
+C_POINTER:C301(HL_ReferencedList2Array ;$2)
+
+  //HL_SELECTION2LIST
+C_REAL:C285(HL_Selection2List ;$0)
+C_POINTER:C301(HL_Selection2List ;$1)
+C_POINTER:C301(HL_Selection2List ;$2)
+
+  //IT_STARTTIMER
+C_REAL:C285(IT_StartTimer ;$0)
+
+  //IT_STOPTIMER
+C_REAL:C285(IT_StopTimer ;$1)
+
+  //LOC_LOADLIST
+C_LONGINT:C283(LOC_LoadList ;$0)
+C_TEXT:C284(LOC_LoadList ;$1)
+
+  //MNU_SETMENUBAR
+C_TEXT:C284(MNU_SetMenuBar ;$1)
+C_LONGINT:C283(MNU_SetMenuBar ;$2)
+
+  //PLT_ADJUSTBROWSERSIZE
+C_REAL:C285(PLT_AdjustBrowserSize ;$1)
+
+  //PLT_EXECUTEMETHOD
+C_POINTER:C301(PLT_ExecuteMethod ;$1)
+
+  //SOPORTE_EXPORTSCHOOLTRACK
+C_LONGINT:C283(SOPORTE_ExportSchoolTrack ;$1)
+C_LONGINT:C283(SOPORTE_ExportSchoolTrack ;$2)
+
+  //SRAL_ENFERMERIAMESES
+C_LONGINT:C283(SRal_EnfermeriaMeses ;$1)
+
+  //SYS_MODULESTABLEBELONGTO
+C_POINTER:C301(SYS_ModulesTableBelongTo ;$1)
+
+  //USR_BUILDGROUPSHLIST
+C_REAL:C285(USR_BuildGroupsHList ;$0)
+
+  //USR_BUILDUSERSHLIST
+C_REAL:C285(USR_BuildUsersHList ;$0)
+C_BOOLEAN:C305(USR_BuildUsersHList ;$1)
+
+  //XALCB_EX_PERIODOS
+C_BOOLEAN:C305(xALCB_EX_Periodos ;$0)
+C_LONGINT:C283(xALCB_EX_Periodos ;$1)
+C_LONGINT:C283(xALCB_EX_Periodos ;$2)
+
+  //XALP_ACT_CB_CATS
+C_BOOLEAN:C305(xALP_ACT_CB_Cats ;$0)
+C_LONGINT:C283(xALP_ACT_CB_Cats ;$1)
+C_LONGINT:C283(xALP_ACT_CB_Cats ;$2)
+C_LONGINT:C283(xALP_ACT_CB_Cats ;$3)
+
+  //XALP_ACT_CB_DIVISAS
+C_BOOLEAN:C305(xALP_ACT_CB_Divisas ;$0)
+C_LONGINT:C283(xALP_ACT_CB_Divisas ;$1)
+C_LONGINT:C283(xALP_ACT_CB_Divisas ;$2)
+C_LONGINT:C283(xALP_ACT_CB_Divisas ;$3)
+
+  //XALP_ACT_CB_ITEMSVENTA
+C_BOOLEAN:C305(xALP_ACT_CB_ItemsVenta ;$0)
+C_LONGINT:C283(xALP_ACT_CB_ItemsVenta ;$1)
+C_LONGINT:C283(xALP_ACT_CB_ItemsVenta ;$2)
+C_LONGINT:C283(xALP_ACT_CB_ItemsVenta ;$3)
+
+  //XAL_ACT_CB_MODELOSBOL
+C_BOOLEAN:C305(xAL_ACT_CB_ModelosBol ;$0)
+C_LONGINT:C283(xAL_ACT_CB_ModelosBol ;$1)
+C_LONGINT:C283(xAL_ACT_CB_ModelosBol ;$2)
+C_LONGINT:C283(xAL_ACT_CB_ModelosBol ;$3)
+
+  //0XDEV_CLEARTABLE
+C_POINTER:C301(0xDev_ClearTable ;$1)
+
+  //AT_ARRAY2TEXT
+C_TEXT:C284(AT_array2text ;$0)
+C_POINTER:C301(AT_array2text ;$1)
+C_TEXT:C284(AT_array2text ;$2)
+C_TEXT:C284(AT_array2text ;$3)
+
+  //AT_SEARCHARRAY
+C_LONGINT:C283(AT_SearchArray ;$0)
+C_POINTER:C301(AT_SearchArray ;$1)
+C_TEXT:C284(AT_SearchArray ;$2)
+C_POINTER:C301(AT_SearchArray ;$3)
+
+  //USR_GETMETHODACCES
+C_BOOLEAN:C305(USR_GetMethodAcces ;$0)
+C_TEXT:C284(USR_GetMethodAcces ;$1)
+C_LONGINT:C283(USR_GetMethodAcces ;$2)
+
+  //SYS_TESTPATHNAME
+C_LONGINT:C283(SYS_TestPathName ;$0)
+C_TEXT:C284(SYS_TestPathName ;$1)
+
+  //SYS_CREATEFOLDER
+C_TEXT:C284(SYS_CreateFolder ;$1)
+
+  //IO_SENDPACKET
+C_TIME:C306(IO_SendPacket ;$1)
+C_TEXT:C284(IO_SendPacket ;$2)
+
+  //DT_GETLASTDAY
+C_LONGINT:C283(DT_GetLastDay ;$0)
+C_LONGINT:C283(DT_GetLastDay ;$1)
+C_LONGINT:C283(DT_GetLastDay ;$2)
+
+  //ST_BOOLEAN2STR
+C_TEXT:C284(ST_Boolean2Str ;$0)
+C_BOOLEAN:C305(ST_Boolean2Str ;$1)
+C_TEXT:C284(ST_Boolean2Str ;$2)
+C_TEXT:C284(ST_Boolean2Str ;$3)
+
+  //KRL_MODIFYRECORD
+C_POINTER:C301(KRL_ModifyRecord ;$1)
+C_TEXT:C284(KRL_ModifyRecord ;$2)
+C_LONGINT:C283(KRL_ModifyRecord ;$3)
+
+  //HL_SHOWHLISTPOPWINDOW
+C_REAL:C285(HL_ShowHListPopWindow ;$0)
+C_LONGINT:C283(HL_ShowHListPopWindow ;$1)
+C_TEXT:C284(HL_ShowHListPopWindow ;$2)
+C_LONGINT:C283(HL_ShowHListPopWindow ;$3)
+
+  //CU_OPCIONESIMPRESIONPLANILLAS
+C_BOOLEAN:C305(CU_OpcionesImpresionPlanillas ;$1)
+C_REAL:C285(CU_OpcionesImpresionPlanillas ;$2)
+
+  //PICT_SCALEPICTURE
+C_POINTER:C301(PICT_ScalePicture ;$1)
+C_LONGINT:C283(PICT_ScalePicture ;$2)
+C_LONGINT:C283(PICT_ScalePicture ;$3)
+
+  //MAIL_VERIFYADDRESS
+C_TEXT:C284(MAIL_VerifyAddress ;$0)
+C_TEXT:C284(MAIL_VerifyAddress ;$1)
+
+  //DHBWR_ALTFINDDIALOG
+C_BOOLEAN:C305(dhBWR_AltFindDialog ;$0)
+
+  //DHBWR_BROWSERMENUHANDLER
+C_BOOLEAN:C305(dhBWR_BrowserMenuHandler ;$0)
+C_LONGINT:C283(dhBWR_BrowserMenuHandler ;$1)
+C_LONGINT:C283(dhBWR_BrowserMenuHandler ;$2)
+
+  //DHBWR_SETWINDOWTITLE
+C_BOOLEAN:C305(dhBWR_SetWindowTitle ;$0)
+
+  //DHBWR_ONDELETERECORD
+C_LONGINT:C283(dhBWR_OnDeleteRecord ;$0)
+C_POINTER:C301(dhBWR_OnDeleteRecord ;$1)
+
+  //DHBWR_ONLOADFORMEVENT
+C_POINTER:C301(dhBWR_OnLoadFormEvent ;$1)
+
+  //DHDL_CHECKLICENCEKEY
+C_REAL:C285(dhDL_CheckLicenceKey ;$0)
+
+  //DHMNU_DELETESELECTION
+C_REAL:C285(dhMNU_DeleteSelection ;$0)
+
+  //DHQF_OPENFINDDIALOG
+C_BOOLEAN:C305(dhQF_OpenFindDialog ;$0)
+
+  //DHUG_PROCESSLOGIN
+C_LONGINT:C283(dhUG_ProcessLogin ;$0)
+C_TEXT:C284(dhUG_ProcessLogin ;$1)
+C_TEXT:C284(dhUG_ProcessLogin ;$2)
+
+  //XCR_FSAVE
+C_LONGINT:C283(XCR_fSave ;$0)
+
+  //XCR_FEXIST
+C_BOOLEAN:C305(XCR_fExist ;$0)
+
+  //AL_REGISTRALICENCIA
+C_REAL:C285(AL_RegistraLicencia ;$0)
+
+  //AL_FSAVE
+C_REAL:C285(AL_fSave ;$0)
+
+  //AL_SELECTFMLIA
+C_REAL:C285(AL_SelectFmlia ;$0)
+
+  //AL_CUENTAEVENTOSCONDUCTA
+C_REAL:C285(AL_CuentaEventosConducta ;$0)
+C_REAL:C285(AL_CuentaEventosConducta ;$1)
+C_REAL:C285(AL_CuentaEventosConducta ;$2)
+
+  //FM_FSAVE
+C_REAL:C285(FM_fSave ;$0)
+
+  //ST_QTE
+C_TEXT:C284(ST_Qte ;$0)
+C_TEXT:C284(ST_Qte ;$1)
+
+  //AL_CLEARCURRENTINFO
+C_REAL:C285(AL_ClearCurrentInfo ;$0)
+
+  //PST_CREATEFAMILY
+C_TEXT:C284(PST_CreateFamily ;$1)
+C_TEXT:C284(PST_CreateFamily ;$2)
+
+  //PST_SETCONNEXIONS
+C_LONGINT:C283(PST_SetConnexions ;$1)
+
+  //PST_UPDATEPARENTS
+C_TEXT:C284(PST_UpdateParents ;$1)
+
+  //NTA_GRADE2LONGTEXT
+C_TEXT:C284(NTA_Grade2LongText ;$0)
+C_TEXT:C284(NTA_Grade2LongText ;$1)
+
+  //AS_FEXIST
+C_BOOLEAN:C305(AS_fExist ;$0)
+
+  //AS_FSAVE
+C_LONGINT:C283(AS_fSave ;$0)
+
+
+  //AS_ESTADISTICAS
+C_POINTER:C301(AS_Estadisticas ;$1)
+
+  //AS_PAGECALENDAR
+C_DATE:C307(AS_PageCalendar ;$1)
+
+  //AS_FMNOSORDEN
+C_REAL:C285(AS_fmNosOrden ;$0)
+C_REAL:C285(AS_fmNosOrden ;$1)
+
+  //AS_PAGEOBS
+C_REAL:C285(AS_PageObs ;$1)
+
+  //BBL_DCSAVE
+C_LONGINT:C283(BBL_dcSave ;$0)
+
+  //BBLIO_CONVALEXDATE
+C_DATE:C307(BBLio_ConvAlexDate ;$0)
+C_TEXT:C284(BBLio_ConvAlexDate ;$1)
+
+  //BBLSS_FSAVE
+C_LONGINT:C283(BBLss_fSave ;$0)
+
+  //AL_HORASINASISTENCIA
+C_TEXT:C284(AL_HorasInasistencia ;$1)
+C_LONGINT:C283(AL_HorasInasistencia ;$2)
+C_POINTER:C301(AL_HorasInasistencia ;$3)
+C_POINTER:C301(AL_HorasInasistencia ;$4)
+C_POINTER:C301(AL_HorasInasistencia ;$5)
+
+  //CU_FRECUENCIACALIFICACIONES
+C_REAL:C285(CU_FrecuenciaCalificaciones ;$0)
+C_REAL:C285(CU_FrecuenciaCalificaciones ;$1)
+C_REAL:C285(CU_FrecuenciaCalificaciones ;$2)
+
+  //AL_ASIGNANOLISTA
+C_REAL:C285(AL_AsignaNoLista ;$0)
+
+  //CU_PGEVVALORES
+C_REAL:C285(CU_PgEvValores ;$1)
+
+  //CU_FSAVE
+C_LONGINT:C283(CU_fSave ;$0)
+
+  //CU_FSAVECDTA
+C_LONGINT:C283(CU_fSaveCdta ;$0)
+
+  //CU_FSAVEEVVAL
+C_LONGINT:C283(CU_fSaveEvVal ;$0)
+
+  //PRCLASSBYNAME
+C_POINTER:C301(prClassbyName ;$1)
+
+  //PRCLASSBYSEX
+C_POINTER:C301(prClassBySex ;$1)
+
+  //PRCLASSBYGRP
+C_POINTER:C301(prClassByGrp ;$1)
+
+  //PRCLASSBYNAC
+C_POINTER:C301(prClassByNac ;$1)
+
+  //PRCLASSBYLOC
+C_POINTER:C301(prClassbyLoc ;$1)
+
+  //CU_SINTESISANUALINASISTENCIAS
+C_POINTER:C301(CU_SintesisAnualInasistencias ;$1)
+
+  //CU_SINTESISANUALATRASOS
+C_POINTER:C301(CU_SintesisAnualAtrasos ;$1)
+C_BOOLEAN:C305(CU_SintesisAnualAtrasos ;$2)
+
+  //CU_SINTESISANUALNEGATIVAS
+C_POINTER:C301(CU_SintesisAnualNegativas ;$1)
+
+  //CU_SINTESISANUALPOSITIVAS
+C_POINTER:C301(CU_SintesisAnualPositivas ;$1)
+
+  //CU_SINTESISANUALCASTIGOS
+C_POINTER:C301(CU_SintesisAnualCastigos ;$1)
+C_BOOLEAN:C305(CU_SintesisAnualCastigos ;$2)
+
+  //CU_SINTESISANUALSUSPENSIONES
+C_POINTER:C301(CU_SintesisAnualSuspensiones ;$1)
+
+  //PF_FSAVE
+C_LONGINT:C283(PF_fSave ;$0)
+
+  //BBLDBU_SETINTERESTTEXTFIELD
+C_REAL:C285(BBLdbu_SetInterestTextField ;$1)
+
+  //PST_SETCANDIDATESAREA
+C_REAL:C285(PST_SetCandidatesArea ;$1)
+
+  //PST_SETINTERVIEWERSAREA
+C_REAL:C285(PST_SetInterViewersArea ;$1)
+
+  //PR_PLPGNCFORM
+C_TEXT:C284(pr_PLPGncForm ;$1)
+C_TEXT:C284(pr_PLPGncForm ;$2)
+C_TEXT:C284(pr_PLPGncForm ;$3)
+
+  //ALABS_LOADDATA
+C_TEXT:C284(ALabs_LoadData ;$1)
+
+  //MINEDUC_DATOSCURSOS
+C_REAL:C285(MINEDUC_DatosCursos ;$1)
+
+  //MINEDUC_SETCURSOSALPAREA
+C_REAL:C285(MINEDUC_SetCursosALParea ;$1)
+
+  //MINEDUC_GENERABOLETIN
+C_TEXT:C284(MINEDUC_GeneraBoletin ;$1)
+
+  //DIAG_MAIN
+C_LONGINT:C283(DIAG_Main ;$0)
+C_BOOLEAN:C305(DIAG_Main ;$1)
+
+  //AL_RECALCFINALSITUATION
+C_BLOB:C604(AL_RecalcFinalSituation ;$1)
+C_TEXT:C284(AL_RecalcFinalSituation ;$2)
+C_TEXT:C284(AL_RecalcFinalSituation ;$3)
+
+  //CAE_VERIFICADATOS
+C_LONGINT:C283(CAE_VerificaDatos ;$0)
+
+
+  //AL_PGPSY
+C_REAL:C285(AL_pgPsy ;$0)
+
+
+  //AL_PAGEFAMILY
+C_REAL:C285(AL_PageFamily ;$0)
+
+  //AL_PAGEEGRESO
+C_REAL:C285(AL_PageEgreso ;$0)
+
+  //ALRC_READNOTAS
+C_REAL:C285(ALrc_ReadNotas ;$0)
+C_REAL:C285(ALrc_ReadNotas ;$1)
+
+  //ALRC_EXTRACURRICULARES
+C_LONGINT:C283(ALrc_ExtraCurriculares ;$0)
+
+  //ALRC_EVALUACIONPERSONAL
+C_REAL:C285(ALrc_EvaluacionPersonal ;$0)
+
+  //ALRC_CONDUCTA
+C_REAL:C285(ALrc_Conducta ;$0)
+
+  //EVS_GETEVSTYLEREALVALUE
+C_REAL:C285(EVS_GetEvStyleREALValue ;$0)
+C_REAL:C285(EVS_GetEvStyleREALValue ;$1)
+C_TEXT:C284(EVS_GetEvStyleREALValue ;$2)
+
+  //DHBWR_SAVECHANGES
+C_BOOLEAN:C305(dhBWR_SaveChanges ;$0)
+C_POINTER:C301(dhBWR_SaveChanges ;$1)
+
+  //AS_UPDATESTYLESETTINGS
+C_REAL:C285(AS_UpdateStyleSettings ;$1)
+C_BOOLEAN:C305(AS_UpdateStyleSettings ;$2)
+
+  //NTA_SETCELLCLR
+C_REAL:C285(NTA_SetCellClr ;$1)
+C_REAL:C285(NTA_SetCellClr ;$2)
+C_REAL:C285(NTA_SetCellClr ;$3)
+C_REAL:C285(NTA_SetCellClr ;$4)
+
+  //AS_ESTADISTICASNOTAS
+C_POINTER:C301(AS_EstadisticasNotas ;$1)
+
+  //AS_FGRADESENTRYFILTER
+C_TEXT:C284(AS_fGradesEntryFilter ;$0)
+
+  //CU_CARGAPROFESORESFIRMANTES
+C_LONGINT:C283(CU_CargaProfesoresFirmantes ;$1)
+
+  //DHCLDR_SETDAYSTATUS
+C_REAL:C285(dhCldr_SetDayStatus ;$0)
+C_REAL:C285(dhCldr_SetDayStatus ;$1)
+C_DATE:C307(dhCldr_SetDayStatus ;$2)
+
+  //AL_TRANSFEREVALUATIONS
+C_REAL:C285(AL_TransferEvaluations ;$0)
+
+  //CAE_VERIFICAPROMEDIOSACTAS
+C_LONGINT:C283(CAE_VerificaPromediosActas ;$0)
+C_BOOLEAN:C305(CAE_VerificaPromediosActas ;$1)
+
+  //DHBWR_ONLOADINGRECORD
+C_POINTER:C301(dhBWR_OnLoadingRecord ;$1)
+
+  //DHBWR_ONACTIVATEFORMEVENT
+C_POINTER:C301(dhBWR_OnActivateFormEvent ;$1)
+
+  //DHBWR_ONUNLOADFORM
+C_POINTER:C301(dhBWR_OnUnloadForm ;$1)
+
+  //DHBWR_ONCLOSEBOXFORMEVENT
+C_BOOLEAN:C305(dhBWR_OnCloseBoxFormEvent ;$0)
+C_POINTER:C301(dhBWR_OnCloseBoxFormEvent ;$1)
+
+  //GETGRADO
+C_TEXT:C284(GetGrado ;$0)
+C_LONGINT:C283(GetGrado ;$1)
+C_TEXT:C284(GetGrado ;$2)
+C_TEXT:C284(GetGrado ;$3)
+
+  //NTA_NOTA_A_CONCEPTO
+C_TEXT:C284(NTA_Nota_a_Concepto ;$0)
+C_REAL:C285(NTA_Nota_a_Concepto ;$1)
+
+  //AL_LOADFAMILY
+C_BOOLEAN:C305(AL_LoadFamily ;$0)
+
+  //ALRC_LOADPERCENTGRADES
+C_REAL:C285(ALrc_LoadPercentGrades ;$1)
+C_LONGINT:C283(ALrc_LoadPercentGrades ;$2)
+C_REAL:C285(ALrc_LoadPercentGrades ;$3)
+C_BOOLEAN:C305(ALrc_LoadPercentGrades ;$4)
+
+  //BBLPAT_SHOWINFO
+C_REAL:C285(BBLpat_showInfo ;$1)
+
+  //ACTAS_INITVARS
+C_REAL:C285(ACTAS_InitVars ;$1)
+
+  //SNT_LOGACTION
+C_TEXT:C284(SNT_LogAction ;$1)
+C_TEXT:C284(SNT_LogAction ;$2)
+C_LONGINT:C283(SNT_LogAction ;$3)
+C_TEXT:C284(SNT_LogAction ;$4)
+
+  //CU_VERIFYPROMEDIOACTAS
+C_LONGINT:C283(CU_VerifyPromedioActas ;$0)
+C_BOOLEAN:C305(CU_VerifyPromedioActas ;$1)
+
+  //AL_LOADBROTHERS
+C_LONGINT:C283(AL_LoadBrothers ;$1)
+
+  //DBU_VERIFICAPROMEDIOSACTA
+C_LONGINT:C283(dbu_VerificaPromediosActa ;$0)
+C_BLOB:C604(dbu_VerificaPromediosActa ;$1)
+C_BOOLEAN:C305(dbu_VerificaPromediosActa ;$2)
+
+  //BBL_LINKUSERRECORD
+C_LONGINT:C283(BBL_LinkUserRecord ;$0)
+C_REAL:C285(BBL_LinkUserRecord ;$1)
+
+  //CUPR_EXPORTPLANILLA
+C_REAL:C285(CUpr_ExportPlanilla ;$1)
+
+  //CUPR_PLANILLAMULTIPAGINA
+C_TEXT:C284(CUpr_PlanillaMultiPagina ;$1)
+
+  //CUPR_PLANILLAONEPAGE
+C_TEXT:C284(CUpr_PlanillaOnePage ;$1)
+
+  //CUPR_PLANILLAPERIODO
+C_REAL:C285(CUpr_PlanillaPeriodo ;$1)
+C_TEXT:C284(CUpr_PlanillaPeriodo ;$2)
+
+  //EVS_GETEVSTYLELONGVALUE
+C_LONGINT:C283(EVS_GetEvStyleLONGValue ;$0)
+C_LONGINT:C283(EVS_GetEvStyleLONGValue ;$1)
+C_TEXT:C284(EVS_GetEvStyleLONGValue ;$2)
+
+  //PCSRUN_AS_ASIGNANUMEROSDELISTA
+C_REAL:C285(PCSrun_AS_AsignaNumerosDeLista ;$1)
+
+  //AFLSE_IMPORTEDT
+C_TEXT:C284(AFLSE_ImportEDT ;$1)
+C_TEXT:C284(AFLSE_ImportEDT ;$2)
+
+  //ALABS_MANAGER
+C_TEXT:C284(ALabs_Manager ;$1)
+
+  //ALPEX_FIRMAS
+C_BOOLEAN:C305(ALPex_firmas ;$0)
+C_LONGINT:C283(ALPex_firmas ;$1)
+C_LONGINT:C283(ALPex_firmas ;$2)
+
+  //ALRC_SECTIONAVERAGE
+C_TEXT:C284(ALrc_SectionAverage ;$0)
+C_POINTER:C301(ALrc_SectionAverage ;$1)
+C_LONGINT:C283(ALrc_SectionAverage ;$2)
+C_LONGINT:C283(ALrc_SectionAverage ;$3)
+
+  //ALSQ_HERMANOS
+C_TEXT:C284(ALsq_Hermanos ;$1)
+
+  //AL_DELETE
+C_LONGINT:C283(AL_Delete ;$0)
+
+  //AL_VERIFYPROMEDIOSACTAS
+C_LONGINT:C283(AL_VerifyPromediosActas ;$0)
+
+  //ASSEV_AVERAGE
+C_LONGINT:C283(ASsev_Average ;$1)
+
+  //ASSEV_GETGRADESFROMBLOB
+C_LONGINT:C283(ASsev_GetGradesFromBlob ;$0)
+C_LONGINT:C283(ASsev_GetGradesFromBlob ;$1)
+C_LONGINT:C283(ASsev_GetGradesFromBlob ;$2)
+C_BOOLEAN:C305(ASsev_GetGradesFromBlob ;$3)
+
+  //BBLPAT_FSAVE
+C_LONGINT:C283(BBLpat_fSave ;$0)
+
+  //BBLPREF_ALPCOMMANDSEXIT
+C_BOOLEAN:C305(BBLpref_ALPCommandsExit ;$0)
+C_LONGINT:C283(BBLpref_ALPCommandsExit ;$1)
+C_LONGINT:C283(BBLpref_ALPCommandsExit ;$2)
+
+  //BBLSS_DELETE
+C_LONGINT:C283(BBLss_Delete ;$0)
+
+  //BBLUS_DELETE
+C_LONGINT:C283(BBLus_Delete ;$0)
+
+  //BBLW_BUILDQUERYRESULTS
+C_REAL:C285(BBLw_BuildQueryResults ;$1)
+C_REAL:C285(BBLw_BuildQueryResults ;$2)
+
+  //BBLW_GETRESULTPAGE
+C_TEXT:C284(BBLw_GetResultPage ;$1)
+C_REAL:C285(BBLw_GetResultPage ;$2)
+
+  //BBLW_GETWORDS
+C_TEXT:C284(BBLw_getWords ;$1)
+C_REAL:C285(BBLw_getWords ;$2)
+
+  //BBLW_POSTRESERVATION
+C_TEXT:C284(BBLw_PostReservation ;$1)
+C_REAL:C285(BBLw_PostReservation ;$2)
+
+  //BBLW_RECENTS
+C_TEXT:C284(BBLw_recents ;$1)
+C_REAL:C285(BBLw_recents ;$2)
+
+  //BBLW_RESERVATION
+C_TEXT:C284(BBLw_reservation ;$1)
+C_REAL:C285(BBLw_reservation ;$2)
+
+  //BBLW_SEARCHITEMS
+C_TEXT:C284(BBLw_SearchItems ;$1)
+C_REAL:C285(BBLw_SearchItems ;$2)
+
+  //BBLW_SENDITEMDETAIL
+C_TEXT:C284(BBLw_SendItemDetail ;$1)
+C_REAL:C285(BBLw_SendItemDetail ;$2)
+
+  //BBLW_THESAURUS
+C_TEXT:C284(BBLw_Thesaurus ;$1)
+C_REAL:C285(BBLw_Thesaurus ;$2)
+
+  //CU_COMMENTSAREAEXIT
+C_BOOLEAN:C305(CU_CommentsAreaExit ;$0)
+C_LONGINT:C283(CU_CommentsAreaExit ;$1)
+C_LONGINT:C283(CU_CommentsAreaExit ;$2)
+
+  //CU_DELETE
+C_LONGINT:C283(CU_Delete ;$0)
+
+  //CU_TABLAMENSUALASISTENCIA
+C_REAL:C285(CU_TablaMensualAsistencia ;$1)
+
+  //DHBWR_ONSAVERECORD
+C_BOOLEAN:C305(dhBWR_OnSaveRecord ;$0)
+C_POINTER:C301(dhBWR_OnSaveRecord ;$1)
+
+  //FM_DELETE
+C_LONGINT:C283(fm_Delete ;$0)
+
+  //FQR_PRESTAMOS
+C_REAL:C285(FQR_Prestamos ;$0)
+
+  //IN_CREAPERIODOS
+C_LONGINT:C283(IN_CreaPeriodos ;$1)
+
+  //IOSTR_IMPORTSTUDENTDATA
+C_TEXT:C284(IOstr_ImportStudentData ;$1)
+C_LONGINT:C283(IOstr_ImportStudentData ;$2)
+
+  //IOSTR_IMPORTTEACHERSDATA
+C_TEXT:C284(IOstr_importTeachersData ;$1)
+
+  //IOSTR_LINKSTUDENTTOFAMILY
+C_REAL:C285(IOstr_linkStudentToFamily ;$1)
+
+  //IOSTR_PROCESSPARENTRECORD
+C_TEXT:C284(IOstr_ProcessParentRecord ;$1)
+
+  //MINEDUC_FILE1
+C_TEXT:C284(MINEDUC_File1 ;$1)
+
+  //MINEDUC_FILE10
+C_TEXT:C284(MINEDUC_File10 ;$1)
+
+  //MINEDUC_FILE2
+C_TEXT:C284(MINEDUC_File2 ;$1)
+
+  //MINEDUC_FILE3
+C_TEXT:C284(MINEDUC_File3 ;$1)
+
+  //MINEDUC_FILE4
+C_TEXT:C284(MINEDUC_File4 ;$1)
+
+  //MINEDUC_FILE5
+C_TEXT:C284(MINEDUC_File5 ;$1)
+
+  //MINEDUC_FILE6
+C_TEXT:C284(MINEDUC_File6 ;$1)
+
+  //MINEDUC_FILE7
+C_TEXT:C284(MINEDUC_File7 ;$1)
+
+  //MINEDUC_FILE8
+C_TEXT:C284(MINEDUC_File8 ;$1)
+
+  //MINEDUC_FILE9
+C_TEXT:C284(MINEDUC_File9 ;$1)
+
+  //MINEDUC_MATRICULAINICIAL
+C_TEXT:C284(MINEDUC_MatriculaInicial ;$1)
+C_TEXT:C284(MINEDUC_MatriculaInicial ;$2)
+
+  //BBL_DCDELETE
+C_LONGINT:C283(BBL_dcDelete ;$0)
+
+  //NTA_SETSINGLECELLCOLOR
+C_REAL:C285(NTA_SetSingleCellColor ;$1)
+
+  //PF_DELETE
+C_LONGINT:C283(PF_Delete ;$0)
+
+  //PP_FSAVE
+C_LONGINT:C283(PP_fSave ;$0)
+
+  //STD_ENTRYPSCELL
+C_LONGINT:C283(STD_EntryPScell ;$1)
+C_LONGINT:C283(STD_EntryPScell ;$2)
+
+  //STD_EXITPSCELL
+C_BOOLEAN:C305(STD_ExitPScell ;$0)
+C_LONGINT:C283(STD_ExitPScell ;$1)
+C_LONGINT:C283(STD_ExitPScell ;$2)
+
+  //TMT_MANAGER
+C_TEXT:C284(TMT_Manager ;$1)
+
+  //AL_ISNOTABSENT
+C_DATE:C307(AL_isNotAbsent ;$0)
+C_DATE:C307(AL_isNotAbsent ;$1)
+
+  //AL_ISNOTLATE
+C_DATE:C307(AL_isNotLate ;$0)
+C_DATE:C307(AL_isNotLate ;$1)
+
+  //XALCB_EN_ANOTACIONES
+C_BOOLEAN:C305(xALCB_EN_Anotaciones ;$0)
+C_LONGINT:C283(xALCB_EN_Anotaciones ;$1)
+C_LONGINT:C283(xALCB_EN_Anotaciones ;$2)
+
+  //XALCB_EN_ATRASOS
+C_LONGINT:C283(xALCB_EN_Atrasos ;$1)
+C_LONGINT:C283(xALCB_EN_Atrasos ;$2)
+
+  //XALCB_EN_CASTIGOS
+C_LONGINT:C283(xALCB_EN_Castigos ;$1)
+C_LONGINT:C283(xALCB_EN_Castigos ;$2)
+
+  //XALCB_EN_EVALADMISION
+C_LONGINT:C283(xALCB_EN_EvalAdmision ;$1)
+C_LONGINT:C283(xALCB_EN_EvalAdmision ;$2)
+C_LONGINT:C283(xALCB_EN_EvalAdmision ;$3)
+
+  //XALCB_EN_INASISTENCIAS
+C_LONGINT:C283(xALCB_EN_Inasistencias ;$1)
+C_LONGINT:C283(xALCB_EN_Inasistencias ;$2)
+
+  //XALCB_EN_NOTASSUBASIGNATURAS
+C_LONGINT:C283(xALCB_EN_NotasSubasignaturas ;$1)
+C_LONGINT:C283(xALCB_EN_NotasSubasignaturas ;$2)
+
+  //XALCB_EN_SUSPENSIONES
+C_LONGINT:C283(xALCB_EN_Suspensiones ;$1)
+C_LONGINT:C283(xALCB_EN_Suspensiones ;$2)
+
+  //XALCB_EN_TUTORIASPROFESORES
+C_LONGINT:C283(xALCB_EN_TutoriasProfesores ;$1)
+C_LONGINT:C283(xALCB_EN_TutoriasProfesores ;$2)
+
+  //XALCB_EX_ANOTACIONES
+C_BOOLEAN:C305(xALCB_EX_Anotaciones ;$0)
+C_LONGINT:C283(xALCB_EX_Anotaciones ;$1)
+C_LONGINT:C283(xALCB_EX_Anotaciones ;$2)
+
+  //XALCB_EX_ATRASOS
+C_BOOLEAN:C305(xALCB_EX_Atrasos ;$0)
+C_LONGINT:C283(xALCB_EX_Atrasos ;$1)
+C_LONGINT:C283(xALCB_EX_Atrasos ;$2)
+
+  //XALCB_EX_CASTIGOS
+C_BOOLEAN:C305(xALCB_EX_Castigos ;$0)
+C_LONGINT:C283(xALCB_EX_Castigos ;$1)
+C_LONGINT:C283(xALCB_EX_Castigos ;$2)
+
+  //XALCB_EX_CONEXIONES
+C_BOOLEAN:C305(xALCB_EX_Conexiones ;$0)
+C_LONGINT:C283(xALCB_EX_Conexiones ;$1)
+C_LONGINT:C283(xALCB_EX_Conexiones ;$2)
+
+  //XALCB_EX_CUMULOINASISTENCIAS
+C_BOOLEAN:C305(xALCB_EX_CumuloInasistencias ;$0)
+C_LONGINT:C283(xALCB_EX_CumuloInasistencias ;$1)
+C_LONGINT:C283(xALCB_EX_CumuloInasistencias ;$2)
+
+  //XALCB_EX_EVALADMISION
+C_BOOLEAN:C305(xALCB_EX_EvalAdmision ;$0)
+C_LONGINT:C283(xALCB_EX_EvalAdmision ;$1)
+C_LONGINT:C283(xALCB_EX_EvalAdmision ;$2)
+
+  //XALCB_EX_EVALUACIONACTIVIDADES
+C_BOOLEAN:C305(xALCB_EX_EvaluacionActividades ;$0)
+C_LONGINT:C283(xALCB_EX_EvaluacionActividades ;$1)
+C_LONGINT:C283(xALCB_EX_EvaluacionActividades ;$2)
+
+  //XALCB_EX_EVALUACIONVALORES
+C_BOOLEAN:C305(xALCB_EX_EvaluacionValores ;$0)
+C_LONGINT:C283(xALCB_EX_EvaluacionValores ;$1)
+C_LONGINT:C283(xALCB_EX_EvaluacionValores ;$2)
+
+  //XALCB_EX_INASISTENCIAS
+C_BOOLEAN:C305(xALCB_EX_Inasistencias ;$0)
+C_LONGINT:C283(xALCB_EX_Inasistencias ;$1)
+C_LONGINT:C283(xALCB_EX_Inasistencias ;$2)
+
+  //XALCB_EX_NOTASSUBASIGNATURAS
+C_BOOLEAN:C305(xALCB_EX_NotasSubasignaturas ;$0)
+C_LONGINT:C283(xALCB_EX_NotasSubasignaturas ;$1)
+C_LONGINT:C283(xALCB_EX_NotasSubasignaturas ;$2)
+
+  //XALCB_EX_SUSPENSIONES
+C_BOOLEAN:C305(xALCB_EX_Suspensiones ;$0)
+C_LONGINT:C283(xALCB_EX_Suspensiones ;$1)
+C_LONGINT:C283(xALCB_EX_Suspensiones ;$2)
+
+  //XALCB_EX_TUTORIASPROFESORES
+C_BOOLEAN:C305(xALCB_EX_TutoriasProfesores ;$0)
+C_LONGINT:C283(xALCB_EX_TutoriasProfesores ;$1)
+C_LONGINT:C283(xALCB_EX_TutoriasProfesores ;$2)
+
+  //XCR_DELETE
+C_LONGINT:C283(XCR_Delete ;$0)
+
+  //_CONVIERTEEVALUACION
+C_TEXT:C284(_ConvierteEvaluacion ;$0)
+C_REAL:C285(_ConvierteEvaluacion ;$1)
+C_REAL:C285(_ConvierteEvaluacion ;$2)
+C_REAL:C285(_ConvierteEvaluacion ;$3)
+C_POINTER:C301(_ConvierteEvaluacion ;$4)
+
+  //_EVALUACION_A_NOTA
+C_TEXT:C284(_Evaluacion_a_Nota ;$0)
+C_REAL:C285(_Evaluacion_a_Nota ;$1)
+C_REAL:C285(_Evaluacion_a_Nota ;$2)
+
+  //_EVALUACION_A_PORCENTAJES
+C_TEXT:C284(_Evaluacion_a_Porcentajes ;$0)
+C_REAL:C285(_Evaluacion_a_Porcentajes ;$1)
+C_REAL:C285(_Evaluacion_a_Porcentajes ;$2)
+
+  //_EVALUACION_A_PUNTOS
+C_TEXT:C284(_Evaluacion_a_Puntos ;$0)
+C_REAL:C285(_Evaluacion_a_Puntos ;$1)
+C_REAL:C285(_Evaluacion_a_Puntos ;$2)
+
+  //_EVALUACION_A_SIMBOLOS
+C_TEXT:C284(_Evaluacion_a_Simbolos ;$0)
+C_REAL:C285(_Evaluacion_a_Simbolos ;$1)
+C_REAL:C285(_Evaluacion_a_Simbolos ;$2)
+
+  //_DISTRIBUCIONNOTAS
+C_POINTER:C301(_DistribucionNotas ;$1)
+C_TEXT:C284(_DistribucionNotas ;$2)
+C_TEXT:C284(_DistribucionNotas ;$3)
+C_TEXT:C284(_DistribucionNotas ;$4)
+C_TEXT:C284(_DistribucionNotas ;$5)
+C_TEXT:C284(_DistribucionNotas ;$6)
+C_TEXT:C284(_DistribucionNotas ;$7)
+
+  //SRAL_CONDUCTAYASISTENCIA
+C_REAL:C285(SRal_ConductaYAsistencia ;$1)
+
+  //SRAL_FOTODELALUMNO
+C_PICTURE:C286(SRal_FotoDelAlumno ;$0)
+
+  //SRAL_NOTASASIGCONSOLIDABLES
+C_REAL:C285(SRal_NotasAsigConsolidables ;$0)
+C_REAL:C285(SRal_NotasAsigConsolidables ;$1)
+C_REAL:C285(SRal_NotasAsigConsolidables ;$2)
+C_REAL:C285(SRal_NotasAsigConsolidables ;$3)
+C_LONGINT:C283(SRal_NotasAsigConsolidables ;$4)
+
+  //SRAL_NOTASSUBASIGNATURAS
+C_TEXT:C284(SRal_NotasSubAsignaturas ;$1)
+C_LONGINT:C283(SRal_NotasSubAsignaturas ;$2)
+C_LONGINT:C283(SRal_NotasSubAsignaturas ;$3)
+
+  //SRAL_RESIZESUBEVALARRAYS
+C_REAL:C285(SRal_ResizeSubEvalArrays ;$1)
+
+  //SRFM_PADRES_A_VARIABLES
+C_REAL:C285(SRfm_Padres_a_variables ;$1)
+
+  //SRAS_CONTROLNOTAS
+C_LONGINT:C283(SRas_ControlNotas ;$0)
+
+  //SRAS_ESTADISTICAS
+C_REAL:C285(SRas_Estadisticas ;$1)
+
+  //SRAS_NOTASDELALUMNO
+C_TEXT:C284(SRas_NotasDelAlumno ;$1)
+C_LONGINT:C283(SRas_NotasDelAlumno ;$2)
+C_REAL:C285(SRas_NotasDelAlumno ;$3)
+
+  //SRAS_PLANILLADENOTAS
+C_TEXT:C284(SRas_PlanillaDeNotas ;$1)
+C_REAL:C285(SRas_PlanillaDeNotas ;$2)
+C_LONGINT:C283(SRas_PlanillaDeNotas ;$3)
+C_TEXT:C284(SRas_PlanillaDeNotas ;$4)
+C_POINTER:C301(SRas_PlanillaDeNotas ;$5)
+
+  //SRCUST_SETSTRUCTUREMENU
+C_BOOLEAN:C305(SRcust_SetStructureMenu ;$0)
+
+  //DHSR_SETVARIABLES
+C_BOOLEAN:C305(dhSR_SetVariables ;$0)
+
+  //FSTATISTIQUES3
+C_POINTER:C301(fStatistiques3 ;$1)
+
+  //PCALL_BWR_STARTBROWSER
+C_REAL:C285(pCALL_BWR_StartBrowser ;$1)
+
+  //DHBWR_MODULEINITIALISATIONS
+C_BOOLEAN:C305(dhBWR_ModuleInitialisations ;$0)
+C_TEXT:C284(dhBWR_ModuleInitialisations ;$1)
+
+  //CFG_STR_LOADCONFIGURATION
+C_TEXT:C284(CFG_STR_LoadConfiguration ;$1)
+
+  //USR_CHECKRIGHTS
+C_BOOLEAN:C305(USR_checkRights ;$0)
+C_TEXT:C284(USR_checkRights ;$1)
+C_POINTER:C301(USR_checkRights ;$2)
+C_LONGINT:C283(USR_checkRights ;$3)
+C_POINTER:C301(INIT_ClearObjects ;${1})
+
+  //CFG_SAVEDEVELOPPERCONFIG
+C_TEXT:C284(CFG_SaveDevelopperConfig ;$1)
+
+  //CFG_LOADDEVELOPPERCONFIG
+C_TEXT:C284(CFG_LoadDevelopperConfig ;$1)
+
+  //DHBWR_SETINTERFACEOBJECTS
+C_BOOLEAN:C305(dhBWR_SetInterfaceObjects ;$0)
+
+  //STRCAL_FIJAFERIADOLABORABLE
+C_DATE:C307(STRcal_FijaFeriadoLaborable ;$1)
+C_LONGINT:C283(STRcal_FijaFeriadoLaborable ;$2)
+
+  //DBU_CALCULASITUACIONFINAL
+C_LONGINT:C283(dbu_CalculaSituacionFinal ;$0)
+C_BLOB:C604(dbu_CalculaSituacionFinal ;$1)
+C_BOOLEAN:C305(dbu_CalculaSituacionFinal ;$2)
+
+  //WSSEND_FAMILYREFS
+C_TEXT:C284(WSsend_FamilyRefs ;$1)
+C_TEXT:C284(WSsend_FamilyRefs ;$2)
+C_TEXT:C284(WSsend_FamilyRefs ;$3)
+C_TEXT:C284(WSsend_FamilyRefs ;$4)
+
+  //WSSEND_FAMILYDATA
+C_TEXT:C284(WSsend_FamilyData ;$1)
+C_TEXT:C284(WSsend_FamilyData ;$2)
+C_TEXT:C284(WSsend_FamilyData ;$3)
+C_LONGINT:C283(WSsend_FamilyData ;$4)
+
+  //XALCB_XSBM_DATECALCULATION
+C_BOOLEAN:C305(xALCB_XSbm_DateCalculation ;$0)
+C_LONGINT:C283(xALCB_XSbm_DateCalculation ;$1)
+C_LONGINT:C283(xALCB_XSbm_DateCalculation ;$2)
+C_LONGINT:C283(xALCB_XSbm_DateCalculation ;$3)
+C_POINTER:C301(xALCB_XSbm_DateCalculation ;$4)
+C_LONGINT:C283(xALCB_XSbm_DateCalculation ;$5)
+C_LONGINT:C283(xALCB_XSbm_DateCalculation ;$6)
+
+  //TBL_CHANGEVALUE
+C_REAL:C285(TBL_ChangeValue ;$0)
+C_TEXT:C284(TBL_ChangeValue ;$1)
+
+  //HL_GETSUBLISTITEMS
+C_LONGINT:C283(HL_getSublistItems ;$0)
+C_LONGINT:C283(HL_getSublistItems ;$1)
+C_LONGINT:C283(HL_getSublistItems ;$2)
+
+  //DT_MONTHS2AGELONGSTRING
+C_TEXT:C284(DT_Months2AgeLongString ;$0)
+C_LONGINT:C283(DT_Months2AgeLongString ;$1)
+
+  //0XDEV_DELETEDUPLICATES
+C_POINTER:C301(0xDev_DeleteDuplicates ;$1)
+
+  //HL_LIST2ARRAY
+C_TEXT:C284(HL_List2Array ;$1)
+C_POINTER:C301(HL_List2Array ;$2)
+
+  //TBL_GETVALUE
+C_TEXT:C284(TBL_GetValue ;$0)
+C_POINTER:C301(TBL_GetValue ;$1)
+C_POINTER:C301(TBL_GetValue ;$2)
+C_TEXT:C284(TBL_GetValue ;$3)
+
+  //SYS_CLEANCROSSPLATFORMFILENAME
+C_TEXT:C284(SYS_cleanCrossPlatformFileName ;$0)
+C_TEXT:C284(SYS_cleanCrossPlatformFileName ;$1)
+
+  //KRL_DELETEORPHANS
+C_POINTER:C301(KRL_DeleteOrphans ;$1)
+C_POINTER:C301(KRL_DeleteOrphans ;$2)
+
+  //ST_CLEARUNNECESSARYCR
+C_TEXT:C284(ST_clearUnNecessaryCR ;$0)
+C_TEXT:C284(ST_clearUnNecessaryCR ;$1)
+
+  //DT_RETURNAGE
+C_TEXT:C284(DT_ReturnAge ;$0)
+C_DATE:C307(DT_ReturnAge ;$1)
+C_DATE:C307(DT_ReturnAge ;$2)
+
+  //XDOC_ATTACHDOCUMENT
+C_REAL:C285(XDOC_AttachDocument ;$1)
+C_REAL:C285(XDOC_AttachDocument ;$2)
+C_TEXT:C284(XDOC_AttachDocument ;$3)
+
+  //HL_LISTITEMPARENT
+C_TEXT:C284(HL_listItemParent ;$0)
+C_REAL:C285(HL_listItemParent ;$1)
+
+  //DT_RETURNAGEINMONTHS
+C_LONGINT:C283(DT_ReturnAgeInMonths ;$0)
+C_DATE:C307(DT_ReturnAgeInMonths ;$1)
+C_DATE:C307(DT_ReturnAgeInMonths ;$2)
+
+  //ST_COLUMNIZE
+C_TEXT:C284(ST_Columnize ;$0)
+C_TEXT:C284(ST_Columnize ;$1)
+C_REAL:C285(ST_Columnize ;$2)
+
+
+  //HL_SELECTLISTITEMBYLABEL
+C_LONGINT:C283(HL_SelectListItemByLabel ;$0)
+C_LONGINT:C283(HL_SelectListItemByLabel ;$1)
+C_TEXT:C284(HL_SelectListItemByLabel ;$2)
+
+  //DHBWR_HANDLEPROYECTIONS
+C_LONGINT:C283(dhBWR_HandleProyections ;$1)
+
+  //USR_ISGROUPMEMBER_BY_GRPNAME
+C_BOOLEAN:C305(USR_IsGroupMember_by_GrpName ;$0)
+C_TEXT:C284(USR_IsGroupMember_by_GrpName ;$1)
+C_LONGINT:C283(USR_IsGroupMember_by_GrpName ;$2)
+
+  //XDOC_OPENATTACHEDDOC
+C_REAL:C285(XDOC_OpenAttachedDoc ;$1)
+C_BOOLEAN:C305(XDOC_OpenAttachedDoc ;$2)
+
+  //TBL_SHOWCHOICELIST
+C_REAL:C285(TBL_ShowChoiceList ;$1)
+C_TEXT:C284(TBL_ShowChoiceList ;$2)
+C_REAL:C285(TBL_ShowChoiceList ;$3)
+C_POINTER:C301(TBL_ShowChoiceList ;$4)
+C_BOOLEAN:C305(TBL_ShowChoiceList ;$5)
+
+  //HTML_BUILDHREFTAG
+C_TEXT:C284(HTML_BuildHRefTag ;$0)
+C_TEXT:C284(HTML_BuildHRefTag ;$1)
+C_TEXT:C284(HTML_BuildHRefTag ;$2)
+C_REAL:C285(HTML_BuildHRefTag ;$3)
+C_TEXT:C284(HTML_BuildHRefTag ;$4)
+C_TEXT:C284(HTML_BuildHRefTag ;$5)
+C_TEXT:C284(HTML_BuildHRefTag ;$6)
+C_TEXT:C284(HTML_BuildHRefTag ;$7)
+
+  //ST_COUNTLINES
+C_LONGINT:C283(ST_countlines ;$0)
+C_TEXT:C284(ST_countlines ;$1)
+
+  //CLSV_CLEARCLIENTPROCESS
+C_REAL:C285(CLSV_ClearClientProcess ;$1)
+C_REAL:C285(CLSV_ClearClientProcess ;$2)
+
+  //HTML_MSEOVER
+C_TEXT:C284(HTML_mseOver ;$0)
+C_TEXT:C284(HTML_mseOver ;$1)
+
+  //KRL_SELECTORPHANRECORDS
+C_POINTER:C301(KRL_SelectOrphanRecords ;$1)
+C_POINTER:C301(KRL_SelectOrphanRecords ;$2)
+
+  //HTML_STYLE
+C_TEXT:C284(HTML_Style ;$0)
+C_TEXT:C284(HTML_Style ;$1)
+C_LONGINT:C283(HTML_Style ;$2)
+C_TEXT:C284(HTML_Style ;$3)
+C_TEXT:C284(HTML_Style ;$4)
+C_TEXT:C284(HTML_Style ;$5)
+
+  //UFLD_CREATEFIELDS
+C_POINTER:C301(UFLD_CreateFields ;$1)
+C_POINTER:C301(UFLD_CreateFields ;$2)
+C_POINTER:C301(UFLD_CreateFields ;$3)
+
+  //0XDEV_SELECTTABLE
+C_LONGINT:C283(0xdev_SelectTable ;$0)
+
+  //ST_EXACTPOS
+C_LONGINT:C283(ST_ExactPos ;$0)
+C_TEXT:C284(ST_ExactPos ;$1)
+C_TEXT:C284(ST_ExactPos ;$2)
+C_LONGINT:C283(ST_ExactPos ;$3)
+
+  //XFGETFILENAME
+C_TEXT:C284(xfGetFileName ;$0)
+C_TEXT:C284(xfGetFileName ;$1)
+C_TEXT:C284(xfGetFileName ;$2)
+
+  //USR_SETGROUPPROPERTIES
+C_LONGINT:C283(USR_SetGroupProperties ;$0)
+C_LONGINT:C283(USR_SetGroupProperties ;$1)
+C_TEXT:C284(USR_SetGroupProperties ;$2)
+C_LONGINT:C283(USR_SetGroupProperties ;$3)
+C_POINTER:C301(USR_SetGroupProperties ;$4)
+
+  //IO_EXPORTDATABASE
+C_BOOLEAN:C305(IO_ExportDatabase ;$1)
+C_TEXT:C284(IO_ExportDatabase ;$2)
+
+  //ST_FINDCHAR
+C_LONGINT:C283(ST_FindChar ;$0)
+C_TEXT:C284(ST_FindChar ;$1)
+C_TEXT:C284(ST_FindChar ;$2)
+
+  //ST_FORMAT
+C_TEXT:C284(ST_Format ;$0)
+C_POINTER:C301(ST_Format ;$1)
+C_POINTER:C301(ST_Format ;$2)
+C_POINTER:C301(ST_Format ;$3)
+
+  //KRL_DELETEDUPLICATES
+C_POINTER:C301(KRL_DeleteDuplicates ;$1)
+
+  //BWR_DISPATCHBUTTONACTIONS
+C_POINTER:C301(BWR_DispatchButtonActions ;$1)
+
+  //IO_EXPORTRECORDSFROMONETABLE
+C_POINTER:C301(IO_ExportRecordsFromOneTable ;$1)
+C_TEXT:C284(IO_ExportRecordsFromOneTable ;$2)
+C_TEXT:C284(IO_ExportRecordsFromOneTable ;$3)
+
+
+  //SR_RESIZETEXTOBJECT
+C_TEXT:C284(SR_ResizeTextObject ;$0)
+C_TEXT:C284(SR_ResizeTextObject ;$1)
+C_LONGINT:C283(SR_ResizeTextObject ;$2)
+
+  //UFLD_GETUSERFIELDVALUE
+C_TEXT:C284(UFLD_GetUserFieldValue ;$0)
+C_TEXT:C284(UFLD_GetUserFieldValue ;$1)
+
+  //IO_EXPORTRECORDSFROMTABLES
+C_POINTER:C301(IO_ExportRecordsFromTables ;$1)
+C_TEXT:C284(IO_ExportRecordsFromTables ;$2)
+C_BOOLEAN:C305(IO_ExportRecordsFromTables ;$3)
+
+  //BWR_INPUTFORMBUTTONSHANDLER
+C_POINTER:C301(BWR_InputFormButtonsHandler ;$1)
+C_LONGINT:C283(BWR_InputFormButtonsHandler ;$2)
+C_LONGINT:C283(BWR_InputFormButtonsHandler ;$3)
+
+  //ST_STRIPPRECEED
+C_TEXT:C284(ST_StripPreceed ;$0)
+C_TEXT:C284(ST_StripPreceed ;$1)
+C_TEXT:C284(ST_StripPreceed ;$2)
+
+
+  //UFLD_LOADFIELDS
+C_POINTER:C301(UFLD_LoadFields ;$1)
+C_POINTER:C301(UFLD_LoadFields ;$2)
+C_POINTER:C301(UFLD_LoadFields ;$3)
+C_POINTER:C301(UFLD_LoadFields ;$4)
+
+  //KRL_LOADINDEX
+C_POINTER:C301(KRL_LoadIndex ;$1)
+
+  //ST_FORMATEDNUM2STRING
+C_TEXT:C284(ST_FormatedNum2String ;$0)
+C_REAL:C285(ST_FormatedNum2String ;$1)
+C_TEXT:C284(ST_FormatedNum2String ;$2)
+
+  //USR_ADDGROUPMEMBERSTOGROUP
+C_REAL:C285(USR_AddGroupMembersToGroup ;$1)
+C_REAL:C285(USR_AddGroupMembersToGroup ;$2)
+
+  //BWR_LOADFORMREPORTSARRAYS
+C_POINTER:C301(BWR_LoadFormReportsArrays ;$1)
+
+  //UFLD_LOADFILETPLT
+C_POINTER:C301(UFLD_LoadFileTplt ;$1)
+C_TEXT:C284(UFLD_LoadFileTplt ;$2)
+
+  //IO_IMPORTRECORDS2ONETABLE
+C_POINTER:C301(IO_ImportRecords2OneTable ;$1)
+C_TEXT:C284(IO_ImportRecords2OneTable ;$2)
+C_TEXT:C284(IO_ImportRecords2OneTable ;$3)
+
+  //BWR_MODIFYRECORD
+C_POINTER:C301(BWR_ModifyRecord ;$1)
+C_TEXT:C284(BWR_ModifyRecord ;$2)
+C_LONGINT:C283(BWR_ModifyRecord ;$3)
+
+  //USR_ALERT_USERHASNORIGHTS
+C_REAL:C285(USR_ALERT_UserHasNoRights ;$1)
+C_REAL:C285(USR_ALERT_UserHasNoRights ;$2)
+
+  //ST_FORMATPHONESTRING
+C_TEXT:C284(ST_FormatPhoneString ;$0)
+C_TEXT:C284(ST_FormatPhoneString ;$1)
+
+  //BWR_ONACTIVATEFORMEVENT
+C_POINTER:C301(BWR_OnActivateFormEvent ;$1)
+
+  //IO_IMPORTRECORDSTOTABLE
+C_POINTER:C301(IO_ImportRecordsToTable ;$1)
+
+  //IT_CLAIRVOYANCE
+C_POINTER:C301(IT_Clairvoyance ;$1)
+C_POINTER:C301(IT_Clairvoyance ;$2)
+C_TEXT:C284(IT_Clairvoyance ;$3)
+C_BOOLEAN:C305(IT_Clairvoyance ;$4)
+C_POINTER:C301(IT_Clairvoyance ;$5)
+C_REAL:C285(IT_Clairvoyance ;$6)
+
+
+  //SR_SETCOLOR
+C_TEXT:C284(SR_SetColor ;$1)
+C_TEXT:C284(SR_SetColor ;$2)
+
+  //BWR_ONSAVERECORD
+C_REAL:C285(BWR_OnSaveRecord ;$0)
+C_POINTER:C301(BWR_OnSaveRecord ;$1)
+
+  //KRL_RECORDEXISTS
+C_BOOLEAN:C305(KRL_RecordExists ;$0)
+C_POINTER:C301(KRL_RecordExists ;$1)
+
+  //IT_CLAIRVOYANCEEXEC
+C_POINTER:C301(IT_ClairvoyanceExec ;$1)
+C_TEXT:C284(IT_ClairvoyanceExec ;$2)
+C_TEXT:C284(IT_ClairvoyanceExec ;$3)
+
+  //ST_ISWORDNUMBER
+C_LONGINT:C283(ST_IsWordNumber ;$0)
+C_TEXT:C284(ST_IsWordNumber ;$1)
+C_TEXT:C284(ST_IsWordNumber ;$2)
+C_LONGINT:C283(ST_IsWordNumber ;$3)
+
+  //SR_SETOBJECTFONTSIZEFROMSTRING
+C_TEXT:C284(SR_SetObjectFontSizeFromString ;$1)
+
+  //IT_CLAIRVOYANCEONFIELDS2
+C_POINTER:C301(IT_clairvoyanceOnFields2 ;$1)
+C_POINTER:C301(IT_clairvoyanceOnFields2 ;$2)
+C_BOOLEAN:C305(IT_clairvoyanceOnFields2 ;$3)
+
+  //ST_LEFTWORDS
+C_TEXT:C284(ST_LeftWords ;$0)
+C_TEXT:C284(ST_LeftWords ;$1)
+C_LONGINT:C283(ST_LeftWords ;$2)
+C_TEXT:C284(ST_LeftWords ;$3)
+
+  //SR_SETOBJECTFONTSTYLEFROMSTRING
+C_TEXT:C284(SR_SetObjectFontStyleFromString ;$1)
+
+  //VS_DEFAULTTITLES
+C_TEXT:C284(VS_DefaultTitles ;$1)
+
+  //CTRY_CL_VERIFRUT
+C_TEXT:C284(CTRY_CL_VerifRUT ;$0)
+C_TEXT:C284(CTRY_CL_VerifRUT ;$1)
+C_BOOLEAN:C305(CTRY_CL_VerifRUT ;$2)
+
+  //ST_NTILDE2SPECIAL
+C_TEXT:C284(ST_nTilde2Special ;$0)
+C_TEXT:C284(ST_nTilde2Special ;$1)
+
+  //DT_DATE2SPANISHSTRING
+C_TEXT:C284(DT_Date2SpanishString ;$0)
+C_DATE:C307(DT_Date2SpanishString ;$1)
+
+
+  //IT_HANDLEPOPUP
+C_TEXT:C284(IT_HandlePopup ;$0)
+C_TEXT:C284(IT_HandlePopup ;$1)
+C_POINTER:C301(IT_HandlePopup ;$2)
+C_TEXT:C284(IT_HandlePopup ;$3)
+C_POINTER:C301(IT_HandlePopup ;$4)
+C_BOOLEAN:C305(IT_HandlePopup ;$5)
+C_POINTER:C301(SF_Array2SubTable ;${-1})
+C_POINTER:C301(SF_Array2SubTable ;$1)
+C_POINTER:C301(SF_Array2SubTable ;$2)
+C_POINTER:C301(SF_Array2SubTable ;$3)
+C_POINTER:C301(SF_Array2SubTable ;$4)
+C_POINTER:C301(SF_Array2SubTable ;$5)
+C_POINTER:C301(SF_Array2SubTable ;$6)
+C_POINTER:C301(SF_Array2SubTable ;$7)
+C_POINTER:C301(SF_Array2SubTable ;$8)
+C_POINTER:C301(SF_Array2SubTable ;$9)
+
+  //DT_ENDOFMONTH
+C_DATE:C307(DT_EndOfMonth ;$0)
+C_DATE:C307(DT_EndOfMonth ;$1)
+
+  //ST_PARSENAMES
+C_TEXT:C284(ST_ParseNames ;$0)
+C_TEXT:C284(ST_ParseNames ;$1)
+
+  //SF_CLEARSUBTABLE
+C_POINTER:C301(SF_ClearSubtable ;$1)
+
+  //VS_GETFIELDDEFAULTFORMAT
+C_TEXT:C284(VS_GetFieldDefaultFormat ;$0)
+C_LONGINT:C283(VS_GetFieldDefaultFormat ;$1)
+C_LONGINT:C283(VS_GetFieldDefaultFormat ;$2)
+
+
+  //ST_RIGTHCHARS
+C_TEXT:C284(ST_RigthChars ;$0)
+C_TEXT:C284(ST_RigthChars ;$1)
+C_LONGINT:C283(ST_RigthChars ;$2)
+
+  //SYS_TIMESTAMP2DATE
+C_DATE:C307(SYS_TimeStamp2Date ;$0)
+C_LONGINT:C283(SYS_TimeStamp2Date ;$1)
+
+  //IT_HANDLETEXTDRAGANDDROP
+C_REAL:C285(IT_HandleTextDragAndDrop ;$0)
+C_POINTER:C301(IT_HandleTextDragAndDrop ;$1)
+
+  //ST_RIGTHWORDS
+C_TEXT:C284(ST_RigthWords ;$0)
+C_TEXT:C284(ST_RigthWords ;$1)
+C_LONGINT:C283(ST_RigthWords ;$2)
+C_TEXT:C284(ST_RigthWords ;$3)
+
+  //BWR_GETPANELSETTINGS
+C_LONGINT:C283(BWR_GetPanelSettings ;$1)
+C_LONGINT:C283(BWR_GetPanelSettings ;$2)
+
+  //XDOC_SAVEATTACHEDDOCUMENT
+C_REAL:C285(XDOC_SaveAttachedDocument ;$1)
+
+  //MATH_RANDOMLONGINT
+C_LONGINT:C283(MATH_RandomLongint ;$0)
+C_LONGINT:C283(MATH_RandomLongint ;$1)
+C_LONGINT:C283(MATH_RandomLongint ;$2)
+
+  //USR_GETUSERNAME
+C_TEXT:C284(USR_GetUserName ;$0)
+C_LONGINT:C283(USR_GetUserName ;$1)
+C_LONGINT:C283(USR_GetUserName ;$2)
+
+  //ST_UPPERCASE
+C_TEXT:C284(ST_Uppercase ;$0)
+C_TEXT:C284(ST_Uppercase ;$1)
+
+  //XFGETFILECDATE
+C_DATE:C307(xfGetFileCDate ;$0)
+C_TEXT:C284(xfGetFileCDate ;$1)
+
+  //SR_FIJAPROPIEDAD
+C_BOOLEAN:C305(SR_FijaPropiedad ;$1)
+C_TEXT:C284(SR_FijaPropiedad ;$2)
+C_TEXT:C284(SR_FijaPropiedad ;$3)
+C_BOOLEAN:C305(SR_FijaPropiedad ;$4)
+C_TEXT:C284(SR_FijaPropiedad ;$5)
+C_TEXT:C284(SR_FijaPropiedad ;$6)
+C_BOOLEAN:C305(SR_FijaPropiedad ;$7)
+C_TEXT:C284(SR_FijaPropiedad ;$8)
+C_TEXT:C284(SR_FijaPropiedad ;$9)
+C_BOOLEAN:C305(SR_FijaPropiedad ;$10)
+C_TEXT:C284(SR_FijaPropiedad ;$11)
+C_TEXT:C284(SR_FijaPropiedad ;$12)
+C_BOOLEAN:C305(SR_FijaPropiedad ;$13)
+C_TEXT:C284(SR_FijaPropiedad ;$14)
+C_TEXT:C284(SR_FijaPropiedad ;$15)
+C_BOOLEAN:C305(SR_FijaPropiedad ;$16)
+C_TEXT:C284(SR_FijaPropiedad ;$17)
+C_TEXT:C284(SR_FijaPropiedad ;$18)
+C_BOOLEAN:C305(SR_FijaPropiedad ;$19)
+C_TEXT:C284(SR_FijaPropiedad ;$20)
+C_TEXT:C284(SR_FijaPropiedad ;$21)
+C_BOOLEAN:C305(SR_FijaPropiedad ;$22)
+C_TEXT:C284(SR_FijaPropiedad ;$23)
+C_TEXT:C284(SR_FijaPropiedad ;$24)
+
+
+  //XALP_CB_XSAUTOFORMAT
+C_BOOLEAN:C305(xALP_CB_XSAutoFormat ;$0)
+C_LONGINT:C283(xALP_CB_XSAutoFormat ;$1)
+C_LONGINT:C283(xALP_CB_XSAutoFormat ;$2)
+
+  //DT_POPCALENDAR
+C_DATE:C307(DT_PopCalendar ;$0)
+
+  //USR_GETUSERRIGTHS
+C_BOOLEAN:C305(USR_getUserRigths ;$0)
+C_LONGINT:C283(HL_ClearList ;${1})
+
+  //BWR_ONLOADFORMEVENT
+C_POINTER:C301(BWR_OnLoadFormEvent ;$1)
+
+  //SR_FIJAVALOROBJETOTEXTO
+C_BOOLEAN:C305(SR_FijaValorObjetoTexto ;$1)
+C_TEXT:C284(SR_FijaValorObjetoTexto ;$2)
+C_BOOLEAN:C305(SR_FijaValorObjetoTexto ;$3)
+C_TEXT:C284(SR_FijaValorObjetoTexto ;$4)
+C_BOOLEAN:C305(SR_FijaValorObjetoTexto ;$5)
+C_TEXT:C284(SR_FijaValorObjetoTexto ;$6)
+C_BOOLEAN:C305(SR_FijaValorObjetoTexto ;$7)
+C_TEXT:C284(SR_FijaValorObjetoTexto ;$8)
+C_BOOLEAN:C305(SR_FijaValorObjetoTexto ;$9)
+C_TEXT:C284(SR_FijaValorObjetoTexto ;$10)
+C_BOOLEAN:C305(SR_FijaValorObjetoTexto ;$11)
+C_TEXT:C284(SR_FijaValorObjetoTexto ;$12)
+C_BOOLEAN:C305(SR_FijaValorObjetoTexto ;$13)
+C_TEXT:C284(SR_FijaValorObjetoTexto ;$14)
+C_BOOLEAN:C305(SR_FijaValorObjetoTexto ;$15)
+C_TEXT:C284(SR_FijaValorObjetoTexto ;$16)
+
+  //DT_RETURNAGELONGSTRING
+C_TEXT:C284(DT_ReturnAgeLongString ;$0)
+C_DATE:C307(DT_ReturnAgeLongString ;$1)
+C_DATE:C307(DT_ReturnAgeLongString ;$2)
+
+  //USR_ISGROUPMEMBER_BY_GRPID
+C_BOOLEAN:C305(USR_IsGroupMember_by_GrpID ;$0)
+C_LONGINT:C283(USR_IsGroupMember_by_GrpID ;$1)
+C_LONGINT:C283(USR_IsGroupMember_by_GrpID ;$2)
+
+  //ST_CONSTRAINFNAMETOFIXEDLENGTH
+C_TEXT:C284(ST_ConstrainFNameToFixedLength ;$0)
+C_TEXT:C284(ST_ConstrainFNameToFixedLength ;$1)
+C_REAL:C285(ST_ConstrainFNameToFixedLength ;$2)
+
+  //DT_SETCALENDAR
+C_DATE:C307(DT_SetCalendar ;$1)
+C_DATE:C307(DT_SetCalendar ;$2)
+
+  //CAL_SETDAYSTATUS
+C_REAL:C285(CAL_SetDayStatus ;$1)
+C_BOOLEAN:C305(CAL_SetDayStatus ;$2)
+
+  //WDW_ADJUSTWINDOWSIZE
+C_LONGINT:C283(WDW_AdjustWindowSize ;$1)
+C_LONGINT:C283(WDW_AdjustWindowSize ;$2)
+C_LONGINT:C283(WDW_AdjustWindowSize ;$3)
+
+  //SYS_GETDATAPATH
+C_TEXT:C284(SYS_GetDataPath ;$0)
+
+  //BWR_SEARCHRECORDS
+C_REAL:C285(BWR_SearchRecords ;$0)
+C_POINTER:C301(BWR_SearchRecords ;$1)
+
+  //DT_STRDATEISOK
+C_TEXT:C284(DT_StrDateIsOK ;$0)
+C_TEXT:C284(DT_StrDateIsOK ;$1)
+C_BOOLEAN:C305(DT_StrDateIsOK ;$2)
+
+  //USR_REMOVEGROUPFROMGROUP
+C_REAL:C285(USR_RemoveGroupFromGroup ;$1)
+C_REAL:C285(USR_RemoveGroupFromGroup ;$2)
+
+  //SYS_GETFILECSECS
+C_LONGINT:C283(SYS_GetFileCSecs ;$0)
+C_TEXT:C284(SYS_GetFileCSecs ;$1)
+C_LONGINT:C283(SYS_GetFileCSecs ;$2)
+
+  //WDW_ADJUSTWINHEIGHT2FORMHEIGHT
+C_POINTER:C301(WDW_AdjustWinHeight2FormHeight ;$1)
+C_TEXT:C284(WDW_AdjustWinHeight2FormHeight ;$2)
+C_REAL:C285(WDW_AdjustWinHeight2FormHeight ;$3)
+
+  //USR_REMOVEUSERFROMGROUP
+C_REAL:C285(USR_RemoveUserFromGroup ;$0)
+C_REAL:C285(USR_RemoveUserFromGroup ;$1)
+C_REAL:C285(USR_RemoveUserFromGroup ;$2)
+
+  //SR_FORMATORUT
+C_TEXT:C284(SR_FormatoRUT ;$0)
+C_TEXT:C284(SR_FormatoRUT ;$1)
+
+  //SR_GETNUMBEROFPAGES
+C_REAL:C285(SR_GetNumberOfPages ;$0)
+
+  //XFGETFILECTIME
+C_LONGINT:C283(xfGetFileCTime ;$0)
+C_TEXT:C284(xfGetFileCTime ;$1)
+
+  //KRL_GETFIELDPOINTER
+C_POINTER:C301(KRL_GetFieldPointer ;$0)
+C_POINTER:C301(KRL_GetFieldPointer ;$1)
+C_TEXT:C284(KRL_GetFieldPointer ;$2)
+
+  //KRL_LOCKEDRECORDINFOS
+C_POINTER:C301(KRL_LockedRecordInfos ;$1)
+
+  //BWR_SETINPUTFORMBUTTONS
+C_POINTER:C301(BWR_SetInputFormButtons ;$1)
+C_LONGINT:C283(BWR_SetInputFormButtons ;$2)
+C_POINTER:C301(BWR_SetInputFormButtons ;$3)
+C_POINTER:C301(BWR_SetInputFormButtons ;$4)
+
+  //SYS_GETFILESIZE
+C_REAL:C285(SYS_GetFileSize ;$0)
+C_TEXT:C284(SYS_GetFileSize ;$1)
+
+  //UFLD_DELETE
+C_TEXT:C284(UFLD_Delete ;$1)
+
+  //KRL_GOTORECORD
+C_BOOLEAN:C305(KRL_GotoRecord ;$0)
+C_POINTER:C301(KRL_GotoRecord ;$1)
+C_LONGINT:C283(KRL_GotoRecord ;$2)
+C_BOOLEAN:C305(KRL_GotoRecord ;$3)
+C_POINTER:C301(KRL_GotoRecord ;$4)
+
+  //XFGETFILETYPE
+C_TEXT:C284(xfGetFileType ;$0)
+C_TEXT:C284(xfGetFileType ;$1)
+
+  //CTRY_CL_GETSHORTNAME
+C_TEXT:C284(CTRY_CL_GetShortName ;$0)
+C_TEXT:C284(CTRY_CL_GetShortName ;$1)
+C_TEXT:C284(CTRY_CL_GetShortName ;$2)
+C_TEXT:C284(CTRY_CL_GetShortName ;$3)
+
+  //EM_HANDLEERROR
+C_TEXT:C284(EM_HandleError ;$1)
+C_TEXT:C284(EM_HandleError ;$2)
+C_TEXT:C284(EM_HandleError ;$3)
+C_TEXT:C284(EM_HandleError ;$4)
+
+  //BWR_CHANGECURRENTRECORD
+C_LONGINT:C283(BWR_ChangeCurrentRecord ;$0)
+C_REAL:C285(BWR_ChangeCurrentRecord ;$1)
+
+  //KRL_GOTOSELECTEDRECORD
+C_BOOLEAN:C305(KRL_GotoSelectedRecord ;$0)
+C_POINTER:C301(KRL_GotoSelectedRecord ;$1)
+C_LONGINT:C283(KRL_GotoSelectedRecord ;$2)
+C_BOOLEAN:C305(KRL_GotoSelectedRecord ;$3)
+
+  //USR_SETUSERPROPERTIES
+C_LONGINT:C283(USR_SetUserProperties ;$0)
+C_LONGINT:C283(USR_SetUserProperties ;$1)
+C_TEXT:C284(USR_SetUserProperties ;$2)
+C_TEXT:C284(USR_SetUserProperties ;$3)
+C_TEXT:C284(USR_SetUserProperties ;$4)
+C_LONGINT:C283(USR_SetUserProperties ;$5)
+C_DATE:C307(USR_SetUserProperties ;$6)
+C_POINTER:C301(USR_SetUserProperties ;$7)
+
+  //BWR_DECLAREARRAYS
+C_REAL:C285(BWR_DeclareArrays ;$1)
+
+
+  //BWR_FORMMETHOD
+C_POINTER:C301(BWR_FormMethod ;$1)
+
+  //SYS_PATH2FILENAME
+C_TEXT:C284(SYS_Path2FileName ;$0)
+C_TEXT:C284(SYS_Path2FileName ;$1)
+
+  //KRL_ISTABLERELATED
+C_BOOLEAN:C305(KRL_IsTableRelated ;$0)
+C_LONGINT:C283(KRL_IsTableRelated ;$1)
+C_LONGINT:C283(KRL_IsTableRelated ;$2)
+
+  //SYS_GETPARENTNME
+C_TEXT:C284(SYS_GetParentNme ;$0)
+C_TEXT:C284(SYS_GetParentNme ;$1)
+
+  //HL_GETPARENTLISTREF
+C_LONGINT:C283(HL_getParentListRef ;$0)
+C_REAL:C285(HL_getParentListRef ;$1)
+
+  //_EDAD
+C_TEXT:C284(_Edad ;$0)
+C_DATE:C307(_Edad ;$1)
+C_DATE:C307(_Edad ;$2)
+
+  //ST_CLEANSPECIFIEDCHARS
+C_TEXT:C284(ST_CleanSpecifiedChars ;$0)
+C_TEXT:C284(ST_CleanSpecifiedChars ;$1)
+C_TEXT:C284(ST_CleanSpecifiedChars ;$2)
+
+  //DT_GETWORKINGDAYDATE
+C_DATE:C307(DT_GetWorkingDayDate ;$0)
+C_DATE:C307(DT_GetWorkingDayDate ;$1)
+C_LONGINT:C283(DT_GetWorkingDayDate ;$2)
+
+  //USR_PROCESSLOGIN
+C_LONGINT:C283(USR_ProcessLogin ;$0)
+
+  //USR_USERLOGIN
+C_REAL:C285(USR_UserLogin ;$0)
+
+
+  //SYS_GETFILEMSECS
+C_LONGINT:C283(SYS_GetFileMSecs ;$0)
+C_TEXT:C284(SYS_GetFileMSecs ;$1)
+C_LONGINT:C283(SYS_GetFileMSecs ;$2)
+
+  //SYS_ISSPANISHORDER
+C_BOOLEAN:C305(SYS_isSpanishOrder ;$0)
+
+  //USR_GETGROUPID
+C_REAL:C285(USR_GetGroupID ;$0)
+C_TEXT:C284(USR_GetGroupID ;$1)
+
+  //KRL_SAVERECORD
+C_LONGINT:C283(KRL_SaveRecord ;$0)
+C_POINTER:C301(KRL_SaveRecord ;$1)
+
+  //SYS_LONGNAME2FILEPATH
+C_TEXT:C284(SYS_LongName2Filepath ;$0)
+C_TEXT:C284(SYS_LongName2Filepath ;$1)
+
+  //BWR_ONDELETERECORD
+C_LONGINT:C283(BWR_OnDeleteRecord ;$0)
+C_POINTER:C301(BWR_OnDeleteRecord ;$1)
+
+  //WDW_TITLE
+C_POINTER:C301(WDW_Title ;$1)
+
+  //BWR_ONLOADINGRECORD
+C_POINTER:C301(BWR_OnLoadingRecord ;$1)
+
+  //SYS_OPENEXTERNALDOCUMENT
+C_TEXT:C284(SYS_OpenExternalDocument ;$1)
+
+  //XDOC_LOADATTACHEDDOCSINTOARRAY
+C_LONGINT:C283(XDOC_LoadAttachedDocsIntoArray ;$1)
+C_LONGINT:C283(XDOC_LoadAttachedDocsIntoArray ;$2)
+C_TEXT:C284(XDOC_LoadAttachedDocsIntoArray ;$3)
+
+  //BWR_ONUNLOADFORMEVENT
+C_POINTER:C301(BWR_OnUnloadFormEvent ;$1)
+
+  //SR_SETOBJECTCOLOR
+C_TEXT:C284(SR_SetObjectColor ;$1)
+C_TEXT:C284(SR_SetObjectColor ;$2)
+C_LONGINT:C283(SR_SetObjectColor ;$3)
+
+  //WDW_SETFRONTMOST
+C_LONGINT:C283(WDW_SetFrontmost ;$1)
+
+  //ST_CONVERTTEXT
+C_TEXT:C284(ST_ConvertText ;$0)
+C_TEXT:C284(ST_ConvertText ;$1)
+C_TEXT:C284(ST_ConvertText ;$2)
+C_TEXT:C284(ST_ConvertText ;$3)
+
+  //ST_CHARSBEFORE
+C_TEXT:C284(ST_CharsBefore ;$0)
+C_TEXT:C284(ST_CharsBefore ;$1)
+C_TEXT:C284(ST_CharsBefore ;$2)
+C_LONGINT:C283(ST_CharsBefore ;$3)
+
+  //HL_FINDELEMENT
+C_REAL:C285(HL_FindElement ;$0)
+C_LONGINT:C283(HL_FindElement ;$1)
+C_TEXT:C284(HL_FindElement ;$2)
+C_BOOLEAN:C305(HL_FindElement ;$3)
+
+  //WDW_SLIDEDRAWER
+C_POINTER:C301(WDW_SlideDrawer ;$1)
+C_TEXT:C284(WDW_SlideDrawer ;$2)
+C_REAL:C285(WDW_SlideDrawer ;$3)
+C_REAL:C285(WDW_SlideDrawer ;$4)
+
+  //USR_DELETEGROUP
+C_LONGINT:C283(USR_DeleteGroup ;$1)
+
+  //XDOC_REMOVEATTACHEDDOCUMENT
+C_REAL:C285(XDOC_RemoveAttachedDocument ;$1)
+
+  //BWR_SAVECHANGES
+C_REAL:C285(BWR_SaveChanges ;$0)
+C_POINTER:C301(BWR_SaveChanges ;$1)
+
+  //_CAMPOPROPIO
+C_TEXT:C284(_CampoPropio ;$0)
+C_TEXT:C284(_CampoPropio ;$1)
+
+  //PCS_REGISTERPROCESSES
+C_REAL:C285(PCS_RegisterProcesses ;$1)
+
+  //SR_SETOBJECTFONTNAME
+C_TEXT:C284(SR_SetObjectFontName ;$1)
+
+  //WDW_GETWINDOWID
+C_LONGINT:C283(WDW_GetWindowID ;$0)
+
+  //SR_SETOBJECTFONTSIZE
+C_REAL:C285(SR_SetObjectFontSize ;$1)
+
+  //XFGETDIRNAME
+C_TEXT:C284(xfGetDirName ;$0)
+C_TEXT:C284(xfGetDirName ;$1)
+
+  //ST_CLEANSTRING
+C_TEXT:C284(ST_CleanString ;$0)
+C_TEXT:C284(ST_CleanString ;$1)
+
+  //HL_GETITEMLISTHIERLEVEL
+C_REAL:C285(HL_GetItemListHierLevel ;$0)
+C_REAL:C285(HL_GetItemListHierLevel ;$1)
+
+  //USR_EMERGENCYUSER
+C_BOOLEAN:C305(USR_EmergencyUser ;$0)
+C_TEXT:C284(USR_EmergencyUser ;$1)
+
+  //KRL_RELOADINREADWRITEMODE
+C_POINTER:C301(KRL_ReloadInReadWriteMode ;$1)
+
+  //ST_EXACTLYEQUAL
+C_LONGINT:C283(ST_ExactlyEqual ;$0)
+C_TEXT:C284(ST_ExactlyEqual ;$1)
+C_TEXT:C284(ST_ExactlyEqual ;$2)
+
+  //HL_GETITEMLISTROOTLABEL
+C_TEXT:C284(HL_GetItemListRootLabel ;$0)
+C_LONGINT:C283(HL_GetItemListRootLabel ;$1)
+
+  //QF_SHOWCHOICELIST
+C_LONGINT:C283(QF_ShowChoiceList ;$1)
+C_LONGINT:C283(QF_ShowChoiceList ;$2)
+
+  //ST_FORMATRUT_CHILE
+C_TEXT:C284(ST_FormatRUT_Chile ;$0)
+C_TEXT:C284(ST_FormatRUT_Chile ;$1)
+
+  //KRL_SHOWLOCKEDRECORDSDIALOG
+C_REAL:C285(KRL_ShowLockedRecordsDialog ;$0)
+
+  //KRL_SORTONEXTERNALTABLEFIELD
+C_POINTER:C301(KRL_SortOnExternalTableField ;$1)
+C_POINTER:C301(KRL_SortOnExternalTableField ;$2)
+C_LONGINT:C283(KRL_SortOnExternalTableField ;$3)
+
+  //HL_GETITEMLISTROOTREF
+C_REAL:C285(HL_GetItemListRootRef ;$0)
+C_REAL:C285(HL_GetItemListRootRef ;$1)
+
+  //QRY_BUILDQUERYMENU
+C_POINTER:C301(QRY_BuildQueryMenu ;$1)
+
+  //KRL_CLEARTABLE
+C_POINTER:C301(KRL_ClearTable ;$1)
+
+  //ST_CHAROCURR
+C_LONGINT:C283(ST_CharOcurr ;$0)
+C_TEXT:C284(ST_CharOcurr ;$1)
+C_TEXT:C284(ST_CharOcurr ;$2)
+C_LONGINT:C283(ST_CharOcurr ;$3)
+
+  //EM_IOERRORS
+C_TEXT:C284(EM_IOerrors ;$0)
+
+  //USR_ADDUSERMEMBERSHIP
+C_LONGINT:C283(USR_AddUserMembership ;$0)
+C_LONGINT:C283(USR_AddUserMembership ;$1)
+C_LONGINT:C283(USR_AddUserMembership ;$2)
+
+  //DT_GETDAYNAMEFROMDATE
+C_TEXT:C284(DT_GetDayNameFromDate ;$0)
+C_DATE:C307(DT_GetDayNameFromDate ;$1)
+
+  //DT_GETDAYNAMEFROMDAYNUMBER
+C_TEXT:C284(DT_GetDayNameFromDayNumber ;$0)
+C_LONGINT:C283(DT_GetDayNameFromDayNumber ;$1)
+
+  //CD_AUTOCLOSEALERT
+C_TEXT:C284(CD_AutoCloseAlert ;$1)
+C_REAL:C285(CD_AutoCloseAlert ;$2)
+C_TEXT:C284(CD_AutoCloseAlert ;$3)
+
+  //PCS_NEXTVIEW
+C_REAL:C285(PCS_NextView ;$0)
+C_TEXT:C284(PCS_NextView ;$1)
+
+  //USR_GETUSERMEMBERSHIP
+C_REAL:C285(USR_GetUserMembership ;$1)
+
+  //USR_NO RIGHT MSG
+C_REAL:C285(USR_NO RIGHT MSG ;$1)
+
+  //USR_DELETEUSER
+C_LONGINT:C283(USR_DeleteUser ;$1)
+
+  //SYS_NORMALIZEPATH
+C_TEXT:C284(SYS_NormalizePath ;$0)
+C_TEXT:C284(SYS_NormalizePath ;$1)
+
+  //CLSV_SETCLIENTPROCESSARRAY
+C_REAL:C285(CLSV_SetClientProcessArray ;$0)
+C_TEXT:C284(CLSV_SetClientProcessArray ;$1)
+C_TEXT:C284(CLSV_SetClientProcessArray ;$2)
+
+  //XDOC_EDITPROPERTIES
+C_REAL:C285(XDOC_EditProperties ;$1)
+
+  //KRL_LOADRECORD
+C_REAL:C285(KRL_LoadRecord ;$0)
+C_POINTER:C301(KRL_LoadRecord ;$1)
+C_REAL:C285(KRL_LoadRecord ;$2)
+
+  //ST_UPPERCASEFIRSTLETTER
+C_TEXT:C284(ST_UppercaseFirstLetter ;$0)
+C_TEXT:C284(ST_UppercaseFirstLetter ;$1)
+
+  //USR_GETUSERPROPERTIES
+C_LONGINT:C283(USR_GetUserProperties ;$1)
+C_POINTER:C301(USR_GetUserProperties ;$2)
+C_POINTER:C301(USR_GetUserProperties ;$3)
+C_POINTER:C301(USR_GetUserProperties ;$4)
+C_POINTER:C301(USR_GetUserProperties ;$5)
+C_POINTER:C301(USR_GetUserProperties ;$6)
+C_POINTER:C301(USR_GetUserProperties ;$7)
+
+  //ST_CLEARPONCT
+C_TEXT:C284(ST_ClearPonct ;$0)
+C_TEXT:C284(ST_ClearPonct ;$1)
+
+  //DT_NUM2DATE
+C_DATE:C307(DT_Num2date ;$0)
+C_REAL:C285(DT_Num2date ;$1)
+
+  //SYS_SELECTFILE
+C_TEXT:C284(SYS_SelectFile ;$0)
+C_TEXT:C284(SYS_SelectFile ;${-1})
+C_TEXT:C284(SYS_SelectFile ;$1)
+
+  //WDW_ADJUSTWINWIDTH2FORMWIDTH
+C_POINTER:C301(WDW_AdjustWinWidth2FormWidth ;$1)
+C_TEXT:C284(WDW_AdjustWinWidth2FormWidth ;$2)
+C_REAL:C285(WDW_AdjustWinWidth2FormWidth ;$3)
+
+  //CD_MSG
+C_TEXT:C284(CD_Msg ;$1)
+C_REAL:C285(CD_Msg ;$2)
+
+  //ST_CLRWILDCHARS
+C_TEXT:C284(ST_ClrWildChars ;$0)
+C_TEXT:C284(ST_ClrWildChars ;$1)
+
+  //ST_NUM2STRING
+C_TEXT:C284(ST_num2String ;$0)
+C_REAL:C285(ST_num2String ;$1)
+C_TEXT:C284(ST_num2String ;$2)
+
+  //ST_GETCLEANSTRING
+C_TEXT:C284(ST_GetCleanString ;$0)
+C_TEXT:C284(ST_GetCleanString ;$1)
+
+  //USR_GETGROUPPROPERTIES
+C_LONGINT:C283(USR_GetGroupProperties ;$1)
+C_POINTER:C301(USR_GetGroupProperties ;$2)
+C_POINTER:C301(USR_GetGroupProperties ;$3)
+C_POINTER:C301(USR_GetGroupProperties ;$4)
+
+  //ST_CONCATENATE
+C_TEXT:C284(ST_Concatenate ;$0)
+C_POINTER:C301(ST_Concatenate ;${-1})
+C_TEXT:C284(ST_Concatenate ;$1)
+C_POINTER:C301(ST_Concatenate ;$2)
+C_POINTER:C301(ST_Concatenate ;$3)
+C_POINTER:C301(ST_Concatenate ;$4)
+C_POINTER:C301(ST_Concatenate ;$5)
+C_POINTER:C301(ST_Concatenate ;$6)
+C_POINTER:C301(ST_Concatenate ;$7)
+C_POINTER:C301(ST_Concatenate ;$8)
+C_POINTER:C301(ST_Concatenate ;$9)
+C_POINTER:C301(ST_Concatenate ;$10)
+C_POINTER:C301(ST_Concatenate ;$11)
+C_POINTER:C301(ST_Concatenate ;$12)
+C_POINTER:C301(ST_Concatenate ;$13)
+C_POINTER:C301(ST_Concatenate ;$14)
+C_POINTER:C301(ST_Concatenate ;$15)
+C_POINTER:C301(ST_Concatenate ;$16)
+C_POINTER:C301(ST_Concatenate ;$17)
+C_POINTER:C301(ST_Concatenate ;$18)
+C_POINTER:C301(ST_Concatenate ;$19)
+C_POINTER:C301(ST_Concatenate ;$20)
+
+  //WDW_ADDREMOVEWINDOW
+C_TEXT:C284(WDW_AddRemoveWindow ;$1)
+C_LONGINT:C283(WDW_AddRemoveWindow ;$2)
+C_TEXT:C284(WDW_AddRemoveWindow ;$3)
+C_TEXT:C284(WDW_AddRemoveWindow ;$4)
+
+  //QRY_DISPLAYCHOICESLIST
+C_POINTER:C301(QRY_DisplayChoicesList ;$1)
+
+  //HL_GETNEXTITEMREFNUMBER
+C_LONGINT:C283(HL_GetNextItemRefNumber ;$0)
+C_REAL:C285(HL_GetNextItemRefNumber ;$1)
+
+  //KRL_ISRECORDLOCKED
+C_BOOLEAN:C305(KRL_IsRecordLocked ;$0)
+C_POINTER:C301(KRL_IsRecordLocked ;$1)
+
+  //SYS_TIMESTAMP2TIME
+C_TIME:C306(SYS_TimeStamp2Time ;$0)
+C_LONGINT:C283(SYS_TimeStamp2Time ;$1)
+
+  //CFG_XS_OPENPANEL
+C_TEXT:C284(CFG_XS_OpenPanel ;$1)
+
+  //DT_SPECIALDATE2STRING
+C_TEXT:C284(DT_SpecialDate2String ;$0)
+C_DATE:C307(DT_SpecialDate2String ;$1)
+C_REAL:C285(DT_SpecialDate2String ;$2)
+
+  //TBL_ADDLISTITEM
+C_TEXT:C284(TBL_addListItem ;$0)
+C_POINTER:C301(TBL_addListItem ;$1)
+C_POINTER:C301(TBL_addListItem ;$2)
+
+  //ST_FILTERKEYSTROKES
+C_POINTER:C301(ST_FilterKeyStrokes ;$1)
+C_TEXT:C284(ST_FilterKeyStrokes ;$2)
+
+  //MNU_SETWINDOWMENUITEMMARK
+C_REAL:C285(MNU_SetWindowMenuItemMark ;$1)
+
+  //PCS_RUNPROCESS
+C_REAL:C285(PCS_RunProcess ;$0)
+C_TEXT:C284(PCS_RunProcess ;$1)
+C_REAL:C285(PCS_RunProcess ;$2)
+C_TEXT:C284(PCS_RunProcess ;$3)
+C_BOOLEAN:C305(PCS_RunProcess ;$4)
+C_BOOLEAN:C305(PCS_RunProcess ;$5)
+C_BOOLEAN:C305(PCS_RunProcess ;$6)
+C_BOOLEAN:C305(PCS_RunProcess ;$7)
+
+
+  //ST_LEFTCHARS
+C_TEXT:C284(ST_LeftChars ;$0)
+C_TEXT:C284(ST_LeftChars ;$1)
+C_REAL:C285(ST_LeftChars ;$2)
+
+  //SYS_TIMESTAMP
+C_LONGINT:C283(SYS_TimeStamp ;$0)
+C_LONGINT:C283(SYS_TimeStamp ;$1)
+C_DATE:C307(SYS_TimeStamp ;$2)
+C_TIME:C306(SYS_TimeStamp ;$3)
+
+  //USR_GETMODULEACCES
+C_BOOLEAN:C305(USR_GetModuleAcces ;$0)
+C_TEXT:C284(USR_GetModuleAcces ;$1)
+
+  //QRY_EXECUTEBUILDQUERY
+C_TEXT:C284(QRY_ExecuteBuildQuery ;$1)
+
+  //USR_REMOVEUSERMEMBERSHIP
+C_LONGINT:C283(USR_RemoveUserMembership ;$0)
+C_LONGINT:C283(USR_RemoveUserMembership ;$1)
+C_LONGINT:C283(USR_RemoveUserMembership ;$2)
+
+  //WDW_OPEN
+C_REAL:C285(WDW_Open ;$0)
+C_LONGINT:C283(WDW_Open ;$1)
+C_LONGINT:C283(WDW_Open ;$2)
+C_LONGINT:C283(WDW_Open ;$3)
+C_LONGINT:C283(WDW_Open ;$4)
+C_TEXT:C284(WDW_Open ;$5)
+C_TEXT:C284(WDW_Open ;$6)
+
+  //ST_FORMAT2
+C_TEXT:C284(ST_Format2 ;$0)
+C_POINTER:C301(ST_Format2 ;$1)
+C_LONGINT:C283(ST_Format2 ;$2)
+
+  //PICT_APPEND2LIBRARY
+C_LONGINT:C283(PICT_Append2Library ;$0)
+C_POINTER:C301(PICT_Append2Library ;$1)
+C_TEXT:C284(PICT_Append2Library ;$2)
+
+  //KRL_ARRAY2SELECTION
+C_REAL:C285(KRL_Array2Selection ;$0)
+C_POINTER:C301(KRL_Array2Selection ;${-1})
+C_POINTER:C301(KRL_Array2Selection ;$1)
+C_POINTER:C301(KRL_Array2Selection ;$2)
+C_POINTER:C301(KRL_Array2Selection ;$3)
+C_POINTER:C301(KRL_Array2Selection ;$4)
+C_POINTER:C301(KRL_Array2Selection ;$5)
+C_POINTER:C301(KRL_Array2Selection ;$6)
+C_POINTER:C301(KRL_Array2Selection ;$7)
+C_POINTER:C301(KRL_Array2Selection ;$8)
+C_POINTER:C301(KRL_Array2Selection ;$9)
+C_POINTER:C301(KRL_Array2Selection ;$10)
+C_POINTER:C301(KRL_Array2Selection ;$11)
+C_POINTER:C301(KRL_Array2Selection ;$12)
+C_POINTER:C301(KRL_Array2Selection ;$13)
+C_POINTER:C301(KRL_Array2Selection ;$14)
+C_POINTER:C301(KRL_Array2Selection ;$15)
+C_POINTER:C301(KRL_Array2Selection ;$16)
+C_POINTER:C301(KRL_Array2Selection ;$17)
+C_POINTER:C301(KRL_Array2Selection ;$18)
+C_POINTER:C301(KRL_Array2Selection ;$19)
+C_POINTER:C301(KRL_Array2Selection ;$20)
+C_POINTER:C301(KRL_Array2Selection ;$21)
+C_POINTER:C301(KRL_Array2Selection ;$22)
+C_POINTER:C301(KRL_Array2Selection ;$23)
+C_POINTER:C301(KRL_Array2Selection ;$24)
+
+  //SYS_GETFOLDERNAM
+C_TEXT:C284(SYS_GetFolderNam ;$0)
+C_TEXT:C284(SYS_GetFolderNam ;$1)
+
+  //XFPUTFILENAME
+C_TEXT:C284(xfPutFileName ;$0)
+
+  //XS_SETTINGS
+C_TEXT:C284(XS_Settings ;$1)
+C_TEXT:C284(XS_Settings ;$2)
+
+  //_LOGOINSTITUCION
+C_PICTURE:C286(_LogoInstitucion ;$0)
+C_REAL:C285(_LogoInstitucion ;$1)
+
+  //HL_FINDINLISTBYREFERENCE
+C_TEXT:C284(HL_FindInListByReference ;$0)
+C_LONGINT:C283(HL_FindInListByReference ;$1)
+C_LONGINT:C283(HL_FindInListByReference ;$2)
+C_BOOLEAN:C305(HL_FindInListByReference ;$3)
+
+
+  //USR_CHANGEPASSWORD
+C_TEXT:C284(USR_ChangePassword ;$1)
+
+  //IO_EXPORTRECORDSFROMTABLE
+C_POINTER:C301(IO_ExportRecordsFromTable ;$1)
+
+  //DHBWR_ONDELETESELECTION
+C_BOOLEAN:C305(dhBWR_OnDeleteSelection ;$0)
+C_POINTER:C301(dhBWR_OnDeleteSelection ;$1)
+
+  //ST_NUM2TEXT
+C_TEXT:C284(ST_Num2Text ;$0)
+C_REAL:C285(ST_Num2Text ;$1)
+C_BOOLEAN:C305(ST_Num2Text ;$2)
+C_BOOLEAN:C305(ST_Num2Text ;$3)
+
+  //ACTAV_DELETE
+C_LONGINT:C283(ACTav_Delete ;$0)
+
+  //ACTBOL_PRINTBOLETAS
+C_BOOLEAN:C305(ACTbol_PrintBoletas ;$0)
+C_LONGINT:C283(ACTbol_PrintBoletas ;$1)
+C_BOOLEAN:C305(ACTbol_PrintBoletas ;$2)
+C_TEXT:C284(ACTbol_PrintBoletas ;$3)
+C_BOOLEAN:C305(ACTbol_PrintBoletas ;$4)
+
+  //ACTCC_CARGASALPCTASCTES
+C_REAL:C285(ACTcc_CargasALPCtasCtes ;$1)
+C_TEXT:C284(ACTcc_CargasALPCtasCtes ;$2)
+
+  //ACTCC_DESAGRUPACARGOSCTA
+C_TEXT:C284(ACTcc_DesagrupaCargosCta ;$0)
+C_BOOLEAN:C305(ACTcc_DesagrupaCargosCta ;$1)
+
+  //ACTCC_DOCUMENTAR
+C_REAL:C285(ACTcc_Documentar ;$1)
+C_REAL:C285(ACTcc_Documentar ;$2)
+C_REAL:C285(ACTcc_Documentar ;$3)
+C_PICTURE:C286(ACTcc_Documentar ;$4)
+C_TEXT:C284(ACTcc_Documentar ;$5)
+
+  //ACTCC_EMITEAVISOS2
+C_BLOB:C604(ACTcc_EmiteAvisos2 ;$1)
+
+  //ACTCC_EMITIRPARAQUIEN
+C_BOOLEAN:C305(ACTcc_EmitirParaQuien ;$0)
+C_LONGINT:C283(ACTcc_EmitirParaQuien ;$1)
+C_LONGINT:C283(ACTcc_EmitirParaQuien ;$2)
+
+  //ACTCC_FSAVE
+C_REAL:C285(ACTcc_fSave ;$0)
+
+  //ACTCC_LOADTRANSACCIONES
+C_REAL:C285(ACTcc_LoadTransacciones ;$1)
+
+  //ACTCC_ORDENACARGOSPORMONEDA
+C_REAL:C285(ACTcc_OrdenaCargosporMoneda ;$1)
+C_LONGINT:C283(ACTcc_OrdenaCargosporMoneda ;$2)
+C_LONGINT:C283(ACTcc_OrdenaCargosporMoneda ;$3)
+
+  //ACTCC_REGISTROPAGOSCAJA
+C_REAL:C285(ACTcc_RegistroPagosCaja ;$1)
+C_REAL:C285(ACTcc_RegistroPagosCaja ;$2)
+C_REAL:C285(ACTcc_RegistroPagosCaja ;$3)
+C_PICTURE:C286(ACTcc_RegistroPagosCaja ;$4)
+C_TEXT:C284(ACTcc_RegistroPagosCaja ;$5)
+
+  //ACTCC_REPLACEASIGNEDMATRIX
+C_LONGINT:C283(ACTcc_ReplaceAsignedMatrix ;$1)
+C_LONGINT:C283(ACTcc_ReplaceAsignedMatrix ;$2)
+C_LONGINT:C283(ACTcc_ReplaceAsignedMatrix ;$3)
+
+  //ACTCFG_CALCULATEMATRIXAMOUNTS3
+C_DATE:C307(ACTcfg_CalculateMatrixAmounts3 ;$1)
+C_REAL:C285(ACTcfg_CalculateMatrixAmounts3 ;$2)
+
+  //ACTCFG_MANAGEMATRIXMODIFICATION
+C_REAL:C285(ACTcfg_ManageMatrixModification ;$1)
+C_TEXT:C284(ACTcfg_ManageMatrixModification ;$2)
+C_REAL:C285(ACTcfg_ManageMatrixModification ;$3)
+C_BOOLEAN:C305(ACTcfg_ManageMatrixModification ;$4)
+
+  //ACTCFG_OPENYEAR
+C_REAL:C285(ACTcfg_OpenYear ;$1)
+
+  //ACTCFG_SETMESDECARGO
+C_POINTER:C301(ACTcfg_SetMesDeCargo ;$1)
+
+  //ACTPGS_ASIGNAPAGOACARGOS
+C_REAL:C285(ACTpgs_AsignaPagoACargos ;$0)
+C_TEXT:C284(ACTpgs_AsignaPagoACargos ;$1)
+C_REAL:C285(ACTpgs_AsignaPagoACargos ;$2)
+C_REAL:C285(ACTpgs_AsignaPagoACargos ;$3)
+
+  //ACTPGS_DELETE
+C_LONGINT:C283(ACTpgs_Delete ;$0)
+
+  //ACTPGS_LLENABLOBCARGOSAVISO
+C_BOOLEAN:C305(ACTpgs_LLenaBlobCargosAviso ;$1)
+
+  //ACTPGS_SORTBYMATRIX
+C_POINTER:C301(ACTpgs_SortByMatrix ;$1)
+
+  //ACTPP_CARGAALPPERSONAS
+C_LONGINT:C283(ACTpp_CargaALPPersonas ;$1)
+C_TEXT:C284(ACTpp_CargaALPPersonas ;$2)
+
+  //ACTPP_HABDESHABACCIONES
+C_BOOLEAN:C305(ACTpp_HabDesHabAcciones ;$1)
+
+  //ACTPP_LOADDOCSENCARTERA
+C_REAL:C285(ACTpp_LoadDocsenCartera ;$1)
+C_TEXT:C284(ACTpp_LoadDocsenCartera ;$2)
+
+  //ACTPP_LOADTRANSACCIONES
+C_REAL:C285(ACTpp_LoadTransacciones ;$1)
+
+  //ACTUTL_CALCULAUF
+C_REAL:C285(ACTutl_CalculaUF ;$0)
+C_DATE:C307(ACTutl_CalculaUF ;$1)
+C_DATE:C307(ACTutl_CalculaUF ;$2)
+C_REAL:C285(ACTutl_CalculaUF ;$3)
+C_REAL:C285(ACTutl_CalculaUF ;$4)
+
+  //XALP_CBIN_ACT_BOLETAS
+C_BOOLEAN:C305(xALP_CBIN_ACT_Boletas ;$0)
+C_LONGINT:C283(xALP_CBIN_ACT_Boletas ;$1)
+C_LONGINT:C283(xALP_CBIN_ACT_Boletas ;$2)
+C_LONGINT:C283(xALP_CBIN_ACT_Boletas ;$3)
+
+  //XALP_CBIN_ACT_DOCUMENTAR
+C_BOOLEAN:C305(xALP_CBIN_ACT_Documentar ;$0)
+C_LONGINT:C283(xALP_CBIN_ACT_Documentar ;$1)
+C_LONGINT:C283(xALP_CBIN_ACT_Documentar ;$2)
+C_LONGINT:C283(xALP_CBIN_ACT_Documentar ;$3)
+
+  //XALP_CBIN_ACT_RECEPRECAUD
+C_BOOLEAN:C305(xALP_CBIN_ACT_RecepRecaud ;$0)
+C_LONGINT:C283(xALP_CBIN_ACT_RecepRecaud ;$1)
+C_LONGINT:C283(xALP_CBIN_ACT_RecepRecaud ;$2)
+C_LONGINT:C283(xALP_CBIN_ACT_RecepRecaud ;$3)
+
+  //XALP_CB_ACT_BANCOS
+C_BOOLEAN:C305(xALP_CB_ACT_Bancos ;$0)
+C_LONGINT:C283(xALP_CB_ACT_Bancos ;$1)
+C_LONGINT:C283(xALP_CB_ACT_Bancos ;$2)
+C_LONGINT:C283(xALP_CB_ACT_Bancos ;$3)
+
+  //XALP_CB_ACT_BOLETAS
+C_BOOLEAN:C305(xALP_CB_ACT_Boletas ;$0)
+C_LONGINT:C283(xALP_CB_ACT_Boletas ;$1)
+C_LONGINT:C283(xALP_CB_ACT_Boletas ;$2)
+C_LONGINT:C283(xALP_CB_ACT_Boletas ;$3)
+
+  //XALP_CB_ACT_DOCUMENTAR
+C_BOOLEAN:C305(xALP_CB_ACT_Documentar ;$0)
+C_LONGINT:C283(xALP_CB_ACT_Documentar ;$1)
+C_LONGINT:C283(xALP_CB_ACT_Documentar ;$2)
+C_LONGINT:C283(xALP_CB_ACT_Documentar ;$3)
+
+  //XALP_CB_ACT_IPC
+C_BOOLEAN:C305(xALP_CB_ACT_IPC ;$0)
+C_LONGINT:C283(xALP_CB_ACT_IPC ;$1)
+C_LONGINT:C283(xALP_CB_ACT_IPC ;$2)
+C_LONGINT:C283(xALP_CB_ACT_IPC ;$3)
+
+  //XALP_CB_ACT_MATRICES
+C_BOOLEAN:C305(xALP_CB_ACT_Matrices ;$0)
+C_LONGINT:C283(xALP_CB_ACT_Matrices ;$1)
+C_LONGINT:C283(xALP_CB_ACT_Matrices ;$2)
+C_LONGINT:C283(xALP_CB_ACT_Matrices ;$3)
+
+  //XALP_CB_ACT_RECEPRECAUD
+C_BOOLEAN:C305(xALP_CB_ACT_RecepRecaud ;$0)
+C_LONGINT:C283(xALP_CB_ACT_RecepRecaud ;$1)
+C_LONGINT:C283(xALP_CB_ACT_RecepRecaud ;$2)
+C_LONGINT:C283(xALP_CB_ACT_RecepRecaud ;$3)
+
+  //XALCB_EN_USERFIELDS
+C_LONGINT:C283(xALCB_EN_UserFields ;$1)
+C_LONGINT:C283(xALCB_EN_UserFields ;$2)
+
+  //XALCB_EX_USERFIELDS
+C_BOOLEAN:C305(xALCB_EX_UserFields ;$0)
+C_LONGINT:C283(xALCB_EX_UserFields ;$1)
+C_LONGINT:C283(xALCB_EX_UserFields ;$2)
+
+  //CTRY_DEFAULTNATIONALITY
+C_TEXT:C284(CTRY_DefaultNationality ;$0)
+
+  //IT_SHOWCHOICES
+C_TEXT:C284(IT_ShowChoices ;$0)
+C_POINTER:C301(IT_ShowChoices ;$1)
+C_POINTER:C301(IT_ShowChoices ;$2)
+C_TEXT:C284(IT_ShowChoices ;$3)
+C_POINTER:C301(IT_ShowChoices ;$4)
+C_POINTER:C301(IT_ShowChoices ;$5)
+C_LONGINT:C283(IT_ShowChoices ;$6)
+
+  //MATH_MAX
+C_REAL:C285(MATH_Max ;$0)
+C_REAL:C285(MATH_Max ;${-1})
+
+  //MATH_MIN
+C_REAL:C285(MATH_Min ;$0)
+C_REAL:C285(MATH_Min ;${-1})
+C_REAL:C285(MATH_Min ;$1)
+C_REAL:C285(MATH_Min ;$2)
+
+  //IT_OPENCHOICEWINDOW
+C_TEXT:C284(IT_OpenChoiceWindow ;$0)
+C_POINTER:C301(IT_OpenChoiceWindow ;$1)
+
+  //ACTPGS_EMITIRBOLETASDOCUMENTAR
+C_POINTER:C301(ACTpgs_EmitirBoletasDocumentar ;$1)
+C_POINTER:C301(ACTpgs_EmitirBoletasDocumentar ;$2)
+C_REAL:C285(ACTpgs_EmitirBoletasDocumentar ;$3)
+C_TEXT:C284(ACTpgs_EmitirBoletasDocumentar ;$4)
+
+  //IT_1SECDELAY
+C_REAL:C285(IT_1SecDelay ;$1)
+
+  //IT_ALTKEYISDOWN
+C_BOOLEAN:C305(IT_AltKeyIsDown ;$0)
+
+  //ACTQF_LOADVALORES
+C_LONGINT:C283(ACTqf_LoadValores ;$1)
+
+  //CD_REQUEST
+C_TEXT:C284(CD_Request ;$0)
+C_TEXT:C284(CD_Request ;$1)
+C_TEXT:C284(CD_Request ;$2)
+C_TEXT:C284(CD_Request ;$3)
+C_TEXT:C284(CD_Request ;$4)
+C_TEXT:C284(CD_Request ;$5)
+
+  //ACT_TESTLOCKDURINGRESET
+C_TEXT:C284(ACT_TestLockDuringReset ;$0)
+C_POINTER:C301(ACT_TestLockDuringReset ;$1)
+
+  //ST_MAC2WIN
+C_TEXT:C284(st_Mac2Win ;$0)
+C_TEXT:C284(st_Mac2Win ;$1)
+
+  //XALCB_EX_ALERGIAS
+C_BOOLEAN:C305(xALCB_EX_Alergias ;$0)
+C_LONGINT:C283(xALCB_EX_Alergias ;$1)
+C_LONGINT:C283(xALCB_EX_Alergias ;$2)
+
+  //XALCB_EX_APARATOS
+C_BOOLEAN:C305(xALCB_EX_Aparatos ;$0)
+C_LONGINT:C283(xALCB_EX_Aparatos ;$1)
+C_LONGINT:C283(xALCB_EX_Aparatos ;$2)
+
+  //XALCB_EX_CONTROLESMEDICOS
+C_BOOLEAN:C305(xALCB_EX_ControlesMedicos ;$0)
+C_LONGINT:C283(xALCB_EX_ControlesMedicos ;$1)
+C_LONGINT:C283(xALCB_EX_ControlesMedicos ;$2)
+
+  //XALCB_EX_ENFERMEDADES
+C_BOOLEAN:C305(xALCB_EX_Enfermedades ;$0)
+C_LONGINT:C283(xALCB_EX_Enfermedades ;$1)
+C_LONGINT:C283(xALCB_EX_Enfermedades ;$2)
+
+  //XALCB_EX_HOSPITALIZACIONES
+C_BOOLEAN:C305(xALCB_EX_Hospitalizaciones ;$0)
+C_LONGINT:C283(xALCB_EX_Hospitalizaciones ;$1)
+C_LONGINT:C283(xALCB_EX_Hospitalizaciones ;$2)
+
+  //XALCB_EX_VACUNAS
+C_BOOLEAN:C305(xALCB_EX_Vacunas ;$0)
+C_LONGINT:C283(xALCB_EX_Vacunas ;$1)
+C_LONGINT:C283(xALCB_EX_Vacunas ;$2)
+
+  //PICT_COMPRESS
+C_POINTER:C301(PICT_Compress ;$1)
+C_TEXT:C284(PICT_Compress ;$2)
+C_LONGINT:C283(PICT_Compress ;$3)
+C_BOOLEAN:C305(PICT_Compress ;$4)
+
+  //ST_APPLYFORMAT2SELECTION
+C_LONGINT:C283(ST_ApplyFormat2Selection ;$1)
+C_LONGINT:C283(ST_ApplyFormat2Selection ;$2)
+C_REAL:C285(ST_ApplyFormat2Selection ;$3)
+
+  //ACTDC_DELETE
+C_REAL:C285(ACTdc_Delete ;$0)
+
+  //ACT_INICIALIZAACCOUNTTRACKSERVE
+C_REAL:C285(ACT_InicializaAccountTrackServe ;$1)
+C_REAL:C285(ACT_InicializaAccountTrackServe ;$2)
+C_REAL:C285(ACT_InicializaAccountTrackServe ;$3)
+
+  //STRCAL_CREASESIONESCLASES
+C_DATE:C307(STRcal_CreaSesionesClases ;$1)
+
+  //USR_TESTSEMAPHORES
+C_BOOLEAN:C305(USR_TestSemaphores ;$0)
+
+  //USR_SETMODULESEMAPHORE
+C_LONGINT:C283(USR_SetModuleSemaphore ;$1)
+
+  //USR_CLEARMODULESEMAPHORE
+C_LONGINT:C283(USR_ClearModuleSemaphore ;$1)
+
+  //ACT_CLOSEACT
+C_LONGINT:C283(ACT_CloseACT ;$1)
+
+  //PCS_UNREGISTERPROCESS
+C_REAL:C285(PCS_UnRegisterProcess ;$1)
+
+  //MSN_DISPLAYMSGONCLIENT
+C_TEXT:C284(MSN_DisplayMsgonClient ;$1)
+C_TEXT:C284(MSN_DisplayMsgonClient ;$2)
+C_TEXT:C284(MSN_DisplayMsgonClient ;$3)
+
+  //XALCB_EX_LICENCIAS
+C_BOOLEAN:C305(xALCB_EX_Licencias ;$0)
+C_LONGINT:C283(xALCB_EX_Licencias ;$1)
+C_LONGINT:C283(xALCB_EX_Licencias ;$2)
+
+  //USR_TESTCONNECTION
+C_REAL:C285(USR_TestConnection ;$0)
+C_TEXT:C284(USR_TestConnection ;$1)
+
+  //XALCB_EX_DELEGADOS
+C_BOOLEAN:C305(xALCB_EX_Delegados ;$0)
+C_LONGINT:C283(xALCB_EX_Delegados ;$1)
+C_LONGINT:C283(xALCB_EX_Delegados ;$2)
+
+  //BBLCPY_ONDELETERECORD
+C_LONGINT:C283(BBLcpy_OnDeleteRecord ;$0)
+
+  //WEB_SENDHTMLFILE
+C_TEXT:C284(WEB_SendHtmlFile ;$1)
+C_TEXT:C284(WEB_SendHtmlFile ;$2)
+
+  //WEB_GETFORMVARIABLE
+C_TEXT:C284(WEB_GetFormVariable ;$0)
+C_TEXT:C284(WEB_GetFormVariable ;$1)
+
+  //WEB_GETHTTPHEADERFIELD
+C_TEXT:C284(WEB_GetHTTPHeaderField ;$0)
+C_TEXT:C284(WEB_GetHTTPHeaderField ;$1)
+
+  //PICT_CAMPOFOTOGRAFIA
+C_POINTER:C301(PICT_CampoFotografia ;$1)
+C_REAL:C285(PICT_CampoFotografia ;$2)
+
+  //ST_REPLACEACCENTEDCHARS
+C_TEXT:C284(ST_ReplaceAccentedChars ;$0)
+C_TEXT:C284(ST_ReplaceAccentedChars ;$1)
+
+  //USR_SETGROUPMEMBERLIST
+C_LONGINT:C283(USR_SetGroupMemberList ;$0)
+C_LONGINT:C283(USR_SetGroupMemberList ;$1)
+C_POINTER:C301(USR_SetGroupMemberList ;$2)
+
+  //XALCB_STR_PROPIEDADESEVALUACION
+C_BOOLEAN:C305(xALCB_STR_PropiedadesEvaluacion ;$0)
+C_LONGINT:C283(xALCB_STR_PropiedadesEvaluacion ;$1)
+C_LONGINT:C283(xALCB_STR_PropiedadesEvaluacion ;$2)
+
+  //MATH_ARRAYAVERAGE
+C_REAL:C285(MATH_ArrayAverage ;$0)
+C_POINTER:C301(MATH_ArrayAverage ;$1)
+C_REAL:C285(MATH_ArrayAverage ;$2)
+
+  //ACTDHQF_ONVALUESELECTED
+C_BOOLEAN:C305(ACTdhqf_OnValueSelected ;$0)
+
+  //MNU_ENABLEDISABLETOOLSMENUITEM
+C_REAL:C285(MNU_EnableDisableToolsMenuItem ;$1)
+
+  //CFG_EXECUTEPANEL
+C_POINTER:C301(CFG_ExecutePanel ;$1)
+
+  //AL_DELETESELECTION
+C_REAL:C285(AL_DeleteSelection ;$0)
+
+  //ACTAC_DELETESELECTION
+C_REAL:C285(ACTac_DeleteSelection ;$0)
+
+  //ACTPGS_DELETESELECTION
+C_REAL:C285(ACTpgs_DeleteSelection ;$0)
+
+  //ACTDC_DELETESELECTION
+C_REAL:C285(ACTdc_DeleteSelection ;$0)
+
+  //ASSEV_UPDATELIST
+C_REAL:C285(ASsev_UpdateList ;$1)
+
+  //XS_SETCONFIGINTERFACE
+C_BOOLEAN:C305(XS_SetConfigInterface ;$1)
+
+  //XS_SETINTERFACE
+C_BOOLEAN:C305(XS_SetInterface ;$1)
+
+  //BWR_ONCLOSEBOXFORMEVENT
+C_POINTER:C301(BWR_OnCloseBoxFormEvent ;$1)
+
+  //DHBWR_OPTIONALFORMEVENTS
+C_POINTER:C301(dhBWR_OptionalFormEvents ;$1)
+
+  //ACTCC_LOADBOLETAS
+C_TEXT:C284(ACTcc_LoadBoletas ;$1)
+
+  //ACTCC_LOADPAGOS
+C_TEXT:C284(ACTcc_LoadPagos ;$1)
+
+  //ACTPP_LOADBOLETAS
+C_TEXT:C284(ACTpp_LoadBoletas ;$1)
+C_TEXT:C284(ACTpp_LoadBoletas ;$2)
+
+  //ACTPP_LOADPAGOS
+C_TEXT:C284(ACTpp_LoadPagos ;$1)
+C_TEXT:C284(ACTpp_LoadPagos ;$2)
+
+  //ACTPP_LOADDOCSDEPOSITADOS
+C_TEXT:C284(ACTpp_LoadDocsDepositados ;$1)
+C_POINTER:C301(ACTpp_LoadDocsDepositados ;$2)
+
+  //XALSET_AL_AREASOBSERVACIONES
+C_REAL:C285(xALSet_Al_AreasObservaciones ;$1)
+
+  //ACTPP_FORMARRAYSDECLARATIONS
+C_TEXT:C284(ACTpp_FormArraysDeclarations ;$1)
+
+  //ACTCC_FORMARRAYSDECLARATIONS
+C_TEXT:C284(ACTcc_FormArraysDeclarations ;$1)
+
+  //ACTBOL_FORMARRAYSDECLARATIONS
+C_TEXT:C284(ACTbol_FormArraysDeclarations ;$1)
+
+  //BBLITM_LEEPRESTAMOS
+C_POINTER:C301(BBLitm_LeePrestamos ;$1)
+
+  //SYS_WRITEVERSION
+C_LONGINT:C283(SYS_EstableceVersionBaseDeDatos ;$1)
+C_LONGINT:C283(SYS_EstableceVersionBaseDeDatos ;$2)
+C_LONGINT:C283(SYS_EstableceVersionBaseDeDatos ;$3)
+  //ACTMNU_ANULARDOCUMENTOS
+C_TEXT:C284(ACTmnu_AnularDocumentos ;$1)
+
+  //ACTMNU_ASIGNMATRIX
+C_LONGINT:C283(ACTmnu_AsignMatrix ;$0)
+C_LONGINT:C283(ACTmnu_AsignMatrix ;$1)
+
+  //ACTMNU_REEMPLAZAR
+C_TEXT:C284(ACTmnu_Reemplazar ;$1)
+
+  //ACTMNU_DEPOSITAR
+C_TEXT:C284(ACTmnu_Depositar ;$1)
+
+  //ACTMNU_PRORROGAR
+C_TEXT:C284(ACTmnu_Prorrogar ;$1)
+
+  //ACTMNU_PROTESTAR
+C_TEXT:C284(ACTmnu_Protestar ;$1)
+
+  //ACTPP_REEMPLAZARCH
+C_TEXT:C284(ACTpp_ReemplazarCh ;$1)
+
+  //SRACTBOL_ENDBOLETA
+C_LONGINT:C283(SRACTbol_EndBoleta ;$1)
+
+  //SRACTBOL_CARGACARGOS
+C_LONGINT:C283(SRACTbol_CargaCargos ;$1)
+
+  //SRACTAC_ENDAVISO
+C_REAL:C285(SRACTac_EndAviso ;$1)
+
+  //ACTCC_CHANGEACCOUNTPARENT
+C_BOOLEAN:C305(ACTcc_ChangeAccountParent ;$0)
+
+  //ACTPGS_INGRESARPAGOS
+C_REAL:C285(ACTpgs_IngresarPagos ;$0)
+C_REAL:C285(ACTpgs_IngresarPagos ;$1)
+C_BOOLEAN:C305(ACTpgs_IngresarPagos ;$2)
+C_BOOLEAN:C305(ACTpgs_IngresarPagos ;$3)
+C_DATE:C307(ACTpgs_IngresarPagos ;$4)
+
+  //PST_ASIGNEXAMSDATE
+C_BOOLEAN:C305(PST_AsignExamsDate ;$1)
+
+  //BBLUSR_DELETESELECTION
+C_LONGINT:C283(BBLusr_DeleteSelection ;$0)
+
+  //IO_IMPORTRECORDS2TABLES
+C_TEXT:C284(IO_ImportRecords2Tables ;$1)
+
+  //CFG_BBL_GENERALES
+C_TEXT:C284(CFG_BBL_Generales ;$1)
+C_TEXT:C284(CFG_BBL_Generales ;$2)
+
+  //XALP_FOCUS_BBLLOG
+C_LONGINT:C283(xALP_Focus_BBLLog ;$1)
+
+  //VS_SAVETABLEPROPERTIES
+C_TEXT:C284(VS_SaveTableProperties ;$1)
+C_TEXT:C284(VS_SaveTableProperties ;$2)
+
+  //KRL_REBUILDINDEXES
+C_POINTER:C301(KRL_RebuildIndexes ;$1)
+C_POINTER:C301(KRL_RebuildIndexes ;$2)
+
+  //SOPORTE_IMPORTANOTAS
+C_POINTER:C301(SOPORTE_ImportaNotas ;$1)
+C_TEXT:C284(SOPORTE_ImportaNotas ;$2)
+C_TEXT:C284(SOPORTE_ImportaNotas ;$3)
+
+  //LOC_LOADLIST2ARRAY
+C_TEXT:C284(LOC_LoadList2Array ;$1)
+C_POINTER:C301(LOC_LoadList2Array ;$2)
+
+  //LOC_LOADLIST2BLOB
+C_TEXT:C284(LOC_LoadList2Blob ;$1)
+C_POINTER:C301(LOC_LoadList2Blob ;$2)
+
+  //ACTINIT_CREATEGENERATIONPREFS
+C_TEXT:C284(ACTinit_CreateGenerationPrefs ;$1)
+C_POINTER:C301(ACTinit_CreateGenerationPrefs ;$2)
+C_POINTER:C301(ACTinit_CreateMonedas ;${2})
+C_TEXT:C284(ACTinit_CreateMonedas ;$1)
+
+  //AL_MUESTRALISTAANOTACIONES
+C_REAL:C285(AL_MuestraListaAnotaciones ;$0)
+
+  //XALPCB_COL_GETNIVELNAME
+C_BOOLEAN:C305(xALPCB_Col_GetNivelName ;$0)
+C_LONGINT:C283(xALPCB_Col_GetNivelName ;$1)
+C_LONGINT:C283(xALPCB_Col_GetNivelName ;$2)
+C_LONGINT:C283(xALPCB_Col_GetNivelName ;$3)
+C_POINTER:C301(xALPCB_Col_GetNivelName ;$4)
+C_LONGINT:C283(xALPCB_Col_GetNivelName ;$5)
+C_LONGINT:C283(xALPCB_Col_GetNivelName ;$6)
+
+  //XALCB_EX_PLANESDECLASES
+C_BOOLEAN:C305(xALCB_EX_PlanesdeClases ;$0)
+C_LONGINT:C283(xALCB_EX_PlanesdeClases ;$1)
+C_LONGINT:C283(xALCB_EX_PlanesdeClases ;$2)
+
+  //XALCB_EX_CFG_CASTIGOS
+C_BOOLEAN:C305(xALCB_EX_CFG_Castigos ;$0)
+C_LONGINT:C283(xALCB_EX_CFG_Castigos ;$1)
+C_LONGINT:C283(xALCB_EX_CFG_Castigos ;$2)
+
+  //XALCB_EX_CFGSUSPENSIONES
+C_BOOLEAN:C305(xALCB_EX_cfgSuspensiones ;$0)
+C_LONGINT:C283(xALCB_EX_cfgSuspensiones ;$1)
+C_LONGINT:C283(xALCB_EX_cfgSuspensiones ;$2)
+
+  //ACTPGS_CREACIONDOCCARTERA
+C_REAL:C285(ACTpgs_CreacionDocCartera ;$0)
+C_REAL:C285(ACTpgs_CreacionDocCartera ;$1)
+
+  //ACTPGS_CREACIONDOCDEPAGO
+C_REAL:C285(ACTpgs_CreacionDocdePago ;$1)
+
+  //ACTPGS_CREACIONPAGO
+C_REAL:C285(ACTpgs_CreacionPago ;$1)
+
+  //XALCB_EX_DEFAULT
+C_BOOLEAN:C305(xALCB_EX_Default ;$0)
+C_LONGINT:C283(xALCB_EX_Default ;$1)
+C_LONGINT:C283(xALCB_EX_Default ;$2)
+
+  //ACTCFG_RECALCULATECARGOONSERVER
+C_BLOB:C604(ACTcfg_RecalculateCargoOnServer ;$1)
+
+  //STRPP_ONEXPLORERLOAD
+C_POINTER:C301(STRpp_OnExplorerLoad ;$1)
+
+  //ACTCC_DELETESELECTION
+C_REAL:C285(ACTcc_DeleteSelection ;$0)
+
+  //ACTCC_DELETE
+C_REAL:C285(ACTcc_Delete ;$0)
+
+  //ACT_TERMINATEFROMSERVER
+C_PICTURE:C286(ACT_TerminatefromServer ;$1)
+C_TEXT:C284(ACT_TerminatefromServer ;$2)
+
+  //DT_GETNULLDATESTRING
+C_TEXT:C284(dt_GetNullDateString ;$0)
+
+  //DHQRY_GETREFERENCEDVALUE
+C_TEXT:C284(dhQRY_GetReferencedValue ;$0)
+C_TEXT:C284(dhQRY_GetReferencedValue ;$1)
+
+  //DHCAL_COUNTDAYS
+C_BOOLEAN:C305(dhCAL_CountDays ;$0)
+
+  //XAL_ACT_CB_MODELOSAV
+C_BOOLEAN:C305(xAL_ACT_CB_ModelosAv ;$0)
+C_LONGINT:C283(xAL_ACT_CB_ModelosAv ;$1)
+C_LONGINT:C283(xAL_ACT_CB_ModelosAv ;$2)
+C_LONGINT:C283(xAL_ACT_CB_ModelosAv ;$3)
+
+  //XS_GETAPPLICATIONINFO
+C_TEXT:C284(XS_GetApplicationInfo ;$0)
+C_LONGINT:C283(XS_GetApplicationInfo ;$1)
+
+  //XS_SETAPPLICATIONINFO
+C_TEXT:C284(XS_SetApplicationInfo ;$0)
+C_LONGINT:C283(XS_SetApplicationInfo ;$1)
+C_TEXT:C284(XS_SetApplicationInfo ;$2)
+C_REAL:C285(XS_SetApplicationInfo ;$3)
+
+  //XAL_ACT_CBIN_MODELOSAV
+C_BOOLEAN:C305(xAL_ACT_CBIN_ModelosAv ;$0)
+C_LONGINT:C283(xAL_ACT_CBIN_ModelosAv ;$1)
+C_LONGINT:C283(xAL_ACT_CBIN_ModelosAv ;$2)
+C_LONGINT:C283(xAL_ACT_CBIN_ModelosAv ;$3)
+
+  //XAL_ACT_CBIN_MODELOSBOL
+C_BOOLEAN:C305(xAL_ACT_CBIN_ModelosBol ;$0)
+C_LONGINT:C283(xAL_ACT_CBIN_ModelosBol ;$1)
+C_LONGINT:C283(xAL_ACT_CBIN_ModelosBol ;$2)
+C_LONGINT:C283(xAL_ACT_CBIN_ModelosBol ;$3)
+
+  //ACTCC_LOADOBS
+C_TEXT:C284(ACTcc_LoadObs ;$1)
+C_TEXT:C284(ACTcc_LoadObs ;$2)
+
+  //XALP_CB_ACT_CTASOBS
+C_BOOLEAN:C305(xALP_CB_ACT_CtasObs ;$0)
+C_LONGINT:C283(xALP_CB_ACT_CtasObs ;$1)
+C_LONGINT:C283(xALP_CB_ACT_CtasObs ;$2)
+C_LONGINT:C283(xALP_CB_ACT_CtasObs ;$3)
+
+  //ST_MAC2ISO
+C_TEXT:C284(st_Mac2Iso ;$0)
+C_TEXT:C284(st_Mac2Iso ;$1)
+
+  //SMTP_SEND_BLOB
+C_TEXT:C284(SMTP_Send_Blob ;$0)
+C_TEXT:C284(SMTP_Send_Blob ;$1)
+C_TEXT:C284(SMTP_Send_Blob ;$2)
+C_TEXT:C284(SMTP_Send_Blob ;$3)
+C_TEXT:C284(SMTP_Send_Blob ;$4)
+C_BLOB:C604(SMTP_Send_Blob ;$5)
+C_TEXT:C284(SMTP_Send_Blob ;$6)
+C_TEXT:C284(SMTP_Send_Blob ;$7)
+C_LONGINT:C283(SMTP_Send_Blob ;$8)
+C_TEXT:C284(SMTP_Send_Blob ;$9)
+C_TEXT:C284(SMTP_Send_Blob ;$10)
+C_TEXT:C284(SMTP_Send_Blob ;$11)
+C_TEXT:C284(SMTP_Send_Blob ;$12)
+C_TEXT:C284(SMTP_Send_Blob ;$13)
+C_TEXT:C284(SMTP_Send_Blob ;$14)
+C_TEXT:C284(SMTP_Send_Blob ;$15)
+
+  //SMTP_ERRORCHECK
+C_TEXT:C284(SMTP_ErrorCheck ;$0)
+C_TEXT:C284(SMTP_ErrorCheck ;$1)
+C_REAL:C285(SMTP_ErrorCheck ;$2)
+
+  //HTML_REPLACEEXTENDEDCHARS
+C_TEXT:C284(HTML_ReplaceExtendedChars ;$0)
+C_TEXT:C284(HTML_ReplaceExtendedChars ;$1)
+
+  //HTML_REPLACEEXTENDEDCHARACTER
+C_TEXT:C284(HTML_ReplaceExtendedCharacter ;$0)
+C_TEXT:C284(HTML_ReplaceExtendedCharacter ;$1)
+C_LONGINT:C283(HTML_ReplaceExtendedCharacter ;$2)
+C_TEXT:C284(HTML_ReplaceExtendedCharacter ;$3)
+
+  //XALSET_AL_ASISTENCIACLASES
+C_LONGINT:C283(xALSet_AL_AsistenciaClases ;$1)
+
+
+  //AL_PAGINAEXTRACURRICULARES
+C_REAL:C285(AL_PaginaExtracurriculares ;$0)
+
+  //SYS_CREATEPATH
+C_TEXT:C284(SYS_CreatePath ;$1)
+
+  //ACTCC_ELIMINACARGOS
+C_BLOB:C604(ACTcc_EliminaCargos ;$1)
+C_PICTURE:C286(ACTcc_EliminaCargos ;$2)
+C_TEXT:C284(ACTcc_EliminaCargos ;$3)
+C_BOOLEAN:C305(ACTcc_EliminaCargos ;$4)
+
+  //XALCB_EX_CFGMODBLOBITEMSTRAMOS
+C_BOOLEAN:C305(xALCB_EX_cfgModBlobItemsTramos ;$0)
+C_LONGINT:C283(xALCB_EX_cfgModBlobItemsTramos ;$1)
+C_LONGINT:C283(xALCB_EX_cfgModBlobItemsTramos ;$2)
+
+  //ACTCC_CAMBIAFECHACARGOSPROYECTA
+C_BLOB:C604(ACTcc_CambiaFechaCargosProyecta ;$1)
+C_PICTURE:C286(ACTcc_CambiaFechaCargosProyecta ;$2)
+C_TEXT:C284(ACTcc_CambiaFechaCargosProyecta ;$3)
+C_BOOLEAN:C305(ACTcc_CambiaFechaCargosProyecta ;$4)
+
+  //DHXS_CLOSECHILDPROCESS
+C_REAL:C285(dhXS_CloseChildProcess ;$1)
+
+  //XALCB_EX_METHODPROPERTIES
+C_BOOLEAN:C305(xALCB_EX_MethodProperties ;$0)
+C_LONGINT:C283(xALCB_EX_MethodProperties ;$1)
+C_LONGINT:C283(xALCB_EX_MethodProperties ;$2)
+
+  //SYS_OPENFILEINWEBBROWSER
+C_TEXT:C284(SYS_OpenFileInWebBrowser ;$1)
+
+  //XALCB_EN_CATEGORIAANOT
+C_LONGINT:C283(xALCB_EN_CategoriaAnot ;$1)
+C_LONGINT:C283(xALCB_EN_CategoriaAnot ;$2)
+
+  //ACTINIT_CREATEDEFFDPCODES
+C_LONGINT:C283(ACTinit_CreateDefFdPCodes ;$0)
+C_BOOLEAN:C305(ACTinit_CreateDefFdPCodes ;$1)
+
+  //XAL_ACT_CB_FDPAGO
+C_BOOLEAN:C305(xAL_ACT_CB_FdPago ;$0)
+C_LONGINT:C283(xAL_ACT_CB_FdPago ;$1)
+C_LONGINT:C283(xAL_ACT_CB_FdPago ;$2)
+C_LONGINT:C283(xAL_ACT_CB_FdPago ;$3)
+
+  //ADT_INICIALIZAADMISSIONTRACKSER
+C_REAL:C285(ADT_InicializaAdmissionTrackSer ;$1)
+
+  //ADTCDD_FSAVE
+C_REAL:C285(ADTcdd_fSave ;$0)
+
+  //PERIODOS_REFCONFIGURACION
+C_REAL:C285(PERIODOS_refConfiguracion ;$0)
+C_REAL:C285(PERIODOS_refConfiguracion ;$1)
+
+  //DT_GETDAYNUMBER_ISO8601
+C_REAL:C285(DT_GetDayNumber_ISO8601 ;$0)
+C_DATE:C307(DT_GetDayNumber_ISO8601 ;$1)
+
+  //DHBWR_SETSORT
+C_BOOLEAN:C305(dhBWR_SetSort ;$0)
+
+  //_EDAD_LITERAL
+C_TEXT:C284(_Edad_Literal ;$0)
+C_DATE:C307(_Edad_Literal ;$1)
+C_DATE:C307(_Edad_Literal ;$2)
+
+  //ACTMNU_RECALCULARSALDOSAVISOS
+C_POINTER:C301(ACTmnu_RecalcularSaldosAvisos ;$1)
+C_DATE:C307(ACTmnu_RecalcularSaldosAvisos ;$2)
+C_BOOLEAN:C305(ACTmnu_RecalcularSaldosAvisos ;$3)
+C_BOOLEAN:C305(ACTmnu_RecalcularSaldosAvisos ;$4)
+
+  //ACTBOL_EMITIRDOCUMENTOS2
+C_REAL:C285(ACTbol_EmitirDocumentos2 ;$0)
+C_TEXT:C284(ACTbol_EmitirDocumentos2 ;$1)
+C_TEXT:C284(ACTbol_EmitirDocumentos2 ;$2)
+C_TEXT:C284(ACTbol_EmitirDocumentos2 ;$3)
+C_REAL:C285(ACTbol_EmitirDocumentos2 ;$4)
+C_REAL:C285(ACTbol_EmitirDocumentos2 ;$5)
+C_REAL:C285(ACTbol_EmitirDocumentos2 ;$6)
+C_REAL:C285(ACTbol_EmitirDocumentos2 ;$7)
+C_TEXT:C284(ACTbol_EmitirDocumentos2 ;$8)
+C_TEXT:C284(ACTbol_EmitirDocumentos2 ;$9)
+C_REAL:C285(ACTbol_EmitirDocumentos2 ;$10)
+
+  //ACTBOL_ESTADOBOLETA
+C_LONGINT:C283(ACTbol_EstadoBoleta ;$1)
+
+  //IO_EXPORTAINFORMESPROPIOS
+C_LONGINT:C283(IO_ExportaInformesPropios ;$1)
+C_LONGINT:C283(IO_ExportaInformesPropios ;$2)
+C_TEXT:C284(IO_ExportaInformesPropios ;$3)
+
+  //IT_TYPEDLISTVALUEISOK
+C_BOOLEAN:C305(IT_TypedListValueIsOK ;$0)
+C_POINTER:C301(IT_TypedListValueIsOK ;$1)
+C_POINTER:C301(IT_TypedListValueIsOK ;$2)
+
+  //DHBWR_UPDATERECORDSLIST
+C_BOOLEAN:C305(dhBWR_UpdateRecordsList ;$0)
+C_POINTER:C301(dhBWR_UpdateRecordsList ;$1)
+
+
+  //SRACTBOL_CARGACARGOSGRANGE
+C_LONGINT:C283(SRACTbol_CargaCargosGrange ;$1)
+
+  //SRACTBOL_ENDBOLETAGRANGE
+C_REAL:C285(SRACTbol_EndBoletaGrange ;$1)
+
+  //FTP_CHANGEDIRECTORY
+C_BOOLEAN:C305(FTP_ChangeDirectory ;$0)
+C_LONGINT:C283(FTP_ChangeDirectory ;$1)
+C_TEXT:C284(FTP_ChangeDirectory ;$2)
+
+  //FTP_CREATEDIR
+C_LONGINT:C283(FTP_CreateDir ;$1)
+C_TEXT:C284(FTP_CreateDir ;$2)
+C_TEXT:C284(FTP_CreateDir ;$3)
+
+  //FTP_DOWNLOADFILES
+C_TEXT:C284(FTP_DownloadFiles ;$1)
+C_POINTER:C301(FTP_DownloadFiles ;$2)
+C_POINTER:C301(FTP_DownloadFiles ;$3)
+
+  //FTP_GETCURRENTDIRPATH
+C_TEXT:C284(FTP_GetCurrentDirPath ;$0)
+
+  //FTP_GETFILE
+C_TEXT:C284(FTP_GetFile ;$1)
+
+  //FTP_GETHOSTPATHS
+C_LONGINT:C283(FTP_GetHostPaths ;$1)
+C_POINTER:C301(FTP_GetHostPaths ;$2)
+C_POINTER:C301(FTP_GetHostPaths ;$3)
+
+  //FTP_GETHOSTSUBPATHS
+C_TEXT:C284(FTP_GetHostSubPaths ;$1)
+C_POINTER:C301(FTP_GetHostSubPaths ;$2)
+C_POINTER:C301(FTP_GetHostSubPaths ;$3)
+
+  //FTP_GETPATH
+C_TEXT:C284(FTP_GetPath ;$0)
+C_TEXT:C284(FTP_GetPath ;$1)
+
+  //FTP_REMOVE
+C_LONGINT:C283(FTP_Remove ;$1)
+C_TEXT:C284(FTP_Remove ;$2)
+C_TEXT:C284(FTP_Remove ;$3)
+C_LONGINT:C283(FTP_Remove ;$4)
+
+  //FTP_SETCURRENTDIRPATH
+C_TEXT:C284(FTP_SetCurrentDirPath ;$1)
+C_BOOLEAN:C305(FTP_SetCurrentDirPath ;$2)
+
+  //FTP_UPLOADFILE
+C_REAL:C285(FTP_UploadFile ;$0)
+C_TEXT:C284(FTP_UploadFile ;$1)
+C_TEXT:C284(FTP_UploadFile ;$2)
+
+  //FTP_UPLOADFOLDERS
+C_POINTER:C301(FTP_UploadFolders ;$1)
+C_TEXT:C284(FTP_UploadFolders ;$2)
+C_TEXT:C284(FTP_UploadFolders ;$3)
+
+  //FTP_UPLOADMULTIPLEFILES
+C_POINTER:C301(FTP_UploadMultipleFiles ;$1)
+C_TEXT:C284(FTP_UploadMultipleFiles ;$2)
+C_TEXT:C284(FTP_UploadMultipleFiles ;$3)
+
+  //IC_ERROR_HANDLING
+C_LONGINT:C283(IC_Error_Handling ;$1)
+C_TEXT:C284(IC_Error_Handling ;$2)
+
+  //WS_SENDSYSTEMINFO
+C_TEXT:C284(WS_SendSystemInfo ;$0)
+C_TEXT:C284(WS_SendSystemInfo ;$1)
+
+  //WS_GETFTPLOGININFO
+C_TEXT:C284(WS_GetFtpLoginInfo ;$0)
+C_TEXT:C284(WS_GetFtpLoginInfo ;$1)
+
+  //SYS_GETALLSUBPATHS
+C_POINTER:C301(SYS_GetAllSubpaths ;$1)
+
+  //SYS_GETSUBDIRECTORIES
+C_TEXT:C284(SYS_GetSubdirectories ;$1)
+C_POINTER:C301(SYS_GetSubdirectories ;$2)
+
+  //SYS_GETSYSTEMINFOS
+C_BLOB:C604(SYS_GetSystemInfos ;$0)
+C_TEXT:C284(SYS_GetSystemInfos ;$1)
+
+  //SYS_GETFILELIST
+C_TEXT:C284(SYS_GetFileList ;$1)
+C_POINTER:C301(SYS_GetFileList ;$2)
+
+  //ACTBOL_EMITIRRECIBOS4PAGOS
+C_TEXT:C284(ACTbol_EmitirRecibos4Pagos ;$1)
+C_REAL:C285(ACTbol_EmitirRecibos4Pagos ;$2)
+C_TEXT:C284(ACTbol_EmitirRecibos4Pagos ;$3)
+
+  //USR_FORCEQUIT
+C_LONGINT:C283(USR_ForceQuit ;$1)
+
+  //SYS_DISCONNECTCLIENTS
+C_BOOLEAN:C305(SYS_DisconnectClients ;$0)
+C_LONGINT:C283(SYS_DisconnectClients ;$1)
+C_BOOLEAN:C305(SYS_DisconnectClients ;$2)
+C_LONGINT:C283(SYS_DisconnectClients ;$3)
+
+  //SYS_TESTSTORAGESPACE
+C_BOOLEAN:C305(SYS_TestStorageSpace ;$0)
+C_TEXT:C284(SYS_TestStorageSpace ;$1)
+C_REAL:C285(SYS_TestStorageSpace ;$2)
+
+  //XDOC_RESTOREHELPERDOCUMENT
+C_LONGINT:C283(xDOC_RestoreHelperDocument ;$0)
+C_TEXT:C284(xDOC_RestoreHelperDocument ;$1)
+C_TEXT:C284(xDOC_RestoreHelperDocument ;$2)
+C_TEXT:C284(xDOC_RestoreHelperDocument ;$3)
+
+  //BM_EMITIRAVISOS
+C_BOOLEAN:C305(BM_EmitirAvisos ;$0)
+C_LONGINT:C283(BM_EmitirAvisos ;$1)
+
+  //SMTP_SEND_TEXT
+C_TEXT:C284(SMTP_Send_Text ;$0)
+C_TEXT:C284(SMTP_Send_Text ;$1)
+C_TEXT:C284(SMTP_Send_Text ;$2)
+C_TEXT:C284(SMTP_Send_Text ;$3)
+C_TEXT:C284(SMTP_Send_Text ;$4)
+C_TEXT:C284(SMTP_Send_Text ;$5)
+C_TEXT:C284(SMTP_Send_Text ;$6)
+C_TEXT:C284(SMTP_Send_Text ;$7)
+C_LONGINT:C283(SMTP_Send_Text ;$8)
+C_TEXT:C284(SMTP_Send_Text ;$9)
+C_TEXT:C284(SMTP_Send_Text ;$10)
+C_TEXT:C284(SMTP_Send_Text ;$11)
+C_TEXT:C284(SMTP_Send_Text ;$12)
+C_TEXT:C284(SMTP_Send_Text ;$13)
+C_TEXT:C284(SMTP_Send_Text ;$14)
+C_TEXT:C284(SMTP_Send_Text ;$15)
+
+  //SOPORTE_SENDDATABASE
+C_TEXT:C284(SOPORTE_SendDatabase ;$1)
+C_TEXT:C284(SOPORTE_SendDatabase ;$2)
+C_TEXT:C284(SOPORTE_SendDatabase ;$3)
+C_TEXT:C284(SOPORTE_SendDatabase ;$4)
+
+  //HL_LIST2TEXT
+C_TEXT:C284(HL_List2Text ;$0)
+C_TEXT:C284(HL_List2Text ;$1)
+C_TEXT:C284(HL_List2Text ;$2)
+
+  //HL_REFERENCEDLIST2TEXT
+C_TEXT:C284(HL_ReferencedList2Text ;$0)
+C_REAL:C285(HL_ReferencedList2Text ;$1)
+C_TEXT:C284(HL_ReferencedList2Text ;$2)
+
+  //LOC_LOADLIST2TEXT
+C_TEXT:C284(LOC_LoadList2Text ;$0)
+C_TEXT:C284(LOC_LoadList2Text ;$1)
+C_TEXT:C284(LOC_LoadList2Text ;$2)
+
+  //ACTBOL_SELECCIONAPERIODOLIBRO
+C_BOOLEAN:C305(ACTbol_SeleccionaPeriodoLibro ;$0)
+
+  //ACTBOL_IMPRESIONDOCSTRIB
+C_REAL:C285(ACTbol_ImpresionDocsTrib ;$0)
+C_REAL:C285(ACTbol_ImpresionDocsTrib ;$1)
+
+  //ACTITEMS_SELECCIONAPERIODOFACT
+C_BOOLEAN:C305(ACTitems_SeleccionaPeriodoFact ;$0)
+
+  //_CUENTADIASHABILES
+C_REAL:C285(_CuentaDiasHabiles ;$0)
+C_DATE:C307(_CuentaDiasHabiles ;$1)
+C_DATE:C307(_CuentaDiasHabiles ;$2)
+
+  //WSGET_EVENTOSSOPORTE_SNTII
+C_BLOB:C604(WSget_EventosSoporte_SNTII ;$0)
+C_TEXT:C284(WSget_EventosSoporte_SNTII ;$1)
+C_TEXT:C284(WSget_EventosSoporte_SNTII ;$2)
+
+  //WS_GETTSMESSAGEBODY
+C_BLOB:C604(WS_GetTSMessageBody ;$0)
+C_TEXT:C284(WS_GetTSMessageBody ;$1)
+
+  //WSGET_SUPPORTEVENTRECORD
+C_BLOB:C604(WSget_SupportEventRecord ;$0)
+C_LONGINT:C283(WSget_SupportEventRecord ;$1)
+C_TEXT:C284(WSget_SupportEventRecord ;$2)
+
+  //ACTDESCTOS_BUILDDESCTOSAREA
+C_DATE:C307(ACTdesctos_BuildDesctosArea ;$1)
+C_DATE:C307(ACTdesctos_BuildDesctosArea ;$2)
+C_TEXT:C284(ACTdesctos_BuildDesctosArea ;$3)
+
+  //XAL_ACT_CBIN_GENDESCTOS
+C_BOOLEAN:C305(xAL_ACT_CBIN_GenDesctos ;$0)
+C_LONGINT:C283(xAL_ACT_CBIN_GenDesctos ;$1)
+C_LONGINT:C283(xAL_ACT_CBIN_GenDesctos ;$2)
+C_LONGINT:C283(xAL_ACT_CBIN_GenDesctos ;$3)
+
+  //XAL_ACT_CB_GENDESCTOS
+C_BOOLEAN:C305(xAL_ACT_CB_GenDesctos ;$0)
+C_LONGINT:C283(xAL_ACT_CB_GenDesctos ;$1)
+C_LONGINT:C283(xAL_ACT_CB_GenDesctos ;$2)
+C_LONGINT:C283(xAL_ACT_CB_GenDesctos ;$3)
+
+  //ACTDESCTOS_FINDCELL
+C_BOOLEAN:C305(ACTdesctos_FindCell ;$0)
+C_LONGINT:C283(ACTdesctos_FindCell ;$1)
+C_LONGINT:C283(ACTdesctos_FindCell ;$2)
+C_POINTER:C301(ACTdesctos_FindCell ;$3)
+C_POINTER:C301(ACTdesctos_FindCell ;$4)
+
+  //WSGET_TSDOCUMENTS
+C_BLOB:C604(WSget_TSDocuments ;$0)
+C_TEXT:C284(WSget_TSDocuments ;$1)
+C_TEXT:C284(WSget_TSDocuments ;$2)
+
+  //WSGET_NEWTSDOCREF
+C_BLOB:C604(WSget_NewTSDocRef ;$0)
+C_TEXT:C284(WSget_NewTSDocRef ;$1)
+C_TEXT:C284(WSget_NewTSDocRef ;$2)
+C_TEXT:C284(WSget_NewTSDocRef ;$3)
+
+  //SRACTAC_ENDAVISOLFRANCES
+C_REAL:C285(SRACTac_EndAvisoLFrances ;$1)
+
+  //SRACTAC_CARGACARGOSLFRANCES
+C_LONGINT:C283(SRACTac_CargaCargosLFrances ;$1)
+
+  //ACTAC_IMPRESIONAVISOS
+C_REAL:C285(ACTac_ImpresionAvisos ;$0)
+C_REAL:C285(ACTac_ImpresionAvisos ;$1)
+
+  //ACTCC_DVCODIGOCTA
+C_TEXT:C284(ACTcc_DVCodigoCta ;$0)
+C_TEXT:C284(ACTcc_DVCodigoCta ;$1)
+
+  //ACT_DIVISAPAIS
+C_TEXT:C284(ACT_DivisaPais ;$0)
+
+
+  //PF_SETTUTORIASNOTASCLR
+C_LONGINT:C283(PF_SetTutoriasNotasClr ;$1)
+C_LONGINT:C283(PF_SetTutoriasNotasClr ;$2)
+
+  //XPLCB_AL_HEADERINFORMENOTAS
+C_TEXT:C284(xPLCB_AL_HeaderInformeNotas ;$0)
+C_LONGINT:C283(xPLCB_AL_HeaderInformeNotas ;$1)
+C_LONGINT:C283(xPLCB_AL_HeaderInformeNotas ;$2)
+C_TEXT:C284(xPLCB_AL_HeaderInformeNotas ;$3)
+C_LONGINT:C283(xPLCB_AL_HeaderInformeNotas ;$4)
+C_LONGINT:C283(xPLCB_AL_HeaderInformeNotas ;$5)
+
+  //DL_ISMODULELICENSED
+C_BOOLEAN:C305(LICENCIA_esModuloAutorizado ;$0)
+C_LONGINT:C283(LICENCIA_esModuloAutorizado ;$1)
+C_LONGINT:C283(LICENCIA_esModuloAutorizado ;$2)
+C_TEXT:C284(LICENCIA_esModuloAutorizado ;$3)
+
+  //NTA_SETSINGLECELLCOLORSEV
+C_REAL:C285(NTA_SetSingleCellColorsev ;$1)
+
+  //XALP_CB_EX_DISPERSION
+C_BOOLEAN:C305(xALP_CB_EX_Dispersion ;$0)
+C_LONGINT:C283(xALP_CB_EX_Dispersion ;$1)
+C_LONGINT:C283(xALP_CB_EX_Dispersion ;$2)
+C_LONGINT:C283(xALP_CB_EX_Dispersion ;$3)
+
+  //ACTTBL_ADD2GLOSASEXTRA
+C_TEXT:C284(ACTtbl_Add2GlosasExtra ;$1)
+
+  //ST_ABBREVIATESTRING
+C_TEXT:C284(ST_AbbreviateString ;$0)
+C_TEXT:C284(ST_AbbreviateString ;$1)
+C_LONGINT:C283(ST_AbbreviateString ;$2)
+
+  //IT_CONTROLOBJECTLENGTH
+C_POINTER:C301(IT_ControlObjectLength ;$1)
+C_LONGINT:C283(IT_ControlObjectLength ;$2)
+C_TEXT:C284(IT_ControlObjectLength ;$3)
+
+  //ACTAC_PREPAGAR
+C_REAL:C285(ACTac_Prepagar ;$1)
+C_BOOLEAN:C305(ACTac_Prepagar ;$2)
+C_BOOLEAN:C305(ACTac_Prepagar ;$3)
+
+  //ACTPGS_MAPVARIABLES
+C_REAL:C285(ACTpgs_MapVariables ;$1)
+
+  //ACTAC_PREPAGARAVISO
+C_BOOLEAN:C305(ACTac_PrepagarAviso ;$0)
+C_TEXT:C284(ACTac_PrepagarAviso ;$1)
+
+  //PF_DELETESELECTION
+C_LONGINT:C283(PF_DeleteSelection ;$0)
+
+  //WZD_GETGRADEPLAN
+C_REAL:C285(WZD_GetGradePlan ;$1)
+
+  //ACTCC_RECALCSELCUENTAS
+C_BOOLEAN:C305(ACTcc_RecalcSelCuentas ;$1)
+
+  //SR_SHOWHIDESECTION
+C_LONGINT:C283(SR_ShowHideSection ;$1)
+C_BOOLEAN:C305(SR_ShowHideSection ;$2)
+
+  //STRPF_ONEXPLORERLOAD
+C_POINTER:C301(STRpf_OnExplorerLoad ;$1)
+
+  //STRAL_ONEXPLORERLOAD
+C_POINTER:C301(STRal_OnExplorerLoad ;$1)
+
+  //XALP_CB_ACT_CONTABLEEXTRAS
+C_BOOLEAN:C305(xALP_CB_ACT_ContableExtras ;$0)
+C_LONGINT:C283(xALP_CB_ACT_ContableExtras ;$1)
+C_LONGINT:C283(xALP_CB_ACT_ContableExtras ;$2)
+C_LONGINT:C283(xALP_CB_ACT_ContableExtras ;$3)
+
+  //XALP_ACT_CB_CUENTASCBL
+C_BOOLEAN:C305(xALP_ACT_CB_CuentasCbl ;$0)
+C_LONGINT:C283(xALP_ACT_CB_CuentasCbl ;$1)
+C_LONGINT:C283(xALP_ACT_CB_CuentasCbl ;$2)
+
+  //XALP_ACT_CB_CCUENTASCBL
+C_BOOLEAN:C305(xALP_ACT_CB_CCuentasCbl ;$0)
+C_LONGINT:C283(xALP_ACT_CB_CCuentasCbl ;$1)
+C_LONGINT:C283(xALP_ACT_CB_CCuentasCbl ;$2)
+
+  //ACT_RELACIONACTASYAPDOS
+C_REAL:C285(ACT_relacionaCtasyApdos ;$1)
+C_TEXT:C284(ACT_relacionaCtasyApdos ;$2)
+
+  //ASSEV_RETIRAALUMNO
+C_REAL:C285(ASsev_RetiraAlumno ;$1)
+C_POINTER:C301(ASsev_RetiraAlumno ;$2)
+
+  //ASSEV_GUARDANOMINA
+C_REAL:C285(ASsev_GuardaNomina ;$1)
+
+  //_EVALUACION_A_INDICADOR
+C_TEXT:C284(_Evaluacion_a_Indicador ;$0)
+C_REAL:C285(_Evaluacion_a_Indicador ;$1)
+C_REAL:C285(_Evaluacion_a_Indicador ;$2)
+
+  //WIZ_ACT_ARCHBANCARIOS
+C_BOOLEAN:C305(WIZ_ACT_ArchBancarios ;$1)
+
+  //ACTABC_EXPORTPORCOLEGIO
+C_REAL:C285(ACTabc_ExportPorColegio ;$0)
+C_TEXT:C284(ACTabc_ExportPorColegio ;$1)
+C_LONGINT:C283(ACTabc_ExportPorColegio ;$2)
+
+  //ACTDC_ESTADOCHEQUE
+C_REAL:C285(ACTdc_EstadoCheque ;$1)
+
+  //ACTPGS_FSAVE
+C_REAL:C285(ACTpgs_fSave ;$0)
+
+  //BBLDC_DELETESELECTION
+C_REAL:C285(BBLdc_DeleteSelection ;$0)
+
+  //AS_PAGEEVLG
+C_TEXT:C284(AS_PageEVLG ;$1)
+
+  //AS_EVLG_CARGAEVALUACION
+C_LONGINT:C283(AS_EVLG_CargaEvaluacion ;$1)
+C_LONGINT:C283(AS_EVLG_CargaEvaluacion ;$2)
+C_LONGINT:C283(AS_EVLG_CargaEvaluacion ;$3)
+C_LONGINT:C283(AS_EVLG_CargaEvaluacion ;$4)
+C_LONGINT:C283(AS_EVLG_CargaEvaluacion ;$5)
+
+  //XALSET_EVLG_EVALUACIONES
+C_TEXT:C284(xALSET_EVLG_Evaluaciones ;$1)
+
+  //XALCB_EN_EVLG_EVALUACIONES
+C_LONGINT:C283(xALCB_EN_EVLG_Evaluaciones ;$1)
+C_LONGINT:C283(xALCB_EN_EVLG_Evaluaciones ;$2)
+
+  //XALCB_EX_INDICADORESLOGROS
+C_BOOLEAN:C305(xALCB_EX_IndicadoresLogros ;$0)
+C_LONGINT:C283(xALCB_EX_IndicadoresLogros ;$1)
+C_LONGINT:C283(xALCB_EX_IndicadoresLogros ;$2)
+
+  //AS_EVLG_SAVEEVALUACIONES
+C_REAL:C285(AS_EVLG_SaveEvaluaciones ;$1)
+C_REAL:C285(AS_EVLG_SaveEvaluaciones ;$2)
+C_REAL:C285(AS_EVLG_SaveEvaluaciones ;$3)
+C_REAL:C285(AS_EVLG_SaveEvaluaciones ;$4)
+
+  //EVLG_DATOSALUMNO
+C_REAL:C285(EVLG_DatosAlumno ;$1)
+
+
+  //IT_CLAIRVOYANCEONFIELDS_VALUE
+C_POINTER:C301(IT_ClairvoyanceOnFields_Value ;$1)
+C_POINTER:C301(IT_ClairvoyanceOnFields_Value ;$2)
+C_BOOLEAN:C305(IT_ClairvoyanceOnFields_Value ;$3)
+
+  //SRACT_INFORMEVALIDACION
+C_BOOLEAN:C305(SRACT_InformeValidacion ;$0)
+
+  //ST_REPLACECHARBYASCIICODE
+C_TEXT:C284(ST_ReplaceCharByAsciiCode ;$0)
+C_TEXT:C284(ST_ReplaceCharByAsciiCode ;$1)
+C_TEXT:C284(ST_ReplaceCharByAsciiCode ;$2)
+C_TEXT:C284(ST_ReplaceCharByAsciiCode ;$3)
+
+  //DBUACT_VERIFICADORINTEGRIDAD
+C_REAL:C285(dbuACT_VerificadorIntegridad ;$1)
+
+  //ACTAC_EMITETRANSACCION
+C_BOOLEAN:C305(ACTac_EmiteTransaccion ;$0)
+C_TEXT:C284(ACTac_EmiteTransaccion ;$1)
+
+  //ACTAC_EMITEDOCCARGO
+C_BOOLEAN:C305(ACTac_EmiteDocCargo ;$0)
+C_TEXT:C284(ACTac_EmiteDocCargo ;$1)
+
+  //ACTAC_EMITECARGO
+C_BOOLEAN:C305(ACTac_EmiteCargo ;$0)
+C_TEXT:C284(ACTac_EmiteCargo ;$1)
+
+  //DT_GETWEEKNUMBER
+C_LONGINT:C283(DT_GetWeekNumber ;$0)
+
+  //SRACTAC_ENDAVISOBUCKINGHAM
+C_REAL:C285(SRACTac_EndAvisoBuckingham ;$1)
+
+  //SRACTAC_CARGACARGOSBUCKINGHAM
+C_LONGINT:C283(SRACTac_CargaCargosBuckingham ;$1)
+
+  //EVLG_RETIRAAPRENDIZAJE
+C_LONGINT:C283(EVLG_RetiraAprendizaje ;$1)
+C_LONGINT:C283(EVLG_RetiraAprendizaje ;$2)
+C_LONGINT:C283(EVLG_RetiraAprendizaje ;$3)
+C_REAL:C285(EVLG_RetiraAprendizaje ;$4)
+
+
+  //KRL_UNLOADREADONLY
+C_POINTER:C301(KRL_UnloadReadOnly ;$1)
+
+  //XALP_CB_ACT_APDOSOBS
+C_BOOLEAN:C305(xALP_CB_ACT_ApdosObs ;$0)
+C_LONGINT:C283(xALP_CB_ACT_ApdosObs ;$1)
+C_LONGINT:C283(xALP_CB_ACT_ApdosObs ;$2)
+C_LONGINT:C283(xALP_CB_ACT_ApdosObs ;$3)
+
+  //ACTPP_LOADOBS
+C_TEXT:C284(ACTpp_LoadObs ;$1)
+C_TEXT:C284(ACTpp_LoadObs ;$2)
+
+  //ACTUTL_ESTIMAINTERES
+C_REAL:C285(ACTutl_EstimaInteres ;$0)
+C_LONGINT:C283(ACTutl_EstimaInteres ;$1)
+C_DATE:C307(ACTutl_EstimaInteres ;$2)
+
+  //SRACTAC_CALCTOTALCARGOBUCK
+C_TEXT:C284(SRACTac_CalcTotalCargoBuck ;$1)
+C_REAL:C285(SRACTac_CalcTotalCargoBuck ;$2)
+C_TEXT:C284(SRACTac_CalcTotalCargoBuck ;$3)
+C_TEXT:C284(SRACTac_CalcTotalCargoBuck ;$4)
+C_TEXT:C284(SRACTac_CalcTotalCargoBuck ;$5)
+
+  //ACTAC_CALCULAINTERESES
+C_BOOLEAN:C305(ACTac_CalculaIntereses ;$0)
+C_REAL:C285(ACTac_CalculaIntereses ;$1)
+C_BOOLEAN:C305(ACTac_CalculaIntereses ;$2)
+C_DATE:C307(ACTac_CalculaIntereses ;$3)
+
+  //ACTMNU_RECALCCONINTERESES
+C_BOOLEAN:C305(ACTmnu_RecalcConIntereses ;$1)
+C_BOOLEAN:C305(ACTmnu_RecalcConIntereses ;$2)
+C_DATE:C307(ACTmnu_RecalcConIntereses ;$3)
+
+  //ASSEV_LEEPROPIEDADESCONTROLES
+C_LONGINT:C283(ASsev_LeePropiedadesControles ;$1)
+
+  //ASSEV_PROMEDIOSCONCONTROLES
+C_REAL:C285(ASsev_PromediosConControles ;$1)
+C_REAL:C285(ASsev_PromediosConControles ;$2)
+C_REAL:C285(ASsev_PromediosConControles ;$3)
+
+  //SRACT_CAUSACIONBUCK
+C_BOOLEAN:C305(SRACT_CausacionBuck ;$0)
+
+  //ACTPP_CALCULANOCARGAS
+C_BOOLEAN:C305(ACTpp_CalculaNoCargas ;$0)
+C_REAL:C285(ACTpp_CalculaNoCargas ;$1)
+
+  //ACTPP_CALCCARGASSELAPDOS
+C_BOOLEAN:C305(ACTpp_CalcCargasSelApdos ;$1)
+
+  //ACTPP_LOADDOCSTRIBUTARIOS
+C_TEXT:C284(ACTpp_LoadDocsTributarios ;$1)
+C_POINTER:C301(ACTpp_LoadDocsTributarios ;$2)
+
+  //ACTWIZ_IMPORTBANCARIOS
+C_PICTURE:C286(ACTwiz_ImportBancarios ;$1)
+C_TEXT:C284(ACTwiz_ImportBancarios ;$2)
+
+  //ACTABC_IMPORTPORCOLEGIO
+C_REAL:C285(ACTabc_ImportPorColegio ;$0)
+C_BLOB:C604(ACTabc_ImportPorColegio ;$1)
+C_TEXT:C284(ACTabc_ImportPorColegio ;$2)
+C_LONGINT:C283(ACTabc_ImportPorColegio ;$3)
+C_LONGINT:C283(ACTabc_ImportPorColegio ;$4)
+C_DATE:C307(ACTabc_ImportPorColegio ;$5)
+C_PICTURE:C286(ACTabc_ImportPorColegio ;$6)
+C_TEXT:C284(ACTabc_ImportPorColegio ;$7)
+C_REAL:C285(ACTabc_ImportPorColegio ;$8)
+C_REAL:C285(ACTabc_ImportPorColegio ;$9)
+C_DATE:C307(ACTabc_ImportPorColegio ;$10)
+
+  //ACTABC_IMPORTPATHIGHLANDS
+C_TEXT:C284(ACTabc_ImportPATHighlands ;$1)
+
+  //ACTABC_IMPORTPATEVEREST
+C_TEXT:C284(ACTabc_ImportPATEverest ;$1)
+
+  //NV_GETVALUEFROMPAIREDLIST
+C_TEXT:C284(NV_GetValueFromPairedList ;$0)
+C_TEXT:C284(NV_GetValueFromPairedList ;$1)
+C_TEXT:C284(NV_GetValueFromPairedList ;$2)
+C_TEXT:C284(NV_GetValueFromPairedList ;$3)
+C_TEXT:C284(NV_GetValueFromPairedList ;$4)
+
+  //NV_SETVALUEINPAIREDLIST
+C_REAL:C285(NV_SetValueInPairedList ;$0)
+C_POINTER:C301(NV_SetValueInPairedList ;$1)
+C_TEXT:C284(NV_SetValueInPairedList ;$2)
+C_TEXT:C284(NV_SetValueInPairedList ;$3)
+C_TEXT:C284(NV_SetValueInPairedList ;$4)
+C_TEXT:C284(NV_SetValueInPairedList ;$5)
+
+  //NV_GETVALUEFROMTEXTARRAY
+C_TEXT:C284(NV_GetValueFromTextArray ;$0)
+C_POINTER:C301(NV_GetValueFromTextArray ;$1)
+C_TEXT:C284(NV_GetValueFromTextArray ;$2)
+C_TEXT:C284(NV_GetValueFromTextArray ;$3)
+
+  //NV_SETVALUEINTEXTARRAY
+C_LONGINT:C283(NV_SetValueInTextArray ;$0)
+C_POINTER:C301(NV_SetValueInTextArray ;$1)
+C_TEXT:C284(NV_SetValueInTextArray ;$2)
+C_TEXT:C284(NV_SetValueInTextArray ;$3)
+C_TEXT:C284(NV_SetValueInTextArray ;$4)
+
+  //NV_SETVALUEINPAIREDARRAYS
+C_LONGINT:C283(NV_SetValueInPairedArrays ;$0)
+C_POINTER:C301(NV_SetValueInPairedArrays ;$1)
+C_POINTER:C301(NV_SetValueInPairedArrays ;$2)
+C_TEXT:C284(NV_SetValueInPairedArrays ;$3)
+C_TEXT:C284(NV_SetValueInPairedArrays ;$4)
+C_BOOLEAN:C305(NV_SetValueInPairedArrays ;$5)
+
+  //NV_GETVALUEFROMPAIREDARRAYS
+C_TEXT:C284(NV_GetValueFromPairedArrays ;$0)
+C_POINTER:C301(NV_GetValueFromPairedArrays ;$1)
+C_POINTER:C301(NV_GetValueFromPairedArrays ;$2)
+C_TEXT:C284(NV_GetValueFromPairedArrays ;$3)
+
+  //SR_PLACESECTIONFIELD
+C_LONGINT:C283(SR_PlaceSectionField ;$0)
+C_LONGINT:C283(SR_PlaceSectionField ;$1)
+C_LONGINT:C283(SR_PlaceSectionField ;$2)
+C_POINTER:C301(SR_PlaceSectionField ;$3)
+C_TEXT:C284(SR_PlaceSectionField ;$4)
+C_LONGINT:C283(SR_PlaceSectionField ;$5)
+C_LONGINT:C283(SR_PlaceSectionField ;$6)
+C_LONGINT:C283(SR_PlaceSectionField ;$7)
+
+  //SR_CREATEFIELD
+C_REAL:C285(SR_CreateField ;$0)
+C_REAL:C285(SR_CreateField ;$1)
+C_REAL:C285(SR_CreateField ;$2)
+C_REAL:C285(SR_CreateField ;$3)
+C_REAL:C285(SR_CreateField ;$4)
+C_REAL:C285(SR_CreateField ;$5)
+C_REAL:C285(SR_CreateField ;$6)
+C_REAL:C285(SR_CreateField ;$7)
+
+  //SR_MOVESECTION
+C_LONGINT:C283(SR_MoveSection ;$1)
+C_LONGINT:C283(SR_MoveSection ;$2)
+C_REAL:C285(SR_MoveSection ;$3)
+C_BOOLEAN:C305(SR_MoveSection ;$4)
+
+  //SR_SETSECTIONMINHEIGHT
+C_REAL:C285(SR_SetSectionMinHeight ;$1)
+C_REAL:C285(SR_SetSectionMinHeight ;$2)
+
+  //SR_SETOBJECTTEXTPROPERTIES
+C_REAL:C285(SR_SetObjectTextProperties ;$0)
+C_REAL:C285(SR_SetObjectTextProperties ;$1)
+C_REAL:C285(SR_SetObjectTextProperties ;$2)
+C_TEXT:C284(SR_SetObjectTextProperties ;$3)
+C_REAL:C285(SR_SetObjectTextProperties ;$4)
+C_REAL:C285(SR_SetObjectTextProperties ;$5)
+C_REAL:C285(SR_SetObjectTextProperties ;$6)
+
+  //ACTCM_ISMONTHOPENFROMDATE
+C_BOOLEAN:C305(ACTcm_IsMonthOpenFromDate ;$0)
+C_DATE:C307(ACTcm_IsMonthOpenFromDate ;$1)
+C_POINTER:C301(ACTcm_IsMonthOpenFromDate ;$2)
+
+  //ACTCM_ISMONTHOPENFROMMONTHYEAR
+C_BOOLEAN:C305(ACTcm_IsMonthOpenFromMonthYear ;$0)
+C_LONGINT:C283(ACTcm_IsMonthOpenFromMonthYear ;$1)
+C_LONGINT:C283(ACTcm_IsMonthOpenFromMonthYear ;$2)
+C_POINTER:C301(ACTcm_IsMonthOpenFromMonthYear ;$3)
+
+  //ACTCM_LOADYEAR
+C_LONGINT:C283(ACTcm_LoadYear ;$1)
+
+  //ACTCM_SAVEYEAR
+C_LONGINT:C283(ACTcm_SaveYear ;$1)
+
+  //DBUACT_GENERADIREC
+C_REAL:C285(dbuACT_GeneraDirEC ;$1)
+
+  //ACTABC_EXPORTPATHIGHLANDS
+C_TEXT:C284(ACTabc_ExportPATHighlands ;$1)
+C_TEXT:C284(ACTabc_ExportPATHighlands ;$2)
+C_TEXT:C284(ACTabc_ExportPATHighlands ;$3)
+
+  //ACTABC_EXPORTPATEVEREST
+C_TEXT:C284(ACTabc_ExportPATEverest ;$1)
+C_TEXT:C284(ACTabc_ExportPATEverest ;$2)
+C_TEXT:C284(ACTabc_ExportPATEverest ;$3)
+
+  //ACTABC_EXPORTPATCUMBRES
+C_TEXT:C284(ACTabc_ExportPATCumbres ;$1)
+C_TEXT:C284(ACTabc_ExportPATCumbres ;$2)
+C_TEXT:C284(ACTabc_ExportPATCumbres ;$3)
+
+  //ACTABC_EXPORTPATGRANGE
+C_TEXT:C284(ACTabc_ExportPATGrange ;$1)
+C_TEXT:C284(ACTabc_ExportPATGrange ;$2)
+C_TEXT:C284(ACTabc_ExportPATGrange ;$3)
+
+  //ACTABC_EXPORTPACHIGHLANDS
+C_TEXT:C284(ACTabc_ExportPACHighlands ;$1)
+C_TEXT:C284(ACTabc_ExportPACHighlands ;$2)
+C_TEXT:C284(ACTabc_ExportPACHighlands ;$3)
+
+  //ACTABC_EXPORTPACLACRUZ
+C_TEXT:C284(ACTabc_ExportPACLaCruz ;$1)
+C_TEXT:C284(ACTabc_ExportPACLaCruz ;$2)
+C_TEXT:C284(ACTabc_ExportPACLaCruz ;$3)
+
+  //ACTABC_EXPORTPACSANISIDRO
+C_TEXT:C284(ACTabc_ExportPACSanIsidro ;$1)
+C_TEXT:C284(ACTabc_ExportPACSanIsidro ;$2)
+C_TEXT:C284(ACTabc_ExportPACSanIsidro ;$3)
+
+  //ACTABC_EXPORTPACCUMBRES
+C_TEXT:C284(ACTabc_ExportPACCumbres ;$1)
+C_TEXT:C284(ACTabc_ExportPACCumbres ;$2)
+C_TEXT:C284(ACTabc_ExportPACCumbres ;$3)
+
+  //ACTABC_EXPORTPACGRANGE
+C_TEXT:C284(ACTabc_ExportPACGrange ;$1)
+C_TEXT:C284(ACTabc_ExportPACGrange ;$2)
+C_TEXT:C284(ACTabc_ExportPACGrange ;$3)
+
+  //_SI
+C_TEXT:C284(_SI ;$0)
+C_BOOLEAN:C305(_SI ;$1)
+C_TEXT:C284(_SI ;$2)
+C_TEXT:C284(_SI ;$3)
+
+  //KRL_VERIFYRECORDSTRUCTURE
+C_POINTER:C301(KRL_VerifyRecordStructure ;$1)
+C_BOOLEAN:C305(KRL_VerifyRecordStructure ;$2)
+C_POINTER:C301(KRL_VerifyRecordStructure ;$3)
+
+  //ACTWIZ_INSERTCCTALINE
+C_REAL:C285(ACTwiz_InsertCCtaLine ;$0)
+C_TEXT:C284(ACTwiz_InsertCCtaLine ;$1)
+C_POINTER:C301(ACTwiz_InsertCCtaLine ;$2)
+
+  //ACTWIZ_INSERTCTALINE
+C_TEXT:C284(ACTwiz_InsertCtaLine ;$1)
+C_REAL:C285(ACTwiz_InsertCtaLine ;$2)
+
+  //ACTWIZ_GENERAARCHCONTABLE
+C_TEXT:C284(ACTwiz_GeneraArchContable ;$1)
+C_TEXT:C284(ACTwiz_GeneraArchContable ;$2)
+C_TEXT:C284(ACTwiz_GeneraArchContable ;$3)
+C_TEXT:C284(ACTwiz_GeneraArchContable ;$4)
+
+  //ACTABC_IMPORTPATCUMBRES
+C_TEXT:C284(ACTabc_ImportPATCumbres ;$1)
+
+  //SRACTCC_TRANSACCIONES
+C_REAL:C285(SRACTcc_Transacciones ;$0)
+
+  //SRACTPP_TRANSACCIONES
+C_REAL:C285(SRACTpp_Transacciones ;$0)
+
+  //ST_DELETECHARSLEFT
+C_TEXT:C284(ST_DeleteCharsLeft ;$0)
+C_TEXT:C284(ST_DeleteCharsLeft ;$1)
+C_TEXT:C284(ST_DeleteCharsLeft ;$2)
+
+  //ACTABC_IMPORTPACLACRUZ
+C_TEXT:C284(ACTabc_ImportPACLaCruz ;$1)
+
+  //ACTABC_IMPORTPACEVEREST
+C_TEXT:C284(ACTabc_ImportPACEverest ;$1)
+
+  //ACTABC_IMPORTPACHIGHLANDS
+C_TEXT:C284(ACTabc_ImportPACHighlands ;$1)
+
+  //IO_EXPORTSELECTIONFROMTABLES
+C_POINTER:C301(IO_ExportSelectionFromTables ;$1)
+C_TEXT:C284(IO_ExportSelectionFromTables ;$2)
+
+  //BU_ADDCOMUNASLISTA
+C_LONGINT:C283(BU_AddComunasLista ;$1)
+C_TEXT:C284(BU_AddComunasLista ;$2)
+
+  //BU_CTRLISTAS
+C_TEXT:C284(BU_CtrListas ;$1)
+C_LONGINT:C283(BU_CtrListas ;$2)
+
+  //BU_CTRLISTASPROFESORES
+C_LONGINT:C283(BU_CtrListasProfesores ;$1)
+
+  //BU_DELCOMUNASLISTA
+C_LONGINT:C283(BU_DelComunasLista ;$1)
+C_TEXT:C284(BU_DelComunasLista ;$2)
+
+  //BU_REFRESH_INSCRIPCIONES
+C_REAL:C285(BU_Refresh_Inscripciones ;$1)
+C_REAL:C285(BU_Refresh_Inscripciones ;$2)
+
+  //BU_REFRESH_RECORRIDOS
+C_REAL:C285(BU_Refresh_Recorridos ;$1)
+C_REAL:C285(BU_Refresh_Recorridos ;$2)
+
+  //BU_VALIDACUPO
+C_REAL:C285(BU_ValidaCupo ;$0)
+C_LONGINT:C283(BU_ValidaCupo ;$1)
+C_LONGINT:C283(BU_ValidaCupo ;$2)
+
+  //BU_XALP_CB_EX_INSCRITOS
+C_BOOLEAN:C305(BU_xALP_CB_EX_Inscritos ;$0)
+C_LONGINT:C283(BU_xALP_CB_EX_Inscritos ;$1)
+C_LONGINT:C283(BU_xALP_CB_EX_Inscritos ;$2)
+
+
+  //_ETQMT_CODIGOBARRA
+C_PICTURE:C286(_ETQmt_CodigoBarra ;$0)
+C_LONGINT:C283(_ETQmt_CodigoBarra ;$1)
+C_BOOLEAN:C305(_ETQmt_CodigoBarra ;$2)
+C_TEXT:C284(_ETQmt_CodigoBarra ;$3)
+C_BOOLEAN:C305(_ETQmt_CodigoBarra ;$4)
+C_BOOLEAN:C305(_ETQmt_CodigoBarra ;$5)
+
+  //ADTCDD_DELETE
+C_REAL:C285(ADTcdd_Delete ;$0)
+
+  //ADTCDD_DELETESELECTION
+C_REAL:C285(ADTcdd_DeleteSelection ;$0)
+
+  //ADTCDD_DELETEALUMNO
+C_REAL:C285(ADTcdd_DeleteAlumno ;$0)
+
+  //PST_LOADPOSTHIST
+C_TEXT:C284(PST_LoadPostHist ;$1)
+
+  //SRACT_CARGOSCONDCTO
+C_BOOLEAN:C305(SRACT_CargosConDcto ;$0)
+C_LONGINT:C283(SRACT_CargosConDcto ;$1)
+
+  //ACTABC_IMPORTPACCUMBRES
+C_TEXT:C284(ACTabc_ImportPACCumbres ;$1)
+
+  //ACTABC_IMPORTPACSANISIDRO
+C_TEXT:C284(ACTabc_ImportPACSanIsidro ;$1)
+
+  //SRACT_ALUMNOSSINITEM
+C_BOOLEAN:C305(SRACT_AlumnosSinItem ;$0)
+C_LONGINT:C283(SRACT_AlumnosSinItem ;$1)
+
+  //SRACT_EXTRACTOCUENTA
+C_BOOLEAN:C305(SRACT_ExtractoCuenta ;$0)
+
+  //SRACT_PAGOSPARACARGO
+C_BOOLEAN:C305(SRACT_PagosParaCargo ;$0)
+
+  //ACTCAE_CIERREACTPROCESS
+C_BLOB:C604(ACTcae_CierreACTProcess ;$1)
+
+  //WSGET_SUPPORTEVENTS
+C_BLOB:C604(WSget_SupportEvents ;$0)
+C_TEXT:C284(WSget_SupportEvents ;$1)
+C_TEXT:C284(WSget_SupportEvents ;$2)
+C_TEXT:C284(WSget_SupportEvents ;$3)
+
+  //ACTMNU_MASSIVECCINACTIVATION
+C_BOOLEAN:C305(ACTmnu_MassiveCCInactivation ;$1)
+C_BOOLEAN:C305(ACTmnu_MassiveCCInactivation ;$2)
+
+  //ACTUTL_GETDECIMALFORMAT
+C_TEXT:C284(ACTutl_GetDecimalFormat ;$0)
+C_TEXT:C284(ACTutl_GetDecimalFormat ;$1)
+
+  //ACTABC_IMPORTPATLACRUZ
+C_TEXT:C284(ACTabc_ImportPATLaCruz ;$1)
+
+  //SF_SUBFIELD2TEXT
+C_TEXT:C284(SF_Subfield2Text ;$0)
+C_POINTER:C301(SF_Subfield2Text ;$1)
+C_POINTER:C301(SF_Subfield2Text ;$2)
+C_TEXT:C284(SF_Subfield2Text ;$3)
+
+  //ACTPGS_CREATETRANSACTION
+C_REAL:C285(ACTpgs_CreateTransaction ;$1)
+C_REAL:C285(ACTpgs_CreateTransaction ;$2)
+C_DATE:C307(ACTpgs_CreateTransaction ;$3)
+C_REAL:C285(ACTpgs_CreateTransaction ;$4)
+C_TEXT:C284(ACTpgs_CreateTransaction ;$5)
+C_REAL:C285(ACTpgs_CreateTransaction ;$6)
+C_REAL:C285(ACTpgs_CreateTransaction ;$7)
+C_TEXT:C284(ACTpgs_CreateTransaction ;$8)
+C_TEXT:C284(ACTpgs_CreateTransaction ;$9)
+C_REAL:C285(ACTpgs_CreateTransaction ;$10)
+C_REAL:C285(ACTpgs_CreateTransaction ;$11)
+C_REAL:C285(ACTpgs_CreateTransaction ;$12)
+
+  //ACTAC_PREPAGAR2
+C_REAL:C285(ACTac_Prepagar2 ;$1)
+C_BOOLEAN:C305(ACTac_Prepagar2 ;$2)
+
+  //XALP_CB_EX_XSFIELDS
+C_BOOLEAN:C305(xALP_CB_EX_XSFields ;$0)
+C_LONGINT:C283(xALP_CB_EX_XSFields ;$1)
+C_LONGINT:C283(xALP_CB_EX_XSFields ;$2)
+
+  //PP_LOADPERSONASVALUESCONTRATOS
+C_TEXT:C284(PP_LoadPersonasValuesContratos ;$0)
+C_REAL:C285(PP_LoadPersonasValuesContratos ;$1)
+C_LONGINT:C283(PP_LoadPersonasValuesContratos ;$2)
+
+  //PP_4DWCTASCTESNOMBRES
+C_TEXT:C284(PP_4DWCtasCtesNombres ;$0)
+C_LONGINT:C283(PP_4DWCtasCtesNombres ;$1)
+
+  //PP_4DWCTASCTESNOMBRESCURSO
+C_TEXT:C284(PP_4DWCtasCtesNombresCurso ;$0)
+
+  //SRACT_SELFECHA
+C_LONGINT:C283(SRACT_SelFecha ;$0)
+C_LONGINT:C283(SRACT_SelFecha ;$1)
+
+  //SRACTPGS_ORDENENMOVIMIENTOS
+C_LONGINT:C283(SRACTpgs_OrdenEnMovimientos ;$1)
+
+  //BU_VALIDARECORRIDO
+C_REAL:C285(BU_ValidaRecorrido ;$0)
+
+  //IT_SHOWSCROLLABLETEXT
+C_TEXT:C284(IT_ShowScrollableText ;$1)
+C_TEXT:C284(IT_ShowScrollableText ;$2)
+
+  //SRACT_EXTRACTOCUENTAAPOD
+C_BOOLEAN:C305(SRACT_ExtractoCuentaApod ;$0)
+
+  //ST_BOOLEAN2TEXT
+C_TEXT:C284(ST_Boolean2Text ;$0)
+C_BOOLEAN:C305(ST_Boolean2Text ;$1)
+C_TEXT:C284(ST_Boolean2Text ;$2)
+C_TEXT:C284(ST_Boolean2Text ;$3)
+
+  //ACTTRF_ADDCHECKCODE
+C_TEXT:C284(ACTtrf_AddCheckCode ;$0)
+C_TEXT:C284(ACTtrf_AddCheckCode ;$1)
+
+  //ACTTRF_REMOVECHECKCODE
+C_TEXT:C284(ACTtrf_RemoveCheckCode ;$0)
+C_TEXT:C284(ACTtrf_RemoveCheckCode ;$1)
+
+  //ACTTRF_ISVALIDTRANSFERFILE
+C_BOOLEAN:C305(ACTtrf_IsValidTransferFile ;$0)
+C_TEXT:C284(ACTtrf_IsValidTransferFile ;$1)
+
+  //ACTTRF_ISCOLEGIUMTRANSFERFILE
+C_BOOLEAN:C305(ACTtrf_IsColegiumTransferFile ;$0)
+C_TEXT:C284(ACTtrf_IsColegiumTransferFile ;$1)
+
+  //4D_FINDCC4DRESOURCE
+C_LONGINT:C283(4D_FindCC4DResource ;$0)
+C_TEXT:C284(4D_FindCC4DResource ;$1)
+
+  //4D_GETMETHODNAMES
+C_POINTER:C301(4D_GetMethodNames ;$1)
+
+  //4D_GETMETHODTEXT
+C_TEXT:C284(4D_GetMethodText ;$0)
+C_TEXT:C284(4D_GetMethodText ;$1)
+
+  //ACTWIZ_RESULTADOSIMPORT
+C_REAL:C285(ACTwiz_ResultadosImport ;$1)
+
+  //ACTABC_IMPORTPROCESS
+C_LONGINT:C283(ACTabc_ImportProcess ;$1)
+C_DATE:C307(ACTabc_ImportProcess ;$2)
+C_DATE:C307(ACTabc_ImportProcess ;$3)
+
+  //ACTCC_ASIGNNEWIDAPDO
+C_REAL:C285(ACTcc_AsignNewIDApdo ;$0)
+C_POINTER:C301(ACTcc_AsignNewIDApdo ;$1)
+C_POINTER:C301(ACTcc_AsignNewIDApdo ;$2)
+C_POINTER:C301(ACTcc_AsignNewIDApdo ;$3)
+C_POINTER:C301(ACTcc_AsignNewIDApdo ;$4)
+C_BOOLEAN:C305(ACTcc_AsignNewIDApdo ;$5)
+
+  //ACTIMP_ARRAYDECLARATIONS
+C_TEXT:C284(ACTimp_ArrayDeclarations ;$0)
+C_POINTER:C301(ACTimp_ArrayDeclarations ;${2})
+C_TEXT:C284(ACTimp_ArrayDeclarations ;$1)
+
+  //XALP_ACT_CB_IMPORTCARGOS
+C_BOOLEAN:C305(xALP_ACT_CB_ImportCargos ;$0)
+C_LONGINT:C283(xALP_ACT_CB_ImportCargos ;$1)
+C_LONGINT:C283(xALP_ACT_CB_ImportCargos ;$2)
+C_LONGINT:C283(xALP_ACT_CB_ImportCargos ;$3)
+
+  //ACTIMP_ANALIZEDATA
+C_LONGINT:C283(ACTimp_AnalizeData ;$1)
+
+  //ACTIMP_CHECKPERCENTAGES
+C_TEXT:C284(ACTimp_CheckPercentages ;$0)
+C_TEXT:C284(ACTimp_CheckPercentages ;$1)
+C_TEXT:C284(ACTimp_CheckPercentages ;$2)
+
+  //XALP_CB_INFOMACHINES
+C_BOOLEAN:C305(xALP_CB_InfoMachines ;$0)
+C_LONGINT:C283(xALP_CB_InfoMachines ;$1)
+C_LONGINT:C283(xALP_CB_InfoMachines ;$2)
+C_LONGINT:C283(xALP_CB_InfoMachines ;$3)
+C_POINTER:C301(xALP_CB_InfoMachines ;$4)
+C_LONGINT:C283(xALP_CB_InfoMachines ;$5)
+C_LONGINT:C283(xALP_CB_InfoMachines ;$6)
+
+  //HTML_HTML2TEXT
+C_TEXT:C284(HTML_Html2Text ;$0)
+C_TEXT:C284(HTML_Html2Text ;$1)
+
+  //PP_ESTADODEUDACPROTESTO
+C_LONGINT:C283(PP_EstadoDeudacProtesto ;$1)
+
+  //ACTABC_IMPORTCUPALEMAN
+C_TEXT:C284(ACTabc_ImportCUPAleman ;$1)
+
+  //ACTCC_BORRARDESCTO
+C_BOOLEAN:C305(ACTcc_BorrarDescto ;$0)
+C_TEXT:C284(ACTcc_BorrarDescto ;$1)
+
+  //ACTABC_IMPORTPACSCOTIASTMARGARE
+C_TEXT:C284(ACTabc_ImportPACScotiaStMargare ;$1)
+
+  //PP_LOADCOBRANZADETALLE
+C_TEXT:C284(PP_LoadCobranzaDetalle ;$0)
+C_LONGINT:C283(PP_LoadCobranzaDetalle ;$1)
+
+  //BBLPAT_CAMBIAPREFIJOBARCODE
+C_LONGINT:C283(BBLpat_CambiaPrefijoBarcode ;$0)
+C_TEXT:C284(BBLpat_CambiaPrefijoBarcode ;$1)
+C_TEXT:C284(BBLpat_CambiaPrefijoBarcode ;$2)
+C_TEXT:C284(BBLpat_CambiaPrefijoBarcode ;$3)
+
+  //WSGET_SCHOOLNETUSERS
+C_BLOB:C604(WSget_SchoolNetUsers ;$0)
+C_TEXT:C284(WSget_SchoolNetUsers ;$1)
+C_TEXT:C284(WSget_SchoolNetUsers ;$2)
+
+  //NUM_TEXT2NUMBER
+C_REAL:C285(NUM_Text2Number ;$0)
+C_TEXT:C284(NUM_Text2Number ;$1)
+
+  //PP_LOADCOBRANZAPORGLOSA
+C_TEXT:C284(PP_LoadCobranzaporGlosa ;$0)
+C_LONGINT:C283(PP_LoadCobranzaporGlosa ;$1)
+
+  //SR_SELECCIONAFECHA
+C_BOOLEAN:C305(SR_SeleccionaFecha ;$0)
+
+  //ACTABC_IMPORTCUPSTMARGARETS
+C_TEXT:C284(ACTabc_ImportCUPStMargarets ;$1)
+
+  //ACTPP_CONSULTARECHAZOS
+C_BOOLEAN:C305(ACTpp_ConsultaRechazos ;$0)
+
+  //ST_NUM2TEXT_TRADUCTOR
+C_TEXT:C284(ST_Num2Text_Traductor ;$0)
+C_TEXT:C284(ST_Num2Text_Traductor ;$1)
+C_TEXT:C284(ST_Num2Text_Traductor ;$2)
+C_TEXT:C284(ST_Num2Text_Traductor ;$3)
+
+  //ST_NUM2TEXT_MANTISA
+C_TEXT:C284(ST_Num2Text_Mantisa ;$0)
+C_TEXT:C284(ST_Num2Text_Mantisa ;$1)
+
+  //ST_NUM2TEXT_IDIOMTABLE
+C_TEXT:C284(ST_Num2Text_IdiomTable ;$0)
+C_TEXT:C284(ST_Num2Text_IdiomTable ;$1)
+C_TEXT:C284(ST_Num2Text_IdiomTable ;$2)
+C_TEXT:C284(ST_Num2Text_IdiomTable ;$3)
+
+  //ST_NUM2TEXT_FUNITS
+C_TEXT:C284(ST_Num2Text_FUnits ;$0)
+C_TEXT:C284(ST_Num2Text_FUnits ;$1)
+C_TEXT:C284(ST_Num2Text_FUnits ;$2)
+C_TEXT:C284(ST_Num2Text_FUnits ;$3)
+
+  //ST_NUM2TEXT_FFIX1
+C_TEXT:C284(ST_Num2Text_FFix1 ;$0)
+C_LONGINT:C283(ST_Num2Text_FFix1 ;$1)
+C_LONGINT:C283(ST_Num2Text_FFix1 ;$2)
+C_TEXT:C284(ST_Num2Text_FFix1 ;$3)
+C_TEXT:C284(ST_Num2Text_FFix1 ;$4)
+C_TEXT:C284(ST_Num2Text_FFix1 ;$5)
+C_TEXT:C284(ST_Num2Text_FFix1 ;$6)
+
+  //ST_NUM2TEXT_FDECENS
+C_TEXT:C284(ST_Num2Text_FDecens ;$0)
+C_TEXT:C284(ST_Num2Text_FDecens ;$1)
+C_TEXT:C284(ST_Num2Text_FDecens ;$2)
+C_TEXT:C284(ST_Num2Text_FDecens ;$3)
+
+  //ST_NUM2TEXT_FCENTS
+C_TEXT:C284(ST_Num2Text_FCents ;$0)
+C_TEXT:C284(ST_Num2Text_FCents ;$1)
+C_TEXT:C284(ST_Num2Text_FCents ;$2)
+C_TEXT:C284(ST_Num2Text_FCents ;$3)
+
+  //ST_NUM2TEXT2
+C_TEXT:C284(ST_Num2Text2 ;$0)
+C_REAL:C285(ST_Num2Text2 ;$1)
+C_TEXT:C284(ST_Num2Text2 ;$2)
+
+  //SRACT_CCCONTRATOPORCTACTE
+C_TEXT:C284(SRACT_ccContratoporCtaCte ;$0)
+C_LONGINT:C283(SRACT_ccContratoporCtaCte ;$1)
+C_LONGINT:C283(SRACT_ccContratoporCtaCte ;$2)
+
+  //DBUACT_VERIFICAPAGOSXCARGO
+C_LONGINT:C283(dbuACT_VerificaPagosXCargo ;$1)
+
+  //ACTAC_CREATECARGODOCCARGO4INT
+C_LONGINT:C283(ACTac_CreateCargoDocCargo4Int ;$0)
+C_LONGINT:C283(ACTac_CreateCargoDocCargo4Int ;$1)
+C_DATE:C307(ACTac_CreateCargoDocCargo4Int ;$2)
+C_REAL:C285(ACTac_CreateCargoDocCargo4Int ;$3)
+C_LONGINT:C283(ACTac_CreateCargoDocCargo4Int ;$4)
+
+  //ACTCC_LOADCARGOSINTOARRAYS
+C_REAL:C285(ACTcc_LoadCargosIntoArrays ;$0)
+C_BOOLEAN:C305(ACTcc_LoadCargosIntoArrays ;$1)
+C_POINTER:C301(ACTcc_LoadCargosIntoArrays ;$2)
+C_POINTER:C301(ACTcc_LoadCargosIntoArrays ;$3)
+C_POINTER:C301(ACTcc_LoadCargosIntoArrays ;$4)
+C_POINTER:C301(ACTcc_LoadCargosIntoArrays ;$5)
+C_POINTER:C301(ACTcc_LoadCargosIntoArrays ;$6)
+C_POINTER:C301(ACTcc_LoadCargosIntoArrays ;$7)
+
+  //ALP_DEFAULTCOLSETTINGS
+C_REAL:C285(ALP_DefaultColSettings ;$0)
+C_REAL:C285(ALP_DefaultColSettings ;$1)
+C_REAL:C285(ALP_DefaultColSettings ;$2)
+C_TEXT:C284(ALP_DefaultColSettings ;$3)
+C_TEXT:C284(ALP_DefaultColSettings ;$4)
+C_REAL:C285(ALP_DefaultColSettings ;$5)
+C_TEXT:C284(ALP_DefaultColSettings ;$6)
+C_REAL:C285(ALP_DefaultColSettings ;$7)
+C_REAL:C285(ALP_DefaultColSettings ;$8)
+C_REAL:C285(ALP_DefaultColSettings ;$9)
+
+  //USR_ISSUPERUSER
+C_BOOLEAN:C305(USR_IsSuperUser ;$0)
+C_TEXT:C284(USR_IsSuperUser ;$1)
+C_TEXT:C284(USR_IsSuperUser ;$2)
+
+  //ACTABC_EXPORTPACSTMARGARETS
+C_TEXT:C284(ACTabc_ExportPACStMargarets ;$1)
+C_TEXT:C284(ACTabc_ExportPACStMargarets ;$2)
+C_TEXT:C284(ACTabc_ExportPACStMargarets ;$3)
+
+  //ACTABC_IMPORTPACGRANGE
+C_TEXT:C284(ACTabc_ImportPACGrange ;$1)
+
+  //ACTABC_IMPORTPATGRANGE
+C_TEXT:C284(ACTabc_ImportPATGrange ;$1)
+
+  //ST_LOWERCASE
+C_TEXT:C284(ST_Lowercase ;$0)
+C_TEXT:C284(ST_Lowercase ;$1)
+
+  //SMTP_VERIFYEMAILADDRESS
+C_TEXT:C284(SMTP_VerifyEmailAddress ;$0)
+C_TEXT:C284(SMTP_VerifyEmailAddress ;$1)
+C_BOOLEAN:C305(SMTP_VerifyEmailAddress ;$2)
+
+  //ST_COERCE_TO_TEXT
+C_TEXT:C284(ST_Coerce_to_Text ;$0)
+C_POINTER:C301(ST_Coerce_to_Text ;$1)
+C_BOOLEAN:C305(ST_Coerce_to_Text ;$2)
+
+  //ST_PAD_STRING
+C_POINTER:C301(ST_Pad_String ;$1)
+C_LONGINT:C283(ST_Pad_String ;$2)
+C_LONGINT:C283(ST_Pad_String ;$3)
+C_BOOLEAN:C305(ST_Pad_String ;$4)
+
+  //TM_GET_HOURS
+C_REAL:C285(TM_Get_Hours ;$0)
+C_TIME:C306(TM_Get_Hours ;$1)
+
+  //TM_GET_MINUTES
+C_REAL:C285(TM_Get_Minutes ;$0)
+C_TIME:C306(TM_Get_Minutes ;$1)
+
+  //TM_GET_SECONDS
+C_REAL:C285(TM_Get_Seconds ;$0)
+C_TIME:C306(TM_Get_Seconds ;$1)
+
+  //CRYPT_ENCRYPT
+C_TEXT:C284(CRYPT_Encrypt ;$0)
+C_TEXT:C284(CRYPT_Encrypt ;$1)
+C_LONGINT:C283(CRYPT_Encrypt ;$2)
+C_LONGINT:C283(CRYPT_Encrypt ;$3)
+C_LONGINT:C283(CRYPT_Encrypt ;$4)
+C_LONGINT:C283(CRYPT_Encrypt ;$5)
+C_LONGINT:C283(CRYPT_Encrypt ;$6)
+
+  //CRYPT_ENCRYPTSUB
+C_TEXT:C284(CRYPT_EncryptSub ;$0)
+C_TEXT:C284(CRYPT_EncryptSub ;$1)
+C_LONGINT:C283(CRYPT_EncryptSub ;$2)
+C_LONGINT:C283(CRYPT_EncryptSub ;$3)
+C_LONGINT:C283(CRYPT_EncryptSub ;$4)
+C_LONGINT:C283(CRYPT_EncryptSub ;$5)
+
+  //CRYPT_DECRYPT
+C_TEXT:C284(CRYPT_Decrypt ;$0)
+C_TEXT:C284(CRYPT_Decrypt ;$1)
+C_LONGINT:C283(CRYPT_Decrypt ;$2)
+C_LONGINT:C283(CRYPT_Decrypt ;$3)
+C_LONGINT:C283(CRYPT_Decrypt ;$4)
+C_LONGINT:C283(CRYPT_Decrypt ;$5)
+
+  //CRYPT_DECRYPTSUB
+C_TEXT:C284(CRYPT_DecryptSub ;$0)
+C_TEXT:C284(CRYPT_DecryptSub ;$1)
+C_LONGINT:C283(CRYPT_DecryptSub ;$2)
+C_LONGINT:C283(CRYPT_DecryptSub ;$3)
+C_LONGINT:C283(CRYPT_DecryptSub ;$4)
+C_LONGINT:C283(CRYPT_DecryptSub ;$5)
+
+  //CRYPT_ENCRYPT_BLOB
+C_POINTER:C301(CRYPT_Encrypt_Blob ;$1)
+C_POINTER:C301(CRYPT_Encrypt_Blob ;$2)
+C_LONGINT:C283(CRYPT_Encrypt_Blob ;$3)
+C_LONGINT:C283(CRYPT_Encrypt_Blob ;$4)
+C_LONGINT:C283(CRYPT_Encrypt_Blob ;$5)
+C_LONGINT:C283(CRYPT_Encrypt_Blob ;$6)
+C_LONGINT:C283(CRYPT_Encrypt_Blob ;$7)
+
+  //CRYPT_DECRYPT_BLOB
+C_POINTER:C301(CRYPT_Decrypt_Blob ;$1)
+C_POINTER:C301(CRYPT_Decrypt_Blob ;$2)
+C_LONGINT:C283(CRYPT_Decrypt_Blob ;$3)
+C_LONGINT:C283(CRYPT_Decrypt_Blob ;$4)
+C_LONGINT:C283(CRYPT_Decrypt_Blob ;$5)
+C_LONGINT:C283(CRYPT_Decrypt_Blob ;$6)
+
+  //DTS_MAKEFROMDATETIME
+C_TEXT:C284(DTS_MakeFromDateTime ;$0)
+C_DATE:C307(DTS_MakeFromDateTime ;$1)
+C_TIME:C306(DTS_MakeFromDateTime ;$2)
+
+  //BASH_ERROR
+C_LONGINT:C283(Bash_ERROR ;$1)
+C_TEXT:C284(Bash_ERROR ;$2)
+C_TEXT:C284(Bash_ERROR ;$3)
+
+  //BASH_COUNT_AVAILABLE_BY_TYPE
+C_LONGINT:C283(Bash_Count_Available_By_Type ;$0)
+C_LONGINT:C283(Bash_Count_Available_By_Type ;$1)
+
+  //BASH_COUNT_LOCKED_BY_TYPE
+C_LONGINT:C283(Bash_Count_Locked_By_Type ;$0)
+C_LONGINT:C283(Bash_Count_Locked_By_Type ;$1)
+C_LONGINT:C283(Bash_Count_Locked_By_Type ;$2)
+
+  //BASH_GET_ARRAY_BY_TYPE
+C_POINTER:C301(Bash_Get_Array_By_Type ;$0)
+C_LONGINT:C283(Bash_Get_Array_By_Type ;$1)
+
+  //BASH_GET_LOCKING_PROCESSID
+C_LONGINT:C283(Bash_Get_Locking_ProcessID ;$0)
+C_POINTER:C301(Bash_Get_Locking_ProcessID ;$1)
+
+  //BASH_GET_VARIABLE_BY_TYPE
+C_POINTER:C301(Bash_Get_Variable_By_Type ;$0)
+C_LONGINT:C283(Bash_Get_Variable_By_Type ;$1)
+
+  //BASH_RETURN_VARIABLE
+C_POINTER:C301(Bash_Return_Variable ;$1)
+C_POINTER:C301(Bash_Return_Variables ;${-1})
+C_POINTER:C301(Bash_Return_Variables ;$1)
+C_POINTER:C301(Bash_Return_Variables ;$2)
+C_POINTER:C301(Bash_Return_Variables ;$3)
+C_POINTER:C301(Bash_Return_Variables ;$4)
+C_POINTER:C301(Bash_Return_Variables ;$5)
+C_POINTER:C301(Bash_Return_Variables ;$6)
+
+  //AL_ASIGNANODEFOLIO
+C_BOOLEAN:C305(AL_AsignaNoDeFolio ;$0)
+
+  //ST_TRIMLEADINGCHARS
+C_TEXT:C284(ST_TrimLeadingChars ;$0)
+C_TEXT:C284(ST_TrimLeadingChars ;$1)
+C_TEXT:C284(ST_TrimLeadingChars ;$2)
+
+  //ACTABC_IMPORTPATBOSTON
+C_TEXT:C284(ACTabc_ImportPATBoston ;$1)
+
+  //ACTABC_EXPORTPACCIAMAPO
+C_TEXT:C284(ACTabc_ExportPACCiaMApo ;$1)
+C_TEXT:C284(ACTabc_ExportPACCiaMApo ;$2)
+C_TEXT:C284(ACTabc_ExportPACCiaMApo ;$3)
+
+  //SRACT_CARGOSCONDCTOXITEM
+C_BOOLEAN:C305(SRACT_CargosconDctoxItem ;$0)
+C_LONGINT:C283(SRACT_CargosconDctoxItem ;$1)
+
+  //ACTABC_IMPORTPACCIAMAPO
+C_TEXT:C284(ACTabc_ImportPACCiaMApo ;$1)
+
+  //XALP_CB_EX_XSRELATIONS
+C_BOOLEAN:C305(xALP_CB_EX_XSRelations ;$0)
+C_LONGINT:C283(xALP_CB_EX_XSRelations ;$1)
+C_LONGINT:C283(xALP_CB_EX_XSRelations ;$2)
+C_POINTER:C301(ACTinit_CreateDefAfectasInteres ;${2})
+C_TEXT:C284(ACTinit_CreateDefAfectasInteres ;$1)
+
+  //SRACTAC_CARGACARGOSBRITANICO
+C_LONGINT:C283(SRACTac_CargaCargosBritanico ;$1)
+
+  //SRACTAC_ENDAVISOBRITANICO
+C_REAL:C285(SRACTac_EndAvisoBritanico ;$1)
+
+  //WDW_FINDWINDOWBYNAME
+C_LONGINT:C283(WDW_FindWindowByName ;$0)
+C_TEXT:C284(WDW_FindWindowByName ;$1)
+C_REAL:C285(WDW_FindWindowByName ;$2)
+
+
+  //KRL_EXECUTEONCONNECTEDCLIENTS
+C_TEXT:C284(KRL_ExecuteOnConnectedClients ;$1)
+
+  //4D_SAVEMTEXTFROMARRAY_BY_CC4D_I
+C_LONGINT:C283(4D_SaveMTextFromArray_By_CC4D_I ;$1)
+C_POINTER:C301(4D_SaveMTextFromArray_By_CC4D_I ;$2)
+C_REAL:C285(4D_SaveMTextFromArray_By_CC4D_I ;$3)
+
+  //4D_GETMETHODTEXTBLOB_BY_CC4D_ID
+C_BLOB:C604(4D_GetMethodTextBlob_By_CC4D_ID ;$0)
+C_LONGINT:C283(4D_GetMethodTextBlob_By_CC4D_ID ;$1)
+C_REAL:C285(4D_GetMethodTextBlob_By_CC4D_ID ;$2)
+
+  //ACTABC_IMPORTPATSTODOMINGO
+C_TEXT:C284(ACTabc_ImportPATStoDomingo ;$1)
+
+  //ACTABC_IMPORTCUPBRITANICO
+C_TEXT:C284(ACTabc_ImportCUPBritanico ;$1)
+
+  //OT_PUTBOOLEAN
+C_LONGINT:C283(OT_PutBoolean ;$1)
+C_TEXT:C284(OT_PutBoolean ;$2)
+C_BOOLEAN:C305(OT_PutBoolean ;$3)
+
+  //ACTABC_EXPORTPATSTODOMINGO
+C_TEXT:C284(ACTabc_ExportPATStoDomingo ;$1)
+C_TEXT:C284(ACTabc_ExportPATStoDomingo ;$2)
+C_TEXT:C284(ACTabc_ExportPATStoDomingo ;$3)
+
+  //ACTABC_EXPORTPACKENT
+C_TEXT:C284(ACTabc_ExportPACKent ;$1)
+C_TEXT:C284(ACTabc_ExportPACKent ;$2)
+C_TEXT:C284(ACTabc_ExportPACKent ;$3)
+
+  //ACTDD_ANULARDEPOSITO
+C_REAL:C285(ACTdd_AnularDeposito ;$0)
+
+  //ACTABC_EXPORTPATWENLOCK
+C_TEXT:C284(ACTabc_ExportPATWenlock ;$1)
+C_TEXT:C284(ACTabc_ExportPATWenlock ;$2)
+C_TEXT:C284(ACTabc_ExportPATWenlock ;$3)
+
+  //ACTABC_EXPORTCUPCIAMAPO
+C_TEXT:C284(ACTabc_ExportCUPCiaMApo ;$1)
+C_TEXT:C284(ACTabc_ExportCUPCiaMApo ;$2)
+C_TEXT:C284(ACTabc_ExportCUPCiaMApo ;$3)
+
+  //ACTCC_DESEMITIRCARGOS
+C_BOOLEAN:C305(ACTcc_DesEmitirCargos ;$0)
+C_BOOLEAN:C305(ACTcc_DesEmitirCargos ;$1)
+
+  //ACTAC_AGRUPARXCATEGORIA
+C_TEXT:C284(ACTac_AgruparXCategoria ;$1)
+
+  //SR_GETAREABOTTOM
+C_REAL:C285(SR_GetAreaBottom ;$0)
+C_REAL:C285(SR_GetAreaBottom ;$1)
+
+  //SRACTAC_HIDENONUSEDOBJECTS
+C_REAL:C285(SRACTac_HideNonUsedObjects ;$1)
+
+  //SRACTBOL_HIDENONUSEDOBJECTS
+C_REAL:C285(SRACTbol_HideNonUsedObjects ;$1)
+
+  //SYS_COPYFOLDER
+C_TEXT:C284(SYS_CopyFolder ;$1)
+C_TEXT:C284(SYS_CopyFolder ;$2)
+
+  //ACTBOL_GETMONTOLINEA
+C_REAL:C285(ACTbol_GetMontoLinea ;$0)
+C_TEXT:C284(ACTbol_GetMontoLinea ;$1)
+
+  //WS_CALLINTRANETWEBSERVICE
+C_TEXT:C284(WS_CallIntranetWebService ;$0)
+C_TEXT:C284(WS_CallIntranetWebService ;$1)
+
+  //ACTABC_EXPORTPATSBENITO
+C_TEXT:C284(ACTabc_ExportPATSBenito ;$1)
+C_TEXT:C284(ACTabc_ExportPATSBenito ;$2)
+C_TEXT:C284(ACTabc_ExportPATSBenito ;$3)
+
+  //ACTABC_EXPORTCUPSBENITO
+C_TEXT:C284(ACTabc_ExportCUPSBenito ;$1)
+C_TEXT:C284(ACTabc_ExportCUPSBenito ;$2)
+C_TEXT:C284(ACTabc_ExportCUPSBenito ;$3)
+
+  //ACTABC_EXPORTCUPSTMARGARETS_OLD
+C_TEXT:C284(ACTabc_ExportCUPStMargarets_Old ;$1)
+C_TEXT:C284(ACTabc_ExportCUPStMargarets_Old ;$2)
+C_TEXT:C284(ACTabc_ExportCUPStMargarets_Old ;$3)
+
+  //ACTABC_IMPORTCUPCIAMAPO
+C_TEXT:C284(ACTabc_ImportCUPCiaMApo ;$1)
+
+  //ACTABC_IMPORTPACBUCKINGHAM
+C_TEXT:C284(ACTabc_ImportPACBuckingham ;$1)
+
+  //SR_FORMATORUT2
+C_TEXT:C284(SR_FormatoRUT2 ;$0)
+C_TEXT:C284(SR_FormatoRUT2 ;$1)
+
+  //XML_OPENSAX_ROOT
+C_TIME:C306(XML_OpenSAX_Root ;$1)
+C_TEXT:C284(XML_OpenSAX_Root ;$2)
+C_TEXT:C284(XML_OpenSAX_Root ;$3)
+C_BOOLEAN:C305(XML_OpenSAX_Root ;$4)
+
+  //XML_CREATESAXELEMENTS
+C_TIME:C306(XML_CreateSaxElements ;$1)
+C_TEXT:C284(XML_CreateSaxElements ;$2)
+C_POINTER:C301(XML_CreateSaxElements ;$3)
+C_POINTER:C301(XML_CreateSaxElements ;$4)
+
+  //ST_CONCATENATEPADDEDSTRINGS
+C_TEXT:C284(ST_ConcatenatePaddedStrings ;$0)
+C_POINTER:C301(ST_ConcatenatePaddedStrings ;$1)
+C_POINTER:C301(ST_ConcatenatePaddedStrings ;$2)
+C_POINTER:C301(ST_ConcatenatePaddedStrings ;$3)
+C_POINTER:C301(ST_ConcatenatePaddedStrings ;$4)
+C_POINTER:C301(ST_ConcatenatePaddedStrings ;$5)
+
+  //ACTABC_EXPORTCUPMINGLESAS
+C_TEXT:C284(ACTabc_ExportCUPMInglesas ;$1)
+C_TEXT:C284(ACTabc_ExportCUPMInglesas ;$2)
+C_TEXT:C284(ACTabc_ExportCUPMInglesas ;$3)
+
+  //ACTABC_DETECTDELIMITER
+C_TEXT:C284(ACTabc_DetectDelimiter ;$0)
+C_TEXT:C284(ACTabc_DetectDelimiter ;$1)
+
+  //ACTTRF_DETECTFILETYPE
+C_BOOLEAN:C305(ACTtrf_DetectFileType ;$0)
+C_TEXT:C284(ACTtrf_DetectFileType ;$1)
+
+  //XALP_ACT_CB_MODDOCTRIB
+C_BOOLEAN:C305(xALP_ACT_CB_ModDocTrib ;$0)
+C_LONGINT:C283(xALP_ACT_CB_ModDocTrib ;$1)
+C_LONGINT:C283(xALP_ACT_CB_ModDocTrib ;$2)
+
+  //ACTBOL_ELIMINANULAS
+C_BOOLEAN:C305(ACTbol_EliminaNulas ;$0)
+C_REAL:C285(ACTbol_EliminaNulas ;$1)
+
+  //ACTBOL_MODIFICAR
+C_BOOLEAN:C305(ACTbol_Modificar ;$0)
+C_TEXT:C284(ACTbol_Modificar ;$1)
+
+  //ACT4DWPP_CONTRATO
+C_TEXT:C284(ACT4DWPP_Contrato ;$0)
+C_REAL:C285(ACT4DWPP_Contrato ;$1)
+C_REAL:C285(ACT4DWPP_Contrato ;$2)
+C_REAL:C285(ACT4DWPP_Contrato ;$3)
+
+  //ACTABC_EXPORTPATCIAMAPO
+C_TEXT:C284(ACTabc_ExportPATCiaMApo ;$1)
+C_TEXT:C284(ACTabc_ExportPATCiaMApo ;$2)
+C_TEXT:C284(ACTabc_ExportPATCiaMApo ;$3)
+
+
+  //ACTABC_EXPORTPATCIAMSEMINARIO
+C_TEXT:C284(ACTabc_ExportPATCiaMSeminario ;$1)
+C_TEXT:C284(ACTabc_ExportPATCiaMSeminario ;$2)
+C_TEXT:C284(ACTabc_ExportPATCiaMSeminario ;$3)
+
+  //ACTABC_IMPORTPATCIAMSEMINARIO
+C_TEXT:C284(ACTabc_ImportPATCiaMSeminario ;$1)
+
+  //PP_TYPEANDNUMIDENTIFICATOR
+C_TEXT:C284(PP_TypeAndNumIdentificator ;$0)
+C_REAL:C285(PP_TypeAndNumIdentificator ;$1)
+
+  //SRACT_PPCERTIFICADOPAGOS
+C_BOOLEAN:C305(SRACT_PPCertificadoPagos ;$0)
+C_REAL:C285(SRACT_PPCertificadoPagos ;$1)
+
+  //ACTABC_EXPORTPATBOSTON
+C_TEXT:C284(ACTabc_ExportPATBoston ;$1)
+C_TEXT:C284(ACTabc_ExportPATBoston ;$2)
+C_TEXT:C284(ACTabc_ExportPATBoston ;$3)
+
+  //ACTABC_EXPORTCUPAOSORNO
+C_TEXT:C284(ACTabc_ExportCUPAOsorno ;$1)
+C_TEXT:C284(ACTabc_ExportCUPAOsorno ;$2)
+C_TEXT:C284(ACTabc_ExportCUPAOsorno ;$3)
+
+  //PV_EXECUTECOMMAND
+C_LONGINT:C283(PV_ExecuteCommand ;$1)
+C_LONGINT:C283(PV_ExecuteCommand ;$2)
+C_LONGINT:C283(PV_ExecuteCommand ;$3)
+
+  //WR_EXECUTECALLBACK
+C_LONGINT:C283(WR_ExecuteCallBack ;$1)
+C_LONGINT:C283(WR_ExecuteCallBack ;$2)
+
+  //XALCB_EX_CFGMODBLOBITEMSFAMILIA
+C_BOOLEAN:C305(xALCB_EX_cfgModBlobItemsFamilia ;$0)
+C_LONGINT:C283(xALCB_EX_cfgModBlobItemsFamilia ;$1)
+C_LONGINT:C283(xALCB_EX_cfgModBlobItemsFamilia ;$2)
+
+
+  //ACTABC_IMPORTPATCIAMAPO
+C_TEXT:C284(ACTabc_ImportPATCiaMApo ;$1)
+
+  //AL_ACTUALIZADIRECCIONFAMILIA
+C_POINTER:C301(AL_ActualizaDireccionFamilia ;$1)
+
+  //ACTABC_IMPORTPACKENT
+C_TEXT:C284(ACTabc_ImportPACKent ;$1)
+
+  //XS_GETCOMMANDALIASDESCRIPTION
+C_TEXT:C284(XS_GetCommandAliasDescription ;$0)
+C_REAL:C285(XS_GetCommandAliasDescription ;$1)
+C_TEXT:C284(XS_GetCommandAliasDescription ;$2)
+C_TEXT:C284(XS_GetCommandAliasDescription ;$3)
+
+  //XS_GETBLOBNAME
+C_TEXT:C284(XS_GetBlobName ;$0)
+C_TEXT:C284(XS_GetBlobName ;$1)
+C_LONGINT:C283(XS_GetBlobName ;$2)
+C_TEXT:C284(XS_GetBlobName ;$3)
+C_TEXT:C284(XS_GetBlobName ;$4)
+C_LONGINT:C283(XS_GetBlobName ;$5)
+
+  //XS_VERIFYCOMMANDSTRANSLATION
+C_REAL:C285(XS_VerifyCommandsTranslation ;$1)
+
+  //HL_REREFERENCELIST
+C_LONGINT:C283(HL_ReReferenceList ;$0)
+C_LONGINT:C283(HL_ReReferenceList ;$1)
+C_POINTER:C301(HL_ReReferenceList ;$2)
+C_TEXT:C284(HL_ReReferenceList ;$3)
+
+  //XS_LOADFIELDS
+C_LONGINT:C283(XS_LoadFields ;$1)
+
+  //XS_SAVEINALLPANELBLOBS
+C_REAL:C285(XS_SaveInAllPanelBlobs ;$1)
+C_REAL:C285(XS_SaveInAllPanelBlobs ;$2)
+
+  //XS_VERIFYPANELTRANSLATIONS
+C_REAL:C285(XS_VerifyPanelTranslations ;$1)
+C_REAL:C285(XS_VerifyPanelTranslations ;$2)
+
+  //XS_INSERTINALLPANELBLOBS
+C_REAL:C285(XS_InsertInAllPanelBlobs ;$1)
+C_REAL:C285(XS_InsertInAllPanelBlobs ;$2)
+C_REAL:C285(XS_InsertInAllPanelBlobs ;$3)
+C_REAL:C285(XS_InsertInAllPanelBlobs ;$4)
+C_TEXT:C284(XS_InsertInAllPanelBlobs ;$5)
+C_REAL:C285(XS_InsertInAllPanelBlobs ;$6)
+C_TEXT:C284(XS_InsertInAllPanelBlobs ;$7)
+
+  //XS_INSERTINALLPANELBLOBSQF
+C_REAL:C285(XS_InsertInAllPanelBlobsQF ;$1)
+C_REAL:C285(XS_InsertInAllPanelBlobsQF ;$2)
+C_REAL:C285(XS_InsertInAllPanelBlobsQF ;$3)
+C_REAL:C285(XS_InsertInAllPanelBlobsQF ;$4)
+C_TEXT:C284(XS_InsertInAllPanelBlobsQF ;$5)
+C_REAL:C285(XS_InsertInAllPanelBlobsQF ;$6)
+C_REAL:C285(XS_InsertInAllPanelBlobsQF ;$7)
+
+  //XS_MOVEINALLPANELBLOBS
+C_REAL:C285(XS_MoveInAllPanelBlobs ;$1)
+C_REAL:C285(XS_MoveInAllPanelBlobs ;$2)
+C_REAL:C285(XS_MoveInAllPanelBlobs ;$3)
+C_REAL:C285(XS_MoveInAllPanelBlobs ;$4)
+
+  //XS_MOVEINALLPANELBLOBSQF
+C_REAL:C285(XS_MoveInAllPanelBlobsQF ;$1)
+C_REAL:C285(XS_MoveInAllPanelBlobsQF ;$2)
+C_REAL:C285(XS_MoveInAllPanelBlobsQF ;$3)
+C_REAL:C285(XS_MoveInAllPanelBlobsQF ;$4)
+
+  //XS_MOVEPANELSINALLBLOBS
+C_REAL:C285(XS_MovePanelsInAllBlobs ;$1)
+C_REAL:C285(XS_MovePanelsInAllBlobs ;$2)
+C_REAL:C285(XS_MovePanelsInAllBlobs ;$3)
+
+  //XS_REMOVEPANELINALLBLOBS
+C_REAL:C285(XS_RemovePanelInAllBlobs ;$1)
+C_REAL:C285(XS_RemovePanelInAllBlobs ;$2)
+
+  //XS_REMOVECOLUMNFROMALLPANELBLOB
+C_REAL:C285(XS_RemoveColumnFromAllPanelBlob ;$1)
+C_REAL:C285(XS_RemoveColumnFromAllPanelBlob ;$2)
+C_REAL:C285(XS_RemoveColumnFromAllPanelBlob ;$3)
+
+  //XS_REMOVEQFFROMALLPANELBLOBS
+C_REAL:C285(XS_RemoveQFFromAllPanelBlobs ;$1)
+C_REAL:C285(XS_RemoveQFFromAllPanelBlobs ;$2)
+C_REAL:C285(XS_RemoveQFFromAllPanelBlobs ;$3)
+
+  //XS_INSERTINALLCONFIGBLOBS
+C_REAL:C285(XS_InsertInAllConfigBlobs ;$0)
+C_REAL:C285(XS_InsertInAllConfigBlobs ;$1)
+C_REAL:C285(XS_InsertInAllConfigBlobs ;$2)
+
+  //XS_INSERTINALLWIZARDBLOBS
+C_REAL:C285(XS_InsertInAllWizardBlobs ;$0)
+C_REAL:C285(XS_InsertInAllWizardBlobs ;$1)
+C_REAL:C285(XS_InsertInAllWizardBlobs ;$2)
+
+  //XS_INSERTINALLSERVICESBLOBS
+C_REAL:C285(XS_InsertInAllServicesBlobs ;$0)
+C_REAL:C285(XS_InsertInAllServicesBlobs ;$1)
+C_REAL:C285(XS_InsertInAllServicesBlobs ;$2)
+
+  //XS_CREATEDEFAULTRESOURCES
+C_TEXT:C284(XS_CreateDefaultResources ;$1)
+
+  //XS_SEARCHCOMMANDALIAS
+C_TEXT:C284(XS_SearchCommandAlias ;$1)
+C_TEXT:C284(XS_SearchCommandAlias ;$2)
+C_TEXT:C284(XS_SearchCommandAlias ;$3)
+
+  //ACTABC_IMPORTCUPCRAIGHOUSE
+C_TEXT:C284(ACTabc_ImportCUPCraighouse ;$1)
+
+  //SYS_MODIFYRGBCOLOR
+C_LONGINT:C283(SYS_ModifyRGBColor ;$0)
+C_LONGINT:C283(SYS_ModifyRGBColor ;$1)
+C_LONGINT:C283(SYS_ModifyRGBColor ;$2)
+
+  //ACTABC_IMPORTCUPMINGLESAS
+C_TEXT:C284(ACTabc_ImportCUPMInglesas ;$1)
+
+  //ACTABC_IMPORTCUPKENT
+C_TEXT:C284(ACTabc_ImportCUPKent ;$1)
+C_REAL:C285(ALP_SetInterfaces ;${-1})
+
+  //ACTABC_IMPORTCUPMTABOR
+C_TEXT:C284(ACTabc_ImportCUPMtabor ;$1)
+
+  //ACTABC_EXPORTPACMTABOR
+C_TEXT:C284(ACTabc_ExportPACMTabor ;$1)
+C_TEXT:C284(ACTabc_ExportPACMTabor ;$2)
+C_TEXT:C284(ACTabc_ExportPACMTabor ;$3)
+
+  //ACTABC_IMPORTPACMTABOR
+C_TEXT:C284(ACTabc_ImportPACMTabor ;$1)
+
+  //ACTABC_IMPORTPATMTABOR
+C_TEXT:C284(ACTabc_ImportPATMTabor ;$1)
+
+  //ACTABC_EXPORTPATMTABOR
+C_TEXT:C284(ACTabc_ExportPATMTabor ;$1)
+C_TEXT:C284(ACTabc_ExportPATMTabor ;$2)
+C_TEXT:C284(ACTabc_ExportPATMTabor ;$3)
+
+  //ACTABC_EXPORTPATDSCRENACA
+C_TEXT:C284(ACTabc_ExportPATDSCRenaca ;$1)
+C_TEXT:C284(ACTabc_ExportPATDSCRenaca ;$2)
+C_TEXT:C284(ACTabc_ExportPATDSCRenaca ;$3)
+
+  //ACTABC_IMPORTPACAOSORNO
+C_TEXT:C284(ACTabc_ImportPACAOsorno ;$1)
+
+  //ACTABC_IMPORTPACINGLESTALCA
+C_TEXT:C284(ACTabc_ImportPACInglesTalca ;$1)
+
+  //ACTABC_EXPORTPACINGLESTALCA
+C_TEXT:C284(ACTabc_ExportPACInglesTalca ;$1)
+C_TEXT:C284(ACTabc_ExportPACInglesTalca ;$2)
+C_TEXT:C284(ACTabc_ExportPACInglesTalca ;$3)
+
+  //USR_SETSPECIALPERMISSIONS
+C_TEXT:C284(USR_SetSpecialPermissions ;$1)
+C_TEXT:C284(USR_SetSpecialPermissions ;$2)
+C_TEXT:C284(USR_SetSpecialPermissions ;$3)
+C_REAL:C285(USR_SetSpecialPermissions ;$4)
+
+  //USR_HASSPECIALPERMISSION
+C_BOOLEAN:C305(USR_HasSpecialPermission ;$0)
+C_TEXT:C284(USR_HasSpecialPermission ;$1)
+C_TEXT:C284(USR_HasSpecialPermission ;$2)
+
+  //ACTABC_EXPORTCUPMTABOR
+C_TEXT:C284(ACTabc_ExportCUPMTabor ;$1)
+C_TEXT:C284(ACTabc_ExportCUPMTabor ;$2)
+C_TEXT:C284(ACTabc_ExportCUPMTabor ;$3)
+
+  //ACTABC_IMPORTPATSBENITO
+C_TEXT:C284(ACTabc_ImportPATSBenito ;$1)
+
+  //ACTABC_EXPORTPACCIAMSEMINARIO
+C_TEXT:C284(ACTabc_ExportPACCiaMSeminario ;$1)
+C_TEXT:C284(ACTabc_ExportPACCiaMSeminario ;$2)
+C_TEXT:C284(ACTabc_ExportPACCiaMSeminario ;$3)
+
+  //ACTABC_IMPORTPACCIAMSEMINARIO
+C_TEXT:C284(ACTabc_ImportPACCiaMSeminario ;$1)
+
+  //MPA_CREAMATRIZPORDEFECTO
+C_REAL:C285(MPA_CreaMatrizPorDefecto ;$0)
+
+
+  //EVLG_EXPANDCOLLAPSEOBJECT
+C_TEXT:C284(EVLG_ExpandCollapseObject ;$1)
+C_LONGINT:C283(EVLG_ExpandCollapseObject ;$2)
+C_LONGINT:C283(EVLG_ExpandCollapseObject ;$3)
+C_LONGINT:C283(EVLG_ExpandCollapseObject ;$4)
+C_LONGINT:C283(EVLG_ExpandCollapseObject ;$5)
+C_POINTER:C301(EVLG_ExpandCollapseObject ;$6)
+C_POINTER:C301(EVLG_ExpandCollapseObject ;$7)
+C_POINTER:C301(EVLG_ExpandCollapseObject ;$8)
+C_POINTER:C301(EVLG_ExpandCollapseObject ;$9)
+
+  //EVLG_COPIAOBJETO
+C_LONGINT:C283(EVLG_CopiaObjeto ;$1)
+C_LONGINT:C283(EVLG_CopiaObjeto ;$2)
+C_LONGINT:C283(EVLG_CopiaObjeto ;$3)
+C_LONGINT:C283(EVLG_CopiaObjeto ;$4)
+C_LONGINT:C283(EVLG_CopiaObjeto ;$5)
+C_LONGINT:C283(EVLG_CopiaObjeto ;$6)
+C_LONGINT:C283(EVLG_CopiaObjeto ;$7)
+
+  //XALP_CB_APRENDIZAJES
+C_LONGINT:C283(xALP_CB_Aprendizajes ;$0)
+C_LONGINT:C283(xALP_CB_Aprendizajes ;$1)
+C_LONGINT:C283(xALP_CB_Aprendizajes ;$2)
+C_LONGINT:C283(xALP_CB_Aprendizajes ;$3)
+C_LONGINT:C283(xALP_CB_Aprendizajes ;$4)
+C_LONGINT:C283(xALP_CB_Aprendizajes ;$5)
+C_LONGINT:C283(xALP_CB_Aprendizajes ;$6)
+C_TEXT:C284(xALP_CB_Aprendizajes ;$7)
+C_TEXT:C284(xALP_CB_Aprendizajes ;$8)
+
+  //XALP_CB_EN_APRENDIZAJES
+C_LONGINT:C283(xALP_CB_EN_Aprendizajes ;$1)
+C_LONGINT:C283(xALP_CB_EN_Aprendizajes ;$2)
+
+  //ACTABC_IMPORTCUPSBENITO
+C_TEXT:C284(ACTabc_ImportCUPSBenito ;$1)
+
+  //XALCB_EX_TABLAATRASOS
+C_BOOLEAN:C305(xALCB_EX_TablaAtrasos ;$0)
+C_LONGINT:C283(xALCB_EX_TablaAtrasos ;$1)
+C_LONGINT:C283(xALCB_EX_TablaAtrasos ;$2)
+C_LONGINT:C283(xALCB_EX_TablaAtrasos ;$3)
+
+  //SRCU_INFORMEOFICIALARG
+C_LONGINT:C283(SRcu_InformeOficialARG ;$1)
+
+  //SRCU_INITIVARIABLESREPORT
+C_REAL:C285(SRcu_InitiVariablesReport ;$1)
+
+  //SRAL_EVALUACIONAPRENDIZAJES
+C_TEXT:C284(SRal_EvaluacionAprendizajes ;$1)
+C_LONGINT:C283(SRal_EvaluacionAprendizajes ;$2)
+C_LONGINT:C283(SRal_EvaluacionAprendizajes ;$3)
+C_TEXT:C284(SRal_EvaluacionAprendizajes ;$4)
+C_LONGINT:C283(SRal_EvaluacionAprendizajes ;$5)
+
+  //ACTABC_IMPORTCUPCIAMSEMINARIO
+C_TEXT:C284(ACTabc_ImportCUPCiaMSeminario ;$1)
+
+  //ACTABC_EXPORTCUPCIAMSEMINARIO
+C_TEXT:C284(ACTabc_ExportCUPCiaMSeminario ;$1)
+C_TEXT:C284(ACTabc_ExportCUPCiaMSeminario ;$2)
+C_TEXT:C284(ACTabc_ExportCUPCiaMSeminario ;$3)
+
+  //0XDEV_AVOIDTRIGGEREXECUTION
+C_BOOLEAN:C305(0xDev_AvoidTriggerExecution ;$1)
+
+  //XALP_CB_EX_RESOURCES
+C_BOOLEAN:C305(xALP_CB_EX_Resources ;$0)
+C_LONGINT:C283(xALP_CB_EX_Resources ;$1)
+C_LONGINT:C283(xALP_CB_EX_Resources ;$2)
+
+  //BBLW_ADDLINE
+C_TEXT:C284(BBLw_addLine ;$1)
+C_REAL:C285(BBLw_addLine ;$2)
+
+  //BBLW_MORE
+C_TEXT:C284(BBLw_more ;$0)
+C_TEXT:C284(BBLw_more ;$1)
+C_REAL:C285(BBLw_more ;$2)
+C_POINTER:C301(BBLw_more ;$3)
+C_POINTER:C301(BBLw_more ;$4)
+
+  //CD_THERMOMETREXSEC
+C_LONGINT:C283(CD_THERMOMETREXSEC ;$1)
+C_REAL:C285(CD_THERMOMETREXSEC ;$2)
+C_TEXT:C284(CD_THERMOMETREXSEC ;$3)
+
+  //BBLW_BUILDRECENTSPAGES
+C_REAL:C285(BBLw_BuildRecentsPages ;$1)
+C_REAL:C285(BBLw_BuildRecentsPages ;$2)
+
+  //BBLW_GETRECENTSPAGE
+C_TEXT:C284(BBLw_GetRecentsPage ;$1)
+C_REAL:C285(BBLw_GetRecentsPage ;$2)
+
+  //CU_LOADEVENTOSCURSO
+C_LONGINT:C283(CU_LoadEventosCurso ;$1)
+C_LONGINT:C283(CU_LoadEventosCurso ;$2)
+C_LONGINT:C283(CU_LoadEventosCurso ;$3)
+
+  //AL_LOADECURSOS
+C_LONGINT:C283(al_LoadECursos ;$1)
+C_LONGINT:C283(al_LoadECursos ;$2)
+
+  //EVS_LEEESTILOEVALHISTORICO
+C_LONGINT:C283(EVS_LeeEstiloEvalHistorico ;$0)
+C_BLOB:C604(EVS_LeeEstiloEvalHistorico ;$1)
+
+  //XS_ASKDESIGNER4PASSWORD
+C_TEXT:C284(XS_AskDesigner4Password ;$0)
+
+  //ACTABC_IMPORTPATCIAMVM
+C_TEXT:C284(ACTabc_ImportPATCiaMVM ;$1)
+
+  //ACTABC_EXPORTPATCIAMVM
+C_TEXT:C284(ACTabc_ExportPATCiaMVM ;$1)
+C_TEXT:C284(ACTabc_ExportPATCiaMVM ;$2)
+C_TEXT:C284(ACTabc_ExportPATCiaMVM ;$3)
+
+  //ACTABC_IMPORTCUPCIAMVM
+C_TEXT:C284(ACTabc_ImportCUPCiaMVM ;$1)
+
+  //4D_PARSEFORMOBJECT
+C_LONGINT:C283(4D_ParseFormObject ;$1)
+C_POINTER:C301(4D_ParseFormObject ;$2)
+C_POINTER:C301(4D_ParseFormObject ;$3)
+C_POINTER:C301(4D_ParseFormObject ;$4)
+C_POINTER:C301(4D_ParseFormObject ;$5)
+C_POINTER:C301(4D_ParseFormObject ;$6)
+C_POINTER:C301(4D_ParseFormObject ;$7)
+C_POINTER:C301(4D_ParseFormObject ;$8)
+C_POINTER:C301(4D_ParseFormObject ;$9)
+
+  //4D_GETFORMRESOURCEID
+C_LONGINT:C283(4D_GetFormResourceID ;$0)
+C_LONGINT:C283(4D_GetFormResourceID ;$1)
+C_TEXT:C284(4D_GetFormResourceID ;$2)
+
+  //4D_PARSEFORM
+C_REAL:C285(4D_ParseForm ;$1)
+C_TEXT:C284(4D_ParseForm ;$2)
+C_REAL:C285(4D_ParseForm ;$3)
+
+  //XML_VAR_TO_XML_2
+C_TEXT:C284(XML_Var_To_XML_2 ;$0)
+C_POINTER:C301(XML_Var_To_XML_2 ;$1)
+C_TEXT:C284(XML_Var_To_XML_2 ;$2)
+
+  //XML_ARRAY2D_TO_XML
+C_TEXT:C284(XML_Array2D_To_XML ;$0)
+C_POINTER:C301(XML_Array2D_To_XML ;$1)
+C_TEXT:C284(XML_Array2D_To_XML ;$2)
+
+  //XML_ARRAY_TO_XML
+C_TEXT:C284(XML_Array_To_XML ;$0)
+C_POINTER:C301(XML_Array_To_XML ;$1)
+C_POINTER:C301(XML_Array_To_XML ;$2)
+C_TEXT:C284(XML_Array_To_XML ;$3)
+C_TEXT:C284(XML_Array_To_XML ;$4)
+
+  //XML_ARRAY_TO_XML_2
+C_TEXT:C284(XML_Array_To_XML_2 ;$0)
+C_POINTER:C301(XML_Array_To_XML_2 ;$1)
+C_POINTER:C301(XML_Array_To_XML_2 ;$2)
+C_TEXT:C284(XML_Array_To_XML_2 ;$3)
+
+  //XML_ARRAY_TO_XML_3
+C_TEXT:C284(XML_Array_To_XML_3 ;$0)
+C_POINTER:C301(XML_Array_To_XML_3 ;$1)
+C_POINTER:C301(XML_Array_To_XML_3 ;$2)
+C_TEXT:C284(XML_Array_To_XML_3 ;$3)
+
+  //XML_CONVERT_TO_STRING
+C_TEXT:C284(XML_Convert_To_String ;$0)
+C_POINTER:C301(XML_Convert_To_String ;$1)
+
+  //XML_GEN_CLEANXML
+C_TEXT:C284(XML_Gen_CleanXML ;$0)
+C_TEXT:C284(XML_Gen_CleanXML ;$1)
+
+  //XML_GEN_EMPTY_XML
+C_TEXT:C284(XML_Gen_Empty_XML ;$0)
+
+  //XML_GEN_FOOTER
+C_TEXT:C284(XML_Gen_Footer ;$0)
+C_TEXT:C284(XML_Gen_Footer ;$1)
+
+  //XML_GEN_HEADER
+C_TEXT:C284(XML_Gen_Header ;$0)
+C_TEXT:C284(XML_Gen_Header ;$1)
+
+  //XML_GEN_REFXML
+C_TEXT:C284(XML_Gen_RefXML ;$0)
+
+  //XML_GET_TAGVALUE
+C_TEXT:C284(XML_Get_TagValue ;$0)
+C_LONGINT:C283(XML_Get_TagValue ;$1)
+C_TEXT:C284(XML_Get_TagValue ;$2)
+C_TEXT:C284(XML_Get_TagValue ;$3)
+
+  //XML_IS_VALIDXMLTAG
+C_BOOLEAN:C305(XML_Is_ValidXMLTag ;$0)
+C_TEXT:C284(XML_Is_ValidXMLTag ;$1)
+
+  //XML_RECORDS_TO_XML
+C_TEXT:C284(XML_Records_To_XML ;$0)
+C_POINTER:C301(XML_Records_To_XML ;$1)
+
+  //XML_TABLE_TO_XML
+C_TEXT:C284(XML_Table_To_XML ;$0)
+C_POINTER:C301(XML_Table_To_XML ;$1)
+
+  //XML_VAR_TO_XML
+C_TEXT:C284(XML_Var_To_XML ;$0)
+C_POINTER:C301(XML_Var_To_XML ;$1)
+C_TEXT:C284(XML_Var_To_XML ;$2)
+
+  //HTML_DYNAMICTABLE
+C_TEXT:C284(HTML_DynamicTable ;$0)
+C_POINTER:C301(HTML_DynamicTable ;$1)
+C_POINTER:C301(HTML_DynamicTable ;$2)
+C_POINTER:C301(HTML_DynamicTable ;$3)
+C_POINTER:C301(HTML_DynamicTable ;$4)
+C_POINTER:C301(HTML_DynamicTable ;$5)
+
+  //HTML_DIV_ALIGN
+C_TEXT:C284(HTML_Div_Align ;$0)
+C_TEXT:C284(HTML_Div_Align ;$1)
+C_TEXT:C284(HTML_Div_Align ;$2)
+C_TEXT:C284(HTML_Div_Align ;$3)
+
+  //SNTPS_DATAHANDLED_TRANSMISION
+C_TEXT:C284(SNTps_DataHandled_Transmision ;$1)
+C_TEXT:C284(SNTps_DataHandled_Transmision ;$2)
+
+  //XS_LAUCHCONTEXTUALTRANSLATOR
+C_TEXT:C284(XS_LauchContextualTranslator ;$1)
+
+  //XALCB_EX_CONTEXTTRANSLATOR
+C_BOOLEAN:C305(xALCB_EX_ContextTranslator ;$0)
+C_LONGINT:C283(xALCB_EX_ContextTranslator ;$1)
+C_LONGINT:C283(xALCB_EX_ContextTranslator ;$2)
+
+  //XALCB_EN_CONTEXTTRANSLATOR
+C_LONGINT:C283(xALCB_EN_ContextTranslator ;$1)
+C_LONGINT:C283(xALCB_EN_ContextTranslator ;$2)
+
+  //XALCB_ADT_EX_METADATA
+C_BOOLEAN:C305(xALCB_ADT_EX_MetaData ;$0)
+C_LONGINT:C283(xALCB_ADT_EX_MetaData ;$1)
+C_LONGINT:C283(xALCB_ADT_EX_MetaData ;$2)
+
+  //XALCB_ADT_EX_EDUCANTERIOR
+C_BOOLEAN:C305(xALCB_ADT_EX_EducAnterior ;$0)
+C_LONGINT:C283(xALCB_ADT_EX_EducAnterior ;$1)
+C_LONGINT:C283(xALCB_ADT_EX_EducAnterior ;$2)
+
+  //ADTCDD_LOADMETADATA
+C_REAL:C285(ADTCdd_LoadMetaData ;$1)
+
+  //ADTCDD_LOADEDUCACIONANTERIOR
+C_REAL:C285(ADTcdd_LoadEducacionAnterior ;$1)
+C_TEXT:C284(ADTcdd_LoadEducacionAnterior ;$2)
+
+  //ADTCDD_FINDMETADATADEF
+C_TEXT:C284(ADTcdd_FindMetaDataDef ;$0)
+C_REAL:C285(ADTcdd_FindMetaDataDef ;$1)
+C_REAL:C285(ADTcdd_FindMetaDataDef ;$2)
+C_TEXT:C284(ADTcdd_FindMetaDataDef ;$3)
+C_TEXT:C284(ADTcdd_FindMetaDataDef ;$4)
+
+  //WSGET_ADT_GETNEWPOSTULATIONS
+C_TEXT:C284(WSget_ADT_GetNewPostulations ;$1)
+
+  //ADTCFG_LOADMETADATADEF
+C_REAL:C285(ADTcfg_LoadMetaDataDef ;$1)
+
+  //ACTCFG_LOADBANCOS
+C_TEXT:C284(ACTcfg_LoadBancos ;$1)
+
+  //DBU_FINDUNRELATEDRECORDS
+C_POINTER:C301(dbu_FindUnrelatedRecords ;$1)
+C_POINTER:C301(dbu_FindUnrelatedRecords ;$2)
+
+  //XALCB_EX_CTASBANCARIAS
+C_BOOLEAN:C305(xALCB_EX_CtasBancarias ;$0)
+C_LONGINT:C283(xALCB_EX_CtasBancarias ;$1)
+C_LONGINT:C283(xALCB_EX_CtasBancarias ;$2)
+C_LONGINT:C283(xALCB_EX_CtasBancarias ;$3)
+
+  //DOM_SETELEMENTVALUEANDATTR
+C_TEXT:C284(DOM_SetElementValueAndAttr ;$0)
+C_TEXT:C284(DOM_SetElementValueAndAttr ;${5})
+C_TEXT:C284(DOM_SetElementValueAndAttr ;$1)
+C_TEXT:C284(DOM_SetElementValueAndAttr ;$2)
+C_TEXT:C284(DOM_SetElementValueAndAttr ;$3)
+C_BOOLEAN:C305(DOM_SetElementValueAndAttr ;$4)
+
+  //ACTPP_ACTUALIZAVALORES
+C_BOOLEAN:C305(ACTpp_ActualizaValores ;$0)
+C_LONGINT:C283(ACTpp_ActualizaValores ;$1)
+C_BLOB:C604(ACTpp_ActualizaValores ;$2)
+
+  //ACTWIZ_CONFIGURACAMPOSTF
+C_TEXT:C284(ACTwiz_ConfiguraCamposTf ;$1)
+
+  //CD_REPORTPROBLEM
+C_REAL:C285(CD_ReportProblem ;$0)
+C_TEXT:C284(CD_ReportProblem ;$1)
+C_TEXT:C284(CD_ReportProblem ;$2)
+C_BLOB:C604(CD_ReportProblem ;$3)
+
+  //ALP_REMOVEALLARRAYS
+C_LONGINT:C283(ALP_RemoveAllArrays ;$1)
+C_REAL:C285(ALP_RemoveAllArrays ;$2)
+
+  //XALP_ACT_EXPORTBANKFILES
+C_LONGINT:C283(xALP_ACT_ExportBankFiles ;$1)
+
+  //XAL_ACT_CBENTRY_EXPORTBANKFILES
+C_LONGINT:C283(xAL_ACT_CBEntry_ExportBankFiles ;$1)
+C_LONGINT:C283(xAL_ACT_CBEntry_ExportBankFiles ;$2)
+C_LONGINT:C283(xAL_ACT_CBEntry_ExportBankFiles ;$3)
+
+  //XAL_ACT_CBEXIT_EXPORTBANKFILES
+C_BOOLEAN:C305(xAL_ACT_CBExit_ExportBankFiles ;$0)
+C_LONGINT:C283(xAL_ACT_CBExit_ExportBankFiles ;$1)
+C_LONGINT:C283(xAL_ACT_CBExit_ExportBankFiles ;$2)
+C_LONGINT:C283(xAL_ACT_CBExit_ExportBankFiles ;$3)
+
+  //ACTTRF_MASTER
+C_TEXT:C284(ACTtrf_Master ;$0)
+C_LONGINT:C283(ACTtrf_Master ;$1)
+C_TEXT:C284(ACTtrf_Master ;$2)
+C_TEXT:C284(ACTtrf_Master ;$3)
+C_TEXT:C284(ACTtrf_Master ;$4)
+
+  //ACTABC_EXPORTMASTERTRF
+C_REAL:C285(ACTabc_ExportMasterTrf ;$0)
+C_TEXT:C284(ACTabc_ExportMasterTrf ;$1)
+C_TEXT:C284(ACTabc_ExportMasterTrf ;$2)
+C_TEXT:C284(ACTabc_ExportMasterTrf ;$3)
+C_DATE:C307(ACTabc_ExportMasterTrf ;$4)
+
+  //ACTABC_IMPORTBYWIZARD
+C_REAL:C285(ACTabc_ImportByWizard ;$0)
+C_TEXT:C284(ACTabc_ImportByWizard ;$1)
+C_DATE:C307(ACTabc_ImportByWizard ;$2)
+C_BOOLEAN:C305(ACTabc_ImportByWizard ;$3)
+
+  //ACTPGS_RECALCULADEUDA
+C_TEXT:C284(ACTpgs_RecalculaDeuda ;$1)
+C_DATE:C307(ACTpgs_RecalculaDeuda ;$2)
+
+  //ASSEV_LEEDATOSSUBASIGNATURA
+C_LONGINT:C283(ASsev_LeeDatosSubasignatura ;$0)
+C_LONGINT:C283(ASsev_LeeDatosSubasignatura ;$1)
+C_LONGINT:C283(ASsev_LeeDatosSubasignatura ;$2)
+C_LONGINT:C283(ASsev_LeeDatosSubasignatura ;$3)
+C_BOOLEAN:C305(ASsev_LeeDatosSubasignatura ;$4)
+
+  //AL_CALCULARETARDOACUMULADO
+C_LONGINT:C283(AL_CalculaRetardoAcumulado ;$1)
+
+  //DHWR_SETMETHODS
+C_BOOLEAN:C305(dhWR_SetMethods ;$0)
+
+  //DHWR_SETVARIABLES
+C_BOOLEAN:C305(dhWR_SetVariables ;$0)
+
+  //WR_HANDLERIGHTCLICK
+C_LONGINT:C283(WR_HandleRightClick ;$0)
+C_LONGINT:C283(WR_HandleRightClick ;$1)
+C_LONGINT:C283(WR_HandleRightClick ;$2)
+C_LONGINT:C283(WR_HandleRightClick ;$3)
+C_LONGINT:C283(WR_HandleRightClick ;$4)
+C_LONGINT:C283(WR_HandleRightClick ;$5)
+C_LONGINT:C283(WR_HandleRightClick ;$6)
+
+  //WR_HANDLEERRORS
+C_LONGINT:C283(WR_HandleErrors ;$1)
+C_LONGINT:C283(WR_HandleErrors ;$2)
+C_TEXT:C284(WR_HandleErrors ;$3)
+
+  //DBU_COMPRIMEFOTOGRAFIAS
+  //C_LONGINT(dbu_ComprimeFotografias ;$1)
+
+  //ACTABC_IMPORTPACSBENITO
+C_TEXT:C284(ACTabc_ImportPACSBenito ;$1)
+
+
+  //SMTP_ENCODESUBJECT
+C_TEXT:C284(SMTP_EncodeSubject ;$0)
+C_TEXT:C284(SMTP_EncodeSubject ;$1)
+
+  //BWR_DISABLEALLOBJECTS
+C_POINTER:C301(BWR_DisableAllObjects ;$1)
+C_POINTER:C301(BWR_EnableSpecificObjects ;${1})
+
+  //ACTCFG_PCTSXFECHAPAGO
+C_LONGINT:C283(ACTcfg_pctsXFechaPago ;$1)
+
+  //ACTCFG_LOADCARGOSESPECIALES
+C_LONGINT:C283(ACTcfg_LoadCargosEspeciales ;$1)
+
+  //ACTMNU_CALCULAMONTORECARGOXA
+C_DATE:C307(ACTmnu_calculaMontoRecargoXA ;$1)
+C_BOOLEAN:C305(ACTmnu_calculaMontoRecargoXA ;$2)
+
+  //ACTABC_PREIMPORTW
+C_LONGINT:C283(ACTabc_PreImportW ;$1)
+C_LONGINT:C283(ACTabc_PreImportW ;$2)
+
+  //ACTABC_SELECTIONITEM2IMPORT
+C_LONGINT:C283(ACTabc_SelectionItem2Import ;$1)
+
+  //ACTPGS_OPCIONESCARGOSAPAGAR
+C_LONGINT:C283(ACTpgs_OpcionesCargosAPagar ;$1)
+C_BOOLEAN:C305(ACTpgs_OpcionesCargosAPagar ;$2)
+C_POINTER:C301(ACTpgs_OpcionesCargosAPagar ;$3)
+
+  //ACTPGS_OPCIONESIMPORTACION
+C_BOOLEAN:C305(ACTpgs_OpcionesImportacion ;$0)
+C_BOOLEAN:C305(ACTpgs_OpcionesImportacion ;$1)
+C_BOOLEAN:C305(ACTpgs_OpcionesImportacion ;$2)
+C_DATE:C307(ACTpgs_OpcionesImportacion ;$3)
+
+  //ACTAC_CREATECARGODOCCARGOIMP
+C_LONGINT:C283(ACTac_CreateCargoDocCargoImp ;$0)
+C_BOOLEAN:C305(ACTac_CreateCargoDocCargoImp ;$1)
+C_REAL:C285(ACTac_CreateCargoDocCargoImp ;$2)
+C_REAL:C285(ACTac_CreateCargoDocCargoImp ;$3)
+C_DATE:C307(ACTac_CreateCargoDocCargoImp ;$4)
+C_BOOLEAN:C305(ACTac_CreateCargoDocCargoImp ;$5)
+C_REAL:C285(ACTac_CreateCargoDocCargoImp ;$6)
+C_REAL:C285(ACTac_CreateCargoDocCargoImp ;$7)
+C_BOOLEAN:C305(ACTac_CreateCargoDocCargoImp ;$8)
+C_BOOLEAN:C305(ACTac_CreateCargoDocCargoImp ;$9)
+C_REAL:C285(ACTac_CreateCargoDocCargoImp ;$10)
+C_BOOLEAN:C305(ACTac_CreateCargoDocCargoImp ;$11)
+C_REAL:C285(ACTac_CreateCargoDocCargoImp ;$12)
+C_BOOLEAN:C305(ACTac_CreateCargoDocCargoImp ;$13)
+C_REAL:C285(ACTac_CreateCargoDocCargoImp ;$14)
+
+  //ACTIMP_EXTRACTINFOFROMTEXT
+C_TEXT:C284(ACTimp_ExtractInfoFromText ;$0)
+C_BOOLEAN:C305(ACTimp_ExtractInfoFromText ;$1)
+C_TEXT:C284(ACTimp_ExtractInfoFromText ;$2)
+C_TEXT:C284(ACTimp_ExtractInfoFromText ;$3)
+C_LONGINT:C283(ACTimp_ExtractInfoFromText ;$4)
+C_LONGINT:C283(ACTimp_ExtractInfoFromText ;$5)
+C_TEXT:C284(ACTimp_ExtractInfoFromText ;$6)
+C_TEXT:C284(ACTimp_ExtractInfoFromText ;$7)
+
+  //AL_SETRELATIONS
+C_TEXT:C284(AL_SetRelations ;$1)
+
+  //LB_REMOVEALLCOLUMNS
+C_TEXT:C284(lb_RemoveAllColumns ;$1)
+
+  //ACTUT_RETORNAVALORENMONEDA
+C_REAL:C285(ACTut_retornaValorEnMoneda ;$0)
+C_REAL:C285(ACTut_retornaValorEnMoneda ;$1)
+C_REAL:C285(ACTut_retornaValorEnMoneda ;$2)
+C_TEXT:C284(ACTut_retornaValorEnMoneda ;$3)
+C_DATE:C307(ACTut_retornaValorEnMoneda ;$4)
+
+  //DOM_GETVALUE
+C_TEXT:C284(DOM_GetValue ;$0)
+C_TEXT:C284(DOM_GetValue ;$1)
+C_TEXT:C284(DOM_GetValue ;$2)
+
+  //ACTLC_CALCULAIMPUESTO
+C_REAL:C285(ACTlc_CalculaImpuesto ;$0)
+C_DATE:C307(ACTlc_CalculaImpuesto ;$1)
+C_DATE:C307(ACTlc_CalculaImpuesto ;$2)
+C_REAL:C285(ACTlc_CalculaImpuesto ;$3)
+
+  //ACTLC_PRINTLETRAS
+C_BOOLEAN:C305(ACTlc_PrintLetras ;$0)
+C_TEXT:C284(ACTlc_PrintLetras ;$1)
+C_REAL:C285(ACTlc_PrintLetras ;$2)
+
+  //ACTLC_RETORNANUMMESES
+C_REAL:C285(ACTlc_retornaNumMeses ;$0)
+C_DATE:C307(ACTlc_retornaNumMeses ;$1)
+C_DATE:C307(ACTlc_retornaNumMeses ;$2)
+
+  //ACTLC_RETORNATASA
+C_REAL:C285(ACTlc_retornaTasa ;$0)
+C_LONGINT:C283(ACTlc_retornaTasa ;$1)
+C_LONGINT:C283(ACTlc_retornaTasa ;$2)
+C_BOOLEAN:C305(ACTlc_retornaTasa ;$3)
+
+  //SRACTLC_INITIPRINTINGVARIABLES
+C_REAL:C285(SRACTlc_InitiPrintingVariables ;$1)
+C_REAL:C285(SRACTlc_InitiPrintingVariables ;$2)
+
+  //SRACTLC_CARGADATOS
+C_LONGINT:C283(SRACTlc_CargaDatos ;$1)
+
+
+  //ACTDC_BUSCADUPLICADOS
+C_LONGINT:C283(ACTdc_BuscaDuplicados ;$0)
+C_LONGINT:C283(ACTdc_BuscaDuplicados ;$1)
+C_TEXT:C284(ACTdc_BuscaDuplicados ;$2)
+C_TEXT:C284(ACTdc_BuscaDuplicados ;$3)
+C_TEXT:C284(ACTdc_BuscaDuplicados ;$4)
+
+  //4DW_GETINFO
+C_TEXT:C284(4DW_GetInfo ;$0)
+C_REAL:C285(4DW_GetInfo ;$1)
+C_TEXT:C284(4DW_GetInfo ;$2)
+C_REAL:C285(4DW_GetInfo ;$3)
+
+  //0XDEV_REPLACEEXPRESION_INCC4D
+C_POINTER:C301(0xDev_ReplaceExpresion_inCC4D ;$1)
+C_POINTER:C301(0xDev_ReplaceExpresion_inCC4D ;$2)
+C_REAL:C285(0xDev_ReplaceExpresion_inCC4D ;$3)
+
+  //KRL_GETBLOBFIELDDATA
+C_BLOB:C604(KRL_GetBlobFieldData ;$0)
+C_POINTER:C301(KRL_GetBlobFieldData ;$1)
+C_POINTER:C301(KRL_GetBlobFieldData ;$2)
+C_POINTER:C301(KRL_GetBlobFieldData ;$3)
+
+  //KRL_GETBOOLEANFIELDDATA
+C_BOOLEAN:C305(KRL_GetBooleanFieldData ;$0)
+C_POINTER:C301(KRL_GetBooleanFieldData ;$1)
+C_POINTER:C301(KRL_GetBooleanFieldData ;$2)
+C_POINTER:C301(KRL_GetBooleanFieldData ;$3)
+
+  //KRL_GETDATEFIELDDATA
+C_DATE:C307(KRL_GetDateFieldData ;$0)
+C_POINTER:C301(KRL_GetDateFieldData ;$1)
+C_POINTER:C301(KRL_GetDateFieldData ;$2)
+C_POINTER:C301(KRL_GetDateFieldData ;$3)
+
+  //KRL_GETNUMERICFIELDDATA
+C_REAL:C285(KRL_GetNumericFieldData ;$0)
+C_POINTER:C301(KRL_GetNumericFieldData ;$1)
+C_POINTER:C301(KRL_GetNumericFieldData ;$2)
+C_POINTER:C301(KRL_GetNumericFieldData ;$3)
+
+  //KRL_GETPICTUREFIELDDATA
+C_PICTURE:C286(KRL_GetPictureFieldData ;$0)
+C_POINTER:C301(KRL_GetPictureFieldData ;$1)
+C_POINTER:C301(KRL_GetPictureFieldData ;$2)
+C_POINTER:C301(KRL_GetPictureFieldData ;$3)
+
+  //KRL_GETTEXTFIELDDATA
+C_TEXT:C284(KRL_GetTextFieldData ;$0)
+C_POINTER:C301(KRL_GetTextFieldData ;$1)
+C_POINTER:C301(KRL_GetTextFieldData ;$2)
+C_POINTER:C301(KRL_GetTextFieldData ;$3)
+
+  //KRL_GETTIMEFIELDDATA
+C_TIME:C306(KRL_GetTimeFieldData ;$0)
+C_POINTER:C301(KRL_GetTimeFieldData ;$1)
+C_POINTER:C301(KRL_GetTimeFieldData ;$2)
+C_POINTER:C301(KRL_GetTimeFieldData ;$3)
+
+  //ADTCDD_DELETEEDUCACIONANTERIOR
+C_POINTER:C301(ADTcdd_DeleteEducacionAnterior ;$1)
+C_TEXT:C284(ADTcdd_DeleteEducacionAnterior ;$2)
+
+  //SOPORTE_ENVIAMAILINCIDENTE
+C_LONGINT:C283(SOPORTE_EnviaMailIncidente ;$0)
+C_TEXT:C284(SOPORTE_EnviaMailIncidente ;$1)
+C_TEXT:C284(SOPORTE_EnviaMailIncidente ;$2)
+C_TEXT:C284(SOPORTE_EnviaMailIncidente ;$3)
+C_BLOB:C604(SOPORTE_EnviaMailIncidente ;$4)
+C_BLOB:C604(SOPORTE_EnviaMailIncidente ;$5)
+
+  //XALP_CBIN_ACT_DOCUMENTARLC
+C_BOOLEAN:C305(xALP_CBIN_ACT_DocumentarLC ;$0)
+C_LONGINT:C283(xALP_CBIN_ACT_DocumentarLC ;$1)
+C_LONGINT:C283(xALP_CBIN_ACT_DocumentarLC ;$2)
+C_LONGINT:C283(xALP_CBIN_ACT_DocumentarLC ;$3)
+
+  //XALP_CB_ACT_DOCUMENTARLC
+C_BOOLEAN:C305(xALP_CB_ACT_DocumentarLC ;$0)
+C_LONGINT:C283(xALP_CB_ACT_DocumentarLC ;$1)
+C_LONGINT:C283(xALP_CB_ACT_DocumentarLC ;$2)
+C_LONGINT:C283(xALP_CB_ACT_DocumentarLC ;$3)
+
+  //XS_COPYXSHELLCONFIG
+C_TEXT:C284(XS_CopyXShellConfig ;$1)
+C_TEXT:C284(XS_CopyXShellConfig ;$2)
+C_TEXT:C284(XS_CopyXShellConfig ;$3)
+C_TEXT:C284(XS_CopyXShellConfig ;$4)
+C_TEXT:C284(XS_CopyXShellConfig ;$5)
+
+  //MPA_CAMBIAESTILOEVALUACION
+C_LONGINT:C283(MPA_CambiaEstiloEvaluacion ;$0)
+C_LONGINT:C283(MPA_CambiaEstiloEvaluacion ;$1)
+C_LONGINT:C283(MPA_CambiaEstiloEvaluacion ;$2)
+C_LONGINT:C283(MPA_CambiaEstiloEvaluacion ;$3)
+C_LONGINT:C283(MPA_CambiaEstiloEvaluacion ;$4)
+
+  //XS_DELETEXSHELLCONFIG
+C_TEXT:C284(XS_DeleteXShellConfig ;$1)
+C_TEXT:C284(XS_DeleteXShellConfig ;$2)
+
+  //ACTPGS_BUSCADEUDA
+C_REAL:C285(ACTpgs_BuscaDeuda ;$0)
+C_LONGINT:C283(ACTpgs_BuscaDeuda ;$1)
+C_REAL:C285(ACTpgs_BuscaDeuda ;$2)
+C_DATE:C307(ACTpgs_BuscaDeuda ;$3)
+C_REAL:C285(ACTpgs_BuscaDeuda ;$4)
+
+  //ACTPGS_CARGAAVISOSDEUDA
+C_DATE:C307(ACTpgs_CargaAvisosDeuda ;$1)
+
+  //ACTPGS_LOADCARGOSINTOARRAYS
+C_BOOLEAN:C305(ACTpgs_LoadCargosIntoArrays ;$1)
+
+  //ACTPGS_CALCULAINTERESESINARRAYS
+C_BOOLEAN:C305(ACTpgs_CalculaInteresesInArrays ;$0)
+C_DATE:C307(ACTpgs_CalculaInteresesInArrays ;$1)
+C_BOOLEAN:C305(ACTpgs_CalculaInteresesInArrays ;$2)
+
+  //ACTPGS_CREATECARGOINTINARRAYS
+C_REAL:C285(ACTpgs_CreateCargoIntInArrays ;$1)
+C_REAL:C285(ACTpgs_CreateCargoIntInArrays ;$2)
+C_DATE:C307(ACTpgs_CreateCargoIntInArrays ;$3)
+
+  //ACTPGS_RECALCULAAVISOSINARRAYS
+C_DATE:C307(ACTpgs_RecalculaAvisosInArrays ;$1)
+
+  //XS_CHECKMETHODNAME
+C_POINTER:C301(XS_CheckMethodName ;$1)
+
+  //ACTPGS_CALCULAINTERESCARGOS
+C_DATE:C307(ACTpgs_CalculaInteresCargos ;$1)
+C_BOOLEAN:C305(ACTpgs_CalculaInteresCargos ;$2)
+C_BOOLEAN:C305(ACTpgs_CalculaInteresCargos ;$3)
+
+  //ACTPGS_SELECCIONACARGOSAVISO
+C_REAL:C285(ACTpgs_SeleccionaCargosAviso ;$1)
+
+  //ACTPGS_ORDENACARGOSAVISO
+C_REAL:C285(ACTpgs_OrdenaCargosAviso ;$1)
+C_BOOLEAN:C305(ACTpgs_OrdenaCargosAviso ;$2)
+
+  //ACTCAR_DELETE
+C_REAL:C285(ACTcar_Delete ;$0)
+C_LONGINT:C283(ACTcar_Delete ;$1)
+
+
+  //ACTCAR_CALCULAINTERES
+C_LONGINT:C283(ACTcar_CalculaInteres ;$0)
+C_LONGINT:C283(ACTcar_CalculaInteres ;$1)
+C_DATE:C307(ACTcar_CalculaInteres ;$2)
+
+  //HL_COLLAPSEALL
+C_LONGINT:C283(HL_CollapseAll ;$1)
+
+  //BBLMARC_OPENINPUTER
+C_POINTER:C301(BBLmarc_OpenInputer ;$1)
+
+  //XALP_CBEX_MARCGENERAL
+C_BOOLEAN:C305(xALP_CBEX_MARCGeneral ;$0)
+C_LONGINT:C283(xALP_CBEX_MARCGeneral ;$1)
+C_LONGINT:C283(xALP_CBEX_MARCGeneral ;$2)
+
+  //BBLMARC_UPDATEMARCFIELD
+C_POINTER:C301(BBLmarc_UpdateMARCField ;$1)
+
+  //BBLMARC_UPDATE852A
+C_TEXT:C284(BBLmarc_Update852a ;$1)
+
+  //ST_MAC2UTF8
+C_TEXT:C284(ST_Mac2UTF8 ;$0)
+C_TEXT:C284(ST_Mac2UTF8 ;$1)
+C_BOOLEAN:C305(ST_Mac2UTF8 ;$2)
+
+  //UTC_GETDLS4LOCATION
+C_BOOLEAN:C305(UTC_GetDLS4Location ;$0)
+C_DATE:C307(UTC_GetDLS4Location ;$1)
+C_TEXT:C284(UTC_GetDLS4Location ;$2)
+C_TEXT:C284(UTC_GetDLS4Location ;$3)
+
+  //ACTLC_ELIMINALETRA
+C_BOOLEAN:C305(ACTlc_EliminaLetra ;$0)
+C_LONGINT:C283(ACTlc_EliminaLetra ;$1)
+
+
+  //ACTTF_OPCIONESTEXTOSIMP
+C_TEXT:C284(ACTtf_OpcionesTextosImp ;$0)
+C_REAL:C285(ACTtf_OpcionesTextosImp ;$1)
+C_TEXT:C284(ACTtf_OpcionesTextosImp ;$2)
+C_TEXT:C284(ACTtf_OpcionesTextosImp ;$3)
+
+  //ACTABC_EXPORTCUPNSDA
+C_TEXT:C284(ACTabc_ExportCUPNSDA ;$1)
+C_TEXT:C284(ACTabc_ExportCUPNSDA ;$2)
+C_TEXT:C284(ACTabc_ExportCUPNSDA ;$3)
+
+  //SOPORTE_IMPORTANOTASCONPROMEDIO
+C_POINTER:C301(SOPORTE_ImportaNotasConPromedio ;$1)
+C_TEXT:C284(SOPORTE_ImportaNotasConPromedio ;$2)
+C_TEXT:C284(SOPORTE_ImportaNotasConPromedio ;$3)
+
+  //ACTABC_SELECTIONITEM2EXPORT
+C_REAL:C285(ACTabc_SelectionItem2Export ;$0)
+C_REAL:C285(ACTabc_SelectionItem2Export ;$1)
+C_TEXT:C284(ACTabc_SelectionItem2Export ;$2)
+
+  //ACTABC_EXPORTCUPSTMARGARETS
+C_TEXT:C284(ACTabc_ExportCUPStMargarets ;$1)
+C_TEXT:C284(ACTabc_ExportCUPStMargarets ;$2)
+C_TEXT:C284(ACTabc_ExportCUPStMargarets ;$3)
+
+  //CFG_STR_PERIODOSESCOLARES_NEW
+C_TEXT:C284(CFG_STR_PeriodosEscolares_NEW ;$1)
+C_TEXT:C284(CFG_STR_PeriodosEscolares_NEW ;$2)
+
+  //ACTABC_EXPORTCUPCRAIGHOUSE
+C_TEXT:C284(ACTabc_ExportCUPCraighouse ;$1)
+C_TEXT:C284(ACTabc_ExportCUPCraighouse ;$2)
+C_TEXT:C284(ACTabc_ExportCUPCraighouse ;$3)
+
+  //ACTABC_EXPORTCUPVILLAMARIA
+C_TEXT:C284(ACTabc_ExportCUPVillaMaria ;$1)
+C_TEXT:C284(ACTabc_ExportCUPVillaMaria ;$2)
+C_TEXT:C284(ACTabc_ExportCUPVillaMaria ;$3)
+
+  //ACTABC_EXPORTCUPSPAULS
+C_TEXT:C284(ACTabc_ExportCUPSPauls ;$1)
+C_TEXT:C284(ACTabc_ExportCUPSPauls ;$2)
+C_TEXT:C284(ACTabc_ExportCUPSPauls ;$3)
+
+  //XALCB_EX_EVALUACIONES
+C_BOOLEAN:C305(xALCB_EX_Evaluaciones ;$0)
+C_LONGINT:C283(xALCB_EX_Evaluaciones ;$1)
+C_LONGINT:C283(xALCB_EX_Evaluaciones ;$2)
+
+  //XALCB_EN_EVALUACIONES
+C_LONGINT:C283(xALCB_EN_Evaluaciones ;$1)
+C_LONGINT:C283(xALCB_EN_Evaluaciones ;$2)
+C_LONGINT:C283(xALCB_EN_Evaluaciones ;$3)
+
+  //AS_CREAREGISTROSEVALUACION
+C_LONGINT:C283(AS_CreaRegistrosEvaluacion ;$1)
+C_LONGINT:C283(AS_CreaRegistrosEvaluacion ;$2)
+C_BOOLEAN:C305(AS_CreaRegistrosEvaluacion ;$3)
+
+  //ACTABC_EXPORTCUPCIAMVM
+C_TEXT:C284(ACTabc_ExportCUPCiaMVM ;$1)
+C_TEXT:C284(ACTabc_ExportCUPCiaMVM ;$2)
+C_TEXT:C284(ACTabc_ExportCUPCiaMVM ;$3)
+
+  //KRL_FINDANDLOADRECORDBYINDEX
+C_REAL:C285(KRL_FindAndLoadRecordByIndex ;$0)
+C_POINTER:C301(KRL_FindAndLoadRecordByIndex ;$1)
+C_POINTER:C301(KRL_FindAndLoadRecordByIndex ;$2)
+C_BOOLEAN:C305(KRL_FindAndLoadRecordByIndex ;$3)
+
+  //ACTIO_NUM2VARS
+C_REAL:C285(ACTio_Num2Vars ;$1)
+C_REAL:C285(ACTio_Num2Vars ;$2)
+C_REAL:C285(ACTio_Num2Vars ;$3)
+C_POINTER:C301(ACTio_Num2Vars ;$4)
+C_POINTER:C301(ACTio_Num2Vars ;$5)
+C_BOOLEAN:C305(ACTio_Num2Vars ;$6)
+
+  //ACTABC_EXPORTCUPCRAIGHOUSE2
+C_TEXT:C284(ACTabc_exportCUPCraighouse2 ;$1)
+C_TEXT:C284(ACTabc_exportCUPCraighouse2 ;$2)
+C_TEXT:C284(ACTabc_exportCUPCraighouse2 ;$3)
+
+  //PERIODOS_PERIODOSACTUALES
+C_LONGINT:C283(PERIODOS_PeriodosActuales ;$0)
+C_DATE:C307(PERIODOS_PeriodosActuales ;$1)
+C_BOOLEAN:C305(PERIODOS_PeriodosActuales ;$2)
+C_POINTER:C301(PERIODOS_PeriodosActuales ;$3)
+
+  //EV2_ESTABLECECOLOR
+C_TEXT:C284(EV2_EstableceColor ;$0)
+C_POINTER:C301(EV2_EstableceColor ;$1)
+C_LONGINT:C283(EV2_EstableceColor ;$2)
+C_LONGINT:C283(EV2_EstableceColor ;$3)
+C_LONGINT:C283(EV2_EstableceColor ;$4)
+C_LONGINT:C283(EV2_EstableceColor ;$5)
+
+  //KRL_ISSAMEFIELD
+C_BOOLEAN:C305(KRL_isSameField ;$0)
+C_POINTER:C301(KRL_isSameField ;$1)
+C_POINTER:C301(KRL_isSameField ;$2)
+
+  //ACTABC_EXPORTCUPIAVALDIVIA
+C_TEXT:C284(ACTabc_ExportCUPIAValdivia ;$1)
+C_TEXT:C284(ACTabc_ExportCUPIAValdivia ;$2)
+C_TEXT:C284(ACTabc_ExportCUPIAValdivia ;$3)
+
+  //_ADTMETADATO
+C_TEXT:C284(_ADTMetaDato ;$0)
+C_TEXT:C284(_ADTMetaDato ;$1)
+
+  //AS_FIJANIVELJERAQUICOHIJAS
+C_LONGINT:C283(AS_FijaNivelJeraquicoHijas ;$1)
+
+  //SRACT_SHOWITEMSLIST
+C_DATE:C307(SRACT_showItemsList ;$1)
+C_DATE:C307(SRACT_showItemsList ;$2)
+C_BOOLEAN:C305(SRACT_showItemsList ;$3)
+
+  //SRACT_AGRUPAMESES
+C_TEXT:C284(SRACT_AgrupaMeses ;$0)
+C_POINTER:C301(SRACT_AgrupaMeses ;$1)
+C_LONGINT:C283(SRACT_AgrupaMeses ;$2)
+
+  //SQ_RETORNANUEVOID
+C_REAL:C285(SQ_RetornaNuevoID ;$0)
+C_POINTER:C301(SQ_RetornaNuevoID ;$1)
+C_BOOLEAN:C305(SQ_RetornaNuevoID ;$2)
+
+  //SQ_CREAREGISTRO
+C_POINTER:C301(SQ_CreaRegistro ;$1)
+
+  //SQ_SEQNUMBER_OLD
+C_REAL:C285(SQ_SeqNumber_OLD ;$0)
+C_POINTER:C301(SQ_SeqNumber_OLD ;$1)
+C_BOOLEAN:C305(SQ_SeqNumber_OLD ;$2)
+
+  //SQ_ESTABLECESECUENCIA
+C_REAL:C285(SQ_EstableceSecuencia ;$0)
+C_POINTER:C301(SQ_EstableceSecuencia ;$1)
+C_REAL:C285(SQ_EstableceSecuencia ;$2)
+C_BOOLEAN:C305(SQ_EstableceSecuencia ;$3)
+
+  //SQ_RESTAURASECUENCIAS
+C_POINTER:C301(SQ_RestauraSecuencias ;$1)
+
+  //ACTABC_IMPORTCUPVILLAMARIA
+C_TEXT:C284(ACTabc_ImportCUPVillaMaria ;$1)
+
+  //ACTUT_RETORNAMONTOENMONEDA
+C_REAL:C285(ACTut_retornaMontoEnMoneda ;$0)
+C_REAL:C285(ACTut_retornaMontoEnMoneda ;$1)
+C_TEXT:C284(ACTut_retornaMontoEnMoneda ;$2)
+C_DATE:C307(ACTut_retornaMontoEnMoneda ;$3)
+C_TEXT:C284(ACTut_retornaMontoEnMoneda ;$4)
+C_DATE:C307(ACTut_retornaMontoEnMoneda ;$5)
+C_BOOLEAN:C305(ACTut_retornaMontoEnMoneda ;$6)
+
+  //ACTPGS_RETORNAMONTOAPAGAR
+C_REAL:C285(ACTpgs_retornaMontoAPagar ;$0)
+C_DATE:C307(ACTpgs_retornaMontoAPagar ;$1)
+C_DATE:C307(ACTpgs_retornaMontoAPagar ;$2)
+C_REAL:C285(ACTpgs_retornaMontoAPagar ;$3)
+C_DATE:C307(ACTpgs_retornaMontoAPagar ;$4)
+
+  //ACTABC_EXPORTCUPMAISONNETTE
+C_TEXT:C284(ACTabc_ExportCUPMaisonnette ;$1)
+C_TEXT:C284(ACTabc_ExportCUPMaisonnette ;$2)
+C_TEXT:C284(ACTabc_ExportCUPMaisonnette ;$3)
+
+  //AL_CDTABEHAVIOURFILTER
+C_BOOLEAN:C305(AL_CdtaBehaviourFilter ;$0)
+C_TEXT:C284(AL_CdtaBehaviourFilter ;$1)
+C_REAL:C285(AL_CdtaBehaviourFilter ;$2)
+C_TEXT:C284(AL_CdtaBehaviourFilter ;$3)
+
+  //4D_GETTABLEFORMS
+C_POINTER:C301(4D_GetTableForms ;$1)
+C_POINTER:C301(4D_GetTableForms ;$2)
+C_POINTER:C301(4D_GetTableForms ;$3)
+
+  //FTP_CREATEPATH
+C_REAL:C285(FTP_CreatePath ;$0)
+C_REAL:C285(FTP_CreatePath ;$1)
+C_TEXT:C284(FTP_CreatePath ;$2)
+
+  //ACTUSR_ALLOWCHANGE
+C_BOOLEAN:C305(ACTusr_AllowChange ;$0)
+C_TEXT:C284(ACTusr_AllowChange ;$1)
+C_POINTER:C301(ACTusr_AllowChange ;$2)
+C_BOOLEAN:C305(ACTusr_AllowChange ;$3)
+C_POINTER:C301(SRtbl_ShowChoiceList ;${6})
+C_REAL:C285(SRtbl_ShowChoiceList ;$1)
+C_TEXT:C284(SRtbl_ShowChoiceList ;$2)
+C_REAL:C285(SRtbl_ShowChoiceList ;$3)
+C_POINTER:C301(SRtbl_ShowChoiceList ;$4)
+C_BOOLEAN:C305(SRtbl_ShowChoiceList ;$5)
+
+  //ACTCFGBOL_OPCIONESMULTINUM
+C_TEXT:C284(ACTcfgbol_OpcionesMultiNum ;$1)
+C_POINTER:C301(ACTcfgbol_OpcionesMultiNum ;$2)
+C_POINTER:C301(ACTcfgbol_OpcionesMultiNum ;$3)
+
+  //ACTBOL_CREATERECORD
+C_LONGINT:C283(ACTbol_CreateRecord ;$0)
+C_REAL:C285(ACTbol_CreateRecord ;$1)
+C_REAL:C285(ACTbol_CreateRecord ;$2)
+C_DATE:C307(ACTbol_CreateRecord ;$3)
+C_BOOLEAN:C305(ACTbol_CreateRecord ;$4)
+C_REAL:C285(ACTbol_CreateRecord ;$5)
+C_REAL:C285(ACTbol_CreateRecord ;$6)
+C_TEXT:C284(ACTbol_CreateRecord ;$7)
+C_REAL:C285(ACTbol_CreateRecord ;$8)
+C_REAL:C285(ACTbol_CreateRecord ;$9)
+C_TEXT:C284(ACTbol_CreateRecord ;$10)
+C_BOOLEAN:C305(ACTbol_CreateRecord ;$11)
+C_REAL:C285(ACTbol_CreateRecord ;$12)
+C_REAL:C285(ACTbol_CreateRecord ;$13)
+C_TEXT:C284(ACTbol_CreateRecord ;$14)
+
+  //ACTBOL_GETMONTOLINEA2
+C_REAL:C285(ACTbol_GetMontoLinea2 ;$0)
+C_TEXT:C284(ACTbol_GetMontoLinea2 ;$1)
+C_REAL:C285(ACTbol_GetMontoLinea2 ;$2)
+
+  //ACTBOL_VALIDAINFO
+C_TEXT:C284(ACTbol_validaInfo ;$0)
+C_TEXT:C284(ACTbol_validaInfo ;$1)
+C_POINTER:C301(ACTbol_validaInfo ;$2)
+C_POINTER:C301(ACTbol_validaInfo ;$3)
+C_POINTER:C301(ACTbol_validaInfo ;$4)
+
+  //ACTCFG_SEARCHCATDOCSBYINDEX
+C_REAL:C285(ACTcfg_SearchCatDocsByIndex ;$1)
+C_REAL:C285(ACTcfg_SearchCatDocsByIndex ;$2)
+C_REAL:C285(ACTcfg_SearchCatDocsByIndex ;$3)
+
+  //ACTTRA_ASIGNAIDBOLETA
+C_BOOLEAN:C305(ACTtra_AsignaIdBoleta ;$0)
+C_BLOB:C604(ACTtra_AsignaIdBoleta ;$1)
+
+  //XDOC_READEXTERNALPICTURE
+C_PICTURE:C286(xDOC_ReadExternalPicture ;$0)
+C_TEXT:C284(xDOC_ReadExternalPicture ;$1)
+C_TEXT:C284(xDOC_ReadExternalPicture ;$2)
+C_BOOLEAN:C305(xDOC_ReadExternalPicture ;$3)
+
+  //XDOC_WRITEEXTERNALPICTURE
+C_REAL:C285(xDOC_WriteExternalPicture ;$0)
+C_PICTURE:C286(xDOC_WriteExternalPicture ;$1)
+C_TEXT:C284(xDOC_WriteExternalPicture ;$2)
+C_TEXT:C284(xDOC_WriteExternalPicture ;$3)
+C_TEXT:C284(xDOC_WriteExternalPicture ;$4)
+C_BOOLEAN:C305(xDOC_WriteExternalPicture ;$5)
+
+  //USR_GETGROUPWITHMODULEACCESS
+C_POINTER:C301(USR_getGroupWithModuleAccess ;$1)
+C_TEXT:C284(USR_getGroupWithModuleAccess ;$2)
+
+  //USR_GETGROUPMODULEACCESS
+C_BOOLEAN:C305(USR_getGroupModuleAccess ;$0)
+C_LONGINT:C283(USR_getGroupModuleAccess ;$1)
+C_TEXT:C284(USR_getGroupModuleAccess ;$2)
+
+  //XDOC_REMOVEEXTERNALPICTURE
+C_TEXT:C284(xDOC_RemoveExternalPicture ;$1)
+C_TEXT:C284(xDOC_RemoveExternalPicture ;$2)
+
+  //SRCUST_LEEFOTOGRAFIAEXTERNA
+C_PICTURE:C286(SRcust_LeeFotografiaExterna ;$0)
+C_POINTER:C301(SRcust_LeeFotografiaExterna ;$1)
+
+  //ACTCFGBOL_INITVARSSUB
+C_TEXT:C284(ACTcfgbol_InitVarsSub ;$1)
+
+  //ACTCFGFDP_OPCIONESGENERALES
+C_TEXT:C284(ACTcfgfdp_OpcionesGenerales ;$0)
+C_POINTER:C301(ACTcfgfdp_OpcionesGenerales ;${2})
+C_TEXT:C284(ACTcfgfdp_OpcionesGenerales ;$1)
+
+  //SYS_GETDESKTOPPATH
+C_TEXT:C284(SYS_GetDesktopPath ;$0)
+
+  //AL_RETORNAVALORFALTAPORRETARDO
+C_REAL:C285(AL_RetornaValorFaltaPorRetardo ;$0)
+C_LONGINT:C283(AL_RetornaValorFaltaPorRetardo ;$1)
+C_BOOLEAN:C305(AL_RetornaValorFaltaPorRetardo ;$2)
+
+  //AS_RETORNAVARIABLEESTADISTICA
+C_REAL:C285(AS_RetornaVariableEstadistica ;$0)
+C_TEXT:C284(AS_RetornaVariableEstadistica ;$1)
+C_POINTER:C301(AS_RetornaVariableEstadistica ;$2)
+C_LONGINT:C283(AS_RetornaVariableEstadistica ;$3)
+C_LONGINT:C283(AS_RetornaVariableEstadistica ;$4)
+C_LONGINT:C283(AS_RetornaVariableEstadistica ;$5)
+C_LONGINT:C283(AS_RetornaVariableEstadistica ;$6)
+
+  //AL_TOTALIZAATRASOS
+C_BOOLEAN:C305(AL_TotalizaAtrasos ;$0)
+C_LONGINT:C283(AL_TotalizaAtrasos ;$1)
+C_REAL:C285(AL_TotalizaAtrasos ;$2)
+
+  //AL_TOTALIZAINASISTENCIAS
+C_BOOLEAN:C305(AL_TotalizaInasistencias ;$0)
+C_LONGINT:C283(AL_TotalizaInasistencias ;$1)
+C_REAL:C285(AL_TotalizaInasistencias ;$2)
+
+  //AL_TOTALIZACASTIGOS
+C_BOOLEAN:C305(AL_TotalizaCastigos ;$0)
+C_LONGINT:C283(AL_TotalizaCastigos ;$1)
+C_REAL:C285(AL_TotalizaCastigos ;$2)
+
+  //AL_TOTALIZAANOTACIONES
+C_BOOLEAN:C305(AL_TotalizaAnotaciones ;$0)
+C_LONGINT:C283(AL_TotalizaAnotaciones ;$1)
+C_REAL:C285(AL_TotalizaAnotaciones ;$2)
+
+  //AL_TOTALIZASUSPENSIONES
+C_BOOLEAN:C305(AL_TotalizaSuspensiones ;$0)
+C_LONGINT:C283(AL_TotalizaSuspensiones ;$1)
+C_REAL:C285(AL_TotalizaSuspensiones ;$2)
+
+  //BM_TOTALIZAHORASINASISTENCIA
+C_BOOLEAN:C305(BM_TotalizaHorasInasistencia ;$0)
+C_LONGINT:C283(BM_TotalizaHorasInasistencia ;$1)
+
+
+  //ACTABC_EXPORTCUPGREENLAND
+C_TEXT:C284(ACTabc_ExportCUPGreenland ;$1)
+C_TEXT:C284(ACTabc_ExportCUPGreenland ;$2)
+C_TEXT:C284(ACTabc_ExportCUPGreenland ;$3)
+
+  //ACTCFG_ACTUALIZABLOB
+C_TEXT:C284(ACTcfg_ActualizaBlob ;$1)
+
+  //ACTCFG_LEEBLOB
+C_TEXT:C284(ACTcfg_LeeBlob ;$1)
+
+  //ACTEXE_LIMPIACAMPOMATRICULADO
+C_BOOLEAN:C305(ACTexe_LimpiaCampoMatriculado ;$1)
+
+  //XALCB_EN_PLANESDECLASES
+C_LONGINT:C283(xALCB_EN_PlanesdeClases ;$1)
+C_LONGINT:C283(xALCB_EN_PlanesdeClases ;$2)
+
+  //ACTTRF_RETORNAINFOXCOLEGIO
+C_TEXT:C284(ACTtrf_RetornaInfoXColegio ;$0)
+C_TEXT:C284(ACTtrf_RetornaInfoXColegio ;$1)
+C_POINTER:C301(ACTtrf_RetornaInfoXColegio ;$2)
+
+  //ACTPP_RECALCULASALDOAPDO
+C_BOOLEAN:C305(ACTpp_RecalculaSaldoApdo ;$0)
+C_REAL:C285(ACTpp_RecalculaSaldoApdo ;$1)
+
+  //SYS_STOREFILE
+C_TEXT:C284(SYS_StoreFile ;$1)
+C_TEXT:C284(SYS_StoreFile ;$2)
+C_BOOLEAN:C305(SYS_StoreFile ;$3)
+
+  //XDOC_STOREDOCUMENT
+C_REAL:C285(xDOC_StoreDocument ;$0)
+C_TEXT:C284(xDOC_StoreDocument ;$1)
+C_POINTER:C301(xDOC_StoreDocument ;$2)
+C_BOOLEAN:C305(xDOC_StoreDocument ;$3)
+C_TEXT:C284(xDOC_StoreDocument ;$4)
+C_TEXT:C284(xDOC_StoreDocument ;$5)
+C_BOOLEAN:C305(xDOC_StoreDocument ;$6)
+C_BOOLEAN:C305(xDOC_StoreDocument ;$7)
+C_BOOLEAN:C305(xDOC_StoreDocument ;$8)
+
+  //ACTMNU_RECALCSALDOSAVISOSONSERV
+C_BOOLEAN:C305(ACTmnu_RecalcSaldosAvisosOnServ ;$0)
+C_BLOB:C604(ACTmnu_RecalcSaldosAvisosOnServ ;$1)
+
+  //ACTCFGMYT_OPCIONESGENERALES
+C_TEXT:C284(ACTcfgmyt_OpcionesGenerales ;$0)
+C_TEXT:C284(ACTcfgmyt_OpcionesGenerales ;$1)
+C_POINTER:C301(ACTcfgmyt_OpcionesGenerales ;$2)
+C_POINTER:C301(ACTcfgmyt_OpcionesGenerales ;$3)
+C_POINTER:C301(ACTcfgmyt_OpcionesGenerales ;$4)
+C_POINTER:C301(ACTcfgmyt_OpcionesGenerales ;$5)
+
+  //ACTCFG_GUARDABLOB
+C_TEXT:C284(ACTcfg_GuardaBlob ;$1)
+
+  //ACTABC_IMPORTCUPGREENLAND
+C_TEXT:C284(ACTabc_ImportCUPGreenland ;$1)
+
+  //ACTCC_OPCIONESALERTAS
+C_TEXT:C284(ACTcc_OpcionesAlertas ;$1)
+
+  //ACTCC_OPCIONESEMISION
+C_TEXT:C284(ACTcc_OpcionesEmision ;$1)
+C_POINTER:C301(ACTcc_OpcionesEmision ;$2)
+C_POINTER:C301(ACTcc_OpcionesEmision ;$3)
+
+  //ACTCFG_OPCIONESRECARGOS
+C_TEXT:C284(ACTcfg_OpcionesRecargos ;$1)
+C_POINTER:C301(ACTcfg_OpcionesRecargos ;$2)
+
+  //ACTPGS_CREACARGO
+C_REAL:C285(ACTpgs_CreaCargo ;$0)
+C_BOOLEAN:C305(ACTpgs_CreaCargo ;$1)
+C_REAL:C285(ACTpgs_CreaCargo ;$2)
+C_REAL:C285(ACTpgs_CreaCargo ;$3)
+C_REAL:C285(ACTpgs_CreaCargo ;$4)
+C_BOOLEAN:C305(ACTpgs_CreaCargo ;$5)
+C_DATE:C307(ACTpgs_CreaCargo ;$6)
+C_BOOLEAN:C305(ACTpgs_CreaCargo ;$7)
+C_REAL:C285(ACTpgs_CreaCargo ;$8)
+C_REAL:C285(ACTpgs_CreaCargo ;$9)
+
+  //ACTPGS_APPENDCARTOARRAY
+C_REAL:C285(ACTpgs_AppendCarToArray ;$1)
+
+  //IT_POPUPMENU
+C_LONGINT:C283(IT_PopUpMenu ;$0)
+C_POINTER:C301(IT_PopUpMenu ;$1)
+C_POINTER:C301(IT_PopUpMenu ;$2)
+
+  //PICT_PROCESAIMAGENES
+C_LONGINT:C283(PICT_ProcesaImagenes ;$0)
+C_TEXT:C284(PICT_ProcesaImagenes ;$1)
+C_REAL:C285(PICT_ProcesaImagenes ;$2)
+C_LONGINT:C283(PICT_ProcesaImagenes ;$3)
+C_TEXT:C284(PICT_ProcesaImagenes ;$4)
+C_REAL:C285(PICT_ProcesaImagenes ;$5)
+C_REAL:C285(PICT_ProcesaImagenes ;$6)
+
+  //ACTQRY_ITEMS
+C_TEXT:C284(ACTqry_Items ;$1)
+C_POINTER:C301(ACTqry_Items ;$2)
+C_POINTER:C301(ACTqry_Items ;$3)
+C_POINTER:C301(ACTqry_Items ;$4)
+C_POINTER:C301(ACTqry_Items ;$5)
+
+  //ACTCC_LIMPIADESCUENTOXCUENTA
+C_BOOLEAN:C305(ACTcc_LimpiaDescuentoXCuenta ;$1)
+C_POINTER:C301(ACTcc_LimpiaDescuentoXCuenta ;$2)
+
+  //ACTCFG_OPCIONESCONDONACION
+C_BOOLEAN:C305(ACTcfg_OpcionesCondonacion ;$0)
+C_TEXT:C284(ACTcfg_OpcionesCondonacion ;$1)
+C_POINTER:C301(ACTcfg_OpcionesCondonacion ;$2)
+C_POINTER:C301(ACTcfg_OpcionesCondonacion ;$3)
+C_POINTER:C301(ACTcfg_OpcionesCondonacion ;$4)
+C_POINTER:C301(ACTcfg_OpcionesCondonacion ;$5)
+C_POINTER:C301(ACTcfg_OpcionesCondonacion ;$6)
+C_POINTER:C301(ACTcfg_OpcionesCondonacion ;$7)
+C_POINTER:C301(ACTcfg_OpcionesCondonacion ;$8)
+
+  //ACTCFG_OPCIONESREIMPBOLETAS
+C_TEXT:C284(ACTcfg_OpcionesReimpBoletas ;$1)
+C_POINTER:C301(ACTcfg_OpcionesReimpBoletas ;$2)
+
+  //DIAG_VERIFICASUBASIGNATURAS
+C_TEXT:C284(Diag_VerificaSubasignaturas ;$1)
+C_BOOLEAN:C305(Diag_VerificaSubasignaturas ;$2)
+
+  //ACTBOL_MONTOSFROMPAGOS
+C_REAL:C285(ACTbol_MontosFromPagos ;$1)
+C_POINTER:C301(ACTbol_MontosFromPagos ;$2)
+C_REAL:C285(ACTbol_MontosFromPagos ;$3)
+C_POINTER:C301(ACTbol_MontosFromPagos ;$4)
+C_POINTER:C301(ACTbol_MontosFromPagos ;$5)
+C_POINTER:C301(ACTbol_MontosFromPagos ;$6)
+C_POINTER:C301(ACTbol_MontosFromPagos ;$7)
+C_REAL:C285(ACTbol_MontosFromPagos ;$8)
+
+  //ACTTRA_ASIGNAIDBOLETA4PAGO
+C_BOOLEAN:C305(ACTtra_AsignaIdBoleta4Pago ;$0)
+C_BLOB:C604(ACTtra_AsignaIdBoleta4Pago ;$1)
+
+  //ACTPGS_ASIGNAIDTRANSACCION
+C_BOOLEAN:C305(ACTpgs_AsignaIdTransaccion ;$0)
+C_LONGINT:C283(ACTpgs_AsignaIdTransaccion ;$1)
+
+  //ACTBOL_REGISTEREVT
+C_TEXT:C284(ACTbol_RegisterEvt ;$1)
+
+  //SRACTACMX_LOADVARSPAGOSREF
+C_TEXT:C284(SRACTacmx_LoadVarsPagosRef ;$0)
+C_TEXT:C284(SRACTacmx_LoadVarsPagosRef ;$1)
+C_POINTER:C301(SRACTacmx_LoadVarsPagosRef ;$2)
+C_POINTER:C301(SRACTacmx_LoadVarsPagosRef ;$3)
+
+  //ACTPGSMX_OPCIONESPAGOSREF
+C_TEXT:C284(ACTpgsmx_OpcionesPagosRef ;$0)
+C_TEXT:C284(ACTpgsmx_OpcionesPagosRef ;$1)
+C_POINTER:C301(ACTpgsmx_OpcionesPagosRef ;$2)
+C_POINTER:C301(ACTpgsmx_OpcionesPagosRef ;$3)
+C_POINTER:C301(ACTpgsmx_OpcionesPagosRef ;$4)
+C_POINTER:C301(ACTpgsmx_OpcionesPagosRef ;$5)
+C_POINTER:C301(ACTpgsmx_OpcionesPagosRef ;$6)
+C_POINTER:C301(ACTpgsmx_OpcionesPagosRef ;$7)
+
+  //ACTCAR_ASIGNACTASCONTABLES
+C_TEXT:C284(ACTcar_AsignaCtasContables ;$0)
+C_TEXT:C284(ACTcar_AsignaCtasContables ;$1)
+C_POINTER:C301(ACTcar_AsignaCtasContables ;$2)
+C_POINTER:C301(ACTcar_AsignaCtasContables ;$3)
+C_POINTER:C301(ACTcar_AsignaCtasContables ;$4)
+C_TEXT:C284(ACTcar_AsignaCtasContables ;$5)
+
+  //SRACTPP_MONTOSGENERALES
+C_REAL:C285(SRACTpp_MontosGenerales ;$0)
+C_TEXT:C284(SRACTpp_MontosGenerales ;$1)
+C_LONGINT:C283(SRACTpp_MontosGenerales ;$2)
+C_POINTER:C301(ACTcfgdes_OpcionesGenerales ;${2})
+C_TEXT:C284(ACTcfgdes_OpcionesGenerales ;$1)
+C_POINTER:C301(ACTpgs_InitArraysDocumentar ;${2})
+C_TEXT:C284(ACTpgs_InitArraysDocumentar ;$1)
+
+  //ACTPGS_ANULAPAGO
+C_LONGINT:C283(ACTpgs_AnulaPago ;$0)
+C_LONGINT:C283(ACTpgs_AnulaPago ;$1)
+
+  //ACTCFG_OPCIONESRECARGOSCAJA
+C_TEXT:C284(ACTcfg_OpcionesRecargosCaja ;$1)
+C_POINTER:C301(ACTcfg_OpcionesRecargosCaja ;$2)
+
+  //ACTPGS_RETORNAMONTOXAVISO
+C_REAL:C285(ACTpgs_RetornaMontoXAviso ;$0)
+C_TEXT:C284(ACTpgs_RetornaMontoXAviso ;$1)
+C_BOOLEAN:C305(ACTpgs_RetornaMontoXAviso ;$2)
+C_TEXT:C284(ACTpgs_RetornaMontoXAviso ;$3)
+C_DATE:C307(ACTpgs_RetornaMontoXAviso ;$4)
+C_POINTER:C301(ACTpgs_RetornaMontoXAviso ;$5)
+C_POINTER:C301(ACTpgs_RetornaMontoXAviso ;$6)
+
+  //ACTDC_VALIDADOCREEMPLAZADOR
+C_BOOLEAN:C305(ACTdc_ValidaDocReemplazador ;$0)
+
+  //ACTPGS_VALIDADOCUMENTOS
+C_BOOLEAN:C305(ACTpgs_ValidaDocumentos ;$0)
+C_BOOLEAN:C305(ACTpgs_ValidaDocumentos ;$1)
+
+  //ACTDC_ONEXPLORERLOAD
+C_LONGINT:C283(ACTdc_OnExplorerLoad ;$1)
+C_POINTER:C301(ACTdc_OnExplorerLoad ;$2)
+
+  //ACTREEMP_ANULAREEMPLAZACARTERA
+C_BOOLEAN:C305(ACTreemp_AnulaReemplazaCartera ;$0)
+C_TEXT:C284(ACTreemp_AnulaReemplazaCartera ;$1)
+
+  //0XDEV_BUSCASCRIPTENINFORMESR
+C_TEXT:C284(0xDev_BuscaScriptEnInformeSR ;$1)
+C_POINTER:C301(0xDev_BuscaScriptEnInformeSR ;$2)
+
+  //ACTPP_CRYPTTC
+C_TEXT:C284(ACTpp_CRYPTTC ;$0)
+C_TEXT:C284(ACTpp_CRYPTTC ;$1)
+C_POINTER:C301(ACTpp_CRYPTTC ;$2)
+C_POINTER:C301(ACTpp_CRYPTTC ;$3)
+C_POINTER:C301(ACTpp_CRYPTTC ;$4)
+C_POINTER:C301(ACTpp_CRYPTTC ;$5)
+
+  //_ACTOBTENERNOTC
+C_TEXT:C284(_ACTObtenerNoTC ;$0)
+C_TEXT:C284(_ACTObtenerNoTC ;$1)
+C_BOOLEAN:C305(_ACTObtenerNoTC ;$2)
+C_BOOLEAN:C305(_ACTObtenerNoTC ;$3)
+
+  //ACTUT_CARGAUF
+C_TEXT:C284(ACTut_CargaUF ;$1)
+
+  //ACTCC_OPCIONESCALCULOCTACTE
+C_BOOLEAN:C305(ACTcc_OpcionesCalculoCtaCte ;$0)
+C_TEXT:C284(ACTcc_OpcionesCalculoCtaCte ;$1)
+C_POINTER:C301(ACTcc_OpcionesCalculoCtaCte ;$2)
+
+  //ACTCAR_OPCIONESGENERALES
+C_TEXT:C284(ACTcar_OpcionesGenerales ;$0)
+C_POINTER:C301(ACTcar_OpcionesGenerales ;${2})
+C_TEXT:C284(ACTcar_OpcionesGenerales ;$1)
+
+  //ACTCAR_CALCULAMONTOS
+C_REAL:C285(ACTcar_CalculaMontos ;$0)
+C_TEXT:C284(ACTcar_CalculaMontos ;$1)
+C_POINTER:C301(ACTcar_CalculaMontos ;$2)
+C_POINTER:C301(ACTcar_CalculaMontos ;$3)
+C_DATE:C307(ACTcar_CalculaMontos ;$4)
+
+  //ACTCAR_CALCULASALDO
+C_REAL:C285(ACTcar_CalculaSaldo ;$0)
+C_TEXT:C284(ACTcar_CalculaSaldo ;$1)
+C_DATE:C307(ACTcar_CalculaSaldo ;$2)
+C_POINTER:C301(ACTcar_CalculaSaldo ;$3)
+C_POINTER:C301(ACTcar_CalculaSaldo ;$4)
+
+  //ACTAC_AJUSTASALDO
+C_TEXT:C284(ACTac_AjustaSaldo ;$1)
+C_POINTER:C301(ACTac_AjustaSaldo ;$2)
+C_POINTER:C301(ACTac_AjustaSaldo ;$3)
+C_POINTER:C301(ACTac_AjustaSaldo ;$4)
+
+  //ACTAC_CALCULAMONTOS
+C_BOOLEAN:C305(ACTac_CalculaMontos ;$0)
+C_BLOB:C604(ACTac_CalculaMontos ;$1)
+
+
+  //ACTTRA_CALCULAMONTOS
+C_REAL:C285(ACTtra_CalculaMontos ;$0)
+C_TEXT:C284(ACTtra_CalculaMontos ;$1)
+C_POINTER:C301(ACTtra_CalculaMontos ;$2)
+C_POINTER:C301(ACTtra_CalculaMontos ;$3)
+C_POINTER:C301(ACTtra_CalculaMontos ;$4)
+C_POINTER:C301(ACTtra_CalculaMontos ;$5)
+
+  //ACTTRA_RETORNAINFO
+C_TEXT:C284(ACTtra_RetornaInfo ;$0)
+C_TEXT:C284(ACTtra_RetornaInfo ;$1)
+
+  //ACTAC_OPCIONESGENERALES
+C_BOOLEAN:C305(ACTac_OpcionesGenerales ;$0)
+C_TEXT:C284(ACTac_OpcionesGenerales ;$1)
+C_POINTER:C301(ACTac_OpcionesGenerales ;$2)
+
+  //ACTCAR_CALCULAMONTOSPAGADOS
+C_REAL:C285(ACTcar_CalculaMontosPagados ;$0)
+C_TEXT:C284(ACTcar_CalculaMontosPagados ;$1)
+C_POINTER:C301(ACTcar_CalculaMontosPagados ;$2)
+
+  //ACTPP_RETORNANOCARGASTOTAL
+C_LONGINT:C283(ACTpp_RetornaNoCargasTotal ;$0)
+C_LONGINT:C283(ACTpp_RetornaNoCargasTotal ;$1)
+
+  //BWR_UPDATELASTRECORDSELECTED
+C_POINTER:C301(BWR_UpdateLastRecordSelected ;$1)
+
+  //AS_EDITAOBSERVACIONES
+C_LONGINT:C283(AS_EditaObservaciones ;$1)
+C_LONGINT:C283(AS_EditaObservaciones ;$2)
+
+  //BBLCI_CAMBIAESTADOSUSPENSION
+C_LONGINT:C283(BBLci_CambiaEstadoSuspensión ;$1)
+C_LONGINT:C283(BBLci_CambiaEstadoSuspensión ;$2)
+C_LONGINT:C283(BBLci_CambiaEstadoSuspensión ;$3)
+
+  //ACTCFG_OPCIONESRECARGOSAUT
+C_REAL:C285(ACTcfg_OpcionesRecargosAut ;$0)
+C_TEXT:C284(ACTcfg_OpcionesRecargosAut ;$1)
+C_POINTER:C301(ACTcfg_OpcionesRecargosAut ;$2)
+C_POINTER:C301(ACTcfg_OpcionesRecargosAut ;$3)
+
+  //_ACT_MONTO_A_PESOS
+C_REAL:C285(_ACT_monto_a_pesos ;$0)
+C_REAL:C285(_ACT_monto_a_pesos ;$1)
+C_TEXT:C284(_ACT_monto_a_pesos ;$2)
+C_DATE:C307(_ACT_monto_a_pesos ;$3)
+
+  //_ACT_MONTO_A_UF
+C_REAL:C285(_ACT_monto_a_uf ;$0)
+C_REAL:C285(_ACT_monto_a_uf ;$1)
+C_TEXT:C284(_ACT_monto_a_uf ;$2)
+C_DATE:C307(_ACT_monto_a_uf ;$3)
+
+  //PICT_GETDEFAULTFORMAT
+C_TEXT:C284(PICT_GetDefaultFormat ;$0)
+
+  //PICT_GETDEFAULTEXTENSION
+C_TEXT:C284(PICT_GetDefaultExtension ;$0)
+
+  //AL_RETORNAQUANTIL
+C_LONGINT:C283(AL_RetornaQuantil ;$0)
+C_POINTER:C301(AL_RetornaQuantil ;$1)
+C_LONGINT:C283(AL_RetornaQuantil ;$2)
+C_LONGINT:C283(AL_RetornaQuantil ;$3)
+C_LONGINT:C283(AL_RetornaQuantil ;$4)
+
+  //MATH_QUANTILE
+C_REAL:C285(MATH_Quantile ;$0)
+C_POINTER:C301(MATH_Quantile ;$1)
+C_REAL:C285(MATH_Quantile ;$2)
+
+  //EV2_REGISTROSDELALUMNO
+C_LONGINT:C283(EV2_RegistrosDelAlumno ;$1)
+C_LONGINT:C283(EV2_RegistrosDelAlumno ;$2)
+C_LONGINT:C283(EV2_RegistrosDelAlumno ;$3)
+C_LONGINT:C283(EV2_RegistrosDelAlumno ;$4)
+
+  //EV2MX_INFORMEBACHILLERATO
+C_TEXT:C284(EV2mx_InformeBachillerato ;$1)
+C_REAL:C285(EV2mx_InformeBachillerato ;$2)
+
+  //EV2MX_INFORMEBIMESTRAL
+C_TEXT:C284(EV2mx_InformeBimestral ;$1)
+
+  //EV2MX_INFORMEMENSUAL
+C_TEXT:C284(EV2mx_InformeMensual ;$1)
+
+  //EV2_CARGAREGISTRO
+C_REAL:C285(EV2_CargaRegistro ;$0)
+C_LONGINT:C283(EV2_CargaRegistro ;$1)
+C_LONGINT:C283(EV2_CargaRegistro ;$2)
+C_BOOLEAN:C305(EV2_CargaRegistro ;$3)
+C_LONGINT:C283(EV2_CargaRegistro ;$4)
+C_LONGINT:C283(EV2_CargaRegistro ;$5)
+
+  //EV2_CREAREGISTROSEVALUACION
+C_LONGINT:C283(EV2_CreaRegistrosEvaluacion ;$1)
+C_LONGINT:C283(EV2_CreaRegistrosEvaluacion ;$2)
+
+  //EV2_ELIMINAEVALUACIONES
+C_REAL:C285(EV2_EliminaEvaluaciones ;$0)
+C_LONGINT:C283(EV2_EliminaEvaluaciones ;$1)
+C_POINTER:C301(EV2_EliminaEvaluaciones ;$2)
+
+  //EV2_EXIMEALUMNO
+C_LONGINT:C283(EV2_EximeAlumno ;$0)
+C_LONGINT:C283(EV2_EximeAlumno ;$1)
+C_LONGINT:C283(EV2_EximeAlumno ;$2)
+
+  //EV2_INITARRAYS
+C_REAL:C285(EV2_InitArrays ;$1)
+
+  //EV2_LEECALIFICACIONES
+C_LONGINT:C283(EV2_LeeCalificaciones ;$1)
+C_LONGINT:C283(EV2_LeeCalificaciones ;$2)
+C_POINTER:C301(EV2_LeeCalificaciones ;$3)
+C_LONGINT:C283(EV2_LeeCalificaciones ;$4)
+
+  //EV2_LEECALIFICACIONESALUMNO
+C_LONGINT:C283(EV2_LeeCalificacionesAlumno ;$1)
+C_LONGINT:C283(EV2_LeeCalificacionesAlumno ;$2)
+C_LONGINT:C283(EV2_LeeCalificacionesAlumno ;$3)
+C_BOOLEAN:C305(EV2_LeeCalificacionesAlumno ;$4)
+C_LONGINT:C283(EV2_LeeCalificacionesAlumno ;$5)
+
+  //EV2_OBTIENEDATOSPERIODOACTUAL
+C_LONGINT:C283(EV2_ObtieneDatosPeriodoActual ;$1)
+
+
+  //EV2_TRANSFIEREEVALUACIONES
+C_REAL:C285(EV2_TransfiereEvaluaciones ;$0)
+C_LONGINT:C283(EV2_TransfiereEvaluaciones ;$1)
+C_LONGINT:C283(EV2_TransfiereEvaluaciones ;$2)
+C_POINTER:C301(EV2_TransfiereEvaluaciones ;$3)
+
+  //KRL_DELETERECORD
+C_LONGINT:C283(KRL_DeleteRecord ;$0)
+C_POINTER:C301(KRL_DeleteRecord ;$1)
+C_LONGINT:C283(KRL_DeleteRecord ;$2)
+
+
+  //CAE_CREAARCHIVOSHISTORICOS
+C_LONGINT:C283(CAE_CreaArchivosHistoricos ;$0)
+
+  //CAE_EJECUTACIERREAGNOESCOLAR
+C_BLOB:C604(CAE_EjecutaCierreAgnoEscolar ;$1)
+
+  //KRL_GETFIELDPOINTERBYNAME
+C_POINTER:C301(KRL_GetFieldPointerByName ;$0)
+C_TEXT:C284(KRL_GetFieldPointerByName ;$1)
+
+  //OT_ISOBJECTEQUAL
+C_BOOLEAN:C305(OT_IsObjectEqual ;$0)
+C_LONGINT:C283(OT_IsObjectEqual ;$1)
+C_LONGINT:C283(OT_IsObjectEqual ;$2)
+
+  //PERIODOS_LEEDATOSHISTORICOS
+C_LONGINT:C283(PERIODOS_LeeDatosHistoricos ;$1)
+C_LONGINT:C283(PERIODOS_LeeDatosHistoricos ;$2)
+C_LONGINT:C283(PERIODOS_LeeDatosHistoricos ;$3)
+C_LONGINT:C283(PERIODOS_LeeDatosHistoricos ;$4)
+
+  //LOC_GETNACIONALIDAD
+C_TEXT:C284(LOC_GetNacionalidad ;$0)
+C_TEXT:C284(LOC_GetNacionalidad ;$1)
+
+  //XALP_CBEX_EFEMERIDES
+C_BOOLEAN:C305(xALP_CBEX_Efemerides ;$0)
+C_LONGINT:C283(xALP_CBEX_Efemerides ;$1)
+C_LONGINT:C283(xALP_CBEX_Efemerides ;$2)
+C_LONGINT:C283(xALP_CBEX_Efemerides ;$3)
+
+  //STRMED_ELIMINAMEDICO
+C_BOOLEAN:C305(STRmed_EliminaMedico ;$0)
+C_REAL:C285(STRmed_EliminaMedico ;$1)
+
+  //ADTCON_FSAVE
+C_REAL:C285(ADTcon_fSave ;$0)
+
+  //ADTCON_DELETE
+C_REAL:C285(ADTcon_Delete ;$0)
+
+  //ADTCON_DELETESELECTION
+C_REAL:C285(ADTcon_DeleteSelection ;$0)
+
+  //CU_CALENDARIO
+C_DATE:C307(CU_Calendario ;$1)
+
+  //AS_LEESINTESISANUAL
+C_TEXT:C284(AS_LeeSintesisAnual ;$1)
+C_POINTER:C301(AS_LeeSintesisAnual ;$2)
+C_POINTER:C301(AS_LeeSintesisAnual ;$3)
+C_BOOLEAN:C305(AS_LeeSintesisAnual ;$4)
+
+  //_RETORNARANKINGARRAYS
+C_LONGINT:C283(_RetornaRankingArrays ;$0)
+C_POINTER:C301(_RetornaRankingArrays ;$1)
+C_LONGINT:C283(_RetornaRankingArrays ;$2)
+
+  //SYS_MOVEDOCUMENT
+C_BOOLEAN:C305(SYS_MoveDocument ;$0)
+C_TEXT:C284(SYS_MoveDocument ;$1)
+C_TEXT:C284(SYS_MoveDocument ;$2)
+C_BOOLEAN:C305(SYS_MoveDocument ;$3)
+
+  //ACTBOL_VALIDAEMISIONDESDEAVISOS
+C_BOOLEAN:C305(ACTbol_ValidaEmisionDesdeAvisos ;$0)
+C_TEXT:C284(ACTbol_ValidaEmisionDesdeAvisos ;$1)
+
+  //ACTPGS_ELIMINAPAGOENTRANS
+C_BOOLEAN:C305(ACTpgs_EliminaPagoEnTrans ;$0)
+C_POINTER:C301(ACTpgs_EliminaPagoEnTrans ;$1)
+C_POINTER:C301(ACTpgs_EliminaPagoEnTrans ;$2)
+
+  //ACTPGS_DESASIGNAIDTRANSACCION
+C_LONGINT:C283(ACTpgs_DesasignaIdTransaccion ;$0)
+C_POINTER:C301(ACTpgs_DesasignaIdTransaccion ;$1)
+
+  //DBUACT_VALIDADESCUENTOENCAJA
+C_LONGINT:C283(dbuACT_ValidaDescuentoEnCaja ;$1)
+
+  //ACTBOL_VALIDADELETEDESDEPAGOS
+C_BOOLEAN:C305(ACTbol_ValidaDeleteDesdePagos ;$0)
+C_LONGINT:C283(ACTbol_ValidaDeleteDesdePagos ;$1)
+
+  //KRL_GETFIELDVALUEBYFIELDNAME
+C_POINTER:C301(KRL_GetFieldValueByFieldName ;$0)
+C_TEXT:C284(KRL_GetFieldValueByFieldName ;$1)
+C_POINTER:C301(KRL_GetFieldValueByFieldName ;$2)
+
+  //ACTCD_DLOGWITHSHOWONDISK
+C_LONGINT:C283(ACTcd_DlogWithShowOnDisk ;$0)
+C_TEXT:C284(ACTcd_DlogWithShowOnDisk ;$1)
+C_LONGINT:C283(ACTcd_DlogWithShowOnDisk ;$2)
+C_TEXT:C284(ACTcd_DlogWithShowOnDisk ;$3)
+
+  //ACTCAR_RECALCULARXA
+C_LONGINT:C283(ACTcar_RecalculaRXA ;$1)
+C_LONGINT:C283(ACTcar_RecalculaRXA ;$2)
+C_LONGINT:C283(ACTcar_RecalculaRXA ;$3)
+
+  //ACTPGS_CALCULADESCTORXA
+C_REAL:C285(ACTpgs_CalculaDesctoRXA ;$0)
+C_TEXT:C284(ACTpgs_CalculaDesctoRXA ;$1)
+C_POINTER:C301(ACTpgs_CalculaDesctoRXA ;$2)
+C_POINTER:C301(ACTpgs_CalculaDesctoRXA ;$3)
+C_POINTER:C301(ACTpgs_CalculaDesctoRXA ;$4)
+
+  //ADTCFG_LOADESTADOS
+C_REAL:C285(ADTcfg_LoadEstados ;$0)
+
+  //NET_PROXY_SETTINGS
+C_TEXT:C284(NET_PROXY_Settings ;$1)
+C_POINTER:C301(NET_PROXY_Settings ;$2)
+
+  //NET_CONFIGURATION
+C_TEXT:C284(NET_Configuration ;$1)
+C_TEXT:C284(NET_Configuration ;$2)
+
+  //CMT_FTP_SETTINGS
+C_TEXT:C284(CMT_FTP_Settings ;$1)
+C_POINTER:C301(CMT_FTP_Settings ;$2)
+C_TEXT:C284(CMT_FTP_Settings ;$3)
+
+  //CMT_LOGACTION
+C_TEXT:C284(CMT_LogAction ;$1)
+C_TEXT:C284(CMT_LogAction ;$2)
+C_LONGINT:C283(CMT_LogAction ;$3)
+C_TEXT:C284(CMT_LogAction ;$4)
+
+  //NET_SENDFILE2FTP
+C_TEXT:C284(NET_SendFile2FTP ;$0)
+C_TEXT:C284(NET_SendFile2FTP ;$1)
+C_TEXT:C284(NET_SendFile2FTP ;$2)
+C_TEXT:C284(NET_SendFile2FTP ;$3)
+C_LONGINT:C283(NET_SendFile2FTP ;$4)
+C_LONGINT:C283(NET_SendFile2FTP ;$5)
+C_TEXT:C284(NET_SendFile2FTP ;$6)
+C_TEXT:C284(NET_SendFile2FTP ;$7)
+C_TEXT:C284(NET_SendFile2FTP ;$8)
+C_BOOLEAN:C305(NET_SendFile2FTP ;$9)
+C_LONGINT:C283(NET_SendFile2FTP ;$10)
+
+  //CMT_GET_COMMTRACKUSERS
+C_TEXT:C284(CMT_Get_CommTrackUsers ;$1)
+
+  //WS_CALLCOMMTRACKWEBSERVICE
+C_TEXT:C284(WS_CallCommTrackWebService ;$0)
+C_TEXT:C284(WS_CallCommTrackWebService ;$1)
+C_BOOLEAN:C305(WS_CallCommTrackWebService ;$2)
+C_LONGINT:C283(WS_CallCommTrackWebService ;$3)
+
+  //CMT_SENDFILES2FTP
+C_REAL:C285(CMT_SendFiles2FTP ;$0)
+C_TEXT:C284(CMT_SendFiles2FTP ;$1)
+C_TEXT:C284(CMT_SendFiles2FTP ;$2)
+C_TEXT:C284(CMT_SendFiles2FTP ;$3)
+
+  //XS_COPYPREFWIZSERVICEITEMS
+C_TEXT:C284(XS_CopyPrefWizServiceItems ;$1)
+C_LONGINT:C283(XS_CopyPrefWizServiceItems ;$2)
+
+  //WS_CALLSTWAWEBSERVICE
+C_TEXT:C284(WS_CallSTWAWebService ;$0)
+C_TEXT:C284(WS_CallSTWAWebService ;$1)
+C_BOOLEAN:C305(WS_CallSTWAWebService ;$2)
+C_LONGINT:C283(WS_CallSTWAWebService ;$3)
+
+  //DBUACT_VERIFICATRANSXPAGOS
+C_REAL:C285(dbuACT_VerificaTransXPagos ;$1)
+
+  //ACTABC_EXPORTCUPWENLOCK
+C_TEXT:C284(ACTabc_ExportCUPWenlock ;$1)
+C_TEXT:C284(ACTabc_ExportCUPWenlock ;$2)
+C_TEXT:C284(ACTabc_ExportCUPWenlock ;$3)
+
+  //ACTABC_CREAARCHIVO
+C_TIME:C306(ACTabc_CreaArchivo ;$0)
+C_TEXT:C284(ACTabc_CreaArchivo ;$1)
+C_TEXT:C284(ACTabc_CreaArchivo ;$2)
+C_TEXT:C284(ACTabc_CreaArchivo ;$3)
+
+  //ACTABC_EXPORTCUPSANFELIPE
+C_TEXT:C284(ACTabc_ExportCUPSanFelipe ;$1)
+C_TEXT:C284(ACTabc_ExportCUPSanFelipe ;$2)
+C_TEXT:C284(ACTabc_ExportCUPSanFelipe ;$3)
+
+  //ACTABC_OBTIENEMESESYADEUDADO
+C_LONGINT:C283(ACTabc_ObtieneMesesYAdeudado ;$0)
+C_TEXT:C284(ACTabc_ObtieneMesesYAdeudado ;$1)
+C_POINTER:C301(ACTabc_ObtieneMesesYAdeudado ;$2)
+C_POINTER:C301(ACTabc_ObtieneMesesYAdeudado ;$3)
+C_POINTER:C301(ACTabc_ObtieneMesesYAdeudado ;$4)
+C_POINTER:C301(ACTabc_ObtieneMesesYAdeudado ;$5)
+C_POINTER:C301(ACTabc_ObtieneMesesYAdeudado ;$6)
+C_POINTER:C301(ACTabc_ObtieneMesesYAdeudado ;$7)
+C_POINTER:C301(ACTabc_ObtieneMesesYAdeudado ;$8)
+C_POINTER:C301(ACTabc_ObtieneMesesYAdeudado ;$9)
+C_POINTER:C301(ACTabc_ObtieneMesesYAdeudado ;$10)
+
+  //ACTABC_GETFIELDWITHFORMAT
+C_TEXT:C284(ACTabc_GetFieldWithFormat ;$0)
+C_TEXT:C284(ACTabc_GetFieldWithFormat ;$1)
+C_TEXT:C284(ACTabc_GetFieldWithFormat ;$2)
+C_LONGINT:C283(ACTabc_GetFieldWithFormat ;$3)
+C_TEXT:C284(ACTabc_GetFieldWithFormat ;$4)
+C_TEXT:C284(ACTabc_GetFieldWithFormat ;$5)
+
+  //ACTABC_EXPORTCUPSANMIGUELA
+C_TEXT:C284(ACTabc_ExportCUPSanMiguelA ;$1)
+C_TEXT:C284(ACTabc_ExportCUPSanMiguelA ;$2)
+C_TEXT:C284(ACTabc_ExportCUPSanMiguelA ;$3)
+
+  //ACTCAE_REGISTEREVENT
+C_REAL:C285(ACTcae_RegisterEvent ;$1)
+C_REAL:C285(ACTcae_RegisterEvent ;$2)
+C_TEXT:C284(ACTcae_RegisterEvent ;$3)
+
+  //ACTCAE_QUITADCTOS2DEL
+C_REAL:C285(ACTcae_QuitaDctos2Del ;$1)
+
+  //ACTCAE_CARGAVARSCIERRE
+C_BOOLEAN:C305(ACTcae_CargaVarsCierre ;$0)
+C_REAL:C285(ACTcae_CargaVarsCierre ;$1)
+C_REAL:C285(ACTcae_CargaVarsCierre ;$2)
+C_POINTER:C301(ACTcar_CargaArreglos ;${2})
+C_TEXT:C284(ACTcar_CargaArreglos ;$1)
+
+  //ACTPP_CARGADETALLEPAGO
+C_TEXT:C284(ACTpp_CargaDetallePago ;$1)
+C_REAL:C285(ACTpp_CargaDetallePago ;$2)
+C_REAL:C285(ACTpp_CargaDetallePago ;$3)
+C_TEXT:C284(ACTpp_CargaDetallePago ;$4)
+C_REAL:C285(ACTpp_CargaDetallePago ;$5)
+
+  //ACTCC_ONLOADRECORD
+C_REAL:C285(ACTcc_OnLoadRecord ;$1)
+
+  //ACTPP_CARGAARREGLOANOSHIST
+C_TEXT:C284(ACTpp_CargaArregloAñosHist ;$1)
+C_REAL:C285(ACTpp_CargaArregloAñosHist ;$2)
+
+  //ACTAC_CARGACARGOSAVISO
+C_TEXT:C284(ACTac_CargaCargosAviso ;$1)
+C_REAL:C285(ACTac_CargaCargosAviso ;$2)
+C_TEXT:C284(ACTac_CargaCargosAviso ;$3)
+C_REAL:C285(ACTac_CargaCargosAviso ;$4)
+
+  //ACTPP_ONRECORDLOAD
+C_REAL:C285(ACTpp_OnRecordLoad ;$1)
+
+  //AL_TOTALIZADIASINASISTENCIA
+C_LONGINT:C283(AL_TotalizaDiasInasistencia ;$1)
+C_LONGINT:C283(AL_TotalizaDiasInasistencia ;$2)
+
+  //PERIODOS_FINANOPERIODOSSTRACK
+C_DATE:C307(PERIODOS_FinAñoPeriodosSTrack ;$0)
+C_REAL:C285(PERIODOS_FinAñoPeriodosSTrack ;$1)
+
+  //PERIODOS_INICIOANOSTRACK
+C_DATE:C307(PERIODOS_InicioAñoSTrack ;$0)
+C_REAL:C285(PERIODOS_InicioAñoSTrack ;$1)
+
+  //DBUACT_VERIFICAINTEGRIDADPAGOS
+C_BOOLEAN:C305(dbuACT_VerificaIntegridadPagos ;$0)
+C_TEXT:C284(dbuACT_VerificaIntegridadPagos ;$1)
+C_REAL:C285(dbuACT_VerificaIntegridadPagos ;$2)
+C_REAL:C285(dbuACT_VerificaIntegridadPagos ;$3)
+C_REAL:C285(dbuACT_VerificaIntegridadPagos ;$4)
+
+  //ACTDC_CONSTRUYEDATOSPRORROGA
+C_TEXT:C284(ACTdc_ConstruyeDatosProrroga ;$0)
+C_TEXT:C284(ACTdc_ConstruyeDatosProrroga ;$1)
+
+  //ACTCAT_RETORNAMONTOSXCAT
+C_POINTER:C301(ACTcat_RetornaMontosXCat ;$1)
+C_POINTER:C301(ACTcat_RetornaMontosXCat ;$2)
+C_POINTER:C301(ACTcat_RetornaMontosXCat ;$3)
+C_POINTER:C301(ACTcat_RetornaMontosXCat ;$4)
+C_POINTER:C301(ACTcat_RetornaMontosXCat ;$5)
+C_POINTER:C301(ACTcat_RetornaMontosXCat ;$6)
+
+  //ACTABC_EXPORTCUPNEWLAND
+C_TEXT:C284(ACTabc_ExportCUPNewland ;$1)
+C_TEXT:C284(ACTabc_ExportCUPNewland ;$2)
+C_TEXT:C284(ACTabc_ExportCUPNewland ;$3)
+
+  //ACTABC_EXPORTCUPLINCOLN
+C_TEXT:C284(ACTabc_ExportCUPLincoln ;$1)
+C_TEXT:C284(ACTabc_ExportCUPLincoln ;$2)
+C_TEXT:C284(ACTabc_ExportCUPLincoln ;$3)
+
+  //ACTIT_MOVEELEMENTALP
+C_LONGINT:C283(ACTit_MoveElementALP ;$0)
+C_POINTER:C301(ACTit_MoveElementALP ;${3})
+C_LONGINT:C283(ACTit_MoveElementALP ;$1)
+C_REAL:C285(ACTit_MoveElementALP ;$2)
+
+  //ACTPGS_MARKNOTMARK
+C_TEXT:C284(ACTpgs_MarkNotMark ;$1)
+C_POINTER:C301(ACTpgs_MarkNotMark ;$2)
+C_POINTER:C301(ACTpgs_MarkNotMark ;$3)
+C_POINTER:C301(ACTpgs_MarkNotMark ;$4)
+C_POINTER:C301(ACTpgs_MarkNotMark ;$5)
+C_POINTER:C301(ACTpgs_MarkNotMark ;$6)
+C_POINTER:C301(ACTpgs_MarkNotMark ;$7)
+
+  //ACTPGS_ARREGLOSAVISOS
+C_TEXT:C284(ACTpgs_ArreglosAvisos ;$1)
+C_POINTER:C301(ACTpgs_ArreglosAvisos ;$2)
+
+  //ACTPGS_ARREGLOSITEMS
+C_TEXT:C284(ACTpgs_ArreglosItems ;$1)
+C_POINTER:C301(ACTpgs_ArreglosItems ;$2)
+
+  //ACTPGS_ARREGLOSCUENTAS
+C_TEXT:C284(ACTpgs_ArreglosCuentas ;$1)
+C_POINTER:C301(ACTpgs_ArreglosCuentas ;$2)
+
+  //STR_TRAEDATOS_PER_PRO_ALU
+C_LONGINT:C283(STR_TraeDatos_PER_PRO_ALU ;$1)
+
+  //ADTCON_LOADPROSPECTOS
+C_LONGINT:C283(ADTcon_LoadProspectos ;$1)
+
+  //ADTCDD_ASIGNARGRUPO
+C_TEXT:C284(ADTcdd_AsignarGrupo ;$0)
+C_DATE:C307(ADTcdd_AsignarGrupo ;$1)
+C_POINTER:C301(AT_RedimArrays2Max ;${1})
+
+  //ACTTER_ONRECORDLOAD
+C_REAL:C285(ACTter_OnRecordLoad ;$1)
+
+  //ACTTER_FSAVE
+C_REAL:C285(ACTter_fSave ;$0)
+
+  //ACTTER_PAGEGENERAL
+C_LONGINT:C283(ACTter_PageGeneral ;$0)
+
+  //ACTTER_PAGEINFOPAGOS
+C_LONGINT:C283(ACTter_PageInfoPagos ;$0)
+C_POINTER:C301(ACTpp_LabelPACPAT ;${1})
+
+  //ACTTER_INITVARIABLESFORM
+C_TEXT:C284(ACTter_InitVariablesForm ;$1)
+
+  //ACTTER_SETIDENTIFICADOR
+C_POINTER:C301(ACTter_SetIdentificador ;$1)
+C_POINTER:C301(ACTter_SetIdentificador ;$2)
+
+  //ACTABC_EXPORTCUPSANIGNACIO
+C_TEXT:C284(ACTabc_ExportCUPSanIgnacio ;$1)
+C_TEXT:C284(ACTabc_ExportCUPSanIgnacio ;$2)
+C_TEXT:C284(ACTabc_ExportCUPSanIgnacio ;$3)
+
+  //XCR_OBTIENEDATOSPERIODOACTUAL
+C_LONGINT:C283(XCR_ObtieneDatosPeriodoActual ;$1)
+
+  //SRZ_BOLETINHISTNORTHLAND
+C_TEXT:C284(SRz_BoletinHistNorthland ;$1)
+C_POINTER:C301(ACTter_Datos_ALP ;${2})
+C_TEXT:C284(ACTter_Datos_ALP ;$1)
+
+  //XALP_ACT_CB_TERMODMONTOS
+C_BOOLEAN:C305(xALP_ACT_CB_TerModMontos ;$0)
+C_LONGINT:C283(xALP_ACT_CB_TerModMontos ;$1)
+C_LONGINT:C283(xALP_ACT_CB_TerModMontos ;$2)
+C_LONGINT:C283(xALP_ACT_CB_TerModMontos ;$3)
+
+  //STR_REPLICACAMBIOS
+C_BOOLEAN:C305(STR_ReplicaCambios ;$0)
+C_POINTER:C301(STR_ReplicaCambios ;$1)
+C_BLOB:C604(STR_ReplicaCambios ;$2)
+
+  //KRL_FIELDCHANGES
+C_BOOLEAN:C305(KRL_FieldChanges ;$0)
+C_POINTER:C301(KRL_FieldChanges ;${1})
+
+  //WZD_GETSTANDARDGRADEPLAN
+C_REAL:C285(WZD_GetStandardGradePlan ;$1)
+
+  //ALP_COUNTELEMENTS
+C_LONGINT:C283(ALP_CountElements ;$0)
+C_REAL:C285(ALP_CountElements ;$1)
+
+  //ACTTER_PAGEPACTADO
+C_LONGINT:C283(ACTter_PagePactado ;$0)
+C_TEXT:C284(ACTter_PagePactado ;$1)
+
+  //EV2_LEECALIFICACIONESHISTALUMNO
+C_LONGINT:C283(EV2_LeeCalificacionesHistAlumno ;$1)
+C_LONGINT:C283(EV2_LeeCalificacionesHistAlumno ;$2)
+C_LONGINT:C283(EV2_LeeCalificacionesHistAlumno ;$3)
+C_BOOLEAN:C305(EV2_LeeCalificacionesHistAlumno ;$4)
+C_REAL:C285(EV2_LeeCalificacionesHistAlumno ;$5)
+
+  //FTP_MANUAL
+C_TEXT:C284(FTP_Manual ;$1)
+
+  //SRZ_BOLETINOFICIALNORTHLANDS
+C_TEXT:C284(SRz_BoletinOficialNorthlands ;$1)
+
+  //EVS_LEEVALORENMATRIZ
+C_REAL:C285(EVS_LeeValorEnMatriz ;$0)
+C_LONGINT:C283(EVS_LeeValorEnMatriz ;$1)
+C_TEXT:C284(EVS_LeeValorEnMatriz ;$2)
+
+  //ACTPGS_IDSBOLETAS
+C_BOOLEAN:C305(ACTpgs_IdsBoletas ;$0)
+C_TEXT:C284(ACTpgs_IdsBoletas ;$1)
+C_POINTER:C301(ACTpgs_IdsBoletas ;$2)
+
+  //ACTCC_ASIGNACODINTERNO
+C_BOOLEAN:C305(ACTcc_AsignaCodInterno ;$0)
+C_LONGINT:C283(ACTcc_AsignaCodInterno ;$1)
+
+  //EVS_LEEESTILOEVALHIST_BYID
+C_REAL:C285(EVS_LeeEstiloEvalHist_byID ;$1)
+
+  //ALH_EDICIONNOTASHISTORICAS
+C_POINTER:C301(ALh_EdicionNotasHistoricas ;$1)
+
+  //KRL_MAKESTRINGACCESKEY
+C_TEXT:C284(KRL_MakeStringAccesKey ;$0)
+C_POINTER:C301(KRL_MakeStringAccesKey ;${-1})
+C_POINTER:C301(KRL_MakeStringAccesKey ;$1)
+C_POINTER:C301(KRL_MakeStringAccesKey ;$2)
+C_POINTER:C301(KRL_MakeStringAccesKey ;$3)
+C_POINTER:C301(KRL_MakeStringAccesKey ;$4)
+C_POINTER:C301(KRL_MakeStringAccesKey ;$5)
+
+  //DHQRY_BUSQUEDASPORAGNOS
+C_REAL:C285(dhQRY_BusquedasPorAgnos ;$0)
+C_POINTER:C301(dhQRY_BusquedasPorAgnos ;$1)
+C_POINTER:C301(dhQRY_BusquedasPorAgnos ;$2)
+
+  //DHQRY_ESBUSQUEDAPORAGNO
+C_BOOLEAN:C305(dhQRY_esBusquedaPorAgno ;$0)
+
+  //DBUACT_REPOSITORIOSCRIPTS
+C_TEXT:C284(dbuACT_RepositorioScripts ;$1)
+C_POINTER:C301(dbuACT_RepositorioScripts ;$2)
+
+  //SRZ_BOLETINHISTORICO_ARGENTINA
+C_TEXT:C284(SRz_BoletinHistorico_Argentina ;$1)
+C_REAL:C285(SRz_BoletinHistorico_Argentina ;$2)
+
+  //AL_LEEOBSERVACIONESHISTORICAS
+C_REAL:C285(AL_LeeObservacionesHistoricas ;$1)
+
+  //ACTBOL_ANULADEVOLUCION
+C_BOOLEAN:C305(ACTbol_AnulaDevolucion ;$0)
+C_POINTER:C301(ACTbol_AnulaDevolucion ;$1)
+C_POINTER:C301(ACTbol_AnulaDevolucion ;$2)
+
+  //ACTBOL_LEELISTADOCSTRIBS
+C_TEXT:C284(ACTbol_LeeListaDocsTribs ;$1)
+
+  //ACTBOL_ASIGNACATDOCTRIBUTARIO
+C_BOOLEAN:C305(ACTbol_AsignaCatDocTributario ;$0)
+C_BLOB:C604(ACTbol_AsignaCatDocTributario ;$1)
+
+  //ACTCFG_OPCIONESFORMASDEPAGO
+C_TEXT:C284(ACTcfg_OpcionesFormasDePago ;$1)
+C_POINTER:C301(ACTcfg_OpcionesFormasDePago ;$2)
+C_POINTER:C301(ACTcfg_OpcionesFormasDePago ;$3)
+C_POINTER:C301(ACTcfg_OpcionesFormasDePago ;$4)
+
+  //ACTPGS_GENCARGODESCTOESPECIAL
+C_POINTER:C301(ACTpgs_GenCargoDesctoEspecial ;$1)
+
+  //ACTBOL_GENERADEVOLUCION
+C_REAL:C285(ACTbol_GeneraDevolucion ;$1)
+C_POINTER:C301(ACTbol_GeneraDevolucion ;$2)
+C_POINTER:C301(ACTbol_GeneraDevolucion ;$3)
+
+  //ACTBOL_ANULADCTO
+C_BOOLEAN:C305(ACTbol_AnulaDcto ;$1)
+
+  //EVLG_XALP_APRENDIZAJES
+C_LONGINT:C283(EVLG_xALP_Aprendizajes ;$1)
+
+  //ACTPP_GUARDARECHAZOS
+C_POINTER:C301(ACTpp_GuardaRechazos ;$1)
+C_POINTER:C301(ACTpp_GuardaRechazos ;$2)
+C_DATE:C307(ACTpp_GuardaRechazos ;$3)
+C_TEXT:C284(ACTpp_GuardaRechazos ;$4)
+C_TEXT:C284(ACTpp_GuardaRechazos ;$5)
+C_REAL:C285(ACTpp_GuardaRechazos ;$6)
+C_REAL:C285(ACTpp_GuardaRechazos ;$7)
+C_REAL:C285(ACTpp_GuardaRechazos ;$8)
+C_REAL:C285(ACTpp_GuardaRechazos ;$9)
+
+  //ACTCC_CREATEOBS
+C_LONGINT:C283(ACTcc_CreateObs ;$0)
+C_REAL:C285(ACTcc_CreateObs ;$1)
+C_TEXT:C284(ACTcc_CreateObs ;$2)
+C_DATE:C307(ACTcc_CreateObs ;$3)
+C_REAL:C285(ACTcc_CreateObs ;$4)
+
+  //ACTPP_CREATEOBS
+C_LONGINT:C283(ACTpp_CreateObs ;$0)
+C_REAL:C285(ACTpp_CreateObs ;$1)
+C_TEXT:C284(ACTpp_CreateObs ;$2)
+C_DATE:C307(ACTpp_CreateObs ;$3)
+
+  //SRZ_BOLETINANUAL_ARGENTINA
+C_TEXT:C284(SRz_BoletinAnual_Argentina ;$1)
+C_REAL:C285(SRz_BoletinAnual_Argentina ;$2)
+
+  //ACTMX_RETORNADATO
+C_TEXT:C284(ACTmx_RetornaDato ;$1)
+C_POINTER:C301(ACTmx_RetornaDato ;$2)
+C_POINTER:C301(ACTmx_RetornaDato ;$3)
+C_POINTER:C301(ACTmx_RetornaDato ;$4)
+
+  //MATH_DIVIDE
+C_REAL:C285(MATH_Divide ;$0)
+C_REAL:C285(MATH_Divide ;$1)
+C_REAL:C285(MATH_Divide ;$2)
+
+  //EV2_MUESTRAINFOCALIFICACION
+C_LONGINT:C283(EV2_MuestraInfoCalificacion ;$1)
+C_LONGINT:C283(EV2_MuestraInfoCalificacion ;$2)
+
+  //EV2_RETORNAINFONOTA
+C_TEXT:C284(EV2_RetornaInfoNota ;$0)
+C_POINTER:C301(EV2_RetornaInfoNota ;$1)
+C_TEXT:C284(EV2_RetornaInfoNota ;$2)
+
+  //AL_PROMEDIOPONDERADOPORHORAS
+C_REAL:C285(AL_PromedioPonderadoPorHoras ;$0)
+C_POINTER:C301(AL_PromedioPonderadoPorHoras ;$1)
+C_POINTER:C301(AL_PromedioPonderadoPorHoras ;$2)
+
+  //AL_PROMEDIOPONDERADOPORFACTOR
+C_REAL:C285(AL_PromedioPonderadoPorFactor ;$0)
+C_POINTER:C301(AL_PromedioPonderadoPorFactor ;$1)
+C_POINTER:C301(AL_PromedioPonderadoPorFactor ;$2)
+
+  //WS_DATOSTERRAUSTRAL
+C_TEXT:C284(WS_DatosTerraustral ;$1)
+C_TEXT:C284(WS_DatosTerraustral ;$2)
+C_TEXT:C284(WS_DatosTerraustral ;$3)
+C_TEXT:C284(WS_DatosTerraustral ;$4)
+C_TEXT:C284(WS_DatosTerraustral ;$5)
+C_TEXT:C284(WS_DatosTerraustral ;$6)
+C_TEXT:C284(WS_DatosTerraustral ;$7)
+
+  //AL_INASISTENCIADIARIAPORHORAS
+C_LONGINT:C283(AL_InasistenciaDiariaPorHoras ;$1)
+C_DATE:C307(AL_InasistenciaDiariaPorHoras ;$2)
+
+  //ACTPGS_CARGAMODELOSRECIBOS
+C_TEXT:C284(ACTpgs_CargaModelosRecibos ;$1)
+
+  //KRL_EXECUTEEVERYWHERE
+C_TEXT:C284(KRL_ExecuteEverywhere ;$1)
+
+  //ACTBOL_VALIDAEMISIONDOCS
+C_BOOLEAN:C305(ACTbol_ValidaEmisionDocs ;$0)
+C_TEXT:C284(ACTbol_ValidaEmisionDocs ;$1)
+
+  //ACTAC_MONTOSXCATEGORIA
+C_POINTER:C301(ACTac_MontosXCategoria ;$1)
+C_BOOLEAN:C305(ACTac_MontosXCategoria ;$2)
+C_BOOLEAN:C305(ACTac_MontosXCategoria ;$3)
+
+  //ACTABC_EXPORTPACIAVALDIVIA
+C_TEXT:C284(ACTabc_ExportPACIAValdivia ;$1)
+C_TEXT:C284(ACTabc_ExportPACIAValdivia ;$2)
+C_TEXT:C284(ACTabc_ExportPACIAValdivia ;$3)
+
+  //MPA_LEEHISTORICOSALUMNO
+C_LONGINT:C283(MPA_LeeHistoricosAlumno ;$1)
+C_LONGINT:C283(MPA_LeeHistoricosAlumno ;$2)
+C_LONGINT:C283(MPA_LeeHistoricosAlumno ;$3)
+C_REAL:C285(MPA_LeeHistoricosAlumno ;$4)
+
+  //ACTCFG_OPCIONESTAREASFINDIA
+C_TEXT:C284(ACTcfg_OpcionesTareasFinDia ;$1)
+
+  //ACTBOL_RETORNAESTADO
+C_TEXT:C284(ACTbol_RetornaEstado ;$0)
+C_TEXT:C284(ACTbol_RetornaEstado ;$1)
+C_POINTER:C301(ACTbol_RetornaEstado ;$2)
+
+  //ACTCFG_ITEMSMATRICULA
+C_BOOLEAN:C305(ACTcfg_ItemsMatricula ;$0)
+C_POINTER:C301(ACTcfg_ItemsMatricula ;${2})
+C_TEXT:C284(ACTcfg_ItemsMatricula ;$1)
+
+  //SN3_GETCOLORNOTA
+C_TEXT:C284(SN3_GetColorNota ;$0)
+C_REAL:C285(SN3_GetColorNota ;$1)
+C_REAL:C285(SN3_GetColorNota ;$2)
+
+  //ACTDC_DOCUMENTONOBLOQ
+C_BOOLEAN:C305(ACTdc_DocumentoNoBloq ;$0)
+C_TEXT:C284(ACTdc_DocumentoNoBloq ;$1)
+C_POINTER:C301(ACTdc_DocumentoNoBloq ;$2)
+
+  //ACTABC_EXPORTCUPCASUARINAS
+C_TEXT:C284(ACTabc_ExportCUPCasuarinas ;$1)
+C_TEXT:C284(ACTabc_ExportCUPCasuarinas ;$2)
+C_TEXT:C284(ACTabc_ExportCUPCasuarinas ;$3)
+
+  //ACTABC_IMPORTCUPLINCOLN
+C_TEXT:C284(ACTabc_ImportCUPLincoln ;$1)
+
+  //ACTABC_EXPORTCUPCASUARINASBIF
+C_TEXT:C284(ACTabc_ExportCUPCasuarinasBIF ;$1)
+C_TEXT:C284(ACTabc_ExportCUPCasuarinasBIF ;$2)
+C_TEXT:C284(ACTabc_ExportCUPCasuarinasBIF ;$3)
+C_POINTER:C301(ACTpgs_LimpiaVarsInterfaz ;${2})
+C_TEXT:C284(ACTpgs_LimpiaVarsInterfaz ;$1)
+
+  //ACTPGS_ARREGLOSAGRUPADO
+C_TEXT:C284(ACTpgs_ArreglosAgrupado ;$1)
+C_POINTER:C301(ACTpgs_ArreglosAgrupado ;$2)
+C_POINTER:C301(ACTat_SearchArrayByRange ;${2})
+C_TEXT:C284(ACTat_SearchArrayByRange ;$1)
+
+  //ACTCC_CALCULAMONTOITEMTERCERO
+C_BOOLEAN:C305(ACTcc_CalculaMontoItemTercero ;$1)
+C_DATE:C307(ACTcc_CalculaMontoItemTercero ;$2)
+
+  //ACTTER_EMITEAVISOS
+C_REAL:C285(ACTter_EmiteAvisos ;$1)
+C_REAL:C285(ACTter_EmiteAvisos ;$2)
+C_REAL:C285(ACTter_EmiteAvisos ;$3)
+C_DATE:C307(ACTter_EmiteAvisos ;$4)
+C_DATE:C307(ACTter_EmiteAvisos ;$5)
+C_DATE:C307(ACTter_EmiteAvisos ;$6)
+C_DATE:C307(ACTter_EmiteAvisos ;$7)
+C_DATE:C307(ACTter_EmiteAvisos ;$8)
+C_REAL:C285(ACTter_EmiteAvisos ;$9)
+C_REAL:C285(ACTter_EmiteAvisos ;$10)
+C_TEXT:C284(ACTter_EmiteAvisos ;$11)
+
+  //ACTAC_CREAAVISO
+C_DATE:C307(ACTac_CreaAviso ;$1)
+C_DATE:C307(ACTac_CreaAviso ;$2)
+C_DATE:C307(ACTac_CreaAviso ;$3)
+C_DATE:C307(ACTac_CreaAviso ;$4)
+C_DATE:C307(ACTac_CreaAviso ;$5)
+C_REAL:C285(ACTac_CreaAviso ;$6)
+C_REAL:C285(ACTac_CreaAviso ;$7)
+C_REAL:C285(ACTac_CreaAviso ;$8)
+C_REAL:C285(ACTac_CreaAviso ;$9)
+C_REAL:C285(ACTac_CreaAviso ;$10)
+C_TEXT:C284(ACTac_CreaAviso ;$11)
+
+  //ACTPGS_ELIMINACARGOSNOSEL
+C_TEXT:C284(ACTpgs_EliminaCargosNoSel ;$0)
+C_TEXT:C284(ACTpgs_EliminaCargosNoSel ;$1)
+
+  //ACTTER_ACTUALIZAVALORES
+C_BOOLEAN:C305(ACTter_ActualizaValores ;$0)
+C_LONGINT:C283(ACTter_ActualizaValores ;$1)
+
+  //ACTTER_RECALCULASALDO
+C_POINTER:C301(ACTter_RecalculaSaldo ;$1)
+C_BOOLEAN:C305(ACTter_RecalculaSaldo ;$2)
+
+  //ACTABC_IMPORTCUPCASUARINASIB
+C_TEXT:C284(ACTabc_ImportCUPCasuarinasIB ;$1)
+
+  //ACTABC_IMPORTCUPCASUARINASBIF
+C_TEXT:C284(ACTabc_importCUPCasuarinasBIF ;$1)
+
+  //ACTCFG_OPCIONESTEXTOMAIL
+C_TEXT:C284(ACTcfg_OpcionesTextoMail ;$0)
+C_TEXT:C284(ACTcfg_OpcionesTextoMail ;$1)
+C_POINTER:C301(ACTcfg_OpcionesTextoMail ;$2)
+C_POINTER:C301(ACTcfg_OpcionesTextoMail ;$3)
+C_POINTER:C301(ACTcfg_OpcionesTextoMail ;$4)
+C_POINTER:C301(ACTcfg_OpcionesTextoMail ;$5)
+C_POINTER:C301(ACTcfg_OpcionesTextoMail ;$6)
+C_POINTER:C301(ACTcfg_OpcionesTextoMail ;$7)
+C_POINTER:C301(ACTcfg_OpcionesTextoMail ;$8)
+
+  //ACTCFGCAT_RETORNALASTID
+C_LONGINT:C283(ACTcfgcat_RetornaLastID ;$0)
+
+  //ACTDC_CARGADCCREADOS
+C_TEXT:C284(ACTdc_CargaDCCreados ;$1)
+C_POINTER:C301(ACTdc_CargaDCCreados ;$2)
+
+  //ACTBOL_GETDOCTRIBFROMTERCERO
+C_REAL:C285(ACTbol_GetDocTribFromTercero ;$0)
+C_LONGINT:C283(ACTbol_GetDocTribFromTercero ;$1)
+
+  //ACTIO_TEXT2NUM
+C_REAL:C285(ACTio_Text2Num ;$0)
+C_TEXT:C284(ACTio_Text2Num ;$1)
+C_TEXT:C284(ACTio_Text2Num ;$2)
+
+  //SRACTBOL_CARGADATOSTERCERO
+C_TEXT:C284(SRACTbol_CargaDatosTercero ;$1)
+C_POINTER:C301(SRACTbol_CargaDatosTercero ;$2)
+C_POINTER:C301(SRACTbol_CargaDatosTercero ;$3)
+
+  //ACTTER_DELETE
+C_LONGINT:C283(ACTter_Delete ;$0)
+C_BOOLEAN:C305(ACTter_Delete ;$1)
+
+  //ACTTER_DELETESELECTION
+C_REAL:C285(ACTter_DeleteSelection ;$0)
+
+  //AS_REPLICAASIGNATURA
+C_REAL:C285(AS_ReplicaAsignatura ;$0)
+C_LONGINT:C283(AS_ReplicaAsignatura ;$1)
+C_TEXT:C284(AS_ReplicaAsignatura ;$2)
+C_LONGINT:C283(AS_ReplicaAsignatura ;$3)
+
+  //ACTPGS_VALIDAELIMINACION
+C_BOOLEAN:C305(ACTpgs_ValidaEliminacion ;$0)
+
+  //ACTCFG_ARREGLODOCSTRIBS
+C_POINTER:C301(ACTcfg_ArregloDocsTribs ;$1)
+
+  //ACTQRYMX_SELECCIONAPOLIZA
+C_TEXT:C284(ACTqrymx_SeleccionaPoliza ;$0)
+C_DATE:C307(ACTqrymx_SeleccionaPoliza ;$1)
+C_BOOLEAN:C305(ACTqrymx_SeleccionaPoliza ;$2)
+
+  //WDW_EXPANDVERTICALLY
+C_REAL:C285(WDW_ExpandVertically ;$1)
+
+  //DT_STRINGDATE2DATE
+C_DATE:C307(DT_StringDate2Date ;$0)
+C_TEXT:C284(DT_StringDate2Date ;$1)
+
+  //EVS_ESTILOHISTORICOPORDEFECTO
+C_LONGINT:C283(EVS_EstiloHistoricoPorDefecto ;$0)
+C_LONGINT:C283(EVS_EstiloHistoricoPorDefecto ;$1)
+
+  //ACTCFG_OPCIONESRAZONESSOCIALES
+C_BOOLEAN:C305(ACTcfg_OpcionesRazonesSociales ;$0)
+C_TEXT:C284(ACTcfg_OpcionesRazonesSociales ;$1)
+C_POINTER:C301(ACTcfg_OpcionesRazonesSociales ;$2)
+C_POINTER:C301(ACTcfg_OpcionesRazonesSociales ;$3)
+C_POINTER:C301(ACTcfg_OpcionesRazonesSociales ;$4)
+
+  //ACTCFG_OPCIONESARRAYSITEMSM
+C_TEXT:C284(ACTcfg_OpcionesArraysItemsM ;$1)
+C_POINTER:C301(ACTcfg_OpcionesArraysItemsM ;$2)
+
+  //ACTCFGBOL_OPCIONESSINC
+C_TEXT:C284(ACTcfgbol_OpcionesSinc ;$1)
+C_POINTER:C301(ACTcfgbol_OpcionesSinc ;$2)
+C_POINTER:C301(ACTcfgbol_OpcionesSinc ;$3)
+
+  //EV2_VALIDAINGRESO
+C_REAL:C285(EV2_ValidaIngreso ;$0)
+C_TEXT:C284(EV2_ValidaIngreso ;$1)
+C_REAL:C285(EV2_ValidaIngreso ;$2)
+
+  //ACTPGS_CARGADATOSADICIONALES
+C_TEXT:C284(ACTpgs_CargaDatosAdicionales ;$1)
+
+  //ACTABC_EXPORTPATMANQUEHUE
+C_TEXT:C284(ACTabc_ExportPATManquehue ;$1)
+C_TEXT:C284(ACTabc_ExportPATManquehue ;$2)
+C_TEXT:C284(ACTabc_ExportPATManquehue ;$3)
+
+  //ACTABC_IMPORTCUPSMATEO
+C_TEXT:C284(ACTabc_ImportCUPSMateo ;$1)
+
+  //IT_ROTATEPICT
+C_PICTURE:C286(IT_RotatePict ;$0)
+C_PICTURE:C286(IT_RotatePict ;$1)
+C_REAL:C285(IT_RotatePict ;$2)
+
+  //DBU_INSCRIBEALUMNOS
+C_TEXT:C284(dbu_InscribeAlumnos ;$1)
+
+  //ACTCC_CREARECDCTOMONTOITEM
+C_LONGINT:C283(ACTcc_CreaRecDctoMontoItem ;$1)
+C_REAL:C285(ACTcc_CreaRecDctoMontoItem ;$2)
+C_BOOLEAN:C305(ACTcc_CreaRecDctoMontoItem ;$3)
+
+  //ACTCC_DUPLICACARGODCTO
+C_REAL:C285(ACTcc_DuplicaCargoDcto ;$1)
+C_REAL:C285(ACTcc_DuplicaCargoDcto ;$2)
+C_REAL:C285(ACTcc_DuplicaCargoDcto ;$3)
+C_BOOLEAN:C305(ACTcc_DuplicaCargoDcto ;$4)
+C_TEXT:C284(ACTcc_DuplicaCargoDcto ;$5)
+
+  //SOPORTE_IMPORTAOBSACADEMICAS
+C_POINTER:C301(SOPORTE_ImportaObsAcademicas ;$1)
+C_TEXT:C284(SOPORTE_ImportaObsAcademicas ;$2)
+C_TEXT:C284(SOPORTE_ImportaObsAcademicas ;$3)
+
+  //ACTAC_ACTUALIZANOMBRE
+C_TEXT:C284(ACTac_ActualizaNombre ;$1)
+C_POINTER:C301(ACTac_ActualizaNombre ;$2)
+
+  //ACTPGS_ASIGNAIDPAGOENTRANS
+C_TEXT:C284(ACTpgs_AsignaIDPagoEnTrans ;$1)
+C_LONGINT:C283(ACTpgs_AsignaIDPagoEnTrans ;$2)
+
+  //ACTAC_UTILIZADESCUENTOS
+C_REAL:C285(ACTac_UtilizaDescuentos ;$0)
+C_REAL:C285(ACTac_UtilizaDescuentos ;$1)
+C_TEXT:C284(ACTac_UtilizaDescuentos ;$2)
+C_REAL:C285(ACTac_UtilizaDescuentos ;$3)
+C_POINTER:C301(ACTac_UtilizaDescuentos ;$4)
+
+  //ACTAC_VALIDAMONTOSEMISION
+C_TEXT:C284(ACTac_ValidaMontosEmision ;$1)
+C_DATE:C307(ACTac_ValidaMontosEmision ;$2)
+
+  //ACTQRY_CARGOESPECIAL
+C_LONGINT:C283(ACTqry_CargoEspecial ;$1)
+
+  //ACT_SETTOTALSCOLORINPUTFORM
+C_POINTER:C301(ACT_SetTotalsColorInputForm ;$1)
+C_POINTER:C301(ACT_SetTotalsColorInputForm ;$2)
+C_POINTER:C301(ACTpgs_OpcionesFormPago ;${2})
+C_TEXT:C284(ACTpgs_OpcionesFormPago ;$1)
+
+  //KRL_EXECUTEMETHOD
+C_LONGINT:C283(KRL_ExecuteMethod ;$0)
+C_TEXT:C284(KRL_ExecuteMethod ;$1)
+C_BOOLEAN:C305(KRL_ExecuteMethod ;$2)
+
+  //KRL_SENDRECORD
+C_POINTER:C301(KRL_SendRecord ;$1)
+C_BOOLEAN:C305(KRL_SendRecord ;$2)
+
+  //KRL_RECEIVERECORD
+C_POINTER:C301(KRL_ReceiveRecord ;$1)
+C_BOOLEAN:C305(KRL_ReceiveRecord ;$2)
+
+  //SVG_TEXT2PICT
+C_PICTURE:C286(SVG_Text2Pict ;$0)
+C_TEXT:C284(SVG_Text2Pict ;$1)
+C_LONGINT:C283(SVG_Text2Pict ;$2)
+C_LONGINT:C283(SVG_Text2Pict ;$3)
+C_TEXT:C284(SVG_Text2Pict ;$4)
+C_LONGINT:C283(SVG_Text2Pict ;$5)
+C_LONGINT:C283(SVG_Text2Pict ;$6)
+C_REAL:C285(SVG_Text2Pict ;$7)
+C_TEXT:C284(SVG_Text2Pict ;$8)
+C_LONGINT:C283(SVG_Text2Pict ;$9)
+C_LONGINT:C283(SVG_Text2Pict ;$10)
+
+  //ACTCFGCAR_SETOBJECTS
+C_TEXT:C284(ACTcfgcar_SetObjects ;$1)
+
+  //MNU_SETFROMTEXTARRAY
+C_REAL:C285(MNU_SetFromTextArray ;$1)
+C_POINTER:C301(MNU_SetFromTextArray ;$2)
+C_POINTER:C301(MNU_SetFromTextArray ;$3)
+C_POINTER:C301(MNU_SetFromTextArray ;$4)
+
+  //MNU_ISSCHORTCUTAVAILABLE
+C_BOOLEAN:C305(MNU_IsSchortcutAvailable ;$0)
+C_REAL:C285(MNU_IsSchortcutAvailable ;$1)
+C_REAL:C285(MNU_IsSchortcutAvailable ;$2)
+
+  //MNU_MODULEREFMENUS_APPENDITEM
+C_TEXT:C284(MNU_ModuleRefMenus_AppendItem ;$1)
+C_TEXT:C284(MNU_ModuleRefMenus_AppendItem ;$2)
+C_TEXT:C284(MNU_ModuleRefMenus_AppendItem ;$3)
+C_LONGINT:C283(MNU_ModuleRefMenus_AppendItem ;$4)
+C_TEXT:C284(MNU_ModuleRefMenus_AppendItem ;$5)
+C_LONGINT:C283(MNU_ModuleRefMenus_AppendItem ;$6)
+C_TEXT:C284(MNU_ModuleRefMenus_AppendItem ;$7)
+
+
+  //ACTCFG_LEECONFENNUEVOPROC
+C_BOOLEAN:C305(ACTcfg_LeeConfEnNuevoProc ;$0)
+C_TEXT:C284(ACTcfg_LeeConfEnNuevoProc ;$1)
+
+  //ACTABC_EXPORTCUPKENT
+C_TEXT:C284(ACTabc_ExportCUPKent ;$1)
+C_TEXT:C284(ACTabc_ExportCUPKent ;$2)
+C_TEXT:C284(ACTabc_ExportCUPKent ;$3)
+
+  //4DX_SETDEBUGLOG
+C_LONGINT:C283(4Dx_SetDebugLog ;$1)
+
+  //AL_CALCULASITUACIONFINAL
+C_BOOLEAN:C305(AL_CalculaSituacionFinal ;$0)
+C_REAL:C285(AL_CalculaSituacionFinal ;$1)
+C_REAL:C285(AL_CalculaSituacionFinal ;$2)
+
+  //AL_ESCRIBESINTESISANUAL
+C_TEXT:C284(AL_EscribeSintesisAnual ;$1)
+C_POINTER:C301(AL_EscribeSintesisAnual ;$2)
+C_POINTER:C301(AL_EscribeSintesisAnual ;$3)
+C_BOOLEAN:C305(AL_EscribeSintesisAnual ;$4)
+
+  //ACTAT_LLENAARREGLOPICT
+C_POINTER:C301(ACTat_LLenaArregloPict ;$1)
+C_POINTER:C301(ACTat_LLenaArregloPict ;$2)
+
+  //BM_CALCULAPORCENTAJEASISTENCIA
+C_BOOLEAN:C305(BM_CalculaPorcentajeAsistencia ;$0)
+C_LONGINT:C283(BM_CalculaPorcentajeAsistencia ;$1)
+
+  //BMK_TIMESTRINGWITHMILLISECONDS
+C_TEXT:C284(BMK_TimeStringWithMilliseconds ;$0)
+C_LONGINT:C283(BMK_TimeStringWithMilliseconds ;$1)
+
+  //BMK_SWITCH
+C_BOOLEAN:C305(BMK_Switch ;$1)
+C_POINTER:C301(BMK_Switch ;$2)
+
+  //BMK_SHOWRESULTS
+C_TEXT:C284(BMK_ShowResults ;$1)
+
+  //BMK_LOCALEXECUTIONTIMER
+C_BOOLEAN:C305(BMK_LocalExecutionTimer ;$1)
+
+  //BMK_TRIGGEREXECUTIONTIMER
+C_BOOLEAN:C305(BMK_TriggerExecutionTimer ;$1)
+
+  //MDATA_EDIT
+C_POINTER:C301(MData_Edit ;$1)
+C_LONGINT:C283(MData_Edit ;$2)
+C_BOOLEAN:C305(MData_Edit ;$3)
+
+  //XALP_ACT_CB_CONDONACION
+C_BOOLEAN:C305(xALP_ACT_CB_Condonacion ;$0)
+C_LONGINT:C283(xALP_ACT_CB_Condonacion ;$1)
+C_LONGINT:C283(xALP_ACT_CB_Condonacion ;$2)
+C_LONGINT:C283(xALP_ACT_CB_Condonacion ;$3)
+
+  //MDATA_RETORNABOOLEANO
+C_BOOLEAN:C305(MDATA_RetornaBooleano ;$0)
+C_POINTER:C301(MDATA_RetornaBooleano ;$1)
+C_TEXT:C284(MDATA_RetornaBooleano ;$2)
+C_LONGINT:C283(MDATA_RetornaBooleano ;$3)
+
+  //MDATA_RETORNAFECHA
+C_DATE:C307(MDATA_RetornaFecha ;$0)
+C_POINTER:C301(MDATA_RetornaFecha ;$1)
+C_TEXT:C284(MDATA_RetornaFecha ;$2)
+C_LONGINT:C283(MDATA_RetornaFecha ;$3)
+
+  //MDATA_RETORNALITERAL
+C_TEXT:C284(MDATA_RetornaLiteral ;$0)
+C_POINTER:C301(MDATA_RetornaLiteral ;$1)
+C_TEXT:C284(MDATA_RetornaLiteral ;$2)
+C_LONGINT:C283(MDATA_RetornaLiteral ;$3)
+
+  //MDATA_RETORNANUMERICO
+C_REAL:C285(MDATA_RetornaNumerico ;$0)
+C_POINTER:C301(MDATA_RetornaNumerico ;$1)
+C_TEXT:C284(MDATA_RetornaNumerico ;$2)
+C_LONGINT:C283(MDATA_RetornaNumerico ;$3)
+
+  //_INFOREGLAMENTARIAALUMNO
+C_TEXT:C284(_InfoReglamentariaAlumno ;$0)
+C_TEXT:C284(_InfoReglamentariaAlumno ;$1)
+
+  //XALCB_EX_METADATOSLOCALES
+C_BOOLEAN:C305(xALCB_EX_MetaDatosLocales ;$0)
+C_LONGINT:C283(xALCB_EX_MetaDatosLocales ;$1)
+C_LONGINT:C283(xALCB_EX_MetaDatosLocales ;$2)
+
+
+  //MDATA_EDIT_ONCLICKEVENT
+C_REAL:C285(MData_Edit_OnClickEvent ;$1)
+
+  //XALCB_EX_HOBS_ASIGNATURAS
+C_BOOLEAN:C305(XALCB_EX_HObs_Asignaturas ;$0)
+C_LONGINT:C283(XALCB_EX_HObs_Asignaturas ;$1)
+C_LONGINT:C283(XALCB_EX_HObs_Asignaturas ;$2)
+
+  //XALCB_EX_HOBS_PROFESORJEFE
+C_BOOLEAN:C305(xALCB_EX_HObs_ProfesorJefe ;$0)
+C_LONGINT:C283(xALCB_EX_HObs_ProfesorJefe ;$1)
+C_LONGINT:C283(xALCB_EX_HObs_ProfesorJefe ;$2)
+
+  //ACTDOM_2XML2ARRAYS
+C_POINTER:C301(ACTDOM_2XML2Arrays ;$1)
+
+  //DT_GETMONTHNAMEFROMMONTHNUM
+C_TEXT:C284(DT_GetMonthNameFromMonthNum ;$0)
+C_REAL:C285(DT_GetMonthNameFromMonthNum ;$1)
+
+  //DT_GETMONTHNAMEFROMDATE
+C_TEXT:C284(DT_GetMonthNameFromDate ;$0)
+C_DATE:C307(DT_GetMonthNameFromDate ;$1)
+
+  //XAL_CMT_CBEXIT_CAMPOSTRANSF
+C_BOOLEAN:C305(xAL_CMT_CBExit_CamposTransf ;$0)
+C_LONGINT:C283(xAL_CMT_CBExit_CamposTransf ;$1)
+C_LONGINT:C283(xAL_CMT_CBExit_CamposTransf ;$2)
+C_LONGINT:C283(xAL_CMT_CBExit_CamposTransf ;$3)
+
+  //CMT_REGISTROSMARCADOS
+C_TEXT:C284(CMT_RegistrosMarcados ;$0)
+C_TEXT:C284(CMT_RegistrosMarcados ;$1)
+C_POINTER:C301(CMT_RegistrosMarcados ;$2)
+C_POINTER:C301(CMT_RegistrosMarcados ;$3)
+C_POINTER:C301(CMT_RegistrosMarcados ;$4)
+
+  //CMT_TRANSFERENCIA
+C_TEXT:C284(CMT_Transferencia ;$0)
+C_TEXT:C284(CMT_Transferencia ;$1)
+C_POINTER:C301(CMT_Transferencia ;$2)
+C_POINTER:C301(CMT_Transferencia ;$3)
+C_POINTER:C301(CMT_Transferencia ;$4)
+
+  //XAL_CMT_CBENTRY_TABLA
+C_LONGINT:C283(xAL_CMT_CBEntry_Tabla ;$1)
+C_LONGINT:C283(xAL_CMT_CBEntry_Tabla ;$2)
+C_LONGINT:C283(xAL_CMT_CBEntry_Tabla ;$3)
+
+  //CMTWS_SENDSELRECORDS
+C_TEXT:C284(CMTws_SendSelRecords ;$0)
+C_TEXT:C284(CMTws_SendSelRecords ;$1)
+C_TEXT:C284(CMTws_SendSelRecords ;$2)
+C_TEXT:C284(CMTws_SendSelRecords ;$3)
+C_TEXT:C284(CMTws_SendSelRecords ;$4)
+C_POINTER:C301(CMTws_SendSelRecords ;$5)
+C_TEXT:C284(CMTws_SendSelRecords ;$6)
+
+  //ACTCFG_OPCIONESLINEASDT
+C_TEXT:C284(ACTcfg_OpcionesLineasDT ;$0)
+C_TEXT:C284(ACTcfg_OpcionesLineasDT ;$1)
+C_POINTER:C301(ACTcfg_OpcionesLineasDT ;$2)
+C_POINTER:C301(ACTcfg_OpcionesLineasDT ;$3)
+
+  //ACTUD_UPDATEBLOBS
+C_TEXT:C284(ACTud_UpdateBlobs ;$1)
+
+  //ACTDTE_CARGARCAF
+C_BOOLEAN:C305(ACTdte_CargarCAF ;$0)
+C_TEXT:C284(ACTdte_CargarCAF ;$1)
+C_POINTER:C301(ACTdte_CargarCAF ;$2)
+
+  //ACT_ACCOUNTTRACKINICIALIZADO
+C_BOOLEAN:C305(ACT_AccountTrackInicializado ;$0)
+
+  //ACTCFG_OPCIONESDETALLEPAGOS
+C_TEXT:C284(ACTcfg_OpcionesDetallePagos ;$1)
+C_POINTER:C301(ACTcfg_OpcionesDetallePagos ;$2)
+
+  //ACTBANK_RETORNACONVENIO
+C_TEXT:C284(ACTbank_RetornaConvenio ;$0)
+C_TEXT:C284(ACTbank_RetornaConvenio ;$1)
+C_TEXT:C284(ACTbank_RetornaConvenio ;$2)
+
+  //ACTABC_EXPORTCUPISM
+C_TEXT:C284(ACTabc_ExportCUPISM ;$1)
+C_TEXT:C284(ACTabc_ExportCUPISM ;$2)
+C_TEXT:C284(ACTabc_ExportCUPISM ;$3)
+
+  //4D_GETFORMNAMES
+C_POINTER:C301(4D_GetFormNames ;$1)
+C_POINTER:C301(4D_GetFormNames ;$2)
+
+  //4D_GETTF4DS
+C_LONGINT:C283(4D_GetTF4Ds ;$0)
+C_POINTER:C301(4D_GetTF4Ds ;$1)
+
+  //ACTABC_IMPORTPACCUMBRESCO
+C_TEXT:C284(ACTabc_ImportPACCumbresCO ;$1)
+
+  //HTML_REPLACEEXTENDEDCHARS2
+C_TEXT:C284(HTML_ReplaceExtendedChars2 ;$0)
+C_TEXT:C284(HTML_ReplaceExtendedChars2 ;$1)
+
+  //XALP_GUARDARDOCUMENTO
+C_BOOLEAN:C305(xALP_GuardarDocumento ;$0)
+C_LONGINT:C283(xALP_GuardarDocumento ;$1)
+C_LONGINT:C283(xALP_GuardarDocumento ;$2)
+
+  //XALPGUARDARDETALLEPOSTULACION
+C_BOOLEAN:C305(xALPGuardarDetallePostulacion ;$0)
+C_LONGINT:C283(xALPGuardarDetallePostulacion ;$1)
+C_LONGINT:C283(xALPGuardarDetallePostulacion ;$2)
+C_LONGINT:C283(xALPGuardarDetallePostulacion ;$3)
+
+  //ACTABC_EXPORTPACLINCOLN
+C_TEXT:C284(ACTabc_ExportPACLincoln ;$1)
+C_TEXT:C284(ACTabc_ExportPACLincoln ;$2)
+C_TEXT:C284(ACTabc_ExportPACLincoln ;$3)
+
+  //ACTABC_EXPORTCUPLINCOLN2
+C_TEXT:C284(ACTabc_ExportCUPLincoln2 ;$1)
+C_TEXT:C284(ACTabc_ExportCUPLincoln2 ;$2)
+C_TEXT:C284(ACTabc_ExportCUPLincoln2 ;$3)
+
+  //ACTABC_IMPORTCUPCUMBRESCO2
+C_TEXT:C284(ACTabc_ImportCUPCumbresCO2 ;$1)
+
+  //ACTABC_EXPORTCUPSANANSELMO
+C_TEXT:C284(ACTabc_ExportCUPSanAnselmo ;$1)
+C_TEXT:C284(ACTabc_ExportCUPSanAnselmo ;$2)
+C_TEXT:C284(ACTabc_ExportCUPSanAnselmo ;$3)
+
+  //SRACT_AGRUPAMESES2
+C_TEXT:C284(SRACT_AgrupaMeses2 ;$0)
+C_POINTER:C301(SRACT_AgrupaMeses2 ;$1)
+C_LONGINT:C283(SRACT_AgrupaMeses2 ;$2)
+C_REAL:C285(SRACT_AgrupaMeses2 ;$3)
+
+  //KRL_CHECKANDFIX_DATABASE
+C_LONGINT:C283(KRL_CheckAndFix_Database ;$0)
+
+  //KRL_FIXNANS
+C_POINTER:C301(KRL_FixNANs ;$1)
+C_POINTER:C301(KRL_FixNANs ;$2)
+
+  //KRL_REWRITEINDEXEDFIELDS
+C_POINTER:C301(KRL_RewriteIndexedFields ;$1)
+
+  //KRL_VERIFYINDEXES
+C_POINTER:C301(KRL_VerifyIndexes ;$1)
+C_POINTER:C301(KRL_VerifyIndexes ;$2)
+C_BOOLEAN:C305(KRL_VerifyIndexes ;$3)
+C_POINTER:C301(KRL_VerifyIndexes ;$4)
+
+  //SN3_MARCARREGISTROS
+C_LONGINT:C283(SN3_MarcarRegistros ;$1)
+C_LONGINT:C283(SN3_MarcarRegistros ;$2)
+C_LONGINT:C283(SN3_MarcarRegistros ;$3)
+
+  //SN3_MENUHANDLER
+C_REAL:C285(SN3_MenuHandler ;$1)
+
+  //4D_GETMETHODTEXTBYID
+C_TEXT:C284(4D_GetMethodTextByID ;$0)
+C_LONGINT:C283(4D_GetMethodTextByID ;$1)
+
+  //4D_GETMETHODLIST
+C_POINTER:C301(4D_GetMethodList ;$1)
+C_POINTER:C301(4D_GetMethodList ;$2)
+
+  //ADT_ACTUALIZACOMOLLEGO
+C_TEXT:C284(ADT_ActualizaComoLlego ;$1)
+
+  //ADT_ACTUALIZAPORQUELLEGO
+C_TEXT:C284(ADT_ActualizaPorqueLlego ;$1)
+C_POINTER:C301(ADT_ActualizaPorqueLlego ;$2)
+
+  //PERIODOS_GUARDADATOSHISTORICOS
+C_LONGINT:C283(PERIODOS_GuardaDatosHistoricos ;$1)
+C_LONGINT:C283(PERIODOS_GuardaDatosHistoricos ;$2)
+
+  //SN3_MODIFYXMLENTRY
+C_LONGINT:C283(SN3_ModifyXMLEntry ;$1)
+C_LONGINT:C283(SN3_ModifyXMLEntry ;$2)
+C_LONGINT:C283(SN3_ModifyXMLEntry ;$3)
+
+  //SN3_SAVEPUBCONFIG
+C_LONGINT:C283(SN3_SavePubConfig ;$1)
+C_BOOLEAN:C305(SN3_SavePubConfig ;$2)
+
+  //SN3_SENDACTIVIDADESNOTASXML
+C_BOOLEAN:C305(SN3_SendActividadesNotasXML ;$1)
+C_BOOLEAN:C305(SN3_SendActividadesNotasXML ;$2)
+
+  //SN3_SENDACTIVIDADESXML
+C_BOOLEAN:C305(SN3_SendActividadesXML ;$1)
+C_BOOLEAN:C305(SN3_SendActividadesXML ;$2)
+
+  //SN3_SENDALUMNOSXML
+C_BOOLEAN:C305(SN3_SendAlumnosXML ;$1)
+C_BOOLEAN:C305(SN3_SendAlumnosXML ;$2)
+
+  //SN3_SENDANOTACIONESXML
+C_BOOLEAN:C305(SN3_SendAnotacionesXML ;$1)
+C_BOOLEAN:C305(SN3_SendAnotacionesXML ;$2)
+
+  //SN3_SENDAPRENDIZAJESXML
+C_BOOLEAN:C305(SN3_SendAprendizajesXML ;$1)
+C_BOOLEAN:C305(SN3_SendAprendizajesXML ;$2)
+
+  //SN3_SENDASIGNATURASXML
+C_BOOLEAN:C305(SN3_SendAsignaturasXML ;$1)
+C_BOOLEAN:C305(SN3_SendAsignaturasXML ;$2)
+
+  //SN3_SENDATRASOSXML
+C_BOOLEAN:C305(SN3_SendAtrasosXML ;$1)
+C_BOOLEAN:C305(SN3_SendAtrasosXML ;$2)
+
+  //SN3_SENDAVISOSXML
+C_BOOLEAN:C305(SN3_SendAvisosXML ;$1)
+C_BOOLEAN:C305(SN3_SendAvisosXML ;$2)
+
+  //SN3_SENDCALIFICACIONESXML
+C_BOOLEAN:C305(SN3_SendCalificacionesXML ;$1)
+C_BOOLEAN:C305(SN3_SendCalificacionesXML ;$2)
+
+  //SN3_SENDCASTIGOSXML
+C_BOOLEAN:C305(SN3_SendCastigosXML ;$1)
+C_BOOLEAN:C305(SN3_SendCastigosXML ;$2)
+
+  //SN3_SENDCONDICIONALIDADXML
+C_BOOLEAN:C305(SN3_SendCondicionalidadXML ;$1)
+C_BOOLEAN:C305(SN3_SendCondicionalidadXML ;$2)
+
+  //SN3_SENDCONTROLESMEDICOSXML
+C_BOOLEAN:C305(SN3_SendControlesMedicosXML ;$1)
+C_BOOLEAN:C305(SN3_SendControlesMedicosXML ;$2)
+
+  //SN3_SENDCURSOSXML
+C_BOOLEAN:C305(SN3_SendCursosXML ;$1)
+C_BOOLEAN:C305(SN3_SendCursosXML ;$2)
+
+  //SN3_SENDDOCREFSXML
+C_BOOLEAN:C305(SN3_SendDocRefsXML ;$1)
+C_BOOLEAN:C305(SN3_SendDocRefsXML ;$2)
+
+  //SN3_SENDENFERMERIAXML
+C_BOOLEAN:C305(SN3_SendEnfermeriaXML ;$1)
+C_BOOLEAN:C305(SN3_SendEnfermeriaXML ;$2)
+
+  //SN3_SENDEVENTOSAGENDAXML
+C_BOOLEAN:C305(SN3_SendEventosAgendaXML ;$1)
+C_BOOLEAN:C305(SN3_SendEventosAgendaXML ;$2)
+
+  //SN3_SENDFAMILIESXML
+C_BOOLEAN:C305(SN3_SendFamiliesXML ;$1)
+C_BOOLEAN:C305(SN3_SendFamiliesXML ;$2)
+
+  //SN3_SENDHORARIOSXML
+C_BOOLEAN:C305(SN3_SendHorariosXML ;$1)
+C_BOOLEAN:C305(SN3_SendHorariosXML ;$2)
+
+  //SN3_SENDINASISTENCIASXML
+C_BOOLEAN:C305(SN3_SendInasistenciasXML ;$1)
+C_BOOLEAN:C305(SN3_SendInasistenciasXML ;$2)
+
+  //SN3_SENDINASISTHORAACUMXML
+C_BOOLEAN:C305(SN3_SendInasistHoraAcumXML ;$1)
+C_BOOLEAN:C305(SN3_SendInasistHoraAcumXML ;$2)
+
+  //SN3_SENDINASISTHORADETALLEXML
+C_BOOLEAN:C305(SN3_SendInasistHoraDetalleXML ;$1)
+C_BOOLEAN:C305(SN3_SendInasistHoraDetalleXML ;$2)
+
+  //SN3_SENDOBSASIGNATURASXML
+C_BOOLEAN:C305(SN3_SendObsAsignaturasXML ;$1)
+C_BOOLEAN:C305(SN3_SendObsAsignaturasXML ;$2)
+
+  //SN3_SENDOBSPJEFEXML
+C_BOOLEAN:C305(SN3_SendObsPJefeXML ;$1)
+C_BOOLEAN:C305(SN3_SendObsPJefeXML ;$2)
+
+  //SN3_SENDPAGOSXML
+C_BOOLEAN:C305(SN3_SendPagosXML ;$1)
+C_BOOLEAN:C305(SN3_SendPagosXML ;$2)
+
+  //SN3_SENDPLANESXML
+C_BOOLEAN:C305(SN3_SendPlanesXML ;$1)
+C_BOOLEAN:C305(SN3_SendPlanesXML ;$2)
+
+  //SN3_SENDPRESTAMOSXML
+C_BOOLEAN:C305(SN3_SendPrestamosXML ;$1)
+C_BOOLEAN:C305(SN3_SendPrestamosXML ;$2)
+
+  //SN3_SENDPROFESORESXML
+C_BOOLEAN:C305(SN3_SendProfesoresXML ;$1)
+C_BOOLEAN:C305(SN3_SendProfesoresXML ;$2)
+
+  //SN3_SENDRELACIONESXML
+C_BOOLEAN:C305(SN3_SendRelacionesXML ;$1)
+C_BOOLEAN:C305(SN3_SendRelacionesXML ;$2)
+
+  //SN3_SENDSUSPENSIONESXML
+C_BOOLEAN:C305(SN3_SendSuspensionesXML ;$1)
+C_BOOLEAN:C305(SN3_SendSuspensionesXML ;$2)
+
+  //SN3_ASSIGNNEWIDS
+C_POINTER:C301(SN3_AssignNewIDs ;$1)
+
+  //SN3_BUILDCALIFICACIONTAG
+C_POINTER:C301(SN3_BuildCalificacionTag ;$1)
+C_TIME:C306(SN3_BuildCalificacionTag ;$2)
+C_LONGINT:C283(SN3_BuildCalificacionTag ;$3)
+C_LONGINT:C283(SN3_BuildCalificacionTag ;$4)
+C_LONGINT:C283(SN3_BuildCalificacionTag ;$5)
+C_TEXT:C284(SN3_BuildCalificacionTag ;$6)
+C_TEXT:C284(SN3_BuildCalificacionTag ;$7)
+C_TEXT:C284(SN3_BuildCalificacionTag ;$8)
+C_REAL:C285(SN3_BuildCalificacionTag ;$9)
+C_REAL:C285(SN3_BuildCalificacionTag ;$10)
+
+  //SN3_BUILDCONFIGXML
+C_POINTER:C301(SN3_BuildConfigXML ;$1)
+
+  //SN3_BUILDHEADERSSET
+C_POINTER:C301(SN3_BuildHeadersSet ;$1)
+C_TEXT:C284(SN3_BuildHeadersSet ;$2)
+
+  //SN3_BUILDOBSOLETOSXML
+C_REAL:C285(SN3_BuildObsoletosXML ;$1)
+C_TIME:C306(SN3_BuildObsoletosXML ;$2)
+C_TEXT:C284(SN3_BuildObsoletosXML ;$3)
+
+  //SN3_CALLWEBSERVICE
+C_TEXT:C284(SN3_CallWebService ;$0)
+C_TEXT:C284(SN3_CallWebService ;$1)
+C_BOOLEAN:C305(SN3_CallWebService ;$2)
+C_LONGINT:C283(SN3_CallWebService ;$3)
+
+  //SN3_CHECKNOTCOLEGIUM
+C_BOOLEAN:C305(SN3_CheckNotColegium ;$0)
+
+  //SN3_CLOSEXMLCOMPRESS
+C_TEXT:C284(SN3_CloseXMLCompress ;$1)
+C_TEXT:C284(SN3_CloseXMLCompress ;$2)
+C_TEXT:C284(SN3_CloseXMLCompress ;$3)
+C_TIME:C306(SN3_CloseXMLCompress ;$4)
+
+  //SN3_CREATEFILE2SEND
+C_TEXT:C284(SN3_CreateFile2Send ;$0)
+C_TEXT:C284(SN3_CreateFile2Send ;$1)
+C_TEXT:C284(SN3_CreateFile2Send ;$2)
+C_LONGINT:C283(SN3_CreateFile2Send ;$3)
+C_TEXT:C284(SN3_CreateFile2Send ;$4)
+C_POINTER:C301(SN3_CreateFile2Send ;$5)
+
+  //SN3_FTP_SENDFILE
+C_TEXT:C284(SN3_FTP_SendFile ;$0)
+C_TEXT:C284(SN3_FTP_SendFile ;$1)
+C_TEXT:C284(SN3_FTP_SendFile ;$2)
+C_TEXT:C284(SN3_FTP_SendFile ;$3)
+C_TEXT:C284(SN3_FTP_SendFile ;$4)
+C_TEXT:C284(SN3_FTP_SendFile ;$5)
+C_TEXT:C284(SN3_FTP_SendFile ;$6)
+C_BOOLEAN:C305(SN3_FTP_SendFile ;$7)
+C_POINTER:C301(SN3_FTP_SendFile ;$8)
+C_BOOLEAN:C305(SN3_FTP_SendFile ;$9)
+
+  //SN3_FTP_SENDFILES
+C_REAL:C285(SN3_FTP_SendFiles ;$0)
+C_BOOLEAN:C305(SN3_FTP_SendFiles ;$1)
+
+  //SN3_GENERATEUNIQUENAME
+C_TEXT:C284(SN3_GenerateUniqueName ;$0)
+C_DATE:C307(SN3_GenerateUniqueName ;$1)
+
+  //SN3_GETVALIDXMLTEXT
+C_TEXT:C284(XML_GetValidXMLText ;$0)
+C_TEXT:C284(XML_GetValidXMLText ;$1)
+
+  //SN3_INSERTDTS
+C_TIME:C306(SN3_InsertDTS ;$1)
+
+  //SN3_INSERTUSERSCONFIG
+C_TIME:C306(SN3_InsertUsersConfig ;$1)
+
+  //SN3_LOADPUBCONFIG
+C_LONGINT:C283(SN3_LoadPubConfig ;$1)
+
+  //SN3_LOG_LOADST
+C_DATE:C307(SN3_Log_LoadST ;$1)
+C_REAL:C285(SN3_Log_LoadST ;$2)
+C_REAL:C285(SN3_Log_LoadST ;$3)
+C_REAL:C285(SN3_Log_LoadST ;$4)
+C_REAL:C285(SN3_Log_LoadST ;$5)
+
+  //SN3_MANEJAREFERENCIAS
+C_TEXT:C284(SN3_ManejaReferencias ;$1)
+C_LONGINT:C283(SN3_ManejaReferencias ;$2)
+C_LONGINT:C283(SN3_ManejaReferencias ;$3)
+C_LONGINT:C283(SN3_ManejaReferencias ;$4)
+C_POINTER:C301(SN3_ManejaReferencias ;$5)
+
+  //SN3_PARSECONFIGXML
+C_POINTER:C301(SN3_ParseConfigXML ;$1)
+
+  //SN3_RECOPILAPROPSEVALUACION
+C_TIME:C306(SN3_RecopilaPropsEvaluacion ;$1)
+C_TEXT:C284(SN3_RecopilaPropsEvaluacion ;$2)
+
+  //SN3_REGISTERLOGENTRY
+C_REAL:C285(SN3_RegisterLogEntry ;$1)
+C_TEXT:C284(SN3_RegisterLogEntry ;$2)
+C_REAL:C285(SN3_RegisterLogEntry ;$3)
+C_TEXT:C284(SN3_RegisterLogEntry ;$4)
+
+  //SN3_RETREIVEUSERLIST
+C_TEXT:C284(SN3_RetreiveUserList ;$1)
+
+  //SN3_SENDPUBCONFIGS
+C_REAL:C285(SN3_SendPubConfigs ;$1)
+C_LONGINT:C283(SN3_SendPubConfigs ;$2)
+C_POINTER:C301(SN3_SetCheckByChecks ;${3})
+C_POINTER:C301(SN3_SetCheckByChecks ;$1)
+C_TEXT:C284(SN3_SetCheckByChecks ;$2)
+C_POINTER:C301(SN3_SetChecksByCheck ;${1})
+
+  //SN3_SETERRORHANDLER
+C_TEXT:C284(SN3_SetErrorHandler ;$0)
+C_TEXT:C284(SN3_SetErrorHandler ;$1)
+C_TEXT:C284(SN3_SetErrorHandler ;$2)
+
+  //SAX_CREATENODE
+C_TIME:C306(SAX_CreateNode ;$1)
+C_TEXT:C284(SAX_CreateNode ;$2)
+C_BOOLEAN:C305(SAX_CreateNode ;$3)
+C_TEXT:C284(SAX_CreateNode ;$4)
+C_BOOLEAN:C305(SAX_CreateNode ;$5)
+
+  //SAX_OPENROOT
+C_TIME:C306(SAX_OpenRoot ;$1)
+C_TEXT:C284(SAX_OpenRoot ;$2)
+C_TEXT:C284(SAX_OpenRoot ;$3)
+C_BOOLEAN:C305(SAX_OpenRoot ;$4)
+
+  //ACTBOL_ASIGNACATDOCTRIBUTARIOT
+C_BOOLEAN:C305(ACTbol_AsignaCatDocTributarioT ;$0)
+C_BLOB:C604(ACTbol_AsignaCatDocTributarioT ;$1)
+
+  //ACTBOL_ASIGNACATDOCTRIBUTARIODT
+C_BOOLEAN:C305(ACTbol_AsignaCatDocTributarioDT ;$0)
+C_BLOB:C604(ACTbol_AsignaCatDocTributarioDT ;$1)
+
+  //ACTCAR_VALIDAMONTOS
+C_BOOLEAN:C305(ACTcar_ValidaMontos ;$0)
+C_POINTER:C301(ACTcar_ValidaMontos ;${2})
+C_TEXT:C284(ACTcar_ValidaMontos ;$1)
+
+  //ACTCFG_OPCIONESARCHIVOBANCARIO
+C_TEXT:C284(ACTcfg_OpcionesArchivoBancario ;$0)
+C_POINTER:C301(ACTcfg_OpcionesArchivoBancario ;${2})
+C_TEXT:C284(ACTcfg_OpcionesArchivoBancario ;$1)
+
+  //ACTKRL_POPUP
+C_LONGINT:C283(ACTKRL_PopUp ;$0)
+C_POINTER:C301(ACTKRL_PopUp ;$1)
+C_TEXT:C284(ACTKRL_PopUp ;$2)
+C_POINTER:C301(ACTKRL_PopUp ;$3)
+
+  //ACTABC_IMPORTCUPBCPSTATERESITA
+C_TEXT:C284(ACTabc_ImportCUPBCPStaTeresita ;$1)
+
+  //SRZ_CONODEVENTASXNIVEL
+C_REAL:C285(SRz_ConodeVentasxNivel ;$1)
+C_TEXT:C284(SRz_ConodeVentasxNivel ;$2)
+C_POINTER:C301(SRz_ConodeVentasxNivel ;$3)
+C_BOOLEAN:C305(SRz_ConodeVentasxNivel ;$4)
+
+  //_EFEMERIDERELIGIOSA_FECHA
+C_DATE:C307(_EfemerideReligiosa_fecha ;$0)
+C_POINTER:C301(_EfemerideReligiosa_fecha ;$1)
+C_TEXT:C284(_EfemerideReligiosa_fecha ;$2)
+C_TEXT:C284(_EfemerideReligiosa_fecha ;$3)
+
+  //_EFEMERIDERELIGIOSA_TEXTO
+C_TEXT:C284(_EfemerideReligiosa_texto ;$0)
+C_POINTER:C301(_EfemerideReligiosa_texto ;$1)
+C_TEXT:C284(_EfemerideReligiosa_texto ;$2)
+C_TEXT:C284(_EfemerideReligiosa_texto ;$3)
+
+
+  //ACT_NUM2TEXT
+C_TEXT:C284(ACT_num2Text ;$0)
+C_REAL:C285(ACT_num2Text ;$1)
+C_TEXT:C284(ACT_num2Text ;$2)
+C_TEXT:C284(ACT_num2Text ;$3)
+
+  //ACTPGS_OPCIONESVR
+C_BOOLEAN:C305(ACTpgs_OpcionesVR ;$0)
+C_TEXT:C284(ACTpgs_OpcionesVR ;$1)
+C_POINTER:C301(ACTpgs_OpcionesVR ;$2)
+
+  //SRCUST_EDITORCALLBACK
+C_LONGINT:C283(SRcust_EditorCallBack ;$0)
+C_LONGINT:C283(SRcust_EditorCallBack ;$1)
+C_LONGINT:C283(SRcust_EditorCallBack ;$2)
+C_LONGINT:C283(SRcust_EditorCallBack ;$3)
+C_LONGINT:C283(SRcust_EditorCallBack ;$4)
+
+  //ACTABC_IMPORTCUPMADRIDBANAMEX
+C_TEXT:C284(ACTabc_ImportCUPMadridBanamex ;$1)
+
+  //ACTMON_ACTUALIZAVALOR
+C_REAL:C285(ACTmon_ActualizaValor ;$1)
+C_REAL:C285(ACTmon_ActualizaValor ;$2)
+C_REAL:C285(ACTmon_ActualizaValor ;$3)
+C_REAL:C285(ACTmon_ActualizaValor ;$4)
+C_REAL:C285(ACTmon_ActualizaValor ;$5)
+
+  //ACTMON_CREATABLADIARIA
+C_TEXT:C284(ACTmon_CreaTablaDiaria ;$1)
+
+  //ACTMON_ACTUALIZAVALORMONEDA
+C_REAL:C285(ACTmon_ActualizaValorMoneda ;$0)
+C_LONGINT:C283(ACTmon_ActualizaValorMoneda ;$1)
+C_DATE:C307(ACTmon_ActualizaValorMoneda ;$2)
+C_REAL:C285(ACTmon_ActualizaValorMoneda ;$3)
+
+  //ACTMON_OBTIENEVALOR
+C_REAL:C285(ACTmon_ObtieneValor ;$0)
+C_TEXT:C284(ACTmon_ObtieneValor ;$1)
+C_DATE:C307(ACTmon_ObtieneValor ;$2)
+
+  //XALP_ACT_CB_MYTVALXDIA
+C_BOOLEAN:C305(xALP_ACT_CB_MYTValXDia ;$0)
+C_LONGINT:C283(xALP_ACT_CB_MYTValXDia ;$1)
+C_LONGINT:C283(xALP_ACT_CB_MYTValXDia ;$2)
+C_LONGINT:C283(xALP_ACT_CB_MYTValXDia ;$3)
+
+  //XALP_ACT_CB_VRPAGOS
+C_BOOLEAN:C305(xALP_ACT_CB_VRPagos ;$0)
+C_LONGINT:C283(xALP_ACT_CB_VRPagos ;$1)
+C_LONGINT:C283(xALP_ACT_CB_VRPagos ;$2)
+C_LONGINT:C283(xALP_ACT_CB_VRPagos ;$3)
+
+  //ACTCC_REGISTROPAGOSRAPIDOS
+C_REAL:C285(ACTcc_RegistroPagosRapidos ;$1)
+C_REAL:C285(ACTcc_RegistroPagosRapidos ;$2)
+C_PICTURE:C286(ACTcc_RegistroPagosRapidos ;$3)
+C_TEXT:C284(ACTcc_RegistroPagosRapidos ;$4)
+
+  //ACTPGS_CARGAARREGLOSINTERFAZ
+C_DATE:C307(ACTpgs_CargaArreglosInterfaz ;$1)
+
+  //ST_ISINTEGER
+C_BOOLEAN:C305(ST_IsInteger ;$0)
+C_POINTER:C301(ST_IsInteger ;$1)
+
+  //ACTABC_EXPORTPACCUMBRESM
+C_TEXT:C284(ACTabc_ExportPACCumbresM ;$1)
+C_TEXT:C284(ACTabc_ExportPACCumbresM ;$2)
+C_TEXT:C284(ACTabc_ExportPACCumbresM ;$3)
+
+  //SN3_SENDSUBASIGNATURASXML
+C_BOOLEAN:C305(SN3_SendSubAsignaturasXML ;$1)
+C_BOOLEAN:C305(SN3_SendSubAsignaturasXML ;$2)
+
+  //WS_DATOSMONJASINGLESAS
+C_TEXT:C284(WS_DatosMonjasInglesas ;$1)
+C_TEXT:C284(WS_DatosMonjasInglesas ;$2)
+C_TEXT:C284(WS_DatosMonjasInglesas ;$3)
+
+
+  //SN3_LOG_LOADSN
+C_DATE:C307(SN3_Log_LoadSN ;$1)
+C_REAL:C285(SN3_Log_LoadSN ;$2)
+C_REAL:C285(SN3_Log_LoadSN ;$3)
+C_REAL:C285(SN3_Log_LoadSN ;$4)
+C_REAL:C285(SN3_Log_LoadSN ;$5)
+
+  //SN3_LOG_MANAGESNLOG
+C_DATE:C307(SN3_Log_ManageSNLog ;$1)
+C_REAL:C285(SN3_Log_ManageSNLog ;$2)
+C_REAL:C285(SN3_Log_ManageSNLog ;$3)
+C_REAL:C285(SN3_Log_ManageSNLog ;$4)
+C_REAL:C285(SN3_Log_ManageSNLog ;$5)
+
+  //SN3_GETFILESPATH
+C_TEXT:C284(SN3_GetFilesPath ;$0)
+
+  //ACTABC_IMPORTPATYAOCALLI1
+C_TEXT:C284(ACTabc_ImportPATYaocalli1 ;$1)
+
+  //ACTABC_IMPORTPATYAOCALLI2
+C_TEXT:C284(ACTabc_ImportPATYaocalli2 ;$1)
+
+  //SN3_GETCALMODDATE
+C_TEXT:C284(SN3_GetCalModDate ;$0)
+C_POINTER:C301(SN3_GetCalModDate ;$1)
+C_TEXT:C284(SN3_GetCalModDate ;$2)
+C_TEXT:C284(SN3_GetCalModDate ;$3)
+
+  //AL_CARGAEVENTOSCONDUCTA
+C_TEXT:C284(AL_CargaEventosConducta ;$1)
+C_POINTER:C301(AL_CargaEventosConducta ;$2)
+C_POINTER:C301(AL_CargaEventosConducta ;$3)
+C_POINTER:C301(AL_CargaEventosConducta ;$4)
+
+  //AL_CICLOSESCOLARES
+C_LONGINT:C283(AL_CiclosEscolares ;$1)
+
+  //AL_CICLOSESCOLARES_COMPLETO
+C_LONGINT:C283(AL_CiclosEscolares_Completo ;$1)
+
+  //AL_RELATESELECTION
+C_POINTER:C301(AL_RelateSelection ;$1)
+C_POINTER:C301(AL_RelateSelection ;$2)
+
+  //ACTABC_IMPORTPATYAOCALLI3
+C_TEXT:C284(ACTabc_ImportPATYaocalli3 ;$1)
+
+  //ACTABC_IMPORTPATYAOCALLI4
+C_TEXT:C284(ACTabc_ImportPATYaocalli4 ;$1)
+
+  //ACTTER_LOADTRANSACCIONES
+C_REAL:C285(ACTter_LoadTransacciones ;$1)
+
+  //ACTABC_EXPORTPATCUMBRESCARACAS
+C_TEXT:C284(ACTabc_ExportPATCumbresCaracas ;$1)
+C_TEXT:C284(ACTabc_ExportPATCumbresCaracas ;$2)
+C_TEXT:C284(ACTabc_ExportPATCumbresCaracas ;$3)
+
+  //TGR_ASIGNATURASREGISTROSESIONES
+C_REAL:C285(TGR_AsignaturasRegistroSesiones ;$0)
+
+  //XALP_CB_EX_APRENDIZAJES
+C_BOOLEAN:C305(xALP_CB_EX_Aprendizajes ;$0)
+C_LONGINT:C283(xALP_CB_EX_Aprendizajes ;$1)
+C_LONGINT:C283(xALP_CB_EX_Aprendizajes ;$2)
+
+
+  //XALP_EX_VALIDARCAMPOOBLIGATORIO
+C_BOOLEAN:C305(xALP_EX_ValidarCampoObligatorio ;$0)
+C_LONGINT:C283(xALP_EX_ValidarCampoObligatorio ;$1)
+C_LONGINT:C283(xALP_EX_ValidarCampoObligatorio ;$2)
+
+  //AL_CICLOSESCOLARES_HISTORICO
+C_LONGINT:C283(AL_CiclosEscolares_Historico ;$1)
+
+  //ADT_HERMANOSENCOLEGIO
+C_LONGINT:C283(ADT_HermanosEnColegio ;$1)
+
+  //ACTABC_EXPORTPACCUMBRESB
+C_TEXT:C284(ACTabc_ExportPACCumbresB ;$1)
+C_TEXT:C284(ACTabc_ExportPACCumbresB ;$2)
+C_TEXT:C284(ACTabc_ExportPACCumbresB ;$3)
+
+  //SN3_SENDUSERACCESSDATA
+C_TEXT:C284(SN3_SendUserAccessData ;$1)
+
+  //SN3_MAKEDATEINMUNE2LOCALFORMAT
+C_TEXT:C284(SN3_MakeDateInmune2LocalFormat ;$0)
+C_DATE:C307(SN3_MakeDateInmune2LocalFormat ;$1)
+C_TEXT:C284(SN3_MakeDateInmune2LocalFormat ;$2)
+
+  //ACTABC_IMPORTPACLAMAISONNETTE
+C_TEXT:C284(ACTabc_ImportPACLaMaisonnette ;$1)
+
+  //ACTABC_EXPORTPACLAMAISONNETTE
+C_TEXT:C284(ACTabc_ExportPACLaMaisonnette ;$1)
+C_TEXT:C284(ACTabc_ExportPACLaMaisonnette ;$2)
+C_TEXT:C284(ACTabc_ExportPACLaMaisonnette ;$3)
+
+  //ACTABC_IMPORTPACMADRIDBANCOMER
+C_TEXT:C284(ACTabc_ImportPACMadridBancomer ;$1)
+
+  //AL_EDITHISTORICO_OM
+C_TEXT:C284(AL_EditHistorico_OM ;$1)
+C_POINTER:C301(AL_EditHistorico_OM ;$2)
+C_TEXT:C284(AL_EditHistorico_OM ;$3)
+
+
+  //WS_CALL_OBTENERFECHAFOTOMXCDV
+C_TEXT:C284(WS_Call_ObtenerFechaFotoMXCDV ;$0)
+C_POINTER:C301(WS_Call_ObtenerFechaFotoMXCDV ;$1)
+
+  //MXLEG_CHECKCONOVTAS
+C_TEXT:C284(MXLeg_CheckConoVtas ;$0)
+
+  //MXLEG_CONOVTAXML
+C_TEXT:C284(MXLEG_ConoVtaXML ;$1)
+
+  //EV2_TRANSFIEREEVALSUBASIG
+C_REAL:C285(EV2_TransfiereEvalSubAsig ;$1)
+C_REAL:C285(EV2_TransfiereEvalSubAsig ;$2)
+C_REAL:C285(EV2_TransfiereEvalSubAsig ;$3)
+
+  //CRY_DECRYPTBLOB2TEXT
+C_TEXT:C284(CRY_DecryptBlob2Text ;$0)
+C_BLOB:C604(CRY_DecryptBlob2Text ;$1)
+C_BLOB:C604(CRY_DecryptBlob2Text ;$2)
+
+  //CRY_ENCRYPTTEXT2BLOB
+C_BLOB:C604(CRY_EncryptText2Blob ;$0)
+C_TEXT:C284(CRY_EncryptText2Blob ;$1)
+C_POINTER:C301(CRY_EncryptText2Blob ;$2)
+
+  //USR_DECRYPTPASSWORD
+C_TEXT:C284(USR_DecryptPassword ;$0)
+C_BLOB:C604(USR_DecryptPassword ;$1)
+
+  //USR_ENCRYPTPASSWORD
+C_BLOB:C604(USR_EncryptPassWord ;$0)
+C_TEXT:C284(USR_EncryptPassWord ;$1)
+
+  //XS_EXECOBJECT_EDITOR_OM
+C_TEXT:C284(XS_ExecObject_Editor_OM ;$1)
+C_POINTER:C301(XS_ExecObject_Editor_OM ;$2)
+C_TEXT:C284(XS_ExecObject_Editor_OM ;$3)
+
+  //__
+C_TEXT:C284(__ ;$0)
+C_TEXT:C284(__ ;$1)
+
+C_POINTER:C301(ACTcfg_OpcionesImportCargos ;${2})
+C_TEXT:C284(ACTcfg_OpcionesImportCargos ;$1)
+
+  //ADT_ACTUALIZARELFAMILIAR
+C_LONGINT:C283(ADT_actualizaRelFamiliar ;$1)
+
+  //WS_DATOSDEMO
+C_TEXT:C284(WS_DatosDemo ;$1)
+C_TEXT:C284(WS_DatosDemo ;$2)
+C_TEXT:C284(WS_DatosDemo ;$3)
+C_TEXT:C284(WS_DatosDemo ;$4)
+
+  //ADTWEB_PROCESSPOSTULATIONS
+C_TEXT:C284(ADTweb_ProcessPostulations ;$0)
+C_TEXT:C284(ADTweb_ProcessPostulations ;$1)
+
+  //WS_DATOSALTAMIRA
+C_TEXT:C284(WS_DatosAltamira ;$1)
+C_TEXT:C284(WS_DatosAltamira ;$2)
+C_TEXT:C284(WS_DatosAltamira ;$3)
+C_TEXT:C284(WS_DatosAltamira ;$4)
+C_TEXT:C284(WS_DatosAltamira ;$5)
+
+  //SRACTAC_CARGACARGOS
+C_LONGINT:C283(SRACTac_CargaCargos ;$1)
+
+
+  //AL_TRANSFERT
+C_REAL:C285(AL_Transfert ;$0)
+C_TEXT:C284(AL_Transfert ;$1)
+C_TEXT:C284(AL_Transfert ;$2)
+C_LONGINT:C283(AL_Transfert ;$3)
+C_LONGINT:C283(AL_Transfert ;$4)
+
+C_POINTER:C301(ACTcfg_OpcionesItems ;${2})
+C_TEXT:C284(ACTcfg_OpcionesItems ;$1)
+
+  //XS_REPORTOBJECTSMANAGER_OM
+C_TEXT:C284(XS_ReportObjectsManager_OM ;$1)
+C_POINTER:C301(XS_ReportObjectsManager_OM ;$2)
+C_TEXT:C284(XS_ReportObjectsManager_OM ;$3)
+
+  //0XDEV_EXPRESSIONFINDER
+C_LONGINT:C283(0xDev_ExpressionFinder ;$0)
+C_TEXT:C284(0xDev_ExpressionFinder ;$1)
+C_POINTER:C301(0xDev_ExpressionFinder ;$2)
+C_TEXT:C284(0xDev_ExpressionFinder ;$3)
+
+  //0XDEV_EXPRESSIONFINDER_EXAMPLE
+C_REAL:C285(0xDev_ExpressionFinder_Example ;$1)
+
+  //MNU_SETDELETEITEMSTATE
+C_BOOLEAN:C305(MNU_SetDeleteItemState ;$1)
+C_BOOLEAN:C305(MNU_SetDeleteItemState ;$2)
+
+  //ST_RETORNASIGLADESDEFRASE
+C_TEXT:C284(ST_RetornaSiglaDesdeFrase ;$0)
+C_TEXT:C284(ST_RetornaSiglaDesdeFrase ;$1)
+
+  //ACTABC_IMPORTCUPCAMBRIDGE
+C_TEXT:C284(ACTabc_ImportCUPCambridge ;$1)
+
+  //ACTABC_IMPORTPATMADRID
+C_TEXT:C284(ACTabc_ImportPATMadrid ;$1)
+
+  //AL_RETORNAQUANTIL_SEL
+C_LONGINT:C283(AL_RetornaQuantil_Sel ;$0)
+C_POINTER:C301(AL_RetornaQuantil_Sel ;$1)
+C_LONGINT:C283(AL_RetornaQuantil_Sel ;$2)
+C_POINTER:C301(AL_RetornaQuantil_Sel ;$3)
+C_LONGINT:C283(AL_RetornaQuantil_Sel ;$4)
+
+  //LOC_CHANGETARGETLANGINFILES
+C_TEXT:C284(LOC_ChangeTargetLangInFiles ;$1)
+C_TEXT:C284(LOC_ChangeTargetLangInFiles ;$2)
+
+  //CU_CICLOSESCOLARES
+C_LONGINT:C283(CU_CiclosEscolares ;$1)
+
+  //SYS_PATHTOARRAY
+C_TEXT:C284(SYS_PathToArray ;$1)
+C_POINTER:C301(SYS_PathToArray ;$2)
+
+  //4DMK_SHOWMETHODMODIFICATIONDATE
+C_TEXT:C284(4DMK_ShowMethodModificationDate ;$1)
+
+  //KRL_GETFILEFROMSERVER
+C_BLOB:C604(KRL_GetFileFromServer ;$0)
+C_TEXT:C284(KRL_GetFileFromServer ;$1)
+  //ACTTER_PAGEAVISOSDECOBRANZA
+C_REAL:C285(ACTter_PageAvisosDeCobranza ;$0)
+C_TEXT:C284(ACTter_PageAvisosDeCobranza ;$1)
+
+  //ACTTER_PAGEPAGOS
+C_REAL:C285(ACTter_PagePagos ;$0)
+C_TEXT:C284(ACTter_PagePagos ;$1)
+
+  //ACTTER_PAGEDOCTRIBUTARIOS
+C_REAL:C285(ACTter_PageDocTributarios ;$0)
+C_TEXT:C284(ACTter_PageDocTributarios ;$1)
+
+  //ACTTER_PAGEDOCENCARTERA
+C_REAL:C285(ACTter_PageDocEnCartera ;$0)
+C_REAL:C285(ACTter_PageDocEnCartera ;$1)
+
+  //ACTTER_PAGEDOCDEPOSITADOS
+C_REAL:C285(ACTter_PageDocDepositados ;$0)
+C_TEXT:C284(ACTter_PageDocDepositados ;$1)
+
+  //SYS_GETRUTABASEDATOS
+C_TEXT:C284(sys_getRutaBaseDatos ;$0)
+
+  //ACTPGS_CALCULAPROTESTADO
+C_REAL:C285(ACTpgs_CalculaProtestado ;$0)
+C_POINTER:C301(ACTpgs_CalculaProtestado ;$1)
+
+  //SYS_GETSERVERVOLUMEATTRIBUTES
+C_BLOB:C604(SYS_GetServerVolumeAttributes ;$0)
+C_TEXT:C284(SYS_GetServerVolumeAttributes ;$1)
+
+  //SYS_GETSERVERMEMORY
+C_BLOB:C604(SYS_GetServerMemory ;$0)
+
+  //SYS_GETSERVERDOCUMENTICON
+C_PICTURE:C286(SYS_GetServerDocumentIcon ;$0)
+C_TEXT:C284(SYS_GetServerDocumentIcon ;$1)
+C_LONGINT:C283(SYS_GetServerDocumentIcon ;$2)
+
+  //SYS_GETSERVERVOLUMELIST
+C_BLOB:C604(SYS_GetServerVolumeList ;$0)
+C_REAL:C285(SYS_GetServerVolumeList ;$1)
+
+  //SYS_GETCONNECTEDUSERSLIST
+C_POINTER:C301(SYS_GetConnectedUsersList ;$1)
+
+  //USR_REGISTERCONNECTION
+C_LONGINT:C283(USR_RegisterConnection ;$1)
+C_TEXT:C284(USR_RegisterConnection ;$2)
+C_TEXT:C284(USR_RegisterConnection ;$3)
+C_TEXT:C284(USR_RegisterConnection ;$4)
+C_TEXT:C284(USR_RegisterConnection ;$5)
+
+  //USR_UNREGISTERCONNECTION
+C_LONGINT:C283(USR_UnregisterConnection ;$1)
+C_TEXT:C284(USR_UnregisterConnection ;$2)
+
+  //USR_REGISTERUSEREVENT
+C_LONGINT:C283(USR_RegisterUserEvent ;$1)
+C_LONGINT:C283(USR_RegisterUserEvent ;$2)
+C_TEXT:C284(USR_RegisterUserEvent ;$3)
+C_TEXT:C284(USR_RegisterUserEvent ;$4)
+
+  //SYS_GETLOCALMEMORY
+C_BLOB:C604(SYS_GetLocalMemory ;$0)
+
+  //SYS_GETLOCALPROPERTY
+C_TEXT:C284(SYS_GetLocalProperty ;$0)
+C_REAL:C285(SYS_GetLocalProperty ;$1)
+C_TEXT:C284(SYS_GetLocalProperty ;$2)
+
+  //SYS_GETLOCALVOLUMELIST
+C_BLOB:C604(SYS_GetLocalVolumeList ;$0)
+C_REAL:C285(SYS_GetLocalVolumeList ;$1)
+
+  //SYS_GETLOCALVOLUMESATTRIBUTES
+C_BLOB:C604(SYS_GetLocalVolumesAttributes ;$0)
+C_TEXT:C284(SYS_GetLocalVolumesAttributes ;$1)
+C_BLOB:C604(SYS_GetLocalVolumesAttributes ;$2)
+
+  //XS_CIM_OBJETMETHODS
+C_BLOB:C604(XS_CIM_ObjetMethods ;$0)
+C_TEXT:C284(XS_CIM_ObjetMethods ;$1)
+C_POINTER:C301(XS_CIM_ObjetMethods ;$2)
+C_TEXT:C284(XS_CIM_ObjetMethods ;$3)
+
+  //ACTOBS_OPCIONESOBSERVACIONES
+C_TEXT:C284(ACTobs_OpcionesObservaciones ;$0)
+C_POINTER:C301(ACTobs_OpcionesObservaciones ;${2})
+C_TEXT:C284(ACTobs_OpcionesObservaciones ;$1)
+
+  //ACTCFG_OPCIONESPAGARES
+C_TEXT:C284(ACTcfg_OpcionesPagares ;$0)
+C_POINTER:C301(ACTcfg_OpcionesPagares ;${2})
+C_TEXT:C284(ACTcfg_OpcionesPagares ;$1)
+
+  //ACTUT_FFECHAVALIDA2
+C_DATE:C307(ACTut_fFechaValida2 ;$0)
+C_DATE:C307(ACTut_fFechaValida2 ;$1)
+C_POINTER:C301(ACTpp_OpcionesPagares ;${2})
+C_TEXT:C284(ACTpp_OpcionesPagares ;$1)
+
+  //ACTCFG_OPCIONESGENERACIONP
+C_TEXT:C284(ACTcfg_OpcionesGeneracionP ;$0)
+C_POINTER:C301(ACTcfg_OpcionesGeneracionP ;${2})
+C_TEXT:C284(ACTcfg_OpcionesGeneracionP ;$1)
+
+  //WS_DATOSITC
+C_TEXT:C284(WS_DatosITC ;$1)
+C_TEXT:C284(WS_DatosITC ;$2)
+C_TEXT:C284(WS_DatosITC ;$3)
+C_TEXT:C284(WS_DatosITC ;$4)
+C_TEXT:C284(WS_DatosITC ;$5)
+C_TEXT:C284(WS_DatosITC ;$6)
+C_TEXT:C284(WS_DatosITC ;$7)
+C_TEXT:C284(WS_DatosITC ;$8)
+C_TEXT:C284(WS_DatosITC ;$9)
+C_TEXT:C284(WS_DatosITC ;$10)
+C_TEXT:C284(WS_DatosITC ;$11)
+C_TEXT:C284(WS_DatosITC ;$12)
+C_TEXT:C284(WS_DatosITC ;$13)
+C_TEXT:C284(WS_DatosITC ;$14)
+C_TEXT:C284(WS_DatosITC ;$15)
+C_TEXT:C284(WS_DatosITC ;$16)
+C_TEXT:C284(WS_DatosITC ;$17)
+C_TEXT:C284(WS_DatosITC ;$18)
+C_TEXT:C284(WS_DatosITC ;$19)
+C_TEXT:C284(WS_DatosITC ;$20)
+C_TEXT:C284(WS_DatosITC ;$21)
+C_TEXT:C284(WS_DatosITC ;$22)
+C_TEXT:C284(WS_DatosITC ;$23)
+C_TEXT:C284(WS_DatosITC ;$24)
+C_TEXT:C284(WS_DatosITC ;$25)
+C_TEXT:C284(WS_DatosITC ;$26)
+C_TEXT:C284(WS_DatosITC ;$27)
+C_TEXT:C284(WS_DatosITC ;$28)
+C_TEXT:C284(WS_DatosITC ;$29)
+C_TEXT:C284(WS_DatosITC ;$30)
+C_TEXT:C284(WS_DatosITC ;$31)
+C_TEXT:C284(WS_DatosITC ;$32)
+C_TEXT:C284(WS_DatosITC ;$33)
+C_TEXT:C284(WS_DatosITC ;$34)
+C_TEXT:C284(WS_DatosITC ;$35)
+C_TEXT:C284(WS_DatosITC ;$36)
+C_TEXT:C284(WS_DatosITC ;$37)
+C_TEXT:C284(WS_DatosITC ;$38)
+C_TEXT:C284(WS_DatosITC ;$39)
+C_TEXT:C284(WS_DatosITC ;$40)
+C_TEXT:C284(WS_DatosITC ;$41)
+C_TEXT:C284(WS_DatosITC ;$42)
+C_TEXT:C284(WS_DatosITC ;$43)
+C_TEXT:C284(WS_DatosITC ;$44)
+C_TEXT:C284(WS_DatosITC ;$45)
+C_TEXT:C284(WS_DatosITC ;$46)
+
+  //XALP_ACT_CB_PAGARES
+C_BOOLEAN:C305(xALP_ACT_CB_Pagares ;$0)
+C_LONGINT:C283(xALP_ACT_CB_Pagares ;$1)
+C_LONGINT:C283(xALP_ACT_CB_Pagares ;$2)
+C_LONGINT:C283(xALP_ACT_CB_Pagares ;$3)
+
+  //ACTCFG_CALCULATEMATRIXAMOUNT
+C_LONGINT:C283(ACTcfg_CalculateMatrixAmount ;$1)
+
+  //ACTCC_LOADAREATERCEROS
+C_REAL:C285(ACTcc_LoadAreaTerceros ;$1)
+
+  //ACTABC_EXPORTPACMONTESSORI
+C_TEXT:C284(ACTabc_ExportPACMontessori ;$1)
+C_TEXT:C284(ACTabc_ExportPACMontessori ;$2)
+C_TEXT:C284(ACTabc_ExportPACMontessori ;$3)
+
+  //ACTUT_ORDERBYFAMILY
+C_POINTER:C301(ACTut_OrderByFamily ;$1)
+C_POINTER:C301(ACTut_OrderByFamily ;$2)
+C_TEXT:C284(ACTut_OrderByFamily ;$3)
+
+
+  //SYS_RETRIEVEFILE_V11
+C_TEXT:C284(SYS_RetrieveFile_v11 ;$0)
+C_TEXT:C284(SYS_RetrieveFile_v11 ;$1)
+C_TEXT:C284(SYS_RetrieveFile_v11 ;$2)
+C_TEXT:C284(SYS_RetrieveFile_v11 ;$3)
+C_BOOLEAN:C305(SYS_RetrieveFile_v11 ;$4)
+
+  //SYS_GET_CHECK_SERVERFILEPATH
+C_TEXT:C284(SYS_Get_Check_ServerFilePath ;$1)
+C_TEXT:C284(SYS_Get_Check_ServerFilePath ;$2)
+
+  //ROBJ_BUILDOBJECTLIST
+C_BLOB:C604(RObj_BuildObjectList ;$0)
+C_LONGINT:C283(RObj_BuildObjectList ;$1)
+
+  //SF_FILLWITHMOTHERFIELD
+C_POINTER:C301(SF_FillWithMotherField ;$1)
+C_POINTER:C301(SF_FillWithMotherField ;$2)
+C_POINTER:C301(SF_FillWithMotherField ;$3)
+
+  //SN3_ISALLOWED2SEND
+C_LONGINT:C283(SN3_IsAllowed2Send ;$0)
+C_REAL:C285(SN3_IsAllowed2Send ;$1)
+
+  //SYS_GETDEFAULTCOUNTRYLANGAGE
+C_TEXT:C284(SYS_GetDefaultCountryLangage ;$0)
+C_TEXT:C284(SYS_GetDefaultCountryLangage ;$1)
+
+  //ACTABC_IMPORTCUPNEWLAND
+C_TEXT:C284(ACTabc_ImportCUPNewland ;$1)
+
+  //QRY_RUNQUERY
+C_LONGINT:C283(QRY_RunQuery ;$0)
+C_POINTER:C301(QRY_RunQuery ;$1)
+
+  //AS_ACTUALIZANOMBREASIGNATURA
+C_LONGINT:C283(AS_ActualizaNombreAsignatura ;$1)
+C_TEXT:C284(AS_ActualizaNombreAsignatura ;$2)
+
+  //ACTAC_DELETE
+C_BOOLEAN:C305(ACTac_Delete ;$0)
+C_REAL:C285(ACTac_Delete ;$1)
+
+  //SN3_LOADDATARECEPTIONSETTINGS
+C_LONGINT:C283(SN3_LoadDataReceptionSettings ;$1)
+
+  //SN3_SAVEDATARECEPTIONSETTINGS
+C_LONGINT:C283(SN3_SaveDataReceptionSettings ;$1)
+
+  //SN3_SENDDATARECEPTIONCONFIGS
+C_LONGINT:C283(SN3_SendDataReceptionConfigs ;$1)
+C_LONGINT:C283(SN3_SendDataReceptionConfigs ;$2)
+
+  //SN3_DATARECEPTIONCONF2XML
+C_TEXT:C284(SN3_DataReceptionConf2XML ;$0)
+C_LONGINT:C283(SN3_DataReceptionConf2XML ;$1)
+
+  //ADTPP_FORMARRAYDECLARATIONS
+C_LONGINT:C283(ADTpp_FormArrayDeclarations ;$1)
+
+  //ACTCC_MOSTRARCUENTASEXCLUIDAS
+C_POINTER:C301(ACTcc_MostrarCuentasExcluidas ;$1)
+
+  //STRAL_OPCIONESCONCENTRACION
+C_TEXT:C284(STRal_OpcionesConcentracion ;$0)
+C_POINTER:C301(STRal_OpcionesConcentracion ;${2})
+C_TEXT:C284(STRal_OpcionesConcentracion ;$1)
+
+  //EV2_CAMBIOSPOSTRECALCULO
+C_TEXT:C284(EV2_CambiosPostRecalculo ;$1)
+
+  //ADTCDD_CARGALOGCAMBIOESTADO
+C_REAL:C285(ADTcdd_CargaLogCambioEstado ;$1)
+
+  //LOG_REGISTEREVTSTW
+C_POINTER:C301(AS_RegistroActividades ;${2})
+C_TEXT:C284(AS_RegistroActividades ;$1)
+
+  //BWR_EXECUTEMETHOD
+C_TEXT:C284(BWR_ExecuteMethod ;$1)
+
+  //AL_GETACTABLOB
+C_BLOB:C604(AL_getActaBlob ;$0)
+C_TEXT:C284(AL_getActaBlob ;$1)
+C_LONGINT:C283(AL_getActaBlob ;$2)
+C_LONGINT:C283(AL_getActaBlob ;$3)
+
+  //IT_DYNAMICPOPUPMENU_ARRAY
+C_LONGINT:C283(IT_DynamicPopupMenu_Array ;$0)
+C_POINTER:C301(IT_DynamicPopupMenu_Array ;$1)
+C_POINTER:C301(IT_DynamicPopupMenu_Array ;$2)
+
+  //WDW_SHAKEWINDOW
+C_REAL:C285(wdw_shakewindow ;$1)
+
+  //RGX_MATCH
+C_TEXT:C284(RGX_match ;$1)
+C_TEXT:C284(RGX_match ;$2)
+C_POINTER:C301(RGX_match ;$3)
+C_POINTER:C301(RGX_match ;$4)
+
+  //DBUACT_VERIFICASALDOS
+C_REAL:C285(dbuACT_VerificaSaldos ;$0)
+C_REAL:C285(dbuACT_VerificaSaldos ;$1)
+
+  //ROBJ_BUILDTABLEFIELDSLISTS
+C_REAL:C285(RObj_BuildTableFieldsLists ;$1)
+
+  //ROBJ_SECTIONPROPERTIES
+C_REAL:C285(RObj_SectionProperties ;$1)
+
+  //ROBJ_SHOWTABLEFIELDS_SELECTOR
+C_REAL:C285(RObj_ShowTableFields_Selector ;$1)
+C_POINTER:C301(RObj_ShowTableFields_Selector ;$2)
+C_POINTER:C301(RObj_ShowTableFields_Selector ;$3)
+C_REAL:C285(RObj_ShowTableFields_Selector ;$4)
+
+  //USR_GETUSERID
+C_LONGINT:C283(USR_GetUserID ;$0)
+C_TEXT:C284(USR_GetUserID ;$1)
+
+  //AL_CONECTALICENCIAS
+C_REAL:C285(AL_ConectaLicencias ;$1)
+
+  //XALCB_EX_OBSERVACIONES
+C_BOOLEAN:C305(xALCB_EX_Observaciones ;$0)
+C_LONGINT:C283(xALCB_EX_Observaciones ;$1)
+C_LONGINT:C283(xALCB_EX_Observaciones ;$2)
+
+  //WS_CALLSCHOOLNETWEBSERVICE
+C_TEXT:C284(WS_CallSchoolNetWebService ;$0)
+C_TEXT:C284(WS_CallSchoolNetWebService ;$1)
+C_BOOLEAN:C305(WS_CallSchoolNetWebService ;$2)
+C_LONGINT:C283(WS_CallSchoolNetWebService ;$3)
+
+  //TGR_TMT_HORARIO
+C_REAL:C285(TGR_TMT_Horario ;$0)
+
+  //TGR_ASIGNATURASINASISTENCIAS
+C_REAL:C285(TGR_AsignaturasInasistencias ;$0)
+
+  //TGR_ASIGNATURAS
+C_REAL:C285(TGR_Asignaturas ;$0)
+
+  //TGR_ALUMNOSSUSPENSIONES
+C_REAL:C285(TGR_AlumnosSuspensiones ;$0)
+
+  //TGR_ALUMNOSINASISTENCIAS
+C_REAL:C285(TGR_AlumnosInasistencias ;$0)
+
+  //TGR_ALUMNOSCASTIGOS
+C_REAL:C285(TGR_AlumnosCastigos ;$0)
+
+  //TGR_ALUMNOSCALIFICACIONES
+C_REAL:C285(TGR_AlumnosCalificaciones ;$0)
+
+  //TGR_ALUMNOSATRASOS
+C_REAL:C285(TGR_AlumnosAtrasos ;$0)
+
+  //TGR_ALUMNOSANOTACIONES
+C_REAL:C285(TGR_AlumnosAnotaciones ;$0)
+
+  //ST_GETUNICNAME
+C_TEXT:C284(ST_GetUnicName ;$0)
+C_REAL:C285(ST_GetUnicName ;$1)
+C_POINTER:C301(ST_GetUnicName ;$2)
+C_TEXT:C284(ST_GetUnicName ;$3)
+C_REAL:C285(ST_GetUnicName ;$4)
+
+
+  //SNT_PREF_GETCONFIG
+C_LONGINT:C283(SNT_PREF_GetConfig ;$0)
+C_LONGINT:C283(SNT_PREF_GetConfig ;$1)
+C_TEXT:C284(SNT_PREF_GetConfig ;$2)
+C_BLOB:C604(SNT_PREF_GetConfig ;$3)
+C_POINTER:C301(SNT_PREF_GetConfig ;$4)
+C_POINTER:C301(SNT_PREF_GetConfig ;$5)
+
+  //SN3_BUILDSELECTIONS
+C_REAL:C285(SN3_BuildSelections ;$1)
+C_BOOLEAN:C305(SN3_BuildSelections ;$2)
+C_BOOLEAN:C305(SN3_BuildSelections ;$3)
+C_REAL:C285(SN3_BuildSelections ;$4)
+
+  //PP_DELETESELECTION
+C_REAL:C285(PP_DeleteSelection ;$0)
+
+  //PP_DELETE
+C_LONGINT:C283(PP_Delete ;$0)
+C_LONGINT:C283(MNU_SetMenuItemState ;${2})
+C_BOOLEAN:C305(MNU_SetMenuItemState ;$1)
+
+  //IT_ROTATETEXT2PICT
+C_PICTURE:C286(IT_RotateText2Pict ;$0)
+C_TEXT:C284(IT_RotateText2Pict ;$1)
+C_REAL:C285(IT_RotateText2Pict ;$2)
+C_REAL:C285(IT_RotateText2Pict ;$3)
+C_TEXT:C284(IT_RotateText2Pict ;$4)
+C_REAL:C285(IT_RotateText2Pict ;$5)
+C_REAL:C285(IT_RotateText2Pict ;$6)
+C_REAL:C285(IT_RotateText2Pict ;$7)
+
+  //EVLG_GETCONFIGURACION
+C_LONGINT:C283(EVLG_GetConfiguracion ;$1)
+C_LONGINT:C283(EVLG_GetConfiguracion ;$2)
+
+  //DHBM_PROCESSTASKS
+C_BOOLEAN:C305(dhBM_ProcessTasks ;$0)
+
+  //CFG_STR_SAVECONFIGURATION
+C_TEXT:C284(CFG_STR_SaveConfiguration ;$1)
+
+  //AL_PGHISTORICO
+C_REAL:C285(AL_pgHistorico ;$0)
+
+  //AL_FSAVESALUD
+C_REAL:C285(AL_fSaveSalud ;$0)
+
+  //AL_FSAVECDTA
+C_REAL:C285(AL_fSaveCdta ;$0)
+
+  //ACTPGS_CARGADATOSPAGOTERCERO
+C_BOOLEAN:C305(ACTpgs_CargaDatosPagoTercero ;$1)
+C_DATE:C307(ACTpgs_CargaDatosPagoTercero ;$2)
+C_REAL:C285(ACTpgs_CargaDatosPagoTercero ;$3)
+C_REAL:C285(ACTpgs_CargaDatosPagoTercero ;$4)
+C_DATE:C307(ACTpgs_CargaDatosPagoTercero ;$5)
+C_BOOLEAN:C305(ACTpgs_CargaDatosPagoTercero ;$6)
+
+  //ACTPGS_CARGADATOSPAGOCTA
+C_BOOLEAN:C305(ACTpgs_CargaDatosPagoCta ;$1)
+C_DATE:C307(ACTpgs_CargaDatosPagoCta ;$2)
+C_REAL:C285(ACTpgs_CargaDatosPagoCta ;$3)
+C_REAL:C285(ACTpgs_CargaDatosPagoCta ;$4)
+C_DATE:C307(ACTpgs_CargaDatosPagoCta ;$5)
+C_BOOLEAN:C305(ACTpgs_CargaDatosPagoCta ;$6)
+
+  //ACTPGS_CARGADATOSPAGOAPDO
+C_BOOLEAN:C305(ACTpgs_CargaDatosPagoApdo ;$1)
+C_DATE:C307(ACTpgs_CargaDatosPagoApdo ;$2)
+C_REAL:C285(ACTpgs_CargaDatosPagoApdo ;$3)
+C_REAL:C285(ACTpgs_CargaDatosPagoApdo ;$4)
+C_DATE:C307(ACTpgs_CargaDatosPagoApdo ;$5)
+C_BOOLEAN:C305(ACTpgs_CargaDatosPagoApdo ;$6)
+
+  //ACTDEV_INGRESAPAGOS
+C_REAL:C285(ACTdev_IngresaPagos ;$1)
+
+  //ACTCC_GENERACARGOS
+C_BLOB:C604(ACTcc_GeneraCargos ;$1)
+C_PICTURE:C286(ACTcc_GeneraCargos ;$2)
+C_TEXT:C284(ACTcc_GeneraCargos ;$3)
+C_BOOLEAN:C305(ACTcc_GeneraCargos ;$4)
+
+  //ACTcc_OrderCtasCtes
+C_BOOLEAN:C305(ACTcc_OrderCtasCtes ;$0)
+
+  //dbu_fEvalStudentSit2
+C_LONGINT:C283(dbu_fEvalStudentSit2 ;$1)
+
+  //ACTac_Recalcular
+C_BOOLEAN:C305(ACTac_Recalcular ;$5)
+
+  //AS_PropEval_Escritura
+C_BOOLEAN:C305(AS_PropEval_Escritura ;$2)
+C_BOOLEAN:C305(AS_PropEval_Escritura ;$3)
+
+  //NTA_StrGradeArray2PercentArray
+C_POINTER:C301(NTA_StrGradeArray2PercentArray ;$1)
+C_POINTER:C301(NTA_StrGradeArray2PercentArray ;$2)
+C_LONGINT:C283(NTA_StrGradeArray2PercentArray ;$3)
+C_LONGINT:C283(NTA_StrGradeArray2PercentArray ;$4)
+
+  //ACTcc_OrdenaDocsCargoporMoneda
+C_POINTER:C301(ACTcc_OrdenaDocsCargoporMoneda ;$4)
+
+  //NTA_Pct2Symbol
+C_TEXT:C284(NTA_Pct2Symbol ;$0)
+C_REAL:C285(NTA_Pct2Symbol ;$1)
+
+  //QR_ExecQuery
+C_POINTER:C301(QR_ExecQuery ;$1)
+C_LONGINT:C283(QR_ExecQuery ;$2)
+
+  //ACTbol_EMasivaDocTribs
+C_BOOLEAN:C305(ACTbol_EMasivaDocTribs ;$1)
+
+  //ACTbol_EmitirDocumentos
+C_OBJECT:C1216(ACTbol_EmitirDocumentos ;$0)
+C_TEXT:C284(ACTbol_EmitirDocumentos ;$1)
+C_TEXT:C284(ACTbol_EmitirDocumentos ;$2)
+C_TEXT:C284(ACTbol_EmitirDocumentos ;$3)
+C_REAL:C285(ACTbol_EmitirDocumentos ;$4)
+C_REAL:C285(ACTbol_EmitirDocumentos ;$5)
+C_REAL:C285(ACTbol_EmitirDocumentos ;$6)
+C_REAL:C285(ACTbol_EmitirDocumentos ;$7)
+C_TEXT:C284(ACTbol_EmitirDocumentos ;$8)
+C_TEXT:C284(ACTbol_EmitirDocumentos ;$9)
+C_REAL:C285(ACTbol_EmitirDocumentos ;$10)
+C_REAL:C285(ACTbol_EmitirDocumentos ;$11)
+
+  //ACTcfg_DocTribComplete
+C_REAL:C285(ACTcfg_DocTribComplete ;$2)
+
+  //ACTpgs_CreaCargoDesctoEspecial
+C_BOOLEAN:C305(ACTpgs_CreaCargoDesctoEspecial ;$0)
+C_REAL:C285(ACTpgs_CreaCargoDesctoEspecial ;$4)
+
+  //ACTvr_VentaRapida
+C_TEXT:C284(ACTvr_VentaRapida ;$1)
+C_TEXT:C284(ACTvr_VentaRapida ;$2)
+C_TEXT:C284(ACTvr_VentaRapida ;$3)
+C_PICTURE:C286(ACTvr_VentaRapida ;$4)
+C_TEXT:C284(ACTvr_VentaRapida ;$5)
+
+  //xALCB_EN_EVEsfuerzo
+C_LONGINT:C283(xALCB_EN_EVEsfuerzo ;$1)
+C_LONGINT:C283(xALCB_EN_EVEsfuerzo ;$2)
+C_LONGINT:C283(xALCB_EN_EVEsfuerzo ;$3)
+
+  //xALCB_EX_EvEsfuerzo
+C_BOOLEAN:C305(xALCB_EX_EvEsfuerzo ;$0)
+C_LONGINT:C283(xALCB_EX_EvEsfuerzo ;$1)
+C_LONGINT:C283(xALCB_EX_EvEsfuerzo ;$2)
+
+  //HL_ReferencedList2Array
+C_POINTER:C301(HL_ReferencedList2Array ;$3)
+
+  //USR_GetMethodAcces
+C_LONGINT:C283(USR_GetMethodAcces ;$3)
+
+  //LOG_RegisterEvt
+C_TEXT:C284(LOG_RegisterEvt ;$1)
+C_LONGINT:C283(LOG_RegisterEvt ;$2)
+C_LONGINT:C283(LOG_RegisterEvt ;$3)
+C_REAL:C285(LOG_RegisterEvt ;$4)
+C_TEXT:C284(LOG_RegisterEvt ;$5)
+
+  //ACTpgs_OrdenaCargos
+C_BOOLEAN:C305(ACTpgs_OrdenaCargos ;$1)
+
+  //ALP_SetDefaultAppareance
+C_LONGINT:C283(ALP_SetDefaultAppareance ;$1)
+C_LONGINT:C283(ALP_SetDefaultAppareance ;$2)
+C_LONGINT:C283(ALP_SetDefaultAppareance ;$3)
+C_LONGINT:C283(ALP_SetDefaultAppareance ;$4)
+C_LONGINT:C283(ALP_SetDefaultAppareance ;$5)
+C_LONGINT:C283(ALP_SetDefaultAppareance ;$6)
+C_LONGINT:C283(ALP_SetDefaultAppareance ;$7)
+C_LONGINT:C283(ALP_SetDefaultAppareance ;$8)
+
+  //xALSet_AreasCamposUsuario
+C_REAL:C285(xALSet_AreasCamposUsuario ;$1)
+
+  //AS_SortGrades
+C_REAL:C285(AS_SortGrades ;$1)
+C_REAL:C285(AS_SortGrades ;$2)
+
+  //NTA_Percent2String
+C_REAL:C285(NTA_Percent2String ;$1)
+
+  //AL_SetNotasClr
+C_LONGINT:C283(AL_SetNotasClr ;$1)
+C_LONGINT:C283(AL_SetNotasClr ;$2)
+
+  //IOstr_ProcessParentRecord
+C_BOOLEAN:C305(IOstr_ProcessParentRecord ;$2)
+
+  //NTA_stats
+C_POINTER:C301(NTA_stats ;$1)
+
+  //SRal_PreparaInformeDeNotas
+C_TEXT:C284(SRal_PreparaInformeDeNotas ;$1)
+C_LONGINT:C283(SRal_PreparaInformeDeNotas ;$2)
+C_REAL:C285(SRal_PreparaInformeDeNotas ;$3)
+C_LONGINT:C283(SRal_PreparaInformeDeNotas ;$4)
+C_LONGINT:C283(SRal_PreparaInformeDeNotas ;$5)
+
+  //HL_getSublistItems
+C_POINTER:C301(HL_getSublistItems ;$3)
+
+  //0xDev_SeleccionCampo
+C_POINTER:C301(0xDev_SeleccionCampo ;$0)
+
+  //xfGetFileName
+C_BOOLEAN:C305(xfGetFileName ;$3)
+
+  //DT_PopCalendar
+C_TEXT:C284(DT_PopCalendar ;$1)
+
+  //ST_CleanString
+C_TEXT:C284(ST_CleanString ;$2)
+C_TEXT:C284(ST_CleanString ;$3)
+
+  //KRL_LoadRecord
+C_BOOLEAN:C305(KRL_LoadRecord ;$3)
+
+  //MATH_Max
+C_REAL:C285(MATH_Max ;$1)
+C_REAL:C285(MATH_Max ;$2)
+C_REAL:C285(MATH_Max ;$3)
+C_REAL:C285(MATH_Max ;$4)
+C_REAL:C285(MATH_Max ;$5)
+
+  //ACTpgs_EmitirBoletasDocumentar
+C_BOOLEAN:C305(ACTpgs_EmitirBoletasDocumentar ;$5)
+C_BOOLEAN:C305(ACTpgs_EmitirBoletasDocumentar ;$6)
+
+  //SYS_READVERSION
+C_BOOLEAN:C305(SYS_READVERSION ;$0)
+
+  //SRal_InformacionConductual
+C_LONGINT:C283(SRal_InformacionConductual ;$1)
+
+  //ACTpgs_IngresarPagos
+C_BOOLEAN:C305(ACTpgs_IngresarPagos ;$5)
+C_TEXT:C284(ACTpgs_IngresarPagos ;$6)
+C_TEXT:C284(ACTpgs_IngresarPagos ;$7)
+C_TEXT:C284(ACTpgs_IngresarPagos ;$8)
+C_TEXT:C284(ACTpgs_IngresarPagos ;$9)
+
+  //FM_DeleteSelection
+C_REAL:C285(FM_DeleteSelection ;$0)
+
+  //0xDev_DetectaDuplicados
+C_POINTER:C301(0xDev_DetectaDuplicados ;$1)
+C_BOOLEAN:C305(0xDev_DetectaDuplicados ;$2)
+
+  //VS_RelationsALPsettings
+C_LONGINT:C283(VS_RelationsALPsettings ;$1)
+
+  //ACTinit_CreateUFTables
+C_REAL:C285(ACTinit_CreateUFTables ;$0)
+
+  //ACTpgs_CreacionDocdePago
+C_REAL:C285(ACTpgs_CreacionDocdePago ;$0)
+
+  //ACTpgs_CreacionPago
+C_TEXT:C284(ACTpgs_CreacionPago ;$2)
+C_TEXT:C284(ACTpgs_CreacionPago ;$3)
+C_TEXT:C284(ACTpgs_CreacionPago ;$4)
+C_TEXT:C284(ACTpgs_CreacionPago ;$5)
+
+  //SYS_CopyDataFile
+C_TEXT:C284(SYS_CopyDataFile ;$1)
+C_TEXT:C284(SYS_CopyDataFile ;$2)
+
+  //ACTcc_EliminaCargos
+C_REAL:C285(ACTcc_EliminaCargos ;$5)
+
+  //ACTmnu_RecalcularSaldosAvisos
+C_BOOLEAN:C305(ACTmnu_RecalcularSaldosAvisos ;$5)
+
+  //ACTbol_EmitirDocumentos4Pagos
+C_OBJECT:C1216(ACTbol_EmitirDocumentos4Pagos ;$0)
+C_TEXT:C284(ACTbol_EmitirDocumentos4Pagos ;$1)
+C_TEXT:C284(ACTbol_EmitirDocumentos4Pagos ;$2)
+C_TEXT:C284(ACTbol_EmitirDocumentos4Pagos ;$3)
+C_REAL:C285(ACTbol_EmitirDocumentos4Pagos ;$4)
+C_REAL:C285(ACTbol_EmitirDocumentos4Pagos ;$5)
+C_REAL:C285(ACTbol_EmitirDocumentos4Pagos ;$6)
+C_REAL:C285(ACTbol_EmitirDocumentos4Pagos ;$7)
+C_TEXT:C284(ACTbol_EmitirDocumentos4Pagos ;$8)
+C_TEXT:C284(ACTbol_EmitirDocumentos4Pagos ;$9)
+C_REAL:C285(ACTbol_EmitirDocumentos4Pagos ;$10)
+C_TEXT:C284(ACTbol_EmitirDocumentos4Pagos ;$11)
+
+  //FTP_UpDirectory
+C_BOOLEAN:C305(FTP_UpDirectory ;$0)
+
+  //FTP_DeleteDir
+C_LONGINT:C283(FTP_DeleteDir ;$1)
+C_TEXT:C284(FTP_DeleteDir ;$2)
+C_TEXT:C284(FTP_DeleteDir ;$3)
+C_LONGINT:C283(FTP_DeleteDir ;$4)
+
+  //FTP_DirectoryUpload
+C_TEXT:C284(FTP_DirectoryUpload ;$1)
+C_TEXT:C284(FTP_DirectoryUpload ;$2)
+
+  //FTP_DownDirectory
+C_TEXT:C284(FTP_DownDirectory ;$0)
+C_TEXT:C284(FTP_DownDirectory ;$1)
+
+  //FTP_GetFile
+C_TEXT:C284(FTP_GetFile ;$2)
+
+  //FTP_GetSystem
+C_TEXT:C284(FTP_GetSystem ;$0)
+C_LONGINT:C283(FTP_GetSystem ;$1)
+
+  //FTP_RenameItem
+C_LONGINT:C283(FTP_RenameItem ;$1)
+C_TEXT:C284(FTP_RenameItem ;$2)
+C_TEXT:C284(FTP_RenameItem ;$3)
+
+  //FTP_SwitchPath
+C_TEXT:C284(FTP_SwitchPath ;$1)
+
+  //FTP_UpdateList
+C_REAL:C285(FTP_UpdateList ;$1)
+
+  //ACTac_Prepagar
+C_REAL:C285(ACTac_Prepagar ;$4)
+C_REAL:C285(ACTac_Prepagar ;$5)
+
+  //ACTinit_LoadFdPago
+C_BOOLEAN:C305(ACTinit_LoadFdPago ;$1)
+C_BOOLEAN:C305(ACTinit_LoadFdPago ;$2)
+
+  //WDW_ModifyRecordInDrawer
+C_POINTER:C301(WDW_ModifyRecordInDrawer ;$1)
+C_TEXT:C284(WDW_ModifyRecordInDrawer ;$2)
+C_TEXT:C284(WDW_ModifyRecordInDrawer ;$3)
+
+  //AS_Observaciones
+C_TEXT:C284(AS_Observaciones ;$0)
+C_LONGINT:C283(AS_Observaciones ;$1)
+C_TEXT:C284(AS_Observaciones ;$2)
+C_LONGINT:C283(AS_Observaciones ;$3)
+C_LONGINT:C283(AS_Observaciones ;$4)
+C_LONGINT:C283(AS_Observaciones ;$5)
+C_TEXT:C284(AS_Observaciones ;$6)
+
+  //ACTabc_ImportPorColegio
+C_TEXT:C284(ACTabc_ImportPorColegio ;$11)
+
+  //SRcb_AprendizajesEsperados
+C_LONGINT:C283(SRcb_AprendizajesEsperados ;$0)
+C_LONGINT:C283(SRcb_AprendizajesEsperados ;$1)
+C_LONGINT:C283(SRcb_AprendizajesEsperados ;$2)
+C_LONGINT:C283(SRcb_AprendizajesEsperados ;$3)
+C_LONGINT:C283(SRcb_AprendizajesEsperados ;$4)
+
+  //xALP_ADT_CBEX_Exams
+C_BOOLEAN:C305(xALP_ADT_CBEX_Exams ;$0)
+C_LONGINT:C283(xALP_ADT_CBEX_Exams ;$1)
+C_LONGINT:C283(xALP_ADT_CBEX_Exams ;$2)
+
+  //xALP_ADT_CBEX_ExamsGroups
+C_BOOLEAN:C305(xALP_ADT_CBEX_ExamsGroups ;$0)
+C_LONGINT:C283(xALP_ADT_CBEX_ExamsGroups ;$1)
+C_LONGINT:C283(xALP_ADT_CBEX_ExamsGroups ;$2)
+
+  //xALP_ADT_CB_Cobros
+C_BOOLEAN:C305(xALP_ADT_CB_Cobros ;$0)
+C_LONGINT:C283(xALP_ADT_CB_Cobros ;$1)
+C_LONGINT:C283(xALP_ADT_CB_Cobros ;$2)
+
+  //CFG_OpenConfigPanel
+C_POINTER:C301(CFG_OpenConfigPanel ;$1)
+C_TEXT:C284(CFG_OpenConfigPanel ;$2)
+C_REAL:C285(CFG_OpenConfigPanel ;$3)
+C_TEXT:C284(CFG_OpenConfigPanel ;$4)
+
+  //4D_SaveMethodText
+C_TEXT:C284(4D_SaveMethodText ;$1)
+C_TEXT:C284(4D_SaveMethodText ;$2)
+
+  //ACTabc_ImportProcess
+C_TEXT:C284(ACTabc_ImportProcess ;$4)
+
+  //dhNTA_GetBonPerProm
+C_REAL:C285(dhNTA_GetBonPerProm ;$0)
+
+  //ACTac_CreateCargoDocCargo4Int
+C_TEXT:C284(ACTac_CreateCargoDocCargo4Int ;$5)
+C_BOOLEAN:C305(ACTac_CreateCargoDocCargo4Int ;$6)
+
+  //ACTcc_LoadCargosIntoArrays
+C_BOOLEAN:C305(ACTcc_LoadCargosIntoArrays ;$8)
+C_BOOLEAN:C305(ACTcc_LoadCargosIntoArrays ;$9)
+C_BOOLEAN:C305(ACTcc_LoadCargosIntoArrays ;$10)
+C_BOOLEAN:C305(ACTcc_LoadCargosIntoArrays ;$11)
+
+  //OT_GetBoolean
+C_BOOLEAN:C305(OT_GetBoolean ;$0)
+C_LONGINT:C283(OT_GetBoolean ;$1)
+C_TEXT:C284(OT_GetBoolean ;$2)
+
+  //XS_RemoveCFGItemPicture
+C_REAL:C285(XS_RemoveCFGItemPicture ;$0)
+C_REAL:C285(XS_RemoveCFGItemPicture ;$1)
+
+  //XS_SetCFGPicture
+C_REAL:C285(XS_SetCFGPicture ;$0)
+C_POINTER:C301(XS_SetCFGPicture ;$1)
+C_REAL:C285(XS_SetCFGPicture ;$2)
+C_TEXT:C284(XS_SetCFGPicture ;$3)
+
+  //ACTbol_GetMontoLinea
+C_BOOLEAN:C305(ACTbol_GetMontoLinea ;$2)
+
+  //NTA_CalculaPromedioFinal
+C_LONGINT:C283(NTA_CalculaPromedioFinal ;$1)
+
+  //IT_Set3DButton
+C_POINTER:C301(IT_Set3DButton ;$1)
+C_TEXT:C284(IT_Set3DButton ;$2)
+C_TEXT:C284(IT_Set3DButton ;$3)
+C_TEXT:C284(IT_Set3DButton ;$4)
+C_TEXT:C284(IT_Set3DButton ;$5)
+C_LONGINT:C283(IT_Set3DButton ;$6)
+C_LONGINT:C283(IT_Set3DButton ;$7)
+C_LONGINT:C283(IT_Set3DButton ;$8)
+
+  //USR_HasSpecialPermission
+C_LONGINT:C283(USR_HasSpecialPermission ;$3)
+
+  //SRcb_EvaluacionAprendizajes
+C_LONGINT:C283(SRcb_EvaluacionAprendizajes ;$0)
+C_LONGINT:C283(SRcb_EvaluacionAprendizajes ;$1)
+C_LONGINT:C283(SRcb_EvaluacionAprendizajes ;$2)
+C_LONGINT:C283(SRcb_EvaluacionAprendizajes ;$3)
+C_LONGINT:C283(SRcb_EvaluacionAprendizajes ;$4)
+
+  //xALP_ADT_CB_MetaDef
+C_BOOLEAN:C305(xALP_ADT_CB_MetaDef ;$0)
+C_LONGINT:C283(xALP_ADT_CB_MetaDef ;$1)
+C_LONGINT:C283(xALP_ADT_CB_MetaDef ;$2)
+
+  //ACTabc_ExportMasterTrf
+C_REAL:C285(ACTabc_ExportMasterTrf ;$5)
+
+  //ACTabc_ImportByWizard
+C_REAL:C285(ACTabc_ImportByWizard ;$4)
+
+  //ACTac_CreateCargoDocCargoImp
+C_REAL:C285(ACTac_CreateCargoDocCargoImp ;$15)
+C_BOOLEAN:C305(ACTac_CreateCargoDocCargoImp ;$16)
+
+  //BBLio_MARCcodes_InMicroLifFile
+C_POINTER:C301(BBLio_MARCcodes_InMicroLifFile ;$1)
+
+  //ACTpgs_BuscaDeuda
+C_TEXT:C284(ACTpgs_BuscaDeuda ;$5)
+
+  //ACTpgs_CreateCargoIntInArrays
+C_BOOLEAN:C305(ACTpgs_CreateCargoIntInArrays ;$4)
+
+  //SRACT_AgrupaMeses
+C_BOOLEAN:C305(SRACT_AgrupaMeses ;$3)
+
+  //SYS_DeleteFile
+C_TEXT:C284(SYS_DeleteFile ;$1)
+
+  //FTP_CreatePath
+C_TEXT:C284(FTP_CreatePath ;$3)
+C_TEXT:C284(FTP_CreatePath ;$4)
+C_TEXT:C284(FTP_CreatePath ;$5)
+
+  //ACTbol_CreateRecord
+C_REAL:C285(ACTbol_CreateRecord ;$15)
+C_REAL:C285(ACTbol_CreateRecord ;$16)
+C_REAL:C285(ACTbol_CreateRecord ;$17)
+C_BOOLEAN:C305(ACTbol_CreateRecord ;$18)
+C_REAL:C285(ACTbol_CreateRecord ;$19)
+C_TEXT:C284(ACTbol_CreateRecord ;$20)
+C_REAL:C285(ACTbol_CreateRecord ;$21)
+
+  //xDOC_AutoLoadPictures
+C_POINTER:C301(xDOC_AutoLoadPictures ;$1)
+
+  //AL_EstableceColorPromedio
+C_TEXT:C284(AL_EstableceColorPromedio ;$0)
+C_POINTER:C301(AL_EstableceColorPromedio ;$1)
+C_LONGINT:C283(AL_EstableceColorPromedio ;$2)
+
+  //AL_LeeSintesisAnual
+C_TEXT:C284(AL_LeeSintesisAnual ;$1)
+C_POINTER:C301(AL_LeeSintesisAnual ;$2)
+C_POINTER:C301(AL_LeeSintesisAnual ;$3)
+C_BOOLEAN:C305(AL_LeeSintesisAnual ;$4)
+
+  //ACTcfg_LeeBlob
+C_OBJECT:C1216(ACTcfg_LeeBlob ;$0)
+
+  //ACTpgs_CreaCargo
+C_BOOLEAN:C305(ACTpgs_CreaCargo ;$10)
+
+  //ACTbol_MontosFromPagos
+C_BOOLEAN:C305(ACTbol_MontosFromPagos ;$9)
+
+  //ACTpgs_AnulaPago
+C_BOOLEAN:C305(ACTpgs_AnulaPago ;$2)
+
+  //ACTdc_ValidaDocReemplazador
+C_REAL:C285(ACTdc_ValidaDocReemplazador ;$1)
+C_BOOLEAN:C305(ACTdc_ValidaDocReemplazador ;$2)
+C_POINTER:C301(ACTac_OpcionesGenerales ;${2})
+C_POINTER:C301(ACTcfg_OpcionesRecargosAut ;${2})
+
+  //BM_ResultadosAsignatura
+C_BOOLEAN:C305(BM_ResultadosAsignatura ;$0)
+C_LONGINT:C283(BM_ResultadosAsignatura ;$1)
+
+  //ACTcar_RecalculaRXA
+C_POINTER:C301(ACTcar_RecalculaRXA ;$4)
+
+  //ACTter_fSave
+C_BOOLEAN:C305(ACTter_fSave ;$1)
+
+  //XCR_ContabilizaInscritos
+C_LONGINT:C283(XCR_ContabilizaInscritos ;$1)
+
+  //EV2_Num2Literal
+C_TEXT:C284(EV2_Num2Literal ;$0)
+C_REAL:C285(EV2_Num2Literal ;$1)
+C_REAL:C285(EV2_Num2Literal ;$2)
+C_REAL:C285(EV2_Num2Literal ;$3)
+
+  //dbuACT_VerificaAvisosXMatriz
+C_REAL:C285(dbuACT_VerificaAvisosXMatriz ;$1)
+C_REAL:C285(dbuACT_VerificaAvisosXMatriz ;$2)
+
+  //ACTcfg_OpcionesFormasDePago
+C_TEXT:C284(ACTcfg_OpcionesFormasDePago ;$0)
+
+  //ACTpgs_GenCargoDesctoEspecial
+C_BOOLEAN:C305(ACTpgs_GenCargoDesctoEspecial ;$0)
+
+  //ACTbol_GeneraDevolucion
+C_REAL:C285(ACTbol_GeneraDevolucion ;$4)
+
+  //ACTpp_GuardaRechazos
+C_POINTER:C301(ACTpp_GuardaRechazos ;$10)
+
+  //xALCB_EX_CursosPromocion
+C_BOOLEAN:C305(xALCB_EX_CursosPromocion ;$0)
+C_LONGINT:C283(xALCB_EX_CursosPromocion ;$1)
+C_LONGINT:C283(xALCB_EX_CursosPromocion ;$2)
+
+  //ACTcc_DuplicaCargoDcto
+C_LONGINT:C283(ACTcc_DuplicaCargoDcto ;$0)
+C_REAL:C285(ACTcc_DuplicaCargoDcto ;$6)
+C_REAL:C285(ACTcc_DuplicaCargoDcto ;$7)
+C_REAL:C285(ACTcc_DuplicaCargoDcto ;$8)
+C_REAL:C285(ACTcc_DuplicaCargoDcto ;$9)
+
+  //ACTac_ActualizaNombre
+C_TEXT:C284(ACTac_ActualizaNombre ;$0)
+
+  //xALP_ADT_EX_Jornadas
+C_BOOLEAN:C305(xALP_ADT_EX_Jornadas ;$0)
+C_LONGINT:C283(xALP_ADT_EX_Jornadas ;$1)
+C_LONGINT:C283(xALP_ADT_EX_Jornadas ;$2)
+
+  //xALP_ADT_SaveEducAntSTR
+C_BOOLEAN:C305(xALP_ADT_SaveEducAntSTR ;$0)
+C_LONGINT:C283(xALP_ADT_SaveEducAntSTR ;$1)
+C_LONGINT:C283(xALP_ADT_SaveEducAntSTR ;$2)
+
+  //xALP_ADT_EX_JornadasVisita
+C_BOOLEAN:C305(xALP_ADT_EX_JornadasVisita ;$0)
+C_LONGINT:C283(xALP_ADT_EX_JornadasVisita ;$1)
+C_LONGINT:C283(xALP_ADT_EX_JornadasVisita ;$2)
+
+  //SRACT_AgrupaMeses2
+C_BOOLEAN:C305(SRACT_AgrupaMeses2 ;$4)
+
+  //SN3_BuildCalificacionTag
+C_REAL:C285(SN3_BuildCalificacionTag ;$11)
+C_TEXT:C284(SN3_BuildCalificacionTag ;$12)
+C_LONGINT:C283(SN3_BuildCalificacionTag ;$13)
+
+  //XML_GetValidXMLText
+C_BOOLEAN:C305(XML_GetValidXMLText ;$2)
+
+  //SN3_SendAttachments
+C_BOOLEAN:C305(SN3_SendAttachments ;$1)
+
+  //SN3_SendColegioXML
+C_BOOLEAN:C305(SN3_SendColegioXML ;$1)
+C_BOOLEAN:C305(SN3_SendColegioXML ;$2)
+
+  //SN3_SendHeadersConductaXML
+C_BOOLEAN:C305(SN3_SendHeadersConductaXML ;$1)
+C_BOOLEAN:C305(SN3_SendHeadersConductaXML ;$2)
+
+  //SN3_SendMapasDefinicionesXML
+C_BOOLEAN:C305(SN3_SendMapasDefinicionesXML ;$1)
+C_BOOLEAN:C305(SN3_SendMapasDefinicionesXML ;$2)
+
+  //SN3_SendObsoletosXML
+C_BOOLEAN:C305(SN3_SendObsoletosXML ;$1)
+C_BOOLEAN:C305(SN3_SendObsoletosXML ;$2)
+
+  //ACTabc_ExportCUPStaTeresita
+C_TEXT:C284(ACTabc_ExportCUPStaTeresita ;$1)
+C_TEXT:C284(ACTabc_ExportCUPStaTeresita ;$2)
+C_TEXT:C284(ACTabc_ExportCUPStaTeresita ;$3)
+
+  //ACTabc_ExportCUPStaTeresita2
+C_TEXT:C284(ACTabc_ExportCUPStaTeresita2 ;$1)
+C_TEXT:C284(ACTabc_ExportCUPStaTeresita2 ;$2)
+C_TEXT:C284(ACTabc_ExportCUPStaTeresita2 ;$3)
+
+  //ACTpgs_OpcionesVR
+C_POINTER:C301(ACTpgs_OpcionesVR ;$3)
+C_POINTER:C301(ACTac_RecalculaAvisos ;${2})
+C_TEXT:C284(ACTac_RecalculaAvisos ;$1)
+
+  //ACTabc_ExportCUPStaTeresita3
+C_TEXT:C284(ACTabc_ExportCUPStaTeresita3 ;$1)
+C_TEXT:C284(ACTabc_ExportCUPStaTeresita3 ;$2)
+C_TEXT:C284(ACTabc_ExportCUPStaTeresita3 ;$3)
+
+  //ACTbol_OpcionesGenerales
+C_TEXT:C284(ACTbol_OpcionesGenerales ;$0)
+C_POINTER:C301(ACTbol_OpcionesGenerales ;${2})
+C_TEXT:C284(ACTbol_OpcionesGenerales ;$1)
+
+  //ST_String_Is_Numeric
+C_BOOLEAN:C305(ST_String_Is_Numeric ;$0)
+C_TEXT:C284(ST_String_Is_Numeric ;$1)
+
+  //SN3_SendData2SchoolNet
+C_BOOLEAN:C305(SN3_SendData2SchoolNet ;$1)
+C_BOOLEAN:C305(SN3_SendData2SchoolNet ;$2)
+C_BLOB:C604(SN3_SendData2SchoolNet ;$3)
+
+  //LOC_ChangeLanguage
+C_TEXT:C284(LOC_ChangeLanguage ;$1)
+C_TEXT:C284(LOC_ChangeLanguage ;$2)
+
+  //USR_RegisterUserEvent
+C_LONGINT:C283(USR_RegisterUserEvent ;$5)
+
+  //WS_DatosMackay
+C_TEXT:C284(WS_DatosMackay ;$1)
+C_TEXT:C284(WS_DatosMackay ;$2)
+C_TEXT:C284(WS_DatosMackay ;$3)
+C_TEXT:C284(WS_DatosMackay ;$4)
+
+  //xALCB_EX_TablasConversion_EVS
+C_BOOLEAN:C305(xALCB_EX_TablasConversion_EVS ;$0)
+C_LONGINT:C283(xALCB_EX_TablasConversion_EVS ;$1)
+C_LONGINT:C283(xALCB_EX_TablasConversion_EVS ;$2)
+C_LONGINT:C283(xALCB_EX_TablasConversion_EVS ;$3)
+
+  //SNT_SendFile2FTP_2
+C_TEXT:C284(SNT_SendFile2FTP_2 ;$0)
+C_TEXT:C284(SNT_SendFile2FTP_2 ;$1)
+C_TEXT:C284(SNT_SendFile2FTP_2 ;$2)
+C_TEXT:C284(SNT_SendFile2FTP_2 ;$3)
+C_TEXT:C284(SNT_SendFile2FTP_2 ;$4)
+C_TEXT:C284(SNT_SendFile2FTP_2 ;$5)
+C_TEXT:C284(SNT_SendFile2FTP_2 ;$6)
+C_BOOLEAN:C305(SNT_SendFile2FTP_2 ;$7)
+C_LONGINT:C283(SNT_SendFile2FTP_2 ;$8)
+
+  //SNT_SendFile2FTP
+C_TEXT:C284(SNT_SendFile2FTP ;$0)
+C_TEXT:C284(SNT_SendFile2FTP ;$1)
+C_TEXT:C284(SNT_SendFile2FTP ;$2)
+C_TEXT:C284(SNT_SendFile2FTP ;$3)
+C_TEXT:C284(SNT_SendFile2FTP ;$4)
+C_TEXT:C284(SNT_SendFile2FTP ;$5)
+C_TEXT:C284(SNT_SendFile2FTP ;$6)
+C_BOOLEAN:C305(SNT_SendFile2FTP ;$7)
+C_LONGINT:C283(SNT_SendFile2FTP ;$8)
+
+  //ACTpgs_CargaDatosPagoApdo
+C_TEXT:C284(ACTpgs_CargaDatosPagoApdo ;$7)
+
+  //ACTcc_GeneraCargos
+C_BOOLEAN:C305(ACTcc_GeneraCargos ;$5)
+
+  //hmBC_text2PictPDF417
+C_PICTURE:C286(hmBC_text2PictPDF417 ;$0)
+C_TEXT:C284(hmBC_text2PictPDF417 ;$1)
+C_REAL:C285(hmBC_text2PictPDF417 ;$2)
+C_REAL:C285(hmBC_text2PictPDF417 ;$3)
+
+  //PICT_Store_Pict_and_RouteField
+C_POINTER:C301(PICT_Store_Pict_and_RouteField ;$1)
+C_LONGINT:C283(PICT_Store_Pict_and_RouteField ;$2)
+C_LONGINT:C283(PICT_Store_Pict_and_RouteField ;$3)
+
+  //PICT_LoadandShowPicture
+C_POINTER:C301(PICT_LoadandShowPicture ;$1)
+C_POINTER:C301(PICT_LoadandShowPicture ;$2)
+C_BOOLEAN:C305(PICT_LoadandShowPicture ;$3)
+
+  //AS_Edita_Objetivos
+C_LONGINT:C283(AS_Edita_Objetivos ;$1)
+C_LONGINT:C283(AS_Edita_Objetivos ;$2)
+
+  //ACTabc_ImportPACCumbresBogota
+C_TEXT:C284(ACTabc_ImportPACCumbresBogota ;$1)
+
+  //SN3_BuildFileHeader
+C_TIME:C306(SN3_BuildFileHeader ;$1)
+C_LONGINT:C283(SN3_BuildFileHeader ;$2)
+C_TEXT:C284(SN3_BuildFileHeader ;$3)
+C_BOOLEAN:C305(SN3_BuildFileHeader ;$4)
+C_BOOLEAN:C305(SN3_BuildFileHeader ;$5)
+C_BOOLEAN:C305(SN3_BuildFileHeader ;$6)
+
+  //KRL_SaveUnLoadReadOnly
+C_POINTER:C301(KRL_SaveUnLoadReadOnly ;$1)
+
+  //IOstr_ProcessFamilyRecord
+C_BOOLEAN:C305(IOstr_ProcessFamilyRecord ;$1)
+
+  //dhBWR_SetRelations
+C_BOOLEAN:C305(dhBWR_SetRelations ;$0)
+C_POINTER:C301(dhBWR_SetRelations ;$1)
+
+  //ACTcar_EsCargoEspecial
+C_BOOLEAN:C305(ACTcar_EsCargoEspecial ;$0)
+C_LONGINT:C283(ACTcar_EsCargoEspecial ;$1)
+
+  //ACTbol_PrintBoletasVR
+C_REAL:C285(ACTbol_PrintBoletasVR ;$8)
+C_REAL:C285(ACTbol_PrintBoletasVR ;$9)
+C_REAL:C285(ACTbol_PrintBoletasVR ;$10)
+
+  //ACTio_LimpiaNumCuenta
+C_TEXT:C284(ACTio_LimpiaNumCuenta ;$0)
+C_TEXT:C284(ACTio_LimpiaNumCuenta ;$1)
+
+  //ACTmyt_SincronizaSII
+C_TEXT:C284(ACTmyt_SincronizaSII ;$1)
+C_TEXT:C284(ACTmyt_SincronizaSII ;$2)
+
+  //SR_VerificaCodigo
+C_TEXT:C284(SR_VerificaCodigo ;$0)
+C_TEXT:C284(SR_VerificaCodigo ;$1)
+
+  //SRACTbol_MorosidadDesdeBoletas
+C_REAL:C285(SRACTbol_MorosidadDesdeBoletas ;$1)
+
+  //hmBC_text2PictCode39
+C_PICTURE:C286(hmBC_text2PictCode39 ;$0)
+C_TEXT:C284(hmBC_text2PictCode39 ;$1)
+C_REAL:C285(hmBC_text2PictCode39 ;$2)
+C_REAL:C285(hmBC_text2PictCode39 ;$3)
+C_REAL:C285(hmBC_text2PictCode39 ;$4)
+
+  //ALrc_GeneralAverages
+C_TEXT:C284(ALrc_GeneralAverages ;$0)
+C_POINTER:C301(ALrc_GeneralAverages ;$1)
+C_POINTER:C301(ALrc_GeneralAverages ;$2)
+C_POINTER:C301(ALrc_GeneralAverages ;$3)
+C_LONGINT:C283(ALrc_GeneralAverages ;$4)
+C_REAL:C285(ALrc_GeneralAverages ;$5)
+C_REAL:C285(ALrc_GeneralAverages ;$6)
+C_REAL:C285(ALrc_GeneralAverages ;$7)
+
+  //EV2_Calculos_PromedioAnual
+C_REAL:C285(EV2_Calculos_PromedioAnual ;$0)
+
+  //EV2_Literal_Aplicacion
+C_TEXT:C284(EV2_Literal_Aplicacion ;$0)
+C_TEXT:C284(EV2_Literal_Aplicacion ;$1)
+
+  //EV2_Literal_Sistema
+C_TEXT:C284(EV2_Literal_Sistema ;$0)
+C_TEXT:C284(EV2_Literal_Sistema ;$1)
+
+  //EV2_Nota_a_Real
+C_REAL:C285(EV2_Nota_a_Real ;$0)
+C_REAL:C285(EV2_Nota_a_Real ;$1)
+C_REAL:C285(EV2_Nota_a_Real ;$2)
+
+  //EV2_PonderaEvaluacion
+C_REAL:C285(EV2_PonderaEvaluacion ;$0)
+C_REAL:C285(EV2_PonderaEvaluacion ;$1)
+C_REAL:C285(EV2_PonderaEvaluacion ;$2)
+
+  //EV2_Puntos_a_Real
+C_REAL:C285(EV2_Puntos_a_Real ;$0)
+C_REAL:C285(EV2_Puntos_a_Real ;$1)
+C_REAL:C285(EV2_Puntos_a_Real ;$2)
+
+  //EV2_Real_a_Literal
+C_TEXT:C284(EV2_Real_a_Literal ;$0)
+C_REAL:C285(EV2_Real_a_Literal ;$1)
+C_LONGINT:C283(EV2_Real_a_Literal ;$2)
+C_LONGINT:C283(EV2_Real_a_Literal ;$3)
+C_LONGINT:C283(EV2_Real_a_Literal ;$4)
+C_LONGINT:C283(EV2_Real_a_Literal ;$5)
+
+  //EV2_Real_a_Puntos
+C_REAL:C285(EV2_Real_a_Puntos ;$0)
+C_REAL:C285(EV2_Real_a_Puntos ;$1)
+C_REAL:C285(EV2_Real_a_Puntos ;$2)
+C_LONGINT:C283(EV2_Real_a_Puntos ;$3)
+C_BOOLEAN:C305(EV2_Real_a_Puntos ;$4)
+C_REAL:C285(EV2_Real_a_Puntos ;$5)
+
+  //EV2_Simbolo_a_Real
+C_REAL:C285(EV2_Simbolo_a_Real ;$0)
+C_TEXT:C284(EV2_Simbolo_a_Real ;$1)
+C_TEXT:C284(IT_HCenterObjects_onResize ;${1})
+
+  //NIV_VerifyEnteredGrades
+C_POINTER:C301(NIV_VerifyEnteredGrades ;$1)
+C_POINTER:C301(NIV_VerifyEnteredGrades ;$2)
+
+  //NTA_GradeValue2Percent
+C_REAL:C285(NTA_GradeValue2Percent ;$0)
+C_TEXT:C284(NTA_GradeValue2Percent ;$1)
+
+  //NTA_PercentValue2Grade
+C_TEXT:C284(NTA_PercentValue2Grade ;$0)
+C_REAL:C285(NTA_PercentValue2Grade ;$1)
+C_REAL:C285(NTA_PercentValue2Grade ;$2)
+C_REAL:C285(NTA_PercentValue2Grade ;$3)
+C_BOOLEAN:C305(NTA_PercentValue2Grade ;$4)
+C_REAL:C285(NTA_PercentValue2Grade ;$5)
+
+  //NTA_PercentValue2Points
+C_TEXT:C284(NTA_PercentValue2Points ;$0)
+C_REAL:C285(NTA_PercentValue2Points ;$1)
+C_REAL:C285(NTA_PercentValue2Points ;$2)
+C_REAL:C285(NTA_PercentValue2Points ;$3)
+C_BOOLEAN:C305(NTA_PercentValue2Points ;$4)
+C_REAL:C285(NTA_PercentValue2Points ;$5)
+
+  //NTA_PercentValue2Symbol
+C_TEXT:C284(NTA_PercentValue2Symbol ;$0)
+C_REAL:C285(NTA_PercentValue2Symbol ;$1)
+
+  //NTA_PointValue2Percent
+C_REAL:C285(NTA_PointValue2Percent ;$0)
+C_TEXT:C284(NTA_PointValue2Percent ;$1)
+
+  //NTA_SymbolValue2Percent
+C_REAL:C285(NTA_SymbolValue2Percent ;$0)
+C_TEXT:C284(NTA_SymbolValue2Percent ;$1)
+
+  //xDOC_Picture_StoreBlob
+C_LONGINT:C283(xDOC_Picture_StoreBlob ;$0)
+C_TEXT:C284(xDOC_Picture_StoreBlob ;$1)
+C_TEXT:C284(xDOC_Picture_StoreBlob ;$2)
+C_BLOB:C604(xDOC_Picture_StoreBlob ;$3)
+
+  //xDOC_Picture_SetMaxSize
+C_POINTER:C301(xDOC_Picture_SetMaxSize ;$1)
+C_LONGINT:C283(xDOC_Picture_SetMaxSize ;$2)
+
+  //xDOC_Picture_SaveToFile
+C_TEXT:C284(xDOC_Picture_SaveToFile ;$1)
+C_TEXT:C284(xDOC_Picture_SaveToFile ;$2)
+C_TEXT:C284(xDOC_Picture_SaveToFile ;$3)
+
+  //xDOC_Picture_Resize
+C_POINTER:C301(xDOC_Picture_Resize ;$1)
+C_LONGINT:C283(xDOC_Picture_Resize ;$2)
+C_LONGINT:C283(xDOC_Picture_Resize ;$3)
+
+  //XDOC_Picture_Remove
+C_TEXT:C284(XDOC_Picture_Remove ;$1)
+
+  //xDOC_Picture_IsCodecAvailable
+C_BOOLEAN:C305(xDOC_Picture_IsCodecAvailable ;$0)
+C_TEXT:C284(xDOC_Picture_IsCodecAvailable ;$1)
+
+  //XDOC_Picture_GetEntityRefs
+C_BLOB:C604(XDOC_Picture_GetEntityRefs ;$0)
+C_TEXT:C284(XDOC_Picture_GetEntityRefs ;$1)
+
+  //xDOC_Picture_GetBlob
+C_BLOB:C604(xDOC_Picture_GetBlob ;$0)
+C_TEXT:C284(xDOC_Picture_GetBlob ;$1)
+
+  //xDOC_Picture_Convert
+C_POINTER:C301(xDOC_Picture_Convert ;$1)
+C_TEXT:C284(xDOC_Picture_Convert ;$2)
+C_REAL:C285(xDOC_Picture_Convert ;$3)
+
+  //XDOC_ExternalDB_GetPath
+C_TEXT:C284(XDOC_ExternalDB_GetPath ;$0)
+
+  //XDOC_ExternalDB_Create
+C_LONGINT:C283(XDOC_ExternalDB_Create ;$0)
+C_TEXT:C284(XDOC_ExternalDB_Create ;$1)
+
+  //EV2_Real_a_Simbolo
+C_TEXT:C284(EV2_Real_a_Simbolo ;$0)
+C_REAL:C285(EV2_Real_a_Simbolo ;$1)
+C_REAL:C285(EV2_Real_a_Simbolo ;$2)
+C_REAL:C285(EV2_Real_a_Simbolo ;$3)
+
+  //EV2dbu_NormalizaSepDecimal
+C_REAL:C285(EV2dbu_NormalizaSepDecimal ;$1)
+
+  //ST_LimpiaTexto
+C_POINTER:C301(ST_LimpiaTexto ;$1)
+
+  //ST_Coerce_to_Text_Old
+C_TEXT:C284(ST_Coerce_to_Text_Old ;$0)
+C_POINTER:C301(ST_Coerce_to_Text_Old ;$1)
+C_BOOLEAN:C305(ST_Coerce_to_Text_Old ;$2)
+
+  //ACTcfg_CreaLogItem
+C_TEXT:C284(ACTcfg_CreaLogItem ;$0)
+C_POINTER:C301(ACTcfg_CreaLogItem ;$1)
+
+  //ACTac_FijaMontosMonedaVariable
+C_BOOLEAN:C305(ACTac_FijaMontosMonedaVariable ;$0)
+C_TEXT:C284(ACTac_FijaMontosMonedaVariable ;$1)
+
+  //SR_CaseSubstitution
+C_TEXT:C284(SR_CaseSubstitution ;$0)
+C_TEXT:C284(SR_CaseSubstitution ;$1)
+
+  //STRal_CreaHistorico
+C_TEXT:C284(STRal_CreaHistorico ;$1)
+
+  //XDOC_RemoveAttachedDocument
+C_TEXT:C284(XDOC_RemoveAttachedDocument ;$2)
+
+  //ADTcdd_GetFile
+C_TEXT:C284(ADTcdd_GetFile ;$1)
+C_REAL:C285(ADTcdd_GetFile ;$2)
+
+  //ADTcdd_ValidateDocumentSize
+C_BOOLEAN:C305(ADTcdd_ValidateDocumentSize ;$0)
+C_TEXT:C284(ADTcdd_ValidateDocumentSize ;$1)
+C_REAL:C285(ADTcdd_ValidateDocumentSize ;$2)
+C_REAL:C285(ADTcdd_ValidateDocumentSize ;$3)
+
+  //fm_BuscaPersonasAEliminar
+C_TEXT:C284(fm_BuscaPersonasAEliminar ;$1)
+C_POINTER:C301(fm_BuscaPersonasAEliminar ;$2)
+
+  //CU_DeleteSelection
+C_LONGINT:C283(CU_DeleteSelection ;$0)
+
+  //CU_DeleteRec
+C_LONGINT:C283(CU_DeleteRec ;$0)
+C_BOOLEAN:C305(CU_DeleteRec ;$1)
+
+  //XCR_DeleteSelection
+C_LONGINT:C283(XCR_DeleteSelection ;$0)
+
+  //ACTpgs_ActualizaFechaTrans
+C_BOOLEAN:C305(ACTpgs_ActualizaFechaTrans ;$0)
+C_LONGINT:C283(ACTpgs_ActualizaFechaTrans ;$1)
+
+  //CIM_FTP_CreateDirectories
+C_LONGINT:C283(CIM_FTP_CreateDirectories ;$1)
+C_TEXT:C284(CIM_FTP_CreateDirectories ;$2)
+C_TEXT:C284(CIM_FTP_CreateDirectories ;$3)
+C_TEXT:C284(CIM_FTP_CreateDirectories ;$4)
+C_TEXT:C284(CIM_FTP_CreateDirectories ;$5)
+C_TEXT:C284(CIM_FTP_CreateDirectories ;$6)
+
+  //CIM_FTP_DirectoryList
+C_TEXT:C284(CIM_FTP_DirectoryList ;$1)
+
+  //CIM_FTP_Download
+C_REAL:C285(CIM_FTP_Download ;$1)
+
+  //CIM_FTP_GetSubDirectories
+C_BLOB:C604(CIM_FTP_GetSubDirectories ;$0)
+C_TEXT:C284(CIM_FTP_GetSubDirectories ;$1)
+
+  //KRL_GetFileChunk_FromServer
+C_BLOB:C604(KRL_GetFileChunk_FromServer ;$0)
+C_TEXT:C284(KRL_GetFileChunk_FromServer ;$1)
+C_LONGINT:C283(KRL_GetFileChunk_FromServer ;$2)
+C_BOOLEAN:C305(KRL_GetFileChunk_FromServer ;$3)
+
+  //PHP_util_array_to_json
+C_TEXT:C284(PHP_util_array_to_json ;$0)
+C_POINTER:C301(PHP_util_array_to_json ;$1)
+
+  //PHP_zip_archive_to
+C_BOOLEAN:C305(PHP_zip_archive_to ;$0)
+C_TEXT:C284(PHP_zip_archive_to ;$1)
+C_TEXT:C284(PHP_zip_archive_to ;$2)
+
+  //PHP_zip_extract_to
+C_BOOLEAN:C305(PHP_zip_extract_to ;$0)
+C_TEXT:C284(PHP_zip_extract_to ;$1)
+C_TEXT:C284(PHP_zip_extract_to ;$2)
+C_POINTER:C301(PHP_zip_extract_to ;$3)
+
+  //SYS_CreateFolder
+C_REAL:C285(SYS_CreateFolder ;$0)
+
+  //SYS_DisplayNotification
+C_TEXT:C284(SYS_DisplayNotification ;$1)
+C_TEXT:C284(SYS_DisplayNotification ;$2)
+C_LONGINT:C283(SYS_DisplayNotification ;$3)
+
+  //SYS_GetlocalFolderSize
+C_REAL:C285(SYS_GetlocalFolderSize ;$0)
+C_TEXT:C284(SYS_GetlocalFolderSize ;$1)
+
+  //SYS_GetServerDocumentList
+C_BLOB:C604(SYS_GetServerDocumentList ;$0)
+C_TEXT:C284(SYS_GetServerDocumentList ;$1)
+
+  //SYS_GetServerDocumentSize
+C_REAL:C285(SYS_GetServerDocumentSize ;$0)
+C_TEXT:C284(SYS_GetServerDocumentSize ;$1)
+C_BOOLEAN:C305(SYS_GetServerDocumentSize ;$2)
+
+  //SYS_GetServerFolderSize
+C_REAL:C285(SYS_GetServerFolderSize ;$0)
+C_TEXT:C284(SYS_GetServerFolderSize ;$1)
+
+  //SYS_IsDirectoryWritable
+C_BOOLEAN:C305(SYS_IsDirectoryWritable ;$0)
+C_TEXT:C284(SYS_IsDirectoryWritable ;$1)
+
+  //SYS_Notify
+C_TEXT:C284(SYS_Notify ;$1)
+C_TEXT:C284(SYS_Notify ;$2)
+C_LONGINT:C283(SYS_Notify ;$3)
+
+  //FTP_CIM_Upload
+C_LONGINT:C283(FTP_CIM_Upload ;$1)
+C_TEXT:C284(FTP_CIM_Upload ;$2)
+C_TEXT:C284(FTP_CIM_Upload ;$3)
+C_TEXT:C284(FTP_CIM_Upload ;$4)
+C_TEXT:C284(FTP_CIM_Upload ;$5)
+C_TEXT:C284(FTP_CIM_Upload ;$6)
+C_TEXT:C284(FTP_CIM_Upload ;$7)
+
+  //USR_GetUserEventDescription
+C_TEXT:C284(USR_GetUserEventDescription ;$0)
+
+  //USR_GetUserEventTableInfo
+C_TEXT:C284(USR_GetUserEventTableInfo ;$0)
+
+  //USR_GetUserEventDate
+C_TEXT:C284(USR_GetUserEventDate ;$0)
+
+  //MNU_ModuleRefMenus_AppendItem
+C_LONGINT:C283(MNU_ModuleRefMenus_AppendItem ;$8)
+
+  //dhBWR_OnCancelRecordEdition
+C_BOOLEAN:C305(dhBWR_OnCancelRecordEdition ;$0)
+C_POINTER:C301(dhBWR_OnCancelRecordEdition ;$1)
+
+  //BWR_OnCancelRecordEdition
+C_BOOLEAN:C305(BWR_OnCancelRecordEdition ;$0)
+C_POINTER:C301(BWR_OnCancelRecordEdition ;$1)
+
+  //dbuACT_VerificaCargosPagados
+C_TEXT:C284(dbuACT_VerificaCargosPagados ;$1)
+C_POINTER:C301(ACTcfg_OpcionesCambioEstadoPago ;${2})
+C_TEXT:C284(ACTcfg_OpcionesCambioEstadoPago ;$1)
+
+  //ACTcfg_OpcionesContabilidad
+C_TEXT:C284(ACTcfg_OpcionesContabilidad ;$0)
+C_POINTER:C301(ACTcfg_OpcionesContabilidad ;${2})
+C_TEXT:C284(ACTcfg_OpcionesContabilidad ;$1)
+
+  //ACTcfg_OpcionesEstadosPagos
+C_TEXT:C284(ACTcfg_OpcionesEstadosPagos ;$0)
+C_POINTER:C301(ACTcfg_OpcionesEstadosPagos ;${2})
+C_TEXT:C284(ACTcfg_OpcionesEstadosPagos ;$1)
+C_POINTER:C301(ACTcfg_OpcionesGenABancarios ;${2})
+C_TEXT:C284(ACTcfg_OpcionesGenABancarios ;$1)
+
+  //ACTcfg_OpcionesMovimientos
+C_TEXT:C284(ACTcfg_OpcionesMovimientos ;$0)
+C_POINTER:C301(ACTcfg_OpcionesMovimientos ;${2})
+C_TEXT:C284(ACTcfg_OpcionesMovimientos ;$1)
+
+  //ACTdp_fSave
+C_TEXT:C284(ACTdp_fSave ;$0)
+C_POINTER:C301(ACTfdp_EstadosXDefecto ;${2})
+C_TEXT:C284(ACTfdp_EstadosXDefecto ;$1)
+
+  //ACTio_OpcionesArchivos
+C_TEXT:C284(ACTio_OpcionesArchivos ;$0)
+C_POINTER:C301(ACTio_OpcionesArchivos ;${2})
+C_TEXT:C284(ACTio_OpcionesArchivos ;$1)
+
+  //ACTmov_CreateRecord
+C_LONGINT:C283(ACTmov_CreateRecord ;$0)
+C_LONGINT:C283(ACTmov_CreateRecord ;$1)
+C_LONGINT:C283(ACTmov_CreateRecord ;$2)
+C_LONGINT:C283(ACTmov_CreateRecord ;$3)
+
+  //ACTpagares_Delete
+C_LONGINT:C283(ACTpagares_Delete ;$0)
+
+  //ACTpagares_DeleteSelection
+C_LONGINT:C283(ACTpagares_DeleteSelection ;$0)
+
+  //ACTpagares_fSave
+C_LONGINT:C283(ACTpagares_fSave ;$0)
+
+  //ACTpagares_OnRecordLoad
+C_REAL:C285(ACTpagares_OnRecordLoad ;$1)
+
+  //ACTpgr_CreateRecord
+C_LONGINT:C283(ACTpgr_CreateRecord ;$0)
+C_POINTER:C301(ACTpgr_CreateRecord ;$1)
+C_TEXT:C284(ACTpgr_CreateRecord ;$2)
+C_DATE:C307(ACTpgr_CreateRecord ;$3)
+C_TEXT:C284(ACTpgr_CreateRecord ;$4)
+C_REAL:C285(ACTpgr_CreateRecord ;$5)
+C_REAL:C285(ACTpgr_CreateRecord ;$6)
+C_REAL:C285(ACTpgr_CreateRecord ;$7)
+
+  //ACTpgs_AsignaCuentasContables
+C_BOOLEAN:C305(ACTpgs_AsignaCuentasContables ;$0)
+C_POINTER:C301(ACTpgs_AsignaCuentasContables ;$1)
+
+  //ACTpgs_ReempCarteraAnulaDocPago
+C_REAL:C285(ACTpgs_ReempCarteraAnulaDocPago ;$0)
+C_POINTER:C301(ACTpgs_ReempCarteraAnulaDocPago ;$1)
+C_POINTER:C301(ACTpgs_ReempCarteraAnulaDocPago ;$2)
+
+  //ACTpp_OpcionesCalculoMontos
+C_BOOLEAN:C305(ACTpp_OpcionesCalculoMontos ;$0)
+C_POINTER:C301(ACTpp_OpcionesCalculoMontos ;${2})
+C_TEXT:C284(ACTpp_OpcionesCalculoMontos ;$1)
+
+  //xAL_ACT_CB_CuentasEspeciales
+C_BOOLEAN:C305(xAL_ACT_CB_CuentasEspeciales ;$0)
+C_LONGINT:C283(xAL_ACT_CB_CuentasEspeciales ;$1)
+C_LONGINT:C283(xAL_ACT_CB_CuentasEspeciales ;$2)
+C_LONGINT:C283(xAL_ACT_CB_CuentasEspeciales ;$3)
+
+  //ALP_SetPercentageWidths
+C_REAL:C285(ALP_SetPercentageWidths ;$1)
+
+  //pCALL_BWR2_StartBrowser
+C_REAL:C285(pCALL_BWR2_StartBrowser ;$1)
+
+  //PF_SetTutoriasClr2
+C_LONGINT:C283(PF_SetTutoriasClr2 ;$1)
+C_LONGINT:C283(PF_SetTutoriasClr2 ;$2)
+
+  //SN3_DoesLevelPublish
+C_REAL:C285(SN3_DoesLevelPublish ;$0)
+C_LONGINT:C283(SN3_DoesLevelPublish ;$1)
+C_REAL:C285(SN3_DoesLevelPublish ;$2)
+C_REAL:C285(SN3_DoesLevelPublish ;$3)
+
+  //AScsd_InicializaPropiedades
+C_LONGINT:C283(AScsd_InicializaPropiedades ;$1)
+
+  //AL_CalculaSituacionfinal_xx
+C_BOOLEAN:C305(AL_CalculaSituacionfinal_xx ;$0)
+C_LONGINT:C283(AL_CalculaSituacionfinal_xx ;$1)
+
+  //AL_CalculaSituacionFinal_mx
+C_BOOLEAN:C305(AL_CalculaSituacionFinal_mx ;$0)
+C_LONGINT:C283(AL_CalculaSituacionFinal_mx ;$1)
+
+  //AL_CalculaSituacionFinal_co
+C_BOOLEAN:C305(AL_CalculaSituacionFinal_co ;$0)
+C_LONGINT:C283(AL_CalculaSituacionFinal_co ;$1)
+
+  //ACTac_EliminaRecargoImportacion
+C_TEXT:C284(ACTac_EliminaRecargoImportacion ;$0)
+C_LONGINT:C283(ACTac_EliminaRecargoImportacion ;$1)
+C_DATE:C307(ACTac_EliminaRecargoImportacion ;$2)
+
+  //ACTcfdi_OpcionesGenerales
+C_TEXT:C284(ACTcfdi_OpcionesGenerales ;$0)
+C_POINTER:C301(ACTcfdi_OpcionesGenerales ;${2})
+C_TEXT:C284(ACTcfdi_OpcionesGenerales ;$1)
+
+  //DOM_GetAttributeValue
+C_TEXT:C284(DOM_GetAttributeValue ;$0)
+C_TEXT:C284(DOM_GetAttributeValue ;$1)
+C_TEXT:C284(DOM_GetAttributeValue ;$2)
+C_TEXT:C284(DOM_GetAttributeValue ;$3)
+
+  //ACTxml_GetValidText
+C_TEXT:C284(ACTxml_GetValidText ;$0)
+C_TEXT:C284(ACTxml_GetValidText ;$1)
+
+  //SYS_CreateFolderOnServer
+C_TEXT:C284(SYS_CreateFolderOnServer ;$1)
+
+  //zzz_ReasignaIDsSubtablas
+C_POINTER:C301(zzz_ReasignaIDsSubtablas ;$1)
+C_REAL:C285(zzz_ReasignaIDsSubtablas ;$2)
+
+  //USR_GetGroupMemberList
+C_LONGINT:C283(USR_GetGroupMemberList ;$1)
+C_REAL:C285(USR_GetGroupMemberList ;$2)
+
+  //KRL_RelateSelection
+C_REAL:C285(KRL_RelateSelection ;$0)
+C_POINTER:C301(KRL_RelateSelection ;$1)
+C_POINTER:C301(KRL_RelateSelection ;$2)
+C_TEXT:C284(KRL_RelateSelection ;$3)
+
+  //LBX_EditItem_byObjectPointer
+C_TEXT:C284(LBX_EditItem_byObjectPointer ;$1)
+C_POINTER:C301(LBX_EditItem_byObjectPointer ;$2)
+C_LONGINT:C283(LBX_EditItem_byObjectPointer ;$3)
+
+  //LBX_EditItem_byObjectName
+C_TEXT:C284(LBX_EditItem_byObjectName ;$1)
+C_TEXT:C284(LBX_EditItem_byObjectName ;$2)
+C_LONGINT:C283(LBX_EditItem_byObjectName ;$3)
+
+  //LBX_EditItem_byColNum
+C_TEXT:C284(LBX_EditItem_byColNum ;$1)
+C_LONGINT:C283(LBX_EditItem_byColNum ;$2)
+C_LONGINT:C283(LBX_EditItem_byColNum ;$3)
+
+  //LBX_HandleEvents
+C_LONGINT:C283(LBX_HandleEvents ;$0)
+C_TEXT:C284(LBX_HandleEvents ;$1)
+C_POINTER:C301(LBX_HandleEvents ;$2)
+C_TEXT:C284(LBX_HandleEvents ;$3)
+C_TEXT:C284(LBX_HandleEvents ;$4)
+
+  //ACTbol_BuscaCargosCargaSet
+C_TEXT:C284(ACTbol_BuscaCargosCargaSet ;$1)
+C_LONGINT:C283(ACTbol_BuscaCargosCargaSet ;$2)
+
+  //AL_CalculaSituacionFinal_ar
+C_BOOLEAN:C305(AL_CalculaSituacionFinal_ar ;$0)
+C_LONGINT:C283(AL_CalculaSituacionFinal_ar ;$1)
+
+  //dhQF2_OpenFindDialog
+C_BOOLEAN:C305(dhQF2_OpenFindDialog ;$0)
+
+  //dhQF2_PreProcessValue
+C_TEXT:C284(dhQF2_PreProcessValue ;$0)
+C_TEXT:C284(dhQF2_PreProcessValue ;$1)
+
+  //ORDER_LoadEditorData
+C_BOOLEAN:C305(ORDER_LoadEditorData ;$1)
+
+  //EXE_StyleCodeText
+C_POINTER:C301(EXE_StyleCodeText ;$1)
+
+  //ACTdp_OpcionesHistorialReemplaz
+C_LONGINT:C283(ACTdp_OpcionesHistorialReemplaz ;$0)
+C_POINTER:C301(ACTdp_OpcionesHistorialReemplaz ;${2})
+C_TEXT:C284(ACTdp_OpcionesHistorialReemplaz ;$1)
+
+  //SRACTbol_CargaPagos
+C_LONGINT:C283(SRACTbol_CargaPagos ;$1)
+C_LONGINT:C283(SRACTbol_CargaPagos ;$2)
+
+  //ACTbol_GeneraArchivoDigital
+C_REAL:C285(ACTbol_GeneraArchivoDigital ;$1)
+
+  //ACTdte_OpcionesGenerales
+C_TEXT:C284(ACTdte_OpcionesGenerales ;$0)
+C_POINTER:C301(ACTdte_OpcionesGenerales ;${2})
+C_TEXT:C284(ACTdte_OpcionesGenerales ;$1)
+
+  //SYS_CopyFileOnServer
+C_REAL:C285(SYS_CopyFileOnServer ;$0)
+C_TEXT:C284(SYS_CopyFileOnServer ;$1)
+C_TEXT:C284(SYS_CopyFileOnServer ;$2)
+C_BOOLEAN:C305(SYS_CopyFileOnServer ;$3)
+C_POINTER:C301(ACTexe_CambiarTasaInteres ;${2})
+C_TEXT:C284(ACTexe_CambiarTasaInteres ;$1)
+
+  //dbu_verifyStudentMigration
+C_POINTER:C301(dbu_verifyStudentMigration ;$1)
+C_BOOLEAN:C305(dbu_verifyStudentMigration ;$2)
+
+  //SOPORTE_CreaNotas
+C_LONGINT:C283(SOPORTE_CreaNotas ;$1)
+
+  //PF_OnRecordLoad
+C_REAL:C285(PF_OnRecordLoad ;$1)
+
+  //MPAdbu_Recalculos
+C_LONGINT:C283(MPAdbu_Recalculos ;$0)
+C_BLOB:C604(MPAdbu_Recalculos ;$1)
+C_BOOLEAN:C305(MPAdbu_Recalculos ;$2)
+C_BOOLEAN:C305(MPAdbu_Recalculos ;$3)
+C_BOOLEAN:C305(MPAdbu_Recalculos ;$4)
+C_BOOLEAN:C305(MPAdbu_Recalculos ;$5)
+
+  //MPA_Recalculos_Matriz
+C_LONGINT:C283(MPA_Recalculos_Matriz ;$1)
+C_BOOLEAN:C305(MPA_Recalculos_Matriz ;$2)
+C_BOOLEAN:C305(MPA_Recalculos_Matriz ;$3)
+C_BOOLEAN:C305(MPA_Recalculos_Matriz ;$4)
+C_BOOLEAN:C305(MPA_Recalculos_Matriz ;$5)
+
+  //MPA_PeriodosEvaluados
+C_LONGINT:C283(MPA_PeriodosEvaluados ;$0)
+
+  //MPA_EvaluacionesModificadas
+C_BOOLEAN:C305(MPA_EvaluacionesModificadas ;$0)
+
+  //MPA_Calculos_PromedioEvals
+C_REAL:C285(MPA_Calculos_PromedioEvals ;$0)
+C_POINTER:C301(MPA_Calculos_PromedioEvals ;$1)
+C_POINTER:C301(MPA_Calculos_PromedioEvals ;$2)
+C_REAL:C285(MPA_Calculos_PromedioEvals ;$3)
+
+  //MPA_Calculos_FinalP_onServer
+C_LONGINT:C283(MPA_Calculos_FinalP_onServer ;$1)
+C_LONGINT:C283(MPA_Calculos_FinalP_onServer ;$2)
+C_LONGINT:C283(MPA_Calculos_FinalP_onServer ;$3)
+
+  //MPA_Calculos_EJE_onServer
+C_BOOLEAN:C305(MPA_Calculos_EJE_onServer ;$0)
+C_LONGINT:C283(MPA_Calculos_EJE_onServer ;$1)
+C_LONGINT:C283(MPA_Calculos_EJE_onServer ;$2)
+C_LONGINT:C283(MPA_Calculos_EJE_onServer ;$3)
+C_LONGINT:C283(MPA_Calculos_EJE_onServer ;$4)
+C_REAL:C285(MPA_Calculos_EJE_onServer ;$5)
+C_REAL:C285(MPA_Calculos_EJE_onServer ;$6)
+
+  //MPA_Calculos_DIM_onServer
+C_BOOLEAN:C305(MPA_Calculos_DIM_onServer ;$0)
+C_LONGINT:C283(MPA_Calculos_DIM_onServer ;$1)
+C_LONGINT:C283(MPA_Calculos_DIM_onServer ;$2)
+C_LONGINT:C283(MPA_Calculos_DIM_onServer ;$3)
+C_LONGINT:C283(MPA_Calculos_DIM_onServer ;$4)
+C_REAL:C285(MPA_Calculos_DIM_onServer ;$5)
+C_REAL:C285(MPA_Calculos_DIM_onServer ;$6)
+
+  //MPA_Calculos_CargaObjetosMatriz
+C_LONGINT:C283(MPA_Calculos_CargaObjetosMatriz ;$1)
+C_LONGINT:C283(MPA_Calculos_CargaObjetosMatriz ;$2)
+C_LONGINT:C283(MPA_Calculos_CargaObjetosMatriz ;$3)
+C_LONGINT:C283(MPA_Calculos_CargaObjetosMatriz ;$4)
+C_LONGINT:C283(MPA_Calculos_CargaObjetosMatriz ;$5)
+
+  //MB_GetMenuList
+C_POINTER:C301(MB_GetMenuList ;$1)
+C_LONGINT:C283(MB_GetMenuList ;$2)
+
+  //MB_GetMenuItemList
+C_LONGINT:C283(MB_GetMenuItemList ;$1)
+C_POINTER:C301(MB_GetMenuItemList ;$2)
+C_LONGINT:C283(MB_GetMenuItemList ;$3)
+
+  //MB_FindMenuInMenuBar
+C_REAL:C285(MB_FindMenuInMenuBar ;$0)
+C_TEXT:C284(MB_FindMenuInMenuBar ;$1)
+C_TEXT:C284(MB_FindMenuInMenuBar ;$2)
+
+  //MB_FindItemInMenu
+C_REAL:C285(MB_FindItemInMenu ;$0)
+C_LONGINT:C283(MB_FindItemInMenu ;$1)
+C_TEXT:C284(MB_FindItemInMenu ;$2)
+C_LONGINT:C283(MB_FindItemInMenu ;$3)
+
+  //FTP_VerifyConexionStatus
+C_REAL:C285(FTP_VerifyConexionStatus ;$0)
+C_REAL:C285(FTP_VerifyConexionStatus ;$1)
+C_TEXT:C284(FTP_VerifyConexionStatus ;$2)
+C_TEXT:C284(FTP_VerifyConexionStatus ;$3)
+C_TEXT:C284(FTP_VerifyConexionStatus ;$4)
+C_POINTER:C301(FTP_VerifyConexionStatus ;$5)
+C_REAL:C285(FTP_VerifyConexionStatus ;$6)
+
+  //EV2_validaIndicadorEsfuerzo
+C_BOOLEAN:C305(EV2_validaIndicadorEsfuerzo ;$0)
+C_TEXT:C284(EV2_validaIndicadorEsfuerzo ;$1)
+C_POINTER:C301(EV2_validaIndicadorEsfuerzo ;$2)
+C_POINTER:C301(EV2_validaIndicadorEsfuerzo ;$3)
+
+  //EV2_validaCalificacion
+C_BOOLEAN:C305(EV2_validaCalificacion ;$0)
+C_TEXT:C284(EV2_validaCalificacion ;$1)
+C_POINTER:C301(EV2_validaCalificacion ;$2)
+C_POINTER:C301(EV2_validaCalificacion ;$3)
+
+  //EV2_UpdateInfoCalificaciones
+C_LONGINT:C283(EV2_UpdateInfoCalificaciones ;$1)
+C_POINTER:C301(EV2_UpdateInfoCalificaciones ;$2)
+C_TEXT:C284(EV2_UpdateInfoCalificaciones ;$3)
+C_TEXT:C284(EV2_UpdateInfoCalificaciones ;$4)
+
+  //EV2_TareasRecalculosPromedios
+C_BLOB:C604(EV2_TareasRecalculosPromedios ;$1)
+
+  //EV2_RegistroHaSidoEvaluado
+C_REAL:C285(EV2_RegistroHaSidoEvaluado ;$0)
+
+  //EV2_PromediosModificados
+C_BOOLEAN:C305(EV2_PromediosModificados ;$0)
+C_REAL:C285(EV2_PromediosModificados ;$1)
+
+  //EV2_InicializaPromedios
+C_REAL:C285(EV2_InicializaPromedios ;$0)
+
+  //EV2_CambiaEstiloEvaluacion
+C_LONGINT:C283(EV2_CambiaEstiloEvaluacion ;$1)
+C_LONGINT:C283(EV2_CambiaEstiloEvaluacion ;$2)
+
+  //EV2_BorraPromedios
+C_BOOLEAN:C305(EV2_BorraPromedios ;$0)
+C_LONGINT:C283(EV2_BorraPromedios ;$1)
+
+  //ASev2_RegistraInasistencia
+C_BOOLEAN:C305(ASev2_RegistraInasistencia ;$0)
+C_LONGINT:C283(ASev2_RegistraInasistencia ;$1)
+C_LONGINT:C283(ASev2_RegistraInasistencia ;$2)
+C_POINTER:C301(ASev2_RegistraInasistencia ;$3)
+
+  //ASev2_registraEsfuerzo
+C_BOOLEAN:C305(ASev2_registraEsfuerzo ;$0)
+C_LONGINT:C283(ASev2_registraEsfuerzo ;$1)
+C_TEXT:C284(ASev2_registraEsfuerzo ;$2)
+C_POINTER:C301(ASev2_registraEsfuerzo ;$3)
+
+  //ASev2_refrescaPlanilla
+C_POINTER:C301(ASev2_refrescaPlanilla ;$1)
+
+  //ASev2_punteroSimbolo
+C_POINTER:C301(ASev2_punteroSimbolo ;$0)
+C_TEXT:C284(ASev2_punteroSimbolo ;$1)
+C_LONGINT:C283(ASev2_punteroSimbolo ;$2)
+
+  //ASev2_punteroReal
+C_POINTER:C301(ASev2_punteroReal ;$0)
+C_TEXT:C284(ASev2_punteroReal ;$1)
+C_LONGINT:C283(ASev2_punteroReal ;$2)
+
+  //ASev2_punteroPuntos
+C_POINTER:C301(ASev2_punteroPuntos ;$0)
+C_TEXT:C284(ASev2_punteroPuntos ;$1)
+C_LONGINT:C283(ASev2_punteroPuntos ;$2)
+
+  //ASev2_punteroNota
+C_POINTER:C301(ASev2_punteroNota ;$0)
+C_TEXT:C284(ASev2_punteroNota ;$1)
+C_LONGINT:C283(ASev2_punteroNota ;$2)
+
+  //ASev2_punteroLiteral
+C_POINTER:C301(ASev2_punteroLiteral ;$0)
+C_TEXT:C284(ASev2_punteroLiteral ;$1)
+C_LONGINT:C283(ASev2_punteroLiteral ;$2)
+
+  //AScsd_VerificaAsignaciones
+C_BOOLEAN:C305(AScsd_VerificaAsignaciones ;$0)
+C_LONGINT:C283(AScsd_VerificaAsignaciones ;$1)
+C_LONGINT:C283(AScsd_VerificaAsignaciones ;$2)
+C_REAL:C285(AScsd_VerificaAsignaciones ;$3)
+
+  //AScsd_LeeReferencias
+C_LONGINT:C283(AScsd_LeeReferencias ;$1)
+C_LONGINT:C283(AScsd_LeeReferencias ;$2)
+
+  //AScsd_EliminaReferencias
+C_LONGINT:C283(AScsd_EliminaReferencias ;$0)
+C_LONGINT:C283(AScsd_EliminaReferencias ;$1)
+C_LONGINT:C283(AScsd_EliminaReferencias ;$2)
+C_REAL:C285(AScsd_EliminaReferencias ;$3)
+
+  //AScsd_CopiaPropiedadesPeriodos
+C_BOOLEAN:C305(AScsd_CopiaPropiedadesPeriodos ;$0)
+C_LONGINT:C283(AScsd_CopiaPropiedadesPeriodos ;$1)
+C_TEXT:C284(AScsd_CopiaPropiedadesPeriodos ;$2)
+
+  //AScsd_AsignaAsignaturaHija
+C_BOOLEAN:C305(AScsd_AsignaAsignaturaHija ;$0)
+C_LONGINT:C283(AScsd_AsignaAsignaturaHija ;$1)
+C_TEXT:C284(AScsd_AsignaAsignaturaHija ;$2)
+C_LONGINT:C283(AScsd_AsignaAsignaturaHija ;$3)
+C_LONGINT:C283(AScsd_AsignaAsignaturaHija ;$4)
+C_TEXT:C284(AScsd_AsignaAsignaturaHija ;$5)
+
+  //AS_SetGradeOptions
+C_LONGINT:C283(AS_SetGradeOptions ;$1)
+
+  //AS_ReemplazaEstiloEvaluacion
+C_BLOB:C604(AS_ReemplazaEstiloEvaluacion ;$1)
+C_TEXT:C284(AS_ReemplazaEstiloEvaluacion ;$2)
+C_BOOLEAN:C305(AS_ReemplazaEstiloEvaluacion ;$3)
+
+  //AS_PropEval_Lectura
+C_TEXT:C284(AS_PropEval_Lectura ;$1)
+C_LONGINT:C283(AS_PropEval_Lectura ;$2)
+
+  //AS_PromediosSonEditables
+C_BOOLEAN:C305(AS_PromediosSonEditables ;$0)
+C_LONGINT:C283(AS_PromediosSonEditables ;$1)
+
+  //AS_PromediosSonCalculados
+C_BOOLEAN:C305(AS_PromediosSonCalculados ;$0)
+C_LONGINT:C283(AS_PromediosSonCalculados ;$1)
+
+  //AS_DeleteSelection
+C_REAL:C285(AS_DeleteSelection ;$0)
+
+  //AS_Delete
+C_REAL:C285(AS_Delete ;$0)
+
+  //AL_PaginaIdentificacion
+C_LONGINT:C283(AL_PaginaIdentificacion ;$0)
+
+  //SYS_getTextFileProperties
+C_LONGINT:C283(SYS_getTextFileProperties ;$0)
+C_TEXT:C284(SYS_getTextFileProperties ;$1)
+C_REAL:C285(SYS_getTextFileProperties ;$2)
+C_POINTER:C301(SYS_getTextFileProperties ;$3)
+C_POINTER:C301(SYS_getTextFileProperties ;$4)
+C_POINTER:C301(SYS_getTextFileProperties ;$5)
+C_POINTER:C301(SYS_getTextFileProperties ;$6)
+
+  //EV2_Calculos_Server
+C_BOOLEAN:C305(EV2_Calculos_Server ;$0)
+C_LONGINT:C283(EV2_Calculos_Server ;$1)
+C_LONGINT:C283(EV2_Calculos_Server ;$2)
+
+  //STWA2_Session_UpdateLastSeen
+C_BOOLEAN:C305(STWA2_Session_UpdateLastSeen ;$0)
+C_TEXT:C284(STWA2_Session_UpdateLastSeen ;$1)
+
+  //STWA2_Session_UnsetSession
+C_TEXT:C284(STWA2_Session_UnsetSession ;$1)
+
+  //STWA2_Session_Reactivate
+C_TEXT:C284(STWA2_Session_Reactivate ;$1)
+
+  //STWA2_Session_IsSessionValid
+C_BOOLEAN:C305(STWA2_Session_IsSessionValid ;$0)
+C_TEXT:C284(STWA2_Session_IsSessionValid ;$1)
+
+  //STWA2_Session_GetUserSTID
+C_LONGINT:C283(STWA2_Session_GetUserSTID ;$0)
+C_TEXT:C284(STWA2_Session_GetUserSTID ;$1)
+
+  //STWA2_Session_GetProfID
+C_LONGINT:C283(STWA2_Session_GetProfID ;$0)
+C_TEXT:C284(STWA2_Session_GetProfID ;$1)
+
+  //STWA2_SendErrJSON
+C_TEXT:C284(STWA2_SendErrJSON ;$0)
+C_TEXT:C284(STWA2_SendErrJSON ;$1)
+C_TEXT:C284(STWA2_SendErrJSON ;$2)
+
+  //STWA2_SendChartableCols
+C_TEXT:C284(STWA2_SendChartableCols ;$0)
+C_REAL:C285(STWA2_SendChartableCols ;$1)
+
+  //STWA2_Selection2JSON
+C_TEXT:C284(STWA2_Selection2JSON ;$0)
+C_POINTER:C301(STWA2_Selection2JSON ;$1)
+C_TEXT:C284(STWA2_Selection2JSON ;$2)
+C_TEXT:C284(STWA2_Selection2JSON ;$3)
+C_TEXT:C284(STWA2_Selection2JSON ;$4)
+
+  //STWA2_MakeDate4JS
+C_TEXT:C284(STWA2_MakeDate4JS ;$0)
+C_DATE:C307(STWA2_MakeDate4JS ;$1)
+C_TEXT:C284(STWA2_MakeDate4JS ;$2)
+
+  //STWA2_JSON_SendError
+C_TEXT:C284(STWA2_JSON_SendError ;$0)
+C_LONGINT:C283(STWA2_JSON_SendError ;$1)
+C_TEXT:C284(STWA2_JSON_SendError ;$2)
+
+  //STWA2_GeneralSearch
+C_TEXT:C284(STWA2_GeneralSearch ;$0)
+
+  //STWA2_AJAX_SendSubNotas
+C_TEXT:C284(STWA2_AJAX_SendSubNotas ;$0)
+C_REAL:C285(STWA2_AJAX_SendSubNotas ;$1)
+C_REAL:C285(STWA2_AJAX_SendSubNotas ;$2)
+C_REAL:C285(STWA2_AJAX_SendSubNotas ;$3)
+C_REAL:C285(STWA2_AJAX_SendSubNotas ;$4)
+
+  //STWA2_AJAX_SendGraficaNotas
+C_TEXT:C284(STWA2_AJAX_SendGraficaNotas ;$0)
+C_LONGINT:C283(STWA2_AJAX_SendGraficaNotas ;$1)
+C_LONGINT:C283(STWA2_AJAX_SendGraficaNotas ;$2)
+C_LONGINT:C283(STWA2_AJAX_SendGraficaNotas ;$3)
+
+  //STWA2_Session_ActualConnections
+C_LONGINT:C283(STWA2_Session_ActualConnections ;$0)
+
+  //dhSTWA2_SpecialSearch
+C_TEXT:C284(dhSTWA2_SpecialSearch ;$1)
+C_POINTER:C301(dhSTWA2_SpecialSearch ;$2)
+C_LONGINT:C283(dhSTWA2_SpecialSearch ;$3)
+C_BOOLEAN:C305(dhSTWA2_SpecialSearch ;$4)
+C_TEXT:C284(IT_SetButtonStateByName ;${2})
+C_BOOLEAN:C305(IT_SetButtonStateByName ;$1)
+C_TEXT:C284(IT_SetEnterableByName ;${2})
+C_BOOLEAN:C305(IT_SetEnterableByName ;$1)
+C_POINTER:C301(IT_SetVisible ;${2})
+C_BOOLEAN:C305(IT_SetVisible ;$1)
+
+  //ACTdc_ValidaDuplicadosInput
+C_POINTER:C301(ACTdc_ValidaDuplicadosInput ;$1)
+
+  //AS_TareasPostEdicionNotas
+C_REAL:C285(AS_TareasPostEdicionNotas ;$1)
+C_TEXT:C284(AS_TareasPostEdicionNotas ;$2)
+
+  //AS_CreaTareasRecalculos
+C_LONGINT:C283(AS_CreaTareasRecalculos ;$1)
+C_POINTER:C301(AS_CreaTareasRecalculos ;$2)
+
+  //MPA_PromediosModificados
+C_BOOLEAN:C305(MPA_PromediosModificados ;$0)
+C_LONGINT:C283(MPA_PromediosModificados ;$1)
+C_TEXT:C284(IT_SetVisibleByName ;${2})
+C_BOOLEAN:C305(IT_SetVisibleByName ;$1)
+
+  //ACTcfg_AsignaCatElect
+C_LONGINT:C283(ACTcfg_AsignaCatElect ;$1)
+
+  //STWA2_AdjustPicture
+C_POINTER:C301(STWA2_AdjustPicture ;$1)
+C_LONGINT:C283(STWA2_AdjustPicture ;$2)
+C_LONGINT:C283(STWA2_AdjustPicture ;$3)
+
+  //ACTbol_OpcionesDuplicacionNC
+C_TEXT:C284(ACTbol_OpcionesDuplicacionNC ;$0)
+C_POINTER:C301(ACTbol_OpcionesDuplicacionNC ;${2})
+C_TEXT:C284(ACTbol_OpcionesDuplicacionNC ;$1)
+
+  //WEB_GenerateCertificate
+C_TEXT:C284(WEB_GenerateCertificate ;$1)
+
+  //TCP_OpenURL
+C_REAL:C285(TCP_OpenURL ;$0)
+C_TEXT:C284(TCP_OpenURL ;$1)
+C_LONGINT:C283(TCP_OpenURL ;$2)
+C_POINTER:C301(TCP_OpenURL ;$3)
+
+  //LOG_RegisterChangeConf
+C_TEXT:C284(LOG_RegisterChangeConf ;$0)
+C_TEXT:C284(LOG_RegisterChangeConf ;$1)
+C_REAL:C285(LOG_RegisterChangeConf ;$2)
+C_BOOLEAN:C305(LOG_RegisterChangeConf ;$3)
+
+  //ACTdc_OpcionesGenerales
+C_TEXT:C284(ACTdc_OpcionesGenerales ;$0)
+C_POINTER:C301(ACTdc_OpcionesGenerales ;${2})
+C_TEXT:C284(ACTdc_OpcionesGenerales ;$1)
+
+  //ST_String2Boolean
+C_BOOLEAN:C305(ST_String2Boolean ;$0)
+C_TEXT:C284(ST_String2Boolean ;$1)
+
+  //ST_Text2Anything
+C_POINTER:C301(ST_Text2Anything ;$1)
+C_TEXT:C284(ST_Text2Anything ;$2)
+
+  //ACTcfg_OpcionesCambioEstadoPaga
+C_TEXT:C284(ACTcfg_OpcionesCambioEstadoPaga ;$0)
+C_POINTER:C301(ACTcfg_OpcionesCambioEstadoPaga ;${2})
+C_TEXT:C284(ACTcfg_OpcionesCambioEstadoPaga ;$1)
+
+  //ACTcfgit_OpcionesGenerales
+C_TEXT:C284(ACTcfgit_OpcionesGenerales ;$0)
+C_POINTER:C301(ACTcfgit_OpcionesGenerales ;${2})
+C_TEXT:C284(ACTcfgit_OpcionesGenerales ;$1)
+
+  //ACTit_CreaRegistro
+C_REAL:C285(ACTit_CreaRegistro ;$1)
+C_REAL:C285(ACTit_CreaRegistro ;$2)
+C_REAL:C285(ACTit_CreaRegistro ;$3)
+C_BOOLEAN:C305(ACTit_CreaRegistro ;$4)
+C_REAL:C285(ACTit_CreaRegistro ;$5)
+
+  //SN3_ActuaDatos_DatosSensibles
+C_BOOLEAN:C305(SN3_ActuaDatos_DatosSensibles ;$0)
+C_LONGINT:C283(SN3_ActuaDatos_DatosSensibles ;$1)
+C_POINTER:C301(SN3_ActuaDatos_DatosSensibles ;$2)
+
+  //SN3_ActuaDatos_INFO_Actua
+C_LONGINT:C283(SN3_ActuaDatos_INFO_Actua ;$1)
+C_DATE:C307(SN3_ActuaDatos_INFO_Actua ;$2)
+C_DATE:C307(SN3_ActuaDatos_INFO_Actua ;$3)
+
+  //SN3_ActuaDatos_LeeXML
+C_TEXT:C284(SN3_ActuaDatos_LeeXML ;$1)
+
+  //SN3_ActuaDatos_LoadTemp2Display
+C_LONGINT:C283(SN3_ActuaDatos_LoadTemp2Display ;$0)
+C_TEXT:C284(SN3_ActuaDatos_LoadTemp2Display ;$1)
+C_POINTER:C301(SN3_ActuaDatos_LoadTemp2Display ;$2)
+C_POINTER:C301(SN3_ActuaDatos_LoadTemp2Display ;$3)
+C_POINTER:C301(SN3_ActuaDatos_LoadTemp2Display ;$4)
+C_POINTER:C301(SN3_ActuaDatos_LoadTemp2Display ;$5)
+C_POINTER:C301(SN3_ActuaDatos_LoadTemp2Display ;$6)
+C_POINTER:C301(SN3_ActuaDatos_LoadTemp2Display ;$7)
+C_POINTER:C301(SN3_ActuaDatos_LoadTemp2Display ;$8)
+
+  //SN3_ActuaDatos_LogArrays
+C_TEXT:C284(SN3_ActuaDatos_LogArrays ;$1)
+C_DATE:C307(SN3_ActuaDatos_LogArrays ;$2)
+C_DATE:C307(SN3_ActuaDatos_LogArrays ;$3)
+C_TEXT:C284(SN3_ActuaDatos_LogArrays ;$4)
+
+  //SN3_ActuaDatos_LogConfArrays
+C_DATE:C307(SN3_ActuaDatos_LogConfArrays ;$1)
+C_DATE:C307(SN3_ActuaDatos_LogConfArrays ;$2)
+
+  //SN3_ActuaDatos_OpenMSG
+C_LONGINT:C283(SN3_ActuaDatos_OpenMSG ;$1)
+
+  //SN3_ActuaDatos_SoloConfirma
+C_BOOLEAN:C305(SN3_ActuaDatos_SoloConfirma ;$0)
+C_LONGINT:C283(SN3_ActuaDatos_SoloConfirma ;$1)
+C_POINTER:C301(SN3_ActuaDatos_SoloConfirma ;$2)
+
+  //SN3_ActuaDatos_Uptade
+C_BOOLEAN:C305(SN3_ActuaDatos_Uptade ;$0)
+C_LONGINT:C283(SN3_ActuaDatos_Uptade ;$1)
+C_POINTER:C301(SN3_ActuaDatos_Uptade ;$2)
+C_TEXT:C284(SN3_ActuaDatos_Uptade ;$3)
+
+  //DOM_Lee_Nodo
+C_TEXT:C284(DOM_Lee_Nodo ;$1)
+C_POINTER:C301(DOM_Lee_Nodo ;$2)
+C_POINTER:C301(DOM_Lee_Nodo ;$3)
+C_REAL:C285(DOM_Lee_Nodo ;$4)
+
+  //sn3ws_envia_correo_totalpendien
+C_TEXT:C284(sn3ws_envia_correo_totalpendien ;$0)
+C_TEXT:C284(sn3ws_envia_correo_totalpendien ;$1)
+C_TEXT:C284(sn3ws_envia_correo_totalpendien ;$2)
+C_TEXT:C284(sn3ws_envia_correo_totalpendien ;$3)
+
+  //sn3ws_envia_correo_totalactuali
+C_TEXT:C284(sn3ws_envia_correo_totalactuali ;$0)
+C_TEXT:C284(sn3ws_envia_correo_totalactuali ;$1)
+C_TEXT:C284(sn3ws_envia_correo_totalactuali ;$2)
+C_TEXT:C284(sn3ws_envia_correo_totalactuali ;$3)
+
+  //sn3ws_ActuaDatos_resultadoproce
+C_TEXT:C284(sn3ws_ActuaDatos_resultadoproce ;$0)
+C_TEXT:C284(sn3ws_ActuaDatos_resultadoproce ;$1)
+C_TEXT:C284(sn3ws_ActuaDatos_resultadoproce ;$2)
+C_TEXT:C284(sn3ws_ActuaDatos_resultadoproce ;$3)
+C_TEXT:C284(sn3ws_ActuaDatos_resultadoproce ;$4)
+
+  //sn3ws_ActuaDatos_CorreoAvisoAct
+C_TEXT:C284(sn3ws_ActuaDatos_CorreoAvisoAct ;$0)
+C_TEXT:C284(sn3ws_ActuaDatos_CorreoAvisoAct ;$1)
+C_TEXT:C284(sn3ws_ActuaDatos_CorreoAvisoAct ;$2)
+
+  //sn3ws_ActuaDatos_envia_correo_a
+C_TEXT:C284(sn3ws_ActuaDatos_envia_correo_a ;$0)
+C_TEXT:C284(sn3ws_ActuaDatos_envia_correo_a ;$1)
+C_TEXT:C284(sn3ws_ActuaDatos_envia_correo_a ;$2)
+
+  //sn3ws_ActuaDatos_envia_correo_s
+C_TEXT:C284(sn3ws_ActuaDatos_envia_correo_s ;$0)
+C_TEXT:C284(sn3ws_ActuaDatos_envia_correo_s ;$1)
+C_TEXT:C284(sn3ws_ActuaDatos_envia_correo_s ;$2)
+C_TEXT:C284(sn3ws_ActuaDatos_envia_correo_s ;$3)
+
+  //SN3_ActuaDatos_LoadRev
+C_LONGINT:C283(SN3_ActuaDatos_LoadRev ;$0)
+C_LONGINT:C283(SN3_ActuaDatos_LoadRev ;$1)
+C_POINTER:C301(SN3_ActuaDatos_LoadRev ;$2)
+
+  //ACTfdp_OpcionesRecargos
+C_REAL:C285(ACTfdp_OpcionesRecargos ;$0)
+C_TEXT:C284(ACTfdp_OpcionesRecargos ;$1)
+C_POINTER:C301(ACTfdp_OpcionesRecargos ;$2)
+C_POINTER:C301(ACTfdp_OpcionesRecargos ;$3)
+
+  //ACTpgs_OpcionesCargosEliminados
+C_TEXT:C284(ACTpgs_OpcionesCargosEliminados ;$0)
+C_POINTER:C301(ACTpgs_OpcionesCargosEliminados ;${2})
+C_TEXT:C284(ACTpgs_OpcionesCargosEliminados ;$1)
+
+  //STRal_ValidaInfoConductual
+C_LONGINT:C283(STRal_ValidaInfoConductual ;$0)
+C_LONGINT:C283(STRal_ValidaInfoConductual ;$1)
+C_DATE:C307(STRal_ValidaInfoConductual ;$2)
+C_BOOLEAN:C305(STRal_ValidaInfoConductual ;$3)
+
+  //ACTpgr_OpcionesGeneracionDesdAC
+C_TEXT:C284(ACTpgr_OpcionesGeneracionDesdAC ;$1)
+
+  //STWA2_AJAX_SendObsPredefinidas
+C_TEXT:C284(STWA2_AJAX_SendObsPredefinidas ;$0)
+C_REAL:C285(STWA2_AJAX_SendObsPredefinidas ;$1)
+
+  //STWA2_AJAX_SendObservaciones
+C_TEXT:C284(STWA2_AJAX_SendObservaciones ;$0)
+C_LONGINT:C283(STWA2_AJAX_SendObservaciones ;$1)
+C_LONGINT:C283(STWA2_AJAX_SendObservaciones ;$2)
+C_LONGINT:C283(STWA2_AJAX_SendObservaciones ;$3)
+C_TEXT:C284(STWA2_AJAX_SendObservaciones ;$4)
+
+  //STWA2_Notas_DevuelvePromedios
+C_TEXT:C284(STWA2_Notas_DevuelvePromedios ;$0)
+C_BOOLEAN:C305(STWA2_Notas_DevuelvePromedios ;$1)
+C_REAL:C285(STWA2_Notas_DevuelvePromedios ;$2)
+C_POINTER:C301(STWA2_Notas_DevuelvePromedios ;$3)
+C_TEXT:C284(STWA2_Notas_DevuelvePromedios ;$4)
+C_TEXT:C284(STWA2_Notas_DevuelvePromedios ;$5)
+
+  //STWA2_AJAX_SendInfoCal
+C_TEXT:C284(STWA2_AJAX_SendInfoCal ;$0)
+C_LONGINT:C283(STWA2_AJAX_SendInfoCal ;$1)
+C_LONGINT:C283(STWA2_AJAX_SendInfoCal ;$2)
+C_LONGINT:C283(STWA2_AJAX_SendInfoCal ;$3)
+C_LONGINT:C283(STWA2_AJAX_SendInfoCal ;$4)
+
+  //SN3_ActuaDatos_RF_Pendientes
+C_DATE:C307(SN3_ActuaDatos_RF_Pendientes ;$1)
+C_TEXT:C284(SN3_ActuaDatos_RF_Pendientes ;$2)
+
+  //CD_Request
+C_BOOLEAN:C305(CD_Request ;$6)
+
+  //IP_SendMessage
+C_LONGINT:C283(IP_SendMessage ;$1)
+C_TEXT:C284(IP_SendMessage ;$2)
+C_TEXT:C284(IP_SendMessage ;$3)
+C_LONGINT:C283(IP_SendMessage ;$4)
+
+  //IP_GetTextParameter
+C_TEXT:C284(IP_GetTextParameter ;$0)
+C_TEXT:C284(IP_GetTextParameter ;$1)
+
+  //IP_GetParameterObjectRef
+C_LONGINT:C283(IP_GetParameterObjectRef ;$0)
+C_TEXT:C284(IP_GetParameterObjectRef ;$1)
+
+  //IP_GetMessageQueue
+C_REAL:C285(IP_GetMessageQueue ;$0)
+C_POINTER:C301(IP_GetMessageQueue ;$1)
+C_POINTER:C301(IP_GetMessageQueue ;$2)
+C_POINTER:C301(IP_GetMessageQueue ;$3)
+
+  //IP_DeleteFromQueue
+C_TEXT:C284(IP_DeleteFromQueue ;$1)
+
+  //IT_HighlightContent
+C_POINTER:C301(IT_HighlightContent ;$1)
+
+  //MPAcfg_Comp_CambiaDimension
+C_TEXT:C284(MPAcfg_Comp_CambiaDimension ;$0)
+C_LONGINT:C283(MPAcfg_Comp_CambiaDimension ;$1)
+C_LONGINT:C283(MPAcfg_Comp_CambiaDimension ;$2)
+
+  //MPAcfg_Comp_EsUnica
+C_BOOLEAN:C305(MPAcfg_Comp_EsUnica ;$0)
+
+  //MPAcfg_Comp_EsValida
+C_BOOLEAN:C305(MPAcfg_Comp_EsValida ;$0)
+
+  //MPAcfg_Dim_EsValida
+C_BOOLEAN:C305(MPAcfg_Dim_EsValida ;$0)
+
+  //MPAcfg_Eje_EsValido
+C_BOOLEAN:C305(MPAcfg_Eje_EsValido ;$0)
+
+  //MPAcfg_Area_AsignaAsignatura
+C_REAL:C285(MPAcfg_Area_AsignaAsignatura ;$0)
+C_TEXT:C284(MPAcfg_Area_AsignaAsignatura ;$1)
+C_TEXT:C284(MPAcfg_Area_AsignaAsignatura ;$2)
+
+  //MPAcfg_Area_EsUnica
+C_BOOLEAN:C305(MPAcfg_Area_EsUnica ;$0)
+
+  //MPAcfg_Area_EsValida
+C_BOOLEAN:C305(MPAcfg_Area_EsValida ;$0)
+
+  //MPAcfg_Area_Propiedades
+C_REAL:C285(MPAcfg_Area_Propiedades ;$1)
+
+  //MPAcfg_CambiaAreaObjeto
+C_REAL:C285(MPAcfg_CambiaAreaObjeto ;$0)
+C_LONGINT:C283(MPAcfg_CambiaAreaObjeto ;$1)
+C_LONGINT:C283(MPAcfg_CambiaAreaObjeto ;$2)
+C_LONGINT:C283(MPAcfg_CambiaAreaObjeto ;$3)
+
+  //MPAcfg_Comp_CambiaEje
+C_TEXT:C284(MPAcfg_Comp_CambiaEje ;$0)
+C_LONGINT:C283(MPAcfg_Comp_CambiaEje ;$1)
+C_LONGINT:C283(MPAcfg_Comp_CambiaEje ;$2)
+
+  //MPAcfg_Comp_Copiar_a_etapa
+C_LONGINT:C283(MPAcfg_Comp_Copiar_a_etapa ;$0)
+C_LONGINT:C283(MPAcfg_Comp_Copiar_a_etapa ;$1)
+C_LONGINT:C283(MPAcfg_Comp_Copiar_a_etapa ;$2)
+C_LONGINT:C283(MPAcfg_Comp_Copiar_a_etapa ;$3)
+
+  //MPAcfg_Comp_NivelesAplicacion
+C_LONGINT:C283(MPAcfg_Comp_NivelesAplicacion ;$0)
+
+  //MPAcfg_Comp_Propiedades
+C_REAL:C285(MPAcfg_Comp_Propiedades ;$1)
+
+  //MPAcfg_CopiaObjetoEnArea
+C_LONGINT:C283(MPAcfg_CopiaObjetoEnArea ;$0)
+C_LONGINT:C283(MPAcfg_CopiaObjetoEnArea ;$1)
+C_LONGINT:C283(MPAcfg_CopiaObjetoEnArea ;$2)
+C_LONGINT:C283(MPAcfg_CopiaObjetoEnArea ;$3)
+
+  //MPAcfg_Dim_Agregar
+C_LONGINT:C283(MPAcfg_Dim_Agregar ;$0)
+
+  //MPAcfg_Dim_CambiaEtapa
+C_REAL:C285(MPAcfg_Dim_CambiaEtapa ;$0)
+C_LONGINT:C283(MPAcfg_Dim_CambiaEtapa ;$1)
+C_LONGINT:C283(MPAcfg_Dim_CambiaEtapa ;$2)
+C_LONGINT:C283(MPAcfg_Dim_CambiaEtapa ;$3)
+C_TEXT:C284(MPAcfg_Dim_CambiaEtapa ;$4)
+
+  //MPAcfg_Dim_Eliminar
+C_LONGINT:C283(MPAcfg_Dim_Eliminar ;$0)
+C_LONGINT:C283(MPAcfg_Dim_Eliminar ;$1)
+C_BOOLEAN:C305(MPAcfg_Dim_Eliminar ;$2)
+C_BOOLEAN:C305(MPAcfg_Dim_Eliminar ;$3)
+
+  //MPAcfg_Dim_EsUnica
+C_BOOLEAN:C305(MPAcfg_Dim_EsUnica ;$0)
+
+  //MPAcfg_Dim_NivelesAplicacion
+C_LONGINT:C283(MPAcfg_Dim_NivelesAplicacion ;$0)
+
+  //MPAcfg_Dim_Propiedades
+C_LONGINT:C283(MPAcfg_Dim_Propiedades ;$1)
+
+  //MPAcfg_Eje_Agregar
+C_REAL:C285(MPAcfg_Eje_Agregar ;$0)
+
+  //MPAcfg_Eje_CambiaEtapa
+C_REAL:C285(MPAcfg_Eje_CambiaEtapa ;$0)
+C_LONGINT:C283(MPAcfg_Eje_CambiaEtapa ;$1)
+C_LONGINT:C283(MPAcfg_Eje_CambiaEtapa ;$2)
+C_LONGINT:C283(MPAcfg_Eje_CambiaEtapa ;$3)
+C_TEXT:C284(MPAcfg_Eje_CambiaEtapa ;$4)
+
+  //MPAcfg_Eje_Eliminar
+C_LONGINT:C283(MPAcfg_Eje_Eliminar ;$0)
+C_LONGINT:C283(MPAcfg_Eje_Eliminar ;$1)
+C_BOOLEAN:C305(MPAcfg_Eje_Eliminar ;$2)
+C_BOOLEAN:C305(MPAcfg_Eje_Eliminar ;$3)
+
+  //MPAcfg_Eje_EsUnico
+C_BOOLEAN:C305(MPAcfg_Eje_EsUnico ;$0)
+
+  //MPAcfg_Eje_NivelesAplicacion
+C_LONGINT:C283(MPAcfg_Eje_NivelesAplicacion ;$0)
+
+  //MPAcfg_LeeEtapasDelArea
+C_LONGINT:C283(MPAcfg_LeeEtapasDelArea ;$1)
+
+  //MPAcfg_ListaCompetencias
+C_REAL:C285(MPAcfg_ListaCompetencias ;$1)
+
+  //MPAcfg_ListaDimensiones
+C_LONGINT:C283(MPAcfg_ListaDimensiones ;$1)
+
+  //MPAcfg_Comp_Agregar
+C_REAL:C285(MPAcfg_Comp_Agregar ;$0)
+C_LONGINT:C283(MPAcfg_Comp_Agregar ;$1)
+
+  //MPAdbu_VerificaCalculos
+C_LONGINT:C283(MPAdbu_VerificaCalculos ;$0)
+
+  //MPAmtx_ConfiguracionMatriz
+C_TEXT:C284(MPAmtx_ConfiguracionMatriz ;$1)
+
+  //MPAmtx_LeeConfiguracion
+C_LONGINT:C283(MPAmtx_LeeConfiguracion ;$1)
+C_LONGINT:C283(MPAmtx_LeeConfiguracion ;$2)
+C_POINTER:C301(MPAmtx_LeeConfiguracion ;$3)
+C_POINTER:C301(MPAmtx_LeeConfiguracion ;$4)
+C_POINTER:C301(MPAmtx_LeeConfiguracion ;$5)
+C_POINTER:C301(MPAmtx_LeeConfiguracion ;$6)
+
+  //NTC_Mensaje_Texto
+C_TEXT:C284(NTC_Mensaje_Texto ;$1)
+C_TEXT:C284(NTC_Mensaje_Texto ;$2)
+
+  //NTC_Mensaje_Leido
+C_TEXT:C284(NTC_Mensaje_Leido ;$1)
+
+  //NTC_Mensaje_EstilosColores
+C_TEXT:C284(NTC_Mensaje_EstilosColores ;$1)
+C_POINTER:C301(NTC_Mensaje_EstilosColores ;$2)
+C_POINTER:C301(NTC_Mensaje_EstilosColores ;$3)
+
+  //NTC_Mensaje_DatosExplorador
+C_TEXT:C284(NTC_Mensaje_DatosExplorador ;$1)
+C_TEXT:C284(NTC_Mensaje_DatosExplorador ;$2)
+C_LONGINT:C283(NTC_Mensaje_DatosExplorador ;$3)
+C_POINTER:C301(NTC_Mensaje_DatosExplorador ;$4)
+C_TEXT:C284(NTC_Mensaje_DatosExplorador ;$5)
+C_TEXT:C284(NTC_Mensaje_DatosExplorador ;$6)
+C_POINTER:C301(NTC_Mensaje_Arreglos ;${2})
+C_TEXT:C284(NTC_Mensaje_Arreglos ;$1)
+
+  //NTC_CargaMensajes
+C_LONGINT:C283(NTC_CargaMensajes ;$1)
+
+  //ST_CleanMenuMetaCharacters
+C_TEXT:C284(ST_CleanMenuMetaCharacters ;$0)
+C_TEXT:C284(ST_CleanMenuMetaCharacters ;$1)
+
+  //MPAcfg_Comp_Eliminar
+C_LONGINT:C283(MPAcfg_Comp_Eliminar ;$0)
+C_LONGINT:C283(MPAcfg_Comp_Eliminar ;$1)
+C_BOOLEAN:C305(MPAcfg_Comp_Eliminar ;$2)
+C_BOOLEAN:C305(MPAcfg_Comp_Eliminar ;$3)
+
+  //MPA_InfoUsoObjeto
+C_POINTER:C301(MPA_InfoUsoObjeto ;$1)
+C_REAL:C285(MPA_InfoUsoObjeto ;$2)
+
+  //AL_CalculaPuntajeRanking_cl
+C_REAL:C285(AL_CalculaPuntajeRanking_cl ;$0)
+C_REAL:C285(AL_CalculaPuntajeRanking_cl ;$1)
+
+  //AL_PromedioUChileEgresados_cl
+C_REAL:C285(AL_PromedioUChileEgresados_cl ;$0)
+
+  //AL_PuntajeNEM_cl
+C_LONGINT:C283(AL_PuntajeNEM_cl ;$0)
+C_REAL:C285(AL_PuntajeNEM_cl ;$1)
+C_LONGINT:C283(AL_PuntajeNEM_cl ;$2)
+
+  //MPAcfg_MuestraTipUsoObjeto
+C_POINTER:C301(MPAcfg_MuestraTipUsoObjeto ;$1)
+
+  //MPAcfg_InfoUsoEnunciado
+C_LONGINT:C283(MPAcfg_InfoUsoEnunciado ;$1)
+C_LONGINT:C283(MPAcfg_InfoUsoEnunciado ;$2)
+C_BOOLEAN:C305(MPAcfg_InfoUsoEnunciado ;$3)
+
+  //MPAcfg_Area_Eliminar
+C_REAL:C285(MPAcfg_Area_Eliminar ;$0)
+C_LONGINT:C283(MPAcfg_Area_Eliminar ;$1)
+
+  //MPAcfg_Area_EliminaAsignaciones
+C_REAL:C285(MPAcfg_Area_EliminaAsignaciones ;$1)
+
+  //MPAcfg_Area_PosibleAñadirEtapa
+C_BOOLEAN:C305(MPAcfg_Area_PosibleAñadirEtapa ;$0)
+C_POINTER:C301(MPAcfg_Area_PosibleAñadirEtapa ;$1)
+C_POINTER:C301(MPAcfg_Area_PosibleAñadirEtapa ;$2)
+
+  //MPAcfg_Area_EliminaEtapa
+C_REAL:C285(MPAcfg_Area_EliminaEtapa ;$0)
+C_LONGINT:C283(MPAcfg_Area_EliminaEtapa ;$1)
+C_REAL:C285(MPAcfg_Area_EliminaEtapa ;$2)
+C_REAL:C285(MPAcfg_Area_EliminaEtapa ;$3)
+
+  //MPA_Calculos_Dimension
+C_BOOLEAN:C305(MPA_Calculos_Dimension ;$0)
+C_LONGINT:C283(MPA_Calculos_Dimension ;$1)
+C_LONGINT:C283(MPA_Calculos_Dimension ;$2)
+C_LONGINT:C283(MPA_Calculos_Dimension ;$3)
+C_LONGINT:C283(MPA_Calculos_Dimension ;$4)
+C_REAL:C285(MPA_Calculos_Dimension ;$5)
+C_REAL:C285(MPA_Calculos_Dimension ;$6)
+
+  //MPA_Calculos_Eje
+C_BOOLEAN:C305(MPA_Calculos_Eje ;$0)
+C_LONGINT:C283(MPA_Calculos_Eje ;$1)
+C_LONGINT:C283(MPA_Calculos_Eje ;$2)
+C_LONGINT:C283(MPA_Calculos_Eje ;$3)
+C_LONGINT:C283(MPA_Calculos_Eje ;$4)
+C_REAL:C285(MPA_Calculos_Eje ;$5)
+C_REAL:C285(MPA_Calculos_Eje ;$6)
+
+  //STWA2_SendHTMLMail
+C_TEXT:C284(STWA2_SendHTMLMail ;$0)
+C_TEXT:C284(STWA2_SendHTMLMail ;$1)
+C_TEXT:C284(STWA2_SendHTMLMail ;$2)
+C_TEXT:C284(STWA2_SendHTMLMail ;$3)
+C_TEXT:C284(STWA2_SendHTMLMail ;$4)
+C_TEXT:C284(STWA2_SendHTMLMail ;$5)
+C_TEXT:C284(STWA2_SendHTMLMail ;$6)
+C_TEXT:C284(STWA2_SendHTMLMail ;$7)
+C_LONGINT:C283(STWA2_SendHTMLMail ;$8)
+C_TEXT:C284(STWA2_SendHTMLMail ;$9)
+C_TEXT:C284(STWA2_SendHTMLMail ;$10)
+C_TEXT:C284(STWA2_SendHTMLMail ;$11)
+C_TEXT:C284(STWA2_SendHTMLMail ;$12)
+C_TEXT:C284(STWA2_SendHTMLMail ;$13)
+C_TEXT:C284(STWA2_SendHTMLMail ;$14)
+C_TEXT:C284(STWA2_SendHTMLMail ;$15)
+
+  //STWA2_AJAX_SendObjetivos
+C_TEXT:C284(STWA2_AJAX_SendObjetivos ;$0)
+C_LONGINT:C283(STWA2_AJAX_SendObjetivos ;$1)
+
+  //AL_validaIngresoAtraso
+C_REAL:C285(AL_validaIngresoAtraso ;$0)
+C_LONGINT:C283(AL_validaIngresoAtraso ;$1)
+C_DATE:C307(AL_validaIngresoAtraso ;$2)
+C_LONGINT:C283(AL_validaIngresoAtraso ;$3)
+
+  //ACTabc_ExportPACMackay
+C_TEXT:C284(ACTabc_ExportPACMackay ;$1)
+C_TEXT:C284(ACTabc_ExportPACMackay ;$2)
+C_TEXT:C284(ACTabc_ExportPACMackay ;$3)
+
+  //ACTwiz_ImportUserFields
+C_TEXT:C284(ACTwiz_ImportUserFields ;$1)
+
+  //SIGE_Asist_CargaVista
+C_REAL:C285(SIGE_Asist_CargaVista ;$0)
+C_LONGINT:C283(SIGE_Asist_CargaVista ;$1)
+C_LONGINT:C283(SIGE_Asist_CargaVista ;$2)
+C_LONGINT:C283(SIGE_Asist_CargaVista ;$3)
+
+  //SIGE_CargaBlobNivelesMes
+C_TEXT:C284(SIGE_CargaBlobNivelesMes ;$0)
+C_LONGINT:C283(SIGE_CargaBlobNivelesMes ;$1)
+C_LONGINT:C283(SIGE_CargaBlobNivelesMes ;$2)
+C_POINTER:C301(SIGE_CargaBlobNivelesMes ;$3)
+C_POINTER:C301(SIGE_CargaBlobNivelesMes ;$4)
+C_POINTER:C301(SIGE_CargaBlobNivelesMes ;$5)
+C_POINTER:C301(SIGE_CargaBlobNivelesMes ;$6)
+C_POINTER:C301(SIGE_CargaBlobNivelesMes ;$7)
+C_POINTER:C301(SIGE_CargaBlobNivelesMes ;$8)
+C_POINTER:C301(SIGE_CargaBlobNivelesMes ;$9)
+
+  //SIGE_Check_Niveles_en_Nivel
+C_TEXT:C284(SIGE_Check_Niveles_en_Nivel ;$0)
+C_LONGINT:C283(SIGE_Check_Niveles_en_Nivel ;$1)
+C_POINTER:C301(SIGE_Check_Niveles_en_Nivel ;$2)
+
+  //SIGE_GetCodigoGrado
+C_LONGINT:C283(SIGE_GetCodigoGrado ;$0)
+C_LONGINT:C283(SIGE_GetCodigoGrado ;$1)
+C_LONGINT:C283(SIGE_GetCodigoGrado ;$2)
+
+  //SIGE_IngresoAsistencia
+C_LONGINT:C283(SIGE_IngresoAsistencia ;$1)
+C_LONGINT:C283(SIGE_IngresoAsistencia ;$2)
+C_BOOLEAN:C305(SIGE_IngresoAsistencia ;$3)
+C_POINTER:C301(SIGE_IngresoAsistencia ;$4)
+
+  //SIGE_IngresoCurso
+C_POINTER:C301(SIGE_IngresoCurso ;$1)
+
+  //SIGE_TipoEnseñanza
+C_POINTER:C301(SIGE_TipoEnseñanza ;$1)
+
+  //SIGE_ValidarFichaAlumno
+C_POINTER:C301(SIGE_ValidarFichaAlumno ;$1)
+
+  //SIGE_VerificaIngresoAsistencia
+C_LONGINT:C283(SIGE_VerificaIngresoAsistencia ;$1)
+C_LONGINT:C283(SIGE_VerificaIngresoAsistencia ;$2)
+C_POINTER:C301(SIGE_VerificaIngresoAsistencia ;$3)
+
+  //WS_SIGE_Get_Semilla
+C_TEXT:C284(WS_SIGE_Get_Semilla ;$0)
+
+  //WS_SIGE_GetValidacionAlumno
+C_TEXT:C284(WS_SIGE_GetValidacionAlumno ;$0)
+C_TEXT:C284(WS_SIGE_GetValidacionAlumno ;$1)
+C_POINTER:C301(WS_SIGE_GetValidacionAlumno ;$2)
+
+  //WS_SIGE_IngresoAsistencia
+C_TEXT:C284(WS_SIGE_IngresoAsistencia ;$0)
+C_LONGINT:C283(WS_SIGE_IngresoAsistencia ;$1)
+C_TEXT:C284(WS_SIGE_IngresoAsistencia ;$2)
+C_TEXT:C284(WS_SIGE_IngresoAsistencia ;$3)
+C_TEXT:C284(WS_SIGE_IngresoAsistencia ;$4)
+C_TEXT:C284(WS_SIGE_IngresoAsistencia ;$5)
+C_TEXT:C284(WS_SIGE_IngresoAsistencia ;$6)
+C_POINTER:C301(WS_SIGE_IngresoAsistencia ;$7)
+C_POINTER:C301(WS_SIGE_IngresoAsistencia ;$8)
+
+  //WS_SIGE_IngresoCurso
+C_TEXT:C284(WS_SIGE_IngresoCurso ;$0)
+C_TEXT:C284(WS_SIGE_IngresoCurso ;$1)
+C_POINTER:C301(WS_SIGE_IngresoCurso ;$2)
+
+  //WS_SIGE_TipoEnsenanza
+C_TEXT:C284(WS_SIGE_TipoEnsenanza ;$0)
+C_POINTER:C301(WS_SIGE_TipoEnsenanza ;$1)
+C_TEXT:C284(WS_SIGE_TipoEnsenanza ;$2)
+C_POINTER:C301(WS_SIGE_TipoEnsenanza ;$3)
+
+  //WS_SIGE_VerificaIngresoAsist
+C_TEXT:C284(WS_SIGE_VerificaIngresoAsist ;$0)
+C_TEXT:C284(WS_SIGE_VerificaIngresoAsist ;$1)
+C_TEXT:C284(WS_SIGE_VerificaIngresoAsist ;$2)
+C_TEXT:C284(WS_SIGE_VerificaIngresoAsist ;$3)
+C_POINTER:C301(WS_SIGE_VerificaIngresoAsist ;$4)
+
+  //AS_EliminaAdjuntoPlanesDeClases
+C_LONGINT:C283(AS_EliminaAdjuntoPlanesDeClases ;$1)
+C_LONGINT:C283(AS_EliminaAdjuntoPlanesDeClases ;$2)
+
+  //dhSTR_DeleteRecord
+C_REAL:C285(dhSTR_DeleteRecord ;$0)
+C_POINTER:C301(dhSTR_DeleteRecord ;$1)
+
+  //STR_DeleteRecord
+C_LONGINT:C283(STR_DeleteRecord ;$0)
+C_POINTER:C301(STR_DeleteRecord ;$1)
+
+  //MPAdbu_VerificaMapas
+C_LONGINT:C283(MPAdbu_VerificaMapas ;$0)
+
+  //EV2_AprobacionReprobacion
+C_BOOLEAN:C305(EV2_AprobacionReprobacion ;$0)
+
+  //STWA2_AJAX_SendPlanes
+C_TEXT:C284(STWA2_AJAX_SendPlanes ;$0)
+C_REAL:C285(STWA2_AJAX_SendPlanes ;$1)
+C_REAL:C285(STWA2_AJAX_SendPlanes ;$2)
+C_REAL:C285(STWA2_AJAX_SendPlanes ;$3)
+
+  //STWA2_AJAX_AgregarPlan
+C_TEXT:C284(STWA2_AJAX_AgregarPlan ;$0)
+C_DATE:C307(STWA2_AJAX_AgregarPlan ;$1)
+
+  //STWA2_Session_CalcRemaining
+C_REAL:C285(STWA2_Session_CalcRemaining ;$0)
+C_LONGINT:C283(STWA2_Session_CalcRemaining ;$1)
+C_LONGINT:C283(STWA2_Session_CalcRemaining ;$2)
+
+  //MPAcfg_ContenidoAreas
+C_REAL:C285(MPAcfg_ContenidoAreas ;$1)
+C_REAL:C285(MPAcfg_ContenidoAreas ;$2)
+C_REAL:C285(MPAcfg_ContenidoAreas ;$3)
+C_REAL:C285(MPAcfg_ContenidoAreas ;$4)
+
+  //MPAdbu_VerificaNombresEtapas
+C_REAL:C285(MPAdbu_VerificaNombresEtapas ;$0)
+
+  //MPAmtx_LeeDefinicionesMapas
+C_LONGINT:C283(MPAmtx_LeeDefinicionesMapas ;$1)
+C_LONGINT:C283(MPAmtx_LeeDefinicionesMapas ;$2)
+C_LONGINT:C283(MPAmtx_LeeDefinicionesMapas ;$3)
+C_POINTER:C301(MPAmtx_LeeDefinicionesMapas ;$4)
+C_POINTER:C301(MPAmtx_LeeDefinicionesMapas ;$5)
+C_POINTER:C301(MPAmtx_LeeDefinicionesMapas ;$6)
+C_POINTER:C301(MPAmtx_LeeDefinicionesMapas ;$7)
+
+  //CFG_STR_CreaPeriodosEscolares
+C_LONGINT:C283(CFG_STR_CreaPeriodosEscolares ;$1)
+C_LONGINT:C283(CFG_STR_CreaPeriodosEscolares ;$2)
+C_LONGINT:C283(CFG_STR_CreaPeriodosEscolares ;$3)
+
+  //AL_CalculaPromedioGeneralHist
+C_REAL:C285(AL_CalculaPromedioGeneralHist ;$1)
+
+  //AS_ReadEvalProperties
+C_TEXT:C284(AS_ReadEvalProperties ;$1)
+C_REAL:C285(AS_ReadEvalProperties ;$2)
+
+  //dbu_VerificaConsolidaciones
+C_REAL:C285(dbu_VerificaConsolidaciones ;$0)
+
+  //EV2_Calculos_ConsolidaAnual
+C_REAL:C285(EV2_Calculos_ConsolidaAnual ;$0)
+C_REAL:C285(EV2_Calculos_ConsolidaAnual ;$1)
+
+  //EV2_Calculos_ConsolidaExamen
+C_REAL:C285(EV2_Calculos_ConsolidaExamen ;$0)
+C_REAL:C285(EV2_Calculos_ConsolidaExamen ;$1)
+
+  //EV2_Calculos_ConsolidaExExtra
+C_REAL:C285(EV2_Calculos_ConsolidaExExtra ;$0)
+C_REAL:C285(EV2_Calculos_ConsolidaExExtra ;$1)
+
+  //EV2_Calculos_ConsolidaFinal
+C_REAL:C285(EV2_Calculos_ConsolidaFinal ;$0)
+C_REAL:C285(EV2_Calculos_ConsolidaFinal ;$1)
+
+  //xAL_ACT_CB_CentrosCosto
+C_BOOLEAN:C305(xAL_ACT_CB_CentrosCosto ;$0)
+C_LONGINT:C283(xAL_ACT_CB_CentrosCosto ;$1)
+C_LONGINT:C283(xAL_ACT_CB_CentrosCosto ;$2)
+C_LONGINT:C283(xAL_ACT_CB_CentrosCosto ;$3)
+
+  //ACTit_MuestraPopUpMenu
+C_REAL:C285(ACTit_MuestraPopUpMenu ;$0)
+C_POINTER:C301(ACTit_MuestraPopUpMenu ;$1)
+C_TEXT:C284(ACTit_MuestraPopUpMenu ;$2)
+
+  //xAL_ACT_CB_CuentasEspecialesU
+C_BOOLEAN:C305(xAL_ACT_CB_CuentasEspecialesU ;$1)
+C_LONGINT:C283(xAL_ACT_CB_CuentasEspecialesU ;$2)
+
+  //UD_v20121127_EliminaSintAnual
+C_LONGINT:C283(UD_v20121127_EliminaSintAnual ;$0)
+
+  //dbu_VerificaSintesisAnualActual
+C_LONGINT:C283(dbu_VerificaSintesisAnualActual ;$0)
+
+  //AL_AsociaLicenciaInasistencia
+C_TEXT:C284(AL_AsociaLicenciaInasistencia ;$1)
+C_REAL:C285(AL_AsociaLicenciaInasistencia ;$2)
+C_DATE:C307(AL_AsociaLicenciaInasistencia ;$3)
+
+  //STWA2_Session_DeleteOtherSessio
+C_LONGINT:C283(STWA2_Session_DeleteOtherSessio ;$1)
+
+  //STWA2_Session_MaxSessions
+C_REAL:C285(STWA2_Session_MaxSessions ;$0)
+
+  //4D_FindFI4DResource
+C_LONGINT:C283(4D_FindFI4DResource ;$0)
+C_POINTER:C301(4D_FindFI4DResource ;$1)
+
+  //AL_LeeInasistencia_a_clases
+C_LONGINT:C283(AL_LeeInasistencia_a_clases ;$1)
+C_LONGINT:C283(AL_LeeInasistencia_a_clases ;$2)
+C_LONGINT:C283(AL_LeeInasistencia_a_clases ;$3)
+
+  //AL_LeeSintesisConducta
+C_LONGINT:C283(AL_LeeSintesisConducta ;$1)
+C_LONGINT:C283(AL_LeeSintesisConducta ;$2)
+C_LONGINT:C283(AL_LeeSintesisConducta ;$3)
+C_LONGINT:C283(AL_LeeSintesisConducta ;$4)
+
+  //AL_PaginaConducta_y_Asistencia
+C_LONGINT:C283(AL_PaginaConducta_y_Asistencia ;$0)
+
+  //IT_Progress
+C_LONGINT:C283(IT_Progress ;$0)
+C_LONGINT:C283(IT_Progress ;$1)
+C_REAL:C285(IT_Progress ;$2)
+C_REAL:C285(IT_Progress ;$3)
+C_TEXT:C284(IT_Progress ;$4)
+C_REAL:C285(IT_Progress ;$5)
+C_TEXT:C284(IT_Progress ;$6)
+C_REAL:C285(IT_Progress ;$7)
+C_TEXT:C284(IT_Progress ;$8)
+
+  //IT_ProgressOnClient
+C_TEXT:C284(IT_ProgressOnClient ;$1)
+C_REAL:C285(IT_ProgressOnClient ;$2)
+C_REAL:C285(IT_ProgressOnClient ;$3)
+C_TEXT:C284(IT_ProgressOnClient ;$4)
+C_REAL:C285(IT_ProgressOnClient ;$5)
+C_TEXT:C284(IT_ProgressOnClient ;$6)
+C_REAL:C285(IT_ProgressOnClient ;$7)
+C_TEXT:C284(IT_ProgressOnClient ;$8)
+
+  //NTC_EjecutaCodigo
+C_TEXT:C284(NTC_EjecutaCodigo ;$1)
+C_LONGINT:C283(NTC_EjecutaCodigo ;$2)
+
+  //4D_FindTF4DResource
+C_LONGINT:C283(4D_FindTF4DResource ;$0)
+C_POINTER:C301(4D_FindTF4DResource ;$1)
+
+  //ACTcar_EliminaCargosRelacionado
+C_BOOLEAN:C305(ACTcar_EliminaCargosRelacionado ;$0)
+C_LONGINT:C283(ACTcar_EliminaCargosRelacionado ;$1)
+C_POINTER:C301(ACTcar_EliminaCargosRelacionado ;$2)
+C_LONGINT:C283(ACTcar_EliminaCargosRelacionado ;$3)
+C_BOOLEAN:C305(ACTcar_EliminaCargosRelacionado ;$4)
+
+  //ACTcfg_OpcionesEliminacionDctos
+C_TEXT:C284(ACTcfg_OpcionesEliminacionDctos ;$0)
+C_POINTER:C301(ACTcfg_OpcionesEliminacionDctos ;${2})
+C_TEXT:C284(ACTcfg_OpcionesEliminacionDctos ;$1)
+
+  //MPAdbu_VerificaOpcionesCalculo
+C_REAL:C285(MPAdbu_VerificaOpcionesCalculo ;$0)
+
+  //AL_EliminaAnotacion
+C_LONGINT:C283(AL_EliminaAnotacion ;$0)
+C_LONGINT:C283(AL_EliminaAnotacion ;$1)
+
+  //AL_EliminaAtraso
+C_LONGINT:C283(AL_EliminaAtraso ;$0)
+C_LONGINT:C283(AL_EliminaAtraso ;$1)
+
+  //AL_EliminaCastigo
+C_LONGINT:C283(AL_EliminaCastigo ;$0)
+C_LONGINT:C283(AL_EliminaCastigo ;$1)
+
+  //AL_EliminaInasistencia
+C_LONGINT:C283(AL_EliminaInasistencia ;$0)
+C_LONGINT:C283(AL_EliminaInasistencia ;$1)
+
+  //AL_EliminaLicencia
+C_LONGINT:C283(AL_EliminaLicencia ;$0)
+C_LONGINT:C283(AL_EliminaLicencia ;$1)
+
+  //AL_EliminaSuspension
+C_LONGINT:C283(AL_EliminaSuspension ;$0)
+C_LONGINT:C283(AL_EliminaSuspension ;$1)
+
+  //xALSet_AL_AsistenciaClases
+C_LONGINT:C283(xALSet_AL_AsistenciaClases ;$2)
+
+  //WDW_ResizeWindow
+C_LONGINT:C283(WDW_ResizeWindow ;$1)
+C_LONGINT:C283(WDW_ResizeWindow ;$2)
+
+  //MPAdbu_VerificaMatrices
+C_REAL:C285(MPAdbu_VerificaMatrices ;$0)
+
+  //MPAdbu_ReconstruyeMatrices
+C_LONGINT:C283(MPAdbu_ReconstruyeMatrices ;$0)
+
+  //MPAcfg_AsignaMapas
+C_LONGINT:C283(MPAcfg_AsignaMapas ;$1)
+C_POINTER:C301(MPAcfg_AsignaMapas ;$2)
+C_LONGINT:C283(MPAcfg_AsignaMapas ;$3)
+
+  //IT_MuestraInfoDetallada_Texto
+C_TEXT:C284(IT_MuestraInfoDetallada_Texto ;$1)
+C_TEXT:C284(IT_MuestraInfoDetallada_Texto ;$2)
+
+  //EVLG_AgregaObjeto_a_Matriz
+C_LONGINT:C283(EVLG_AgregaObjeto_a_Matriz ;$1)
+C_LONGINT:C283(EVLG_AgregaObjeto_a_Matriz ;$2)
+C_LONGINT:C283(EVLG_AgregaObjeto_a_Matriz ;$3)
+C_LONGINT:C283(EVLG_AgregaObjeto_a_Matriz ;$4)
+C_BOOLEAN:C305(EVLG_AgregaObjeto_a_Matriz ;$5)
+
+  //DT_GetLocalDateTimeFromGMT
+C_REAL:C285(DT_GetLocalDateTimeFromGMT ;$0)
+C_POINTER:C301(DT_GetLocalDateTimeFromGMT ;$1)
+C_POINTER:C301(DT_GetLocalDateTimeFromGMT ;$2)
+
+  //SYS_GetLastRepairInfos
+C_TEXT:C284(SYS_GetLastRepairInfos ;$0)
+C_POINTER:C301(SYS_GetLastRepairInfos ;$1)
+C_POINTER:C301(SYS_GetLastRepairInfos ;$2)
+C_POINTER:C301(SYS_GetLastRepairInfos ;$3)
+
+  //dbuACT_VerificaDTNoArchivados
+C_REAL:C285(dbuACT_VerificaDTNoArchivados ;$0)
+
+  //ACTbol_ValidaEmisionDT
+C_BOOLEAN:C305(ACTbol_ValidaEmisionDT ;$0)
+C_LONGINT:C283(ACTbol_ValidaEmisionDT ;$1)
+
+  //ACTeod_EjecutaTareas
+C_TEXT:C284(ACTeod_EjecutaTareas ;$0)
+C_POINTER:C301(ACTeod_EjecutaTareas ;${2})
+C_TEXT:C284(ACTeod_EjecutaTareas ;$1)
+
+  //ACTcar_CalculaDescuentos
+C_REAL:C285(ACTcar_CalculaDescuentos ;$0)
+C_REAL:C285(ACTcar_CalculaDescuentos ;$1)
+C_REAL:C285(ACTcar_CalculaDescuentos ;$2)
+C_REAL:C285(ACTcar_CalculaDescuentos ;$3)
+C_REAL:C285(ACTcar_CalculaDescuentos ;$4)
+C_TEXT:C284(ACTcar_CalculaDescuentos ;$5)
+C_REAL:C285(ACTcar_CalculaDescuentos ;$6)
+C_POINTER:C301(ACTdesc_OpcionesVariables ;${2})
+C_TEXT:C284(ACTdesc_OpcionesVariables ;$1)
+
+  //ACTdc_OpcionesReemplazoVariosD
+C_TEXT:C284(ACTdc_OpcionesReemplazoVariosD ;$0)
+C_POINTER:C301(ACTdc_OpcionesReemplazoVariosD ;${2})
+C_TEXT:C284(ACTdc_OpcionesReemplazoVariosD ;$1)
+
+  //ACTdc_ReemplazaVariosDocumentos
+C_BOOLEAN:C305(ACTdc_ReemplazaVariosDocumentos ;$0)
+C_BLOB:C604(ACTdc_ReemplazaVariosDocumentos ;$1)
+
+  //ACTdc_ImprimirReemplazos
+C_REAL:C285(ACTdc_ImprimirReemplazos ;$1)
+
+  //ACTreemp_CreaRegistro
+C_LONGINT:C283(ACTreemp_CreaRegistro ;$0)
+C_LONGINT:C283(ACTreemp_CreaRegistro ;$1)
+C_LONGINT:C283(ACTreemp_CreaRegistro ;$2)
+C_REAL:C285(ACTreemp_CreaRegistro ;$3)
+C_DATE:C307(ACTreemp_CreaRegistro ;$4)
+C_LONGINT:C283(ACTreemp_CreaRegistro ;$5)
+C_LONGINT:C283(ACTreemp_CreaRegistro ;$6)
+C_BLOB:C604(ACTreemp_CreaRegistro ;$7)
+
+  //ACTreemp_Documentos
+C_BOOLEAN:C305(ACTreemp_Documentos ;$0)
+C_LONGINT:C283(ACTreemp_Documentos ;$1)
+C_BLOB:C604(ACTreemp_Documentos ;$2)
+
+  //ACTdte_GeneraArchivo
+C_TEXT:C284(ACTdte_GeneraArchivo ;$0)
+C_POINTER:C301(ACTdte_GeneraArchivo ;${2})
+C_TEXT:C284(ACTdte_GeneraArchivo ;$1)
+
+  //ACTdte_setPruebasOpcionesGen
+C_TEXT:C284(ACTdte_setPruebasOpcionesGen ;$0)
+C_POINTER:C301(ACTdte_setPruebasOpcionesGen ;${2})
+C_TEXT:C284(ACTdte_setPruebasOpcionesGen ;$1)
+
+  //ACTcfgbol_OpcionesConfInicialDT
+C_TEXT:C284(ACTcfgbol_OpcionesConfInicialDT ;$0)
+C_POINTER:C301(ACTcfgbol_OpcionesConfInicialDT ;${2})
+C_TEXT:C284(ACTcfgbol_OpcionesConfInicialDT ;$1)
+
+  //ACTcfg_opcionesDTE
+C_TEXT:C284(ACTcfg_opcionesDTE ;$0)
+C_POINTER:C301(ACTcfg_opcionesDTE ;${2})
+C_TEXT:C284(ACTcfg_opcionesDTE ;$1)
+
+  //ACTcfgbol_OpcionesDTE
+C_REAL:C285(ACTcfgbol_OpcionesDTE ;$0)
+C_POINTER:C301(ACTcfgbol_OpcionesDTE ;${2})
+C_TEXT:C284(ACTcfgbol_OpcionesDTE ;$1)
+
+  //ACTbol_ValidaInicioEmision
+C_BOOLEAN:C305(ACTbol_ValidaInicioEmision ;$0)
+C_REAL:C285(ACTbol_ValidaInicioEmision ;$1)
+C_REAL:C285(ACTbol_ValidaInicioEmision ;$2)
+C_BOOLEAN:C305(ACTbol_ValidaInicioEmision ;$3)
+
+  //ACTdte_CargaArchivoIE
+C_BOOLEAN:C305(ACTdte_CargaArchivoIE ;$0)
+C_TEXT:C284(ACTdte_CargaArchivoIE ;$1)
+C_TEXT:C284(ACTdte_CargaArchivoIE ;$2)
+C_POINTER:C301(ACTdte_CargaArchivoIE ;$3)
+
+  //ACTdte_EnviaRecibeArchivos
+C_TEXT:C284(ACTdte_EnviaRecibeArchivos ;$0)
+C_POINTER:C301(ACTdte_EnviaRecibeArchivos ;${2})
+C_TEXT:C284(ACTdte_EnviaRecibeArchivos ;$1)
+
+  //ACTdte_LogAction
+C_TEXT:C284(ACTdte_LogAction ;$1)
+C_BOOLEAN:C305(ACTdte_LogAction ;$2)
+C_BOOLEAN:C305(ACTdte_LogAction ;$3)
+C_BOOLEAN:C305(ACTdte_LogAction ;$4)
+
+  //ACTdte_SendFiles2FTP
+C_TEXT:C284(ACTdte_SendFiles2FTP ;$0)
+C_TEXT:C284(ACTdte_SendFiles2FTP ;$1)
+
+  //ACTfol_OpcionesGenerales
+C_TEXT:C284(ACTfol_OpcionesGenerales ;$0)
+C_POINTER:C301(ACTfol_OpcionesGenerales ;${2})
+C_TEXT:C284(ACTfol_OpcionesGenerales ;$1)
+
+  //ACTitem_CreateRecord
+C_REAL:C285(ACTitem_CreateRecord ;$0)
+C_TEXT:C284(ACTitem_CreateRecord ;$1)
+C_BOOLEAN:C305(ACTitem_CreateRecord ;$2)
+C_BOOLEAN:C305(ACTitem_CreateRecord ;$3)
+C_TEXT:C284(ACTitem_CreateRecord ;$4)
+C_REAL:C285(ACTitem_CreateRecord ;$5)
+C_TEXT:C284(ACTitem_CreateRecord ;$6)
+C_TEXT:C284(ACTitem_CreateRecord ;$7)
+C_TEXT:C284(ACTitem_CreateRecord ;$8)
+C_TEXT:C284(ACTitem_CreateRecord ;$9)
+C_TEXT:C284(ACTitem_CreateRecord ;$10)
+C_TEXT:C284(ACTitem_CreateRecord ;$11)
+C_BOOLEAN:C305(ACTitem_CreateRecord ;$12)
+C_TEXT:C284(ACTitem_CreateRecord ;$13)
+C_BOOLEAN:C305(ACTitem_CreateRecord ;$14)
+C_BOOLEAN:C305(ACTitem_CreateRecord ;$15)
+C_BOOLEAN:C305(ACTitem_CreateRecord ;$16)
+C_BOOLEAN:C305(ACTitem_CreateRecord ;$17)
+C_REAL:C285(ACTitem_CreateRecord ;$18)
+C_BOOLEAN:C305(ACTitem_CreateRecord ;$19)
+C_TEXT:C284(ACTitem_CreateRecord ;$20)
+C_REAL:C285(ACTitem_CreateRecord ;$21)
+C_TEXT:C284(ACTitem_CreateRecord ;$22)
+C_REAL:C285(ACTitem_CreateRecord ;$23)
+
+  //ACTter_CreateRecord
+C_REAL:C285(ACTter_CreateRecord ;$0)
+C_TEXT:C284(ACTter_CreateRecord ;$1)
+C_TEXT:C284(ACTter_CreateRecord ;$2)
+C_BOOLEAN:C305(ACTter_CreateRecord ;$3)
+C_TEXT:C284(ACTter_CreateRecord ;$4)
+C_TEXT:C284(ACTter_CreateRecord ;$5)
+C_TEXT:C284(ACTter_CreateRecord ;$6)
+C_TEXT:C284(ACTter_CreateRecord ;$7)
+C_TEXT:C284(ACTter_CreateRecord ;$8)
+C_TEXT:C284(ACTter_CreateRecord ;$9)
+C_TEXT:C284(ACTter_CreateRecord ;$10)
+
+  //ST_GetStringByLen
+C_TEXT:C284(ST_GetStringByLen ;$0)
+C_TEXT:C284(ST_GetStringByLen ;$1)
+C_REAL:C285(ST_GetStringByLen ;$2)
+
+  //WSact_AsociaSignatario
+C_LONGINT:C283(WSact_AsociaSignatario ;$0)
+C_TEXT:C284(WSact_AsociaSignatario ;$1)
+C_LONGINT:C283(WSact_AsociaSignatario ;$2)
+C_TEXT:C284(WSact_AsociaSignatario ;$3)
+
+  //WSact_DTECallWebService
+C_TEXT:C284(WSact_DTECallWebService ;$1)
+C_BOOLEAN:C305(WSact_DTECallWebService ;$2)
+
+  //WSact_CargaActeco
+C_LONGINT:C283(WSact_CargaActeco ;$0)
+C_TEXT:C284(WSact_CargaActeco ;$1)
+C_TEXT:C284(WSact_CargaActeco ;$2)
+
+  //WSact_CargaCAF
+C_LONGINT:C283(WSact_CargaCAF ;$0)
+C_TEXT:C284(WSact_CargaCAF ;$1)
+C_TEXT:C284(WSact_CargaCAF ;$2)
+
+  //WSact_CargaPropiedades
+C_LONGINT:C283(WSact_CargaPropiedades ;$0)
+C_TEXT:C284(WSact_CargaPropiedades ;$1)
+C_TEXT:C284(WSact_CargaPropiedades ;$2)
+
+  //WSact_DesmarcaProcesado
+C_TEXT:C284(WSact_DesmarcaProcesado ;$0)
+
+  //WSact_DTECallWebServiceDTE
+C_TEXT:C284(WSact_DTECallWebServiceDTE ;$1)
+
+  //WSact_DTECallWebServiceIntranet
+C_TEXT:C284(WSact_DTECallWebServiceIntranet ;$1)
+
+  //WSact_getFolioDTE
+C_LONGINT:C283(WSact_getFolioDTE ;$0)
+C_LONGINT:C283(WSact_getFolioDTE ;$1)
+C_POINTER:C301(WSact_getFolioDTE ;$2)
+C_POINTER:C301(WSact_getFolioDTE ;$3)
+C_TEXT:C284(WSact_getFolioDTE ;$4)
+
+  //WSact_GetPropiedadesCont
+C_BLOB:C604(WSact_GetPropiedadesCont ;$0)
+C_TEXT:C284(WSact_GetPropiedadesCont ;$1)
+C_TEXT:C284(WSact_GetPropiedadesCont ;$2)
+
+  //WSact_GetRazonesSociales
+C_BOOLEAN:C305(WSact_GetRazonesSociales ;$0)
+C_TEXT:C284(WSact_GetRazonesSociales ;$1)
+
+  //WSact_sendFirma
+C_LONGINT:C283(WSact_sendFirma ;$0)
+C_TEXT:C284(WSact_sendFirma ;$1)
+C_BLOB:C604(WSact_sendFirma ;$2)
+C_TEXT:C284(WSact_sendFirma ;$3)
+
+  //WSactdte_InsertaContribuyente
+C_LONGINT:C283(WSactdte_InsertaContribuyente ;$0)
+C_TEXT:C284(WSactdte_InsertaContribuyente ;$1)
+C_TEXT:C284(WSactdte_InsertaContribuyente ;$2)
+C_TEXT:C284(WSactdte_InsertaContribuyente ;$3)
+C_LONGINT:C283(WSactdte_InsertaContribuyente ;$4)
+
+  //WSactdte_InsertaSucursal
+C_LONGINT:C283(WSactdte_InsertaSucursal ;$0)
+C_TEXT:C284(WSactdte_InsertaSucursal ;$1)
+C_TEXT:C284(WSactdte_InsertaSucursal ;$2)
+C_TEXT:C284(WSactdte_InsertaSucursal ;$3)
+C_TEXT:C284(WSactdte_InsertaSucursal ;$4)
+
+  //XSvs_ActualizaLocalizacionCampo
+C_REAL:C285(XSvs_ActualizaLocalizacionCampo ;$1)
+C_TEXT:C284(XSvs_ActualizaLocalizacionCampo ;$2)
+C_TEXT:C284(XSvs_ActualizaLocalizacionCampo ;$3)
+C_TEXT:C284(XSvs_ActualizaLocalizacionCampo ;$4)
+
+  //VS_GetTableAlias
+C_TEXT:C284(VS_GetTableAlias ;$0)
+C_TEXT:C284(VS_GetTableAlias ;$1)
+C_TEXT:C284(VS_GetTableAlias ;$2)
+C_LONGINT:C283(VS_GetTableAlias ;$3)
+
+  //ACT_VerificaScript
+C_TEXT:C284(ACT_VerificaScript ;$0)
+C_TEXT:C284(ACT_VerificaScript ;$1)
+
+  //dhQF_PreProcessField
+C_TEXT:C284(dhQF_PreProcessField ;$0)
+C_POINTER:C301(dhQF_PreProcessField ;$1)
+C_TEXT:C284(dhQF_PreProcessField ;$2)
+
+  //QRY_PrePocesoValores
+C_TEXT:C284(QRY_PrePocesoValores ;$0)
+C_POINTER:C301(QRY_PrePocesoValores ;$1)
+C_TEXT:C284(QRY_PrePocesoValores ;$2)
+C_TEXT:C284(QRY_PrePocesoValores ;$3)
+
+  //XSvs_LocalizaNombreTabla
+C_POINTER:C301(XSvs_LocalizaNombreTabla ;$1)
+C_TEXT:C284(XSvs_LocalizaNombreTabla ;$2)
+C_TEXT:C284(XSvs_LocalizaNombreTabla ;$3)
+C_TEXT:C284(XSvs_LocalizaNombreTabla ;$4)
+
+  //XSvs_LocalizaNombreCampo
+C_POINTER:C301(XSvs_LocalizaNombreCampo ;$1)
+C_TEXT:C284(XSvs_LocalizaNombreCampo ;$2)
+C_TEXT:C284(XSvs_LocalizaNombreCampo ;$3)
+C_TEXT:C284(XSvs_LocalizaNombreCampo ;$4)
+
+  //SYS_TableModulesWithUF
+C_LONGINT:C283(SYS_TableModulesWithUF ;$1)
+
+  //dhQF_PreProcessValue
+C_TEXT:C284(dhQF_PreProcessValue ;$0)
+C_POINTER:C301(dhQF_PreProcessValue ;$1)
+C_TEXT:C284(dhQF_PreProcessValue ;$2)
+
+  //BWR_GetPanelSettings
+C_TEXT:C284(BWR_GetPanelSettings ;$0)
+C_TEXT:C284(BWR_GetPanelSettings ;$3)
+C_TEXT:C284(BWR_GetPanelSettings ;$4)
+
+  //QR_BuildTableList
+C_POINTER:C301(QR_BuildTableList ;$1)
+C_LONGINT:C283(QR_BuildTableList ;$2)
+C_LONGINT:C283(QR_BuildTableList ;$3)
+
+  //QR_CommandCallback
+C_LONGINT:C283(QR_CommandCallback ;$1)
+C_LONGINT:C283(QR_CommandCallback ;$2)
+
+  //4D_CMD_UltimoID
+C_LONGINT:C283(4D_CMD_UltimoID ;$0)
+
+  //4D_CMD_Nombres_y_Ids
+C_POINTER:C301(4D_CMD_Nombres_y_Ids ;$1)
+C_POINTER:C301(4D_CMD_Nombres_y_Ids ;$2)
+
+  //AL_RelateToFamily
+C_LONGINT:C283(AL_RelateToFamily ;$0)
+
+  //AL_PaginaObservaciones
+C_LONGINT:C283(AL_PaginaObservaciones ;$0)
+C_LONGINT:C283(AL_PaginaObservaciones ;$1)
+
+  //AS_GestionPestañas
+C_REAL:C285(AS_GestionPestañas ;$0)
+C_REAL:C285(AS_GestionPestañas ;$1)
+
+  //SN3ws_DesactivarSN3
+C_TEXT:C284(SN3ws_DesactivarSN3 ;$0)
+C_TEXT:C284(SN3ws_DesactivarSN3 ;$1)
+C_TEXT:C284(SN3ws_DesactivarSN3 ;$2)
+C_TEXT:C284(SN3ws_DesactivarSN3 ;$3)
+C_POINTER:C301(SN3ws_DesactivarSN3 ;$4)
+
+  //KRL_RegistroFueModificado
+C_BOOLEAN:C305(KRL_RegistroFueModificado ;$0)
+C_POINTER:C301(KRL_RegistroFueModificado ;$1)
+
+  //XSvs_LeeLocalizacion_Tablas
+C_TEXT:C284(XSvs_LeeLocalizacion_Tablas ;$1)
+C_TEXT:C284(XSvs_LeeLocalizacion_Tablas ;$2)
+C_TEXT:C284(XSvs_LeeLocalizacion_Tablas ;$3)
+
+  //XSvs_esCampoValidoEnEditores
+C_BOOLEAN:C305(XSvs_esCampoValidoEnEditores ;$0)
+C_POINTER:C301(XSvs_esCampoValidoEnEditores ;$1)
+
+  //XSvs_ActualizaTabla
+C_LONGINT:C283(XSvs_ActualizaTabla ;$1)
+
+  //XSvs_ActualizaRelaciones
+C_POINTER:C301(XSvs_ActualizaRelaciones ;$1)
+
+  //KRL_CuentaTablasYCampos
+C_POINTER:C301(KRL_CuentaTablasYCampos ;$1)
+C_POINTER:C301(KRL_CuentaTablasYCampos ;$2)
+
+  //ACTdte_OpcionesGeneralesIE
+C_TEXT:C284(ACTdte_OpcionesGeneralesIE ;$0)
+C_POINTER:C301(ACTdte_OpcionesGeneralesIE ;${2})
+C_TEXT:C284(ACTdte_OpcionesGeneralesIE ;$1)
+
+  //ACTmnu_OpcionesGeneracionIECV
+C_TEXT:C284(ACTmnu_OpcionesGeneracionIECV ;$0)
+C_POINTER:C301(ACTmnu_OpcionesGeneracionIECV ;${2})
+C_TEXT:C284(ACTmnu_OpcionesGeneracionIECV ;$1)
+
+  //QR_NewQuickReportTemplate
+C_POINTER:C301(QR_NewQuickReportTemplate ;$1)
+
+  //QRY_AppendUserFields2FieldList
+C_LONGINT:C283(QRY_AppendUserFields2FieldList ;$1)
+C_POINTER:C301(QRY_AppendUserFields2FieldList ;$2)
+C_POINTER:C301(QRY_AppendUserFields2FieldList ;$3)
+
+  //QRY_QueryUserFields
+C_POINTER:C301(QRY_QueryUserFields ;$1)
+C_LONGINT:C283(QRY_QueryUserFields ;$2)
+C_TEXT:C284(QRY_QueryUserFields ;$3)
+
+  //QRY_RelatedQueries
+C_LONGINT:C283(QRY_RelatedQueries ;$0)
+C_POINTER:C301(QRY_RelatedQueries ;$1)
+C_LONGINT:C283(QRY_RelatedQueries ;$2)
+C_TEXT:C284(QRY_RelatedQueries ;$3)
+
+  //USR_GetGroupAppSpecificData
+C_LONGINT:C283(USR_GetGroupAppSpecificData ;$0)
+C_LONGINT:C283(USR_GetGroupAppSpecificData ;$1)
+C_TEXT:C284(USR_GetGroupAppSpecificData ;$2)
+C_POINTER:C301(USR_GetGroupAppSpecificData ;$3)
+
+  //USR_SetGroupAppSpecificData
+C_LONGINT:C283(USR_SetGroupAppSpecificData ;$0)
+C_LONGINT:C283(USR_SetGroupAppSpecificData ;$1)
+C_TEXT:C284(USR_SetGroupAppSpecificData ;$2)
+C_POINTER:C301(USR_SetGroupAppSpecificData ;$3)
+C_BOOLEAN:C305(USR_SetGroupAppSpecificData ;$4)
+
+  //USR_LimitedSearch
+C_BOOLEAN:C305(USR_LimitedSearch ;$0)
+C_REAL:C285(USR_LimitedSearch ;$1)
+
+  //STWA2_QFRunQuery
+C_LONGINT:C283(STWA2_QFRunQuery ;$1)
+C_LONGINT:C283(STWA2_QFRunQuery ;$2)
+
+  //QRY_QueryEditor
+C_BLOB:C604(QRY_QueryEditor ;$2)
+
+  //BWR_StartBrowser
+C_LONGINT:C283(BWR_StartBrowser ;$1)
+C_TEXT:C284(BWR_StartBrowser ;$2)
+
+  //BWR_BrowserMenuHandler
+C_LONGINT:C283(BWR_BrowserMenuHandler ;$1)
+C_LONGINT:C283(BWR_BrowserMenuHandler ;$2)
+C_TEXT:C284(BWR_BrowserMenuHandler ;$3)
+
+  //ACTiecv_cEstandar
+C_TEXT:C284(ACTiecv_cEstandar ;$1)
+
+  //WSact_EnviaLibroContable
+C_LONGINT:C283(WSact_EnviaLibroContable ;$0)
+C_TEXT:C284(WSact_EnviaLibroContable ;$1)
+C_TEXT:C284(WSact_EnviaLibroContable ;$2)
+C_LONGINT:C283(WSact_EnviaLibroContable ;$3)
+
+  //WSact_ObtieneLibroContable
+C_LONGINT:C283(WSact_ObtieneLibroContable ;$0)
+C_TEXT:C284(WSact_ObtieneLibroContable ;$1)
+C_TEXT:C284(WSact_ObtieneLibroContable ;$2)
+C_LONGINT:C283(WSact_ObtieneLibroContable ;$3)
+
+  //USR_AccesoTablasAgrupadas
+C_POINTER:C301(USR_AccesoTablasAgrupadas ;$0)
+C_POINTER:C301(USR_AccesoTablasAgrupadas ;$1)
+
+  //SR_ValidaScripts
+C_BOOLEAN:C305(SR_ValidaScripts ;$0)
+C_LONGINT:C283(SR_ValidaScripts ;$1)
+
+  //PF_HorasAsignadasEnHorario
+C_LONGINT:C283(PF_HorasAsignadasEnHorario ;$0)
+C_LONGINT:C283(PF_HorasAsignadasEnHorario ;$1)
+C_BOOLEAN:C305(PF_HorasAsignadasEnHorario ;$2)
+
+  //DT_DayNameFromISODayNumber
+C_TEXT:C284(DT_DayNameFromISODayNumber ;$0)
+C_LONGINT:C283(DT_DayNameFromISODayNumber ;$1)
+
+  //WIZ_STR_ImportacionAlumnos
+C_TEXT:C284(WIZ_STR_ImportacionAlumnos ;$1)
+C_TEXT:C284(WIZ_STR_ImportacionAlumnos ;$2)
+C_TEXT:C284(WIZ_STR_ImportacionAlumnos ;$3)
+
+  //XSvs_ActualizaEstructuraVirtual
+C_BOOLEAN:C305(XSvs_ActualizaEstructuraVirtual ;$1)
+
+  //XSvs_ActualizaLocalizacionTabla
+C_REAL:C285(XSvs_ActualizaLocalizacionTabla ;$1)
+C_TEXT:C284(XSvs_ActualizaLocalizacionTabla ;$2)
+C_TEXT:C284(XSvs_ActualizaLocalizacionTabla ;$3)
+C_TEXT:C284(XSvs_ActualizaLocalizacionTabla ;$4)
+
+  //XSvs_nombreCampoLocal_Numero
+C_TEXT:C284(XSvs_nombreCampoLocal_Numero ;$0)
+C_LONGINT:C283(XSvs_nombreCampoLocal_Numero ;$1)
+C_LONGINT:C283(XSvs_nombreCampoLocal_Numero ;$2)
+C_TEXT:C284(XSvs_nombreCampoLocal_Numero ;$3)
+C_TEXT:C284(XSvs_nombreCampoLocal_Numero ;$4)
+C_BOOLEAN:C305(XSvs_nombreCampoLocal_Numero ;$5)
+
+  //XSvs_nombreCampoLocal_puntero
+C_TEXT:C284(XSvs_nombreCampoLocal_puntero ;$0)
+C_POINTER:C301(XSvs_nombreCampoLocal_puntero ;$1)
+C_TEXT:C284(XSvs_nombreCampoLocal_puntero ;$2)
+C_TEXT:C284(XSvs_nombreCampoLocal_puntero ;$3)
+C_BOOLEAN:C305(XSvs_nombreCampoLocal_puntero ;$4)
+
+  //XSvs_nombreTablaLocal_Numero
+C_TEXT:C284(XSvs_nombreTablaLocal_Numero ;$0)
+C_LONGINT:C283(XSvs_nombreTablaLocal_Numero ;$1)
+C_TEXT:C284(XSvs_nombreTablaLocal_Numero ;$2)
+C_TEXT:C284(XSvs_nombreTablaLocal_Numero ;$3)
+C_BOOLEAN:C305(XSvs_nombreTablaLocal_Numero ;$4)
+
+  //XSvs_nombreTablaLocal_puntero
+C_TEXT:C284(XSvs_nombreTablaLocal_puntero ;$0)
+C_POINTER:C301(XSvs_nombreTablaLocal_puntero ;$1)
+C_TEXT:C284(XSvs_nombreTablaLocal_puntero ;$2)
+C_TEXT:C284(XSvs_nombreTablaLocal_puntero ;$3)
+C_BOOLEAN:C305(XSvs_nombreTablaLocal_puntero ;$4)
+
+  //CU_OnRecordLoad
+C_LONGINT:C283(CU_OnRecordLoad ;$1)
+
+  //IT_clairvoyanceOnFields2
+C_BOOLEAN:C305(IT_clairvoyanceOnFields2 ;$4)
+
+  //HL_Seleccion_a_ListaJerarquica
+C_REAL:C285(HL_Seleccion_a_ListaJerarquica ;$0)
+C_POINTER:C301(HL_Seleccion_a_ListaJerarquica ;$1)
+C_LONGINT:C283(HL_Seleccion_a_ListaJerarquica ;$2)
+
+  //ACTiecv_actualizaEstado
+C_BOOLEAN:C305(ACTiecv_actualizaEstado ;$0)
+C_REAL:C285(ACTiecv_actualizaEstado ;$1)
+C_REAL:C285(ACTiecv_actualizaEstado ;$2)
+
+  //ACTiecv_createRecord
+C_LONGINT:C283(ACTiecv_createRecord ;$0)
+C_REAL:C285(ACTiecv_createRecord ;$1)
+C_TEXT:C284(ACTiecv_createRecord ;$2)
+C_BLOB:C604(ACTiecv_createRecord ;$3)
+C_REAL:C285(ACTiecv_createRecord ;$4)
+C_REAL:C285(ACTiecv_createRecord ;$5)
+C_REAL:C285(ACTiecv_createRecord ;$6)
+C_REAL:C285(ACTiecv_createRecord ;$7)
+C_REAL:C285(ACTiecv_createRecord ;$8)
+C_TEXT:C284(ACTiecv_createRecord ;$9)
+
+  //XS_EstableceServidorOficial
+C_BOOLEAN:C305(XS_EstableceServidorOficial ;$1)
+
+  //NTC_Mensaje_MetodoAsociado
+C_TEXT:C284(NTC_Mensaje_MetodoAsociado ;$1)
+C_TEXT:C284(NTC_Mensaje_MetodoAsociado ;$2)
+C_TEXT:C284(NTC_Mensaje_MetodoAsociado ;$3)
+C_TEXT:C284(NTC_Mensaje_MetodoAsociado ;$4)
+C_TEXT:C284(NTC_Mensaje_MetodoAsociado ;$5)
+
+  //SYS_IsServerRunningAsWINService
+C_BOOLEAN:C305(SYS_IsServerRunningAsWINService ;$0)
+
+  //ST_CreaArchivo
+C_TIME:C306(ST_CreaArchivo ;$0)
+C_TEXT:C284(ST_CreaArchivo ;$1)
+C_TEXT:C284(ST_CreaArchivo ;$2)
+C_TEXT:C284(ST_CreaArchivo ;$3)
+
+  //QRY_ArreglosTablasRelacionadas
+C_BOOLEAN:C305(QRY_ArreglosTablasRelacionadas ;$0)
+
+  //SYS_LeeVersionEstructura
+C_TEXT:C284(SYS_LeeVersionEstructura ;$0)
+C_TEXT:C284(SYS_LeeVersionEstructura ;$1)
+C_POINTER:C301(SYS_LeeVersionEstructura ;$2)
+
+  //SYS_EstableceVersionEstructura
+C_TEXT:C284(SYS_EstableceVersionEstructura ;$1)
+C_TEXT:C284(SYS_EstableceVersionEstructura ;$2)
+
+  //SYS_LeeVersionBaseDeDatos
+C_TEXT:C284(SYS_LeeVersionBaseDeDatos ;$0)
+C_TEXT:C284(SYS_LeeVersionBaseDeDatos ;$1)
+C_POINTER:C301(SYS_LeeVersionBaseDeDatos ;$2)
+
+  //QRY_EsConsultaPermitida
+C_BOOLEAN:C305(QRY_EsConsultaPermitida ;$0)
+
+  //QRY_ExecuteBuildQuery
+C_LONGINT:C283(QRY_ExecuteBuildQuery ;$0)
+
+  //DBU_EstableceAñoEscolarActual
+C_REAL:C285(DBU_EstableceAñoEscolarActual ;$1)
+
+  //AL_LeeInasistenciasAcumuladas
+C_REAL:C285(AL_LeeInasistenciasAcumuladas ;$1)
+C_REAL:C285(AL_LeeInasistenciasAcumuladas ;$2)
+C_REAL:C285(AL_LeeInasistenciasAcumuladas ;$3)
+
+  //SYS_EsServidorIntegraciones
+C_BOOLEAN:C305(SYS_EsServidorIntegraciones ;$0)
+
+  //SN3_SendGAFESettings
+C_BOOLEAN:C305(SN3_SendGAFESettings ;$1)
+
+  //ST_Num2Text2
+C_BOOLEAN:C305(ST_Num2Text2 ;$3)
+C_BOOLEAN:C305(ST_Num2Text2 ;$4)
+
+  //XSvers_GuardaRegistro
+C_LONGINT:C283(XSvers_GuardaRegistro ;$0)
+C_TEXT:C284(XSvers_GuardaRegistro ;$1)
+C_LONGINT:C283(XSvers_GuardaRegistro ;$2)
+
+  //XSvers_buildNumber
+C_REAL:C285(XSvers_buildNumber ;$0)
+C_BOOLEAN:C305(XSvers_buildNumber ;$1)
+C_LONGINT:C283(XSvers_buildNumber ;$2)
+
+  //WEB_OpenWebArea
+C_TEXT:C284(WEB_OpenWebArea ;$1)
+C_TEXT:C284(WEB_OpenWebArea ;$2)
+C_BOOLEAN:C305(WEB_OpenWebArea ;$3)
+C_BOOLEAN:C305(WEB_OpenWebArea ;$4)
+C_BOOLEAN:C305(WEB_OpenWebArea ;$5)
+C_TEXT:C284(WEB_OpenWebArea ;$6)
+
+  //XSstat_Anuales_out
+C_DATE:C307(XSstat_Anuales_out ;$1)
+C_BOOLEAN:C305(XSstat_Anuales_out ;$2)
+
+  //XSstat_Mensuales_out
+C_DATE:C307(XSstat_Mensuales_out ;$1)
+C_BOOLEAN:C305(XSstat_Mensuales_out ;$2)
+
+  //XSstat_UsoDiario_out
+C_BOOLEAN:C305(XSstat_UsoDiario_out ;$0)
+C_DATE:C307(XSstat_UsoDiario_out ;$1)
+C_BOOLEAN:C305(XSstat_UsoDiario_out ;$2)
+
+  //KRL_AjustaSeleccion_a_Arreglo
+C_POINTER:C301(KRL_AjustaSeleccion_a_Arreglo ;$1)
+C_POINTER:C301(KRL_AjustaSeleccion_a_Arreglo ;$2)
+
+  //XSstat_UsuariosDocentes_out
+C_BOOLEAN:C305(XSstat_UsuariosDocentes_out ;$1)
+
+  //STWA2_AJAX_SendInasistenciaHora
+C_TEXT:C284(STWA2_AJAX_SendInasistenciaHora ;$0)
+C_REAL:C285(STWA2_AJAX_SendInasistenciaHora ;$1)
+C_REAL:C285(STWA2_AJAX_SendInasistenciaHora ;$2)
+C_DATE:C307(STWA2_AJAX_SendInasistenciaHora ;$3)
+C_BOOLEAN:C305(STWA2_AJAX_SendInasistenciaHora ;$4)
+
+  //SN3_SendInformesXML
+C_POINTER:C301(SN3_SendInformesXML ;$1)
+C_TEXT:C284(SN3_SendInformesXML ;$2)
+C_DATE:C307(SN3_SendInformesXML ;$3)
+C_TEXT:C284(SN3_SendInformesXML ;$4)
+
+  //UD_EjecutaMetodoActualizacion
+C_TEXT:C284(UD_EjecutaMetodoActualizacion ;$1)
+C_BOOLEAN:C305(UD_EjecutaMetodoActualizacion ;$2)
+
+  //CDOC_ListaLineaCodigo
+C_TEXT:C284(CDOC_ListaLineaCodigo ;$1)
+C_POINTER:C301(CDOC_ListaLineaCodigo ;$2)
+C_POINTER:C301(CDOC_ListaLineaCodigo ;$3)
+
+  //CDOC_MostrarHistorial
+C_TEXT:C284(CDOC_MostrarHistorial ;$1)
+C_BLOB:C604(CDOC_MostrarHistorial ;$2)
+C_POINTER:C301(KRL_UnloadReadOnly ;${1})
+
+  //WSexe_ListaScriptsRemotos_in
+C_TEXT:C284(WSexe_ListaScriptsRemotos_in ;$0)
+C_POINTER:C301(WSexe_ListaScriptsRemotos_in ;$1)
+
+  //WSexe_LeeScript_in
+C_TEXT:C284(WSexe_LeeScript_in ;$0)
+C_LONGINT:C283(WSexe_LeeScript_in ;$1)
+C_POINTER:C301(WSexe_LeeScript_in ;$2)
+C_POINTER:C301(WSexe_LeeScript_in ;$3)
+
+  //WSexe_EnviaScript_out
+C_LONGINT:C283(WSexe_EnviaScript_out ;$0)
+C_TEXT:C284(WSexe_EnviaScript_out ;${3})
+C_TEXT:C284(WSexe_EnviaScript_out ;$1)
+C_TEXT:C284(WSexe_EnviaScript_out ;$2)
+
+  //EXE_EjecutaScriptRemoto
+C_LONGINT:C283(EXE_EjecutaScriptRemoto ;$1)
+C_TEXT:C284(EXE_EjecutaScriptRemoto ;$2)
+
+  //WSexe_ActivacionScript_out
+C_TEXT:C284(WSexe_ActivacionScript_out ;$0)
+C_LONGINT:C283(WSexe_ActivacionScript_out ;$1)
+C_BOOLEAN:C305(WSexe_ActivacionScript_out ;$2)
+C_TEXT:C284(WSexe_ActivacionScript_out ;$3)
+C_TEXT:C284(WSexe_ActivacionScript_out ;$4)
+
+  //DT_Fecha_a_Texto
+C_TEXT:C284(DT_Fecha_a_Texto ;$0)
+C_DATE:C307(DT_Fecha_a_Texto ;$1)
+C_TEXT:C284(DT_Fecha_a_Texto ;$2)
+
+  //ASrs_CreaRegistro
+C_REAL:C285(ASrs_CreaRegistro ;$0)
+C_LONGINT:C283(ASrs_CreaRegistro ;$1)
+C_LONGINT:C283(ASrs_CreaRegistro ;$2)
+C_LONGINT:C283(ASrs_CreaRegistro ;$3)
+C_DATE:C307(ASrs_CreaRegistro ;$4)
+C_LONGINT:C283(ASrs_CreaRegistro ;$5)
+
+  //AS_OnRecordLoad
+C_LONGINT:C283(AS_OnRecordLoad ;$1)
+
+  //KRL_IsWebProcess
+C_BOOLEAN:C305(KRL_IsWebProcess ;$0)
+C_LONGINT:C283(KRL_IsWebProcess ;$1)
+
+  //KRL_EsEventoEnInterfazUsuario
+C_BOOLEAN:C305(KRL_EsEventoEnInterfazUsuario ;$0)
+C_LONGINT:C283(KRL_EsEventoEnInterfazUsuario ;$1)
+
+  //IT_Confirmacion_ProcesaElemento
+C_BLOB:C604(IT_Confirmacion_ProcesaElemento ;$0)
+C_POINTER:C301(IT_Confirmacion_ProcesaElemento ;$1)
+
+  //IT_Confirmacion_AgregaTagValor
+C_LONGINT:C283(IT_Confirmacion_AgregaTagValor ;$0)
+C_TEXT:C284(IT_Confirmacion_AgregaTagValor ;$1)
+C_TEXT:C284(IT_Confirmacion_AgregaTagValor ;$2)
+
+  //IT_Confirmacion_AgregaElemento
+C_LONGINT:C283(IT_Confirmacion_AgregaElemento ;$0)
+C_TEXT:C284(IT_Confirmacion_AgregaElemento ;$1)
+
+  //IT_Confirmacion_MuestraMensaje
+C_LONGINT:C283(IT_Confirmacion_MuestraMensaje ;$0)
+C_TEXT:C284(IT_Confirmacion_MuestraMensaje ;$1)
+C_TEXT:C284(IT_Confirmacion_MuestraMensaje ;$2)
+
+  //IT_ShowProgressIndicator
+C_REAL:C285(IT_ShowProgressIndicator ;$1)
+C_TEXT:C284(IT_ShowProgressIndicator ;$2)
+C_REAL:C285(IT_ShowProgressIndicator ;$3)
+C_TEXT:C284(IT_ShowProgressIndicator ;$4)
+C_REAL:C285(IT_ShowProgressIndicator ;$5)
+C_TEXT:C284(IT_ShowProgressIndicator ;$6)
+
+  //MSG_EliminaEnIntranet
+C_BOOLEAN:C305(MSG_EliminaEnIntranet ;$0)
+C_LONGINT:C283(MSG_EliminaEnIntranet ;$1)
+
+  //MSG_ProcesaEventos
+C_TEXT:C284(MSG_ProcesaEventos ;$1)
+
+  //MSG_RecuperaMensaje
+C_LONGINT:C283(MSG_RecuperaMensaje ;$0)
+C_LONGINT:C283(MSG_RecuperaMensaje ;$1)
+
+  //MSG_TextoMensaje
+C_TEXT:C284(MSG_TextoMensaje ;$0)
+C_TEXT:C284(MSG_TextoMensaje ;$1)
+C_TEXT:C284(MSG_TextoMensaje ;$2)
+C_TEXT:C284(MSG_TextoMensaje ;$3)
+
+  //MSGws_EnviaMensaje_out
+C_REAL:C285(MSGws_EnviaMensaje_out ;$0)
+C_LONGINT:C283(MSGws_EnviaMensaje_out ;$1)
+
+  //MSGws_SolicitaID
+C_LONGINT:C283(MSGws_SolicitaID ;$0)
+
+  //TMT_ActualizaAreasHorario
+C_TEXT:C284(TMT_ActualizaAreasHorario ;$1)
+
+  //TMT_AsignaHorario
+C_LONGINT:C283(TMT_AsignaHorario ;$0)
+C_LONGINT:C283(TMT_AsignaHorario ;$1)
+C_DATE:C307(TMT_AsignaHorario ;$2)
+C_DATE:C307(TMT_AsignaHorario ;$3)
+C_LONGINT:C283(TMT_AsignaHorario ;$4)
+C_LONGINT:C283(TMT_AsignaHorario ;$5)
+C_LONGINT:C283(TMT_AsignaHorario ;$6)
+
+  //TMT_asignaturaEstaAsignada
+C_BOOLEAN:C305(TMT_asignaturaEstaAsignada ;$0)
+C_LONGINT:C283(TMT_asignaturaEstaAsignada ;$1)
+C_LONGINT:C283(TMT_asignaturaEstaAsignada ;$2)
+C_LONGINT:C283(TMT_asignaturaEstaAsignada ;$3)
+C_LONGINT:C283(TMT_asignaturaEstaAsignada ;$4)
+C_LONGINT:C283(TMT_asignaturaEstaAsignada ;$5)
+
+  //TMT_CambiaFechasAplicacion
+C_LONGINT:C283(TMT_CambiaFechasAplicacion ;$0)
+C_POINTER:C301(TMT_CambiaFechasAplicacion ;$1)
+C_DATE:C307(TMT_CambiaFechasAplicacion ;$2)
+C_DATE:C307(TMT_CambiaFechasAplicacion ;$3)
+
+  //TMT_CargaHorario
+C_TEXT:C284(TMT_CargaHorario ;$1)
+C_LONGINT:C283(TMT_CargaHorario ;$2)
+
+  //TMT_ColorCelda
+C_LONGINT:C283(TMT_ColorCelda ;$1)
+C_LONGINT:C283(TMT_ColorCelda ;$2)
+C_DATE:C307(TMT_ColorCelda ;$3)
+C_DATE:C307(TMT_ColorCelda ;$4)
+
+  //TMT_CreaSesiones
+C_LONGINT:C283(TMT_CreaSesiones ;$1)
+C_DATE:C307(TMT_CreaSesiones ;$2)
+C_DATE:C307(TMT_CreaSesiones ;$3)
+C_DATE:C307(TMT_CreaSesiones ;$4)
+
+  //TMT_CuentaHorasClases
+C_LONGINT:C283(TMT_CuentaHorasClases ;$1)
+
+  //TMT_EditarSala
+C_LONGINT:C283(TMT_EditarSala ;$1)
+
+  //TMT_EliminaAsignacion
+C_LONGINT:C283(TMT_EliminaAsignacion ;$0)
+C_LONGINT:C283(TMT_EliminaAsignacion ;$1)
+
+  //TMT_EliminaAsignaciones
+C_LONGINT:C283(TMT_EliminaAsignaciones ;$0)
+C_POINTER:C301(TMT_EliminaAsignaciones ;$1)
+
+  //TMT_EliminaSala
+C_BOOLEAN:C305(TMT_EliminaSala ;$0)
+C_LONGINT:C283(TMT_EliminaSala ;$1)
+
+  //TMT_EliminaSesionesAsociadas
+C_REAL:C285(TMT_EliminaSesionesAsociadas ;$0)
+C_POINTER:C301(TMT_EliminaSesionesAsociadas ;$1)
+C_DATE:C307(TMT_EliminaSesionesAsociadas ;$2)
+C_DATE:C307(TMT_EliminaSesionesAsociadas ;$3)
+
+  //TMT_ExtiendeAplicacion
+C_LONGINT:C283(TMT_ExtiendeAplicacion ;$1)
+C_DATE:C307(TMT_ExtiendeAplicacion ;$2)
+C_DATE:C307(TMT_ExtiendeAplicacion ;$3)
+
+  //TMT_InfoAsignacion
+C_BOOLEAN:C305(TMT_InfoAsignacion ;$0)
+C_LONGINT:C283(TMT_InfoAsignacion ;$1)
+
+  //TMT_InfoAsignacionAsignatura
+C_LONGINT:C283(TMT_InfoAsignacionAsignatura ;$1)
+
+  //TMT_LeeDetallesAsignacion
+C_LONGINT:C283(TMT_LeeDetallesAsignacion ;$1)
+
+  //TMT_LeeDetallesSesion
+C_LONGINT:C283(TMT_LeeDetallesSesion ;$1)
+
+  //TMT_LiberarSala
+C_BOOLEAN:C305(TMT_LiberarSala ;$0)
+C_LONGINT:C283(TMT_LiberarSala ;$1)
+
+  //TMT_RetiraAsignacion
+C_TEXT:C284(TMT_RetiraAsignacion ;$0)
+C_LONGINT:C283(TMT_RetiraAsignacion ;$1)
+
+  //TMT_retornaCiclo
+C_LONGINT:C283(TMT_retornaCiclo ;$0)
+C_DATE:C307(TMT_retornaCiclo ;$1)
+C_LONGINT:C283(TMT_retornaCiclo ;$2)
+
+  //TMT_textoBloqueHorario
+C_TEXT:C284(TMT_textoBloqueHorario ;$0)
+C_TEXT:C284(TMT_textoBloqueHorario ;$1)
+C_TEXT:C284(TMT_textoBloqueHorario ;$2)
+C_TEXT:C284(TMT_textoBloqueHorario ;$3)
+C_TEXT:C284(TMT_textoBloqueHorario ;$4)
+C_DATE:C307(TMT_textoBloqueHorario ;$5)
+C_DATE:C307(TMT_textoBloqueHorario ;$6)
+C_LONGINT:C283(TMT_textoBloqueHorario ;$7)
+
+  //STWA2_Priv_GetMethodAccess
+C_BOOLEAN:C305(STWA2_Priv_GetMethodAccess ;$0)
+C_TEXT:C284(STWA2_Priv_GetMethodAccess ;$1)
+C_LONGINT:C283(STWA2_Priv_GetMethodAccess ;$2)
+
+  //KRL_UnloadReadOnlyOnServer
+C_POINTER:C301(KRL_UnloadReadOnlyOnServer ;$1)
+
+  //ASrs_EliminaSesiones
+C_REAL:C285(ASrs_EliminaSesiones ;$0)
+C_POINTER:C301(ASrs_EliminaSesiones ;$1)
+
+  //DBUas_InasistenciasInvalidas
+C_REAL:C285(DBUas_InasistenciasInvalidas ;$0)
+C_TEXT:C284(DBUas_InasistenciasInvalidas ;$1)
+
+  //DBUas_SesionesInvalidas
+C_REAL:C285(DBUas_SesionesInvalidas ;$0)
+C_TEXT:C284(DBUas_SesionesInvalidas ;$1)
+
+  //TMT_ValidaCambiosFechas
+C_TEXT:C284(TMT_ValidaCambiosFechas ;$0)
+
+  //ACTtra_DuplicaT
+C_LONGINT:C283(ACTtra_DuplicaT ;$1)
+C_REAL:C285(ACTtra_DuplicaT ;$2)
+
+  //AL_InasistenciaDiariaPorHoras
+C_REAL:C285(AL_InasistenciaDiariaPorHoras ;$0)
+
+  //AS_InitVariables
+C_TEXT:C284(AS_InitVariables ;$1)
+
+  //ASrs_CargaArreglos
+C_BOOLEAN:C305(ASrs_CargaArreglos ;$1)
+
+  //WS_DatosMaguenDavid
+C_TEXT:C284(WS_DatosMaguenDavid ;$1)
+C_TEXT:C284(WS_DatosMaguenDavid ;$2)
+C_TEXT:C284(WS_DatosMaguenDavid ;$3)
+C_TEXT:C284(WS_DatosMaguenDavid ;$4)
+C_TEXT:C284(WS_DatosMaguenDavid ;$5)
+
+  //IT_FijaEstadoPopupItem
+C_TEXT:C284(IT_FijaEstadoPopupItem ;$0)
+C_TEXT:C284(IT_FijaEstadoPopupItem ;$1)
+C_LONGINT:C283(IT_FijaEstadoPopupItem ;$2)
+C_BOOLEAN:C305(IT_FijaEstadoPopupItem ;$3)
+
+  //TMT_DesplazaAsignacion
+C_BOOLEAN:C305(TMT_DesplazaAsignacion ;$0)
+C_LONGINT:C283(TMT_DesplazaAsignacion ;$1)
+C_LONGINT:C283(TMT_DesplazaAsignacion ;$2)
+C_LONGINT:C283(TMT_DesplazaAsignacion ;$3)
+C_LONGINT:C283(TMT_DesplazaAsignacion ;$4)
+C_LONGINT:C283(TMT_DesplazaAsignacion ;$5)
+
+  //TMT_ConflictosProfesor
+C_BOOLEAN:C305(TMT_ConflictosProfesor ;$0)
+C_LONGINT:C283(TMT_ConflictosProfesor ;$1)
+C_LONGINT:C283(TMT_ConflictosProfesor ;$2)
+C_LONGINT:C283(TMT_ConflictosProfesor ;$3)
+C_LONGINT:C283(TMT_ConflictosProfesor ;$4)
+C_LONGINT:C283(TMT_ConflictosProfesor ;$5)
+C_POINTER:C301(TMT_ConflictosProfesor ;$6)
+C_POINTER:C301(TMT_ConflictosProfesor ;$7)
+
+  //MPAcfg_Comp_CambiaEtapa
+C_REAL:C285(MPAcfg_Comp_CambiaEtapa ;$0)
+C_LONGINT:C283(MPAcfg_Comp_CambiaEtapa ;$1)
+C_LONGINT:C283(MPAcfg_Comp_CambiaEtapa ;$2)
+C_LONGINT:C283(MPAcfg_Comp_CambiaEtapa ;$3)
+C_TEXT:C284(MPAcfg_Comp_CambiaEtapa ;$4)
+
+  //MPAcfg_Area_CambiaLimitesEtapa
+C_LONGINT:C283(MPAcfg_Area_CambiaLimitesEtapa ;$0)
+C_LONGINT:C283(MPAcfg_Area_CambiaLimitesEtapa ;$1)
+C_LONGINT:C283(MPAcfg_Area_CambiaLimitesEtapa ;$2)
+C_LONGINT:C283(MPAcfg_Area_CambiaLimitesEtapa ;$3)
+C_LONGINT:C283(MPAcfg_Area_CambiaLimitesEtapa ;$4)
+C_LONGINT:C283(MPAcfg_Area_CambiaLimitesEtapa ;$5)
+
+  //MPAcfg_ActualizaMatrices
+C_LONGINT:C283(MPAcfg_ActualizaMatrices ;$1)
+C_LONGINT:C283(MPAcfg_ActualizaMatrices ;$2)
+C_LONGINT:C283(MPAcfg_ActualizaMatrices ;$3)
+C_LONGINT:C283(MPAcfg_ActualizaMatrices ;$4)
+C_LONGINT:C283(MPAcfg_ActualizaMatrices ;$5)
+C_BOOLEAN:C305(MPAcfg_ActualizaMatrices ;$6)
+
+  //STWA2_AJAX_SendSesiones
+C_TEXT:C284(STWA2_AJAX_SendSesiones ;$0)
+C_REAL:C285(STWA2_AJAX_SendSesiones ;$1)
+C_REAL:C285(STWA2_AJAX_SendSesiones ;$2)
+C_REAL:C285(STWA2_AJAX_SendSesiones ;$3)
+
+  //PCSrun_ACT_MailSender
+C_REAL:C285(PCSrun_ACT_MailSender ;$1)
+C_REAL:C285(PCSrun_ACT_MailSender ;$2)
+C_REAL:C285(PCSrun_ACT_MailSender ;$3)
+
+  //ACTiecv_obtieneEstadoDesdeDTE
+C_BOOLEAN:C305(ACTiecv_obtieneEstadoDesdeDTE ;$0)
+C_LONGINT:C283(ACTiecv_obtieneEstadoDesdeDTE ;$1)
+
+  //ACTdte_RetornaTextos
+C_TEXT:C284(ACTdte_RetornaTextos ;$0)
+C_TEXT:C284(ACTdte_RetornaTextos ;$1)
+C_POINTER:C301(ACTdte_RetornaTextos ;$2)
+
+  //ACTiecv_cargaArreglosListado
+C_TEXT:C284(ACTiecv_cargaArreglosListado ;$1)
+C_POINTER:C301(ACTiecv_cargaArreglosListado ;$2)
+C_POINTER:C301(ACTiecv_cargaArreglosListado ;$3)
+
+  //ACTwa_OnWebConnection
+C_TEXT:C284(ACTwa_OnWebConnection ;$1)
+C_TEXT:C284(ACTwa_OnWebConnection ;$2)
+C_TEXT:C284(ACTwa_OnWebConnection ;$3)
+C_TEXT:C284(ACTwa_OnWebConnection ;$4)
+C_TEXT:C284(ACTwa_OnWebConnection ;$5)
+C_TEXT:C284(ACTwa_OnWebConnection ;$6)
+
+  //ACTwa_IngresaPago
+C_TEXT:C284(ACTwa_IngresaPago ;$0)
+C_REAL:C285(ACTwa_IngresaPago ;$1)
+C_TEXT:C284(ACTwa_IngresaPago ;$2)
+C_DATE:C307(ACTwa_IngresaPago ;$3)
+C_TEXT:C284(ACTwa_IngresaPago ;$4)
+C_BOOLEAN:C305(ACTwa_IngresaPago ;$5)
+C_TEXT:C284(ACTwa_IngresaPago ;$6)
+C_TEXT:C284(ACTwa_IngresaPago ;$7)
+C_REAL:C285(ACTwa_IngresaPago ;$8)
+C_TEXT:C284(ACTwa_IngresaPago ;$9)
+C_TEXT:C284(ACTwa_IngresaPago ;$10)
+C_TEXT:C284(ACTwa_IngresaPago ;$11)
+
+  //ACTwa_RetornaDeudaApdo
+C_TEXT:C284(ACTwa_RetornaDeudaApdo ;$0)
+C_TEXT:C284(ACTwa_RetornaDeudaApdo ;$1)
+C_REAL:C285(ACTwa_RetornaDeudaApdo ;$2)
+C_DATE:C307(ACTwa_RetornaDeudaApdo ;$3)
+C_REAL:C285(ACTwa_RetornaDeudaApdo ;$4)
+
+  //ACTac_CreaDTSPDF
+C_BOOLEAN:C305(ACTac_CreaDTSPDF ;$0)
+C_TEXT:C284(ACTac_CreaDTSPDF ;$1)
+
+  //TMT_FechaDiaValidos
+C_BOOLEAN:C305(TMT_FechaDiaValidos ;$0)
+C_POINTER:C301(TMT_FechaDiaValidos ;$1)
+C_DATE:C307(TMT_FechaDiaValidos ;$2)
+C_LONGINT:C283(TMT_FechaDiaValidos ;$3)
+
+  //STWA2_Edunet_Llaves
+C_TEXT:C284(STWA2_Edunet_Llaves ;$0)
+C_TEXT:C284(STWA2_Edunet_Llaves ;$1)
+
+  //STWA2_GAFE_ObtenerDatosConexion
+C_TEXT:C284(STWA2_GAFE_ObtenerDatosConexion ;$0)
+C_LONGINT:C283(STWA2_GAFE_ObtenerDatosConexion ;$1)
+
+  //STWA2_GAFE_Llaves
+C_TEXT:C284(STWA2_GAFE_Llaves ;$0)
+C_LONGINT:C283(STWA2_GAFE_Llaves ;$1)
+
+  //STWA2_GAFE_SendURLS
+C_TEXT:C284(STWA2_GAFE_SendURLS ;$0)
+C_LONGINT:C283(STWA2_GAFE_SendURLS ;$1)
+C_LONGINT:C283(STWA2_GAFE_SendURLS ;$2)
+
+  //STWA2_Dash_Asistencia
+C_TEXT:C284(STWA2_Dash_Asistencia ;$0)
+C_POINTER:C301(STWA2_Dash_Asistencia ;$1)
+C_POINTER:C301(STWA2_Dash_Asistencia ;$2)
+
+  //STWA2_Dash_Calificaciones
+C_TEXT:C284(STWA2_Dash_Calificaciones ;$0)
+C_POINTER:C301(STWA2_Dash_Calificaciones ;$1)
+C_POINTER:C301(STWA2_Dash_Calificaciones ;$2)
+C_POINTER:C301(STWA2_Dash_Calificaciones ;$3)
+
+  //ADTcdd_DeleteEducacionAntBatch
+C_BOOLEAN:C305(ADTcdd_DeleteEducacionAntBatch ;$0)
+C_BLOB:C604(ADTcdd_DeleteEducacionAntBatch ;$1)
+
+  //ACTdte_GeneraDTE
+C_TEXT:C284(ACTdte_GeneraDTE ;$0)
+C_TEXT:C284(ACTdte_GeneraDTE ;$1)
+
+  //WSact_sincronizaFoliosDisponib
+C_LONGINT:C283(WSact_sincronizaFoliosDisponib ;$0)
+C_TEXT:C284(WSact_sincronizaFoliosDisponib ;$1)
+
+
+  //UD_DescargaActualizacion
+C_LONGINT:C283(UD_DescargaActualizacion ;$0)
+
+  //SYS_MueveDirectorio_Mac
+C_TEXT:C284(SYS_MueveDirectorio_Mac ;$1)
+C_TEXT:C284(SYS_MueveDirectorio_Mac ;$2)
+
+  //LEP_Escape_path
+C_TEXT:C284(LEP_Escape_path ;$0)
+C_TEXT:C284(LEP_Escape_path ;$1)
+
+  //LEP_Escape
+C_TEXT:C284(LEP_Escape ;$0)
+C_TEXT:C284(LEP_Escape ;$1)
+
+  //LEP_EjecutaComando
+C_BOOLEAN:C305(LEP_EjecutaComando ;$0)
+C_TEXT:C284(LEP_EjecutaComando ;$1)
+C_POINTER:C301(LEP_EjecutaComando ;$2)
+
+  //ACTra_RetornaMontos
+C_LONGINT:C283(ACTra_RetornaMontos ;$0)
+C_LONGINT:C283(ACTra_RetornaMontos ;$1)
+C_REAL:C285(ACTra_RetornaMontos ;$2)
+C_REAL:C285(ACTra_RetornaMontos ;$3)
+C_REAL:C285(ACTra_RetornaMontos ;$4)
+C_REAL:C285(ACTra_RetornaMontos ;$5)
+
+  //WSact_ObtieneDTEsRecibidos
+C_BLOB:C604(WSact_ObtieneDTEsRecibidos ;$0)
+C_TEXT:C284(WSact_ObtieneDTEsRecibidos ;$1)
+C_POINTER:C301(WSact_ObtieneDTEsRecibidos ;$2)
+C_REAL:C285(WSact_ObtieneDTEsRecibidos ;$3)
+
+  //BBL_BuscaItems
+C_LONGINT:C283(BBL_BuscaItems ;$0)
+C_TEXT:C284(BBL_BuscaItems ;$1)
+C_TEXT:C284(BBL_BuscaItems ;$2)
+C_TEXT:C284(BBL_BuscaItems ;$3)
+C_TEXT:C284(BBL_BuscaItems ;$4)
+C_TEXT:C284(BBL_BuscaItems ;$5)
+
+  //SYS_EliminaArchivos_DS_Store
+C_TEXT:C284(SYS_EliminaArchivos_DS_Store ;$1)
+
+  //USR_ObtieneBitsParaGrupoNTC
+C_LONGINT:C283(USR_ObtieneBitsParaGrupoNTC ;$0)
+C_REAL:C285(USR_ObtieneBitsParaGrupoNTC ;$1)
+
+  //USR_AsignaBitAUsuarioNTC
+C_BOOLEAN:C305(USR_AsignaBitAUsuarioNTC ;$0)
+C_TEXT:C284(USR_AsignaBitAUsuarioNTC ;$1)
+
+  //EV2_ResultadosAsignatura
+C_REAL:C285(EV2_ResultadosAsignatura ;$0)
+C_LONGINT:C283(EV2_ResultadosAsignatura ;$1)
+
+  //IOstr_ImportStudentData
+C_OBJECT:C1216(IOstr_ImportStudentData ;$0)
+C_TEXT:C284(IOstr_ImportStudentData ;$3)
+C_BOOLEAN:C305(IOstr_ImportStudentData ;$4)
+
+  //AL_ProcesaNombres
+C_BOOLEAN:C305(AL_ProcesaNombres ;$1)
+
+  //EV2_LanzaProcesoConsolidacion
+C_LONGINT:C283(EV2_LanzaProcesoConsolidacion ;$1)
+C_LONGINT:C283(EV2_LanzaProcesoConsolidacion ;$2)
+C_LONGINT:C283(EV2_LanzaProcesoConsolidacion ;$3)
+
+  //SIGE_LoadDataArrays
+C_LONGINT:C283(SIGE_LoadDataArrays ;$1)
+C_LONGINT:C283(SIGE_LoadDataArrays ;$2)
+C_LONGINT:C283(SIGE_LoadDataArrays ;$3)
+C_LONGINT:C283(SIGE_LoadDataArrays ;$4)
+
+  //SIGE_LoadDisplayLB
+C_LONGINT:C283(SIGE_LoadDisplayLB ;$1)
+
+  //ACTwp_RevisaPagos
+C_BOOLEAN:C305(ACTwp_RevisaPagos ;$0)
+
+  //ACTwp_RevisaPagosXDia
+C_BOOLEAN:C305(ACTwp_RevisaPagosXDia ;$0)
+C_DATE:C307(ACTwp_RevisaPagosXDia ;$1)
+C_BOOLEAN:C305(ACTwp_RevisaPagosXDia ;$2)
+
+  //ACTwp_ObtieneFechaDesdeString
+C_DATE:C307(ACTwp_ObtieneFechaDesdeString ;$0)
+C_TEXT:C284(ACTwp_ObtieneFechaDesdeString ;$1)
+
+  //ACTwp_ObtieneStringDesdeFecha
+C_TEXT:C284(ACTwp_ObtieneStringDesdeFecha ;$0)
+C_DATE:C307(ACTwp_ObtieneStringDesdeFecha ;$1)
+
+  //SN3_RetreivePagosWP
+C_TEXT:C284(SN3_RetreivePagosWP ;$0)
+C_DATE:C307(SN3_RetreivePagosWP ;$1)
+
+  //ACTitems_AsignaCCostoXNivel
+C_BOOLEAN:C305(ACTitems_AsignaCCostoXNivel ;$0)
+C_LONGINT:C283(ACTitems_AsignaCCostoXNivel ;$1)
+
+  //ACTitems_LeeCentrosCostoXNivel
+C_LONGINT:C283(ACTitems_LeeCentrosCostoXNivel ;$1)
+C_POINTER:C301(ACTitems_LeeCentrosCostoXNivel ;$2)
+
+  //ACTitems_GuardaCCostoXNivel
+C_POINTER:C301(ACTitems_GuardaCCostoXNivel ;$1)
+
+  //ACTcfg_DeclaraArreglos
+C_TEXT:C284(ACTcfg_DeclaraArreglos ;$1)
+
+  //ACTitems_ObtieneCCostoXNivel
+C_TEXT:C284(ACTitems_ObtieneCCostoXNivel ;$0)
+C_REAL:C285(ACTitems_ObtieneCCostoXNivel ;$1)
+C_REAL:C285(ACTitems_ObtieneCCostoXNivel ;$2)
+C_TEXT:C284(ACTitems_ObtieneCCostoXNivel ;$3)
+C_TEXT:C284(ACTitems_ObtieneCCostoXNivel ;$4)
+
+  //ACTitems_DuplicaCargo
+C_REAL:C285(ACTitems_DuplicaCargo ;$0)
+C_REAL:C285(ACTitems_DuplicaCargo ;$1)
+
+  //ACTitems_CargaLista
+C_TEXT:C284(ACTitems_CargaLista ;$1)
+
+  //ACTitems_FiltroPeriodo
+C_TEXT:C284(ACTitems_FiltroPeriodo ;$1)
+
+  //ACTitems_BuscaAñoEnCargos
+C_TEXT:C284(ACTitems_BuscaAñoEnCargos ;$0)
+C_REAL:C285(ACTitems_BuscaAñoEnCargos ;$1)
+
+  //ACTitems_SeleccionaLinea
+C_LONGINT:C283(ACTitems_SeleccionaLinea ;$1)
+
+  //STWA2_Dash_Anotaciones
+C_TEXT:C284(STWA2_Dash_Anotaciones ;$0)
+C_POINTER:C301(STWA2_Dash_Anotaciones ;$1)
+C_POINTER:C301(STWA2_Dash_Anotaciones ;$2)
+
+  //INET_Conectado
+C_BOOLEAN:C305(INET_Conectado ;$0)
+C_TEXT:C284(INET_Conectado ;$1)
+
+  //INET_IntranetColegiumDisponible
+C_BOOLEAN:C305(INET_IntranetColegiumDisponible ;$0)
+
+  //BBLci_SeleccionLectores
+C_REAL:C285(BBLci_SeleccionLectores ;$0)
+
+  //BBLci_SeleccionItems
+C_REAL:C285(BBLci_SeleccionItems ;$0)
+
+  //BBLci_Renovacion
+C_LONGINT:C283(BBLci_Renovacion ;$0)
+C_LONGINT:C283(BBLci_Renovacion ;$1)
+
+  //BBLci_RegistraPago
+C_REAL:C285(BBLci_RegistraPago ;$1)
+C_REAL:C285(BBLci_RegistraPago ;$2)
+
+  //BBLci_PreferenciasConsola
+C_TEXT:C284(BBLci_PreferenciasConsola ;$1)
+
+  //BBLci_MultaPorDevolucionTardia
+C_LONGINT:C283(BBLci_MultaPorDevolucionTardia ;$1)
+C_REAL:C285(BBLci_MultaPorDevolucionTardia ;$2)
+
+  //BBLci_Multa
+C_LONGINT:C283(BBLci_Multa ;$1)
+C_REAL:C285(BBLci_Multa ;$2)
+
+  //BBLci_ModosBusquedaObjeto
+C_TEXT:C284(BBLci_ModosBusquedaObjeto ;$1)
+
+  //BBLci_Inventario
+C_LONGINT:C283(BBLci_Inventario ;$1)
+C_LONGINT:C283(BBLci_Inventario ;$2)
+C_LONGINT:C283(BBLci_Inventario ;$3)
+C_LONGINT:C283(BBLci_Inventario ;$4)
+
+  //BBLci_InformacionesLector
+C_TEXT:C284(BBLci_InformacionesLector ;$1)
+
+  //BBLci_InfoPrestamos
+C_REAL:C285(BBLci_InfoPrestamos ;$0)
+C_POINTER:C301(BBLci_InfoPrestamos ;$1)
+C_TEXT:C284(BBLci_InfoPrestamos ;$2)
+
+  //BBLci_InfoCampoBusqueda
+C_LONGINT:C283(BBLci_InfoCampoBusqueda ;$1)
+C_POINTER:C301(BBLci_InfoCampoBusqueda ;$2)
+C_POINTER:C301(BBLci_InfoCampoBusqueda ;$3)
+
+  //BBLci_EnviaCorreo
+C_TEXT:C284(BBLci_EnviaCorreo ;$0)
+C_TEXT:C284(BBLci_EnviaCorreo ;$1)
+C_TEXT:C284(BBLci_EnviaCorreo ;$2)
+C_TEXT:C284(BBLci_EnviaCorreo ;$3)
+
+  //BBLcfg_NuevoTipoDocumento
+C_TEXT:C284(BBLcfg_NuevoTipoDocumento ;$1)
+
+  //BBLcfg_CambioMediaEnItems
+C_LONGINT:C283(BBLcfg_CambioMediaEnItems ;$1)
+C_TEXT:C284(BBLcfg_CambioMediaEnItems ;$2)
+
+  //IT_RestableceGeometriaObjetos
+C_LONGINT:C283(IT_RestableceGeometriaObjetos ;$1)
+
+  //IT_archivosArrastrados
+C_TEXT:C284(IT_archivosArrastrados ;$0)
+C_POINTER:C301(IT_archivosArrastrados ;$1)
+
+  //MNU_EliminaMarcasMenu
+C_TEXT:C284(MNU_EliminaMarcasMenu ;$1)
+
+  //ModernUI_SetTextAttributes
+C_TEXT:C284(ModernUI_SetTextAttributes ;$1)
+C_LONGINT:C283(ModernUI_SetTextAttributes ;$2)
+C_LONGINT:C283(ModernUI_SetTextAttributes ;$3)
+C_LONGINT:C283(ModernUI_SetTextAttributes ;$4)
+C_LONGINT:C283(ModernUI_SetTextAttributes ;$5)
+C_LONGINT:C283(ModernUI_SetTextAttributes ;$6)
+
+  //DOCL_documento_a_Blob
+C_BLOB:C604(DOCL_documento_a_Blob ;$0)
+C_TEXT:C284(DOCL_documento_a_Blob ;$1)
+C_TEXT:C284(DOCL_documento_a_Blob ;$2)
+
+  //DOCL_DocumentosAsociados
+C_POINTER:C301(DOCL_DocumentosAsociados ;$1)
+C_TEXT:C284(DOCL_DocumentosAsociados ;$2)
+C_TEXT:C284(DOCL_DocumentosAsociados ;$3)
+C_BOOLEAN:C305(DOCL_DocumentosAsociados ;$4)
+
+  //DOCL_eliminaDocumento
+C_LONGINT:C283(DOCL_eliminaDocumento ;$0)
+C_POINTER:C301(DOCL_eliminaDocumento ;$1)
+C_TEXT:C284(DOCL_eliminaDocumento ;$2)
+C_TEXT:C284(DOCL_eliminaDocumento ;$3)
+
+  //DOCL_establecePosicion
+C_TEXT:C284(DOCL_establecePosicion ;$1)
+C_LONGINT:C283(DOCL_establecePosicion ;$2)
+
+  //DOCL_guardaClaseDocumento
+C_LONGINT:C283(DOCL_guardaClaseDocumento ;$0)
+C_TEXT:C284(DOCL_guardaClaseDocumento ;$1)
+C_TEXT:C284(DOCL_guardaClaseDocumento ;$2)
+
+  //DOCL_guardaContenido
+C_LONGINT:C283(DOCL_guardaContenido ;$0)
+C_TEXT:C284(DOCL_guardaContenido ;$1)
+C_POINTER:C301(DOCL_guardaContenido ;$2)
+C_TEXT:C284(DOCL_guardaContenido ;$3)
+
+  //DOCL_guardaDescripcion
+C_LONGINT:C283(DOCL_guardaDescripcion ;$0)
+C_TEXT:C284(DOCL_guardaDescripcion ;$1)
+C_TEXT:C284(DOCL_guardaDescripcion ;$2)
+
+  //DOCL_guardaMiniatura
+C_REAL:C285(DOCL_guardaMiniatura ;$0)
+C_TEXT:C284(DOCL_guardaMiniatura ;$1)
+C_POINTER:C301(DOCL_guardaMiniatura ;$2)
+
+  //DOCL_guardaNombre
+C_LONGINT:C283(DOCL_guardaNombre ;$0)
+C_TEXT:C284(DOCL_guardaNombre ;$1)
+C_TEXT:C284(DOCL_guardaNombre ;$2)
+
+  //DT_fechaAmigable
+C_TEXT:C284(DT_fechaAmigable ;$0)
+C_DATE:C307(DT_fechaAmigable ;$1)
+C_TEXT:C284(DT_fechaAmigable ;$2)
+C_REAL:C285(DT_fechaAmigable ;$3)
+
+  //Notificacion_Mostrar
+C_TEXT:C284(Notificacion_Mostrar ;$1)
+C_TEXT:C284(Notificacion_Mostrar ;$2)
+
+  //Notificacion_retrollamado
+C_TEXT:C284(Notificacion_retrollamado ;$1)
+C_TEXT:C284(Notificacion_retrollamado ;$2)
+C_TEXT:C284(Notificacion_retrollamado ;$3)
+C_TEXT:C284(Notificacion_retrollamado ;$4)
+C_TEXT:C284(Notificacion_retrollamado ;$5)
+C_TEXT:C284(Notificacion_retrollamado ;$6)
+
+  //PICT_GetNoPictureImage
+C_PICTURE:C286(PICT_GetNoPictureImage ;$0)
+
+  //QRY_ModosBusquedaPalabrasClave
+C_POINTER:C301(QRY_ModosBusquedaPalabrasClave ;$1)
+C_POINTER:C301(QRY_ModosBusquedaPalabrasClave ;$2)
+
+  //SYS_extensionDocumento
+C_TEXT:C284(SYS_extensionDocumento ;$0)
+C_TEXT:C284(SYS_extensionDocumento ;$1)
+
+  //WEBarea_MuestraDocumento_blob
+C_BLOB:C604(WEBarea_MuestraDocumento_blob ;$1)
+C_TEXT:C284(WEBarea_MuestraDocumento_blob ;$2)
+C_TEXT:C284(WEBarea_MuestraDocumento_blob ;$3)
+
+  //WEB_Peticion
+C_TEXT:C284(WEB_Peticion ;$0)
+C_TEXT:C284(WEB_Peticion ;$1)
+C_TEXT:C284(WEB_Peticion ;$2)
+C_REAL:C285(WEB_Peticion ;$3)
+C_TEXT:C284(WEB_Peticion ;$4)
+
+  //AL_RetiroAlumno_EstadoADT
+C_LONGINT:C283(AL_RetiroAlumno_EstadoADT ;$1)
+
+  //MNU_CreaMenu_arreglo
+C_TEXT:C284(MNU_CreaMenu_arreglo ;$0)
+C_POINTER:C301(MNU_CreaMenu_arreglo ;$1)
+C_BOOLEAN:C305(MNU_CreaMenu_arreglo ;$2)
+
+  //XSvs_LeeLocalizacion
+C_BLOB:C604(XSvs_LeeLocalizacion ;$0)
+C_TEXT:C284(XSvs_LeeLocalizacion ;$1)
+C_TEXT:C284(XSvs_LeeLocalizacion ;$2)
+
+  //XSvs_LeeLocalizacion_Campos
+C_TEXT:C284(XSvs_LeeLocalizacion_Campos ;$1)
+C_TEXT:C284(XSvs_LeeLocalizacion_Campos ;$2)
+C_TEXT:C284(XSvs_LeeLocalizacion_Campos ;$3)
+
+  //OT_errorHandler
+C_TEXT:C284(OT_errorHandler ;$1)
+C_TEXT:C284(OT_errorHandler ;$2)
+C_LONGINT:C283(OT_errorHandler ;$3)
+C_TEXT:C284(OT_errorHandler ;$4)
+
+  //BBLci_BusquedaRegistro
+C_REAL:C285(BBLci_BusquedaRegistro ;$0)
+C_TEXT:C284(BBLci_BusquedaRegistro ;$1)
+
+  //EV2_Calificaciones_SeleccionAL
+C_LONGINT:C283(EV2_Calificaciones_SeleccionAL ;$1)
+
+  //XS_SelectPicture_FM
+C_REAL:C285(XS_SelectPicture_FM ;$0)
+C_TEXT:C284(XS_SelectPicture_FM ;$1)
+C_POINTER:C301(XS_SelectPicture_FM ;$2)
+C_TEXT:C284(XS_SelectPicture_FM ;$3)
+
+  //_ACT_ModoDePago
+C_TEXT:C284(_ACT_ModoDePago ;$0)
+C_LONGINT:C283(_ACT_ModoDePago ;$1)
+
+  //PP_AsignaRutInfoPagos
+C_TEXT:C284(PP_AsignaRutInfoPagos ;$0)
+C_POINTER:C301(PP_AsignaRutInfoPagos ;$1)
+C_POINTER:C301(PP_AsignaRutInfoPagos ;$2)
+C_LONGINT:C283(PP_AsignaRutInfoPagos ;$3)
+
+  //ACTecc_OpcionesGenerales
+C_TEXT:C284(ACTecc_OpcionesGenerales ;$0)
+C_POINTER:C301(ACTecc_OpcionesGenerales ;${2})
+C_TEXT:C284(ACTecc_OpcionesGenerales ;$1)
+
+  //ACTdteRec_Generales
+C_TEXT:C284(ACTdteRec_Generales ;$0)
+C_TEXT:C284(ACTdteRec_Generales ;$1)
+C_POINTER:C301(ACTdteRec_Generales ;$2)
+C_POINTER:C301(ACTdteRec_Generales ;$3)
+C_POINTER:C301(ACTdteRec_Generales ;$4)
+C_POINTER:C301(ACTdteRec_Generales ;$5)
+C_POINTER:C301(ACTdteRec_Generales ;$6)
+C_POINTER:C301(ACTdteRec_Generales ;$7)
+
+  //ACTdteRec_LlenaArreglos
+C_LONGINT:C283(ACTdteRec_LlenaArreglos ;$1)
+C_TEXT:C284(ACTdteRec_LlenaArreglos ;$2)
+C_TEXT:C284(ACTdteRec_LlenaArreglos ;$3)
+C_REAL:C285(ACTdteRec_LlenaArreglos ;$4)
+C_DATE:C307(ACTdteRec_LlenaArreglos ;$5)
+C_DATE:C307(ACTdteRec_LlenaArreglos ;$6)
+C_TEXT:C284(ACTdteRec_LlenaArreglos ;$7)
+C_TEXT:C284(ACTdteRec_LlenaArreglos ;$8)
+C_POINTER:C301(ACTdteRec_LlenaArreglos ;$9)
+
+  //ACTdteRec_ObtienePDF
+C_TEXT:C284(ACTdteRec_ObtienePDF ;$0)
+C_TEXT:C284(ACTdteRec_ObtienePDF ;$1)
+C_TEXT:C284(ACTdteRec_ObtienePDF ;$2)
+C_TEXT:C284(ACTdteRec_ObtienePDF ;$3)
+C_REAL:C285(ACTdteRec_ObtienePDF ;$4)
+C_TEXT:C284(ACTdteRec_ObtienePDF ;$5)
+
+  //ACTdteRec_RespondeDTE
+C_TEXT:C284(ACTdteRec_RespondeDTE ;$0)
+C_TEXT:C284(ACTdteRec_RespondeDTE ;$1)
+C_TEXT:C284(ACTdteRec_RespondeDTE ;$2)
+C_TEXT:C284(ACTdteRec_RespondeDTE ;$3)
+C_REAL:C285(ACTdteRec_RespondeDTE ;$4)
+C_TEXT:C284(ACTdteRec_RespondeDTE ;$5)
+C_LONGINT:C283(ACTdteRec_RespondeDTE ;$6)
+C_TEXT:C284(ACTdteRec_RespondeDTE ;$7)
+C_TEXT:C284(ACTdteRec_RespondeDTE ;$8)
+
+  //ACTdteRec_ActualizaEstado
+C_BOOLEAN:C305(ACTdteRec_ActualizaEstado ;$0)
+C_TEXT:C284(ACTdteRec_ActualizaEstado ;$1)
+
+  //ACTdte_DocumentosRecibidos
+C_BOOLEAN:C305(ACTdte_DocumentosRecibidos ;$0)
+
+  //WSactdte_ObtieneDTE
+C_LONGINT:C283(WSactdte_ObtieneDTE ;$0)
+C_TEXT:C284(WSactdte_ObtieneDTE ;$1)
+C_LONGINT:C283(WSactdte_ObtieneDTE ;$2)
+C_LONGINT:C283(WSactdte_ObtieneDTE ;$3)
+C_TEXT:C284(WSactdte_ObtieneDTE ;$4)
+C_BOOLEAN:C305(WSactdte_ObtieneDTE ;$5)
+C_TEXT:C284(WSactdte_ObtieneDTE ;$6)
+C_TEXT:C284(WSactdte_ObtieneDTE ;$7)
+
+  //WSactdte_RechazaDTE
+C_LONGINT:C283(WSactdte_RechazaDTE ;$0)
+C_TEXT:C284(WSactdte_RechazaDTE ;$1)
+C_TEXT:C284(WSactdte_RechazaDTE ;$2)
+C_REAL:C285(WSactdte_RechazaDTE ;$3)
+C_REAL:C285(WSactdte_RechazaDTE ;$4)
+C_TEXT:C284(WSactdte_RechazaDTE ;$5)
+C_TEXT:C284(WSactdte_RechazaDTE ;$6)
+C_TEXT:C284(WSactdte_RechazaDTE ;$7)
+
+  //4D_SaveMethod_by_ID
+C_LONGINT:C283(4D_SaveMethod_by_ID ;$1)
+C_TEXT:C284(4D_SaveMethod_by_ID ;$2)
+
+  //4D_openMethodEditor
+C_REAL:C285(4D_openMethodEditor ;$0)
+C_REAL:C285(4D_openMethodEditor ;$1)
+C_REAL:C285(4D_openMethodEditor ;$2)
+
+  //BBLcfg_NuevoGrupoLectores
+C_TEXT:C284(BBLcfg_NuevoGrupoLectores ;$1)
+
+  //BBLpat_ConfigCodigosBarra
+C_LONGINT:C283(BBLpat_ConfigCodigosBarra ;$1)
+
+  //BBLcfg_SustituyeTipoDocumento
+C_LONGINT:C283(BBLcfg_SustituyeTipoDocumento ;$1)
+C_LONGINT:C283(BBLcfg_SustituyeTipoDocumento ;$2)
+
+  //BBLcfg_SustituyeGrupoLectores
+C_LONGINT:C283(BBLcfg_SustituyeGrupoLectores ;$1)
+C_LONGINT:C283(BBLcfg_SustituyeGrupoLectores ;$2)
+
+  //BBLcfg_CambioGrupoLectores
+C_LONGINT:C283(BBLcfg_CambioGrupoLectores ;$1)
+C_TEXT:C284(BBLcfg_CambioGrupoLectores ;$2)
+
+  //BBLreg_guardar
+C_LONGINT:C283(BBLreg_guardar ;$0)
+
+  //WDW_OpenPopupWindow
+C_REAL:C285(WDW_OpenPopupWindow ;$0)
+C_POINTER:C301(WDW_OpenPopupWindow ;$1)
+C_POINTER:C301(WDW_OpenPopupWindow ;$2)
+C_TEXT:C284(WDW_OpenPopupWindow ;$3)
+C_LONGINT:C283(WDW_OpenPopupWindow ;$4)
+C_TEXT:C284(WDW_OpenPopupWindow ;$5)
+
+  //MNU_PopupMenuDinamico
+C_LONGINT:C283(MNU_PopupMenuDinamico ;$0)
+C_TEXT:C284(MNU_PopupMenuDinamico ;$1)
+C_REAL:C285(MNU_PopupMenuDinamico ;$2)
+C_REAL:C285(MNU_PopupMenuDinamico ;$3)
+
+  //KRL_ValoresDuplicados
+C_REAL:C285(KRL_ValoresDuplicados ;$0)
+C_POINTER:C301(KRL_ValoresDuplicados ;$1)
+C_POINTER:C301(KRL_ValoresDuplicados ;$2)
+C_POINTER:C301(KRL_ValoresDuplicados ;$3)
+
+  //BBLci_ProcesaBarCode
+C_LONGINT:C283(BBLci_ProcesaBarCode ;$0)
+C_TEXT:C284(BBLci_ProcesaBarCode ;$1)
+
+  //BBLci_estableceModo
+C_LONGINT:C283(BBLci_estableceModo ;$1)
+
+  //Barcode_creaCodigo
+C_PICTURE:C286(Barcode_creaCodigo ;$0)
+C_TEXT:C284(Barcode_creaCodigo ;$1)
+C_TEXT:C284(Barcode_creaCodigo ;$2)
+C_BOOLEAN:C305(Barcode_creaCodigo ;$3)
+C_BOOLEAN:C305(Barcode_creaCodigo ;$4)
+C_BOOLEAN:C305(Barcode_creaCodigo ;$5)
+
+  //Barcode_esValido
+C_BOOLEAN:C305(Barcode_esValido ;$0)
+C_TEXT:C284(Barcode_esValido ;$1)
+C_TEXT:C284(Barcode_esValido ;$2)
+
+  //BBL_GenerarCodigosBarra
+C_LONGINT:C283(BBL_GenerarCodigosBarra ;$1)
+
+  //BBLreg_RegenerarCodigosDeBarra
+C_BOOLEAN:C305(BBLreg_RegenerarCodigosDeBarra ;$1)
+
+  //BBLpat_ValidacionIDNacional
+C_BOOLEAN:C305(BBLpat_ValidacionIDNacional ;$1)
+
+  //ADTcdd_esRegistroValido
+C_BOOLEAN:C305(ADTcdd_esRegistroValido ;$0)
+
+  //STWA2_Dash_DeudaActual
+C_TEXT:C284(STWA2_Dash_DeudaActual ;$0)
+C_POINTER:C301(STWA2_Dash_DeudaActual ;$1)
+C_POINTER:C301(STWA2_Dash_DeudaActual ;$2)
+
+  //USR_GetModuleAcces
+C_REAL:C285(USR_GetModuleAcces ;$2)
+
+  //STWA2_Session_SetSession
+C_TEXT:C284(STWA2_Session_SetSession ;$0)
+C_LONGINT:C283(STWA2_Session_SetSession ;$1)
+C_LONGINT:C283(STWA2_Session_SetSession ;$2)
+C_BOOLEAN:C305(STWA2_Session_SetSession ;$3)
+C_TEXT:C284(STWA2_Session_SetSession ;$4)
+C_TEXT:C284(STWA2_Session_SetSession ;$5)
+C_TEXT:C284(STWA2_Session_SetSession ;$6)
+
+  //DTS_GMT_TimeOffset
+C_LONGINT:C283(DTS_GMT_TimeOffset ;$0)
+
+  //TBL_SaveListAndArrays
+C_POINTER:C301(TBL_SaveListAndArrays ;$1)
+C_POINTER:C301(TBL_SaveListAndArrays ;$2)
+
+  //SIGE_wsGetDatosColegio
+C_TEXT:C284(SIGE_wsGetDatosColegio ;$0)
+
+  //ALP_SetHeaders
+C_REAL:C285(ALP_SetHeaders ;$1)
+C_REAL:C285(ALP_SetHeaders ;$2)
+C_REAL:C285(ALP_SetHeaders ;$3)
+C_TEXT:C284(ALP_SetHeaders ;$4)
+
+  //BBLci_NuevaMulta_o_Pago
+C_REAL:C285(BBLci_NuevaMulta_o_Pago ;$1)
+
+  //BBLci_InformacionesItem
+C_TEXT:C284(BBLci_InformacionesItem ;$1)
+
+  //BBLci_EditaItem
+C_REAL:C285(BBLci_EditaItem ;$1)
+C_TEXT:C284(BBLci_EditaItem ;$2)
+C_POINTER:C301(BBLci_EditaItem ;$3)
+C_REAL:C285(BBLci_EditaItem ;$4)
+
+  //BBLci_EditaLector
+C_REAL:C285(BBLci_EditaLector ;$1)
+C_TEXT:C284(BBLci_EditaLector ;$2)
+C_POINTER:C301(BBLci_EditaLector ;$3)
+C_REAL:C285(BBLci_EditaLector ;$4)
+
+  //SYS_MACaddressList
+C_TEXT:C284(SYS_MACaddressList ;$0)
+C_POINTER:C301(SYS_MACaddressList ;$1)
+
+  //BBLpat_RegenerarCodigosDeBarra
+C_BOOLEAN:C305(BBLpat_RegenerarCodigosDeBarra ;$1)
+
+  //STWA2_Dash_Atrasos
+C_TEXT:C284(STWA2_Dash_Atrasos ;$0)
+C_POINTER:C301(STWA2_Dash_Atrasos ;$1)
+C_POINTER:C301(STWA2_Dash_Atrasos ;$2)
+
+  //STWA2_Dashboards
+C_TEXT:C284(STWA2_Dashboards ;$0)
+C_TEXT:C284(STWA2_Dashboards ;$1)
+C_POINTER:C301(STWA2_Dashboards ;$2)
+C_POINTER:C301(STWA2_Dashboards ;$3)
+
+  //ACTdte_AlertasOpciones
+C_TEXT:C284(ACTdte_AlertasOpciones ;$0)
+C_POINTER:C301(ACTdte_AlertasOpciones ;${2})
+C_TEXT:C284(ACTdte_AlertasOpciones ;$1)
+
+  //ACTdte_Alertas
+C_BOOLEAN:C305(ACTdte_Alertas ;$1)
+
+  //WSact_GeneraDocumento
+C_LONGINT:C283(WSact_GeneraDocumento ;$0)
+C_TEXT:C284(WSact_GeneraDocumento ;$1)
+C_TEXT:C284(WSact_GeneraDocumento ;$2)
+C_TEXT:C284(WSact_GeneraDocumento ;$3)
+
+  //WSact_GeneraLibrosContables
+C_LONGINT:C283(WSact_GeneraLibrosContables ;$0)
+C_TEXT:C284(WSact_GeneraLibrosContables ;$1)
+C_TEXT:C284(WSact_GeneraLibrosContables ;$2)
+C_TEXT:C284(WSact_GeneraLibrosContables ;$3)
+
+  //WSact_GeneraBoleta
+C_LONGINT:C283(WSact_GeneraBoleta ;$0)
+C_TEXT:C284(WSact_GeneraBoleta ;$1)
+C_TEXT:C284(WSact_GeneraBoleta ;$2)
+C_TEXT:C284(WSact_GeneraBoleta ;$3)
+
+  //WSact_EnviarSII
+C_LONGINT:C283(WSact_EnviarSII ;$0)
+C_TEXT:C284(WSact_EnviarSII ;$1)
+
+  //WSsii_CargaEmisoresElectronicos
+C_LONGINT:C283(WSsii_CargaEmisoresElectronicos ;$0)
+C_TEXT:C284(WSsii_CargaEmisoresElectronicos ;$1)
+C_TEXT:C284(WSsii_CargaEmisoresElectronicos ;$2)
+C_TEXT:C284(WSsii_CargaEmisoresElectronicos ;$3)
+
+  //ACTdte_EmiteDocumento
+C_LONGINT:C283(ACTdte_EmiteDocumento ;$0)
+C_LONGINT:C283(ACTdte_EmiteDocumento ;$1)
+C_TEXT:C284(ACTdte_EmiteDocumento ;$2)
+
+  //ACTdte_ObtienePDF
+C_BOOLEAN:C305(ACTdte_ObtienePDF ;$1)
+
+  //ACTdteEmi_LlenaArreglos
+C_LONGINT:C283(ACTdteEmi_LlenaArreglos ;$1)
+C_REAL:C285(ACTdteEmi_LlenaArreglos ;$2)
+C_DATE:C307(ACTdteEmi_LlenaArreglos ;$3)
+C_DATE:C307(ACTdteEmi_LlenaArreglos ;$4)
+C_TEXT:C284(ACTdteEmi_LlenaArreglos ;$5)
+C_BOOLEAN:C305(ACTdteEmi_LlenaArreglos ;$6)
+
+  //ACTdteEmi_Generales
+C_TEXT:C284(ACTdteEmi_Generales ;$0)
+C_TEXT:C284(ACTdteEmi_Generales ;$1)
+C_POINTER:C301(ACTdteEmi_Generales ;$2)
+C_POINTER:C301(ACTdteEmi_Generales ;$3)
+C_POINTER:C301(ACTdteEmi_Generales ;$4)
+C_POINTER:C301(ACTdteEmi_Generales ;$5)
+C_POINTER:C301(ACTdteEmi_Generales ;$6)
+C_POINTER:C301(ACTdteEmi_Generales ;$7)
+
+  //ACTdteEmi_ObtienePDF
+C_LONGINT:C283(ACTdteEmi_ObtienePDF ;$0)
+C_TEXT:C284(ACTdteEmi_ObtienePDF ;$1)
+C_TEXT:C284(ACTdteEmi_ObtienePDF ;$2)
+C_REAL:C285(ACTdteEmi_ObtienePDF ;$3)
+C_BOOLEAN:C305(ACTdteEmi_ObtienePDF ;$4)
+C_TEXT:C284(ACTdteEmi_ObtienePDF ;$5)
+C_TEXT:C284(ACTdteEmi_ObtienePDF ;$6)
+
+  //WSact_ObtieneDTE
+C_LONGINT:C283(WSact_ObtieneDTE ;$0)
+C_TEXT:C284(WSact_ObtieneDTE ;$1)
+C_LONGINT:C283(WSact_ObtieneDTE ;$2)
+C_LONGINT:C283(WSact_ObtieneDTE ;$3)
+C_TEXT:C284(WSact_ObtieneDTE ;$4)
+C_BOOLEAN:C305(WSact_ObtieneDTE ;$5)
+C_TEXT:C284(WSact_ObtieneDTE ;$6)
+C_TEXT:C284(WSact_ObtieneDTE ;$7)
+
+  //ACTiecv_enviaLibro
+C_BOOLEAN:C305(ACTiecv_enviaLibro ;$0)
+C_LONGINT:C283(ACTiecv_enviaLibro ;$1)
+
+  //SYS_GetServerMAC
+C_TEXT:C284(SYS_GetServerMAC ;$0)
+C_POINTER:C301(SYS_GetServerMAC ;$1)
+
+  //SYS_SaveMachineInfos
+C_TEXT:C284(SYS_SaveMachineInfos ;$0)
+
+  //ACTitems_FiltraItemsXPeriodo
+C_BOOLEAN:C305(ACTitems_FiltraItemsXPeriodo ;$1)
+C_TEXT:C284(ACTitems_FiltraItemsXPeriodo ;$2)
+
+  //ACTbol_SeleccionItemsNC
+C_TEXT:C284(ACTbol_SeleccionItemsNC ;$1)
+C_POINTER:C301(ACTbol_SeleccionItemsNC ;$2)
+
+  //SRACT_ItemPeriodo
+C_TEXT:C284(SRACT_ItemPeriodo ;$1)
+C_POINTER:C301(SRACT_ItemPeriodo ;$2)
+C_POINTER:C301(SRACT_ItemPeriodo ;$3)
+
+  //ST_String_IsNumber
+C_REAL:C285(ST_String_IsNumber ;$0)
+C_TEXT:C284(ST_String_IsNumber ;$1)
+
+  //BBLci_registroEnLog
+C_LONGINT:C283(BBLci_registroEnLog ;$1)
+C_LONGINT:C283(BBLci_registroEnLog ;$2)
+C_LONGINT:C283(BBLci_registroEnLog ;$3)
+C_LONGINT:C283(BBLci_registroEnLog ;$4)
+C_TEXT:C284(BBLci_registroEnLog ;$5)
+
+  //BBLci_Prestamo_Devolucion
+C_REAL:C285(BBLci_Prestamo_Devolucion ;$1)
+C_REAL:C285(BBLci_Prestamo_Devolucion ;$2)
+
+  //BBLci_BusquedaLector
+C_LONGINT:C283(BBLci_BusquedaLector ;$0)
+C_TEXT:C284(BBLci_BusquedaLector ;$1)
+
+  //BBLci_RegistraDevolucion
+C_REAL:C285(BBLci_RegistraDevolucion ;$1)
+C_DATE:C307(BBLci_RegistraDevolucion ;$2)
+
+  //PCS_CheckProcessOnServer
+C_REAL:C285(PCS_CheckProcessOnServer ;$0)
+C_TEXT:C284(PCS_CheckProcessOnServer ;$1)
+
+  //PCS_CheckProcess
+C_LONGINT:C283(PCS_CheckProcess ;$0)
+C_TEXT:C284(PCS_CheckProcess ;$1)
+
+  //CT_SendData
+C_BOOLEAN:C305(CT_SendData ;$1)
+
+  //ASrs_JustificaInasistencia
+C_LONGINT:C283(ASrs_JustificaInasistencia ;$0)
+C_POINTER:C301(ASrs_JustificaInasistencia ;$1)
+C_POINTER:C301(ASrs_JustificaInasistencia ;$2)
+
+  //ASrs_RegistraPresencia
+C_LONGINT:C283(ASrs_RegistraPresencia ;$0)
+C_LONGINT:C283(ASrs_RegistraPresencia ;$1)
+C_LONGINT:C283(ASrs_RegistraPresencia ;$2)
+
+  //ACTdc_CargaArregloFDP
+C_TEXT:C284(ACTdc_CargaArregloFDP ;$1)
+
+  //AS_AbstractoConfiguracion
+C_LONGINT:C283(AS_AbstractoConfiguracion ;$1)
+
+  //AS_PaginaPropiedades
+C_LONGINT:C283(AS_PaginaPropiedades ;$1)
+
+  //AScsd_DesconectaHija_UNA
+C_LONGINT:C283(AScsd_DesconectaHija_UNA ;$1)
+C_LONGINT:C283(AScsd_DesconectaHija_UNA ;$2)
+C_LONGINT:C283(AScsd_DesconectaHija_UNA ;$3)
+C_REAL:C285(AScsd_DesconectaHija_UNA ;$4)
+
+  //AScsd_DesconectaHijas_TODAS
+C_BOOLEAN:C305(AScsd_DesconectaHijas_TODAS ;$0)
+C_LONGINT:C283(AScsd_DesconectaHijas_TODAS ;$1)
+C_BOOLEAN:C305(AScsd_DesconectaHijas_TODAS ;$2)
+
+  //Listas_Popup
+C_TEXT:C284(Listas_Popup ;$0)
+C_TEXT:C284(Listas_Popup ;$1)
+C_POINTER:C301(Listas_Popup ;$2)
+
+  //STR_SeteaDiccionario
+C_BOOLEAN:C305(STR_SeteaDiccionario ;$0)
+C_LONGINT:C283(STR_SeteaDiccionario ;$1)
+
+  //xALSet_AL_Atrasos
+C_LONGINT:C283(xALSet_AL_Atrasos ;$1)
+
+  //Periodo_VerificaConfiguracion
+C_BOOLEAN:C305(Periodo_VerificaConfiguracion ;$0)
+C_TEXT:C284(Periodo_VerificaConfiguracion ;$1)
+C_REAL:C285(Periodo_VerificaConfiguracion ;$2)
+
+  //ASrs_ValidaPermisos
+C_BOOLEAN:C305(ASrs_ValidaPermisos ;$0)
+C_LONGINT:C283(ASrs_ValidaPermisos ;$1)
+C_TEXT:C284(ASrs_ValidaPermisos ;$2)
+
+  //ACTwa_MakeDateWP
+C_TEXT:C284(ACTwa_MakeDateWP ;$0)
+C_DATE:C307(ACTwa_MakeDateWP ;$1)
+C_TEXT:C284(ACTwa_MakeDateWP ;$2)
+
+  //ACTwa_EnviaRespAvisosPagos
+C_TEXT:C284(ACTwa_EnviaRespAvisosPagos ;$0)
+C_REAL:C285(ACTwa_EnviaRespAvisosPagos ;$1)
+C_REAL:C285(ACTwa_EnviaRespAvisosPagos ;$2)
+
+  //ACTwa_RespuestaError
+C_TEXT:C284(ACTwa_RespuestaError ;$0)
+C_REAL:C285(ACTwa_RespuestaError ;$1)
+C_BOOLEAN:C305(ACTwa_RespuestaError ;$2)
+
+  //ACTwp_EnviaResumen
+C_BOOLEAN:C305(ACTwp_EnviaResumen ;$0)
+
+  //PCS_ResumeProcess
+C_TEXT:C284(PCS_ResumeProcess ;$1)
+
+  //AL_PaginaCalificaciones
+C_LONGINT:C283(AL_PaginaCalificaciones ;$0)
+
+  //DBU_DecrementaAñoHistoricos
+C_LONGINT:C283(DBU_DecrementaAñoHistoricos ;$1)
+C_LONGINT:C283(DBU_DecrementaAñoHistoricos ;$2)
+
+  //DBU_IncrementaAñoHistoricos
+C_REAL:C285(DBU_IncrementaAñoHistoricos ;$1)
+C_REAL:C285(DBU_IncrementaAñoHistoricos ;$2)
+
+  //TMT_ValidaAsignacion
+C_TEXT:C284(TMT_ValidaAsignacion ;$0)
+C_LONGINT:C283(TMT_ValidaAsignacion ;$1)
+C_LONGINT:C283(TMT_ValidaAsignacion ;$2)
+C_LONGINT:C283(TMT_ValidaAsignacion ;$3)
+C_LONGINT:C283(TMT_ValidaAsignacion ;$4)
+C_LONGINT:C283(TMT_ValidaAsignacion ;$5)
+
+  //TMT_alumnosEnConflicto
+C_LONGINT:C283(TMT_alumnosEnConflicto ;$0)
+C_LONGINT:C283(TMT_alumnosEnConflicto ;$1)
+C_LONGINT:C283(TMT_alumnosEnConflicto ;$2)
+C_LONGINT:C283(TMT_alumnosEnConflicto ;$3)
+C_LONGINT:C283(TMT_alumnosEnConflicto ;$4)
+C_LONGINT:C283(TMT_alumnosEnConflicto ;$5)
+C_POINTER:C301(TMT_alumnosEnConflicto ;$6)
+C_POINTER:C301(TMT_alumnosEnConflicto ;$7)
+
+  //BBLdbu_VerificaCodigosBarra
+C_REAL:C285(BBLdbu_VerificaCodigosBarra ;$0)
+C_TEXT:C284(BBLdbu_VerificaCodigosBarra ;$1)
+
+  //ASev2_RegistraCalificacion
+C_LONGINT:C283(ASev2_RegistraCalificacion ;$1)
+C_REAL:C285(ASev2_RegistraCalificacion ;$2)
+C_POINTER:C301(ASev2_RegistraCalificacion ;$3)
+C_POINTER:C301(ASev2_RegistraCalificacion ;$4)
+C_POINTER:C301(ASev2_RegistraCalificacion ;$5)
+C_POINTER:C301(ASev2_RegistraCalificacion ;$6)
+C_POINTER:C301(ASev2_RegistraCalificacion ;$7)
+C_BOOLEAN:C305(ASev2_RegistraCalificacion ;$8)
+C_TEXT:C284(ASev2_RegistraCalificacion ;$9)
+
+  //MNU_ArrayToMenu
+C_TEXT:C284(MNU_ArrayToMenu ;$0)
+C_POINTER:C301(MNU_ArrayToMenu ;$1)
+C_POINTER:C301(MNU_ArrayToMenu ;$2)
+
+  //ACTcfg_OpcionesRecAutTabla
+C_TEXT:C284(ACTcfg_OpcionesRecAutTabla ;$0)
+C_POINTER:C301(ACTcfg_OpcionesRecAutTabla ;${2})
+C_TEXT:C284(ACTcfg_OpcionesRecAutTabla ;$1)
+
+  //ACTrat_OpcionesCalculos
+C_REAL:C285(ACTrat_OpcionesCalculos ;$0)
+C_POINTER:C301(ACTrat_OpcionesCalculos ;${2})
+C_TEXT:C284(ACTrat_OpcionesCalculos ;$1)
+
+  //IOstr_ProcessStudentRecord
+C_BOOLEAN:C305(IOstr_ProcessStudentRecord ;$1)
+
+  //ACTwp_GeneraKey
+C_TEXT:C284(ACTwp_GeneraKey ;$0)
+C_TEXT:C284(ACTwp_GeneraKey ;$1)
+C_TEXT:C284(ACTwp_GeneraKey ;$2)
+C_TEXT:C284(ACTwp_GeneraKey ;$3)
+
+  //ACTwp_GeneraJSONPagos
+C_TEXT:C284(ACTwp_GeneraJSONPagos ;$0)
+C_DATE:C307(ACTwp_GeneraJSONPagos ;$1)
+C_DATE:C307(ACTwp_GeneraJSONPagos ;$2)
+
+  //ACTwp_EnviaResumenXDia
+C_BOOLEAN:C305(ACTwp_EnviaResumenXDia ;$0)
+C_DATE:C307(ACTwp_EnviaResumenXDia ;$1)
+
+  //ACTepr_OpcionesGenerales
+C_TEXT:C284(ACTepr_OpcionesGenerales ;$1)
+C_POINTER:C301(ACTepr_OpcionesGenerales ;$2)
+C_POINTER:C301(ACTepr_OpcionesGenerales ;$3)
+C_POINTER:C301(ACTepr_OpcionesGenerales ;$4)
+
+  //ACTepr_EnviaMailPR
+C_BLOB:C604(ACTepr_EnviaMailPR ;$1)
+
+  //SN3_SendSesionesXML
+C_BOOLEAN:C305(SN3_SendSesionesXML ;$1)
+C_BOOLEAN:C305(SN3_SendSesionesXML ;$2)
+
+  //EV2_RegistrosDeLaAsignatura
+C_LONGINT:C283(EV2_RegistrosDeLaAsignatura ;$1)
+C_LONGINT:C283(EV2_RegistrosDeLaAsignatura ;$2)
+C_LONGINT:C283(EV2_RegistrosDeLaAsignatura ;$3)
+C_BOOLEAN:C305(EV2_RegistrosDeLaAsignatura ;$4)
+
+  //BBLci_eventoConsola
+C_TEXT:C284(BBLci_eventoConsola ;$0)
+
+  //BBLci_Devolucion
+C_REAL:C285(BBLci_Devolucion ;$0)
+C_LONGINT:C283(BBLci_Devolucion ;$1)
+C_LONGINT:C283(BBLci_Devolucion ;$2)
+C_LONGINT:C283(BBLci_Devolucion ;$3)
+C_LONGINT:C283(BBLci_Devolucion ;$4)
+
+  //IT_PropiedadesBotonPopup
+C_TEXT:C284(IT_PropiedadesBotonPopup ;$1)
+C_TEXT:C284(IT_PropiedadesBotonPopup ;$2)
+C_LONGINT:C283(IT_PropiedadesBotonPopup ;$3)
+
+  //ASrs_EstadoSesion
+C_LONGINT:C283(ASrs_EstadoSesion ;$0)
+C_LONGINT:C283(ASrs_EstadoSesion ;$1)
+C_BOOLEAN:C305(ASrs_EstadoSesion ;$2)
+
+  //ALabs_LoadData
+C_BOOLEAN:C305(ALabs_LoadData ;$2)
+
+  //ASrs_RegistraInasistencia
+C_LONGINT:C283(ASrs_RegistraInasistencia ;$0)
+C_LONGINT:C283(ASrs_RegistraInasistencia ;$1)
+C_LONGINT:C283(ASrs_RegistraInasistencia ;$2)
+
+  //AS_VerificaNombreHijaEnMadre
+C_BOOLEAN:C305(AS_VerificaNombreHijaEnMadre ;$0)
+C_REAL:C285(AS_VerificaNombreHijaEnMadre ;$1)
+
+  //xALP_ADT_SaveEducAntSTRIN
+C_LONGINT:C283(xALP_ADT_SaveEducAntSTRIN ;$1)
+C_LONGINT:C283(xALP_ADT_SaveEducAntSTRIN ;$2)
+
+  //ADTwa_RespuestaError
+C_TEXT:C284(ADTwa_RespuestaError ;$0)
+C_REAL:C285(ADTwa_RespuestaError ;$1)
+C_BOOLEAN:C305(ADTwa_RespuestaError ;$2)
+
+  //ADTwa_OnWebConnection
+C_TEXT:C284(ADTwa_OnWebConnection ;$1)
+C_TEXT:C284(ADTwa_OnWebConnection ;$2)
+C_TEXT:C284(ADTwa_OnWebConnection ;$3)
+C_TEXT:C284(ADTwa_OnWebConnection ;$4)
+C_TEXT:C284(ADTwa_OnWebConnection ;$5)
+C_TEXT:C284(ADTwa_OnWebConnection ;$6)
+
+  //ADTwa_GeneraLlave
+C_TEXT:C284(ADTwa_GeneraLlave ;$0)
+C_TEXT:C284(ADTwa_GeneraLlave ;$1)
+C_TEXT:C284(ADTwa_GeneraLlave ;$2)
+C_TEXT:C284(ADTwa_GeneraLlave ;$3)
+
+  //WSscripts_EliminaScript
+C_TEXT:C284(WSscripts_EliminaScript ;$1)
+C_TEXT:C284(WSscripts_EliminaScript ;$2)
+C_TEXT:C284(WSscripts_EliminaScript ;$3)
+
+  //WSscripts_CargaScript
+C_TEXT:C284(WSscripts_CargaScript ;$1)
+C_BLOB:C604(WSscripts_CargaScript ;$2)
+C_TEXT:C284(WSscripts_CargaScript ;$3)
+C_TEXT:C284(WSscripts_CargaScript ;$4)
+
+  //WSscripts_ListaScript
+C_TEXT:C284(WSscripts_ListaScript ;$1)
+C_TEXT:C284(WSscripts_ListaScript ;$2)
+
+  //WSscripts_EjecutaScript
+C_TEXT:C284(WSscripts_EjecutaScript ;$1)
+C_TEXT:C284(WSscripts_EjecutaScript ;$2)
+C_TEXT:C284(WSscripts_EjecutaScript ;$3)
+
+  //WSscripts_ModificaScript
+C_TEXT:C284(WSscripts_ModificaScript ;$1)
+C_TEXT:C284(WSscripts_ModificaScript ;$2)
+C_TEXT:C284(WSscripts_ModificaScript ;$3)
+C_BLOB:C604(WSscripts_ModificaScript ;$4)
+
+  //WSscripts_Ejecuta
+C_TEXT:C284(WSscripts_Ejecuta ;$1)
+C_TEXT:C284(WSscripts_Ejecuta ;$2)
+C_BLOB:C604(WSscripts_Ejecuta ;$3)
+
+  //ASrs_SinRegistroAsistencia
+C_DATE:C307(ASrs_SinRegistroAsistencia ;$1)
+C_DATE:C307(ASrs_SinRegistroAsistencia ;$2)
+
+  //AL_TotalizaHorasDeClase
+C_BOOLEAN:C305(AL_TotalizaHorasDeClase ;$0)
+C_LONGINT:C283(AL_TotalizaHorasDeClase ;$1)
+C_LONGINT:C283(AL_TotalizaHorasDeClase ;$2)
+
+  //AL_LeeInasistenciaSesiones
+C_REAL:C285(AL_LeeInasistenciaSesiones ;$1)
+C_REAL:C285(AL_LeeInasistenciaSesiones ;$2)
+C_REAL:C285(AL_LeeInasistenciaSesiones ;$3)
+
+  //AL_EliminaInfoPostRetiro
+C_BOOLEAN:C305(AL_EliminaInfoPostRetiro ;$0)
+
+  //_RankingEnNivel
+C_LONGINT:C283(_RankingEnNivel ;$0)
+
+  //_RankingEnCurso
+C_LONGINT:C283(_RankingEnCurso ;$0)
+
+  //WSscripts_ObtieneScript
+C_TEXT:C284(WSscripts_ObtieneScript ;$1)
+C_TEXT:C284(WSscripts_ObtieneScript ;$2)
+C_TEXT:C284(WSscripts_ObtieneScript ;$3)
+
+  //AL_OnRecordLoad
+C_LONGINT:C283(AL_OnRecordLoad ;$1)
+
+  //AL_PaginaSalud
+C_LONGINT:C283(AL_PaginaSalud ;$0)
+
+  //LV_AgregaValor
+C_TEXT:C284(LV_AgregaValor ;$1)
+C_TEXT:C284(LV_AgregaValor ;$2)
+C_TEXT:C284(LV_AgregaValor ;$3)
+
+  //ACTdte_EnvioPDFXMail
+C_TEXT:C284(ACTdte_EnvioPDFXMail ;$0)
+C_POINTER:C301(ACTdte_EnvioPDFXMail ;${2})
+C_TEXT:C284(ACTdte_EnvioPDFXMail ;$1)
+
+  //XCR_OnRecordLoad
+C_LONGINT:C283(XCR_OnRecordLoad ;$1)
+
+  //XCR_EliminaInformacionPeriodo
+C_LONGINT:C283(XCR_EliminaInformacionPeriodo ;$0)
+C_LONGINT:C283(XCR_EliminaInformacionPeriodo ;$1)
+C_LONGINT:C283(XCR_EliminaInformacionPeriodo ;$2)
+C_REAL:C285(XCR_EliminaInformacionPeriodo ;$3)
+
+  //XCR_CambiaConfiguracionPeriodos
+C_LONGINT:C283(XCR_CambiaConfiguracionPeriodos ;$0)
+C_LONGINT:C283(XCR_CambiaConfiguracionPeriodos ;$1)
+C_LONGINT:C283(XCR_CambiaConfiguracionPeriodos ;$2)
+C_LONGINT:C283(XCR_CambiaConfiguracionPeriodos ;$3)
+
+  //XCR_apInscribe
+C_LONGINT:C283(XCR_apInscribe ;$1)
+C_LONGINT:C283(XCR_apInscribe ;$2)
+
+  //LV_LeeLista
+C_TEXT:C284(LV_LeeLista ;$0)
+C_TEXT:C284(LV_LeeLista ;$1)
+C_TEXT:C284(LV_LeeLista ;$2)
+C_POINTER:C301(LV_LeeLista ;$3)
+
+  //LV_SeleccionValorEnLista
+C_TEXT:C284(LV_SeleccionValorEnLista ;$1)
+C_TEXT:C284(LV_SeleccionValorEnLista ;$2)
+
+  //ACTlc_ObtieneIndex
+C_LONGINT:C283(ACTlc_ObtieneIndex ;$0)
+C_REAL:C285(ACTlc_ObtieneIndex ;$1)
+
+  //SYS_GetLastCompactInfos
+C_TEXT:C284(SYS_GetLastCompactInfos ;$0)
+C_POINTER:C301(SYS_GetLastCompactInfos ;$1)
+C_POINTER:C301(SYS_GetLastCompactInfos ;$2)
+C_POINTER:C301(SYS_GetLastCompactInfos ;$3)
+
+  //Mail_EnviaInforme_a_Colegium
+C_TEXT:C284(Mail_EnviaNotificacion ;$0)
+C_TEXT:C284(Mail_EnviaNotificacion ;$1)
+C_TEXT:C284(Mail_EnviaNotificacion ;$2)
+C_TEXT:C284(Mail_EnviaNotificacion ;$3)
+C_TEXT:C284(Mail_EnviaNotificacion ;$4)
+C_TEXT:C284(Mail_EnviaNotificacion ;$5)
+C_POINTER:C301(Mail_EnviaNotificacion ;$6)
+C_TEXT:C284(Mail_EnviaNotificacion ;$7)
+
+  //CIM_VerifyDataFile_callback
+C_LONGINT:C283(CIM_VerifyDataFile_callback ;$0)
+C_LONGINT:C283(CIM_VerifyDataFile_callback ;$1)
+C_LONGINT:C283(CIM_VerifyDataFile_callback ;$2)
+C_TEXT:C284(CIM_VerifyDataFile_callback ;$3)
+C_LONGINT:C283(CIM_VerifyDataFile_callback ;$4)
+C_LONGINT:C283(CIM_VerifyDataFile_callback ;$5)
+
+  //ACTabc_EjecutaScriptPP
+C_LONGINT:C283(ACTabc_EjecutaScriptPP ;$0)
+C_TEXT:C284(ACTabc_EjecutaScriptPP ;$1)
+C_TEXT:C284(ACTabc_EjecutaScriptPP ;$2)
+C_TEXT:C284(ACTabc_EjecutaScriptPP ;$3)
+C_TEXT:C284(ACTabc_EjecutaScriptPP ;$4)
+
+  //QA_INF_ImpresionesXInforme
+C_LONGINT:C283(QA_INF_ImpresionesXInforme ;$1)
+C_TEXT:C284(QA_INF_ImpresionesXInforme ;$2)
+C_TEXT:C284(QA_INF_ImpresionesXInforme ;$3)
+
+  //DOCL_guardaDocumento
+C_TEXT:C284(DOCL_guardaDocumento ;$0)
+C_POINTER:C301(DOCL_guardaDocumento ;$1)
+C_TEXT:C284(DOCL_guardaDocumento ;$2)
+C_TEXT:C284(DOCL_guardaDocumento ;$3)
+C_BLOB:C604(DOCL_guardaDocumento ;$4)
+C_TEXT:C284(DOCL_guardaDocumento ;$5)
+C_POINTER:C301(DOCL_guardaDocumento ;$6)
+
+  //IT_MuestraTip
+C_TEXT:C284(IT_MuestraTip ;$1)
+C_REAL:C285(IT_MuestraTip ;$2)
+C_BOOLEAN:C305(IT_MuestraTip ;$3)
+
+  //RIN_SubirAlRepositorio
+C_TEXT:C284(RIN_SubirAlRepositorio ;$0)
+
+  //XS_VerificaRegistroServidor
+C_LONGINT:C283(XS_VerificaRegistroServidor ;$0)
+
+  //WEBarea_MuestraURL
+C_TEXT:C284(WEBarea_MuestraURL ;$1)
+C_TEXT:C284(WEBarea_MuestraURL ;$2)
+
+  //QRY_BusquedaPorPalabrasClave
+C_POINTER:C301(QRY_BusquedaPorPalabrasClave ;$1)
+C_POINTER:C301(QRY_BusquedaPorPalabrasClave ;$2)
+C_TEXT:C284(QRY_BusquedaPorPalabrasClave ;$3)
+C_LONGINT:C283(QRY_BusquedaPorPalabrasClave ;$4)
+C_LONGINT:C283(QRY_BusquedaPorPalabrasClave ;$5)
+
+  //ACTcar_FechaCalculoIntereses
+C_DATE:C307(ACTcar_FechaCalculoIntereses ;$0)
+C_POINTER:C301(ACTcar_FechaCalculoIntereses ;${2})
+C_TEXT:C284(ACTcar_FechaCalculoIntereses ;$1)
+
+  //AL_MarcaCampoHijoFuncionario
+C_BOOLEAN:C305(AL_MarcaCampoHijoFuncionario ;$0)
+C_LONGINT:C283(AL_MarcaCampoHijoFuncionario ;$1)
+C_LONGINT:C283(AL_MarcaCampoHijoFuncionario ;$2)
+
+  //ACT_TareasInicioDiario
+C_TEXT:C284(ACT_TareasInicioDiario ;$0)
+C_POINTER:C301(ACT_TareasInicioDiario ;${2})
+C_TEXT:C284(ACT_TareasInicioDiario ;$1)
+
+  //ACTitems_OpcionesRecalculoTramo
+C_TEXT:C284(ACTitems_OpcionesRecalculoTramo ;$0)
+C_POINTER:C301(ACTitems_OpcionesRecalculoTramo ;${2})
+C_TEXT:C284(ACTitems_OpcionesRecalculoTramo ;$1)
+
+  //BKP_ParseXML
+C_TEXT:C284(BKP_ParseXML ;$0)
+C_POINTER:C301(dhBM_EjecutaTarea ;${3})
+C_TEXT:C284(dhBM_EjecutaTarea ;$1)
+C_TEXT:C284(dhBM_EjecutaTarea ;$2)
+
+  //DT_Milisegundos_a_texto
+C_TEXT:C284(DT_Milisegundos_a_texto ;$0)
+C_LONGINT:C283(DT_Milisegundos_a_texto ;$1)
+C_POINTER:C301(DT_Milisegundos_a_texto ;$2)
+
+  //IT_DynamicPopupMenu_Array
+C_TEXT:C284(IT_DynamicPopupMenu_Array ;$3)
+
+  //LICENCIA_ConexionesActuales
+C_LONGINT:C283(LICENCIA_ConexionesActuales ;$0)
+
+  //ModernUI_Peticion
+C_TEXT:C284(ModernUI_Peticion ;$0)
+C_TEXT:C284(ModernUI_Peticion ;$1)
+C_TEXT:C284(ModernUI_Peticion ;$2)
+C_TEXT:C284(ModernUI_Peticion ;$3)
+C_TEXT:C284(ModernUI_Peticion ;$4)
+C_TEXT:C284(ModernUI_Peticion ;$5)
+C_TEXT:C284(ModernUI_Peticion ;$6)
+C_TEXT:C284(ModernUI_Peticion ;$7)
+C_TEXT:C284(ModernUI_Peticion ;$8)
+
+
+  //SYS_NombreVolumen_Cliente
+C_TEXT:C284(SYS_NombreVolumen_Cliente ;$0)
+C_TEXT:C284(SYS_NombreVolumen_Cliente ;$1)
+
+  //XS_ServerStartup
+C_BOOLEAN:C305(XS_ServerStartup ;$0)
+
+  //XSstat_EnviaUsoSchoolTrack
+C_DATE:C307(XSstat_EnviaUsoSchoolTrack ;$1)
+
+  //LICENCIA_HayConexionDisponible
+C_BOOLEAN:C305(LICENCIA_HayConexionDisponible ;$0)
+
+  //LICENCIA_Descarga
+C_TEXT:C284(LICENCIA_Descarga ;$0)
+
+  //ACTwa_ConsultaDeudaUUIDAl
+C_TEXT:C284(ACTwa_ConsultaDeudaUUIDAl ;$0)
+C_TEXT:C284(ACTwa_ConsultaDeudaUUIDAl ;$1)
+C_DATE:C307(ACTwa_ConsultaDeudaUUIDAl ;$2)
+
+  //JSON_ExtraeValor
+C_TEXT:C284(JSON_ExtraeValor ;$1)
+C_TEXT:C284(JSON_ExtraeValor ;$2)
+C_POINTER:C301(JSON_ExtraeValor ;$3)
+C_LONGINT:C283(JSON_ExtraeValor ;$4)
+
+  //VC4D_GetLogPath
+C_TEXT:C284(VC4D_GetLogPath ;$0)
+C_POINTER:C301(VC4D_GetLogPath ;$1)
+
+  //JSON_ExtraeValorElemento
+C_TEXT:C284(JSON_ExtraeValorElemento ;$1)
+C_POINTER:C301(JSON_ExtraeValorElemento ;$2)
+C_TEXT:C284(JSON_ExtraeValorElemento ;$3)
+
+  //JSON_AgregaElemento
+C_TEXT:C284(JSON_AgregaElemento ;$1)
+C_POINTER:C301(JSON_AgregaElemento ;$2)
+C_TEXT:C284(JSON_AgregaElemento ;$3)
+
+  //IT_IndexColor2RGB
+C_LONGINT:C283(IT_IndexColor2RGB ;$0)
+C_LONGINT:C283(IT_IndexColor2RGB ;$1)
+
+  //CIM_InfoVerificacion
+C_LONGINT:C283(CIM_InfoVerificacion ;$0)
+C_POINTER:C301(CIM_InfoVerificacion ;$1)
+C_POINTER:C301(CIM_InfoVerificacion ;$2)
+C_POINTER:C301(CIM_InfoVerificacion ;$3)
+C_POINTER:C301(CIM_InfoVerificacion ;$4)
+
+  //CIM_InfoReparacion
+C_LONGINT:C283(CIM_InfoReparacion ;$0)
+C_POINTER:C301(CIM_InfoReparacion ;$1)
+C_POINTER:C301(CIM_InfoReparacion ;$2)
+C_POINTER:C301(CIM_InfoReparacion ;$3)
+C_POINTER:C301(CIM_InfoReparacion ;$4)
+
+  //CIM_InfoCompactacion
+C_LONGINT:C283(CIM_InfoCompactacion ;$0)
+C_POINTER:C301(CIM_InfoCompactacion ;$1)
+C_POINTER:C301(CIM_InfoCompactacion ;$2)
+C_POINTER:C301(CIM_InfoCompactacion ;$3)
+C_POINTER:C301(CIM_InfoCompactacion ;$4)
+
+  //CIM_esBaseDeDatosNueva
+C_BOOLEAN:C305(CIM_esBaseDeDatosNueva ;$0)
+
+  //SYS_TamañoBD_y_Disco
+C_POINTER:C301(SYS_TamañoBD_y_Disco ;$1)
+C_POINTER:C301(SYS_TamañoBD_y_Disco ;$2)
+C_POINTER:C301(SYS_TamañoBD_y_Disco ;$3)
+C_POINTER:C301(SYS_TamañoBD_y_Disco ;$4)
+
+  //SYS_GetServerProperty
+C_TEXT:C284(SYS_GetServerProperty ;$0)
+C_LONGINT:C283(SYS_GetServerProperty ;$1)
+C_TEXT:C284(SYS_GetServerProperty ;$2)
+
+  //SYS_CopiaArchivosBD
+C_LONGINT:C283(SYS_CopiaArchivosBD ;$0)
+C_TEXT:C284(SYS_CopiaArchivosBD ;$1)
+
+  //ACTfdp_VerificaNuevaFDP
+C_TEXT:C284(ACTfdp_VerificaNuevaFDP ;$1)
+
+  //ACTpw_BancomerResumen
+C_TEXT:C284(ACTpw_BancomerResumen ;$0)
+C_DATE:C307(ACTpw_BancomerResumen ;$1)
+C_DATE:C307(ACTpw_BancomerResumen ;$2)
+C_POINTER:C301(KRL_ReloadAsReadOnly ;${1})
+
+  //LICENCIA_InfoModulosAutorizados
+C_POINTER:C301(LICENCIA_InfoModulosAutorizados ;$1)
+C_POINTER:C301(LICENCIA_InfoModulosAutorizados ;$2)
+C_POINTER:C301(LICENCIA_InfoModulosAutorizados ;$3)
+
+  //LICENCIA_RegistroAplicacion
+C_LONGINT:C283(LICENCIA_RegistroAplicacion ;$0)
+
+  //XLS_GeneraArchivo
+C_LONGINT:C283(XLS_GeneraArchivo ;$0)
+C_TEXT:C284(XLS_GeneraArchivo ;$1)
+C_TEXT:C284(XLS_GeneraArchivo ;$2)
+C_TEXT:C284(XLS_GeneraArchivo ;$3)
+C_POINTER:C301(XLS_GeneraArchivo ;$4)
+C_POINTER:C301(XLS_GeneraArchivo ;$5)
+C_LONGINT:C283(XLS_GeneraArchivo ;$6)
+C_TEXT:C284(XLS_GeneraArchivo ;$7)
+
+  //ACTpgs_CargaLugarPagoBanco
+C_TEXT:C284(ACTpgs_CargaLugarPagoBanco ;$0)
+
+  //CONDOR_ExportSAXCreateNode
+C_TIME:C306(CONDOR_ExportSAXCreateNode ;$1)
+C_TEXT:C284(CONDOR_ExportSAXCreateNode ;$2)
+C_BOOLEAN:C305(CONDOR_ExportSAXCreateNode ;$3)
+C_TEXT:C284(CONDOR_ExportSAXCreateNode ;$4)
+C_BOOLEAN:C305(CONDOR_ExportSAXCreateNode ;$5)
+C_BOOLEAN:C305(CONDOR_ExportSAXCreateNode ;$6)
+
+  //CONDOR_ExportTest
+C_BOOLEAN:C305(CONDOR_ExportTest ;$1)
+C_BOOLEAN:C305(CONDOR_ExportTest ;$2)
+
+  //ACTdte_VerificaEmail
+C_TEXT:C284(ACTdte_VerificaEmail ;$0)
+C_TEXT:C284(ACTdte_VerificaEmail ;$1)
+C_BOOLEAN:C305(ACTdte_VerificaEmail ;$2)
+
+  //ST_SonTextosIdenticos
+C_BOOLEAN:C305(ST_SonTextosIdenticos ;$0)
+C_TEXT:C284(ST_SonTextosIdenticos ;$1)
+C_TEXT:C284(ST_SonTextosIdenticos ;$2)
+
+  //Util_isValidUUID
+C_BOOLEAN:C305(Util_isValidUUID ;$0)
+C_TEXT:C284(Util_isValidUUID ;$1)
+
+  //ACTcaf_DisminuyeFolioDisponible
+C_BOOLEAN:C305(ACTcaf_DisminuyeFolioDisponible ;$0)
+C_REAL:C285(ACTcaf_DisminuyeFolioDisponible ;$1)
+
+  //ACTbol_ValidaEmisionDTE
+C_BOOLEAN:C305(ACTbol_ValidaEmisionDTE ;$0)
+C_TEXT:C284(ACTbol_ValidaEmisionDTE ;$1)
+C_TEXT:C284(ACTbol_ValidaEmisionDTE ;$2)
+
+  //ACTdte_OpcionesManeja
+C_TEXT:C284(ACTdte_OpcionesManeja ;$0)
+C_POINTER:C301(ACTdte_OpcionesManeja ;${2})
+C_TEXT:C284(ACTdte_OpcionesManeja ;$1)
+
+  //ACTdte_EsEmisorColegium
+C_BOOLEAN:C305(ACTdte_EsEmisorColegium ;$0)
+C_LONGINT:C283(ACTdte_EsEmisorColegium ;$1)
+
+  //ACTpp_OpcionesCambioTipoDoc
+C_BOOLEAN:C305(ACTpp_OpcionesCambioTipoDoc ;$0)
+C_POINTER:C301(ACTpp_OpcionesCambioTipoDoc ;${2})
+C_TEXT:C284(ACTpp_OpcionesCambioTipoDoc ;$1)
+
+  //WSactdte_EnvioMercaderias
+C_LONGINT:C283(WSactdte_EnvioMercaderias ;$0)
+C_TEXT:C284(WSactdte_EnvioMercaderias ;$1)
+C_TEXT:C284(WSactdte_EnvioMercaderias ;$2)
+C_REAL:C285(WSactdte_EnvioMercaderias ;$3)
+C_REAL:C285(WSactdte_EnvioMercaderias ;$4)
+C_TEXT:C284(WSactdte_EnvioMercaderias ;$5)
+C_TEXT:C284(WSactdte_EnvioMercaderias ;$6)
+C_TEXT:C284(WSactdte_EnvioMercaderias ;$7)
+C_REAL:C285(WSactdte_EnvioMercaderias ;$8)
+C_TEXT:C284(WSactdte_EnvioMercaderias ;$9)
+
+  //SYS_CompresionDescompresion
+C_BOOLEAN:C305(SYS_CompresionDescompresion ;$0)
+C_TEXT:C284(SYS_CompresionDescompresion ;$1)
+C_TEXT:C284(SYS_CompresionDescompresion ;$2)
+C_TEXT:C284(SYS_CompresionDescompresion ;$3)
+C_POINTER:C301(SYS_CompresionDescompresion ;$4)
+C_BOOLEAN:C305(SYS_CompresionDescompresion ;$5)
+
+  //SYS_CompresionEnServidor
+C_BOOLEAN:C305(SYS_CompresionEnServidor ;$0)
+C_TEXT:C284(SYS_CompresionEnServidor ;$1)
+C_TEXT:C284(SYS_CompresionEnServidor ;$2)
+C_TEXT:C284(SYS_CompresionEnServidor ;$3)
+C_POINTER:C301(SYS_CompresionEnServidor ;$4)
+C_BOOLEAN:C305(SYS_CompresionEnServidor ;$5)
+
+  //CIM_FTP_Upload
+C_REAL:C285(CIM_FTP_Upload ;$1)
+C_TEXT:C284(CIM_FTP_Upload ;$2)
+C_TEXT:C284(CIM_FTP_Upload ;$3)
+C_TEXT:C284(CIM_FTP_Upload ;$4)
+C_TEXT:C284(CIM_FTP_Upload ;$5)
+
+  //SN3_SendInformesPDF
+C_TEXT:C284(SN3_SendInformesPDF ;$1)
+
+  //SYS_CreaCarpeta
+C_TEXT:C284(SYS_CreaCarpeta ;$1)
+C_BOOLEAN:C305(SYS_CreaCarpeta ;$2)
+
+  //SYS_CreaCarpetaServidor
+C_TEXT:C284(SYS_CreaCarpetaServidor ;$1)
+
+  //SYS_ServerDocumentList
+C_TEXT:C284(SYS_ServerDocumentList ;$1)
+C_POINTER:C301(SYS_ServerDocumentList ;$2)
+C_LONGINT:C283(SYS_ServerDocumentList ;$3)
+
+  //STWA2_AJAX_SendObservacionesPJ
+C_TEXT:C284(STWA2_AJAX_SendObservacionesPJ ;$0)
+C_REAL:C285(STWA2_AJAX_SendObservacionesPJ ;$1)
+C_TEXT:C284(STWA2_AJAX_SendObservacionesPJ ;$2)
+C_REAL:C285(STWA2_AJAX_SendObservacionesPJ ;$3)
+C_REAL:C285(STWA2_AJAX_SendObservacionesPJ ;$4)
+
+  //VC4Dws_ObtenCodigoRemoto
+C_BLOB:C604(VC4Dws_ObtenCodigoRemoto ;$0)
+C_TEXT:C284(VC4Dws_ObtenCodigoRemoto ;$1)
+
+  //ACT_OpcionesReferenciasMX
+C_TEXT:C284(ACT_OpcionesReferenciasMX ;$0)
+C_TEXT:C284(ACT_OpcionesReferenciasMX ;$1)
+C_POINTER:C301(ACT_OpcionesReferenciasMX ;$2)
+
+  //ACTpw_RetreivePagosBC
+C_TEXT:C284(ACTpw_RetreivePagosBC ;$0)
+
+  //ACTpw_RevisaPagos
+C_BOOLEAN:C305(ACTpw_RevisaPagos ;$0)
+C_BOOLEAN:C305(ACTpw_RevisaPagos ;$1)
+
+  //AL_PaginaAprendizajes
+C_LONGINT:C283(AL_PaginaAprendizajes ;$0)
+
+  //ALP_SetInterface
+C_LONGINT:C283(ALP_SetInterface ;$1)
+
+  //BBL_AccionesThesaurus
+C_TEXT:C284(BBL_AccionesThesaurus ;$1)
+
+  //BBL_BuscaMateriaEnItems
+C_TEXT:C284(BBL_BuscaMateriaEnItems ;$1)
+
+  //BBL_BusquedaItems
+C_TEXT:C284(BBL_BusquedaItems ;$1)
+C_TEXT:C284(BBL_BusquedaItems ;$2)
+C_LONGINT:C283(BBL_BusquedaItems ;$3)
+
+  //BBL_BusquedaRapida
+C_TEXT:C284(BBL_BusquedaRapida ;$1)
+
+  //BBLci_ReceiveSubscription
+C_TEXT:C284(BBLci_ReceiveSubscription ;$1)
+
+  //BBLitm_AgregaMateria
+C_LONGINT:C283(BBLitm_AgregaMateria ;$1)
+C_TEXT:C284(BBLitm_AgregaMateria ;$2)
+
+  //BBLitm_MuestraFichaCatalogo
+C_TEXT:C284(BBLitm_MuestraFichaCatalogo ;$1)
+
+  //BBLitm_OnRecordLoad
+C_LONGINT:C283(BBLitm_OnRecordLoad ;$1)
+
+  //BBLw_BusquedaPorMateria
+C_TEXT:C284(BBLw_BusquedaPorMateria ;$1)
+
+  //BKP_LeeItemPlanBackup
+C_TEXT:C284(BKP_LeeItemPlanBackup ;$1)
+C_POINTER:C301(BKP_LeeItemPlanBackup ;$2)
+
+  //CDOC_CodigoMultiEstilo
+C_TEXT:C284(CDOC_CodigoMultiEstilo ;$0)
+C_TEXT:C284(CDOC_CodigoMultiEstilo ;$1)
+
+  //CIM_BWR_ExplorerEvents
+C_TEXT:C284(CIM_BWR_ExplorerEvents ;$1)
+
+  //CIM_CambiaPagina
+C_REAL:C285(CIM_CambiaPagina ;$1)
+
+  //CIM_FTP_ExplorerEvents
+C_TEXT:C284(CIM_FTP_ExplorerEvents ;$1)
+
+  //CIM_GetDatabaseStats
+C_TEXT:C284(CIM_GetDatabaseStats ;$1)
+C_LONGINT:C283(CIM_GetDatabaseStats ;$2)
+C_POINTER:C301(CIM_GetDatabaseStats ;$3)
+C_POINTER:C301(CIM_GetDatabaseStats ;$4)
+C_POINTER:C301(CIM_GetDatabaseStats ;$5)
+C_POINTER:C301(CIM_GetDatabaseStats ;$6)
+C_POINTER:C301(CIM_GetDatabaseStats ;$7)
+C_POINTER:C301(CIM_GetDatabaseStats ;$8)
+C_POINTER:C301(CIM_GetDatabaseStats ;$9)
+C_POINTER:C301(CIM_GetDatabaseStats ;$10)
+
+  //CIM_INFO_FormatTableInfo
+C_LONGINT:C283(CIM_INFO_FormatTableInfo ;$1)
+
+  //CIM_ReconstruyeBD
+C_BOOLEAN:C305(CIM_ReconstruyeBD ;$0)
+C_TEXT:C284(CIM_ReconstruyeBD ;$1)
+C_TEXT:C284(CIM_ReconstruyeBD ;$2)
+
+  //CIM_ReconstruyeIndex
+C_TEXT:C284(CIM_ReconstruyeIndex ;$1)
+
+  //CIM_TS_HandleEvents
+C_BLOB:C604(CIM_TS_HandleEvents ;$0)
+C_TEXT:C284(CIM_TS_HandleEvents ;$1)
+C_POINTER:C301(CIM_TS_HandleEvents ;$2)
+C_TEXT:C284(CIM_TS_HandleEvents ;$3)
+
+  //dhBM_TareasInicioDiario
+C_BOOLEAN:C305(dhBM_TareasInicioDiario ;$1)
+
+  //DT_FechaISO_a_FechaHora
+C_TEXT:C284(DT_FechaISO_a_FechaHora ;$0)
+C_TEXT:C284(DT_FechaISO_a_FechaHora ;$1)
+C_POINTER:C301(DT_FechaISO_a_FechaHora ;$2)
+C_POINTER:C301(DT_FechaISO_a_FechaHora ;$3)
+C_BOOLEAN:C305(DT_FechaISO_a_FechaHora ;$4)
+
+  //EV2_Real_a_Nota
+C_REAL:C285(EV2_Real_a_Nota ;$0)
+C_REAL:C285(EV2_Real_a_Nota ;$1)
+C_REAL:C285(EV2_Real_a_Nota ;$2)
+C_LONGINT:C283(EV2_Real_a_Nota ;$3)
+C_BOOLEAN:C305(EV2_Real_a_Nota ;$4)
+C_REAL:C285(EV2_Real_a_Nota ;$5)
+
+  //FTP_DeleteObject
+C_REAL:C285(FTP_DeleteObject ;$1)
+C_TEXT:C284(FTP_DeleteObject ;$2)
+C_REAL:C285(FTP_DeleteObject ;$3)
+C_TEXT:C284(FTP_DeleteObject ;$4)
+C_TEXT:C284(FTP_DeleteObject ;$5)
+C_TEXT:C284(FTP_DeleteObject ;$6)
+C_TEXT:C284(FTP_DeleteObject ;$7)
+
+  //FTP_EnviaArchivoDesdeServidor
+C_TEXT:C284(FTP_EnviaArchivoDesdeServidor ;$1)
+
+  //FTP_Upload
+C_REAL:C285(FTP_Upload ;$0)
+C_LONGINT:C283(FTP_Upload ;$1)
+C_TEXT:C284(FTP_Upload ;$2)
+C_TEXT:C284(FTP_Upload ;$3)
+C_TEXT:C284(FTP_Upload ;$4)
+C_TEXT:C284(FTP_Upload ;$5)
+C_TEXT:C284(FTP_Upload ;$6)
+C_TEXT:C284(FTP_Upload ;$7)
+C_TEXT:C284(FTP_Upload ;$8)
+C_BOOLEAN:C305(FTP_Upload ;$9)
+C_BOOLEAN:C305(FTP_Upload ;$10)
+
+  //FTP_UploadFromServer
+C_TEXT:C284(FTP_UploadFromServer ;$1)
+C_TEXT:C284(FTP_UploadFromServer ;$2)
+C_TEXT:C284(FTP_UploadFromServer ;$3)
+C_TEXT:C284(FTP_UploadFromServer ;$4)
+C_TEXT:C284(FTP_UploadFromServer ;$5)
+C_TEXT:C284(FTP_UploadFromServer ;$6)
+
+  //IO_ExportRecordsFromOneTable
+C_REAL:C285(IO_ExportRecordsFromOneTable ;$0)
+
+  //IO_ImportDatabase
+C_TEXT:C284(IO_ImportDatabase ;$1)
+
+  //IT_AlineaObjetos
+C_LONGINT:C283(IT_AlineaObjetos ;$1)
+C_LONGINT:C283(IT_AlineaObjetos ;$2)
+C_TEXT:C284(IT_AlineaObjetos ;$3)
+C_TEXT:C284(IT_AlineaObjetos ;$4)
+
+  //IT_SeleccionCampo
+C_TEXT:C284(IT_SeleccionCampo ;$0)
+C_POINTER:C301(IT_SeleccionCampo ;$1)
+C_TEXT:C284(IT_SeleccionCampo ;$2)
+
+  //JSON_EstableceValor
+C_TEXT:C284(JSON_EstableceValor ;$1)
+C_POINTER:C301(JSON_EstableceValor ;$2)
+C_TEXT:C284(JSON_EstableceValor ;$3)
+
+  //Json_Seleccion_a_jSon
+C_TEXT:C284(Json_Seleccion_a_jSon ;$0)
+C_POINTER:C301(Json_Seleccion_a_jSon ;$1)
+C_POINTER:C301(Json_Seleccion_a_jSon ;$2)
+C_POINTER:C301(Json_Seleccion_a_jSon ;$3)
+C_POINTER:C301(Json_Seleccion_a_jSon ;$4)
+
+  //KRL_GetFileFromServer
+C_BOOLEAN:C305(KRL_GetFileFromServer ;$2)
+
+  //LB_GetSelectedRows
+C_LONGINT:C283(LB_GetSelectedRows ;$0)
+C_POINTER:C301(LB_GetSelectedRows ;$1)
+C_POINTER:C301(LB_GetSelectedRows ;$2)
+
+  //Mail_QuickSend
+C_TEXT:C284(Mail_QuickSend ;$0)
+C_TEXT:C284(Mail_QuickSend ;$1)
+C_TEXT:C284(Mail_QuickSend ;$2)
+C_TEXT:C284(Mail_QuickSend ;$3)
+C_TEXT:C284(Mail_QuickSend ;$4)
+C_TEXT:C284(Mail_QuickSend ;$5)
+C_LONGINT:C283(Mail_QuickSend ;$6)
+C_LONGINT:C283(Mail_QuickSend ;$7)
+C_TEXT:C284(Mail_QuickSend ;$8)
+C_TEXT:C284(Mail_QuickSend ;$9)
+C_REAL:C285(Mail_QuickSend ;$10)
+
+  //MPA_AnulaEvaluacionAdquirida
+C_REAL:C285(MPA_AnulaEvaluacionAdquirida ;$1)
+C_REAL:C285(MPA_AnulaEvaluacionAdquirida ;$2)
+C_REAL:C285(MPA_AnulaEvaluacionAdquirida ;$3)
+
+  //MPA_AparienciaEvaluaciones
+C_REAL:C285(MPA_AparienciaEvaluaciones ;$1)
+
+  //MPA_Aprendizajes_a_Notas
+C_BOOLEAN:C305(MPA_Aprendizajes_a_Notas ;$0)
+C_LONGINT:C283(MPA_Aprendizajes_a_Notas ;$1)
+C_TEXT:C284(MPA_Aprendizajes_a_Notas ;$2)
+C_LONGINT:C283(MPA_Aprendizajes_a_Notas ;$3)
+
+  //MPA_Calculos_FinalPeriodo
+C_LONGINT:C283(MPA_Calculos_FinalPeriodo ;$1)
+C_LONGINT:C283(MPA_Calculos_FinalPeriodo ;$2)
+C_LONGINT:C283(MPA_Calculos_FinalPeriodo ;$3)
+
+  //MPA_CompetenciaAdquirida
+C_REAL:C285(MPA_CompetenciaAdquirida ;$1)
+C_REAL:C285(MPA_CompetenciaAdquirida ;$2)
+
+  //MPA_EliminaReporteAprobacion
+C_REAL:C285(MPA_EliminaReporteAprobacion ;$1)
+
+  //NTC_CreaMensaje
+C_TEXT:C284(NTC_CreaMensaje ;$0)
+C_TEXT:C284(NTC_CreaMensaje ;$1)
+C_TEXT:C284(NTC_CreaMensaje ;$2)
+C_TEXT:C284(NTC_CreaMensaje ;$3)
+C_LONGINT:C283(NTC_CreaMensaje ;$4)
+
+  //QRY_BusquedaTextosIndexados
+C_TEXT:C284(QRY_BusquedaTextosIndexados ;$1)
+C_POINTER:C301(QRY_BusquedaTextosIndexados ;$2)
+C_REAL:C285(QRY_BusquedaTextosIndexados ;$3)
+C_POINTER:C301(QRY_BusquedaTextosIndexados ;$4)
+
+  //SYS_CopyFileFromServer
+C_TEXT:C284(SYS_CopyFileFromServer ;$1)
+C_TEXT:C284(SYS_CopyFileFromServer ;$2)
+C_BOOLEAN:C305(SYS_CopyFileFromServer ;$3)
+
+  //SYS_CopyFolder_FromServer
+C_TEXT:C284(SYS_CopyFolder_FromServer ;$1)
+C_TEXT:C284(SYS_CopyFolder_FromServer ;$2)
+C_BOOLEAN:C305(SYS_CopyFolder_FromServer ;$3)
+C_BOOLEAN:C305(SYS_CopyFolder_FromServer ;$4)
+
+  //SYS_GetServer_4DFolder
+C_TEXT:C284(SYS_GetServer_4DFolder ;$0)
+C_LONGINT:C283(SYS_GetServer_4DFolder ;$1)
+
+  //SYS_GetServerFolderList
+C_BLOB:C604(SYS_GetServerFolderList ;$0)
+C_TEXT:C284(SYS_GetServerFolderList ;$1)
+
+  //SYS_GetServerMemory
+C_POINTER:C301(SYS_GetServerMemory ;$1)
+C_POINTER:C301(SYS_GetServerMemory ;$2)
+C_POINTER:C301(SYS_GetServerMemory ;$3)
+C_POINTER:C301(SYS_GetServerMemory ;$4)
+C_POINTER:C301(SYS_GetServerMemory ;$5)
+
+  //SYS_NombreVolumen_Servidor
+C_TEXT:C284(SYS_NombreVolumen_Servidor ;$0)
+C_TEXT:C284(SYS_NombreVolumen_Servidor ;$1)
+
+  //SYS_SaveFileOnServer
+C_TEXT:C284(SYS_SaveFileOnServer ;$0)
+C_TEXT:C284(SYS_SaveFileOnServer ;$1)
+C_TEXT:C284(SYS_SaveFileOnServer ;$2)
+
+  //SYS_ServerFolderSeparator
+C_TEXT:C284(SYS_ServerFolderSeparator ;$0)
+
+  //VC4D_CallWebService
+C_TEXT:C284(VC4D_CallWebService ;$0)
+C_TEXT:C284(VC4D_CallWebService ;$1)
+C_TEXT:C284(VC4D_CallWebService ;$2)
+C_TEXT:C284(VC4D_CallWebService ;$3)
+C_TEXT:C284(VC4D_CallWebService ;$4)
+
+  //VC4D_ComparaCodigo
+C_BOOLEAN:C305(VC4D_ComparaCodigo ;$0)
+C_TEXT:C284(VC4D_ComparaCodigo ;$1)
+
+  //VC4D_MuestraCodigoRemoto
+C_TEXT:C284(VC4D_MuestraCodigoRemoto ;$1)
+
+  //VC4D_UpdateMethod
+C_BLOB:C604(VC4D_UpdateMethod ;$0)
+C_TEXT:C284(VC4D_UpdateMethod ;$1)
+C_TEXT:C284(VC4D_UpdateMethod ;$2)
+C_TEXT:C284(VC4D_UpdateMethod ;$3)
+
+  //VC4Dws_GetMethodsInfo
+C_BLOB:C604(VC4Dws_GetMethodsInfo ;$0)
+C_BLOB:C604(VC4Dws_GetMethodsInfo ;$1)
+
+  //VC4Dws_UpdateMethod
+C_BLOB:C604(VC4Dws_UpdateMethod ;$0)
+C_BLOB:C604(VC4Dws_UpdateMethod ;$1)
+
+  //XS_SelectServerFolder
+C_TEXT:C284(XS_SelectServerFolder ;$0)
+C_TEXT:C284(XS_SelectServerFolder ;$1)
+
+  //XS_Verificacion_y_Compactaje
+C_BOOLEAN:C305(XS_Verificacion_y_Compactaje ;$1)
+
+  //XSnota_AgregaAnotacion
+C_REAL:C285(XSnota_AgregaAnotacion ;$1)
+C_TEXT:C284(XSnota_AgregaAnotacion ;$2)
+C_TEXT:C284(XSnota_AgregaAnotacion ;$3)
+C_TEXT:C284(XSnota_AgregaAnotacion ;$4)
+C_TEXT:C284(XSnota_AgregaAnotacion ;$5)
+C_TEXT:C284(XSnota_AgregaAnotacion ;$6)
+
+  //XSnota_EliminaNota
+C_TEXT:C284(XSnota_EliminaNota ;$1)
+
+  //XSnota_ObtieneUltimaNota
+C_TEXT:C284(XSnota_ObtieneUltimaNota ;$0)
+C_TEXT:C284(XSnota_ObtieneUltimaNota ;$1)
+C_POINTER:C301(XSnota_ObtieneUltimaNota ;$2)
+C_POINTER:C301(XSnota_ObtieneUltimaNota ;$3)
+C_POINTER:C301(XSnota_ObtieneUltimaNota ;$4)
+
+  //XSnota_RegistraNota
+C_LONGINT:C283(XSnota_RegistraNota ;$0)
+C_POINTER:C301(XSnota_RegistraNota ;$1)
+C_POINTER:C301(XSnota_RegistraNota ;$2)
+C_TEXT:C284(XSnota_RegistraNota ;$3)
+C_TEXT:C284(XSnota_RegistraNota ;$4)
+C_TEXT:C284(XSnota_RegistraNota ;$5)
+C_TEXT:C284(XSnota_RegistraNota ;$6)
+C_TEXT:C284(XSnota_RegistraNota ;$7)
+
+  //ACTbol_ObtieneResponsableFact
+C_TEXT:C284(ACTbol_ObtieneResponsableFact ;$0)
+C_TEXT:C284(ACTbol_ObtieneResponsableFact ;$1)
+C_REAL:C285(ACTbol_ObtieneResponsableFact ;$2)
+
+  //JSON_AgregaTexto
+C_OBJECT:C1216(JSON_AgregaTexto ;$1)
+C_TEXT:C284(JSON_AgregaTexto ;$2)
+C_TEXT:C284(JSON_AgregaTexto ;$3)
+
+  //JSON_CuentaItems
+C_REAL:C285(JSON_CuentaItems ;$0)
+C_OBJECT:C1216(JSON_CuentaItems ;$1)
+
+  //WSusr_EsUsuarioValido
+C_TEXT:C284(WSusr_EsUsuarioValido ;$0)
+C_TEXT:C284(WSusr_EsUsuarioValido ;$1)
+C_TEXT:C284(WSusr_EsUsuarioValido ;$2)
+
+  //BKP_InfoUltimoRespaldo
+C_TEXT:C284(BKP_InfoUltimoRespaldo ;$0)
+
+  //STWA2_Arreglo_a_json
+C_TEXT:C284(STWA2_Arreglo_a_json ;$1)
+C_POINTER:C301(STWA2_Arreglo_a_json ;$2)
+C_TEXT:C284(STWA2_Arreglo_a_json ;$3)
+C_TEXT:C284(STWA2_Arreglo_a_json ;$4)
+
+  //STWA2_AJAX_SendFotoAlumno
+C_TEXT:C284(STWA2_AJAX_SendFotoAlumno ;$0)
+C_LONGINT:C283(STWA2_AJAX_SendFotoAlumno ;$1)
+
+  //BKP_GuardaPlanBackup
+C_TEXT:C284(BKP_GuardaPlanBackup ;$1)
+C_TEXT:C284(BKP_GuardaPlanBackup ;$2)
+
+  //BKP_LeePlanBackup
+C_TEXT:C284(BKP_LeePlanBackup ;$0)
+C_TEXT:C284(BKP_LeePlanBackup ;$1)
+
+  //KRL_ProcessStateOnServer
+C_LONGINT:C283(KRL_ProcessStateOnServer ;$0)
+C_REAL:C285(KRL_ProcessStateOnServer ;$1)
+C_TEXT:C284(KRL_ProcessStateOnServer ;$2)
+
+  //Sync_ErrorCallBack
+C_LONGINT:C283(Sync_ErrorCallBack ;$1)
+C_REAL:C285(Sync_ErrorCallBack ;$2)
+C_TEXT:C284(Sync_ErrorCallBack ;$3)
+
+  //Sync_LogEvento
+C_TEXT:C284(Sync_LogEvento ;$1)
+C_TEXT:C284(Sync_LogEvento ;$2)
+C_TEXT:C284(Sync_LogEvento ;$3)
+C_LONGINT:C283(Sync_LogEvento ;$4)
+C_TEXT:C284(Sync_LogEvento ;$5)
+C_LONGINT:C283(Sync_LogEvento ;$6)
+C_TEXT:C284(Sync_LogEvento ;$7)
+
+  //Sync_UsarLog
+C_BOOLEAN:C305(Sync_UsarLog ;$1)
+
+  //KRL_HayRegistrosBloqueados
+C_BOOLEAN:C305(KRL_HayRegistrosBloqueados ;$0)
+
+  //CT_DeleteLog
+C_DATE:C307(CT_DeleteLog ;$1)
+
+  //AL_AtrasoValidacion
+C_BOOLEAN:C305(AL_AtrasoValidacion ;$0)
+C_DATE:C307(AL_AtrasoValidacion ;$1)
+C_LONGINT:C283(AL_AtrasoValidacion ;$2)
+C_BOOLEAN:C305(AL_AtrasoValidacion ;$3)
+C_BOOLEAN:C305(AL_AtrasoValidacion ;$4)
+
+  //AL_Atraso_CheckInasistenciaDia
+C_BOOLEAN:C305(AL_Atraso_CheckInasistenciaDia ;$0)
+C_LONGINT:C283(AL_Atraso_CheckInasistenciaDia ;$1)
+C_DATE:C307(AL_Atraso_CheckInasistenciaDia ;$2)
+C_BOOLEAN:C305(AL_Atraso_CheckInasistenciaDia ;$3)
+C_BOOLEAN:C305(AL_Atraso_CheckInasistenciaDia ;$4)
+C_POINTER:C301(AL_Atraso_CheckInasistenciaDia ;$5)
+
+  //AL_Atraso_CheckInasistenciaPHD
+C_BOOLEAN:C305(AL_Atraso_CheckInasistenciaPHD ;$0)
+C_LONGINT:C283(AL_Atraso_CheckInasistenciaPHD ;$1)
+C_DATE:C307(AL_Atraso_CheckInasistenciaPHD ;$2)
+C_TIME:C306(AL_Atraso_CheckInasistenciaPHD ;$3)
+C_POINTER:C301(AL_Atraso_CheckInasistenciaPHD ;$4)
+C_BOOLEAN:C305(AL_Atraso_CheckInasistenciaPHD ;$5)
+C_BOOLEAN:C305(AL_Atraso_CheckInasistenciaPHD ;$6)
+C_POINTER:C301(AL_Atraso_CheckInasistenciaPHD ;$7)
+C_BOOLEAN:C305(AL_Atraso_CheckInasistenciaPHD ;$8)
+C_POINTER:C301(AL_Atraso_CheckInasistenciaPHD ;$9)
+
+  //QR_Graph2Picture
+C_PICTURE:C286(QR_Graph2Picture ;$0)
+C_REAL:C285(QR_Graph2Picture ;$1)
+C_POINTER:C301(QR_Graph2Picture ;$2)
+C_POINTER:C301(QR_Graph2Picture ;$3)
+C_POINTER:C301(QR_Graph2Picture ;$4)
+C_REAL:C285(QR_Graph2Picture ;$5)
+C_REAL:C285(QR_Graph2Picture ;$6)
+C_TEXT:C284(QR_Graph2Picture ;$7)
+C_REAL:C285(QR_Graph2Picture ;$8)
+C_POINTER:C301(QR_Graph2Picture ;$9)
+C_TEXT:C284(QR_Graph2Picture ;$10)
+C_BOOLEAN:C305(QR_Graph2Picture ;$11)
+C_BOOLEAN:C305(QR_Graph2Picture ;$12)
+C_REAL:C285(QR_Graph2Picture ;$13)
+C_REAL:C285(QR_Graph2Picture ;$14)
+
+  //CIM_CompactDataFile
+C_TEXT:C284(CIM_CompactDataFile ;$0)
+C_TEXT:C284(CIM_CompactDataFile ;$1)
+C_BOOLEAN:C305(CIM_CompactDataFile ;$2)
+C_TEXT:C284(CIM_CompactDataFile ;$3)
+
+  //CIM_CompactDataFile_callback
+C_LONGINT:C283(CIM_CompactDataFile_callback ;$0)
+C_LONGINT:C283(CIM_CompactDataFile_callback ;$1)
+C_LONGINT:C283(CIM_CompactDataFile_callback ;$2)
+C_TEXT:C284(CIM_CompactDataFile_callback ;$3)
+C_LONGINT:C283(CIM_CompactDataFile_callback ;$4)
+C_LONGINT:C283(CIM_CompactDataFile_callback ;$5)
+
+  //BBLci_Reserva
+C_LONGINT:C283(BBLci_Reserva ;$1)
+C_LONGINT:C283(BBLci_Reserva ;$2)
+
+  //BBLci_Prestamo
+C_LONGINT:C283(BBLci_Prestamo ;$1)
+C_LONGINT:C283(BBLci_Prestamo ;$2)
+C_LONGINT:C283(BBLci_Prestamo ;$3)
+
+  //ST_GetValidName
+C_TEXT:C284(ST_GetValidName ;$0)
+C_TEXT:C284(ST_GetValidName ;$1)
+
+  //STWA2_AJAX_SendMapas
+C_TEXT:C284(STWA2_AJAX_SendMapas ;$0)
+C_LONGINT:C283(STWA2_AJAX_SendMapas ;$1)
+C_LONGINT:C283(STWA2_AJAX_SendMapas ;$2)
+C_LONGINT:C283(STWA2_AJAX_SendMapas ;$3)
+C_LONGINT:C283(STWA2_AJAX_SendMapas ;$4)
+C_LONGINT:C283(STWA2_AJAX_SendMapas ;$5)
+
+  //MPAdbu_VerificaRegistrosEval
+C_LONGINT:C283(MPAdbu_VerificaRegistrosEval ;$0)
+
+  //MPA_Calculos
+C_BOOLEAN:C305(MPA_Calculos ;$0)
+C_LONGINT:C283(MPA_Calculos ;$1)
+C_LONGINT:C283(MPA_Calculos ;$2)
+
+  //EVLG_LeeAprendizajesAlumno
+C_LONGINT:C283(EVLG_LeeAprendizajesAlumno ;$1)
+C_LONGINT:C283(EVLG_LeeAprendizajesAlumno ;$2)
+C_LONGINT:C283(EVLG_LeeAprendizajesAlumno ;$3)
+
+  //BC_Barcode_create
+C_PICTURE:C286(BC_Barcode_create ;$0)
+C_TEXT:C284(BC_Barcode_create ;$1)
+C_TEXT:C284(BC_Barcode_create ;$2)
+C_BOOLEAN:C305(BC_Barcode_create ;$3)
+C_BOOLEAN:C305(BC_Barcode_create ;$4)
+C_BOOLEAN:C305(BC_Barcode_create ;$5)
+C_LONGINT:C283(BC_Barcode_create ;$6)
+
+  //WEB_SaveSettings
+C_BOOLEAN:C305(WEB_SaveSettings ;$0)
+
+  //ACTfear_ObtieneCredenciales
+C_LONGINT:C283(ACTfear_ObtieneCredenciales ;$0)
+C_REAL:C285(ACTfear_ObtieneCredenciales ;$1)
+C_POINTER:C301(ACTfear_ObtieneCredenciales ;$2)
+C_POINTER:C301(ACTfear_ObtieneCredenciales ;$3)
+
+  //proxy_FECompTotXRequest
+C_TEXT:C284(proxy_FECompTotXRequest ;$1)
+C_TEXT:C284(proxy_FECompTotXRequest ;$2)
+C_TEXT:C284(proxy_FECompTotXRequest ;$3)
+
+  //proxy_FEParamGetTiposIva
+C_TEXT:C284(proxy_FEParamGetTiposIva ;$1)
+C_TEXT:C284(proxy_FEParamGetTiposIva ;$2)
+C_TEXT:C284(proxy_FEParamGetTiposIva ;$3)
+
+  //proxy_FEParamGetTiposTributos
+C_TEXT:C284(proxy_FEParamGetTiposTributos ;$1)
+C_TEXT:C284(proxy_FEParamGetTiposTributos ;$2)
+C_TEXT:C284(proxy_FEParamGetTiposTributos ;$3)
+
+  //proxy_FEParamGetTiposDoc
+C_TEXT:C284(proxy_FEParamGetTiposDoc ;$1)
+C_TEXT:C284(proxy_FEParamGetTiposDoc ;$2)
+C_TEXT:C284(proxy_FEParamGetTiposDoc ;$3)
+
+  //ACTfear_FEParamGetTiposCbte
+C_TEXT:C284(ACTfear_FEParamGetTiposCbte ;$0)
+C_REAL:C285(ACTfear_FEParamGetTiposCbte ;$1)
+
+  //proxy_FEParamGetTiposConcepto
+C_TEXT:C284(proxy_FEParamGetTiposConcepto ;$1)
+C_TEXT:C284(proxy_FEParamGetTiposConcepto ;$2)
+C_TEXT:C284(proxy_FEParamGetTiposConcepto ;$3)
+
+  //ACTfear_ValidaXML
+C_BOOLEAN:C305(ACTfear_ValidaXML ;$0)
+C_TEXT:C284(ACTfear_ValidaXML ;$1)
+
+  //ACTfear_OpcionesGenerales
+C_TEXT:C284(ACTfear_OpcionesGenerales ;$0)
+C_POINTER:C301(ACTfear_OpcionesGenerales ;${2})
+C_TEXT:C284(ACTfear_OpcionesGenerales ;$1)
+
+  //ACTfear_FEDummy
+C_TEXT:C284(ACTfear_FEDummy ;$0)
+C_REAL:C285(ACTfear_FEDummy ;$1)
+
+  //ACTfear_FEParamGetPtosVenta
+C_TEXT:C284(ACTfear_FEParamGetPtosVenta ;$0)
+C_REAL:C285(ACTfear_FEParamGetPtosVenta ;$1)
+
+  //ACTfear_FECAESolicitar
+C_TEXT:C284(ACTfear_FECAESolicitar ;$0)
+C_LONGINT:C283(ACTfear_FECAESolicitar ;$1)
+C_LONGINT:C283(ACTfear_FECAESolicitar ;$2)
+C_LONGINT:C283(ACTfear_FECAESolicitar ;$3)
+C_LONGINT:C283(ACTfear_FECAESolicitar ;$4)
+C_LONGINT:C283(ACTfear_FECAESolicitar ;$5)
+C_LONGINT:C283(ACTfear_FECAESolicitar ;$6)
+C_REAL:C285(ACTfear_FECAESolicitar ;$7)
+C_LONGINT:C283(ACTfear_FECAESolicitar ;$8)
+C_LONGINT:C283(ACTfear_FECAESolicitar ;$9)
+C_TEXT:C284(ACTfear_FECAESolicitar ;$10)
+C_REAL:C285(ACTfear_FECAESolicitar ;$11)
+C_REAL:C285(ACTfear_FECAESolicitar ;$12)
+C_REAL:C285(ACTfear_FECAESolicitar ;$13)
+C_REAL:C285(ACTfear_FECAESolicitar ;$14)
+C_REAL:C285(ACTfear_FECAESolicitar ;$15)
+C_REAL:C285(ACTfear_FECAESolicitar ;$16)
+C_TEXT:C284(ACTfear_FECAESolicitar ;$17)
+C_TEXT:C284(ACTfear_FECAESolicitar ;$18)
+C_TEXT:C284(ACTfear_FECAESolicitar ;$19)
+C_TEXT:C284(ACTfear_FECAESolicitar ;$20)
+C_REAL:C285(ACTfear_FECAESolicitar ;$21)
+C_LONGINT:C283(ACTfear_FECAESolicitar ;$22)
+C_LONGINT:C283(ACTfear_FECAESolicitar ;$23)
+C_LONGINT:C283(ACTfear_FECAESolicitar ;$24)
+C_LONGINT:C283(ACTfear_FECAESolicitar ;$25)
+C_TEXT:C284(ACTfear_FECAESolicitar ;$26)
+C_REAL:C285(ACTfear_FECAESolicitar ;$27)
+C_REAL:C285(ACTfear_FECAESolicitar ;$28)
+C_REAL:C285(ACTfear_FECAESolicitar ;$29)
+C_LONGINT:C283(ACTfear_FECAESolicitar ;$30)
+C_REAL:C285(ACTfear_FECAESolicitar ;$31)
+C_REAL:C285(ACTfear_FECAESolicitar ;$32)
+C_TEXT:C284(ACTfear_FECAESolicitar ;$33)
+C_TEXT:C284(ACTfear_FECAESolicitar ;$34)
+
+  //ACTfear_ObtieneCAE
+C_BOOLEAN:C305(ACTfear_ObtieneCAE ;$0)
+C_LONGINT:C283(ACTfear_ObtieneCAE ;$1)
+
+  //ACTfear_FECompConsultar
+C_TEXT:C284(ACTfear_FECompConsultar ;$0)
+C_LONGINT:C283(ACTfear_FECompConsultar ;$1)
+C_LONGINT:C283(ACTfear_FECompConsultar ;$2)
+C_LONGINT:C283(ACTfear_FECompConsultar ;$3)
+C_LONGINT:C283(ACTfear_FECompConsultar ;$4)
+
+  //ACTfear_CallWebService
+C_TEXT:C284(ACTfear_CallWebService ;$1)
+C_REAL:C285(ACTfear_CallWebService ;$2)
+
+  //ACTfear_FECompUltimoAutorizado
+C_TEXT:C284(ACTfear_FECompUltimoAutorizado ;$0)
+C_LONGINT:C283(ACTfear_FECompUltimoAutorizado ;$1)
+C_LONGINT:C283(ACTfear_FECompUltimoAutorizado ;$2)
+C_LONGINT:C283(ACTfear_FECompUltimoAutorizado ;$3)
+
+  //ACTfear_GeneraTRA
+C_TEXT:C284(ACTfear_GeneraTRA ;$0)
+C_LONGINT:C283(ACTfear_GeneraTRA ;$1)
+C_BOOLEAN:C305(ACTfear_GeneraTRA ;$2)
+C_POINTER:C301(ACTfear_GeneraTRA ;$3)
+C_TEXT:C284(ACTfear_GeneraTRA ;$4)
+
+  //WSact_FEARLoginWSAA
+C_TEXT:C284(WSact_FEARLoginWSAA ;$0)
+C_TEXT:C284(WSact_FEARLoginWSAA ;$1)
+C_TEXT:C284(WSact_FEARLoginWSAA ;$2)
+C_TEXT:C284(WSact_FEARLoginWSAA ;$3)
+C_REAL:C285(WSact_FEARLoginWSAA ;$4)
+
+  //BC_Barcode_128C_Colombia
+C_TEXT:C284(BC_Barcode_128C_Colombia ;$0)
+C_POINTER:C301(BC_Barcode_128C_Colombia ;${2})
+C_TEXT:C284(BC_Barcode_128C_Colombia ;$1)
+
+  //BC_Barcode_Calc_ChcksumIndustri
+C_TEXT:C284(BC_Barcode_Calc_ChcksumIndustri ;$0)
+C_TEXT:C284(BC_Barcode_Calc_ChcksumIndustri ;$1)
+C_TEXT:C284(BC_Barcode_Calc_ChcksumIndustri ;$2)
+
+  //BC_Barcode_Calc_Checksum
+C_TEXT:C284(BC_Barcode_Calc_Checksum ;$0)
+C_TEXT:C284(BC_Barcode_Calc_Checksum ;$1)
+C_TEXT:C284(BC_Barcode_Calc_Checksum ;$2)
+
+  //BC_Barcode_Calc_Checksum_Code39
+C_TEXT:C284(BC_Barcode_Calc_Checksum_Code39 ;$0)
+C_TEXT:C284(BC_Barcode_Calc_Checksum_Code39 ;$1)
+
+  //BC_Barcode_Calc_Checksum_EAN13
+C_TEXT:C284(BC_Barcode_Calc_Checksum_EAN13 ;$0)
+C_TEXT:C284(BC_Barcode_Calc_Checksum_EAN13 ;$1)
+
+  //BC_Barcode_Calc_Checksum_UPCA
+C_TEXT:C284(BC_Barcode_Calc_Checksum_UPCA ;$0)
+C_TEXT:C284(BC_Barcode_Calc_Checksum_UPCA ;$1)
+
+  //BC_Barcode_Calc_Checksum_UPCE
+C_TEXT:C284(BC_Barcode_Calc_Checksum_UPCE ;$0)
+C_TEXT:C284(BC_Barcode_Calc_Checksum_UPCE ;$1)
+C_TEXT:C284(BC_Barcode_Calc_Checksum_UPCE ;$2)
+
+  //BC_Barcode_Calc_ChecksumCode128
+C_TEXT:C284(BC_Barcode_Calc_ChecksumCode128 ;$0)
+C_TEXT:C284(BC_Barcode_Calc_ChecksumCode128 ;$1)
+C_TEXT:C284(BC_Barcode_Calc_ChecksumCode128 ;$2)
+
+  //BC_Barcode_Code128_Pattern
+C_TEXT:C284(BC_Barcode_Code128_Pattern ;$0)
+C_TEXT:C284(BC_Barcode_Code128_Pattern ;$1)
+C_TEXT:C284(BC_Barcode_Code128_Pattern ;$2)
+
+  //BC_Barcode_Code39_Pattern
+C_TEXT:C284(BC_Barcode_Code39_Pattern ;$0)
+C_TEXT:C284(BC_Barcode_Code39_Pattern ;$1)
+
+  //BC_Barcode_Convert_Pattern
+C_TEXT:C284(BC_Barcode_Convert_Pattern ;$0)
+C_TEXT:C284(BC_Barcode_Convert_Pattern ;$1)
+C_TEXT:C284(BC_Barcode_Convert_Pattern ;$2)
+
+  //BC_Barcode_EAN13_Pattern
+C_TEXT:C284(BC_Barcode_EAN13_Pattern ;$0)
+C_TEXT:C284(BC_Barcode_EAN13_Pattern ;$1)
+
+  //BC_Barcode_EAN8_Pattern
+C_TEXT:C284(BC_Barcode_EAN8_Pattern ;$0)
+C_TEXT:C284(BC_Barcode_EAN8_Pattern ;$1)
+
+  //BC_Barcode_Industrial25_Pattern
+C_TEXT:C284(BC_Barcode_Industrial25_Pattern ;$0)
+C_TEXT:C284(BC_Barcode_Industrial25_Pattern ;$1)
+
+  //BC_Barcode_Interleaved25Pattern
+C_TEXT:C284(BC_Barcode_Interleaved25Pattern ;$0)
+C_TEXT:C284(BC_Barcode_Interleaved25Pattern ;$1)
+
+  //BC_Barcode_SetPattern
+C_LONGINT:C283(BC_Barcode_SetPattern ;$1)
+C_TEXT:C284(BC_Barcode_SetPattern ;$2)
+C_LONGINT:C283(BC_Barcode_SetPattern ;$3)
+
+  //BC_Barcode_Supplemental2Pattern
+C_TEXT:C284(BC_Barcode_Supplemental2Pattern ;$0)
+C_TEXT:C284(BC_Barcode_Supplemental2Pattern ;$1)
+
+  //BC_Barcode_Supplemental5Pattern
+C_TEXT:C284(BC_Barcode_Supplemental5Pattern ;$0)
+C_TEXT:C284(BC_Barcode_Supplemental5Pattern ;$1)
+
+  //BC_Barcode_UPCA_Pattern
+C_TEXT:C284(BC_Barcode_UPCA_Pattern ;$0)
+C_TEXT:C284(BC_Barcode_UPCA_Pattern ;$1)
+
+  //BC_Barcode_UPCE_Pattern
+C_TEXT:C284(BC_Barcode_UPCE_Pattern ;$0)
+C_TEXT:C284(BC_Barcode_UPCE_Pattern ;$1)
+
+  //USR_ModifyUser
+C_POINTER:C301(USR_ModifyUser ;$1)
+
+  //CIM_VerifyDataFile
+C_REAL:C285(CIM_VerifyDataFile ;$0)
+C_TEXT:C284(CIM_VerifyDataFile ;$1)
+C_LONGINT:C283(CIM_VerifyDataFile ;$2)
+C_POINTER:C301(CIM_VerifyDataFile ;$3)
+
+  //ACTdte_ObtienePDFDT
+C_TEXT:C284(ACTdte_ObtienePDFDT ;$0)
+C_LONGINT:C283(ACTdte_ObtienePDFDT ;$1)
+
+  //LICENCIA_Verifica
+C_LONGINT:C283(LICENCIA_Verifica ;$0)
+C_BOOLEAN:C305(LICENCIA_Verifica ;$1)
+
+  //LICENCIA_ObtieneUUIDinstitucion
+C_TEXT:C284(LICENCIA_ObtieneUUIDinstitucion ;$0)
+C_BOOLEAN:C305(LICENCIA_ObtieneUUIDinstitucion ;$1)
+
+  //CIM_CuentaRegistros
+C_TEXT:C284(CIM_CuentaRegistros ;$0)
+C_TEXT:C284(CIM_CuentaRegistros ;$1)
+C_TEXT:C284(CIM_CuentaRegistros ;$2)
+C_TEXT:C284(CIM_CuentaRegistros ;$3)
+
+  //ACTbol_AgregaObs
+C_BOOLEAN:C305(ACTbol_AgregaObs ;$0)
+C_TEXT:C284(ACTbol_AgregaObs ;$1)
+
+  //ACTdte_enviaPDFXMail
+C_BOOLEAN:C305(ACTdte_enviaPDFXMail ;$0)
+C_LONGINT:C283(ACTdte_enviaPDFXMail ;$1)
+C_REAL:C285(ACTdte_enviaPDFXMail ;$2)
+C_POINTER:C301(ACTdte_enviaPDFXMail ;$3)
+
+  //XCRwa_OnWebConnection
+C_TEXT:C284(XCRwa_OnWebConnection ;$1)
+C_TEXT:C284(XCRwa_OnWebConnection ;$2)
+C_TEXT:C284(XCRwa_OnWebConnection ;$3)
+C_TEXT:C284(XCRwa_OnWebConnection ;$4)
+C_TEXT:C284(XCRwa_OnWebConnection ;$5)
+C_TEXT:C284(XCRwa_OnWebConnection ;$6)
+
+  //XCRwa_RespuestaError
+C_TEXT:C284(XCRwa_RespuestaError ;$0)
+C_REAL:C285(XCRwa_RespuestaError ;$1)
+C_BOOLEAN:C305(XCRwa_RespuestaError ;$2)
+
+  //XCRwa_CreaPago
+C_TEXT:C284(XCRwa_CreaPago ;$0)
+C_TEXT:C284(XCRwa_CreaPago ;$1)
+
+  //XCRwa_TestsJSONXCR
+C_TEXT:C284(XCRwa_TestsJSONXCR ;$0)
+
+  //XCRwa_GeneraLlave
+C_TEXT:C284(XCRwa_GeneraLlave ;$0)
+C_TEXT:C284(XCRwa_GeneraLlave ;$1)
+C_TEXT:C284(XCRwa_GeneraLlave ;$2)
+C_TEXT:C284(XCRwa_GeneraLlave ;$3)
+
+  //WEB_GetVariables
+C_BOOLEAN:C305(WEB_GetVariables ;$0)
+C_TEXT:C284(WEB_GetVariables ;$1)
+C_POINTER:C301(WEB_GetVariables ;$2)
+C_POINTER:C301(WEB_GetVariables ;$3)
+C_POINTER:C301(WEB_GetVariables ;$4)
+
+  //dhSync_HandleReceivingChanges
+C_BOOLEAN:C305(dhSync_HandleReceivingChanges ;$0)
+C_POINTER:C301(dhSync_HandleReceivingChanges ;$1)
+C_POINTER:C301(dhSync_HandleReceivingChanges ;$2)
+
+  //AL_MuestraListaMedidas
+C_REAL:C285(AL_MuestraListaMedidas ;$0)
+
+  //ACTdte_EnviaDetalleLibro
+C_BOOLEAN:C305(ACTdte_EnviaDetalleLibro ;$0)
+C_TEXT:C284(ACTdte_EnviaDetalleLibro ;$1)
+
+  //ACT_VerificaInicioProceso
+C_BOOLEAN:C305(ACT_VerificaInicioProceso ;$0)
+C_TEXT:C284(ACT_VerificaInicioProceso ;$1)
+
+  //UTIL_isOS64bit
+C_BOOLEAN:C305(UTIL_isOS64bit ;$0)
+C_TEXT:C284(UTIL_isOS64bit ;$1)
+
+  //DT_Duracion_a_Texto
+C_TEXT:C284(DT_Duracion_a_Texto ;$0)
+C_TIME:C306(DT_Duracion_a_Texto ;$1)
+
+  //SYS_GetServerOS
+C_TEXT:C284(SYS_GetServerOS ;$0)
+
+  //RINSCwa_OnWebConnection
+C_TEXT:C284(RINSCwa_OnWebConnection ;$1)
+C_TEXT:C284(RINSCwa_OnWebConnection ;$2)
+C_TEXT:C284(RINSCwa_OnWebConnection ;$3)
+C_TEXT:C284(RINSCwa_OnWebConnection ;$4)
+C_TEXT:C284(RINSCwa_OnWebConnection ;$5)
+C_TEXT:C284(RINSCwa_OnWebConnection ;$6)
+
+  //RINSCwa_RespuestaError
+C_TEXT:C284(RINSCwa_RespuestaError ;$0)
+C_REAL:C285(RINSCwa_RespuestaError ;$1)
+C_BOOLEAN:C305(RINSCwa_RespuestaError ;$2)
+C_TEXT:C284(RINSCwa_RespuestaError ;$3)
+
+  //RINSCwa_EnviaCargos
+C_TEXT:C284(RINSCwa_EnviaCargos ;$0)
+C_TEXT:C284(RINSCwa_EnviaCargos ;$1)
+
+  //RINSCwa_TestJSONEnviaCargos
+C_TEXT:C284(RINSCwa_TestJSONEnviaCargos ;$0)
+
+  //CONDOR_ValidaAutenticacion
+C_BOOLEAN:C305(CONDOR_ValidaAutenticacion ;$0)
+C_REAL:C285(CONDOR_ValidaAutenticacion ;$1)
+C_TEXT:C284(CONDOR_ValidaAutenticacion ;$2)
+
+  //RINSCwa_ProcesaSolititud
+C_TEXT:C284(RINSCwa_ProcesaSolititud ;$0)
+C_TEXT:C284(RINSCwa_ProcesaSolititud ;$1)
+
+  //RINSCwa_TestJSONProcesaSol
+C_TEXT:C284(RINSCwa_TestJSONProcesaSol ;$0)
+
+  //STWA2_OWC_eliminaevento
+C_TEXT:C284(STWA2_OWC_eliminaevento ;$0)
+C_TEXT:C284(STWA2_OWC_eliminaevento ;$1)
+C_POINTER:C301(STWA2_OWC_eliminaevento ;$2)
+C_POINTER:C301(STWA2_OWC_eliminaevento ;$3)
+
+  //STWA2_OWC_getvisitadata
+C_TEXT:C284(STWA2_OWC_getvisitadata ;$0)
+C_TEXT:C284(STWA2_OWC_getvisitadata ;$1)
+C_POINTER:C301(STWA2_OWC_getvisitadata ;$2)
+C_POINTER:C301(STWA2_OWC_getvisitadata ;$3)
+
+  //STWA2_OWC_modtextosficha
+C_TEXT:C284(STWA2_OWC_modtextosficha ;$0)
+C_TEXT:C284(STWA2_OWC_modtextosficha ;$1)
+C_POINTER:C301(STWA2_OWC_modtextosficha ;$2)
+C_POINTER:C301(STWA2_OWC_modtextosficha ;$3)
+
+  //STWA2_OWC_guardadatosfichasalud
+C_TEXT:C284(STWA2_OWC_guardadatosfichasalud ;$0)
+C_TEXT:C284(STWA2_OWC_guardadatosfichasalud ;$1)
+C_POINTER:C301(STWA2_OWC_guardadatosfichasalud ;$2)
+C_POINTER:C301(STWA2_OWC_guardadatosfichasalud ;$3)
+
+  //STWA2_OWC_eliminadatofichasalud
+C_TEXT:C284(STWA2_OWC_eliminadatofichasalud ;$0)
+C_TEXT:C284(STWA2_OWC_eliminadatofichasalud ;$1)
+C_POINTER:C301(STWA2_OWC_eliminadatofichasalud ;$2)
+C_POINTER:C301(STWA2_OWC_eliminadatofichasalud ;$3)
+
+  //STWA2_OWC_agregarvalorlista
+C_TEXT:C284(STWA2_OWC_agregarvalorlista ;$0)
+C_TEXT:C284(STWA2_OWC_agregarvalorlista ;$1)
+C_POINTER:C301(STWA2_OWC_agregarvalorlista ;$2)
+C_POINTER:C301(STWA2_OWC_agregarvalorlista ;$3)
+
+  //STWA2_OWC_obtieneURLsGAFE
+C_TEXT:C284(STWA2_OWC_obtieneURLsGAFE ;$0)
+C_TEXT:C284(STWA2_OWC_obtieneURLsGAFE ;$1)
+C_POINTER:C301(STWA2_OWC_obtieneURLsGAFE ;$2)
+C_POINTER:C301(STWA2_OWC_obtieneURLsGAFE ;$3)
+
+  //STWA2_OWC_obtieneLlaveEdunet
+C_TEXT:C284(STWA2_OWC_obtieneLlaveEdunet ;$0)
+C_TEXT:C284(STWA2_OWC_obtieneLlaveEdunet ;$1)
+C_POINTER:C301(STWA2_OWC_obtieneLlaveEdunet ;$2)
+C_POINTER:C301(STWA2_OWC_obtieneLlaveEdunet ;$3)
+
+  //STWA2_OWC_cargaInasistenciaporH
+C_TEXT:C284(STWA2_OWC_cargaInasistenciaporH ;$0)
+C_TEXT:C284(STWA2_OWC_cargaInasistenciaporH ;$1)
+C_POINTER:C301(STWA2_OWC_cargaInasistenciaporH ;$2)
+C_POINTER:C301(STWA2_OWC_cargaInasistenciaporH ;$3)
+
+  //STWA2_OWC_eliminaLicencia
+C_TEXT:C284(STWA2_OWC_eliminaLicencia ;$0)
+C_TEXT:C284(STWA2_OWC_eliminaLicencia ;$1)
+C_POINTER:C301(STWA2_OWC_eliminaLicencia ;$2)
+C_POINTER:C301(STWA2_OWC_eliminaLicencia ;$3)
+
+  //STWA2_OWC_eliminaInasistencia
+C_TEXT:C284(STWA2_OWC_eliminaInasistencia ;$0)
+C_TEXT:C284(STWA2_OWC_eliminaInasistencia ;$1)
+C_POINTER:C301(STWA2_OWC_eliminaInasistencia ;$2)
+C_POINTER:C301(STWA2_OWC_eliminaInasistencia ;$3)
+
+  //STWA2_OWC_inasistenciasAlumno
+C_TEXT:C284(STWA2_OWC_inasistenciasAlumno ;$0)
+C_TEXT:C284(STWA2_OWC_inasistenciasAlumno ;$1)
+C_POINTER:C301(STWA2_OWC_inasistenciasAlumno ;$2)
+C_POINTER:C301(STWA2_OWC_inasistenciasAlumno ;$3)
+
+  //STWA2_OWC_eliminaSuspension
+C_TEXT:C284(STWA2_OWC_eliminaSuspension ;$0)
+C_TEXT:C284(STWA2_OWC_eliminaSuspension ;$1)
+C_POINTER:C301(STWA2_OWC_eliminaSuspension ;$2)
+C_POINTER:C301(STWA2_OWC_eliminaSuspension ;$3)
+
+  //STWA2_OWC_suspensionesAlumno
+C_TEXT:C284(STWA2_OWC_suspensionesAlumno ;$0)
+C_TEXT:C284(STWA2_OWC_suspensionesAlumno ;$1)
+C_POINTER:C301(STWA2_OWC_suspensionesAlumno ;$2)
+C_POINTER:C301(STWA2_OWC_suspensionesAlumno ;$3)
+
+  //STWA2_OWC_eliminaCastigo
+C_TEXT:C284(STWA2_OWC_eliminaCastigo ;$0)
+C_TEXT:C284(STWA2_OWC_eliminaCastigo ;$1)
+C_POINTER:C301(STWA2_OWC_eliminaCastigo ;$2)
+C_POINTER:C301(STWA2_OWC_eliminaCastigo ;$3)
+
+  //STWA2_OWC_castigosAlumno
+C_TEXT:C284(STWA2_OWC_castigosAlumno ;$0)
+C_TEXT:C284(STWA2_OWC_castigosAlumno ;$1)
+C_POINTER:C301(STWA2_OWC_castigosAlumno ;$2)
+C_POINTER:C301(STWA2_OWC_castigosAlumno ;$3)
+
+  //STWA2_OWC_eliminaAnotacion
+C_TEXT:C284(STWA2_OWC_eliminaAnotacion ;$0)
+C_TEXT:C284(STWA2_OWC_eliminaAnotacion ;$1)
+C_POINTER:C301(STWA2_OWC_eliminaAnotacion ;$2)
+C_POINTER:C301(STWA2_OWC_eliminaAnotacion ;$3)
+
+  //STWA2_OWC_anotacionesAlumno
+C_TEXT:C284(STWA2_OWC_anotacionesAlumno ;$0)
+C_TEXT:C284(STWA2_OWC_anotacionesAlumno ;$1)
+C_POINTER:C301(STWA2_OWC_anotacionesAlumno ;$2)
+C_POINTER:C301(STWA2_OWC_anotacionesAlumno ;$3)
+
+  //STWA2_OWC_profesores
+C_TEXT:C284(STWA2_OWC_profesores ;$0)
+C_TEXT:C284(STWA2_OWC_profesores ;$1)
+C_POINTER:C301(STWA2_OWC_profesores ;$2)
+C_POINTER:C301(STWA2_OWC_profesores ;$3)
+
+  //STWA2_OWC_asignaturasprof
+C_TEXT:C284(STWA2_OWC_asignaturasprof ;$0)
+C_TEXT:C284(STWA2_OWC_asignaturasprof ;$1)
+C_POINTER:C301(STWA2_OWC_asignaturasprof ;$2)
+C_POINTER:C301(STWA2_OWC_asignaturasprof ;$3)
+
+  //STWA2_OWC_verLicencia
+C_TEXT:C284(STWA2_OWC_verLicencia ;$0)
+C_TEXT:C284(STWA2_OWC_verLicencia ;$1)
+C_POINTER:C301(STWA2_OWC_verLicencia ;$2)
+C_POINTER:C301(STWA2_OWC_verLicencia ;$3)
+
+  //STWA2_OWC_alumnos
+C_TEXT:C284(STWA2_OWC_alumnos ;$0)
+C_TEXT:C284(STWA2_OWC_alumnos ;$1)
+C_POINTER:C301(STWA2_OWC_alumnos ;$2)
+C_POINTER:C301(STWA2_OWC_alumnos ;$3)
+
+  //STWA2_OWC_conductaAlumnosCurso
+C_TEXT:C284(STWA2_OWC_conductaAlumnosCurso ;$0)
+C_TEXT:C284(STWA2_OWC_conductaAlumnosCurso ;$1)
+C_POINTER:C301(STWA2_OWC_conductaAlumnosCurso ;$2)
+C_POINTER:C301(STWA2_OWC_conductaAlumnosCurso ;$3)
+
+  //STWA2_OWC_inasistenciasAlumnos
+C_TEXT:C284(STWA2_OWC_inasistenciasAlumnos ;$0)
+C_TEXT:C284(STWA2_OWC_inasistenciasAlumnos ;$1)
+C_POINTER:C301(STWA2_OWC_inasistenciasAlumnos ;$2)
+C_POINTER:C301(STWA2_OWC_inasistenciasAlumnos ;$3)
+
+  //STWA2_OWC_atrasosAlumnos
+C_TEXT:C284(STWA2_OWC_atrasosAlumnos ;$0)
+C_TEXT:C284(STWA2_OWC_atrasosAlumnos ;$1)
+C_POINTER:C301(STWA2_OWC_atrasosAlumnos ;$2)
+C_POINTER:C301(STWA2_OWC_atrasosAlumnos ;$3)
+
+  //STWA2_OWC_conductaInit
+C_TEXT:C284(STWA2_OWC_conductaInit ;$0)
+C_TEXT:C284(STWA2_OWC_conductaInit ;$1)
+C_POINTER:C301(STWA2_OWC_conductaInit ;$2)
+C_POINTER:C301(STWA2_OWC_conductaInit ;$3)
+
+  //STWA2_OWC_doquicksearch
+C_TEXT:C284(STWA2_OWC_doquicksearch ;$0)
+C_TEXT:C284(STWA2_OWC_doquicksearch ;$1)
+C_POINTER:C301(STWA2_OWC_doquicksearch ;$2)
+C_POINTER:C301(STWA2_OWC_doquicksearch ;$3)
+
+  //STWA2_OWC_doquery
+C_TEXT:C284(STWA2_OWC_doquery ;$0)
+C_TEXT:C284(STWA2_OWC_doquery ;$1)
+C_POINTER:C301(STWA2_OWC_doquery ;$2)
+C_POINTER:C301(STWA2_OWC_doquery ;$3)
+
+  //STWA2_OWC_getqsvalues
+C_TEXT:C284(STWA2_OWC_getqsvalues ;$0)
+C_TEXT:C284(STWA2_OWC_getqsvalues ;$1)
+C_POINTER:C301(STWA2_OWC_getqsvalues ;$2)
+C_POINTER:C301(STWA2_OWC_getqsvalues ;$3)
+
+  //STWA2_OWC_getqueries
+C_TEXT:C284(STWA2_OWC_getqueries ;$0)
+C_TEXT:C284(STWA2_OWC_getqueries ;$1)
+C_POINTER:C301(STWA2_OWC_getqueries ;$2)
+C_POINTER:C301(STWA2_OWC_getqueries ;$3)
+
+  //STWA2_OWC_replicarPlanes
+C_TEXT:C284(STWA2_OWC_replicarPlanes ;$0)
+C_TEXT:C284(STWA2_OWC_replicarPlanes ;$1)
+C_POINTER:C301(STWA2_OWC_replicarPlanes ;$2)
+C_POINTER:C301(STWA2_OWC_replicarPlanes ;$3)
+
+  //STWA2_OWC_agregarPlan
+C_TEXT:C284(STWA2_OWC_agregarPlan ;$0)
+C_TEXT:C284(STWA2_OWC_agregarPlan ;$1)
+C_POINTER:C301(STWA2_OWC_agregarPlan ;$2)
+C_POINTER:C301(STWA2_OWC_agregarPlan ;$3)
+
+  //STWA2_OWC_deletePlan
+C_TEXT:C284(STWA2_OWC_deletePlan ;$0)
+C_TEXT:C284(STWA2_OWC_deletePlan ;$1)
+C_POINTER:C301(STWA2_OWC_deletePlan ;$2)
+C_POINTER:C301(STWA2_OWC_deletePlan ;$3)
+
+  //STWA2_OWC_cargaPropiedadesAdjun
+C_TEXT:C284(STWA2_OWC_cargaPropiedadesAdjun ;$0)
+C_TEXT:C284(STWA2_OWC_cargaPropiedadesAdjun ;$1)
+C_POINTER:C301(STWA2_OWC_cargaPropiedadesAdjun ;$2)
+C_POINTER:C301(STWA2_OWC_cargaPropiedadesAdjun ;$3)
+
+  //STWA2_OWC_cargaPropiedadesURL
+C_TEXT:C284(STWA2_OWC_cargaPropiedadesURL ;$0)
+C_TEXT:C284(STWA2_OWC_cargaPropiedadesURL ;$1)
+C_POINTER:C301(STWA2_OWC_cargaPropiedadesURL ;$2)
+C_POINTER:C301(STWA2_OWC_cargaPropiedadesURL ;$3)
+
+  //STWA2_OWC_deletefileplan
+C_TEXT:C284(STWA2_OWC_deletefileplan ;$0)
+C_TEXT:C284(STWA2_OWC_deletefileplan ;$1)
+C_POINTER:C301(STWA2_OWC_deletefileplan ;$2)
+C_POINTER:C301(STWA2_OWC_deletefileplan ;$3)
+
+  //STWA2_OWC_getcontenidosplan
+C_TEXT:C284(STWA2_OWC_getcontenidosplan ;$0)
+C_TEXT:C284(STWA2_OWC_getcontenidosplan ;$1)
+C_POINTER:C301(STWA2_OWC_getcontenidosplan ;$2)
+C_POINTER:C301(STWA2_OWC_getcontenidosplan ;$3)
+
+  //STWA2_OWC_getcontenidossesion
+C_TEXT:C284(STWA2_OWC_getcontenidossesion ;$0)
+C_TEXT:C284(STWA2_OWC_getcontenidossesion ;$1)
+C_POINTER:C301(STWA2_OWC_getcontenidossesion ;$2)
+C_POINTER:C301(STWA2_OWC_getcontenidossesion ;$3)
+
+  //STWA2_OWC_objasignatura
+C_TEXT:C284(STWA2_OWC_objasignatura ;$0)
+C_TEXT:C284(STWA2_OWC_objasignatura ;$1)
+C_POINTER:C301(STWA2_OWC_objasignatura ;$2)
+C_POINTER:C301(STWA2_OWC_objasignatura ;$3)
+
+  //STWA2_OWC_enfermeria
+C_TEXT:C284(STWA2_OWC_enfermeria ;$0)
+C_TEXT:C284(STWA2_OWC_enfermeria ;$1)
+C_POINTER:C301(STWA2_OWC_enfermeria ;$2)
+C_POINTER:C301(STWA2_OWC_enfermeria ;$3)
+
+  //STWA2_OWC_nuevavisitaenfermeria
+C_TEXT:C284(STWA2_OWC_nuevavisitaenfermeria ;$0)
+C_TEXT:C284(STWA2_OWC_nuevavisitaenfermeria ;$1)
+C_POINTER:C301(STWA2_OWC_nuevavisitaenfermeria ;$2)
+C_POINTER:C301(STWA2_OWC_nuevavisitaenfermeria ;$3)
+
+  //STWA2_OWC_datosalumnoenfermeria
+C_TEXT:C284(STWA2_OWC_datosalumnoenfermeria ;$0)
+C_TEXT:C284(STWA2_OWC_datosalumnoenfermeria ;$1)
+C_POINTER:C301(STWA2_OWC_datosalumnoenfermeria ;$2)
+C_POINTER:C301(STWA2_OWC_datosalumnoenfermeria ;$3)
+
+  //STWA2_OWC_datosfichamedica
+C_TEXT:C284(STWA2_OWC_datosfichamedica ;$0)
+C_TEXT:C284(STWA2_OWC_datosfichamedica ;$1)
+C_POINTER:C301(STWA2_OWC_datosfichamedica ;$2)
+C_POINTER:C301(STWA2_OWC_datosfichamedica ;$3)
+
+  //STWA2_OWC_deactivateSession
+C_TEXT:C284(STWA2_OWC_deactivateSession ;$0)
+C_TEXT:C284(STWA2_OWC_deactivateSession ;$1)
+C_POINTER:C301(STWA2_OWC_deactivateSession ;$2)
+C_POINTER:C301(STWA2_OWC_deactivateSession ;$3)
+
+  //STWA2_OWC_sessionRenew
+C_TEXT:C284(STWA2_OWC_sessionRenew ;$0)
+C_TEXT:C284(STWA2_OWC_sessionRenew ;$1)
+C_POINTER:C301(STWA2_OWC_sessionRenew ;$2)
+C_POINTER:C301(STWA2_OWC_sessionRenew ;$3)
+
+  //STWA2_OWC_changePass
+C_TEXT:C284(STWA2_OWC_changePass ;$0)
+C_TEXT:C284(STWA2_OWC_changePass ;$1)
+C_POINTER:C301(STWA2_OWC_changePass ;$2)
+C_POINTER:C301(STWA2_OWC_changePass ;$3)
+
+  //STWA2_OWC_logoff
+C_TEXT:C284(STWA2_OWC_logoff ;$0)
+C_TEXT:C284(STWA2_OWC_logoff ;$1)
+C_POINTER:C301(STWA2_OWC_logoff ;$2)
+C_POINTER:C301(STWA2_OWC_logoff ;$3)
+
+  //STWA2_OWC_dashboards
+C_TEXT:C284(STWA2_OWC_dashboards ;$0)
+C_TEXT:C284(STWA2_OWC_dashboards ;$1)
+C_POINTER:C301(STWA2_OWC_dashboards ;$2)
+C_POINTER:C301(STWA2_OWC_dashboards ;$3)
+
+  //STWA2_OWC_builder
+C_TEXT:C284(STWA2_OWC_builder ;$0)
+C_TEXT:C284(STWA2_OWC_builder ;$1)
+C_POINTER:C301(STWA2_OWC_builder ;$2)
+C_POINTER:C301(STWA2_OWC_builder ;$3)
+
+  //STWA2_OWC_search
+C_TEXT:C284(STWA2_OWC_search ;$0)
+C_TEXT:C284(STWA2_OWC_search ;$1)
+C_POINTER:C301(STWA2_OWC_search ;$2)
+C_POINTER:C301(STWA2_OWC_search ;$3)
+
+  //STWA2_OWC_uploadfile
+C_TEXT:C284(STWA2_OWC_uploadfile ;$0)
+C_TEXT:C284(STWA2_OWC_uploadfile ;$1)
+C_POINTER:C301(STWA2_OWC_uploadfile ;$2)
+C_POINTER:C301(STWA2_OWC_uploadfile ;$3)
+C_TEXT:C284(STWA2_OWC_uploadfile ;$4)
+
+  //STWA2_OWC_download
+C_TEXT:C284(STWA2_OWC_download ;$0)
+C_TEXT:C284(STWA2_OWC_download ;$1)
+C_POINTER:C301(STWA2_OWC_download ;$2)
+C_POINTER:C301(STWA2_OWC_download ;$3)
+
+  //STWA2_OWC_changePass2
+C_TEXT:C284(STWA2_OWC_changePass2 ;$0)
+C_TEXT:C284(STWA2_OWC_changePass2 ;$1)
+C_POINTER:C301(STWA2_OWC_changePass2 ;$2)
+C_POINTER:C301(STWA2_OWC_changePass2 ;$3)
+
+  //STWA2_OWC_renewpass
+C_TEXT:C284(STWA2_OWC_renewpass ;$0)
+C_TEXT:C284(STWA2_OWC_renewpass ;$1)
+C_POINTER:C301(STWA2_OWC_renewpass ;$2)
+C_POINTER:C301(STWA2_OWC_renewpass ;$3)
+
+  //STWA2_OWC_forgotPass
+C_TEXT:C284(STWA2_OWC_forgotPass ;$0)
+C_TEXT:C284(STWA2_OWC_forgotPass ;$1)
+C_POINTER:C301(STWA2_OWC_forgotPass ;$2)
+C_POINTER:C301(STWA2_OWC_forgotPass ;$3)
+C_TEXT:C284(STWA2_OWC_forgotPass ;$4)
+
+  //STWA2_OWC_isValidSession
+C_TEXT:C284(STWA2_OWC_isValidSession ;$0)
+C_TEXT:C284(STWA2_OWC_isValidSession ;$1)
+C_POINTER:C301(STWA2_OWC_isValidSession ;$2)
+C_POINTER:C301(STWA2_OWC_isValidSession ;$3)
+
+  //STWA2_OWC_users
+C_TEXT:C284(STWA2_OWC_users ;$0)
+
+  //STWA2_OWC_licencia
+C_TEXT:C284(STWA2_OWC_licencia ;$0)
+
+  //STWA2_OWC_processUUIDlogin
+C_TEXT:C284(STWA2_OWC_processUUIDlogin ;$0)
+C_TEXT:C284(STWA2_OWC_processUUIDlogin ;$1)
+C_POINTER:C301(STWA2_OWC_processUUIDlogin ;$2)
+C_POINTER:C301(STWA2_OWC_processUUIDlogin ;$3)
+
+  //STWA2_OnWebConnection
+C_TEXT:C284(STWA2_OnWebConnection ;$1)
+C_TEXT:C284(STWA2_OnWebConnection ;$2)
+C_TEXT:C284(STWA2_OnWebConnection ;$3)
+C_TEXT:C284(STWA2_OnWebConnection ;$4)
+C_TEXT:C284(STWA2_OnWebConnection ;$5)
+C_TEXT:C284(STWA2_OnWebConnection ;$6)
+
+  //STWA2_OWC_processlogin_2
+C_TEXT:C284(STWA2_OWC_processlogin_2 ;$0)
+C_TEXT:C284(STWA2_OWC_processlogin_2 ;$1)
+C_POINTER:C301(STWA2_OWC_processlogin_2 ;$2)
+C_POINTER:C301(STWA2_OWC_processlogin_2 ;$3)
+C_TEXT:C284(STWA2_OWC_processlogin_2 ;$4)
+
+  //STWA2_OWC_licencia_no_http
+C_TEXT:C284(STWA2_OWC_licencia_no_http ;$1)
+C_TEXT:C284(STWA2_OWC_licencia_no_http ;$2)
+
+  //STWA2_OWC_saveDato
+C_TEXT:C284(STWA2_OWC_saveDato ;$0)
+C_TEXT:C284(STWA2_OWC_saveDato ;$1)
+C_POINTER:C301(STWA2_OWC_saveDato ;$2)
+C_POINTER:C301(STWA2_OWC_saveDato ;$3)
+
+  //RINSCwa_GeneraAvisos
+C_TEXT:C284(RINSCwa_GeneraAvisos ;$0)
+C_TEXT:C284(RINSCwa_GeneraAvisos ;$1)
+
+  //RINSCwa_TestJSONPagos
+C_TEXT:C284(RINSCwa_TestJSONPagos ;$0)
+
+  //SN3_SendDocTributariosXML
+C_BOOLEAN:C305(SN3_SendDocTributariosXML ;$1)
+C_BOOLEAN:C305(SN3_SendDocTributariosXML ;$2)
+
+  //SYS_OpenLangageResource
+C_TEXT:C284(SYS_OpenLangageResource ;$1)
+
+  //SYS_TestPathNameOnServer
+C_LONGINT:C283(SYS_TestPathNameOnServer ;$0)
+C_TEXT:C284(SYS_TestPathNameOnServer ;$1)
+C_REAL:C285(SYS_TestPathNameOnServer ;$2)
+
+  //SERwa_OnWebConnection
+C_TEXT:C284(SERwa_OnWebConnection ;$1)
+C_TEXT:C284(SERwa_OnWebConnection ;$2)
+C_TEXT:C284(SERwa_OnWebConnection ;$3)
+C_TEXT:C284(SERwa_OnWebConnection ;$4)
+C_TEXT:C284(SERwa_OnWebConnection ;$5)
+C_TEXT:C284(SERwa_OnWebConnection ;$6)
+
+  //SERwa_GeneraRespuesta
+C_TEXT:C284(SERwa_GeneraRespuesta ;$0)
+C_TEXT:C284(SERwa_GeneraRespuesta ;$1)
+C_TEXT:C284(SERwa_GeneraRespuesta ;$2)
+C_POINTER:C301(SERwa_GeneraRespuesta ;$3)
+C_POINTER:C301(SERwa_GeneraRespuesta ;$4)
+
+  //WDW_SetWindowIcon
+C_LONGINT:C283(WDW_SetWindowIcon ;$1)
+
+  //WDW_OpenFormWindow
+C_LONGINT:C283(WDW_OpenFormWindow ;$0)
+C_POINTER:C301(WDW_OpenFormWindow ;$1)
+C_TEXT:C284(WDW_OpenFormWindow ;$2)
+C_LONGINT:C283(WDW_OpenFormWindow ;$3)
+C_LONGINT:C283(WDW_OpenFormWindow ;$4)
+C_TEXT:C284(WDW_OpenFormWindow ;$5)
+C_TEXT:C284(WDW_OpenFormWindow ;$6)
+
+  //ACTwp_ActualizaCampoTipoPago
+C_TEXT:C284(ACTwp_ActualizaCampoTipoPago ;$1)
+C_REAL:C285(ACTwp_ActualizaCampoTipoPago ;$2)
+
+  //LICENCIA_VerificaModCondorAct
+C_BOOLEAN:C305(LICENCIA_VerificaModCondorAct ;$0)
+C_TEXT:C284(LICENCIA_VerificaModCondorAct ;$1)
+C_POINTER:C301(LICENCIA_VerificaModCondorAct ;$2)
+
+  //STWA2_OWC_PeriodoCurso
+C_TEXT:C284(STWA2_OWC_PeriodoCurso ;$0)
+C_TEXT:C284(STWA2_OWC_PeriodoCurso ;$1)
+C_POINTER:C301(STWA2_OWC_PeriodoCurso ;$2)
+C_POINTER:C301(STWA2_OWC_PeriodoCurso ;$3)
+
+  //EV2_CalificacionesModificadas
+C_BOOLEAN:C305(EV2_CalificacionesModificadas ;$0)
+
+  //WSscript_GeneraLlave
+C_TEXT:C284(WSscript_GeneraLlave ;$0)
+C_TEXT:C284(WSscript_GeneraLlave ;$1)
+C_BLOB:C604(WSscript_GeneraLlave ;$2)
+C_TEXT:C284(WSscript_GeneraLlave ;$3)
+C_TEXT:C284(WSscript_GeneraLlave ;$4)
+
+  //STWA2_ProcessLogin_Reemplazo
+C_LONGINT:C283(STWA2_ProcessLogin_Reemplazo ;$0)
+C_TEXT:C284(STWA2_ProcessLogin_Reemplazo ;$1)
+C_POINTER:C301(STWA2_ProcessLogin_Reemplazo ;$2)
+C_POINTER:C301(STWA2_ProcessLogin_Reemplazo ;$3)
+
+  //STsvg_EscalarRotarImagen
+C_PICTURE:C286(STsvg_EscalarRotarImagen ;$0)
+C_PICTURE:C286(STsvg_EscalarRotarImagen ;$1)
+C_REAL:C285(STsvg_EscalarRotarImagen ;$2)
+C_REAL:C285(STsvg_EscalarRotarImagen ;$3)
+C_BOOLEAN:C305(STsvg_EscalarRotarImagen ;$4)
+C_REAL:C285(STsvg_EscalarRotarImagen ;$5)
+C_REAL:C285(STsvg_EscalarRotarImagen ;$6)
+C_REAL:C285(STsvg_EscalarRotarImagen ;$7)
+
+  //CU_CalculaPromedios
+C_BOOLEAN:C305(CU_CalculaPromedios ;$0)
+C_LONGINT:C283(CU_CalculaPromedios ;$1)
+
+  //AL_CalculaPromediosGenerales
+C_BOOLEAN:C305(AL_CalculaPromediosGenerales ;$0)
+C_LONGINT:C283(AL_CalculaPromediosGenerales ;$1)
+C_LONGINT:C283(AL_CalculaPromediosGenerales ;$2)
+
+  //_oSTWA2_AJAX_ListSubjects
+C_TEXT:C284(_oSTWA2_AJAX_ListSubjects ;$0)
+C_TEXT:C284(_oSTWA2_AJAX_ListSubjects ;$1)
+
+  //0xDev_BuildApplications_x32
+C_REAL:C285(0xDev_BuildApplications_x32 ;$0)
+
+  //0xDev_BuildApplications_x64
+C_REAL:C285(0xDev_BuildApplications_x64 ;$0)
+
+  //4D_GetMethodFolder
+C_TEXT:C284(4D_GetMethodFolder ;$0)
+C_TEXT:C284(4D_GetMethodFolder ;$1)
+
+  //4D_GetTF4DResourceIDs
+C_POINTER:C301(4D_GetTF4DResourceIDs ;$1)
+
+  //ACTAS_ActualizaListaAsignaturas
+C_LONGINT:C283(ACTAS_ActualizaListaAsignaturas ;$1)
+C_TEXT:C284(ACTAS_ActualizaListaAsignaturas ;$2)
+C_REAL:C285(ACTAS_ActualizaListaAsignaturas ;$3)
+
+  //ACTAS_Ajustes_y_Orden
+C_LONGINT:C283(ACTAS_Ajustes_y_Orden ;$1)
+C_LONGINT:C283(ACTAS_Ajustes_y_Orden ;$2)
+
+  //ACTAS_ConfiguracionPorDefecto
+C_LONGINT:C283(ACTAS_ConfiguracionPorDefecto ;$1)
+
+  //ACTAS_ConfiguraFormActa
+C_BOOLEAN:C305(ACTAS_ConfiguraFormActa ;$1)
+
+  //ACTAS_GuardaConfiguracion
+C_LONGINT:C283(ACTAS_GuardaConfiguracion ;$1)
+C_TEXT:C284(ACTAS_GuardaConfiguracion ;$2)
+C_LONGINT:C283(ACTAS_GuardaConfiguracion ;$3)
+
+  //ACTAS_GuardaObjeto
+C_POINTER:C301(ACTAS_GuardaObjeto ;$1)
+C_REAL:C285(ACTAS_GuardaObjeto ;$2)
+
+  //ACTAS_LeeConfiguracion
+C_LONGINT:C283(ACTAS_LeeConfiguracion ;$1)
+C_TEXT:C284(ACTAS_LeeConfiguracion ;$2)
+C_LONGINT:C283(ACTAS_LeeConfiguracion ;$3)
+
+  //ACTAS_LeeObjeto
+C_POINTER:C301(ACTAS_LeeObjeto ;$1)
+C_LONGINT:C283(ACTAS_LeeObjeto ;$2)
+
+  //AS_MPA_ListaAlumnos
+C_REAL:C285(AS_MPA_ListaAlumnos ;$1)
+C_REAL:C285(AS_MPA_ListaAlumnos ;$2)
+
+  //AS_xALP_AtributosCeldaNotaFinal
+C_REAL:C285(AS_xALP_AtributosCeldaNotaFinal ;$1)
+
+  //AS_xALP_EstiloCalificaciones
+C_REAL:C285(AS_xALP_EstiloCalificaciones ;$1)
+
+  //AS_xALP_EventosAsignaturas
+C_LONGINT:C283(AS_xALP_EventosAsignaturas ;$0)
+C_LONGINT:C283(AS_xALP_EventosAsignaturas ;$1)
+C_LONGINT:C283(AS_xALP_EventosAsignaturas ;$2)
+C_LONGINT:C283(AS_xALP_EventosAsignaturas ;$3)
+C_LONGINT:C283(AS_xALP_EventosAsignaturas ;$4)
+C_LONGINT:C283(AS_xALP_EventosAsignaturas ;$5)
+C_LONGINT:C283(AS_xALP_EventosAsignaturas ;$6)
+
+  //AS_xALP_MuestraInfoCalificacion
+C_LONGINT:C283(AS_xALP_MuestraInfoCalificacion ;$1)
+C_LONGINT:C283(AS_xALP_MuestraInfoCalificacion ;$2)
+C_LONGINT:C283(AS_xALP_MuestraInfoCalificacion ;$3)
+
+  //AS_xALP_PropiedadesCalificación
+C_REAL:C285(AS_xALP_PropiedadesCalificación ;$1)
+C_REAL:C285(AS_xALP_PropiedadesCalificación ;$2)
+
+  //AS_xALP_RefrescaPromedios
+C_REAL:C285(AS_xALP_RefrescaPromedios ;$1)
+
+  //CIM_LeeLogActividades
+C_POINTER:C301(CIM_LeeLogActividades ;$1)
+C_POINTER:C301(CIM_LeeLogActividades ;$2)
+C_POINTER:C301(CIM_LeeLogActividades ;$3)
+C_POINTER:C301(CIM_LeeLogActividades ;$4)
+C_POINTER:C301(CIM_LeeLogActividades ;$5)
+C_POINTER:C301(CIM_LeeLogActividades ;$6)
+C_POINTER:C301(CIM_LeeLogActividades ;$7)
+
+  //CIM_Log_FiltraEventos
+C_TEXT:C284(CIM_Log_FiltraEventos ;$1)
+
+  //CODE_Get_html
+C_TEXT:C284(CODE_Get_html ;$0)
+C_TEXT:C284(CODE_Get_html ;$1)
+
+  //CU_Firmas_ActualizaLista
+C_LONGINT:C283(CU_Firmas_ActualizaLista ;$1)
+C_TEXT:C284(CU_Firmas_ActualizaLista ;$2)
+
+  //CU_Firmas_GuardaFirmantes
+C_POINTER:C301(CU_Firmas_GuardaFirmantes ;$1)
+C_POINTER:C301(CU_Firmas_GuardaFirmantes ;$2)
+C_POINTER:C301(CU_Firmas_GuardaFirmantes ;$3)
+C_POINTER:C301(CU_Firmas_GuardaFirmantes ;$4)
+C_POINTER:C301(CU_Firmas_GuardaFirmantes ;$5)
+C_POINTER:C301(CU_Firmas_GuardaFirmantes ;$6)
+C_POINTER:C301(CU_Firmas_GuardaFirmantes ;$7)
+
+  //CU_Firmas_LeeFirmantes
+C_POINTER:C301(CU_Firmas_LeeFirmantes ;$1)
+C_POINTER:C301(CU_Firmas_LeeFirmantes ;$2)
+C_POINTER:C301(CU_Firmas_LeeFirmantes ;$3)
+C_POINTER:C301(CU_Firmas_LeeFirmantes ;$4)
+C_POINTER:C301(CU_Firmas_LeeFirmantes ;$5)
+C_POINTER:C301(CU_Firmas_LeeFirmantes ;$6)
+C_POINTER:C301(CU_Firmas_LeeFirmantes ;$7)
+
+  //CU_Firmas_ProfesoresAsignatura
+C_POINTER:C301(CU_Firmas_ProfesoresAsignatura ;$1)
+C_POINTER:C301(CU_Firmas_ProfesoresAsignatura ;$2)
+C_POINTER:C301(CU_Firmas_ProfesoresAsignatura ;$3)
+C_POINTER:C301(CU_Firmas_ProfesoresAsignatura ;$4)
+C_POINTER:C301(CU_Firmas_ProfesoresAsignatura ;$5)
+C_POINTER:C301(CU_Firmas_ProfesoresAsignatura ;$6)
+
+  //EV2_ColorNota
+C_LONGINT:C283(EV2_ColorNota ;$0)
+C_POINTER:C301(EV2_ColorNota ;$1)
+
+  //ExecuteMethodOnServer
+C_OBJECT:C1216(ExecuteMethodOnServer ;$0)
+C_TEXT:C284(ExecuteMethodOnServer ;$1)
+C_OBJECT:C1216(ExecuteMethodOnServer ;$2)
+C_OBJECT:C1216(ExecuteMethodOnServer ;$3)
+
+  //IT_DistribuyeObjetos_Horizontal
+C_TEXT:C284(IT_DistribuyeObjetos_Horizontal ;$1)
+C_LONGINT:C283(IT_DistribuyeObjetos_Horizontal ;$2)
+C_LONGINT:C283(IT_DistribuyeObjetos_Horizontal ;$3)
+C_LONGINT:C283(IT_DistribuyeObjetos_Horizontal ;$4)
+C_LONGINT:C283(IT_DistribuyeObjetos_Horizontal ;$5)
+
+  //IT_ObjetoMensaje
+C_OBJECT:C1216(IT_ObjetoMensaje ;$0)
+C_TEXT:C284(IT_ObjetoMensaje ;$1)
+
+  //JSON_AppendNode
+C_OBJECT:C1216(JSON_AppendNode ;$0)
+C_OBJECT:C1216(JSON_AppendNode ;$1)
+C_TEXT:C284(JSON_AppendNode ;$2)
+
+  //JSON_Create
+C_OBJECT:C1216(JSON_Create ;$0)
+
+  //JSON_ExportToText
+C_TEXT:C284(JSON_ExportToText ;$0)
+C_OBJECT:C1216(JSON_ExportToText ;$1)
+C_BOOLEAN:C305(JSON_ExportToText ;$2)
+C_BOOLEAN:C305(JSON_ExportToText ;$3)
+
+  //JSON_SaveTextToFile
+C_LONGINT:C283(JSON_SaveTextToFile ;$0)
+C_TEXT:C284(JSON_SaveTextToFile ;$1)
+C_TEXT:C284(JSON_SaveTextToFile ;$2)
+C_LONGINT:C283(JSON_SaveTextToFile ;$3)
+
+  //JSON_SET
+C_OBJECT:C1216(JSON_SET ;$1)
+C_POINTER:C301(JSON_SET ;$2)
+C_TEXT:C284(JSON_SET ;$3)
+C_TEXT:C284(JSON_SET ;$4)
+
+  //JSON_SET_BOOLEAN
+C_OBJECT:C1216(JSON_SET_BOOLEAN ;$1)
+C_BOOLEAN:C305(JSON_SET_BOOLEAN ;$2)
+C_TEXT:C284(JSON_SET_BOOLEAN ;$3)
+
+  //JSON_SET_LONG
+C_OBJECT:C1216(JSON_SET_LONG ;$1)
+C_LONGINT:C283(JSON_SET_LONG ;$2)
+C_TEXT:C284(JSON_SET_LONG ;$3)
+
+  //JSON_SET_REAL
+C_OBJECT:C1216(JSON_SET_REAL ;$1)
+C_REAL:C285(JSON_SET_REAL ;$2)
+C_TEXT:C284(JSON_SET_REAL ;$3)
+
+  //JSON_SET_TEXT
+C_OBJECT:C1216(JSON_SET_TEXT ;$1)
+C_TEXT:C284(JSON_SET_TEXT ;$2)
+C_TEXT:C284(JSON_SET_TEXT ;$3)
+
+  //KRL_GetObjectFieldData
+C_OBJECT:C1216(KRL_GetObjectFieldData ;$0)
+C_POINTER:C301(KRL_GetObjectFieldData ;$1)
+C_POINTER:C301(KRL_GetObjectFieldData ;$2)
+C_POINTER:C301(KRL_GetObjectFieldData ;$3)
+
+  //MPA_ListaEnunciadosMapa
+C_TEXT:C284(MPA_ListaEnunciadosMapa ;$1)
+C_LONGINT:C283(MPA_ListaEnunciadosMapa ;$2)
+C_POINTER:C301(MPA_ListaEnunciadosMapa ;$3)
+
+  //MPA_ListaEnunciadosMatriz
+C_REAL:C285(MPA_ListaEnunciadosMatriz ;$1)
+C_REAL:C285(MPA_ListaEnunciadosMatriz ;$2)
+C_POINTER:C301(MPA_ListaEnunciadosMatriz ;$3)
+
+  //QR_PreProcesamiento
+C_POINTER:C301(QR_PreProcesamiento ;$1)
+C_LONGINT:C283(QR_PreProcesamiento ;$2)
+C_POINTER:C301(QR_PreProcesamiento ;$3)
+
+  //QR_ValidaExpresionEnScript
+C_TEXT:C284(QR_ValidaExpresionEnScript ;$0)
+C_TEXT:C284(QR_ValidaExpresionEnScript ;$1)
+
+  //SR_GetAllScripts
+C_TEXT:C284(SR_GetAllScripts ;$0)
+C_LONGINT:C283(SR_GetAllScripts ;$1)
+C_POINTER:C301(SR_GetAllScripts ;$2)
+C_POINTER:C301(SR_GetAllScripts ;$3)
+C_POINTER:C301(SR_GetAllScripts ;$4)
+
+  //SR_InformacionObjeto
+C_REAL:C285(SR_InformacionObjeto ;$1)
+C_REAL:C285(SR_InformacionObjeto ;$2)
+
+  //SR_SetScripts
+C_REAL:C285(SR_SetScripts ;$1)
+C_POINTER:C301(SR_SetScripts ;$2)
+C_POINTER:C301(SR_SetScripts ;$3)
+C_POINTER:C301(SR_SetScripts ;$4)
+
+  //SRP_ValidaAjustesImpresion
+C_BLOB:C604(SRP_ValidaAjustesImpresion ;$0)
+C_LONGINT:C283(SRP_ValidaAjustesImpresion ;$1)
+
+  //STWA_SetBrowserOrder
+C_POINTER:C301(STWA_SetBrowserOrder ;$1)
+C_LONGINT:C283(STWA_SetBrowserOrder ;$2)
+C_POINTER:C301(STWA_SetBrowserOrder ;$3)
+
+  //STWA2_AJAX_ListaAsignaturas
+C_TEXT:C284(STWA2_AJAX_ListaAsignaturas ;$0)
+C_TEXT:C284(STWA2_AJAX_ListaAsignaturas ;$1)
+C_REAL:C285(STWA2_AJAX_ListaAsignaturas ;$2)
+
+  //STWA2_AJAX_SendNotas_v15
+C_TEXT:C284(STWA2_AJAX_SendNotas_v15 ;$0)
+C_LONGINT:C283(STWA2_AJAX_SendNotas_v15 ;$1)
+C_REAL:C285(STWA2_AJAX_SendNotas_v15 ;$2)
+C_REAL:C285(STWA2_AJAX_SendNotas_v15 ;$3)
+
+  //STWA2_AsignaturaActual
+C_LONGINT:C283(STWA2_AsignaturaActual ;$0)
+C_LONGINT:C283(STWA2_AsignaturaActual ;$1)
+
+  //SYS_GetServerFolderHList
+C_BLOB:C604(SYS_GetServerFolderHList ;$0)
+C_TEXT:C284(SYS_GetServerFolderHList ;$1)
+C_REAL:C285(SYS_GetServerFolderHList ;$2)
+
+  //SYS_GetServerIPAddresses
+C_POINTER:C301(SYS_GetServerIPAddresses ;$1)
+
+  //SYS_LogMemoryUsage
+C_REAL:C285(SYS_LogMemoryUsage ;$1)
+
+  //SYS_LogUsoMemoriaEjecucion
+C_TEXT:C284(SYS_LogUsoMemoriaEjecucion ;$1)
+C_TEXT:C284(SYS_LogUsoMemoriaEjecucion ;$2)
+
+  //SYS_ParseXMLDatabaseSettings
+C_TEXT:C284(SYS_ParseXMLDatabaseSettings ;$0)
+
+  //SYS_SaveXMLDatabaseSettings
+C_TEXT:C284(SYS_SaveXMLDatabaseSettings ;$1)
+
+  //UD_v20140226_LeeOT_actas
+C_LONGINT:C283(UD_v20140226_LeeOT_actas ;$0)
+C_POINTER:C301(UD_v20140226_LeeOT_actas ;$1)
+
+  //UTIL_isIPAddress
+C_BOOLEAN:C305(UTIL_isIPAddress ;$0)
+C_TEXT:C284(UTIL_isIPAddress ;$1)
+
+  //UTIL_ListIPAddresses
+C_POINTER:C301(UTIL_ListIPAddresses ;$1)
+
+  //SYS_GetLocalDocumentList
+C_TEXT:C284(SYS_GetLocalDocumentList ;$1)
+C_POINTER:C301(SYS_GetLocalDocumentList ;$2)
+C_POINTER:C301(SYS_GetLocalDocumentList ;$3)
+C_POINTER:C301(SYS_GetLocalDocumentList ;$4)
+C_POINTER:C301(SYS_GetLocalDocumentList ;$5)
+C_POINTER:C301(SYS_GetLocalDocumentList ;$6)
+C_POINTER:C301(SYS_GetLocalDocumentList ;$7)
+
+  //4D_GetFieldType
+C_TEXT:C284(4D_GetFieldType ;$0)
+C_REAL:C285(4D_GetFieldType ;$1)
+
+  //MPA_CargaDatosColorCeldas
+C_TEXT:C284(MPA_CargaDatosColorCeldas ;$1)
+C_POINTER:C301(MPA_CargaDatosColorCeldas ;$2)
+C_REAL:C285(MPA_CargaDatosColorCeldas ;$3)
+C_REAL:C285(MPA_CargaDatosColorCeldas ;$4)
+
+  //BKPwa_SolicitaRespaldo
+C_TEXT:C284(BKPwa_SolicitaRespaldo ;$1)
+C_TEXT:C284(BKPwa_SolicitaRespaldo ;$2)
+C_TEXT:C284(BKPwa_SolicitaRespaldo ;$3)
+C_TEXT:C284(BKPwa_SolicitaRespaldo ;$4)
+C_TEXT:C284(BKPwa_SolicitaRespaldo ;$5)
+C_TEXT:C284(BKPwa_SolicitaRespaldo ;$6)
+
+  //BKP_SubeRespaldo
+C_TEXT:C284(BKP_SubeRespaldo ;$0)
+C_TEXT:C284(BKP_SubeRespaldo ;$1)
+
+  //BKP_EscribeLog
+C_TEXT:C284(BKP_EscribeLog ;$1)
+
+  //BKP_ListaRespaldos
+C_TEXT:C284(BKP_ListaRespaldos ;$0)
+
+  //BKPwa_GeneraRespuesta
+C_TEXT:C284(BKPwa_GeneraRespuesta ;$0)
+C_REAL:C285(BKPwa_GeneraRespuesta ;$1)
+C_TEXT:C284(BKPwa_GeneraRespuesta ;$2)
+C_BOOLEAN:C305(BKPwa_GeneraRespuesta ;$3)
+
+  //BKP_SubeSiguienteRespaldo
+C_TEXT:C284(BKP_SubeSiguienteRespaldo ;$0)
+
+  //BKP_ConsultaEstadoSolicSubida
+C_TEXT:C284(BKP_ConsultaEstadoSolicSubida ;$0)
+
+  //STWA2_OpenStwaST
+C_TEXT:C284(STWA2_OpenStwaST ;$1)
+C_TEXT:C284(STWA2_OpenStwaST ;$2)
+
+  //VC4D_CheckFolder
+C_TEXT:C284(VC4D_CheckFolder ;$0)
+
+  //OB_AppendNode
+C_OBJECT:C1216(OB_AppendNode ;$0)
+C_OBJECT:C1216(OB_AppendNode ;$1)
+C_TEXT:C284(OB_AppendNode ;$2)
+
+  //VC4D_SaveMethod
+C_TEXT:C284(VC4D_SaveMethod ;$1)
+
+  //VC4D_CheckServerConnection
+C_TEXT:C284(VC4D_CheckServerConnection ;$0)
+C_TEXT:C284(VC4D_CheckServerConnection ;$1)
+C_TEXT:C284(VC4D_CheckServerConnection ;$2)
+C_TEXT:C284(VC4D_CheckServerConnection ;$3)
+C_TEXT:C284(VC4D_CheckServerConnection ;$4)
+C_TEXT:C284(VC4D_CheckServerConnection ;$5)
+
+  //VC4D_CheckUser_devHook
+C_LONGINT:C283(VC4D_CheckUser_devHook ;$0)
+C_TEXT:C284(VC4D_CheckUser_devHook ;$1)
+C_TEXT:C284(VC4D_CheckUser_devHook ;$2)
+
+  //VC4D_ReadConfigFile
+C_OBJECT:C1216(VC4D_ReadConfigFile ;$0)
+
+  //VC4D_SaveConfigFile
+C_OBJECT:C1216(VC4D_SaveConfigFile ;$1)
+
+  //VC4Dws_CheckServerConnection
+C_TEXT:C284(VC4Dws_CheckServerConnection ;$0)
+C_BLOB:C604(VC4Dws_CheckServerConnection ;$1)
+
+  //STWA2_OWC_deletefileguias
+C_TEXT:C284(STWA2_OWC_deletefileguias ;$0)
+C_TEXT:C284(STWA2_OWC_deletefileguias ;$1)
+C_POINTER:C301(STWA2_OWC_deletefileguias ;$2)
+C_POINTER:C301(STWA2_OWC_deletefileguias ;$3)
+
+  //STWA2_OWC_uploadfileguias
+C_TEXT:C284(STWA2_OWC_uploadfileguias ;$0)
+C_TEXT:C284(STWA2_OWC_uploadfileguias ;$1)
+C_POINTER:C301(STWA2_OWC_uploadfileguias ;$2)
+C_POINTER:C301(STWA2_OWC_uploadfileguias ;$3)
+C_TEXT:C284(STWA2_OWC_uploadfileguias ;$4)
+
+  //STWA2_OWC_download_guias
+C_TEXT:C284(STWA2_OWC_download_guias ;$0)
+C_TEXT:C284(STWA2_OWC_download_guias ;$1)
+C_POINTER:C301(STWA2_OWC_download_guias ;$2)
+C_POINTER:C301(STWA2_OWC_download_guias ;$3)
+
+  //STWA2_AJAX_SendAdjuntosAsig
+C_TEXT:C284(STWA2_AJAX_SendAdjuntosAsig ;$0)
+C_REAL:C285(STWA2_AJAX_SendAdjuntosAsig ;$1)
+
+  //SN3_SendguiasXML
+C_BOOLEAN:C305(SN3_SendguiasXML ;$1)
+C_BOOLEAN:C305(SN3_SendguiasXML ;$2)
+
+  //LB_SetDynamicColumn
+C_TEXT:C284(LB_SetDynamicColumn ;$1)
+C_LONGINT:C283(LB_SetDynamicColumn ;$2)
+C_TEXT:C284(LB_SetDynamicColumn ;$3)
+C_TEXT:C284(LB_SetDynamicColumn ;$4)
+C_POINTER:C301(LB_SetDynamicColumn ;$5)
+C_TEXT:C284(LB_SetDynamicColumn ;$6)
+
+  //VC4D_GetData
+C_OBJECT:C1216(VC4D_GetData ;$0)
+C_TEXT:C284(VC4D_GetData ;$1)
+C_OBJECT:C1216(VC4D_GetData ;$2)
+
+  //AS_validaIngresoEventoCalendari
+C_BOOLEAN:C305(AS_validaIngresoEventoCalendari ;$0)
+C_TEXT:C284(AS_validaIngresoEventoCalendari ;$1)
+C_DATE:C307(AS_validaIngresoEventoCalendari ;$2)
+C_LONGINT:C283(AS_validaIngresoEventoCalendari ;$3)
+C_LONGINT:C283(AS_validaIngresoEventoCalendari ;$4)
+C_TEXT:C284(AS_validaIngresoEventoCalendari ;$5)
+
+  //VC4D_LoadChanges
+C_REAL:C285(VC4D_LoadChanges ;$1)
+
+  //VC4D_OnClose
+C_TEXT:C284(VC4D_OnClose ;$1)
+
+  //VC4D_SetCodeCustomAttributes
+C_TEXT:C284(VC4D_SetCodeCustomAttributes ;$1)
+
+  //VC4D_SetCommited
+C_TEXT:C284(VC4D_SetCommited ;$1)
+
+  //ST_activacionMallaAsignaturas
+C_BOOLEAN:C305(ST_activacionMallaAsignaturas ;$0)
+C_TEXT:C284(ST_activacionMallaAsignaturas ;$1)
+
+  //ST_TextArea
+C_TEXT:C284(ST_TextArea ;$0)
+C_TEXT:C284(ST_TextArea ;$1)
+C_TEXT:C284(ST_TextArea ;$2)
+
+  //Intranet3_LlamadoWS
+C_LONGINT:C283(Intranet3_LlamadoWS ;$0)
+C_TEXT:C284(Intranet3_LlamadoWS ;$1)
+C_TEXT:C284(Intranet3_LlamadoWS ;$2)
+C_POINTER:C301(Intranet3_LlamadoWS ;$3)
+
+  //IT_SetButtonIcon
+C_TEXT:C284(IT_SetButtonIcon ;$1)
+C_TEXT:C284(IT_SetButtonIcon ;$2)
+
+  //LB_GetMouseOverCell
+C_POINTER:C301(LB_GetMouseOverCell ;$1)
+C_POINTER:C301(LB_GetMouseOverCell ;$2)
+C_POINTER:C301(LB_GetMouseOverCell ;$3)
+
+  //LB_SetDynamicFieldColumn
+C_TEXT:C284(LB_SetDynamicFieldColumn ;$0)
+C_TEXT:C284(LB_SetDynamicFieldColumn ;$1)
+C_LONGINT:C283(LB_SetDynamicFieldColumn ;$2)
+C_TEXT:C284(LB_SetDynamicFieldColumn ;$3)
+C_TEXT:C284(LB_SetDynamicFieldColumn ;$4)
+C_POINTER:C301(LB_SetDynamicFieldColumn ;$5)
+C_TEXT:C284(LB_SetDynamicFieldColumn ;$6)
+C_LONGINT:C283(LB_SetDynamicFieldColumn ;$7)
+C_TEXT:C284(LB_SetDynamicFieldColumn ;$8)
+C_LONGINT:C283(LB_SetDynamicFieldColumn ;$9)
+C_LONGINT:C283(LB_SetDynamicFieldColumn ;$10)
+C_LONGINT:C283(LB_SetDynamicFieldColumn ;$11)
+C_TEXT:C284(LB_SetDynamicFieldColumn ;$12)
+C_LONGINT:C283(LB_SetDynamicFieldColumn ;$13)
+C_LONGINT:C283(LB_SetDynamicFieldColumn ;$14)
+
+  //XS_GetFieldChoicesArray
+C_OBJECT:C1216(XS_GetFieldChoicesArray ;$0)
+C_POINTER:C301(XS_GetFieldChoicesArray ;$1)
+C_TEXT:C284(XS_GetFieldChoicesArray ;$2)
+
+  //VC4D_GetDBPath
+C_TEXT:C284(VC4D_GetDBPath ;$0)
+
+  //VC4D_SaveMethod_onServer
+C_TEXT:C284(VC4D_SaveMethod_onServer ;$0)
+C_TEXT:C284(VC4D_SaveMethod_onServer ;$1)
+C_TEXT:C284(VC4D_SaveMethod_onServer ;$2)
+C_TEXT:C284(VC4D_SaveMethod_onServer ;$3)
+C_TEXT:C284(VC4D_SaveMethod_onServer ;$4)
+
+  //AS_ListboxCalificaciones
+C_LONGINT:C283(AS_ListboxCalificaciones ;$1)
+
+  //dhBWR_FormatoIDNacional
+C_TEXT:C284(dhBWR_FormatoIDNacional ;$0)
+C_DATE:C307(dhBWR_FormatoIDNacional ;$1)
+C_TEXT:C284(dhBWR_FormatoIDNacional ;$2)
+C_TEXT:C284(dhBWR_FormatoIDNacional ;$3)
+C_TEXT:C284(dhBWR_FormatoIDNacional ;$4)
+C_TEXT:C284(dhBWR_FormatoIDNacional ;$5)
+
+  //SYS_DBprop_CheckConfigFile
+C_TEXT:C284(SYS_DBprop_CheckConfigFile ;$1)
+
+  //SYS_DBprop_ParseXML
+C_TEXT:C284(SYS_DBprop_ParseXML ;$0)
+
+  //SYS_DBprop_SaveXML
+C_TEXT:C284(SYS_DBprop_SaveXML ;$1)
+
+  //WS_CallIntranetWebService
+C_BOOLEAN:C305(WS_CallIntranetWebService ;$2)
+
+  //SYS_ReiniciarServidor
+C_BOOLEAN:C305(SYS_ReiniciarServidor ;$1)
+C_TEXT:C284(SYS_ReiniciarServidor ;$2)
+C_LONGINT:C283(SYS_ReiniciarServidor ;$3)
+
+  //STWA2_ProcessLogin
+C_LONGINT:C283(STWA2_ProcessLogin ;$0)
+C_TEXT:C284(STWA2_ProcessLogin ;$1)
+C_TEXT:C284(STWA2_ProcessLogin ;$2)
+C_POINTER:C301(STWA2_ProcessLogin ;$3)
+C_POINTER:C301(STWA2_ProcessLogin ;$4)
+
+  //ST_CleanFileName
+C_TEXT:C284(ST_CleanFileName ;$0)
+C_TEXT:C284(ST_CleanFileName ;$1)
+
+  //SRP_LeeTablaInforme
+C_LONGINT:C283(SRP_LeeTablaInforme ;$0)
+C_LONGINT:C283(SRP_LeeTablaInforme ;$1)
+
+  //SRP_FijaTabla
+C_LONGINT:C283(SRP_FijaTabla ;$0)
+C_LONGINT:C283(SRP_FijaTabla ;$1)
+C_LONGINT:C283(SRP_FijaTabla ;$2)
+
+  //SRP_EvaluaNombreArchivo
+C_TEXT:C284(SRP_EvaluaNombreArchivo ;$0)
+C_TEXT:C284(SRP_EvaluaNombreArchivo ;$1)
+
+  //SRcust_AutoCode
+C_REAL:C285(SRcust_AutoCode ;$1)
+
+  //SRal_EvaluacionAprendizajes_SR3
+C_TEXT:C284(SRal_EvaluacionAprendizajes_SR3 ;$1)
+C_LONGINT:C283(SRal_EvaluacionAprendizajes_SR3 ;$2)
+C_LONGINT:C283(SRal_EvaluacionAprendizajes_SR3 ;$3)
+C_TEXT:C284(SRal_EvaluacionAprendizajes_SR3 ;$4)
+C_LONGINT:C283(SRal_EvaluacionAprendizajes_SR3 ;$5)
+
+  //SR_SetObjectFontStyle
+C_LONGINT:C283(SR_SetObjectFontStyle ;$1)
+
+  //SR_GetOrganisationLogo
+C_PICTURE:C286(SR_GetOrganisationLogo ;$0)
+C_LONGINT:C283(SR_GetOrganisationLogo ;$1)
+
+  //RIN_RefUltimaVersion
+C_TEXT:C284(RIN_RefUltimaVersion ;$0)
+C_TEXT:C284(RIN_RefUltimaVersion ;$1)
+
+  //RIN_LeeInformaciones
+C_TEXT:C284(RIN_LeeInformaciones ;$1)
+
+  //RIN_InformeObsoleto
+C_LONGINT:C283(RIN_InformeObsoleto ;$0)
+C_TEXT:C284(RIN_InformeObsoleto ;$1)
+
+  //RIN_InfoExplorador
+C_TEXT:C284(RIN_InfoExplorador ;$1)
+
+  //RIN_HistorialCambios
+C_TEXT:C284(RIN_HistorialCambios ;$1)
+C_TEXT:C284(RIN_HistorialCambios ;$2)
+
+  //RIN_hayVersionActualizada
+C_BOOLEAN:C305(RIN_hayVersionActualizada ;$0)
+C_TEXT:C284(RIN_hayVersionActualizada ;$1)
+C_TEXT:C284(RIN_hayVersionActualizada ;$2)
+
+  //RIN_EnviaInforme
+C_TEXT:C284(RIN_EnviaInforme ;$0)
+C_TEXT:C284(RIN_EnviaInforme ;$1)
+C_TEXT:C284(RIN_EnviaInforme ;$2)
+C_LONGINT:C283(RIN_EnviaInforme ;$3)
+C_LONGINT:C283(RIN_EnviaInforme ;$4)
+
+  //RIN_DescargaLibreria
+C_TEXT:C284(RIN_DescargaLibreria ;$1)
+C_TEXT:C284(RIN_DescargaLibreria ;$2)
+C_TEXT:C284(RIN_DescargaLibreria ;$3)
+
+  //RIN_DescargaActualizacion
+C_TEXT:C284(RIN_DescargaActualizacion ;$1)
+C_BOOLEAN:C305(RIN_DescargaActualizacion ;$2)
+
+  //RIN_ComparaInforme
+C_TEXT:C284(RIN_ComparaInforme ;$0)
+C_TEXT:C284(RIN_ComparaInforme ;$1)
+
+  //RIN_BuscaInformes
+C_TEXT:C284(RIN_BuscaInformes ;$1)
+
+  //QRY_LoadQuery
+C_BLOB:C604(QRY_LoadQuery ;$1)
+
+  //QR_UpdateTemplatesFromFolder
+C_BOOLEAN:C305(QR_UpdateTemplatesFromFolder ;$0)
+C_TEXT:C284(QR_UpdateTemplatesFromFolder ;$1)
+C_LONGINT:C283(QR_UpdateTemplatesFromFolder ;$2)
+C_LONGINT:C283(QR_UpdateTemplatesFromFolder ;$3)
+
+  //QR_SetUnivers
+C_LONGINT:C283(QR_SetUnivers ;$0)
+C_LONGINT:C283(QR_SetUnivers ;$1)
+C_LONGINT:C283(QR_SetUnivers ;$2)
+
+  //QR_SelectReportMainTable
+C_LONGINT:C283(QR_SelectReportMainTable ;$0)
+
+  //QR_SelectReportInList
+C_LONGINT:C283(QR_SelectReportInList ;$1)
+
+  //QR_ReportManager
+C_POINTER:C301(QR_ReportManager ;$1)
+
+  //QR_PrintWriteDocument
+C_LONGINT:C283(QR_PrintWriteDocument ;$1)
+C_BOOLEAN:C305(QR_PrintWriteDocument ;$2)
+C_LONGINT:C283(QR_PrintWriteDocument ;$3)
+C_TEXT:C284(QR_PrintWriteDocument ;$4)
+C_PICTURE:C286(QR_PrintWriteDocument ;$5)
+C_TEXT:C284(QR_PrintWriteDocument ;$6)
+
+  //QR_OpenReport
+C_LONGINT:C283(QR_OpenReport ;$1)
+C_LONGINT:C283(QR_OpenReport ;$2)
+C_LONGINT:C283(QR_OpenReport ;$3)
+
+  //QR_NewWriteTemplate
+C_POINTER:C301(QR_NewWriteTemplate ;$1)
+
+  //QR_NewSuperReportTemplate
+C_POINTER:C301(QR_NewSuperReportTemplate ;$1)
+C_BOOLEAN:C305(QR_NewSuperReportTemplate ;$2)
+
+  //QR_NewLabelTemplate
+C_POINTER:C301(QR_NewLabelTemplate ;$1)
+
+  //QR_IsReportAllowed
+C_BOOLEAN:C305(QR_IsReportAllowed ;$0)
+C_LONGINT:C283(QR_IsReportAllowed ;$1)
+
+  //QR_ImprimeGrupo
+C_TEXT:C284(QR_ImprimeGrupo ;$1)
+C_POINTER:C301(QR_ImprimeGrupo ;$2)
+C_TEXT:C284(QR_ImprimeGrupo ;$3)
+C_POINTER:C301(QR_ImprimeGrupo ;$4)
+C_BOOLEAN:C305(QR_ImprimeGrupo ;$5)
+
+  //QR_ImprimeFormularioSeleccion
+C_POINTER:C301(QR_ImprimeFormularioSeleccion ;$1)
+C_TEXT:C284(QR_ImprimeFormularioSeleccion ;$2)
+C_TEXT:C284(QR_ImprimeFormularioSeleccion ;$3)
+C_TEXT:C284(QR_ImprimeFormularioSeleccion ;$4)
+C_BOOLEAN:C305(QR_ImprimeFormularioSeleccion ;$5)
+
+  //QR_ImprimeFormularioRegistro
+C_POINTER:C301(QR_ImprimeFormularioRegistro ;$1)
+C_TEXT:C284(QR_ImprimeFormularioRegistro ;$2)
+C_TEXT:C284(QR_ImprimeFormularioRegistro ;$3)
+C_TEXT:C284(QR_ImprimeFormularioRegistro ;$4)
+C_BOOLEAN:C305(QR_ImprimeFormularioRegistro ;$5)
+
+  //QR_ImprimeFormulario
+C_LONGINT:C283(QR_ImprimeFormulario ;$1)
+C_TEXT:C284(QR_ImprimeFormulario ;$2)
+C_TEXT:C284(QR_ImprimeFormulario ;$3)
+C_TEXT:C284(QR_ImprimeFormulario ;$4)
+C_POINTER:C301(QR_ImprimeFormulario ;$5)
+C_BOOLEAN:C305(QR_ImprimeFormulario ;$6)
+
+  //QR_ImprimeEtiquetas
+C_REAL:C285(QR_ImprimeEtiquetas ;$1)
+C_TEXT:C284(QR_ImprimeEtiquetas ;$2)
+C_TEXT:C284(QR_ImprimeEtiquetas ;$3)
+C_TEXT:C284(QR_ImprimeEtiquetas ;$4)
+C_POINTER:C301(QR_ImprimeEtiquetas ;$5)
+C_BOOLEAN:C305(QR_ImprimeEtiquetas ;$6)
+
+  //QR_GetReportsByType
+C_TEXT:C284(QR_GetReportsByType ;$1)
+C_LONGINT:C283(QR_GetReportsByType ;$2)
+
+  //QR_GetFolderReports
+C_REAL:C285(QR_GetFolderReports ;$1)
+C_REAL:C285(QR_GetFolderReports ;$2)
+
+  //QR_GetAvailableTables
+C_POINTER:C301(QR_GetAvailableTables ;$1)
+
+  //QR_EjecutaItemMenu
+C_TEXT:C284(QR_EjecutaItemMenu ;$1)
+
+  //QR_EditQuickReportTemplate
+C_POINTER:C301(QR_EditQuickReportTemplate ;$1)
+
+  //QR_AjustesImpresion
+C_LONGINT:C283(QR_AjustesImpresion ;$0)
+C_LONGINT:C283(QR_AjustesImpresion ;$1)
+C_POINTER:C301(QR_AjustesImpresion ;$2)
+C_TEXT:C284(QR_AjustesImpresion ;$3)
+
+  //prVisitasEnf
+C_TEXT:C284(prVisitasEnf ;$1)
+C_TEXT:C284(prVisitasEnf ;$2)
+
+  //prSintesisAnual
+C_TEXT:C284(prSintesisAnual ;$1)
+C_TEXT:C284(prSintesisAnual ;$2)
+
+  //prPlanillas
+C_TEXT:C284(prPlanillas ;$1)
+C_TEXT:C284(prPlanillas ;$2)
+
+  //prPlanillaPeriodo
+C_TEXT:C284(prPlanillaPeriodo ;$1)
+C_TEXT:C284(prPlanillaPeriodo ;$2)
+
+  //prPlanillaOnePage
+C_TEXT:C284(prPlanillaOnePage ;$1)
+C_TEXT:C284(prPlanillaOnePage ;$2)
+
+  //prPlanillaMultiPage
+C_TEXT:C284(prPlanillaMultiPage ;$1)
+C_TEXT:C284(prPlanillaMultiPage ;$2)
+
+  //prObservacionesAsignaturas
+C_TEXT:C284(prObservacionesAsignaturas ;$1)
+C_TEXT:C284(prObservacionesAsignaturas ;$2)
+
+  //prNominaXCR
+C_TEXT:C284(prNominaXCR ;$1)
+C_TEXT:C284(prNominaXCR ;$2)
+
+  //prLibreta2
+C_TEXT:C284(prLibreta2 ;$1)
+C_TEXT:C284(prLibreta2 ;$2)
+
+  //prInfJefatura
+C_TEXT:C284(prInfJefatura ;$1)
+C_TEXT:C284(prInfJefatura ;$2)
+
+  //prFrecuenciaCalificaciones
+C_TEXT:C284(prFrecuenciaCalificaciones ;$1)
+C_TEXT:C284(prFrecuenciaCalificaciones ;$2)
+
+  //prFichasPRF
+C_TEXT:C284(prFichasPRF ;$1)
+C_TEXT:C284(prFichasPRF ;$2)
+
+  //prFichas
+C_TEXT:C284(prFichas ;$1)
+C_TEXT:C284(prFichas ;$2)
+
+  //PREF_PreferenciasUsuario_SET
+C_TEXT:C284(PREF_PreferenciasUsuario_SET ;$1)
+C_POINTER:C301(PREF_PreferenciasUsuario_SET ;$2)
+C_LONGINT:C283(PREF_PreferenciasUsuario_SET ;$3)
+
+  //PREF_PreferenciasUsuario_GET
+C_OBJECT:C1216(PREF_PreferenciasUsuario_GET ;$0)
+C_TEXT:C284(PREF_PreferenciasUsuario_GET ;$1)
+C_POINTER:C301(PREF_PreferenciasUsuario_GET ;$2)
+C_LONGINT:C283(PREF_PreferenciasUsuario_GET ;$3)
+
+  //prConducta
+C_TEXT:C284(prConducta ;$1)
+C_TEXT:C284(prConducta ;$2)
+
+  //prConcentración
+C_TEXT:C284(prConcentración ;$1)
+C_TEXT:C284(prConcentración ;$2)
+
+  //prClassAbs
+C_TEXT:C284(prClassAbs ;$1)
+C_TEXT:C284(prClassAbs ;$2)
+
+  //prCertificado
+C_TEXT:C284(prCertificado ;$1)
+C_TEXT:C284(prCertificado ;$2)
+
+  //prCdctaPers
+C_TEXT:C284(prCdctaPers ;$1)
+C_TEXT:C284(prCdctaPers ;$2)
+
+  //prActa
+C_TEXT:C284(prActa ;$1)
+C_TEXT:C284(prActa ;$2)
+
+  //pr_Horario
+C_TEXT:C284(pr_Horario ;$1)
+C_TEXT:C284(pr_Horario ;$2)
+
+  //pr_AdmissionsList
+C_TEXT:C284(pr_AdmissionsList ;$1)
+C_TEXT:C284(pr_AdmissionsList ;$2)
+
+  //INET_IsHostAvailable
+C_BOOLEAN:C305(INET_IsHostAvailable ;$0)
+C_TEXT:C284(INET_IsHostAvailable ;$1)
+C_LONGINT:C283(INET_IsHostAvailable ;$2)
+C_REAL:C285(INET_IsHostAvailable ;$3)
+
+  //EV2_RetornaPonderacion
+C_REAL:C285(EV2_RetornaPonderacion ;$0)
+
+  //AL_CreaRegistrosSintesis
+C_REAL:C285(AL_CreaRegistrosSintesis ;$0)
+C_LONGINT:C283(AL_CreaRegistrosSintesis ;$1)
+C_LONGINT:C283(AL_CreaRegistrosSintesis ;$2)
+C_LONGINT:C283(AL_CreaRegistrosSintesis ;$3)
+C_LONGINT:C283(AL_CreaRegistrosSintesis ;$4)
+
+  //AL_AsignaturasConcentracion
+C_REAL:C285(AL_AsignaturasConcentracion ;$1)
+
+  //QR_EvaluaNombreDocumento
+C_TEXT:C284(QR_EvaluaNombreDocumento ;$0)
+C_TEXT:C284(QR_EvaluaNombreDocumento ;$1)
+C_TEXT:C284(QR_EvaluaNombreDocumento ;$2)
+C_BOOLEAN:C305(QR_EvaluaNombreDocumento ;$3)
+
+  //QR_ImprimeDocumento4DWrite
+C_LONGINT:C283(QR_ImprimeDocumento4DWrite ;$1)
+C_TEXT:C284(QR_ImprimeDocumento4DWrite ;$2)
+C_TEXT:C284(QR_ImprimeDocumento4DWrite ;$3)
+C_TEXT:C284(QR_ImprimeDocumento4DWrite ;$4)
+C_POINTER:C301(QR_ImprimeDocumento4DWrite ;$5)
+C_BOOLEAN:C305(QR_ImprimeDocumento4DWrite ;$6)
+
+  //SRP_CreaObjeto
+C_LONGINT:C283(SRP_CreaObjeto ;$0)
+C_LONGINT:C283(SRP_CreaObjeto ;$1)
+C_TEXT:C284(SRP_CreaObjeto ;$2)
+C_LONGINT:C283(SRP_CreaObjeto ;$3)
+C_TEXT:C284(SRP_CreaObjeto ;$4)
+C_LONGINT:C283(SRP_CreaObjeto ;$5)
+C_LONGINT:C283(SRP_CreaObjeto ;$6)
+C_LONGINT:C283(SRP_CreaObjeto ;$7)
+C_LONGINT:C283(SRP_CreaObjeto ;$8)
+
+  //SRP_CreaSeccion
+C_LONGINT:C283(SRP_CreaSeccion ;$0)
+C_LONGINT:C283(SRP_CreaSeccion ;$1)
+C_TEXT:C284(SRP_CreaSeccion ;$2)
+C_TEXT:C284(SRP_CreaSeccion ;$3)
+C_LONGINT:C283(SRP_CreaSeccion ;$4)
+C_LONGINT:C283(SRP_CreaSeccion ;$5)
+
+  //ADTwa_ProcesaSolicitud
+C_TEXT:C284(ADTwa_ProcesaSolicitud ;$0)
+C_TEXT:C284(ADTwa_ProcesaSolicitud ;$1)
+
+  //ACTbol_DeleteSelection
+C_REAL:C285(ACTbol_DeleteSelection ;$0)
+
+  //SYS_VerificaGeneracionPDF
+C_BOOLEAN:C305(SYS_VerificaGeneracionPDF ;$0)
+
+  //CTRY_CO_ValidaID_NAC
+C_TEXT:C284(CTRY_CO_ValidaID_NAC ;$0)
+C_POINTER:C301(CTRY_CO_ValidaID_NAC ;$1)
+
+  //ACTdte_LlenaDescripcion
+C_TEXT:C284(ACTdte_LlenaDescripcion ;$0)
+C_LONGINT:C283(ACTdte_LlenaDescripcion ;$1)
+C_TEXT:C284(ACTdte_LlenaDescripcion ;$2)
+C_LONGINT:C283(ACTdte_LlenaDescripcion ;$3)
+
+  //STWA2_OWC_verificaLicencia
+C_TEXT:C284(STWA2_OWC_verificaLicencia ;$0)
+C_TEXT:C284(STWA2_OWC_verificaLicencia ;$1)
+C_POINTER:C301(STWA2_OWC_verificaLicencia ;$2)
+C_POINTER:C301(STWA2_OWC_verificaLicencia ;$3)
+
+  //CFG_ST_BlockEvtAsigNiveles
+C_TEXT:C284(CFG_ST_BlockEvtAsigNiveles ;$1)
+C_TEXT:C284(CFG_ST_BlockEvtAsigNiveles ;$2)
+C_TEXT:C284(CFG_ST_BlockEvtAsigNiveles ;$3)
+
+  //xxSN3_VerifObsoletosAEliminar
+C_LONGINT:C283(xxSN3_VerifObsoletosAEliminar ;$0)
+C_LONGINT:C283(xxSN3_VerifObsoletosAEliminar ;$1)
+C_POINTER:C301(xxSN3_VerifObsoletosAEliminar ;$2)
+
+  //EV2_ConsolidaTodasLasParciales
+C_LONGINT:C283(EV2_ConsolidaTodasLasParciales ;$1)
+
+  //CONDOR_SendStudentHData
+C_TIME:C306(CONDOR_SendStudentHData ;$1)
+
+  //HTML_reemplazaTildes
+C_TEXT:C284(HTML_reemplazaTildes ;$0)
+C_TEXT:C284(HTML_reemplazaTildes ;$1)
+
+  //AS_Examenes_LeeConfigPeriodo
+C_LONGINT:C283(AS_Examenes_LeeConfigPeriodo ;$1)
+
+  //AS_Examenes_GuardaConfigPeriodo
+C_LONGINT:C283(AS_Examenes_GuardaConfigPeriodo ;$1)
+
+  //EV2_Examenes_LeeConfigExamenes
+C_LONGINT:C283(EV2_Examenes_LeeConfigExamenes ;$1)
+
+  //prSelection
+C_POINTER:C301(prSelection ;$1)
+C_TEXT:C284(prSelection ;$2)
+C_TEXT:C284(prSelection ;$3)
+
+  //LB_FijaColorAlterno
+C_TEXT:C284(LB_FijaColorAlterno ;$1)
+
+  //Sync_UsuarioST
+C_LONGINT:C283(Sync_UsuarioST ;$0)
+C_TEXT:C284(Sync_UsuarioST ;$1)
+
+  //STWA2_Dash_Aprendizajes
+C_TEXT:C284(STWA2_Dash_Aprendizajes ;$0)
+C_POINTER:C301(STWA2_Dash_Aprendizajes ;$1)
+C_POINTER:C301(STWA2_Dash_Aprendizajes ;$2)
+
+  //ACTdteRec_DescargaTodo2Archivos
+C_REAL:C285(ACTdteRec_DescargaTodo2Archivos ;$1)
+
+  //ACTdteRec_ImportaDesdeArchivos
+C_REAL:C285(ACTdteRec_ImportaDesdeArchivos ;$1)
+
+  //STWA2_OWC_SSO
+C_TEXT:C284(STWA2_OWC_SSO ;$0)
+C_TEXT:C284(STWA2_OWC_SSO ;$1)
+C_POINTER:C301(STWA2_OWC_SSO ;$2)
+C_POINTER:C301(STWA2_OWC_SSO ;$3)
+C_TEXT:C284(STWA2_OWC_SSO ;$4)
+
+  //STWA2_OWC_verificaProcesoAutori
+C_BOOLEAN:C305(STWA2_OWC_verificaProcesoAutori ;$0)
+C_REAL:C285(STWA2_OWC_verificaProcesoAutori ;$1)
+C_TEXT:C284(STWA2_OWC_verificaProcesoAutori ;$2)
+
+  //STWA2_OWC_VistaDirector
+C_TEXT:C284(STWA2_OWC_VistaDirector ;$0)
+C_TEXT:C284(STWA2_OWC_VistaDirector ;$1)
+C_POINTER:C301(STWA2_OWC_VistaDirector ;$2)
+C_POINTER:C301(STWA2_OWC_VistaDirector ;$3)
+
+  //LB_GetCellMouseOver
+C_TEXT:C284(LB_GetCellMouseOver ;$0)
+C_POINTER:C301(LB_GetCellMouseOver ;$1)
+C_POINTER:C301(LB_GetCellMouseOver ;$2)
+C_TEXT:C284(LB_GetCellMouseOver ;$3)
+
+  //LB_SelectCell
+C_LONGINT:C283(LB_SelectCell ;$1)
+C_LONGINT:C283(LB_SelectCell ;$2)
+C_LONGINT:C283(LB_SelectCell ;$3)
+C_LONGINT:C283(LB_SelectCell ;$4)
+C_TEXT:C284(LB_SelectCell ;$5)
+
+  //LB_SelectCellsArray
+C_POINTER:C301(LB_SelectCellsArray ;$1)
+C_POINTER:C301(LB_SelectCellsArray ;$2)
+C_LONGINT:C283(LB_SelectCellsArray ;$3)
+C_LONGINT:C283(LB_SelectCellsArray ;$4)
+C_TEXT:C284(LB_SelectCellsArray ;$5)
+
+  //TMT_validaHoraRecreo
+C_BOOLEAN:C305(TMT_validaHoraRecreo ;$0)
+C_REAL:C285(TMT_validaHoraRecreo ;$1)
+C_REAL:C285(TMT_validaHoraRecreo ;$2)
+C_REAL:C285(TMT_validaHoraRecreo ;$3)
+
+  //SN3_ValidacionDelay
+C_LONGINT:C283(SN3_ValidacionDelay ;$0)
+C_TEXT:C284(SN3_ValidacionDelay ;$1)
+
+  //DASHwa_OnWebConnection
+C_TEXT:C284(DASHwa_OnWebConnection ;$1)
+C_TEXT:C284(DASHwa_OnWebConnection ;$2)
+C_TEXT:C284(DASHwa_OnWebConnection ;$3)
+C_TEXT:C284(DASHwa_OnWebConnection ;$4)
+C_TEXT:C284(DASHwa_OnWebConnection ;$5)
+C_TEXT:C284(DASHwa_OnWebConnection ;$6)
+
+  //DASH_GeneraJSON
+C_TEXT:C284(DASH_GeneraJSON ;$0)
+C_TEXT:C284(DASH_GeneraJSON ;$1)
+C_POINTER:C301(DASH_GeneraJSON ;$2)
+C_POINTER:C301(DASH_GeneraJSON ;$3)
+C_POINTER:C301(DASH_GeneraJSON ;$4)
+C_POINTER:C301(DASH_GeneraJSON ;$5)
+
+  //STWA2_ReemplazaUsuario
+C_TEXT:C284(STWA2_ReemplazaUsuario ;$0)
+C_TEXT:C284(STWA2_ReemplazaUsuario ;$1)
+C_TEXT:C284(STWA2_ReemplazaUsuario ;$2)
+C_POINTER:C301(STWA2_ReemplazaUsuario ;$3)
+
+  //SRtbl_DespliegueListaOpciones
+C_REAL:C285(SRtbl_DespliegueListaOpciones ;$0)
+C_POINTER:C301(SRtbl_DespliegueListaOpciones ;$1)
+C_POINTER:C301(SRtbl_DespliegueListaOpciones ;$2)
+C_POINTER:C301(SRtbl_DespliegueListaOpciones ;$3)
+C_TEXT:C284(SRtbl_DespliegueListaOpciones ;$4)
+C_BOOLEAN:C305(SRtbl_DespliegueListaOpciones ;$5)
+C_POINTER:C301(SRtbl_DespliegueListaOpciones ;$6)
+C_POINTER:C301(SRtbl_DespliegueListaOpciones ;$7)
+
+  //AS_LimpiaSintesisAsignatura
+C_LONGINT:C283(AS_LimpiaSintesisAsignatura ;$1)
+
+  //ACT_MetodoInforme_Deudores
+C_BLOB:C604(ACT_MetodoInforme_Deudores ;$1)
+
+  //ACT_MetodoInforme_Simple
+C_BLOB:C604(ACT_MetodoInforme_Simple ;$0)
+C_REAL:C285(ACT_MetodoInforme_Simple ;$1)
+C_REAL:C285(ACT_MetodoInforme_Simple ;$2)
+C_REAL:C285(ACT_MetodoInforme_Simple ;$3)
+C_REAL:C285(ACT_MetodoInforme_Simple ;$4)
+C_REAL:C285(ACT_MetodoInforme_Simple ;$5)
+C_REAL:C285(ACT_MetodoInforme_Simple ;$6)
+C_REAL:C285(ACT_MetodoInforme_Simple ;$7)
+C_DATE:C307(ACT_MetodoInforme_Simple ;$8)
+
+  //ACTbol_FiltraItemsCategoria
+C_TEXT:C284(ACTbol_FiltraItemsCategoria ;$1)
+C_TEXT:C284(ACTbol_FiltraItemsCategoria ;$2)
+C_REAL:C285(ACTbol_FiltraItemsCategoria ;$3)
+C_REAL:C285(ACTbol_FiltraItemsCategoria ;$4)
+C_REAL:C285(ACTbol_FiltraItemsCategoria ;$5)
+
+  //ACTbol_FiltraCargos
+C_TEXT:C284(ACTbol_FiltraCargos ;$1)
+C_POINTER:C301(ACTbol_FiltraCargos ;$2)
+
+  //BUILD_BackupApp
+C_TEXT:C284(BUILD_BackupApp ;$1)
+C_TEXT:C284(BUILD_BackupApp ;$2)
+
+  //BUILD_ExecuteTask
+C_LONGINT:C283(BUILD_ExecuteTask ;$1)
+
+  //BUILD_GenerateApps_32Bit
+C_REAL:C285(BUILD_GenerateApps_32Bit ;$0)
+
+  //BUILD_GetPaths
+C_TEXT:C284(BUILD_GetPaths ;$0)
+C_TEXT:C284(BUILD_GetPaths ;$1)
+
+  //BUILD_LoadAutoupdateInfo
+C_OBJECT:C1216(BUILD_LoadAutoupdateInfo ;$0)
+
+  //BUILD_LoadPreferences
+C_OBJECT:C1216(BUILD_LoadPreferences ;$0)
+
+  //BUILD_SavePreferences
+C_LONGINT:C283(BUILD_SavePreferences ;$0)
+C_OBJECT:C1216(BUILD_SavePreferences ;$1)
+
+  //BUILD_SendNotification
+C_TEXT:C284(BUILD_SendNotification ;$0)
+C_LONGINT:C283(BUILD_SendNotification ;$1)
+C_TEXT:C284(BUILD_SendNotification ;$2)
+
+  //DT_ParseDateISO
+C_BOOLEAN:C305(DT_ParseDateISO ;$0)
+C_TEXT:C284(DT_ParseDateISO ;$1)
+C_POINTER:C301(DT_ParseDateISO ;$2)
+C_POINTER:C301(DT_ParseDateISO ;$3)
+
+  //SYS_CompresionDescompresion_7z
+C_BOOLEAN:C305(SYS_CompresionDescompresion_7z ;$0)
+C_TEXT:C284(SYS_CompresionDescompresion_7z ;$1)
+C_TEXT:C284(SYS_CompresionDescompresion_7z ;$2)
+C_TEXT:C284(SYS_CompresionDescompresion_7z ;$3)
+C_POINTER:C301(SYS_CompresionDescompresion_7z ;$4)
+C_BOOLEAN:C305(SYS_CompresionDescompresion_7z ;$5)
+
+  //SYS_DeleteFileOrFolder
+C_TEXT:C284(SYS_DeleteFileOrFolder ;$1)
+
+  //Upload_CALLBACK
+C_BOOLEAN:C305(Upload_CALLBACK ;$0)
+C_LONGINT:C283(Upload_CALLBACK ;$1)
+C_LONGINT:C283(Upload_CALLBACK ;$2)
+C_LONGINT:C283(Upload_CALLBACK ;$3)
+C_LONGINT:C283(Upload_CALLBACK ;$4)
+C_LONGINT:C283(Upload_CALLBACK ;$5)
+
+  //Upload_CANCEL
+C_LONGINT:C283(Upload_CANCEL ;$1)
+
+  //Upload_SUCCESS
+C_LONGINT:C283(Upload_SUCCESS ;$1)
+
+  //Zip_CALLBACK
+C_BOOLEAN:C305(Zip_CALLBACK ;$0)
+C_TEXT:C284(Zip_CALLBACK ;$1)
+C_TEXT:C284(Zip_CALLBACK ;$2)
+C_REAL:C285(Zip_CALLBACK ;$3)
+C_REAL:C285(Zip_CALLBACK ;$4)
+
+  //Zip_CANCEL
+C_LONGINT:C283(Zip_CANCEL ;$1)
+C_TEXT:C284(Zip_CANCEL ;$2)
+
+  //Zip_SUCCESS
+C_LONGINT:C283(Zip_SUCCESS ;$1)
+
+  //Zip_WITH_PROGRESS
+C_OBJECT:C1216(Zip_WITH_PROGRESS ;$1)
+C_LONGINT:C283(Zip_WITH_PROGRESS ;$2)
+
+  //GIT_PullSTWA
+C_BOOLEAN:C305(GIT_PullSTWA ;$0)
+C_POINTER:C301(GIT_PullSTWA ;$1)
+
+  //ACT_MetodoInforme_Morosidad
+C_BLOB:C604(ACT_MetodoInforme_Morosidad ;$0)
+C_REAL:C285(ACT_MetodoInforme_Morosidad ;$1)
+C_REAL:C285(ACT_MetodoInforme_Morosidad ;$2)
+C_REAL:C285(ACT_MetodoInforme_Morosidad ;$3)
+C_REAL:C285(ACT_MetodoInforme_Morosidad ;$4)
+C_REAL:C285(ACT_MetodoInforme_Morosidad ;$5)
+C_REAL:C285(ACT_MetodoInforme_Morosidad ;$6)
+C_REAL:C285(ACT_MetodoInforme_Morosidad ;$7)
+C_REAL:C285(ACT_MetodoInforme_Morosidad ;$8)
+C_REAL:C285(ACT_MetodoInforme_Morosidad ;$9)
+C_REAL:C285(ACT_MetodoInforme_Morosidad ;$10)
+C_TEXT:C284(ACT_MetodoInforme_Morosidad ;$11)
+C_TEXT:C284(ACT_MetodoInforme_Morosidad ;$12)
+C_DATE:C307(ACT_MetodoInforme_Morosidad ;$13)
+C_DATE:C307(ACT_MetodoInforme_Morosidad ;$14)
+C_REAL:C285(ACT_MetodoInforme_Morosidad ;$15)
+C_REAL:C285(ACT_MetodoInforme_Morosidad ;$16)
+C_TEXT:C284(ACT_MetodoInforme_Morosidad ;$17)
+C_REAL:C285(ACT_MetodoInforme_Morosidad ;$18)
+C_DATE:C307(ACT_MetodoInforme_Morosidad ;$19)
+
+  //CU_cargaDiasBloqueados
+C_LONGINT:C283(CU_cargaDiasBloqueados ;$1)
+
+  //ACTdc_OpcionesReemplazoMasivo
+C_TEXT:C284(ACTdc_OpcionesReemplazoMasivo ;$0)
+C_POINTER:C301(ACTdc_OpcionesReemplazoMasivo ;${2})
+C_TEXT:C284(ACTdc_OpcionesReemplazoMasivo ;$1)
+
+  //PICTLib_ImportRecords
+C_TEXT:C284(PICTLib_ImportRecords ;$1)
+
+  //PLT_LoadIcons
+C_REAL:C285(PLT_LoadIcons ;$0)
+
+  //QR_ImprimeInforme
+C_LONGINT:C283(QR_ImprimeInforme ;$0)
+C_LONGINT:C283(QR_ImprimeInforme ;$1)
+C_TEXT:C284(QR_ImprimeInforme ;$2)
+C_TEXT:C284(QR_ImprimeInforme ;$3)
+C_TEXT:C284(QR_ImprimeInforme ;$4)
+
+  //QR_SaveReport
+C_LONGINT:C283(QR_SaveReport ;$1)
+C_LONGINT:C283(QR_SaveReport ;$2)
+C_LONGINT:C283(QR_SaveReport ;$3)
+
+  //QR_SaveReportAs
+C_LONGINT:C283(QR_SaveReportAs ;$1)
+C_LONGINT:C283(QR_SaveReportAs ;$2)
+C_LONGINT:C283(QR_SaveReportAs ;$3)
+
+  //TMT_ResaltaHorario
+C_REAL:C285(TMT_ResaltaHorario ;$1)
+
+  //STWA2_CargaDetalleAtrasos
+C_TEXT:C284(STWA2_CargaDetalleAtrasos ;$0)
+C_TEXT:C284(STWA2_CargaDetalleAtrasos ;$1)
+C_POINTER:C301(STWA2_CargaDetalleAtrasos ;$2)
+C_POINTER:C301(STWA2_CargaDetalleAtrasos ;$3)
+
+  //ACTint_OpcionesGenerales
+C_TEXT:C284(ACTint_OpcionesGenerales ;$0)
+C_TEXT:C284(ACTint_OpcionesGenerales ;$1)
+C_POINTER:C301(ACTint_OpcionesGenerales ;$2)
+
+  //FORMS_CountPages
+C_LONGINT:C283(FORMS_CountPages ;$0)
+C_TEXT:C284(FORMS_CountPages ;$1)
+C_POINTER:C301(FORMS_CountPages ;$2)
+
+  //PICTLib_WritePictureFile
+C_TEXT:C284(PICTLib_WritePictureFile ;$1)
+C_PICTURE:C286(PICTLib_WritePictureFile ;$2)
+
+  //BUILD_GetTasksList
+C_OBJECT:C1216(BUILD_GetTasksList ;$0)
+
+  //ACTdte_CreaDctoNulo
+C_REAL:C285(ACTdte_CreaDctoNulo ;$1)
+C_REAL:C285(ACTdte_CreaDctoNulo ;$2)
+C_TEXT:C284(ACTdte_CreaDctoNulo ;$3)
+C_DATE:C307(ACTdte_CreaDctoNulo ;$4)
+
+  //DBU_AsignaUUIDdeMateria
+C_BOOLEAN:C305(DBU_AsignaUUIDdeMateria ;$1)
+C_POINTER:C301(DBU_AsignaUUIDdeMateria ;$2)
+C_POINTER:C301(DBU_AsignaUUIDdeMateria ;$3)
+
+  //QR_AluEvAprendizaje_GetData
+C_TEXT:C284(QR_AluEvAprendizaje_GetData ;$1)
+C_POINTER:C301(QR_AluEvAprendizaje_GetData ;$2)
+C_POINTER:C301(QR_AluEvAprendizaje_GetData ;$3)
+C_POINTER:C301(QR_AluEvAprendizaje_GetData ;$4)
+
+  //ACTbol_CargaDiasVencimiento
+C_TEXT:C284(ACTbol_CargaDiasVencimiento ;$0)
+C_TEXT:C284(ACTbol_CargaDiasVencimiento ;$1)
+C_POINTER:C301(ACTbol_CargaDiasVencimiento ;$2)
+
+  //ACTbol_FiltraItemsMoneda
+C_TEXT:C284(ACTbol_FiltraItemsMoneda ;$1)
+C_TEXT:C284(ACTbol_FiltraItemsMoneda ;$2)
+C_REAL:C285(ACTbol_FiltraItemsMoneda ;$3)
+C_REAL:C285(ACTbol_FiltraItemsMoneda ;$4)
+C_REAL:C285(ACTbol_FiltraItemsMoneda ;$5)
+C_REAL:C285(ACTbol_FiltraItemsMoneda ;$6)
+
+  //ACTcfg_OpcionesCorrelativoPago
+C_TEXT:C284(ACTcfg_OpcionesCorrelativoPago ;$1)
+C_POINTER:C301(ACTcfg_OpcionesCorrelativoPago ;$2)
+
+  //ACTdgi_CargaInfo
+C_REAL:C285(ACTdgi_CargaInfo ;$1)
+C_POINTER:C301(4D_ExportaInfoTablas ;${1})
+
+  //ACTcfg_OpcionesDescuentos
+C_TEXT:C284(ACTcfg_OpcionesDescuentos ;$0)
+C_POINTER:C301(ACTcfg_OpcionesDescuentos ;${2})
+C_TEXT:C284(ACTcfg_OpcionesDescuentos ;$1)
+
+  //ACTdic_CreaRegistro
+C_LONGINT:C283(ACTdic_CreaRegistro ;$0)
+C_LONGINT:C283(ACTdic_CreaRegistro ;$1)
+C_LONGINT:C283(ACTdic_CreaRegistro ;$2)
+C_BOOLEAN:C305(ACTdic_CreaRegistro ;$3)
+C_LONGINT:C283(ACTdic_CreaRegistro ;$4)
+C_TEXT:C284(ACTdic_CreaRegistro ;$5)
+C_REAL:C285(ACTdic_CreaRegistro ;$6)
+
+  //ACTdcto_LeeDctosXCuenta
+C_LONGINT:C283(ACTdcto_LeeDctosXCuenta ;$0)
+C_POINTER:C301(ACTdctos_OnRecordLoad ;${4})
+C_LONGINT:C283(ACTdctos_OnRecordLoad ;$1)
+C_BOOLEAN:C305(ACTdctos_OnRecordLoad ;$2)
+C_POINTER:C301(ACTdctos_OnRecordLoad ;$3)
+
+  //ACTcc_OpcionesDctos
+C_TEXT:C284(ACTcc_OpcionesDctos ;$0)
+C_POINTER:C301(ACTcc_OpcionesDctos ;${2})
+C_TEXT:C284(ACTcc_OpcionesDctos ;$1)
+
+  //DIAP_InscribeCargaAlumnos
+C_TEXT:C284(DIAP_InscribeCargaAlumnos ;$0)
+C_TEXT:C284(DIAP_InscribeCargaAlumnos ;$1)
+C_POINTER:C301(DIAP_InscribeCargaAlumnos ;$2)
+C_POINTER:C301(DIAP_InscribeCargaAlumnos ;$3)
+C_POINTER:C301(DIAP_InscribeCargaAlumnos ;$4)
+
+  //DIAP_InscribeCargaAluAsig
+C_BOOLEAN:C305(DIAP_InscribeCargaAluAsig ;$0)
+C_LONGINT:C283(DIAP_InscribeCargaAluAsig ;$1)
+C_POINTER:C301(DIAP_InscribeCargaAluAsig ;$2)
+C_POINTER:C301(DIAP_InscribeCargaAluAsig ;$3)
+C_POINTER:C301(DIAP_InscribeCargaAluAsig ;$4)
+C_POINTER:C301(DIAP_InscribeCargaAluAsig ;$5)
+C_POINTER:C301(DIAP_InscribeCargaAluAsig ;$6)
+C_POINTER:C301(DIAP_InscribeCargaAluAsig ;$7)
+C_POINTER:C301(DIAP_InscribeCargaAluAsig ;$8)
+C_POINTER:C301(DIAP_InscribeCargaAluAsig ;$9)
+C_POINTER:C301(DIAP_InscribeCargaAluAsig ;$10)
+
+  //DIAP_InscribeAsignatura
+C_BOOLEAN:C305(DIAP_InscribeAsignatura ;$0)
+C_LONGINT:C283(DIAP_InscribeAsignatura ;$1)
+C_LONGINT:C283(DIAP_InscribeAsignatura ;$2)
+C_LONGINT:C283(DIAP_InscribeAsignatura ;$3)
+C_LONGINT:C283(DIAP_InscribeAsignatura ;$4)
+C_REAL:C285(DIAP_InscribeAsignatura ;$5)
+
+  //DIAP_InscribeAlumnosIdiomas
+C_LONGINT:C283(DIAP_InscribeAlumnosIdiomas ;$1)
+
+  //DIAP_GuardaInscripcionIdioma
+C_BOOLEAN:C305(DIAP_GuardaInscripcionIdioma ;$0)
+C_TEXT:C284(DIAP_GuardaInscripcionIdioma ;$1)
+C_POINTER:C301(DIAP_GuardaInscripcionIdioma ;$2)
+C_TEXT:C284(DIAP_GuardaInscripcionIdioma ;$3)
+
+  //DIAP_CreaRegistroObservacion
+C_LONGINT:C283(DIAP_CreaRegistroObservacion ;$1)
+
+  //DIAP_ConfigCargaTipoExamen
+C_POINTER:C301(DIAP_ConfigCargaTipoExamen ;$1)
+C_POINTER:C301(DIAP_ConfigCargaTipoExamen ;$2)
+
+  //DIAP_ConfigCargaSubsectores
+C_POINTER:C301(DIAP_ConfigCargaSubsectores ;$1)
+C_POINTER:C301(DIAP_ConfigCargaSubsectores ;$2)
+C_POINTER:C301(DIAP_ConfigCargaSubsectores ;$3)
+C_POINTER:C301(DIAP_ConfigCargaSubsectores ;$4)
+
+  //DIAP_ConfigCargaIdiomas
+C_POINTER:C301(DIAP_ConfigCargaIdiomas ;$1)
+C_POINTER:C301(DIAP_ConfigCargaIdiomas ;$2)
+
+  //DIAP_ConfigCargaCursos
+C_POINTER:C301(DIAP_ConfigCargaCursos ;$1)
+C_POINTER:C301(DIAP_ConfigCargaCursos ;$2)
+C_POINTER:C301(DIAP_ConfigCargaCursos ;$3)
+
+  //DIAP_CargaPanel
+C_BOOLEAN:C305(DIAP_CargaPanel ;$0)
+C_LONGINT:C283(DIAP_CargaPanel ;$1)
+
+  //STWA2_OWC_Diap
+C_TEXT:C284(STWA2_OWC_Diap ;$0)
+C_TEXT:C284(STWA2_OWC_Diap ;$1)
+C_POINTER:C301(STWA2_OWC_Diap ;$2)
+C_POINTER:C301(STWA2_OWC_Diap ;$3)
+C_TEXT:C284(STWA2_OWC_Diap ;$4)
+
+  //ACT_DctosIndividuales_Cuentas
+C_TEXT:C284(ACT_DctosIndividuales_Cuentas ;$0)
+C_TEXT:C284(ACT_DctosIndividuales_Cuentas ;$1)
+C_POINTER:C301(ACT_DctosIndividuales_Cuentas ;$2)
+
+  //STWA2_SaveDato
+C_BOOLEAN:C305(STWA2_SaveDato ;$0)
+C_POINTER:C301(STWA2_SaveDato ;$1)
+C_POINTER:C301(STWA2_SaveDato ;$2)
+C_POINTER:C301(STWA2_SaveDato ;$3)
+
+  //ST_JustificacionAtrasos
+C_TEXT:C284(ST_JustificacionAtrasos ;$1)
+C_REAL:C285(ST_JustificacionAtrasos ;$2)
+
+  //KRL_RebuildTable
+C_POINTER:C301(KRL_RebuildTable ;$1)
+C_BOOLEAN:C305(KRL_RebuildTable ;$2)
+
+  //ACTcfg_LeeConfRS
+C_LONGINT:C283(ACTcfg_LeeConfRS ;$1)
+
+  //QR_imprimeSRP_PDFfolder
+C_TEXT:C284(QR_imprimeSRP_PDFfolder ;$1)
+C_POINTER:C301(QR_imprimeSRP_PDFfolder ;$2)
+C_TEXT:C284(QR_imprimeSRP_PDFfolder ;$3)
+C_POINTER:C301(QR_imprimeSRP_PDFfolder ;$4)
+C_BOOLEAN:C305(QR_imprimeSRP_PDFfolder ;$5)
+C_BOOLEAN:C305(QR_imprimeSRP_PDFfolder ;$6)
+
+  //CU_SituacionFinal_Evaluar
+C_LONGINT:C283(CU_SituacionFinal_Evaluar ;$1)
+C_TEXT:C284(CU_SituacionFinal_Evaluar ;$2)
+
+  //CU_SituacionFinal_EventosLB
+C_TEXT:C284(CU_SituacionFinal_EventosLB ;$1)
+
+  //EV2_Calculos_AjustePresentacion
+C_POINTER:C301(EV2_Calculos_AjustePresentacion ;$1)
+C_POINTER:C301(EV2_Calculos_AjustePresentacion ;$2)
+C_POINTER:C301(EV2_Calculos_AjustePresentacion ;$3)
+C_POINTER:C301(EV2_Calculos_AjustePresentacion ;$4)
+C_POINTER:C301(EV2_Calculos_AjustePresentacion ;$5)
+C_POINTER:C301(EV2_Calculos_AjustePresentacion ;$6)
+
+  //EV2_Calculos_IntegraEsfuerzo
+C_REAL:C285(EV2_Calculos_IntegraEsfuerzo ;$0)
+C_REAL:C285(EV2_Calculos_IntegraEsfuerzo ;$1)
+C_TEXT:C284(EV2_Calculos_IntegraEsfuerzo ;$2)
+
+  //EV2_Nota_a_Simbolo
+C_TEXT:C284(EV2_Nota_a_Simbolo ;$0)
+C_REAL:C285(EV2_Nota_a_Simbolo ;$1)
+
+  //EV2_Puntos_a_Simbolo
+C_TEXT:C284(EV2_Puntos_a_Simbolo ;$0)
+C_REAL:C285(EV2_Puntos_a_Simbolo ;$1)
+
+  //NTA_ModeConversion
+C_REAL:C285(NTA_ModeConversion ;$1)
+C_REAL:C285(NTA_ModeConversion ;$2)
+
+  //EV2dbu_Recalculos
+C_BLOB:C604(EV2dbu_Recalculos ;$1)
+C_BOOLEAN:C305(EV2dbu_Recalculos ;$2)
+C_BOOLEAN:C305(EV2dbu_Recalculos ;$3)
+
+  //EV2_Recalculo
+C_BOOLEAN:C305(EV2_Recalculo ;$0)
+C_LONGINT:C283(EV2_Recalculo ;$1)
+C_LONGINT:C283(EV2_Recalculo ;$2)
+C_LONGINT:C283(EV2_Recalculo ;$3)
+C_BOOLEAN:C305(EV2_Recalculo ;$4)
+C_BOOLEAN:C305(EV2_Recalculo ;$5)
+
+  //EV2_EsAlumnoEximido
+C_BOOLEAN:C305(EV2_EsAlumnoEximido ;$0)
+
+  //EV2_Calculos_PromediosFinales
+C_BOOLEAN:C305(EV2_Calculos_PromediosFinales ;$0)
+C_LONGINT:C283(EV2_Calculos_PromediosFinales ;$1)
+
+  //EV2_Calculos_PromedioPeriodo
+C_BOOLEAN:C305(EV2_Calculos_PromedioPeriodo ;$0)
+C_LONGINT:C283(EV2_Calculos_PromedioPeriodo ;$1)
+C_LONGINT:C283(EV2_Calculos_PromedioPeriodo ;$2)
+C_BOOLEAN:C305(EV2_Calculos_PromedioPeriodo ;$3)
+
+  //EV2_Calculos_PromedioConControl
+C_REAL:C285(EV2_Calculos_PromedioConControl ;$0)
+C_REAL:C285(EV2_Calculos_PromedioConControl ;$1)
+C_REAL:C285(EV2_Calculos_PromedioConControl ;$2)
+
+  //EV2_Calculos_PromedioBonificado
+C_REAL:C285(EV2_Calculos_PromedioBonificado ;$0)
+C_REAL:C285(EV2_Calculos_PromedioBonificado ;$1)
+C_REAL:C285(EV2_Calculos_PromedioBonificado ;$2)
+
+  //EV2_Calculos_Oficial
+C_LONGINT:C283(EV2_Calculos_Oficial ;$1)
+
+  //EV2_Calculos_FinalPeriodo
+C_LONGINT:C283(EV2_Calculos_FinalPeriodo ;$1)
+
+  //EV2_Calculos_ConsolidaPeriodo
+C_BOOLEAN:C305(EV2_Calculos_ConsolidaPeriodo ;$0)
+C_LONGINT:C283(EV2_Calculos_ConsolidaPeriodo ;$1)
+C_LONGINT:C283(EV2_Calculos_ConsolidaPeriodo ;$2)
+C_BOOLEAN:C305(EV2_Calculos_ConsolidaPeriodo ;$3)
+
+  //EV2_Calculos_AjusteFinalPeriodo
+C_POINTER:C301(EV2_Calculos_AjusteFinalPeriodo ;$1)
+C_POINTER:C301(EV2_Calculos_AjusteFinalPeriodo ;$2)
+C_POINTER:C301(EV2_Calculos_AjusteFinalPeriodo ;$3)
+C_POINTER:C301(EV2_Calculos_AjusteFinalPeriodo ;$4)
+C_POINTER:C301(EV2_Calculos_AjusteFinalPeriodo ;$5)
+C_POINTER:C301(EV2_Calculos_AjusteFinalPeriodo ;$6)
+
+  //EV2_Calculos
+C_BOOLEAN:C305(EV2_Calculos ;$0)
+C_LONGINT:C283(EV2_Calculos ;$1)
+C_LONGINT:C283(EV2_Calculos ;$2)
+
+  //Download_SUCCESS
+C_LONGINT:C283(Download_SUCCESS ;$1)
+
+  //Download_CANCEL
+C_LONGINT:C283(Download_CANCEL ;$1)
+
+  //ASsev_EditaSubAsignatura
+C_LONGINT:C283(ASsev_EditaSubAsignatura ;$1)
+C_LONGINT:C283(ASsev_EditaSubAsignatura ;$2)
+C_LONGINT:C283(ASsev_EditaSubAsignatura ;$3)
+
+  //AS_xALP_EdicionNotas
+C_BOOLEAN:C305(AS_xALP_EdicionNotas ;$0)
+C_LONGINT:C283(AS_xALP_EdicionNotas ;$1)
+C_LONGINT:C283(AS_xALP_EdicionNotas ;$2)
+
+  //AL_TransfiereSeleccion
+C_POINTER:C301(AL_TransfiereSeleccion ;$1)
+
+  //EVS_ActualizaIndicadorEsfuerzo
+C_TEXT:C284(EVS_ActualizaIndicadorEsfuerzo ;$1)
+C_TEXT:C284(EVS_ActualizaIndicadorEsfuerzo ;$2)
+
+  //EVS_CargaEstiloEvaluacion
+C_REAL:C285(EVS_CargaEstiloEvaluacion ;$1)
+
+  //EVS_EjecutaAccion
+C_TEXT:C284(EVS_EjecutaAccion ;$1)
+
+  //EVS_GetFormat
+C_TEXT:C284(EVS_GetFormat ;$0)
+C_REAL:C285(EVS_GetFormat ;$1)
+C_REAL:C285(EVS_GetFormat ;$2)
+C_POINTER:C301(EVS_GetFormat ;$3)
+
+  //EVS_ModoConversionSimbolos
+C_LONGINT:C283(EVS_ModoConversionSimbolos ;$0)
+
+  //EVS_SeleccionPagina
+C_REAL:C285(EVS_SeleccionPagina ;$1)
+
+  //EXE_ReplaceString
+C_TEXT:C284(EXE_ReplaceString ;$1)
+C_TEXT:C284(EXE_ReplaceString ;$2)
+C_TEXT:C284(EXE_ReplaceString ;$3)
+C_POINTER:C301(EXE_ReplaceString ;$4)
+
+  //ACTcfg_OpcionesListaMatrices
+C_TEXT:C284(ACTcfg_OpcionesListaMatrices ;$0)
+C_TEXT:C284(ACTcfg_OpcionesListaMatrices ;$1)
+C_POINTER:C301(ACTcfg_OpcionesListaMatrices ;$2)
+C_POINTER:C301(ACTcfg_OpcionesListaMatrices ;$3)
+
+  //ACTmatrices_AsignaNuevasMatrice
+C_LONGINT:C283(ACTmatrices_AsignaNuevasMatrice ;$0)
+C_LONGINT:C283(ACTmatrices_AsignaNuevasMatrice ;$1)
+C_BOOLEAN:C305(ACTmatrices_AsignaNuevasMatrice ;$2)
+C_BOOLEAN:C305(ACTmatrices_AsignaNuevasMatrice ;$3)
+
+  //ACTmatrices_AsignaNuevaMatriz
+C_LONGINT:C283(ACTmatrices_AsignaNuevaMatriz ;$0)
+C_LONGINT:C283(ACTmatrices_AsignaNuevaMatriz ;$1)
+C_LONGINT:C283(ACTmatrices_AsignaNuevaMatriz ;$2)
+C_BOOLEAN:C305(ACTmatrices_AsignaNuevaMatriz ;$3)
+C_POINTER:C301(ACTmatrices_AsignaNuevaMatriz ;$4)
+
+  //QRY_ExecuteQuery_Blob
+C_REAL:C285(QRY_ExecuteQuery_Blob ;$0)
+C_POINTER:C301(QRY_ExecuteQuery_Blob ;$1)
+C_BLOB:C604(QRY_ExecuteQuery_Blob ;$2)
+
+  //NIV_FijaMinimoPromocion
+C_POINTER:C301(NIV_FijaMinimoPromocion ;$1)
+C_POINTER:C301(NIV_FijaMinimoPromocion ;$2)
+
+  //ModernUI_Notificacion
+C_LONGINT:C283(ModernUI_Notificacion ;$0)
+C_TEXT:C284(ModernUI_Notificacion ;$1)
+C_TEXT:C284(ModernUI_Notificacion ;$2)
+C_TEXT:C284(ModernUI_Notificacion ;$3)
+C_TEXT:C284(ModernUI_Notificacion ;$4)
+C_TEXT:C284(ModernUI_Notificacion ;$5)
+C_BOOLEAN:C305(ModernUI_Notificacion ;$6)
+C_BOOLEAN:C305(ModernUI_Notificacion ;$7)
+
+  //SR_XLSCreate
+C_REAL:C285(SR_XLSCreate ;$0)
+C_POINTER:C301(SR_XLSCreate ;$1)
+C_TEXT:C284(SR_XLSCreate ;$2)
+
+  //QR_ImprimeInformeColumnas
+C_LONGINT:C283(QR_ImprimeInformeColumnas ;$1)
+C_TEXT:C284(QR_ImprimeInformeColumnas ;$2)
+C_TEXT:C284(QR_ImprimeInformeColumnas ;$3)
+C_TEXT:C284(QR_ImprimeInformeColumnas ;$4)
+C_POINTER:C301(QR_ImprimeInformeColumnas ;$5)
+C_BOOLEAN:C305(QR_ImprimeInformeColumnas ;$6)
+
+  //QR_ImprimeInformeSRP
+C_LONGINT:C283(QR_ImprimeInformeSRP ;$1)
+C_TEXT:C284(QR_ImprimeInformeSRP ;$2)
+C_TEXT:C284(QR_ImprimeInformeSRP ;$3)
+C_TEXT:C284(QR_ImprimeInformeSRP ;$4)
+C_POINTER:C301(QR_ImprimeInformeSRP ;$5)
+C_BOOLEAN:C305(QR_ImprimeInformeSRP ;$6)
+C_BOOLEAN:C305(QR_ImprimeInformeSRP ;$7)
+
+  //STWA2_OWC_impcomprobantevisienf
+C_TEXT:C284(STWA2_OWC_impcomprobantevisienf ;$0)
+C_TEXT:C284(STWA2_OWC_impcomprobantevisienf ;$1)
+C_POINTER:C301(STWA2_OWC_impcomprobantevisienf ;$2)
+C_POINTER:C301(STWA2_OWC_impcomprobantevisienf ;$3)
+
+  //UTIL_ImpresoraPDF
+C_BOOLEAN:C305(UTIL_ImpresoraPDF ;$0)
+C_POINTER:C301(UTIL_ImpresoraPDF ;$1)
+C_BOOLEAN:C305(UTIL_ImpresoraPDF ;$2)
+
+  //ACTac_ImprimePDF
+C_BOOLEAN:C305(ACTac_ImprimePDF ;$0)
+C_LONGINT:C283(ACTac_ImprimePDF ;$1)
+
+  //SYS_CarpetaAplicacion
+C_TEXT:C284(SYS_CarpetaAplicacion ;$0)
+C_LONGINT:C283(SYS_CarpetaAplicacion ;$1)
+
+  //SYS_DeleteFolderOnServer
+C_TEXT:C284(SYS_DeleteFolderOnServer ;$0)
+C_TEXT:C284(SYS_DeleteFolderOnServer ;$1)
+C_LONGINT:C283(SYS_DeleteFolderOnServer ;$2)
+
+  //UTIL_Instala_PDFcreator
+C_BOOLEAN:C305(UTIL_Instala_PDFcreator ;$0)
+
+  //UTIL_Instala_Win2PDF
+C_BOOLEAN:C305(UTIL_Instala_Win2PDF ;$0)
+
+  //KRL_CopyFileToServer
+C_TEXT:C284(KRL_CopyFileToServer ;$0)
+C_TEXT:C284(KRL_CopyFileToServer ;$1)
+C_TEXT:C284(KRL_CopyFileToServer ;$2)
+C_BOOLEAN:C305(KRL_CopyFileToServer ;$3)
+
+  //SYS_CarpetaPreferenciasLocal
+C_TEXT:C284(SYS_CarpetaPreferenciasLocal ;$0)
+
+  //SYS_CarpetaPreferenciasServidor
+C_TEXT:C284(SYS_CarpetaPreferenciasServidor ;$0)
+
+  //KRL_CopyFileFromServer
+C_TEXT:C284(KRL_CopyFileFromServer ;$0)
+C_TEXT:C284(KRL_CopyFileFromServer ;$1)
+C_TEXT:C284(KRL_CopyFileFromServer ;$2)
+
+  //KRL_SendFileToServer
+C_TEXT:C284(KRL_SendFileToServer ;$0)
+C_TEXT:C284(KRL_SendFileToServer ;$1)
+C_BLOB:C604(KRL_SendFileToServer ;$2)
+C_BOOLEAN:C305(KRL_SendFileToServer ;$3)
+
+  //SYS_GetOSName
+C_TEXT:C284(SYS_GetOSName ;$0)
+
+  //SYS_DBprop_CalculateMemConfig
+C_POINTER:C301(SYS_DBprop_CalculateMemConfig ;$1)
+C_POINTER:C301(SYS_DBprop_CalculateMemConfig ;$2)
+C_POINTER:C301(SYS_DBprop_CalculateMemConfig ;$3)
+C_POINTER:C301(SYS_DBprop_CalculateMemConfig ;$4)
+C_POINTER:C301(SYS_DBprop_CalculateMemConfig ;$5)
+C_POINTER:C301(SYS_DBprop_CalculateMemConfig ;$6)
+C_POINTER:C301(SYS_DBprop_CalculateMemConfig ;$7)
+
+  //SYS_CalculaConfigMemoria
+C_POINTER:C301(SYS_CalculaConfigMemoria ;$1)
+C_POINTER:C301(SYS_CalculaConfigMemoria ;$2)
+C_POINTER:C301(SYS_CalculaConfigMemoria ;$3)
+C_POINTER:C301(SYS_CalculaConfigMemoria ;$4)
+C_POINTER:C301(SYS_CalculaConfigMemoria ;$5)
+C_POINTER:C301(SYS_CalculaConfigMemoria ;$6)
+C_POINTER:C301(SYS_CalculaConfigMemoria ;$7)
+
+
+  //ACTabc_CreaRutaCarpetas
+C_TEXT:C284(ACTabc_CreaRutaCarpetas ;$0)
+C_TEXT:C284(ACTabc_CreaRutaCarpetas ;$1)
+
+  //DT_ValidaFechaTexto
+C_BOOLEAN:C305(DT_ValidaFechaTexto ;$0)
+C_TEXT:C284(DT_ValidaFechaTexto ;$1)
+C_LONGINT:C283(DT_ValidaFechaTexto ;$2)
+
+  //KRL_GetLockedRecordsInfo
+C_LONGINT:C283(KRL_GetLockedRecordsInfo ;$0)
+C_POINTER:C301(KRL_GetLockedRecordsInfo ;$1)
+C_POINTER:C301(KRL_GetLockedRecordsInfo ;$2)
+C_POINTER:C301(KRL_GetLockedRecordsInfo ;$3)
+C_POINTER:C301(KRL_GetLockedRecordsInfo ;$4)
+C_POINTER:C301(KRL_GetLockedRecordsInfo ;$5)
+C_POINTER:C301(KRL_GetLockedRecordsInfo ;$6)
+C_POINTER:C301(KRL_GetLockedRecordsInfo ;$7)
+
+  //KRL_GetPrimaryKey
+C_POINTER:C301(KRL_GetPrimaryKey ;$0)
+C_POINTER:C301(KRL_GetPrimaryKey ;$1)
+C_POINTER:C301(KRL_GetPrimaryKey ;$2)
+
+  //KRL_LockTable
+C_POINTER:C301(KRL_LockTable ;$1)
+
+  //ACT_ZeroData
+C_LONGINT:C283(ACT_ZeroData ;$0)
+C_BOOLEAN:C305(ACT_ZeroData ;$1)
+C_TEXT:C284(ACT_ZeroData ;$2)
+
+  //EV2_Numerico_a_Literal
+C_TEXT:C284(EV2_Numerico_a_Literal ;$0)
+C_REAL:C285(EV2_Numerico_a_Literal ;$1)
+C_LONGINT:C283(EV2_Numerico_a_Literal ;$2)
+C_REAL:C285(EV2_Numerico_a_Literal ;$3)
+
+  //ACTecc_EnviaEmail
+C_TEXT:C284(ACTecc_EnviaEmail ;$1)
+C_LONGINT:C283(ACTecc_EnviaEmail ;$2)
+
+  //ACTecc_GeneraPDF
+C_POINTER:C301(ACTecc_GeneraPDF ;$1)
+C_REAL:C285(ACTecc_GeneraPDF ;$2)
+
+  //SYS_DeleteFileOnServer
+C_BOOLEAN:C305(SYS_DeleteFileOnServer ;$0)
+C_TEXT:C284(SYS_DeleteFileOnServer ;$1)
+
+  //CMT_LimpiaConfiguracion
+C_LONGINT:C283(CMT_LimpiaConfiguracion ;$0)
+
+  //PIC_generaimagenHebreo
+C_PICTURE:C286(PIC_generaimagenHebreo ;$0)
+C_TEXT:C284(PIC_generaimagenHebreo ;$1)
+C_BOOLEAN:C305(PIC_generaimagenHebreo ;$2)
+C_LONGINT:C283(PIC_generaimagenHebreo ;$3)
+C_LONGINT:C283(PIC_generaimagenHebreo ;$4)
+C_LONGINT:C283(PIC_generaimagenHebreo ;$5)
+C_TEXT:C284(PIC_generaimagenHebreo ;$6)
+C_LONGINT:C283(PIC_generaimagenHebreo ;$7)
+
+  //ACTabc_CreaDocumento
+C_TIME:C306(ACTabc_CreaDocumento ;$0)
+C_TEXT:C284(ACTabc_CreaDocumento ;$1)
+C_TEXT:C284(ACTabc_CreaDocumento ;$2)
+C_TEXT:C284(ACTabc_CreaDocumento ;$3)
+
+  //CURL_SendToFTP
+C_TEXT:C284(CURL_SendToFTP ;$0)
+C_TEXT:C284(CURL_SendToFTP ;$1)
+C_TEXT:C284(CURL_SendToFTP ;$2)
+C_TEXT:C284(CURL_SendToFTP ;$3)
+C_TEXT:C284(CURL_SendToFTP ;$4)
+
+  //CURL_TestConnection
+C_REAL:C285(CURL_TestConnection ;$0)
+
+  //CURL_SendToFTP1
+C_LONGINT:C283(CURL_SendToFTP1 ;$0)
+C_TEXT:C284(CURL_SendToFTP1 ;$1)
+C_TEXT:C284(CURL_SendToFTP1 ;$2)
+C_TEXT:C284(CURL_SendToFTP1 ;$3)
+C_TEXT:C284(CURL_SendToFTP1 ;$4)
+
+  //Upload_WITH_PROGRESS
+C_OBJECT:C1216(Upload_WITH_PROGRESS ;$1)
+C_LONGINT:C283(Upload_WITH_PROGRESS ;$2)
+
+  //SN3_VerificaInicioWS
+C_BOOLEAN:C305(SN3_VerificaInicioWS ;$0)
+C_TEXT:C284(SN3_VerificaInicioWS ;$1)
+
+  //SN3_ParametroLog
+C_TEXT:C284(SN3_ParametroLog ;$0)
+C_TEXT:C284(SN3_ParametroLog ;$1)
+
+  //SN3_CreaRegistroLog
+C_POINTER:C301(SN3_CreaRegistroLog ;$1)
+C_BOOLEAN:C305(SN3_CreaRegistroLog ;$2)
+C_POINTER:C301(ACTdte_SetTablasNacionalidad ;${2})
+C_TEXT:C284(ACTdte_SetTablasNacionalidad ;$1)
+
+  //ACTdte_ObtieneCodigoPaisSII
+C_TEXT:C284(ACTdte_ObtieneCodigoPaisSII ;$0)
+C_TEXT:C284(ACTdte_ObtieneCodigoPaisSII ;$1)
+
+  //FTP_TestConnection
+C_TEXT:C284(FTP_TestConnection ;$0)
+C_TEXT:C284(FTP_TestConnection ;$1)
+C_TEXT:C284(FTP_TestConnection ;$2)
+C_TEXT:C284(FTP_TestConnection ;$3)
+C_TEXT:C284(FTP_TestConnection ;$4)
+C_LONGINT:C283(FTP_TestConnection ;$5)
+
+  //FTP_TestConnection_onServer
+C_TEXT:C284(FTP_TestConnection_onServer ;$0)
+C_TEXT:C284(FTP_TestConnection_onServer ;$1)
+C_TEXT:C284(FTP_TestConnection_onServer ;$2)
+C_TEXT:C284(FTP_TestConnection_onServer ;$3)
+C_TEXT:C284(FTP_TestConnection_onServer ;$4)
+C_LONGINT:C283(FTP_TestConnection_onServer ;$5)
+
+  //STWA2_MO_Builder
+C_TEXT:C284(STWA2_MO_Builder ;$0)
+C_TEXT:C284(STWA2_MO_Builder ;$1)
+C_POINTER:C301(STWA2_MO_Builder ;$2)
+C_POINTER:C301(STWA2_MO_Builder ;$3)
+
+  //ST_verificaRelacionProfPers
+C_TEXT:C284(ST_verificaRelacionProfPers ;$1)
+C_TEXT:C284(ST_verificaRelacionProfPers ;$2)
+
+  //BUILD_AppWinMono64
+C_REAL:C285(BUILD_AppWinMono64 ;$0)
+
+  //BUILD_AppWin64_Server_UDCl64
+C_REAL:C285(BUILD_AppWin64_Server_UDCl64 ;$0)
+
+  //BUILD_AppWin64_Server_UDCl32
+C_REAL:C285(BUILD_AppWin64_Server_UDCl32 ;$0)
+
+  //BUILD_Apps_32Bit
+C_REAL:C285(BUILD_Apps_32Bit ;$0)
+
+  //PDF_VerificaCreacionDocumento
+C_TEXT:C284(PDF_VerificaCreacionDocumento ;$1)
+
+  //HMBC_GeneraCodigo
+C_PICTURE:C286(HMBC_GeneraCodigo ;$0)
+C_TEXT:C284(HMBC_GeneraCodigo ;$1)
+C_LONGINT:C283(HMBC_GeneraCodigo ;$2)
+
+  //SN3_ConsolaEnvios
+C_TEXT:C284(SN3_ConsolaEnvios ;$1)
+C_POINTER:C301(SN3_ConsolaEnvios ;$2)
+C_TEXT:C284(SN3_ConsolaEnvios ;$3)
+C_TEXT:C284(SN3_ConsolaEnvios ;$4)
+
+  //SYNC_VerificaRegistrosMod
+C_BOOLEAN:C305(SYNC_VerificaRegistrosMod ;$1)
+
+  //EnfermeriaTipoConsulta
+C_TEXT:C284(EnfermeriaTipoConsulta ;$1)
+
+  //UTIL_TimeDiff
+C_LONGINT:C283(UTIL_TimeDiff ;$0)
+C_TIME:C306(UTIL_TimeDiff ;$1)
+C_REAL:C285(UTIL_TimeDiff ;$2)
+
+  //ST_LimpiaTextoSeparadoXComa
+C_TEXT:C284(ST_LimpiaTextoSeparadoXComa ;$0)
+C_TEXT:C284(ST_LimpiaTextoSeparadoXComa ;$1)
+
+  //AL_TratamientoEnfermeria
+C_TEXT:C284(AL_TratamientoEnfermeria ;$1)
+
+  //ST_ObtieneID
+C_REAL:C285(ST_ObtieneID ;$0)
+C_TEXT:C284(ST_ObtieneID ;$1)
+
+  //WIZ_ADT_PreparaDatosImport
+C_REAL:C285(WIZ_ADT_PreparaDatosImport ;$0)
+C_TEXT:C284(WIZ_ADT_PreparaDatosImport ;$1)
+
+  //ADTwa_PostProcesaSolicitud
+C_TEXT:C284(ADTwa_PostProcesaSolicitud ;$0)
+C_POINTER:C301(ADTwa_PostProcesaSolicitud ;$1)
+C_POINTER:C301(ADTwa_PostProcesaSolicitud ;$2)
+
+  //ADT_postEnviaRespuestaImport
+C_TEXT:C284(ADT_postEnviaRespuestaImport ;$1)
+C_TEXT:C284(ADT_postEnviaRespuestaImport ;$2)
+C_TEXT:C284(ADT_postEnviaRespuestaImport ;$3)
+C_TEXT:C284(ADT_postEnviaRespuestaImport ;$4)
+C_OBJECT:C1216(ADT_postEnviaRespuestaImport ;$5)
+
+  //ADTwa_EnviaRespuestaImportWeb
+C_BOOLEAN:C305(ADTwa_EnviaRespuestaImportWeb ;$0)
+C_BLOB:C604(ADTwa_EnviaRespuestaImportWeb ;$1)
+
+  //IT_GetTextDimensions
+C_OBJECT:C1216(IT_GetTextDimensions ;$0)
+C_TEXT:C284(IT_GetTextDimensions ;$1)
+C_TEXT:C284(IT_GetTextDimensions ;$2)
+C_LONGINT:C283(IT_GetTextDimensions ;$3)
+C_LONGINT:C283(IT_GetTextDimensions ;$4)
+C_TEXT:C284(IT_GetTextDimensions ;$5)
+
+  //IT_GetTextHeight
+C_LONGINT:C283(IT_GetTextHeight ;$0)
+C_TEXT:C284(IT_GetTextHeight ;$1)
+C_LONGINT:C283(IT_GetTextHeight ;$2)
+C_TEXT:C284(IT_GetTextHeight ;$3)
+C_LONGINT:C283(IT_GetTextHeight ;$4)
+C_LONGINT:C283(IT_GetTextHeight ;$5)
+C_TEXT:C284(IT_GetTextHeight ;$6)
+
+  //KRL_SetFieldValue
+C_REAL:C285(KRL_SetFieldValue ;$0)
+C_POINTER:C301(KRL_SetFieldValue ;$1)
+C_REAL:C285(KRL_SetFieldValue ;$2)
+C_POINTER:C301(KRL_SetFieldValue ;$3)
+
+  //LB_GetColumnName
+C_TEXT:C284(LB_GetColumnName ;$0)
+C_TEXT:C284(LB_GetColumnName ;$1)
+C_LONGINT:C283(LB_GetColumnName ;$2)
+C_POINTER:C301(LB_GetColumnName ;$3)
+C_POINTER:C301(LB_GetColumnName ;$4)
+
+  //LB_ShowCellHelpTip
+C_TEXT:C284(LB_ShowCellHelpTip ;$1)
+C_BOOLEAN:C305(LB_ShowCellHelpTip ;$2)
+
+  //SVG_ColorNamesArray
+C_REAL:C285(SVG_ColorNamesArray ;$0)
+
+  //TMT_AsistImport_GpUntis
+C_OBJECT:C1216(TMT_AsistImport_GpUntis ;$0)
+C_BLOB:C604(TMT_AsistImport_GpUntis ;$1)
+C_TEXT:C284(TMT_AsistImport_GpUntis ;$2)
+
+  //TMT_AsistImport_Importar
+C_BOOLEAN:C305(TMT_AsistImport_Importar ;$1)
+C_BOOLEAN:C305(TMT_AsistImport_Importar ;$2)
+C_BOOLEAN:C305(TMT_AsistImport_Importar ;$3)
+C_OBJECT:C1216(TMT_AsistImport_Importar ;$4)
+
+  //TMT_AsistImport_Load
+C_OBJECT:C1216(TMT_AsistImport_Load ;$1)
+
+  //TMT_AsistImport_Log
+C_POINTER:C301(TMT_AsistImport_Log ;$1)
+C_POINTER:C301(TMT_AsistImport_Log ;$2)
+
+  //AS_ObjOpcEvaluacionEspecial
+C_POINTER:C301(AS_ObjOpcEvaluacionEspecial ;$1)
+C_BOOLEAN:C305(AS_ObjOpcEvaluacionEspecial ;$2)
+C_BOOLEAN:C305(AS_ObjOpcEvaluacionEspecial ;$3)
+
+  //STWA2_OWC_EvaluacionEspecial
+C_TEXT:C284(STWA2_OWC_EvaluacionEspecial ;$0)
+C_TEXT:C284(STWA2_OWC_EvaluacionEspecial ;$1)
+C_POINTER:C301(STWA2_OWC_EvaluacionEspecial ;$2)
+C_POINTER:C301(STWA2_OWC_EvaluacionEspecial ;$3)
+C_TEXT:C284(STWA2_OWC_EvaluacionEspecial ;$4)
+
+  //TMT_AsistImport_Peñalara
+C_TEXT:C284(TMT_AsistImport_Peñalara ;$1)
+C_POINTER:C301(TMT_AsistImport_Peñalara ;$2)
+C_POINTER:C301(TMT_AsistImport_Peñalara ;$3)
+C_POINTER:C301(TMT_AsistImport_Peñalara ;$4)
+C_POINTER:C301(TMT_AsistImport_Peñalara ;$5)
+C_POINTER:C301(TMT_AsistImport_Peñalara ;$6)
+C_POINTER:C301(TMT_AsistImport_Peñalara ;$7)
+C_POINTER:C301(TMT_AsistImport_Peñalara ;$8)
+
+  //AS_CreateConfigObj
+C_LONGINT:C283(AS_CreateConfigObj ;$1)
+C_BOOLEAN:C305(AS_CreateConfigObj ;$2)
+
+  //dhSync_PostProcessData
+C_POINTER:C301(dhSync_PostProcessData ;$1)
+
+  //SYNC_CHECKERROR
+C_BOOLEAN:C305(SYNC_CHECKERROR ;$0)
+C_OBJECT:C1216(SYNC_CHECKERROR ;$1)
+
+  //SYNC_APICall
+C_OBJECT:C1216(SYNC_APICall ;$0)
+C_TEXT:C284(SYNC_APICall ;${4})
+C_TEXT:C284(SYNC_APICall ;$1)
+C_TEXT:C284(SYNC_APICall ;$2)
+C_OBJECT:C1216(SYNC_APICall ;$3)
+
+  //Util_MakeUUIDNonCanonical
+C_TEXT:C284(Util_MakeUUIDNonCanonical ;$0)
+C_TEXT:C284(Util_MakeUUIDNonCanonical ;$1)
+
+  //Util_MakeUUIDCanonical
+C_TEXT:C284(Util_MakeUUIDCanonical ;$0)
+C_TEXT:C284(Util_MakeUUIDCanonical ;$1)
+
+  //Sync_RegistraModificacion
+C_POINTER:C301(Sync_RegistraModificacion ;$1)
+C_TEXT:C284(Sync_RegistraModificacion ;$2)
+C_BOOLEAN:C305(Sync_RegistraModificacion ;$3)
+
+  //Sync_Activar
+C_BOOLEAN:C305(Sync_Activar ;$0)
+
+  //CONDOR_ExportData
+C_BOOLEAN:C305(CONDOR_ExportData ;$1)
+
+  //AS_AplicaFechaLimiteParciales
+C_POINTER:C301(AS_AplicaFechaLimiteParciales ;$1)
+C_OBJECT:C1216(AS_AplicaFechaLimiteParciales ;$2)
+
+  //DASHwa_RespuestaError
+C_TEXT:C284(DASHwa_RespuestaError ;$0)
+C_REAL:C285(DASHwa_RespuestaError ;$1)
+C_BOOLEAN:C305(DASHwa_RespuestaError ;$2)
+
+  //DASHwa_VerificaLlave
+C_BOOLEAN:C305(DASHwa_VerificaLlave ;$0)
+C_TEXT:C284(DASHwa_VerificaLlave ;$1)
+C_TEXT:C284(DASHwa_VerificaLlave ;$2)
+C_TEXT:C284(DASHwa_VerificaLlave ;$3)
+
+  //IT_GetFontHeight
+C_LONGINT:C283(IT_GetFontHeight ;$0)
+C_TEXT:C284(IT_GetFontHeight ;$1)
+C_LONGINT:C283(IT_GetFontHeight ;$2)
+C_LONGINT:C283(IT_GetFontHeight ;$3)
+C_TEXT:C284(IT_GetFontHeight ;$4)
+
+  //ACTcar_EsCargoEliminable
+C_BOOLEAN:C305(ACTcar_EsCargoEliminable ;$0)
+C_LONGINT:C283(ACTcar_EsCargoEliminable ;$1)
+
+  //ACTdesc_OpcionesGenerales
+C_OBJECT:C1216(ACTdesc_OpcionesGenerales ;$0)
+C_TEXT:C284(ACTdesc_OpcionesGenerales ;$1)
+C_OBJECT:C1216(ACTdesc_OpcionesGenerales ;$2)
+
+  //PREF_fGetObject
+C_OBJECT:C1216(PREF_fGetObject ;$0)
+C_REAL:C285(PREF_fGetObject ;$1)
+C_TEXT:C284(PREF_fGetObject ;$2)
+C_OBJECT:C1216(PREF_fGetObject ;$3)
+
+  //PREF_SetObject
+C_REAL:C285(PREF_SetObject ;$1)
+C_TEXT:C284(PREF_SetObject ;$2)
+C_OBJECT:C1216(PREF_SetObject ;$3)
+
+  //SRdh_ExecuteScript
+C_TEXT:C284(SRdh_ExecuteScript ;$0)
+C_TEXT:C284(SRdh_ExecuteScript ;$1)
+
+  //CONDOR_ExportDataGenArchivo
+C_TIME:C306(CONDOR_ExportDataGenArchivo ;$0)
+C_TEXT:C284(CONDOR_ExportDataGenArchivo ;$1)
+C_POINTER:C301(CONDOR_ExportDataGenArchivo ;$2)
+
+  //SR_GetVariableFieldInfo
+C_POINTER:C301(SR_GetVariableFieldInfo ;$0)
+C_POINTER:C301(SR_GetVariableFieldInfo ;$1)
+C_POINTER:C301(SR_GetVariableFieldInfo ;$2)
+
+  //STWA2_MO_CargaAlumnosxHora
+C_TEXT:C284(STWA2_MO_CargaAlumnosxHora ;$0)
+C_TEXT:C284(STWA2_MO_CargaAlumnosxHora ;$1)
+C_POINTER:C301(STWA2_MO_CargaAlumnosxHora ;$2)
+C_POINTER:C301(STWA2_MO_CargaAlumnosxHora ;$3)
+
+  //STWA2_MO_CargaAlumnosAsignatura
+C_TEXT:C284(STWA2_MO_CargaAlumnosAsignatura ;$0)
+C_TEXT:C284(STWA2_MO_CargaAlumnosAsignatura ;$1)
+C_POINTER:C301(STWA2_MO_CargaAlumnosAsignatura ;$2)
+C_POINTER:C301(STWA2_MO_CargaAlumnosAsignatura ;$3)
+
+  //STWA2_FiltraAsignPref
+C_OBJECT:C1216(STWA2_FiltraAsignPref ;$0)
+C_TEXT:C284(STWA2_FiltraAsignPref ;$1)
+C_POINTER:C301(STWA2_FiltraAsignPref ;$2)
+C_POINTER:C301(STWA2_FiltraAsignPref ;$3)
+C_TEXT:C284(STWA2_FiltraAsignPref ;$4)
+
+  //ST_StatusAlumnoPrefSet
+C_POINTER:C301(ST_StatusAlumnoPrefSet ;$1)
+C_POINTER:C301(ST_StatusAlumnoPrefSet ;$2)
+
+  //Valida_json
+C_BOOLEAN:C305(Valida_json ;$0)
+C_TEXT:C284(Valida_json ;$1)
+
+  //ACTpgs_validaFechaPago
+C_TEXT:C284(ACTpgs_validaFechaPago ;$0)
+C_TEXT:C284(ACTpgs_validaFechaPago ;$1)
+C_DATE:C307(ACTpgs_validaFechaPago ;$2)
+C_LONGINT:C283(ACTpgs_validaFechaPago ;$3)
+
+  //AL_InactivaRegistroRelacionados
+C_BOOLEAN:C305(AL_InactivaRegistroRelacionados ;$0)
+C_TEXT:C284(AL_InactivaRegistroRelacionados ;$1)
+C_REAL:C285(AL_InactivaRegistroRelacionados ;$2)
+
+  //AS_BloqueoPropiedadesEvaluacion
+C_BOOLEAN:C305(AS_BloqueoPropiedadesEvaluacion ;$1)
+
+  //LOG_RegistraCambiosPropDeEval
+C_TEXT:C284(LOG_RegistraCambiosPropDeEval ;$0)
+C_TEXT:C284(LOG_RegistraCambiosPropDeEval ;$1)
+C_TEXT:C284(LOG_RegistraCambiosPropDeEval ;$2)
+C_POINTER:C301(LOG_RegistraCambiosPropDeEval ;$3)
+C_REAL:C285(LOG_RegistraCambiosPropDeEval ;$4)
+C_BOOLEAN:C305(LOG_RegistraCambiosPropDeEval ;$5)
+
+  //CTRY_UY_VerifIDNacional
+C_TEXT:C284(CTRY_UY_VerifIDNacional ;$0)
+C_TEXT:C284(CTRY_UY_VerifIDNacional ;$1)
+C_BOOLEAN:C305(CTRY_UY_VerifIDNacional ;$2)
+
+  //BKPs3_EscribeLog
+C_TEXT:C284(BKPs3_EscribeLog ;$1)
+
+  //BKPs3_ConsultaLog
+C_TEXT:C284(BKPs3_ConsultaLog ;$0)
+
+  //BKPs3_AnalizaRespuesta
+C_TEXT:C284(BKPs3_AnalizaRespuesta ;$0)
+C_TEXT:C284(BKPs3_AnalizaRespuesta ;$1)
+C_BLOB:C604(BKPs3_AnalizaRespuesta ;$2)
+C_POINTER:C301(BKPs3_AnalizaRespuesta ;$3)
+C_POINTER:C301(BKPs3_AnalizaRespuesta ;$4)
+
+  //VC4D_CodeModifAfterAppBuild
+C_LONGINT:C283(VC4D_CodeModifAfterAppBuild ;$0)
+C_BOOLEAN:C305(VC4D_CodeModifAfterAppBuild ;$1)
+C_TEXT:C284(VC4D_CodeModifAfterAppBuild ;$2)
+
+  //VC4D_GetLastModifData
+C_TEXT:C284(VC4D_GetLastModifData ;$0)
+C_TEXT:C284(VC4D_GetLastModifData ;$1)
+C_POINTER:C301(VC4D_GetLastModifData ;$2)
+C_POINTER:C301(VC4D_GetLastModifData ;$3)
+
+  //BKPs3_ObtieneXMLCredenciales
+C_TEXT:C284(BKPs3_ObtieneXMLCredenciales ;$0)
+
+  //BKPs3_ObtieneXMLConfiguracion
+C_TEXT:C284(BKPs3_ObtieneXMLConfiguracion ;$0)
+
+  //BLOB_equals
+C_BOOLEAN:C305(BLOB_equals ;$0)
+C_POINTER:C301(BLOB_equals ;$1)
+C_POINTER:C301(BLOB_equals ;$2)
+
+  //xliff_CargaFormatos
+C_POINTER:C301(xliff_CargaFormatos ;$1)
+
+  //LOC_ObtieneReferencia
+C_TEXT:C284(LOC_ObtieneReferencia ;$0)
+C_TEXT:C284(LOC_ObtieneReferencia ;$1)
+C_TEXT:C284(LOC_ObtieneReferencia ;$2)
+
+  //ACTcc_DividirEmision
+C_OBJECT:C1216(ACTcc_DividirEmision ;$0)
+C_TEXT:C284(ACTcc_DividirEmision ;$1)
+C_POINTER:C301(ACTcc_DividirEmision ;$2)
+C_POINTER:C301(ACTcc_DividirEmision ;$3)
+C_POINTER:C301(ACTcc_DividirEmision ;$4)
+
+  //ACTbol_CreaDTObj
+C_OBJECT:C1216(ACTbol_CreaDTObj ;$0)
+C_POINTER:C301(ACTbol_CreaDTObj ;$1)
+C_POINTER:C301(ACTbol_CreaDTObj ;$2)
+
+  //ACTpgs_DescuentosXTramo
+C_OBJECT:C1216(ACTpgs_DescuentosXTramo ;$0)
+C_POINTER:C301(ACTpgs_DescuentosXTramo ;${2})
+C_TEXT:C284(ACTpgs_DescuentosXTramo ;$1)
+
+  //ACTdxt_CalculaDesdeIDAC
+C_OBJECT:C1216(ACTdxt_CalculaDesdeIDAC ;$0)
+C_OBJECT:C1216(ACTdxt_CalculaDesdeIDAC ;$1)
+C_DATE:C307(ACTdxt_CalculaDesdeIDAC ;$2)
+C_REAL:C285(ACTdxt_CalculaDesdeIDAC ;$3)
+
+  //ACTdxt_ObtieneMontosDesdeSetCar
+C_OBJECT:C1216(ACTdxt_ObtieneMontosDesdeSetCar ;$0)
+C_TEXT:C284(ACTdxt_ObtieneMontosDesdeSetCar ;$1)
+C_BOOLEAN:C305(ACTdxt_ObtieneMontosDesdeSetCar ;$2)
+C_REAL:C285(ACTdxt_ObtieneMontosDesdeSetCar ;$3)
+C_DATE:C307(ACTdxt_ObtieneMontosDesdeSetCar ;$4)
+C_BOOLEAN:C305(ACTdxt_ObtieneMontosDesdeSetCar ;$5)
+C_BOOLEAN:C305(ACTdxt_ObtieneMontosDesdeSetCar ;$6)
+
+  //ACTbol_FiltraItemsResponsable
+C_TEXT:C284(ACTbol_FiltraItemsResponsable ;$1)
+C_TEXT:C284(ACTbol_FiltraItemsResponsable ;$2)
+C_REAL:C285(ACTbol_FiltraItemsResponsable ;$3)
+C_REAL:C285(ACTbol_FiltraItemsResponsable ;$4)
+C_REAL:C285(ACTbol_FiltraItemsResponsable ;$5)
+C_REAL:C285(ACTbol_FiltraItemsResponsable ;$6)
+C_TEXT:C284(ACTbol_FiltraItemsResponsable ;$7)
+
+  //ACTcfg_OpcionesGenRecibo
+C_OBJECT:C1216(ACTcfg_OpcionesGenRecibo ;$0)
+C_POINTER:C301(ACTcfg_OpcionesGenRecibo ;${2})
+C_TEXT:C284(ACTcfg_OpcionesGenRecibo ;$1)
+
+  //ACT_GeneraEstadoDeCuenta
+C_TEXT:C284(ACT_GeneraEstadoDeCuenta ;$1)
+C_POINTER:C301(ACT_GeneraEstadoDeCuenta ;$2)
+C_REAL:C285(ACT_GeneraEstadoDeCuenta ;$3)
+C_DATE:C307(ACT_GeneraEstadoDeCuenta ;$4)
+C_DATE:C307(ACT_GeneraEstadoDeCuenta ;$5)
+C_BOOLEAN:C305(ACT_GeneraEstadoDeCuenta ;$6)
+
+  //AS_xALP_ManejoExcepciones
+C_TEXT:C284(AS_xALP_ManejoExcepciones ;$0)
+C_REAL:C285(AS_xALP_ManejoExcepciones ;$1)
+C_REAL:C285(AS_xALP_ManejoExcepciones ;$2)
+
+  //CRYPT_NewEncryptDecrypt
+C_TEXT:C284(CRYPT_NewEncryptDecrypt ;$0)
+C_TEXT:C284(CRYPT_NewEncryptDecrypt ;$1)
+C_TEXT:C284(CRYPT_NewEncryptDecrypt ;$2)
+C_TEXT:C284(CRYPT_NewEncryptDecrypt ;$3)
+C_BOOLEAN:C305(CRYPT_NewEncryptDecrypt ;$4)
+
+  //QRY_OcultaObjetosBuscador
+C_POINTER:C301(QRY_OcultaObjetosBuscador ;$1)
+
+  //AS_ObjOpc_BlockPropEval
+C_POINTER:C301(AS_ObjOpc_BlockPropEval ;$1)
+C_BOOLEAN:C305(AS_ObjOpc_BlockPropEval ;$2)
+C_BOOLEAN:C305(AS_ObjOpc_BlockPropEval ;$3)
+
+  //EV2_ALT_FormatoString
+C_TEXT:C284(EV2_ALT_FormatoString ;$0)
+C_LONGINT:C283(EV2_ALT_FormatoString ;$1)
+
+  //EV2_CalculoALT_AgregaBonif
+C_REAL:C285(EV2_CalculoALT_AgregaBonif ;$0)
+C_REAL:C285(EV2_CalculoALT_AgregaBonif ;$1)
+C_REAL:C285(EV2_CalculoALT_AgregaBonif ;$2)
+C_REAL:C285(EV2_CalculoALT_AgregaBonif ;$3)
+
+  //EV2_CalculoALT_CalculoPromedios
+C_BOOLEAN:C305(EV2_CalculoALT_CalculoPromedios ;$0)
+C_LONGINT:C283(EV2_CalculoALT_CalculoPromedios ;$1)
+C_LONGINT:C283(EV2_CalculoALT_CalculoPromedios ;$2)
+
+  //EV2_CalculoALT_FinalPeriodo
+C_LONGINT:C283(EV2_CalculoALT_FinalPeriodo ;$1)
+
+  //EV2_CalculoALT_IntegraEsfuerzo
+C_REAL:C285(EV2_CalculoALT_IntegraEsfuerzo ;$0)
+C_REAL:C285(EV2_CalculoALT_IntegraEsfuerzo ;$1)
+C_TEXT:C284(EV2_CalculoALT_IntegraEsfuerzo ;$2)
+C_LONGINT:C283(EV2_CalculoALT_IntegraEsfuerzo ;$3)
+
+  //EV2_CalculoALT_NotaOficial
+C_LONGINT:C283(EV2_CalculoALT_NotaOficial ;$1)
+
+  //EV2_CalculoALT_PromedioAnual
+C_REAL:C285(EV2_CalculoALT_PromedioAnual ;$0)
+
+  //EV2_CalculoALT_PromedioPeriodo
+C_BOOLEAN:C305(EV2_CalculoALT_PromedioPeriodo ;$0)
+C_LONGINT:C283(EV2_CalculoALT_PromedioPeriodo ;$1)
+C_LONGINT:C283(EV2_CalculoALT_PromedioPeriodo ;$2)
+C_BOOLEAN:C305(EV2_CalculoALT_PromedioPeriodo ;$3)
+
+  //EV2_CalculoALT_PromediosFinales
+C_BOOLEAN:C305(EV2_CalculoALT_PromediosFinales ;$0)
+C_LONGINT:C283(EV2_CalculoALT_PromediosFinales ;$1)
+
+  //EV2_CargaCalificacionesAlumno
+C_LONGINT:C283(EV2_CargaCalificacionesAlumno ;$1)
+C_LONGINT:C283(EV2_CargaCalificacionesAlumno ;$2)
+
+  //EV2_CalculoALT_PP_conControl
+C_REAL:C285(EV2_CalculoALT_PP_conControl ;$0)
+C_REAL:C285(EV2_CalculoALT_PP_conControl ;$1)
+C_REAL:C285(EV2_CalculoALT_PP_conControl ;$2)
+
+  //RF_VerificaEstado
+C_BOOLEAN:C305(RF_VerificaEstado ;$1)
+
+  //CONDOR_ExportDataTransformer
+C_TEXT:C284(CONDOR_ExportDataTransformer ;$0)
+C_POINTER:C301(CONDOR_ExportDataTransformer ;$1)
+
+  //CONDOR_Export_Niveles
+C_POINTER:C301(CONDOR_Export_Niveles ;$1)
+
+  //CONDOR_Export_Cursos
+C_POINTER:C301(CONDOR_Export_Cursos ;$1)
+
+  //dhSync_HandleSendingChanges
+C_BOOLEAN:C305(dhSync_HandleSendingChanges ;$0)
+C_POINTER:C301(dhSync_HandleSendingChanges ;$1)
+C_POINTER:C301(dhSync_HandleSendingChanges ;$2)
+
+  //CONDOR_Export_Asignaturas
+C_POINTER:C301(CONDOR_Export_Asignaturas ;$1)
+
+  //CONDOR_Export_Personas
+C_POINTER:C301(CONDOR_Export_Personas ;$1)
+C_POINTER:C301(CONDOR_Export_Personas ;$2)
+C_POINTER:C301(CONDOR_Export_Personas ;$3)
+C_POINTER:C301(CONDOR_Export_Personas ;$4)
+C_POINTER:C301(CONDOR_Export_Personas ;$5)
+
+  //ACTfear_FEVerificaCAE
+C_OBJECT:C1216(ACTfear_FEVerificaCAE ;$0)
+C_LONGINT:C283(ACTfear_FEVerificaCAE ;$1)
+C_LONGINT:C283(ACTfear_FEVerificaCAE ;$2)
+C_LONGINT:C283(ACTfear_FEVerificaCAE ;$3)
+C_LONGINT:C283(ACTfear_FEVerificaCAE ;$4)
+
+  //KRL_GetTextFieldData_SQL
+C_TEXT:C284(KRL_GetTextFieldData_SQL ;$0)
+C_POINTER:C301(KRL_GetTextFieldData_SQL ;$1)
+C_POINTER:C301(KRL_GetTextFieldData_SQL ;$2)
+C_POINTER:C301(KRL_GetTextFieldData_SQL ;$3)
+
+  //KRL_GetTextFieldData
+C_BOOLEAN:C305(KRL_GetTextFieldData ;$4)
+
+  //CONDOR_Export_Profesores
+C_POINTER:C301(CONDOR_Export_Profesores ;$1)
+C_POINTER:C301(CONDOR_Export_Profesores ;$2)
+C_POINTER:C301(CONDOR_Export_Profesores ;$3)
+C_POINTER:C301(CONDOR_Export_Profesores ;$4)
+C_POINTER:C301(CONDOR_Export_Profesores ;$5)
+
+  //DT_ObtieneArrayDiasHabiles
+C_LONGINT:C283(DT_ObtieneArrayDiasHabiles ;$1)
+C_DATE:C307(DT_ObtieneArrayDiasHabiles ;$2)
+C_DATE:C307(DT_ObtieneArrayDiasHabiles ;$3)
+C_POINTER:C301(DT_ObtieneArrayDiasHabiles ;$4)
+
+  //CONDOR_Export_Alumnos
+C_POINTER:C301(CONDOR_Export_Alumnos ;$1)
+C_POINTER:C301(CONDOR_Export_Alumnos ;$2)
+C_POINTER:C301(CONDOR_Export_Alumnos ;$3)
+C_POINTER:C301(CONDOR_Export_Alumnos ;$4)
+C_POINTER:C301(CONDOR_Export_Alumnos ;$5)
+
+  //UFDL_CreaRegistroUserFieldEnTab
+  //C_REAL(UFDL_CreaRegistroUserFieldEnTab ;$1)
+
+  //STR_ResponsableNiveles
+C_TEXT:C284(STR_ResponsableNiveles ;$1)
+C_REAL:C285(STR_ResponsableNiveles ;$2)
+C_POINTER:C301(STR_ResponsableNiveles ;$3)
+
+  //CONDOR_Export_Familias
+C_POINTER:C301(CONDOR_Export_Familias ;$1)
+C_POINTER:C301(CONDOR_Export_Familias ;$2)
+
+  //STWA2_ManejaImagenResponsive
+C_TEXT:C284(STWA2_ManejaImagenResponsive ;$1)
+C_POINTER:C301(STWA2_ManejaImagenResponsive ;$2)
+
+  //QR_filtroBusqueda
+C_TEXT:C284(QR_filtroBusqueda ;$1)
+C_POINTER:C301(QR_filtroBusqueda ;$2)
+C_POINTER:C301(QR_filtroBusqueda ;$3)
+
+  //AL_AlumnoAtrasoCreateRecord
+C_OBJECT:C1216(AL_AlumnoAtrasoCreateRecord ;$1)
+
+  //STR_SegAvanzada
+C_OBJECT:C1216(STR_SegAvanzada ;$0)
+C_POINTER:C301(STR_SegAvanzada ;$1)
+
+  //LOC_ObjNombreColumnasEval
+C_TEXT:C284(LOC_ObjNombreColumnasEval ;$1)
+C_POINTER:C301(LOC_ObjNombreColumnasEval ;$2)
+C_REAL:C285(LOC_ObjNombreColumnasEval ;$3)
+
+  //ACTwiz_ImportadorChequesDepo
+C_TEXT:C284(ACTwiz_ImportadorChequesDepo ;$1)
+
+  //ACT_CreaRegistroImportacion
+C_OBJECT:C1216(ACT_CreaRegistroImportacion ;$1)
+C_LONGINT:C283(ACT_CreaRegistroImportacion ;$2)
+C_REAL:C285(ACT_CreaRegistroImportacion ;$3)
+C_OBJECT:C1216(ACT_CreaRegistroImportacion ;$4)
+C_DATE:C307(ACT_CreaRegistroImportacion ;$5)
+
+  //Sync_LogEventoTask
+C_BOOLEAN:C305(Sync_LogEventoTask ;$0)
+C_BLOB:C604(Sync_LogEventoTask ;$1)
+
+  //SERwa_InfoSchoolTrack
+C_TEXT:C284(SERwa_InfoSchoolTrack ;$0)
+C_POINTER:C301(SERwa_InfoSchoolTrack ;$1)
+C_POINTER:C301(SERwa_InfoSchoolTrack ;$2)
+
+  //RINSCwa_VerificaCargoDctoEmiti
+C_TEXT:C284(RINSCwa_VerificaCargoDctoEmiti ;$1)
+C_OBJECT:C1216(RINSCwa_VerificaCargoDctoEmiti ;$2)
+C_DATE:C307(RINSCwa_VerificaCargoDctoEmiti ;$3)
+
+  //QA_PreparaBaseParaPruebas
+C_TEXT:C284(QA_PreparaBaseParaPruebas ;$1)
+
+  //WIZ_STR_CargaDatosEncabezadotxt
+C_OBJECT:C1216(WIZ_STR_CargaDatosEncabezadotxt ;$0)
+C_TEXT:C284(WIZ_STR_CargaDatosEncabezadotxt ;$1)
+C_OBJECT:C1216(WIZ_STR_CargaDatosEncabezadotxt ;$2)
+
+  //AL_CalculaPromediosGenerales__
+C_BOOLEAN:C305(AL_CalculaPromediosGenerales__ ;$0)
+C_LONGINT:C283(AL_CalculaPromediosGenerales__ ;$1)
+C_LONGINT:C283(AL_CalculaPromediosGenerales__ ;$2)
+
+  //AL_RetornaPromedios__
+C_LONGINT:C283(AL_RetornaPromedios__ ;$1)
+C_LONGINT:C283(AL_RetornaPromedios__ ;$2)
+C_LONGINT:C283(AL_RetornaPromedios__ ;$3)
+C_TEXT:C284(AL_RetornaPromedios__ ;$4)
+C_LONGINT:C283(AL_RetornaPromedios__ ;$5)
+C_POINTER:C301(AL_RetornaPromedios__ ;$6)
+C_POINTER:C301(AL_RetornaPromedios__ ;$7)
+C_POINTER:C301(AL_RetornaPromedios__ ;$8)
+C_POINTER:C301(AL_RetornaPromedios__ ;$9)
+C_POINTER:C301(AL_RetornaPromedios__ ;$10)
+C_POINTER:C301(AL_RetornaPromedios__ ;$11)
+C_POINTER:C301(AL_RetornaPromedios__ ;$12)
+C_POINTER:C301(AL_RetornaPromedios__ ;$13)
+
+  //AL_RetornaPromedios
+C_LONGINT:C283(AL_RetornaPromedios ;$1)
+C_LONGINT:C283(AL_RetornaPromedios ;$2)
+C_LONGINT:C283(AL_RetornaPromedios ;$3)
+C_TEXT:C284(AL_RetornaPromedios ;$4)
+C_LONGINT:C283(AL_RetornaPromedios ;$5)
+C_POINTER:C301(AL_RetornaPromedios ;$6)
+C_POINTER:C301(AL_RetornaPromedios ;$7)
+C_POINTER:C301(AL_RetornaPromedios ;$8)
+C_POINTER:C301(AL_RetornaPromedios ;$9)
+C_POINTER:C301(AL_RetornaPromedios ;$10)
+C_POINTER:C301(AL_RetornaPromedios ;$11)
+C_POINTER:C301(AL_RetornaPromedios ;$12)
+C_POINTER:C301(AL_RetornaPromedios ;$13)
+C_POINTER:C301(AL_RetornaPromedios ;$14)
+
+  //SN3_ActuaDatosSendIDActualizado
+C_OBJECT:C1216(SN3_ActuaDatosSendIDActualizado ;$1)
+
+  //OR_exportaDatosOrientacion
+C_BOOLEAN:C305(OR_exportaDatosOrientacion ;$1)
+
+  //ACTpgs_DatosPagosWeb
+C_TEXT:C284(ACTpgs_DatosPagosWeb ;$1)
+C_TEXT:C284(ACTpgs_DatosPagosWeb ;$2)
+C_POINTER:C301(ACTpgs_DatosPagosWeb ;$3)
+C_POINTER:C301(ACTpgs_DatosPagosWeb ;$4)
+
+  //ACTpp_DireccionDeFacturacion
+C_OBJECT:C1216(ACTpp_DireccionDeFacturacion ;$0)
+C_TEXT:C284(ACTpp_DireccionDeFacturacion ;$1)
+
+  //TMT_AsistImport_LBNotFound
+C_OBJECT:C1216(TMT_AsistImport_LBNotFound ;$1)
+
+  //TMT_AsistImport_LNAsigNivel
+C_LONGINT:C283(TMT_AsistImport_LNAsigNivel ;$1)
+
+  //dbu_CountSubjectStudents
+C_LONGINT:C283(dbu_CountSubjectStudents ;$1)
+
+  //PCSrun_AS_AsignaNumerosDeLista
+C_LONGINT:C283(PCSrun_AS_AsignaNumerosDeLista ;$2)
+
+  //CAE_AsignaNumerosLista
+C_LONGINT:C283(CAE_AsignaNumerosLista ;$1)
+
+  //ACTinit_LoadFdPago
+C_REAL:C285(ACTinit_LoadFdPago ;$3)
+
+  //XS_SearchCommandAlias
+C_BOOLEAN:C305(XS_SearchCommandAlias ;$0)
+
+  //_0000_TestsRCH
+C_REAL:C285(_0000_TestsRCH ;$0)
+C_BOOLEAN:C305(_0000_TestsRCH ;$1)
+C_LONGINT:C283(_0000_TestsRCH ;$2)
+
+  //CAE_CreaHistoricoAlumnos
+C_LONGINT:C283(CAE_CreaHistoricoAlumnos ;$1)
+C_LONGINT:C283(CAE_CreaHistoricoAlumnos ;$2)
+
+  //KRL_MakeStringAccesKey
+C_POINTER:C301(KRL_MakeStringAccesKey ;$6)
+
+  //CAE_ArchivaAprendizajes
+C_LONGINT:C283(CAE_ArchivaAprendizajes ;$1)
+C_LONGINT:C283(CAE_ArchivaAprendizajes ;$2)
+
+  //ACTcc_CreaRecDctoMontoItem
+C_POINTER:C301(ACTcc_CreaRecDctoMontoItem ;$4)
+C_TEXT:C284(__ ;${0})
+C_TEXT:C284(__ ;$2)
+C_TEXT:C284(__ ;$3)
+C_TEXT:C284(__ ;$4)
+C_TEXT:C284(__ ;$5)
+C_TEXT:C284(__ ;$6)
+
+  //IOstr_ProcessFamilyRecord
+C_LONGINT:C283(IOstr_ProcessFamilyRecord ;$0)
+
+  //dhBWR_SetRelations
+C_BOOLEAN:C305(dhBWR_SetRelations ;$2)
+
+  //CAE_CreaHistoricoAsignaturas
+C_LONGINT:C283(CAE_CreaHistoricoAsignaturas ;$1)
+C_LONGINT:C283(CAE_CreaHistoricoAsignaturas ;$2)
+
+  //CAE_InicializacionAlumnos
+C_POINTER:C301(CAE_InicializacionAlumnos ;$1)
+
+  //CAE_InicializacionAsignaturas
+C_LONGINT:C283(CAE_InicializacionAsignaturas ;$1)
+
+  //CAE_InicializacionCursos
+C_LONGINT:C283(CAE_InicializacionCursos ;$1)
+
+  //CAE_PromueveAlumnos
+C_LONGINT:C283(CAE_PromueveAlumnos ;$1)
+C_LONGINT:C283(CAE_PromueveAlumnos ;$2)
+
+  //SYS_DeleteFolder
+C_TEXT:C284(SYS_DeleteFolder ;$0)
+C_TEXT:C284(SYS_DeleteFolder ;$1)
+C_LONGINT:C283(SYS_DeleteFolder ;$2)
+
+  //0xDev_BuscaScriptEnInformeSR
+C_TEXT:C284(0xDev_BuscaScriptEnInformeSR ;$0)
+C_BOOLEAN:C305(0xDev_BuscaScriptEnInformeSR ;$3)
+
+  //ACTepr_EnviaMailPR
+C_OBJECT:C1216(ACTepr_EnviaMailPR ;$2)
+
+  //ASrs_SinRegistroAsistencia
+C_BOOLEAN:C305(ASrs_SinRegistroAsistencia ;$3)
+
+  //FTP_Upload
+C_REAL:C285(FTP_Upload ;$11)
+C_BOOLEAN:C305(FTP_Upload ;$12)
+
+  //BKP_CierraRespaldo
+C_LONGINT:C283(BKP_CierraRespaldo ;$1)
+C_TEXT:C284(BKP_CierraRespaldo ;$2)
+
+  //Intranet3_LlamadoWS
+C_POINTER:C301(Intranet3_LlamadoWS ;$4)
+C_POINTER:C301(Intranet3_LlamadoWS ;$5)
+
+  //EVS_GuardaEstiloEvaluacion
+C_BOOLEAN:C305(EVS_GuardaEstiloEvaluacion ;$1)
+
+  //EVS_GuardaTablaConversion
+C_BOOLEAN:C305(EVS_GuardaTablaConversion ;$1)
+
+  //TMT_AsistImport_GpUntis
+C_BOOLEAN:C305(TMT_AsistImport_GpUntis ;$3)
+
+  //BKPs3_SubeRespaldo
+C_TEXT:C284(BKPs3_SubeRespaldo ;$1)
+
+  //STR_ResponsableNiveles
+C_BOOLEAN:C305(STR_ResponsableNiveles ;$0)
+
+  //TMT_AsistImportAddBlock2Obj
+C_POINTER:C301(TMT_AsistImportAddBlock2Obj ;$1)
+C_OBJECT:C1216(TMT_AsistImportAddBlock2Obj ;$2)
+
+  //STWA2_BuildCambioNombreParcial
+C_TEXT:C284(STWA2_BuildCambioNombreParcial ;$0)
+C_TEXT:C284(STWA2_BuildCambioNombreParcial ;$1)
+C_POINTER:C301(STWA2_BuildCambioNombreParcial ;$2)
+C_POINTER:C301(STWA2_BuildCambioNombreParcial ;$3)
+
+  //STWA2_GuardaNombreParciales
+C_BOOLEAN:C305(STWA2_GuardaNombreParciales ;$0)
+C_OBJECT:C1216(STWA2_GuardaNombreParciales ;$1)
+C_OBJECT:C1216(STWA2_GuardaNombreParciales ;$2)
+
+  //AS_creaRegistrosAluEvaEspecial
+C_TEXT:C284(AS_creaRegistrosAluEvaEspecial ;$1)
+
+  //DT_DTS_a_ISOTimestamp
+C_TEXT:C284(DT_DTS_a_ISOTimestamp ;$0)
+C_TEXT:C284(DT_DTS_a_ISOTimestamp ;$1)
+C_DATE:C307(DT_DTS_a_ISOTimestamp ;$2)
+C_TIME:C306(DT_DTS_a_ISOTimestamp ;$3)
+
+  //DT_ISOTimeStamp_a_DTS
+C_TEXT:C284(DT_ISOTimeStamp_a_DTS ;$0)
+C_TEXT:C284(DT_ISOTimeStamp_a_DTS ;$1)
+
+  //DT_isValidTimeStamp
+C_BOOLEAN:C305(DT_isValidTimeStamp ;$0)
+C_TEXT:C284(DT_isValidTimeStamp ;$1)
+
+  //SERwa_Ejecuta
+C_BOOLEAN:C305(SERwa_Ejecuta ;$0)
+C_TEXT:C284(SERwa_Ejecuta ;$1)
+C_TEXT:C284(SERwa_Ejecuta ;$2)
+C_BLOB:C604(SERwa_Ejecuta ;$3)
+C_POINTER:C301(SERwa_Ejecuta ;$4)
+
+  //SERwa_EjecutaScript
+C_TEXT:C284(SERwa_EjecutaScript ;$0)
+C_POINTER:C301(SERwa_EjecutaScript ;$1)
+C_POINTER:C301(SERwa_EjecutaScript ;$2)
+
+  //4D_isServer64bit
+C_BOOLEAN:C305(4D_isServer64bit ;$0)
+
+  //4D_isLocal64bit
+C_BOOLEAN:C305(4D_isLocal64bit ;$0)
+
+  //STWA2_ValidaFechaPeriodo
+C_OBJECT:C1216(STWA2_ValidaFechaPeriodo ;$0)
+C_REAL:C285(STWA2_ValidaFechaPeriodo ;$1)
+C_DATE:C307(STWA2_ValidaFechaPeriodo ;$2)
+C_REAL:C285(STWA2_ValidaFechaPeriodo ;$3)
+
+  //ACTabc_FtpArchivoBancario
+C_REAL:C285(ACTabc_FtpArchivoBancario ;$0)
+C_OBJECT:C1216(ACTabc_FtpArchivoBancario ;$1)
+C_TEXT:C284(ACTabc_FtpArchivoBancario ;$2)
+
+  //ACTabc_NombreArchivoBancario
+C_TEXT:C284(ACTabc_NombreArchivoBancario ;$0)
+C_TEXT:C284(ACTabc_NombreArchivoBancario ;$1)
+
+  //ACTabc_SufijoArchivoBancario
+C_TEXT:C284(ACTabc_SufijoArchivoBancario ;$0)
+C_TEXT:C284(ACTabc_SufijoArchivoBancario ;$1)
+
+  //ACTabc_GetPropiedadArchBanc
+C_TEXT:C284(ACTabc_GetPropiedadArchBanc ;$0)
+C_TEXT:C284(ACTabc_GetPropiedadArchBanc ;$1)
+
+  //ST_StringOccur
+C_LONGINT:C283(ST_StringOccur ;$0)
+C_TEXT:C284(ST_StringOccur ;$1)
+C_TEXT:C284(ST_StringOccur ;$2)
+C_LONGINT:C283(ST_StringOccur ;$3)
+
+  //ST_StringOccur2
+C_LONGINT:C283(ST_StringOccur2 ;$0)
+C_TEXT:C284(ST_StringOccur2 ;$1)
+C_TEXT:C284(ST_StringOccur2 ;$2)
+
+  //XS_ActivarDesactivarPAutorizado
+C_BOOLEAN:C305(XS_ActivarDesactivarPAutorizado ;$0)
+C_TEXT:C284(XS_ActivarDesactivarPAutorizado ;$1)
+C_BOOLEAN:C305(XS_ActivarDesactivarPAutorizado ;$2)
+C_TEXT:C284(XS_ActivarDesactivarPAutorizado ;$3)
+
+  //STWA2_AnotacionResponsiveDAO
+C_OBJECT:C1216(STWA2_AnotacionResponsiveDAO ;$0)
+C_POINTER:C301(STWA2_AnotacionResponsiveDAO ;$1)
+C_POINTER:C301(STWA2_AnotacionResponsiveDAO ;$2)
+
+  //STWA2_MO_BuildCargaAlumnoCond
+C_OBJECT:C1216(STWA2_MO_BuildCargaAlumnoCond ;$1)
+C_POINTER:C301(STWA2_MO_BuildCargaAlumnoCond ;$2)
+
+  //STWA2_CastigosResponsiveDAO
+C_OBJECT:C1216(STWA2_CastigosResponsiveDAO ;$0)
+C_POINTER:C301(STWA2_CastigosResponsiveDAO ;$1)
+C_POINTER:C301(STWA2_CastigosResponsiveDAO ;$2)
+
+  //STWA2_SuspensionesResponsiveDAO
+C_OBJECT:C1216(STWA2_SuspensionesResponsiveDAO ;$0)
+C_POINTER:C301(STWA2_SuspensionesResponsiveDAO ;$1)
+C_POINTER:C301(STWA2_SuspensionesResponsiveDAO ;$2)
+
+  //STWA2_LicenciasResponsiveDAO
+C_OBJECT:C1216(STWA2_LicenciasResponsiveDAO ;$0)
+C_POINTER:C301(STWA2_LicenciasResponsiveDAO ;$1)
+C_POINTER:C301(STWA2_LicenciasResponsiveDAO ;$2)
+
+  //4D_XLIFF_Texts
+C_BOOLEAN:C305(4D_XLIFF_Texts ;$0)
+C_POINTER:C301(4D_XLIFF_Texts ;$1)
+
+  //4D_XLIFF_Menus
+C_BOOLEAN:C305(4D_XLIFF_Menus ;$0)
+
+  //4D_XLIFF_FormTexts
+C_TEXT:C284(4D_XLIFF_FormTexts ;$0)
+C_POINTER:C301(4D_XLIFF_FormTexts ;$1)
+C_TEXT:C284(4D_XLIFF_FormTexts ;$2)
+
+  //4D_XLIFF_Forms
+C_BOOLEAN:C305(4D_XLIFF_Forms ;$0)
+
+  //STWA2_ConsultaServicioCondor
+C_TEXT:C284(STWA2_ConsultaServicioCondor ;$0)
+C_OBJECT:C1216(STWA2_ConsultaServicioCondor ;$1)
+
+  //STWA2_ResponsiveAdjuntos
+C_OBJECT:C1216(STWA2_ResponsiveAdjuntos ;$0)
+C_TEXT:C284(STWA2_ResponsiveAdjuntos ;$1)
+C_POINTER:C301(STWA2_ResponsiveAdjuntos ;$2)
+C_POINTER:C301(STWA2_ResponsiveAdjuntos ;$3)
+C_OBJECT:C1216(STWA2_ResponsiveAdjuntos ;$4)
+
+  //AL_CreaInasistenciaxSuspension
+C_OBJECT:C1216(AL_CreaInasistenciaxSuspension ;$1)
+
+  //Al_CreaInasistenciaxLicencia
+C_OBJECT:C1216(Al_CreaInasistenciaxLicencia ;$1)
+
+  //AS_SinEstiloDeEvaluacion
+C_TEXT:C284(AS_SinEstiloDeEvaluacion ;$1)
+
+  //STWA2_OWC_InformesLCD
+C_TEXT:C284(STWA2_OWC_InformesLCD ;$0)
+C_TEXT:C284(STWA2_OWC_InformesLCD ;$1)
+C_POINTER:C301(STWA2_OWC_InformesLCD ;$2)
+C_POINTER:C301(STWA2_OWC_InformesLCD ;$3)
+
+  //AS_ConfAsignaturaNoVisibleSTWA
+C_TEXT:C284(AS_ConfAsignaturaNoVisibleSTWA ;$1)
+C_POINTER:C301(AS_ConfAsignaturaNoVisibleSTWA ;$2)
+
+  //EV2_Calcula_PTC
+C_BOOLEAN:C305(EV2_Calcula_PTC ;$0)
+
+  //QA_ModificaUUIDTablas
+C_BOOLEAN:C305(QA_ModificaUUIDTablas ;$0)
+
+  //NIV_promoverNiveles
+C_POINTER:C301(NIV_promoverNiveles ;$1)
+
+  //4Dx_SetDebugLogLocal
+C_LONGINT:C283(4Dx_SetDebugLogLocal ;$1)
+
+  //DT_GetStartEndWeekDates
+C_DATE:C307(DT_GetStartEndWeekDates ;$1)
+C_POINTER:C301(DT_GetStartEndWeekDates ;$2)
+C_POINTER:C301(DT_GetStartEndWeekDates ;$3)
+C_LONGINT:C283(DT_GetStartEndWeekDates ;$4)
+
+  //4D_BuscaObjetos
+C_TEXT:C284(4D_BuscaObjetos ;$0)
+C_TEXT:C284(4D_BuscaObjetos ;$1)
+
+  //ST_EjecutaProcesoServidor
+C_REAL:C285(ST_EjecutaProcesoServidor ;$0)
+C_TEXT:C284(ST_EjecutaProcesoServidor ;$1)
+C_TEXT:C284(ST_EjecutaProcesoServidor ;$2)
+
+  //STR_ValidaCreacionRegistro
+C_BOOLEAN:C305(STR_ValidaCreacionRegistro ;$0)
+C_TEXT:C284(STR_ValidaCreacionRegistro ;$1)
+C_POINTER:C301(STR_ValidaCreacionRegistro ;$2)
+C_POINTER:C301(STR_ValidaCreacionRegistro ;$3)
+C_POINTER:C301(STR_ValidaCreacionRegistro ;$4)
+
+  //SC_ObtieneUrlDocsFunciones
+C_OBJECT:C1216(SC_ObtieneUrlDocsFunciones ;$0)
+C_TEXT:C284(SC_ObtieneUrlDocsFunciones ;$1)
+C_TEXT:C284(SC_ObtieneUrlDocsFunciones ;$2)
+
+  //AS_xALP_EntradaCelda
+C_LONGINT:C283(AS_xALP_EntradaCelda ;$1)
+C_LONGINT:C283(AS_xALP_EntradaCelda ;$2)
+C_LONGINT:C283(AS_xALP_EntradaCelda ;$3)
+
+  //STdbu_RestauraRealDeLiteral
+C_POINTER:C301(STdbu_RestauraRealDeLiteral ;$1)
+C_REAL:C285(STdbu_RestauraRealDeLiteral ;$2)
+C_BOOLEAN:C305(STdbu_RestauraRealDeLiteral ;$3)
+
+  //Calendario_CreaEditaEvento
+C_BOOLEAN:C305(Calendario_CreaEditaEvento ;$0)
+C_REAL:C285(Calendario_CreaEditaEvento ;$1)
+C_REAL:C285(Calendario_CreaEditaEvento ;$2)
+C_OBJECT:C1216(Calendario_CreaEditaEvento ;$3)
+C_DATE:C307(Calendario_CreaEditaEvento ;$4)
+C_BOOLEAN:C305(Calendario_CreaEditaEvento ;$5)
+C_BOOLEAN:C305(Calendario_CreaEditaEvento ;$6)
+C_TEXT:C284(Calendario_CreaEditaEvento ;$7)
+C_TEXT:C284(Calendario_CreaEditaEvento ;$8)
+C_TEXT:C284(Calendario_CreaEditaEvento ;$9)
+C_TIME:C306(Calendario_CreaEditaEvento ;$10)
+C_TIME:C306(Calendario_CreaEditaEvento ;$11)
+C_BOOLEAN:C305(Calendario_CreaEditaEvento ;$12)
+C_REAL:C285(Calendario_CreaEditaEvento ;$13)
+
+  //Calendario_ObtieneEventos
+C_TEXT:C284(Calendario_ObtieneEventos ;$0)
+C_REAL:C285(Calendario_ObtieneEventos ;$1)
+C_DATE:C307(Calendario_ObtieneEventos ;$2)
+C_DATE:C307(Calendario_ObtieneEventos ;$3)
+C_REAL:C285(Calendario_ObtieneEventos ;$4)
+C_BOOLEAN:C305(Calendario_ObtieneEventos ;$5)
+
+  //Calendario_EliminaEvento
+C_TEXT:C284(Calendario_EliminaEvento ;$0)
+C_TEXT:C284(Calendario_EliminaEvento ;$1)
+C_REAL:C285(Calendario_EliminaEvento ;$2)
+C_BOOLEAN:C305(Calendario_EliminaEvento ;$3)
+
+  //SERwa_CalendarioCreaEditaEvento
+C_TEXT:C284(SERwa_CalendarioCreaEditaEvento ;$0)
+C_POINTER:C301(SERwa_CalendarioCreaEditaEvento ;$1)
+C_POINTER:C301(SERwa_CalendarioCreaEditaEvento ;$2)
+
+  //SERwa_CalendarioObtieneEventos
+C_TEXT:C284(SERwa_CalendarioObtieneEventos ;$0)
+C_POINTER:C301(SERwa_CalendarioObtieneEventos ;$1)
+C_POINTER:C301(SERwa_CalendarioObtieneEventos ;$2)
+
+  //SERwa_CalendarioEliminaEvento
+C_TEXT:C284(SERwa_CalendarioEliminaEvento ;$0)
+C_POINTER:C301(SERwa_CalendarioEliminaEvento ;$1)
+C_POINTER:C301(SERwa_CalendarioEliminaEvento ;$2)
+
+  //Calendario_ObtieneEvento
+C_OBJECT:C1216(Calendario_ObtieneEvento ;$1)
+C_REAL:C285(Calendario_ObtieneEvento ;$2)
+C_REAL:C285(Calendario_ObtieneEvento ;$3)
+C_REAL:C285(Calendario_ObtieneEvento ;$4)
+C_BOOLEAN:C305(Calendario_ObtieneEvento ;$5)
+
+  //SN3_MakeDateInmune2LocalFormat2
+C_TEXT:C284(SN3_MakeDateInmune2LocalFormat2 ;$0)
+C_DATE:C307(SN3_MakeDateInmune2LocalFormat2 ;$1)
+C_TEXT:C284(SN3_MakeDateInmune2LocalFormat2 ;$2)
+
+  //SERwa_AsignaturasProfesor
+C_TEXT:C284(SERwa_AsignaturasProfesor ;$0)
+C_POINTER:C301(SERwa_AsignaturasProfesor ;$1)
+C_POINTER:C301(SERwa_AsignaturasProfesor ;$2)
+
+  //SERwa_AlumnosEnAsignatura
+C_TEXT:C284(SERwa_AlumnosEnAsignatura ;$0)
+C_POINTER:C301(SERwa_AlumnosEnAsignatura ;$1)
+C_POINTER:C301(SERwa_AlumnosEnAsignatura ;$2)
+
+  //SR_PrintReports
+C_REAL:C285(SR_PrintReports ;$0)
+C_TEXT:C284(SR_PrintReports ;$1)
+C_POINTER:C301(SR_PrintReports ;$2)
+C_POINTER:C301(SR_PrintReports ;$3)
+C_POINTER:C301(SR_PrintReports ;$4)
+
+  //NIV_QuitarResponbleNivel
+C_LONGINT:C283(NIV_QuitarResponbleNivel ;$1)
+
+  //TMT_TopeHorarioAlumno
+C_OBJECT:C1216(TMT_TopeHorarioAlumno ;$0)
+C_LONGINT:C283(TMT_TopeHorarioAlumno ;$1)
+C_LONGINT:C283(TMT_TopeHorarioAlumno ;$2)
+C_POINTER:C301(TMT_TopeHorarioAlumno ;$3)
+
+  //CAE_InitPropEvaluacion
+C_REAL:C285(CAE_InitPropEvaluacion ;$1)
+
+  //ACTwa_ObtieneDeudaApdo
+C_OBJECT:C1216(ACTwa_ObtieneDeudaApdo ;$1)
+C_REAL:C285(ACTwa_ObtieneDeudaApdo ;$2)
+C_DATE:C307(ACTwa_ObtieneDeudaApdo ;$3)
+
+  //ACTwa_ConsultaDeudaUUIDAl2
+C_TEXT:C284(ACTwa_ConsultaDeudaUUIDAl2 ;$0)
+C_TEXT:C284(ACTwa_ConsultaDeudaUUIDAl2 ;$1)
+C_DATE:C307(ACTwa_ConsultaDeudaUUIDAl2 ;$2)
+
+  //QR_PrintInfSuperReport
+C_LONGINT:C283(QR_PrintInfSuperReport ;$1)
+C_TEXT:C284(QR_PrintInfSuperReport ;$2)
+C_TEXT:C284(QR_PrintInfSuperReport ;$3)
+C_BOOLEAN:C305(QR_PrintInfSuperReport ;$4)
+
+  //QR_PrintInf4DWR
+C_LONGINT:C283(QR_PrintInf4DWR ;$1)
+C_TEXT:C284(QR_PrintInf4DWR ;$2)
+C_TEXT:C284(QR_PrintInf4DWR ;$3)
+C_BOOLEAN:C305(QR_PrintInf4DWR ;$4)
+
+  //QR_PrintInfEtiquetas
+C_REAL:C285(QR_PrintInfEtiquetas ;$1)
+C_TEXT:C284(QR_PrintInfEtiquetas ;$2)
+C_TEXT:C284(QR_PrintInfEtiquetas ;$3)
+C_BOOLEAN:C305(QR_PrintInfEtiquetas ;$4)
+
+  //QR_PrintInfColumna
+C_LONGINT:C283(QR_PrintInfColumna ;$1)
+C_TEXT:C284(QR_PrintInfColumna ;$2)
+C_TEXT:C284(QR_PrintInfColumna ;$3)
+C_BOOLEAN:C305(QR_PrintInfColumna ;$4)
+
+  //QR_PrintInfFormulario
+C_LONGINT:C283(QR_PrintInfFormulario ;$1)
+C_TEXT:C284(QR_PrintInfFormulario ;$2)
+C_TEXT:C284(QR_PrintInfFormulario ;$3)
+C_BOOLEAN:C305(QR_PrintInfFormulario ;$4)
+
+  //QR_impresionAgrupadaxRegistros
+C_TEXT:C284(QR_impresionAgrupadaxRegistros ;$1)
+C_POINTER:C301(QR_impresionAgrupadaxRegistros ;$2)
+C_POINTER:C301(QR_impresionAgrupadaxRegistros ;$3)
+C_POINTER:C301(QR_impresionAgrupadaxRegistros ;$4)
+
+  //STWA2_CreaImagenAlumnosEnDisco
+C_TEXT:C284(STWA2_CreaImagenAlumnosEnDisco ;$0)
+C_TEXT:C284(STWA2_CreaImagenAlumnosEnDisco ;$1)
+C_TEXT:C284(STWA2_CreaImagenAlumnosEnDisco ;$2)
+
+  //ACTinf_CalculaMontoTramoxAviso
+C_POINTER:C301(ACTinf_CalculaMontoTramoxAviso ;$1)
+C_POINTER:C301(ACTinf_CalculaMontoTramoxAviso ;$2)
+
+  //STWA2_MO_CargaInfoConducta
+C_OBJECT:C1216(STWA2_MO_CargaInfoConducta ;$0)
+C_TEXT:C284(STWA2_MO_CargaInfoConducta ;$1)
+C_OBJECT:C1216(STWA2_MO_CargaInfoConducta ;$2)
+
+  //SH_GeneraArchivosSahi
+C_OBJECT:C1216(SH_GeneraArchivosSahi ;$0)
+C_TEXT:C284(SH_GeneraArchivosSahi ;$1)
+C_OBJECT:C1216(SH_GeneraArchivosSahi ;$2)
+
+  //AL_TransfiereConfirmaciones
+C_TEXT:C284(AL_TransfiereConfirmaciones ;$0)
+C_POINTER:C301(AL_TransfiereConfirmaciones ;$1)
+C_TEXT:C284(AL_TransfiereConfirmaciones ;$2)
+C_TEXT:C284(AL_TransfiereConfirmaciones ;$3)
+
+  //AL_CambiaStatusConfirmaciones
+C_TEXT:C284(AL_CambiaStatusConfirmaciones ;$0)
+C_LONGINT:C283(AL_CambiaStatusConfirmaciones ;$1)
+C_TEXT:C284(AL_CambiaStatusConfirmaciones ;$2)
+
+  //SERwa_doReorganizacionCursos
+C_TEXT:C284(SERwa_doReorganizacionCursos ;$0)
+C_POINTER:C301(SERwa_doReorganizacionCursos ;$1)
+C_POINTER:C301(SERwa_doReorganizacionCursos ;$2)
+
+  //SERwa_ReorganizacionCursos
+C_TEXT:C284(SERwa_ReorganizacionCursos ;$0)
+C_POINTER:C301(SERwa_ReorganizacionCursos ;$1)
+C_POINTER:C301(SERwa_ReorganizacionCursos ;$2)
+
+  //SERwa_reorganizacionCursosConfs
+C_TEXT:C284(SERwa_reorganizacionCursosConfs ;$0)
+C_POINTER:C301(SERwa_reorganizacionCursosConfs ;$1)
+C_POINTER:C301(SERwa_reorganizacionCursosConfs ;$2)
+
+  //SERwa_doCambioStatus
+C_TEXT:C284(SERwa_doCambioStatus ;$0)
+C_POINTER:C301(SERwa_doCambioStatus ;$1)
+C_POINTER:C301(SERwa_doCambioStatus ;$2)
+
+  //SERwa_cambiostatusConfs
+C_TEXT:C284(SERwa_cambiostatusConfs ;$0)
+C_POINTER:C301(SERwa_cambiostatusConfs ;$1)
+C_POINTER:C301(SERwa_cambiostatusConfs ;$2)
+
+  //SERwa_CambioStatusAL
+C_TEXT:C284(SERwa_CambioStatusAL ;$0)
+C_POINTER:C301(SERwa_CambioStatusAL ;$1)
+C_POINTER:C301(SERwa_CambioStatusAL ;$2)
+
+  //SERwa_alumnosxcurso
+C_TEXT:C284(SERwa_alumnosxcurso ;$0)
+C_POINTER:C301(SERwa_alumnosxcurso ;$1)
+C_POINTER:C301(SERwa_alumnosxcurso ;$2)
+
+  //SYS_ClearFolderContent
+C_BOOLEAN:C305(SYS_ClearFolderContent ;$0)
+C_TEXT:C284(SYS_ClearFolderContent ;$1)
+
+  //BKP_Compress7z_v16
+C_BOOLEAN:C305(BKP_Compress7z_v16 ;$0)
+C_TEXT:C284(BKP_Compress7z_v16 ;$1)
+
+  //BKP_UltimoRespaldoDisponible
+C_TEXT:C284(BKP_UltimoRespaldoDisponible ;$0)
+
+  //z7_Archive
+C_BOOLEAN:C305(z7_Archive ;$0)
+C_TEXT:C284(z7_Archive ;$1)
+C_TEXT:C284(z7_Archive ;$2)
+C_TEXT:C284(z7_Archive ;$3)
+C_POINTER:C301(z7_Archive ;$4)
+
+  //z7_Execute
+C_BOOLEAN:C305(z7_Execute ;$0)
+C_TEXT:C284(z7_Execute ;$1)
+C_POINTER:C301(z7_Execute ;$2)
+C_BLOB:C604(z7_Execute ;$3)
+
+  //z7_Extract
+C_BOOLEAN:C305(z7_Extract ;$0)
+C_TEXT:C284(z7_Extract ;$1)
+C_TEXT:C284(z7_Extract ;$2)
+C_TEXT:C284(z7_Extract ;$3)
+C_POINTER:C301(z7_Extract ;$4)
+
+  //z7_Get_path
+C_TEXT:C284(z7_Get_path ;$0)
+
+  //z7_Get_version
+C_TEXT:C284(z7_Get_version ;$0)

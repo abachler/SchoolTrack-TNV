@@ -1,0 +1,355 @@
+﻿{
+	"rightMargin": 15,
+	"bottomMargin": 0,
+	"markerBody": 398,
+	"markerBreak": 398,
+	"markerFooter": 408,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texto7": {
+					"type": "text",
+					"top": 10,
+					"left": 103,
+					"width": 472,
+					"height": 16,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande Bold",
+					"fontSize": 13,
+					"fontWeight": "bold",
+					"text": "xxSTR_Link_AlumnosMedicos"
+				},
+				"vNumReg": {
+					"type": "input",
+					"top": 10,
+					"left": 591,
+					"width": 100,
+					"height": 15,
+					"dataSource": "vNumReg",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"tooltip": "Número Registro",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vNumReg.4dm",
+					"events": [
+						"onLoad",
+						"onHeader",
+						"onPrintingBreak"
+					]
+				},
+				"Línea8": {
+					"type": "line",
+					"top": 0,
+					"left": 88,
+					"height": 398,
+					"sizingY": "grow"
+				},
+				"bPrimero": {
+					"type": "pictureButton",
+					"top": 10,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bPrimero",
+					"tooltip": "Primer registro",
+					"action": "firstRecord",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bAnterior": {
+					"type": "pictureButton",
+					"top": 65,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bAnterior",
+					"tooltip": "Reg. Anterior",
+					"action": "previousRecord",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bSiguiente": {
+					"type": "pictureButton",
+					"top": 120,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bSiguiente",
+					"tooltip": "Reg. Siguiente",
+					"action": "nextRecord",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bUltimo": {
+					"type": "pictureButton",
+					"top": 175,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bUltimo",
+					"tooltip": "Último registro",
+					"action": "lastRecord",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bSuprimir": {
+					"type": "pictureButton",
+					"top": 230,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bSuprimir",
+					"tooltip": "Suprimir Reg.",
+					"action": "deleteRecord",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancelar": {
+					"type": "pictureButton",
+					"top": 285,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bCancelar",
+					"tooltip": "Cancelar",
+					"action": "cancel",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidar": {
+					"type": "pictureButton",
+					"top": 340,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bValidar",
+					"tooltip": "Aceptar",
+					"action": "accept",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto9": {
+					"type": "text",
+					"top": 45,
+					"left": 115,
+					"width": 129,
+					"height": 16,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "UUID_Alumno : "
+				},
+				"Texto10": {
+					"type": "text",
+					"top": 70,
+					"left": 115,
+					"width": 129,
+					"height": 16,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "UUID_Medico : "
+				},
+				"Texto11": {
+					"type": "text",
+					"top": 95,
+					"left": 115,
+					"width": 129,
+					"height": 16,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Observaciones : "
+				},
+				"Texto12": {
+					"type": "text",
+					"top": 168,
+					"left": 115,
+					"width": 129,
+					"height": 16,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "DTS_modificacion : "
+				},
+				"UUID_Alumno": {
+					"type": "input",
+					"top": 45,
+					"left": 249,
+					"width": 250,
+					"height": 16,
+					"dataSource": "[xxSTR_Link_AlumnosMedicos:237]UUID_Alumno:2",
+					"fill": "#FFFFFF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"UUID_Medico": {
+					"type": "input",
+					"top": 70,
+					"left": 249,
+					"width": 250,
+					"height": 16,
+					"dataSource": "[xxSTR_Link_AlumnosMedicos:237]UUID_Medico:3",
+					"fill": "#FFFFFF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Observaciones": {
+					"type": "input",
+					"top": 95,
+					"left": 249,
+					"width": 234,
+					"height": 64,
+					"dataSource": "[xxSTR_Link_AlumnosMedicos:237]Observaciones:4",
+					"fill": "#FFFFFF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"DTS_modificacion": {
+					"type": "input",
+					"top": 168,
+					"left": 249,
+					"width": 440,
+					"height": 16,
+					"dataSource": "[xxSTR_Link_AlumnosMedicos:237]DTS_modificacion:5",
+					"fill": "#FFFFFF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

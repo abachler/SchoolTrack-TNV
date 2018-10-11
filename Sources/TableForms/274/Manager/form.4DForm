@@ -1,0 +1,665 @@
+﻿{
+	"formSizeAnchor": "Área de grupo2",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Área de grupo": {
+					"type": "groupBox",
+					"top": 13,
+					"left": 13,
+					"width": 188,
+					"height": 632,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Añadir clases desde métodos SRP"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 80,
+					"left": 22,
+					"width": 154,
+					"height": 45,
+					"styleSheet": "XS_FormObjects",
+					"fontStyle": "italic",
+					"text": "Digita el nombre del método de generación de variables SuperReport para crear las clases y objetos para Informes"
+				},
+				"Variable": {
+					"type": "input",
+					"top": 39,
+					"left": 22,
+					"width": 154,
+					"height": 28,
+					"dataSource": "vtCode",
+					"styleSheet": "XS_FormObjects",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"events": [
+						"onGettingFocus",
+						"onDrop",
+						"onDataChange",
+						"onDragOver",
+						"onAfterEdit",
+						"onBeginDragOver"
+					]
+				},
+				"hl_modules": {
+					"type": "dropdown",
+					"top": 172,
+					"left": 73,
+					"width": 106,
+					"height": 18,
+					"dataSource": "hl_modules",
+					"dataSourceTypeHint": "integer",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"bProcessSRPMethod": {
+					"type": "button",
+					"top": 269,
+					"left": 22,
+					"width": 170,
+					"height": 20,
+					"dataSource": "bProcessSRPMethod",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Procesar métodos",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"method": "ObjectMethods/bProcessSRPMethod.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón de opción": {
+					"type": "radio",
+					"top": 152,
+					"left": 26,
+					"width": 140,
+					"height": 15,
+					"dataSource": "r1",
+					"text": "Todos",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón de opción1": {
+					"type": "radio",
+					"top": 173,
+					"left": 26,
+					"width": 47,
+					"height": 15,
+					"dataSource": "r2",
+					"text": "Sólo",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Casilla de selección": {
+					"type": "checkbox",
+					"top": 208,
+					"left": 22,
+					"width": 155,
+					"height": 52,
+					"dataSource": "cb_DeleteClasses",
+					"text": "Eliminar clases homónimas preexistentes para el mismo módulo",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 134,
+					"left": 22,
+					"width": 43,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Módulo:"
+				},
+				"Área de grupo1": {
+					"type": "groupBox",
+					"top": 13,
+					"left": 212,
+					"width": 628,
+					"height": 298,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Clases y variables"
+				},
+				"hl_ReportObjClasses": {
+					"type": "list",
+					"top": 38,
+					"left": 221,
+					"width": 181,
+					"height": 236,
+					"dataSource": "hl_ReportObjClasses",
+					"enterable": false,
+					"hideFocusRing": true,
+					"selectionMode": "multiple",
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"fill": "#EAF0F6",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "solid",
+					"method": "ObjectMethods/hl_ReportObjClasses.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onDataChange",
+						"onSelectionChange"
+					]
+				},
+				"hl_Objects": {
+					"type": "list",
+					"top": 38,
+					"left": 403,
+					"width": 429,
+					"height": 236,
+					"dataSource": "hl_Objects",
+					"enterable": false,
+					"focusable": false,
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"fill": "#EAF0F6",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "solid",
+					"method": "ObjectMethods/hl_Objects.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bAddClass": {
+					"type": "pictureButton",
+					"top": 282,
+					"left": 221,
+					"width": 26,
+					"height": 20,
+					"dataSource": "bAddClass",
+					"columnCount": 1,
+					"rowCount": 3,
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón imagen2": {
+					"type": "pictureButton",
+					"top": 282,
+					"left": 246,
+					"width": 26,
+					"height": 20,
+					"dataSource": "Botón imagen",
+					"columnCount": 1,
+					"rowCount": 3,
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bScripts": {
+					"type": "button",
+					"top": 283,
+					"left": 322,
+					"width": 75,
+					"height": 20,
+					"dataSource": "bScripts",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Scripts...",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"method": "ObjectMethods/bScripts.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea": {
+					"type": "line",
+					"top": 275,
+					"left": 402,
+					"height": 35,
+					"stroke": "#AAAAAA"
+				},
+				"UniqueClassFields6": {
+					"type": "pictureButton",
+					"top": 282,
+					"left": 414,
+					"width": 26,
+					"height": 20,
+					"dataSource": "bAddObject",
+					"columnCount": 1,
+					"rowCount": 3,
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"UniqueClassFields7": {
+					"type": "pictureButton",
+					"top": 282,
+					"left": 439,
+					"width": 26,
+					"height": 20,
+					"dataSource": "bDelObject",
+					"columnCount": 1,
+					"rowCount": 3,
+					"loopBackToFirstFrame": true,
+					"method": "ObjectMethods/UniqueClassFields7.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Área de grupo2": {
+					"type": "groupBox",
+					"top": 316,
+					"left": 212,
+					"width": 628,
+					"height": 335,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Atributos de la clase seleccionada"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 339,
+					"left": 545,
+					"width": 230,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Descripción"
+				},
+				"UniqueClassFields3": {
+					"type": "input",
+					"top": 550,
+					"left": 225,
+					"width": 278,
+					"height": 67,
+					"dataSource": "vt_Restricciones",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/UniqueClassFields3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 532,
+					"left": 225,
+					"width": 198,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Condiciones restrictivas"
+				},
+				"Texto": {
+					"type": "text",
+					"top": 342,
+					"left": 225,
+					"width": 47,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Nombre:"
+				},
+				"UniqueClassFields": {
+					"type": "input",
+					"top": 342,
+					"left": 277,
+					"width": 241,
+					"height": 13,
+					"dataSource": "vt_ClassName",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Botón de opción2": {
+					"type": "radio",
+					"top": 364,
+					"left": 277,
+					"width": 140,
+					"height": 15,
+					"dataSource": "r1_modulo",
+					"text": "Todos",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón de opción2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón de opción3": {
+					"type": "radio",
+					"top": 385,
+					"left": 277,
+					"width": 49,
+					"height": 15,
+					"dataSource": "r2_modulo",
+					"text": "Sólo",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón de opción3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 364,
+					"left": 225,
+					"width": 47,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Módulo:"
+				},
+				"hl_modules1": {
+					"type": "dropdown",
+					"top": 382,
+					"left": 326,
+					"width": 182,
+					"height": 18,
+					"dataSource": "hl_modules1",
+					"dataSourceTypeHint": "integer",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/hl_modules1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 410,
+					"left": 225,
+					"width": 198,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Disponible para informes desde:"
+				},
+				"hl_ExplorerPanes": {
+					"type": "list",
+					"top": 426,
+					"left": 226,
+					"width": 292,
+					"height": 99,
+					"dataSource": "hl_ExplorerPanes",
+					"enterable": false,
+					"focusable": false,
+					"hideFocusRing": true,
+					"selectionMode": "multiple",
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/hl_ExplorerPanes.4dm",
+					"events": [
+						"onSelectionChange"
+					]
+				},
+				"UniqueClassFields1": {
+					"type": "input",
+					"top": 357,
+					"left": 545,
+					"width": 271,
+					"height": 254,
+					"dataSource": "vt_description",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/UniqueClassFields1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 627,
+					"left": 226,
+					"width": 282,
+					"height": 12,
+					"dataSource": "vSintaxCheckResult",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"bSaveNew": {
+					"type": "button",
+					"top": 626,
+					"left": 720,
+					"width": 111,
+					"height": 20,
+					"dataSource": "bSaveNew",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Guardar nueva clase",
+					"style": "roundedBevel",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Área de grupo3": {
+					"type": "groupBox",
+					"top": 316,
+					"left": 212,
+					"width": 628,
+					"height": 329,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Atributos del objeto seleccionado"
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 339,
+					"left": 545,
+					"width": 230,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Script del Objeto"
+				},
+				"Texto9": {
+					"type": "text",
+					"top": 364,
+					"left": 225,
+					"width": 47,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Alias:"
+				},
+				"vt_ObjectAlias": {
+					"type": "input",
+					"top": 364,
+					"left": 277,
+					"width": 241,
+					"height": 13,
+					"dataSource": "vt_ObjectAlias",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"UniqueClassFields5": {
+					"type": "input",
+					"top": 492,
+					"left": 225,
+					"width": 273,
+					"height": 111,
+					"dataSource": "vt_Objectdescription",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/UniqueClassFields5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 470,
+					"left": 225,
+					"width": 87,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Descripción:"
+				},
+				"UniqueClassFields2": {
+					"type": "input",
+					"top": 365,
+					"left": 545,
+					"width": 273,
+					"height": 238,
+					"dataSource": "vt_objectScript",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/UniqueClassFields2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"bSaveNewObject": {
+					"type": "button",
+					"top": 616,
+					"left": 699,
+					"width": 134,
+					"height": 20,
+					"dataSource": "bSaveNewObject",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Guardar nuevo Objeto",
+					"style": "roundedBevel",
+					"method": "ObjectMethods/bSaveNewObject.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto10": {
+					"type": "text",
+					"top": 342,
+					"left": 225,
+					"width": 47,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Variable:"
+				},
+				"vt_ObjectName": {
+					"type": "input",
+					"top": 342,
+					"left": 277,
+					"width": 241,
+					"height": 13,
+					"dataSource": "vt_ObjectName",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto11": {
+					"type": "text",
+					"top": 388,
+					"left": 225,
+					"width": 92,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Tipo:"
+				},
+				"elementoArreglo": {
+					"type": "text",
+					"top": 387,
+					"left": 442,
+					"width": 52,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "elemento:"
+				},
+				"elementoArreglo1": {
+					"type": "input",
+					"top": 388,
+					"left": 496,
+					"width": 22,
+					"height": 13,
+					"dataSource": "viSRop_ArrayIndex",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"hlSRop_VarTypes": {
+					"type": "dropdown",
+					"top": 385,
+					"left": 273,
+					"width": 162,
+					"height": 18,
+					"dataSource": "hlSRop_VarTypes",
+					"dataSourceTypeHint": "integer",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/hlSRop_VarTypes.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

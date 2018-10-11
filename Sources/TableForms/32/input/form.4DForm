@@ -1,0 +1,504 @@
+﻿{
+	"windowTitle": "Ingreso de Mantenciones",
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Campo7",
+	"rightMargin": -13,
+	"bottomMargin": -13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 327,
+					"left": 184,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 270,
+					"left": 0,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Campo1": {
+					"type": "input",
+					"top": 40,
+					"left": 88,
+					"width": 70,
+					"height": 12,
+					"dataSource": "[BU_Buses_Mantencion:32]Numero:1",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo2": {
+					"type": "input",
+					"top": 38,
+					"left": 368,
+					"width": 66,
+					"height": 12,
+					"dataSource": "[BU_Buses_Mantencion:32]Patente_Bus:2",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo3": {
+					"type": "input",
+					"top": 77,
+					"left": 113,
+					"width": 69,
+					"height": 12,
+					"dataSource": "[BU_Buses_Mantencion:32]Fecha:3",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo5": {
+					"type": "input",
+					"top": 77,
+					"left": 304,
+					"width": 121,
+					"height": 12,
+					"dataSource": "[BU_Buses_Mantencion:32]Tipo_Mantencion:5",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "dropdown",
+					"top": 74,
+					"left": 427,
+					"width": 10,
+					"height": 15,
+					"dataSource": "atTipoMant",
+					"focusable": false,
+					"display": false,
+					"styleSheet": "Defaut",
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Campo4": {
+					"type": "input",
+					"top": 98,
+					"left": 113,
+					"width": 324,
+					"height": 12,
+					"dataSource": "[BU_Buses_Mantencion:32]Nombre_Responsable:4",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo6": {
+					"type": "input",
+					"top": 120,
+					"left": 113,
+					"width": 325,
+					"height": 12,
+					"dataSource": "[BU_Buses_Mantencion:32]Entidad_de_cargo:6",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo8": {
+					"type": "input",
+					"top": 143,
+					"left": 113,
+					"width": 162,
+					"height": 12,
+					"dataSource": "[BU_Buses_Mantencion:32]Operaciones_Realizadas:8",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "dropdown",
+					"top": 140,
+					"left": 277,
+					"width": 12,
+					"height": 15,
+					"dataSource": "atOperacion",
+					"focusable": false,
+					"display": false,
+					"styleSheet": "Defaut",
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Campo9": {
+					"type": "input",
+					"top": 143,
+					"left": 368,
+					"width": 69,
+					"height": 12,
+					"dataSource": "[BU_Buses_Mantencion:32]Valor:9",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Campo9.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo7": {
+					"type": "input",
+					"top": 183,
+					"left": 14,
+					"width": 423,
+					"height": 48,
+					"dataSource": "[BU_Buses_Mantencion:32]Observaciones:7",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 40,
+					"left": 14,
+					"width": 71,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Nº Mantención :"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 77,
+					"left": 14,
+					"width": 35,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Fecha:"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 39,
+					"left": 335,
+					"width": 22,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Bus:"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 98,
+					"left": 14,
+					"width": 63,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Responsable:"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 77,
+					"left": 214,
+					"width": 92,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Tipo de Mantención:"
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 120,
+					"left": 14,
+					"width": 82,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Entidad de Cargo:"
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 167,
+					"left": 14,
+					"width": 65,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Observaciones:"
+				},
+				"Variable4": {
+					"type": "pictureButton",
+					"top": 74,
+					"left": 187,
+					"width": 18,
+					"height": 18,
+					"dataSource": "BCalendar1",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Picture1942": {
+					"type": "picture",
+					"top": 75,
+					"left": 427,
+					"width": 10,
+					"height": 14
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 143,
+					"left": 14,
+					"width": 97,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Operación Realizada :"
+				},
+				"Texto9": {
+					"type": "text",
+					"top": 143,
+					"left": 302,
+					"width": 67,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Valor (Costo):"
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 141,
+					"left": 278,
+					"width": 11,
+					"height": 14
+				},
+				"englishCancelButtonBU": {
+					"type": "button",
+					"top": 3,
+					"left": 88,
+					"width": 82,
+					"height": 20,
+					"dataSource": "bBWR_Cancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Botón",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"SpanishSaveRecordBU": {
+					"type": "button",
+					"top": 3,
+					"left": 2,
+					"width": 82,
+					"height": 20,
+					"dataSource": "bBWR_SaveRecord",
+					"action": "accept",
+					"shortcutKey": "s",
+					"shortcutAccel": true,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Botón",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/SpanishSaveRecordBU.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Line5": {
+					"type": "line",
+					"top": 0,
+					"left": 86,
+					"height": 26,
+					"stroke": "#AAAAAA"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 26,
+					"left": 0,
+					"width": 473,
+					"sizingX": "grow",
+					"stroke": "#AAAAAA"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 0,
+					"left": 172,
+					"height": 26,
+					"stroke": "#AAAAAA"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,254 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Fondo",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Fondo": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 619,
+					"height": 495,
+					"sizingX": "grow",
+					"fill": "automatic",
+					"stroke": "transparent"
+				},
+				"Imagen4": {
+					"type": "picture",
+					"top": 461,
+					"left": 0,
+					"width": 619,
+					"height": 34,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"pictureFormat": "scaled"
+				},
+				"Botón invisible1": {
+					"type": "button",
+					"top": 706,
+					"left": 79,
+					"width": 138,
+					"height": 19,
+					"sizingY": "move",
+					"dataSource": "Botón invisible1",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 749,
+					"left": 427,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 692,
+					"left": 243,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"hl_Observaciones": {
+					"type": "list",
+					"top": 0,
+					"left": 0,
+					"width": 619,
+					"height": 462,
+					"dataSource": "hl_Observaciones",
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"method": "ObjectMethods/hl_Observaciones.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"bAddObservacion": {
+					"type": "button",
+					"top": 469,
+					"left": 487,
+					"width": 119,
+					"height": 18,
+					"dataSource": "bAddObservacion",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Añadir Observación",
+					"popupPlacement": "linked",
+					"style": "roundedBevel",
+					"method": "ObjectMethods/bAddObservacion.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail",
+						"onAlternateClick"
+					]
+				},
+				"bCopyObs2Clipboard2": {
+					"type": "button",
+					"top": 469,
+					"left": 170,
+					"width": 49,
+					"height": 18,
+					"dataSource": "bCopyObs2Clipboard",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Copiar",
+					"style": "roundedBevel",
+					"method": "ObjectMethods/bCopyObs2Clipboard2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón 3D1": {
+					"type": "button",
+					"top": 469,
+					"left": 380,
+					"width": 99,
+					"height": 19,
+					"dataSource": "Botón 3D1",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Añadir categoría",
+					"textPlacement": "center",
+					"style": "roundedBevel",
+					"method": "ObjectMethods/Botón 3D1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bGetObsFromClipboard1": {
+					"type": "button",
+					"top": 469,
+					"left": 222,
+					"width": 49,
+					"height": 18,
+					"dataSource": "bGetObsFromClipboard",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Pegar",
+					"style": "roundedBevel",
+					"method": "ObjectMethods/bGetObsFromClipboard1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bCopyObs2Clipboard3": {
+					"type": "button",
+					"top": 469,
+					"left": 277,
+					"width": 69,
+					"height": 18,
+					"dataSource": "bCopyObs2Clipboard",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Borrar Lista",
+					"style": "roundedBevel",
+					"method": "ObjectMethods/bCopyObs2Clipboard3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bUsarEnTodos1": {
+					"type": "button",
+					"top": 469,
+					"left": 7,
+					"width": 152,
+					"height": 18,
+					"dataSource": "bUsarEnTodos",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Utilizar en todos los niveles",
+					"style": "roundedBevel",
+					"method": "ObjectMethods/bUsarEnTodos1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

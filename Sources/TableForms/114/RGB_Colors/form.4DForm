@@ -1,0 +1,252 @@
+﻿{
+	"formSizeAnchor": "Termómetro3",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"vsColorString": {
+					"type": "input",
+					"top": 13,
+					"left": 13,
+					"width": 83,
+					"height": 13,
+					"dataSource": "vsColorString",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "~\"\"",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Color": {
+					"type": "rectangle",
+					"top": 46,
+					"left": 7,
+					"width": 87,
+					"height": 119,
+					"fill": "automatic"
+				},
+				"Termómetro1": {
+					"type": "progress",
+					"top": 74,
+					"left": 110,
+					"width": 14,
+					"height": 90,
+					"dataSource": "viRed",
+					"continuousExecution": false,
+					"min": 0,
+					"max": 255,
+					"graduationStep": 1,
+					"enterable": true,
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Termómetro1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Termómetro2": {
+					"type": "progress",
+					"top": 74,
+					"left": 140,
+					"width": 14,
+					"height": 90,
+					"dataSource": "viGreen",
+					"continuousExecution": false,
+					"min": 0,
+					"max": 255,
+					"graduationStep": 1,
+					"enterable": true,
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Termómetro2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Termómetro3": {
+					"type": "progress",
+					"top": 74,
+					"left": 170,
+					"width": 14,
+					"height": 90,
+					"dataSource": "viBlue",
+					"continuousExecution": false,
+					"min": 0,
+					"max": 255,
+					"graduationStep": 1,
+					"enterable": true,
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Termómetro3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 12,
+					"left": 112,
+					"width": 11,
+					"height": 15,
+					"fill": "#EE0000",
+					"stroke": "#EE0000"
+				},
+				"Rectángulo2": {
+					"type": "rectangle",
+					"top": 12,
+					"left": 142,
+					"width": 11,
+					"height": 15,
+					"fill": "#009900",
+					"stroke": "#009900"
+				},
+				"Rectángulo3": {
+					"type": "rectangle",
+					"top": 12,
+					"left": 172,
+					"width": 11,
+					"height": 15,
+					"fill": "#0000FF",
+					"stroke": "#0000FF"
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 402,
+					"left": 173,
+					"width": 101,
+					"height": 20,
+					"dataSource": "Botón1",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Botón",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 49,
+					"left": 109,
+					"width": 17,
+					"height": 11,
+					"dataSource": "vlRed",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 49,
+					"left": 139,
+					"width": 17,
+					"height": 11,
+					"dataSource": "vlGreen",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 49,
+					"left": 169,
+					"width": 17,
+					"height": 11,
+					"dataSource": "vlBlue",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

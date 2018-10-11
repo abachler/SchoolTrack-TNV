@@ -1,0 +1,647 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Botón1",
+	"rightMargin": -13,
+	"bottomMargin": -13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Texto1": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 218,
+					"height": 22,
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Postulaciones Históricas"
+				},
+				"Área de plug-in1": {
+					"type": "plugin",
+					"top": 88,
+					"left": 13,
+					"width": 656,
+					"height": 67,
+					"dataSource": "xALP_PostHist",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Área de plug-in1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1284": {
+					"type": "pictureButton",
+					"top": 64,
+					"left": 651,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bDeletePH",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable1284.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Zona de Grupo5": {
+					"type": "groupBox",
+					"top": 384,
+					"left": 346,
+					"width": 323,
+					"height": 83,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Examen"
+				},
+				"Zona de Grupo3": {
+					"type": "groupBox",
+					"top": 384,
+					"left": 13,
+					"width": 323,
+					"height": 83,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Entrevista"
+				},
+				"Zona de Grupo2": {
+					"type": "groupBox",
+					"top": 257,
+					"left": 13,
+					"width": 656,
+					"height": 120,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Inscripción"
+				},
+				"Zona de Grupo1": {
+					"type": "groupBox",
+					"top": 167,
+					"left": 13,
+					"width": 656,
+					"height": 83,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Datos Postulante"
+				},
+				"father1": {
+					"type": "input",
+					"top": 210,
+					"left": 72,
+					"width": 273,
+					"height": 11,
+					"dataSource": "vsADT_Padre",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"father2": {
+					"type": "input",
+					"top": 210,
+					"left": 385,
+					"width": 273,
+					"height": 11,
+					"dataSource": "vsADT_Madre",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"father7": {
+					"type": "input",
+					"top": 226,
+					"left": 88,
+					"width": 257,
+					"height": 11,
+					"dataSource": "vsADT_Sit_Final",
+					"fill": "#FFFFFF",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"father9": {
+					"type": "input",
+					"top": 194,
+					"left": 72,
+					"width": 273,
+					"height": 11,
+					"dataSource": "vtADT_Apellidos_y_Nombres",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"father10": {
+					"type": "input",
+					"top": 194,
+					"left": 385,
+					"width": 273,
+					"height": 11,
+					"dataSource": "vsADT_RUT",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "###.###.###-#",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 194,
+					"left": 20,
+					"width": 53,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Postulante"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 210,
+					"left": 19,
+					"width": 53,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Padre"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 210,
+					"left": 351,
+					"width": 53,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Madre"
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 194,
+					"left": 351,
+					"width": 53,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "RUT"
+				},
+				"Texto18": {
+					"type": "text",
+					"top": 226,
+					"left": 19,
+					"width": 93,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Situación Final"
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 483,
+					"left": 589,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCerrar",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cerrar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 483,
+					"left": 13,
+					"width": 120,
+					"height": 20,
+					"dataSource": "bObs",
+					"text": "Observaciones",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 51,
+					"left": 13,
+					"width": 623,
+					"height": 13,
+					"dataSource": "vtADT_Label",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 590,
+					"left": 244,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 533,
+					"left": 60,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"father3": {
+					"type": "input",
+					"top": 299,
+					"left": 109,
+					"width": 241,
+					"height": 11,
+					"dataSource": "vsADT_Inscriptor",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"father4": {
+					"type": "input",
+					"top": 410,
+					"left": 79,
+					"width": 250,
+					"height": 11,
+					"dataSource": "vsADT_Entrevistador",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"father5": {
+					"type": "input",
+					"top": 426,
+					"left": 79,
+					"width": 250,
+					"height": 11,
+					"dataSource": "vsADT_Cal_Entrevista",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"father6": {
+					"type": "input",
+					"top": 410,
+					"left": 414,
+					"width": 203,
+					"height": 11,
+					"dataSource": "vsADT_Examinador",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 283,
+					"left": 323,
+					"width": 27,
+					"height": 11,
+					"dataSource": "vsADT_Cal_Inscripcion",
+					"dataSourceTypeHint": "date",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 9,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field1": {
+					"type": "input",
+					"top": 315,
+					"left": 20,
+					"width": 621,
+					"height": 52,
+					"dataSource": "vtADT_Recomendacion",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"father8": {
+					"type": "input",
+					"top": 283,
+					"left": 109,
+					"width": 153,
+					"height": 11,
+					"dataSource": "vdADT_Fecha_Inscripcion",
+					"dataSourceTypeHint": "date",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 426,
+					"left": 414,
+					"width": 32,
+					"height": 11,
+					"dataSource": "vrADT_Puntaje_Examen",
+					"dataSourceTypeHint": "date",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 9,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 426,
+					"left": 528,
+					"width": 32,
+					"height": 11,
+					"dataSource": "vrADT_Ev_Conductual",
+					"dataSourceTypeHint": "date",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 9,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 283,
+					"left": 20,
+					"width": 138,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Fecha de Inscripción"
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 299,
+					"left": 20,
+					"width": 138,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Inscriptor"
+				},
+				"Texto9": {
+					"type": "text",
+					"top": 283,
+					"left": 271,
+					"width": 48,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Calificación"
+				},
+				"Texto12": {
+					"type": "text",
+					"top": 410,
+					"left": 20,
+					"width": 138,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Entrevistador"
+				},
+				"Texto13": {
+					"type": "text",
+					"top": 426,
+					"left": 20,
+					"width": 48,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Calificación"
+				},
+				"Texto15": {
+					"type": "text",
+					"top": 410,
+					"left": 355,
+					"width": 138,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Entrevistador"
+				},
+				"Texto16": {
+					"type": "text",
+					"top": 426,
+					"left": 355,
+					"width": 48,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Puntaje"
+				},
+				"Texto17": {
+					"type": "text",
+					"top": 426,
+					"left": 460,
+					"width": 68,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Ev. Conductual"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Field58": {
+					"type": "input",
+					"top": 279,
+					"left": 20,
+					"width": 621,
+					"height": 82,
+					"dataSource": "vtADT_Obs_Inscripcion",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 406,
+					"left": 20,
+					"width": 285,
+					"height": 52,
+					"dataSource": "vtADT_Obs_Entrevista",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 406,
+					"left": 356,
+					"width": 285,
+					"height": 52,
+					"dataSource": "vtADT_Obs_Examen",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

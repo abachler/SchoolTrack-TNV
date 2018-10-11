@@ -1,0 +1,396 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Área de grupo8",
+	"rightMargin": 10,
+	"bottomMargin": 40,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Área de grupo8": {
+					"type": "groupBox",
+					"top": 100,
+					"left": 10,
+					"width": 510,
+					"height": 323,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Texto del cuerpo del correo"
+				},
+				"bGuardar1": {
+					"type": "button",
+					"top": 433,
+					"left": 440,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bGuardar",
+					"action": "accept",
+					"text": "Guardar",
+					"styleSheet": "XS_DialogObjects",
+					"defaultButton": true,
+					"method": "ObjectMethods/bGuardar1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bCancelar1": {
+					"type": "button",
+					"top": 433,
+					"left": 347,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCancelar",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Área de grupo9": {
+					"type": "groupBox",
+					"top": 120,
+					"left": 274,
+					"width": 230,
+					"height": 163,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Variables disponibles"
+				},
+				"Área de grupo10": {
+					"type": "groupBox",
+					"top": 287,
+					"left": 25,
+					"width": 479,
+					"height": 127,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Vista previa con datos de ejemplo"
+				},
+				"Área de grupo11": {
+					"type": "groupBox",
+					"top": 478,
+					"left": 14,
+					"width": 219,
+					"height": 83,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Variables disponibles"
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 493,
+					"left": 18,
+					"width": 181,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "&NA\t: Nombre apoderado"
+				},
+				"Texto9": {
+					"type": "text",
+					"top": 503,
+					"left": 18,
+					"width": 181,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "&CR\t: Salto de línea"
+				},
+				"Texto10": {
+					"type": "text",
+					"top": 513,
+					"left": 18,
+					"width": 181,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "&ID\t: ID Aviso"
+				},
+				"Texto11": {
+					"type": "text",
+					"top": 523,
+					"left": 18,
+					"width": 181,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "&M\t: Mes del aviso de cobranza"
+				},
+				"Texto12": {
+					"type": "text",
+					"top": 533,
+					"left": 18,
+					"width": 181,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "&A\t: Año del aviso de cobranza"
+				},
+				"Texto13": {
+					"type": "text",
+					"top": 543,
+					"left": 18,
+					"width": 181,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "&NC\t: Nombre del colegio"
+				},
+				"Área de grupo5": {
+					"type": "groupBox",
+					"top": 6,
+					"left": 10,
+					"width": 230,
+					"height": 43,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Asunto:"
+				},
+				"Área de grupo6": {
+					"type": "groupBox",
+					"top": 6,
+					"left": 260,
+					"width": 260,
+					"height": 43,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Nombre de:"
+				},
+				"Área de grupo7": {
+					"type": "groupBox",
+					"top": 53,
+					"left": 260,
+					"width": 260,
+					"height": 43,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Responder a:"
+				},
+				"Área de grupo1": {
+					"type": "groupBox",
+					"top": 53,
+					"left": 10,
+					"width": 230,
+					"height": 43,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "* Enviar copia oculta a:"
+				},
+				"Texto": {
+					"type": "text",
+					"top": 425,
+					"left": 25,
+					"width": 303,
+					"height": 35,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "* Se enviará una copia de correo por cada e-mail despachado (podríán ser cientos de correos por cada proceso). Se recomienda configurar una cuenta dedicada solo a recibir este tipo de correos."
+				}
+			}
+		},
+		{
+			"objects": {
+				"vt_CuerpoMail": {
+					"type": "input",
+					"top": 136,
+					"left": 25,
+					"width": 200,
+					"height": 117,
+					"dataSource": "vt_CuerpoMail",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"method": "ObjectMethods/vt_CuerpoMail.4dm",
+					"events": [
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"vt_CuerpoMail2": {
+					"type": "input",
+					"top": 305,
+					"left": 35,
+					"width": 439,
+					"height": 99,
+					"dataSource": "vt_CuerpoMail2",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 9,
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"lbVarsDisp": {
+					"type": "listbox",
+					"top": 136,
+					"left": 289,
+					"width": 200,
+					"height": 137,
+					"dataSource": "lbVarsDisp",
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 9,
+					"columns": [
+						{
+							"name": "Columna1",
+							"dataSource": "Columna1",
+							"width": 185,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título1",
+								"text": "Título1",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						}
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 120,
+					"left": 18,
+					"width": 121,
+					"height": 11,
+					"stroke": "#000099",
+					"styleSheet": "XS_FormObjects",
+					"textDecoration": "underline",
+					"text": "Cargar configuración original"
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 120,
+					"left": 18,
+					"width": 121,
+					"height": 12,
+					"dataSource": "Botón1",
+					"display": false,
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vtACTmail_AsuntoMail": {
+					"type": "input",
+					"top": 24,
+					"left": 25,
+					"width": 200,
+					"height": 14,
+					"dataSource": "vtACTmail_AsuntoMail",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"vtACTmail_NombreDe": {
+					"type": "input",
+					"top": 24,
+					"left": 274,
+					"width": 233,
+					"height": 14,
+					"dataSource": "vtACTmail_NombreDe",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vtACTmail_ResponderA1": {
+					"type": "input",
+					"top": 71,
+					"left": 274,
+					"width": 233,
+					"height": 14,
+					"dataSource": "vtACTmail_ResponderA",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"method": "ObjectMethods/vtACTmail_ResponderA1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vtACTmail_CCO": {
+					"type": "input",
+					"top": 71,
+					"left": 25,
+					"width": 200,
+					"height": 14,
+					"dataSource": "vtACTmail_CCO",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"method": "ObjectMethods/vtACTmail_CCO.4dm",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

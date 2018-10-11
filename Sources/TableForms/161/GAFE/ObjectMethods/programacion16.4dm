@@ -1,0 +1,3 @@
+SN3_LoginTypeSelGAFE:=SN3_LoginTypeGAFE
+SN3_SaveGAFESettings 
+CANCEL:C270

@@ -1,0 +1,1857 @@
+﻿{
+	"inheritedForm": "XS_MASTER_WZDDialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 626,
+	"height": 407,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Texto4": {
+					"type": "text",
+					"top": 4,
+					"left": 161,
+					"width": 372,
+					"height": 44,
+					"stroke": "#FFFFFF",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Asistente para la Emisión de Avisos de Cobranza"
+				},
+				"Variable255": {
+					"type": "input",
+					"top": 378,
+					"left": 574,
+					"width": 17,
+					"height": 11,
+					"sizingX": "move",
+					"dataSource": "vi_Step",
+					"fill": "transparent",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 553,
+					"width": 20,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "bPrev",
+					"shortcutKey": "[left arrow]",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 592,
+					"width": 20,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "bNext",
+					"shortcutKey": "[right arrow]",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 479,
+					"left": 28,
+					"width": 20,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "Nueva Variable501",
+					"shortcutKey": "+",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 478,
+					"left": 94,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable11": {
+					"type": "button",
+					"top": 479,
+					"left": 246,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bTrap",
+					"shortcutKey": "[Enter]",
+					"text": "Cancelar",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 474,
+					"left": 439,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 417,
+					"left": 255,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto5": {
+					"type": "text",
+					"top": 86,
+					"left": 170,
+					"width": 398,
+					"height": 273,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Este asistente le guiará en el proceso de emisión de los avisos de cobranza.\r\rLos avisos de cobranzas son documentos que son enviados a los apoderados informándoles de la deuda que mantienen con el establecimiento a una fecha determinada. En ellos se incluyen todos los cargos que se hayan efectuado sobre sus cuentas que tienen un saldo distinto de cero.\r\rDurante el proceso de emisión los cargos en monedas distintas a la moneda principal serán actualizados utilizando las tasas de conversión vigentes a la fecha de emisión.\r\rLos cargos emitidos previamente que no hayan sido cancelados íntegramente no serán recalculados.\r\r"
+				}
+			}
+		},
+		{
+			"objects": {
+				"b1": {
+					"type": "radio",
+					"top": 99,
+					"left": 223,
+					"width": 352,
+					"height": 18,
+					"dataSource": "b1",
+					"text": "Emitir e imprimir los avisos de cobranza",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "checkbox",
+					"top": 156,
+					"left": 247,
+					"width": 240,
+					"height": 14,
+					"dataSource": "bHidePrintSettings",
+					"text": "Ocultar ajustes de impresión antes de imprimir",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "radio",
+					"top": 184,
+					"left": 223,
+					"width": 352,
+					"height": 18,
+					"dataSource": "b2",
+					"text": "Emitir los avisos de cobranza sin imprimirlos",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "radio",
+					"top": 435,
+					"left": 223,
+					"width": 352,
+					"height": 18,
+					"dataSource": "b3",
+					"text": "Imprimir avisos de cobranza previamente emitidos",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "radio",
+					"top": 514,
+					"left": 410,
+					"width": 176,
+					"height": 18,
+					"dataSource": "mAvisoApoderado",
+					"text": "Emitir por apoderado",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable9": {
+					"type": "radio",
+					"top": 514,
+					"left": 590,
+					"width": 176,
+					"height": 18,
+					"dataSource": "mAvisoAlumno",
+					"text": "Emitir por cuenta corriente",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 118,
+					"left": 247,
+					"width": 314,
+					"height": 33,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Emite los avisos de cobranza, actualizando los montos si los cargos están especificados en una moneda distinta de la moneda principal.\rUna vez terminado el proceso de emisión imprime los avisos."
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 201,
+					"left": 247,
+					"width": 295,
+					"height": 44,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Emite los avisos de cobranza, actualizando los montos si los cargos están especificados en una moneda distinta de la moneda principal.\rNo imprime los avisos."
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 452,
+					"left": 247,
+					"width": 292,
+					"height": 55,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Imprime avisos de cobranza previamente emitidos, sin efectuar ningún recálculo y sin emitir ningún aviso.\rEsta acción aparece preseleccionada por defecto si la emisión de avisos de cobranza ha sido configurada para efectuarse de manera automática."
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 79,
+					"left": 9,
+					"width": 143,
+					"height": 242,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Indique si desea emitir o emitir e imprimir los avisos de cobranza.\r\rSi desea emitir e imprimir los avisos, deberá, en las páginas siguientes, determinar primero el périodo de emisión y luego el modelo de impresión.\r\rSi desea emitir sin imprimir deberá, en la página siguiente, determinar el período de emisión."
+				},
+				"Texto9": {
+					"type": "text",
+					"top": 442,
+					"left": 29,
+					"width": 227,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Tipo de accion"
+				},
+				"Texto10": {
+					"type": "text",
+					"top": 52,
+					"left": 163,
+					"width": 278,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Modalidad de emisión / impresión"
+				},
+				"Texto14": {
+					"type": "text",
+					"top": 531,
+					"left": 434,
+					"width": 295,
+					"height": 44,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Esta opción se ajusta en la configuración general de AccountTrack, pero puede modificarla aquí para esta emisión en particular."
+				}
+			}
+		},
+		{
+			"objects": {
+				"generacion0": {
+					"type": "groupBox",
+					"top": 208,
+					"left": 189,
+					"width": 418,
+					"height": 150,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Emitir en moneda fija"
+				},
+				"Variable14": {
+					"type": "input",
+					"top": 117,
+					"left": 235,
+					"width": 96,
+					"height": 11,
+					"dataSource": "vs1",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable12": {
+					"type": "input",
+					"top": 117,
+					"left": 356,
+					"width": 64,
+					"height": 11,
+					"dataSource": "vdACT_AñoAviso",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/Variable12.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"emision14": {
+					"type": "checkbox",
+					"top": 115,
+					"left": 436,
+					"width": 164,
+					"height": 15,
+					"dataSource": "cb_NoPrepagarAuto",
+					"text": "No prepagar automáticamente",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/emision14.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable13": {
+					"type": "input",
+					"top": 138,
+					"left": 234,
+					"width": 96,
+					"height": 11,
+					"dataSource": "vs2",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable17": {
+					"type": "input",
+					"top": 138,
+					"left": 356,
+					"width": 64,
+					"height": 11,
+					"dataSource": "vdACT_AñoAviso2",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/Variable17.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"emision5": {
+					"type": "input",
+					"top": 159,
+					"left": 280,
+					"width": 15,
+					"height": 11,
+					"dataSource": "vdACT_DiaAviso",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/emision5.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"emision10": {
+					"type": "checkbox",
+					"top": 157,
+					"left": 361,
+					"width": 164,
+					"height": 16,
+					"dataSource": "cbIncluirSaldosAnteriores",
+					"text": "Incluyendo saldos anteriores",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"emision2": {
+					"type": "input",
+					"top": 176,
+					"left": 280,
+					"width": 15,
+					"height": 11,
+					"dataSource": "vdACT_DiaVctoAviso",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/emision2.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"emision13": {
+					"type": "checkbox",
+					"top": 175,
+					"left": 361,
+					"width": 224,
+					"height": 16,
+					"dataSource": "cbVctoSegunConf",
+					"text": "Utilizar configuración",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/emision13.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"NoConf0": {
+					"type": "checkbox",
+					"top": 192,
+					"left": 373,
+					"width": 124,
+					"height": 16,
+					"dataSource": "cbUltimoDiaMes",
+					"text": "Último día de cada mes",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/NoConf0.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"NoConf1": {
+					"type": "input",
+					"top": 196,
+					"left": 500,
+					"width": 15,
+					"height": 11,
+					"dataSource": "l_diasEmision",
+					"dataSourceTypeHint": "number",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/NoConf1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"generacion1": {
+					"type": "checkbox",
+					"top": 222,
+					"left": 200,
+					"width": 284,
+					"height": 15,
+					"dataSource": "cbMontosEnMonedaPago",
+					"text": "Emitir en montos fijos utilizando tablas de paridad",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/generacion1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"generacion2": {
+					"type": "listbox",
+					"top": 247,
+					"left": 198,
+					"width": 306,
+					"height": 99,
+					"dataSource": "lb_monedas",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"staticColumnCount": 5,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 9,
+					"method": "ObjectMethods/generacion2.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "colsMontoFijo0",
+							"dataSource": "atACT_NombreMonedaEm",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 100,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "titMonedas",
+								"text": "Moneda",
+								"dataSource": "Titulo1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "colsMontoFijo1",
+							"dataSource": "abACT_MontosFijosEm",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 40,
+							"controlType": "checkbox",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "titFijar",
+								"text": "Fijar",
+								"dataSource": "Título2",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "colsMontoFijo2",
+							"dataSource": "adACT_fechasEm",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 60,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "titFecha",
+								"text": "Fecha",
+								"dataSource": "Título3",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "colsMontoFijo3",
+							"dataSource": "arACT_ValorMonedaEm",
+							"width": 90,
+							"minWidth": 10,
+							"maxWidth": 90,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "titValores",
+								"text": "Valor",
+								"dataSource": "Título4",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "colID",
+							"dataSource": "alACT_IdRegistro",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título5",
+								"text": "Título5",
+								"dataSource": "Título5",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						}
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 414,
+					"left": 203,
+					"width": 72,
+					"height": 20,
+					"dataSource": "Botón1",
+					"shortcutKey": "[up arrow]",
+					"text": "UpScroll",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 416,
+					"left": 282,
+					"width": 72,
+					"height": 20,
+					"dataSource": "Botón1",
+					"shortcutKey": "[down arrow]",
+					"text": "DownScroll",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"method": "ObjectMethods/Botón2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"emision": {
+					"type": "text",
+					"top": 79,
+					"left": 9,
+					"width": 143,
+					"height": 242,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Indique el período para el cual desea emitir los avisos de cobranza.\r\rEn la página siguiente deberá especificar para cuales cuentas desea emitir y/o imprimir los avisos de cobranza."
+				},
+				"emision(1)1": {
+					"type": "text",
+					"top": 97,
+					"left": 183,
+					"width": 244,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Período de emisión de los avisos de cobranza"
+				},
+				"emision1": {
+					"type": "text",
+					"top": 52,
+					"left": 163,
+					"width": 278,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Período para la emisión"
+				},
+				"texto": {
+					"type": "text",
+					"top": 79,
+					"left": 152,
+					"width": 473,
+					"height": 13,
+					"stroke": "#EE0000",
+					"textAlign": "center",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Sólo se emitirán los cargos generados en aquellos meses no bloqueados."
+				},
+				"uf5": {
+					"type": "text",
+					"top": 210,
+					"left": 9,
+					"width": 151,
+					"height": 72,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Si lo desea, para los cargos definidos en monedas variables, puede utilizar un valor distinto al del día de hoy. Para ello, haga clic sobre la columna fecha, para la moneda correspondiente y seleccione el día deseado."
+				},
+				"uf9": {
+					"type": "text",
+					"top": 301,
+					"left": 12,
+					"width": 158,
+					"height": 55,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"text": "IMPORTANTE: Los cargos proyectados que no pertenezcan a la matriz no serán recalculados y serán emitidos de acuerdo a cómo hayan sido proyectados."
+				},
+				"uf1": {
+					"type": "text",
+					"top": 311,
+					"left": 509,
+					"width": 82,
+					"height": 33,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontStyle": "italic",
+					"text": "Valores para cargos definidos en moneda variable"
+				},
+				"generacion3": {
+					"type": "text",
+					"top": 222,
+					"left": 509,
+					"width": 98,
+					"height": 84,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontStyle": "italic",
+					"text": "Al marcar la opción \"Emitir en montos fijos utilizando tablas de paridad\", los montos se emiten según la siguiente tabla"
+				},
+				"Imagen1": {
+					"type": "picture",
+					"top": 136,
+					"left": 332,
+					"width": 19,
+					"height": 16
+				},
+				"Imagen3": {
+					"type": "picture",
+					"top": 115,
+					"left": 332,
+					"width": 19,
+					"height": 16
+				},
+				"Botón invisible3": {
+					"type": "button",
+					"top": 116,
+					"left": 233,
+					"width": 116,
+					"height": 14,
+					"dataSource": "bMeses1",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón invisible4": {
+					"type": "button",
+					"top": 137,
+					"left": 233,
+					"width": 117,
+					"height": 14,
+					"dataSource": "bMeses2",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto15": {
+					"type": "text",
+					"top": 117,
+					"left": 189,
+					"width": 69,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Desde:"
+				},
+				"Texto16": {
+					"type": "text",
+					"top": 138,
+					"left": 189,
+					"width": 32,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Hasta:"
+				},
+				"emision4": {
+					"type": "text",
+					"top": 159,
+					"left": 189,
+					"width": 70,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Emitir el día: "
+				},
+				"emision6": {
+					"type": "text",
+					"top": 159,
+					"left": 302,
+					"width": 57,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "de cada mes "
+				},
+				"emision7": {
+					"type": "text",
+					"top": 176,
+					"left": 189,
+					"width": 90,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Primer vencimiento: "
+				},
+				"emision0": {
+					"type": "text",
+					"top": 196,
+					"left": 522,
+					"width": 89,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Día(s) post emisión"
+				},
+				"emision8": {
+					"type": "text",
+					"top": 176,
+					"left": 302,
+					"width": 57,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "de cada mes "
+				}
+			}
+		},
+		{
+			"objects": {
+				"xALP_SelModeloAviso": {
+					"type": "plugin",
+					"top": 125,
+					"left": 183,
+					"width": 433,
+					"height": 229,
+					"sizingY": "grow",
+					"dataSource": "xALP_SelModeloAviso",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/xALP_SelModeloAviso.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ambos1": {
+					"type": "listbox",
+					"top": 524,
+					"left": 72,
+					"width": 119,
+					"height": 84,
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "transparent",
+					"fontFamily": "Tahoma",
+					"fontSize": 9,
+					"borderStyle": "sunken",
+					"method": "ObjectMethods/ambos1.4dm",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "ambos1_Column1",
+							"dataSource": "atACT_ModelosAviso",
+							"width": 104,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado1",
+								"text": "Encabezado1",
+								"dataSource": "Encabezado1",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						}
+					]
+				},
+				"ambos": {
+					"type": "text",
+					"top": 455,
+					"left": 95,
+					"width": 102,
+					"height": 22,
+					"styleSheet": "XS_FormObjects",
+					"text": "Utilizar modelo: "
+				},
+				"modelolabel": {
+					"type": "text",
+					"top": 101,
+					"left": 183,
+					"width": 209,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Modelo para impresión"
+				},
+				"impresion1": {
+					"type": "text",
+					"top": 52,
+					"left": 163,
+					"width": 278,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Período y modelo para la impresión"
+				},
+				"Texto180": {
+					"type": "text",
+					"top": 79,
+					"left": 9,
+					"width": 143,
+					"height": 110,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Indique el modelo que desea utiliza para imprimir los avisos.\r\rEn la página siguiente deberá especificar para cuales cuentas desea emitir y/o imprimir los avisos de cobranza"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto12": {
+					"type": "text",
+					"top": 442,
+					"left": 29,
+					"width": 227,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": ".Lucida Grande UI",
+					"fontSize": 12,
+					"text": "universo"
+				},
+				"manual": {
+					"type": "radio",
+					"top": 116,
+					"left": 209,
+					"width": 290,
+					"height": 17,
+					"dataSource": "f1",
+					"text": "Sólo para los alumnos seleccionados en la lista",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/manual.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable23": {
+					"type": "input",
+					"top": 116,
+					"left": 505,
+					"width": 117,
+					"height": 11,
+					"dataSource": "viACT_cuentas1",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"stroke": "#AAAAAA",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "(# ###0 cuentas)",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"manual(1)": {
+					"type": "radio",
+					"top": 174,
+					"left": 209,
+					"width": 231,
+					"height": 17,
+					"dataSource": "f2",
+					"text": "Para todos los alumnos de la lista",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/manual(1).4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable24": {
+					"type": "input",
+					"top": 174,
+					"left": 505,
+					"width": 117,
+					"height": 11,
+					"dataSource": "viACT_cuentas2",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"stroke": "#AAAAAA",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "(# ###0 cuentas)",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"manual(2)": {
+					"type": "radio",
+					"top": 234,
+					"left": 211,
+					"width": 211,
+					"height": 17,
+					"dataSource": "f3",
+					"text": "Para todos los alumnos activos",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/manual(2).4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable25": {
+					"type": "input",
+					"top": 234,
+					"left": 505,
+					"width": 117,
+					"height": 11,
+					"dataSource": "viACT_cuentas3",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"stroke": "#AAAAAA",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "(# ###0 cuentas)",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Alumnos1": {
+					"type": "text",
+					"top": 133,
+					"left": 219,
+					"width": 375,
+					"height": 33,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "La emisión o impresión se hará solo para los alumnos que hayan sido explicitamente seleccionados entre las cuentas listadas en el Explorador de AccountTrack."
+				},
+				"Alumnos2": {
+					"type": "text",
+					"top": 191,
+					"left": 220,
+					"width": 375,
+					"height": 22,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "La emisión será efectiva para todas las cuentas  listadas en el Explorador de AccountTrack"
+				},
+				"Texto27": {
+					"type": "text",
+					"top": 251,
+					"left": 221,
+					"width": 320,
+					"height": 22,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "La emisión será efectiva para todas las cuentas activas"
+				},
+				"Alumnos3": {
+					"type": "text",
+					"top": 79,
+					"left": 9,
+					"width": 143,
+					"height": 242,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Especifique para cuales cuentas desea emitir y/o imprimir los avisos de cobranza\r\rEn la página siguiente deberá confirmar la emisión de los avisos de cobranza. Antes de la emisión podrá verificar las tasas vigentes a la fecha de emisión del aviso.\r"
+				},
+				"Alumnos4": {
+					"type": "text",
+					"top": 52,
+					"left": 163,
+					"width": 278,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Selección de las cuentas"
+				},
+				"Apdos3": {
+					"type": "text",
+					"top": 79,
+					"left": 9,
+					"width": 143,
+					"height": 242,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Especifique para que apoderados desea emitir y/o imprimir los avisos de cobranza\r\rEn la página siguiente deberá confirmar la emisión de los avisos de cobranza. Antes de la emisión podrá verificar las tasas vigentes a la fecha de emisión del aviso.\r"
+				},
+				"Apdos1": {
+					"type": "text",
+					"top": 133,
+					"left": 219,
+					"width": 375,
+					"height": 33,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "La emisión o impresión se hará solo para los apoderados que hayan sido explicitamente seleccionados entre los apoderados listados en el Explorador de AccountTrack."
+				},
+				"Apdos2": {
+					"type": "text",
+					"top": 191,
+					"left": 220,
+					"width": 375,
+					"height": 22,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "La emisión será efectiva para todos los apoderados  listados en el Explorador de AccountTrack"
+				},
+				"Apdos4": {
+					"type": "text",
+					"top": 52,
+					"left": 163,
+					"width": 278,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Selección de los apoderados"
+				}
+			}
+		},
+		{
+			"objects": {
+				"server12": {
+					"type": "picture",
+					"top": 282,
+					"left": 536,
+					"width": 16,
+					"height": 16,
+					"pictureFormat": "scaled"
+				},
+				"server16": {
+					"type": "picture",
+					"top": 289,
+					"left": 536,
+					"width": 16,
+					"height": 16,
+					"pictureFormat": "scaled"
+				},
+				"server15": {
+					"type": "picture",
+					"top": 282,
+					"left": 484,
+					"width": 16,
+					"height": 16,
+					"pictureFormat": "scaled"
+				},
+				"server13": {
+					"type": "picture",
+					"top": 289,
+					"left": 484,
+					"width": 16,
+					"height": 16,
+					"pictureFormat": "scaled"
+				},
+				"server11": {
+					"type": "button",
+					"top": 294,
+					"left": 536,
+					"width": 11,
+					"height": 8,
+					"dataSource": "bDownMinutes",
+					"display": false,
+					"method": "ObjectMethods/server11.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"server10": {
+					"type": "button",
+					"top": 285,
+					"left": 536,
+					"width": 11,
+					"height": 8,
+					"dataSource": "bUpMinutes",
+					"display": false,
+					"method": "ObjectMethods/server10.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"server9": {
+					"type": "button",
+					"top": 294,
+					"left": 484,
+					"width": 11,
+					"height": 8,
+					"dataSource": "bDownHrs",
+					"display": false,
+					"method": "ObjectMethods/server9.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"server8": {
+					"type": "button",
+					"top": 285,
+					"left": 484,
+					"width": 11,
+					"height": 8,
+					"dataSource": "bUpHrs",
+					"display": false,
+					"method": "ObjectMethods/server8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable68": {
+					"type": "input",
+					"top": 86,
+					"left": 183,
+					"width": 424,
+					"height": 156,
+					"dataSource": "vtACT_ResumenAsistente",
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"b_soloProyectados": {
+					"type": "checkbox",
+					"top": 243,
+					"left": 183,
+					"width": 400,
+					"height": 14,
+					"dataSource": "b_soloProyectados",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"server": {
+					"type": "checkbox",
+					"top": 266,
+					"left": 183,
+					"width": 200,
+					"height": 14,
+					"dataSource": "bc_ExecuteOnServer",
+					"text": "Ejecutar proceso de emisión en el servidor",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/server.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"server1": {
+					"type": "checkbox",
+					"top": 266,
+					"left": 407,
+					"width": 200,
+					"height": 14,
+					"dataSource": "bc_SetProgTask",
+					"text": "Programar emisión",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/server1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"server3": {
+					"type": "input",
+					"top": 288,
+					"left": 455,
+					"width": 26,
+					"height": 9,
+					"dataSource": "vHrs",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/server3.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"server4": {
+					"type": "input",
+					"top": 288,
+					"left": 507,
+					"width": 26,
+					"height": 9,
+					"dataSource": "vMinutes",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&900",
+					"method": "ObjectMethods/server4.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"server5": {
+					"type": "input",
+					"top": 308,
+					"left": 455,
+					"width": 57,
+					"height": 9,
+					"dataSource": "vt_Fecha",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9##/##/####",
+					"method": "ObjectMethods/server5.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable67": {
+					"type": "button",
+					"top": 374,
+					"left": 421,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Nueva Variable5472",
+					"shortcutKey": "[left arrow]",
+					"text": "Volver",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable67.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable65": {
+					"type": "button",
+					"top": 374,
+					"left": 505,
+					"width": 114,
+					"height": 20,
+					"dataSource": "bEmitir",
+					"text": "Emitir avisos",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable65.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 443,
+					"left": 71,
+					"width": 227,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": ".Lucida Grande UI",
+					"fontSize": 12,
+					"text": "confirmación"
+				},
+				"b2l": {
+					"type": "text",
+					"top": 79,
+					"left": 9,
+					"width": 143,
+					"height": 242,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "AccountTrack está listo para proceder a la emisión de los avisos de cobranza.\r\rSi existen cargos en monedas distintas de la moneda principal, verifique que las tasas vigentes a la fecha de emisión sean correctas.\r\rHaga clic en el botón Emitir Avisos para iniciar el proceso de emisión.\r"
+				},
+				"server(1)": {
+					"type": "text",
+					"top": 289,
+					"left": 183,
+					"width": 200,
+					"height": 55,
+					"stroke": "#666666",
+					"styleSheet": "XS_FormObjects",
+					"text": "La ejecución en el servidor es mucho más rápida y libera a su estación de esta tarea, pero puede aumentar los tiempos de respuesta del servidor mientras se realiza el proceso."
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 52,
+					"left": 163,
+					"width": 278,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Confirmación"
+				},
+				"b1l": {
+					"type": "text",
+					"top": 79,
+					"left": 9,
+					"width": 143,
+					"height": 242,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "AccountTrack está listo para proceder a la emisión y posterior impresión de los avisos de cobranza.\r\rSi existen cargos en monedas distintas de la moneda principal, verifique que las tasas vigentes a la fecha de emisión sean correctas.\rHaga clic en el botón Emitir Avisos para iniciar el proceso de emisión e impresión.\r"
+				},
+				"server2": {
+					"type": "text",
+					"top": 287,
+					"left": 428,
+					"width": 25,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "A las"
+				},
+				"server7": {
+					"type": "text",
+					"top": 287,
+					"left": 497,
+					"width": 8,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": ":"
+				},
+				"server6": {
+					"type": "text",
+					"top": 307,
+					"left": 428,
+					"width": 20,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "del"
+				},
+				"server14": {
+					"type": "pictureButton",
+					"top": 305,
+					"left": 515,
+					"width": 17,
+					"height": 16,
+					"dataSource": "bCalendar1",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/server14.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"server(1)1": {
+					"type": "text",
+					"top": 327,
+					"left": 407,
+					"width": 200,
+					"height": 33,
+					"stroke": "#666666",
+					"styleSheet": "XS_FormObjects",
+					"text": "A la hora programada por usted se agregará un minuto para darle tiempo al servidor de procesar el requerimiento."
+				},
+				"Texto11": {
+					"type": "text",
+					"top": 243,
+					"left": 198,
+					"width": 402,
+					"height": 23,
+					"styleSheet": "XS_FormObjects",
+					"text": "Emitir solo para cargos proyectados (no se considerarán los cargos de la matriz asociada si es que no están proyectados)"
+				}
+			}
+		}
+	]
+}

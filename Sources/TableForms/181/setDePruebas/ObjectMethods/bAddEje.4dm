@@ -1,0 +1,1 @@
+ACTdte_setPruebasOpcionesGen ("InsertaElementoDetalle")

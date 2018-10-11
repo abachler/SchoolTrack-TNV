@@ -1,0 +1,21 @@
+C_TEXT:C284($t_alumnos)
+ARRAY TEXT:C222($at_arrNomsCols;0)
+ARRAY TEXT:C222($at_arrNomsEncabezados;0)
+ARRAY POINTER:C280($ay_arrVarCols;0)
+ARRAY POINTER:C280($ay_arrVarEncabezados;0)
+ARRAY BOOLEAN:C223($ab_arrColsVisibles;0)
+ARRAY POINTER:C280($ay_arrEstilos;0)
+LISTBOX GET ARRAYS:C832(*;"listado";$at_arrNomsCols;$at_arrNomsEncabezados;$ay_arrVarCols;$ay_arrVarEncabezados;$ab_arrColsVisibles;$ay_arrEstilos)
+Case of 
+	: (Size of array:C274($ay_arrVarCols)=2)
+		$t_alumnos:=AT_Arrays2Text ("\r";"\t";$ay_arrVarCols{1};$ay_arrVarCols{2})
+	: (Size of array:C274($ay_arrVarCols)=3)
+		$t_alumnos:=AT_Arrays2Text ("\r";"\t";$ay_arrVarCols{1};$ay_arrVarCols{2};$ay_arrVarCols{3})
+	: (Size of array:C274($ay_arrVarCols)=4)
+		$t_alumnos:=AT_Arrays2Text ("\r";"\t";$ay_arrVarCols{1};$ay_arrVarCols{2};$ay_arrVarCols{3};$ay_arrVarCols{4})
+	: (Size of array:C274($ay_arrVarCols)=5)
+		$t_alumnos:=AT_Arrays2Text ("\r";"\t";$ay_arrVarCols{1};$ay_arrVarCols{2};$ay_arrVarCols{3};$ay_arrVarCols{4};$ay_arrVarCols{5})
+	Else 
+		$t_alumnos:=AT_Arrays2Text ("\r";"\t";$ay_arrVarCols{1})
+End case 
+SET TEXT TO PASTEBOARD:C523($t_alumnos)

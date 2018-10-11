@@ -1,0 +1,548 @@
+﻿{
+	"rightMargin": 16,
+	"bottomMargin": 10,
+	"markerHeader": 13,
+	"markerBody": 32,
+	"markerBreak": 35,
+	"markerFooter": 35,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Imagen10": {
+					"type": "picture",
+					"top": -5,
+					"left": 0,
+					"width": 1167,
+					"height": 18,
+					"sizingX": "grow",
+					"pictureFormat": "scaled",
+					"picture": "Images/Imagen10.pict"
+				},
+				"S1_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 24,
+					"width": 40,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "Año : "
+				},
+				"S2_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 96,
+					"width": 56,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "dateSesion : "
+				},
+				"S3_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 184,
+					"width": 49,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "ID_Alumno : "
+				},
+				"S4_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 265,
+					"width": 175,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "Apellidos_y_Nombres : "
+				},
+				"S5_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 472,
+					"width": 61,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "ID_Asignatura : "
+				},
+				"S6_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 565,
+					"width": 175,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "Asignatura : "
+				},
+				"S7_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 772,
+					"width": 95,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "ID_HistoricoAsignatura : "
+				},
+				"S8_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 899,
+					"width": 175,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "Asignatura : "
+				},
+				"S9_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 1106,
+					"width": 45,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "ID_Sesión : "
+				},
+				"Rectángulo11": {
+					"type": "rectangle",
+					"top": 13,
+					"left": 0,
+					"width": 1167,
+					"height": 19,
+					"sizingX": "grow",
+					"stroke": "#FFFFFF"
+				},
+				"S1_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 24,
+					"width": 40,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Asignaturas_Inasistencias:125]Año:11",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S2_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 96,
+					"width": 56,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Asignaturas_Inasistencias:125]dateSesion:4",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S3_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 184,
+					"width": 49,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Asignaturas_Inasistencias:125]ID_Alumno:2",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/S3_Campo.4dm",
+					"events": [
+						"onDisplayDetail"
+					]
+				},
+				"S4_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 265,
+					"width": 175,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos:2]apellidos_y_nombres:40",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S5_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 472,
+					"width": 61,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Asignaturas_Inasistencias:125]ID_Asignatura:6",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/S5_Campo.4dm",
+					"events": [
+						"onDisplayDetail"
+					]
+				},
+				"S6_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 565,
+					"width": 175,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Asignaturas:18]Asignatura:3",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S7_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 772,
+					"width": 95,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Asignaturas_Inasistencias:125]ID_HistoricoAsignatura:12",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S8_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 899,
+					"width": 175,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Asignaturas_Historico:84]Asignatura:2",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S9_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 1106,
+					"width": 45,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Asignaturas_Inasistencias:125]ID_Sesión:1",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Línea12": {
+					"type": "line",
+					"top": -5,
+					"left": 0,
+					"height": 37,
+					"stroke": "#A8A8A8"
+				},
+				"Línea13": {
+					"type": "line",
+					"top": -5,
+					"left": 1167,
+					"height": 37,
+					"sizingX": "move",
+					"stroke": "#A8A8A8"
+				},
+				"Línea14": {
+					"type": "line",
+					"top": -5,
+					"left": 1090,
+					"height": 37,
+					"stroke": "#A8A8A8"
+				},
+				"Separador2": {
+					"type": "button",
+					"top": -5,
+					"left": 1089,
+					"width": 3,
+					"height": 37,
+					"dataSource": "Separador2",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea15": {
+					"type": "line",
+					"top": -5,
+					"left": 883,
+					"height": 37,
+					"stroke": "#A8A8A8"
+				},
+				"Separador3": {
+					"type": "button",
+					"top": -5,
+					"left": 882,
+					"width": 3,
+					"height": 37,
+					"dataSource": "Separador3",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea16": {
+					"type": "line",
+					"top": -5,
+					"left": 756,
+					"height": 37,
+					"stroke": "#A8A8A8"
+				},
+				"Separador4": {
+					"type": "button",
+					"top": -5,
+					"left": 755,
+					"width": 3,
+					"height": 37,
+					"dataSource": "Separador4",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea17": {
+					"type": "line",
+					"top": -5,
+					"left": 549,
+					"height": 37,
+					"stroke": "#A8A8A8"
+				},
+				"Separador5": {
+					"type": "button",
+					"top": -5,
+					"left": 548,
+					"width": 3,
+					"height": 37,
+					"dataSource": "Separador5",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea18": {
+					"type": "line",
+					"top": -5,
+					"left": 456,
+					"height": 37,
+					"stroke": "#A8A8A8"
+				},
+				"Separador6": {
+					"type": "button",
+					"top": -5,
+					"left": 455,
+					"width": 3,
+					"height": 37,
+					"dataSource": "Separador6",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea19": {
+					"type": "line",
+					"top": -5,
+					"left": 249,
+					"height": 37,
+					"stroke": "#A8A8A8"
+				},
+				"Separador7": {
+					"type": "button",
+					"top": -5,
+					"left": 248,
+					"width": 3,
+					"height": 37,
+					"dataSource": "Separador7",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea20": {
+					"type": "line",
+					"top": -5,
+					"left": 168,
+					"height": 37,
+					"stroke": "#A8A8A8"
+				},
+				"Separador8": {
+					"type": "button",
+					"top": -5,
+					"left": 167,
+					"width": 3,
+					"height": 37,
+					"dataSource": "Separador8",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea21": {
+					"type": "line",
+					"top": -5,
+					"left": 80,
+					"height": 37,
+					"stroke": "#A8A8A8"
+				},
+				"Separador9": {
+					"type": "button",
+					"top": -5,
+					"left": 79,
+					"width": 3,
+					"height": 37,
+					"dataSource": "Separador9",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

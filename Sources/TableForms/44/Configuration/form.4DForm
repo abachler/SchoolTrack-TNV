@@ -1,0 +1,3710 @@
+﻿{
+	"windowTitle": ":21010,86",
+	"inheritedForm": "XS_MASTER_ConfigDialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "RectánguloFondo",
+	"rightMargin": 0,
+	"bottomMargin": 50,
+	"markerBody": 230,
+	"markerBreak": 276,
+	"markerFooter": 286,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onUnload",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Rectángulo6": {
+					"type": "rectangle",
+					"top": 650,
+					"left": 253,
+					"width": 628,
+					"height": 14,
+					"fill": "#666666",
+					"stroke": "#AAAAAA"
+				},
+				"RectánguloFondo": {
+					"type": "rectangle",
+					"top": 73,
+					"left": 1,
+					"width": 880,
+					"height": 558,
+					"stroke": "#AAAAAA"
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 832,
+					"left": 20,
+					"width": 63,
+					"height": 16,
+					"dataSource": "bClose",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Rejilla de botones1": {
+					"type": "buttonGrid",
+					"top": 342,
+					"left": 636,
+					"width": 1,
+					"height": 1,
+					"dataSource": "Rejilla de botones1",
+					"columnCount": 2,
+					"rowCount": 2,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Campo7": {
+					"type": "input",
+					"top": 666,
+					"left": 836,
+					"width": 40,
+					"height": 15,
+					"dataSource": "[xxSTR_EstilosEvaluacion:44]ID:1",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/Campo7.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"lbEstilos": {
+					"type": "listbox",
+					"top": 74,
+					"left": 1,
+					"width": 251,
+					"height": 576,
+					"dataSource": "lbEstilos",
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"rowStyleSource": "al_estilosLB",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 11,
+					"borderStyle": "none",
+					"method": "ObjectMethods/lbEstilos.4dm",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "nombreEstilo",
+							"dataSource": "aEvStyleName",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						},
+						{
+							"name": "idEstilo",
+							"dataSource": "aEvStyleID",
+							"width": 20,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"textAlign": "left",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						},
+						{
+							"name": "recnumEstilo",
+							"dataSource": "aEvStyleRecNo",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"textAlign": "left",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						}
+					]
+				},
+				"pagina1_modo": {
+					"type": "button",
+					"top": 51,
+					"left": 258,
+					"width": 66,
+					"height": 16,
+					"styleSheet": "Plain - 13",
+					"stroke": "#555555",
+					"text": "Modos",
+					"style": "toolbar",
+					"method": "ObjectMethods/pagina1_modo.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"pagina2_escalas": {
+					"type": "button",
+					"top": 51,
+					"left": 327,
+					"width": 66,
+					"height": 16,
+					"styleSheet": "Plain - 13",
+					"stroke": "#555555",
+					"text": "Escalas",
+					"style": "toolbar",
+					"method": "ObjectMethods/pagina2_escalas.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"pagina3_calculos": {
+					"type": "button",
+					"top": 51,
+					"left": 396,
+					"width": 66,
+					"height": 16,
+					"styleSheet": "Plain - 13",
+					"stroke": "#555555",
+					"text": "Cálculos",
+					"style": "toolbar",
+					"method": "ObjectMethods/pagina3_calculos.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"pagina4_simbolos": {
+					"type": "button",
+					"top": 51,
+					"left": 466,
+					"width": 66,
+					"height": 16,
+					"styleSheet": "Plain - 13",
+					"stroke": "#555555",
+					"text": "Símbolos",
+					"style": "toolbar",
+					"method": "ObjectMethods/pagina4_simbolos.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"pagina5_conversion": {
+					"type": "button",
+					"top": 51,
+					"left": 536,
+					"width": 164,
+					"height": 16,
+					"styleSheet": "Plain - 13",
+					"stroke": "#555555",
+					"text": "Conversión entre escalas",
+					"style": "toolbar",
+					"method": "ObjectMethods/pagina5_conversion.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"pagina6_esfuerzo": {
+					"type": "button",
+					"top": 51,
+					"left": 707,
+					"width": 152,
+					"height": 16,
+					"styleSheet": "Plain - 13",
+					"stroke": "#555555",
+					"text": "Evaluación de Esfuerzo",
+					"style": "toolbar",
+					"method": "ObjectMethods/pagina6_esfuerzo.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón 3D": {
+					"type": "button",
+					"top": 655,
+					"left": 215,
+					"width": 32,
+					"height": 20,
+					"dataSource": "Botón 3D",
+					"icon": "/RESOURCES/img/rueda de Tareas con menu.PNG",
+					"style": "custom",
+					"customBackgroundPicture": "var:",
+					"method": "ObjectMethods/Botón 3D.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"botonEliminar": {
+					"type": "pictureButton",
+					"top": 658,
+					"left": 10,
+					"width": 20,
+					"height": 14,
+					"columnCount": 1,
+					"rowCount": 2,
+					"picture": "/RESOURCES/img/Boton -.PNG",
+					"loopBackToFirstFrame": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/botonEliminar.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"botonAgregar": {
+					"type": "pictureButton",
+					"top": 658,
+					"left": 49,
+					"width": 24,
+					"height": 14,
+					"columnCount": 1,
+					"rowCount": 2,
+					"picture": "/RESOURCES/img/Boton + con menu.PNG",
+					"loopBackToFirstFrame": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/botonAgregar.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea17": {
+					"type": "line",
+					"top": 43,
+					"left": 252,
+					"width": 1,
+					"height": 645,
+					"stroke": "#AAAAAA",
+					"startPoint": "bottomLeft"
+				},
+				"Texto29": {
+					"type": "text",
+					"top": 51,
+					"left": 10,
+					"width": 228,
+					"height": 15,
+					"styleSheet": "Plain - 13",
+					"text": "Estilos de evaluación"
+				},
+				"usoNivelOficial": {
+					"type": "input",
+					"top": 667,
+					"left": 256,
+					"width": 32,
+					"height": 15,
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"textAlign": "center",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"numberFormat": "### ##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/usoNivelOficial.4dm",
+					"events": [
+						"onMouseEnter"
+					]
+				},
+				"Línea18": {
+					"type": "line",
+					"top": 651,
+					"left": 292,
+					"height": 31,
+					"stroke": "#AAAAAA"
+				},
+				"usoNivelInterno": {
+					"type": "input",
+					"top": 667,
+					"left": 296,
+					"width": 32,
+					"height": 15,
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"textAlign": "center",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"numberFormat": "### ##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/usoNivelInterno.4dm",
+					"events": [
+						"onMouseEnter"
+					]
+				},
+				"Línea19": {
+					"type": "line",
+					"top": 651,
+					"left": 331,
+					"height": 31,
+					"stroke": "#AAAAAA"
+				},
+				"usoAsignaturas": {
+					"type": "input",
+					"top": 667,
+					"left": 336,
+					"width": 52,
+					"height": 15,
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"textAlign": "center",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"numberFormat": "### ##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/usoAsignaturas.4dm",
+					"events": [
+						"onMouseEnter"
+					]
+				},
+				"Línea20": {
+					"type": "line",
+					"top": 651,
+					"left": 391,
+					"height": 31,
+					"stroke": "#AAAAAA"
+				},
+				"usoCompetencias": {
+					"type": "input",
+					"top": 667,
+					"left": 396,
+					"width": 61,
+					"height": 15,
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"textAlign": "center",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"numberFormat": "### ##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/usoCompetencias.4dm",
+					"events": [
+						"onMouseEnter"
+					]
+				},
+				"Línea21": {
+					"type": "line",
+					"top": 651,
+					"left": 460,
+					"height": 31,
+					"stroke": "#AAAAAA"
+				},
+				"usoDimensiones": {
+					"type": "input",
+					"top": 667,
+					"left": 465,
+					"width": 61,
+					"height": 15,
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"textAlign": "center",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"numberFormat": "### ##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/usoDimensiones.4dm",
+					"events": [
+						"onMouseEnter"
+					]
+				},
+				"Línea22": {
+					"type": "line",
+					"top": 651,
+					"left": 531,
+					"height": 31,
+					"stroke": "#AAAAAA"
+				},
+				"usoEjes": {
+					"type": "input",
+					"top": 667,
+					"left": 536,
+					"width": 52,
+					"height": 15,
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"textAlign": "center",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"numberFormat": "### ##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/usoEjes.4dm",
+					"events": [
+						"onMouseEnter"
+					]
+				},
+				"Línea23": {
+					"type": "line",
+					"top": 651,
+					"left": 591,
+					"height": 31,
+					"stroke": "#AAAAAA"
+				},
+				"Línea3": {
+					"type": "line",
+					"top": 651,
+					"left": 831,
+					"height": 31,
+					"stroke": "#AAAAAA"
+				},
+				"Texto13": {
+					"type": "text",
+					"top": 652,
+					"left": 254,
+					"width": 36,
+					"height": 12,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 8,
+					"fontWeight": "bold",
+					"text": "Oficial"
+				},
+				"Texto31": {
+					"type": "text",
+					"top": 652,
+					"left": 294,
+					"width": 36,
+					"height": 12,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 8,
+					"fontWeight": "bold",
+					"text": "Interno"
+				},
+				"Texto33": {
+					"type": "text",
+					"top": 652,
+					"left": 332,
+					"width": 59,
+					"height": 12,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 8,
+					"fontWeight": "bold",
+					"text": "Asignaturas"
+				},
+				"Texto34": {
+					"type": "text",
+					"top": 652,
+					"left": 393,
+					"width": 66,
+					"height": 12,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 8,
+					"fontWeight": "bold",
+					"text": "Competencias"
+				},
+				"Texto35": {
+					"type": "text",
+					"top": 652,
+					"left": 463,
+					"width": 66,
+					"height": 12,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 8,
+					"fontWeight": "bold",
+					"text": "Dimensiones"
+				},
+				"Texto36": {
+					"type": "text",
+					"top": 652,
+					"left": 532,
+					"width": 57,
+					"height": 12,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 8,
+					"fontWeight": "bold",
+					"text": "Ejes"
+				},
+				"Texto37": {
+					"type": "text",
+					"top": 652,
+					"left": 834,
+					"width": 43,
+					"height": 12,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 8,
+					"fontWeight": "bold",
+					"text": "ID"
+				},
+				"Texto39": {
+					"type": "text",
+					"top": 652,
+					"left": 594,
+					"width": 137,
+					"height": 12,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 8,
+					"fontWeight": "bold",
+					"text": "Evaluaciones"
+				},
+				"usoEvaluaciones": {
+					"type": "input",
+					"top": 667,
+					"left": 594,
+					"width": 134,
+					"height": 15,
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"textAlign": "center",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"numberFormat": "### ##0",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/usoEvaluaciones.4dm",
+					"events": [
+						"onMouseEnter"
+					]
+				},
+				"creacion": {
+					"type": "text",
+					"top": 633,
+					"left": 258,
+					"width": 301,
+					"height": 15,
+					"styleSheet": "Plain - 13",
+					"text": "creacion"
+				},
+				"modificacion": {
+					"type": "text",
+					"top": 633,
+					"left": 578,
+					"width": 301,
+					"height": 15,
+					"styleSheet": "Plain - 13",
+					"text": "modificación"
+				},
+				"Línea": {
+					"type": "line",
+					"top": 631,
+					"left": 568,
+					"height": 19,
+					"stroke": "#DDDDDD"
+				}
+			}
+		},
+		{
+			"objects": {
+				"avisoBonificacion6": {
+					"type": "rectangle",
+					"top": 430,
+					"left": 327,
+					"width": 474,
+					"height": 46,
+					"fill": "#FFFFDF",
+					"stroke": "#DDDDDD",
+					"borderRadius": 5
+				},
+				"avisoBonificacion5": {
+					"type": "rectangle",
+					"top": 279,
+					"left": 327,
+					"width": 474,
+					"height": 63,
+					"fill": "#FFFFDF",
+					"stroke": "#DDDDDD",
+					"borderRadius": 5
+				},
+				"avisoBonificacion4": {
+					"type": "rectangle",
+					"top": 149,
+					"left": 328,
+					"width": 474,
+					"height": 46,
+					"fill": "#FFFFDF",
+					"stroke": "#DDDDDD",
+					"borderRadius": 5
+				},
+				"Modo_Ingreso": {
+					"type": "dropdown",
+					"top": 122,
+					"left": 507,
+					"width": 295,
+					"height": 18,
+					"dataSource": "aEvMode",
+					"styleSheet": "Medium - 13",
+					"method": "ObjectMethods/Modo_Ingreso.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"texto14": {
+					"type": "text",
+					"top": 156,
+					"left": 336,
+					"width": 458,
+					"height": 29,
+					"stroke": "#666666",
+					"styleSheet": "Plain - 12",
+					"text": "La escala de referencia es utilizada para el ingreso de evaluaciones, en el cálculo de promedios y conversión entre escalas"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 123,
+					"left": 328,
+					"width": 190,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "left",
+					"styleSheet": "Plain - 13",
+					"text": "Escala de referencia:"
+				},
+				"Línea10": {
+					"type": "line",
+					"top": 144,
+					"left": 328,
+					"width": 475,
+					"stroke": "#DDDDDD"
+				},
+				"Modo_Impresion": {
+					"type": "dropdown",
+					"top": 253,
+					"left": 507,
+					"width": 295,
+					"height": 18,
+					"dataSource": "aEvPrintMode",
+					"styleSheet": "Medium - 13",
+					"method": "ObjectMethods/Modo_Impresion.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 253,
+					"left": 330,
+					"width": 190,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "left",
+					"styleSheet": "Plain - 13",
+					"text": "Representación literal:"
+				},
+				"Línea12": {
+					"type": "line",
+					"top": 274,
+					"left": 328,
+					"width": 475,
+					"stroke": "#DDDDDD"
+				},
+				"texto16": {
+					"type": "text",
+					"top": 287,
+					"left": 335,
+					"width": 458,
+					"height": 43,
+					"stroke": "#666666",
+					"styleSheet": "Plain - 12",
+					"text": "Escala utilizada para calcular la representación literal de las evaluaciones. Es el modo utilizado para  la visualización de calificaciones en SchoolTrack y, por omisión, en las impresiones de documentos internos"
+				},
+				"Modo_actas": {
+					"type": "dropdown",
+					"top": 404,
+					"left": 507,
+					"width": 295,
+					"height": 18,
+					"dataSource": "aEvActas",
+					"styleSheet": "Medium - 13",
+					"method": "ObjectMethods/Modo_actas.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Línea13": {
+					"type": "line",
+					"top": 425,
+					"left": 328,
+					"width": 475,
+					"stroke": "#DDDDDD"
+				},
+				"texto17": {
+					"type": "text",
+					"top": 437,
+					"left": 335,
+					"width": 458,
+					"height": 29,
+					"stroke": "#666666",
+					"styleSheet": "Plain - 12",
+					"text": "Escala utilizada para representar la evaluación final oficial"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 405,
+					"left": 330,
+					"width": 190,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "left",
+					"styleSheet": "Plain - 13",
+					"text": "Evaluación final oficial:"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 855,
+					"left": 495,
+					"width": 176,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Observaciones"
+				},
+				"vtEVS_comments": {
+					"type": "input",
+					"top": 873,
+					"left": 499,
+					"width": 453,
+					"height": 54,
+					"dataSource": "vtEVS_comments",
+					"styleSheet": "Plain - 11",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Modo_Visualizacion": {
+					"type": "dropdown",
+					"top": 314,
+					"left": 1267,
+					"width": 295,
+					"height": 18,
+					"dataSource": "aEvViewMode",
+					"styleSheet": "Medium - 13",
+					"method": "ObjectMethods/Modo_Visualizacion.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Línea11": {
+					"type": "line",
+					"top": 336,
+					"left": 1088,
+					"width": 475,
+					"stroke": "#DDDDDD"
+				},
+				"texto15": {
+					"type": "text",
+					"top": 341,
+					"left": 1088,
+					"width": 478,
+					"height": 29,
+					"stroke": "#666666",
+					"styleSheet": "Plain - 12",
+					"text": "Escala utilizada como modo de visualización por defecto en las planillas de registro de evaluaciones"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 315,
+					"left": 1088,
+					"width": 190,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "left",
+					"styleSheet": "Plain - 13",
+					"text": "Visualización en planillas:"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 118,
+					"left": 312,
+					"width": 499,
+					"height": 253,
+					"fill": "transparent",
+					"stroke": "#AAAAAA"
+				},
+				"Rectángulo4": {
+					"type": "rectangle",
+					"top": 206,
+					"left": 312,
+					"width": 499,
+					"height": 18,
+					"fill": "#EEEEEE",
+					"stroke": "#AAAAAA"
+				},
+				"Rectángulo3": {
+					"type": "rectangle",
+					"top": 117,
+					"left": 312,
+					"width": 499,
+					"height": 18,
+					"fill": "#EEEEEE",
+					"stroke": "#AAAAAA"
+				},
+				"Rectángulo2": {
+					"type": "rectangle",
+					"top": 96,
+					"left": 473,
+					"width": 338,
+					"height": 23,
+					"fill": "#DDDDDD",
+					"stroke": "#AAAAAA"
+				},
+				"escalaPuntos_Titulo": {
+					"type": "text",
+					"top": 100,
+					"left": 555,
+					"width": 60,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"styleSheet": "Medium - 12",
+					"text": "Puntos"
+				},
+				"escalaNotas_Titulo": {
+					"type": "text",
+					"top": 100,
+					"left": 476,
+					"width": 60,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"styleSheet": "Medium - 12",
+					"text": "Notas"
+				},
+				"texto19": {
+					"type": "text",
+					"top": 140,
+					"left": 326,
+					"width": 140,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "Mínimo:"
+				},
+				"texto20": {
+					"type": "text",
+					"top": 162,
+					"left": 326,
+					"width": 140,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "Máximo:"
+				},
+				"texto21": {
+					"type": "text",
+					"top": 207,
+					"left": 318,
+					"width": 140,
+					"height": 15,
+					"stroke": "#000000",
+					"styleSheet": "Medium - 12",
+					"text": "Decimales: "
+				},
+				"texto27": {
+					"type": "text",
+					"top": 347,
+					"left": 318,
+					"width": 140,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "left",
+					"styleSheet": "Medium - 12",
+					"text": "Intervalo:"
+				},
+				"texto22": {
+					"type": "text",
+					"top": 231,
+					"left": 326,
+					"width": 140,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "Periódicas y exámenes:"
+				},
+				"texto24": {
+					"type": "text",
+					"top": 274,
+					"left": 326,
+					"width": 140,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "Promedio Final:"
+				},
+				"texto25": {
+					"type": "text",
+					"top": 296,
+					"left": 326,
+					"width": 140,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "Nota Final:"
+				},
+				"texto26": {
+					"type": "text",
+					"top": 318,
+					"left": 326,
+					"width": 140,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "Nota Oficial:"
+				},
+				"texto23": {
+					"type": "text",
+					"top": 252,
+					"left": 326,
+					"width": 140,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "Promedios Períodos:"
+				},
+				"texto6": {
+					"type": "text",
+					"top": 185,
+					"left": 326,
+					"width": 140,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "Minimo aprobatorio:"
+				},
+				"Línea7": {
+					"type": "line",
+					"top": 341,
+					"left": 313,
+					"width": 357,
+					"height": 1,
+					"stroke": "#AAAAAA"
+				},
+				"texto4": {
+					"type": "text",
+					"top": 118,
+					"left": 317,
+					"width": 149,
+					"height": 15,
+					"stroke": "#000000",
+					"styleSheet": "Medium - 12",
+					"text": "Mínimos y máximo"
+				},
+				"Línea5": {
+					"type": "line",
+					"top": 96,
+					"left": 473,
+					"width": 1,
+					"height": 275,
+					"stroke": "#AAAAAA",
+					"startPoint": "bottomLeft"
+				},
+				"escalaNotas_desde": {
+					"type": "input",
+					"top": 140,
+					"left": 481,
+					"width": 60,
+					"height": 15,
+					"dataSource": "rGradesFrom",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/escalaNotas_desde.4dm",
+					"events": [
+						"onDataChange",
+						"onMouseEnter"
+					]
+				},
+				"escalaNotas_Hasta": {
+					"type": "input",
+					"top": 162,
+					"left": 481,
+					"width": 60,
+					"height": 15,
+					"dataSource": "rGradesTo",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/escalaNotas_Hasta.4dm",
+					"events": [
+						"onDataChange",
+						"onMouseEnter"
+					]
+				},
+				"escalaNotas_MinimoAprobatorio": {
+					"type": "input",
+					"top": 185,
+					"left": 481,
+					"width": 60,
+					"height": 15,
+					"dataSource": "rGradesMinimum",
+					"dataSourceTypeHint": "number",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"min": 0,
+					"method": "ObjectMethods/escalaNotas_MinimoAprobatorio.4dm",
+					"events": [
+						"onDataChange",
+						"onMouseEnter"
+					]
+				},
+				"escalaNotas_decimalesPeriodicas": {
+					"type": "input",
+					"top": 231,
+					"left": 481,
+					"width": 60,
+					"height": 15,
+					"dataSource": "iGradesDec",
+					"dataSourceTypeHint": "number",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"min": 0,
+					"method": "ObjectMethods/escalaNotas_decimalesPeriodicas.4dm",
+					"events": [
+						"onDataChange",
+						"onMouseEnter"
+					]
+				},
+				"escalaNotas_decimalesPeriodos": {
+					"type": "input",
+					"top": 252,
+					"left": 481,
+					"width": 60,
+					"height": 15,
+					"dataSource": "iGradesDecPP",
+					"dataSourceTypeHint": "number",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"min": 0,
+					"method": "ObjectMethods/escalaNotas_decimalesPeriodos.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"escalaNotas_decimalesPromedioFinal": {
+					"type": "input",
+					"top": 274,
+					"left": 481,
+					"width": 60,
+					"height": 15,
+					"dataSource": "iGradesDecPF",
+					"dataSourceTypeHint": "number",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"min": 0,
+					"method": "ObjectMethods/escalaNotas_decimalesPromedioFinal.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"escalaNotas_DecimalesNotaFinal": {
+					"type": "input",
+					"top": 296,
+					"left": 481,
+					"width": 60,
+					"height": 15,
+					"dataSource": "iGradesDecNF",
+					"dataSourceTypeHint": "number",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"min": 0,
+					"method": "ObjectMethods/escalaNotas_DecimalesNotaFinal.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"escalaNotas_decimalesNotaOficial": {
+					"type": "input",
+					"top": 318,
+					"left": 481,
+					"width": 60,
+					"height": 15,
+					"dataSource": "iGradesDecNO",
+					"dataSourceTypeHint": "number",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"min": 0,
+					"method": "ObjectMethods/escalaNotas_decimalesNotaOficial.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"escalaNotas_Intervalo": {
+					"type": "input",
+					"top": 349,
+					"left": 481,
+					"width": 60,
+					"height": 15,
+					"dataSource": "rGradesInterval",
+					"dataSourceTypeHint": "number",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/escalaNotas_Intervalo.4dm",
+					"events": [
+						"onDataChange",
+						"onMouseEnter"
+					]
+				},
+				"escalaPuntos_Desde": {
+					"type": "input",
+					"top": 140,
+					"left": 556,
+					"width": 60,
+					"height": 15,
+					"dataSource": "rPointsFrom",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/escalaPuntos_Desde.4dm",
+					"events": [
+						"onDataChange",
+						"onMouseEnter"
+					]
+				},
+				"escalaPuntos_Hasta": {
+					"type": "input",
+					"top": 162,
+					"left": 556,
+					"width": 60,
+					"height": 15,
+					"dataSource": "rPointsTo",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/escalaPuntos_Hasta.4dm",
+					"events": [
+						"onDataChange",
+						"onMouseEnter"
+					]
+				},
+				"escalaPuntos_MinimoAprobatorio": {
+					"type": "input",
+					"top": 185,
+					"left": 556,
+					"width": 60,
+					"height": 15,
+					"dataSource": "rPointsMinimum",
+					"dataSourceTypeHint": "number",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"min": 0,
+					"method": "ObjectMethods/escalaPuntos_MinimoAprobatorio.4dm",
+					"events": [
+						"onDataChange",
+						"onMouseEnter"
+					]
+				},
+				"escalaPuntos_DecimalesPeriodicas": {
+					"type": "input",
+					"top": 231,
+					"left": 556,
+					"width": 60,
+					"height": 15,
+					"dataSource": "iPointsDec",
+					"dataSourceTypeHint": "number",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"min": 0,
+					"method": "ObjectMethods/escalaPuntos_DecimalesPeriodicas.4dm",
+					"events": [
+						"onDataChange",
+						"onMouseEnter"
+					]
+				},
+				"escalaPuntos_decimalesPeriodos": {
+					"type": "input",
+					"top": 252,
+					"left": 556,
+					"width": 60,
+					"height": 15,
+					"dataSource": "iPointsDecPP",
+					"dataSourceTypeHint": "number",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"min": 0,
+					"method": "ObjectMethods/escalaPuntos_decimalesPeriodos.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"escalaPuntos_decimalesPromedioFinal": {
+					"type": "input",
+					"top": 274,
+					"left": 556,
+					"width": 60,
+					"height": 15,
+					"dataSource": "iPointsDecPF",
+					"dataSourceTypeHint": "number",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"min": 0,
+					"method": "ObjectMethods/escalaPuntos_decimalesPromedioFinal.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"escalaPuntos_decimalesNotaFinal": {
+					"type": "input",
+					"top": 296,
+					"left": 556,
+					"width": 60,
+					"height": 15,
+					"dataSource": "iPointsDecNF",
+					"dataSourceTypeHint": "number",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"min": 0,
+					"method": "ObjectMethods/escalaPuntos_decimalesNotaFinal.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"escalaPuntos_decimalesNotaOficial": {
+					"type": "input",
+					"top": 318,
+					"left": 556,
+					"width": 60,
+					"height": 15,
+					"dataSource": "iPointsDecNO",
+					"dataSourceTypeHint": "number",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"min": 0,
+					"method": "ObjectMethods/escalaPuntos_decimalesNotaOficial.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"escalaPuntos_intervalo": {
+					"type": "input",
+					"top": 349,
+					"left": 556,
+					"width": 60,
+					"height": 15,
+					"dataSource": "rPointsInterval",
+					"dataSourceTypeHint": "number",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/escalaPuntos_intervalo.4dm",
+					"events": [
+						"onDataChange",
+						"onMouseEnter"
+					]
+				},
+				"escalaPorcentaje_MinimoAprobatorio": {
+					"type": "input",
+					"top": 185,
+					"left": 627,
+					"width": 38,
+					"height": 15,
+					"dataSource": "rAprobatorioPorcentaje",
+					"dataSourceTypeHint": "number",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"min": 0,
+					"method": "ObjectMethods/escalaPorcentaje_MinimoAprobatorio.4dm",
+					"events": [
+						"onDataChange",
+						"onMouseEnter"
+					]
+				},
+				"escalaSimbolos_minimoAprobatorio": {
+					"type": "input",
+					"top": 185,
+					"left": 677,
+					"width": 125,
+					"height": 15,
+					"dataSource": "sSymbolMinimum",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "~A",
+					"method": "ObjectMethods/escalaSimbolos_minimoAprobatorio.4dm",
+					"events": [
+						"onDataChange",
+						"onMouseEnter"
+					]
+				},
+				"conversion_regla": {
+					"type": "ruler",
+					"top": 429,
+					"left": 318,
+					"width": 467,
+					"height": 13,
+					"dataSource": "rPctMinimum",
+					"dataSourceTypeHint": "number",
+					"continuousExecution": false,
+					"showGraduations": true,
+					"labelsPlacement": "bottom",
+					"max": 100,
+					"graduationStep": 10,
+					"numberFormat": "### ##0",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/conversion_regla.4dm",
+					"events": [
+						"onDataChange",
+						"onMouseMove"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 969,
+					"left": 258,
+					"width": 434,
+					"height": 43,
+					"styleSheet": "Plain - 12",
+					"text": "El intervalo definido sólo se aplica al registro de calificaciones, no a los cálculos de promedio, los que serán siempre calculados con el número de decimales indicados.\rLa modificación del intervalo sólo se aplicará cuando se registren nuevas calificaciones, las calificaciones previamente registradas no serán afectadas."
+				},
+				"conversion_minimoReferencia": {
+					"type": "input",
+					"top": 480,
+					"left": 498,
+					"width": 107,
+					"height": 15,
+					"dataSource": "rPctMinimum",
+					"dataSourceTypeHint": "number",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"method": "ObjectMethods/conversion_minimoReferencia.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Línea6": {
+					"type": "line",
+					"top": 96,
+					"left": 548,
+					"width": 1,
+					"height": 275,
+					"stroke": "#AAAAAA",
+					"startPoint": "bottomLeft"
+				},
+				"vt_SujetoRecuperacion": {
+					"type": "input",
+					"top": 602,
+					"left": 479,
+					"width": 23,
+					"height": 15,
+					"dataSource": "vt_SujetoRecuperacion",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/vt_SujetoRecuperacion.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto11": {
+					"type": "text",
+					"top": 602,
+					"left": 312,
+					"width": 157,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "Si la nota final es inferior a:"
+				},
+				"Texto12": {
+					"type": "text",
+					"top": 602,
+					"left": 514,
+					"width": 292,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "left",
+					"styleSheet": "Plain - 12",
+					"text": "la aprobación requiere una evaluación recuperatoria"
+				},
+				"conversion_texto": {
+					"type": "text",
+					"top": 404,
+					"left": 319,
+					"width": 329,
+					"height": 15,
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"text": "Posición del mínimo aprobatorio en la escala de referencia"
+				},
+				"conversion_restablecer": {
+					"type": "button",
+					"top": 402,
+					"left": 670,
+					"width": 112,
+					"height": 22,
+					"text": "Restablecer",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/conversion_restablecer.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea15": {
+					"type": "line",
+					"top": 96,
+					"left": 622,
+					"width": 1,
+					"height": 275,
+					"stroke": "#AAAAAA"
+				},
+				"Línea16": {
+					"type": "line",
+					"top": 96,
+					"left": 669,
+					"width": 1,
+					"height": 275,
+					"stroke": "#AAAAAA"
+				},
+				"Group Box2": {
+					"type": "text",
+					"top": 100,
+					"left": 626,
+					"width": 39,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"styleSheet": "Medium - 12",
+					"text": "%"
+				},
+				"escalaPorcentaje_Desde": {
+					"type": "text",
+					"top": 140,
+					"left": 636,
+					"width": 29,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "1"
+				},
+				"escalaPorcentaje_Hasta": {
+					"type": "text",
+					"top": 162,
+					"left": 636,
+					"width": 29,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "100"
+				},
+				"escalaPorcentaje_DecimalesPeriodicas": {
+					"type": "text",
+					"top": 231,
+					"left": 636,
+					"width": 29,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "1"
+				},
+				"escalaPorcentaje_DecimalesPeriodos": {
+					"type": "text",
+					"top": 252,
+					"left": 636,
+					"width": 29,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "1"
+				},
+				"escalaPorcentaje_DecimalesPromedioFinal": {
+					"type": "text",
+					"top": 274,
+					"left": 636,
+					"width": 29,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "1"
+				},
+				"escalaPorcentaje_DecimalesNotaFinal": {
+					"type": "text",
+					"top": 296,
+					"left": 636,
+					"width": 29,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "1"
+				},
+				"escalaPorcentaje_DecimalesNotaOficial": {
+					"type": "text",
+					"top": 318,
+					"left": 636,
+					"width": 29,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "1"
+				},
+				"escalaPorcentaje_intervalo": {
+					"type": "text",
+					"top": 348,
+					"left": 636,
+					"width": 29,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "0,1"
+				},
+				"texto28": {
+					"type": "text",
+					"top": 100,
+					"left": 673,
+					"width": 130,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"styleSheet": "Medium - 12",
+					"text": "Simbolos"
+				},
+				"escalaSimbolos_Desde": {
+					"type": "text",
+					"top": 140,
+					"left": 677,
+					"width": 126,
+					"height": 15,
+					"styleSheet": "Plain - 12",
+					"text": "simboloDesde"
+				},
+				"escalaSimbolos_Hasta": {
+					"type": "text",
+					"top": 162,
+					"left": 677,
+					"width": 126,
+					"height": 15,
+					"styleSheet": "Plain - 12",
+					"text": "simboloHasta"
+				},
+				"Rectángulo": {
+					"type": "rectangle",
+					"top": 206,
+					"left": 669,
+					"width": 142,
+					"height": 165,
+					"fill": "#EEEEEE",
+					"stroke": "#AAAAAA"
+				}
+			}
+		},
+		{
+			"objects": {
+				"avisoBonificacion7": {
+					"type": "rectangle",
+					"top": 582,
+					"left": 280,
+					"width": 574,
+					"height": 26,
+					"fill": "#FFFFDF",
+					"stroke": "#DDDDDD",
+					"borderRadius": 5
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 479,
+					"left": 280,
+					"width": 70,
+					"height": 15,
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"text": "5 Períodos:"
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 527,
+					"left": 280,
+					"width": 70,
+					"height": 15,
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"text": "3 Períodos:"
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 552,
+					"left": 280,
+					"width": 70,
+					"height": 15,
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"text": "2 Períodos:"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 588,
+					"left": 295,
+					"width": 443,
+					"height": 15,
+					"stroke": "#666666",
+					"styleSheet": "Plain - 12",
+					"text": "Deje en blanco para calcular el Promedio Final sin ponderaciones"
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 503,
+					"left": 280,
+					"width": 70,
+					"height": 15,
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"text": "4 Períodos:"
+				},
+				"Texto": {
+					"type": "text",
+					"top": 684,
+					"left": 342,
+					"width": 0,
+					"height": 0,
+					"fontFamily": "Tahoma",
+					"fontSize": 13,
+					"text": "Texto de ejemplo"
+				},
+				"EvStyleProperty20": {
+					"type": "radio",
+					"top": 120,
+					"left": 283,
+					"width": 85,
+					"height": 15,
+					"dataSource": "r1",
+					"text": "Promedio",
+					"styleSheet": "Plain - 12",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/EvStyleProperty20.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"EvStyleProperty21": {
+					"type": "radio",
+					"top": 120,
+					"left": 385,
+					"width": 163,
+					"height": 15,
+					"dataSource": "r2",
+					"text": "Suma de calificaciones",
+					"styleSheet": "Plain - 12",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/EvStyleProperty21.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"EvStyleProperty22": {
+					"type": "radio",
+					"top": 120,
+					"left": 563,
+					"width": 119,
+					"height": 15,
+					"dataSource": "r3",
+					"text": "No calculados",
+					"styleSheet": "Plain - 12",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/EvStyleProperty22.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"vi_TruncarInferiorRequerido": {
+					"type": "checkbox",
+					"top": 143,
+					"left": 301,
+					"width": 338,
+					"height": 18,
+					"dataSource": "vi_TruncarInferiorRequerido",
+					"text": "No aproximar promedios inferiores al mínimo requerido",
+					"styleSheet": "Plain - 12",
+					"stroke": "#000000",
+					"method": "ObjectMethods/vi_TruncarInferiorRequerido.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"aproximarPresentacionEXP": {
+					"type": "checkbox",
+					"top": 210,
+					"left": 283,
+					"width": 466,
+					"height": 17,
+					"dataSource": "vi_RoundCPpresent",
+					"text": "Aproximar nota de presentación al examen de fin de período",
+					"styleSheet": "Plain - 12",
+					"stroke": "#000000",
+					"method": "ObjectMethods/aproximarPresentacionEXP.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"vi_gTrPAvg": {
+					"type": "checkbox",
+					"top": 231,
+					"left": 283,
+					"width": 252,
+					"height": 17,
+					"dataSource": "vi_gTrPAvg",
+					"text": "Truncar promedios periódicos",
+					"styleSheet": "Plain - 12",
+					"stroke": "#000000",
+					"method": "ObjectMethods/vi_gTrPAvg.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"texto10": {
+					"type": "checkbox",
+					"top": 294,
+					"left": 283,
+					"width": 167,
+					"height": 17,
+					"dataSource": "vi_gTrFAvg",
+					"text": "Truncar promedio anual\t",
+					"styleSheet": "Plain - 12",
+					"stroke": "#000000",
+					"method": "ObjectMethods/texto10.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"convertirPresentacionEX": {
+					"type": "checkbox",
+					"top": 360,
+					"left": 283,
+					"width": 487,
+					"height": 17,
+					"dataSource": "vi_gTrEXNF",
+					"text": "Convertir promedio de presentación al examen final a la escala principal",
+					"styleSheet": "Plain - 12",
+					"stroke": "#000000",
+					"method": "ObjectMethods/convertirPresentacionEX.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"calculosNotaFinal_PresentacionExamen": {
+					"type": "radio",
+					"top": 383,
+					"left": 341,
+					"width": 99,
+					"height": 14,
+					"dataSource": "v1_ModoCalculoNF",
+					"text": "Flotante",
+					"styleSheet": "Plain - 12",
+					"stroke": "#000000",
+					"method": "ObjectMethods/calculosNotaFinal_PresentacionExamen.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"calculosNotaFinal_PresentacionAproximada": {
+					"type": "radio",
+					"top": 383,
+					"left": 459,
+					"width": 109,
+					"height": 14,
+					"dataSource": "v2_ModoCalculoNF",
+					"text": "Aproximando",
+					"styleSheet": "Plain - 12",
+					"stroke": "#000000",
+					"method": "ObjectMethods/calculosNotaFinal_PresentacionAproximada.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"calculosNotaFinal_PresentacionTruncada": {
+					"type": "radio",
+					"top": 383,
+					"left": 609,
+					"width": 93,
+					"height": 14,
+					"dataSource": "v3_ModoCalculoNF",
+					"text": "Truncando",
+					"styleSheet": "Plain - 12",
+					"stroke": "#000000",
+					"method": "ObjectMethods/calculosNotaFinal_PresentacionTruncada.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"vi_gTroncarNotaFinal": {
+					"type": "checkbox",
+					"top": 412,
+					"left": 283,
+					"width": 167,
+					"height": 17,
+					"dataSource": "vi_gTroncarNotaFinal",
+					"text": "Truncar Nota final",
+					"styleSheet": "Plain - 12",
+					"stroke": "#000000",
+					"method": "ObjectMethods/vi_gTroncarNotaFinal.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"PonderacionesPeriodos": {
+					"type": "input",
+					"top": 479,
+					"left": 352,
+					"width": 50,
+					"height": 15,
+					"dataSource": "vrEVS_PonderacionQ1",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"min": 0,
+					"max": 100,
+					"method": "ObjectMethods/PonderacionesPeriodos.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PonderacionesPeriodos1": {
+					"type": "input",
+					"top": 479,
+					"left": 410,
+					"width": 50,
+					"height": 15,
+					"dataSource": "vrEVS_PonderacionQ2",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"min": 0,
+					"max": 100,
+					"method": "ObjectMethods/PonderacionesPeriodos1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PonderacionesPeriodos2": {
+					"type": "input",
+					"top": 479,
+					"left": 468,
+					"width": 50,
+					"height": 15,
+					"dataSource": "vrEVS_PonderacionQ3",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"min": 0,
+					"max": 100,
+					"method": "ObjectMethods/PonderacionesPeriodos2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PonderacionesPeriodos3": {
+					"type": "input",
+					"top": 479,
+					"left": 526,
+					"width": 50,
+					"height": 15,
+					"dataSource": "vrEVS_PonderacionQ4",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"min": 0,
+					"max": 100,
+					"method": "ObjectMethods/PonderacionesPeriodos3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PonderacionesPeriodos7": {
+					"type": "input",
+					"top": 479,
+					"left": 584,
+					"width": 50,
+					"height": 15,
+					"dataSource": "vrEVS_PonderacionQ5",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"min": 0,
+					"max": 100,
+					"method": "ObjectMethods/PonderacionesPeriodos7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PonderacionesPeriodos10": {
+					"type": "input",
+					"top": 503,
+					"left": 352,
+					"width": 50,
+					"height": 15,
+					"dataSource": "vrEVS_PonderacionB1",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"min": 0,
+					"max": 100,
+					"method": "ObjectMethods/PonderacionesPeriodos10.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PonderacionesPeriodos11": {
+					"type": "input",
+					"top": 503,
+					"left": 410,
+					"width": 50,
+					"height": 15,
+					"dataSource": "vrEVS_PonderacionB2",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"min": 0,
+					"max": 100,
+					"method": "ObjectMethods/PonderacionesPeriodos11.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PonderacionesPeriodos12": {
+					"type": "input",
+					"top": 503,
+					"left": 468,
+					"width": 50,
+					"height": 15,
+					"dataSource": "vrEVS_PonderacionB3",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"min": 0,
+					"max": 100,
+					"method": "ObjectMethods/PonderacionesPeriodos12.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PonderacionesPeriodos13": {
+					"type": "input",
+					"top": 503,
+					"left": 526,
+					"width": 50,
+					"height": 15,
+					"dataSource": "vrEVS_PonderacionB4",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"min": 0,
+					"max": 100,
+					"method": "ObjectMethods/PonderacionesPeriodos13.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PonderacionesPeriodos4": {
+					"type": "input",
+					"top": 527,
+					"left": 352,
+					"width": 50,
+					"height": 15,
+					"dataSource": "vrEVS_PonderacionT1",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"min": 0,
+					"max": 100,
+					"method": "ObjectMethods/PonderacionesPeriodos4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PonderacionesPeriodos5": {
+					"type": "input",
+					"top": 527,
+					"left": 410,
+					"width": 50,
+					"height": 15,
+					"dataSource": "vrEVS_PonderacionT2",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"min": 0,
+					"max": 100,
+					"method": "ObjectMethods/PonderacionesPeriodos5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PonderacionesPeriodos6": {
+					"type": "input",
+					"top": 527,
+					"left": 468,
+					"width": 50,
+					"height": 15,
+					"dataSource": "vrEVS_PonderacionT3",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"min": 0,
+					"max": 100,
+					"method": "ObjectMethods/PonderacionesPeriodos6.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PonderacionesPeriodos8": {
+					"type": "input",
+					"top": 551,
+					"left": 352,
+					"width": 50,
+					"height": 15,
+					"dataSource": "vrEVS_PonderacionS1",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"min": 0,
+					"max": 100,
+					"method": "ObjectMethods/PonderacionesPeriodos8.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PonderacionesPeriodos9": {
+					"type": "input",
+					"top": 551,
+					"left": 410,
+					"width": 50,
+					"height": 15,
+					"dataSource": "vrEVS_PonderacionS2",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"min": 0,
+					"max": 100,
+					"method": "ObjectMethods/PonderacionesPeriodos9.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 88,
+					"left": 270,
+					"width": 200,
+					"height": 16,
+					"stroke": "#000000",
+					"styleSheet": "Medium - 13",
+					"text": "Cálculo de Resultados finales"
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 183,
+					"left": 270,
+					"width": 280,
+					"height": 16,
+					"stroke": "#000000",
+					"styleSheet": "Medium - 13",
+					"text": "Cálculo de promedios de los períodos"
+				},
+				"Texto9": {
+					"type": "text",
+					"top": 265,
+					"left": 270,
+					"width": 280,
+					"height": 16,
+					"stroke": "#000000",
+					"styleSheet": "Medium - 13",
+					"text": "Cálculo del promedio anual"
+				},
+				"Línea2": {
+					"type": "line",
+					"top": 105,
+					"left": 268,
+					"width": 594,
+					"stroke": "#AAAAAA"
+				},
+				"Línea8": {
+					"type": "line",
+					"top": 200,
+					"left": 268,
+					"width": 594,
+					"stroke": "#AAAAAA"
+				},
+				"Línea9": {
+					"type": "line",
+					"top": 282,
+					"left": 268,
+					"width": 594,
+					"stroke": "#AAAAAA"
+				},
+				"Texto30": {
+					"type": "text",
+					"top": 330,
+					"left": 270,
+					"width": 280,
+					"height": 16,
+					"stroke": "#000000",
+					"styleSheet": "Medium - 13",
+					"text": "Cálculo de la nota final"
+				},
+				"Línea24": {
+					"type": "line",
+					"top": 347,
+					"left": 268,
+					"width": 594,
+					"stroke": "#AAAAAA"
+				},
+				"Texto38": {
+					"type": "text",
+					"top": 450,
+					"left": 270,
+					"width": 340,
+					"height": 16,
+					"stroke": "#000000",
+					"styleSheet": "Medium - 13",
+					"text": "Ponderaciones de los períodos en Promedio Final"
+				},
+				"Línea4": {
+					"type": "line",
+					"top": 467,
+					"left": 268,
+					"width": 594,
+					"stroke": "#AAAAAA"
+				},
+				"statusPonderacion5P": {
+					"type": "text",
+					"top": 479,
+					"left": 642,
+					"width": 128,
+					"height": 15,
+					"stroke": "#555555",
+					"styleSheet": "Plain - 12",
+					"text": "statusPonderacion5P"
+				},
+				"statusPonderacion4P": {
+					"type": "text",
+					"top": 503,
+					"left": 642,
+					"width": 128,
+					"height": 15,
+					"stroke": "#555555",
+					"styleSheet": "Plain - 12",
+					"text": "statusPonderacion4P"
+				},
+				"statusPonderacion3P": {
+					"type": "text",
+					"top": 527,
+					"left": 642,
+					"width": 128,
+					"height": 15,
+					"stroke": "#555555",
+					"styleSheet": "Plain - 12",
+					"text": "statusPonderacion3P"
+				},
+				"statusPonderacion2P": {
+					"type": "text",
+					"top": 551,
+					"left": 642,
+					"width": 128,
+					"height": 15,
+					"stroke": "#555555",
+					"styleSheet": "Plain - 12",
+					"text": "statusPonderacion2P"
+				}
+			}
+		},
+		{
+			"objects": {
+				"insercionBoton": {
+					"type": "button",
+					"top": 1029,
+					"left": 1,
+					"width": 499,
+					"height": 359,
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"insercionfondo": {
+					"type": "picture",
+					"top": 1028,
+					"left": 1,
+					"width": 500,
+					"height": 360,
+					"visibility": "hidden",
+					"pictureFormat": "scaled",
+					"picture": "Images/insercionfondo.gif"
+				},
+				"insercion5": {
+					"type": "rectangle",
+					"top": 1117,
+					"left": 43,
+					"width": 415,
+					"height": 196,
+					"visibility": "hidden",
+					"fill": "#666666",
+					"stroke": "#CCCCCC",
+					"borderRadius": 15
+				},
+				"insercion": {
+					"type": "rectangle",
+					"top": 1114,
+					"left": 40,
+					"width": 415,
+					"height": 196,
+					"visibility": "hidden",
+					"stroke": "#FFFFFF",
+					"borderRadius": 15
+				},
+				"insercion_simbolo": {
+					"type": "input",
+					"top": 1137,
+					"left": 164,
+					"width": 25,
+					"height": 17,
+					"visibility": "hidden",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/insercion_simbolo.4dm",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"insercion_descripcion": {
+					"type": "input",
+					"top": 1163,
+					"left": 163,
+					"width": 265,
+					"height": 33,
+					"visibility": "hidden",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/insercion_descripcion.4dm",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"insercionDesde": {
+					"type": "dropdown",
+					"top": 1207,
+					"left": 164,
+					"width": 68,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSourceTypeHint": "arrayNumber",
+					"styleSheet": "Plain - 13",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"insercionHasta": {
+					"type": "dropdown",
+					"top": 1233,
+					"left": 164,
+					"width": 68,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSourceTypeHint": "arrayNumber",
+					"styleSheet": "Plain - 13",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"insercion1": {
+					"type": "text",
+					"top": 1137,
+					"left": 65,
+					"width": 90,
+					"height": 15,
+					"visibility": "hidden",
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"text": "Símbolo:\r"
+				},
+				"insercion2": {
+					"type": "text",
+					"top": 1163,
+					"left": 65,
+					"width": 90,
+					"height": 15,
+					"visibility": "hidden",
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"text": "Descripción:\r"
+				},
+				"Insercion3": {
+					"type": "text",
+					"top": 1209,
+					"left": 65,
+					"width": 90,
+					"height": 15,
+					"visibility": "hidden",
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"text": "Desde:\r"
+				},
+				"Insercion4": {
+					"type": "text",
+					"top": 1235,
+					"left": 65,
+					"width": 90,
+					"height": 15,
+					"visibility": "hidden",
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"text": "Hasta:\r"
+				},
+				"insercionCancelar": {
+					"type": "button",
+					"top": 1279,
+					"left": 261,
+					"width": 80,
+					"height": 22,
+					"visibility": "hidden",
+					"text": "Cancelar",
+					"styleSheet": "Plain - 13",
+					"focusable": false,
+					"method": "ObjectMethods/insercionCancelar.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"insercion_insertar": {
+					"type": "button",
+					"top": 1279,
+					"left": 349,
+					"width": 80,
+					"height": 22,
+					"visibility": "hidden",
+					"text": "Insertar",
+					"styleSheet": "Plain - 13",
+					"focusable": false,
+					"method": "ObjectMethods/insercion_insertar.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"toto": {
+					"type": "checkbox",
+					"top": 557,
+					"left": 296,
+					"width": 499,
+					"height": 25,
+					"dataSource": "bConvertSymbolicAverages",
+					"text": "Convertir promedios finales numéricos al valor de conversión del símbolo",
+					"styleSheet": "Plain - 13",
+					"method": "ObjectMethods/toto.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"modoConversionSimbolos": {
+					"type": "input",
+					"top": 1029,
+					"left": 536,
+					"width": 214,
+					"height": 17,
+					"dataSourceTypeHint": "number",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"antesEdicionRangoDesde": {
+					"type": "input",
+					"top": 1054,
+					"left": 536,
+					"width": 214,
+					"height": 17,
+					"dataSourceTypeHint": "number",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"antesEdicionRangoHasta": {
+					"type": "input",
+					"top": 1079,
+					"left": 536,
+					"width": 214,
+					"height": 17,
+					"dataSourceTypeHint": "number",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"antesEdicionRangoConversion": {
+					"type": "input",
+					"top": 1104,
+					"left": 536,
+					"width": 214,
+					"height": 17,
+					"dataSourceTypeHint": "number",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"antesEdicionDescripcion": {
+					"type": "input",
+					"top": 1029,
+					"left": 759,
+					"width": 214,
+					"height": 17,
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"antesEdicionSimbolo": {
+					"type": "input",
+					"top": 1054,
+					"left": 759,
+					"width": 214,
+					"height": 17,
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"statusEdicionSimbolos": {
+					"type": "text",
+					"top": 508,
+					"left": 296,
+					"width": 499,
+					"height": 29,
+					"stroke": "#555555",
+					"styleSheet": "Plain - 12",
+					"text": "statusEdicionSimbolos"
+				},
+				"Texto32": {
+					"type": "text",
+					"top": 1050,
+					"left": 15,
+					"width": 467,
+					"height": 33,
+					"textAlign": "center",
+					"text": "Cuadro de diálogo de inserción de rangos. NO BORRAR"
+				},
+				"lbSimbolos": {
+					"type": "listbox",
+					"top": 102,
+					"left": 296,
+					"width": 519,
+					"height": 395,
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "4em",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"headerHeight": "2em",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"method": "ObjectMethods/lbSimbolos.4dm",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onMouseEnter",
+						"onBeforeDataEntry"
+					],
+					"columns": [
+						{
+							"name": "simbolos_simbolo",
+							"width": 64,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"truncateMode": "none",
+							"textAlign": "center",
+							"verticalAlign": "top",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "encabezado_simbolo",
+								"text": "Símbolo",
+								"verticalAlign": "top",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "simbolos_descripcion",
+							"width": 241,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"wordwrap": "normal",
+							"verticalAlign": "top",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "encabezado_descripcion",
+								"text": "Descripción",
+								"verticalAlign": "top",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "simbolos_desde",
+							"width": 57,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"truncateMode": "none",
+							"verticalAlign": "top",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "encabezado_desde",
+								"text": "Desde",
+								"verticalAlign": "top",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "simbolos_hasta",
+							"width": 59,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"truncateMode": "none",
+							"verticalAlign": "top",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onDataChange"
+							],
+							"header": {
+								"name": "encabezado_hasta",
+								"text": "Hasta",
+								"dataSource": "Encabezado6",
+								"verticalAlign": "top",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "simbolos_conversion",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"verticalAlign": "top",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "encabezado_conversion",
+								"text": "Conversion",
+								"verticalAlign": "top",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "color_graficos_stwa",
+							"width": 20,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#0E0E0E",
+							"alternateFill": "automatic",
+							"rowStrokeSource": "aSTWAColorRGB",
+							"rowFillSource": "aSTWAColorRGB",
+							"verticalAlign": "top",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado5",
+								"verticalAlign": "top",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "simbolos_desde%",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"truncateMode": "none",
+							"verticalAlign": "top",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/simbolos_desde%25.4dm",
+							"header": {
+								"name": "Encabezado8",
+								"text": "desde%",
+								"verticalAlign": "top",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "simbolos_hasta%",
+							"width": 139,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"truncateMode": "none",
+							"verticalAlign": "top",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado9",
+								"text": "hasta%",
+								"verticalAlign": "top",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "simbolos_conversion%",
+							"width": 140,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"truncateMode": "none",
+							"verticalAlign": "top",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado4",
+								"text": "Conversión",
+								"verticalAlign": "top",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"menuContextual": {
+					"type": "button",
+					"top": 102,
+					"left": 845,
+					"width": 22,
+					"height": 20,
+					"visibility": "hidden",
+					"icon": "/RESOURCES/img/rueda de Tareas sin menu.PNG",
+					"style": "custom",
+					"customBackgroundPicture": "var:",
+					"method": "ObjectMethods/menuContextual.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto40": {
+					"type": "text",
+					"top": 596,
+					"left": 296,
+					"width": 559,
+					"height": 25,
+					"stroke": "#FF0011",
+					"textAlign": "left",
+					"styleSheet": "Plain - 10",
+					"text": "La configuración de colores para los indicadores es de uso exclusivo de SchoolTrack WebAccess (gráficos de aprendizajes)."
+				},
+				"Rectángulo5": {
+					"type": "rectangle",
+					"top": 296,
+					"left": 485,
+					"width": 1,
+					"height": 1,
+					"fill": "transparent"
+				}
+			}
+		},
+		{
+			"objects": {
+				"avisoBonificacion1": {
+					"type": "rectangle",
+					"top": 408,
+					"left": 298,
+					"width": 248,
+					"height": 154,
+					"fill": "#FFFFDF",
+					"stroke": "#DDDDDD",
+					"borderRadius": 5
+				},
+				"vi_BonificarNotaOficial": {
+					"type": "checkbox",
+					"top": 374,
+					"left": 414,
+					"width": 138,
+					"height": 18,
+					"dataSource": "vi_BonificarNotaOficial",
+					"text": "Nota Final Oficial",
+					"styleSheet": "Plain - 13",
+					"method": "ObjectMethods/vi_BonificarNotaOficial.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vi_BonificarNotaFinalInterna": {
+					"type": "checkbox",
+					"top": 374,
+					"left": 277,
+					"width": 131,
+					"height": 18,
+					"dataSource": "vi_BonificarNotaFinalInterna",
+					"text": "Nota final Interna",
+					"styleSheet": "Plain - 13",
+					"method": "ObjectMethods/vi_BonificarNotaFinalInterna.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vi_BonificarPromedioAnual": {
+					"type": "checkbox",
+					"top": 352,
+					"left": 414,
+					"width": 120,
+					"height": 18,
+					"dataSource": "vi_BonificarPromedioAnual",
+					"text": "Promedio Anual",
+					"styleSheet": "Plain - 13",
+					"method": "ObjectMethods/vi_BonificarPromedioAnual.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vi_BonificarPromedioPeriodo": {
+					"type": "checkbox",
+					"top": 352,
+					"left": 277,
+					"width": 138,
+					"height": 18,
+					"dataSource": "vi_BonificarPromedioPeriodo",
+					"text": "Promedios Período",
+					"styleSheet": "Plain - 13",
+					"method": "ObjectMethods/vi_BonificarPromedioPeriodo.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vi_Bonificar": {
+					"type": "text",
+					"top": 312,
+					"left": 277,
+					"width": 193,
+					"height": 16,
+					"styleSheet": "Medium - 13",
+					"text": "Aplicar bonificaciones a:"
+				},
+				"Variable10": {
+					"type": "button",
+					"top": 765,
+					"left": 20,
+					"width": 76,
+					"height": 18,
+					"dataSource": "bPrint",
+					"shortcutKey": "p",
+					"shortcutAccel": true,
+					"shortcutShift": true,
+					"text": "Imprimir",
+					"styleSheet": "Plain - 12",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable10.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón": {
+					"type": "button",
+					"top": 795,
+					"left": 20,
+					"width": 405,
+					"height": 22,
+					"dataSource": "Botón",
+					"action": "showClipboard",
+					"shortcutKey": "c",
+					"shortcutAccel": true,
+					"shortcutShift": true,
+					"shortcutAlt": true,
+					"text": "tabla de conversion a portapapeles CMD-OPTION-SHIFT-C",
+					"styleSheet": "Plain - 11",
+					"method": "ObjectMethods/Botón.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"statusEdicionConversion": {
+					"type": "text",
+					"top": 587,
+					"left": 267,
+					"width": 564,
+					"height": 15,
+					"stroke": "#555555",
+					"styleSheet": "Plain - 12",
+					"text": "statusEdicionConversion"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 106,
+					"left": 277,
+					"width": 209,
+					"height": 16,
+					"styleSheet": "Medium - 13",
+					"text": "Conversión entre escalas"
+				},
+				"conversion_tabla": {
+					"type": "radio",
+					"top": 166,
+					"left": 277,
+					"width": 193,
+					"height": 20,
+					"text": "Utilizar tabla de conversión",
+					"styleSheet": "Plain - 13",
+					"stroke": "#000000",
+					"method": "ObjectMethods/conversion_tabla.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Línea1": {
+					"type": "line",
+					"top": 127,
+					"left": 268,
+					"width": 282,
+					"stroke": "#AAAAAA"
+				},
+				"Línea14": {
+					"type": "line",
+					"top": 337,
+					"left": 268,
+					"width": 282,
+					"stroke": "#AAAAAA"
+				},
+				"conversion_matematica": {
+					"type": "radio",
+					"top": 139,
+					"left": 277,
+					"width": 193,
+					"height": 20,
+					"text": "Conversion matemática",
+					"styleSheet": "Plain - 13",
+					"stroke": "#000000",
+					"method": "ObjectMethods/conversion_matematica.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"menuContextual_tablas": {
+					"type": "button",
+					"top": 100,
+					"left": 843,
+					"width": 22,
+					"height": 20,
+					"icon": "/RESOURCES/img/rueda de Tareas sin menu.PNG",
+					"style": "custom",
+					"customBackgroundPicture": "var:",
+					"method": "ObjectMethods/menuContextual_tablas.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"antesEdicionTablaNota": {
+					"type": "input",
+					"top": 795,
+					"left": 552,
+					"width": 214,
+					"height": 17,
+					"sizingY": "move",
+					"dataSourceTypeHint": "number",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"antesEdicionTablaPuntos": {
+					"type": "input",
+					"top": 820,
+					"left": 552,
+					"width": 214,
+					"height": 17,
+					"sizingY": "move",
+					"dataSourceTypeHint": "number",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"antesEdicionTablaBonificacion": {
+					"type": "input",
+					"top": 845,
+					"left": 552,
+					"width": 214,
+					"height": 17,
+					"sizingY": "move",
+					"dataSourceTypeHint": "number",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"avisoBonificacion": {
+					"type": "text",
+					"top": 421,
+					"left": 310,
+					"width": 225,
+					"height": 129,
+					"stroke": "#555555",
+					"styleSheet": "Plain - 12",
+					"text": "La bonificación aplica sobre la escala de evaluación de referencia y sólo sobre los promedios seleccionados.\r\rSi utiliza la tabla de conversión para convertir las evaluaciones de una escala a otra, primero se aplica la bonificación y luego el valor bonificado es convertido a la otra escala."
+				},
+				"avisoBonificacion2": {
+					"type": "rectangle",
+					"top": 194,
+					"left": 298,
+					"width": 248,
+					"height": 78,
+					"fill": "#FFFFDF",
+					"stroke": "#DDDDDD",
+					"borderRadius": 5
+				},
+				"avisoBonificacion3": {
+					"type": "text",
+					"top": 204,
+					"left": 310,
+					"width": 225,
+					"height": 58,
+					"stroke": "#555555",
+					"styleSheet": "Plain - 12",
+					"text": "Utilice la tabla de conversión sólo cuando requiera convertir las evaluaciones en la escala de referencia valores arbitrarios de la otra escala."
+				},
+				"lbTablaConversion": {
+					"type": "listbox",
+					"top": 100,
+					"left": 567,
+					"width": 270,
+					"height": 461,
+					"dataSource": "List Box",
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"headerHeight": "22px",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "#DDDDDD",
+					"verticalLineStroke": "#DDDDDD",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 13,
+					"method": "ObjectMethods/lbTablaConversion.4dm",
+					"events": [
+						"onDataChange",
+						"onSelectionChange",
+						"onBeforeDataEntry"
+					],
+					"columns": [
+						{
+							"name": "intervalosNota",
+							"width": 90,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "encabezadoNotas",
+								"text": "Notas",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "intervalosPuntos",
+							"width": 90,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "encabezadoPuntos",
+								"text": "Puntos",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "bonificacion",
+							"width": 90,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "encabezadobonificacion",
+								"text": "Bonificacion",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "intervalosNota%",
+							"width": 180,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado10",
+								"text": "Encabezado10",
+								"dataSource": "Encabezado10",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "intervalosPuntos%",
+							"width": 164,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado11",
+								"text": "Encabezado11",
+								"dataSource": "Encabezado11",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						}
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 104,
+					"left": 967,
+					"width": 175,
+					"height": 23,
+					"dataSource": "Botón1",
+					"text": "definir conversion",
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"r2_EvEsfuerzoBonificacion": {
+					"type": "radio",
+					"top": 525,
+					"left": 286,
+					"width": 247,
+					"height": 15,
+					"dataSource": "r2_EvEsfuerzoBonificacion",
+					"tooltip": "El valor numérico registrado incrementa o decrementa el resultado final (solo para evaluación con escalas numéricas)",
+					"text": "Modalidad bonificación",
+					"styleSheet": "Plain - 13",
+					"method": "ObjectMethods/r2_EvEsfuerzoBonificacion.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DescEsfuerzo1": {
+					"type": "text",
+					"top": 549,
+					"left": 312,
+					"width": 443,
+					"height": 43,
+					"stroke": "#666666",
+					"styleSheet": "Plain - 12",
+					"text": "El valor numérico registrado incrementa o decrementa el resultado final (solo disponible cuando la escala de evaluación de referencia es numérica)"
+				},
+				"texto18": {
+					"type": "checkbox",
+					"top": 92,
+					"left": 271,
+					"width": 214,
+					"height": 18,
+					"dataSource": "cb_EvaluaEsfuerzo",
+					"text": "Utilizar evaluación de esfuerzo",
+					"styleSheet": "Plain - 13",
+					"method": "ObjectMethods/texto18.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"r1_EvEsfuerzoIndicadores": {
+					"type": "radio",
+					"top": 124,
+					"left": 286,
+					"width": 247,
+					"height": 15,
+					"dataSource": "r1_EvEsfuerzoIndicadores",
+					"tooltip": "Se utilizan indicadores de esfuerzo con o sin incidencia en el resultado (a definir en página Evaluación de esfuerzo)",
+					"text": "Modalidad indicadores",
+					"styleSheet": "Plain - 13",
+					"method": "ObjectMethods/r1_EvEsfuerzoIndicadores.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"lbEsfuerzo": {
+					"type": "listbox",
+					"top": 207,
+					"left": 312,
+					"width": 438,
+					"height": 276,
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "33px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "#DDDDDD",
+					"verticalLineStroke": "#DDDDDD",
+					"verticalAlign": "top",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"method": "ObjectMethods/lbEsfuerzo.4dm",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onBeforeDataEntry"
+					],
+					"columns": [
+						{
+							"name": "esfuerzo_indicador",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"verticalAlign": "top",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onDataChange",
+								"onBeforeDataEntry"
+							],
+							"header": {
+								"name": "esfuerzo_H1",
+								"text": "Indicador",
+								"verticalAlign": "top",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "esfuerzo_descripcion",
+							"width": 221,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"verticalAlign": "top",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "esfuerzoH2",
+								"text": "Descripción",
+								"verticalAlign": "top",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "esfuerzo_factor",
+							"width": 97,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"verticalAlign": "top",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "esfuerzo_H3",
+								"text": "Factor",
+								"verticalAlign": "top",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"info": {
+					"type": "text",
+					"top": 149,
+					"left": 312,
+					"width": 452,
+					"height": 43,
+					"stroke": "#666666",
+					"styleSheet": "Plain - 12",
+					"text": "Los indicadores en la lista pueden ser registrados en las planillas de registro de de evaluaciones. El resultado del período será multiplicado por el factor correspondiente al indicador registrado\t"
+				},
+				"antesEdicionFactor_esfuerzo": {
+					"type": "input",
+					"top": 952,
+					"left": 279,
+					"width": 214,
+					"height": 17,
+					"sizingY": "move",
+					"dataSourceTypeHint": "number",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"antesEdicionIndicador_esfuerzo": {
+					"type": "input",
+					"top": 928,
+					"left": 279,
+					"width": 214,
+					"height": 17,
+					"sizingY": "move",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"antesEdicionDescripcion_esfuerzo": {
+					"type": "input",
+					"top": 901,
+					"left": 279,
+					"width": 214,
+					"height": 17,
+					"sizingY": "move",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"menuContextual_esfuerzo": {
+					"type": "button",
+					"top": 228,
+					"left": 759,
+					"width": 22,
+					"height": 20,
+					"icon": "/RESOURCES/img/rueda de Tareas sin menu.PNG",
+					"style": "custom",
+					"customBackgroundPicture": "var:",
+					"method": "ObjectMethods/menuContextual_esfuerzo.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón4": {
+					"type": "button",
+					"top": 981,
+					"left": 279,
+					"width": 247,
+					"height": 30,
+					"sizingY": "move",
+					"dataSource": "Botón4",
+					"shortcutKey": "+",
+					"shortcutAccel": true,
+					"shortcutShift": true,
+					"text": "Nuevo indicador",
+					"method": "ObjectMethods/Botón4.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

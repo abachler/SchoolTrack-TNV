@@ -1,0 +1,2 @@
+SN3_SaveDataReceptionSettings 
+SN3_SendDataReceptionConfigs (0)

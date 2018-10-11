@@ -1,0 +1,138 @@
+﻿{
+	"inheritedForm": "XS_MASTER_WZDDialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 630,
+	"height": 405,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón1": {
+					"type": "button",
+					"top": 374,
+					"left": 13,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Botón1",
+					"text": "Salir",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 9,
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_importador": {
+					"type": "button",
+					"top": 374,
+					"left": 529,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btn_importador",
+					"text": "Importar",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 9,
+					"method": "ObjectMethods/btn_importador.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable15": {
+					"type": "input",
+					"top": 88,
+					"left": 11,
+					"width": 568,
+					"height": 263,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vt_g2",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"entryFilter": "~\"\"",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"sinArchivo2": {
+					"type": "text",
+					"top": 381,
+					"left": 108,
+					"width": 360,
+					"height": 12,
+					"sizingY": "move",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Haga clic aquí para generar un archivo vacío con encabezados."
+				},
+				"Botón invisible": {
+					"type": "button",
+					"top": 380,
+					"left": 102,
+					"width": 323,
+					"height": 13,
+					"dataSource": "Botón invisible",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

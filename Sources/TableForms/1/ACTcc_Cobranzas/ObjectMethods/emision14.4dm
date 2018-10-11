@@ -1,0 +1,1 @@
+LOG_RegisterEvt ("Opción "+ST_Qte ("No prepagar automáticamente")+ST_Boolean2Str (Self:C308->=1;" MARCADA";" DESMARCADA")+" en ventana de emisión de avisos de cobranza.")

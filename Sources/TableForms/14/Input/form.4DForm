@@ -1,0 +1,783 @@
+﻿{
+	"windowTitle": ":21002,1",
+	"inheritedForm": "XS_BKGD_Forms",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Variable8",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerBody": 160,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onUnload",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"cb_ticketEnfermeria": {
+					"type": "checkbox",
+					"top": 139,
+					"left": 15,
+					"width": 173,
+					"height": 13,
+					"dataSource": "cb_ticketEnfermeria",
+					"text": "Imprimir Ticket Enfermería",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/cb_ticketEnfermeria.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"help_sinTicketEnfermeria": {
+					"type": "text",
+					"top": 130,
+					"left": 15,
+					"width": 584,
+					"height": 28,
+					"fontFamily": "Tahoma",
+					"fontSize": 10,
+					"text": "Texto de ejemplo:"
+				},
+				"Picture16": {
+					"type": "picture",
+					"top": 86,
+					"left": 318,
+					"width": 14,
+					"height": 11
+				},
+				"Champ1": {
+					"type": "input",
+					"top": 13,
+					"left": 83,
+					"width": 73,
+					"height": 14,
+					"dataSource": "[Alumnos_EventosEnfermeria:14]Fecha:2",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"method": "ObjectMethods/Champ1.4dm",
+					"events": [
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Champ2": {
+					"type": "input",
+					"top": 14,
+					"left": 208,
+					"width": 44,
+					"height": 14,
+					"dataSource": "[Alumnos_EventosEnfermeria:14]Hora_de_Ingreso:3",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"timeFormat": "hh_mm",
+					"entryFilter": "!0&9##:##",
+					"method": "ObjectMethods/Champ2.4dm",
+					"events": [
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Champ3": {
+					"type": "input",
+					"top": 14,
+					"left": 344,
+					"width": 109,
+					"height": 14,
+					"dataSource": "[Alumnos_EventosEnfermeria:14]Procedencia:4",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Champ3.4dm",
+					"events": [
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"Variable2": {
+					"type": "dropdown",
+					"top": 13,
+					"left": 455,
+					"width": 14,
+					"height": 14,
+					"dataSource": "<>aProced",
+					"focusable": false,
+					"display": false,
+					"fontFamily": "Arial",
+					"fontSize": 9,
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Champ4": {
+					"type": "input",
+					"top": 37,
+					"left": 83,
+					"width": 162,
+					"height": 14,
+					"dataSource": "[Alumnos_EventosEnfermeria:14]Afeccion:6",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Champ4.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onAfterKeystroke"
+					]
+				},
+				"Variable3": {
+					"type": "dropdown",
+					"top": 37,
+					"left": 250,
+					"width": 14,
+					"height": 14,
+					"dataSource": "<>aAfect",
+					"focusable": false,
+					"display": false,
+					"fontFamily": "Arial",
+					"fontSize": 9,
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"asignatura2": {
+					"type": "input",
+					"top": 37,
+					"left": 344,
+					"width": 226,
+					"height": 14,
+					"dataSource": "vProfAutoriza",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onAfterKeystroke"
+					]
+				},
+				"Champ5": {
+					"type": "input",
+					"top": 59,
+					"left": 83,
+					"width": 162,
+					"height": 14,
+					"dataSource": "[Alumnos_EventosEnfermeria:14]Tratamiento:7",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Champ5.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onAfterKeystroke"
+					]
+				},
+				"Variable4": {
+					"type": "dropdown",
+					"top": 59,
+					"left": 250,
+					"width": 14,
+					"height": 14,
+					"dataSource": "<>aTrto",
+					"focusable": false,
+					"display": false,
+					"fontFamily": "Arial",
+					"fontSize": 9,
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"asignatura3": {
+					"type": "input",
+					"top": 59,
+					"left": 344,
+					"width": 259,
+					"height": 14,
+					"dataSource": "[Alumnos_EventosEnfermeria:14]Asignatura:11",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onAfterKeystroke"
+					]
+				},
+				"Champ6": {
+					"type": "input",
+					"top": 85,
+					"left": 83,
+					"width": 62,
+					"height": 14,
+					"dataSource": "[Alumnos_EventosEnfermeria:14]Hora_de_Salida:8",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "!0&9##:##",
+					"method": "ObjectMethods/Champ6.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Champ7": {
+					"type": "input",
+					"top": 85,
+					"left": 205,
+					"width": 109,
+					"height": 14,
+					"dataSource": "[Alumnos_EventosEnfermeria:14]Destino:9",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Champ7.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onAfterKeystroke"
+					]
+				},
+				"Variable5": {
+					"type": "dropdown",
+					"top": 84,
+					"left": 318,
+					"width": 14,
+					"height": 14,
+					"dataSource": "<>aDest",
+					"focusable": false,
+					"display": false,
+					"fontFamily": "Arial",
+					"fontSize": 9,
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Champ10": {
+					"type": "input",
+					"top": 86,
+					"left": 346,
+					"width": 162,
+					"height": 13,
+					"dataSource": "[Alumnos_EventosEnfermeria:14]Fuera_de_horario:14",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "Fuera de horario",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onAfterKeystroke"
+					]
+				},
+				"Champ9": {
+					"type": "input",
+					"top": 111,
+					"left": 104,
+					"width": 210,
+					"height": 14,
+					"dataSource": "vProfAutoriza",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Champ9.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"Champ11": {
+					"type": "input",
+					"top": 111,
+					"left": 416,
+					"width": 193,
+					"height": 14,
+					"dataSource": "vProfIngresa",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/Champ11.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"Champ8": {
+					"type": "input",
+					"top": 172,
+					"left": 15,
+					"width": 577,
+					"height": 82,
+					"dataSource": "[Alumnos_EventosEnfermeria:14]Observaciones:10",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"spellcheck": true,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"b_imprimir": {
+					"type": "button",
+					"top": 264,
+					"left": 21,
+					"width": 101,
+					"height": 20,
+					"dataSource": "b_imprimir",
+					"text": "Imprimir Ticket",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/b_imprimir.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 264,
+					"left": 346,
+					"width": 80,
+					"height": 20,
+					"dataSource": "b_Eliminar",
+					"text": "Eliminar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 264,
+					"left": 437,
+					"width": 80,
+					"height": 20,
+					"dataSource": "b_Cancelar",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 264,
+					"left": 528,
+					"width": 80,
+					"height": 20,
+					"dataSource": "b_Guardar",
+					"text": "Guardar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Picture13": {
+					"type": "picture",
+					"top": 15,
+					"left": 454,
+					"width": 14,
+					"height": 11
+				},
+				"Picture14": {
+					"type": "picture",
+					"top": 39,
+					"left": 249,
+					"width": 14,
+					"height": 11
+				},
+				"Picture15": {
+					"type": "picture",
+					"top": 61,
+					"left": 249,
+					"width": 14,
+					"height": 11
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 13,
+					"left": 15,
+					"width": 64,
+					"height": 14,
+					"stroke": "#000000",
+					"textAlign": "left",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Fecha:"
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 14,
+					"left": 175,
+					"width": 24,
+					"height": 14,
+					"stroke": "#000000",
+					"textAlign": "left",
+					"styleSheet": "XS_DialogObjects",
+					"text": "a las"
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 14,
+					"left": 272,
+					"width": 66,
+					"height": 14,
+					"stroke": "#000000",
+					"textAlign": "left",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Procedencia:"
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 37,
+					"left": 15,
+					"width": 64,
+					"height": 14,
+					"stroke": "#000000",
+					"textAlign": "left",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Afección:"
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 59,
+					"left": 15,
+					"width": 64,
+					"height": 14,
+					"stroke": "#000000",
+					"textAlign": "left",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Tratamiento:"
+				},
+				"Texte7": {
+					"type": "text",
+					"top": 85,
+					"left": 15,
+					"width": 64,
+					"height": 14,
+					"stroke": "#000000",
+					"textAlign": "left",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Hora salida:"
+				},
+				"Texte8": {
+					"type": "text",
+					"top": 157,
+					"left": 15,
+					"width": 78,
+					"height": 14,
+					"stroke": "#000000",
+					"textAlign": "left",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Observaciones:"
+				},
+				"Texte6": {
+					"type": "text",
+					"top": 85,
+					"left": 157,
+					"width": 44,
+					"height": 14,
+					"stroke": "#000000",
+					"textAlign": "left",
+					"styleSheet": "XS_DialogObjects",
+					"text": ":21002,201"
+				},
+				"asignatura": {
+					"type": "text",
+					"top": 37,
+					"left": 272,
+					"width": 66,
+					"height": 14,
+					"stroke": "#000000",
+					"textAlign": "left",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Profesor:"
+				},
+				"asignatura1": {
+					"type": "text",
+					"top": 59,
+					"left": 272,
+					"width": 66,
+					"height": 14,
+					"stroke": "#000000",
+					"textAlign": "left",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Asignatura:"
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 410,
+					"left": 238,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 353,
+					"left": 54,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				},
+				"Texte9": {
+					"type": "text",
+					"top": 111,
+					"left": 15,
+					"width": 94,
+					"height": 14,
+					"stroke": "#000000",
+					"textAlign": "left",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Autorizado por:"
+				},
+				"Texte10": {
+					"type": "text",
+					"top": 111,
+					"left": 329,
+					"width": 82,
+					"height": 14,
+					"stroke": "#000000",
+					"textAlign": "left",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Ingresado por:"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 147,
+					"left": 649,
+					"width": 93,
+					"height": 14,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"textDecoration": "underline",
+					"text": "Recomendaciones"
+				},
+				"Botón invisible1": {
+					"type": "button",
+					"top": 133,
+					"left": 649,
+					"width": 95,
+					"height": 13,
+					"dataSource": "Botón invisible1",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ticketEnfermeria_nombre": {
+					"type": "input",
+					"top": 140,
+					"left": 252,
+					"width": 144,
+					"height": 15,
+					"styleSheet": "XS_DialogObjects",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ticketEnfermeria_label": {
+					"type": "text",
+					"top": 139,
+					"left": 196,
+					"width": 70,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Modelo:"
+				},
+				"ticketEnfermeria_flecha": {
+					"type": "picture",
+					"top": 140,
+					"left": 400,
+					"width": 11,
+					"height": 14,
+					"pictureFormat": "scaled",
+					"picture": "Images/ticketEnfermeria_flecha.pict"
+				},
+				"ticketEnfermeria_btnInv": {
+					"type": "button",
+					"top": 140,
+					"left": 250,
+					"width": 162,
+					"height": 15,
+					"dataSource": "bModReport",
+					"display": false,
+					"method": "ObjectMethods/ticketEnfermeria_btnInv.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ticketEnfermeria_Obj": {
+					"type": "input",
+					"top": 2,
+					"left": 649,
+					"width": 166,
+					"height": 17,
+					"dataSourceTypeHint": "object",
+					"fill": "#10D800",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

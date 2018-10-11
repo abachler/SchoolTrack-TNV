@@ -1,0 +1,338 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Botón1",
+	"rightMargin": 15,
+	"bottomMargin": 15,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable6": {
+					"type": "input",
+					"top": 0,
+					"left": 0,
+					"width": 496,
+					"height": 208,
+					"dataSource": "vp_ModuleIconBack",
+					"dataSourceTypeHint": "picture",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"pictureFormat": "proportionalTopLeft",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ItemSeleccionado": {
+					"type": "radio",
+					"top": 91,
+					"left": 58,
+					"width": 290,
+					"height": 20,
+					"dataSource": "cs_ItemSeleccionado",
+					"text": "Considerar el monto del ítem seleccionado",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/ItemSeleccionado.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"CargoSeleccionado": {
+					"type": "input",
+					"top": 70,
+					"left": 58,
+					"width": 248,
+					"height": 12,
+					"dataSource": "vt_CargoSeleccionado",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/CargoSeleccionado.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Imagen2286": {
+					"type": "picture",
+					"top": 72,
+					"left": 312,
+					"width": 11,
+					"height": 14,
+					"sizingX": "move"
+				},
+				"Binvisible": {
+					"type": "button",
+					"top": 67,
+					"left": 309,
+					"width": 19,
+					"height": 19,
+					"dataSource": "Botón invisible",
+					"display": false,
+					"method": "ObjectMethods/Binvisible.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"MontoSeleccionado": {
+					"type": "radio",
+					"top": 116,
+					"left": 58,
+					"width": 350,
+					"height": 20,
+					"dataSource": "cs_MontoSeleccionado",
+					"text": "Considerar el monto según el siguiente % del monto seleccionado",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"MontoRecargo": {
+					"type": "input",
+					"top": 120,
+					"left": 378,
+					"width": 68,
+					"height": 12,
+					"dataSource": "vr_MontoRecargo",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1_1": {
+					"type": "text",
+					"top": 50,
+					"left": 58,
+					"width": 280,
+					"height": 18,
+					"styleSheet": "XS_FormObjects",
+					"text": "Utilizando la configuración del siguiente ítem de cargo"
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 177,
+					"left": 398,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Botón",
+					"action": "cancel",
+					"text": "Cancelar",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"PermitirRecargoItem": {
+					"type": "checkbox",
+					"top": 25,
+					"left": 27,
+					"width": 325,
+					"height": 14,
+					"sizingX": "move",
+					"dataSource": "crPermitirRecargoItem",
+					"text": "Permitir generación de recargos al ingresar pagos manualmente",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/PermitirRecargoItem.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"PermitirModificarMonto": {
+					"type": "checkbox",
+					"top": 142,
+					"left": 27,
+					"width": 325,
+					"height": 14,
+					"sizingX": "move",
+					"dataSource": "crPermitirModificarMonto",
+					"text": "Permitir modificar el monto del recargo en la ventana de ingreso de pagos",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1_2": {
+					"type": "text",
+					"top": 50,
+					"left": 349,
+					"width": 37,
+					"height": 18,
+					"styleSheet": "XS_FormObjects",
+					"text": "ID Item"
+				},
+				"Texto1_3": {
+					"type": "text",
+					"top": 50,
+					"left": 404,
+					"width": 77,
+					"height": 18,
+					"styleSheet": "XS_FormObjects",
+					"text": "Monto del Item"
+				},
+				"IdItem": {
+					"type": "input",
+					"top": 70,
+					"left": 346,
+					"width": 48,
+					"height": 12,
+					"dataSource": "vl_IdItemSeleccionado",
+					"fill": "transparent",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"MontoItem": {
+					"type": "input",
+					"top": 70,
+					"left": 402,
+					"width": 71,
+					"height": 12,
+					"dataSource": "vt_MontoCargo",
+					"fill": "transparent",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"BotónAceptarFDP": {
+					"type": "button",
+					"top": 177,
+					"left": 301,
+					"width": 80,
+					"height": 20,
+					"dataSource": "BotónAceptarFDP",
+					"action": "accept",
+					"text": "Aceptar",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/BotónAceptarFDP.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1_4": {
+					"type": "text",
+					"top": 169,
+					"left": 26,
+					"width": 240,
+					"height": 24,
+					"stroke": "#000099",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Para la importación de archivos de pagos, no se considerará esta configuración."
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,203 @@
+﻿{
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Lb_NoVisbleSTWA": {
+					"type": "listbox",
+					"top": 38,
+					"left": 21,
+					"width": 440,
+					"height": 303,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Barras 2D1",
+							"dataSource": "at_asignatura",
+							"width": 277,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado1",
+								"text": "Asignatura",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "Barras 2D2",
+							"dataSource": "at_cursosAsignaturas",
+							"width": 78,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado2",
+								"text": "Curso",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "Barras 2D3",
+							"dataSource": "ab_noVisible",
+							"width": 70,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "checkbox",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Barras 2D3.4dm",
+							"header": {
+								"name": "Encabezado3",
+								"text": "No visible ",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "Barras 2D4",
+							"dataSource": "al_asignaturasID",
+							"width": 96,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado4",
+								"text": "ID SchoolTrack",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"boton_aceptar": {
+					"type": "button",
+					"top": 402,
+					"left": 249,
+					"width": 102,
+					"height": 20,
+					"text": "Aceptar",
+					"styleSheet": "Plain - 11",
+					"method": "ObjectMethods/boton_aceptar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"boton_cancelar": {
+					"type": "button",
+					"top": 402,
+					"left": 359,
+					"width": 102,
+					"height": 20,
+					"action": "cancel",
+					"text": "Cancelar",
+					"styleSheet": "Plain - 11",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"MarcarTodos": {
+					"type": "checkbox",
+					"top": 18,
+					"left": 378,
+					"width": 83,
+					"height": 14,
+					"text": "Marcar Todos",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"method": "ObjectMethods/MarcarTodos.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto": {
+					"type": "text",
+					"top": 354,
+					"left": 22,
+					"width": 434,
+					"height": 28,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Al marcar la opción \"No visible\" en las asignaturas, estas no se listarán en el explorador de SchoolTrack WebAccess. "
+				}
+			}
+		}
+	]
+}

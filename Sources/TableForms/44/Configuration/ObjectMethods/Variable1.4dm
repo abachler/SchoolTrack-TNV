@@ -1,0 +1,1 @@
+CFG_STR_SaveConfiguration ("Evaluacion")

@@ -1,0 +1,1 @@
+[MPA_DefinicionDimensiones:188]PctParaAprobacion:14:=Round:C94(Self:C308->/[MPA_DefinicionDimensiones:188]Escala_Maximo:13*100;11)

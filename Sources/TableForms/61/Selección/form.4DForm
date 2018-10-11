@@ -1,0 +1,208 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 400,
+	"height": 82,
+	"markerHeader": 1,
+	"markerBody": 82,
+	"markerBreak": 82,
+	"markerFooter": 82,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDoubleClick",
+		"onUnload",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectángulo4": {
+					"type": "rectangle",
+					"top": 1,
+					"left": -1,
+					"width": 403,
+					"height": 81,
+					"sizingX": "grow",
+					"stroke": "#FFFFFF"
+				},
+				"imagen": {
+					"type": "input",
+					"top": 2,
+					"left": 2,
+					"width": 78,
+					"height": 78,
+					"sizingX": "grow",
+					"dataSourceTypeHint": "picture",
+					"fill": "#FFFFFF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"method": "ObjectMethods/imagen.4dm",
+					"events": [
+						"onDisplayDetail"
+					]
+				},
+				"S2_Campo": {
+					"type": "input",
+					"top": 5,
+					"left": 92,
+					"width": 293,
+					"height": 34,
+					"sizingX": "grow",
+					"dataSource": "[BBL_Items:61]Primer_título:4",
+					"fill": "#FFFFFF",
+					"fontFamily": "Helvetica Neue Light",
+					"fontSize": 14,
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S2_Campo1": {
+					"type": "input",
+					"top": 54,
+					"left": 92,
+					"width": 143,
+					"height": 13,
+					"sizingX": "grow",
+					"dataSource": "[BBL_Items:61]Clasificacion:2",
+					"fill": "#FFFFFF",
+					"fontFamily": "Helvetica Neue Light",
+					"fontSize": 11,
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Línea": {
+					"type": "line",
+					"top": 81,
+					"left": -1,
+					"width": 402,
+					"height": 1,
+					"stroke": "#00B4FF"
+				},
+				"S2_Campo2": {
+					"type": "input",
+					"top": 39,
+					"left": 92,
+					"width": 222,
+					"height": 13,
+					"sizingX": "grow",
+					"dataSource": "[BBL_Items:61]Primer_autor:6",
+					"fill": "#FFFFFF",
+					"fontFamily": "Helvetica Neue Light",
+					"fontSize": 11,
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"bSeleccionarregistro": {
+					"type": "button",
+					"top": 5,
+					"left": 580,
+					"width": 112,
+					"height": 20,
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"text": "Retorno",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bSeleccionarregistro1": {
+					"type": "button",
+					"top": 32,
+					"left": 580,
+					"width": 112,
+					"height": 20,
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Intro",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bSeleccionarregistro2": {
+					"type": "button",
+					"top": 59,
+					"left": 580,
+					"width": 112,
+					"height": 20,
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Escape",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,1092 @@
+﻿{
+	"inheritedForm": "XS_MASTER_WZDDialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 626,
+	"height": 407,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Texto1": {
+					"type": "text",
+					"top": 4,
+					"left": 161,
+					"width": 392,
+					"height": 49,
+					"stroke": "#FFFFFF",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Asistente para el Cambio de Fecha de Cargos Proyectados"
+				},
+				"Variable1": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 554,
+					"width": 20,
+					"height": 20,
+					"dataSource": "bPrev",
+					"shortcutKey": "[left arrow]",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 593,
+					"width": 20,
+					"height": 20,
+					"dataSource": "bNext",
+					"shortcutKey": "[right arrow]",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 479,
+					"left": 28,
+					"width": 20,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "Nueva Variable501",
+					"shortcutKey": "+",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 478,
+					"left": 94,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 378,
+					"left": 575,
+					"width": 17,
+					"height": 12,
+					"sizingX": "move",
+					"dataSource": "vi_Step",
+					"fill": "transparent",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable11": {
+					"type": "button",
+					"top": 479,
+					"left": 246,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bTrap",
+					"shortcutKey": "[Enter]",
+					"text": "Cancelar",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 474,
+					"left": 439,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 417,
+					"left": 255,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto11": {
+					"type": "text",
+					"top": 96,
+					"left": 170,
+					"width": 379,
+					"height": 238,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Este asistente le guiará paso a paso en el proceso de cambio de fecha de cargos proyectados para las cuentas corrientes.\r\rEl cambio de fechas se puede realizar para todos los cargos, o para los cargos correspondientes a un item en particular, dentro de un rango de fechas específico.\r\rPara iniciar el proceso de cambio de fechas de cargos haga clic en el botón Flecha Adelante.\r\rSi no desea iniciar ahora el cambio de fechas de cargos, cierre este asistente."
+				}
+			}
+		},
+		{
+			"objects": {
+				"Casilla de selección1": {
+					"type": "checkbox",
+					"top": 104,
+					"left": 250,
+					"width": 65,
+					"height": 16,
+					"dataSource": "cbTodosb2",
+					"text": "Todos",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 324,
+					"left": 222,
+					"width": 347,
+					"height": 42,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Sólo se cambiará la fecha de los cargos que no hayan sido objeto de avisos de cobranza."
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 106,
+					"left": 380,
+					"width": 155,
+					"height": 12,
+					"dataSource": "vsGlosab2",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Imagen3": {
+					"type": "picture",
+					"top": 104,
+					"left": 538,
+					"width": 18,
+					"height": 16
+				},
+				"Botón invisible4": {
+					"type": "button",
+					"top": 105,
+					"left": 379,
+					"width": 176,
+					"height": 14,
+					"dataSource": "bItems",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto15": {
+					"type": "text",
+					"top": 79,
+					"left": 9,
+					"width": 143,
+					"height": 264,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "El primer paso en el cambio de fechas de cargos es decidir sobre que tipo de cargos desea operar.\r\rSeleccione las opciones disponibles y haga click en el botón flecha Adelante."
+				},
+				"Texto17": {
+					"type": "text",
+					"top": 52,
+					"left": 161,
+					"width": 388,
+					"height": 14,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Selección del tipo de cargos"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 106,
+					"left": 348,
+					"width": 39,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "o sólo"
+				}
+			}
+		},
+		{
+			"objects": {
+				"emision8": {
+					"type": "text",
+					"top": 84,
+					"left": 183,
+					"width": 279,
+					"height": 12,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Modificar cargos generados en el siguiente período"
+				},
+				"Texto23": {
+					"type": "text",
+					"top": 79,
+					"left": 9,
+					"width": 143,
+					"height": 264,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "En esta página del asistente usted debe determinar la fechas de los cargos a modificar y las nuevas fechas de generación para dichos cargos.\r\rPara pasar a la página siguiente  haga click en el botón Flecha adelante.  Si desea modificar las opciones seleccionadas anteriormente, haga click en el botón Flecha atrás.\r\rEn la página siguiente deberá determinar para que cuentas corrientes se eliminarán los cargos."
+				},
+				"Texto26": {
+					"type": "text",
+					"top": 52,
+					"left": 161,
+					"width": 388,
+					"height": 14,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Fechas"
+				},
+				"emision1": {
+					"type": "text",
+					"top": 168,
+					"left": 183,
+					"width": 209,
+					"height": 12,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Cambiar fecha de generación a"
+				},
+				"fecha4": {
+					"type": "input",
+					"top": 110,
+					"left": 237,
+					"width": 109,
+					"height": 12,
+					"dataSource": "vFecha1",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "&9##/##/####",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"fecha2": {
+					"type": "pictureButton",
+					"top": 108,
+					"left": 350,
+					"width": 17,
+					"height": 16,
+					"dataSource": "bCalendar1",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/fecha2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"fecha7": {
+					"type": "input",
+					"top": 110,
+					"left": 437,
+					"width": 109,
+					"height": 12,
+					"dataSource": "vFecha2",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "&9##/##/####",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"fecha3": {
+					"type": "pictureButton",
+					"top": 108,
+					"left": 550,
+					"width": 17,
+					"height": 16,
+					"dataSource": "bCalendar2",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/fecha3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"fecha6": {
+					"type": "text",
+					"top": 110,
+					"left": 398,
+					"width": 32,
+					"height": 12,
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"text": "y el"
+				},
+				"fecha5": {
+					"type": "text",
+					"top": 110,
+					"left": 178,
+					"width": 52,
+					"height": 12,
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"text": "Entre el"
+				},
+				"fecha1": {
+					"type": "input",
+					"top": 193,
+					"left": 200,
+					"width": 109,
+					"height": 12,
+					"dataSource": "vFecha3",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "&9##/##/####",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"fecha8": {
+					"type": "pictureButton",
+					"top": 191,
+					"left": 313,
+					"width": 17,
+					"height": 16,
+					"dataSource": "bCalendar1",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/fecha8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto27": {
+					"type": "text",
+					"top": 202,
+					"left": 219,
+					"width": 375,
+					"height": 24,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "El cambio de fechas de cargos será efectiva para todas las cuentas corrientes activas"
+				},
+				"Apdos3": {
+					"type": "text",
+					"top": 103,
+					"left": 219,
+					"width": 375,
+					"height": 36,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "El cambio de fechas de cargos será efectiva sólo para las cuentas corrientes correspondientes a los apoderados que usted haya seleccionado específicamente en la lista"
+				},
+				"Apdos5": {
+					"type": "text",
+					"top": 156,
+					"left": 219,
+					"width": 377,
+					"height": 24,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "El cambio de fechas de cargos será efectiva para las cuentas corrientes correspondientes a todos los apoderados listados en el Explorador de AccountTrack"
+				},
+				"Reemplazo3": {
+					"type": "input",
+					"top": 306,
+					"left": 225,
+					"width": 248,
+					"height": 12,
+					"dataSource": "vsACT_AsignedMatrix2",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Reemplazo4": {
+					"type": "picture",
+					"top": 304,
+					"left": 474,
+					"width": 19,
+					"height": 16
+				},
+				"impresion1": {
+					"type": "button",
+					"top": 304,
+					"left": 223,
+					"width": 269,
+					"height": 14,
+					"dataSource": "bMatrizaReemplazar",
+					"display": false,
+					"method": "ObjectMethods/impresion1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto29": {
+					"type": "text",
+					"top": 321,
+					"left": 219,
+					"width": 375,
+					"height": 36,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "El cambio de fechas de cargos será efectiva para las cuentas corrientes seleccionadas más arriba que tengan asignada la matriz que usted seleccione"
+				},
+				"manual": {
+					"type": "radio",
+					"top": 86,
+					"left": 209,
+					"width": 290,
+					"height": 17,
+					"dataSource": "f1",
+					"text": "Solo para los alumnos seleccionados en lista",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/manual.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"manual(1)": {
+					"type": "radio",
+					"top": 139,
+					"left": 209,
+					"width": 257,
+					"height": 17,
+					"dataSource": "f2",
+					"text": "Para todos los alumnos de la lista",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/manual(1).4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"manual(2)": {
+					"type": "radio",
+					"top": 185,
+					"left": 209,
+					"width": 232,
+					"height": 17,
+					"dataSource": "f3",
+					"text": "Para todos los alumnos activos",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/manual(2).4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"r1": {
+					"type": "radio",
+					"top": 240,
+					"left": 209,
+					"width": 292,
+					"height": 16,
+					"dataSource": "r1",
+					"text": "Cualquiera sea la matriz de cargos asignada",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/r1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"r2": {
+					"type": "radio",
+					"top": 283,
+					"left": 209,
+					"width": 296,
+					"height": 15,
+					"dataSource": "r2",
+					"text": "Solo a aquellos cuya matriz de cargo actual es:",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/r2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"replace(4)": {
+					"type": "input",
+					"top": 432,
+					"left": 238,
+					"width": 196,
+					"height": 12,
+					"dataSource": "vsACT_AsignedMatrix2",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"oldmatrix": {
+					"type": "picture",
+					"top": 428,
+					"left": 449,
+					"width": 19,
+					"height": 16
+				},
+				"oldmatrix(1)": {
+					"type": "dropdown",
+					"top": 466,
+					"left": 241,
+					"width": 216,
+					"height": 15,
+					"dataSource": "atACT_MAtrixNameCopy3",
+					"focusable": false,
+					"display": false,
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/oldmatrix(1).4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Línea1": {
+					"type": "line",
+					"top": 230,
+					"left": 193,
+					"width": 398
+				},
+				"Alumnos1": {
+					"type": "text",
+					"top": 79,
+					"left": 9,
+					"width": 143,
+					"height": 264,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "En esta página del asistente usted debe determinar en que cuentas corrientes serán modificados los cargos.\r\rPara pasar a la página siguiente  haga click en el botón Flecha adelante.  Si desea modificar las opciones seleccionadas anteriormente, haga click en el botón Flecha atrás\r\rEn la página siguiente deberá confirmar la eliminación de cargos con las opciones que usted haya seleccionado"
+				},
+				"Alumnos3": {
+					"type": "text",
+					"top": 103,
+					"left": 219,
+					"width": 375,
+					"height": 24,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "El cambio de fechas de cargos será efectiva solo para las cuentas corrientes que usted haya seleccionado específicamente en la lista"
+				},
+				"Alumnos4": {
+					"type": "text",
+					"top": 156,
+					"left": 219,
+					"width": 375,
+					"height": 24,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "El cambio de fechas de cargos será efectiva para todas las cuentas corrientes listadas en el Explorador de AccountTrack"
+				},
+				"Texto28": {
+					"type": "text",
+					"top": 255,
+					"left": 219,
+					"width": 375,
+					"height": 24,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "El cambio de fechas de cargos será efectiva para las cuentas corrientes seleccionadas más arriba, cualquiera sea la matriz de cargos"
+				},
+				"Variable23": {
+					"type": "input",
+					"top": 86,
+					"left": 505,
+					"width": 117,
+					"height": 12,
+					"dataSource": "viACT_cuentas1",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"stroke": "#DDDDDD",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "(# ###0 cuentas)",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable24": {
+					"type": "input",
+					"top": 139,
+					"left": 505,
+					"width": 117,
+					"height": 12,
+					"dataSource": "viACT_cuentas2",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"stroke": "#DDDDDD",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "(# ###0 cuentas)",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable25": {
+					"type": "input",
+					"top": 185,
+					"left": 505,
+					"width": 117,
+					"height": 12,
+					"dataSource": "viACT_cuentas3",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"stroke": "#DDDDDD",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "(# ###0 cuentas)",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable26": {
+					"type": "input",
+					"top": 240,
+					"left": 505,
+					"width": 117,
+					"height": 12,
+					"dataSource": "viACT_cuentas4",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "(# ###0 cuentas)",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable27": {
+					"type": "input",
+					"top": 304,
+					"left": 505,
+					"width": 117,
+					"height": 12,
+					"dataSource": "viACT_cuentas5",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "left",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "(# ###0 cuentas)",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Alumnos2": {
+					"type": "text",
+					"top": 52,
+					"left": 161,
+					"width": 278,
+					"height": 14,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Selección de cuentas corrientes"
+				},
+				"Apdos1": {
+					"type": "text",
+					"top": 79,
+					"left": 9,
+					"width": 143,
+					"height": 264,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "En esta página del asistente usted debe determinar para las  cuentas corrientes de que apoderados serán modificados los cargos.\r\rPara pasar a la página siguiente  haga click en el botón Flecha adelante.  Si desea modificar las opciones seleccionadas anteriormente, haga click en el botón Flecha atrás\r\rEn la página siguiente deberá confirmar la generación de cargos con las opciones que usted haya seleccionado"
+				}
+			}
+		},
+		{
+			"objects": {
+				"server": {
+					"type": "checkbox",
+					"top": 311,
+					"left": 175,
+					"width": 233,
+					"height": 15,
+					"dataSource": "bc_ExecuteOnServer",
+					"text": "Ejecutar proceso de cambio de fechas en el servidor",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable67": {
+					"type": "button",
+					"top": 374,
+					"left": 416,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Nueva Variable5472",
+					"text": "Volver",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable67.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable65": {
+					"type": "button",
+					"top": 374,
+					"left": 505,
+					"width": 114,
+					"height": 20,
+					"dataSource": "Nueva Variable5384",
+					"action": "accept",
+					"text": "Cambiar Fechas",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"server(1)1": {
+					"type": "text",
+					"top": 327,
+					"left": 190,
+					"width": 412,
+					"height": 36,
+					"stroke": "#666666",
+					"styleSheet": "XS_FormObjects",
+					"text": "La ejecución en el servidor es mucho más rápida y libera a su estación de esta tarea, pero puede aumentar ligeramente los tiempos de respuesta del servidor mientras se realiza el proceso."
+				},
+				"Variable68": {
+					"type": "input",
+					"top": 86,
+					"left": 177,
+					"width": 426,
+					"height": 219,
+					"dataSource": "vtACT_ResumenAsistente",
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 52,
+					"left": 161,
+					"width": 278,
+					"height": 14,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Confirmación"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 79,
+					"left": 9,
+					"width": 143,
+					"height": 264,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "AccountTrack está listo para iniciar el proceso de cambio de fechas de cargos con las opciones que usted ha seleccionado (resumidas en el recuadro a la derecha).\r\rHaga clic en el botón Cambiar Fechas para iniciar ahora el proceso de cambio de fechas de cargos.\r\rSi desea modificar las opciones seleccionadas haga clic en el botón Volver.\r\rSi no desea continuar ahora con el cambio de fechas de cargos cierre este cuadro de diálogo."
+				}
+			}
+		}
+	]
+}

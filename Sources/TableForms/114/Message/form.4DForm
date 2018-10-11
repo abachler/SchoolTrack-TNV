@@ -1,0 +1,208 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 60,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onUnload",
+		"onOpenDetail",
+		"onCloseDetail"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 511,
+					"height": 134,
+					"stroke": "#FFFFFF"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 5,
+					"left": 135,
+					"width": 367,
+					"height": 48,
+					"dataSource": "vMessage",
+					"fill": "#FFFFFF",
+					"stroke": "#0043FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable24": {
+					"type": "input",
+					"top": 78,
+					"left": 238,
+					"width": 79,
+					"height": 11,
+					"dataSource": "vElapsed",
+					"dataSourceTypeHint": "time",
+					"fill": "#FFFFFF",
+					"stroke": "#009900",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"timeFormat": "hh_mm_ss",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable23": {
+					"type": "input",
+					"top": 78,
+					"left": 375,
+					"width": 127,
+					"height": 11,
+					"dataSource": "vStrRemain",
+					"dataSourceTypeHint": "time",
+					"fill": "#FFFFFF",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"timeFormat": "hh_mm_ss",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable": {
+					"type": "input",
+					"top": 96,
+					"left": 6,
+					"width": 121,
+					"height": 30,
+					"dataSource": "vCopyright",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "progress",
+					"top": 58,
+					"left": 135,
+					"width": 368,
+					"height": 15,
+					"dataSource": "vTh",
+					"continuousExecution": false,
+					"min": 1,
+					"max": 100,
+					"graduationStep": 1,
+					"enterable": true,
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text6": {
+					"type": "text",
+					"top": 78,
+					"left": 324,
+					"width": 46,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "restante:"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 78,
+					"left": 136,
+					"width": 101,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Tiempo transcurrido:"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 0,
+					"left": 131,
+					"width": 1,
+					"height": 134,
+					"stroke": "#000099"
+				},
+				"Picture23": {
+					"type": "picture",
+					"top": 30,
+					"left": 3,
+					"width": 125,
+					"height": 75,
+					"pictureFormat": "scaled"
+				}
+			}
+		}
+	]
+}

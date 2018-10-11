@@ -1,0 +1,351 @@
+﻿{
+	"inheritedForm": "XS_MASTER_ConfigDialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "elimina2",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 357,
+					"left": 242,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 300,
+					"left": 58,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text6": {
+					"type": "text",
+					"top": 149,
+					"left": 199,
+					"width": 71,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Ultima hora:"
+				},
+				"Text93": {
+					"type": "text",
+					"top": 149,
+					"left": 17,
+					"width": 68,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Primera hora:"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 170,
+					"left": 17,
+					"width": 130,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Duración de las entrevistas:"
+				},
+				"Text176": {
+					"type": "text",
+					"top": 170,
+					"left": 183,
+					"width": 44,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "minutos"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 51,
+					"left": 13,
+					"width": 322,
+					"height": 58,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Los parámetros de esta sección permiten determinar las horas en las que que serán programadas las entrevistas con los apoderados.\r\rPor favor ingrese la primera y última hora posible para entrevistas, así como la duración máxima de cada entrevista."
+				},
+				"config": {
+					"type": "input",
+					"top": 128,
+					"left": 108,
+					"width": 80,
+					"height": 11,
+					"dataSource": "vdPST_StartInterviews",
+					"dataSourceTypeHint": "date",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/config.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"config1": {
+					"type": "input",
+					"top": 128,
+					"left": 255,
+					"width": 80,
+					"height": 11,
+					"dataSource": "vdPST_EndInterviews",
+					"dataSourceTypeHint": "date",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"entryFilter": "!0&9##/##/####",
+					"method": "ObjectMethods/config1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"config2": {
+					"type": "input",
+					"top": 149,
+					"left": 109,
+					"width": 80,
+					"height": 11,
+					"dataSource": "vhPST_FirstInterview",
+					"dataSourceTypeHint": "time",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"timeFormat": "hh_mm",
+					"entryFilter": "!0&9##:##",
+					"method": "ObjectMethods/config2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"config3": {
+					"type": "input",
+					"top": 149,
+					"left": 256,
+					"width": 80,
+					"height": 11,
+					"dataSource": "vhPST_lastInterview",
+					"dataSourceTypeHint": "time",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"timeFormat": "hh_mm",
+					"entryFilter": "!0&9##:##",
+					"method": "ObjectMethods/config3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"config4": {
+					"type": "input",
+					"top": 170,
+					"left": 150,
+					"width": 29,
+					"height": 11,
+					"dataSource": "viPST_IviewDuration",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable200": {
+					"type": "checkbox",
+					"top": 189,
+					"left": 17,
+					"width": 318,
+					"height": 16,
+					"dataSource": "viPST_AutoAsigInterview",
+					"text": "Asignación automática de entrevista a familias nuevas (modificable)",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text194": {
+					"type": "text",
+					"top": 128,
+					"left": 17,
+					"width": 95,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Entrevistas entre el"
+				},
+				"Text195": {
+					"type": "text",
+					"top": 128,
+					"left": 202,
+					"width": 23,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "y el"
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 333,
+					"left": 306,
+					"width": 66,
+					"height": 18,
+					"dataSource": "b_Close",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"elimina": {
+					"type": "text",
+					"top": 212,
+					"left": 13,
+					"width": 322,
+					"height": 33,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Los parámetros de esta sección no pueden ser modificados mientras existan registros de entrevistas. "
+				},
+				"elimina1": {
+					"type": "text",
+					"top": 245,
+					"left": 13,
+					"width": 322,
+					"height": 31,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Haga clic aquí para eliminar los registros de entrevistas y modificar los parámetros"
+				},
+				"elimina2": {
+					"type": "button",
+					"top": 246,
+					"left": 12,
+					"width": 323,
+					"height": 29,
+					"dataSource": "Botón invisible1",
+					"display": false,
+					"method": "ObjectMethods/elimina2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,245 @@
+﻿{
+	"windowTitle": ":21012,1",
+	"inheritedForm": "XS_BKGD_Forms",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"formSizeAnchor": "Text1",
+	"rightMargin": -13,
+	"bottomMargin": -13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 634,
+					"left": 258,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 577,
+					"left": 74,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Group Box3": {
+					"type": "groupBox",
+					"top": 13,
+					"left": 13,
+					"width": 256,
+					"height": 377,
+					"sizingY": "grow",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Cursos"
+				},
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 13,
+					"left": 273,
+					"width": 277,
+					"height": 377,
+					"sizingY": "grow",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Tutorías"
+				},
+				"Variable1": {
+					"type": "plugin",
+					"top": 32,
+					"left": 24,
+					"width": 236,
+					"height": 144,
+					"dataSource": "xALP_CursosTutorias",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "plugin",
+					"top": 32,
+					"left": 285,
+					"width": 252,
+					"height": 144,
+					"dataSource": "xALP_Profesores",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "plugin",
+					"top": 185,
+					"left": 24,
+					"width": 237,
+					"height": 199,
+					"sizingY": "grow",
+					"dataSource": "xALP_Alumnos",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "plugin",
+					"top": 185,
+					"left": 284,
+					"width": 253,
+					"height": 199,
+					"sizingY": "grow",
+					"dataSource": "xALP_Tutoria",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 502,
+					"left": 174,
+					"width": 109,
+					"height": 27,
+					"dataSource": "bOK2",
+					"action": "cancel",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable414": {
+					"type": "button",
+					"top": 505,
+					"left": 32,
+					"width": 93,
+					"height": 24,
+					"dataSource": "bClear",
+					"display": false,
+					"method": "ObjectMethods/Variable414.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 561,
+					"left": 363,
+					"width": 109,
+					"height": 27,
+					"dataSource": "bOK",
+					"action": "cancel",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 398,
+					"left": 13,
+					"width": 540,
+					"height": 55,
+					"sizingY": "move",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Para inscribir a un alumno en una tutoria seleccione el curso del o los alumnos que desea inscribir y el profesor a cargo de la tutoría. Luego arrastre al o los alumnos hacia la lista de miembros de la tutoría seleccionada.\rPara cambiar a un alumno de tutoría arrastro sobre el nombre del nuevo tutor.\rPara retirar a un alumno de una tutoría arrástrelo sobre la nómina de alumnos del curso (independientemente del curso seleccionado)"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,169 @@
+﻿{
+	"formSizeAnchor": "Botón1",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 327,
+					"left": 184,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 270,
+					"left": 0,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Imagen1": {
+					"type": "picture",
+					"top": 27,
+					"left": 18,
+					"width": 161,
+					"height": 161,
+					"pictureFormat": "scaled"
+				},
+				"Rejilla de botones1": {
+					"type": "buttonGrid",
+					"top": 27,
+					"left": 18,
+					"width": 161,
+					"height": 161,
+					"dataSource": "bColorTexto",
+					"columnCount": 16,
+					"rowCount": 16,
+					"method": "ObjectMethods/Rejilla de botones1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón invisible1": {
+					"type": "button",
+					"top": 226,
+					"left": 218,
+					"width": 74,
+					"height": 18,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Imagen2": {
+					"type": "picture",
+					"top": 27,
+					"left": 218,
+					"width": 161,
+					"height": 161,
+					"pictureFormat": "scaled"
+				},
+				"Rejilla de botones2": {
+					"type": "buttonGrid",
+					"top": 27,
+					"left": 218,
+					"width": 161,
+					"height": 161,
+					"dataSource": "bColorFondo",
+					"columnCount": 16,
+					"rowCount": 16,
+					"method": "ObjectMethods/Rejilla de botones2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 226,
+					"left": 307,
+					"width": 72,
+					"height": 18,
+					"dataSource": "Botón1",
+					"action": "accept",
+					"text": "OK",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 7,
+					"left": 16,
+					"width": 107,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Texto:"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 9,
+					"left": 218,
+					"width": 107,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Fondo:"
+				},
+				"ejemplo": {
+					"type": "text",
+					"top": 197,
+					"left": 18,
+					"width": 361,
+					"height": 16,
+					"fill": "automatic",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"borderStyle": "solid",
+					"text": "Estaba la gata sentada en el balcón"
+				}
+			}
+		}
+	]
+}

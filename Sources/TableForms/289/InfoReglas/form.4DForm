@@ -1,0 +1,73 @@
+﻿{
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Imagen1": {
+					"type": "picture",
+					"top": 13,
+					"left": 13,
+					"width": 32,
+					"height": 32,
+					"pictureFormat": "scaled"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 13,
+					"left": 74,
+					"width": 286,
+					"height": 24,
+					"stroke": "#999999",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "AccountTrack"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 50,
+					"left": 74,
+					"width": 503,
+					"height": 38,
+					"fontFamily": "Tahoma Bold",
+					"fontSize": 16,
+					"fontWeight": "bold",
+					"text": "Reglas de asignación automática de matrices de cargo"
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 82,
+					"left": 76,
+					"width": 496,
+					"height": 257,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Esta opción permite configurar el sistema para crear reglas de asignación automática de matrices de cargo a las cuentas corrientes activas.\r\rLa configuración de cada regla permite definir un nombre, una matriz a asignar, el criterio de búsqueda de cuentas corrientes y si la regla está activa o no.\r\rAl aplicar la configuración, primero, el sistema quita todas las matrices de cargo asignadas a todas las cuentas corrientes activas. Luego, se comiezan a aplicar las reglas de asignación configuradas. Las reglas son aplicadas en el orden de la lista, esto quiere decir que, por ejemplo, si un alumno es encontrado en 2 reglas, la primera regla primará y la segunda regla no será considerada para ese alumno.\r\rEl sistema permite aplicar la configuración desde esta ventana y también permite configurar un día del mes para que la asignación se realice automáticamente durante las tareas de inicio de día.\r\rEl sistema escribe en el registro de actividades el resultado de la asignación de matrices.\r\rLas reglas inactivas no son consideradas."
+				},
+				"bCancel2": {
+					"type": "button",
+					"top": 345,
+					"left": 500,
+					"width": 72,
+					"height": 21,
+					"dataSource": "bCancel2",
+					"action": "accept",
+					"text": "Cerrar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

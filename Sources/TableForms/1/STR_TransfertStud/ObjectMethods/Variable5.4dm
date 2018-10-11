@@ -1,0 +1,2 @@
+AL_TransfiereSeleccion (-><>aStdID)
+

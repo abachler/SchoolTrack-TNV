@@ -1,0 +1,333 @@
+﻿{
+	"windowTitle": ":21011,7",
+	"inheritedForm": "XS_MASTER_WZDDialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 626,
+	"height": 407,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Variable3": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 554,
+					"width": 20,
+					"height": 20,
+					"dataSource": "bPrev",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 468,
+					"left": 540,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable255": {
+					"type": "input",
+					"top": 379,
+					"left": 575,
+					"width": 17,
+					"height": 12,
+					"dataSource": "vi_PageNumber",
+					"fill": "transparent",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 461,
+					"left": 8,
+					"width": 20,
+					"height": 20,
+					"dataSource": "Nueva Variable501",
+					"shortcutKey": "+",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 593,
+					"width": 20,
+					"height": 20,
+					"dataSource": "bNext",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 4,
+					"left": 161,
+					"width": 347,
+					"height": 23,
+					"stroke": "#FFFFFF",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Asistente para la creación de cursos"
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 493,
+					"left": 395,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 436,
+					"left": 211,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"xALPL_Cursos": {
+					"type": "plugin",
+					"top": 100,
+					"left": 268,
+					"width": 221,
+					"height": 227,
+					"dataSource": "xALP_Cursos",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto496": {
+					"type": "text",
+					"top": 39,
+					"left": 165,
+					"width": 383,
+					"height": 28,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Determine la cantidad de cursos que desea crear en cada nivel ingresando el número en la columna Cursos"
+				},
+				"Texto497": {
+					"type": "text",
+					"top": 87,
+					"left": 10,
+					"width": 142,
+					"height": 252,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Los nombres de los niveles que figuran en esta lista son los nombre por defecto.\r\rSi usted lo desea podrá cambiarlos más tarde en Configuración...,  Niveles Académicos.\r\rDe la misma manera podrá cambiar la denominación por defecto de los cursos por la que usted desee."
+				}
+			}
+		},
+		{
+			"objects": {
+				"FirstInstall": {
+					"type": "text",
+					"top": 273,
+					"left": 168,
+					"width": 407,
+					"height": 84,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Si está instalando SchoolTrack por primera vez puede terminar la creación de cursos y continuar inmediatamente con el asistente para la definición del plan de estudio para cada nivel.\r\rSi prefiere puede terminar ahora la creación  de cursos y continuar más tarde con el asistente para la creación de los planes de estudio."
+				},
+				"Texto501": {
+					"type": "text",
+					"top": 26,
+					"left": 163,
+					"width": 414,
+					"height": 44,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Este asistente está listo para crear los cursos según la configuración siguiente. Si desea modificarlo haga clic en el botón Flecha atrás para volver a la página anterior y redefinir los cursos a crear en cada nivel."
+				},
+				"Variable300": {
+					"type": "input",
+					"top": 93,
+					"left": 168,
+					"width": 382,
+					"height": 168,
+					"dataSource": "vt_Text",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"FirstInstall(1)": {
+					"type": "button",
+					"top": 374,
+					"left": 260,
+					"width": 254,
+					"height": 20,
+					"dataSource": "bTerminar2",
+					"action": "accept",
+					"shortcutKey": "[Esc]",
+					"text": "Crear cursos y continuar con Planes de Estudio",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/FirstInstall(1).4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable301": {
+					"type": "button",
+					"top": 374,
+					"left": 519,
+					"width": 101,
+					"height": 20,
+					"dataSource": "bTerminar",
+					"action": "accept",
+					"shortcutKey": "[Esc]",
+					"text": "Terminar ahora",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Finish": {
+					"type": "text",
+					"top": 273,
+					"left": 168,
+					"width": 414,
+					"height": 36,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Haga clic en el botón terminar para crear los cursos y terminar este asistente.\rPara continuar trabajando con los cursos haga clic en la lengueta Cursos del explorador de SchoolTrack."
+				}
+			}
+		}
+	]
+}

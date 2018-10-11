@@ -1,0 +1,155 @@
+﻿{
+	"windowTitle": ":21001,1",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 21,
+	"markerBody": 171,
+	"markerBreak": 171,
+	"markerFooter": 188,
+	"events": [
+		"onLoad",
+		"onHeader",
+		"onPrintingFooter",
+		"onPluginArea",
+		"onUnload"
+	],
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable2": {
+					"type": "input",
+					"top": 3,
+					"left": 1,
+					"width": 249,
+					"height": 13,
+					"dataSource": "<>gCustom",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_Report_9",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 5,
+					"left": 457,
+					"width": 118,
+					"height": 13,
+					"dataSource": "vtQR_DateTime",
+					"dataSourceTypeHint": "date",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_Report_9",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo1": {
+					"type": "input",
+					"top": 58,
+					"left": 4,
+					"width": 567,
+					"height": 17,
+					"dataSource": "[Actividades:29]Nombre:2",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_ReportSubtitle_14",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo2": {
+					"type": "input",
+					"top": 75,
+					"left": 4,
+					"width": 567,
+					"height": 16,
+					"dataSource": "[Profesores:4]Nombres_apellidos:40",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_Report_12",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "plugin",
+					"top": 100,
+					"left": 8,
+					"width": 560,
+					"height": 65,
+					"dataSource": "xPL_XCR",
+					"pluginAreaKind": "%PrntListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 32,
+					"left": 6,
+					"width": 564,
+					"height": 23,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"styleSheet": "XS_ReportTitle_18",
+					"text": "Nómina de Inscritos"
+				}
+			}
+		}
+	]
+}

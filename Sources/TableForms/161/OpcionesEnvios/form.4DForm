@@ -1,0 +1,600 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "programacion6",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onUnload",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"custom": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 2000,
+					"height": 2000,
+					"stroke": "transparent"
+				},
+				"Imagen2": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 900,
+					"height": 44,
+					"pictureFormat": "scaled"
+				},
+				"Línea3": {
+					"type": "line",
+					"top": 3,
+					"left": 77,
+					"height": 37,
+					"strokeDashArray": "1 1"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 8,
+					"left": 85,
+					"width": 441,
+					"height": 22,
+					"stroke": "#FFFFFF",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "SchoolNet: Programación y Envíos Manuales"
+				},
+				"programacion16": {
+					"type": "button",
+					"top": 544,
+					"left": 12,
+					"width": 122,
+					"height": 23,
+					"dataSource": "programacion",
+					"shortcutKey": "[Esc]",
+					"text": "Esc Close",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/programacion16.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 44,
+					"left": 0,
+					"width": 659,
+					"height": 206,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vp_FondoConfig",
+					"dataSourceTypeHint": "picture",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Imagen3": {
+					"type": "picture",
+					"top": 6,
+					"left": 22,
+					"width": 33,
+					"height": 32,
+					"pictureFormat": "scaled"
+				}
+			}
+		},
+		{
+			"objects": {
+				"programacion6": {
+					"type": "groupBox",
+					"top": 160,
+					"left": 13,
+					"width": 631,
+					"height": 78,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Envíos Manuales"
+				},
+				"programacion10": {
+					"type": "text",
+					"top": 216,
+					"left": 23,
+					"width": 148,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Configurar envío inmediato..."
+				},
+				"programacion7": {
+					"type": "button",
+					"top": 187,
+					"left": 23,
+					"width": 180,
+					"height": 20,
+					"dataSource": "bUpdateAll",
+					"action": "accept",
+					"text": "Enviar ahora todos los datos",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/programacion7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"programacion8": {
+					"type": "button",
+					"top": 187,
+					"left": 226,
+					"width": 204,
+					"height": 20,
+					"dataSource": "bUpdateMod",
+					"action": "accept",
+					"text": "Enviar ahora sólo datos modificados",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/programacion8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"programacion9": {
+					"type": "button",
+					"top": 187,
+					"left": 454,
+					"width": 180,
+					"height": 20,
+					"dataSource": "bDeletesn",
+					"text": "Eliminar datos...",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/programacion9.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"programacion14": {
+					"type": "radio",
+					"top": 249,
+					"left": 378,
+					"width": 101,
+					"height": 21,
+					"dataSource": "SN3_Manual_Todo",
+					"text": "Todos los datos",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"programacion15": {
+					"type": "radio",
+					"top": 249,
+					"left": 481,
+					"width": 138,
+					"height": 21,
+					"dataSource": "SN3_Manual_Modificados",
+					"text": "Sólo datos modificados",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"programacion11": {
+					"type": "listbox",
+					"top": 281,
+					"left": 23,
+					"width": 591,
+					"height": 96,
+					"dataSource": "lb_Manual",
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"rowStyleSource": "SN3_Manual_Styles",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"method": "ObjectMethods/programacion11.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "Columna1",
+							"dataSource": "SN3_Manual_TipoDato",
+							"width": 171,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título1",
+								"text": "Tipo de Dato",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Columna2",
+							"dataSource": "SN3_Manual_Niveles",
+							"width": 179,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título2",
+								"text": "Nivel a Enviar",
+								"dataSource": "Título2",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Columna3",
+							"dataSource": "SN3_Manual_CualesDatos",
+							"width": 226,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título3",
+								"text": "¿Cuales Datos?",
+								"dataSource": "Título3",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 397,
+					"left": 23,
+					"width": 80,
+					"height": 20,
+					"dataSource": "b_Manual_Limpiar",
+					"text": "Limpiar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Casilla de selección1": {
+					"type": "checkbox",
+					"top": 397,
+					"left": 369,
+					"width": 171,
+					"height": 21,
+					"dataSource": "cb_Manual_OnServer",
+					"text": "Realizar envío en el servidor",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 397,
+					"left": 554,
+					"width": 80,
+					"height": 20,
+					"dataSource": "b_Manual_Enviar",
+					"action": "accept",
+					"text": "Enviar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"programacion12": {
+					"type": "dropdown",
+					"top": 251,
+					"left": 202,
+					"width": 164,
+					"height": 19,
+					"dataSource": "hl_Niveles",
+					"dataSourceTypeHint": "integer",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/programacion12.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"programacion13": {
+					"type": "dropdown",
+					"top": 251,
+					"left": 23,
+					"width": 164,
+					"height": 19,
+					"dataSource": "hl_Dato",
+					"dataSourceTypeHint": "integer",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/programacion13.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"buttonsMedicos": {
+					"type": "picture",
+					"top": 255,
+					"left": 624,
+					"width": 11,
+					"height": 11,
+					"pictureFormat": "scaled"
+				},
+				"buttonsMedicos2": {
+					"type": "button",
+					"top": 252,
+					"left": 624,
+					"width": 13,
+					"height": 16,
+					"dataSource": "bAddEnvio",
+					"shortcutKey": "[Enter]",
+					"display": false,
+					"method": "ObjectMethods/buttonsMedicos2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable16482": {
+					"type": "pictureButton",
+					"top": 281,
+					"left": 622,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bDelEnvio",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable16482.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 216,
+					"left": 175,
+					"width": 12,
+					"height": 12,
+					"dataSource": "vp_ExpandCollapse",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"programacion": {
+					"type": "groupBox",
+					"top": 50,
+					"left": 13,
+					"width": 631,
+					"height": 96,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Programación"
+				},
+				"cs_qa": {
+					"type": "checkbox",
+					"top": 100,
+					"left": 454,
+					"width": 205,
+					"height": 16,
+					"dataSource": "cs_qa",
+					"text": "Enviar automáticamente desde Colegium",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/cs_qa.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"programacion1": {
+					"type": "text",
+					"top": 71,
+					"left": 22,
+					"width": 611,
+					"height": 37,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Le recomendamos actualizar las informaciones durante la noche para evitar la degradación del rendimiento."
+				},
+				"programacion3": {
+					"type": "text",
+					"top": 123,
+					"left": 43,
+					"width": 168,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Próximo envío programado a las: "
+				},
+				"programacion5": {
+					"type": "input",
+					"top": 123,
+					"left": 214,
+					"width": 50,
+					"height": 13,
+					"dataSource": "vh_NextExecSN3",
+					"dataSourceTypeHint": "time",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"timeFormat": "hh_mm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"programacion4": {
+					"type": "dropdown",
+					"top": 99,
+					"left": 148,
+					"width": 185,
+					"height": 19,
+					"dataSource": "hl_schedule",
+					"dataSourceTypeHint": "integer",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/programacion4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"programacion2": {
+					"type": "text",
+					"top": 101,
+					"left": 43,
+					"width": 87,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Enviar datos:"
+				},
+				"textohora": {
+					"type": "text",
+					"top": 124,
+					"left": 214,
+					"width": 375,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"fontStyle": "italic",
+					"text": "La hora del próximo envío será determinada por el controlador de envíos"
+				},
+				"programacion17": {
+					"type": "dropdown",
+					"top": 99,
+					"left": 341,
+					"width": 95,
+					"height": 19,
+					"dataSource": "hl_Hora",
+					"dataSourceTypeHint": "integer",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/programacion17.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

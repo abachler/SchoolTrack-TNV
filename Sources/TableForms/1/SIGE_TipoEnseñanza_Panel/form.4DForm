@@ -1,0 +1,118 @@
+﻿{
+	"inheritedForm": "XS_MASTER_ConfigDialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "btn_cerrar",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Popup/Lista desplegable1": {
+					"type": "dropdown",
+					"top": 81,
+					"left": 290,
+					"width": 304,
+					"height": 18,
+					"dataSource": "at_DatosUnidadesEduc_Tipos",
+					"styleSheet": "Defaut",
+					"method": "ObjectMethods/Popup%2FLista desplegable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"xALP_Unidades": {
+					"type": "plugin",
+					"top": 115,
+					"left": 18,
+					"width": 576,
+					"height": 242,
+					"dataSource": "xALP_Unidades",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 84,
+					"left": 26,
+					"width": 120,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Tipo de enseñanza:"
+				},
+				"btn_cerrar": {
+					"type": "button",
+					"top": 374,
+					"left": 484,
+					"width": 110,
+					"height": 20,
+					"dataSource": "btn_cerrar",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Salir",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"method": "ObjectMethods/btn_cerrar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		null
+	]
+}

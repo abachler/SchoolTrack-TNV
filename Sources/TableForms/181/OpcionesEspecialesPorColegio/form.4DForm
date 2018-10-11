@@ -1,0 +1,349 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Button1",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Group Box3": {
+					"type": "groupBox",
+					"top": 109,
+					"left": 13,
+					"width": 352,
+					"height": 328,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Ítems"
+				},
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 45,
+					"left": 13,
+					"width": 352,
+					"height": 56,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Período"
+				},
+				"vt_fecha1": {
+					"type": "input",
+					"top": 72,
+					"left": 79,
+					"width": 101,
+					"height": 14,
+					"dataSource": "vt_Fecha1",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vt_fecha1.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vt_fecha2": {
+					"type": "input",
+					"top": 72,
+					"left": 229,
+					"width": 101,
+					"height": 14,
+					"dataSource": "vt_Fecha2",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vt_fecha2.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"btnCambiar1": {
+					"type": "button",
+					"top": 250,
+					"left": 34,
+					"width": 100,
+					"height": 20,
+					"dataSource": "btnCambiar1",
+					"text": "Seleccionar items...",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/btnCambiar1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vt_ItemsIFC": {
+					"type": "input",
+					"top": 151,
+					"left": 34,
+					"width": 293,
+					"height": 74,
+					"dataSource": "vt_ItemsIFC",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vt_ItemsIE": {
+					"type": "input",
+					"top": 305,
+					"left": 34,
+					"width": 293,
+					"height": 74,
+					"dataSource": "vt_ItemsIE",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 130,
+					"left": 34,
+					"width": 313,
+					"height": 20,
+					"textAlign": "center",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Ítems ingresos por financiamiento compartido"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 285,
+					"left": 34,
+					"width": 313,
+					"height": 18,
+					"textAlign": "center",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Ítems ingresos colegio"
+				},
+				"btnCambiar2": {
+					"type": "button",
+					"top": 405,
+					"left": 34,
+					"width": 100,
+					"height": 20,
+					"dataSource": "btnCambiar2",
+					"text": "Seleccionar items...",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/btnCambiar2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"fecha2": {
+					"type": "pictureButton",
+					"top": 72,
+					"left": 178,
+					"width": 17,
+					"height": 16,
+					"dataSource": "bCalendar1",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/fecha2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 71,
+					"left": 205,
+					"width": 24,
+					"height": 14,
+					"textAlign": "center",
+					"styleSheet": "XS_DialogObjects",
+					"text": "y"
+				},
+				"fecha1": {
+					"type": "pictureButton",
+					"top": 72,
+					"left": 328,
+					"width": 17,
+					"height": 16,
+					"dataSource": "bCalendar2",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/fecha1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"vl_desglosar": {
+					"type": "checkbox",
+					"top": 405,
+					"left": 249,
+					"width": 96,
+					"height": 19,
+					"dataSource": "vl_desglosar",
+					"text": "Desglosar ítems",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 454,
+					"left": 285,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bAccept",
+					"shortcutKey": "[Return]",
+					"text": "OK",
+					"styleSheet": "XS_DialogObjects",
+					"defaultButton": true,
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 454,
+					"left": 194,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 17,
+					"left": 40,
+					"width": 304,
+					"height": 23,
+					"textAlign": "center",
+					"styleSheet": "XS_DialogsTitles",
+					"text": "Rendiciones - Libro de Ventas"
+				},
+				"vl_export": {
+					"type": "checkbox",
+					"top": 454,
+					"left": 13,
+					"width": 96,
+					"height": 19,
+					"dataSource": "vl_export",
+					"text": "Exportar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 71,
+					"left": 34,
+					"width": 44,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Entre el"
+				}
+			}
+		}
+	]
+}

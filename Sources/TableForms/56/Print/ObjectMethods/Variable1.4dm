@@ -1,0 +1,11 @@
+If (Before:C29)
+	$err:=PL_SetArraysNam (Self:C308->;1;2;"<>aStrIndex";"<>aStrText")
+	PL_SetSort (Self:C308->;1)
+	PL_SetWidths (Self:C308->;1;2;40;520)
+	PL_SetHeight (Self:C308->;1;1;0;0)
+	PL_SetHdrStyle (Self:C308->;0;"Tahoma";9;1)
+	PL_SetStyle (Self:C308->;0;"Tahoma";9;0)
+	PL_SetHeaders (Self:C308->;1;2;"Nº";"Texto")
+	PL_SetDividers (Self:C308->;0.5;"Black";"Black";0;0.5;"Black";"Black";0)
+	PL_SetFrame (Self:C308->;0.5;"Black";"Black";0;0.5;"Black";"Black";0)
+End if 

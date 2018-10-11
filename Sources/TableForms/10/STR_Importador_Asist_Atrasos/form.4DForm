@@ -1,0 +1,535 @@
+﻿{
+	"inheritedForm": "XS_MASTER_WZDDialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Variable5",
+	"rightMargin": 15,
+	"bottomMargin": 15,
+	"markerBody": 418,
+	"markerBreak": 425,
+	"markerFooter": 433,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón1": {
+					"type": "button",
+					"top": 377,
+					"left": 16,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Botón1",
+					"text": "Salir",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 9,
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable255": {
+					"type": "input",
+					"top": 383,
+					"left": 574,
+					"width": 17,
+					"height": 11,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "vi_Step",
+					"fill": "transparent",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "pictureButton",
+					"top": 377,
+					"left": 553,
+					"width": 20,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bPrev",
+					"shortcutKey": "[left arrow]",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "pictureButton",
+					"top": 377,
+					"left": 592,
+					"width": 20,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bNext",
+					"shortcutKey": "[right arrow]",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 19,
+					"left": 162,
+					"width": 378,
+					"height": 20,
+					"stroke": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 16,
+					"fontWeight": "bold",
+					"text": "Importación de Asistencia y Atrasos de Jornada"
+				}
+			}
+		},
+		{
+			"objects": {
+				"sinArchivo2": {
+					"type": "text",
+					"top": 381,
+					"left": 108,
+					"width": 360,
+					"height": 11,
+					"sizingY": "move",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Haga clic aquí para generar un archivo vacío con encabezados."
+				},
+				"sinArchivo3": {
+					"type": "button",
+					"top": 380,
+					"left": 108,
+					"width": 321,
+					"height": 13,
+					"sizingY": "move",
+					"dataSource": "bVacio",
+					"display": false,
+					"method": "ObjectMethods/sinArchivo3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable15": {
+					"type": "input",
+					"top": 88,
+					"left": 15,
+					"width": 568,
+					"height": 263,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vt_g2",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"entryFilter": "~\"\"",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"C_op1": {
+					"type": "radio",
+					"top": 97,
+					"left": 50,
+					"width": 206,
+					"height": 16,
+					"dataSource": "C_op1",
+					"text": "Identificador Nacional (RUN, DNI, etc.)",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"events": [
+						"onClick"
+					]
+				},
+				"C_op2": {
+					"type": "radio",
+					"top": 111,
+					"left": 50,
+					"width": 159,
+					"height": 16,
+					"dataSource": "C_op2",
+					"text": "2° Identificador Nacional ",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"events": [
+						"onClick"
+					]
+				},
+				"C_op3": {
+					"type": "radio",
+					"top": 126,
+					"left": 50,
+					"width": 159,
+					"height": 16,
+					"dataSource": "C_op3",
+					"text": "3° Identificador Nacional ",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"events": [
+						"onClick"
+					]
+				},
+				"C_op4": {
+					"type": "radio",
+					"top": 141,
+					"left": 50,
+					"width": 159,
+					"height": 16,
+					"dataSource": "C_op4",
+					"text": "N° de Pasaporte",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"events": [
+						"onClick"
+					]
+				},
+				"C_op5": {
+					"type": "radio",
+					"top": 156,
+					"left": 50,
+					"width": 159,
+					"height": 16,
+					"dataSource": "C_op5",
+					"text": "Código Interno",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable9": {
+					"type": "button",
+					"top": 195,
+					"left": 442,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bExplore",
+					"text": ":21012,8",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable9.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 200,
+					"left": 45,
+					"width": 385,
+					"height": 13,
+					"dataSource": "vt_g1",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "radio",
+					"top": 229,
+					"left": 305,
+					"width": 83,
+					"height": 14,
+					"dataSource": "r1",
+					"text": ":21012,9",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable10": {
+					"type": "radio",
+					"top": 229,
+					"left": 391,
+					"width": 101,
+					"height": 14,
+					"dataSource": "r2",
+					"text": ":21012,10",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable10.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección2": {
+					"type": "checkbox",
+					"top": 251,
+					"left": 305,
+					"width": 241,
+					"height": 13,
+					"dataSource": "cb_TieneEncabezado",
+					"text": "El archivo contiene encabezados",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Casilla de selección2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"hora_p": {
+					"type": "radio",
+					"top": 295,
+					"left": 48,
+					"width": 141,
+					"height": 14,
+					"dataSource": "hora_p",
+					"text": "Configuración de Horario",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/hora_p.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onPrintingDetail"
+					]
+				},
+				"hora_m": {
+					"type": "radio",
+					"top": 295,
+					"left": 305,
+					"width": 83,
+					"height": 14,
+					"dataSource": "hora_m",
+					"text": "Manual",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/hora_m.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"vh_hora": {
+					"type": "input",
+					"top": 294,
+					"left": 391,
+					"width": 91,
+					"height": 15,
+					"dataSource": "vh_hora",
+					"dataSourceTypeHint": "time",
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"min": "00:00:00",
+					"max": "23:59:59",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"cb_gen_inasistencias": {
+					"type": "checkbox",
+					"top": 323,
+					"left": 48,
+					"width": 341,
+					"height": 13,
+					"dataSource": "cb_gen_inasistencias",
+					"text": "Generar inasistencias para los alumnos que no están en el archivo.",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cb_gen_too_late": {
+					"type": "checkbox",
+					"top": 343,
+					"left": 48,
+					"width": 341,
+					"height": 13,
+					"dataSource": "cb_gen_too_late",
+					"text": "Generar inasistencia cuando el atraso sobrepasa la siguiente hora.",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"vh_hora_too_late": {
+					"type": "input",
+					"top": 341,
+					"left": 391,
+					"width": 91,
+					"height": 15,
+					"dataSource": "vh_hora_too_late",
+					"dataSourceTypeHint": "time",
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"min": "00:00:00",
+					"max": "23:59:59",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"li2": {
+					"type": "groupBox",
+					"top": 77,
+					"left": 23,
+					"width": 572,
+					"height": 102,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Seleccione el Tipo de Identificador Ingresado en la Templeta"
+				},
+				"Texto12": {
+					"type": "text",
+					"top": 230,
+					"left": 44,
+					"width": 409,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "El archivo con datos a importar fue creado en:"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 179,
+					"left": 44,
+					"width": 118,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": ":21012,13"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 263,
+					"left": 42,
+					"width": 172,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Hora a considerar para los atrasos:"
+				}
+			}
+		}
+	]
+}

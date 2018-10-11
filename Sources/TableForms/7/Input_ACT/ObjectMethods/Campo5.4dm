@@ -1,0 +1,17 @@
+If (Self:C308->=True:C214)
+	CD_Dlog (0;__ ("Recuerde que debe ajustar la opción individualmente en cada cuenta dependiente de este apoderado."))
+Else 
+	CD_Dlog (0;__ ("Todas la cuentas dependientes de este apoderado perderán la característica de ser afectas a intereses."))
+	READ WRITE:C146([ACT_CuentasCorrientes:175])
+	QUERY:C277([ACT_CuentasCorrientes:175];[ACT_CuentasCorrientes:175]ID_Apoderado:9=[Personas:7]No:1)
+	CREATE SET:C116([ACT_CuentasCorrientes:175];"apdoNormal")
+	READ ONLY:C145([ACT_Apoderados_de_Cuenta:107])
+	QUERY:C277([ACT_Apoderados_de_Cuenta:107];[ACT_Apoderados_de_Cuenta:107]ID_Apoderado:1=[Personas:7]No:1)
+	KRL_RelateSelection (->[ACT_CuentasCorrientes:175]ID:1;->[ACT_Apoderados_de_Cuenta:107]ID_CtaCte:2)
+	CREATE SET:C116([ACT_CuentasCorrientes:175];"exApdos")
+	UNION:C120("apdoNormal";"exApdos";"apdoNormal")
+	USE SET:C118("apdoNormal")
+	SET_ClearSets ("apdoNormal";"exApdos")
+	APPLY TO SELECTION:C70([ACT_CuentasCorrientes:175];[ACT_CuentasCorrientes:175]AfectoIntereses:28:=False:C215)
+	KRL_UnloadReadOnly (->[ACT_CuentasCorrientes:175])
+End if 

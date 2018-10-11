@@ -1,0 +1,2 @@
+AL_ExitCell (xALP_HNotasECursos)
+AL_LeeObservacionesHistoricas (aNtaRecNum{aNtaAsignatura})

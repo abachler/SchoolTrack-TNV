@@ -1,0 +1,195 @@
+﻿{
+	"formSizeAnchor": "Línea",
+	"rightMargin": 0,
+	"bottomMargin": 20,
+	"markerHeader": 1,
+	"markerBody": 82,
+	"markerBreak": 82,
+	"markerFooter": 82,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDoubleClick",
+		"onUnload",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectángulo4": {
+					"type": "rectangle",
+					"top": 4,
+					"left": -1,
+					"width": 400,
+					"height": 80,
+					"sizingX": "grow",
+					"stroke": "#FFFFFF"
+				},
+				"S2_Campo": {
+					"type": "input",
+					"top": 5,
+					"left": 98,
+					"width": 249,
+					"height": 34,
+					"sizingX": "grow",
+					"dataSource": "[BBL_Prestamos:60]Desde:3",
+					"fill": "#FFFFFF",
+					"fontFamily": "Helvetica Neue Light",
+					"fontSize": 14,
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S2_Campo1": {
+					"type": "input",
+					"top": 39,
+					"left": 98,
+					"width": 249,
+					"height": 13,
+					"sizingX": "grow",
+					"dataSource": "[BBL_Prestamos:60]Número_de_lector:2",
+					"fill": "#FFFFFF",
+					"fontFamily": "Helvetica Neue Light",
+					"fontSize": 11,
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S2_Campo2": {
+					"type": "input",
+					"top": 54,
+					"left": 97,
+					"width": 249,
+					"height": 13,
+					"sizingX": "grow",
+					"dataSource": "[BBL_Prestamos:60]Número_de_registro:1",
+					"fill": "#FFFFFF",
+					"fontFamily": "Helvetica Neue Light",
+					"fontSize": 11,
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Línea": {
+					"type": "line",
+					"top": 81,
+					"left": -1,
+					"width": 400,
+					"height": 1,
+					"stroke": "#00B4FF"
+				},
+				"bSeleccionarregistro": {
+					"type": "button",
+					"top": 109,
+					"left": 502,
+					"width": 112,
+					"height": 20,
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"text": "Retorno",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bSeleccionarregistro1": {
+					"type": "button",
+					"top": 136,
+					"left": 502,
+					"width": 112,
+					"height": 20,
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Intro",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bSeleccionarregistro2": {
+					"type": "button",
+					"top": 163,
+					"left": 502,
+					"width": 112,
+					"height": 20,
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Escape",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto": {
+					"type": "text",
+					"top": 22,
+					"left": 8,
+					"width": 63,
+					"height": 45,
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"text": "Texto de ejemplo:"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,219 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 19,
+	"markerBody": 36,
+	"markerBreak": 37,
+	"markerFooter": 40,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle4": {
+					"type": "rectangle",
+					"top": 17,
+					"left": 2,
+					"width": 213,
+					"height": 19,
+					"stroke": "transparent"
+				},
+				"Line5": {
+					"type": "line",
+					"top": 0,
+					"left": 61,
+					"height": 17
+				},
+				"Line6": {
+					"type": "line",
+					"top": 0,
+					"left": 138,
+					"height": 17
+				},
+				"Line7": {
+					"type": "line",
+					"top": 17,
+					"left": 0,
+					"width": 216
+				},
+				"Line8": {
+					"type": "line",
+					"top": 18,
+					"left": 61,
+					"height": 18,
+					"stroke": "#AAAAAA"
+				},
+				"Line9": {
+					"type": "line",
+					"top": 18,
+					"left": 138,
+					"height": 18,
+					"stroke": "#AAAAAA"
+				},
+				"Rectangle10": {
+					"type": "rectangle",
+					"top": -2,
+					"left": -2,
+					"width": 220,
+					"height": 41,
+					"fill": "transparent"
+				},
+				"Line11": {
+					"type": "line",
+					"top": 35,
+					"left": 0,
+					"width": 216,
+					"stroke": "#AAAAAA"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 3,
+					"left": 3,
+					"width": 56,
+					"height": 12,
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"borderStyle": "raised",
+					"text": "ID_Patron"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 3,
+					"left": 65,
+					"width": 71,
+					"height": 12,
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"borderStyle": "raised",
+					"text": "Date_paiement"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 3,
+					"left": 142,
+					"width": 72,
+					"height": 12,
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"borderStyle": "raised",
+					"text": "Amount_Payed"
+				},
+				"ID_Patron": {
+					"type": "input",
+					"top": 21,
+					"left": 3,
+					"width": 56,
+					"height": 12,
+					"dataSource": "[Alumnos_ObsOrientacion:127]Alumno_Numero:1",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Date_paiement": {
+					"type": "input",
+					"top": 21,
+					"left": 65,
+					"width": 71,
+					"height": 12,
+					"dataSource": "[Alumnos_ObsOrientacion:127]Fecha_observación:2",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Amount_Payed": {
+					"type": "input",
+					"top": 21,
+					"left": 142,
+					"width": 72,
+					"height": 12,
+					"dataSource": "[Alumnos_ObsOrientacion:127]RegistradaPor_Nombre:3",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

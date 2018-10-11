@@ -1,0 +1,582 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Forms",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Área de grupo3",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón4": {
+					"type": "button",
+					"top": 424,
+					"left": 439,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 367,
+					"left": 255,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Área de grupo1": {
+					"type": "groupBox",
+					"top": 82,
+					"left": 10,
+					"width": 277,
+					"height": 76,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Registros de control y encabezado"
+				},
+				"Casilla de selección3": {
+					"type": "checkbox",
+					"top": 103,
+					"left": 20,
+					"width": 266,
+					"height": 15,
+					"dataSource": "cs_IEncabezado",
+					"text": "El archivo tiene encabezado",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Casilla de selección2": {
+					"type": "checkbox",
+					"top": 117,
+					"left": 20,
+					"width": 268,
+					"height": 35,
+					"dataSource": "cs_IPie",
+					"text": "El archivo tiene registro de control (pie)",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Área de grupo2": {
+					"type": "groupBox",
+					"top": 13,
+					"left": 10,
+					"width": 386,
+					"height": 64,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Campo llave de importación"
+				},
+				"Texto16": {
+					"type": "text",
+					"top": 40,
+					"left": 20,
+					"width": 191,
+					"height": 31,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Identificador a utilizar como llave"
+				},
+				"Variable22": {
+					"type": "input",
+					"top": 40,
+					"left": 197,
+					"width": 123,
+					"height": 14,
+					"dataSource": "vIIdentificador",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Banco(5)1": {
+					"type": "picture",
+					"top": 40,
+					"left": 320,
+					"width": 19,
+					"height": 16
+				},
+				"Button1": {
+					"type": "button",
+					"top": 92,
+					"left": 362,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bTestImport",
+					"text": "Importar",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"validar": {
+					"type": "button",
+					"top": 118,
+					"left": 362,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bGuardar",
+					"shortcutKey": "[Enter]",
+					"text": "Salir",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/validar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable16": {
+					"type": "button",
+					"top": 141,
+					"left": 362,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCancelar",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable16.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Área de grupo3": {
+					"type": "groupBox",
+					"top": 166,
+					"left": 11,
+					"width": 431,
+					"height": 176,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Seleccione el tipo de archivo a utilizar"
+				},
+				"aP": {
+					"type": "radio",
+					"top": 188,
+					"left": 22,
+					"width": 141,
+					"height": 15,
+					"dataSource": "PWTrf_h2",
+					"text": "Archivo plano",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"aPlano2": {
+					"type": "text",
+					"top": 235,
+					"left": 27,
+					"width": 51,
+					"height": 14,
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Inicio"
+				},
+				"aPlano3": {
+					"type": "text",
+					"top": 261,
+					"left": 27,
+					"width": 51,
+					"height": 14,
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Largo"
+				},
+				"aPlano4": {
+					"type": "text",
+					"top": 285,
+					"left": 27,
+					"width": 51,
+					"height": 14,
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Alineado"
+				},
+				"aPlano5": {
+					"type": "text",
+					"top": 311,
+					"left": 27,
+					"width": 51,
+					"height": 14,
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Relleno"
+				},
+				"aPlano6": {
+					"type": "input",
+					"top": 235,
+					"left": 87,
+					"width": 63,
+					"height": 14,
+					"dataSource": "vlInicio",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"aPlano7": {
+					"type": "input",
+					"top": 261,
+					"left": 87,
+					"width": 63,
+					"height": 14,
+					"dataSource": "vlLargo",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"aPlano8": {
+					"type": "input",
+					"top": 285,
+					"left": 87,
+					"width": 63,
+					"height": 14,
+					"dataSource": "vtAlin",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"aPlano9": {
+					"type": "input",
+					"top": 311,
+					"left": 87,
+					"width": 63,
+					"height": 14,
+					"dataSource": "vtRelleno",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Banco(5)2": {
+					"type": "picture",
+					"top": 310,
+					"left": 147,
+					"width": 20,
+					"height": 12
+				},
+				"aPlano11": {
+					"type": "button",
+					"top": 310,
+					"left": 87,
+					"width": 83,
+					"height": 16,
+					"dataSource": "bIIDentificador",
+					"display": false,
+					"method": "ObjectMethods/aPlano11.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Banco(5)3": {
+					"type": "picture",
+					"top": 284,
+					"left": 147,
+					"width": 21,
+					"height": 12
+				},
+				"aPlano10": {
+					"type": "button",
+					"top": 284,
+					"left": 87,
+					"width": 83,
+					"height": 16,
+					"dataSource": "bIIDentificador",
+					"display": false,
+					"method": "ObjectMethods/aPlano10.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"sT": {
+					"type": "radio",
+					"top": 188,
+					"left": 240,
+					"width": 197,
+					"height": 15,
+					"dataSource": "PWTrf_h1",
+					"text": "Delimitado",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"sTab4": {
+					"type": "radio",
+					"top": 261,
+					"left": 349,
+					"width": 100,
+					"height": 15,
+					"dataSource": "WTrf_s1",
+					"text": "Tabulación",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"sTab5": {
+					"type": "radio",
+					"top": 282,
+					"left": 349,
+					"width": 100,
+					"height": 15,
+					"dataSource": "WTrf_s2",
+					"text": "Punto y Coma",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"sTab6": {
+					"type": "radio",
+					"top": 305,
+					"left": 349,
+					"width": 100,
+					"height": 15,
+					"dataSource": "WTrf_s3",
+					"text": "Coma",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"sTab2": {
+					"type": "text",
+					"top": 212,
+					"left": 240,
+					"width": 116,
+					"height": 49,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Posición del identificador en el archivo"
+				},
+				"sTab3": {
+					"type": "input",
+					"top": 214,
+					"left": 353,
+					"width": 43,
+					"height": 14,
+					"dataSource": "vlPos",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"sTab1": {
+					"type": "text",
+					"top": 212,
+					"left": 26,
+					"width": 196,
+					"height": 19,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Posición del identificador en el archivo"
+				},
+				"sTab7": {
+					"type": "text",
+					"top": 263,
+					"left": 240,
+					"width": 109,
+					"height": 29,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Delimitador del archivo"
+				},
+				"Separador1": {
+					"type": "splitter",
+					"top": 189,
+					"left": 216,
+					"width": 4,
+					"height": 137,
+					"dataSource": "Separador1",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_popupIdentif": {
+					"type": "button",
+					"top": 39,
+					"left": 193,
+					"width": 144,
+					"height": 16,
+					"dataSource": "btn_popupIdentif",
+					"display": false,
+					"method": "ObjectMethods/btn_popupIdentif.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

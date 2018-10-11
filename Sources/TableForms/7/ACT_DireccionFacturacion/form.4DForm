@@ -1,0 +1,152 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"lb_direccionFacturacion": {
+					"type": "listbox",
+					"top": 13,
+					"left": 13,
+					"width": 401,
+					"height": 295,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "automatic",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "atACTdf_datos",
+							"width": 200,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado1",
+								"text": "Dato",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "atACTdf_valores",
+							"width": 186,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/atACTdf_valores.4dm",
+							"header": {
+								"name": "Encabezado2",
+								"text": "Valor",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "alACTdf_campos",
+							"width": 122,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado3",
+								"text": "Puntero",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"btn_cancelar": {
+					"type": "button",
+					"top": 315,
+					"left": 247,
+					"width": 80,
+					"height": 20,
+					"action": "cancel",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_guardar": {
+					"type": "button",
+					"top": 315,
+					"left": 334,
+					"width": 80,
+					"height": 20,
+					"text": "Guardar",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"method": "ObjectMethods/btn_guardar.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

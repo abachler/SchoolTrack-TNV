@@ -1,0 +1,739 @@
+﻿{
+	"formSizeAnchor": "btn_cerrar",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texto": {
+					"type": "text",
+					"top": 90,
+					"left": 411,
+					"width": 110,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Adjuntar informe:"
+				},
+				"vtACTecc_Asunto": {
+					"type": "input",
+					"top": 65,
+					"left": 157,
+					"width": 226,
+					"height": 14,
+					"dataSource": "vtACTecc_Asunto",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vtACTecc_ResponderA": {
+					"type": "input",
+					"top": 65,
+					"left": 528,
+					"width": 246,
+					"height": 14,
+					"dataSource": "vtACTecc_ResponderA",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vtACTecc_ResponderA.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vtACTecc_CopiaOculta": {
+					"type": "input",
+					"top": 90,
+					"left": 157,
+					"width": 226,
+					"height": 14,
+					"dataSource": "vtACTecc_CopiaOculta",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vtACTecc_CopiaOculta.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"atACTecc_Informes": {
+					"type": "dropdown",
+					"top": 90,
+					"left": 528,
+					"width": 246,
+					"height": 18,
+					"dataSource": "atACTecc_Informes",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"vtACTecc_Cuerpo": {
+					"type": "input",
+					"top": 134,
+					"left": 20,
+					"width": 360,
+					"height": 137,
+					"dataSource": "vtACTecc_Cuerpo",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"lb_ACTecc_Palabras": {
+					"type": "listbox",
+					"top": 134,
+					"left": 413,
+					"width": 361,
+					"height": 137,
+					"dataSource": "lb_ACTecc_Palabras",
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"alternateFill": "#F3F6FA",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"columns": [
+						{
+							"name": "Columna1",
+							"dataSource": "atACTecc_Palabra",
+							"width": 170,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#F3F6FA",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título1",
+								"text": "Variable",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Columna5",
+							"dataSource": "atACTecc_Descripción",
+							"width": 176,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#F3F6FA",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título5",
+								"text": "Contenido de la Variable",
+								"dataSource": "Título5",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"cs_ACTecc_EnvioAutomatico": {
+					"type": "checkbox",
+					"top": 322,
+					"left": 860,
+					"width": 358,
+					"height": 24,
+					"dataSource": "cs_ACTecc_EnvioAutomatico",
+					"text": "Enviar todos los          de cada mes",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"lb_ACTecc_Apoderados": {
+					"type": "listbox",
+					"top": 347,
+					"left": 20,
+					"width": 452,
+					"height": 151,
+					"dataSource": "lb_ACTecc_Apoderados",
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"alternateFill": "#F3F6FA",
+					"rowStrokeSource": "alACTecc_Colores",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"columns": [
+						{
+							"name": "Columna7",
+							"dataSource": "abACTecc_Enviar",
+							"width": 55,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "checkbox",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#F3F6FA",
+							"textAlign": "center",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Columna7.4dm",
+							"header": {
+								"name": "Título7",
+								"text": "Enviar",
+								"dataSource": "Título7",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Columna2",
+							"dataSource": "atACTecc_ApoderadoNombre",
+							"width": 210,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#F3F6FA",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título2",
+								"text": "Responsable",
+								"dataSource": "Título2",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Columna3",
+							"dataSource": "atACTecc_ApoderadoModoPago",
+							"width": 90,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#F3F6FA",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título3",
+								"text": "Modo de Pago",
+								"dataSource": "Título3",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Columna4",
+							"dataSource": "arACTecc_ApoderadoMontoVencido",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"numberFormat": "|Despliegue_ACT_Pagos",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#F3F6FA",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título4",
+								"text": "Total Vencido",
+								"dataSource": "Título4",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Columna6",
+							"dataSource": "alACTecc_ApoderadoID",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#F3F6FA",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título6",
+								"text": "ID Apdo",
+								"dataSource": "Título6",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"cs_ACTecc_RegistrarObs": {
+					"type": "checkbox",
+					"top": 347,
+					"left": 500,
+					"width": 264,
+					"height": 40,
+					"dataSource": "cs_ACTecc_RegistrarObs",
+					"text": "Registrar el envío en una observación en la ficha del apoderado",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"atACTecc_Consultas": {
+					"type": "dropdown",
+					"top": 370,
+					"left": 882,
+					"width": 222,
+					"height": 18,
+					"dataSource": "atACTecc_Consultas",
+					"focusable": false,
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn_programar": {
+					"type": "button",
+					"top": 370,
+					"left": 1130,
+					"width": 90,
+					"height": 18,
+					"dataSource": "btn_programar",
+					"text": "Programar...",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"method": "ObjectMethods/btn_programar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cs_ACTecc_PublicarSN": {
+					"type": "checkbox",
+					"top": 480,
+					"left": 862,
+					"width": 238,
+					"height": 18,
+					"dataSource": "cs_ACTecc_PublicarSN",
+					"text": "Publicar carta en SchoolNet",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn_enviar": {
+					"type": "button",
+					"top": 511,
+					"left": 500,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btn_enviar",
+					"text": "Enviar…",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/btn_enviar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn_guardar": {
+					"type": "button",
+					"top": 511,
+					"left": 592,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btn_guardar",
+					"action": "cancel",
+					"text": "Guardar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/btn_guardar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn_cerrar": {
+					"type": "button",
+					"top": 511,
+					"left": 684,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btn_cerrar",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"vlACTecc_Dia": {
+					"type": "input",
+					"top": 326,
+					"left": 962,
+					"width": 15,
+					"height": 14,
+					"dataSource": "vlACTecc_Dia",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vlACTecc_Dia.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 65,
+					"left": 20,
+					"width": 130,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Asunto del correo:"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 116,
+					"left": 20,
+					"width": 133,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Cuerpo del correo:"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 65,
+					"left": 411,
+					"width": 110,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Responder a:"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 90,
+					"left": 20,
+					"width": 130,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Enviar copia oculta a:"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 116,
+					"left": 411,
+					"width": 359,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Variables disponibles para ser usadas en el cuerpo del correo:"
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 322,
+					"left": 25,
+					"width": 319,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Apoderados a quienes se les enviará el correo electrónico"
+				},
+				"Texto9": {
+					"type": "text",
+					"top": 12,
+					"left": 17,
+					"width": 754,
+					"height": 23,
+					"textAlign": "center",
+					"styleSheet": "XS_DialogsTitles",
+					"text": "Enviar Cartas de Cobranza por Correo Electrónico"
+				},
+				"bACTecc_SubSeleccion": {
+					"type": "button",
+					"top": 317,
+					"left": 418,
+					"width": 26,
+					"height": 26,
+					"dataSource": "bACTecc_SubSeleccion",
+					"shortcutKey": "-",
+					"shortcutAccel": true,
+					"styleSheet": "XS_FormObjects",
+					"text": "subsel",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "custom",
+					"method": "ObjectMethods/bACTecc_SubSeleccion.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bACTecc_ExcluyeSeleccion": {
+					"type": "button",
+					"top": 317,
+					"left": 447,
+					"width": 26,
+					"height": 26,
+					"dataSource": "bACTecc_ExcluyeSeleccion",
+					"shortcutKey": "-",
+					"shortcutAccel": true,
+					"shortcutAlt": true,
+					"styleSheet": "XS_FormObjects",
+					"text": "exsel",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "custom",
+					"method": "ObjectMethods/bACTecc_ExcluyeSeleccion.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 302,
+					"left": 20,
+					"width": 353,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Envío manual de cartas de cobranza por correo electrónico"
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 303,
+					"left": 862,
+					"width": 373,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Envío automático de cartas de cobranza por correo electrónico"
+				},
+				"Texto10": {
+					"type": "text",
+					"top": 347,
+					"left": 880,
+					"width": 339,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Al resultado de la búsqueda de la siguiente consulta asociada:"
+				},
+				"Texto11": {
+					"type": "text",
+					"top": 116,
+					"left": 308,
+					"width": 73,
+					"height": 14,
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Vista previa"
+				},
+				"Botón invisible": {
+					"type": "button",
+					"top": 115,
+					"left": 311,
+					"width": 70,
+					"height": 17,
+					"dataSource": "Botón invisible",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Línea": {
+					"type": "line",
+					"top": 287,
+					"left": 20,
+					"width": 754,
+					"height": 1
+				},
+				"Texto12": {
+					"type": "text",
+					"top": 511,
+					"left": 24,
+					"width": 459,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Apoderados en rojo no tienen un mail válido ingresado o no tienen monto vencido"
+				}
+			}
+		}
+	]
+}

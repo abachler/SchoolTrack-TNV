@@ -1,0 +1,166 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Variable3",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable1": {
+					"type": "dropdown",
+					"top": 4,
+					"left": 184,
+					"width": 98,
+					"height": 18,
+					"dataSource": "aClsSel",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 39,
+					"left": 210,
+					"width": 70,
+					"height": 18,
+					"dataSource": "bInscribe",
+					"text": "Asociar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "plugin",
+					"top": 59,
+					"left": 0,
+					"width": 287,
+					"height": 302,
+					"dataSource": "xALP_List",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 390,
+					"left": 23,
+					"width": 78,
+					"height": 22,
+					"dataSource": "bSel",
+					"action": "cancel",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 24,
+					"left": 7,
+					"width": 116,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Por apellidos y nombres:"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 4,
+					"left": 7,
+					"width": 136,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Por curso:"
+				},
+				"vt_nombre": {
+					"type": "input",
+					"top": 24,
+					"left": 132,
+					"width": 150,
+					"height": 12,
+					"dataSource": "vt_nombre",
+					"textAlign": "left",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vt_nombre.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				}
+			}
+		}
+	]
+}

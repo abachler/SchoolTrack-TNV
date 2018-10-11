@@ -1,0 +1,316 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Variable6",
+	"rightMargin": -13,
+	"bottomMargin": -13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 405,
+					"left": 221,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 348,
+					"left": 37,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"marcomodulo1": {
+					"type": "picture",
+					"top": 13,
+					"left": 13,
+					"width": 48,
+					"height": 48,
+					"pictureFormat": "scaled"
+				},
+				"vpXS_IconModule": {
+					"type": "input",
+					"top": 21,
+					"left": 21,
+					"width": 32,
+					"height": 32,
+					"dataSource": "vpXS_IconModule",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onGettingFocus",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 288,
+					"left": 423,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bAnswer",
+					"shortcutKey": "[Enter]",
+					"text": "Enviar",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"focusable": false,
+					"defaultButton": true,
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 288,
+					"left": 338,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 101,
+					"left": 67,
+					"width": 420,
+					"height": 83,
+					"dataSource": "vMsgText",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 14,
+					"left": 68,
+					"width": 252,
+					"height": 19,
+					"styleSheet": "Plain - 14",
+					"fontWeight": "bold",
+					"text": "¡¡¡Usted tiene un nuevo mensaje!!! "
+				},
+				"SenderNameandStatus": {
+					"type": "input",
+					"top": 37,
+					"left": 88,
+					"width": 386,
+					"height": 13,
+					"dataSource": "SenderNameandStatus",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 37,
+					"left": 68,
+					"width": 19,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "De:"
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 193,
+					"left": 67,
+					"width": 420,
+					"height": 83,
+					"dataSource": "vToSendText",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 53,
+					"left": 68,
+					"width": 71,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Recibido a las:"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 69,
+					"left": 68,
+					"width": 23,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Del:"
+				},
+				"vHora": {
+					"type": "input",
+					"top": 53,
+					"left": 140,
+					"width": 78,
+					"height": 13,
+					"dataSource": "vHora",
+					"dataSourceTypeHint": "time",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"timeFormat": "hh_mm",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vFecha": {
+					"type": "input",
+					"top": 69,
+					"left": 90,
+					"width": 364,
+					"height": 13,
+					"dataSource": "vFecha",
+					"dataSourceTypeHint": "date",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "systemLong",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

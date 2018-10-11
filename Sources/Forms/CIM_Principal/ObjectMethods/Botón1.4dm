@@ -1,0 +1,1 @@
+XS_CIM_ObjetMethods ("OpenFTPConnection")

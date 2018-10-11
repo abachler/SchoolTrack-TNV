@@ -1,0 +1,196 @@
+﻿{
+	"formSizeAnchor": "Rectángulo1",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Imagen1": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 635,
+					"height": 69,
+					"sizingX": "grow",
+					"pictureFormat": "scaled"
+				},
+				"Imagen3": {
+					"type": "picture",
+					"top": 13,
+					"left": 575,
+					"width": 31,
+					"height": 42,
+					"pictureFormat": "scaled"
+				},
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 69,
+					"left": 0,
+					"width": 636,
+					"height": 451,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "automatic"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 11,
+					"left": 169,
+					"width": 377,
+					"height": 44,
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Asistente para la importación de Registros Analíticos en MediaTrack"
+				},
+				"vsBWR_CurrentModule1": {
+					"type": "input",
+					"top": 48,
+					"left": 13,
+					"width": 129,
+					"height": 19,
+					"dataSource": "vsBWR_CurrentModule",
+					"fill": "transparent",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"styleSheet": "Plain - 14",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Línea5": {
+					"type": "line",
+					"top": 0,
+					"left": 152,
+					"height": 70,
+					"stroke": "#AAAAAA"
+				},
+				"bIconoWZD": {
+					"type": "pictureButton",
+					"top": 13,
+					"left": 59,
+					"width": 32,
+					"height": 32,
+					"dataSource": "bIconoWZD",
+					"columnCount": 1,
+					"rowCount": 1,
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Botón de opción1": {
+					"type": "radio",
+					"top": 488,
+					"left": 9,
+					"width": 143,
+					"height": 14,
+					"sizingY": "move",
+					"dataSource": "r1Mac",
+					"text": "Archivo Texto Macintosh",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón de opción2": {
+					"type": "radio",
+					"top": 488,
+					"left": 169,
+					"width": 143,
+					"height": 14,
+					"sizingY": "move",
+					"dataSource": "r2Win",
+					"text": "Archivo Texto Windows",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 488,
+					"left": 406,
+					"width": 208,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "Botón1",
+					"text": "Seleccionar archivo a importar...",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"x4DLiveWindow": {
+					"type": "webArea",
+					"top": 70,
+					"left": 0,
+					"width": 635,
+					"height": 408,
+					"urlSource": "Web Area_url",
+					"progressSource": "Web Area_progress",
+					"contextMenu": "none",
+					"borderStyle": "none"
+				},
+				"Línea": {
+					"type": "line",
+					"top": 479,
+					"left": 1,
+					"width": 634,
+					"stroke": "#AAAAAA"
+				}
+			}
+		}
+	]
+}

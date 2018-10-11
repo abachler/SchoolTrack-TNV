@@ -1,0 +1,113 @@
+﻿{
+	"formSizeAnchor": "Rectángulo1",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pages": [
+		{
+			"objects": {
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 342,
+					"height": 117,
+					"fill": "#FFF0DF",
+					"stroke": "#FFF0DF"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 316,
+					"height": 83,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Estos parámetros controlan varias funciones relacionadas con los avisos de cobranza, incluyendo los ordenamientos para imprimir.\rSi hay avisos emitidos y usted cambia este parámetro puede tener resultados inesperados al imprimir avisos previamente emitidos."
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 94,
+					"left": 255,
+					"width": 74,
+					"height": 17,
+					"dataSource": "Botón invisible1",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 97,
+					"left": 262,
+					"width": 65,
+					"height": 11,
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Cerrar"
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 214,
+					"left": 439,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 157,
+					"left": 255,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		null
+	]
+}

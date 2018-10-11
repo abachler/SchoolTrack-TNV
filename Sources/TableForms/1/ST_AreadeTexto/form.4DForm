@@ -1,0 +1,91 @@
+﻿{
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"vt_textomodificado": {
+					"type": "input",
+					"top": 14,
+					"left": 11,
+					"width": 454,
+					"height": 146,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vt_textomodificado",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"method": "ObjectMethods/vt_textomodificado.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 171,
+					"left": 296,
+					"width": 80,
+					"height": 18,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Botón1",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 171,
+					"left": 385,
+					"width": 80,
+					"height": 18,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bSave",
+					"shortcutKey": "[Enter]",
+					"text": "Guardar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón2.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

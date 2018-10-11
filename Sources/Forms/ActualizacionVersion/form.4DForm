@@ -1,0 +1,846 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Rectángulo",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Cuadro de Grupo": {
+					"type": "groupBox",
+					"top": 530,
+					"left": -2,
+					"width": 678,
+					"height": 175,
+					"stroke": "#EE0000",
+					"styleSheet": "Medium - 16",
+					"text": "No Borrar"
+				},
+				"Rectángulo": {
+					"type": "rectangle",
+					"top": -1,
+					"left": -1,
+					"width": 609,
+					"height": 480,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "automatic",
+					"stroke": "automatic"
+				},
+				"Rectángulo3": {
+					"type": "rectangle",
+					"top": -3,
+					"left": -5,
+					"width": 616,
+					"height": 67,
+					"sizingX": "grow",
+					"fill": "#DDDDDD",
+					"stroke": "#AAAAAA"
+				},
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 417,
+					"left": -5,
+					"width": 616,
+					"height": 67,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"fill": "#DDDDDD",
+					"stroke": "#AAAAAA"
+				},
+				"Imagen1": {
+					"type": "picture",
+					"top": 9,
+					"left": 9,
+					"width": 48,
+					"height": 48,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Icons/server.icns"
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 611,
+					"left": 31,
+					"width": 111,
+					"height": 22,
+					"sizingY": "move",
+					"dataSource": "bSalir",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Salir CMD-.",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"method": "ObjectMethods/Botón2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"titulo": {
+					"type": "text",
+					"top": 12,
+					"left": 78,
+					"width": 520,
+					"height": 20,
+					"sizingX": "grow",
+					"styleSheet": "Medium - 16",
+					"fontWeight": "bold",
+					"text": "Actualización de SchoolTrack a 11.9"
+				},
+				"versionAplicacion": {
+					"type": "text",
+					"top": 640,
+					"left": 29,
+					"width": 373,
+					"height": 16,
+					"sizingY": "move",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Version aplicación"
+				},
+				"versionBD": {
+					"type": "text",
+					"top": 664,
+					"left": 29,
+					"width": 373,
+					"height": 16,
+					"sizingY": "move",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Version base de datos"
+				},
+				"Botón": {
+					"type": "button",
+					"top": 605,
+					"left": 560,
+					"width": 47,
+					"height": 28,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Botón",
+					"action": "nextPage",
+					"shortcutKey": "[right arrow]",
+					"shortcutAccel": true,
+					"text": ">>",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 605,
+					"left": 508,
+					"width": 47,
+					"height": 28,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Botón",
+					"action": "previousPage",
+					"shortcutKey": "[left arrow]",
+					"shortcutAccel": true,
+					"text": "<<",
+					"events": [
+						"onClick"
+					]
+				},
+				"bEnviaCorreo": {
+					"type": "button",
+					"top": 440,
+					"left": 34,
+					"width": 161,
+					"height": 22,
+					"visibility": "hidden",
+					"sizingY": "move",
+					"fontFamily": "Helvetica Neue Medium",
+					"fontSize": 13,
+					"text": "Reenviar Informe...",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"method": "ObjectMethods/bEnviaCorreo.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail",
+						"onMouseEnter"
+					]
+				},
+				"titulo2": {
+					"type": "text",
+					"top": 33,
+					"left": 78,
+					"width": 520,
+					"height": 18,
+					"sizingX": "grow",
+					"stroke": "#555555",
+					"styleSheet": "Medium - 14",
+					"fontWeight": "bold",
+					"text": "Verificación y Compactación de base de datos"
+				},
+				"jsonDiferenciasCompactacion": {
+					"type": "input",
+					"top": 581,
+					"left": 30,
+					"width": 578,
+					"height": 16,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"permitirSaltar": {
+					"type": "button",
+					"top": 732,
+					"left": 18,
+					"width": 118,
+					"height": 19,
+					"shortcutKey": "*",
+					"shortcutAccel": true,
+					"shortcutAlt": true,
+					"text": "permitirOmitir",
+					"method": "ObjectMethods/permitirSaltar.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto": {
+					"type": "text",
+					"top": 80,
+					"left": 81,
+					"width": 506,
+					"height": 117,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"styleSheet": "Plain - 14",
+					"text": "La base de datos será verificada antes de continuar con la actualización.\rSi durante la verificación se encuentra algún daño en la base de datos se abrirá el Centro de mantenimiento para que usted pueda proceder a la reparación.\r\rSi no se detecta ningún daño se procederá a la compactación de la base de datos para reducir el espacio no utilizado, mejorar el rendimiento y la seguridad.\r"
+				},
+				"verificar": {
+					"type": "button",
+					"top": 440,
+					"left": 396,
+					"width": 191,
+					"height": 22,
+					"sizingX": "move",
+					"sizingY": "move",
+					"text": "Verificar Base de Datos",
+					"styleSheet": "Medium - 13",
+					"focusable": false,
+					"method": "ObjectMethods/verificar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": -29,
+					"left": -27,
+					"width": 319,
+					"height": 15,
+					"fill": "automatic",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Página 1. Cuadro de diálogo Inicial"
+				},
+				"saltar": {
+					"type": "button",
+					"top": 440,
+					"left": 261,
+					"width": 115,
+					"height": 22,
+					"action": "accept",
+					"text": "Omitir",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto7": {
+					"type": "text",
+					"top": -30,
+					"left": 9,
+					"width": 373,
+					"height": 15,
+					"fill": "#009900",
+					"stroke": "#FFFFFF",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Página 2. Verificación OK. Compactación no necesaria"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 80,
+					"left": 81,
+					"width": 494,
+					"height": 81,
+					"sizingX": "grow",
+					"styleSheet": "Plain - 14",
+					"text": "No se detectó ningún daño en la base de datos pero la base de datos debe ser compactada para eliminar espacio inutilizado, disminuir la fragmentación, mejorar el rendimiento y la seguridad.\rPresione el botón \"Compactar la base de datos\" para continuar."
+				},
+				"compactar": {
+					"type": "button",
+					"top": 440,
+					"left": 364,
+					"width": 211,
+					"height": 22,
+					"sizingX": "move",
+					"sizingY": "move",
+					"text": "Compactar la base de datos",
+					"styleSheet": "Medium - 13",
+					"focusable": false,
+					"method": "ObjectMethods/compactar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"List Box6": {
+					"type": "listbox",
+					"top": 167,
+					"left": 81,
+					"width": 478,
+					"height": 235,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "List Box3",
+					"hideFocusRing": true,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"rowStrokeSource": "al_FragmentacionColores",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 13,
+					"columns": [
+						{
+							"name": "Columna18",
+							"dataSource": "at_FragmentacionTablas",
+							"width": 360,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título20",
+								"text": "Tablas",
+								"dataSource": "Título8",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "Columna19",
+							"dataSource": "ar_FragmentacionPorcentaje",
+							"width": 103,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"numberFormat": "|Pct_2Dec",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título21",
+								"text": "Fragmentación",
+								"dataSource": "Título9",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						}
+					]
+				},
+				"saltar1": {
+					"type": "button",
+					"top": 440,
+					"left": 241,
+					"width": 115,
+					"height": 22,
+					"action": "accept",
+					"text": "Omitir",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto8": {
+					"type": "text",
+					"top": -29,
+					"left": -27,
+					"width": 373,
+					"height": 15,
+					"fill": "#FF6600",
+					"stroke": "#FFFFFF",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Página 3. Compactación de la BD"
+				},
+				"textoAnomalias": {
+					"type": "text",
+					"top": 74,
+					"left": 79,
+					"width": 506,
+					"height": 35,
+					"sizingX": "grow",
+					"styleSheet": "Medium - 14",
+					"text": "Se detectaron las siguientes anomalías durante la verificación de la base de datos.\r\r\r\r\r\r\r"
+				},
+				"bOpenCSM": {
+					"type": "button",
+					"top": 439,
+					"left": 378,
+					"width": 203,
+					"height": 22,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bOpenCSM",
+					"fontFamily": "Helvetica Neue Medium",
+					"fontSize": 13,
+					"text": "Abrir Centro de Seguridad",
+					"iconFrames": 4,
+					"popupPlacement": "separated",
+					"style": "roundedBevel",
+					"method": "ObjectMethods/bOpenCSM.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"List Box3": {
+					"type": "listbox",
+					"top": 122,
+					"left": 79,
+					"width": 498,
+					"height": 118,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "lb_erroresCompactacion",
+					"hideFocusRing": true,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 13,
+					"columns": [
+						{
+							"name": "at_DataFileError2",
+							"dataSource": "at_DataFileError",
+							"width": 483,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título8",
+								"text": "Título1",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						}
+					]
+				},
+				"textoFallaVerificacion": {
+					"type": "text",
+					"top": 250,
+					"left": 79,
+					"width": 499,
+					"height": 109,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"styleSheet": "Plain - 13",
+					"text": "texto falla"
+				},
+				"textoApoyo": {
+					"type": "text",
+					"top": 368,
+					"left": 81,
+					"width": 487,
+					"height": 34,
+					"styleSheet": "Medium - 13",
+					"text": "texto apoyo"
+				}
+			}
+		},
+		{
+			"objects": {
+				"List Box2": {
+					"type": "listbox",
+					"top": 133,
+					"left": 77,
+					"width": 506,
+					"height": 215,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "lb_erroresCompactacion",
+					"hideFocusRing": true,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 13,
+					"columns": [
+						{
+							"name": "numeroTabla",
+							"width": 50,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título3",
+								"text": "Tabla #",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "nombreTabla",
+							"width": 200,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado1",
+								"text": "Nombre de la tabla",
+								"dataSource": "Encabezado1",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "registrosAntes",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado2",
+								"text": "Antes",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "registrosDespues",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado3",
+								"text": "Después",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "Diferencia",
+							"width": 121,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado4",
+								"text": "Registros perdidos",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						}
+					]
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 87,
+					"left": 78,
+					"width": 441,
+					"height": 36,
+					"sizingX": "grow",
+					"styleSheet": "Medium - 14",
+					"text": "Se detectó pérdida de registros en algunas tablas después de la compactación:"
+				},
+				"textoApoyoP4": {
+					"type": "text",
+					"top": 368,
+					"left": 77,
+					"width": 487,
+					"height": 34,
+					"styleSheet": "Medium - 13",
+					"text": "texto apoyo"
+				},
+				"migracion1": {
+					"type": "button",
+					"top": 439,
+					"left": 464,
+					"width": 111,
+					"height": 22,
+					"sizingX": "move",
+					"sizingY": "move",
+					"action": "accept",
+					"text": "Continuar",
+					"styleSheet": "Medium - 13",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"migracion": {
+					"type": "button",
+					"top": 439,
+					"left": 464,
+					"width": 111,
+					"height": 22,
+					"sizingX": "move",
+					"sizingY": "move",
+					"action": "accept",
+					"text": "Continuar",
+					"styleSheet": "Medium - 13",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto21": {
+					"type": "text",
+					"top": -29,
+					"left": -27,
+					"width": 373,
+					"height": 15,
+					"fill": "automatic",
+					"stroke": "#00BB00",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Página 8. Reparacion exitosa"
+				},
+				"Texto30": {
+					"type": "text",
+					"top": 168,
+					"left": 98,
+					"width": 312,
+					"height": 15,
+					"sizingX": "grow",
+					"styleSheet": "Plain - 13",
+					"text": "Ubicación de la base de datos actual:"
+				},
+				"Texto34": {
+					"type": "text",
+					"top": 282,
+					"left": 98,
+					"width": 352,
+					"height": 15,
+					"sizingX": "grow",
+					"styleSheet": "Plain - 13",
+					"text": "Ubicación de la base de datos antes de la compactación:"
+				},
+				"bRutabdCompactada": {
+					"type": "button",
+					"top": 186,
+					"left": 115,
+					"width": 413,
+					"height": 21,
+					"sizingX": "grow",
+					"styleSheet": "Medium - 13",
+					"text": "Ruta BD compactada",
+					"popupPlacement": "linked",
+					"style": "bevel",
+					"method": "ObjectMethods/bRutabdCompactada.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bRutabdOriginal": {
+					"type": "button",
+					"top": 302,
+					"left": 117,
+					"width": 413,
+					"height": 21,
+					"sizingX": "grow",
+					"styleSheet": "Medium - 13",
+					"text": "Ruta BD Original",
+					"popupPlacement": "linked",
+					"style": "bevel",
+					"method": "ObjectMethods/bRutabdOriginal.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 87,
+					"left": 78,
+					"width": 441,
+					"height": 63,
+					"sizingX": "grow",
+					"styleSheet": "Plain - 13",
+					"text": "La base de datos fue verificada y compactada exitosamente y puede ser actualizada.\r\rPresione el botón Continuar para terminar la migración."
+				},
+				"rutabdCompactada": {
+					"type": "text",
+					"top": 213,
+					"left": 124,
+					"width": 404,
+					"height": 48,
+					"sizingX": "grow",
+					"stroke": "#777777",
+					"styleSheet": "Plain - 10",
+					"text": "rutabdcompactada"
+				},
+				"rutaBDoriginal": {
+					"type": "text",
+					"top": 333,
+					"left": 124,
+					"width": 404,
+					"height": 48,
+					"sizingX": "grow",
+					"stroke": "#777777",
+					"styleSheet": "Plain - 10",
+					"text": "rutaBDoriginal"
+				}
+			}
+		}
+	]
+}

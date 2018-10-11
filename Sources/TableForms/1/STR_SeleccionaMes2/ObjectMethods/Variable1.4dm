@@ -1,0 +1,1 @@
+vi_Mes:=Selected list items:C379(Self:C308->)

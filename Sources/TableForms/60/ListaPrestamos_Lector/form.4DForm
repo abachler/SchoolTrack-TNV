@@ -1,0 +1,157 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Rectángulo",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 1,
+	"markerBody": 53,
+	"markerBreak": 53,
+	"markerFooter": 53,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDisplayDetail",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectángulo": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 602,
+					"height": 54,
+					"stroke": "#FFFFFF"
+				},
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 1,
+					"left": 0,
+					"width": 604,
+					"height": 51,
+					"fill": "#DFFFFF",
+					"stroke": "#DFFFFF"
+				},
+				"imagen": {
+					"type": "input",
+					"top": 4,
+					"left": 3,
+					"width": 48,
+					"height": 48,
+					"sizingX": "grow",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"method": "ObjectMethods/imagen.4dm",
+					"events": [
+						"onDisplayDetail"
+					]
+				},
+				"InfoPrestamo.L1": {
+					"type": "text",
+					"top": 3,
+					"left": 316,
+					"width": 280,
+					"height": 16,
+					"styleSheet": "Ligth - 12",
+					"text": "linea 1"
+				},
+				"titulo": {
+					"type": "text",
+					"top": 5,
+					"left": 72,
+					"width": 234,
+					"height": 30,
+					"fontFamily": "MS Serif",
+					"fontSize": 12,
+					"text": "titulo"
+				},
+				"copia": {
+					"type": "text",
+					"top": 33,
+					"left": 72,
+					"width": 234,
+					"height": 16,
+					"styleSheet": "Ligth - 12",
+					"text": "copia"
+				},
+				"InfoPrestamo.L2": {
+					"type": "text",
+					"top": 18,
+					"left": 316,
+					"width": 280,
+					"height": 16,
+					"styleSheet": "Ligth - 12",
+					"text": "linea 2"
+				},
+				"InfoPrestamo.L3": {
+					"type": "text",
+					"top": 33,
+					"left": 316,
+					"width": 280,
+					"height": 16,
+					"styleSheet": "Ligth - 12",
+					"text": "linea 3"
+				},
+				"Línea": {
+					"type": "line",
+					"top": 0,
+					"left": 312,
+					"height": 54,
+					"stroke": "#AAAAAA"
+				},
+				"$l_recNumPrestamo": {
+					"type": "text",
+					"top": 8,
+					"left": 672,
+					"width": 182,
+					"height": 15,
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"text": "$l_recNumPrestamo"
+				},
+				"$l_selectedRecord": {
+					"type": "text",
+					"top": 34,
+					"left": 666,
+					"width": 182,
+					"height": 15,
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"text": "$l_selectedRecord"
+				},
+				"Línea2": {
+					"type": "line",
+					"top": 52,
+					"left": 1,
+					"width": 600,
+					"stroke": "#DDDDDD"
+				},
+				"Botón invisible": {
+					"type": "button",
+					"top": 1,
+					"left": 1,
+					"width": 600,
+					"height": 50,
+					"dataSource": "Botón invisible",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,160 @@
+﻿{
+	"windowTitle": ":21012,1",
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Variable6",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerBody": 100,
+	"markerBreak": 232,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onUnload",
+		"onOpenDetail",
+		"onCloseDetail"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable1": {
+					"type": "radio",
+					"top": 19,
+					"left": 16,
+					"width": 80,
+					"height": 20,
+					"dataSource": "b1",
+					"text": "Periódico",
+					"styleSheet": "Plain - 13",
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable25": {
+					"type": "dropdown",
+					"top": 18,
+					"left": 111,
+					"width": 253,
+					"height": 20,
+					"dataSource": "atSTR_Periodos_Nombre",
+					"styleSheet": "Plain - 13",
+					"method": "ObjectMethods/Variable25.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable5": {
+					"type": "radio",
+					"top": 48,
+					"left": 16,
+					"width": 121,
+					"height": 20,
+					"dataSource": "b2",
+					"text": "Síntesis anual",
+					"styleSheet": "Plain - 13",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"printStyle(1)": {
+					"type": "dropdown",
+					"top": 84,
+					"left": 89,
+					"width": 275,
+					"height": 20,
+					"dataSource": "aEvPrintMode",
+					"styleSheet": "Plain - 13",
+					"method": "ObjectMethods/printStyle(1).4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"cancelar": {
+					"type": "button",
+					"top": 138,
+					"left": 171,
+					"width": 100,
+					"height": 22,
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "Plain - 13",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 138,
+					"left": 285,
+					"width": 100,
+					"height": 22,
+					"dataSource": "bImprimir",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": ":21012,3",
+					"styleSheet": "Plain - 13",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"printStyle1": {
+					"type": "text",
+					"top": 86,
+					"left": 21,
+					"width": 62,
+					"height": 16,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"text": "Imprimir:"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,313 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Forms",
+	"inheritedFormTable": 114,
+	"formSizeAnchor": "Variable15",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onUnload",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 365,
+					"left": 194,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 308,
+					"left": 10,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Imagen60": {
+					"type": "picture",
+					"top": 10,
+					"left": 203,
+					"width": 13,
+					"height": 20,
+					"sizingX": "move",
+					"pictureFormat": "scaled"
+				},
+				"Imagen1": {
+					"type": "picture",
+					"top": 10,
+					"left": 422,
+					"width": 13,
+					"height": 20,
+					"sizingX": "move",
+					"pictureFormat": "scaled"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 15,
+					"left": 14,
+					"width": 85,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Grupos de usuarios:"
+				},
+				"Separador1": {
+					"type": "splitter",
+					"top": 5,
+					"left": 221,
+					"width": 9,
+					"height": 333,
+					"sizingX": "move",
+					"sizingY": "grow",
+					"dataSource": "Separador1",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable14": {
+					"type": "list",
+					"top": 35,
+					"left": 14,
+					"width": 201,
+					"height": 248,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "hl_authorizedGroups",
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable15": {
+					"type": "list",
+					"top": 35,
+					"left": 233,
+					"width": 201,
+					"height": 248,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "hl_authorizedUsers",
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Óvalo8": {
+					"type": "oval",
+					"top": 143,
+					"left": 223,
+					"width": 3,
+					"height": 3,
+					"sizingX": "move",
+					"fill": "#888888",
+					"stroke": "#888888"
+				},
+				"Óvalo1": {
+					"type": "oval",
+					"top": 148,
+					"left": 223,
+					"width": 3,
+					"height": 3,
+					"sizingX": "move",
+					"fill": "#888888",
+					"stroke": "#888888"
+				},
+				"Óvalo2": {
+					"type": "oval",
+					"top": 153,
+					"left": 223,
+					"width": 3,
+					"height": 3,
+					"sizingX": "move",
+					"fill": "#888888",
+					"stroke": "#888888"
+				},
+				"Óvalo3": {
+					"type": "oval",
+					"top": 158,
+					"left": 223,
+					"width": 3,
+					"height": 3,
+					"sizingX": "move",
+					"fill": "#888888",
+					"stroke": "#888888"
+				},
+				"Óvalo4": {
+					"type": "oval",
+					"top": 163,
+					"left": 223,
+					"width": 3,
+					"height": 3,
+					"sizingX": "move",
+					"fill": "#888888",
+					"stroke": "#888888"
+				},
+				"Óvalo5": {
+					"type": "oval",
+					"top": 168,
+					"left": 223,
+					"width": 3,
+					"height": 3,
+					"sizingX": "move",
+					"fill": "#888888",
+					"stroke": "#888888"
+				},
+				"Óvalo6": {
+					"type": "oval",
+					"top": 173,
+					"left": 223,
+					"width": 3,
+					"height": 3,
+					"sizingX": "move",
+					"fill": "#888888",
+					"stroke": "#888888"
+				},
+				"Menú jerárquico desplegable2": {
+					"type": "dropdown",
+					"top": 13,
+					"left": 422,
+					"width": 13,
+					"height": 16,
+					"sizingX": "move",
+					"dataSource": "hlUSR_GroupsAndUsers",
+					"dataSourceTypeHint": "integer",
+					"display": false,
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Menú jerárquico desplegable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Menú jerárquico desplegable1": {
+					"type": "dropdown",
+					"top": 13,
+					"left": 203,
+					"width": 13,
+					"height": 16,
+					"sizingX": "move",
+					"dataSource": "hlUSR_Groups",
+					"dataSourceTypeHint": "integer",
+					"display": false,
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Menú jerárquico desplegable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text8": {
+					"type": "text",
+					"top": 15,
+					"left": 233,
+					"width": 105,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Usuarios independientes:"
+				},
+				"Botón invisible1": {
+					"type": "button",
+					"top": 496,
+					"left": 136,
+					"width": 82,
+					"height": 20,
+					"dataSource": "Botón invisible1",
+					"shortcutKey": "[Del]",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

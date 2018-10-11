@@ -1,0 +1,284 @@
+﻿{
+	"rightMargin": 10,
+	"bottomMargin": 16,
+	"markerHeader": 18,
+	"markerBody": 34,
+	"markerBreak": 38,
+	"markerFooter": 38,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectángulo5": {
+					"type": "rectangle",
+					"top": 16,
+					"left": 2,
+					"width": 800,
+					"height": 18,
+					"sizingX": "grow",
+					"stroke": "transparent"
+				},
+				"Separador1": {
+					"type": "button",
+					"top": 2,
+					"left": 75,
+					"width": 1,
+					"height": 34,
+					"dataSource": "Separador1",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Separador2": {
+					"type": "button",
+					"top": 2,
+					"left": 331,
+					"width": 1,
+					"height": 34,
+					"dataSource": "Separador2",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Separador3": {
+					"type": "button",
+					"top": 2,
+					"left": 587,
+					"width": 1,
+					"height": 34,
+					"dataSource": "Separador3",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea6": {
+					"type": "line",
+					"top": 16,
+					"left": 0,
+					"width": 803,
+					"sizingX": "grow"
+				},
+				"Separador1_Línea2": {
+					"type": "line",
+					"top": 3,
+					"left": 75,
+					"height": 33,
+					"stroke": "#AAAAAA"
+				},
+				"Separador2_Línea2": {
+					"type": "line",
+					"top": 3,
+					"left": 331,
+					"height": 33,
+					"stroke": "#AAAAAA"
+				},
+				"Separador3_Línea2": {
+					"type": "line",
+					"top": 3,
+					"left": 587,
+					"height": 33,
+					"stroke": "#AAAAAA"
+				},
+				"Rectángulo10": {
+					"type": "rectangle",
+					"top": -2,
+					"left": -2,
+					"width": 807,
+					"height": 39,
+					"sizingX": "grow",
+					"fill": "transparent"
+				},
+				"Línea11": {
+					"type": "line",
+					"top": 33,
+					"left": 0,
+					"width": 802,
+					"sizingX": "grow",
+					"stroke": "#AAAAAA"
+				},
+				"S1_Texto": {
+					"type": "text",
+					"top": 3,
+					"left": 3,
+					"width": 70,
+					"height": 11,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "raised",
+					"text": "ID_Class"
+				},
+				"S2_Texto": {
+					"type": "text",
+					"top": 3,
+					"left": 79,
+					"width": 250,
+					"height": 11,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "raised",
+					"text": "UUID_Class"
+				},
+				"S3_Texto": {
+					"type": "text",
+					"top": 3,
+					"left": 335,
+					"width": 250,
+					"height": 11,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "raised",
+					"text": "ClassName"
+				},
+				"S4_Texto": {
+					"type": "text",
+					"top": 3,
+					"left": 591,
+					"width": 210,
+					"height": 11,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "raised",
+					"text": "ID_Table"
+				},
+				"S1_Campo": {
+					"type": "input",
+					"top": 20,
+					"left": 3,
+					"width": 70,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[XShell_ReportObjLib_TableRefs:276]ID_Class:1",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S2_Campo": {
+					"type": "input",
+					"top": 20,
+					"left": 79,
+					"width": 250,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[XShell_ReportObjLib_TableRefs:276]UUID_Class:3",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S3_Campo": {
+					"type": "input",
+					"top": 20,
+					"left": 335,
+					"width": 250,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[XShell_ReportObjLib_Clases:274]ClassName:2",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S4_Campo": {
+					"type": "input",
+					"top": 20,
+					"left": 591,
+					"width": 210,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "vt_TableName",
+					"dataSourceTypeHint": "integer",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontSize": 9,
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/S4_Campo.4dm",
+					"events": [
+						"onDisplayDetail"
+					]
+				}
+			}
+		}
+	]
+}

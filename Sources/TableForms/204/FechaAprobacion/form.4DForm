@@ -1,0 +1,148 @@
+﻿{
+	"windowTitle": "Fecha estimada de logro",
+	"inheritedForm": "XS_BKGD_Forms",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Botón1",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 628,
+					"left": 373,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 571,
+					"left": 189,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Campo1": {
+					"type": "input",
+					"top": 75,
+					"left": 304,
+					"width": 108,
+					"height": 13,
+					"dataSource": "[MPA_ObjetosMatriz:204]FechaEstimadaLogro:26",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Campo1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo2": {
+					"type": "input",
+					"top": 13,
+					"left": 13,
+					"width": 399,
+					"height": 52,
+					"dataSource": "[MPA_DefinicionCompetencias:187]Competencia:6",
+					"styleSheet": "XS_DialogObjects",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 75,
+					"left": 11,
+					"width": 286,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Fecha estimada para la adquisición de la competencia:"
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 100,
+					"left": 335,
+					"width": 77,
+					"height": 18,
+					"dataSource": "bSave",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Guardar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 100,
+					"left": 246,
+					"width": 77,
+					"height": 18,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

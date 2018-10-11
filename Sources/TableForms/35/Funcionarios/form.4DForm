@@ -1,0 +1,244 @@
+﻿{
+	"windowTitle": "Inscripción de Funcionarios",
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Zona de Grupo8",
+	"rightMargin": -13,
+	"bottomMargin": -13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 578,
+					"left": 228,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 521,
+					"left": 44,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Zona de Grupo2": {
+					"type": "groupBox",
+					"top": 43,
+					"left": 13,
+					"width": 330,
+					"height": 214,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Recorridos"
+				},
+				"Zona de Grupo3": {
+					"type": "groupBox",
+					"top": 260,
+					"left": 13,
+					"width": 329,
+					"height": 233,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Nómina de Funcionarios Inscritos"
+				},
+				"Zona de Grupo1": {
+					"type": "groupBox",
+					"top": 43,
+					"left": 347,
+					"width": 296,
+					"height": 450,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Funcionarios"
+				},
+				"Área de plug-in4": {
+					"type": "plugin",
+					"top": 64,
+					"left": 353,
+					"width": 284,
+					"height": 421,
+					"dataSource": "xalp_BUListaFunc",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Área de plug-in4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Área de plug-in5": {
+					"type": "plugin",
+					"top": 64,
+					"left": 20,
+					"width": 316,
+					"height": 185,
+					"dataSource": "xalp_BURec",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Área de plug-in5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Área de plug-in6": {
+					"type": "plugin",
+					"top": 300,
+					"left": 20,
+					"width": 316,
+					"height": 185,
+					"dataSource": "xalp_BUFunc",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Área de plug-in6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Zona de Grupo8": {
+					"type": "groupBox",
+					"top": 43,
+					"left": 646,
+					"width": 129,
+					"height": 450,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Instrucciones"
+				},
+				"Texto12": {
+					"type": "text",
+					"top": 74,
+					"left": 652,
+					"width": 116,
+					"height": 408,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "1.- Seleccione el recorrido con clic sobre el nombre en la lista de la sección \"Recorridos\".\r\r2.- Seleccione un funcionario desde la sección \"Selección de Funcionarios\".\r\r3.- Arrástrelo hacia la sección Nómina de Funcionarios Inscritos.\r\rPara seleccionar al funcionario puede digitar las primeras letras del apellido paterno y en la lista aparecerán todos aquellos cuyos apellidos paternos comiencen con dichas letras. \r\rPor ejemplo: Si desea buscar a un funcionario que se apellida Pérez, se debe digitar el apellido Pérez en la casilla Buscar e inmediatamente aparecerán en la lista todos aquellos funcionarios cuyo primer apellido es Pérez.\r"
+				},
+				"buttons(2)": {
+					"type": "pictureButton",
+					"top": 278,
+					"left": 316,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bDelFunc",
+					"tooltip": "delCdtaRec",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/buttons(2).4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"englishCancelButtonBU": {
+					"type": "button",
+					"top": 3,
+					"left": 2,
+					"width": 82,
+					"height": 20,
+					"dataSource": "bBWR_Cancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Botón",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Line5": {
+					"type": "line",
+					"top": 0,
+					"left": 86,
+					"height": 26,
+					"stroke": "#AAAAAA"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 26,
+					"left": 0,
+					"width": 813,
+					"sizingX": "grow",
+					"stroke": "#AAAAAA"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,200 @@
+﻿{
+	"formSizeAnchor": "bExport",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 23,
+					"left": 20,
+					"width": 47,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Archivo:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 134,
+					"left": 20,
+					"width": 105,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Registros a exportar:"
+				},
+				"Variable1": {
+					"type": "dropdown",
+					"top": 20,
+					"left": 66,
+					"width": 262,
+					"height": 18,
+					"dataSource": "aTableNames",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "radio",
+					"top": 52,
+					"left": 62,
+					"width": 200,
+					"height": 18,
+					"dataSource": "b1All",
+					"text": "Exportar todos los registros",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "radio",
+					"top": 75,
+					"left": 62,
+					"width": 200,
+					"height": 18,
+					"dataSource": "b2Sel",
+					"text": "Exportar la selección actual",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "radio",
+					"top": 98,
+					"left": 62,
+					"width": 200,
+					"height": 18,
+					"dataSource": "b3QUERY",
+					"text": "Buscar registros...",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 134,
+					"left": 137,
+					"width": 120,
+					"height": 13,
+					"dataSource": "vl_numeroRegistros",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 170,
+					"left": 160,
+					"width": 80,
+					"height": 18,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bExport": {
+					"type": "button",
+					"top": 170,
+					"left": 245,
+					"width": 80,
+					"height": 18,
+					"dataSource": "bexport",
+					"action": "accept",
+					"text": "Exportar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

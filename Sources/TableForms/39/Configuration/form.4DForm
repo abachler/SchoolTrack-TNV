@@ -1,0 +1,336 @@
+﻿{
+	"windowTitle": "Listas",
+	"inheritedForm": "XS_MASTER_ConfigDialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 595,
+	"height": 420,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Variable1": {
+					"type": "button",
+					"top": 595,
+					"left": 24,
+					"width": 63,
+					"height": 16,
+					"dataSource": "bClose",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón6": {
+					"type": "button",
+					"top": 519,
+					"left": 230,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 462,
+					"left": 46,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable119": {
+					"type": "pictureButton",
+					"top": 388,
+					"left": 447,
+					"width": 20,
+					"height": 20,
+					"dataSource": "bInfos",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable119.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable109": {
+					"type": "dropdown",
+					"top": 51,
+					"left": 190,
+					"width": 278,
+					"height": 18,
+					"dataSource": "pLists",
+					"tooltip": "TBL_List",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Variable109.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 52,
+					"left": 493,
+					"width": 80,
+					"height": 18,
+					"dataSource": "bEDIT",
+					"tooltip": "TBL_Rebuild",
+					"text": "Editar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable110": {
+					"type": "plugin",
+					"top": 77,
+					"left": 19,
+					"width": 448,
+					"height": 305,
+					"dataSource": "xALP_Tables",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Variable110.4dm",
+					"events": [
+						"onClick",
+						"onPluginArea"
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 76,
+					"left": 493,
+					"width": 80,
+					"height": 18,
+					"dataSource": "bADD",
+					"tooltip": "TBL_Agregar",
+					"text": "Agregar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón4": {
+					"type": "button",
+					"top": 109,
+					"left": 493,
+					"width": 80,
+					"height": 18,
+					"dataSource": "bDEL",
+					"tooltip": "TBL_Eliminar",
+					"text": "Eliminar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 142,
+					"left": 493,
+					"width": 80,
+					"height": 18,
+					"dataSource": "bREBUILD",
+					"tooltip": "TBL_Rebuild",
+					"text": "Reconstruir",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable236": {
+					"type": "button",
+					"top": 217,
+					"left": 493,
+					"width": 80,
+					"height": 19,
+					"dataSource": "bPrint",
+					"tooltip": "TBL_Imprimir",
+					"shortcutKey": "O",
+					"shortcutAccel": true,
+					"text": "Imprimir",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"method": "ObjectMethods/Variable236.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 250,
+					"left": 493,
+					"width": 80,
+					"height": 19,
+					"dataSource": "bImport",
+					"tooltip": "TBL_Imprimir",
+					"shortcutKey": "O",
+					"shortcutAccel": true,
+					"text": "Importar",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"developer": {
+					"type": "button",
+					"top": 318,
+					"left": 476,
+					"width": 110,
+					"height": 19,
+					"dataSource": "bImportFromFile",
+					"text": "Cargar desde archivo",
+					"styleSheet": "XS_FormObjects",
+					"focusable": false,
+					"method": "ObjectMethods/developer.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"developer1": {
+					"type": "button",
+					"top": 341,
+					"left": 476,
+					"width": 110,
+					"height": 19,
+					"dataSource": "bSave2File",
+					"text": "Guardar a archivo",
+					"styleSheet": "XS_FormObjects",
+					"focusable": false,
+					"method": "ObjectMethods/developer1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Champ140": {
+					"type": "input",
+					"top": 392,
+					"left": 19,
+					"width": 212,
+					"height": 16,
+					"dataSource": "[xShell_List:39]Enriquecible:8",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "Lista Enriquecible",
+					"tooltip": "TBL_Enriquecibl",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Champ140.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 51,
+					"left": 19,
+					"width": 175,
+					"height": 13,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Seleccione la Lista a editar"
+				}
+			}
+		}
+	]
+}

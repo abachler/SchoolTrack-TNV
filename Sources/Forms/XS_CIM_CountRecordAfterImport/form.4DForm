@@ -1,0 +1,220 @@
+﻿{
+	"windowTitle": "Atención! Diferencias detectada",
+	"formSizeAnchor": "Imagen9",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"List Box": {
+					"type": "listbox",
+					"top": 51,
+					"left": 0,
+					"width": 567,
+					"height": 631,
+					"dataSource": "List Box",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"rowStrokeSource": "al_lb_colors",
+					"rowStyleSource": "al_lb_styles",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"columns": [
+						{
+							"name": "al_TableNums",
+							"dataSource": "al_TableNums",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título1",
+								"text": "Nº de tabla",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "at_TableNames",
+							"dataSource": "at_TableNames",
+							"width": 232,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título2",
+								"text": "Tablas",
+								"dataSource": "Título2",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "al_CountRecordsBeforeExport",
+							"dataSource": "al_CountRecordsBeforeExport",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Titulo3",
+								"text": "Registros exportados",
+								"dataSource": "Título3",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "al_CountRecordsAfterImport",
+							"dataSource": "al_CountRecordsAfterImport",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título4",
+								"text": "Registros Importados",
+								"dataSource": "Título4",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"Imagen9": {
+					"type": "picture",
+					"top": 682,
+					"left": 0,
+					"width": 568,
+					"height": 23,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"pictureFormat": "scaled"
+				},
+				"Texto": {
+					"type": "text",
+					"top": 20,
+					"left": 13,
+					"width": 539,
+					"height": 28,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Se detectaron diferencias entre el número de registros exportados y el número de registros importados al reconstruir la base de datos."
+				},
+				"Botón": {
+					"type": "button",
+					"top": 770,
+					"left": 176,
+					"width": 83,
+					"height": 27,
+					"dataSource": "Botón",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Botón",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Imagen3": {
+					"type": "picture",
+					"top": 685,
+					"left": 9,
+					"width": 20,
+					"height": 17,
+					"pictureFormat": "scaled"
+				},
+				"Botón invisible2": {
+					"type": "button",
+					"top": 685,
+					"left": 6,
+					"width": 23,
+					"height": 17,
+					"dataSource": "Botón invisible1",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

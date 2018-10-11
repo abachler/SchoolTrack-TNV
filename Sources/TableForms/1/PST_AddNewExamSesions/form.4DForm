@@ -1,0 +1,255 @@
+﻿{
+	"windowTitle": ":21031,1",
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Variable4",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerBody": 300,
+	"markerBreak": 300,
+	"markerFooter": 300,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 377,
+					"left": 327,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 320,
+					"left": 143,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 376,
+					"left": 77,
+					"width": 577,
+					"height": 11,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": ":21031,5"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 45,
+					"left": 13,
+					"width": 228,
+					"height": 44,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Seleccione en la lista la fecha de examen que desea asignar al postulante y haga clic en el botón Asignar a la sesión seleccionada"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 83,
+					"left": 389,
+					"width": 189,
+					"height": 11,
+					"dataSource": "vdPST_NewSesionDate",
+					"dataSourceTypeHint": "date",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dateFormat": "systemLong",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"exams2": {
+					"type": "plugin",
+					"top": 113,
+					"left": 13,
+					"width": 229,
+					"height": 136,
+					"dataSource": "xALP_Sections",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/exams2.4dm",
+					"events": [
+						"onLoad",
+						"onPluginArea"
+					]
+				},
+				"Variable7(1)": {
+					"type": "plugin",
+					"top": 112,
+					"left": 278,
+					"width": 306,
+					"height": 137,
+					"dataSource": "xALP_Groups",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable46": {
+					"type": "button",
+					"top": 257,
+					"left": 13,
+					"width": 229,
+					"height": 18,
+					"dataSource": "bAssign",
+					"text": "Asignar a la sesión seleccionada",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable46.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 257,
+					"left": 277,
+					"width": 309,
+					"height": 18,
+					"dataSource": "bNew",
+					"text": "Crear nueva sesión y asignar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 306,
+					"left": 263,
+					"width": 114,
+					"height": 18,
+					"dataSource": "bClose",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Line1": {
+					"type": "line",
+					"top": 37,
+					"left": 2,
+					"width": 608
+				},
+				"Line2": {
+					"type": "line",
+					"top": 39,
+					"left": 262,
+					"height": 250
+				},
+				"Text7": {
+					"type": "text",
+					"top": 45,
+					"left": 277,
+					"width": 291,
+					"height": 33,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Ingrese una fecha para una nueva sesión de exámenes y la hora de examen para cada grupo."
+				},
+				"Text15": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 580,
+					"height": 12,
+					"fontSize": 10,
+					"text": "Puede optar por asignar manualmente este postulante a una sesión existente o bien crear una nueva sesión de examenes"
+				},
+				"Text36": {
+					"type": "text",
+					"top": 83,
+					"left": 278,
+					"width": 112,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Fecha de la nueva sesión:"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,740 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "btn_cerrar",
+	"rightMargin": 15,
+	"bottomMargin": 15,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Área de grupo": {
+					"type": "groupBox",
+					"top": 80,
+					"left": 9,
+					"width": 676,
+					"height": 85,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Buscar por:"
+				},
+				"MultiRazones1": {
+					"type": "dropdown",
+					"top": 57,
+					"left": 118,
+					"width": 200,
+					"height": 17,
+					"dataSource": "atACTcfg_Razones",
+					"focusable": false,
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/MultiRazones1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vrACT_folio": {
+					"type": "input",
+					"top": 103,
+					"left": 121,
+					"width": 110,
+					"height": 13,
+					"dataSource": "vrACT_folio",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"btn_buscar": {
+					"type": "button",
+					"top": 102,
+					"left": 576,
+					"width": 100,
+					"height": 20,
+					"dataSource": "btn_buscar",
+					"text": "Buscar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/btn_buscar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"atACTdteEmi_Periodo": {
+					"type": "dropdown",
+					"top": 125,
+					"left": 121,
+					"width": 110,
+					"height": 19,
+					"dataSource": "atACTdteEmi_Periodo",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn_mostrarTodos": {
+					"type": "button",
+					"top": 127,
+					"left": 716,
+					"width": 100,
+					"height": 20,
+					"dataSource": "btn_mostrarTodos",
+					"text": "Mostrar Todos",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"method": "ObjectMethods/btn_mostrarTodos.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"lb_dtesEmitidos": {
+					"type": "listbox",
+					"top": 218,
+					"left": 13,
+					"width": 550,
+					"height": 278,
+					"dataSource": "lb_dtesEmitidos",
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"rowStrokeSource": "alACT_ColorDteEmi",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"method": "ObjectMethods/lb_dtesEmitidos.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "atACT_TipoEmi",
+							"dataSource": "atACT_TipoEmi",
+							"width": 200,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"header": {
+								"name": "Título1",
+								"text": "Tipo Documento",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "alACT_FolioEmi",
+							"dataSource": "alACT_FolioEmi",
+							"width": 70,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"textAlign": "right",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"header": {
+								"name": "Título3",
+								"text": "Folio",
+								"dataSource": "Título3",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "adACT_FechaEmisionEmi",
+							"dataSource": "adACT_FechaEmisionEmi",
+							"width": 85,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"header": {
+								"name": "Título4",
+								"text": "F. Emisión",
+								"dataSource": "Título4",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "arACT_MontoTotalEmi",
+							"dataSource": "arACT_MontoTotalEmi",
+							"width": 85,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"numberFormat": "|Despliegue_ACT",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"header": {
+								"name": "Título5",
+								"text": "Total",
+								"dataSource": "Título5",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "atACT_PDFEmi",
+							"dataSource": "atACT_PDFEmi",
+							"width": 30,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"fill": "#FFFFFF",
+							"textAlign": "center",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"textDecoration": "underline",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título9",
+								"text": "PDF",
+								"dataSource": "Título9",
+								"stroke": "#0000FF",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold",
+								"textDecoration": "underline"
+							}
+						},
+						{
+							"name": "atACT_XMLEmi",
+							"dataSource": "atACT_XMLEmi",
+							"width": 30,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"fill": "#FFFFFF",
+							"textAlign": "center",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"textDecoration": "underline",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título2",
+								"text": "XML",
+								"dataSource": "Título2",
+								"stroke": "#0000FF",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold",
+								"textDecoration": "underline"
+							}
+						},
+						{
+							"name": "atACT_PDFCCEmi",
+							"dataSource": "atACT_PDFCCEmi",
+							"width": 30,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"fill": "#FFFFFF",
+							"textAlign": "center",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"textDecoration": "underline",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título11",
+								"text": "CC",
+								"dataSource": "Título11",
+								"stroke": "#0000FF",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold",
+								"textDecoration": "underline"
+							}
+						},
+						{
+							"name": "alACT_IdDteEmi",
+							"dataSource": "alACT_IdDteEmi",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título6",
+								"text": "oculta id",
+								"dataSource": "Título6",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "atACT_PDF_rutaEmi",
+							"dataSource": "atACT_PDF_rutaEmi",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título10",
+								"text": "PDF ruta",
+								"dataSource": "Título10",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "atACT_XML_rutaEmi",
+							"dataSource": "atACT_XML_rutaEmi",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título7",
+								"text": "Título7",
+								"dataSource": "Título7",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "atACT_PDFCC_rutaEmi",
+							"dataSource": "atACT_PDFCC_rutaEmi",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título8",
+								"text": "Título8",
+								"dataSource": "Título8",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"btn_generaPDF": {
+					"type": "button",
+					"top": 449,
+					"left": 576,
+					"width": 100,
+					"height": 20,
+					"dataSource": "btn_generaPDF",
+					"text": "Obtener",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/btn_generaPDF.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn_cerrar": {
+					"type": "button",
+					"top": 476,
+					"left": 576,
+					"width": 100,
+					"height": 20,
+					"dataSource": "btn_cerrar",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cerrar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 102,
+					"left": 24,
+					"width": 73,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Folio:"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 102,
+					"left": 322,
+					"width": 113,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Fecha emisión desde:"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 57,
+					"left": 34,
+					"width": 93,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Razón Social:"
+				},
+				"vdACT_fechaEmision": {
+					"type": "input",
+					"top": 103,
+					"left": 434,
+					"width": 73,
+					"height": 13,
+					"dataSource": "vdACT_fechaEmision",
+					"dataSourceTypeHint": "date",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Dcto3": {
+					"type": "pictureButton",
+					"top": 101,
+					"left": 510,
+					"width": 17,
+					"height": 16,
+					"dataSource": "bCalendar1",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Dcto3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"filtroDtes": {
+					"type": "dropdown",
+					"top": 188,
+					"left": 118,
+					"width": 180,
+					"height": 20,
+					"dataSource": "hlACT_FiltroDte",
+					"dataSourceTypeHint": "integer",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/filtroDtes.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 16,
+					"left": 13,
+					"width": 672,
+					"height": 22,
+					"styleSheet": "XS_DialogsTitles",
+					"text": "Documentos Tributarios Electrónicos Emitidos"
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 188,
+					"left": 24,
+					"width": 93,
+					"height": 19,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Filtrar listado:"
+				},
+				"Texto10": {
+					"type": "text",
+					"top": 127,
+					"left": 322,
+					"width": 113,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Fecha emisión hasta:"
+				},
+				"vdACT_fechaEmisionH": {
+					"type": "input",
+					"top": 128,
+					"left": 434,
+					"width": 73,
+					"height": 13,
+					"dataSource": "vdACT_fechaEmisionH",
+					"dataSourceTypeHint": "date",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Dcto1": {
+					"type": "pictureButton",
+					"top": 126,
+					"left": 510,
+					"width": 17,
+					"height": 16,
+					"dataSource": "bCalendar1",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Dcto1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto11": {
+					"type": "text",
+					"top": 127,
+					"left": 24,
+					"width": 93,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Período emisión:"
+				},
+				"Texto14": {
+					"type": "text",
+					"top": 188,
+					"left": 414,
+					"width": 153,
+					"height": 19,
+					"styleSheet": "XS_DialogObjects",
+					"text": "documento(s) encontrado(s)"
+				},
+				"l_totalListado": {
+					"type": "input",
+					"top": 188,
+					"left": 382,
+					"width": 28,
+					"height": 13,
+					"dataSource": "l_totalListado",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"bACT_PDF": {
+					"type": "radio",
+					"top": 362,
+					"left": 576,
+					"width": 81,
+					"height": 14,
+					"dataSource": "bACT_PDF",
+					"text": "PDF",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bACT_XML": {
+					"type": "radio",
+					"top": 402,
+					"left": 576,
+					"width": 81,
+					"height": 14,
+					"dataSource": "bACT_XML",
+					"text": "XML",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bACT_PDFcedible": {
+					"type": "checkbox",
+					"top": 381,
+					"left": 596,
+					"width": 99,
+					"height": 14,
+					"dataSource": "bACT_PDFcedible",
+					"text": "Copia cedible",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"r_abrirDcto": {
+					"type": "checkbox",
+					"top": 429,
+					"left": 576,
+					"width": 99,
+					"height": 14,
+					"dataSource": "r_abrirDcto",
+					"text": "Abrir documento",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/r_abrirDcto.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

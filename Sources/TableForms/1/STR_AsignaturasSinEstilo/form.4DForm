@@ -1,0 +1,246 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"LB_estilos": {
+					"type": "listbox",
+					"top": 65,
+					"left": 412,
+					"width": 172,
+					"height": 227,
+					"dataSource": "LB_estilos",
+					"sortable": false,
+					"movableRows": false,
+					"dragging": "custom",
+					"dropping": "custom",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "automatic",
+					"alternateFill": "#F3F6FA",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"events": [
+						"onClick",
+						"onDrop",
+						"onDataChange",
+						"onDragOver",
+						"onSelectionChange",
+						"onHeaderClick",
+						"onBeginDragOver"
+					],
+					"columns": [
+						{
+							"name": "at_Estilo",
+							"dataSource": "at_Estilo",
+							"width": 155,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"alternateFill": "#F3F6FA",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado2",
+								"text": "Estilos de Evaluación\\ Existentes",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"Cancelar": {
+					"type": "button",
+					"top": 334,
+					"left": 412,
+					"width": 79,
+					"height": 24,
+					"text": "Cancelar",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"focusable": false,
+					"method": "ObjectMethods/Cancelar.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón": {
+					"type": "button",
+					"top": 334,
+					"left": 505,
+					"width": 79,
+					"height": 24,
+					"text": "Aceptar",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"focusable": false,
+					"method": "ObjectMethods/Botón.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 300,
+					"left": 19,
+					"width": 366,
+					"height": 31,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Las asignaturas que se listan, son todas aquellas que no tienen estilo de evaluación o tienen un estilo de evaluación inexistemte en la base de datos."
+				},
+				"Text1": {
+					"type": "text",
+					"top": 300,
+					"left": 412,
+					"width": 166,
+					"height": 26,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Estilos de Evaluación existentes en la base de datos."
+				},
+				"Texto": {
+					"type": "text",
+					"top": 23,
+					"left": 19,
+					"width": 348,
+					"height": 22,
+					"styleSheet": "XS_DialogsTitles",
+					"text": "Asignación de Estilos de Evaluación"
+				},
+				"LB_asignaturas": {
+					"type": "listbox",
+					"top": 65,
+					"left": 19,
+					"width": 373,
+					"height": 227,
+					"dataSource": "LB_asignaturas",
+					"sortable": false,
+					"movableRows": false,
+					"dropping": "custom",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "automatic",
+					"alternateFill": "#F3F6FA",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"method": "ObjectMethods/LB_asignaturas.4dm",
+					"events": [
+						"onDrop",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "at_nomAsig",
+							"dataSource": "at_nomAsig",
+							"width": 160,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"alternateFill": "#F3F6FA",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado1",
+								"text": "Asignaturas",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "at_curso",
+							"dataSource": "at_curso",
+							"width": 74,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"alternateFill": "#F3F6FA",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Curso",
+								"text": "Curso",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "at_nomEstilo",
+							"dataSource": "at_nomEstilo",
+							"width": 122,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"alternateFill": "#F3F6FA",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Estilo de Evaluación",
+								"text": "Estilo de Evaluación",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+}

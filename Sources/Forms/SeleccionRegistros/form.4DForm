@@ -1,0 +1,244 @@
+﻿{
+	"width": 400,
+	"height": 406,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDeactivate",
+		"onDoubleClick",
+		"onTimer",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"primero": {
+					"type": "button",
+					"top": 9,
+					"left": 422,
+					"width": 91,
+					"height": 21,
+					"sizingY": "move",
+					"shortcutKey": "[Home]",
+					"text": "primero",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"method": "ObjectMethods/primero.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"último": {
+					"type": "button",
+					"top": 34,
+					"left": 422,
+					"width": 91,
+					"height": 21,
+					"sizingY": "move",
+					"shortcutKey": "[End]",
+					"text": "ultimo",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"method": "ObjectMethods/último.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"paginaArriba": {
+					"type": "button",
+					"top": 9,
+					"left": 541,
+					"width": 111,
+					"height": 21,
+					"sizingY": "move",
+					"shortcutKey": "[Page up]",
+					"text": "paginaArriba",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"method": "ObjectMethods/paginaArriba.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"paginaAbajo": {
+					"type": "button",
+					"top": 34,
+					"left": 541,
+					"width": 111,
+					"height": 21,
+					"sizingY": "move",
+					"shortcutKey": "[Page down]",
+					"text": "paginaAbajo",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"method": "ObjectMethods/paginaAbajo.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"escape": {
+					"type": "button",
+					"top": 75,
+					"left": 422,
+					"width": 101,
+					"height": 25,
+					"sizingY": "move",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "escape",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"focusable": false,
+					"method": "ObjectMethods/escape.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bSeleccionarregistro": {
+					"type": "button",
+					"top": 109,
+					"left": 422,
+					"width": 112,
+					"height": 20,
+					"sizingY": "move",
+					"shortcutKey": "[Return]",
+					"text": "Retorno",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"focusable": false,
+					"method": "ObjectMethods/bSeleccionarregistro.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bSeleccionarregistro1": {
+					"type": "button",
+					"top": 136,
+					"left": 422,
+					"width": 112,
+					"height": 20,
+					"sizingY": "move",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Intro",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Subformulario1": {
+					"type": "subform",
+					"top": 0,
+					"left": 0,
+					"width": 401,
+					"height": 406,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSourceTypeHint": "text",
+					"table": -72,
+					"listForm": "Selección",
+					"hideFocusRing": true,
+					"scrollbarVertical": "visible",
+					"enterableInList": false,
+					"deletableInList": false,
+					"selectionMode": "single",
+					"printFrame": "variable",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Subformulario2": {
+					"type": "subform",
+					"top": 0,
+					"left": 0,
+					"width": 400,
+					"height": 406,
+					"dataSourceTypeHint": "text",
+					"table": -61,
+					"listForm": "Selección",
+					"scrollbarVertical": "visible",
+					"enterableInList": false,
+					"deletableInList": false,
+					"selectionMode": "single",
+					"printFrame": "variable",
+					"borderStyle": "system",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Subformulario3": {
+					"type": "subform",
+					"top": 0,
+					"left": 0,
+					"width": 399,
+					"height": 406,
+					"dataSourceTypeHint": "text",
+					"table": -60,
+					"listForm": "Seleccion",
+					"scrollbarVertical": "visible",
+					"enterableInList": false,
+					"deletableInList": false,
+					"selectionMode": "single",
+					"printFrame": "variable",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

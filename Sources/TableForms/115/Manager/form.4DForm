@@ -1,0 +1,190 @@
+﻿{
+	"windowTitle": "Reservas",
+	"formSizeAnchor": "xAL_Reservas",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Botón1": {
+					"type": "button",
+					"top": 698,
+					"left": 77,
+					"width": 83,
+					"height": 32,
+					"sizingX": "move",
+					"sizingY": "move",
+					"action": "cancel",
+					"shortcutKey": "w",
+					"shortcutAccel": true,
+					"text": "Close",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón4": {
+					"type": "button",
+					"top": 698,
+					"left": 419,
+					"width": 83,
+					"height": 32,
+					"sizingX": "move",
+					"sizingY": "move",
+					"shortcutKey": "[F5]",
+					"text": "Actualizar",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"method": "ObjectMethods/Botón4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"lb_Reservas": {
+					"type": "listbox",
+					"top": 0,
+					"left": 0,
+					"width": 698,
+					"height": 663,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"listboxType": "currentSelection",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"headerHeight": "24px",
+					"highlightSet": "$ListboxSet0",
+					"table": 115,
+					"scrollbarHorizontal": "hidden",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 11,
+					"method": "ObjectMethods/lb_Reservas.4dm",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onAfterSort",
+						"onSelectionChange",
+						"onColumnMove",
+						"onRowMove",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Barras 2D1",
+							"dataSource": "[BBL_Lectores:72]NombreCompleto:3",
+							"width": 208,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado1",
+								"text": "Lector",
+								"fontFamily": "Helvetica Neue Medium",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Barras 2D2",
+							"dataSource": "[BBL_Lectores:72]Seccion_o_curso:5",
+							"width": 97,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado2",
+								"text": "Curso o grupo",
+								"fontFamily": "Helvetica Neue Medium",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Barras 2D3",
+							"dataSource": "[BBL_Items:61]Primer_título:4",
+							"width": 296,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado3",
+								"text": "Reserva",
+								"fontFamily": "Helvetica Neue Medium",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Barras 2D4",
+							"dataSource": "[BBL_Reservas:115]Until:4",
+							"dataSourceTypeHint": "date",
+							"width": 83,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado4",
+								"text": "Caduca el",
+								"fontFamily": "Helvetica Neue Medium",
+								"fontSize": 12
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+}

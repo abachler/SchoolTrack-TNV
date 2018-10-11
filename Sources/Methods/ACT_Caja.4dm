@@ -1,0 +1,11 @@
+//%attributes = {}
+  //ACT_Caja
+
+ARRAY LONGINT:C221(aACT_DocIDs;0)
+ARRAY DATE:C224(aACT_DocDate;0)
+ARRAY DATE:C224(aACT_DocDateVencimiento;0)
+ARRAY TEXT:C222(aACT_DocAlumno;0)
+ARRAY REAL:C219(aACT_Monto;0)
+ARRAY REAL:C219(aACT_Pagos;0)
+ARRAY REAL:C219(aACT_Saldo;0)
+

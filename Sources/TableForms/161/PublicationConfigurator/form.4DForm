@@ -1,0 +1,1784 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "elementosGenerales1",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"custom": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 2000,
+					"height": 2000,
+					"stroke": "transparent"
+				},
+				"custom1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 2000,
+					"height": 2000,
+					"stroke": "transparent"
+				},
+				"Imagen3": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 900,
+					"height": 44,
+					"pictureFormat": "scaled"
+				},
+				"Línea1": {
+					"type": "line",
+					"top": 3,
+					"left": 77,
+					"height": 37,
+					"strokeDashArray": "1 1"
+				},
+				"Imagen4": {
+					"type": "picture",
+					"top": 6,
+					"left": 22,
+					"width": 32,
+					"height": 32,
+					"pictureFormat": "scaled"
+				},
+				"programacion16": {
+					"type": "button",
+					"top": 64,
+					"left": 826,
+					"width": 122,
+					"height": 23,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "programacion",
+					"shortcutKey": "[Esc]",
+					"text": "Esc Close",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/programacion16.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Imagen2": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 900,
+					"height": 44,
+					"pictureFormat": "scaled"
+				},
+				"fondo": {
+					"type": "input",
+					"top": 44,
+					"left": 0,
+					"width": 772,
+					"height": 432,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vp_FondoConfig",
+					"dataSourceTypeHint": "picture",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Línea3": {
+					"type": "line",
+					"top": 3,
+					"left": 77,
+					"height": 37,
+					"strokeDashArray": "1 1"
+				},
+				"Rectángulo Redondeado2": {
+					"type": "rectangle",
+					"top": 71,
+					"left": 13,
+					"width": 188,
+					"height": 326,
+					"fill": "transparent",
+					"stroke": "#AAAAAA",
+					"borderRadius": 5
+				},
+				"listaTipos": {
+					"type": "list",
+					"top": 77,
+					"left": 19,
+					"width": 177,
+					"height": 308,
+					"dataSource": "hl_DataTypesList",
+					"enterable": false,
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "solid",
+					"method": "ObjectMethods/listaTipos.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"niveles": {
+					"type": "rectangle",
+					"top": 71,
+					"left": 212,
+					"width": 550,
+					"height": 54,
+					"fill": "transparent",
+					"stroke": "#AAAAAA",
+					"borderRadius": 5
+				},
+				"niveles5": {
+					"type": "input",
+					"top": 79,
+					"left": 224,
+					"width": 159,
+					"height": 13,
+					"dataSource": "vtSNT_ConfigLevel",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"niveles4": {
+					"type": "button",
+					"top": 77,
+					"left": 222,
+					"width": 181,
+					"height": 16,
+					"dataSource": "Botón invisible2",
+					"display": false,
+					"method": "ObjectMethods/niveles4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"niveles6": {
+					"type": "picture",
+					"top": 80,
+					"left": 386,
+					"width": 11,
+					"height": 14,
+					"sizingX": "move",
+					"pictureFormat": "scaled"
+				},
+				"elementosGenerales1": {
+					"type": "rectangle",
+					"top": 131,
+					"left": 212,
+					"width": 550,
+					"height": 346,
+					"fill": "transparent",
+					"stroke": "#AAAAAA",
+					"borderRadius": 5
+				},
+				"elementosGenerales2": {
+					"type": "rectangle",
+					"top": 144,
+					"left": 225,
+					"width": 524,
+					"height": 31,
+					"fill": "transparent",
+					"stroke": "#AAAAAA",
+					"borderRadius": 5
+				},
+				"elementosGenerales3": {
+					"type": "checkbox",
+					"top": 151,
+					"left": 234,
+					"width": 199,
+					"height": 17,
+					"dataSource": "cb_PublicarDato",
+					"text": "Publicar",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/elementosGenerales3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Msg": {
+					"type": "text",
+					"top": 224,
+					"left": 225,
+					"width": 524,
+					"height": 66,
+					"stroke": "#0000FF",
+					"textAlign": "center",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"fontStyle": "italic",
+					"text": "Por favor seleccione un tipo de dato."
+				},
+				"niveles3": {
+					"type": "text",
+					"top": 79,
+					"left": 610,
+					"width": 139,
+					"height": 13,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"textDecoration": "underline",
+					"text": "Copiado de configuraciones"
+				},
+				"niveles2": {
+					"type": "button",
+					"top": 79,
+					"left": 606,
+					"width": 141,
+					"height": 16,
+					"dataSource": "Botón invisible2",
+					"display": false,
+					"method": "ObjectMethods/niveles2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"niveles7": {
+					"type": "input",
+					"top": 53,
+					"left": 13,
+					"width": 749,
+					"height": 18,
+					"dataSource": "vt_NivelEditado",
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"niveles1": {
+					"type": "checkbox",
+					"top": 77,
+					"left": 417,
+					"width": 169,
+					"height": 17,
+					"dataSource": "cb_PublicarEMailPJ",
+					"text": "Publicar eMail del Profesor Jefe",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 430,
+					"left": 19,
+					"width": 177,
+					"height": 20,
+					"dataSource": "bSendModConfsNow",
+					"text": "Enviar ahora las modificadas",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 456,
+					"left": 19,
+					"width": 177,
+					"height": 20,
+					"dataSource": "bSendAllNow",
+					"text": "Enviar todas ahora",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Botón2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 404,
+					"left": 19,
+					"width": 177,
+					"height": 20,
+					"dataSource": "bSendConfNow",
+					"text": "Botón",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 8,
+					"left": 85,
+					"width": 441,
+					"height": 22,
+					"stroke": "#FFFFFF",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "SchoolNet: Opciones de Publicación"
+				},
+				"Imagen1": {
+					"type": "picture",
+					"top": 6,
+					"left": 22,
+					"width": 33,
+					"height": 32,
+					"pictureFormat": "scaled"
+				},
+				"cb_ApodAcadSameApodCta": {
+					"type": "checkbox",
+					"top": 98,
+					"left": 417,
+					"width": 289,
+					"height": 17,
+					"dataSource": "cb_ApodAcadSameApodCta",
+					"text": "Apoderado Académico ve info de Apoderados de Cuentas",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"opcionesObservaciones": {
+					"type": "groupBox",
+					"top": 787,
+					"left": 269,
+					"width": 255,
+					"height": 252,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Opciones de Publicación"
+				},
+				"opcionesCalificaciones": {
+					"type": "groupBox",
+					"top": 520,
+					"left": 0,
+					"width": 524,
+					"height": 252,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Opciones de Publicación"
+				},
+				"opcionesCalificaciones1": {
+					"type": "checkbox",
+					"top": 597,
+					"left": 13,
+					"width": 199,
+					"height": 17,
+					"dataSource": "cb_PublicarEvPromGralAlumno",
+					"text": "Publicar Promedios Generales del Alumno",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesCalificaciones2": {
+					"type": "text",
+					"top": 543,
+					"left": 13,
+					"width": 137,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Listar asignaturas usando:"
+				},
+				"opcionesCalificaciones3": {
+					"type": "radio",
+					"top": 559,
+					"left": 13,
+					"width": 197,
+					"height": 15,
+					"dataSource": "rNombreInterno",
+					"text": "Denominación Interna",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesCalificaciones4": {
+					"type": "radio",
+					"top": 574,
+					"left": 13,
+					"width": 197,
+					"height": 15,
+					"dataSource": "rNombreOficial",
+					"text": "Denominación Oficial",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesCalificaciones5": {
+					"type": "checkbox",
+					"top": 617,
+					"left": 13,
+					"width": 229,
+					"height": 17,
+					"dataSource": "cb_PublicarResGralAsignatura",
+					"text": "Publicar Resultados Generales de las Asignaturas",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/opcionesCalificaciones5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesCalificaciones6": {
+					"type": "checkbox",
+					"top": 637,
+					"left": 25,
+					"width": 229,
+					"height": 16,
+					"dataSource": "cb_PublicarResGralMinimo",
+					"text": "Mínimo",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesCalificaciones7": {
+					"type": "checkbox",
+					"top": 652,
+					"left": 25,
+					"width": 229,
+					"height": 16,
+					"dataSource": "cb_PublicarResGralMedia",
+					"text": "Media",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesCalificaciones8": {
+					"type": "checkbox",
+					"top": 667,
+					"left": 25,
+					"width": 229,
+					"height": 16,
+					"dataSource": "cb_PublicarResGralMáximo",
+					"text": "Máximo",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesConducta": {
+					"type": "groupBox",
+					"top": 520,
+					"left": 824,
+					"width": 255,
+					"height": 252,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Opciones de Publicación"
+				},
+				"opcionesObservaciones1": {
+					"type": "checkbox",
+					"top": 810,
+					"left": 279,
+					"width": 199,
+					"height": 17,
+					"dataSource": "cb_PublicarObsPJ",
+					"text": "Observaciones del Profesor Jefe",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/opcionesObservaciones1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesObservaciones2": {
+					"type": "checkbox",
+					"top": 830,
+					"left": 279,
+					"width": 199,
+					"height": 17,
+					"dataSource": "cb_PublicarObsAsignaturas",
+					"text": "Observaciones de Asignaturas",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/opcionesObservaciones2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesEnfermeria": {
+					"type": "groupBox",
+					"top": 787,
+					"left": 544,
+					"width": 255,
+					"height": 252,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Opciones de Publicación"
+				},
+				"opcionesEnfermeria1": {
+					"type": "checkbox",
+					"top": 849,
+					"left": 554,
+					"width": 199,
+					"height": 17,
+					"dataSource": "cb_PublicarCM",
+					"text": "Publicar Controles Médicos",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/opcionesEnfermeria1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesAvisos": {
+					"type": "groupBox",
+					"top": 520,
+					"left": 549,
+					"width": 255,
+					"height": 252,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Opciones de Publicación"
+				},
+				"opcionesAvisos1": {
+					"type": "checkbox",
+					"top": 543,
+					"left": 559,
+					"width": 199,
+					"height": 17,
+					"dataSource": "cb_PublicarSaldoAnterior",
+					"text": "Saldo Anterior",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesAvisos2": {
+					"type": "checkbox",
+					"top": 563,
+					"left": 559,
+					"width": 199,
+					"height": 17,
+					"dataSource": "cb_PublicarIntereses",
+					"text": "Intereses",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesAvisos3": {
+					"type": "checkbox",
+					"top": 860,
+					"left": 1445,
+					"width": 199,
+					"height": 17,
+					"dataSource": "cb_PublicarDetalleAvisos",
+					"text": "Detalle del Aviso",
+					"styleSheet": "XS_FormObjects",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesPagos": {
+					"type": "groupBox",
+					"top": 520,
+					"left": 1099,
+					"width": 255,
+					"height": 252,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Opciones de Publicación"
+				},
+				"opcionesPagos1": {
+					"type": "checkbox",
+					"top": 543,
+					"left": 1109,
+					"width": 199,
+					"height": 17,
+					"dataSource": "cb_PublicarDisponible",
+					"text": "Monto Disponible",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesPagos2": {
+					"type": "checkbox",
+					"top": 563,
+					"left": 1109,
+					"width": 199,
+					"height": 17,
+					"dataSource": "cb_PublicarForma",
+					"text": "Forma de Pago",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesEnfermeria2": {
+					"type": "checkbox",
+					"top": 810,
+					"left": 554,
+					"width": 199,
+					"height": 17,
+					"dataSource": "cb_PublicarVisitas",
+					"text": "Publicar Visitas a Enfermería",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/opcionesEnfermeria2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesEnfermeria3": {
+					"type": "checkbox",
+					"top": 830,
+					"left": 566,
+					"width": 229,
+					"height": 16,
+					"dataSource": "cb_PublicarVisitasViejas",
+					"text": "Publicar Visitas de Años Anteriores",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesCalificaciones10": {
+					"type": "text",
+					"top": 753,
+					"left": 13,
+					"width": 125,
+					"height": 11,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"textDecoration": "underline",
+					"text": "opciones adicionales"
+				},
+				"opcionesCalificaciones9": {
+					"type": "button",
+					"top": 755,
+					"left": 12,
+					"width": 86,
+					"height": 9,
+					"dataSource": "Botón invisible1",
+					"display": false,
+					"method": "ObjectMethods/opcionesCalificaciones9.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesAprendizajes": {
+					"type": "groupBox",
+					"top": 787,
+					"left": 819,
+					"width": 255,
+					"height": 252,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Opciones de Publicación"
+				},
+				"opcionesAprendizajes1": {
+					"type": "checkbox",
+					"top": 810,
+					"left": 829,
+					"width": 199,
+					"height": 17,
+					"dataSource": "cb_PublicarFechas",
+					"text": "Fechas de Aprobación",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesCompañeros": {
+					"type": "groupBox",
+					"top": 787,
+					"left": 0,
+					"width": 255,
+					"height": 252,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Opciones de Publicación"
+				},
+				"opcionesCompañeros10": {
+					"type": "checkbox",
+					"top": 824,
+					"left": 10,
+					"width": 199,
+					"height": 15,
+					"dataSource": "cb_PublicarCompDirección",
+					"text": "Dirección",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesCompañeros11": {
+					"type": "checkbox",
+					"top": 860,
+					"left": 10,
+					"width": 199,
+					"height": 15,
+					"dataSource": "cb_PublicarCompCumpleanos",
+					"text": "Cumpleaños",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesCompañeros1": {
+					"type": "text",
+					"top": 884,
+					"left": 10,
+					"width": 198,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Cuando el usuario conectado es alumno"
+				},
+				"opcionesCompañeros2": {
+					"type": "text",
+					"top": 944,
+					"left": 10,
+					"width": 244,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Cuando el usuario conectado es relación familiar"
+				},
+				"opcionesCompañeros12": {
+					"type": "checkbox",
+					"top": 897,
+					"left": 10,
+					"width": 199,
+					"height": 15,
+					"dataSource": "cb_PublicarCompEMail",
+					"text": "eMail Compañero",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesCompañeros13": {
+					"type": "checkbox",
+					"top": 842,
+					"left": 10,
+					"width": 199,
+					"height": 15,
+					"dataSource": "cb_PublicarCompTelefono",
+					"text": "Teléfono",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesCompañeros14": {
+					"type": "checkbox",
+					"top": 915,
+					"left": 10,
+					"width": 199,
+					"height": 15,
+					"dataSource": "cb_PublicarCompCelular",
+					"text": "Celular Compañero",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesCompañeros16": {
+					"type": "checkbox",
+					"top": 957,
+					"left": 10,
+					"width": 199,
+					"height": 15,
+					"dataSource": "cb_PublicarCompEMailM",
+					"text": "eMail Madre",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesCompañeros17": {
+					"type": "checkbox",
+					"top": 975,
+					"left": 10,
+					"width": 199,
+					"height": 15,
+					"dataSource": "cb_PublicarCompCelularM",
+					"text": "Celular Madre",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesCompañeros18": {
+					"type": "checkbox",
+					"top": 993,
+					"left": 10,
+					"width": 199,
+					"height": 15,
+					"dataSource": "cb_PublicarCompEMailP",
+					"text": "eMail Padre",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesCompañeros19": {
+					"type": "checkbox",
+					"top": 1011,
+					"left": 10,
+					"width": 199,
+					"height": 15,
+					"dataSource": "cb_PublicarCompCelularP",
+					"text": "Celular Padre",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesCompañeros3": {
+					"type": "checkbox",
+					"top": 806,
+					"left": 10,
+					"width": 119,
+					"height": 15,
+					"dataSource": "cb_PublicarCompNivel",
+					"text": "Publicar Nivel Completo",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/opcionesCompañeros3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesFotografias": {
+					"type": "groupBox",
+					"top": 1059,
+					"left": 0,
+					"width": 255,
+					"height": 252,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Opciones de Publicación"
+				},
+				"opcionesFotografias1": {
+					"type": "checkbox",
+					"top": 1082,
+					"left": 10,
+					"width": 199,
+					"height": 17,
+					"dataSource": "cb_PublicarFotosAlumno",
+					"text": "Fotografías de Alumnos",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/opcionesFotografias1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesFotografias2": {
+					"type": "checkbox",
+					"top": 1102,
+					"left": 10,
+					"width": 199,
+					"height": 17,
+					"dataSource": "cb_PublicarFotoPJ",
+					"text": "Fotografía del Profesor Jefe",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/opcionesFotografias2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesFotografias3": {
+					"type": "checkbox",
+					"top": 1122,
+					"left": 10,
+					"width": 199,
+					"height": 17,
+					"dataSource": "cb_PublicarFotoProfesores",
+					"text": "Fotografías de Profesores",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/opcionesFotografias3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesFotografias4": {
+					"type": "checkbox",
+					"top": 1142,
+					"left": 10,
+					"width": 199,
+					"height": 17,
+					"dataSource": "cb_PublicarFotoCompaneros",
+					"text": "Fotografías de Compañeros",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/opcionesFotografias4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesPlanes": {
+					"type": "groupBox",
+					"top": 1060,
+					"left": 269,
+					"width": 255,
+					"height": 252,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Opciones de Publicación"
+				},
+				"opcionesPlanes2": {
+					"type": "checkbox",
+					"top": 1083,
+					"left": 279,
+					"width": 219,
+					"height": 17,
+					"dataSource": "cb_PublicarAdjuntosPlanes",
+					"text": "Sólo publicar archivos adjuntos y referencias",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/opcionesPlanes2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesCalificaciones11": {
+					"type": "text",
+					"top": 692,
+					"left": 13,
+					"width": 137,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Listar Promedio Final:"
+				},
+				"opcionesCalificaciones12": {
+					"type": "radio",
+					"top": 723,
+					"left": 13,
+					"width": 197,
+					"height": 15,
+					"dataSource": "PF_Prom_Oficial",
+					"text": "Oficial",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesCalificaciones13": {
+					"type": "radio",
+					"top": 707,
+					"left": 13,
+					"width": 197,
+					"height": 15,
+					"dataSource": "PF_Prom_Interno",
+					"text": "Interno",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesCalificaciones15": {
+					"type": "text",
+					"top": 543,
+					"left": 275,
+					"width": 217,
+					"height": 27,
+					"styleSheet": "XS_FormObjects",
+					"text": "Permitir visualizar al usuario las calificaciones como:"
+				},
+				"opcionesCalificaciones16": {
+					"type": "checkbox",
+					"top": 561,
+					"left": 276,
+					"width": 149,
+					"height": 16,
+					"dataSource": "cb_Publicar_Cal_Nota",
+					"text": "Notas",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesCalificaciones17": {
+					"type": "checkbox",
+					"top": 576,
+					"left": 276,
+					"width": 149,
+					"height": 16,
+					"dataSource": "cb_Publicar_Cal_Puntos",
+					"text": "Puntos",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesCalificaciones18": {
+					"type": "checkbox",
+					"top": 591,
+					"left": 276,
+					"width": 149,
+					"height": 16,
+					"dataSource": "cb_Publicar_Cal_Porcentaje",
+					"text": "Porcentaje",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesCalificaciones19": {
+					"type": "checkbox",
+					"top": 606,
+					"left": 276,
+					"width": 149,
+					"height": 16,
+					"dataSource": "cb_Publicar_Cal_Simbolos",
+					"text": "Simbolos",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesCalificaciones14": {
+					"type": "text",
+					"top": 753,
+					"left": 409,
+					"width": 89,
+					"height": 11,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"textDecoration": "underline",
+					"text": "ocultar períodos"
+				},
+				"opcionesCalificaciones20": {
+					"type": "button",
+					"top": 755,
+					"left": 408,
+					"width": 86,
+					"height": 9,
+					"dataSource": "ocultarCal",
+					"display": false,
+					"method": "ObjectMethods/opcionesCalificaciones20.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesObservaciones4": {
+					"type": "text",
+					"top": 1020,
+					"left": 280,
+					"width": 89,
+					"height": 11,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"textDecoration": "underline",
+					"text": "ocultar períodos"
+				},
+				"opcionesObservaciones3": {
+					"type": "button",
+					"top": 1022,
+					"left": 279,
+					"width": 86,
+					"height": 9,
+					"dataSource": "ocultarObs",
+					"display": false,
+					"method": "ObjectMethods/opcionesObservaciones3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesAprendizajes3": {
+					"type": "text",
+					"top": 1020,
+					"left": 835,
+					"width": 89,
+					"height": 11,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"textDecoration": "underline",
+					"text": "ocultar períodos"
+				},
+				"opcionesAprendizajes2": {
+					"type": "button",
+					"top": 1022,
+					"left": 834,
+					"width": 86,
+					"height": 9,
+					"dataSource": "ocultarMapas",
+					"display": false,
+					"method": "ObjectMethods/opcionesAprendizajes2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesCompañeros4": {
+					"type": "checkbox",
+					"top": 806,
+					"left": 135,
+					"width": 120,
+					"height": 15,
+					"dataSource": "cb_PublicarCompColegio",
+					"text": "Publicar Todo el Colegio",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/opcionesCompañeros4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesAgenda": {
+					"type": "groupBox",
+					"top": 787,
+					"left": 1099,
+					"width": 255,
+					"height": 252,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Opciones de Publicación"
+				},
+				"opcionesAgenda1": {
+					"type": "checkbox",
+					"top": 810,
+					"left": 1109,
+					"width": 199,
+					"height": 17,
+					"dataSource": "cb_AgEnvioAutoRel",
+					"text": "Envío automático de agenda relaciones",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesAgenda2": {
+					"type": "checkbox",
+					"top": 830,
+					"left": 1109,
+					"width": 199,
+					"height": 17,
+					"dataSource": "cb_AgEnvioAutoAlu",
+					"text": "Envío automático de agenda alumnos ",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesAvisos4": {
+					"type": "checkbox",
+					"top": 583,
+					"left": 559,
+					"width": 199,
+					"height": 17,
+					"dataSource": "cb_PublicarPDF",
+					"text": "Publicar PDF",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesPrestamos": {
+					"type": "groupBox",
+					"top": 1060,
+					"left": 544,
+					"width": 255,
+					"height": 252,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Opciones de Publicación"
+				},
+				"opcionesPrestamos1": {
+					"type": "checkbox",
+					"top": 1082,
+					"left": 554,
+					"width": 241,
+					"height": 18,
+					"dataSource": "cb_AlertarAtrasos",
+					"text": "Enviar alerta al apoderado de académico después de",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesPrestamos2": {
+					"type": "input",
+					"top": 1105,
+					"left": 576,
+					"width": 42,
+					"height": 11,
+					"dataSource": "vl_DiasAlertaPrestamos",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/ENTERO"
+					},
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"opcionesPrestamos3": {
+					"type": "text",
+					"top": 1105,
+					"left": 624,
+					"width": 84,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "días de atraso"
+				},
+				"opcionesPlanes8": {
+					"type": "text",
+					"top": 1110,
+					"left": 279,
+					"width": 198,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Detalle de Publicación"
+				},
+				"opcionesPlanes1": {
+					"type": "checkbox",
+					"top": 1126,
+					"left": 279,
+					"width": 219,
+					"height": 17,
+					"dataSource": "cb_PC_Notasalalumno",
+					"text": "Notas al Alumno",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 9,
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesPlanes3": {
+					"type": "checkbox",
+					"top": 1146,
+					"left": 279,
+					"width": 219,
+					"height": 17,
+					"dataSource": "cb_PC_Objetivos",
+					"text": "Objetivos",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesPlanes4": {
+					"type": "checkbox",
+					"top": 1166,
+					"left": 279,
+					"width": 219,
+					"height": 17,
+					"dataSource": "cb_PC_Contenidos",
+					"text": "Contenidos",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesPlanes5": {
+					"type": "checkbox",
+					"top": 1186,
+					"left": 279,
+					"width": 219,
+					"height": 17,
+					"dataSource": "cb_PC_Actividades",
+					"text": "Actividades",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesPlanes6": {
+					"type": "checkbox",
+					"top": 1206,
+					"left": 279,
+					"width": 219,
+					"height": 17,
+					"dataSource": "cb_PC_Tareas",
+					"text": "Tareas",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesPlanes7": {
+					"type": "checkbox",
+					"top": 1226,
+					"left": 279,
+					"width": 219,
+					"height": 17,
+					"dataSource": "cb_PC_Evaluacion",
+					"text": "Evaluación",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesHorario": {
+					"type": "groupBox",
+					"top": 1060,
+					"left": 819,
+					"width": 255,
+					"height": 252,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Opciones de Publicación"
+				},
+				"opcionesHorario1": {
+					"type": "checkbox",
+					"top": 1083,
+					"left": 833,
+					"width": 219,
+					"height": 17,
+					"dataSource": "cb_vernumbloques",
+					"text": "Ver números de bloques",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesComunicaciones": {
+					"type": "groupBox",
+					"top": 1060,
+					"left": 1099,
+					"width": 255,
+					"height": 252,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Opciones de Publicación"
+				},
+				"opcionesComunicaciones1": {
+					"type": "checkbox",
+					"top": 1083,
+					"left": 1113,
+					"width": 234,
+					"height": 17,
+					"dataSource": "cb_CommCicloActual",
+					"text": "Mostrar comunicaciones solo del ciclo escolar actual",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesProfesores": {
+					"type": "groupBox",
+					"top": 1346,
+					"left": 0,
+					"width": 255,
+					"height": 252,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Opciones de Publicación"
+				},
+				"opcionesProfesores1": {
+					"type": "checkbox",
+					"top": 1369,
+					"left": 14,
+					"width": 234,
+					"height": 17,
+					"dataSource": "cb_ProfesorNoMostrarMail",
+					"text": "No mostrar email profesores",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesMaterialDocente": {
+					"type": "groupBox",
+					"top": 1349,
+					"left": 269,
+					"width": 255,
+					"height": 252,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Opciones de Publicación"
+				},
+				"opcionesMaterialDocente1": {
+					"type": "input",
+					"top": 1392,
+					"left": 285,
+					"width": 98,
+					"height": 11,
+					"dataSource": "vd_fecha_desde",
+					"dataSourceTypeHint": "date",
+					"styleSheet": "XS_FormObjects",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"opcionesMaterialDocente3": {
+					"type": "text",
+					"top": 1375,
+					"left": 283,
+					"width": 198,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Disponible desde fecha:"
+				},
+				"opcionesMaterialDocente4": {
+					"type": "pictureButton",
+					"top": 1389,
+					"left": 388,
+					"width": 15,
+					"height": 16,
+					"dataSource": "BCalendar1",
+					"columnCount": 1,
+					"rowCount": 4,
+					"picture": "/RESOURCES/IconCalendar.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/opcionesMaterialDocente4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Imagen7": {
+					"type": "picture",
+					"top": 1653,
+					"left": 73,
+					"width": 16,
+					"height": 16,
+					"sizingX": "move",
+					"pictureFormat": "scaled"
+				},
+				"Imagen8": {
+					"type": "picture",
+					"top": 1676,
+					"left": 72,
+					"width": 16,
+					"height": 16,
+					"sizingX": "move",
+					"pictureFormat": "scaled"
+				},
+				"Imagen9": {
+					"type": "picture",
+					"top": 1653,
+					"left": 101,
+					"width": 16,
+					"height": 16,
+					"sizingX": "move",
+					"pictureFormat": "scaled"
+				},
+				"Imagen10": {
+					"type": "picture",
+					"top": 1676,
+					"left": 101,
+					"width": 16,
+					"height": 16,
+					"sizingX": "move",
+					"pictureFormat": "scaled"
+				},
+				"opcionesHome": {
+					"type": "groupBox",
+					"top": 1349,
+					"left": 544,
+					"width": 255,
+					"height": 252,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Opciones de Publicación"
+				},
+				"opcionesHome1": {
+					"type": "text",
+					"top": 1375,
+					"left": 558,
+					"width": 198,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Link de publicación:"
+				},
+				"opcionesHome2": {
+					"type": "input",
+					"top": 1392,
+					"left": 560,
+					"width": 223,
+					"height": 12,
+					"dataSource": "vt_linkHome",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"placeholder": "http://www.noticiasColegium.com",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"opcionesAsistencia": {
+					"type": "groupBox",
+					"top": 1347,
+					"left": 824,
+					"width": 255,
+					"height": 252,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Opciones de Publicación"
+				},
+				"opcionesAsistencia1": {
+					"type": "checkbox",
+					"top": 1370,
+					"left": 834,
+					"width": 199,
+					"height": 17,
+					"dataSource": "cb_PublicarInasistencias",
+					"text": "Inasistencias",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/opcionesAsistencia1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesAsistencia2": {
+					"type": "checkbox",
+					"top": 1392,
+					"left": 834,
+					"width": 199,
+					"height": 17,
+					"dataSource": "cb_PublicarAtrasos",
+					"text": "Atrasos",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/opcionesAsistencia2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesAsistencia5": {
+					"type": "checkbox",
+					"top": 1433,
+					"left": 834,
+					"width": 199,
+					"height": 17,
+					"dataSource": "cb_PublicarPctAsistencia",
+					"text": "% de Asistencia",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/opcionesAsistencia5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesAsistencia3": {
+					"type": "button",
+					"top": 1394,
+					"left": 835,
+					"width": 179,
+					"height": 15,
+					"dataSource": "bExtrasAtrasos",
+					"display": false,
+					"method": "ObjectMethods/opcionesAsistencia3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesAsistencia4": {
+					"type": "checkbox",
+					"top": 1412,
+					"left": 834,
+					"width": 199,
+					"height": 17,
+					"dataSource": "cb_PublicarInaxAtraso",
+					"text": "Inasistencias por Atrasos",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/opcionesAsistencia4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesConducta3": {
+					"type": "checkbox",
+					"top": 543,
+					"left": 834,
+					"width": 89,
+					"height": 17,
+					"dataSource": "cb_PublicarAnotaciones",
+					"text": "Anotaciones",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#0000FF",
+					"method": "ObjectMethods/opcionesConducta3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesConducta5": {
+					"type": "checkbox",
+					"top": 563,
+					"left": 849,
+					"width": 199,
+					"height": 16,
+					"dataSource": "cb_PublicarAnotacionesPositivas",
+					"text": "Anotaciones Positivas",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/opcionesConducta5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesConducta6": {
+					"type": "checkbox",
+					"top": 578,
+					"left": 849,
+					"width": 199,
+					"height": 16,
+					"dataSource": "cb_PublicarAnotacionesNegativas",
+					"text": "Anotaciones Negativas",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/opcionesConducta6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesConducta7": {
+					"type": "checkbox",
+					"top": 593,
+					"left": 849,
+					"width": 199,
+					"height": 16,
+					"dataSource": "cb_PublicarAnotacionesNeutras",
+					"text": "Anotaciones Neutras",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/opcionesConducta7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesConducta8": {
+					"type": "checkbox",
+					"top": 613,
+					"left": 834,
+					"width": 189,
+					"height": 17,
+					"dataSource": "cb_PublicarCastigos",
+					"text": "Castigos",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/opcionesConducta8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesConducta9": {
+					"type": "checkbox",
+					"top": 633,
+					"left": 834,
+					"width": 89,
+					"height": 17,
+					"dataSource": "cb_PublicarSuspensiones",
+					"text": "Suspensiones",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/opcionesConducta9.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesConducta10": {
+					"type": "checkbox",
+					"top": 653,
+					"left": 834,
+					"width": 199,
+					"height": 17,
+					"dataSource": "cb_PublicarCondicionalidad",
+					"text": "Condicionalidad",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/opcionesConducta10.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesConducta4": {
+					"type": "button",
+					"top": 544,
+					"left": 855,
+					"width": 59,
+					"height": 15,
+					"dataSource": "bExtrasAnotaciones",
+					"display": false,
+					"method": "ObjectMethods/opcionesConducta4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesConducta13": {
+					"type": "button",
+					"top": 614,
+					"left": 849,
+					"width": 168,
+					"height": 16,
+					"dataSource": "bExtrasCastigos",
+					"display": false,
+					"method": "ObjectMethods/opcionesConducta13.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesConducta14": {
+					"type": "button",
+					"top": 635,
+					"left": 855,
+					"width": 64,
+					"height": 15,
+					"dataSource": "bExtrasSuspensiones",
+					"display": false,
+					"method": "ObjectMethods/opcionesConducta14.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

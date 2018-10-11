@@ -1,0 +1,610 @@
+﻿{
+	"windowTitle": "Generación de aplicaciones, auto-actualizaciones y respaldos",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Generar",
+	"rightMargin": 20,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"pagina": {
+					"type": "rectangle",
+					"top": -1,
+					"left": -2,
+					"width": 745,
+					"height": 21,
+					"fill": "#000000"
+				},
+				"versionGeneracion_Mayor": {
+					"type": "input",
+					"top": 235,
+					"left": 1303,
+					"width": 169,
+					"height": 17,
+					"sizingY": "move",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"versionAnterior_Build": {
+					"type": "input",
+					"top": 307,
+					"left": 1128,
+					"width": 169,
+					"height": 17,
+					"sizingY": "move",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"versionAnterior_Completa": {
+					"type": "input",
+					"top": 235,
+					"left": 1128,
+					"width": 169,
+					"height": 17,
+					"sizingY": "move",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"versionAnterior_Mayor": {
+					"type": "input",
+					"top": 260,
+					"left": 1128,
+					"width": 169,
+					"height": 17,
+					"sizingY": "move",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"versionAnterior_Menor": {
+					"type": "input",
+					"top": 283,
+					"left": 1128,
+					"width": 169,
+					"height": 17,
+					"sizingY": "move",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"versionGeneracion_Build": {
+					"type": "input",
+					"top": 283,
+					"left": 1303,
+					"width": 169,
+					"height": 17,
+					"sizingY": "move",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"versionGeneracion_Menor": {
+					"type": "input",
+					"top": 260,
+					"left": 1303,
+					"width": 169,
+					"height": 17,
+					"sizingY": "move",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"versionAnterior_DTS": {
+					"type": "input",
+					"top": 332,
+					"left": 1128,
+					"width": 169,
+					"height": 17,
+					"sizingY": "move",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"versionGeneracion_DTS": {
+					"type": "input",
+					"top": 307,
+					"left": 1303,
+					"width": 169,
+					"height": 17,
+					"sizingY": "move",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"jsonInfo": {
+					"type": "input",
+					"top": 1,
+					"left": 1120,
+					"width": 416,
+					"height": 209,
+					"sizingY": "move",
+					"dataSourceTypeHint": "object",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"versionGeneracion_Completa": {
+					"type": "input",
+					"top": 36,
+					"left": 136,
+					"width": 208,
+					"height": 17,
+					"stroke": "#000000",
+					"fontWeight": "bold",
+					"enterable": false,
+					"focusable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"generarLibrerias": {
+					"type": "checkbox",
+					"top": 61,
+					"left": 33,
+					"width": 362,
+					"height": 27,
+					"text": "Regenerar las librerías y archivos de configuración",
+					"events": [
+						"onClick"
+					]
+				},
+				"subirFTP_Privado": {
+					"type": "checkbox",
+					"top": 88,
+					"left": 33,
+					"width": 502,
+					"height": 27,
+					"text": "Subir auto-update al servidor FTP privado",
+					"method": "ObjectMethods/subirFTP_Privado.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto": {
+					"type": "text",
+					"top": 36,
+					"left": 19,
+					"width": 122,
+					"height": 17,
+					"text": "Proxima version:"
+				},
+				"Generar": {
+					"type": "button",
+					"top": 207,
+					"left": 575,
+					"width": 146,
+					"height": 22,
+					"sizingX": "move",
+					"text": "Generar aplicaciones",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/Generar.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"subirFTP_Beta": {
+					"type": "checkbox",
+					"top": 117,
+					"left": 33,
+					"width": 422,
+					"height": 27,
+					"text": "Subir auto-update al servidor FTP beta",
+					"method": "ObjectMethods/subirFTP_Beta.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"subirFTP_Publico": {
+					"type": "checkbox",
+					"top": 146,
+					"left": 33,
+					"width": 422,
+					"height": 27,
+					"text": "Subir auto-update al servidor FTP público",
+					"method": "ObjectMethods/subirFTP_Publico.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"email": {
+					"type": "input",
+					"top": 88,
+					"left": 427,
+					"width": 294,
+					"height": 16,
+					"styleSheet": "Ligth - 12",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/email.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 66,
+					"left": 427,
+					"width": 282,
+					"height": 16,
+					"styleSheet": "Ligth - 12",
+					"text": "Al terminar notificar a:"
+				},
+				"Línea1": {
+					"type": "line",
+					"top": 67,
+					"left": 388,
+					"height": 117,
+					"stroke": "#AAAAAA"
+				},
+				"error": {
+					"type": "text",
+					"top": 189,
+					"left": 19,
+					"width": 297,
+					"height": 40,
+					"visibility": "hidden",
+					"stroke": "#EE0000",
+					"styleSheet": "Medium - 16",
+					"text": "error"
+				},
+				"compilador": {
+					"type": "button",
+					"top": 207,
+					"left": 268,
+					"width": 100,
+					"height": 22,
+					"visibility": "hidden",
+					"action": "design",
+					"text": "Ir a diseño",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/compilador.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"pagina1": {
+					"type": "button",
+					"top": 4,
+					"left": 2,
+					"width": 92,
+					"height": 13,
+					"styleSheet": "Ligth - 11",
+					"stroke": "#FFFFFF",
+					"text": "Ver lista de tareas",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/pagina1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"pagina2": {
+					"type": "button",
+					"top": 4,
+					"left": 123,
+					"width": 103,
+					"height": 13,
+					"styleSheet": "Ligth - 11",
+					"stroke": "#FFFFFF",
+					"text": "Ver log generación",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/pagina2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Generar1": {
+					"type": "button",
+					"top": 753,
+					"left": 264,
+					"width": 146,
+					"height": 22,
+					"sizingY": "move",
+					"shortcutKey": "0",
+					"shortcutAccel": true,
+					"shortcutAlt": true,
+					"text": "Generar aplicación",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/Generar1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"executeTasks": {
+					"type": "button",
+					"top": 207,
+					"left": 445,
+					"width": 120,
+					"height": 22,
+					"sizingY": "move",
+					"shortcutKey": "1",
+					"shortcutAccel": true,
+					"shortcutAlt": true,
+					"text": "Ejecutar tareas",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/executeTasks.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"showLog": {
+					"type": "button",
+					"top": 754,
+					"left": 8,
+					"width": 108,
+					"height": 20,
+					"sizingY": "move",
+					"shortcutKey": "-",
+					"shortcutAccel": true,
+					"text": "showLog",
+					"focusable": false,
+					"method": "ObjectMethods/showLog.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"tarea_actual": {
+					"type": "input",
+					"top": 365,
+					"left": 1303,
+					"width": 210,
+					"height": 17,
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"pullGIT_STWA": {
+					"type": "input",
+					"top": 365,
+					"left": 1128,
+					"width": 169,
+					"height": 17,
+					"sizingY": "move",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"versionAnterior_Tipo": {
+					"type": "input",
+					"top": 400,
+					"left": 1128,
+					"width": 169,
+					"height": 17,
+					"sizingY": "move",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"tareas_listBox": {
+					"type": "listbox",
+					"top": 252,
+					"left": 0,
+					"width": 739,
+					"height": 468,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"hideFocusRing": true,
+					"hideExtraBlankRows": true,
+					"rowHeight": "36px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "none",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "transparent",
+					"method": "ObjectMethods/tareas_listBox.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "tarea_descripcion",
+							"width": 600,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"verticalAlign": "middle",
+							"fontFamily": "Helvetica Neue Light",
+							"fontSize": 16,
+							"events": [
+								"onClick"
+							]
+						},
+						{
+							"name": "tarea_comentario",
+							"width": 125,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"wordwrap": "normal",
+							"verticalAlign": "bottom",
+							"fontFamily": "Helvetica Neue Light",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						},
+						{
+							"name": "tarea_Tipo",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						},
+						{
+							"name": "tarea_progreso",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						},
+						{
+							"name": "tarea_rutaOrigen",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						},
+						{
+							"name": "tarea_rutaDestino",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						},
+						{
+							"name": "tarea_status",
+							"width": 180,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						}
+					]
+				},
+				"tarea_avance_": {
+					"type": "picture",
+					"top": 400,
+					"left": 1187,
+					"width": 41,
+					"height": 35,
+					"sizingY": "move",
+					"pictureFormat": "scaled",
+					"picture": "Images/tarea_avance_.gif"
+				},
+				"tarea_avance": {
+					"type": "picture",
+					"top": 397,
+					"left": 1138,
+					"width": 40,
+					"height": 40,
+					"pictureFormat": "scaled",
+					"picture": "Images/tarea_avance.gif"
+				}
+			}
+		},
+		{
+			"objects": {
+				"WA": {
+					"type": "webArea",
+					"top": 252,
+					"left": 1,
+					"width": 739,
+					"height": 468,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"urlSource": "webURL",
+					"progressSource": "Área web_progress",
+					"webEngine": "embedded",
+					"contextMenu": "none",
+					"borderStyle": "solid"
+				}
+			}
+		}
+	]
+}

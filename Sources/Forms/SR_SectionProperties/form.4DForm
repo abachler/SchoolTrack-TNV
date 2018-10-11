@@ -1,0 +1,461 @@
+﻿{
+	"windowTitle": "Propiedades de la sección",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"HL_sectionProperties": {
+					"type": "tab",
+					"top": 23,
+					"left": 15,
+					"width": 622,
+					"height": 403,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "HL_sectionProperties",
+					"dataSourceTypeHint": "arrayText",
+					"styleSheet": "XS_DialogObjects",
+					"action": "gotoPage",
+					"method": "ObjectMethods/HL_sectionProperties.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 439,
+					"left": 462,
+					"width": 84,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Cancelar",
+					"style": "roundedBevel",
+					"events": [
+						"onClick"
+					]
+				},
+				"bAccept": {
+					"type": "button",
+					"top": 439,
+					"left": 553,
+					"width": 84,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bAccept",
+					"action": "accept",
+					"styleSheet": "XS_DialogObjects",
+					"text": "OK",
+					"style": "roundedBevel",
+					"method": "ObjectMethods/bAccept.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Área de grupo1": {
+					"type": "groupBox",
+					"top": 254,
+					"left": 37,
+					"width": 580,
+					"height": 160,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Opciones de salto de página"
+				},
+				"Área de grupo": {
+					"type": "groupBox",
+					"top": 54,
+					"left": 37,
+					"width": 580,
+					"height": 180,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Opciones de la sección"
+				},
+				"vlSRP_UseSection1": {
+					"type": "radio",
+					"top": 82,
+					"left": 46,
+					"width": 296,
+					"height": 15,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "r1_SRP_UseSection",
+					"text": "Imprimir siempre esta sección",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/vlSRP_UseSection1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vlSRP_UseSection3": {
+					"type": "radio",
+					"top": 102,
+					"left": 46,
+					"width": 296,
+					"height": 15,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "r3_SRP_UseSection",
+					"text": "Imprimir solo en la primera pagina",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/vlSRP_UseSection3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vlSRP_UseSection4": {
+					"type": "radio",
+					"top": 122,
+					"left": 46,
+					"width": 296,
+					"height": 15,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "r4_SRP_UseSection",
+					"text": "Imprimir solo después de la primera página",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/vlSRP_UseSection4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vlSRP_UseSection2": {
+					"type": "radio",
+					"top": 142,
+					"left": 46,
+					"width": 223,
+					"height": 15,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "r2_SRP_UseSection",
+					"text": "Imprimir sólo si cambia el valor de...",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/vlSRP_UseSection2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vtSRP_BreakObjectName": {
+					"type": "input",
+					"top": 169,
+					"left": 338,
+					"width": 254,
+					"height": 13,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vtSRP_BreakObjectName",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vlSR_PrintSection": {
+					"type": "checkbox",
+					"top": 197,
+					"left": 47,
+					"width": 190,
+					"height": 16,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vlSR_PrintSection",
+					"text": "Imprimir en el informe",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"vlSRP_KeepSectionOnPage": {
+					"type": "checkbox",
+					"top": 285,
+					"left": 47,
+					"width": 296,
+					"height": 16,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vlSRP_KeepSectionOnPage",
+					"text": "Mantener toda la sección en la misma página",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/vlSRP_KeepSectionOnPage.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"t1_ThrowPage": {
+					"type": "radio",
+					"top": 315,
+					"left": 46,
+					"width": 296,
+					"height": 15,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "t1_ThrowPage",
+					"text": "Disponer esta sección en la página actual",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/t1_ThrowPage.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"t2_ThrowPage": {
+					"type": "radio",
+					"top": 335,
+					"left": 46,
+					"width": 356,
+					"height": 15,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "t2_ThrowPage",
+					"text": "Empezar una nueva página antes de imprimir esta sección",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/t2_ThrowPage.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"t3_ThrowPage": {
+					"type": "radio",
+					"top": 355,
+					"left": 46,
+					"width": 356,
+					"height": 15,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "t3_ThrowPage",
+					"text": "Empezar una nueva página después de imprimir esta sección",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/t3_ThrowPage.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"t4_ThrowPage": {
+					"type": "radio",
+					"top": 375,
+					"left": 46,
+					"width": 348,
+					"height": 15,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "t4_ThrowPage",
+					"text": "Comenzar una nueva página si el espacio disponible es inferior a:",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/t4_ThrowPage.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vlSR_minSpace": {
+					"type": "input",
+					"top": 376,
+					"left": 399,
+					"width": 38,
+					"height": 13,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vlSR_minSpace",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"hlSRop_BreakObjects": {
+					"type": "dropdown",
+					"top": 167,
+					"left": 127,
+					"width": 135,
+					"height": 17,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "hlSRop_BreakObjects",
+					"dataSourceTypeHint": "integer",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/hlSRop_BreakObjects.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto": {
+					"type": "text",
+					"top": 169,
+					"left": 64,
+					"width": 54,
+					"height": 13,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Objeto:"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 169,
+					"left": 279,
+					"width": 54,
+					"height": 13,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Nombre:"
+				},
+				"Botón 3D": {
+					"type": "button",
+					"top": 167,
+					"left": 596,
+					"width": 14,
+					"height": 16,
+					"dataSource": "Botón 3D",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"textPlacement": "center",
+					"style": "custom",
+					"method": "ObjectMethods/Botón 3D.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"vtSR_SectionScript": {
+					"type": "input",
+					"top": 57,
+					"left": 30,
+					"width": 575,
+					"height": 358,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vtSR_SectionScript",
+					"styleSheet": "XS_DialogObjects",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"vtSR_Html_Before": {
+					"type": "input",
+					"top": 72,
+					"left": 30,
+					"width": 579,
+					"height": 152,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vtSR_Html_Before",
+					"styleSheet": "XS_DialogObjects",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Separador": {
+					"type": "splitter",
+					"top": 236,
+					"left": 15,
+					"width": 622,
+					"height": 1,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"dataSource": "Separador",
+					"events": [
+						"onClick"
+					]
+				},
+				"vtSR_Html_After": {
+					"type": "input",
+					"top": 261,
+					"left": 29,
+					"width": 579,
+					"height": 152,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vtSR_Html_After",
+					"styleSheet": "XS_DialogObjects",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 54,
+					"left": 30,
+					"width": 86,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "HTML tag antes"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 243,
+					"left": 29,
+					"width": 126,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "HTML tag Después"
+				}
+			}
+		}
+	]
+}

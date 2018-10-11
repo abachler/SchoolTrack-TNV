@@ -1,0 +1,20 @@
+vr_CTRL_INF_Especifico:=NTA_StringValue2Percent (vs_CTRL_INF_Especifico)
+vr_CTRL_SUP_Especifico:=NTA_StringValue2Percent (vs_CTRL_SUP_Especifico)
+vr_EX_INF_Especifico:=NTA_StringValue2Percent (vs_EX_INF_Especifico)
+vr_EX_SUP_Especifico:=NTA_StringValue2Percent (vs_EX_SUP_Especifico)
+vr_EXX_INF_Especifico:=NTA_StringValue2Percent (vs_EXX_INF_Especifico)
+vr_EXX_SUP_Especifico:=NTA_StringValue2Percent (vs_EXX_SUP_Especifico)
+  //vr_CTRL_PonderacionConstante:=vr_CTRL_PonderacionConstant
+  //vr_EXX_PonderacionConstante:=vr_EXX_PonderacionConstant
+vr_MinimoEXRecuperatorio:=NTA_StringValue2Percent (vs_MinimoExRecuperatorio)
+
+vr_CalificacionEX:=NTA_StringValue2Percent (vs_CalificacionEX)
+vr_NF_SiEXSuperior:=NTA_StringValue2Percent (vs_NF_SiEXSuperior)
+vr_NF_SiEXInferior:=NTA_StringValue2Percent (vs_NF_SiEXInferior)
+
+vr_CalificacionEXX:=NTA_StringValue2Percent (vs_CalificacionEXX)
+vr_NF_SiEXXSuperior:=NTA_StringValue2Percent (vs_NF_SiEXXSuperior)
+vr_NF_SiEXXInferior:=NTA_StringValue2Percent (vs_NF_SiEXXInferior)
+
+AS_Examenes_GuardaConfiguracion 
+

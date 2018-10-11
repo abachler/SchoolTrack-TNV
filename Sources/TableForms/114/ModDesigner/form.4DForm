@@ -1,0 +1,302 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Rectángulo1",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 372,
+					"height": 179,
+					"fill": "#FFF0DF",
+					"stroke": "#FFF0DF"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 155,
+					"left": 293,
+					"width": 65,
+					"height": 11,
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Guardar"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 43,
+					"left": 15,
+					"width": 74,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Nombre:"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 109,
+					"left": 15,
+					"width": 76,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Email:"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 43,
+					"left": 122,
+					"width": 237,
+					"height": 11,
+					"dataSource": "vtXS_Dnombre",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 65,
+					"left": 122,
+					"width": 237,
+					"height": 11,
+					"dataSource": "vtXS_Dlogin",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 153,
+					"left": 251,
+					"width": 54,
+					"height": 17,
+					"dataSource": "Botón invisible1",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Codigo": {
+					"type": "text",
+					"top": 131,
+					"left": 15,
+					"width": 81,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "ID:"
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 87,
+					"left": 122,
+					"width": 237,
+					"height": 11,
+					"dataSource": "vtXS_Dpass",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 109,
+					"left": 122,
+					"width": 237,
+					"height": 11,
+					"dataSource": "vtXS_Demail",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"Codigo1": {
+					"type": "input",
+					"top": 131,
+					"left": 122,
+					"width": 237,
+					"height": 11,
+					"dataSource": "vtXS_Did",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 65,
+					"left": 15,
+					"width": 126,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Login:"
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 87,
+					"left": 15,
+					"width": 126,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Password:"
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 176,
+					"height": 13,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Super Usuarios"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 155,
+					"left": 233,
+					"width": 65,
+					"height": 11,
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Cancelar"
+				},
+				"bCancel1": {
+					"type": "button",
+					"top": 153,
+					"left": 313,
+					"width": 54,
+					"height": 17,
+					"dataSource": "Botón invisible1",
+					"shortcutKey": "[Enter]",
+					"display": false,
+					"method": "ObjectMethods/bCancel1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bCancel2": {
+					"type": "button",
+					"top": 200,
+					"left": 286,
+					"width": 54,
+					"height": 17,
+					"dataSource": "Botón invisible1",
+					"shortcutKey": "[Return]",
+					"display": false,
+					"method": "ObjectMethods/bCancel2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

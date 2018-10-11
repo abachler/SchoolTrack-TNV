@@ -1,0 +1,362 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "boton_aceptar",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onLosingFocus",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"BarraTitulo": {
+					"type": "rectangle",
+					"top": -1,
+					"left": -1,
+					"width": 513,
+					"height": 59,
+					"sizingX": "grow",
+					"fill": "#DDDDDD",
+					"stroke": "#FFFFFF"
+				},
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 58,
+					"left": -1,
+					"width": 512,
+					"height": 357,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "automatic",
+					"stroke": "automatic"
+				},
+				"fake_colegioDestino": {
+					"type": "dropdown",
+					"top": 171,
+					"left": 143,
+					"width": 332,
+					"height": 20,
+					"styleSheet": "Ligth - 13",
+					"method": "ObjectMethods/fake_colegioDestino.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"fake_motivos": {
+					"type": "dropdown",
+					"top": 108,
+					"left": 143,
+					"width": 332,
+					"height": 20,
+					"styleSheet": "Ligth - 13",
+					"method": "ObjectMethods/fake_motivos.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"fecharetiro1": {
+					"type": "input",
+					"top": 175,
+					"left": 150,
+					"width": 276,
+					"height": 16,
+					"dataSource": "[Alumnos:2]Colegio_destino:102",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "Ligth - 13",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"fecharetiro2": {
+					"type": "input",
+					"top": 110,
+					"left": 150,
+					"width": 276,
+					"height": 16,
+					"dataSource": "[Alumnos:2]Motivo_de_retiro:43",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "Ligth - 13",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"t_titulo": {
+					"type": "text",
+					"top": 12,
+					"left": 20,
+					"width": 456,
+					"height": 38,
+					"styleSheet": "Medium - 16",
+					"text": "Titulo"
+				}
+			}
+		},
+		{
+			"objects": {
+				"boton_aceptar": {
+					"type": "button",
+					"top": 370,
+					"left": 409,
+					"width": 80,
+					"height": 20,
+					"shortcutKey": "[Enter]",
+					"styleSheet": "Plain - 13",
+					"text": "Aceptar",
+					"iconFrames": 4,
+					"method": "ObjectMethods/boton_aceptar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"boton_cancelar": {
+					"type": "button",
+					"top": 370,
+					"left": 319,
+					"width": 80,
+					"height": 20,
+					"action": "cancel",
+					"styleSheet": "Plain - 13",
+					"text": "Cancelar",
+					"iconFrames": 4,
+					"method": "ObjectMethods/boton_cancelar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"lineaseparador": {
+					"type": "line",
+					"top": 348,
+					"left": 0,
+					"width": 511,
+					"sizingX": "grow",
+					"sizingY": "move"
+				},
+				"campo3": {
+					"type": "text",
+					"top": 108,
+					"left": 20,
+					"width": 105,
+					"height": 16,
+					"textAlign": "left",
+					"styleSheet": "Ligth - 13",
+					"fontWeight": "bold",
+					"text": "Motivo de retiro:"
+				},
+				"campo2": {
+					"type": "input",
+					"top": 78,
+					"left": 143,
+					"width": 92,
+					"height": 16,
+					"dataSource": "[Alumnos:2]Fecha_de_retiro:42",
+					"stroke": "#000000",
+					"styleSheet": "Ligth - 13",
+					"contextMenu": "none",
+					"method": "ObjectMethods/campo2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"fecharetiro": {
+					"type": "input",
+					"top": 142,
+					"left": 143,
+					"width": 332,
+					"height": 16,
+					"dataSource": "[Alumnos:2]Curso_alRetirarse:83",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "Ligth - 13",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"campo1": {
+					"type": "text",
+					"top": 78,
+					"left": 20,
+					"width": 115,
+					"height": 16,
+					"textAlign": "left",
+					"styleSheet": "Ligth - 13",
+					"text": "Fecha de retiro:"
+				},
+				"fecharetiro4": {
+					"type": "text",
+					"top": 142,
+					"left": 20,
+					"width": 115,
+					"height": 16,
+					"textAlign": "left",
+					"styleSheet": "Ligth - 13",
+					"fontWeight": "bold",
+					"text": "Curso al retirarse:"
+				},
+				"fecharetiro6": {
+					"type": "text",
+					"top": 175,
+					"left": 20,
+					"width": 122,
+					"height": 16,
+					"textAlign": "left",
+					"styleSheet": "Ligth - 13",
+					"fontWeight": "bold",
+					"text": "Colegio de destino:"
+				},
+				"cb_ocultarEnNominas": {
+					"type": "checkbox",
+					"top": 271,
+					"left": 20,
+					"width": 316,
+					"height": 23,
+					"text": "Ocultar en nóminas",
+					"styleSheet": "Ligth - 13",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 294,
+					"left": 40,
+					"width": 424,
+					"height": 45,
+					"stroke": "#777777",
+					"styleSheet": "Ligth - 12",
+					"text": "Seleccione esta opción si no desea que el alumno aparezca en las nóminas.\rDe lo contrario el alumno figurará en ellas pero no será posible registrarle ninguna información académica."
+				},
+				"boton_popupColegioDestino": {
+					"type": "button",
+					"top": 173,
+					"left": 143,
+					"width": 332,
+					"height": 21,
+					"display": false,
+					"method": "ObjectMethods/boton_popupColegioDestino.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"boton_popupMotivos": {
+					"type": "button",
+					"top": 108,
+					"left": 143,
+					"width": 332,
+					"height": 21,
+					"display": false,
+					"method": "ObjectMethods/boton_popupMotivos.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cb_retiradoTemporalmente": {
+					"type": "checkbox",
+					"top": 208,
+					"left": 20,
+					"width": 316,
+					"height": 23,
+					"text": "Retirado temporalmente",
+					"styleSheet": "Ligth - 13",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 232,
+					"left": 40,
+					"width": 436,
+					"height": 30,
+					"stroke": "#777777",
+					"styleSheet": "Ligth - 12",
+					"text": "Seleccione esta opción cuando desee indicar que el alumno podría reintergrase a la institución."
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,85 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"formSizeAnchor": "Área de plug-in1",
+	"rightMargin": 0,
+	"bottomMargin": 30,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Área de plug-in1": {
+					"type": "plugin",
+					"top": 27,
+					"left": 0,
+					"width": 315,
+					"height": 196,
+					"dataSource": "xALP_SelJornadaVisita",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Área de plug-in1.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onPluginArea"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 6,
+					"left": 1,
+					"width": 321,
+					"height": 11,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"text": "Doble clic para seleccionar una Jornada de Visita"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 226,
+					"left": 0,
+					"width": 314,
+					"height": 11,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "(en negritas la jornada actualmente asignada)"
+				}
+			}
+		}
+	]
+}

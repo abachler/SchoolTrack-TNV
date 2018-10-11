@@ -1,0 +1,1 @@
+PREF_Set (0;"ComunaPorDefecto";String:C10(Self:C308->))

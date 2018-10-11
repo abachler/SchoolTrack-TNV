@@ -1,0 +1,212 @@
+﻿{
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 71,
+	"markerBody": 166,
+	"markerBreak": 166,
+	"markerFooter": 175,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 12,
+					"left": 304,
+					"width": 260,
+					"height": 18,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_ReportTitle_18",
+					"fontWeight": "bold",
+					"text": "Grupos de Usuarios"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 12,
+					"left": 15,
+					"width": 113,
+					"height": 8,
+					"stroke": "#000000",
+					"styleSheet": "XS_Report_8",
+					"text": ":21010,148"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 23,
+					"left": 15,
+					"width": 288,
+					"height": 8,
+					"dataSource": "<>gCustom",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "XS_Report_8",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 54,
+					"left": 15,
+					"width": 72,
+					"height": 10,
+					"stroke": "#000000",
+					"styleSheet": "XS_Report_9",
+					"text": "Propietario:"
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 35,
+					"left": 15,
+					"width": 288,
+					"height": 8,
+					"dataSource": "vd_fecha",
+					"dataSourceTypeHint": "date",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "XS_Report_8",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "long",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"xPL": {
+					"type": "plugin",
+					"top": 122,
+					"left": 15,
+					"width": 551,
+					"height": 41,
+					"dataSource": "xPL",
+					"pluginAreaKind": "%PrntListPro",
+					"borderStyle": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onPluginArea"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 34,
+					"left": 317,
+					"width": 241,
+					"height": 17,
+					"dataSource": "[xShell_UserGroups:17]GroupName:2",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 54,
+					"left": 64,
+					"width": 411,
+					"height": 10,
+					"dataSource": "[xShell_UserGroups:17]PropietaryName:9",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "XS_Report_9",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"xPL1": {
+					"type": "plugin",
+					"top": 76,
+					"left": 15,
+					"width": 551,
+					"height": 39,
+					"dataSource": "xPL1",
+					"pluginAreaKind": "%PrntListPro",
+					"borderStyle": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onPluginArea"
+					]
+				},
+				"Line2": {
+					"type": "line",
+					"top": 118,
+					"left": 17,
+					"width": 553,
+					"height": 1,
+					"startPoint": "bottomLeft"
+				}
+			}
+		}
+	]
+}

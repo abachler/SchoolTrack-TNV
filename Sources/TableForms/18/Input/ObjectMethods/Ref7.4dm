@@ -1,0 +1,1 @@
+XDOC_SaveAttachedDocument (alXDOC_AttachedRecNum{atXDOC_AttachedDocs})

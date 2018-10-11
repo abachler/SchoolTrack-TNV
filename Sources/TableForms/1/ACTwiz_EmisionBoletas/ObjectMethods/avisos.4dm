@@ -1,0 +1,2 @@
+OBJECT SET VISIBLE:C603(*;"impagos@";True:C214)
+OBJECT SET VISIBLE:C603(*;"total@";False:C215)

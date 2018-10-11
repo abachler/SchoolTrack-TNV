@@ -1,0 +1,1 @@
+[Personas:7]ACT_Modo_de_pago:39:=[Personas:7]ACT_Modo_de_pago:39  // para forzar atributo MODIFIED RECORD

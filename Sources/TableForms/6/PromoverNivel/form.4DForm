@@ -1,0 +1,435 @@
+﻿{
+	"inheritedForm": "XS_MASTER_ConfigDialogs",
+	"inheritedFormTable": 114,
+	"formSizeAnchor": "fondo",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"fondo": {
+					"type": "rectangle",
+					"top": 44,
+					"left": 4,
+					"width": 640,
+					"height": 520,
+					"stroke": "transparent"
+				}
+			}
+		},
+		{
+			"objects": {
+				"lb_PromoverNiveles": {
+					"type": "listbox",
+					"top": 123,
+					"left": 39,
+					"width": 535,
+					"height": 300,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "automatic",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"method": "ObjectMethods/lb_PromoverNiveles.4dm",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "lbColNoNivel",
+							"width": 89,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"truncateMode": "none",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado3",
+								"text": "noNivel",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "lbColNiveles",
+							"width": 341,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado1",
+								"text": "Nivel",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "lbColSeleccion",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "checkbox",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado2",
+								"text": "Seleccionar",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"btn_salir": {
+					"type": "button",
+					"top": 522,
+					"left": 552,
+					"width": 80,
+					"height": 20,
+					"text": "Salir",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/btn_salir.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_continuar": {
+					"type": "button",
+					"top": 522,
+					"left": 464,
+					"width": 80,
+					"height": 20,
+					"text": "Continuar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/btn_continuar.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"titulo_formulario": {
+					"type": "text",
+					"top": 10,
+					"left": 78,
+					"width": 443,
+					"height": 23,
+					"stroke": "#FFFFFF",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "titulo"
+				},
+				"totalAlumnos": {
+					"type": "input",
+					"top": 443,
+					"left": 159,
+					"width": 43,
+					"height": 11,
+					"dataSourceTypeHint": "number",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"alumnosPromovidos": {
+					"type": "input",
+					"top": 459,
+					"left": 159,
+					"width": 43,
+					"height": 11,
+					"dataSourceTypeHint": "number",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"alumnosReprobados": {
+					"type": "input",
+					"top": 475,
+					"left": 159,
+					"width": 43,
+					"height": 11,
+					"dataSourceTypeHint": "number",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"alumnosRetirados": {
+					"type": "input",
+					"top": 442,
+					"left": 416,
+					"width": 43,
+					"height": 11,
+					"dataSourceTypeHint": "number",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"alumnosEspeciales": {
+					"type": "input",
+					"top": 457,
+					"left": 416,
+					"width": 43,
+					"height": 11,
+					"dataSourceTypeHint": "number",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"alumnosPendientes": {
+					"type": "input",
+					"top": 473,
+					"left": 416,
+					"width": 43,
+					"height": 11,
+					"dataSourceTypeHint": "number",
+					"fill": "#FFFFFF",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"label1_aluTotal": {
+					"type": "text",
+					"top": 443,
+					"left": 48,
+					"width": 104,
+					"height": 12,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Total de alumnos:"
+				},
+				"label2_aluProm": {
+					"type": "text",
+					"top": 458,
+					"left": 48,
+					"width": 94,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Alumnos promovidos:"
+				},
+				"label4_aluRet": {
+					"type": "text",
+					"top": 443,
+					"left": 253,
+					"width": 154,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Alumnos retirados:"
+				},
+				"label5_aluOye": {
+					"type": "text",
+					"top": 458,
+					"left": 253,
+					"width": 156,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Alumnos oyentes:"
+				},
+				"label6_aluSFindef": {
+					"type": "text",
+					"top": 474,
+					"left": 253,
+					"width": 163,
+					"height": 12,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Alumnos con situación final indefinida:"
+				},
+				"label3_aluRep": {
+					"type": "text",
+					"top": 473,
+					"left": 48,
+					"width": 94,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Alumnos reprobados:"
+				},
+				"btn_verAluSinStiFinal": {
+					"type": "button",
+					"top": 474,
+					"left": 685,
+					"width": 90,
+					"height": 20,
+					"action": "cancel",
+					"text": "Ver Alumnos",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/btn_verAluSinStiFinal.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn_promociones_anteriores": {
+					"type": "pictureButton",
+					"top": 123,
+					"left": 599,
+					"width": 20,
+					"height": 20,
+					"columnCount": 1,
+					"rowCount": 4,
+					"loopBackToFirstFrame": true,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"method": "ObjectMethods/btn_promociones_anteriores.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"txt_info": {
+					"type": "text",
+					"top": 64,
+					"left": 43,
+					"width": 524,
+					"height": 37,
+					"fontFamily": "Tahoma",
+					"fontSize": 10,
+					"text": "Texto de ejemplo:"
+				}
+			}
+		}
+	]
+}

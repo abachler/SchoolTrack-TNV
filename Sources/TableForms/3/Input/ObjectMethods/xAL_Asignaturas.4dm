@@ -1,0 +1,1 @@
+  //metodo de gestion de drag and drop eliminado

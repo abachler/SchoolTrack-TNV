@@ -1,0 +1,334 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Forms",
+	"inheritedFormTable": 114,
+	"formSizeAnchor": "Área de desplazamiento1",
+	"rightMargin": 15,
+	"bottomMargin": 15,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 626,
+					"left": 309,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 569,
+					"left": 125,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto1": {
+					"type": "text",
+					"top": 58,
+					"left": 15,
+					"width": 22,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "A:"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 78,
+					"left": 15,
+					"width": 27,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "CC:"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 99,
+					"left": 15,
+					"width": 27,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "BCC:"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 57,
+					"left": 45,
+					"width": 501,
+					"height": 14,
+					"sizingX": "grow",
+					"dataSource": "vtEM4D_To",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 77,
+					"left": 45,
+					"width": 501,
+					"height": 14,
+					"sizingX": "grow",
+					"dataSource": "vtEM4D_CC",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 98,
+					"left": 45,
+					"width": 501,
+					"height": 14,
+					"sizingX": "grow",
+					"dataSource": "vtEM4D_BCC",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 124,
+					"left": 15,
+					"width": 42,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Asunto:"
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 123,
+					"left": 61,
+					"width": 489,
+					"height": 14,
+					"sizingX": "grow",
+					"dataSource": "vtEM4D_subject",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 147,
+					"left": 14,
+					"width": 519,
+					"height": 321,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vtEM4D_Body",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 474,
+					"left": 13,
+					"width": 111,
+					"height": 14,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Documentos adjuntos:"
+				},
+				"Área de desplazamiento1": {
+					"type": "listbox",
+					"top": 489,
+					"left": 13,
+					"width": 538,
+					"height": 55,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fontFamily": "Tahoma",
+					"fontSize": 9,
+					"borderStyle": "sunken",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "Área de desplazamiento1_Column1",
+							"dataSource": "atEM4D_Attachments",
+							"width": 10,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						}
+					]
+				},
+				"Botón imagen1": {
+					"type": "pictureButton",
+					"top": 8,
+					"left": 15,
+					"width": 24,
+					"height": 24,
+					"dataSource": "bSendMail",
+					"action": "accept",
+					"columnCount": 1,
+					"rowCount": 1,
+					"switchBackWhenReleased": true,
+					"method": "ObjectMethods/Botón imagen1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón imagen2": {
+					"type": "pictureButton",
+					"top": 8,
+					"left": 61,
+					"width": 24,
+					"height": 24,
+					"dataSource": "Botón imagen1",
+					"columnCount": 1,
+					"rowCount": 1,
+					"loopBackToFirstFrame": true,
+					"switchBackWhenReleased": true,
+					"method": "ObjectMethods/Botón imagen2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 32,
+					"left": 7,
+					"width": 41,
+					"height": 12,
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"text": "Enviar"
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 33,
+					"left": 53,
+					"width": 41,
+					"height": 12,
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"text": "Adjuntar"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,254 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Forms",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowMinHeight": 191,
+	"formSizeAnchor": "bSendReport",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 15,
+					"left": 14,
+					"width": 574,
+					"height": 120,
+					"sizingY": "grow"
+				},
+				"bSendReport": {
+					"type": "button",
+					"top": 145,
+					"left": 480,
+					"width": 106,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "bSendReport",
+					"text": "Enviar reporte",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/bSendReport.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bSaveReport": {
+					"type": "button",
+					"top": 145,
+					"left": 367,
+					"width": 106,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "bSaveReport",
+					"text": "Guardar Reporte",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/bSaveReport.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"autorepair1": {
+					"type": "text",
+					"top": 20,
+					"left": 23,
+					"width": 552,
+					"height": 84,
+					"stroke": "#EE0000",
+					"fontSize": 12,
+					"text": "Se detectó una posible corrupción de datos.\rSi usted es Administrador del sistema puede repararlo bajo las condiciones que se describen más abajo. En caso contrario, por favor informe inmediatamente de este incidente al Administrador del sistema.\rRecomendamos enviar el reporte al departamento técnico de Colegium y guardar el reporte como respaldo."
+				},
+				"vt_Msg": {
+					"type": "input",
+					"top": 114,
+					"left": 23,
+					"width": 554,
+					"height": 13,
+					"sizingY": "grow",
+					"dataSource": "vt_msg",
+					"fill": "transparent",
+					"stroke": "#000099",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"bClose": {
+					"type": "button",
+					"top": 145,
+					"left": 15,
+					"width": 62,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "bClose",
+					"action": "accept",
+					"text": "Cerrar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"texto1": {
+					"type": "text",
+					"top": 20,
+					"left": 23,
+					"width": 552,
+					"height": 84,
+					"stroke": "#EE0000",
+					"fontSize": 12,
+					"text": "Se detectó una posible corrupción de datos.\rEnvíe el reporte y póngase en contacto con el departamento técnico de Colegium para recibir instrucciones sobre el procedimiento a seguir para resolverlo.\rPor favor informe inmediatamente al administrador de sistemas antes de continuar con su trabajo."
+				},
+				"bViewReport": {
+					"type": "button",
+					"top": 145,
+					"left": 274,
+					"width": 86,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "bViewReport",
+					"text": "Ver Reporte",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/bViewReport.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"autorepair": {
+					"type": "button",
+					"top": 145,
+					"left": 189,
+					"width": 76,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "bExecute",
+					"action": "accept",
+					"text": "Reparar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"vt_textFile": {
+					"type": "input",
+					"top": 22,
+					"left": 20,
+					"width": 551,
+					"height": 110,
+					"sizingY": "grow",
+					"dataSource": "vt_text",
+					"fill": "#FFFFFF",
+					"fontSize": 9,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"bBack": {
+					"type": "button",
+					"top": 145,
+					"left": 17,
+					"width": 60,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "bBack",
+					"text": "Volver",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/bBack.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

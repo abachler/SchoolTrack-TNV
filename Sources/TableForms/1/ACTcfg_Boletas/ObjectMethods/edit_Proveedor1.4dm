@@ -1,0 +1,1 @@
+ACTdte_OpcionesGenerales ("EliminaProveedor")

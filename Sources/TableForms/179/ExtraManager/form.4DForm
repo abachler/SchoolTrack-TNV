@@ -1,0 +1,184 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "xALP_Glosas",
+	"rightMargin": -105,
+	"bottomMargin": -13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón5": {
+					"type": "button",
+					"top": 490,
+					"left": 247,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 433,
+					"left": 63,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"xALP_Glosas": {
+					"type": "plugin",
+					"top": 13,
+					"left": 13,
+					"width": 643,
+					"height": 354,
+					"dataSource": "xALP_Glosas",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/xALP_Glosas.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 13,
+					"left": 667,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bAdd",
+					"text": "Agregar",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 38,
+					"left": 667,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bDelete",
+					"text": "Eliminar",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Botón2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 77,
+					"left": 667,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bRebuild",
+					"text": "Reconstruir",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección1": {
+					"type": "checkbox",
+					"top": 100,
+					"left": 667,
+					"width": 78,
+					"height": 28,
+					"dataSource": "cbReplace",
+					"text": "Reemplazar valores",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón4": {
+					"type": "button",
+					"top": 137,
+					"left": 667,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bPrintL",
+					"text": "Exportar Lista",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Botón4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

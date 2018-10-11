@@ -1,0 +1,1058 @@
+﻿{
+	"windowTitle": "Asistentes",
+	"inheritedForm": "XS_MASTER_WZDDialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 626,
+	"height": 407,
+	"markerHeader": 1,
+	"markerBody": 451,
+	"markerBreak": 451,
+	"markerFooter": 451,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 5,
+					"left": 160,
+					"width": 380,
+					"height": 46,
+					"stroke": "#FFFFFF",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Asistente para la generación de Archivos Registro de Estudiantes de Chile"
+				},
+				"Variable3": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 554,
+					"width": 20,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "bPrev",
+					"action": "previousPage",
+					"shortcutKey": "[up arrow]",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable255": {
+					"type": "input",
+					"top": 378,
+					"left": 575,
+					"width": 17,
+					"height": 12,
+					"sizingX": "move",
+					"dataSource": "vi_PageNumber",
+					"fill": "transparent",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 593,
+					"width": 20,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "bNext",
+					"shortcutKey": "[down arrow]",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 479,
+					"left": 28,
+					"width": 20,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "Nueva Variable501",
+					"shortcutKey": "/",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 500,
+					"left": 404,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 443,
+					"left": 220,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto497": {
+					"type": "text",
+					"top": 83,
+					"left": 157,
+					"width": 408,
+					"height": 84,
+					"sizingX": "grow",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Este asistente le permitirá generar los archivos (en formato texto) requeridos por el Ministerio de Educación para los distintos procesos requeridos por Registro de los Estudiantes de Chile.\r\rSeleccione el proceso para el cual desea generar archivos:\r\r\r\r\r\r\r\r\r\r\r\r"
+				},
+				"Variable372": {
+					"type": "checkbox",
+					"top": 193,
+					"left": 193,
+					"width": 382,
+					"height": 20,
+					"dataSource": "bDiagnostico",
+					"text": "Efectuar un diagnóstico completo antes de generar los archivos",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable372.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable614": {
+					"type": "checkbox",
+					"top": 216,
+					"left": 193,
+					"width": 423,
+					"height": 22,
+					"dataSource": "bEvaluar",
+					"text": "Re-evaluar situación final de los alumnos antes de generar los archivos",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable614.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable338": {
+					"type": "radio",
+					"top": 592,
+					"left": 180,
+					"width": 227,
+					"height": 16,
+					"dataSource": "r1_Actas",
+					"text": "Actas de calificaciones",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"stroke": "#000099",
+					"method": "ObjectMethods/Variable338.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable340": {
+					"type": "radio",
+					"top": 614,
+					"left": 180,
+					"width": 227,
+					"height": 16,
+					"dataSource": "r2_Matricula",
+					"text": "Matrícula Inicial",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"stroke": "#000099",
+					"method": "ObjectMethods/Variable340.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"diagnostico": {
+					"type": "text",
+					"top": 244,
+					"left": 170,
+					"width": 443,
+					"height": 14,
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "raised",
+					"text": "Diagnóstico de la base de datos"
+				},
+				"printDiagnostico": {
+					"type": "text",
+					"top": 243,
+					"left": 511,
+					"width": 101,
+					"height": 14,
+					"stroke": "#005F60",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Imprimir Informe"
+				},
+				"printdiagnostico(1)": {
+					"type": "button",
+					"top": 239,
+					"left": 511,
+					"width": 103,
+					"height": 20,
+					"dataSource": "bPrintDiagnostico",
+					"text": "Imprimir",
+					"display": false,
+					"method": "ObjectMethods/printdiagnostico(1).4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto122": {
+					"type": "text",
+					"top": 76,
+					"left": 170,
+					"width": 443,
+					"height": 14,
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "raised",
+					"text": "Verificación básica"
+				},
+				"printreport(1)": {
+					"type": "text",
+					"top": 76,
+					"left": 511,
+					"width": 101,
+					"height": 14,
+					"stroke": "#005F60",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Imprimir Informe"
+				},
+				"printreport": {
+					"type": "button",
+					"top": 72,
+					"left": 511,
+					"width": 104,
+					"height": 20,
+					"dataSource": "bPrintReport",
+					"text": "Imprimir",
+					"display": false,
+					"method": "ObjectMethods/printreport.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable11": {
+					"type": "input",
+					"top": 78,
+					"left": 12,
+					"width": 133,
+					"height": 276,
+					"dataSource": "vt_msg2",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"verifying(1)": {
+					"type": "input",
+					"top": 95,
+					"left": 170,
+					"width": 443,
+					"height": 132,
+					"dataSource": "vt_Msg",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"diagnostico(1)": {
+					"type": "input",
+					"top": 265,
+					"left": 170,
+					"width": 443,
+					"height": 96,
+					"dataSource": "vt_ResultadoDiagnostico",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 426,
+					"left": 13,
+					"width": 122,
+					"height": 31,
+					"dataSource": "Nueva Variable2131",
+					"shortcutKey": "+",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable10": {
+					"type": "button",
+					"top": 434,
+					"left": 151,
+					"width": 20,
+					"height": 20,
+					"dataSource": "Nueva Variable1285",
+					"shortcutKey": "*",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Variable10.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Actas(1)": {
+					"type": "checkbox",
+					"top": 96,
+					"left": 165,
+					"width": 209,
+					"height": 18,
+					"dataSource": "b1",
+					"text": "Nómina de estudiantes",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Actas(2)": {
+					"type": "checkbox",
+					"top": 129,
+					"left": 165,
+					"width": 209,
+					"height": 18,
+					"dataSource": "b2",
+					"text": "Información del curso",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Actas(3)": {
+					"type": "checkbox",
+					"top": 163,
+					"left": 165,
+					"width": 209,
+					"height": 18,
+					"dataSource": "b3",
+					"text": "Estudiantes del curso",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Actas(4)": {
+					"type": "checkbox",
+					"top": 196,
+					"left": 165,
+					"width": 209,
+					"height": 18,
+					"dataSource": "b4",
+					"text": "Antecedentes académicos de los estudiantes",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Actas(5)": {
+					"type": "checkbox",
+					"top": 229,
+					"left": 165,
+					"width": 209,
+					"height": 18,
+					"dataSource": "b5",
+					"text": "Situación de promoción de los estudiantes",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Actas(6)": {
+					"type": "checkbox",
+					"top": 263,
+					"left": 165,
+					"width": 209,
+					"height": 18,
+					"dataSource": "b6",
+					"text": "Docentes de los subsectores",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Actas(7)": {
+					"type": "checkbox",
+					"top": 296,
+					"left": 165,
+					"width": 209,
+					"height": 18,
+					"dataSource": "b7",
+					"text": "Acta del curso",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Actas(8)": {
+					"type": "checkbox",
+					"top": 330,
+					"left": 165,
+					"width": 209,
+					"height": 18,
+					"dataSource": "b8",
+					"text": "Subsectores, asignaturas o módulos (opcional)",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"lb_niveles": {
+					"type": "listbox",
+					"top": 96,
+					"left": 438,
+					"width": 161,
+					"height": 232,
+					"dataSource": "lb_niveles",
+					"hideFocusRing": true,
+					"rowHeight": "18px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 9,
+					"columns": [
+						{
+							"name": "at_NivelesRech",
+							"dataSource": "at_NivelesRech",
+							"width": 147,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/at_NivelesRech.4dm",
+							"header": {
+								"name": "Título1",
+								"text": "Niveles",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						},
+						{
+							"name": "al_NivelesRech",
+							"dataSource": "al_NivelesRech",
+							"width": 14,
+							"maxWidth": 14,
+							"resizable": false,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título2",
+								"text": "Título2",
+								"dataSource": "Título2",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						}
+					]
+				},
+				"cb_Niveles": {
+					"type": "checkbox",
+					"top": 332,
+					"left": 438,
+					"width": 162,
+					"height": 18,
+					"dataSource": "cb_Niveles",
+					"text": "Todos los niveles",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/cb_Niveles.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Matricula(1)": {
+					"type": "checkbox",
+					"top": 468,
+					"left": 605,
+					"width": 154,
+					"height": 19,
+					"dataSource": "b21",
+					"text": "Datos del Establecimiento",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Matricula(2)": {
+					"type": "checkbox",
+					"top": 509,
+					"left": 605,
+					"width": 154,
+					"height": 19,
+					"dataSource": "b22",
+					"text": "Datos de unidades educativas",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Matricula(3)": {
+					"type": "checkbox",
+					"top": 550,
+					"left": 605,
+					"width": 154,
+					"height": 19,
+					"dataSource": "b23",
+					"text": "Nómina de estudiantes",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Matricula(4)": {
+					"type": "checkbox",
+					"top": 591,
+					"left": 605,
+					"width": 156,
+					"height": 20,
+					"dataSource": "b24",
+					"text": "Datos de los cursos",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Matricula(5)": {
+					"type": "checkbox",
+					"top": 623,
+					"left": 605,
+					"width": 154,
+					"height": 21,
+					"dataSource": "b25",
+					"text": "Estudiantes de los cursos",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Matricula(6)": {
+					"type": "checkbox",
+					"top": 662,
+					"left": 605,
+					"width": 177,
+					"height": 21,
+					"dataSource": "b26",
+					"text": "Estudiantes E. Media TP en nóminas",
+					"styleSheet": "XS_FormObjects",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 78,
+					"left": 11,
+					"width": 134,
+					"height": 252,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Seleccione los niveles y archivos  que desea generar y haga click en el botón Flecha siguiente para continuar."
+				}
+			}
+		},
+		{
+			"objects": {
+				"Popup/Lista desplegable1": {
+					"type": "dropdown",
+					"top": 81,
+					"left": 307,
+					"width": 304,
+					"height": 18,
+					"dataSource": "at_DatosUnidadesEduc_Tipos",
+					"styleSheet": "Defaut",
+					"method": "ObjectMethods/Popup%2FLista desplegable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"xALP_Unidades": {
+					"type": "plugin",
+					"top": 115,
+					"left": 176,
+					"width": 436,
+					"height": 242,
+					"dataSource": "xALP_Unidades",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 84,
+					"left": 171,
+					"width": 120,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Tipo de enseñanza:"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 82,
+					"left": 11,
+					"width": 140,
+					"height": 288,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Complete la información requerida para cada tipo de enseñanza impartida en el establecimiento.\r\rPara mayor información sobre contenido y formatos de archivos para matrícula inicial visite el sitio web del Ministerio de Educación:\r\r"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 204,
+					"left": 11,
+					"width": 140,
+					"height": 14,
+					"stroke": "#0000FF",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"textDecoration": "underline",
+					"text": "www.mineduc.cl\r\r"
+				},
+				"Botón invisible1": {
+					"type": "button",
+					"top": 204,
+					"left": 45,
+					"width": 73,
+					"height": 12,
+					"dataSource": "Botón invisible1",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto7": {
+					"type": "text",
+					"top": 78,
+					"left": 11,
+					"width": 134,
+					"height": 252,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Haga click en el botón Seleccionar Destino para seleccionar la carpeta donde desea que los archivos sean generados.\r\rHaga click en el botón Generar para iniciar la generación de archivos"
+				},
+				"Variable215": {
+					"type": "input",
+					"top": 91,
+					"left": 167,
+					"width": 417,
+					"height": 24,
+					"dataSource": "vt_FolderName",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable22": {
+					"type": "button",
+					"top": 120,
+					"left": 505,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bSelectFolder",
+					"text": "Cambiar...",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable22.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable24": {
+					"type": "input",
+					"top": 161,
+					"left": 267,
+					"width": 105,
+					"height": 12,
+					"dataSource": "vd_date",
+					"dataSourceTypeHint": "date",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable23": {
+					"type": "button",
+					"top": 374,
+					"left": 509,
+					"width": 110,
+					"height": 20,
+					"dataSource": "bGenerar",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Generar archivos",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"method": "ObjectMethods/Variable23.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto9": {
+					"type": "text",
+					"top": 160,
+					"left": 167,
+					"width": 108,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Fecha de generación:"
+				},
+				"Texto59": {
+					"type": "text",
+					"top": 77,
+					"left": 167,
+					"width": 207,
+					"height": 12,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Los archivos generados serán guardados en :"
+				}
+			}
+		}
+	]
+}

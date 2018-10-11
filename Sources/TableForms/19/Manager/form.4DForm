@@ -1,0 +1,362 @@
+﻿{
+	"formSizeAnchor": "ejecutarComando",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Línea": {
+					"type": "line",
+					"top": 32,
+					"left": 20,
+					"width": 549,
+					"sizingX": "grow",
+					"stroke": "#AAAAAA"
+				},
+				"Onglet3": {
+					"type": "tab",
+					"top": 20,
+					"left": 20,
+					"width": 549,
+					"height": 25,
+					"sizingX": "grow",
+					"dataSource": "ListTab1",
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						"Comandos",
+						"Ejecución de scripts"
+					],
+					"styleSheet": "Plain - 12",
+					"action": "gotoPage",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"lb_Comandos": {
+					"type": "listbox",
+					"top": 58,
+					"left": 20,
+					"width": 549,
+					"height": 379,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"alternateFill": "#F3F6FA",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 13,
+					"method": "ObjectMethods/lb_Comandos.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					],
+					"columns": [
+						{
+							"name": "nombreComandos",
+							"width": 534,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#F3F6FA",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título1",
+								"text": "Título1",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "recNumComandos",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#F3F6FA",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado1",
+								"text": "Encabezado1",
+								"dataSource": "Encabezado1",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						}
+					]
+				},
+				"ejecutarComando": {
+					"type": "button",
+					"top": 452,
+					"left": 489,
+					"width": 80,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"text": "Ejecutar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/ejecutarComando.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectángulo": {
+					"type": "rectangle",
+					"top": 164,
+					"left": 19,
+					"width": 551,
+					"height": 275,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"stroke": "#AAAAAA"
+				},
+				"codigo": {
+					"type": "input",
+					"top": 167,
+					"left": 22,
+					"width": 545,
+					"height": 268,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "none",
+					"focusable": false,
+					"hideFocusRing": true,
+					"showSelection": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/codigo.4dm",
+					"events": [
+						"onClick",
+						"onLosingFocus",
+						"onDrop",
+						"onBeforeKeystroke",
+						"onDragOver",
+						"onAfterKeystroke",
+						"onSelectionChange",
+						"onAfterEdit"
+					]
+				},
+				"codigoHTML": {
+					"type": "webArea",
+					"top": 165,
+					"left": 20,
+					"width": 549,
+					"height": 272,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"urlSource": "Área web_url",
+					"progressSource": "Área web_progress",
+					"webEngine": "embedded",
+					"contextMenu": "none",
+					"borderStyle": "none",
+					"events": [
+						"onBeginURLLoading"
+					]
+				},
+				"Text6": {
+					"type": "text",
+					"top": 64,
+					"left": 80,
+					"width": 482,
+					"height": 60,
+					"sizingX": "grow",
+					"styleSheet": "Medium - 12",
+					"text": "Utilice esta opción sólo bajo recomendación de los servicios de soporte de Colegium.\rSi no sabe exactamente lo que se dispone a hacer corre el riesgo de causar un daño irreparable a la base de datos.\rPara mayor seguridad, respalde su base de datos antes de continuar."
+				},
+				"Imagen2": {
+					"type": "picture",
+					"top": 58,
+					"left": 14,
+					"width": 60,
+					"height": 60,
+					"pictureFormat": "scaled"
+				},
+				"editarScript": {
+					"type": "button",
+					"top": 452,
+					"left": 20,
+					"width": 99,
+					"height": 22,
+					"sizingY": "move",
+					"text": "Editar script",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/editarScript.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"pegarScript": {
+					"type": "button",
+					"top": 452,
+					"left": 251,
+					"width": 99,
+					"height": 22,
+					"sizingX": "move",
+					"sizingY": "move",
+					"text": "Pegar script",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/pegarScript.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cargarScript": {
+					"type": "button",
+					"top": 452,
+					"left": 359,
+					"width": 120,
+					"height": 22,
+					"sizingX": "move",
+					"sizingY": "move",
+					"text": "Cargar Script…",
+					"styleSheet": "Plain - 12",
+					"stroke": "#000000",
+					"method": "ObjectMethods/cargarScript.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"ejecutarCodigo": {
+					"type": "button",
+					"top": 452,
+					"left": 489,
+					"width": 80,
+					"height": 22,
+					"sizingX": "move",
+					"sizingY": "move",
+					"action": "accept",
+					"text": "Ejecutar",
+					"styleSheet": "Plain - 12",
+					"stroke": "#000000",
+					"method": "ObjectMethods/ejecutarCodigo.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"ejecutarEnServidor": {
+					"type": "checkbox",
+					"top": 133,
+					"left": 20,
+					"width": 152,
+					"height": 18,
+					"sizingY": "move",
+					"text": "Ejecutar en el servidor",
+					"styleSheet": "Plain - 12",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"codigoHTML_lock": {
+					"type": "button",
+					"top": 166,
+					"left": 20,
+					"width": 548,
+					"height": 272,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"display": false,
+					"method": "ObjectMethods/codigoHTML_lock.4dm",
+					"events": [
+						"onDrop",
+						"onDragOver"
+					]
+				}
+			}
+		}
+	]
+}

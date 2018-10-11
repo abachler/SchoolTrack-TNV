@@ -1,0 +1,1 @@
+OBJECT SET VISIBLE:C603(vh_hora;True:C214)

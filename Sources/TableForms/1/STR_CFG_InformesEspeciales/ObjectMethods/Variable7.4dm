@@ -1,0 +1,1 @@
+<>AsNmPtr:=->[Asignaturas:18]denominacion_interna:16

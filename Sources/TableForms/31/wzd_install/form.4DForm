@@ -1,0 +1,745 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Rectángulo",
+	"rightMargin": 0,
+	"bottomMargin": 40,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onDataChange",
+		"onCloseBox",
+		"onUnload",
+		"onAfterKeystroke",
+		"onSelectionChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Rectángulo": {
+					"type": "rectangle",
+					"top": 60,
+					"left": 0,
+					"width": 626,
+					"height": 320,
+					"stroke": "#AAAAAA"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 71,
+					"left": 0,
+					"width": 625,
+					"height": 294,
+					"dataSource": "vp_ModuleIconBack",
+					"dataSourceTypeHint": "picture",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"pictureFormat": "proportionalTopLeft",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"anterior": {
+					"type": "button",
+					"top": 390,
+					"left": 401,
+					"width": 100,
+					"height": 19,
+					"text": "Anterior",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/anterior.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Siguiente": {
+					"type": "button",
+					"top": 390,
+					"left": 512,
+					"width": 100,
+					"height": 19,
+					"text": "Siguiente",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/Siguiente.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"imagenFondo": {
+					"type": "input",
+					"top": 61,
+					"left": 0,
+					"width": 625,
+					"height": 318,
+					"dataSourceTypeHint": "picture",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"pictureFormat": "proportionalTopLeft",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"titulo": {
+					"type": "text",
+					"top": 7,
+					"left": 66,
+					"width": 371,
+					"height": 23,
+					"stroke": "#404040",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Creacion y registro de la base de datos"
+				},
+				"Óvalo1": {
+					"type": "oval",
+					"top": 7,
+					"left": 6,
+					"width": 48,
+					"height": 48,
+					"fill": "#AAAAAA",
+					"stroke": "#AAAAAA"
+				},
+				"paso": {
+					"type": "text",
+					"top": 8,
+					"left": 19,
+					"width": 21,
+					"height": 51,
+					"stroke": "#FFFFFF",
+					"fontFamily": "Helvetica Neue Bold",
+					"fontSize": 36,
+					"fontWeight": "bold",
+					"text": "1"
+				}
+			}
+		},
+		{
+			"objects": {
+				"nombre": {
+					"type": "text",
+					"top": 188,
+					"left": 101,
+					"width": 160,
+					"height": 18,
+					"stroke": "#404040",
+					"textAlign": "right",
+					"styleSheet": "Medium - 13",
+					"text": "Nombre de la institución:"
+				},
+				"idNacional": {
+					"type": "text",
+					"top": 157,
+					"left": 101,
+					"width": 160,
+					"height": 16,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"text": "RUT:"
+				},
+				"colegioPais1": {
+					"type": "text",
+					"top": 93,
+					"left": 101,
+					"width": 160,
+					"height": 18,
+					"stroke": "#404040",
+					"textAlign": "right",
+					"styleSheet": "Medium - 13",
+					"text": "País: "
+				},
+				"campoIdEscuela": {
+					"type": "input",
+					"top": 126,
+					"left": 275,
+					"width": 155,
+					"height": 16,
+					"dataSource": "[Colegio:31]Rol Base Datos:9",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 13",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"campoIdNacional": {
+					"type": "input",
+					"top": 157,
+					"left": 275,
+					"width": 155,
+					"height": 16,
+					"dataSource": "[Colegio:31]RUT:2",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 13",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": "###.###.###-#",
+					"entryFilter": "~\"K;k;0-9\"",
+					"method": "ObjectMethods/campoIdNacional.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"campoNombre": {
+					"type": "input",
+					"top": 188,
+					"left": 275,
+					"width": 335,
+					"height": 16,
+					"dataSource": "[Colegio:31]Nombre_Colegio:1",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 13",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field1": {
+					"type": "input",
+					"top": 217,
+					"left": 275,
+					"width": 335,
+					"height": 16,
+					"dataSource": "[Colegio:31]Dirección:3",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 13",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 248,
+					"left": 275,
+					"width": 335,
+					"height": 16,
+					"dataSource": "[Colegio:31]Comuna:4",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 13",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 279,
+					"left": 275,
+					"width": 335,
+					"height": 16,
+					"dataSource": "[Colegio:31]Provincia:5",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 13",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 310,
+					"left": 275,
+					"width": 335,
+					"height": 16,
+					"dataSource": "[Colegio:31]Region:14",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 13",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Idescuela": {
+					"type": "text",
+					"top": 127,
+					"left": 101,
+					"width": 160,
+					"height": 18,
+					"stroke": "#404040",
+					"textAlign": "right",
+					"styleSheet": "Medium - 13",
+					"text": "Rol base de datos:"
+				},
+				"campoPais": {
+					"type": "dropdown",
+					"top": 89,
+					"left": 275,
+					"width": 335,
+					"height": 20,
+					"dataSource": "hl_Pais",
+					"dataSourceTypeHint": "integer",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/XS_CountryCodes"
+					},
+					"styleSheet": "Plain - 13",
+					"method": "ObjectMethods/campoPais.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"colegioDireccion": {
+					"type": "text",
+					"top": 217,
+					"left": 101,
+					"width": 160,
+					"height": 16,
+					"stroke": "#404040",
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"text": "Dirección:"
+				},
+				"colegioComuna": {
+					"type": "text",
+					"top": 248,
+					"left": 101,
+					"width": 160,
+					"height": 16,
+					"stroke": "#404040",
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"text": "Comuna:"
+				},
+				"colegioProvincia": {
+					"type": "text",
+					"top": 279,
+					"left": 101,
+					"width": 160,
+					"height": 16,
+					"stroke": "#404040",
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"text": "Provincia"
+				},
+				"colegioRegion": {
+					"type": "text",
+					"top": 310,
+					"left": 101,
+					"width": 160,
+					"height": 16,
+					"stroke": "#404040",
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"text": "Región:"
+				},
+				"tituloPaso": {
+					"type": "text",
+					"top": 32,
+					"left": 68,
+					"width": 375,
+					"height": 17,
+					"stroke": "#555555",
+					"styleSheet": "Medium - 16",
+					"text": "Identificacion de la Institución"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto10": {
+					"type": "text",
+					"top": 88,
+					"left": 163,
+					"width": 408,
+					"height": 112,
+					"stroke": "#000000",
+					"styleSheet": "Plain - 13",
+					"text": "El administrador de la base de datos es la persona que dispondrá de más derechos de acceso a la información manejada por SchoolTrack, en particular la creación y la asignación de derechos a otros usuarios.\r\rEs de vital importancia que recuerde el nombre del administrador y su contraseña ya que ésta le sera requerida cuando inicie la próxima sesión de trabajo en SchoolTrack\r"
+				},
+				"Text98": {
+					"type": "text",
+					"top": 242,
+					"left": 153,
+					"width": 180,
+					"height": 16,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"text": "Nombre del administrador:"
+				},
+				"Texto32": {
+					"type": "text",
+					"top": 267,
+					"left": 153,
+					"width": 180,
+					"height": 16,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"text": "Contraseña:"
+				},
+				"Texto33": {
+					"type": "text",
+					"top": 293,
+					"left": 152,
+					"width": 180,
+					"height": 16,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"text": "Confirmación de contraseña:"
+				},
+				"nombreUsuario": {
+					"type": "input",
+					"top": 242,
+					"left": 341,
+					"width": 218,
+					"height": 16,
+					"fill": "#FFFFFF",
+					"stroke": "#404040",
+					"styleSheet": "Plain - 13",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onAfterKeystroke"
+					]
+				},
+				"claveUsuario_1": {
+					"type": "input",
+					"top": 267,
+					"left": 341,
+					"width": 218,
+					"height": 16,
+					"fill": "#FFFFFF",
+					"stroke": "#404040",
+					"styleSheet": "Plain - 13",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onAfterKeystroke"
+					]
+				},
+				"claveUsuario_2": {
+					"type": "input",
+					"top": 293,
+					"left": 341,
+					"width": 218,
+					"height": 16,
+					"fill": "#FFFFFF",
+					"stroke": "#404040",
+					"styleSheet": "Plain - 13",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onAfterKeystroke"
+					]
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 32,
+					"left": 68,
+					"width": 375,
+					"height": 17,
+					"stroke": "#555555",
+					"styleSheet": "Medium - 16",
+					"text": "Nombre y contraseña del usuario Administrador"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto8": {
+					"type": "text",
+					"top": 74,
+					"left": 120,
+					"width": 475,
+					"height": 188,
+					"stroke": "#404040",
+					"styleSheet": "Plain - 14",
+					"text": "Haga clic en el botón Registrar para obtener la licencia que le permite utilizar la aplicación.\r\rPara obtener la licencia es necesario que el identificador del en que se ejecuta la aplicación este registrado en Colegium y se haya generado la licencia corespondiente."
+				},
+				"macaddress": {
+					"type": "button",
+					"top": 224,
+					"left": 298,
+					"width": 165,
+					"height": 25,
+					"styleSheet": "Medium - 13",
+					"stroke": "#000000",
+					"text": "macaddress",
+					"iconFrames": 4,
+					"popupPlacement": "separated",
+					"textPlacement": "left",
+					"style": "custom",
+					"method": "ObjectMethods/macaddress.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto11": {
+					"type": "text",
+					"top": 32,
+					"left": 68,
+					"width": 375,
+					"height": 17,
+					"stroke": "#555555",
+					"styleSheet": "Medium - 16",
+					"text": "Obtención de la licencia"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 229,
+					"left": 120,
+					"width": 180,
+					"height": 16,
+					"stroke": "#000000",
+					"textAlign": "left",
+					"styleSheet": "Plain - 13",
+					"text": "Identificador del computador"
+				}
+			}
+		},
+		{
+			"objects": {
+				"campoNombre1": {
+					"type": "input",
+					"top": 69,
+					"left": 248,
+					"width": 335,
+					"height": 16,
+					"dataSource": "[Colegio:31]Nombre_Colegio:1",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 13",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"campoNombre2": {
+					"type": "input",
+					"top": 96,
+					"left": 248,
+					"width": 75,
+					"height": 16,
+					"dataSource": "[xShell_ApplicationData:45]Licenced_Users:11",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "left",
+					"styleSheet": "Plain - 13",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"campoNombre3": {
+					"type": "input",
+					"top": 124,
+					"left": 248,
+					"width": 75,
+					"height": 16,
+					"dataSource": "[xShell_ApplicationData:45]Licenced_Users_STWA:32",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "left",
+					"styleSheet": "Plain - 13",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"listaLicencia": {
+					"type": "listbox",
+					"top": 150,
+					"left": 248,
+					"width": 338,
+					"height": 179,
+					"focusable": false,
+					"hideFocusRing": true,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 13,
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onAfterSort",
+						"onSelectionChange",
+						"onColumnMove",
+						"onRowMove",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "moduloNombre",
+							"width": 300,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						},
+						{
+							"name": "moduloAutorizado",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"controlType": "checkbox",
+							"controlTitle": " ",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						},
+						{
+							"name": "moduloId",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"textAlign": "left",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						}
+					]
+				},
+				"campoNombre4": {
+					"type": "input",
+					"top": 347,
+					"left": 248,
+					"width": 115,
+					"height": 16,
+					"dataSource": "[xShell_ApplicationData:45]Licenced_until:10",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 13",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto9": {
+					"type": "text",
+					"top": 32,
+					"left": 68,
+					"width": 375,
+					"height": 17,
+					"stroke": "#555555",
+					"styleSheet": "Medium - 16",
+					"text": "Informacion de la licencia"
+				},
+				"Texto12": {
+					"type": "text",
+					"top": 69,
+					"left": 98,
+					"width": 143,
+					"height": 16,
+					"stroke": "#555555",
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"text": "Titular de la licencia"
+				},
+				"Texto13": {
+					"type": "text",
+					"top": 96,
+					"left": 45,
+					"width": 196,
+					"height": 16,
+					"stroke": "#555555",
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"text": "Clientes concurrentes"
+				},
+				"Texto14": {
+					"type": "text",
+					"top": 124,
+					"left": 25,
+					"width": 216,
+					"height": 17,
+					"stroke": "#555555",
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"text": "Usuarios SchoolTrack Web Access"
+				},
+				"Texto15": {
+					"type": "text",
+					"top": 150,
+					"left": 25,
+					"width": 216,
+					"height": 17,
+					"stroke": "#555555",
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"text": "Módulos autorizados"
+				},
+				"Texto16": {
+					"type": "text",
+					"top": 347,
+					"left": 45,
+					"width": 196,
+					"height": 16,
+					"stroke": "#555555",
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"text": "Fecha de caducidad"
+				}
+			}
+		}
+	]
+}

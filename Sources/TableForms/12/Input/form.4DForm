@@ -1,0 +1,359 @@
+﻿{
+	"windowTitle": ":21002,1",
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Variable5",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDataChange",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable4": {
+					"type": "button",
+					"top": 325,
+					"left": 366,
+					"width": 80,
+					"height": 22,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": ":21002,157",
+					"styleSheet": "Plain - 13",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 325,
+					"left": 459,
+					"width": 80,
+					"height": 22,
+					"dataSource": "bOK",
+					"shortcutKey": "[Enter]",
+					"text": ":21002,172",
+					"styleSheet": "Plain - 13",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 114,
+					"left": 20,
+					"width": 93,
+					"height": 15,
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"text": "Observaciones:"
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 91,
+					"left": 120,
+					"width": 419,
+					"height": 15,
+					"dataSource": "sProf",
+					"fill": "#FFFFFF",
+					"styleSheet": "Plain - 13",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Text8": {
+					"type": "text",
+					"top": 68,
+					"left": 20,
+					"width": 93,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"text": "Motivo:"
+				},
+				"Variable12": {
+					"type": "input",
+					"top": 20,
+					"left": 121,
+					"width": 418,
+					"height": 15,
+					"dataSource": "sName",
+					"fill": "#FFFFFF",
+					"styleSheet": "Plain - 13",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable12.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable13": {
+					"type": "input",
+					"top": 45,
+					"left": 121,
+					"width": 137,
+					"height": 15,
+					"dataSource": "dFrom",
+					"dataSourceTypeHint": "date",
+					"fill": "#FFFFFF",
+					"styleSheet": "Plain - 13",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable13.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable14": {
+					"type": "input",
+					"top": 45,
+					"left": 378,
+					"width": 137,
+					"height": 15,
+					"dataSource": "dTo",
+					"dataSourceTypeHint": "date",
+					"fill": "#FFFFFF",
+					"styleSheet": "Plain - 13",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable14.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text9": {
+					"type": "text",
+					"top": 20,
+					"left": 20,
+					"width": 93,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"text": "Alumno:"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 45,
+					"left": 20,
+					"width": 93,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"text": "Desde:"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 45,
+					"left": 332,
+					"width": 38,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"text": "Hasta:"
+				},
+				"Variable15": {
+					"type": "pictureButton",
+					"top": 43,
+					"left": 263,
+					"width": 18,
+					"height": 18,
+					"dataSource": "BCalendar1",
+					"columnCount": 1,
+					"rowCount": 4,
+					"picture": "/RESOURCES/IconCalendar.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable15.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable16": {
+					"type": "pictureButton",
+					"top": 42,
+					"left": 521,
+					"width": 18,
+					"height": 18,
+					"dataSource": "BCalendar2",
+					"columnCount": 1,
+					"rowCount": 4,
+					"picture": "/RESOURCES/IconCalendar.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable16.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Combo Box": {
+					"type": "dropdown",
+					"top": 66,
+					"left": 120,
+					"width": 420,
+					"height": 18,
+					"dataSource": "atSTRal_MotivosSuspension",
+					"styleSheet": "Plain - 13",
+					"method": "ObjectMethods/Combo Box.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text12": {
+					"type": "text",
+					"top": 91,
+					"left": 20,
+					"width": 93,
+					"height": 15,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"text": "Profesor:"
+				},
+				"Variable17": {
+					"type": "input",
+					"top": 114,
+					"left": 121,
+					"width": 402,
+					"height": 90,
+					"dataSource": "vt_observaciones",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 13",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"method": "ObjectMethods/Variable17.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"viSTR_CrearInasistencias": {
+					"type": "checkbox",
+					"top": 214,
+					"left": 115,
+					"width": 418,
+					"height": 18,
+					"dataSource": "viSTR_CrearInasistencias",
+					"text": "Registrar inasistencias desde el inicio de la suspensión hasta hoy",
+					"styleSheet": "Plain - 13",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"viSTR_CrearInasistenciasFuturas": {
+					"type": "checkbox",
+					"top": 267,
+					"left": 114,
+					"width": 258,
+					"height": 18,
+					"dataSource": "viSTR_CrearInasistenciasFuturas",
+					"text": "Registrar inasistencias futuras",
+					"styleSheet": "Plain - 13",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto": {
+					"type": "text",
+					"top": 287,
+					"left": 138,
+					"width": 381,
+					"height": 12,
+					"stroke": "#777777",
+					"styleSheet": "Plain - 11",
+					"text": "Aplica solo para alumnos en niveles con registro de inasistencia diario"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 234,
+					"left": 138,
+					"width": 378,
+					"height": 24,
+					"stroke": "#777777",
+					"styleSheet": "Plain - 11",
+					"text": "Aplica solo para alumnos en niveles con registro de inasistencia diario o por hora detallado"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,93 @@
+﻿{
+	"formSizeAnchor": "Plug-in Area1",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Plug-in Area1": {
+					"type": "plugin",
+					"top": 1,
+					"left": 0,
+					"width": 790,
+					"height": 807,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "xReportData",
+					"pluginAreaKind": "_SuperReport Pro",
+					"dropping": "automatic",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Plug-in Area1.4dm",
+					"events": [
+						"onClick",
+						"onPluginArea",
+						"onDataChange"
+					]
+				},
+				"bCloseW": {
+					"type": "button",
+					"top": 1114,
+					"left": 297,
+					"width": 84,
+					"height": 25,
+					"dataSource": "bCloseW",
+					"shortcutKey": "w",
+					"shortcutAccel": true,
+					"text": "Close Window CRTL/CMD-W",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"method": "ObjectMethods/bCloseW.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 900,
+					"left": 10,
+					"width": 14,
+					"height": 13,
+					"dataSource": "bCloseSR",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Close",
+					"display": false,
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

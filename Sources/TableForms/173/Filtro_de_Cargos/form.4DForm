@@ -1,0 +1,389 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "BT3",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerBody": 476,
+	"markerBreak": 476,
+	"markerFooter": 476,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"det_1": {
+					"type": "groupBox",
+					"top": 377,
+					"left": 7,
+					"width": 369,
+					"height": 79,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Detallado por ..."
+				},
+				"det_op1": {
+					"type": "radio",
+					"top": 391,
+					"left": 163,
+					"width": 124,
+					"height": 17,
+					"dataSource": "op1_ctas",
+					"text": "Cuentas Corrientes",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"radioGroup": "Grupo7",
+					"events": [
+						"onClick"
+					]
+				},
+				"det_op2": {
+					"type": "radio",
+					"top": 391,
+					"left": 23,
+					"width": 88,
+					"height": 17,
+					"dataSource": "op2_apo",
+					"text": "Apoderados",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"radioGroup": "Grupo7",
+					"events": [
+						"onClick"
+					]
+				},
+				"det_Sel1": {
+					"type": "checkbox",
+					"top": 413,
+					"left": 23,
+					"width": 145,
+					"height": 14,
+					"dataSource": "Sel1_Cts_ina",
+					"text": "Incluir cuentas inactivas",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"events": [
+						"onClick"
+					]
+				},
+				"det_Sel2": {
+					"type": "checkbox",
+					"top": 433,
+					"left": 23,
+					"width": 325,
+					"height": 14,
+					"dataSource": "Sel2_Categ",
+					"text": "Agrupar en Categorías los Pagos de los Items Seleccionados",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"events": [
+						"onClick"
+					]
+				},
+				"det_texto": {
+					"type": "text",
+					"top": 433,
+					"left": 38,
+					"width": 328,
+					"height": 14,
+					"stroke": "#EE0000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"fontStyle": "italic",
+					"text": "No existen Categorías Configuradas para los Cargos del Menú"
+				},
+				"li2": {
+					"type": "groupBox",
+					"top": 5,
+					"left": 7,
+					"width": 369,
+					"height": 263,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Indique los cargos a considerar en el informe"
+				},
+				"BT3": {
+					"type": "button",
+					"top": 345,
+					"left": 294,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bGo",
+					"action": "accept",
+					"text": "Continuar",
+					"styleSheet": "XS_DialogObjects",
+					"defaultButton": true,
+					"method": "ObjectMethods/BT3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"BT2": {
+					"type": "button",
+					"top": 345,
+					"left": 206,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Botón2",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Área de plug-in1": {
+					"type": "plugin",
+					"top": 61,
+					"left": 13,
+					"width": 358,
+					"height": 202,
+					"dataSource": "xALP_cargosInforme",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Área de plug-in1.4dm",
+					"events": [
+						"onClick",
+						"onPluginArea"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 31,
+					"left": 159,
+					"width": 120,
+					"height": 20,
+					"dataSource": "bSelTodo",
+					"text": "Seleccionar  Todos",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 30,
+					"left": 290,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bLimpiar",
+					"text": "Limpiar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"gp1": {
+					"type": "groupBox",
+					"top": 269,
+					"left": 7,
+					"width": 369,
+					"height": 63,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Seleccione el período a consultar en el informe"
+				},
+				"gp3": {
+					"type": "input",
+					"top": 298,
+					"left": 74,
+					"width": 101,
+					"height": 14,
+					"dataSource": "vt_Fecha1",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9##/##/####",
+					"method": "ObjectMethods/gp3.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"gp4": {
+					"type": "pictureButton",
+					"top": 296,
+					"left": 176,
+					"width": 17,
+					"height": 16,
+					"dataSource": "bCalendar1",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/gp4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"gp5": {
+					"type": "text",
+					"top": 297,
+					"left": 196,
+					"width": 41,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Hasta el"
+				},
+				"gp6": {
+					"type": "input",
+					"top": 298,
+					"left": 241,
+					"width": 101,
+					"height": 14,
+					"dataSource": "vt_Fecha2",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9##/##/####",
+					"method": "ObjectMethods/gp6.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"gp7": {
+					"type": "pictureButton",
+					"top": 297,
+					"left": 344,
+					"width": 17,
+					"height": 16,
+					"dataSource": "bCalendar2",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/gp7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"gp2": {
+					"type": "text",
+					"top": 298,
+					"left": 27,
+					"width": 41,
+					"height": 14,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Desde el"
+				},
+				"gk2": {
+					"type": "input",
+					"top": 155,
+					"left": 662,
+					"width": 101,
+					"height": 14,
+					"dataSource": "vt_Fecha1",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9##/##/####",
+					"method": "ObjectMethods/gk2.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"gk3": {
+					"type": "pictureButton",
+					"top": 154,
+					"left": 768,
+					"width": 17,
+					"height": 16,
+					"dataSource": "bCalendar1",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/gk3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"gk1": {
+					"type": "groupBox",
+					"top": 141,
+					"left": 466,
+					"width": 346,
+					"height": 36,
+					"fontFamily": "Lucida Grande Bold",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"text": "Fecha para el Reporte"
+				}
+			}
+		}
+	]
+}

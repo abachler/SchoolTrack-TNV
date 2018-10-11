@@ -1,0 +1,280 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Forms",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Rectángulo1",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 286,
+					"height": 181,
+					"fill": "#FFF0DF",
+					"stroke": "#FFF0DF"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 9,
+					"left": 0,
+					"width": 286,
+					"height": 23,
+					"textAlign": "center",
+					"styleSheet": "XS_DialogsTitles",
+					"text": "Aplicar Montos"
+				},
+				"bCancelar": {
+					"type": "button",
+					"top": 152,
+					"left": 217,
+					"width": 60,
+					"height": 18,
+					"dataSource": "bCancelar",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"vr_montoFijo": {
+					"type": "input",
+					"top": 43,
+					"left": 154,
+					"width": 31,
+					"height": 17,
+					"dataSource": "vr_montoFijo",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vr_montoFijo.4dm",
+					"events": [
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"vr_montoPct": {
+					"type": "input",
+					"top": 63,
+					"left": 154,
+					"width": 31,
+					"height": 17,
+					"dataSource": "vr_montoPct",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vr_montoPct.4dm",
+					"events": [
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"cs_Fijo": {
+					"type": "checkbox",
+					"top": 45,
+					"left": 219,
+					"width": 59,
+					"height": 15,
+					"dataSource": "cs_Fijo",
+					"text": "Aplicar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"cs_Pct": {
+					"type": "checkbox",
+					"top": 65,
+					"left": 219,
+					"width": 59,
+					"height": 15,
+					"dataSource": "cs_Pct",
+					"text": "Aplicar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón de opción1": {
+					"type": "radio",
+					"top": 112,
+					"left": 20,
+					"width": 214,
+					"height": 16,
+					"dataSource": "btn_todas",
+					"text": "Toda la lista",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón de opción2": {
+					"type": "radio",
+					"top": 130,
+					"left": 20,
+					"width": 234,
+					"height": 16,
+					"dataSource": "btn_seleccionadas",
+					"text": "Los registros seleccionados",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 45,
+					"left": 20,
+					"width": 130,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Pactado fijo:"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 152,
+					"left": 152,
+					"width": 58,
+					"height": 14,
+					"stroke": "#0000FF",
+					"textAlign": "center",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Aceptar"
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 152,
+					"left": 217,
+					"width": 58,
+					"height": 14,
+					"stroke": "#0000FF",
+					"textAlign": "center",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Cancelar"
+				},
+				"bAceptar": {
+					"type": "button",
+					"top": 152,
+					"left": 152,
+					"width": 60,
+					"height": 18,
+					"dataSource": "bAceptar",
+					"action": "accept",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"vt_lista": {
+					"type": "input",
+					"top": 112,
+					"left": 178,
+					"width": 86,
+					"height": 17,
+					"dataSource": "vt_lista",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vt_seleccionado": {
+					"type": "input",
+					"top": 130,
+					"left": 178,
+					"width": 86,
+					"height": 17,
+					"dataSource": "vt_seleccionado",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 65,
+					"left": 20,
+					"width": 130,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Pactado porcentaje:"
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 65,
+					"left": 187,
+					"width": 15,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "%"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 90,
+					"left": 13,
+					"width": 130,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Aplicar pactado a:"
+				}
+			}
+		}
+	]
+}

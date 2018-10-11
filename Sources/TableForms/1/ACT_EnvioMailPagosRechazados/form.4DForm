@@ -1,0 +1,521 @@
+﻿{
+	"formSizeAnchor": "btn_cerrar",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"vtACTepr_Asunto": {
+					"type": "input",
+					"top": 65,
+					"left": 157,
+					"width": 226,
+					"height": 14,
+					"dataSource": "vtACTepr_Asunto",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vtACTepr_ResponderA": {
+					"type": "input",
+					"top": 65,
+					"left": 508,
+					"width": 258,
+					"height": 14,
+					"dataSource": "vtACTepr_ResponderA",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vtACTepr_ResponderA.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vtACTepr_CopiaOculta": {
+					"type": "input",
+					"top": 90,
+					"left": 157,
+					"width": 226,
+					"height": 14,
+					"dataSource": "vtACTepr_CopiaOculta",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vtACTepr_CopiaOculta.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vtACTepr_Cuerpo": {
+					"type": "input",
+					"top": 134,
+					"left": 20,
+					"width": 360,
+					"height": 137,
+					"dataSource": "vtACTepr_Cuerpo",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"lb_ACTecc_Palabras": {
+					"type": "listbox",
+					"top": 134,
+					"left": 413,
+					"width": 353,
+					"height": 137,
+					"dataSource": "lb_ACTecc_Palabras",
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"alternateFill": "#F3F6FA",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"columns": [
+						{
+							"name": "Columna1",
+							"dataSource": "atACTepr_Palabra",
+							"width": 170,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#F3F6FA",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título1",
+								"text": "Variable",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Columna5",
+							"dataSource": "atACTepr_Descripción",
+							"width": 176,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#F3F6FA",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título5",
+								"text": "Contenido de la Variable",
+								"dataSource": "Título5",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"lb_ACTepr_Apoderados": {
+					"type": "listbox",
+					"top": 347,
+					"left": 20,
+					"width": 744,
+					"height": 122,
+					"dataSource": "lb_ACTepr_Apoderados",
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"alternateFill": "#F3F6FA",
+					"rowStrokeSource": "alACTepr_Colores",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"columns": [
+						{
+							"name": "Columna7",
+							"dataSource": "abACTepr_Enviar",
+							"width": 41,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "checkbox",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#F3F6FA",
+							"textAlign": "center",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Columna7.4dm",
+							"header": {
+								"name": "Título7",
+								"text": "Enviar",
+								"dataSource": "Título7",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Columna2",
+							"dataSource": "atACTepr_ApoderadoNombre",
+							"width": 257,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#F3F6FA",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título2",
+								"text": "Apoderado",
+								"dataSource": "Título2",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Columna3",
+							"dataSource": "atACTepr_ApoderadoModoPago",
+							"width": 122,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#F3F6FA",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título3",
+								"text": "Modo de Pago",
+								"dataSource": "Título3",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Columna4",
+							"dataSource": "arACTepr_ApoderadoMontoRechaza",
+							"width": 113,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"numberFormat": "|Despliegue_ACT_Pagos",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#F3F6FA",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título4",
+								"text": "Monto Rechazado",
+								"dataSource": "Título4",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Columna6",
+							"dataSource": "atACTepr_EmailApoderado",
+							"width": 194,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#F3F6FA",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Columna6.4dm",
+							"header": {
+								"name": "Título6",
+								"text": "eMail",
+								"dataSource": "Título6",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"btn_enviar": {
+					"type": "button",
+					"top": 491,
+					"left": 500,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btn_enviar",
+					"text": "Enviar…",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/btn_enviar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn_guardar": {
+					"type": "button",
+					"top": 491,
+					"left": 592,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btn_guardar",
+					"action": "cancel",
+					"text": "Guardar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/btn_guardar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn_cerrar": {
+					"type": "button",
+					"top": 491,
+					"left": 684,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btn_cerrar",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 65,
+					"left": 20,
+					"width": 130,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Asunto del correo:"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 116,
+					"left": 20,
+					"width": 133,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Cuerpo del correo:"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 65,
+					"left": 411,
+					"width": 110,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Responder a:"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 90,
+					"left": 20,
+					"width": 130,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Enviar copia oculta a:"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 116,
+					"left": 411,
+					"width": 359,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Variables disponibles para ser usadas en el cuerpo del correo:"
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 322,
+					"left": 25,
+					"width": 339,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Apoderados a quienes se les enviará el correo electrónico"
+				},
+				"Texto9": {
+					"type": "text",
+					"top": 12,
+					"left": 17,
+					"width": 754,
+					"height": 23,
+					"textAlign": "center",
+					"styleSheet": "XS_DialogsTitles",
+					"text": "Enviar Información de pagos rechazados."
+				},
+				"Texto11": {
+					"type": "text",
+					"top": 116,
+					"left": 308,
+					"width": 73,
+					"height": 14,
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Vista previa"
+				},
+				"Botón invisible": {
+					"type": "button",
+					"top": 115,
+					"left": 311,
+					"width": 70,
+					"height": 17,
+					"dataSource": "Botón invisible",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Línea": {
+					"type": "line",
+					"top": 287,
+					"left": 20,
+					"width": 754,
+					"height": 1
+				},
+				"Texto12": {
+					"type": "text",
+					"top": 491,
+					"left": 24,
+					"width": 459,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Apoderados en rojo no tienen un mail válido ingresado."
+				}
+			}
+		}
+	]
+}

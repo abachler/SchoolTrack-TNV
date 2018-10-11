@@ -1,0 +1,251 @@
+﻿{
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 116,
+	"markerBody": 235,
+	"markerBreak": 262,
+	"markerFooter": 333,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texto4": {
+					"type": "text",
+					"top": 235,
+					"left": 20,
+					"width": 357,
+					"height": 14,
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "TOTAL EMITIDO"
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 286,
+					"left": 0,
+					"width": 576,
+					"height": 14,
+					"dataSource": "sPage",
+					"fill": "transparent",
+					"textAlign": "center",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 312,
+					"left": 13,
+					"width": 563,
+					"height": 14,
+					"dataSource": "sPrintDate",
+					"fill": "transparent",
+					"textAlign": "left",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Área de plug-in1": {
+					"type": "plugin",
+					"top": 151,
+					"left": 20,
+					"width": 536,
+					"height": 75,
+					"dataSource": "xPLP_Fact",
+					"pluginAreaKind": "%PrntListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Área de plug-in1.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 122,
+					"left": 13,
+					"width": 522,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Las glosas que comienzan con (*) corresponden a cargos que ya no tienen una definición de ítem de cargo."
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 235,
+					"left": 379,
+					"width": 177,
+					"height": 14,
+					"dataSource": "vrACT_TotalEmitido",
+					"fill": "transparent",
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Despliegue_ACT"
+					},
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 13,
+					"left": 13,
+					"width": 100,
+					"height": 100,
+					"dataSource": "vLogo",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"pictureFormat": "proportionalTopLeft",
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto18": {
+					"type": "text",
+					"top": 19,
+					"left": 134,
+					"width": 422,
+					"height": 22,
+					"textAlign": "left",
+					"styleSheet": "XS_ReportTitle_18",
+					"fontWeight": "bold",
+					"text": "Informe de Emisión"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 92,
+					"left": 131,
+					"width": 425,
+					"height": 14,
+					"dataSource": "vtACT_Periodo",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable11": {
+					"type": "input",
+					"top": 47,
+					"left": 131,
+					"width": 425,
+					"height": 21,
+					"dataSource": "<>gCustom",
+					"fill": "transparent",
+					"styleSheet": "XS_ReportSubtitle_14",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 72,
+					"left": 131,
+					"width": 425,
+					"height": 14,
+					"dataSource": "vtACT_RazonSocial",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

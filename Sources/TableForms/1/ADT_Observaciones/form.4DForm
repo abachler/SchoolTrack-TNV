@@ -1,0 +1,126 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onUnload",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"xALP_Observaciones": {
+					"type": "plugin",
+					"top": 40,
+					"left": 0,
+					"width": 445,
+					"height": 228,
+					"dataSource": "xALP_Observaciones",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/xALP_Observaciones.4dm",
+					"events": [
+						"onClick",
+						"onPluginArea"
+					]
+				},
+				"Variable4": {
+					"type": "pictureButton",
+					"top": 13,
+					"left": 412,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bAddObs",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "pictureButton",
+					"top": 13,
+					"left": 388,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bDelObs",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto": {
+					"type": "text",
+					"top": 8,
+					"left": 10,
+					"width": 210,
+					"height": 23,
+					"styleSheet": "XS_DialogsTitles"
+				},
+				"cb_mostrarUsuario": {
+					"type": "checkbox",
+					"top": 239,
+					"left": 338,
+					"width": 97,
+					"height": 16,
+					"dataSource": "cb_mostrarUsuario",
+					"text": "Mostrar Usuario",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/cb_mostrarUsuario.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

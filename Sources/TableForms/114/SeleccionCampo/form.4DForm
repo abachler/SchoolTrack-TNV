@@ -1,0 +1,177 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Variable4",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Rectángulo": {
+					"type": "rectangle",
+					"top": 0,
+					"left": -1,
+					"width": 425,
+					"height": 232,
+					"stroke": "#FFFFFF"
+				},
+				"barra": {
+					"type": "rectangle",
+					"top": 174,
+					"left": 0,
+					"width": 425,
+					"height": 59,
+					"fill": "#DDDDDD"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 229,
+					"height": 17,
+					"stroke": "#777777",
+					"styleSheet": "Medium - 14",
+					"text": "Selecciona el archivo y el campo:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 69,
+					"left": 36,
+					"width": 52,
+					"height": 15,
+					"stroke": "#000000",
+					"styleSheet": "Plain - 13",
+					"text": "Tabla:"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 104,
+					"left": 36,
+					"width": 52,
+					"height": 15,
+					"stroke": "#000000",
+					"styleSheet": "Plain - 13",
+					"text": "Campo:"
+				},
+				"Variable1": {
+					"type": "dropdown",
+					"top": 68,
+					"left": 130,
+					"width": 275,
+					"height": 18,
+					"dataSource": "aTableNames",
+					"tooltip": "Sin título",
+					"styleSheet": "Plain - 13",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "dropdown",
+					"top": 103,
+					"left": 130,
+					"width": 274,
+					"height": 19,
+					"dataSource": "aFieldNames",
+					"tooltip": "Sin título",
+					"styleSheet": "Plain - 13",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 194,
+					"left": 213,
+					"width": 97,
+					"height": 19,
+					"dataSource": "bCancel",
+					"tooltip": "Sin título1",
+					"action": "cancel",
+					"text": "Cancelar",
+					"styleSheet": "Plain - 13",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 194,
+					"left": 317,
+					"width": 97,
+					"height": 19,
+					"dataSource": "bOK",
+					"tooltip": "Sin título1",
+					"action": "accept",
+					"text": "Seleccionar",
+					"styleSheet": "Plain - 13",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,1 @@
+CD_Dlog (0;__ ("Estas informaciones solo pueden ser modificadas por los administradores de SchoolTrack en el colegio."))

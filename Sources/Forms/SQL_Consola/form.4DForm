@@ -1,0 +1,169 @@
+﻿{
+	"windowSizingX": "fixed",
+	"formSizeAnchor": "lbSQL",
+	"rightMargin": 0,
+	"bottomMargin": 30,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pages": [
+		{
+			"objects": {
+				"bPG1": {
+					"type": "button",
+					"top": 4,
+					"left": 151,
+					"width": 150,
+					"height": 20,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "Postgres",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"events": [
+						"onClick"
+					]
+				},
+				"b4D1": {
+					"type": "button",
+					"top": 4,
+					"left": 0,
+					"width": 150,
+					"height": 20,
+					"fontFamily": "System Font Regular",
+					"fontSize": 13,
+					"text": "4D SQL",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"events": [
+						"onClick"
+					]
+				},
+				"lbSQL": {
+					"type": "listbox",
+					"top": 197,
+					"left": 0,
+					"width": 1167,
+					"height": 573,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "lbSQL",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"method": "ObjectMethods/lbSQL.4dm",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onAfterSort",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": []
+				},
+				"Botón": {
+					"type": "button",
+					"top": 5,
+					"left": 1042,
+					"width": 111,
+					"height": 21,
+					"dataSource": "Botón",
+					"shortcutKey": "[F5]",
+					"text": "Ejecutar",
+					"styleSheet": "Plain - 13",
+					"method": "ObjectMethods/Botón.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"sentencia": {
+					"type": "input",
+					"top": 37,
+					"left": 0,
+					"width": 1165,
+					"height": 159,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"hideFocusRing": true,
+					"showSelection": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Separador": {
+					"type": "splitter",
+					"top": 195,
+					"left": -3,
+					"width": 1175,
+					"height": 1,
+					"dataSource": "Separador",
+					"events": [
+						"onClick"
+					]
+				},
+				"filas": {
+					"type": "text",
+					"top": 777,
+					"left": 799,
+					"width": 103,
+					"height": 14,
+					"sizingX": "move",
+					"sizingY": "move",
+					"textAlign": "right",
+					"styleSheet": "Plain - 11",
+					"text": "filas"
+				},
+				"ms": {
+					"type": "text",
+					"top": 777,
+					"left": 970,
+					"width": 183,
+					"height": 14,
+					"sizingX": "move",
+					"sizingY": "move",
+					"textAlign": "right",
+					"styleSheet": "Plain - 11",
+					"text": "ms"
+				},
+				"columnas": {
+					"type": "text",
+					"top": 777,
+					"left": 666,
+					"width": 103,
+					"height": 14,
+					"sizingX": "move",
+					"sizingY": "move",
+					"textAlign": "right",
+					"styleSheet": "Plain - 11",
+					"text": "columnas"
+				}
+			}
+		},
+		null
+	]
+}

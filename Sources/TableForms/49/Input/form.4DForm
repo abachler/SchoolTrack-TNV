@@ -1,0 +1,4327 @@
+﻿{
+	"inheritedForm": "XS_MASTER_InputForms",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "hlTab_ADT_Postulantes",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onUnload",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"hlTab_ADT_Postulantes": {
+					"type": "tab",
+					"top": 29,
+					"left": 0,
+					"width": 792,
+					"height": 492,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "hlTab_ADT_Postulantes",
+					"dataSourceTypeHint": "arrayText",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/hlTab_ADT_Postulantes.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable6338": {
+					"type": "button",
+					"top": 532,
+					"left": 0,
+					"width": 74,
+					"height": 21,
+					"dataSource": "bClose",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Field59": {
+					"type": "input",
+					"top": 502,
+					"left": 57,
+					"width": 61,
+					"height": 11,
+					"dataSource": "[ADT_Candidatos:49]Fecha_de_Inscripción:2",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 502,
+					"left": 155,
+					"width": 170,
+					"height": 11,
+					"dataSource": "[ADT_Candidatos:49]Inscriptor:3",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text38": {
+					"type": "text",
+					"top": 502,
+					"left": 12,
+					"width": 49,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Inscrito el:"
+				},
+				"Text3239": {
+					"type": "text",
+					"top": 502,
+					"left": 134,
+					"width": 22,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "por:"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 57,
+					"left": 13,
+					"width": 764,
+					"height": 105,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Candidato"
+				},
+				"Champ7": {
+					"type": "input",
+					"top": 77,
+					"left": 73,
+					"width": 187,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos:2]Apellido_paterno:3",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Champ7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Champ8": {
+					"type": "input",
+					"top": 77,
+					"left": 269,
+					"width": 187,
+					"height": 11,
+					"sizingX": "move",
+					"dataSource": "[Alumnos:2]Apellido_materno:4",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Champ8.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Champ9": {
+					"type": "input",
+					"top": 77,
+					"left": 507,
+					"width": 195,
+					"height": 11,
+					"sizingX": "move",
+					"dataSource": "[Alumnos:2]Nombres:2",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Champ9.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Champ10": {
+					"type": "input",
+					"top": 77,
+					"left": 755,
+					"width": 15,
+					"height": 11,
+					"sizingX": "move",
+					"dataSource": "[Alumnos:2]Sexo:49",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "~\"m;f;M;F\"",
+					"method": "ObjectMethods/Champ10.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"popmother(1)": {
+					"type": "picture",
+					"top": 312,
+					"left": 191,
+					"width": 11,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"popfather(1)": {
+					"type": "picture",
+					"top": 314,
+					"left": 576,
+					"width": 11,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Familypop(1)": {
+					"type": "picture",
+					"top": 175,
+					"left": 554,
+					"width": 11,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"nacion": {
+					"type": "picture",
+					"top": 96,
+					"left": 571,
+					"width": 11,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Picture1939": {
+					"type": "picture",
+					"top": 97,
+					"left": 760,
+					"width": 11,
+					"height": 14,
+					"sizingX": "move",
+					"pictureFormat": "scaled"
+				},
+				"Group Box2": {
+					"type": "groupBox",
+					"top": 160,
+					"left": 13,
+					"width": 764,
+					"height": 74,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Familia"
+				},
+				"Group Box3": {
+					"type": "groupBox",
+					"top": 236,
+					"left": 13,
+					"width": 377,
+					"height": 119,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Madre"
+				},
+				"Group Box17": {
+					"type": "groupBox",
+					"top": 236,
+					"left": 400,
+					"width": 377,
+					"height": 119,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Padre"
+				},
+				"Variable43": {
+					"type": "pictureButton",
+					"top": 332,
+					"left": 755,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bDetailFather",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable43.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"curso1": {
+					"type": "picture",
+					"top": 549,
+					"left": 719,
+					"width": 11,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 556,
+					"left": 184,
+					"width": 45,
+					"height": 11,
+					"sizingX": "move",
+					"styleSheet": "XS_FormObjects",
+					"text": ":21002,133"
+				},
+				"Champ11": {
+					"type": "input",
+					"top": 99,
+					"left": 75,
+					"width": 67,
+					"height": 11,
+					"dataSource": "[Alumnos:2]Fecha_de_nacimiento:7",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Champ11.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"IDd": {
+					"type": "input",
+					"top": 99,
+					"left": 218,
+					"width": 71,
+					"height": 11,
+					"sizingX": "move",
+					"dataSource": "[Alumnos:2]NoPasaporte:87",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"IDb1": {
+					"type": "input",
+					"top": 99,
+					"left": 218,
+					"width": 71,
+					"height": 11,
+					"sizingX": "move",
+					"dataSource": "[Alumnos:2]IDNacional_2:71",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"IDc1": {
+					"type": "input",
+					"top": 99,
+					"left": 218,
+					"width": 71,
+					"height": 11,
+					"sizingX": "move",
+					"dataSource": "[Alumnos:2]IDNacional_3:70",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"IDa1": {
+					"type": "input",
+					"top": 99,
+					"left": 228,
+					"width": 101,
+					"height": 11,
+					"sizingX": "move",
+					"dataSource": "[Alumnos:2]RUT:5",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/IDa1.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Champ1673": {
+					"type": "input",
+					"top": 99,
+					"left": 405,
+					"width": 159,
+					"height": 11,
+					"sizingX": "move",
+					"dataSource": "[Alumnos:2]Nacionalidad:8",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Champ1673.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"Variable2942": {
+					"type": "dropdown",
+					"top": 97,
+					"left": 570,
+					"width": 14,
+					"height": 15,
+					"sizingX": "move",
+					"dataSource": "<>aNacion",
+					"focusable": false,
+					"display": false,
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Variable2942.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Champ14": {
+					"type": "input",
+					"top": 99,
+					"left": 639,
+					"width": 115,
+					"height": 11,
+					"sizingX": "move",
+					"dataSource": "[Alumnos:2]Religion:9",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Champ14.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"Variable9": {
+					"type": "dropdown",
+					"top": 97,
+					"left": 759,
+					"width": 14,
+					"height": 15,
+					"sizingX": "move",
+					"dataSource": "<>aReligion",
+					"focusable": false,
+					"display": false,
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Variable9.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Field3815": {
+					"type": "input",
+					"top": 121,
+					"left": 26,
+					"width": 196,
+					"height": 16,
+					"dataSource": "[ADT_Candidatos:49]Mellizo_de_otro_postulante:40",
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"textFormat": "Tiene hermano mellizo postulando",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Field3815.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 121,
+					"left": 218,
+					"width": 76,
+					"height": 16,
+					"dataSource": "[ADT_Candidatos:49]Postulante:43",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "Postulante",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Field5.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 123,
+					"left": 426,
+					"width": 112,
+					"height": 11,
+					"dataSource": "vt_Grupo",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"choicesFamilia": {
+					"type": "dropdown",
+					"top": 121,
+					"left": 542,
+					"width": 11,
+					"height": 17,
+					"dataSource": "<>aColor",
+					"display": false,
+					"styleSheet": "Defaut",
+					"method": "ObjectMethods/choicesFamilia.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable": {
+					"type": "input",
+					"top": 145,
+					"left": 258,
+					"width": 161,
+					"height": 11,
+					"dataSource": "v_certificado",
+					"styleSheet": "XS_FormObjects",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field9": {
+					"type": "input",
+					"top": 143,
+					"left": 485,
+					"width": 102,
+					"height": 13,
+					"dataSource": "[ADT_Candidatos:49]Candidato_Obsoleto:67",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"textFormat": "Candidato obsoleto",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Family": {
+					"type": "input",
+					"top": 177,
+					"left": 72,
+					"width": 249,
+					"height": 11,
+					"dataSource": "[Familia:78]Nombre_de_la_familia:3",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Family.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onAfterKeystroke"
+					]
+				},
+				"Family1": {
+					"type": "input",
+					"top": 176,
+					"left": 386,
+					"width": 160,
+					"height": 11,
+					"dataSource": "[Familia:78]Sit_Familiar:11",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Family1.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange"
+					]
+				},
+				"Variable3744": {
+					"type": "dropdown",
+					"top": 175,
+					"left": 553,
+					"width": 14,
+					"height": 15,
+					"dataSource": "<>aFamSit",
+					"display": false,
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Variable3744.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Family6": {
+					"type": "input",
+					"top": 176,
+					"left": 638,
+					"width": 132,
+					"height": 11,
+					"dataSource": "[Familia:78]Telefono:10",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Family2": {
+					"type": "input",
+					"top": 193,
+					"left": 71,
+					"width": 250,
+					"height": 11,
+					"dataSource": "[Familia:78]Dirección:7",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Family2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Family4": {
+					"type": "input",
+					"top": 193,
+					"left": 385,
+					"width": 160,
+					"height": 11,
+					"dataSource": "[Familia:78]Comuna:8",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Family4.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"Familypop5": {
+					"type": "dropdown",
+					"top": 190,
+					"left": 550,
+					"width": 17,
+					"height": 15,
+					"dataSource": "<>aComuna",
+					"display": false,
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Familypop5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Family3": {
+					"type": "input",
+					"top": 196,
+					"left": 638,
+					"width": 132,
+					"height": 11,
+					"dataSource": "[Familia:78]Region_o_estado:34",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Family3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo3": {
+					"type": "input",
+					"top": 214,
+					"left": 26,
+					"width": 116,
+					"height": 12,
+					"dataSource": "[Familia:78]Matrimonio_Religioso:38",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"textFormat": "Matrimonio Religioso",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Campo3.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"matrireligioso": {
+					"type": "input",
+					"top": 214,
+					"left": 155,
+					"width": 91,
+					"height": 11,
+					"dataSource": "[Familia:78]Fecha_Matrimonio_Religioso:39",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"focusable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/matrireligioso.4dm",
+					"events": [
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo4": {
+					"type": "input",
+					"top": 215,
+					"left": 291,
+					"width": 91,
+					"height": 11,
+					"dataSource": "[Familia:78]Matrimonio_Civil:36",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"textFormat": "Matrimonio Civil",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Campo4.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"matricivil": {
+					"type": "input",
+					"top": 215,
+					"left": 391,
+					"width": 91,
+					"height": 11,
+					"dataSource": "[Familia:78]Fecha_Matrimonio_Civil:37",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"focusable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/matricivil.4dm",
+					"events": [
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"buttonFamilia": {
+					"type": "button",
+					"top": 211,
+					"left": 650,
+					"width": 120,
+					"height": 18,
+					"dataSource": "bChangeFamily",
+					"text": "Cambiar a otra familia",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/buttonFamilia.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"mother1": {
+					"type": "input",
+					"top": 261,
+					"left": 77,
+					"width": 150,
+					"height": 11,
+					"dataSource": "vsPST_aPaternoMOTHER",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/mother1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"mother2": {
+					"type": "input",
+					"top": 261,
+					"left": 232,
+					"width": 151,
+					"height": 11,
+					"dataSource": "vsPST_aMaternoMOTHER",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/mother2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"mother3": {
+					"type": "input",
+					"top": 278,
+					"left": 78,
+					"width": 110,
+					"height": 11,
+					"dataSource": "vsPST_NombresMOTHER",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/mother3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"mother4": {
+					"type": "input",
+					"top": 278,
+					"left": 282,
+					"width": 101,
+					"height": 11,
+					"dataSource": "vsPST_TelPersMOTHER",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/mother4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"mother5": {
+					"type": "input",
+					"top": 296,
+					"left": 78,
+					"width": 110,
+					"height": 11,
+					"dataSource": "vdPST_fNacMOTHER",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/mother5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"mother6": {
+					"type": "input",
+					"top": 296,
+					"left": 282,
+					"width": 101,
+					"height": 11,
+					"dataSource": "vsPST_TelProMOTHER",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/mother6.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"mother7": {
+					"type": "input",
+					"top": 315,
+					"left": 78,
+					"width": 110,
+					"height": 11,
+					"dataSource": "vsPST_ProfesionMOTHER",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/mother7.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange"
+					]
+				},
+				"motherPas": {
+					"type": "input",
+					"top": 315,
+					"left": 282,
+					"width": 83,
+					"height": 11,
+					"dataSource": "vsPST_PasMOTHER",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": "###.###.###-#",
+					"method": "ObjectMethods/motherPas.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"popmother": {
+					"type": "dropdown",
+					"top": 312,
+					"left": 190,
+					"width": 14,
+					"height": 15,
+					"dataSource": "<>aProfesion",
+					"display": false,
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/popmother.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"motherRUT": {
+					"type": "input",
+					"top": 315,
+					"left": 282,
+					"width": 101,
+					"height": 11,
+					"dataSource": "vsPST_RUTMOTHER",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/motherRUT.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"fatherRUT": {
+					"type": "input",
+					"top": 315,
+					"left": 668,
+					"width": 102,
+					"height": 11,
+					"dataSource": "vsPST_RUTFATHER",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/fatherRUT.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"motherIDDos": {
+					"type": "input",
+					"top": 315,
+					"left": 282,
+					"width": 83,
+					"height": 11,
+					"dataSource": "vsPST_IDN2MOTHER",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": "###.###.###-#",
+					"method": "ObjectMethods/motherIDDos.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"motherIDTres": {
+					"type": "input",
+					"top": 315,
+					"left": 282,
+					"width": 83,
+					"height": 11,
+					"dataSource": "vsPST_IDN3MOTHER",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": "###.###.###-#",
+					"method": "ObjectMethods/motherIDTres.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"mother": {
+					"type": "checkbox",
+					"top": 335,
+					"left": 27,
+					"width": 67,
+					"height": 15,
+					"dataSource": "viPST_exMOTHER",
+					"text": "Ex-alumna",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/mother.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"mother8": {
+					"type": "checkbox",
+					"top": 335,
+					"left": 93,
+					"width": 120,
+					"height": 15,
+					"dataSource": "viPST_MotherAC",
+					"text": "Apoderado de Cuentas",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/mother8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"mother9": {
+					"type": "checkbox",
+					"top": 335,
+					"left": 222,
+					"width": 120,
+					"height": 15,
+					"dataSource": "viPST_MotherAA",
+					"text": "Apoderado Académico",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/mother9.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"father1": {
+					"type": "input",
+					"top": 261,
+					"left": 463,
+					"width": 150,
+					"height": 11,
+					"dataSource": "vsPST_aPaternoFATHER",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/father1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"father2": {
+					"type": "input",
+					"top": 261,
+					"left": 618,
+					"width": 152,
+					"height": 11,
+					"dataSource": "vsPST_aMaternoFATHER",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/father2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"father3": {
+					"type": "input",
+					"top": 278,
+					"left": 463,
+					"width": 110,
+					"height": 11,
+					"dataSource": "vsPST_NombresFATHER",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/father3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"father4": {
+					"type": "input",
+					"top": 278,
+					"left": 668,
+					"width": 102,
+					"height": 11,
+					"dataSource": "vsPST_TelPersFATHER",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/father4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"father5": {
+					"type": "input",
+					"top": 296,
+					"left": 463,
+					"width": 110,
+					"height": 11,
+					"dataSource": "vdPST_fNacFATHER",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/father5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"father6": {
+					"type": "input",
+					"top": 296,
+					"left": 668,
+					"width": 102,
+					"height": 11,
+					"dataSource": "vsPST_TelProFATHER",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/father6.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"father7": {
+					"type": "input",
+					"top": 315,
+					"left": 463,
+					"width": 110,
+					"height": 11,
+					"dataSource": "vsPST_ProfesionFATHER",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/father7.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange"
+					]
+				},
+				"popfather": {
+					"type": "dropdown",
+					"top": 313,
+					"left": 577,
+					"width": 14,
+					"height": 15,
+					"dataSource": "<>aProfesion",
+					"display": false,
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/popfather.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"fatherIDTres": {
+					"type": "input",
+					"top": 315,
+					"left": 668,
+					"width": 83,
+					"height": 11,
+					"dataSource": "vsPST_IDN3FATHER",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": "###.###.###-#",
+					"method": "ObjectMethods/fatherIDTres.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"fatherPas": {
+					"type": "input",
+					"top": 315,
+					"left": 668,
+					"width": 83,
+					"height": 11,
+					"dataSource": "vsPST_PasFATHER",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": "###.###.###-#",
+					"method": "ObjectMethods/fatherPas.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"fatherIDDos": {
+					"type": "input",
+					"top": 315,
+					"left": 668,
+					"width": 83,
+					"height": 11,
+					"dataSource": "vsPST_IDN2FATHER",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": "###.###.###-#",
+					"method": "ObjectMethods/fatherIDDos.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"father": {
+					"type": "checkbox",
+					"top": 335,
+					"left": 414,
+					"width": 61,
+					"height": 15,
+					"dataSource": "viPST_exFather",
+					"text": "Ex-alumno",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/father.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"father8": {
+					"type": "checkbox",
+					"top": 335,
+					"left": 480,
+					"width": 119,
+					"height": 15,
+					"dataSource": "viPST_FatherAC",
+					"text": "Apoderado de Cuentas",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/father8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"father9": {
+					"type": "checkbox",
+					"top": 335,
+					"left": 605,
+					"width": 119,
+					"height": 15,
+					"dataSource": "viPST_FatherAA",
+					"text": "Apoderado Académico",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/father9.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable3549": {
+					"type": "plugin",
+					"top": 382,
+					"left": 26,
+					"width": 281,
+					"height": 82,
+					"dataSource": "xALP_Connexions",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Variable3549.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable36": {
+					"type": "plugin",
+					"top": 382,
+					"left": 358,
+					"width": 297,
+					"height": 83,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "xALP_UFields",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo81": {
+					"type": "input",
+					"top": 380,
+					"left": 685,
+					"width": 85,
+					"height": 85,
+					"dataSource": "[Alumnos:2]Fotografía:78",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onGettingFocus",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field2752": {
+					"type": "input",
+					"top": 481,
+					"left": 13,
+					"width": 119,
+					"height": 13,
+					"dataSource": "[ADT_Candidatos:49]Resultados_comunicados:36",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"textFormat": "Resultados comunicados",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Field2752.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Popup/Lista desplegable1": {
+					"type": "dropdown",
+					"top": 478,
+					"left": 206,
+					"width": 135,
+					"height": 18,
+					"dataSource": "atADT_NivName",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Popup%2FLista desplegable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"fatherIDDos1": {
+					"type": "text",
+					"top": 315,
+					"left": 595,
+					"width": 54,
+					"height": 11,
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"textDecoration": "underline",
+					"text": "<?[Personas]IDNAcional_2>:"
+				},
+				"fatherIDTres1": {
+					"type": "text",
+					"top": 315,
+					"left": 595,
+					"width": 54,
+					"height": 11,
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"textDecoration": "underline",
+					"text": "<?[Personas]IDNacional_3>:"
+				},
+				"fatherPas1": {
+					"type": "text",
+					"top": 315,
+					"left": 595,
+					"width": 64,
+					"height": 11,
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"textDecoration": "underline",
+					"text": "<?[Personas]Pasaporte>:"
+				},
+				"fatherRUT1": {
+					"type": "text",
+					"top": 315,
+					"left": 595,
+					"width": 64,
+					"height": 11,
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"textDecoration": "underline",
+					"text": "<?[Personas]RUT>:"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 261,
+					"left": 413,
+					"width": 48,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Apellidos:"
+				},
+				"Text21": {
+					"type": "text",
+					"top": 278,
+					"left": 413,
+					"width": 47,
+					"height": 11,
+					"sizingX": "move",
+					"styleSheet": "XS_FormObjects",
+					"text": "Nombres:"
+				},
+				"Text22": {
+					"type": "text",
+					"top": 296,
+					"left": 413,
+					"width": 47,
+					"height": 11,
+					"sizingX": "move",
+					"styleSheet": "XS_FormObjects",
+					"text": "Nacido el:"
+				},
+				"Text23": {
+					"type": "text",
+					"top": 315,
+					"left": 413,
+					"width": 47,
+					"height": 11,
+					"sizingX": "move",
+					"styleSheet": "XS_FormObjects",
+					"text": "Profesión:"
+				},
+				"Variable2330": {
+					"type": "pictureButton",
+					"top": 331,
+					"left": 736,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bDelFather",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable2330.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texte5": {
+					"type": "text",
+					"top": 278,
+					"left": 573,
+					"width": 93,
+					"height": 11,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"text": "Teléfono Particular:"
+				},
+				"Texte4": {
+					"type": "text",
+					"top": 296,
+					"left": 573,
+					"width": 93,
+					"height": 11,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"text": "Teléfono Profesional:"
+				},
+				"Variable2329": {
+					"type": "pictureButton",
+					"top": 331,
+					"left": 349,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bDelMother",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable2329.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 278,
+					"left": 188,
+					"width": 92,
+					"height": 11,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"text": "Teléfono Particular:"
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 296,
+					"left": 188,
+					"width": 92,
+					"height": 11,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"text": "Teléfono Profesional:"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 261,
+					"left": 26,
+					"width": 43,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Apellidos:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 278,
+					"left": 26,
+					"width": 45,
+					"height": 11,
+					"sizingX": "move",
+					"styleSheet": "XS_FormObjects",
+					"text": "Nombres:"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 296,
+					"left": 26,
+					"width": 45,
+					"height": 11,
+					"sizingX": "move",
+					"styleSheet": "XS_FormObjects",
+					"text": "Nacida el:"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 315,
+					"left": 26,
+					"width": 45,
+					"height": 11,
+					"sizingX": "move",
+					"styleSheet": "XS_FormObjects",
+					"text": "Profesión:"
+				},
+				"Texte98": {
+					"type": "text",
+					"top": 193,
+					"left": 25,
+					"width": 46,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Dirección:"
+				},
+				"Texte99": {
+					"type": "text",
+					"top": 193,
+					"left": 329,
+					"width": 43,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Comuna:"
+				},
+				"Texte100": {
+					"type": "text",
+					"top": 176,
+					"left": 581,
+					"width": 51,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Teléfono:"
+				},
+				"Texte101": {
+					"type": "text",
+					"top": 176,
+					"left": 26,
+					"width": 46,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Familia:"
+				},
+				"Texte103": {
+					"type": "text",
+					"top": 176,
+					"left": 330,
+					"width": 62,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Sit. Familiar:"
+				},
+				"Familypop": {
+					"type": "picture",
+					"top": 192,
+					"left": 554,
+					"width": 11,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 98,
+					"left": 26,
+					"width": 53,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Fecha nac."
+				},
+				"Texte8": {
+					"type": "text",
+					"top": 98,
+					"left": 342,
+					"width": 62,
+					"height": 11,
+					"sizingX": "move",
+					"styleSheet": "XS_FormObjects",
+					"text": "Nacionalidad:"
+				},
+				"Texte9": {
+					"type": "text",
+					"top": 76,
+					"left": 716,
+					"width": 28,
+					"height": 11,
+					"sizingX": "move",
+					"styleSheet": "XS_FormObjects",
+					"text": "Sexo:"
+				},
+				"labelcandidate": {
+					"type": "text",
+					"top": 76,
+					"left": 26,
+					"width": 52,
+					"height": 11,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"textDecoration": "underline",
+					"text": "Apellidos:"
+				},
+				"Texte21": {
+					"type": "text",
+					"top": 76,
+					"left": 462,
+					"width": 47,
+					"height": 11,
+					"sizingX": "move",
+					"styleSheet": "XS_FormObjects",
+					"text": "Nombres:"
+				},
+				"Texte22": {
+					"type": "text",
+					"top": 98,
+					"left": 595,
+					"width": 42,
+					"height": 11,
+					"sizingX": "move",
+					"styleSheet": "XS_FormObjects",
+					"text": "Religión:"
+				},
+				"Variable2373": {
+					"type": "pictureButton",
+					"top": 211,
+					"left": 628,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bDelFamily",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable2373.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"currentJF": {
+					"type": "text",
+					"top": 123,
+					"left": 540,
+					"width": 237,
+					"height": 11,
+					"stroke": "#EE0000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"text": "Actualmente en Jardín Infantil (<[Alumnos]Curso>)"
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 71,
+					"left": 16,
+					"width": 53,
+					"height": 17,
+					"dataSource": "bSelectPGMember",
+					"display": false,
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Group Box4": {
+					"type": "groupBox",
+					"top": 364,
+					"left": 350,
+					"width": 317,
+					"height": 109,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Campos Propios"
+				},
+				"Group Box5": {
+					"type": "groupBox",
+					"top": 364,
+					"left": 13,
+					"width": 327,
+					"height": 109,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Conexiones"
+				},
+				"curso4": {
+					"type": "dropdown",
+					"top": 549,
+					"left": 719,
+					"width": 14,
+					"height": 15,
+					"dataSource": "aCursosPK",
+					"focusable": false,
+					"display": false,
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/curso4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"curso2": {
+					"type": "input",
+					"top": 551,
+					"left": 668,
+					"width": 44,
+					"height": 11,
+					"dataSource": "[ADT_Candidatos:49]Curso:37",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/curso2.4dm",
+					"events": [
+						"onValidate",
+						"onClick",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange"
+					]
+				},
+				"Variable16481": {
+					"type": "pictureButton",
+					"top": 384,
+					"left": 316,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bAddConnexion",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable16481.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable16482": {
+					"type": "pictureButton",
+					"top": 405,
+					"left": 316,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bDelConnexion",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable16482.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"curso": {
+					"type": "text",
+					"top": 551,
+					"left": 600,
+					"width": 68,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": ":21002,137"
+				},
+				"Variable10": {
+					"type": "pictureButton",
+					"top": 331,
+					"left": 367,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bDetailMother",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable10.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"IDb": {
+					"type": "text",
+					"top": 99,
+					"left": 159,
+					"width": 54,
+					"height": 11,
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"textDecoration": "underline",
+					"text": "<?[alumnos]IDNAcional_2>:"
+				},
+				"IDc": {
+					"type": "text",
+					"top": 99,
+					"left": 159,
+					"width": 54,
+					"height": 11,
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"textDecoration": "underline",
+					"text": "<?[alumnos]IDNacional_3>:"
+				},
+				"IDd1": {
+					"type": "text",
+					"top": 99,
+					"left": 159,
+					"width": 54,
+					"height": 11,
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"textDecoration": "underline",
+					"text": "<?[alumnos]NoPasaporte>:"
+				},
+				"IDa": {
+					"type": "text",
+					"top": 99,
+					"left": 159,
+					"width": 54,
+					"height": 11,
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"textDecoration": "underline",
+					"text": "<?[alumnos]RUT>:"
+				},
+				"Botón invisible2": {
+					"type": "button",
+					"top": 99,
+					"left": 156,
+					"width": 59,
+					"height": 13,
+					"dataSource": "bIDOptionsPST",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"motherIDDos1": {
+					"type": "text",
+					"top": 315,
+					"left": 207,
+					"width": 54,
+					"height": 11,
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"textDecoration": "underline",
+					"text": "<?[Personas]IDNAcional_2>:"
+				},
+				"motherIDTres1": {
+					"type": "text",
+					"top": 315,
+					"left": 207,
+					"width": 54,
+					"height": 11,
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"textDecoration": "underline",
+					"text": "<?[Personas]IDNacional_3>:"
+				},
+				"motherPas1": {
+					"type": "text",
+					"top": 315,
+					"left": 207,
+					"width": 64,
+					"height": 11,
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"textDecoration": "underline",
+					"text": "<?[Personas]Pasaporte>:"
+				},
+				"motherRUT1": {
+					"type": "text",
+					"top": 315,
+					"left": 207,
+					"width": 64,
+					"height": 11,
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"textDecoration": "underline",
+					"text": "<?[Personas]RUT>:"
+				},
+				"Botón invisible5": {
+					"type": "button",
+					"top": 315,
+					"left": 206,
+					"width": 69,
+					"height": 13,
+					"dataSource": "bIDOptionsMother",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón invisible3": {
+					"type": "button",
+					"top": 314,
+					"left": 593,
+					"width": 69,
+					"height": 13,
+					"dataSource": "bIDOptionsFather",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 144,
+					"left": 26,
+					"width": 79,
+					"height": 11,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Documentación"
+				},
+				"Botón invisible7": {
+					"type": "button",
+					"top": 145,
+					"left": 27,
+					"width": 75,
+					"height": 11,
+					"dataSource": "Botón invisible7",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text62": {
+					"type": "text",
+					"top": 482,
+					"left": 507,
+					"width": 70,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Situación final"
+				},
+				"lista_espera2": {
+					"type": "text",
+					"top": 482,
+					"left": 701,
+					"width": 13,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Nº"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 482,
+					"left": 157,
+					"width": 80,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Postula a"
+				},
+				"acceptOTF": {
+					"type": "picture",
+					"top": 481,
+					"left": 760,
+					"width": 9,
+					"height": 12,
+					"pictureFormat": "scaled"
+				},
+				"acceptOTF1": {
+					"type": "button",
+					"top": 480,
+					"left": 758,
+					"width": 13,
+					"height": 15,
+					"dataSource": "Botón invisible6",
+					"display": false,
+					"method": "ObjectMethods/acceptOTF1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"nosalta2": {
+					"type": "input",
+					"top": 665,
+					"left": 510,
+					"width": 89,
+					"height": 11,
+					"dataSource": "[ADT_Candidatos:49]Estado:52",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"nosalta1": {
+					"type": "button",
+					"top": 624,
+					"left": 686,
+					"width": 18,
+					"height": 21,
+					"dataSource": "bNextEstado",
+					"styleSheet": "XS_FormObjects",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/nosalta1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"nosalta": {
+					"type": "button",
+					"top": 624,
+					"left": 668,
+					"width": 18,
+					"height": 21,
+					"dataSource": "bPrevEstado",
+					"styleSheet": "XS_FormObjects",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/nosalta.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"salta2": {
+					"type": "dropdown",
+					"top": 605,
+					"left": 395,
+					"width": 91,
+					"height": 18,
+					"dataSource": "hl_Estados",
+					"dataSourceTypeHint": "integer",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/salta2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Menú jerárquico desplegable2": {
+					"type": "dropdown",
+					"top": 478,
+					"left": 572,
+					"width": 122,
+					"height": 18,
+					"dataSource": "hl_SitFinal",
+					"dataSourceTypeHint": "integer",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Menú jerárquico desplegable2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ACT_Matriculado0": {
+					"type": "input",
+					"top": 502,
+					"left": 570,
+					"width": 71,
+					"height": 16,
+					"dataSource": "[ACT_CuentasCorrientes:175]Matriculado:29",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"textFormat": "Matriculado",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 480,
+					"left": 349,
+					"width": 35,
+					"height": 11,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"textDecoration": "underline",
+					"text": "Estado"
+				},
+				"Imagen3": {
+					"type": "picture",
+					"top": 479,
+					"left": 470,
+					"width": 13,
+					"height": 15,
+					"pictureFormat": "scaled",
+					"picture": "Images/Imagen3.pict"
+				},
+				"btnPopEstados": {
+					"type": "button",
+					"top": 479,
+					"left": 470,
+					"width": 16,
+					"height": 15,
+					"dataSource": "btnPopEstados",
+					"display": false,
+					"method": "ObjectMethods/btnPopEstados.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Campo2": {
+					"type": "input",
+					"top": 480,
+					"left": 390,
+					"width": 79,
+					"height": 11,
+					"dataSource": "[ADT_Candidatos:49]Estado:52",
+					"styleSheet": "XS_FormObjects",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"mMotivos2": {
+					"type": "dropdown",
+					"top": 498,
+					"left": 390,
+					"width": 142,
+					"height": 16,
+					"visibility": "hidden",
+					"dataSource": "hl_motivos",
+					"dataSourceTypeHint": "integer",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/mMotivos2.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"mMotivos1": {
+					"type": "text",
+					"top": 501,
+					"left": 350,
+					"width": 33,
+					"height": 11,
+					"visibility": "hidden",
+					"styleSheet": "XS_FormObjects",
+					"text": "Motivo:"
+				},
+				"Botón invisible8": {
+					"type": "button",
+					"top": 479,
+					"left": 350,
+					"width": 29,
+					"height": 14,
+					"dataSource": "Botón invisible8",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"matrireligioso1": {
+					"type": "pictureButton",
+					"top": 212,
+					"left": 258,
+					"width": 17,
+					"height": 16,
+					"dataSource": "bCalendar1",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/matrireligioso1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"matricivil1": {
+					"type": "pictureButton",
+					"top": 212,
+					"left": 491,
+					"width": 17,
+					"height": 16,
+					"dataSource": "bCalendar1",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/matricivil1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texte6": {
+					"type": "text",
+					"top": 196,
+					"left": 581,
+					"width": 51,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Reg./Estado"
+				},
+				"Texto9": {
+					"type": "text",
+					"top": 214,
+					"left": 533,
+					"width": 71,
+					"height": 11,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"textDecoration": "underline",
+					"text": "Datos Familiares"
+				},
+				"btn_datosFamiliares1": {
+					"type": "button",
+					"top": 213,
+					"left": 537,
+					"width": 68,
+					"height": 14,
+					"dataSource": "btn_datosFamiliares",
+					"display": false,
+					"method": "ObjectMethods/btn_datosFamiliares1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bFoto": {
+					"type": "button",
+					"top": 379,
+					"left": 684,
+					"width": 87,
+					"height": 87,
+					"dataSource": "bFoto",
+					"display": false,
+					"method": "ObjectMethods/bFoto.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture6": {
+					"type": "picture",
+					"top": 121,
+					"left": 541,
+					"width": 11,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 123,
+					"left": 379,
+					"width": 33,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Grupo:"
+				},
+				"Texto": {
+					"type": "text",
+					"top": 145,
+					"left": 137,
+					"width": 116,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Certificado de Nacimiento:"
+				},
+				"Botón imagen": {
+					"type": "pictureButton",
+					"top": 142,
+					"left": 426,
+					"width": 15,
+					"height": 15,
+					"dataSource": "btn_ImagenAbrir",
+					"columnCount": 1,
+					"rowCount": 1,
+					"loopBackToFirstFrame": true,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"method": "ObjectMethods/Botón imagen.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón invisible": {
+					"type": "button",
+					"top": 143,
+					"left": 258,
+					"width": 161,
+					"height": 15,
+					"dataSource": "Botón invisible",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"img_ComunicarResultados": {
+					"type": "picture",
+					"top": 481,
+					"left": 134,
+					"width": 11,
+					"height": 14,
+					"visibility": "hidden",
+					"pictureFormat": "scaled"
+				},
+				"btn_comunicarResultados": {
+					"type": "button",
+					"top": 480,
+					"left": 134,
+					"width": 16,
+					"height": 15,
+					"visibility": "hidden",
+					"dataSource": "btn_comunicarResultados",
+					"display": false,
+					"method": "ObjectMethods/btn_comunicarResultados.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto13": {
+					"type": "text",
+					"top": 143,
+					"left": 684,
+					"width": 64,
+					"height": 11,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"textDecoration": "underline",
+					"text": "Observaciones"
+				},
+				"Botón invisible1": {
+					"type": "button",
+					"top": 144,
+					"left": 681,
+					"width": 69,
+					"height": 12,
+					"dataSource": "Botón invisible1",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"lista_espera1": {
+					"type": "input",
+					"top": 482,
+					"left": 720,
+					"width": 30,
+					"height": 11,
+					"dataSource": "[ADT_Candidatos:49]No_en_lista_espera:35",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/lista_espera1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field10": {
+					"type": "input",
+					"top": 502,
+					"left": 662,
+					"width": 125,
+					"height": 16,
+					"dataSource": "[ADT_Candidatos:49]Transf_ST:68",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "Transferido a Schooltrack",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Pestaña1": {
+					"type": "tab",
+					"top": 222,
+					"left": 369,
+					"width": 423,
+					"height": 261,
+					"dataSource": "vl_TabMetaDatosC",
+					"dataSourceTypeHint": "arrayText",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Pestaña1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"hl_comoLlego": {
+					"type": "list",
+					"top": 75,
+					"left": 379,
+					"width": 168,
+					"height": 132,
+					"dataSource": "hl_comoLlego",
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/hl_comoLlego.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onDrop",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"hl_porqueLlego": {
+					"type": "list",
+					"top": 75,
+					"left": 589,
+					"width": 168,
+					"height": 132,
+					"dataSource": "hl_porqueLlego",
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/hl_porqueLlego.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onDrop",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Área de plug-in2": {
+					"type": "plugin",
+					"top": 87,
+					"left": 13,
+					"width": 346,
+					"height": 111,
+					"dataSource": "xALP_EducAnterior",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Área de plug-in2.4dm",
+					"events": [
+						"onClick",
+						"onPluginArea",
+						"onUnload"
+					]
+				},
+				"Campo1": {
+					"type": "input",
+					"top": 201,
+					"left": 13,
+					"width": 134,
+					"height": 16,
+					"dataSource": "[Alumnos:2]Viene_de_colegio_grupo:100",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"textFormat": "Viene de Colegio del Grupo",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Campo1.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"colegioanterior": {
+					"type": "input",
+					"top": 203,
+					"left": 148,
+					"width": 196,
+					"height": 11,
+					"dataSource": "[Alumnos:2]Colegio_de_origen:25",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"method": "ObjectMethods/colegioanterior.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"Botón de opción": {
+					"type": "radio",
+					"top": 253,
+					"left": 13,
+					"width": 90,
+					"height": 13,
+					"dataSource": "op1",
+					"text": "Misma Familia",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Botón de opción.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón de opción1": {
+					"type": "radio",
+					"top": 253,
+					"left": 116,
+					"width": 134,
+					"height": 13,
+					"dataSource": "op2",
+					"text": "Padre o Madre en común",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Botón de opción1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"xALP_HermanosEnColegio": {
+					"type": "plugin",
+					"top": 273,
+					"left": 13,
+					"width": 346,
+					"height": 200,
+					"dataSource": "xALP_HermanosEnColegio",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onPluginArea"
+					]
+				},
+				"Área de plug-in1": {
+					"type": "plugin",
+					"top": 273,
+					"left": 374,
+					"width": 405,
+					"height": 200,
+					"dataSource": "xALP_MetaDataValues",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Área de plug-in1.4dm",
+					"events": [
+						"onClick",
+						"onPluginArea",
+						"onUnload"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 588,
+					"left": 452,
+					"width": 183,
+					"height": 127,
+					"dataSource": "[ADT_Candidatos:49]Como_Llego_al_Colegio:47",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"spellcheck": true,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 588,
+					"left": 658,
+					"width": 182,
+					"height": 127,
+					"dataSource": "[ADT_Candidatos:49]Por_que_Eligio_Colegio:48",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"spellcheck": true,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1284": {
+					"type": "pictureButton",
+					"top": 250,
+					"left": 761,
+					"width": 18,
+					"height": 18,
+					"sizingX": "move",
+					"dataSource": "bDelMetaValue",
+					"shortcutKey": "[Del]",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable1284.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 68,
+					"left": 12,
+					"width": 183,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Educación anterior"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 56,
+					"left": 374,
+					"width": 173,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "¿Como llegó al colegio?"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 56,
+					"left": 580,
+					"width": 160,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "¿Por qué eligió el colegio?"
+				},
+				"Variable4": {
+					"type": "pictureButton",
+					"top": 64,
+					"left": 341,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bAddColAnt",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "pictureButton",
+					"top": 64,
+					"left": 317,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bDelColAnt",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"colegioanterior2": {
+					"type": "picture",
+					"top": 202,
+					"left": 349,
+					"width": 11,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"colegioanterior1": {
+					"type": "button",
+					"top": 202,
+					"left": 347,
+					"width": 15,
+					"height": 13,
+					"dataSource": "colegioanterior",
+					"display": false,
+					"method": "ObjectMethods/colegioanterior1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto19": {
+					"type": "text",
+					"top": 235,
+					"left": 12,
+					"width": 183,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Hermanos en el Colegio"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Group Box24": {
+					"type": "groupBox",
+					"top": 257,
+					"left": 399,
+					"width": 378,
+					"height": 227,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Examen"
+				},
+				"PresEnt": {
+					"type": "groupBox",
+					"top": 177,
+					"left": 12,
+					"width": 373,
+					"height": 305,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Presentación y Entrevista"
+				},
+				"Group Box6": {
+					"type": "groupBox",
+					"top": 177,
+					"left": 400,
+					"width": 378,
+					"height": 79,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Jornada de Visita"
+				},
+				"inscription": {
+					"type": "groupBox",
+					"top": 64,
+					"left": 12,
+					"width": 764,
+					"height": 111,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Inscripción"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 89,
+					"left": 99,
+					"width": 565,
+					"height": 11,
+					"dataSource": "[ADT_Candidatos:49]Recomendación:9",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 90,
+					"left": 744,
+					"width": 22,
+					"height": 11,
+					"dataSource": "[ADT_Candidatos:49]Calificación_Inscripción:11",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field3": {
+					"type": "input",
+					"top": 107,
+					"left": 99,
+					"width": 668,
+					"height": 36,
+					"dataSource": "[ADT_Candidatos:49]Observaciones_inscripción:10",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"spellcheck": true,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field6": {
+					"type": "input",
+					"top": 151,
+					"left": 20,
+					"width": 216,
+					"height": 16,
+					"dataSource": "[ADT_Candidatos:49]Mellizo_de_otro_postulante:40",
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "Tiene hermano mellizo postulando",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Field6.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Field7": {
+					"type": "input",
+					"top": 151,
+					"left": 244,
+					"width": 126,
+					"height": 16,
+					"dataSource": "[ADT_Candidatos:49]Postulante:43",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "Postulante",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Field7.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"PostGrupo2": {
+					"type": "input",
+					"top": 197,
+					"left": 115,
+					"width": 31,
+					"height": 11,
+					"dataSource": "[ADT_Candidatos:49]Asistentes_presentación:22",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/PostGrupo2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo6": {
+					"type": "input",
+					"top": 198,
+					"left": 475,
+					"width": 69,
+					"height": 11,
+					"dataSource": "[ADT_JornadasVisita:144]Date_Jornada:2",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo7": {
+					"type": "input",
+					"top": 199,
+					"left": 583,
+					"width": 49,
+					"height": 11,
+					"dataSource": "[ADT_JornadasVisita:144]Hora_Jornada:3",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"timeFormat": "hh_mm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 196,
+					"left": 642,
+					"width": 60,
+					"height": 16,
+					"dataSource": "bAsignIview",
+					"text": "Asignar",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cs_notificaVisita": {
+					"type": "checkbox",
+					"top": 195,
+					"left": 739,
+					"width": 18,
+					"height": 16,
+					"dataSource": "cs_notificaVisita",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"PostGrupo7": {
+					"type": "button",
+					"top": 219,
+					"left": 248,
+					"width": 64,
+					"height": 16,
+					"dataSource": "bAsignIview",
+					"text": "Asignar",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/PostGrupo7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"PostGrupo25": {
+					"type": "checkbox",
+					"top": 220,
+					"left": 370,
+					"width": 18,
+					"height": 16,
+					"dataSource": "cs_notificaPresentacion",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Campo5": {
+					"type": "input",
+					"top": 222,
+					"left": 475,
+					"width": 69,
+					"height": 11,
+					"dataSource": "[ADT_JornadasVisita:144]Section:5",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo8": {
+					"type": "input",
+					"top": 222,
+					"left": 583,
+					"width": 69,
+					"height": 11,
+					"dataSource": "[ADT_JornadasVisita:144]Place:4",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PostGrupo14": {
+					"type": "button",
+					"top": 254,
+					"left": 248,
+					"width": 64,
+					"height": 16,
+					"dataSource": "bAsignIview",
+					"text": "Asignar",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/PostGrupo14.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"PostGrupo26": {
+					"type": "checkbox",
+					"top": 252,
+					"left": 369,
+					"width": 18,
+					"height": 16,
+					"dataSource": "cs_notificaEntrevista",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 276,
+					"left": 658,
+					"width": 60,
+					"height": 16,
+					"dataSource": "bAsignIview",
+					"text": "Asignar",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cs_noticaVisita1": {
+					"type": "checkbox",
+					"top": 274,
+					"left": 753,
+					"width": 18,
+					"height": 16,
+					"dataSource": "cs_noticaVisita",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"PostGrupo20": {
+					"type": "input",
+					"top": 309,
+					"left": 108,
+					"width": 239,
+					"height": 11,
+					"dataSource": "[ADT_Candidatos:49]Calificación_entrevista:13",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/PostGrupo20.4dm",
+					"events": [
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"Variable870": {
+					"type": "button",
+					"top": 313,
+					"left": 654,
+					"width": 64,
+					"height": 16,
+					"dataSource": "bAsignIview",
+					"text": "Asignar",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable870.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Field8": {
+					"type": "input",
+					"top": 340,
+					"left": 490,
+					"width": 210,
+					"height": 11,
+					"dataSource": "[ADT_Candidatos:49]Idioma_Evaluacion:45",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PostGrupoG": {
+					"type": "input",
+					"top": 354,
+					"left": 20,
+					"width": 344,
+					"height": 108,
+					"dataSource": "[ADT_Candidatos:49]Observaciones_entrevista:12",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"spellcheck": true,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"method": "ObjectMethods/PostGrupoG.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Puntaje_examen": {
+					"type": "input",
+					"top": 361,
+					"left": 491,
+					"width": 56,
+					"height": 11,
+					"dataSource": "[ADT_Candidatos:49]Puntaje_examen:15",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/CalificacionesGenerico"
+					},
+					"method": "ObjectMethods/Puntaje_examen.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"evaluacion_conductual": {
+					"type": "input",
+					"top": 361,
+					"left": 664,
+					"width": 66,
+					"height": 11,
+					"dataSource": "[ADT_Candidatos:49]Evaluación_conductual:38",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/CalificacionesGenerico"
+					},
+					"method": "ObjectMethods/evaluacion_conductual.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"ObsEx": {
+					"type": "input",
+					"top": 402,
+					"left": 407,
+					"width": 347,
+					"height": 60,
+					"dataSource": "[ADT_Candidatos:49]Observaciones_examen:14",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"spellcheck": true,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PostGrupoG1": {
+					"type": "input",
+					"top": 467,
+					"left": 265,
+					"width": 105,
+					"height": 12,
+					"dataSource": "[ADT_Candidatos:49]Si_ObsEntPrivada:55",
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "Observación Privada",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"ObsEx1": {
+					"type": "input",
+					"top": 467,
+					"left": 658,
+					"width": 134,
+					"height": 12,
+					"dataSource": "[ADT_Candidatos:49]Si_ObsExPrivada:56",
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "Observación Privada",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Text24": {
+					"type": "text",
+					"top": 88,
+					"left": 19,
+					"width": 73,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Recomendación"
+				},
+				"Text26": {
+					"type": "text",
+					"top": 90,
+					"left": 681,
+					"width": 59,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Calificación"
+				},
+				"Text102": {
+					"type": "text",
+					"top": 106,
+					"left": 19,
+					"width": 73,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Observaciones"
+				},
+				"currentJF2": {
+					"type": "text",
+					"top": 153,
+					"left": 529,
+					"width": 237,
+					"height": 11,
+					"stroke": "#EE0000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"text": "Actualmente en Jardín Infantil (<[Alumnos]Curso>)"
+				},
+				"PostGrupo24": {
+					"type": "picture",
+					"top": 307,
+					"left": 358,
+					"width": 11,
+					"height": 14,
+					"sizingX": "move",
+					"pictureFormat": "scaled"
+				},
+				"PostGrupo10": {
+					"type": "text",
+					"top": 257,
+					"left": 17,
+					"width": 85,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Fecha Entrevista:"
+				},
+				"PostGrupo12": {
+					"type": "text",
+					"top": 257,
+					"left": 186,
+					"width": 30,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "a:"
+				},
+				"PostGrupo16": {
+					"type": "text",
+					"top": 281,
+					"left": 17,
+					"width": 85,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Entrevistador:"
+				},
+				"PostGrupo4": {
+					"type": "input",
+					"top": 222,
+					"left": 109,
+					"width": 74,
+					"height": 11,
+					"dataSource": "[ADT_Candidatos:49]Fecha_de_presentación:5",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PostGrupo6": {
+					"type": "input",
+					"top": 221,
+					"left": 202,
+					"width": 36,
+					"height": 11,
+					"dataSource": "[ADT_Candidatos:49]Hora_de_presentación:18",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"timeFormat": "hh_mm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PostGrupo11": {
+					"type": "input",
+					"top": 257,
+					"left": 108,
+					"width": 74,
+					"height": 11,
+					"dataSource": "[ADT_Candidatos:49]Fecha_de_Entrevista:4",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PostGrupo13": {
+					"type": "input",
+					"top": 256,
+					"left": 202,
+					"width": 36,
+					"height": 11,
+					"dataSource": "[ADT_Candidatos:49]Hora_de_entrevista:17",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"timeFormat": "hh_mm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PostGrupo17": {
+					"type": "input",
+					"top": 281,
+					"left": 108,
+					"width": 239,
+					"height": 11,
+					"dataSource": "[ADT_Candidatos:49]Entrevistador:20",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PostGrupo3": {
+					"type": "text",
+					"top": 222,
+					"left": 18,
+					"width": 95,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Fecha Presentación:"
+				},
+				"PostGrupo5": {
+					"type": "text",
+					"top": 222,
+					"left": 186,
+					"width": 30,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "a:"
+				},
+				"PostGrupo1": {
+					"type": "text",
+					"top": 196,
+					"left": 18,
+					"width": 65,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Asistentes:"
+				},
+				"PostGrupo8": {
+					"type": "line",
+					"top": 244,
+					"left": 14,
+					"width": 371,
+					"stroke": "#AAAAAA"
+				},
+				"PostGrupo19": {
+					"type": "text",
+					"top": 309,
+					"left": 20,
+					"width": 85,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Evaluación:"
+				},
+				"PostGrupo18": {
+					"type": "line",
+					"top": 299,
+					"left": 14,
+					"width": 371,
+					"stroke": "#AAAAAA"
+				},
+				"PostGrupo21": {
+					"type": "button",
+					"top": 306,
+					"left": 357,
+					"width": 13,
+					"height": 15,
+					"dataSource": "bIViewIndicators",
+					"display": false,
+					"method": "ObjectMethods/PostGrupo21.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"nopost2": {
+					"type": "text",
+					"top": 266,
+					"left": 29,
+					"width": 341,
+					"height": 44,
+					"visibility": "hidden",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "La familia a la que pertence este candidato ya tiene relación con el colegio por lo que no es necesaria una presentación y/o entrevista. Haga click en \"Asignar Entrevista y Presentación\" si desea ingresar fechas para Presentaciones y Entrevistas."
+				},
+				"PostGrupo9": {
+					"type": "pictureButton",
+					"top": 218,
+					"left": 317,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bDeletePres",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/PostGrupo9.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"PostGrupo15": {
+					"type": "pictureButton",
+					"top": 250,
+					"left": 317,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bDeleteEntre",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/PostGrupo15.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"nopost": {
+					"type": "text",
+					"top": 326,
+					"left": 191,
+					"width": 149,
+					"height": 11,
+					"visibility": "hidden",
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"textDecoration": "underline",
+					"text": "Asignar Entrevista y Presentación"
+				},
+				"mensaje_hayObs": {
+					"type": "text",
+					"top": 356,
+					"left": 20,
+					"width": 348,
+					"height": 44,
+					"visibility": "hidden",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Existen observaciones de la entrevista, pero éstas tienen carácter de privado."
+				},
+				"nopost1": {
+					"type": "button",
+					"top": 326,
+					"left": 195,
+					"width": 149,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "bAsignarIgual",
+					"display": false,
+					"method": "ObjectMethods/nopost1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text58": {
+					"type": "text",
+					"top": 361,
+					"left": 407,
+					"width": 64,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Puntaje"
+				},
+				"Text59": {
+					"type": "text",
+					"top": 317,
+					"left": 407,
+					"width": 72,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Fecha exámen:"
+				},
+				"Text61": {
+					"type": "text",
+					"top": 382,
+					"left": 407,
+					"width": 85,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Examinador"
+				},
+				"Field54": {
+					"type": "input",
+					"top": 317,
+					"left": 491,
+					"width": 74,
+					"height": 11,
+					"dataSource": "[ADT_Candidatos:49]Fecha_de_examen:7",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field55": {
+					"type": "input",
+					"top": 317,
+					"left": 599,
+					"width": 36,
+					"height": 11,
+					"dataSource": "[ADT_Candidatos:49]Hora_de_examen:19",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field56": {
+					"type": "input",
+					"top": 382,
+					"left": 491,
+					"width": 239,
+					"height": 11,
+					"dataSource": "[ADT_Candidatos:49]Examinador:8",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text100": {
+					"type": "text",
+					"top": 317,
+					"left": 582,
+					"width": 20,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "a:"
+				},
+				"Text221": {
+					"type": "text",
+					"top": 279,
+					"left": 407,
+					"width": 37,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Grupo"
+				},
+				"Field162": {
+					"type": "input",
+					"top": 279,
+					"left": 443,
+					"width": 93,
+					"height": 11,
+					"dataSource": "[ADT_Candidatos:49]Grupo:21",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text1071": {
+					"type": "text",
+					"top": 280,
+					"left": 542,
+					"width": 37,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Sección"
+				},
+				"Field927": {
+					"type": "input",
+					"top": 280,
+					"left": 582,
+					"width": 65,
+					"height": 11,
+					"dataSource": "[ADT_Candidatos:49]Sección:26",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line60": {
+					"type": "line",
+					"top": 302,
+					"left": 400,
+					"width": 376,
+					"stroke": "#AAAAAA"
+				},
+				"Text3929": {
+					"type": "text",
+					"top": 361,
+					"left": 590,
+					"width": 68,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Ev. Conductual"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 340,
+					"left": 406,
+					"width": 90,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Idioma evaluación"
+				},
+				"Familypop2": {
+					"type": "picture",
+					"top": 339,
+					"left": 704,
+					"width": 11,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Botón invisible4": {
+					"type": "button",
+					"top": 338,
+					"left": 701,
+					"width": 17,
+					"height": 14,
+					"dataSource": "Botón invisible4",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bDeleteExam": {
+					"type": "pictureButton",
+					"top": 311,
+					"left": 722,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bDeleteExam",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bDeleteExam.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"hayObsEx": {
+					"type": "text",
+					"top": 414,
+					"left": 418,
+					"width": 348,
+					"height": 33,
+					"visibility": "hidden",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Existen observaciones del exámen, pero éstas tienen carácter de privado."
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 222,
+					"left": 408,
+					"width": 47,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Sección:"
+				},
+				"Texto10": {
+					"type": "text",
+					"top": 197,
+					"left": 407,
+					"width": 60,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Fecha Visita:"
+				},
+				"Texto11": {
+					"type": "text",
+					"top": 197,
+					"left": 558,
+					"width": 25,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "a:"
+				},
+				"Texto12": {
+					"type": "text",
+					"top": 222,
+					"left": 550,
+					"width": 47,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Lugar:"
+				},
+				"PostGrupo27": {
+					"type": "text",
+					"top": 205,
+					"left": 372,
+					"width": 15,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "N"
+				},
+				"Texto14": {
+					"type": "text",
+					"top": 183,
+					"left": 741,
+					"width": 15,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "N"
+				},
+				"PostGrupo22": {
+					"type": "pictureButton",
+					"top": 214,
+					"left": 340,
+					"width": 24,
+					"height": 24,
+					"dataSource": "btn_notificaPresentacion",
+					"columnCount": 1,
+					"rowCount": 1,
+					"loopBackToFirstFrame": true,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"method": "ObjectMethods/PostGrupo22.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"PostGrupo23": {
+					"type": "pictureButton",
+					"top": 246,
+					"left": 340,
+					"width": 24,
+					"height": 24,
+					"dataSource": "btn_notificaEntrevista",
+					"columnCount": 1,
+					"rowCount": 1,
+					"loopBackToFirstFrame": true,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"method": "ObjectMethods/PostGrupo23.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón imagen3": {
+					"type": "pictureButton",
+					"top": 190,
+					"left": 710,
+					"width": 24,
+					"height": 24,
+					"dataSource": "btn_notificaVisita",
+					"columnCount": 1,
+					"rowCount": 1,
+					"loopBackToFirstFrame": true,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"method": "ObjectMethods/Botón imagen3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto15": {
+					"type": "text",
+					"top": 264,
+					"left": 756,
+					"width": 15,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "N"
+				},
+				"Botón imagen4": {
+					"type": "pictureButton",
+					"top": 269,
+					"left": 724,
+					"width": 24,
+					"height": 24,
+					"dataSource": "btn_notificaExamen",
+					"columnCount": 1,
+					"rowCount": 1,
+					"loopBackToFirstFrame": true,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"method": "ObjectMethods/Botón imagen4.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

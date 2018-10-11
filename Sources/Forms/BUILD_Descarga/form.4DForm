@@ -1,0 +1,312 @@
+﻿{
+	"formSizeAnchor": "binstalar",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texto": {
+					"type": "text",
+					"top": 18,
+					"left": 20,
+					"width": 434,
+					"height": 21,
+					"styleSheet": "Medium - 16",
+					"text": "Una nueva versión de SchoolTrack está disponible!"
+				},
+				"infoVersion": {
+					"type": "text",
+					"top": 43,
+					"left": 20,
+					"width": 591,
+					"height": 16,
+					"styleSheet": "Plain - 13",
+					"text": "infoVersion"
+				},
+				"binstalar": {
+					"type": "button",
+					"top": 430,
+					"left": 465,
+					"width": 146,
+					"height": 22,
+					"text": "Instalar y reniciar…",
+					"styleSheet": "Plain - 13",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"bRecordar": {
+					"type": "button",
+					"top": 430,
+					"left": 292,
+					"width": 162,
+					"height": 22,
+					"text": "Recordar mas tarde",
+					"styleSheet": "Plain - 13",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"bConfigurar": {
+					"type": "button",
+					"top": 430,
+					"left": 20,
+					"width": 193,
+					"height": 22,
+					"text": "Configurar actualización...",
+					"styleSheet": "Plain - 13",
+					"focusable": false,
+					"method": "ObjectMethods/bConfigurar.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"infoActualización": {
+					"type": "webArea",
+					"top": 68,
+					"left": 20,
+					"width": 591,
+					"height": 351,
+					"urlSource": "infoActualizacion",
+					"webEngine": "embedded",
+					"contextMenu": "none"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 206,
+					"left": 20,
+					"width": 591,
+					"height": 20,
+					"textAlign": "center",
+					"styleSheet": "Plain - 16",
+					"text": "En esta zona se puede mostrar un documento html o PDF "
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto2": {
+					"type": "text",
+					"top": 18,
+					"left": 40,
+					"width": 474,
+					"height": 21,
+					"styleSheet": "Medium - 16",
+					"text": "Configuración de descarga e instalación de actualizaciones"
+				},
+				"descargar": {
+					"type": "checkbox",
+					"top": 52,
+					"left": 49,
+					"width": 465,
+					"height": 25,
+					"text": "Descargar actualizaciones cuando estén disponibles",
+					"styleSheet": "Plain - 14",
+					"method": "ObjectMethods/descargar.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"instalarAuto": {
+					"type": "radio",
+					"top": 84,
+					"left": 73,
+					"width": 494,
+					"height": 25,
+					"text": "Instalar actualización y reiniciar durante la noche",
+					"styleSheet": "Plain - 14",
+					"method": "ObjectMethods/instalarAuto.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"instalarProgramado": {
+					"type": "radio",
+					"top": 121,
+					"left": 73,
+					"width": 494,
+					"height": 25,
+					"text": "Programar instalación y reinicio a una hora determinada",
+					"styleSheet": "Plain - 14",
+					"method": "ObjectMethods/instalarProgramado.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Dia1": {
+					"type": "radio",
+					"top": 158,
+					"left": 96,
+					"width": 107,
+					"height": 20,
+					"text": "Domingo",
+					"styleSheet": "Ligth - 12",
+					"events": [
+						"onClick"
+					]
+				},
+				"Dia2": {
+					"type": "radio",
+					"top": 191,
+					"left": 96,
+					"width": 107,
+					"height": 20,
+					"text": "Lunes",
+					"styleSheet": "Ligth - 12",
+					"method": "ObjectMethods/Dia2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Dia3": {
+					"type": "radio",
+					"top": 225,
+					"left": 96,
+					"width": 107,
+					"height": 20,
+					"text": "Martes",
+					"styleSheet": "Ligth - 12",
+					"events": [
+						"onClick"
+					]
+				},
+				"Dia4": {
+					"type": "radio",
+					"top": 258,
+					"left": 96,
+					"width": 107,
+					"height": 20,
+					"text": "Miércoles",
+					"styleSheet": "Ligth - 12",
+					"events": [
+						"onClick"
+					]
+				},
+				"Dia5": {
+					"type": "radio",
+					"top": 291,
+					"left": 96,
+					"width": 107,
+					"height": 20,
+					"text": "Jueves",
+					"styleSheet": "Ligth - 12",
+					"events": [
+						"onClick"
+					]
+				},
+				"Dia6": {
+					"type": "radio",
+					"top": 324,
+					"left": 96,
+					"width": 107,
+					"height": 20,
+					"text": "Viernes",
+					"styleSheet": "Ligth - 12",
+					"events": [
+						"onClick"
+					]
+				},
+				"Dia7": {
+					"type": "radio",
+					"top": 357,
+					"left": 96,
+					"width": 107,
+					"height": 20,
+					"text": "Sábado",
+					"styleSheet": "Ligth - 12",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 430,
+					"left": 518,
+					"width": 93,
+					"height": 22,
+					"text": "Guardar",
+					"styleSheet": "Plain - 13",
+					"focusable": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón4": {
+					"type": "button",
+					"top": 430,
+					"left": 403,
+					"width": 103,
+					"height": 22,
+					"action": "firstPage",
+					"text": "Cancelar",
+					"styleSheet": "Plain - 13",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"hora": {
+					"type": "dropdown",
+					"top": 158,
+					"left": 211,
+					"width": 80,
+					"height": 20,
+					"dataSourceTypeHint": "arrayTime",
+					"focusable": false,
+					"timeFormat": "hh_mm",
+					"method": "ObjectMethods/hora.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"preferencias": {
+					"type": "input",
+					"top": 5,
+					"left": 3,
+					"width": 619,
+					"height": 465,
+					"dataSourceTypeHint": "object",
+					"enterable": false,
+					"focusable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

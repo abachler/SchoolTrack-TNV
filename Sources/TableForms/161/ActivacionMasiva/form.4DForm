@@ -1,0 +1,318 @@
+﻿{
+	"formSizeAnchor": "Variable3",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"custom": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 2000,
+					"height": 2000,
+					"stroke": "transparent"
+				}
+			}
+		},
+		{
+			"objects": {
+				"li1": {
+					"type": "groupBox",
+					"top": 344,
+					"left": 13,
+					"width": 522,
+					"height": 132,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Importación Manual"
+				},
+				"li2": {
+					"type": "groupBox",
+					"top": 206,
+					"left": 13,
+					"width": 522,
+					"height": 132,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Características del Archivo"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 522,
+					"height": 184,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontStyle": "italic",
+					"text": "Para realizar la activación o desactivación masiva se necesita un archivo de texto delimitado por tabulaciones con dos columnas de datos :\r\rLa primera columna debe contener un identificador de usuario que puede ser cualquiera de los que se mencionan a continuación, a condición de que sea el mismo tipo de identificador para todos los usuarios:\r\r- <◊vt_IDNacional1_name>\r- <◊vt_IDNacional2_name>\r- <◊vt_IDNacional3_name>\r- Nº de Pasaporte\r- Código Interno\r\rLa segunda columna debe contener lo siguiente:\r\r- true: para desactivar\r- false: para activar"
+				},
+				"C_op1": {
+					"type": "radio",
+					"top": 246,
+					"left": 40,
+					"width": 206,
+					"height": 14,
+					"dataSource": "C_op1",
+					"text": "Identificador Nacional Principal",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Casilla de selección2": {
+					"type": "checkbox",
+					"top": 247,
+					"left": 254,
+					"width": 181,
+					"height": 13,
+					"dataSource": "cb_TieneEncabezado",
+					"text": "El archivo contiene encabezados",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"C_op2": {
+					"type": "radio",
+					"top": 263,
+					"left": 40,
+					"width": 159,
+					"height": 14,
+					"dataSource": "C_op2",
+					"text": "Identificador Nacional 2",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"C_op3": {
+					"type": "radio",
+					"top": 280,
+					"left": 40,
+					"width": 159,
+					"height": 14,
+					"dataSource": "C_op3",
+					"text": "Identificador Nacional 3",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"C_op4": {
+					"type": "radio",
+					"top": 297,
+					"left": 40,
+					"width": 159,
+					"height": 14,
+					"dataSource": "C_op4",
+					"text": "N° de Pasaporte",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"C_op5": {
+					"type": "radio",
+					"top": 315,
+					"left": 40,
+					"width": 159,
+					"height": 14,
+					"dataSource": "C_op5",
+					"text": "Código Interno",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 392,
+					"left": 41,
+					"width": 385,
+					"height": 50,
+					"dataSource": "vt_g1",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable9": {
+					"type": "button",
+					"top": 392,
+					"left": 441,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bExplore",
+					"text": ":21012,8",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable9.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 422,
+					"left": 441,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bImport",
+					"text": "Importar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección3": {
+					"type": "checkbox",
+					"top": 451,
+					"left": 41,
+					"width": 271,
+					"height": 16,
+					"dataSource": "cb_Listar",
+					"text": "Listar los usuarios luego del cambio de estado",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección1": {
+					"type": "checkbox",
+					"top": 472,
+					"left": 573,
+					"width": 281,
+					"height": 13,
+					"dataSource": "cb_AutoParser",
+					"text": "Activar el sistema automático de proceso de archivos",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 482,
+					"left": 455,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bClose",
+					"shortcutKey": "[Esc]",
+					"text": "Cerrar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 368,
+					"left": 40,
+					"width": 118,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Archivo a procesar:"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 230,
+					"left": 40,
+					"width": 222,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"fontStyle": "italic",
+					"text": "Identificador Utilizado:"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 493,
+					"left": 587,
+					"width": 259,
+					"height": 44,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontStyle": "italic",
+					"text": "Cuando esta opción esta activada Schooltrack automáticamente procesará los archivos que encuentre en la carpeta xxx. Basta con dejar el archivo con la estructura descrita arriba para que sea procesado."
+				}
+			}
+		}
+	]
+}

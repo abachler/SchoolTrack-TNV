@@ -1,0 +1,161 @@
+﻿{
+	"windowTitle": ":21021,1",
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Variable4",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerBody": 344,
+	"markerBreak": 344,
+	"markerFooter": 354,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text17": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 41,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": ":21021,8"
+				},
+				"Text18": {
+					"type": "text",
+					"top": 38,
+					"left": 13,
+					"width": 53,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": ":21021,9"
+				},
+				"Code": {
+					"type": "input",
+					"top": 13,
+					"left": 70,
+					"width": 140,
+					"height": 14,
+					"dataSource": "[BBL_Index:70]Code:1",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&\"A-Z;0-9;.\u0003\"",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Subject": {
+					"type": "input",
+					"top": 37,
+					"left": 70,
+					"width": 233,
+					"height": 28,
+					"dataSource": "[BBL_Index:70]Subject:2",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 80,
+					"left": 137,
+					"width": 70,
+					"height": 20,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": ":21021,3",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 80,
+					"left": 216,
+					"width": 87,
+					"height": 20,
+					"dataSource": "bCancel",
+					"shortcutKey": "[Enter]",
+					"text": ":21021,10",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,465 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowMinWidth": 866,
+	"windowMinHeight": 518,
+	"formSizeAnchor": "fondo",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDoubleClick",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onResize",
+		"onLoadRecord",
+		"onBoundVariableChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"fondo": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 292,
+					"width": 573,
+					"height": 516,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"stroke": "#FFFFFF"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable1": {
+					"type": "input",
+					"top": 818,
+					"left": 13,
+					"width": 273,
+					"height": 15,
+					"dataSource": "vt_valorSeleccionado",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"btn_Aceptar": {
+					"type": "button",
+					"top": 486,
+					"left": 206,
+					"width": 80,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "btn_Aceptar",
+					"text": "Buscar",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/btn_Aceptar.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"lb_informes": {
+					"type": "listbox",
+					"top": 0,
+					"left": 292,
+					"width": 572,
+					"height": 236,
+					"sizingX": "grow",
+					"listboxType": "currentSelection",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"highlightSet": "$ListboxSet0",
+					"table": 54,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "#DDDDDD",
+					"verticalLineStroke": "#DDDDDD",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"method": "ObjectMethods/lb_informes.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "nombreInforme",
+							"dataSource": "[xShell_Reports:54]ReportName:26",
+							"width": 253,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado1",
+								"text": "Nombre del informe",
+								"fontFamily": "Helvetica Neue Medium",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "tablaInforme",
+							"dataSource": "XSvs_nombreTablaLocal_Numero ([xShell_Reports:54]MainTable:3)",
+							"width": 190,
+							"minWidth": 190,
+							"maxWidth": 190,
+							"resizable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado2",
+								"text": "Tabla",
+								"fontFamily": "Helvetica Neue Medium",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "tipoInforme",
+							"dataSource": "[xShell_Reports:54]ReportType:2",
+							"width": 60,
+							"minWidth": 60,
+							"maxWidth": 60,
+							"resizable": false,
+							"enterable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado3",
+								"text": "Tipo",
+								"fontFamily": "Helvetica Neue Medium",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "estandarInforme",
+							"dataSource": "[xShell_Reports:54]IsStandard:38",
+							"dataSourceTypeHint": "boolean",
+							"width": 70,
+							"minWidth": 70,
+							"maxWidth": 70,
+							"resizable": false,
+							"enterable": false,
+							"controlType": "checkbox",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado4",
+								"text": "Estándar",
+								"fontFamily": "Helvetica Neue Medium",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Barras 2D5",
+							"dataSource": "[xShell_Reports:54]Auto_UUID:49",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado5",
+								"text": "Encabezado5",
+								"dataSource": "Encabezado5",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"expresion": {
+					"type": "input",
+					"top": 36,
+					"left": 16,
+					"width": 269,
+					"height": 71,
+					"styleSheet": "Plain - 12",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"expresionCompleta": {
+					"type": "checkbox",
+					"top": 109,
+					"left": 13,
+					"width": 269,
+					"height": 20,
+					"text": "Expresion completa",
+					"styleSheet": "Plain - 12",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 15,
+					"left": 16,
+					"width": 269,
+					"height": 16,
+					"textAlign": "left",
+					"styleSheet": "Plain - 12",
+					"fontWeight": "bold",
+					"text": "Expresión(es) a buscar:"
+				},
+				"lb_metodos": {
+					"type": "listbox",
+					"top": 158,
+					"left": 16,
+					"width": 270,
+					"height": 319,
+					"sizingY": "grow",
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "#DDDDDD",
+					"verticalLineStroke": "transparent",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onAfterKeystroke",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "seleccionados",
+							"width": 33,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "checkbox",
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						},
+						{
+							"name": "metodos",
+							"width": 237,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						}
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 138,
+					"left": 16,
+					"width": 269,
+					"height": 16,
+					"textAlign": "left",
+					"styleSheet": "Plain - 12",
+					"fontWeight": "bold",
+					"text": "Métodos:"
+				},
+				"Texto": {
+					"type": "text",
+					"top": 584,
+					"left": 141,
+					"width": 1,
+					"height": 17,
+					"text": "Texto de ejemplo:"
+				},
+				"lb_objetos": {
+					"type": "listbox",
+					"top": 257,
+					"left": 296,
+					"width": 248,
+					"height": 260,
+					"sizingY": "grow",
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "#DDDDDD",
+					"verticalLineStroke": "#DDDDDD",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 11,
+					"borderStyle": "none",
+					"method": "ObjectMethods/lb_objetos.4dm",
+					"events": [
+						"onClick",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "idObjeto",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						},
+						{
+							"name": "nombreObjeto",
+							"width": 224,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						},
+						{
+							"name": "scriptObjeto",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						}
+					]
+				},
+				"Línea": {
+					"type": "line",
+					"top": -1,
+					"left": 292,
+					"height": 571,
+					"sizingY": "grow",
+					"stroke": "#AAAAAA"
+				},
+				"scriptHTML": {
+					"type": "webArea",
+					"top": 258,
+					"left": 545,
+					"width": 319,
+					"height": 258,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"urlSource": "Área web_url",
+					"progressSource": "Área web_progress",
+					"webEngine": "embedded",
+					"contextMenu": "none",
+					"borderStyle": "none"
+				},
+				"Rectángulo": {
+					"type": "rectangle",
+					"top": 237,
+					"left": 292,
+					"width": 593,
+					"height": 20,
+					"sizingX": "grow",
+					"fill": "#EEEEEE",
+					"stroke": "#AAAAAA"
+				},
+				"Línea2": {
+					"type": "line",
+					"top": 238,
+					"left": 544,
+					"width": 1,
+					"height": 339,
+					"sizingY": "grow",
+					"stroke": "#AAAAAA"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 240,
+					"left": 296,
+					"width": 243,
+					"height": 16,
+					"styleSheet": "Medium - 12",
+					"text": "Objetos"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 240,
+					"left": 548,
+					"width": 313,
+					"height": 16,
+					"styleSheet": "Medium - 12",
+					"text": "Script"
+				}
+			}
+		},
+		{
+			"objects": {
+				"codigoHTML": {
+					"type": "webArea",
+					"top": 1,
+					"left": 0,
+					"width": 867,
+					"height": 527,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"urlSource": "Área web_url",
+					"progressSource": "Área web_progress",
+					"webEngine": "embedded",
+					"contextMenu": "none",
+					"borderStyle": "none"
+				}
+			}
+		}
+	]
+}

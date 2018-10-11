@@ -1,0 +1,447 @@
+﻿{
+	"inheritedForm": "XS_MASTER_ConfigDialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 516,
+	"height": 333,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texto1": {
+					"type": "text",
+					"top": 76,
+					"left": 25,
+					"width": 75,
+					"height": 13,
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Puerto HTTP:"
+				},
+				"web_server_puertoHTTP": {
+					"type": "input",
+					"top": 76,
+					"left": 108,
+					"width": 69,
+					"height": 13,
+					"dataSource": "<>web_server_puertoHTTP",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"web_server_usarSSL": {
+					"type": "checkbox",
+					"top": 99,
+					"left": 108,
+					"width": 81,
+					"height": 17,
+					"dataSource": "<>web_server_usarSSL",
+					"text": "Usar SSL",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/web_server_usarSSL.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 126,
+					"left": 17,
+					"width": 83,
+					"height": 13,
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Puerto HTTPS:"
+				},
+				"web_server_https_puertoHTTPS": {
+					"type": "input",
+					"top": 126,
+					"left": 108,
+					"width": 69,
+					"height": 13,
+					"dataSource": "<>web_server_https_puertoHTTPS",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Ligne91": {
+					"type": "line",
+					"top": 149,
+					"left": 13,
+					"width": 490,
+					"stroke": "#8E8E8E"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 53,
+					"left": 13,
+					"width": 120,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Servidor Web"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 159,
+					"left": 13,
+					"width": 280,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Configurar Proxies Para Acceder a Internet"
+				},
+				"web_proxy_http_host": {
+					"type": "input",
+					"top": 182,
+					"left": 108,
+					"width": 254,
+					"height": 13,
+					"dataSource": "<>web_proxy_http_host",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"web_proxy_http_puerto": {
+					"type": "input",
+					"top": 182,
+					"left": 434,
+					"width": 69,
+					"height": 13,
+					"dataSource": "<>web_proxy_http_puerto",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"generales17": {
+					"type": "text",
+					"top": 182,
+					"left": 382,
+					"width": 45,
+					"height": 13,
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Puerto:"
+				},
+				"generales15": {
+					"type": "text",
+					"top": 182,
+					"left": 20,
+					"width": 80,
+					"height": 13,
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Proxy HTTP:"
+				},
+				"web_proxy_https_host": {
+					"type": "input",
+					"top": 215,
+					"left": 108,
+					"width": 254,
+					"height": 13,
+					"dataSource": "<>web_proxy_https_host",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"web_proxy_https_puerto": {
+					"type": "input",
+					"top": 215,
+					"left": 434,
+					"width": 69,
+					"height": 13,
+					"dataSource": "<>web_proxy_https_puerto",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"generales9": {
+					"type": "text",
+					"top": 215,
+					"left": 382,
+					"width": 45,
+					"height": 13,
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Puerto:"
+				},
+				"generales10": {
+					"type": "text",
+					"top": 215,
+					"left": 20,
+					"width": 80,
+					"height": 13,
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Proxy SSL:"
+				},
+				"web_proxy_ftp_host": {
+					"type": "input",
+					"top": 246,
+					"left": 108,
+					"width": 254,
+					"height": 13,
+					"dataSource": "<>web_proxy_ftp_host",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"web_proxy_ftp_issocks": {
+					"type": "checkbox",
+					"top": 267,
+					"left": 434,
+					"width": 69,
+					"height": 17,
+					"dataSource": "<>web_proxy_ftp_issocks",
+					"text": "SOCKS",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"web_proxy_ftp_puerto": {
+					"type": "input",
+					"top": 246,
+					"left": 434,
+					"width": 69,
+					"height": 13,
+					"dataSource": "<>web_proxy_ftp_puerto",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"web_proxy_ftp_userid": {
+					"type": "input",
+					"top": 269,
+					"left": 108,
+					"width": 254,
+					"height": 13,
+					"dataSource": "<>web_proxy_ftp_userid",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"generales19": {
+					"type": "text",
+					"top": 246,
+					"left": 382,
+					"width": 45,
+					"height": 13,
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Puerto:"
+				},
+				"generales20": {
+					"type": "text",
+					"top": 246,
+					"left": 20,
+					"width": 80,
+					"height": 13,
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Proxy FTP:"
+				},
+				"generales21": {
+					"type": "text",
+					"top": 269,
+					"left": 40,
+					"width": 60,
+					"height": 13,
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Usuario:"
+				},
+				"Ligne1": {
+					"type": "line",
+					"top": 205,
+					"left": 108,
+					"width": 395,
+					"stroke": "#8E8E8E"
+				},
+				"Ligne2": {
+					"type": "line",
+					"top": 236,
+					"left": 108,
+					"width": 395,
+					"stroke": "#8E8E8E"
+				},
+				"Botón invisible": {
+					"type": "button",
+					"top": 417,
+					"left": 86,
+					"width": 72,
+					"height": 15,
+					"dataSource": "Botón invisible",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón": {
+					"type": "button",
+					"top": 76,
+					"left": 330,
+					"width": 145,
+					"height": 24,
+					"dataSource": "Botón",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Generar Certificado…",
+					"iconFrames": 4,
+					"style": "bevel",
+					"method": "ObjectMethods/Botón.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"ftp_UsePassive": {
+					"type": "checkbox",
+					"top": 362,
+					"left": 108,
+					"width": 105,
+					"height": 18,
+					"dataSource": "<>ftp_UsePassive",
+					"text": "Usar FTP Pasivo",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Ligne3": {
+					"type": "line",
+					"top": 292,
+					"left": 13,
+					"width": 490,
+					"stroke": "#8E8E8E"
+				}
+			}
+		}
+	]
+}

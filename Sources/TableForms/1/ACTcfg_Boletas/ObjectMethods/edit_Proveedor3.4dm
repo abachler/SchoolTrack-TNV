@@ -1,0 +1,2 @@
+ACTdte_OpcionesGenerales ("EditaProveedor")
+

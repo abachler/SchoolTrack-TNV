@@ -1,0 +1,302 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Group Box2",
+	"rightMargin": -13,
+	"bottomMargin": -13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 457,
+					"left": 170,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 417,
+					"left": 255,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Group Box2": {
+					"type": "groupBox",
+					"top": 13,
+					"left": 13,
+					"width": 714,
+					"height": 371,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Modelos para impresión o envío por correo electrónico"
+				},
+				"Plug-in Area2": {
+					"type": "plugin",
+					"top": 40,
+					"left": 27,
+					"width": 572,
+					"height": 292,
+					"dataSource": "xAL_ModelosAvisos",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Plug-in Area2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ambos2": {
+					"type": "button",
+					"top": 39,
+					"left": 613,
+					"width": 100,
+					"height": 18,
+					"dataSource": "bNuevoModelo",
+					"shortcutKey": "n",
+					"shortcutAccel": true,
+					"shortcutShift": true,
+					"text": "Nuevo Modelo...",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/ambos2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"ambos3": {
+					"type": "button",
+					"top": 61,
+					"left": 613,
+					"width": 100,
+					"height": 18,
+					"dataSource": "bEditarModelo",
+					"shortcutKey": "o",
+					"shortcutAccel": true,
+					"shortcutShift": true,
+					"text": "Editar Modelo...",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/ambos3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"ambos1": {
+					"type": "button",
+					"top": 155,
+					"left": 613,
+					"width": 100,
+					"height": 18,
+					"dataSource": "bGuardarModelo",
+					"shortcutKey": "s",
+					"shortcutAccel": true,
+					"shortcutShift": true,
+					"text": "Guardar...",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/ambos1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"ambos5": {
+					"type": "button",
+					"top": 177,
+					"left": 613,
+					"width": 100,
+					"height": 18,
+					"dataSource": "bCargarModelo",
+					"shortcutKey": "l",
+					"shortcutAccel": true,
+					"shortcutShift": true,
+					"text": "Cargar...",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/ambos5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"ambos4": {
+					"type": "button",
+					"top": 124,
+					"left": 613,
+					"width": 100,
+					"height": 18,
+					"dataSource": "bBorrarModelo",
+					"shortcutKey": "[Del]",
+					"text": "Eliminar Modelo",
+					"styleSheet": "XS_FormObjects",
+					"focusable": false,
+					"method": "ObjectMethods/ambos4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Line1": {
+					"type": "line",
+					"top": 86,
+					"left": 613,
+					"width": 100,
+					"stroke": "#AAAAAA",
+					"strokeWidth": 2
+				},
+				"Line2": {
+					"type": "line",
+					"top": 149,
+					"left": 613,
+					"width": 100,
+					"stroke": "#AAAAAA",
+					"strokeWidth": 2
+				},
+				"ambos6": {
+					"type": "button",
+					"top": 92,
+					"left": 613,
+					"width": 100,
+					"height": 18,
+					"dataSource": "bDuplicarModelo",
+					"shortcutKey": "d",
+					"shortcutAccel": true,
+					"shortcutShift": true,
+					"text": "Duplicar Modelo",
+					"styleSheet": "XS_FormObjects",
+					"focusable": false,
+					"method": "ObjectMethods/ambos6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Line3": {
+					"type": "line",
+					"top": 116,
+					"left": 611,
+					"width": 100,
+					"stroke": "#AAAAAA",
+					"strokeWidth": 2
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 433,
+					"left": 339,
+					"width": 148,
+					"height": 47,
+					"dataSource": "Botón1",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"estandar": {
+					"type": "checkbox",
+					"top": 208,
+					"left": 611,
+					"width": 118,
+					"height": 14,
+					"dataSource": "cb_EsEstandar",
+					"text": "Es informe estándar",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/estandar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"estandar1": {
+					"type": "line",
+					"top": 201,
+					"left": 613,
+					"width": 100,
+					"stroke": "#AAAAAA",
+					"strokeWidth": 2
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,450 @@
+﻿{
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"LB_Asignaturas": {
+					"type": "listbox",
+					"top": 37,
+					"left": 25,
+					"width": 565,
+					"height": 248,
+					"dataSource": "LB_Asignaturas",
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"verticalLineStroke": "transparent",
+					"fontFamily": "Tahoma",
+					"fontSize": 10,
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onDataChange",
+						"onAfterSort",
+						"onSelectionChange",
+						"onColumnMove",
+						"onRowMove",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "at_asignaturas",
+							"dataSource": "at_asignaturas",
+							"width": 320,
+							"minWidth": 320,
+							"maxWidth": 320,
+							"resizable": false,
+							"enterable": false,
+							"fontFamily": "Tahoma",
+							"fontSize": 10,
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "lb_Asig_T1",
+								"dataSource": "lb_Asig_T1",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Tahoma",
+								"fontSize": 10,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "at_curso",
+							"dataSource": "at_curso",
+							"width": 80,
+							"minWidth": 80,
+							"maxWidth": 80,
+							"resizable": false,
+							"enterable": false,
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Tahoma",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "lb_Asig_T2",
+								"dataSource": "lb_Asig_T2",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Tahoma",
+								"fontSize": 10,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "at_nivel",
+							"dataSource": "at_nivel",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Tahoma",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "lb_Asig_T3",
+								"dataSource": "lb_Asig_T3",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Tahoma",
+								"fontSize": 10,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "at_asigUUID",
+							"dataSource": "at_asigUUID",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Tahoma",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "lb_Asig_T7",
+								"dataSource": "lb_Asig_T4",
+								"fontFamily": "Tahoma",
+								"fontSize": 10
+							}
+						}
+					]
+				},
+				"LB_subsectores": {
+					"type": "listbox",
+					"top": 37,
+					"left": 672,
+					"width": 445,
+					"height": 555,
+					"dataSource": "LB_subsectores",
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"fontFamily": "Tahoma",
+					"fontSize": 10,
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onAfterSort",
+						"onSelectionChange",
+						"onColumnMove",
+						"onRowMove",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "at_subsectores",
+							"dataSource": "at_subsectores",
+							"width": 450,
+							"minWidth": 450,
+							"maxWidth": 450,
+							"resizable": false,
+							"enterable": false,
+							"fontFamily": "Tahoma",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "LB_SST1",
+								"dataSource": "LB_SST1",
+								"fontFamily": "Tahoma",
+								"fontSize": 10,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "at_subsectoresUUID",
+							"dataSource": "at_subsectoresUUID",
+							"width": 127,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Tahoma",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "LB_SST2",
+								"dataSource": "LB_SST2",
+								"fontFamily": "Tahoma",
+								"fontSize": 10,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"btn_Asig2Materia": {
+					"type": "button",
+					"top": 141,
+					"left": 609,
+					"width": 43,
+					"height": 40,
+					"dataSource": "btn_Asig2Materia",
+					"text": ">",
+					"fontFamily": "Tahoma Negreta",
+					"fontSize": 15,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/btn_Asig2Materia.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LB_AsignaturasHist": {
+					"type": "listbox",
+					"top": 344,
+					"left": 25,
+					"width": 565,
+					"height": 248,
+					"dataSource": "LB_AsignaturasHist",
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"verticalLineStroke": "transparent",
+					"fontFamily": "Tahoma",
+					"fontSize": 10,
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onDataChange",
+						"onAfterSort",
+						"onSelectionChange",
+						"onColumnMove",
+						"onRowMove",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "at_asignaturasHist",
+							"dataSource": "at_asignaturasHist",
+							"width": 280,
+							"minWidth": 280,
+							"maxWidth": 280,
+							"resizable": false,
+							"enterable": false,
+							"fontFamily": "Tahoma",
+							"fontSize": 10,
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "lb_AsigH_T1",
+								"dataSource": "lb_AsigH_T1",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Tahoma",
+								"fontSize": 10,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "at_cursoHist",
+							"dataSource": "at_cursoHist",
+							"width": 80,
+							"minWidth": 80,
+							"maxWidth": 80,
+							"resizable": false,
+							"enterable": false,
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Tahoma",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "lb_AsigH_T2",
+								"dataSource": "lb_AsigH_T2",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Tahoma",
+								"fontSize": 10,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "at_nivelHist",
+							"dataSource": "at_nivelHist",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Tahoma",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "lb_AsigH_T3",
+								"dataSource": "lb_AsigH_T3",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Tahoma",
+								"fontSize": 10,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "al_añoHist",
+							"dataSource": "al_añoHist",
+							"width": 65,
+							"minWidth": 65,
+							"maxWidth": 65,
+							"enterable": false,
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Tahoma",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "lb_AsigH_T4",
+								"dataSource": "lb_AsigH_T4",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Tahoma",
+								"fontSize": 10,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "at_asigHistUUID",
+							"dataSource": "at_asigHistUUID",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Tahoma",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "lb_AsigH_T5",
+								"dataSource": "lb_AsigH_T5",
+								"fontFamily": "Tahoma",
+								"fontSize": 10
+							}
+						}
+					]
+				},
+				"btn_AsigHist2Materia": {
+					"type": "button",
+					"top": 448,
+					"left": 609,
+					"width": 43,
+					"height": 40,
+					"dataSource": "btn_AsigHist2Materia",
+					"text": ">",
+					"fontFamily": "Tahoma Negreta",
+					"fontSize": 15,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/btn_AsigHist2Materia.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"txt_cursosDIAP": {
+					"type": "text",
+					"top": 17,
+					"left": 672,
+					"width": 445,
+					"height": 15,
+					"fontFamily": "Tahoma Negreta",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Subsectores"
+				},
+				"txt_AsignaturasSinMateria": {
+					"type": "text",
+					"top": 15,
+					"left": 25,
+					"width": 466,
+					"height": 14,
+					"fontFamily": "Tahoma Negreta",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Asignaturas actuales sin relación a Subsectores"
+				},
+				"txt_AsignaturasHistoricasSinMat": {
+					"type": "text",
+					"top": 321,
+					"left": 25,
+					"width": 506,
+					"height": 14,
+					"fontFamily": "Tahoma Negreta",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Asignaturas históricas sin relación a Subsectores"
+				}
+			}
+		}
+	]
+}

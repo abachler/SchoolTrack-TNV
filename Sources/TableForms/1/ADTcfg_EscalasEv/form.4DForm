@@ -1,0 +1,469 @@
+﻿{
+	"inheritedForm": "XS_MASTER_ConfigDialogs",
+	"inheritedFormTable": 114,
+	"formSizeAnchor": "Group Box2",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 450,
+					"left": 274,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 393,
+					"left": 90,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Group Box15": {
+					"type": "groupBox",
+					"top": 230,
+					"left": 13,
+					"width": 125,
+					"height": 90,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Escala ev. conductual"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 52,
+					"left": 13,
+					"width": 361,
+					"height": 72,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Defina en esta página la escala de puntajes para la evaluación del examen de admisión.\r\rLas entrevistas a los apoderados pueden ser evaluadas conceptualmente utilizando los indicadores que usted desee, separándolos por un retorno de carro o un punto y coma.\r"
+				},
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 119,
+					"left": 13,
+					"width": 125,
+					"height": 89,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Escala de puntajes"
+				},
+				"Text1611": {
+					"type": "text",
+					"top": 139,
+					"left": 21,
+					"width": 52,
+					"height": 12,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Mínimo"
+				},
+				"Text1612": {
+					"type": "text",
+					"top": 156,
+					"left": 21,
+					"width": 52,
+					"height": 12,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Máximo"
+				},
+				"Text1613": {
+					"type": "text",
+					"top": 190,
+					"left": 21,
+					"width": 52,
+					"height": 12,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Intervalo"
+				},
+				"Text1614": {
+					"type": "text",
+					"top": 173,
+					"left": 21,
+					"width": 50,
+					"height": 12,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Decimales"
+				},
+				"Variable1944": {
+					"type": "input",
+					"top": 139,
+					"left": 76,
+					"width": 51,
+					"height": 12,
+					"dataSource": "<>vrPST_minPoints",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable1944.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1945": {
+					"type": "input",
+					"top": 156,
+					"left": 76,
+					"width": 51,
+					"height": 12,
+					"dataSource": "<>vrPST_MaxPoints",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable1945.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1947": {
+					"type": "input",
+					"top": 173,
+					"left": 76,
+					"width": 51,
+					"height": 12,
+					"dataSource": "<>vrPST_precision",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/Variable1947.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1946": {
+					"type": "input",
+					"top": 190,
+					"left": 76,
+					"width": 51,
+					"height": 12,
+					"dataSource": "<>vrPST_step",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable1946.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2181": {
+					"type": "input",
+					"top": 249,
+					"left": 76,
+					"width": 51,
+					"height": 12,
+					"dataSource": "<>vrPST_minEvConductual",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable2181.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2182": {
+					"type": "input",
+					"top": 266,
+					"left": 76,
+					"width": 51,
+					"height": 12,
+					"dataSource": "<>vrPST_MaxEvConductual",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable2182.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2183": {
+					"type": "input",
+					"top": 283,
+					"left": 76,
+					"width": 51,
+					"height": 12,
+					"dataSource": "<>vrPST_precisionEvConductual",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/Variable2183.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vrPST_stepEvConductual": {
+					"type": "input",
+					"top": 300,
+					"left": 76,
+					"width": 51,
+					"height": 12,
+					"dataSource": "<>vrPST_stepEvConductual",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/vrPST_stepEvConductual.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onLosingFocus",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Group Box2": {
+					"type": "groupBox",
+					"top": 119,
+					"left": 160,
+					"width": 224,
+					"height": 199,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Indicadores para evaluación de entrevistas"
+				},
+				"Variable1952": {
+					"type": "input",
+					"top": 359,
+					"left": 50,
+					"width": 187,
+					"height": 158,
+					"dataSource": "vtPST_EvalEntrevistas",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text1805": {
+					"type": "text",
+					"top": 249,
+					"left": 21,
+					"width": 52,
+					"height": 12,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Mínimo"
+				},
+				"Text1806": {
+					"type": "text",
+					"top": 266,
+					"left": 21,
+					"width": 52,
+					"height": 12,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Máximo"
+				},
+				"Text1807": {
+					"type": "text",
+					"top": 300,
+					"left": 21,
+					"width": 52,
+					"height": 12,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Intervalo"
+				},
+				"Text1808": {
+					"type": "text",
+					"top": 283,
+					"left": 21,
+					"width": 50,
+					"height": 12,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Decimales"
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 349,
+					"left": 286,
+					"width": 66,
+					"height": 18,
+					"dataSource": "b_Close",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto": {
+					"type": "text",
+					"top": 137,
+					"left": 209,
+					"width": 110,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Número de Indicadores:"
+				},
+				"Variable": {
+					"type": "input",
+					"top": 138,
+					"left": 337,
+					"width": 37,
+					"height": 10,
+					"dataSource": "vtPST_CantidadIndicadores",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Variable.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"xALP_Indicadores": {
+					"type": "plugin",
+					"top": 161,
+					"left": 171,
+					"width": 203,
+					"height": 146,
+					"dataSource": "xALP_Indicadores",
+					"pluginAreaKind": "%AreaListPro",
+					"events": [
+						"onClick",
+						"onPluginArea"
+					]
+				}
+			}
+		}
+	]
+}

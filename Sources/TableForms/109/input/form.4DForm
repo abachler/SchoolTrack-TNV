@@ -1,0 +1,332 @@
+﻿{
+	"windowTitle": "Registro de Asistencia",
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 792,
+	"height": 492,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 564,
+					"left": 229,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 507,
+					"left": 45,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Picture1942": {
+					"type": "picture",
+					"top": 23,
+					"left": 365,
+					"width": 11,
+					"height": 14
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 25,
+					"left": 51,
+					"width": 161,
+					"height": 11,
+					"dataSource": "dViaje",
+					"dataSourceTypeHint": "date",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dateFormat": "systemLong",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 25,
+					"left": 13,
+					"width": 36,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": ":21012,15"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 25,
+					"left": 255,
+					"width": 27,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Ruta"
+				},
+				"Variable3": {
+					"type": "pictureButton",
+					"top": 19,
+					"left": 218,
+					"width": 18,
+					"height": 18,
+					"dataSource": "BCalendar1",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Área de plug-in1": {
+					"type": "plugin",
+					"top": 214,
+					"left": 13,
+					"width": 766,
+					"height": 241,
+					"dataSource": "xALP_BUAsistentes",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Área de plug-in1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo1": {
+					"type": "input",
+					"top": 47,
+					"left": 407,
+					"width": 372,
+					"height": 132,
+					"dataSource": "[BU_Viajes:109]Observaciones:5",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 24,
+					"left": 406,
+					"width": 79,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Observaciones"
+				},
+				"Botón de opción1": {
+					"type": "radio",
+					"top": 193,
+					"left": 630,
+					"width": 61,
+					"height": 14,
+					"dataSource": "btAlumnos",
+					"text": "Alumnos",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Botón de opción1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón de opción2": {
+					"type": "radio",
+					"top": 193,
+					"left": 701,
+					"width": 78,
+					"height": 14,
+					"dataSource": "btProfesores",
+					"text": "Funcionarios",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Botón de opción2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Área de plug-in2": {
+					"type": "plugin",
+					"top": 47,
+					"left": 13,
+					"width": 374,
+					"height": 139,
+					"dataSource": "xALP_BURecorridos",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Área de plug-in2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo2": {
+					"type": "input",
+					"top": 467,
+					"left": 74,
+					"width": 53,
+					"height": 11,
+					"dataSource": "[BU_Viajes:109]ID:1",
+					"fill": "transparent",
+					"stroke": "#FF4600",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 467,
+					"left": 22,
+					"width": 43,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "ID Viaje"
+				},
+				"Variable1": {
+					"type": "dropdown",
+					"top": 22,
+					"left": 364,
+					"width": 12,
+					"height": 15,
+					"dataSource": "atRuta",
+					"focusable": false,
+					"display": false,
+					"styleSheet": "Defaut",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 27,
+					"left": 288,
+					"width": 72,
+					"height": 8,
+					"dataSource": "vtNombreRutaV",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

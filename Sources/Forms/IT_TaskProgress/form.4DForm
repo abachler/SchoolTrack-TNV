@@ -1,0 +1,94 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onOutsideCall",
+		"onCloseBox",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 537,
+					"height": 86,
+					"stroke": "#FFFFFF"
+				},
+				"Rectángulo": {
+					"type": "rectangle",
+					"top": 54,
+					"left": 166,
+					"width": 363,
+					"height": 21,
+					"fill": "transparent"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 8,
+					"left": 168,
+					"width": 352,
+					"height": 39,
+					"dataSource": "vThermoText",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Picture23": {
+					"type": "picture",
+					"top": 4,
+					"left": 3,
+					"width": 125,
+					"height": 75,
+					"pictureFormat": "tiled"
+				},
+				"vl_ProgressBar": {
+					"type": "progress",
+					"top": 55,
+					"left": 167,
+					"width": 360,
+					"height": 16,
+					"dataSource": "vl_ProgressBar",
+					"continuousExecution": false,
+					"min": 0,
+					"max": 100,
+					"graduationStep": 1,
+					"enterable": true,
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

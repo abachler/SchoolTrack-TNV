@@ -1,0 +1,2 @@
+cb_InscribeEnAsignaturas:=0
+_O_DISABLE BUTTON:C193(cb_InscribeEnAsignaturas)

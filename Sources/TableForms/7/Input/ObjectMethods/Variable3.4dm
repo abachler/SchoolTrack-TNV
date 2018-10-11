@@ -1,0 +1,15 @@
+C_TEXT:C284($idEducacionAnterior)
+_O_C_INTEGER:C282($id)
+$row:=AL_GetLine (xALP_EducAntSTR)
+If ($row>0)
+	$id:=IDEducacionAnterior{$row}
+	READ WRITE:C146([STR_EducacionAnterior:87])
+	QUERY:C277([STR_EducacionAnterior:87];[STR_EducacionAnterior:87]ID_Persona:6=[Personas:7]No:1;*)
+	QUERY:C277([STR_EducacionAnterior:87]; & ;[STR_EducacionAnterior:87]ID_EducacionAnterior:9=$id)
+	KRL_DeleteRecord (->[STR_EducacionAnterior:87])
+	AL_UpdateArrays (xALP_EducAntSTR;0)
+	AT_Delete ($row;1;->atTipoInstitucion;->atInstitucion;->atPaisEducacion;->atGradoONivel;->aiAno;->IDEducacionAnterior)
+	AL_UpdateArrays (xALP_EducAntSTR;-2)
+	AL_SetLine (xALP_EducAntSTR;0)
+	_O_DISABLE BUTTON:C193(bDelColAnt)
+End if 

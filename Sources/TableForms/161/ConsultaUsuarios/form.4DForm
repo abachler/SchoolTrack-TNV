@@ -1,0 +1,687 @@
+﻿{
+	"formSizeAnchor": "List Box1",
+	"rightMargin": 13,
+	"bottomMargin": 33,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"custom": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 2000,
+					"height": 2000,
+					"stroke": "transparent"
+				},
+				"Imagen2": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 900,
+					"height": 44,
+					"pictureFormat": "scaled"
+				},
+				"Línea3": {
+					"type": "line",
+					"top": 3,
+					"left": 77,
+					"height": 37,
+					"strokeDashArray": "1 1"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 8,
+					"left": 85,
+					"width": 581,
+					"height": 21,
+					"stroke": "#FFFFFF",
+					"styleSheet": "Plain - 16",
+					"fontWeight": "bold",
+					"text": "SchoolNet: Consulta y Modificación de Usuarios y Contraseñas"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 44,
+					"left": 0,
+					"width": 613,
+					"height": 451,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vp_FondoConfig",
+					"dataSourceTypeHint": "picture",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"programacion16": {
+					"type": "button",
+					"top": 544,
+					"left": 31,
+					"width": 122,
+					"height": 23,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "programacion",
+					"shortcutKey": "[Esc]",
+					"text": "Esc Close",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/programacion16.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Imagen1": {
+					"type": "picture",
+					"top": 6,
+					"left": 22,
+					"width": 33,
+					"height": 32,
+					"pictureFormat": "scaled"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Área de grupo1": {
+					"type": "groupBox",
+					"top": 79,
+					"left": 13,
+					"width": 727,
+					"height": 97,
+					"sizingX": "grow",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Mostrar"
+				},
+				"busquedas": {
+					"type": "input",
+					"top": 53,
+					"left": 479,
+					"width": 228,
+					"height": 13,
+					"sizingX": "move",
+					"dataSource": "SN3_SearchString",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/busquedas.4dm",
+					"events": [
+						"onAfterEdit"
+					]
+				},
+				"opcionesLista": {
+					"type": "radio",
+					"top": 105,
+					"left": 21,
+					"width": 67,
+					"height": 15,
+					"dataSource": "g_Alumnos",
+					"text": "Alumnos",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/opcionesLista.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesLista1": {
+					"type": "radio",
+					"top": 105,
+					"left": 233,
+					"width": 134,
+					"height": 15,
+					"dataSource": "g_Relaciones",
+					"text": "Relaciones Familiares",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/opcionesLista1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesLista8": {
+					"type": "radio",
+					"top": 105,
+					"left": 471,
+					"width": 54,
+					"height": 14,
+					"dataSource": "g_Todos",
+					"text": "Todos",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/opcionesLista8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesLista3": {
+					"type": "radio",
+					"top": 126,
+					"left": 21,
+					"width": 84,
+					"height": 14,
+					"dataSource": "r_Activos",
+					"text": "Sólo Activos",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/opcionesLista3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesLista4": {
+					"type": "radio",
+					"top": 126,
+					"left": 233,
+					"width": 99,
+					"height": 14,
+					"dataSource": "r_Inactivos",
+					"text": "Sólo Inactivos",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/opcionesLista4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesLista2": {
+					"type": "radio",
+					"top": 126,
+					"left": 471,
+					"width": 84,
+					"height": 14,
+					"dataSource": "r_Todos",
+					"text": "Cualquiera",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/opcionesLista2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesLista5": {
+					"type": "button",
+					"top": 141,
+					"left": 616,
+					"width": 110,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "bNewSearch",
+					"text": "Nueva Búsqueda",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/opcionesLista5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesLista12": {
+					"type": "radio",
+					"top": 147,
+					"left": 21,
+					"width": 144,
+					"height": 14,
+					"dataSource": "h_NoModificados",
+					"text": "No Modificados por Web",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/opcionesLista12.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesLista14": {
+					"type": "radio",
+					"top": 147,
+					"left": 233,
+					"width": 139,
+					"height": 14,
+					"dataSource": "h_Modificados",
+					"text": "Modificados por Web",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/opcionesLista14.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesLista13": {
+					"type": "radio",
+					"top": 147,
+					"left": 471,
+					"width": 84,
+					"height": 14,
+					"dataSource": "h_Todos",
+					"text": "Cualquiera",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/opcionesLista13.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesLista9": {
+					"type": "input",
+					"top": 183,
+					"left": 12,
+					"width": 588,
+					"height": 13,
+					"dataSource": "SN3_ListMessage",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"fontStyle": "italic",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"List Box1": {
+					"type": "listbox",
+					"top": 208,
+					"left": 13,
+					"width": 727,
+					"height": 275,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "lb_Usuarios",
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"rowStrokeSource": "SN3_ColorsUsuarios",
+					"rowFillSource": "SN3_BacksUsuarios",
+					"rowStyleSource": "SN3_StylesUsuarios",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"method": "ObjectMethods/List Box1.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "Columna1",
+							"dataSource": "SN3_TipoUsuario",
+							"width": 59,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título1",
+								"text": "Tipo",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Columna2",
+							"dataSource": "SN3_AyNUsuarios",
+							"width": 222,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título2",
+								"text": "Apellidos y Nombres",
+								"dataSource": "Título2",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Columna5",
+							"dataSource": "SN3_CursosUsuarios",
+							"width": 54,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título3",
+								"text": "Curso",
+								"dataSource": "Título3",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Columna3",
+							"dataSource": "SN3_LoginUsuarios",
+							"width": 107,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título4",
+								"text": "Usuario",
+								"dataSource": "Título4",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Columna4",
+							"dataSource": "SN3_PasswordUsuarios",
+							"width": 130,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título5",
+								"text": "Contraseña",
+								"dataSource": "Titulo5",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Columna6",
+							"dataSource": "SN3_ultimo_ingreso",
+							"width": 140,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título6",
+								"text": "Último Acceso",
+								"dataSource": "Título6",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"enviarmail": {
+					"type": "checkbox",
+					"top": 490,
+					"left": 196,
+					"width": 183,
+					"height": 14,
+					"sizingY": "move",
+					"dataSource": "cb_SendMailInactivar",
+					"text": "Enviar email al inactivar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Imagen3": {
+					"type": "picture",
+					"top": 51,
+					"left": 721,
+					"width": 18,
+					"height": 18,
+					"sizingX": "move",
+					"pictureFormat": "scaled"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 51,
+					"left": 422,
+					"width": 53,
+					"height": 13,
+					"sizingX": "move",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Apellidos:"
+				},
+				"Botón invisible20": {
+					"type": "button",
+					"top": 49,
+					"left": 718,
+					"width": 22,
+					"height": 22,
+					"sizingX": "move",
+					"dataSource": "bSearch",
+					"shortcutKey": "[Enter]",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible20.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"opcionesLista6": {
+					"type": "pictureButton",
+					"top": 50,
+					"left": 13,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bPrintUsuarios",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/opcionesLista6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"opcionesLista7": {
+					"type": "pictureButton",
+					"top": 50,
+					"left": 39,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bSaveUsuarios",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/opcionesLista7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"opcionesLista10": {
+					"type": "text",
+					"top": 491,
+					"left": 13,
+					"width": 163,
+					"height": 13,
+					"sizingY": "move",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"textDecoration": "underline",
+					"text": "Activar o desactivar con archivo"
+				},
+				"fileactivation": {
+					"type": "button",
+					"top": 492,
+					"left": 13,
+					"width": 160,
+					"height": 14,
+					"sizingY": "move",
+					"dataSource": "bFileActivation",
+					"display": false,
+					"method": "ObjectMethods/fileactivation.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón invisible1": {
+					"type": "button",
+					"top": 712,
+					"left": 175,
+					"width": 22,
+					"height": 22,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bSearch",
+					"shortcutKey": "[Return]",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 72,
+					"left": 693,
+					"width": 47,
+					"height": 11,
+					"sizingX": "move",
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"textDecoration": "underline",
+					"text": "Traer todos"
+				},
+				"Botón invisible2": {
+					"type": "button",
+					"top": 72,
+					"left": 694,
+					"width": 46,
+					"height": 11,
+					"sizingX": "move",
+					"dataSource": "Botón invisible2",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable7": {
+					"type": "pictureButton",
+					"top": 49,
+					"left": 65,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bPreviewUsuario",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

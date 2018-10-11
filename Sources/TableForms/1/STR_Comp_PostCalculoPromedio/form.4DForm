@@ -1,0 +1,1669 @@
+﻿{
+	"rightMargin": 0,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texto25": {
+					"type": "text",
+					"top": 91,
+					"left": 19,
+					"width": 656,
+					"height": 351,
+					"styleSheet": "XS_DialogObjects",
+					"text": "En función de la modalidad de evaluación utilizada en el la institución estas diferencias pueden tener alta o mínima relevancia.\nSchoolTrack almacena las calificaciones en 5 formas diferentes en función de las propiedades de los estilos de evaluación asignados a las asignaturas:\n- en Notas, de acuerdo a la escala de Notas\n- en Puntos, de acuerdo a la escala de Puntos\n- en Símbolos, de acuerdo a la tabla de conversión \n- en porcentaje (Real), que resulta de la división de la calificación por el máximo de la escala\n- Literal, representación alfanumérica de la calificación.\n\nAunque la relevancia sea mínima es conveniente asegurarse que el resultado de este cálculo promedios sea el esperado.\nUn cambio inapropiado en los estilos de evaluación, en las propiedades de evaluación de la asignatura, en las propiedades de exámenes, etc, puede conducir a resultados que no necesariamente son los que se esperan.\nEsta herramienta le ayudará a detectar posibles fallas o errores de configuración.\n\nEn la página siguiente de este cuadro de diálogo son listadas todas las asignaturas en las cuales se detectó alguna diferencia, por mínima que esta sea.\nCuando una asignatura es seleccionada en la lista, en el recuadro de la derecha se lista cada uno de los alumnos en cuyos promedios se encontró alguna diferencia.\nEn la parte inferior del cuadro de diálogo se muestran el detalle de las calificaciones, antes y después del recálculo. \rLa diferencias aparecen destacadas en rojo y negritas.\n\nMientras este cuadro de diálogo esté abierto, podrá listar todas las asignaturas con diferencias en el explorador o, hacer dobleclic en una asignatura para abrir la página evaluación y ver destacadas cada una de las diferencias.\nTendrá también la opción de generar un documento con el detalle de todas las diferencias que se hayan detectado. Si tiene dudas le recomendamos hacerlo y utilizarlo para analizar detalladamente las diferencias."
+				},
+				"Texto26": {
+					"type": "text",
+					"top": 19,
+					"left": 19,
+					"width": 644,
+					"height": 44,
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Se detectaron diferencias entre los promedios almacenados anteriormente y el nuevo cálculo de promedios."
+				},
+				"bShowInExplorer4": {
+					"type": "button",
+					"top": 483,
+					"left": 577,
+					"width": 82,
+					"height": 20,
+					"dataSource": "bNextPage",
+					"action": "nextPage",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Siguiente",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 277,
+					"left": 94,
+					"width": 588,
+					"height": 197,
+					"fill": "transparent",
+					"stroke": "#AAAAAA"
+				},
+				"Línea1": {
+					"type": "line",
+					"top": 293,
+					"left": 94,
+					"width": 588,
+					"stroke": "#AAAAAA"
+				},
+				"Línea10": {
+					"type": "line",
+					"top": 310,
+					"left": 94,
+					"width": 588,
+					"stroke": "#AAAAAA"
+				},
+				"Línea11": {
+					"type": "line",
+					"top": 332,
+					"left": 94,
+					"width": 588,
+					"stroke": "#AAAAAA"
+				},
+				"Línea12": {
+					"type": "line",
+					"top": 352,
+					"left": 94,
+					"width": 588,
+					"stroke": "#AAAAAA"
+				},
+				"Línea13": {
+					"type": "line",
+					"top": 372,
+					"left": 94,
+					"width": 588,
+					"stroke": "#AAAAAA"
+				},
+				"Línea14": {
+					"type": "line",
+					"top": 392,
+					"left": 94,
+					"width": 588,
+					"stroke": "#AAAAAA"
+				},
+				"Línea15": {
+					"type": "line",
+					"top": 412,
+					"left": 94,
+					"width": 588,
+					"stroke": "#AAAAAA"
+				},
+				"Línea16": {
+					"type": "line",
+					"top": 432,
+					"left": 94,
+					"width": 588,
+					"stroke": "#AAAAAA"
+				},
+				"Línea17": {
+					"type": "line",
+					"top": 452,
+					"left": 94,
+					"width": 588,
+					"stroke": "#AAAAAA"
+				},
+				"Rectángulo2": {
+					"type": "rectangle",
+					"top": 277,
+					"left": 13,
+					"width": 82,
+					"height": 197,
+					"fill": "transparent",
+					"stroke": "#AAAAAA"
+				},
+				"Línea2": {
+					"type": "line",
+					"top": 277,
+					"left": 184,
+					"height": 197,
+					"stroke": "#AAAAAA"
+				},
+				"Línea3": {
+					"type": "line",
+					"top": 277,
+					"left": 280,
+					"height": 197,
+					"stroke": "#AAAAAA"
+				},
+				"Línea4": {
+					"type": "line",
+					"top": 277,
+					"left": 376,
+					"height": 197,
+					"stroke": "#AAAAAA"
+				},
+				"Línea5": {
+					"type": "line",
+					"top": 277,
+					"left": 472,
+					"height": 197,
+					"stroke": "#AAAAAA"
+				},
+				"Línea6": {
+					"type": "line",
+					"top": 293,
+					"left": 136,
+					"height": 180,
+					"stroke": "#C0C0C0"
+				},
+				"Línea7": {
+					"type": "line",
+					"top": 293,
+					"left": 232,
+					"height": 180,
+					"stroke": "#C0C0C0"
+				},
+				"Línea8": {
+					"type": "line",
+					"top": 293,
+					"left": 327,
+					"height": 180,
+					"stroke": "#C0C0C0"
+				},
+				"Línea9": {
+					"type": "line",
+					"top": 293,
+					"left": 422,
+					"height": 180,
+					"stroke": "#C0C0C0"
+				},
+				"◊hl_avgDiff_Asignaturas": {
+					"type": "list",
+					"top": 1,
+					"left": 0,
+					"width": 349,
+					"height": 232,
+					"dataSource": "<>hl_avgDiff_Asignaturas",
+					"enterable": false,
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/◊hl_avgDiff_Asignaturas.4dm",
+					"events": [
+						"onDoubleClick",
+						"onSelectionChange"
+					]
+				},
+				"◊hl_avgDiff_Alumnos": {
+					"type": "list",
+					"top": 1,
+					"left": 350,
+					"width": 340,
+					"height": 232,
+					"dataSource": "<>hl_avgDiff_Alumnos",
+					"enterable": false,
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/◊hl_avgDiff_Alumnos.4dm",
+					"events": [
+						"onSelectionChange"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 237,
+					"left": 9,
+					"width": 681,
+					"height": 22,
+					"styleSheet": "XS_FormObjects",
+					"text": "Seleccione la asignatura entre las que se detectaron diferencias después de recalcular promedios. Las diferencias serán listadas en el recuadrto de la derecha"
+				},
+				"Campo1": {
+					"type": "input",
+					"top": 317,
+					"left": 150,
+					"width": 27,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]P01_Final_Literal:116",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 317,
+					"left": 17,
+					"width": 72,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Périodo 1"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 337,
+					"left": 17,
+					"width": 72,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Périodo 2"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 357,
+					"left": 17,
+					"width": 72,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Périodo 3"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 377,
+					"left": 17,
+					"width": 72,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Périodo 4"
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 397,
+					"left": 17,
+					"width": 72,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Périodo 5"
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 417,
+					"left": 17,
+					"width": 72,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Promedio Anual"
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 437,
+					"left": 17,
+					"width": 82,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Final (con examen)"
+				},
+				"Texto9": {
+					"type": "text",
+					"top": 457,
+					"left": 17,
+					"width": 72,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Final oficial"
+				},
+				"Texto10": {
+					"type": "text",
+					"top": 279,
+					"left": 107,
+					"width": 72,
+					"height": 11,
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Literal"
+				},
+				"Texto11": {
+					"type": "text",
+					"top": 297,
+					"left": 107,
+					"width": 32,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Antes"
+				},
+				"Texto12": {
+					"type": "text",
+					"top": 297,
+					"left": 147,
+					"width": 38,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Después"
+				},
+				"vt_P01": {
+					"type": "input",
+					"top": 317,
+					"left": 107,
+					"width": 27,
+					"height": 11,
+					"dataSource": "vt_P01",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vt_P02": {
+					"type": "input",
+					"top": 337,
+					"left": 107,
+					"width": 27,
+					"height": 11,
+					"dataSource": "vt_P02",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo4": {
+					"type": "input",
+					"top": 337,
+					"left": 150,
+					"width": 27,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]P02_Final_Literal:191",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vt_P03": {
+					"type": "input",
+					"top": 357,
+					"left": 107,
+					"width": 27,
+					"height": 11,
+					"dataSource": "vt_P03",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo2": {
+					"type": "input",
+					"top": 357,
+					"left": 150,
+					"width": 27,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]P03_Final_Literal:266",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vt_P04": {
+					"type": "input",
+					"top": 377,
+					"left": 107,
+					"width": 27,
+					"height": 11,
+					"dataSource": "vt_P04",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo3": {
+					"type": "input",
+					"top": 377,
+					"left": 150,
+					"width": 27,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]P04_Final_Literal:341",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vt_P05": {
+					"type": "input",
+					"top": 397,
+					"left": 107,
+					"width": 27,
+					"height": 11,
+					"dataSource": "vt_P05",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo5": {
+					"type": "input",
+					"top": 397,
+					"left": 150,
+					"width": 27,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]P05_Final_Literal:416",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vt_PA": {
+					"type": "input",
+					"top": 417,
+					"left": 107,
+					"width": 27,
+					"height": 11,
+					"dataSource": "vt_PA",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo6": {
+					"type": "input",
+					"top": 417,
+					"left": 150,
+					"width": 27,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]Anual_Literal:15",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vt_NF": {
+					"type": "input",
+					"top": 437,
+					"left": 107,
+					"width": 27,
+					"height": 11,
+					"dataSource": "vt_NF",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo7": {
+					"type": "input",
+					"top": 437,
+					"left": 150,
+					"width": 27,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]EvaluacionFinal_Literal:30",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vt_NO": {
+					"type": "input",
+					"top": 457,
+					"left": 107,
+					"width": 27,
+					"height": 11,
+					"dataSource": "vt_NO",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo8": {
+					"type": "input",
+					"top": 457,
+					"left": 150,
+					"width": 27,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]EvaluacionFinalOficial_Literal:36",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto13": {
+					"type": "text",
+					"top": 279,
+					"left": 202,
+					"width": 72,
+					"height": 11,
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Nota"
+				},
+				"Texto14": {
+					"type": "text",
+					"top": 297,
+					"left": 202,
+					"width": 32,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Antes"
+				},
+				"Texto15": {
+					"type": "text",
+					"top": 297,
+					"left": 242,
+					"width": 38,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Después"
+				},
+				"Texto16": {
+					"type": "text",
+					"top": 279,
+					"left": 297,
+					"width": 72,
+					"height": 11,
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Puntos"
+				},
+				"Texto17": {
+					"type": "text",
+					"top": 297,
+					"left": 297,
+					"width": 32,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Antes"
+				},
+				"Texto18": {
+					"type": "text",
+					"top": 297,
+					"left": 337,
+					"width": 38,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Después"
+				},
+				"Texto19": {
+					"type": "text",
+					"top": 279,
+					"left": 392,
+					"width": 72,
+					"height": 11,
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Símbolo"
+				},
+				"Texto20": {
+					"type": "text",
+					"top": 297,
+					"left": 392,
+					"width": 32,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Antes"
+				},
+				"Texto21": {
+					"type": "text",
+					"top": 297,
+					"left": 432,
+					"width": 38,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Después"
+				},
+				"Texto22": {
+					"type": "text",
+					"top": 280,
+					"left": 539,
+					"width": 72,
+					"height": 11,
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Real"
+				},
+				"Texto23": {
+					"type": "text",
+					"top": 297,
+					"left": 514,
+					"width": 32,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Antes"
+				},
+				"Texto24": {
+					"type": "text",
+					"top": 297,
+					"left": 604,
+					"width": 38,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Después"
+				},
+				"vr_Nota_P01": {
+					"type": "input",
+					"top": 317,
+					"left": 202,
+					"width": 27,
+					"height": 11,
+					"dataSource": "vr_Nota_P01",
+					"dataSourceTypeHint": "number",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"numberFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_Nota_P02": {
+					"type": "input",
+					"top": 337,
+					"left": 202,
+					"width": 27,
+					"height": 11,
+					"dataSource": "vr_Nota_P02",
+					"dataSourceTypeHint": "number",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"numberFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_Nota_P03": {
+					"type": "input",
+					"top": 357,
+					"left": 202,
+					"width": 27,
+					"height": 11,
+					"dataSource": "vr_Nota_P03",
+					"dataSourceTypeHint": "number",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"numberFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_Nota_P04": {
+					"type": "input",
+					"top": 377,
+					"left": 202,
+					"width": 27,
+					"height": 11,
+					"dataSource": "vr_Nota_P04",
+					"dataSourceTypeHint": "number",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"numberFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_Nota_P05": {
+					"type": "input",
+					"top": 397,
+					"left": 202,
+					"width": 27,
+					"height": 11,
+					"dataSource": "vr_Nota_P05",
+					"dataSourceTypeHint": "number",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"numberFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_Nota_PA": {
+					"type": "input",
+					"top": 417,
+					"left": 202,
+					"width": 27,
+					"height": 11,
+					"dataSource": "vr_Nota_PA",
+					"dataSourceTypeHint": "number",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"numberFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_Nota_NF": {
+					"type": "input",
+					"top": 437,
+					"left": 202,
+					"width": 27,
+					"height": 11,
+					"dataSource": "vr_Nota_NF",
+					"dataSourceTypeHint": "number",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"numberFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_Nota_NO": {
+					"type": "input",
+					"top": 457,
+					"left": 202,
+					"width": 27,
+					"height": 11,
+					"dataSource": "vr_Nota_NO",
+					"dataSourceTypeHint": "number",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"numberFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_Puntos_P01": {
+					"type": "input",
+					"top": 317,
+					"left": 297,
+					"width": 27,
+					"height": 11,
+					"dataSource": "vr_Puntos_P01",
+					"dataSourceTypeHint": "number",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"numberFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_Puntos_P02": {
+					"type": "input",
+					"top": 337,
+					"left": 297,
+					"width": 27,
+					"height": 11,
+					"dataSource": "vr_Puntos_P02",
+					"dataSourceTypeHint": "number",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"numberFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_Puntos_P03": {
+					"type": "input",
+					"top": 357,
+					"left": 297,
+					"width": 27,
+					"height": 11,
+					"dataSource": "vr_Puntos_P03",
+					"dataSourceTypeHint": "number",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"numberFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_Puntos_P04": {
+					"type": "input",
+					"top": 377,
+					"left": 297,
+					"width": 27,
+					"height": 11,
+					"dataSource": "vr_Puntos_P04",
+					"dataSourceTypeHint": "number",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"numberFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_Puntos_P05": {
+					"type": "input",
+					"top": 397,
+					"left": 297,
+					"width": 27,
+					"height": 11,
+					"dataSource": "vr_Puntos_P05",
+					"dataSourceTypeHint": "number",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"numberFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_Puntos_PA": {
+					"type": "input",
+					"top": 417,
+					"left": 297,
+					"width": 27,
+					"height": 11,
+					"dataSource": "vr_Puntos_PA",
+					"dataSourceTypeHint": "number",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"numberFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_Puntos_NF": {
+					"type": "input",
+					"top": 437,
+					"left": 297,
+					"width": 27,
+					"height": 11,
+					"dataSource": "vr_Puntos_NF",
+					"dataSourceTypeHint": "number",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"numberFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_Puntos_NO": {
+					"type": "input",
+					"top": 457,
+					"left": 297,
+					"width": 27,
+					"height": 11,
+					"dataSource": "vr_Puntos_NO",
+					"dataSourceTypeHint": "number",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"numberFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vt_Simbolo_P01": {
+					"type": "input",
+					"top": 317,
+					"left": 392,
+					"width": 27,
+					"height": 11,
+					"dataSource": "vt_Simbolo_P01",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vt_Simbolo_P02": {
+					"type": "input",
+					"top": 337,
+					"left": 392,
+					"width": 27,
+					"height": 11,
+					"dataSource": "vt_Simbolo_P02",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vt_Simbolo_P03": {
+					"type": "input",
+					"top": 357,
+					"left": 392,
+					"width": 27,
+					"height": 11,
+					"dataSource": "vt_Simbolo_P03",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vt_Simbolo_P04": {
+					"type": "input",
+					"top": 377,
+					"left": 392,
+					"width": 27,
+					"height": 11,
+					"dataSource": "vt_Simbolo_P04",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vt_Simbolo_P05": {
+					"type": "input",
+					"top": 397,
+					"left": 392,
+					"width": 27,
+					"height": 11,
+					"dataSource": "vt_Simbolo_P05",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vt_Simbolo_PA": {
+					"type": "input",
+					"top": 417,
+					"left": 392,
+					"width": 27,
+					"height": 11,
+					"dataSource": "vt_Simbolo_PA",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vt_Simbolo_NF": {
+					"type": "input",
+					"top": 437,
+					"left": 392,
+					"width": 27,
+					"height": 11,
+					"dataSource": "vt_Simbolo_NF",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vt_Simbolo_NO": {
+					"type": "input",
+					"top": 457,
+					"left": 392,
+					"width": 27,
+					"height": 11,
+					"dataSource": "vt_Simbolo_NO",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_P01": {
+					"type": "input",
+					"top": 317,
+					"left": 487,
+					"width": 87,
+					"height": 11,
+					"dataSource": "vr_P01",
+					"dataSourceTypeHint": "number",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"numberFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_P02": {
+					"type": "input",
+					"top": 337,
+					"left": 487,
+					"width": 87,
+					"height": 11,
+					"dataSource": "vr_P02",
+					"dataSourceTypeHint": "number",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"numberFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_P03": {
+					"type": "input",
+					"top": 357,
+					"left": 487,
+					"width": 87,
+					"height": 11,
+					"dataSource": "vr_P03",
+					"dataSourceTypeHint": "number",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"numberFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_P04": {
+					"type": "input",
+					"top": 377,
+					"left": 487,
+					"width": 87,
+					"height": 11,
+					"dataSource": "vr_P04",
+					"dataSourceTypeHint": "number",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"numberFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_P05": {
+					"type": "input",
+					"top": 397,
+					"left": 487,
+					"width": 87,
+					"height": 11,
+					"dataSource": "vr_P05",
+					"dataSourceTypeHint": "number",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"numberFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_PA": {
+					"type": "input",
+					"top": 417,
+					"left": 487,
+					"width": 87,
+					"height": 11,
+					"dataSource": "vr_PA",
+					"dataSourceTypeHint": "number",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"numberFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_NF": {
+					"type": "input",
+					"top": 437,
+					"left": 487,
+					"width": 87,
+					"height": 11,
+					"dataSource": "vr_NF",
+					"dataSourceTypeHint": "number",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"numberFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_NO": {
+					"type": "input",
+					"top": 457,
+					"left": 487,
+					"width": 87,
+					"height": 11,
+					"dataSource": "vr_NO",
+					"dataSourceTypeHint": "number",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"numberFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo9": {
+					"type": "input",
+					"top": 317,
+					"left": 245,
+					"width": 27,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]P01_Final_Nota:113",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"textFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo10": {
+					"type": "input",
+					"top": 337,
+					"left": 245,
+					"width": 27,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]P02_Final_Nota:188",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"textFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo11": {
+					"type": "input",
+					"top": 357,
+					"left": 245,
+					"width": 27,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]P03_Final_Nota:263",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"textFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo12": {
+					"type": "input",
+					"top": 377,
+					"left": 245,
+					"width": 27,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]P04_Final_Nota:338",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"textFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo13": {
+					"type": "input",
+					"top": 397,
+					"left": 245,
+					"width": 27,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]P05_Final_Nota:413",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"textFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo14": {
+					"type": "input",
+					"top": 417,
+					"left": 245,
+					"width": 27,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]Anual_Nota:12",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"textFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo15": {
+					"type": "input",
+					"top": 437,
+					"left": 245,
+					"width": 27,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]EvaluacionFinal_Nota:27",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"textFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo16": {
+					"type": "input",
+					"top": 457,
+					"left": 245,
+					"width": 27,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]EvaluacionFinalOficial_Nota:33",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"textFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo17": {
+					"type": "input",
+					"top": 317,
+					"left": 340,
+					"width": 27,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]P01_Final_Puntos:114",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"textFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo18": {
+					"type": "input",
+					"top": 337,
+					"left": 340,
+					"width": 27,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]P02_Final_Puntos:189",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"textFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo19": {
+					"type": "input",
+					"top": 357,
+					"left": 340,
+					"width": 27,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]P03_Final_Puntos:264",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"textFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo20": {
+					"type": "input",
+					"top": 377,
+					"left": 340,
+					"width": 27,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]P04_Final_Puntos:339",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"textFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo21": {
+					"type": "input",
+					"top": 397,
+					"left": 340,
+					"width": 27,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]P05_Final_Puntos:414",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"textFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo22": {
+					"type": "input",
+					"top": 417,
+					"left": 340,
+					"width": 27,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]Anual_Puntos:13",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"textFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo23": {
+					"type": "input",
+					"top": 437,
+					"left": 340,
+					"width": 27,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]EvaluacionFinal_Puntos:28",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"textFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo24": {
+					"type": "input",
+					"top": 457,
+					"left": 340,
+					"width": 27,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]EvaluacionFinalOficial_Puntos:34",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"textFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo25": {
+					"type": "input",
+					"top": 317,
+					"left": 435,
+					"width": 27,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]P01_Final_Simbolo:115",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo26": {
+					"type": "input",
+					"top": 337,
+					"left": 435,
+					"width": 27,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]P02_Final_Simbolo:190",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo27": {
+					"type": "input",
+					"top": 357,
+					"left": 435,
+					"width": 27,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]P03_Final_Simbolo:265",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo28": {
+					"type": "input",
+					"top": 377,
+					"left": 435,
+					"width": 27,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]P04_Final_Simbolo:340",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo29": {
+					"type": "input",
+					"top": 397,
+					"left": 435,
+					"width": 27,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]P05_Final_Simbolo:415",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo30": {
+					"type": "input",
+					"top": 417,
+					"left": 435,
+					"width": 27,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]Anual_Simbolo:14",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo31": {
+					"type": "input",
+					"top": 437,
+					"left": 435,
+					"width": 27,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]EvaluacionFinal_Simbolo:29",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo32": {
+					"type": "input",
+					"top": 457,
+					"left": 435,
+					"width": 27,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]EvaluacionFinalOficial_Simbolo:35",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo33": {
+					"type": "input",
+					"top": 317,
+					"left": 589,
+					"width": 87,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]P01_Final_Real:112",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"textFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo34": {
+					"type": "input",
+					"top": 337,
+					"left": 589,
+					"width": 87,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]P02_Final_Real:187",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"textFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo35": {
+					"type": "input",
+					"top": 357,
+					"left": 589,
+					"width": 87,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]P03_Final_Real:262",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"textFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo36": {
+					"type": "input",
+					"top": 377,
+					"left": 589,
+					"width": 87,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]P04_Final_Real:337",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"textFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo37": {
+					"type": "input",
+					"top": 397,
+					"left": 589,
+					"width": 87,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]P05_Final_Real:412",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"textFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo38": {
+					"type": "input",
+					"top": 417,
+					"left": 589,
+					"width": 87,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]Anual_Real:11",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"textFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo39": {
+					"type": "input",
+					"top": 437,
+					"left": 589,
+					"width": 87,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]EvaluacionFinal_Real:26",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"textFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo40": {
+					"type": "input",
+					"top": 457,
+					"left": 589,
+					"width": 87,
+					"height": 11,
+					"dataSource": "[Alumnos_Calificaciones:208]EvaluacionFinalOficial_Real:32",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"textFormat": "####,###########;;",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vt_TituloDiferencias": {
+					"type": "input",
+					"top": 257,
+					"left": 15,
+					"width": 677,
+					"height": 13,
+					"dataSource": "vt_TituloDiferencias",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"bShowInExplorer": {
+					"type": "button",
+					"top": 483,
+					"left": 220,
+					"width": 182,
+					"height": 20,
+					"dataSource": "Botón1",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Mostrar asignaturas en explorador",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"method": "ObjectMethods/bShowInExplorer.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bShowInExplorer1": {
+					"type": "button",
+					"top": 483,
+					"left": 422,
+					"width": 122,
+					"height": 20,
+					"dataSource": "Botón1",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Generar documento...",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"method": "ObjectMethods/bShowInExplorer1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bShowInExplorer2": {
+					"type": "button",
+					"top": 483,
+					"left": 560,
+					"width": 122,
+					"height": 20,
+					"dataSource": "bClose",
+					"action": "cancel",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Terminar",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"events": [
+						"onClick"
+					]
+				},
+				"bShowInExplorer3": {
+					"type": "button",
+					"top": 483,
+					"left": 12,
+					"width": 82,
+					"height": 20,
+					"dataSource": "bFirstPage",
+					"action": "previousPage",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Atrás",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

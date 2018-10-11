@@ -1,0 +1,171 @@
+﻿{
+	"windowTitle": ":21001,11",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 582,
+	"markerBreak": 582,
+	"markerFooter": 582,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 4,
+					"left": 169,
+					"width": 231,
+					"height": 21,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"styleSheet": "XS_ReportTitle_18",
+					"fontWeight": "bold",
+					"text": ":21001,91"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 34,
+					"left": 36,
+					"width": 502,
+					"height": 28,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"styleSheet": "XS_Report_12",
+					"fontWeight": "bold",
+					"text": "<Nombres> <Apellido_paterno>  <Apellido_materno>\r<Curso>"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 588,
+					"left": 5,
+					"width": 248,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontStyle": "italic",
+					"text": ":21001,92"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 2,
+					"left": 3,
+					"width": 115,
+					"height": 20,
+					"dataSource": "<>gCustom",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_Report_9",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 5,
+					"left": 457,
+					"width": 118,
+					"height": 10,
+					"dataSource": "vtQR_DateTime",
+					"dataSourceTypeHint": "date",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_Report_9",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vtSTR_Horario_NombreCiclo": {
+					"type": "input",
+					"top": 69,
+					"left": 36,
+					"width": 502,
+					"height": 15,
+					"dataSource": "vtSTR_Horario_NombreCiclo",
+					"textAlign": "center",
+					"styleSheet": "XS_Report_12",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "plugin",
+					"top": 92,
+					"left": 4,
+					"width": 574,
+					"height": 495,
+					"dataSource": "xPL_Horario",
+					"pluginAreaKind": "%PrntListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onLoad"
+					]
+				}
+			}
+		}
+	]
+}

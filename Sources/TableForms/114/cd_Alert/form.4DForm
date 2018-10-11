@@ -1,0 +1,217 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "cdB_btn1",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerBody": 181,
+	"markerBreak": 261,
+	"markerFooter": 285,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"fondo": {
+					"type": "rectangle",
+					"top": -2,
+					"left": -2,
+					"width": 503,
+					"height": 145,
+					"stroke": "#AAAAAA"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 13,
+					"left": 67,
+					"width": 401,
+					"height": 15,
+					"dataSource": "vsBWR_CurrentModule",
+					"fill": "transparent",
+					"stroke": "#777777",
+					"styleSheet": "XS_System",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vpXS_IconModule": {
+					"type": "input",
+					"top": 13,
+					"left": 21,
+					"width": 32,
+					"height": 32,
+					"dataSource": "vpXS_IconModule",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onGettingFocus",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 48,
+					"left": 81,
+					"width": 400,
+					"height": 85,
+					"dataSource": "cdT_Msg",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "Ligth - 13",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"cdB_btn1": {
+					"type": "button",
+					"top": 153,
+					"left": 13,
+					"width": 472,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "cdB_btn1",
+					"action": "cancel",
+					"shortcutKey": "[Return]",
+					"text": "OK",
+					"fontFamily": "Arial",
+					"fontSize": 11,
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/cdB_btn1.4dm",
+					"events": [
+						"onClick",
+						"onHeader"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 791,
+					"left": 30,
+					"width": 472,
+					"height": 20,
+					"dataSource": "cdB_Default",
+					"action": "cancel",
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 672,
+					"left": 21,
+					"width": 69,
+					"height": 20,
+					"dataSource": "cdB_Ayuda",
+					"display": false,
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 697,
+					"left": 21,
+					"width": 81,
+					"height": 21,
+					"dataSource": "bOK",
+					"display": false,
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 723,
+					"left": 247,
+					"width": 32,
+					"height": 32,
+					"pictureFormat": "scaled"
+				}
+			}
+		}
+	]
+}

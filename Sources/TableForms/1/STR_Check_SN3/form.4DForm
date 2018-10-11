@@ -1,0 +1,351 @@
+﻿{
+	"windowTitle": ":21011,1",
+	"inheritedForm": "XS_MASTER_WZDDialogs",
+	"inheritedFormTable": 114,
+	"width": 626,
+	"height": 407,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Texto4": {
+					"type": "text",
+					"top": 10,
+					"left": 165,
+					"width": 372,
+					"height": 58,
+					"stroke": "#FFFFFF",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Asistente para la asignacion de SchoolNet en Asignaturas"
+				},
+				"aceptar": {
+					"type": "button",
+					"top": 376,
+					"left": 437,
+					"width": 80,
+					"height": 20,
+					"dataSource": "aceptar",
+					"text": "Aceptar",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/aceptar.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Salir": {
+					"type": "button",
+					"top": 376,
+					"left": 537,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Salir",
+					"text": "Salir",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Salir.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Cuadro de Grupo": {
+					"type": "groupBox",
+					"top": 82,
+					"left": 177,
+					"width": 440,
+					"height": 62,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Opciones de Publicación"
+				},
+				"Cuadro de Grupo1": {
+					"type": "groupBox",
+					"top": 162,
+					"left": 177,
+					"width": 440,
+					"height": 182,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Selección de asignaturas"
+				},
+				"Apdos1": {
+					"type": "text",
+					"top": 111,
+					"left": 9,
+					"width": 143,
+					"height": 45,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Especifique cuales son las opciones de publicación a configurar"
+				},
+				"Calificaciones1": {
+					"type": "checkbox",
+					"top": 112,
+					"left": 194,
+					"width": 97,
+					"height": 16,
+					"dataSource": "Chk_cal",
+					"text": "Calificaciones",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Calificaciones1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Aprendizajes1": {
+					"type": "checkbox",
+					"top": 112,
+					"left": 294,
+					"width": 97,
+					"height": 16,
+					"dataSource": "Chk_apren",
+					"text": "Aprendizajes",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Aprendizajes1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Observaciones": {
+					"type": "checkbox",
+					"top": 112,
+					"left": 394,
+					"width": 97,
+					"height": 16,
+					"dataSource": "Chk_obs",
+					"text": "Observaciones",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Observaciones.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Planes de clases": {
+					"type": "checkbox",
+					"top": 112,
+					"left": 514,
+					"width": 97,
+					"height": 16,
+					"dataSource": "Chk_pla",
+					"text": "Planes de clases",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Planes de clases.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"manual2": {
+					"type": "radio",
+					"top": 184,
+					"left": 194,
+					"width": 290,
+					"height": 18,
+					"dataSource": "f1",
+					"text": "Sólo para las asignaturas seleccionadas en la lista",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/manual2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 184,
+					"left": 525,
+					"width": 77,
+					"height": 12,
+					"dataSource": "viACT_avisos1",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"stroke": "#AAAAAA",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "(### ### ##0 asignaturas)",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"manual(1)2": {
+					"type": "radio",
+					"top": 242,
+					"left": 194,
+					"width": 231,
+					"height": 18,
+					"dataSource": "f2",
+					"text": "Para todas las asignaturas de la lista",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/manual(1)2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 242,
+					"left": 525,
+					"width": 77,
+					"height": 12,
+					"dataSource": "viACT_avisos2",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"stroke": "#AAAAAA",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "(### ### ##0 asignaturas)",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"manual(2)3": {
+					"type": "radio",
+					"top": 302,
+					"left": 194,
+					"width": 261,
+					"height": 18,
+					"dataSource": "f3",
+					"text": "Para todas las asignaturas en la base de datos",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/manual(2)3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 302,
+					"left": 525,
+					"width": 77,
+					"height": 12,
+					"dataSource": "viACT_avisos3",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"stroke": "#AAAAAA",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "(### ### ##0 asignaturas)",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Alumnos3": {
+					"type": "text",
+					"top": 201,
+					"left": 204,
+					"width": 375,
+					"height": 36,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "El cambio se hará solo para las asignaturas que hayan sido explicitamente seleccionados entre las asignaturas listadas en el Explorador de SchoolTrack."
+				},
+				"Alumnos4": {
+					"type": "text",
+					"top": 259,
+					"left": 204,
+					"width": 375,
+					"height": 24,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "El cambio será efectivo para todas las asignaturas  listadas en el Explorador de SchoolTrack."
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 319,
+					"left": 204,
+					"width": 320,
+					"height": 24,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "El cambio será efectivo para todas las asignaturas en la base de datos."
+				},
+				"Apdos3": {
+					"type": "text",
+					"top": 188,
+					"left": 9,
+					"width": 143,
+					"height": 163,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Especifique cuales son las asignaturas a las que les aplicará la configuración seleccionada"
+				}
+			}
+		}
+	]
+}

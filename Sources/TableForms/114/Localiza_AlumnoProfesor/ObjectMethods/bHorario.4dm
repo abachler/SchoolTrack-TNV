@@ -1,0 +1,5 @@
+COPY NAMED SELECTION:C331(yBWR_currentTable->;"<>Editions")
+QUERY:C277([xShell_Reports:54];[xShell_Reports:54]ReportName:26="Horario";*)
+QUERY:C277([xShell_Reports:54]; & [xShell_Reports:54]MainTable:3;=;Table:C252(yBWR_currentTable);*)
+QUERY:C277([xShell_Reports:54]; & [xShell_Reports:54]ReportType:2="4DFO")
+pr_Horario ("preview")

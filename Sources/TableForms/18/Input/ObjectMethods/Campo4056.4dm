@@ -1,0 +1,1 @@
+IT_Clairvoyance (Self:C308;-><>at_SubjectStatsGroups;"Grupos Estadísticos subsectores")

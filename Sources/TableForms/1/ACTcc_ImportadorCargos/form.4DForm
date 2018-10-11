@@ -1,0 +1,890 @@
+﻿{
+	"inheritedForm": "XS_MASTER_WZDDialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 626,
+	"height": 407,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Texto4": {
+					"type": "text",
+					"top": 4,
+					"left": 161,
+					"width": 372,
+					"height": 53,
+					"stroke": "#FFFFFF",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Asistente para la Importación de Cargos"
+				},
+				"Variable255": {
+					"type": "input",
+					"top": 381,
+					"left": 574,
+					"width": 17,
+					"height": 12,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "vi_Step",
+					"fill": "transparent",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "pictureButton",
+					"top": 377,
+					"left": 553,
+					"width": 20,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bPrev",
+					"shortcutKey": "[left arrow]",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "pictureButton",
+					"top": 377,
+					"left": 592,
+					"width": 20,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bNext",
+					"shortcutKey": "[right arrow]",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 479,
+					"left": 28,
+					"width": 20,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "Nueva Variable501",
+					"shortcutKey": "+",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 478,
+					"left": 94,
+					"width": 80,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable11": {
+					"type": "button",
+					"top": 479,
+					"left": 246,
+					"width": 80,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bTrap",
+					"shortcutKey": "[Enter]",
+					"text": "Cancelar",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 474,
+					"left": 439,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 417,
+					"left": 255,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"sinArchivo2": {
+					"type": "text",
+					"top": 381,
+					"left": 14,
+					"width": 499,
+					"height": 12,
+					"sizingY": "move",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Haga clic aquí para generar un archivo vacío con encabezados."
+				},
+				"sinArchivo3": {
+					"type": "button",
+					"top": 380,
+					"left": 13,
+					"width": 407,
+					"height": 14,
+					"sizingY": "move",
+					"dataSource": "bVacio",
+					"display": false,
+					"method": "ObjectMethods/sinArchivo3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable15": {
+					"type": "input",
+					"top": 16,
+					"left": 861,
+					"width": 568,
+					"height": 263,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vt_g2",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"entryFilter": "~\"\"",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"copiaTexto": {
+					"type": "text",
+					"top": 70,
+					"left": 454,
+					"width": 148,
+					"height": 12,
+					"sizingY": "move",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Copiar texto al portapapeles"
+				},
+				"sinArchivo4": {
+					"type": "button",
+					"top": 69,
+					"left": 453,
+					"width": 147,
+					"height": 14,
+					"sizingY": "move",
+					"dataSource": "bVacio",
+					"display": false,
+					"method": "ObjectMethods/sinArchivo4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"x4DLiveWindow": {
+					"type": "webArea",
+					"top": 70,
+					"left": 3,
+					"width": 615,
+					"height": 289,
+					"urlSource": "Web Area_url",
+					"progressSource": "Web Area_progress",
+					"contextMenu": "none",
+					"borderStyle": "none"
+				}
+			}
+		},
+		{
+			"objects": {
+				"sinArchivo": {
+					"type": "text",
+					"top": 381,
+					"left": 14,
+					"width": 499,
+					"height": 12,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Haga clic aquí para ingresar directamente y en forma manual la información a importar."
+				},
+				"Texto12": {
+					"type": "text",
+					"top": 201,
+					"left": 53,
+					"width": 409,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "El archivo con datos a importar fue creado en:"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 158,
+					"left": 53,
+					"width": 386,
+					"height": 28,
+					"dataSource": "vt_g1",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"aIdentificadores": {
+					"type": "dropdown",
+					"top": 86,
+					"left": 453,
+					"width": 106,
+					"height": 17,
+					"dataSource": "aIdentificadores",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable9": {
+					"type": "button",
+					"top": 164,
+					"left": 454,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bExplore",
+					"text": "Explorar...",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable9.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "radio",
+					"top": 200,
+					"left": 314,
+					"width": 83,
+					"height": 14,
+					"dataSource": "r1",
+					"text": "Macintosh",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable10": {
+					"type": "radio",
+					"top": 200,
+					"left": 400,
+					"width": 101,
+					"height": 14,
+					"dataSource": "r2",
+					"text": "Windows",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable10.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 137,
+					"left": 53,
+					"width": 118,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Archivo a importar:"
+				},
+				"Texto11": {
+					"type": "text",
+					"top": 85,
+					"left": 53,
+					"width": 377,
+					"height": 28,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Identificador a utilizar como llave única de pareo entre registros existentes y datos a importar:"
+				},
+				"Casilla de selección1": {
+					"type": "checkbox",
+					"top": 526,
+					"left": 53,
+					"width": 351,
+					"height": 13,
+					"dataSource": "bc_ExecuteOnServer",
+					"text": "Realizar la importación en el servidor",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"method": "ObjectMethods/Casilla de selección1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"conArchivo": {
+					"type": "text",
+					"top": 330,
+					"left": 53,
+					"width": 499,
+					"height": 28,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Presione la fecha derecha para realizar una pre importación y revisar y corregir, si fuera necesario, los datos a importar."
+				},
+				"Casilla de selección2": {
+					"type": "checkbox",
+					"top": 222,
+					"left": 314,
+					"width": 241,
+					"height": 13,
+					"dataSource": "cb_TieneEncabezado",
+					"text": "El archivo contiene encabezados",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Casilla de selección2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto10": {
+					"type": "text",
+					"top": 52,
+					"left": 163,
+					"width": 278,
+					"height": 14,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Opciones de importación"
+				},
+				"sinArchivo1": {
+					"type": "button",
+					"top": 380,
+					"left": 13,
+					"width": 447,
+					"height": 14,
+					"dataSource": "bVacio",
+					"display": false,
+					"method": "ObjectMethods/sinArchivo1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto6": {
+					"type": "text",
+					"top": 329,
+					"left": 334,
+					"width": 131,
+					"height": 12,
+					"sizingY": "move",
+					"styleSheet": "XS_FormObjects",
+					"text": "Registros no importables:"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 329,
+					"left": 161,
+					"width": 131,
+					"height": 12,
+					"sizingY": "move",
+					"styleSheet": "XS_FormObjects",
+					"text": "Registros importables:"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 329,
+					"left": 13,
+					"width": 131,
+					"height": 12,
+					"sizingY": "move",
+					"styleSheet": "XS_FormObjects",
+					"text": "Registros total:"
+				},
+				"Área de plug-in1": {
+					"type": "plugin",
+					"top": 105,
+					"left": 13,
+					"width": 599,
+					"height": 216,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "xALP_PreImport",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Área de plug-in1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "pictureButton",
+					"top": 80,
+					"left": 573,
+					"width": 18,
+					"height": 18,
+					"sizingX": "move",
+					"dataSource": "bDelLinea",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable12": {
+					"type": "button",
+					"top": 377,
+					"left": 448,
+					"width": 80,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 377,
+					"left": 535,
+					"width": 80,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bImport",
+					"text": "Importar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable13": {
+					"type": "input",
+					"top": 350,
+					"left": 13,
+					"width": 599,
+					"height": 12,
+					"sizingY": "move",
+					"dataSource": "vt_Motivo",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 83,
+					"left": 13,
+					"width": 546,
+					"height": 12,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Las líneas en rojo no serán importadas. Haga clic en ellas para saber por qué no pueden ser importadas."
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 52,
+					"left": 163,
+					"width": 278,
+					"height": 14,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Resultado de la pre importación"
+				},
+				"Variable14": {
+					"type": "button",
+					"top": 377,
+					"left": 10,
+					"width": 80,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bBack",
+					"shortcutKey": "[Esc]",
+					"text": "Atrás",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Variable14.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1283": {
+					"type": "pictureButton",
+					"top": 80,
+					"left": 593,
+					"width": 18,
+					"height": 18,
+					"sizingX": "move",
+					"dataSource": "bAddCCCbl",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable1283.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable16": {
+					"type": "input",
+					"top": 329,
+					"left": 76,
+					"width": 32,
+					"height": 12,
+					"sizingY": "move",
+					"dataSource": "vlACT_CargosImpTotal",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable17": {
+					"type": "input",
+					"top": 329,
+					"left": 253,
+					"width": 32,
+					"height": 12,
+					"sizingY": "move",
+					"dataSource": "vlACT_CargosImpAprobado",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable18": {
+					"type": "input",
+					"top": 329,
+					"left": 438,
+					"width": 32,
+					"height": 12,
+					"sizingY": "move",
+					"dataSource": "vlACT_CargosImpRechazado",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"uf": {
+					"type": "text",
+					"top": 381,
+					"left": 98,
+					"width": 181,
+					"height": 12,
+					"sizingY": "move",
+					"styleSheet": "XS_FormObjects",
+					"text": "Para cargos en UF utilzar el valor del día:"
+				},
+				"uf3": {
+					"type": "input",
+					"top": 382,
+					"left": 275,
+					"width": 117,
+					"height": 12,
+					"sizingY": "move",
+					"dataSource": "vdACT_FechaUFSel",
+					"dataSourceTypeHint": "date",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"uf1": {
+					"type": "pictureButton",
+					"top": 379,
+					"left": 397,
+					"width": 17,
+					"height": 16,
+					"sizingY": "move",
+					"dataSource": "bCalendar1",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/uf1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,190 @@
+﻿{
+	"windowTitle": "Formato de Nombres",
+	"inheritedForm": "XS_MASTER_ConfigDialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Group Box2",
+	"rightMargin": 10,
+	"bottomMargin": 10,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Group Box2": {
+					"type": "groupBox",
+					"top": 76,
+					"left": 161,
+					"width": 560,
+					"height": 319,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Formatos"
+				},
+				"autoformat": {
+					"type": "tab",
+					"top": 97,
+					"left": 171,
+					"width": 538,
+					"height": 286,
+					"dataSource": "hl_autoformat",
+					"dataSourceTypeHint": "arrayText",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/autoformat.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 76,
+					"left": 13,
+					"width": 143,
+					"height": 318,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Excepciones"
+				},
+				"bCFG_AutoFormat": {
+					"type": "checkbox",
+					"top": 55,
+					"left": 14,
+					"width": 512,
+					"height": 14,
+					"dataSource": "Casilla de selección1",
+					"text": "Formato de Nombres activado",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/bCFG_AutoFormat.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 103,
+					"left": 19,
+					"width": 115,
+					"height": 276,
+					"dataSource": "tExcept",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"AL_AutoFormat": {
+					"type": "plugin",
+					"top": 137,
+					"left": 240,
+					"width": 385,
+					"height": 198,
+					"dataSource": "xALP_Autoformat",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"cargaFormatos": {
+					"type": "button",
+					"top": 481,
+					"left": 359,
+					"width": 167,
+					"height": 34,
+					"shortcutKey": "*",
+					"shortcutAccel": true,
+					"text": "CargaFormatos",
+					"method": "ObjectMethods/cargaFormatos.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 488,
+					"left": 11,
+					"width": 104,
+					"height": 20,
+					"dataSource": "bOK3",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"autoformat1": {
+					"type": "text",
+					"top": 346,
+					"left": 184,
+					"width": 501,
+					"height": 22,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Los campos en cursivas no son directamente ingresables. Son calculados o dependen de otras informaciones. Utilice las opciones de autoformato para modificar el contenido actual."
+				}
+			}
+		}
+	]
+}

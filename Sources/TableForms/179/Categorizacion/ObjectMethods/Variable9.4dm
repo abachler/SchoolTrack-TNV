@@ -1,0 +1,13 @@
+PRINT SETTINGS:C106
+If (ok=1)
+	SET AUTOMATIC RELATIONS:C310(True:C214;True:C214)
+	READ ONLY:C145([xxACT_Items:179])
+	QUERY:C277([xxACT_Items:179];[xxACT_Items:179]ID_Categoria:8#0)
+	ORDER BY:C49([xxACT_Items:179];[xxACT_Items:179]ID_Categoria:8;>;[xxACT_Items:179]Glosa:2;>)
+	BREAK LEVEL:C302(1)
+	ACCUMULATE:C303([xxACT_Items:179]ID_Categoria:8)
+	FORM SET OUTPUT:C54([xxACT_Items:179];"PrintCategorias")
+	PRINT SELECTION:C60([xxACT_Items:179];>)
+	SET AUTOMATIC RELATIONS:C310(True:C214;False:C215)
+End if 
+ACTcfg_HabilitaBtnsCategoriasIt 

@@ -1,0 +1,319 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Forms",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "btn_guardar",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerBody": 196,
+	"markerBreak": 199,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onUnload",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable1": {
+					"type": "input",
+					"top": 16,
+					"left": 235,
+					"width": 239,
+					"height": 15,
+					"dataSource": "vsPW_loginName",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "Plain - 13",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 40,
+					"left": 235,
+					"width": 182,
+					"height": 15,
+					"dataSource": "vsPW_ActualPassword",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "Plain - 13",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 62,
+					"left": 235,
+					"width": 182,
+					"height": 15,
+					"dataSource": "vsPW_Password1",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "Plain - 13",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"btn_generarNom1": {
+					"type": "button",
+					"top": 61,
+					"left": 423,
+					"width": 51,
+					"height": 19,
+					"text": "Generar",
+					"styleSheet": "XS_FormObjects",
+					"focusable": false,
+					"method": "ObjectMethods/btn_generarNom1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 85,
+					"left": 235,
+					"width": 182,
+					"height": 15,
+					"dataSource": "vsPW_Password2",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "Plain - 13",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"btn_Mostrar": {
+					"type": "button",
+					"top": 83,
+					"left": 423,
+					"width": 51,
+					"height": 19,
+					"text": "Mostrar",
+					"styleSheet": "XS_FormObjects",
+					"focusable": false,
+					"method": "ObjectMethods/btn_Mostrar.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 131,
+					"left": 10,
+					"width": 464,
+					"height": 30,
+					"dataSource": "vtUSR_Message",
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"styleSheet": "Plain - 13",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"btn_generarEnviar": {
+					"type": "button",
+					"top": 170,
+					"left": 212,
+					"width": 91,
+					"height": 19,
+					"text": "Enviar",
+					"focusable": false,
+					"method": "ObjectMethods/btn_generarEnviar.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable13": {
+					"type": "button",
+					"top": 170,
+					"left": 309,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "Plain - 13",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn_guardar": {
+					"type": "button",
+					"top": 170,
+					"left": 396,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bOK",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Guardar",
+					"styleSheet": "Plain - 13",
+					"stroke": "#000000",
+					"method": "ObjectMethods/btn_guardar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 15,
+					"left": 66,
+					"width": 161,
+					"height": 15,
+					"stroke": "#000000",
+					"styleSheet": "Plain - 13",
+					"text": "Nombre de usuario:"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 40,
+					"left": 66,
+					"width": 160,
+					"height": 15,
+					"stroke": "#000000",
+					"styleSheet": "Plain - 13",
+					"text": "Contraseña actual:"
+				},
+				"Picture12": {
+					"type": "picture",
+					"top": 7,
+					"left": 9,
+					"width": 48,
+					"height": 48,
+					"pictureFormat": "scaled"
+				},
+				"Imagen2": {
+					"type": "picture",
+					"top": 15,
+					"left": 17,
+					"width": 32,
+					"height": 32
+				},
+				"Text2": {
+					"type": "text",
+					"top": 61,
+					"left": 66,
+					"width": 157,
+					"height": 15,
+					"stroke": "#000000",
+					"styleSheet": "Plain - 13",
+					"text": "Contraseña:"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 85,
+					"left": 66,
+					"width": 149,
+					"height": 15,
+					"stroke": "#000000",
+					"styleSheet": "Plain - 13",
+					"text": "Confirmación:"
+				},
+				"CapsLockIcon": {
+					"type": "picture",
+					"top": 62,
+					"left": 403,
+					"width": 11,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Ligne1": {
+					"type": "line",
+					"top": 125,
+					"left": -2,
+					"width": 505,
+					"height": 1,
+					"stroke": "#8E8E8E",
+					"startPoint": "bottomLeft"
+				},
+				"Ligne2": {
+					"type": "line",
+					"top": 105,
+					"left": -2,
+					"width": 505,
+					"height": 1,
+					"stroke": "#8E8E8E",
+					"startPoint": "bottomLeft"
+				},
+				"texto2": {
+					"type": "text",
+					"top": 109,
+					"left": 10,
+					"width": 469,
+					"height": 11,
+					"textAlign": "center",
+					"styleSheet": "XS_DialogObjects"
+				}
+			}
+		}
+	]
+}

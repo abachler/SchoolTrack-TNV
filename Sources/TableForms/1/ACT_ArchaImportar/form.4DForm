@@ -1,0 +1,1256 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 410,
+	"height": 375,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón4": {
+					"type": "button",
+					"top": 484,
+					"left": 439,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 427,
+					"left": 255,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				},
+				"Botón invisible3": {
+					"type": "button",
+					"top": 486,
+					"left": 15,
+					"width": 74,
+					"height": 47,
+					"dataSource": "Botón invisible3",
+					"shortcutKey": "+",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón invisible3.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto3": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 281,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Por favor indique el tipo de archivo a importar"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 123,
+					"left": 13,
+					"width": 281,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Por favor indique la ruta del archivo a importar"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 40,
+					"left": 13,
+					"width": 90,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Tipo: "
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 63,
+					"left": 13,
+					"width": 281,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Por favor indique el importador a utilizar"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 90,
+					"left": 13,
+					"width": 90,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Importador: "
+				},
+				"vTipo1": {
+					"type": "input",
+					"top": 90,
+					"left": 85,
+					"width": 290,
+					"height": 13,
+					"dataSource": "vImportador",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Imagen2": {
+					"type": "picture",
+					"top": 90,
+					"left": 380,
+					"width": 11,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Botón invisible2": {
+					"type": "button",
+					"top": 88,
+					"left": 83,
+					"width": 310,
+					"height": 16,
+					"dataSource": "Botón invisible1",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Imagen4": {
+					"type": "picture",
+					"top": 90,
+					"left": 380,
+					"width": 11,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"tipoImport5": {
+					"type": "text",
+					"top": 221,
+					"left": 13,
+					"width": 281,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Por favor indique la fecha de pago"
+				},
+				"tipoImport2": {
+					"type": "text",
+					"top": 247,
+					"left": 13,
+					"width": 79,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Fecha:"
+				},
+				"tipoImport3": {
+					"type": "input",
+					"top": 247,
+					"left": 85,
+					"width": 109,
+					"height": 13,
+					"dataSource": "vdACT_ImpRealDate",
+					"dataSourceTypeHint": "date",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"method": "ObjectMethods/tipoImport3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"tipoImport1": {
+					"type": "pictureButton",
+					"top": 245,
+					"left": 198,
+					"width": 17,
+					"height": 16,
+					"dataSource": "bCalendar1",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/tipoImport1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"tipoImport4": {
+					"type": "text",
+					"top": 242,
+					"left": 219,
+					"width": 170,
+					"height": 22,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Los intereses serán calculados sólo hasta esta fecha."
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 148,
+					"left": 13,
+					"width": 293,
+					"height": 29,
+					"dataSource": "vt_ruta",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 148,
+					"left": 319,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Botón2",
+					"text": "Explorar...",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "radio",
+					"top": 184,
+					"left": 306,
+					"width": 83,
+					"height": 14,
+					"dataSource": "typeMac",
+					"text": "Macintosh",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable10": {
+					"type": "radio",
+					"top": 184,
+					"left": 224,
+					"width": 81,
+					"height": 14,
+					"dataSource": "typeWin",
+					"text": "Windows",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto15": {
+					"type": "text",
+					"top": 184,
+					"left": 13,
+					"width": 189,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "El archivo a importar fue creado en:"
+				},
+				"padlockUnlocked": {
+					"type": "picture",
+					"top": 245,
+					"left": 65,
+					"width": 16,
+					"height": 16,
+					"pictureFormat": "scaled"
+				},
+				"padlockLocked": {
+					"type": "picture",
+					"top": 245,
+					"left": 65,
+					"width": 16,
+					"height": 16,
+					"pictureFormat": "scaled"
+				},
+				"bPadlock": {
+					"type": "button",
+					"top": 245,
+					"left": 65,
+					"width": 16,
+					"height": 16,
+					"dataSource": "bPadlock",
+					"display": false,
+					"method": "ObjectMethods/bPadlock.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"atACT_formas_de_pago": {
+					"type": "dropdown",
+					"top": 38,
+					"left": 83,
+					"width": 142,
+					"height": 15,
+					"dataSource": "atACT_formas_de_pago",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/atACT_formas_de_pago.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 348,
+					"left": 319,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCont",
+					"text": "Continuar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 348,
+					"left": 226,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Botón2",
+					"action": "cancel",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección1": {
+					"type": "checkbox",
+					"top": 328,
+					"left": 13,
+					"width": 158,
+					"height": 17,
+					"dataSource": "cb_ImportOnServer",
+					"text": "Procesar archivo en el servidor",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"pagos": {
+					"type": "text",
+					"top": 381,
+					"left": 13,
+					"width": 381,
+					"height": 32,
+					"stroke": "#0000FF",
+					"textAlign": "center",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Se utilizará el día actual o el día ingresado en el archivo de texto a importar."
+				},
+				"vAOptions": {
+					"type": "checkbox",
+					"top": 268,
+					"left": 13,
+					"width": 158,
+					"height": 17,
+					"dataSource": "vAOptions",
+					"text": "Configurar opciones avanzadas",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cb_emitirDT": {
+					"type": "checkbox",
+					"top": 308,
+					"left": 13,
+					"width": 398,
+					"height": 17,
+					"dataSource": "cb_emitirDT",
+					"text": "Abrir asistente de emisión de documentos tributarios al finalizar la importación",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/cb_emitirDT.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cb_listarPagos": {
+					"type": "checkbox",
+					"top": 288,
+					"left": 13,
+					"width": 338,
+					"height": 17,
+					"dataSource": "cb_listarPagos",
+					"text": "Listar pagos importados en el explorador al finalizar la importación",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/cb_listarPagos.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección15": {
+					"type": "checkbox",
+					"top": 200,
+					"left": 13,
+					"width": 298,
+					"height": 17,
+					"dataSource": "vb_fechaPago",
+					"text": "Considerar la fecha de pago leída desde el archivo",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"method": "ObjectMethods/Casilla de selección15.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Botón5": {
+					"type": "button",
+					"top": 304,
+					"left": 319,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCont",
+					"text": "Continuar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 75,
+					"left": 33,
+					"width": 70,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Mes:"
+				},
+				"Casilla de selección2": {
+					"type": "checkbox",
+					"top": 154,
+					"left": 13,
+					"width": 338,
+					"height": 37,
+					"dataSource": "vb_importSoloCuadrado",
+					"text": "Importar el pago sólo si el monto adeudado y el monto del archivo cuadran",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Casilla de selección2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección3": {
+					"type": "checkbox",
+					"top": 131,
+					"left": 13,
+					"width": 218,
+					"height": 17,
+					"dataSource": "vb_selectionOrder2PayItems",
+					"text": "Seleccionar orden de ítems a pagar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección4": {
+					"type": "checkbox",
+					"top": 103,
+					"left": 13,
+					"width": 258,
+					"height": 17,
+					"dataSource": "vb_selectionItems2Pay",
+					"text": "Seleccionar ítems a pagar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección5": {
+					"type": "checkbox",
+					"top": 194,
+					"left": 13,
+					"width": 338,
+					"height": 17,
+					"dataSource": "vb_crearCargoAut",
+					"text": "Crear un cargo y un aviso pagado para el siguiente ítem",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Casilla de selección5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 237,
+					"left": 13,
+					"width": 381,
+					"height": 28,
+					"stroke": "#EE0000",
+					"textAlign": "center",
+					"fontFamily": "Lucida Grande Bold",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"fontStyle": "italic",
+					"text": "Sólo si el monto del archivo es superior al monto de los cargos del período seleccionado"
+				},
+				"Variablle": {
+					"type": "input",
+					"top": 219,
+					"left": 93,
+					"width": 248,
+					"height": 13,
+					"dataSource": "vsACT_SelectedItemName",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variablle.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"Imageb": {
+					"type": "picture",
+					"top": 217,
+					"left": 342,
+					"width": 19,
+					"height": 16
+				},
+				"impresion4": {
+					"type": "button",
+					"top": 218,
+					"left": 344,
+					"width": 15,
+					"height": 14,
+					"dataSource": "bMuestraItem",
+					"display": false,
+					"method": "ObjectMethods/impresion4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto20": {
+					"type": "text",
+					"top": 218,
+					"left": 13,
+					"width": 81,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Ítem de cargo:"
+				},
+				"TC1": {
+					"type": "checkbox",
+					"top": 48,
+					"left": 13,
+					"width": 258,
+					"height": 17,
+					"dataSource": "vb_selectionMonth2Pay",
+					"text": "Seleccionar mes a pagar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 381,
+					"height": 22,
+					"textAlign": "center",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Opciones avanzadas PAT-PAC"
+				},
+				"Botón6": {
+					"type": "button",
+					"top": 304,
+					"left": 226,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Botón2",
+					"text": "Volver",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"UF1": {
+					"type": "input",
+					"top": 266,
+					"left": 302,
+					"width": 61,
+					"height": 11,
+					"dataSource": "vt_FechaUF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/Fecha"
+					},
+					"method": "ObjectMethods/UF1.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"UF2": {
+					"type": "pictureButton",
+					"top": 264,
+					"left": 367,
+					"width": 17,
+					"height": 16,
+					"dataSource": "bCal",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/UF2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"UF0": {
+					"type": "text",
+					"top": 261,
+					"left": 13,
+					"width": 277,
+					"height": 29,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Para los montos en moneda variable se considerará la siguiente fecha:"
+				},
+				"Casilla de selección13": {
+					"type": "checkbox",
+					"top": 93,
+					"left": 181,
+					"width": 218,
+					"height": 37,
+					"dataSource": "vl_generaIntereses",
+					"text": "Generar intereses antes de seleccionar ítems a pagar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto17": {
+					"type": "text",
+					"top": 75,
+					"left": 260,
+					"width": 30,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Año:"
+				},
+				"vlACTimp_Year": {
+					"type": "input",
+					"top": 75,
+					"left": 288,
+					"width": 53,
+					"height": 13,
+					"dataSource": "vlACTimp_Year",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"<>atXS_MonthNames": {
+					"type": "dropdown",
+					"top": 72,
+					"left": 60,
+					"width": 181,
+					"height": 20,
+					"dataSource": "<>atXS_MonthNames",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/%3C%3EatXS_MonthNames.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Botón7": {
+					"type": "button",
+					"top": 304,
+					"left": 319,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCont",
+					"text": "Continuar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón8": {
+					"type": "button",
+					"top": 304,
+					"left": 226,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Botón2",
+					"text": "Volver",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección6": {
+					"type": "checkbox",
+					"top": 73,
+					"left": 33,
+					"width": 218,
+					"height": 17,
+					"dataSource": "vb_selectionOrder2PayItems",
+					"text": "Seleccionar orden de ítems a pagar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección7": {
+					"type": "checkbox",
+					"top": 97,
+					"left": 33,
+					"width": 338,
+					"height": 17,
+					"dataSource": "vb_crearCargoAut",
+					"text": "Crear un cargo y un aviso pagado para el siguiente ítem",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto9": {
+					"type": "text",
+					"top": 226,
+					"left": 13,
+					"width": 381,
+					"height": 24,
+					"stroke": "#EE0000",
+					"textAlign": "center",
+					"fontFamily": "Tahoma",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"fontStyle": "italic",
+					"text": "* Sólo si el banco aplicó al apoderado un recargo sobre el valor de la cuota correspondiente."
+				},
+				"Variablle1": {
+					"type": "input",
+					"top": 142,
+					"left": 153,
+					"width": 208,
+					"height": 13,
+					"dataSource": "vsACT_SelectedItemName",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variablle1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"Imageb1": {
+					"type": "picture",
+					"top": 142,
+					"left": 362,
+					"width": 19,
+					"height": 16
+				},
+				"impresion1": {
+					"type": "button",
+					"top": 143,
+					"left": 364,
+					"width": 15,
+					"height": 14,
+					"dataSource": "bMuestraItem",
+					"display": false,
+					"method": "ObjectMethods/impresion1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto11": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 381,
+					"height": 22,
+					"textAlign": "center",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Opciones avanzadas Cuponera"
+				},
+				"Casilla de selección9": {
+					"type": "checkbox",
+					"top": 48,
+					"left": 33,
+					"width": 258,
+					"height": 17,
+					"dataSource": "vb_selectionItems2Pay",
+					"text": "Seleccionar ítems a pagar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección10": {
+					"type": "checkbox",
+					"top": 163,
+					"left": 33,
+					"width": 338,
+					"height": 17,
+					"dataSource": "vb_crearIEDctoXMoneda",
+					"text": "Crear descuento si hay diferencia en contra del apoderado",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección11": {
+					"type": "checkbox",
+					"top": 119,
+					"left": 53,
+					"width": 238,
+					"height": 17,
+					"dataSource": "vb_utilizarIECargoXMoneda",
+					"text": "Utilizar ítem de cargo especial",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto12": {
+					"type": "text",
+					"top": 186,
+					"left": 53,
+					"width": 241,
+					"height": 28,
+					"styleSheet": "XS_DialogObjects",
+					"fontStyle": "italic",
+					"text": "Sólo si el monto de la diferencia es inferior a:\r(dejar en 0 si se genera sobre cualquier monto)"
+				},
+				"Variablle2": {
+					"type": "input",
+					"top": 185,
+					"left": 294,
+					"width": 67,
+					"height": 13,
+					"dataSource": "vl_maximoDcto",
+					"dataSourceTypeHint": "number",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"Texto13": {
+					"type": "text",
+					"top": 140,
+					"left": 53,
+					"width": 141,
+					"height": 16,
+					"styleSheet": "XS_DialogObjects",
+					"fontStyle": "italic",
+					"text": "o el siguiente ítem"
+				},
+				"Texto14": {
+					"type": "text",
+					"top": 119,
+					"left": 32,
+					"width": 21,
+					"height": 16,
+					"stroke": "#EE0000",
+					"textAlign": "center",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "*"
+				},
+				"Texto10": {
+					"type": "text",
+					"top": 97,
+					"left": 13,
+					"width": 21,
+					"height": 16,
+					"stroke": "#EE0000",
+					"textAlign": "center",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "*"
+				},
+				"Texto16": {
+					"type": "text",
+					"top": 139,
+					"left": 32,
+					"width": 21,
+					"height": 16,
+					"stroke": "#EE0000",
+					"textAlign": "center",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "*"
+				},
+				"UF3": {
+					"type": "input",
+					"top": 266,
+					"left": 322,
+					"width": 61,
+					"height": 11,
+					"dataSource": "vt_FechaUF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/Fecha"
+					},
+					"method": "ObjectMethods/UF3.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"UF4": {
+					"type": "pictureButton",
+					"top": 264,
+					"left": 387,
+					"width": 17,
+					"height": 16,
+					"dataSource": "bCal",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/UF4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"UF5": {
+					"type": "text",
+					"top": 261,
+					"left": 33,
+					"width": 277,
+					"height": 29,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Para los montos en moneda variable se considerará la siguiente fecha:"
+				},
+				"Casilla de selección12": {
+					"type": "checkbox",
+					"top": 38,
+					"left": 185,
+					"width": 218,
+					"height": 37,
+					"dataSource": "vl_generaIntereses",
+					"text": "Generar intereses antes de seleccionar ítems a pagar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

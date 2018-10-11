@@ -1,0 +1,1 @@
+PREF_Set (0;"CambiaInasistenciaPorAtraso";String:C10(Self:C308->))

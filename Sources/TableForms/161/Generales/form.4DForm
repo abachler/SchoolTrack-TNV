@@ -1,0 +1,328 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "generales18",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"custom": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 2000,
+					"height": 2000,
+					"stroke": "transparent"
+				},
+				"Imagen2": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 900,
+					"height": 44,
+					"pictureFormat": "scaled"
+				},
+				"Línea3": {
+					"type": "line",
+					"top": 3,
+					"left": 77,
+					"height": 37,
+					"strokeDashArray": "1 1"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 8,
+					"left": 85,
+					"width": 441,
+					"height": 22,
+					"stroke": "#FFFFFF",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "SchoolNet: Opciones Generales"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 44,
+					"left": 0,
+					"width": 554,
+					"height": 352,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vp_FondoConfig",
+					"dataSourceTypeHint": "picture",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 471,
+					"left": 22,
+					"width": 122,
+					"height": 23,
+					"dataSource": "Botón1",
+					"shortcutKey": "[Esc]",
+					"text": "Esc Close",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Imagen3": {
+					"type": "picture",
+					"top": 6,
+					"left": 22,
+					"width": 33,
+					"height": 32,
+					"pictureFormat": "scaled"
+				}
+			}
+		},
+		{
+			"objects": {
+				"generales18": {
+					"type": "groupBox",
+					"top": 130,
+					"left": 13,
+					"width": 530,
+					"height": 147,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Configuración de envíos y FTP"
+				},
+				"generales1": {
+					"type": "checkbox",
+					"top": 58,
+					"left": 13,
+					"width": 259,
+					"height": 16,
+					"dataSource": "SN3_EnvioActivado",
+					"text": "Envío de datos a SchoolNet Activado",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/generales1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"generales2": {
+					"type": "checkbox",
+					"top": 79,
+					"left": 13,
+					"width": 225,
+					"height": 18,
+					"dataSource": "SN3_AccesoDesactivado",
+					"text": "Desactivar el acceso a Schoolnet",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"focusable": false,
+					"method": "ObjectMethods/generales2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"generales": {
+					"type": "input",
+					"top": 104,
+					"left": 137,
+					"width": 406,
+					"height": 13,
+					"dataSource": "SN3_eMailAdministrador",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/generales.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"generales4": {
+					"type": "radio",
+					"top": 161,
+					"left": 40,
+					"width": 245,
+					"height": 15,
+					"dataSource": "SN3_SendFrom_Server",
+					"text": "Efectuar la actualización en el servidor",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/generales4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"generales9": {
+					"type": "radio",
+					"top": 184,
+					"left": 40,
+					"width": 336,
+					"height": 15,
+					"dataSource": "SN3_SendFrom_Workstation",
+					"text": "Efectuar la actualización en la estación",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/generales9.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"generales10": {
+					"type": "input",
+					"top": 206,
+					"left": 67,
+					"width": 224,
+					"height": 13,
+					"dataSource": "SN3_SendFrom_SelectedWS",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"generales11": {
+					"type": "button",
+					"top": 202,
+					"left": 300,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bSame2",
+					"text": "Esta misma",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/generales11.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"generales8": {
+					"type": "button",
+					"top": 239,
+					"left": 395,
+					"width": 135,
+					"height": 20,
+					"dataSource": "bTestFTP",
+					"text": "Probar conexión...",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/generales8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"generales7": {
+					"type": "checkbox",
+					"top": 360,
+					"left": 167,
+					"width": 105,
+					"height": 18,
+					"dataSource": "SN3_FTP_Passive",
+					"text": "Usar FTP Pasivo",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"generales12": {
+					"type": "text",
+					"top": 104,
+					"left": 13,
+					"width": 117,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "eMail administrador:"
+				},
+				"textoMono": {
+					"type": "text",
+					"top": 162,
+					"left": 267,
+					"width": 259,
+					"height": 34,
+					"visibility": "hidden",
+					"styleSheet": "XS_FormObjects",
+					"fontStyle": "italic",
+					"text": "Usted está usando una versión monousuario de SchoolTrack. Los envíos se realizarán siempre en esta máquina."
+				}
+			}
+		}
+	]
+}

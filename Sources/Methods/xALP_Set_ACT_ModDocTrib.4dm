@@ -1,0 +1,30 @@
+//%attributes = {}
+  //xALP_Set_ACT_ModDocTrib
+
+C_LONGINT:C283($error)
+
+AT_Inc (0)
+$error:=ALP_DefaultColSettings (xALP_WizDocTrib;AT_Inc ;"alACT_WDTNumero";__ ("Número");44;"##########";0;0;1)
+AL_SetFilter (xALP_WizDocTrib;1;"&9")
+$error:=ALP_DefaultColSettings (xALP_WizDocTrib;AT_Inc ;"atACT_WDTApdo";__ ("Apoderado");160)
+$error:=ALP_DefaultColSettings (xALP_WizDocTrib;AT_Inc ;"atACT_WDTEstado";__ ("Estado");100)
+$error:=ALP_DefaultColSettings (xALP_WizDocTrib;AT_Inc ;"adACT_WDTFecha";__ ("Fecha");50;"00/00/0000";0;0;1)
+$error:=ALP_DefaultColSettings (xALP_WizDocTrib;AT_Inc ;"arACT_WDTAfecto";__ ("Monto Afecto");47;"|Despliegue_ACT")
+$error:=ALP_DefaultColSettings (xALP_WizDocTrib;AT_Inc ;"arACT_WDTIVA";__ ("Monto IVA");47;"|Despliegue_ACT")
+$error:=ALP_DefaultColSettings (xALP_WizDocTrib;AT_Inc ;"arACT_WDTTotal";__ ("Monto Total");59;"|Despliegue_ACT")
+$error:=ALP_DefaultColSettings (xALP_WizDocTrib;AT_Inc ;"asACT_WDT_Duplis";__ ("D");13;"";1)
+$error:=ALP_DefaultColSettings (xALP_WizDocTrib;AT_Inc ;"asACT_WDT_Dates";__ ("F");13;"";1)
+$error:=ALP_DefaultColSettings (xALP_WizDocTrib;AT_Inc ;"asACT_WDT_Sincro";__ ("N");13;"";1)
+$error:=ALP_DefaultColSettings (xALP_WizDocTrib;AT_Inc ;"abACT_WDTNulas";"")
+$error:=ALP_DefaultColSettings (xALP_WizDocTrib;AT_Inc ;"alACT_WDTRecNums";"")
+$error:=ALP_DefaultColSettings (xALP_WizDocTrib;AT_Inc ;"abACT_WDTModificada";"")
+
+ALP_SetDefaultAppareance (xALP_WizDocTrib;9;1;6;2;8)
+AL_SetColOpts (xALP_WizDocTrib;1;1;1;3;0)
+AL_SetRowOpts (xALP_WizDocTrib;0;1;0;0;1;0)
+AL_SetCellOpts (xALP_WizDocTrib;0;1;1)
+AL_SetMainCalls (xALP_WizDocTrib;"";"")
+AL_SetCallbacks (xALP_WizDocTrib;"";"xALP_ACT_CB_ModDocTrib")
+AL_SetScroll (xALP_WizDocTrib;0;-3)
+AL_SetEntryOpts (xALP_WizDocTrib;3;0;0;0;2;<>tXS_RS_DecimalSeparator)
+AL_SetDrgOpts (xALP_WizDocTrib;0;30;0)

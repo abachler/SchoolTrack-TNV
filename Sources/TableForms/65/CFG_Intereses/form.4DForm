@@ -1,0 +1,118 @@
+﻿{
+	"windowTitle": ":21024,1",
+	"inheritedForm": "XS_MASTER_ConfigDialogs",
+	"inheritedFormTable": 114,
+	"formSizeAnchor": "Variable6074",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 464,
+					"left": 230,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 407,
+					"left": 46,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable6074": {
+					"type": "list",
+					"top": 59,
+					"left": 180,
+					"width": 413,
+					"height": 300,
+					"dataSource": "<>hl_InterestList",
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"method": "ObjectMethods/Variable6074.4dm",
+					"events": [
+						"onClick",
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"Invisible Button1": {
+					"type": "button",
+					"top": 414,
+					"left": 38,
+					"width": 119,
+					"height": 38,
+					"dataSource": "Invisible Button1",
+					"action": "accept",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 58,
+					"left": 7,
+					"width": 156,
+					"height": 198,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Los elementos de esta lista con categorías de interés que permiten determinar para cada item el público susceptible de interesarse en sus contenidos.\r\rEn los items usted podrá seleccionar las categorías de interés que se aplican a cada item.\r\rUsted puede modificar el texto de cada uno de los elementos de esta lista con ALT-clic.\rTenga presente que si modifica un texto previamente asignado a un item la nueva categoría de interés continuará asignada al item."
+				}
+			}
+		}
+	]
+}

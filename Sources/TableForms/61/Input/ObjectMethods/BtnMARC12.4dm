@@ -1,0 +1,1 @@
+BBLmarc_OpenInputer (->[BBL_Items:61]Serie_Nombre:26)

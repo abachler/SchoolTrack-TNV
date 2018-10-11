@@ -1,0 +1,163 @@
+﻿{
+	"formSizeAnchor": "Botón1",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón4": {
+					"type": "button",
+					"top": 517,
+					"left": 184,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 460,
+					"left": 0,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"vtSTR_TextoPromocion": {
+					"type": "input",
+					"top": 13,
+					"left": 167,
+					"width": 308,
+					"height": 33,
+					"dataSource": "vtSTR_TextoPromocion",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vtSTR_TextoRepitencia": {
+					"type": "input",
+					"top": 66,
+					"left": 167,
+					"width": 308,
+					"height": 33,
+					"dataSource": "vtSTR_TextoRepitencia",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 140,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Texto para alumnos promovidos"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 65,
+					"left": 13,
+					"width": 140,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Texto para alumnos reprobados"
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 116,
+					"left": 385,
+					"width": 90,
+					"height": 22,
+					"dataSource": "bOK",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Aceptar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 116,
+					"left": 285,
+					"width": 90,
+					"height": 22,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 116,
+					"left": 13,
+					"width": 175,
+					"height": 22,
+					"dataSource": "bDefault",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Utilizar textos por defecto",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,197 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Botón1",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Imagen1": {
+					"type": "picture",
+					"top": 13,
+					"left": 13,
+					"width": 32,
+					"height": 32,
+					"pictureFormat": "scaled"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 13,
+					"left": 74,
+					"width": 286,
+					"height": 24,
+					"stroke": "#999999",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "SchoolTrack"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 50,
+					"left": 74,
+					"width": 503,
+					"height": 38,
+					"fontSize": 16,
+					"fontWeight": "bold",
+					"text": "Permitir a los alumnos cursar el nivel siguiente durante el mismo año escolar"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto2": {
+					"type": "text",
+					"top": 102,
+					"left": 76,
+					"width": 496,
+					"height": 247,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Esta opción permite que los alumnos que cursan actualmente <Nivel> puedan cursar <vt_NivelSuperior> durante el mismo año de manera consecutiva, no simultánea.\r\rEsta opción debe ser utilizada sólo cuando se trata de ciclos escolares completos y distintos, es decir cuando la malla curricular del nivel siguiente es diferente a la del nivel actual y los alumnos son o pueden ser promovidos al nivel siguiente. No tiene sentido utilizarla cuando el plan de estudios concentra dos o más niveles en un sólo año.\r\rEstá opción no está disponible si <vt_NivelSuperior> no está activado o si la fecha de inicio del ciclo establecida en la configuración de períodos de ese nivel es inferior a la fecha de término establecida en la configuración de períodos utilizada en <Nivel>.\r\rCuando esta opción es activada los alumnos de <Nivel> podrán ser promovidos a <vt_NivelSuperior> usando la herramienta Reorganización de Cursos. Cuando sean promovidos la información registrada en <Nivel> no podrá ser modificada después de la fecha de cierre establecida en la configuración de períodos pero estará disponible en la ficha de los alumnos y podrá ser utilizada en informes. \rEsto no implica de ninguna manera el cierre del año escolar en estos niveles, el que sólo deberá efectuarse una vez finalizado el ciclo escolar anual."
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 461,
+					"left": 462,
+					"width": 112,
+					"height": 21,
+					"dataSource": "bActivate",
+					"action": "accept",
+					"text": "Activar opción",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 461,
+					"left": 337,
+					"width": 112,
+					"height": 21,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 369,
+					"left": 76,
+					"width": 496,
+					"height": 39,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Esta opción no es reversible sin eliminar definitivamente la información que pudiera haber sido registrada en el nivel superior <vt_NivelSuperior> para los alumnos de <Nivel>."
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 428,
+					"left": 76,
+					"width": 496,
+					"height": 13,
+					"fontSize": 11,
+					"text": "¿Está seguro(a) que desea activar esta opción?\r\r\r"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto8": {
+					"type": "text",
+					"top": 102,
+					"left": 76,
+					"width": 496,
+					"height": 247,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Esta opción permite que los alumnos que cursan actualmente <Nivel> puedan cursar <vt_NivelSuperior> durante el mismo año de manera consecutiva, no simultánea.\r\rEsta opción debe ser utilizada sólo cuando se trata de ciclos escolares completos y distintos, es decir cuando la malla curricular del nivel siguiente es diferente a la del nivel actual y los alumnos son o pueden ser promovidos al nivel siguiente. No tiene sentido utilizarla cuando el plan de estudios concentra dos o más niveles en un sólo año.\r\rEstá opción no está disponible si <vt_NivelSuperior> no está activado o si la fecha de inicio del ciclo establecida en la configuración de períodos de ese nivel es inferior a la fecha de término establecida en la configuración de períodos utilizada en <Nivel>.\r\rCuando esta opción es activada los alumnos de <Nivel> podrán ser promovidos a <vt_NivelSuperior> usando la herramienta Reorganización de Cursos. Cuando sean promovidos la información registrada en <Nivel> no podrá ser modificada después de la fecha de cierre establecida en la configuración de períodos pero estará disponible en la ficha de los alumnos y podrá ser utilizada en informes. \rEsto no implica de ninguna manera el cierre del año escolar en estos niveles, el que sólo deberá efectuarse una vez finalizado el ciclo escolar anual."
+				},
+				"bCancel2": {
+					"type": "button",
+					"top": 345,
+					"left": 500,
+					"width": 72,
+					"height": 21,
+					"dataSource": "bCancel2",
+					"action": "accept",
+					"text": "Cerrar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto6": {
+					"type": "text",
+					"top": 100,
+					"left": 74,
+					"width": 421,
+					"height": 52,
+					"styleSheet": "XS_DialogObjects",
+					"text": "<vl_alumnosEnNivelSuperior> alumnos de <Nivel> tienen información registrada en <vt_NivelSuperior>. No es posible desactivar esta opción sin retirar previamente a los alumnos de <Nivel> desde el nivel <vt_NivelSuperior>.\r\r\r\r"
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 168,
+					"left": 74,
+					"width": 461,
+					"height": 39,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Para retirar a los alumnos de este nivel de <vt_NivelSuperior> debe utilizar la herramienta Reorganización de cursos\r\r"
+				},
+				"bCancel3": {
+					"type": "button",
+					"top": 211,
+					"left": 425,
+					"width": 112,
+					"height": 21,
+					"dataSource": "bCancel3",
+					"action": "accept",
+					"text": "Cerrar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,533 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "usuarios4",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"custom": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 2000,
+					"height": 2000,
+					"stroke": "transparent"
+				},
+				"Imagen2": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 900,
+					"height": 44,
+					"pictureFormat": "scaled"
+				},
+				"Línea3": {
+					"type": "line",
+					"top": 3,
+					"left": 77,
+					"height": 37,
+					"strokeDashArray": "1 1"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 8,
+					"left": 85,
+					"width": 441,
+					"height": 19,
+					"stroke": "#FFFFFF",
+					"fontFamily": "Arial",
+					"fontSize": 16,
+					"fontWeight": "bold",
+					"text": "SchoolNet: Configuración de Usuarios y Contraseñas"
+				},
+				"programacion16": {
+					"type": "button",
+					"top": 711,
+					"left": 22,
+					"width": 122,
+					"height": 23,
+					"dataSource": "programacion",
+					"shortcutKey": "[Esc]",
+					"text": "Esc Close",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/programacion16.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 44,
+					"left": 0,
+					"width": 544,
+					"height": 560,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vp_FondoConfig",
+					"dataSourceTypeHint": "picture",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Imagen3": {
+					"type": "picture",
+					"top": 6,
+					"left": 22,
+					"width": 33,
+					"height": 32,
+					"pictureFormat": "scaled"
+				}
+			}
+		},
+		{
+			"objects": {
+				"usuarios": {
+					"type": "groupBox",
+					"top": 60,
+					"left": 13,
+					"width": 520,
+					"height": 171,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Generación de Usuarios y Contraseñas"
+				},
+				"usuarios4": {
+					"type": "groupBox",
+					"top": 238,
+					"left": 13,
+					"width": 520,
+					"height": 336,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Solicitud de Listado de Usuarios y Contraseñas"
+				},
+				"usuarios13": {
+					"type": "groupBox",
+					"top": 441,
+					"left": 23,
+					"width": 501,
+					"height": 79,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "¿Como Desea Recibir el Listado?"
+				},
+				"usuarios5": {
+					"type": "groupBox",
+					"top": 262,
+					"left": 23,
+					"width": 501,
+					"height": 77,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "¿Cuales Usuarios?"
+				},
+				"usuarios6": {
+					"type": "text",
+					"top": 283,
+					"left": 36,
+					"width": 477,
+					"height": 26,
+					"styleSheet": "XS_DialogObjects",
+					"fontStyle": "italic",
+					"text": "Puede solicitar el listado de todos los usuarios o sólo de aquellos que hayan sido creados después de la última vez que solicitó el listado."
+				},
+				"Lista Emergente/Desplegable2": {
+					"type": "dropdown",
+					"top": 85,
+					"left": 195,
+					"width": 329,
+					"height": 18,
+					"dataSource": "SN3_LoginType",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Lista Emergente/Desplegable3": {
+					"type": "dropdown",
+					"top": 112,
+					"left": 195,
+					"width": 329,
+					"height": 18,
+					"dataSource": "SN3_PasswordType",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Lista Emergente/Desplegable4": {
+					"type": "dropdown",
+					"top": 139,
+					"left": 195,
+					"width": 329,
+					"height": 19,
+					"dataSource": "SN3_WhatUsers",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"usuarios00": {
+					"type": "checkbox",
+					"top": 166,
+					"left": 23,
+					"width": 283,
+					"height": 17,
+					"dataSource": "cb_UsarOtroChar",
+					"text": "Usar separador distinto de '_'",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/usuarios00.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"usuarios22": {
+					"type": "input",
+					"top": 168,
+					"left": 204,
+					"width": 34,
+					"height": 13,
+					"dataSource": "SN3_Separador",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/usuarios22.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail",
+						"onAfterEdit"
+					]
+				},
+				"usuarios25": {
+					"type": "checkbox",
+					"top": 186,
+					"left": 23,
+					"width": 493,
+					"height": 17,
+					"dataSource": "cb_SendByMail",
+					"text": "Enviar datos de acceso a los usuarios directamente",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"usuarios7": {
+					"type": "radio",
+					"top": 313,
+					"left": 42,
+					"width": 180,
+					"height": 14,
+					"dataSource": "h1_Todos",
+					"text": "Todos",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"usuarios8": {
+					"type": "radio",
+					"top": 313,
+					"left": 259,
+					"width": 180,
+					"height": 14,
+					"dataSource": "h2_SoloNuevos",
+					"text": "Sólo nuevos",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"usuarios11": {
+					"type": "radio",
+					"top": 392,
+					"left": 42,
+					"width": 220,
+					"height": 14,
+					"dataSource": "r1_AgruparCursoMenor",
+					"text": "Agrupar familia en el curso más bajo",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"usuarios12": {
+					"type": "radio",
+					"top": 392,
+					"left": 259,
+					"width": 240,
+					"height": 14,
+					"dataSource": "r2_AgruparCursoMayor",
+					"text": "Agrupar familia en el curso más alto",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"usuarios23": {
+					"type": "checkbox",
+					"top": 471,
+					"left": 42,
+					"width": 162,
+					"height": 15,
+					"dataSource": "cb_FormatoXLS",
+					"text": "Recibir en formato Excel",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/usuarios23.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"usuarios24": {
+					"type": "checkbox",
+					"top": 471,
+					"left": 199,
+					"width": 162,
+					"height": 15,
+					"dataSource": "cb_FormatoPDF",
+					"text": "Recibir en formato PDF",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/usuarios24.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"usuarios17": {
+					"type": "input",
+					"top": 495,
+					"left": 259,
+					"width": 254,
+					"height": 13,
+					"dataSource": "SN3_MailAddress",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/usuarios17.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"usuarios20": {
+					"type": "button",
+					"top": 530,
+					"left": 404,
+					"width": 120,
+					"height": 18,
+					"dataSource": "bSend",
+					"text": "Hacer Solicitud...",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/usuarios20.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"usuarios14": {
+					"type": "radio",
+					"top": 648,
+					"left": 70,
+					"width": 147,
+					"height": 15,
+					"dataSource": "g1_Mail",
+					"text": "Por email",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/usuarios14.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"usuarios15": {
+					"type": "radio",
+					"top": 648,
+					"left": 287,
+					"width": 147,
+					"height": 15,
+					"dataSource": "g2_Directo",
+					"text": "Directamente",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/usuarios15.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"usuarios1": {
+					"type": "text",
+					"top": 88,
+					"left": 23,
+					"width": 191,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Para el nombre de usuario utilizar:"
+				},
+				"usuarios2": {
+					"type": "text",
+					"top": 115,
+					"left": 23,
+					"width": 138,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Para la contraseña utilizar:"
+				},
+				"usuarios3": {
+					"type": "text",
+					"top": 142,
+					"left": 23,
+					"width": 118,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Generar usuarios para:"
+				},
+				"usuarios9": {
+					"type": "groupBox",
+					"top": 354,
+					"left": 23,
+					"width": 501,
+					"height": 67,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Agrupación de Usuarios en el Listado"
+				},
+				"usuarios10": {
+					"type": "text",
+					"top": 375,
+					"left": 36,
+					"width": 507,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"fontStyle": "italic",
+					"text": "Los usuarios pueden ser agrupados por familia en el curso más bajo o más alto"
+				},
+				"usuarios16": {
+					"type": "text",
+					"top": 495,
+					"left": 42,
+					"width": 210,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Enviar listado de usuarios a (email): "
+				},
+				"usuarios26": {
+					"type": "text",
+					"top": 206,
+					"left": 47,
+					"width": 477,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"fontStyle": "italic",
+					"text": "El envío se realizará sólo si hay una dirección de email válida para el usuario correspondiente"
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 530,
+					"left": 22,
+					"width": 260,
+					"height": 18,
+					"dataSource": "bEnviarTodos",
+					"text": "Enviar datos de acceso a todos los usuarios",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"usuarios18": {
+					"type": "text",
+					"top": 555,
+					"left": 23,
+					"width": 387,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"fontStyle": "italic",
+					"text": "El envío se realizará sólo si hay una dirección de email válida para el usuario correspondiente"
+				}
+			}
+		}
+	]
+}

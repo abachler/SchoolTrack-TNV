@@ -1,0 +1,345 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 214,
+	"markerBody": 297,
+	"markerBreak": 308,
+	"markerFooter": 308,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Área de plug-in1": {
+					"type": "plugin",
+					"top": 217,
+					"left": 30,
+					"width": 543,
+					"height": 75,
+					"dataSource": "xPLP_ListaAsistencia",
+					"pluginAreaKind": "%PrntListPro",
+					"borderStyle": "none",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"stdRutas": {
+					"type": "input",
+					"top": 161,
+					"left": 75,
+					"width": 58,
+					"height": 14,
+					"dataSource": "vtNombreRuta",
+					"fill": "transparent",
+					"fontFamily": "Lucida Grande Bold",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"standardFields(8)": {
+					"type": "input",
+					"top": 164,
+					"left": 257,
+					"width": 77,
+					"height": 13,
+					"dataSource": "dDate1",
+					"dataSourceTypeHint": "date",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"standardFields(7)": {
+					"type": "input",
+					"top": 163,
+					"left": 360,
+					"width": 75,
+					"height": 13,
+					"dataSource": "dDate2",
+					"dataSourceTypeHint": "date",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"standardFields(9)": {
+					"type": "text",
+					"top": 163,
+					"left": 168,
+					"width": 89,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Semana entre el :"
+				},
+				"standardFields(10)": {
+					"type": "text",
+					"top": 163,
+					"left": 334,
+					"width": 22,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "y el:"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 188,
+					"left": 87,
+					"width": 193,
+					"height": 11,
+					"dataSource": "vt_BUMonitor",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 190,
+					"left": 357,
+					"width": 209,
+					"height": 11,
+					"dataSource": "vt_BUConductor",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 167,
+					"left": 495,
+					"width": 74,
+					"height": 11,
+					"dataSource": "vt_PTBus",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 161,
+					"left": 29,
+					"width": 36,
+					"height": 15,
+					"fontFamily": "Lucida Grande Bold",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Ruta:"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 186,
+					"left": 29,
+					"width": 55,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Monitor :"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 189,
+					"left": 291,
+					"width": 64,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Conductor :"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 166,
+					"left": 444,
+					"width": 51,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Patente :"
+				},
+				"Línea1": {
+					"type": "line",
+					"top": 176,
+					"left": 74,
+					"width": 74
+				},
+				"Línea2": {
+					"type": "line",
+					"top": 176,
+					"left": 258,
+					"width": 76
+				},
+				"Línea3": {
+					"type": "line",
+					"top": 177,
+					"left": 361,
+					"width": 74,
+					"height": 1
+				},
+				"Línea4": {
+					"type": "line",
+					"top": 179,
+					"left": 496,
+					"width": 75,
+					"height": 1
+				},
+				"Línea5": {
+					"type": "line",
+					"top": 204,
+					"left": 86,
+					"width": 194,
+					"height": 1
+				},
+				"Línea6": {
+					"type": "line",
+					"top": 204,
+					"left": 357,
+					"width": 211,
+					"height": 1
+				},
+				"Texto18": {
+					"type": "text",
+					"top": 29,
+					"left": 150,
+					"width": 263,
+					"height": 18,
+					"textAlign": "left",
+					"styleSheet": "XS_ReportTitle_18",
+					"fontWeight": "bold",
+					"text": "LISTA DE ASISTENCIA"
+				},
+				"Variable10": {
+					"type": "input",
+					"top": 28,
+					"left": 28,
+					"width": 113,
+					"height": 113,
+					"dataSource": "vLogo",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"method": "ObjectMethods/Variable10.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable11": {
+					"type": "input",
+					"top": 57,
+					"left": 147,
+					"width": 388,
+					"height": 19,
+					"dataSource": "<>gCustom",
+					"styleSheet": "XS_ReportSubtitle_14",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,1 @@
+XS_CheckMethodName (Self:C308)

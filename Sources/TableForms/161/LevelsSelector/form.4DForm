@@ -1,0 +1,264 @@
+﻿{
+	"formSizeAnchor": "Botón3",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Botón de opción1": {
+					"type": "radio",
+					"top": 13,
+					"left": 13,
+					"width": 484,
+					"height": 15,
+					"dataSource": "rDatosActuales",
+					"text": "Copiar la configuración de Agenda de Segundo Básico a los niveles seleccionados",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón de opción2": {
+					"type": "radio",
+					"top": 34,
+					"left": 13,
+					"width": 471,
+					"height": 15,
+					"dataSource": "rTodos",
+					"text": "Copiar la configuración completa de Segundo Básico a los niveles seleccionados",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"List Box1": {
+					"type": "listbox",
+					"top": 69,
+					"left": 13,
+					"width": 228,
+					"height": 333,
+					"dataSource": "lb_NivelesOrigen",
+					"sortable": false,
+					"movableRows": false,
+					"dragging": "custom",
+					"dropping": "custom",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"columns": [
+						{
+							"name": "Columna1",
+							"dataSource": "at_NivelesOrigen",
+							"width": 213,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDrop",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Columna1.4dm",
+							"header": {
+								"name": "Título1",
+								"text": "Niveles",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"List Box2": {
+					"type": "listbox",
+					"top": 69,
+					"left": 260,
+					"width": 228,
+					"height": 333,
+					"dataSource": "lb_NivelesDestino",
+					"sortable": false,
+					"movableRows": false,
+					"dragging": "custom",
+					"dropping": "custom",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"columns": [
+						{
+							"name": "Columna2",
+							"dataSource": "at_NivelesDestino",
+							"width": 213,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDrop",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Columna2.4dm",
+							"header": {
+								"name": "Título2",
+								"text": "Copiar a...",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"Botón4": {
+					"type": "button",
+					"top": 412,
+					"left": 13,
+					"width": 130,
+					"height": 20,
+					"dataSource": "Botón1",
+					"text": "Todos los niveles",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón5": {
+					"type": "button",
+					"top": 412,
+					"left": 153,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Botón1",
+					"text": "Limpiar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 412,
+					"left": 318,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Botón1",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 517,
+					"left": 513,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCopiar",
+					"shortcutKey": "[Enter]",
+					"text": "Copiar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 412,
+					"left": 408,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCopiar",
+					"shortcutKey": "[Return]",
+					"text": "Copiar",
+					"styleSheet": "XS_DialogObjects",
+					"defaultButton": true,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable": {
+					"type": "input",
+					"top": 14,
+					"left": 14,
+					"width": 474,
+					"height": 39,
+					"dataSource": "SN3_CopiaIngreso",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

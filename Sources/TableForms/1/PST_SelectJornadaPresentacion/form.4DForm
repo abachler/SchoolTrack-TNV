@@ -1,0 +1,184 @@
+﻿{
+	"windowTitle": ":21031,1",
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Text5",
+	"rightMargin": 0,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 280,
+	"markerBreak": 280,
+	"markerFooter": 280,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 395,
+					"left": 255,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 338,
+					"left": 71,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable7(1)": {
+					"type": "plugin",
+					"top": 25,
+					"left": 0,
+					"width": 236,
+					"height": 215,
+					"dataSource": "xALP_Presentations",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Variable7(1).4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onPluginArea"
+					]
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 246,
+					"left": 4,
+					"width": 9,
+					"height": 8,
+					"fill": "#EE0000",
+					"stroke": "#EE0000"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 244,
+					"left": 19,
+					"width": 84,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Jornadas copadas"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 258,
+					"left": 4,
+					"width": 9,
+					"height": 8,
+					"fill": "#FF6600",
+					"stroke": "#FF6600"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 256,
+					"left": 19,
+					"width": 215,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Jornadas en el límite (si la selecciona)"
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 270,
+					"left": 4,
+					"width": 9,
+					"height": 8,
+					"fill": "#C5FFC0",
+					"stroke": "#C5FFC0"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 268,
+					"left": 19,
+					"width": 215,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Jornadas disponibles"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 6,
+					"left": 1,
+					"width": 235,
+					"height": 11,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"text": "Doble-click para seleccionar una jornada"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 283,
+					"left": 2,
+					"width": 234,
+					"height": 11,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "(en negritas la jornada actualmente asignada)"
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 321,
+					"left": 0,
+					"width": 68,
+					"height": 16,
+					"dataSource": "New Variable16690",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

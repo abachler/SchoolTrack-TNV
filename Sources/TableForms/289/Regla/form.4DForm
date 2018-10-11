@@ -1,0 +1,185 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "btn_cancelar",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texto": {
+					"type": "text",
+					"top": 28,
+					"left": 14,
+					"width": 120,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Nombre de la regla:"
+				},
+				"Variable": {
+					"type": "input",
+					"top": 28,
+					"left": 138,
+					"width": 179,
+					"height": 14,
+					"dataSource": "[ACT_MatricesAsignacionAut:289]nombre:3",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 58,
+					"left": 14,
+					"width": 123,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Matriz a asignar:"
+				},
+				"Menú desplegable": {
+					"type": "dropdown",
+					"top": 58,
+					"left": 138,
+					"width": 186,
+					"height": 18,
+					"dataSource": "atACT_NombreMatriz",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Menú desplegable.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 88,
+					"left": 14,
+					"width": 123,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Criterios de búsqueda:"
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 135,
+					"left": 378,
+					"width": 100,
+					"height": 20,
+					"dataSource": "Botón",
+					"text": "Guardar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_cancelar": {
+					"type": "button",
+					"top": 140,
+					"left": 224,
+					"width": 100,
+					"height": 20,
+					"dataSource": "btn_cancelar",
+					"text": "Cerrar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/btn_cancelar.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón": {
+					"type": "button",
+					"top": 87,
+					"left": 138,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Editar",
+					"text": "Editar...",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_escape": {
+					"type": "button",
+					"top": 209,
+					"left": 38,
+					"width": 109,
+					"height": 61,
+					"dataSource": "btn_escape",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 118,
+					"left": 14,
+					"width": 123,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Inactiva:"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 118,
+					"left": 138,
+					"width": 179,
+					"height": 15,
+					"dataSource": "[ACT_MatricesAsignacionAut:289]Inactiva:5",
+					"fill": "transparent",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"contextMenu": "none",
+					"textFormat": "Si;No",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

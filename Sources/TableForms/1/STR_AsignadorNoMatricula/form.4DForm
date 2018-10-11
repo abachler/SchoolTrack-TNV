@@ -1,0 +1,341 @@
+﻿{
+	"windowTitle": "Número de Matrícula",
+	"formSizeAnchor": "bAsignar",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerBody": 362,
+	"markerBreak": 362,
+	"markerFooter": 362,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 262,
+					"left": 242,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 286,
+					"left": 57,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				},
+				"custom": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 600,
+					"height": 460,
+					"stroke": "transparent"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable532": {
+					"type": "radio",
+					"top": 64,
+					"left": 12,
+					"width": 265,
+					"height": 15,
+					"dataSource": "i1InitNumMatricula",
+					"text": "Correlativo Absoluto (alfabético ascendente)",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable532.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable533": {
+					"type": "radio",
+					"top": 84,
+					"left": 12,
+					"width": 263,
+					"height": 15,
+					"dataSource": "i2InitNumMatricula",
+					"text": "Correlativo independiente para cada nivel",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable533.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 43,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Desde:"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 35,
+					"left": 13,
+					"width": 43,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Hasta:"
+				},
+				"Variable1567": {
+					"type": "dropdown",
+					"top": 11,
+					"left": 62,
+					"width": 216,
+					"height": 18,
+					"dataSource": "aPopNivel1",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Variable1567.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1568": {
+					"type": "dropdown",
+					"top": 33,
+					"left": 62,
+					"width": 216,
+					"height": 18,
+					"dataSource": "aPopNivel2",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Variable1568.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bAsignar": {
+					"type": "button",
+					"top": 292,
+					"left": 219,
+					"width": 80,
+					"height": 18,
+					"dataSource": "bAsignar",
+					"action": "accept",
+					"text": "Asignar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bCancelar": {
+					"type": "button",
+					"top": 292,
+					"left": 130,
+					"width": 80,
+					"height": 18,
+					"dataSource": "bCancelar",
+					"action": "cancel",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 130,
+					"left": 12,
+					"width": 83,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Ordenamiento:"
+				},
+				"aOrdenMatricula": {
+					"type": "dropdown",
+					"top": 127,
+					"left": 98,
+					"width": 180,
+					"height": 18,
+					"dataSource": "aOrdenMatricula",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección1": {
+					"type": "checkbox",
+					"top": 163,
+					"left": 12,
+					"width": 267,
+					"height": 16,
+					"dataSource": "bc_ReasignarTodo",
+					"text": "Reasignar a alumnos que ya tengan Nº asignado",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Casilla de selección1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"obj_fecha1": {
+					"type": "text",
+					"top": 199,
+					"left": 12,
+					"width": 163,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"textDecoration": "underline"
+				},
+				"obj_fecha2": {
+					"type": "input",
+					"top": 224,
+					"left": 14,
+					"width": 161,
+					"height": 16,
+					"dataSource": "vd_fecha_matricula",
+					"dataSourceTypeHint": "date",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"obj_fecha3": {
+					"type": "button",
+					"top": 222,
+					"left": 11,
+					"width": 167,
+					"height": 22,
+					"dataSource": "btn_calendario",
+					"display": false,
+					"method": "ObjectMethods/obj_fecha3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cas_sel_fecha": {
+					"type": "checkbox",
+					"top": 198,
+					"left": 12,
+					"width": 290,
+					"height": 16,
+					"dataSource": "bc_fecha_matricula",
+					"text": "Asignar fecha de matricula para el año en curso",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/cas_sel_fecha.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"obj_fecha7": {
+					"type": "checkbox",
+					"top": 250,
+					"left": 12,
+					"width": 267,
+					"height": 16,
+					"dataSource": "bc_ReasignarFechaTodos",
+					"text": "Reingresar a alumnos que ya tengan el dato",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable1": {
+					"type": "radio",
+					"top": 104,
+					"left": 12,
+					"width": 263,
+					"height": 15,
+					"dataSource": "i3InitNumMatricula",
+					"tooltip": "Sin título",
+					"text": "Correlativo independiente por tipo de enseñanza",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

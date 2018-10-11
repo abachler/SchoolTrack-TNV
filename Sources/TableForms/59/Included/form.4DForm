@@ -1,0 +1,205 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Forms",
+	"inheritedFormTable": 114,
+	"formSizeAnchor": "Rectángulo10",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 18,
+	"markerBody": 36,
+	"markerBreak": 39,
+	"markerFooter": 39,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectángulo10": {
+					"type": "rectangle",
+					"top": -2,
+					"left": -2,
+					"width": 543,
+					"height": 41,
+					"fill": "transparent"
+				},
+				"Rectángulo4": {
+					"type": "rectangle",
+					"top": 17,
+					"left": 2,
+					"width": 536,
+					"height": 19,
+					"stroke": "transparent"
+				},
+				"Línea5": {
+					"type": "line",
+					"top": 0,
+					"left": 59,
+					"height": 17
+				},
+				"Línea6": {
+					"type": "line",
+					"top": 0,
+					"left": 471,
+					"height": 17
+				},
+				"Línea7": {
+					"type": "line",
+					"top": 17,
+					"left": 0,
+					"width": 539
+				},
+				"Línea8": {
+					"type": "line",
+					"top": 18,
+					"left": 59,
+					"height": 18,
+					"stroke": "#AAAAAA"
+				},
+				"Línea9": {
+					"type": "line",
+					"top": 18,
+					"left": 471,
+					"height": 18,
+					"stroke": "#AAAAAA"
+				},
+				"Línea11": {
+					"type": "line",
+					"top": 35,
+					"left": 0,
+					"width": 539,
+					"stroke": "#AAAAAA"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 3,
+					"left": 3,
+					"width": 54,
+					"height": 12,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "raised",
+					"text": "Fecha"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 3,
+					"left": 63,
+					"width": 406,
+					"height": 12,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "raised",
+					"text": "Glosa"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 3,
+					"left": 475,
+					"width": 62,
+					"height": 12,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "raised",
+					"text": "Monto"
+				},
+				"Fecha": {
+					"type": "input",
+					"top": 21,
+					"left": 3,
+					"width": 54,
+					"height": 12,
+					"dataSource": "[BBL_Transacciones:59]Fecha:3",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Glosa": {
+					"type": "input",
+					"top": 21,
+					"left": 63,
+					"width": 406,
+					"height": 12,
+					"dataSource": "[BBL_Transacciones:59]Glosa:6",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Monto": {
+					"type": "input",
+					"top": 21,
+					"left": 475,
+					"width": 62,
+					"height": 12,
+					"dataSource": "[BBL_Transacciones:59]Monto:2",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,82 @@
+﻿{
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Image_Full": {
+					"type": "input",
+					"top": 0,
+					"left": 0,
+					"width": 800,
+					"height": 810,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vp_Picture",
+					"dataSourceTypeHint": "picture",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Bouton_Annuler": {
+					"type": "button",
+					"top": 0,
+					"left": 0,
+					"width": 800,
+					"height": 810,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "bUndo",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

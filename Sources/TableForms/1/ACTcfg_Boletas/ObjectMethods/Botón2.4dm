@@ -1,0 +1,1 @@
+vtACT_rutaCertificado:=xfGetFileName 

@@ -1,0 +1,217 @@
+﻿{
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texto2": {
+					"type": "text",
+					"top": 14,
+					"left": 19,
+					"width": 407,
+					"height": 23,
+					"textAlign": "center",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Asignar tipo de evento"
+				},
+				"lb_tipo_evento": {
+					"type": "listbox",
+					"top": 50,
+					"left": 24,
+					"width": 402,
+					"height": 177,
+					"dataSource": "lb_tipo_evento",
+					"focusable": false,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"alternateFill": "#F3F6FA",
+					"fontFamily": "Tahoma",
+					"fontSize": 9,
+					"columns": [
+						{
+							"name": "Columna7",
+							"dataSource": "at_tipo_evento",
+							"width": 230,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#F3F6FA",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título7",
+								"text": "Tipo evento",
+								"dataSource": "Título7",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Columna2",
+							"dataSource": "ab_entrevista",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"controlType": "checkbox",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#F3F6FA",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Columna2.4dm",
+							"header": {
+								"name": "Título2",
+								"text": "Entrevista",
+								"dataSource": "Título2",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Columna3",
+							"dataSource": "ab_observacion",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"controlType": "checkbox",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#F3F6FA",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Columna3.4dm",
+							"header": {
+								"name": "Título3",
+								"text": "Observación",
+								"dataSource": "Título3",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"moverh2": {
+					"type": "button",
+					"top": 279,
+					"left": 256,
+					"width": 80,
+					"height": 20,
+					"dataSource": "b_Cancelar",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/moverh2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"moverh1": {
+					"type": "button",
+					"top": 279,
+					"left": 346,
+					"width": 80,
+					"height": 20,
+					"dataSource": "b_OK",
+					"text": "Guardar",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"defaultButton": true,
+					"method": "ObjectMethods/moverh1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 234,
+					"left": 24,
+					"width": 385,
+					"height": 35,
+					"stroke": "#EE0000",
+					"textAlign": "left",
+					"styleSheet": "XS_DialogObjects",
+					"text": "En caso de seleccionar erroneamente el tipo de evento, es posible que se generen diferencias en los datos despues de la exportación."
+				}
+			}
+		}
+	]
+}

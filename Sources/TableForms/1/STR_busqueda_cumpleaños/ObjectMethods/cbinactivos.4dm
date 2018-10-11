@@ -1,0 +1,1 @@
+PREF_Set (USR_GetUserID ;"STR_PrefInactivoCupleaños";String:C10(l_inactivos))

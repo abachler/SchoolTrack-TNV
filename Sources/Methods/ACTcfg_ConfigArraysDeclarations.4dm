@@ -1,0 +1,80 @@
+//%attributes = {}
+  //ACTcfg_ConfigArraysDeclarations
+
+ARRAY TEXT:C222(atACT_GlosaItem;0)
+ARRAY LONGINT:C221(alACT_IdItem;0)
+
+ARRAY BOOLEAN:C223(abACT_AfectoIVA;0)
+ARRAY PICTURE:C279(apACT_AfectoIVA;0)
+
+ARRAY BOOLEAN:C223(abACT_IsDiscountItem;0)
+ARRAY BOOLEAN:C223(abACT_IsPercentItem;0)
+ARRAY REAL:C219(arACT_amountItem;0)
+ARRAY LONGINT:C221(alACT_IdMatriz;0)
+ARRAY TEXT:C222(atACT_NombreMatriz;0)
+ARRAY TEXT:C222(atACT_MonedaMatriz;0)
+ARRAY LONGINT:C221(alACT_RecNumItems;0)
+ARRAY LONGINT:C221(alACT_ItemRecNum;0)
+
+ARRAY BOOLEAN:C223(abACT_AfectoItemMatriz;0)
+ARRAY PICTURE:C279(apACT_AfectoItemMatriz;0)
+
+ARRAY INTEGER:C220(alACT_MesDeCargo;0)
+ARRAY BOOLEAN:C223(abACT_ItemAfectoIVA;0)
+ARRAY BOOLEAN:C223(abACT_AfectoDescInd;0)
+ARRAY LONGINT:C221(alACT_IDItemMatriz;0)
+ARRAY TEXT:C222(atACT_GlosaItemMatriz;0)
+ARRAY REAL:C219(arACT_amountItemMatriz;0)
+ARRAY BOOLEAN:C223(abACT_IsDiscountItemMatriz;0)
+ARRAY BOOLEAN:C223(abACT_IsPercentItemMatriz;0)
+ARRAY BOOLEAN:C223(abACT_esDescontable;0)
+ARRAY TEXT:C222(atACT_MonedaItemDef;0)
+ARRAY TEXT:C222(atACT_MonedaItemMatriz;0)
+ARRAY TEXT:C222(atACT_MonedaItem;0)
+
+ARRAY TEXT:C222(atACT_BankID;0)
+ARRAY TEXT:C222(atACT_BankName;0)
+ARRAY BOOLEAN:C223(abACT_BankEstandar;0)
+ARRAY LONGINT:C221(alACT_BankRecNum;0)
+ARRAY BOOLEAN:C223(abACT_BankModified;0)
+ARRAY TEXT:C222(atACT_BankNumConvenio;0)
+
+ARRAY INTEGER:C220(aiACT_YearIPC;0)
+ARRAY TEXT:C222(atACT_MesIPC;0)
+ARRAY REAL:C219(arACT_VariacionIPC;0)
+ARRAY REAL:C219(arACT_UFReferencia;0)
+  //ARRAY INTEGER(aiACT_DiaUF;0)
+ARRAY LONGINT:C221(alACT_MonedaDia;0)
+ARRAY REAL:C219(arACT_ValorUF;0)
+  //ARRAY REAL(arACT_ValorUFstored;0)
+ARRAY REAL:C219(arACT_ValorMonedaDia;0)
+
+ARRAY TEXT:C222(atACT_NombreMoneda;0)
+ARRAY REAL:C219(arACT_ValorMoneda;0)
+ARRAY TEXT:C222(atACT_SimboloMoneda;0)
+
+ARRAY TEXT:C222(<>atACT_FreqFacturacion;0)
+ARRAY REAL:C219(<>arACT_FreqDescuento;0)
+
+ARRAY LONGINT:C221(alACT_Campo;0)
+ARRAY TEXT:C222(atACT_Descripcion;0)
+ARRAY LONGINT:C221(alACT_Largo;0)
+ARRAY TEXT:C222(atACT_TipoDato;0)
+ARRAY TEXT:C222(atACT_TiposDato;0)
+ARRAY TEXT:C222(atACT_Posicion;0)
+ARRAY TEXT:C222(atACT_Correspondencia;0)
+ARRAY TEXT:C222(atACT_CamposPago;0)
+ARRAY LONGINT:C221(alACT_PosIni;0)
+ARRAY LONGINT:C221(alACT_PosFinal;0)
+
+ACTinit_LoadMatrixIntoArrays 
+UNLOAD RECORD:C212([xxACT_Items:179])
+READ ONLY:C145([xxACT_Items:179])
+
+ACTcfg_InitBolArrays 
+
+ACTcfg_OpcionesFormasDePago ("DeclaraArreglos")
+
+ARRAY LONGINT:C221(alACT_AñoTasaImpuesto;0)
+ARRAY REAL:C219(arACT_TasaMesImpuesto;0)
+ARRAY REAL:C219(arACT_TasaMaximaImpuesto;0)

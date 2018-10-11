@@ -1,0 +1,184 @@
+﻿{
+	"formSizeAnchor": "lb_lista",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"vt_TextoBuscado": {
+					"type": "input",
+					"top": 0,
+					"left": 0,
+					"width": 246,
+					"height": 16,
+					"sizingX": "grow",
+					"dataSource": "vt_TextoBuscado",
+					"hideFocusRing": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/vt_TextoBuscado.4dm",
+					"events": [
+						"onBeforeKeystroke",
+						"onAfterKeystroke"
+					]
+				},
+				"lb_lista": {
+					"type": "listbox",
+					"top": 19,
+					"left": 0,
+					"width": 246,
+					"height": 174,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"listboxType": "namedSelection",
+					"focusable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"showHeaders": false,
+					"selectionName": "$tecleoPredictivo",
+					"highlightSet": "$seleccionCampo",
+					"table": 1,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"borderStyle": "none",
+					"method": "ObjectMethods/lb_lista.4dm",
+					"events": [
+						"onDoubleClick",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "columna1",
+							"width": 246,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						}
+					]
+				},
+				"botonCerrar": {
+					"type": "button",
+					"top": 234,
+					"left": 0,
+					"width": 137,
+					"height": 32,
+					"sizingY": "move",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "cerrar ESC",
+					"styleSheet": "Plain - 12",
+					"focusable": false,
+					"method": "ObjectMethods/botonCerrar.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"seleccionar": {
+					"type": "button",
+					"top": 280,
+					"left": 0,
+					"width": 137,
+					"height": 32,
+					"sizingY": "move",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "seleccionar ENTER",
+					"styleSheet": "Plain - 12",
+					"focusable": false,
+					"method": "ObjectMethods/seleccionar.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"seleccionar1": {
+					"type": "button",
+					"top": 280,
+					"left": 151,
+					"width": 137,
+					"height": 32,
+					"sizingY": "move",
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"text": "seleccionar CR",
+					"styleSheet": "Plain - 12",
+					"focusable": false,
+					"method": "ObjectMethods/seleccionar1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"resaltar": {
+					"type": "button",
+					"top": 326,
+					"left": 0,
+					"width": 137,
+					"height": 32,
+					"sizingY": "move",
+					"shortcutKey": "*",
+					"shortcutAccel": true,
+					"text": "resaltar CMD-*",
+					"styleSheet": "Plain - 12",
+					"focusable": false,
+					"method": "ObjectMethods/resaltar.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"largoTextoEditado": {
+					"type": "input",
+					"top": 369,
+					"left": 0,
+					"width": 141,
+					"height": 16,
+					"sizingY": "move",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Línea": {
+					"type": "line",
+					"top": 17,
+					"left": 1,
+					"width": 546,
+					"sizingX": "grow",
+					"stroke": "#AAAAAA"
+				}
+			}
+		}
+	]
+}

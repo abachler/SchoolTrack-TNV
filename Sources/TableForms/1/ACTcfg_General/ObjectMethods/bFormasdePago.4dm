@@ -1,0 +1,1 @@
+ACTcfgfdp_OpcionesGenerales ("seleccionaFormaDePagoXDef";->vt_FormadePagoXDef;->vl_FormadePagoXDef)

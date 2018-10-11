@@ -1,0 +1,1 @@
+PREF_Set (USR_GetUserID ;"OrdenamientoPanel#"+String:C10(vlBWR_SelectedTableRef);"")

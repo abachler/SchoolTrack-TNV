@@ -1,0 +1,445 @@
+﻿{
+	"formSizeAnchor": "fondo",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDoubleClick",
+		"onLosingFocus",
+		"onBeforeKeystroke",
+		"onDataChange",
+		"onCloseBox",
+		"onUnload",
+		"onTimer",
+		"onAfterKeystroke",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"fondo": {
+					"type": "rectangle",
+					"top": -1,
+					"left": -1,
+					"width": 571,
+					"height": 294,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"stroke": "#AAAAAA"
+				},
+				"Línea": {
+					"type": "line",
+					"top": 241,
+					"left": 0,
+					"width": 570,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"stroke": "#AAAAAA"
+				}
+			}
+		},
+		{
+			"objects": {
+				"SearchPicker": {
+					"type": "subform",
+					"top": 7,
+					"left": 357,
+					"width": 205,
+					"height": 30,
+					"sizingX": "move",
+					"dataSource": "vSearch",
+					"dataSourceTypeHint": "text",
+					"detailForm": "SearchPicker",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/SearchPicker.4dm",
+					"events": [
+						"onLoad"
+					]
+				},
+				"listaMedicos": {
+					"type": "listbox",
+					"top": 44,
+					"left": 0,
+					"width": 569,
+					"height": 196,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"listboxType": "currentSelection",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"highlightSet": "seleccionMedico",
+					"table": 89,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#DDDDDD",
+					"verticalLineStroke": "#DDDDDD",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"method": "ObjectMethods/listaMedicos.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "medicoNombre",
+							"dataSource": "ST_ClearSpaces ([STR_Medicos:89]Nombres:1+\" \"+[STR_Medicos:89]Apellidos:7)",
+							"width": 225,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título4",
+								"text": "Nombre",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "medicosEspecialidad",
+							"dataSource": "[STR_Medicos:89]Especialidad:2",
+							"width": 220,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título2",
+								"text": "Especialidad",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "medicosMovil",
+							"dataSource": "[STR_Medicos:89]Telefono_movil:4",
+							"width": 119,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título3",
+								"text": "Tel. Móvil",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"agregarMedico": {
+					"type": "pictureButton",
+					"top": 255,
+					"left": 55,
+					"width": 19,
+					"height": 20,
+					"sizingY": "move",
+					"columnCount": 1,
+					"rowCount": 2,
+					"loopBackToFirstFrame": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/agregarMedico.4dm",
+					"events": [
+						"onClick",
+						"onMouseEnter"
+					]
+				},
+				"eliminarMedico": {
+					"type": "pictureButton",
+					"top": 256,
+					"left": 15,
+					"width": 19,
+					"height": 20,
+					"sizingY": "move",
+					"columnCount": 1,
+					"rowCount": 2,
+					"switchContinuously": true,
+					"loopBackToFirstFrame": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/eliminarMedico.4dm",
+					"events": [
+						"onClick",
+						"onMouseEnter"
+					]
+				},
+				"seleccionarMedico": {
+					"type": "button",
+					"top": 253,
+					"left": 446,
+					"width": 107,
+					"height": 22,
+					"sizingX": "move",
+					"sizingY": "move",
+					"shortcutKey": "+",
+					"shortcutAccel": true,
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"text": "Seleccionar",
+					"iconFrames": 4,
+					"method": "ObjectMethods/seleccionarMedico.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onMouseEnter"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"botonEspecialidad": {
+					"type": "button",
+					"top": 608,
+					"left": 82,
+					"width": 391,
+					"height": 16,
+					"styleSheet": "Plain - 12",
+					"stroke": "#000000",
+					"textPlacement": "left",
+					"style": "custom",
+					"method": "ObjectMethods/botonEspecialidad.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 18,
+					"left": 21,
+					"width": 115,
+					"height": 14,
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "Nombres"
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 44,
+					"left": 21,
+					"width": 115,
+					"height": 14,
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "Apellidos"
+				},
+				"Texto9": {
+					"type": "text",
+					"top": 70,
+					"left": 21,
+					"width": 115,
+					"height": 14,
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "Especialidad"
+				},
+				"Texto10": {
+					"type": "text",
+					"top": 96,
+					"left": 21,
+					"width": 115,
+					"height": 14,
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "Email"
+				},
+				"Texto11": {
+					"type": "text",
+					"top": 125,
+					"left": 21,
+					"width": 115,
+					"height": 14,
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "Telefono Móvil"
+				},
+				"Texto12": {
+					"type": "text",
+					"top": 154,
+					"left": 21,
+					"width": 115,
+					"height": 14,
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "Telefono Domicilio"
+				},
+				"Texto13": {
+					"type": "text",
+					"top": 183,
+					"left": 21,
+					"width": 115,
+					"height": 14,
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "Telefono Profesional"
+				},
+				"Campo7": {
+					"type": "input",
+					"top": 17,
+					"left": 163,
+					"width": 391,
+					"height": 14,
+					"dataSource": "[STR_Medicos:89]Nombres:1",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"Campo8": {
+					"type": "input",
+					"top": 44,
+					"left": 163,
+					"width": 391,
+					"height": 14,
+					"dataSource": "[STR_Medicos:89]Apellidos:7",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"CampoEspecialidad": {
+					"type": "input",
+					"top": 70,
+					"left": 163,
+					"width": 371,
+					"height": 14,
+					"dataSource": "[STR_Medicos:89]Especialidad:2",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/CampoEspecialidad.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onAfterKeystroke"
+					]
+				},
+				"Campo10": {
+					"type": "input",
+					"top": 96,
+					"left": 163,
+					"width": 391,
+					"height": 14,
+					"dataSource": "[STR_Medicos:89]eMail:5",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Campo11": {
+					"type": "input",
+					"top": 125,
+					"left": 163,
+					"width": 391,
+					"height": 14,
+					"dataSource": "[STR_Medicos:89]Telefono_movil:4",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Campo12": {
+					"type": "input",
+					"top": 154,
+					"left": 163,
+					"width": 391,
+					"height": 14,
+					"dataSource": "[STR_Medicos:89]Telefono_Domicilio:8",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Campo13": {
+					"type": "input",
+					"top": 183,
+					"left": 163,
+					"width": 391,
+					"height": 14,
+					"dataSource": "[STR_Medicos:89]Telefono_Profesional:9",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"boton": {
+					"type": "button",
+					"top": 253,
+					"left": 467,
+					"width": 87,
+					"height": 22,
+					"sizingX": "move",
+					"sizingY": "move",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"text": "Aceptar",
+					"iconFrames": 4,
+					"method": "ObjectMethods/boton.4dm",
+					"events": [
+						"onClick",
+						"onMouseEnter"
+					]
+				}
+			}
+		}
+	]
+}

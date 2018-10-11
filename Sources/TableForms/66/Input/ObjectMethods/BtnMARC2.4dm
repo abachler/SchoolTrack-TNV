@@ -1,0 +1,1 @@
+BBLmarc_OpenInputer (->[BBL_Registros:66]Número_de_copia:2)

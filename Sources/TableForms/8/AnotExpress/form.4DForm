@@ -1,0 +1,871 @@
+﻿{
+	"windowTitle": ":21002,1",
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Boton Accept",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerBody": 351,
+	"markerBreak": 351,
+	"markerFooter": 351,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onLosingFocus",
+		"onGettingFocus",
+		"onDrop",
+		"onBeforeKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onUnload",
+		"onOpenDetail",
+		"onCloseDetail"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Text2": {
+					"type": "text",
+					"top": 15,
+					"left": 167,
+					"width": 58,
+					"height": 14,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": ":21002,171"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 15,
+					"left": 20,
+					"width": 42,
+					"height": 15,
+					"stroke": "#000000",
+					"styleSheet": "Medium - 12",
+					"text": ":21002,9"
+				},
+				"curso": {
+					"type": "input",
+					"top": 15,
+					"left": 67,
+					"width": 75,
+					"height": 15,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Medium - 12",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"fecha": {
+					"type": "input",
+					"top": 16,
+					"left": 235,
+					"width": 96,
+					"height": 14,
+					"dataSourceTypeHint": "date",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/fecha.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"Botón": {
+					"type": "button",
+					"top": 13,
+					"left": 121,
+					"width": 22,
+					"height": 19,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"textPlacement": "left",
+					"style": "custom",
+					"method": "ObjectMethods/Botón.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"calendario": {
+					"type": "button",
+					"top": 15,
+					"left": 312,
+					"width": 19,
+					"height": 16,
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"icon": "/RESOURCES/IconCalendar.png",
+					"iconFrames": 4,
+					"textPlacement": "left",
+					"style": "custom",
+					"method": "ObjectMethods/calendario.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable14": {
+					"type": "button",
+					"top": 451,
+					"left": 577,
+					"width": 80,
+					"height": 20,
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": ":21002,157",
+					"styleSheet": "Plain - 12",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Boton Accept": {
+					"type": "button",
+					"top": 451,
+					"left": 671,
+					"width": 80,
+					"height": 20,
+					"shortcutKey": "[Return]",
+					"text": ":21002,172",
+					"styleSheet": "Plain - 12",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Boton Accept.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text12": {
+					"type": "text",
+					"top": 380,
+					"left": 20,
+					"width": 637,
+					"height": 60,
+					"stroke": "#777777",
+					"styleSheet": "Plain - 11",
+					"text": "Este cuadro de diálogo permite ingresar anotaciones a los alumnos de un curso.\rDigite en la zona alumno las primeras letras del apellido del alumno o su número de lista.\r   - Para agregar la anotación a la lista presione la tecla ENTER. \r   - Para eliminar una anotación de la lista, presione la tecla SUPR.\r"
+				},
+				"idAlumno": {
+					"type": "input",
+					"top": 451,
+					"left": 5,
+					"width": 62,
+					"height": 12,
+					"visibility": "hidden",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"styleSheet": "Plain - 11",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"idProfesor": {
+					"type": "input",
+					"top": 468,
+					"left": 4,
+					"width": 62,
+					"height": 12,
+					"visibility": "hidden",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"styleSheet": "Plain - 11",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 41,
+					"left": 18,
+					"width": 53,
+					"height": 15,
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"text": ":21002,170"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 41,
+					"left": 267,
+					"width": 58,
+					"height": 15,
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"text": ":21002,168"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 67,
+					"left": 18,
+					"width": 58,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"text": ":21002,23"
+				},
+				"Variable9": {
+					"type": "button",
+					"top": 112,
+					"left": 736,
+					"width": 11,
+					"height": 11,
+					"dataSource": "bPut",
+					"shortcutKey": "[Enter]",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"textPlacement": "left",
+					"style": "custom",
+					"method": "ObjectMethods/Variable9.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text7": {
+					"type": "text",
+					"top": 94,
+					"left": 18,
+					"width": 97,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"text": ":21002,169"
+				},
+				"anotacion.alumno": {
+					"type": "input",
+					"top": 40,
+					"left": 72,
+					"width": 184,
+					"height": 14,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/anotacion.alumno.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"anotacion.profesor": {
+					"type": "input",
+					"top": 40,
+					"left": 326,
+					"width": 183,
+					"height": 15,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/anotacion.profesor.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"anotacion.motivo": {
+					"type": "input",
+					"top": 66,
+					"left": 70,
+					"width": 168,
+					"height": 14,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/anotacion.motivo.4dm",
+					"events": [
+						"onClick",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"categoria.anotacion": {
+					"type": "input",
+					"top": 67,
+					"left": 326,
+					"width": 182,
+					"height": 14,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"puntos.anotacion": {
+					"type": "input",
+					"top": 67,
+					"left": 564,
+					"width": 41,
+					"height": 14,
+					"dataSourceTypeHint": "number",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"tipo.anotacion": {
+					"type": "input",
+					"top": 67,
+					"left": 678,
+					"width": 34,
+					"height": 14,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"styleSheet": "Plain - 12",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"anotacion.observaciones": {
+					"type": "input",
+					"top": 95,
+					"left": 111,
+					"width": 617,
+					"height": 28,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "plugin",
+					"top": 133,
+					"left": 18,
+					"width": 731,
+					"height": 235,
+					"dataSource": "xALP_Anot",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick",
+						"onGettingFocus",
+						"onPluginArea"
+					]
+				},
+				"Botón invisible1": {
+					"type": "button",
+					"top": 66,
+					"left": 240,
+					"width": 16,
+					"height": 15,
+					"dataSource": "Botón invisible1",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"style": "custom",
+					"method": "ObjectMethods/Botón invisible1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text8": {
+					"type": "text",
+					"top": 67,
+					"left": 267,
+					"width": 106,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"text": ":21003,1"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 67,
+					"left": 637,
+					"width": 33,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"text": ":21003,3"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 68,
+					"left": 517,
+					"width": 39,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"text": ":21003,2"
+				},
+				"Variable10": {
+					"type": "button",
+					"top": 94,
+					"left": 736,
+					"width": 11,
+					"height": 11,
+					"dataSource": "bdel",
+					"shortcutKey": "[Del]",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"textPlacement": "left",
+					"style": "custom",
+					"method": "ObjectMethods/Variable10.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"anotacion.asignatura": {
+					"type": "input",
+					"top": 41,
+					"left": 583,
+					"width": 145,
+					"height": 15,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto": {
+					"type": "text",
+					"top": 41,
+					"left": 517,
+					"width": 71,
+					"height": 16,
+					"styleSheet": "Plain - 12",
+					"text": "Asignatura:"
+				},
+				"menu_asignaturas": {
+					"type": "button",
+					"top": 42,
+					"left": 731,
+					"width": 16,
+					"height": 15,
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"style": "custom",
+					"method": "ObjectMethods/menu_asignaturas.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"anotacion.lista": {
+					"type": "listbox",
+					"top": 55,
+					"left": 1,
+					"width": 762,
+					"height": 388,
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"fill": "#FFFFFF",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 11,
+					"events": [
+						"onClick",
+						"onDisplayDetail"
+					],
+					"columns": [
+						{
+							"name": "lista.alumno",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/lista.alumno.4dm",
+							"header": {
+								"name": "titulo.alumno",
+								"text": "Alumno",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "lista.funcionario",
+							"width": 130,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/lista.funcionario.4dm",
+							"header": {
+								"name": "Título3",
+								"text": "Profesor",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "lista.motivo",
+							"width": 182,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onLosingFocus",
+								"onGettingFocus",
+								"onBeforeKeystroke",
+								"onDataChange",
+								"onAfterKeystroke"
+							],
+							"method": "ObjectMethods/lista.motivo.4dm",
+							"header": {
+								"name": "Título4",
+								"text": "Motivo",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "lista.observacion",
+							"width": 225,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título5",
+								"text": "Observación",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "lista.fecha",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título2",
+								"text": "Fecha",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "lista.IdAlumno",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título6",
+								"text": "Título6",
+								"dataSource": "Título6",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "lista.IdProfesor",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título7",
+								"text": "Título7",
+								"dataSource": "Título7",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "lista.tipoAnotacion",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título8",
+								"text": "Título8",
+								"dataSource": "Título8",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "lista.puntajeAnotacion",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título9",
+								"text": "Título9",
+								"dataSource": "Título9",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "lista.categoríaAnotación",
+							"dataSource": "Columna1",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título10",
+								"text": "Título10",
+								"dataSource": "Título10",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"Botón 3D": {
+					"type": "button",
+					"top": 16,
+					"left": 737,
+					"width": 20,
+					"height": 23,
+					"shortcutKey": "[Esc]",
+					"styleSheet": "Medium - 16",
+					"text": "+",
+					"textPlacement": "center",
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"botonAgregarRegistro": {
+					"type": "button",
+					"top": 569,
+					"left": 8,
+					"width": 110,
+					"height": 24,
+					"shortcutKey": "+",
+					"text": "agrega linea (+)",
+					"styleSheet": "Plain - 12",
+					"focusable": false,
+					"method": "ObjectMethods/botonAgregarRegistro.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

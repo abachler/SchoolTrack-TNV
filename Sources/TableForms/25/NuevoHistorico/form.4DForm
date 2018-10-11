@@ -1,0 +1,164 @@
+﻿{
+	"rightMargin": 24,
+	"bottomMargin": 20,
+	"markerBody": 335,
+	"markerBreak": 335,
+	"markerFooter": 335,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texto": {
+					"type": "text",
+					"top": 20,
+					"left": 15,
+					"width": 31,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Año:"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 45,
+					"left": 15,
+					"width": 32,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Nivel:"
+				},
+				"vt_YearName": {
+					"type": "input",
+					"top": 21,
+					"left": 52,
+					"width": 158,
+					"height": 13,
+					"dataSource": "vt_YearName",
+					"styleSheet": "XS_DialogObjects",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vt_Nivel": {
+					"type": "input",
+					"top": 46,
+					"left": 52,
+					"width": 158,
+					"height": 13,
+					"dataSource": "vt_Nivel",
+					"styleSheet": "XS_DialogObjects",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Imagen8": {
+					"type": "picture",
+					"top": 20,
+					"left": 215,
+					"width": 11,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Imagen1": {
+					"type": "picture",
+					"top": 45,
+					"left": 215,
+					"width": 11,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Botón 3D": {
+					"type": "button",
+					"top": 75,
+					"left": 155,
+					"width": 76,
+					"height": 20,
+					"dataSource": "Botón 3D",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Aceptar",
+					"style": "bevel",
+					"method": "ObjectMethods/Botón 3D.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 75,
+					"left": 69,
+					"width": 76,
+					"height": 20,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Cancelar",
+					"style": "bevel",
+					"events": [
+						"onClick"
+					]
+				},
+				"bPopupYear": {
+					"type": "button",
+					"top": 19,
+					"left": 50,
+					"width": 180,
+					"height": 17,
+					"dataSource": "bPopupYear",
+					"display": false,
+					"method": "ObjectMethods/bPopupYear.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bPopupNivel": {
+					"type": "button",
+					"top": 44,
+					"left": 50,
+					"width": 180,
+					"height": 17,
+					"dataSource": "bPopupNivel",
+					"display": false,
+					"method": "ObjectMethods/bPopupNivel.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,1054 @@
+﻿{
+	"inheritedForm": "XS_MASTER_WZDDialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Variable5",
+	"rightMargin": 15,
+	"bottomMargin": 15,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onCloseBox",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Texto4": {
+					"type": "text",
+					"top": 4,
+					"left": 161,
+					"width": 372,
+					"height": 62,
+					"stroke": "#FFFFFF",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Asistente para la Generación de Información Electrónica de Compra y Venta (IEC - IEV)"
+				},
+				"Variable255": {
+					"type": "input",
+					"top": 378,
+					"left": 574,
+					"width": 17,
+					"height": 11,
+					"sizingX": "move",
+					"dataSource": "vi_PageNumber",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 553,
+					"width": 20,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "bPrev",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 592,
+					"width": 20,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "bNext",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 479,
+					"left": 28,
+					"width": 20,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "Nueva Variable501",
+					"shortcutKey": "+",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 478,
+					"left": 94,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable11": {
+					"type": "button",
+					"top": 479,
+					"left": 246,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bTrap",
+					"shortcutKey": "[Enter]",
+					"text": "Cancelar",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 474,
+					"left": 439,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 417,
+					"left": 255,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				},
+				"t_mensaje": {
+					"type": "input",
+					"top": 374,
+					"left": 10,
+					"width": 533,
+					"height": 11,
+					"dataSource": "t_mensaje",
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable15": {
+					"type": "input",
+					"top": 86,
+					"left": 18,
+					"width": 568,
+					"height": 263,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vt_g2",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"entryFilter": "~\"\"",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Área de grupo3": {
+					"type": "groupBox",
+					"top": 123,
+					"left": 320,
+					"width": 290,
+					"height": 66,
+					"fontFamily": ".Lucida Grande UI",
+					"fontSize": 12
+				},
+				"Área de grupo2": {
+					"type": "groupBox",
+					"top": 123,
+					"left": 20,
+					"width": 290,
+					"height": 66,
+					"fontFamily": ".Lucida Grande UI",
+					"fontSize": 12
+				},
+				"Área de grupo1": {
+					"type": "groupBox",
+					"top": 72,
+					"left": 20,
+					"width": 290,
+					"height": 47,
+					"fontFamily": ".Lucida Grande UI",
+					"fontSize": 12
+				},
+				"Área de grupo": {
+					"type": "groupBox",
+					"top": 193,
+					"left": 20,
+					"width": 290,
+					"height": 57,
+					"styleSheet": "XS_DialogObjects"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 146,
+					"left": 340,
+					"width": 42,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Modelo:"
+				},
+				"Imagen7": {
+					"type": "picture",
+					"top": 146,
+					"left": 558,
+					"width": 32,
+					"height": 18,
+					"pictureFormat": "scaled"
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 146,
+					"left": 558,
+					"width": 32,
+					"height": 18,
+					"dataSource": "Botón6",
+					"display": false,
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"venta_noestandar_6": {
+					"type": "text",
+					"top": 318,
+					"left": 40,
+					"width": 229,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "El archivo con datos a importar fue creado en:"
+				},
+				"venta_noestandar_5": {
+					"type": "text",
+					"top": 259,
+					"left": 40,
+					"width": 118,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Archivo a importar:"
+				},
+				"Variable19": {
+					"type": "radio",
+					"top": 147,
+					"left": 130,
+					"width": 63,
+					"height": 18,
+					"dataSource": "l_compra",
+					"text": "Compra",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable19.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable20": {
+					"type": "radio",
+					"top": 146,
+					"left": 201,
+					"width": 61,
+					"height": 18,
+					"dataSource": "l_venta",
+					"text": "Venta",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable20.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"MultiRazones0": {
+					"type": "dropdown",
+					"top": 87,
+					"left": 130,
+					"width": 160,
+					"height": 18,
+					"dataSource": "atACTcfg_Razones",
+					"focusable": false,
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/MultiRazones0.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"atACT_NombreFormato": {
+					"type": "dropdown",
+					"top": 146,
+					"left": 399,
+					"width": 144,
+					"height": 18,
+					"dataSource": "atACT_NombreFormato",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/atACT_NombreFormato.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"proveeColegium0_3_7": {
+					"type": "input",
+					"top": 223,
+					"left": 235,
+					"width": 35,
+					"height": 11,
+					"dataSource": "vlACTdte_YearIE",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"method": "ObjectMethods/proveeColegium0_3_7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"venta_noestandar_0": {
+					"type": "input",
+					"top": 280,
+					"left": 20,
+					"width": 475,
+					"height": 26,
+					"dataSource": "vt_rutaArchivo",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/venta_noestandar_0.4dm",
+					"events": [
+						"onGettingFocus"
+					]
+				},
+				"venta_noestandar_1": {
+					"type": "button",
+					"top": 286,
+					"left": 505,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bExplore",
+					"shortcutKey": "-",
+					"shortcutAccel": true,
+					"text": "Explorar...",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/venta_noestandar_1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"venta_noestandar_2": {
+					"type": "radio",
+					"top": 318,
+					"left": 340,
+					"width": 83,
+					"height": 18,
+					"dataSource": "r_mac",
+					"text": "Macintosh",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"venta_noestandar_3": {
+					"type": "radio",
+					"top": 318,
+					"left": 426,
+					"width": 101,
+					"height": 18,
+					"dataSource": "r_win",
+					"text": "Windows",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"venta_noestandar_4": {
+					"type": "checkbox",
+					"top": 340,
+					"left": 340,
+					"width": 241,
+					"height": 13,
+					"dataSource": "cb_TieneEncabezado",
+					"text": "El archivo contiene encabezados",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"rs": {
+					"type": "text",
+					"top": 147,
+					"left": 40,
+					"width": 82,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Tipo de libro:"
+				},
+				"proveeColegium0_3_3": {
+					"type": "input",
+					"top": 221,
+					"left": 73,
+					"width": 80,
+					"height": 11,
+					"dataSource": "vtACTdte_MesIE",
+					"styleSheet": "XS_FormObjects",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"proveeColegium0_3_5": {
+					"type": "picture",
+					"top": 220,
+					"left": 152,
+					"width": 19,
+					"height": 18
+				},
+				"proveeColegium0_3_4": {
+					"type": "button",
+					"top": 221,
+					"left": 72,
+					"width": 99,
+					"height": 14,
+					"dataSource": "bMes",
+					"display": false,
+					"method": "ObjectMethods/proveeColegium0_3_4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 221,
+					"left": 40,
+					"width": 47,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Mes:"
+				},
+				"MultiRazones2": {
+					"type": "text",
+					"top": 87,
+					"left": 40,
+					"width": 82,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Razón Social:"
+				},
+				"estandar_1": {
+					"type": "button",
+					"top": 168,
+					"left": 340,
+					"width": 92,
+					"height": 14,
+					"dataSource": "btn_generaPlanillaIEC",
+					"display": false,
+					"method": "ObjectMethods/estandar_1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"estandar_0": {
+					"type": "text",
+					"top": 168,
+					"left": 340,
+					"width": 92,
+					"height": 11,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Generar plantilla"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 222,
+					"left": 201,
+					"width": 27,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Año:"
+				},
+				"cs_totales": {
+					"type": "checkbox",
+					"top": 167,
+					"left": 201,
+					"width": 109,
+					"height": 17,
+					"dataSource": "cs_totales",
+					"text": "Completar totales",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"rs1": {
+					"type": "text",
+					"top": 200,
+					"left": 40,
+					"width": 82,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Período del libro:"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto6": {
+					"type": "text",
+					"top": 329,
+					"left": 294,
+					"width": 111,
+					"height": 11,
+					"sizingY": "move",
+					"styleSheet": "XS_FormObjects",
+					"text": "Registros con problema:"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 329,
+					"left": 141,
+					"width": 91,
+					"height": 11,
+					"sizingY": "move",
+					"styleSheet": "XS_FormObjects",
+					"text": "Registros correctos:"
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 329,
+					"left": 13,
+					"width": 131,
+					"height": 11,
+					"sizingY": "move",
+					"styleSheet": "XS_FormObjects",
+					"text": "Registros total:"
+				},
+				"Variable2": {
+					"type": "pictureButton",
+					"top": 80,
+					"left": 573,
+					"width": 18,
+					"height": 18,
+					"sizingX": "move",
+					"dataSource": "bDelLinea",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable12": {
+					"type": "button",
+					"top": 377,
+					"left": 448,
+					"width": 80,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bEnviar": {
+					"type": "button",
+					"top": 377,
+					"left": 535,
+					"width": 80,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bEnviar",
+					"text": "Enviar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/bEnviar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable13": {
+					"type": "input",
+					"top": 350,
+					"left": 13,
+					"width": 599,
+					"height": 11,
+					"sizingY": "move",
+					"dataSource": "vt_Motivo",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 83,
+					"left": 13,
+					"width": 546,
+					"height": 11,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Las líneas en rojo no serán procesadas. Haga clic en ellas para saber por qué no pueden ser procesadas."
+				},
+				"Variable14": {
+					"type": "button",
+					"top": 377,
+					"left": 10,
+					"width": 80,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bBack",
+					"shortcutKey": "[Esc]",
+					"text": "Atrás",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Variable14.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1283": {
+					"type": "pictureButton",
+					"top": 80,
+					"left": 593,
+					"width": 18,
+					"height": 18,
+					"sizingX": "move",
+					"dataSource": "bAddCCCbl",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable1283.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable16": {
+					"type": "input",
+					"top": 329,
+					"left": 76,
+					"width": 32,
+					"height": 11,
+					"sizingY": "move",
+					"dataSource": "vrACT_Total",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable17": {
+					"type": "input",
+					"top": 329,
+					"left": 233,
+					"width": 32,
+					"height": 11,
+					"sizingY": "move",
+					"dataSource": "vrACT_Aprobado",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable18": {
+					"type": "input",
+					"top": 329,
+					"left": 398,
+					"width": 32,
+					"height": 11,
+					"sizingY": "move",
+					"dataSource": "vrACT_Rechazado",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"lb_IECV": {
+					"type": "listbox",
+					"top": 105,
+					"left": 13,
+					"width": 599,
+					"height": 216,
+					"dataSource": "lb_IECV",
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"rowStrokeSource": "alACT_coloresLB",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"method": "ObjectMethods/lb_IECV.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onDataChange"
+					],
+					"columns": []
+				},
+				"compra0": {
+					"type": "text",
+					"top": 329,
+					"left": 454,
+					"width": 131,
+					"height": 11,
+					"sizingY": "move",
+					"styleSheet": "XS_FormObjects",
+					"text": "Factor proporcionalidad IVA:"
+				},
+				"compra1": {
+					"type": "input",
+					"top": 329,
+					"left": 578,
+					"width": 32,
+					"height": 11,
+					"sizingY": "move",
+					"dataSource": "vrACT_Proporcionalidad",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/compra1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "pictureButton",
+					"top": 83,
+					"left": 553,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bPrintItems",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"texto8": {
+					"type": "text",
+					"top": 373,
+					"left": 134,
+					"width": 131,
+					"height": 11,
+					"sizingY": "move",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"text": "Folio notificación:"
+				},
+				"texto3": {
+					"type": "input",
+					"top": 373,
+					"left": 278,
+					"width": 112,
+					"height": 11,
+					"sizingY": "move",
+					"dataSource": "vrACT_folioNotif",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/texto3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"texto9": {
+					"type": "text",
+					"top": 391,
+					"left": 134,
+					"width": 131,
+					"height": 11,
+					"sizingY": "move",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"text": "Código de reemplazo:"
+				},
+				"texto10": {
+					"type": "input",
+					"top": 391,
+					"left": 278,
+					"width": 112,
+					"height": 11,
+					"sizingY": "move",
+					"dataSource": "vtACT_CodAut",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/texto10.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

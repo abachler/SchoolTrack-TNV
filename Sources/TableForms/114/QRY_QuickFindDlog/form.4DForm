@@ -1,0 +1,312 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Texto2",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 318,
+	"markerBreak": 338,
+	"markerFooter": 358,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onLosingFocus",
+		"onGettingFocus",
+		"onBeforeKeystroke",
+		"onDataChange",
+		"onCloseBox",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 517,
+					"left": 184,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 460,
+					"left": 0,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable431": {
+					"type": "input",
+					"top": 192,
+					"left": 212,
+					"width": 194,
+					"height": 55,
+					"dataSource": "vtext1",
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"fontStyle": "italic",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"XS_PopUpDownArrow": {
+					"type": "picture",
+					"top": 142,
+					"left": 393,
+					"width": 11,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Variable5": {
+					"type": "dropdown",
+					"top": 141,
+					"left": 391,
+					"width": 15,
+					"height": 17,
+					"dataSource": "popChoice",
+					"focusable": false,
+					"display": false,
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "listbox",
+					"top": 28,
+					"left": 11,
+					"width": 188,
+					"height": 257,
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"borderStyle": "sunken",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "Variable3_Column1",
+							"dataSource": "atVS_QFSourceFieldAlias",
+							"width": 10,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"Variable10": {
+					"type": "input",
+					"top": 143,
+					"left": 212,
+					"width": 176,
+					"height": 14,
+					"dataSource": "vtQRY_ValorLiteral",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable10.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"Variable13": {
+					"type": "listbox",
+					"top": 28,
+					"left": 212,
+					"width": 194,
+					"height": 108,
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"borderStyle": "sunken",
+					"method": "ObjectMethods/Variable13.4dm",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "Variable13_Column1",
+							"dataSource": "aDelims",
+							"width": 10,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "2",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"Picture343": {
+					"type": "picture",
+					"top": 161,
+					"left": 309,
+					"width": 96,
+					"height": 24,
+					"pictureFormat": "scaled"
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 166,
+					"left": 211,
+					"width": 96,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Tipo de búsqueda:"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 8,
+					"left": 10,
+					"width": 190,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Buscar"
+				},
+				"Variable18": {
+					"type": "button",
+					"top": 263,
+					"left": 226,
+					"width": 80,
+					"height": 20,
+					"dataSource": "b_Buscar",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable19": {
+					"type": "button",
+					"top": 263,
+					"left": 323,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bSearch",
+					"text": "Buscar",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"defaultButton": true,
+					"method": "ObjectMethods/Variable19.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 292,
+					"left": 11,
+					"width": 394,
+					"height": 36,
+					"styleSheet": "XS_FormObjects",
+					"text": "Mantenga presionada la tecla ALT al pulsar el botón Buscar si desea incluir en la búsqueda los registros inactivos (alumnos retirados o egresados; ex-profesores; familias, relaciones familiares, cuentas corrientes inactivas, etc)."
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,500 @@
+﻿{
+	"inheritedForm": "XS_MASTER_ConfigDialogs",
+	"inheritedFormTable": 114,
+	"width": 792,
+	"height": 492,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Texto1": {
+					"type": "text",
+					"top": 52,
+					"left": 13,
+					"width": 422,
+					"height": 23,
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Configuraciones de Envío y Publicación"
+				},
+				"Botón invisible1": {
+					"type": "button",
+					"top": 503,
+					"left": 51,
+					"width": 37,
+					"height": 29,
+					"dataSource": "Botón invisible1",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 597,
+					"left": 332,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 540,
+					"left": 148,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				},
+				"obj_aHL_CMT_Config": {
+					"type": "tab",
+					"top": 91,
+					"left": 221,
+					"width": 551,
+					"height": 386,
+					"dataSource": "aHL_CMT_Config",
+					"dataSourceTypeHint": "arrayText",
+					"styleSheet": "XS_FormObjects",
+					"action": "gotoPage",
+					"method": "ObjectMethods/obj_aHL_CMT_Config.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cm4": {
+					"type": "rectangle",
+					"top": 91,
+					"left": 13,
+					"width": 188,
+					"height": 386,
+					"fill": "transparent",
+					"stroke": "#AAAAAA",
+					"borderRadius": 5
+				},
+				"obj_aHL_CMT_Items": {
+					"type": "list",
+					"top": 102,
+					"left": 19,
+					"width": 177,
+					"height": 364,
+					"dataSource": "hl_ConfigItemsCMT",
+					"enterable": false,
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "solid",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"cm1": {
+					"type": "button",
+					"top": 84,
+					"left": 7,
+					"width": 199,
+					"height": 404,
+					"dataSource": "Botón invisible23",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"obj_vl_CMT_OnOff": {
+					"type": "checkbox",
+					"top": 127,
+					"left": 231,
+					"width": 209,
+					"height": 14,
+					"dataSource": "<>vl_CMT_OnOff",
+					"text": "Envío de datos a CommTrack activado",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/obj_vl_CMT_OnOff.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"obj_FTP_Server2": {
+					"type": "button",
+					"top": 154,
+					"left": 231,
+					"width": 136,
+					"height": 20,
+					"dataSource": "bTestFTP",
+					"text": "Probar conexión...",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/obj_FTP_Server2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"cm2": {
+					"type": "button",
+					"top": 84,
+					"left": 7,
+					"width": 199,
+					"height": 404,
+					"dataSource": "Botón invisible23",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 123,
+					"left": 251,
+					"width": 490,
+					"height": 227,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold"
+				},
+				"Text39": {
+					"type": "text",
+					"top": 146,
+					"left": 290,
+					"width": 421,
+					"height": 90,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "En esta sección usted usted puede hacer un envío completo de datos desde SchoolTrack hacia Commtrack, de este modo se mantiene una relación en la información de ambos sistemas.\r\r\r\r\rPara realizar este proceso de envío de datos presione sobre el botón “Actualizar toda la Información”.\r"
+				},
+				"Variable770": {
+					"type": "button",
+					"top": 239,
+					"left": 385,
+					"width": 171,
+					"height": 20,
+					"dataSource": "bUpdateAll",
+					"text": "Actualizar ahora toda la información",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Variable770.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"tOculto": {
+					"type": "text",
+					"top": 286,
+					"left": 290,
+					"width": 421,
+					"height": 30,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Usted también puede realizar un envío de la información modificada presionando el botón \"Actualizar datos modificados\"."
+				},
+				"tOculto1": {
+					"type": "button",
+					"top": 319,
+					"left": 385,
+					"width": 171,
+					"height": 20,
+					"dataSource": "bUpdateMod",
+					"text": "Actualizar datos modificados",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/tOculto1.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Obj_aHL_CMT_ConfigContrasenas2": {
+					"type": "tab",
+					"top": 123,
+					"left": 233,
+					"width": 527,
+					"height": 345,
+					"dataSource": "aHL_CMT_ConfigLog",
+					"dataSourceTypeHint": "arrayText",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Obj_aHL_CMT_ConfigContrasenas2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón7": {
+					"type": "button",
+					"top": 155,
+					"left": 237,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bReloadLog",
+					"text": "Recargar...",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Botón7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Área de plug-in3": {
+					"type": "plugin",
+					"top": 189,
+					"left": 236,
+					"width": 521,
+					"height": 267,
+					"dataSource": "xALP_CMT_LogList",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Área de plug-in3.4dm",
+					"events": [
+						"onClick",
+						"onPluginArea"
+					]
+				},
+				"cm3": {
+					"type": "button",
+					"top": 84,
+					"left": 7,
+					"width": 199,
+					"height": 404,
+					"dataSource": "Botón invisible23",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Imagen2": {
+					"type": "picture",
+					"top": 131,
+					"left": 723,
+					"width": 18,
+					"height": 18,
+					"pictureFormat": "scaled"
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 133,
+					"left": 482,
+					"width": 228,
+					"height": 14,
+					"dataSource": "vtGNC_searchString",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Área de plug-in1": {
+					"type": "plugin",
+					"top": 158,
+					"left": 248,
+					"width": 494,
+					"height": 298,
+					"dataSource": "xALP_CMTUsers",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 131,
+					"left": 425,
+					"width": 53,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Apellido:"
+				},
+				"Botón invisible2": {
+					"type": "button",
+					"top": 129,
+					"left": 720,
+					"width": 22,
+					"height": 22,
+					"dataSource": "Botón invisible1",
+					"shortcutKey": "=",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón invisible2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto": {
+					"type": "text",
+					"top": 119,
+					"left": 232,
+					"width": 508,
+					"height": 17,
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"text": "Configuración de Envío de Datos"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 142,
+					"left": 234,
+					"width": 506,
+					"height": 60,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 9,
+					"text": "La actualización de las páginas web con la información del alumno puede realizarse cada vez que sea necesario, es decir, cada vez que se efectúa alguna modificación en la información que es publicada, o periódicamente según la planificación que se determine.\r\rLe recomendamos actualizar las informaciones durante la noche para evitar la degradación del rendimiento."
+				},
+				"Variable2": {
+					"type": "dropdown",
+					"top": 203,
+					"left": 232,
+					"width": 203,
+					"height": 18,
+					"dataSource": "aHL_schedule",
+					"dataSourceTypeHint": "integer",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 8,
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 233,
+					"left": 235,
+					"width": 173,
+					"height": 12,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 9,
+					"text": "Próxima actualización programada a las: "
+				},
+				"Variable": {
+					"type": "input",
+					"top": 231,
+					"left": 411,
+					"width": 157,
+					"height": 12,
+					"dataSource": "vh_NextExec",
+					"dataSourceTypeHint": "time",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"timeFormat": "hh_mm_ss",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"cs_envioDesdeColegium": {
+					"type": "checkbox",
+					"top": 377,
+					"left": 269,
+					"width": 473,
+					"height": 19,
+					"dataSource": "cs_envioDesdeColegium",
+					"text": "Enviar datos automáticamente desde Colegium",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 9,
+					"method": "ObjectMethods/cs_envioDesdeColegium.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

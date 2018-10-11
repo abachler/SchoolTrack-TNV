@@ -1,0 +1,303 @@
+﻿{
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Barra1": {
+					"type": "rectangle",
+					"top": 219,
+					"left": -1,
+					"width": 482,
+					"height": 37,
+					"sizingX": "grow",
+					"fill": "transparent",
+					"stroke": "#AAAAAA"
+				},
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 36,
+					"left": -1,
+					"width": 482,
+					"height": 183,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "automatic",
+					"stroke": "automatic"
+				},
+				"Barra": {
+					"type": "rectangle",
+					"top": -1,
+					"left": -1,
+					"width": 482,
+					"height": 37,
+					"sizingX": "grow",
+					"fill": "transparent",
+					"stroke": "#AAAAAA"
+				},
+				"botonAceptar": {
+					"type": "button",
+					"top": 226,
+					"left": 382,
+					"width": 82,
+					"height": 23,
+					"sizingX": "move",
+					"sizingY": "move",
+					"shortcutKey": "[Enter]",
+					"styleSheet": "Ligth - 13",
+					"stroke": "#0000FF",
+					"text": "Aceptar",
+					"icon": "/RESOURCES/",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/botonAceptar.4dm",
+					"events": [
+						"onClick",
+						"onMouseEnter",
+						"onMouseLeave"
+					]
+				},
+				"botonCancelar": {
+					"type": "button",
+					"top": 226,
+					"left": 285,
+					"width": 82,
+					"height": 23,
+					"sizingX": "move",
+					"sizingY": "move",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"styleSheet": "Ligth - 13",
+					"stroke": "#777777",
+					"text": "Cancelar",
+					"icon": "/RESOURCES/",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/botonCancelar.4dm",
+					"events": [
+						"onClick",
+						"onMouseEnter",
+						"onMouseLeave"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto": {
+					"type": "text",
+					"top": 59,
+					"left": 35,
+					"width": 121,
+					"height": 16,
+					"stroke": "#777777",
+					"styleSheet": "Ligth - 13",
+					"text": "Monto de la multa:"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 91,
+					"left": 35,
+					"width": 121,
+					"height": 16,
+					"stroke": "#777777",
+					"styleSheet": "Ligth - 13",
+					"text": "Detalle:"
+				},
+				"montoPagado1": {
+					"type": "text",
+					"top": 181,
+					"left": 35,
+					"width": 121,
+					"height": 16,
+					"stroke": "#777777",
+					"styleSheet": "Ligth - 13",
+					"text": "Monto pagado:"
+				},
+				"montoMulta": {
+					"type": "input",
+					"top": 59,
+					"left": 182,
+					"width": 95,
+					"height": 16,
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"stroke": "#777777",
+					"styleSheet": "Ligth - 13",
+					"contextMenu": "none",
+					"entryFilter": "&\"-;0-9;,;.;\"",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/montoMulta.4dm",
+					"events": [
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"detallesmulta": {
+					"type": "input",
+					"top": 91,
+					"left": 182,
+					"width": 264,
+					"height": 74,
+					"fill": "transparent",
+					"stroke": "#777777",
+					"styleSheet": "Ligth - 13",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"montopagado": {
+					"type": "input",
+					"top": 181,
+					"left": 182,
+					"width": 95,
+					"height": 16,
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"stroke": "#777777",
+					"styleSheet": "Ligth - 13",
+					"contextMenu": "none",
+					"entryFilter": "&\";0-9;,;.\"",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"titulo": {
+					"type": "text",
+					"top": 11,
+					"left": 35,
+					"width": 411,
+					"height": 18,
+					"stroke": "#777777",
+					"styleSheet": "Ligth - 16",
+					"text": "Multa"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto4": {
+					"type": "text",
+					"top": 91,
+					"left": 35,
+					"width": 121,
+					"height": 16,
+					"stroke": "#777777",
+					"styleSheet": "Ligth - 13",
+					"text": "Detalle:"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 56,
+					"left": 35,
+					"width": 121,
+					"height": 16,
+					"stroke": "#777777",
+					"styleSheet": "Ligth - 13",
+					"text": "Monto pagado:"
+				},
+				"montopago": {
+					"type": "input",
+					"top": 56,
+					"left": 182,
+					"width": 95,
+					"height": 16,
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"stroke": "#777777",
+					"styleSheet": "Ligth - 13",
+					"contextMenu": "none",
+					"entryFilter": "&\"-;0-9;,;.\"",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/montopago.4dm",
+					"events": [
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"detallespago": {
+					"type": "input",
+					"top": 91,
+					"left": 182,
+					"width": 264,
+					"height": 102,
+					"fill": "transparent",
+					"stroke": "#777777",
+					"styleSheet": "Ligth - 13",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"titulo1": {
+					"type": "text",
+					"top": 11,
+					"left": 35,
+					"width": 411,
+					"height": 18,
+					"stroke": "#777777",
+					"styleSheet": "Ligth - 16",
+					"text": "Multa"
+				}
+			}
+		}
+	]
+}

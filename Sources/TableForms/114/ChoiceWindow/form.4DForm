@@ -1,0 +1,225 @@
+﻿{
+	"formSizeAnchor": "Rectángulo1",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 124,
+					"height": 90,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"stroke": "#FFFFFF"
+				},
+				"hl_Choices": {
+					"type": "list",
+					"top": 1,
+					"left": 1,
+					"width": 122,
+					"height": 88,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "hl_ChoiceList",
+					"enterable": false,
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"method": "ObjectMethods/hl_Choices.4dm",
+					"events": [
+						"onDoubleClick",
+						"onDataChange",
+						"onSelectionChange"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 142,
+					"left": 8,
+					"width": 102,
+					"height": 30,
+					"sizingY": "move",
+					"dataSource": "Botón1",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_FormObjects",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 177,
+					"left": 7,
+					"width": 102,
+					"height": 30,
+					"sizingY": "move",
+					"dataSource": "Botón1",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Enter",
+					"styleSheet": "XS_FormObjects",
+					"focusable": false,
+					"method": "ObjectMethods/Botón2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón4": {
+					"type": "button",
+					"top": 219,
+					"left": 5,
+					"width": 102,
+					"height": 30,
+					"sizingY": "move",
+					"dataSource": "Botón1",
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"text": "Return",
+					"styleSheet": "XS_FormObjects",
+					"focusable": false,
+					"method": "ObjectMethods/Botón4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón": {
+					"type": "button",
+					"top": 142,
+					"left": 141,
+					"width": 109,
+					"height": 30,
+					"dataSource": "bDown",
+					"shortcutKey": "[down arrow]",
+					"text": "Down",
+					"styleSheet": "XS_FormObjects",
+					"focusable": false,
+					"method": "ObjectMethods/Botón.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón5": {
+					"type": "button",
+					"top": 177,
+					"left": 141,
+					"width": 109,
+					"height": 30,
+					"dataSource": "bFirst",
+					"shortcutKey": "[left arrow]",
+					"text": "First",
+					"styleSheet": "XS_FormObjects",
+					"focusable": false,
+					"method": "ObjectMethods/Botón5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón6": {
+					"type": "button",
+					"top": 212,
+					"left": 141,
+					"width": 109,
+					"height": 30,
+					"dataSource": "bLast",
+					"shortcutKey": "[right arrow]",
+					"text": "Last",
+					"styleSheet": "XS_FormObjects",
+					"focusable": false,
+					"method": "ObjectMethods/Botón6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 258,
+					"left": 7,
+					"width": 102,
+					"height": 30,
+					"sizingY": "move",
+					"dataSource": "Botón1",
+					"action": "accept",
+					"shortcutKey": "[Tab]",
+					"text": "Tab",
+					"styleSheet": "XS_FormObjects",
+					"focusable": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón7": {
+					"type": "button",
+					"top": 248,
+					"left": 141,
+					"width": 109,
+					"height": 30,
+					"dataSource": "bUp",
+					"shortcutKey": "[up arrow]",
+					"text": "UP",
+					"styleSheet": "XS_FormObjects",
+					"focusable": false,
+					"method": "ObjectMethods/Botón7.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

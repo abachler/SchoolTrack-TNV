@@ -1,0 +1,570 @@
+﻿{
+	"inheritedForm": "XS_MASTER_WZDDialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 626,
+	"height": 407,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 474,
+					"left": 439,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 417,
+					"left": 255,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 79,
+					"left": 13,
+					"width": 603,
+					"height": 142,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Datos del Documento a Cambiar de Ubicación"
+				},
+				"Texto15": {
+					"type": "text",
+					"top": 4,
+					"left": 161,
+					"width": 372,
+					"height": 45,
+					"stroke": "#FFFFFF",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Cambio de Ubicación de Documentos en Cartera"
+				},
+				"th6": {
+					"type": "input",
+					"top": 123,
+					"left": 385,
+					"width": 182,
+					"height": 11,
+					"dataSource": "vsACT_NoSerie",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"th14": {
+					"type": "text",
+					"top": 123,
+					"left": 285,
+					"width": 40,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Nº Serie"
+				},
+				"th8": {
+					"type": "input",
+					"top": 144,
+					"left": 385,
+					"width": 182,
+					"height": 11,
+					"dataSource": "vdACT_FechaVencimiento",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"th16": {
+					"type": "text",
+					"top": 144,
+					"left": 285,
+					"width": 95,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Fecha de Vencimiento"
+				},
+				"th2": {
+					"type": "input",
+					"top": 103,
+					"left": 385,
+					"width": 182,
+					"height": 11,
+					"dataSource": "vsACT_Banco",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"th10": {
+					"type": "text",
+					"top": 103,
+					"left": 285,
+					"width": 29,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Banco"
+				},
+				"th4": {
+					"type": "input",
+					"top": 165,
+					"left": 413,
+					"width": 182,
+					"height": 11,
+					"dataSource": "vsACT_RUT",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "###.###.###-#",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"th12": {
+					"type": "text",
+					"top": 165,
+					"left": 355,
+					"width": 51,
+					"height": 11,
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"text": "RUT Titular"
+				},
+				"Variable14": {
+					"type": "input",
+					"top": 809,
+					"left": 203,
+					"width": 355,
+					"height": 27,
+					"dataSource": "vtACT_Msg",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto12": {
+					"type": "text",
+					"top": 52,
+					"left": 163,
+					"width": 278,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Indique la nueva ubicación"
+				},
+				"bNext": {
+					"type": "pictureButton",
+					"top": 375,
+					"left": 586,
+					"width": 20,
+					"height": 20,
+					"dataSource": "bNext",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bNext.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bCambIngresar": {
+					"type": "button",
+					"top": 375,
+					"left": 536,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCambiarIngresar",
+					"shortcutKey": "[Return]",
+					"text": "Cambiar",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"method": "ObjectMethods/bCambIngresar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable23": {
+					"type": "button",
+					"top": 600,
+					"left": 268,
+					"width": 80,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 192,
+					"left": 66,
+					"width": 77,
+					"height": 11,
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"text": "Ubicación Actual"
+				},
+				"vUbicacionActual": {
+					"type": "input",
+					"top": 191,
+					"left": 151,
+					"width": 339,
+					"height": 11,
+					"dataSource": "vUbicaciónActual",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 234,
+					"left": 58,
+					"width": 85,
+					"height": 11,
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"text": "Nueva Ubicación"
+				},
+				"vUbicacionActual1": {
+					"type": "input",
+					"top": 232,
+					"left": 150,
+					"width": 339,
+					"height": 11,
+					"dataSource": "vNuevaUbicacion",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"spellcheck": true,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"cb_VariosDocs": {
+					"type": "checkbox",
+					"top": 372,
+					"left": 9,
+					"width": 266,
+					"height": 26,
+					"dataSource": "cb_VariosDocs",
+					"text": "Aplicar a todos los documentos seleccionados",
+					"styleSheet": "Defaut",
+					"method": "ObjectMethods/cb_VariosDocs.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"th3": {
+					"type": "input",
+					"top": 165,
+					"left": 106,
+					"width": 245,
+					"height": 11,
+					"dataSource": "vsACT_Titular",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"th11": {
+					"type": "text",
+					"top": 165,
+					"left": 29,
+					"width": 31,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Titular"
+				},
+				"th7": {
+					"type": "input",
+					"top": 144,
+					"left": 106,
+					"width": 177,
+					"height": 11,
+					"dataSource": "vrACT_Monto",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"textAlign": "left",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Real_2DecIfNec"
+					},
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"th15": {
+					"type": "text",
+					"top": 144,
+					"left": 29,
+					"width": 31,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Monto"
+				},
+				"th5": {
+					"type": "input",
+					"top": 123,
+					"left": 106,
+					"width": 177,
+					"height": 11,
+					"dataSource": "vsACT_Cuenta",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"th13": {
+					"type": "text",
+					"top": 123,
+					"left": 29,
+					"width": 47,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Nº Cuenta"
+				},
+				"th9": {
+					"type": "text",
+					"top": 103,
+					"left": 29,
+					"width": 86,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Fecha documento"
+				},
+				"th1": {
+					"type": "input",
+					"top": 103,
+					"left": 106,
+					"width": 177,
+					"height": 11,
+					"dataSource": "vdACT_FechaCheque",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable18": {
+					"type": "dropdown",
+					"top": 230,
+					"left": 492,
+					"width": 11,
+					"height": 15,
+					"dataSource": "<>aUbicacionDocumentos",
+					"display": false,
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Variable18.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Picture10": {
+					"type": "picture",
+					"top": 230,
+					"left": 492,
+					"width": 11,
+					"height": 14
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,578 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Zona de Grupo4",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 451,
+					"left": 317,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 394,
+					"left": 133,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Zona de Grupo4": {
+					"type": "groupBox",
+					"top": 247,
+					"left": 145,
+					"width": 304,
+					"height": 111,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Seleccione la Ruta y la Semana "
+				},
+				"Zona de Grupo3": {
+					"type": "groupBox",
+					"top": 39,
+					"left": 13,
+					"width": 436,
+					"height": 58,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Informes de Nóminas Generales"
+				},
+				"Zona de Grupo2": {
+					"type": "groupBox",
+					"top": 108,
+					"left": 145,
+					"width": 304,
+					"height": 59,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "¿Para qué rutas desea generar el informe?"
+				},
+				"Zona de Grupo1": {
+					"type": "groupBox",
+					"top": 173,
+					"left": 146,
+					"width": 303,
+					"height": 64,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "¿Para qué curso desea generar el informe?"
+				},
+				"btm_SelCursos": {
+					"type": "dropdown",
+					"top": 204,
+					"left": 203,
+					"width": 198,
+					"height": 17,
+					"dataSource": "<>aCursos",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"lr1": {
+					"type": "radio",
+					"top": 133,
+					"left": 203,
+					"width": 58,
+					"height": 14,
+					"dataSource": "lr1",
+					"text": "Todas",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/lr1.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"lr2": {
+					"type": "radio",
+					"top": 133,
+					"left": 295,
+					"width": 112,
+					"height": 15,
+					"dataSource": "lr2",
+					"text": "Ruta Seleccionada",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/lr2.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"BUCancelButton": {
+					"type": "button",
+					"top": 3,
+					"left": 2,
+					"width": 82,
+					"height": 20,
+					"dataSource": "bBWR_Cancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Botón",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/BUCancelButton.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"frenchPrintButton": {
+					"type": "button",
+					"top": 3,
+					"left": 90,
+					"width": 82,
+					"height": 20,
+					"dataSource": "bBWR_Print",
+					"action": "cancel",
+					"shortcutKey": "p",
+					"shortcutAccel": true,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Botón",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/frenchPrintButton.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Line5": {
+					"type": "line",
+					"top": 0,
+					"left": 87,
+					"height": 26,
+					"stroke": "#AAAAAA"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 26,
+					"left": 0,
+					"width": 474,
+					"sizingX": "grow",
+					"stroke": "#AAAAAA"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 0,
+					"left": 175,
+					"height": 26,
+					"stroke": "#AAAAAA"
+				},
+				"br3": {
+					"type": "radio",
+					"top": 114,
+					"left": 13,
+					"width": 136,
+					"height": 15,
+					"dataSource": "br3",
+					"text": "Información de Ruta",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/br3.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"br4": {
+					"type": "radio",
+					"top": 180,
+					"left": 13,
+					"width": 116,
+					"height": 15,
+					"dataSource": "br4",
+					"text": "Alumnos por Curso",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/br4.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"br5": {
+					"type": "radio",
+					"top": 250,
+					"left": 13,
+					"width": 116,
+					"height": 15,
+					"dataSource": "br5",
+					"text": "Asistencia Ruta",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/br5.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"br1": {
+					"type": "radio",
+					"top": 63,
+					"left": 72,
+					"width": 116,
+					"height": 15,
+					"dataSource": "br1",
+					"text": "Nómina de Rutas",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/br1.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"br2": {
+					"type": "radio",
+					"top": 62,
+					"left": 258,
+					"width": 140,
+					"height": 15,
+					"dataSource": "br2",
+					"text": "Nómina de Funcionarios",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/br2.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"standardFields(5)": {
+					"type": "input",
+					"top": 298,
+					"left": 233,
+					"width": 140,
+					"height": 13,
+					"dataSource": "sWeek",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/standardFields(5).4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"standardFields(8)": {
+					"type": "input",
+					"top": 324,
+					"left": 235,
+					"width": 77,
+					"height": 13,
+					"dataSource": "dDate1",
+					"dataSourceTypeHint": "date",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"standardFields(7)": {
+					"type": "input",
+					"top": 324,
+					"left": 343,
+					"width": 75,
+					"height": 13,
+					"dataSource": "dDate2",
+					"dataSourceTypeHint": "date",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"standardFields(9)": {
+					"type": "text",
+					"top": 324,
+					"left": 188,
+					"width": 44,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Entre el:"
+				},
+				"standardFields(10)": {
+					"type": "text",
+					"top": 324,
+					"left": 316,
+					"width": 22,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "y el:"
+				},
+				"standardFields(4)": {
+					"type": "text",
+					"top": 298,
+					"left": 188,
+					"width": 42,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Semana:"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 272,
+					"left": 156,
+					"width": 28,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Ruta:"
+				},
+				"Picture1942": {
+					"type": "picture",
+					"top": 272,
+					"left": 280,
+					"width": 11,
+					"height": 14
+				},
+				"Variable5": {
+					"type": "dropdown",
+					"top": 271,
+					"left": 280,
+					"width": 12,
+					"height": 15,
+					"dataSource": "atRuta",
+					"focusable": false,
+					"display": false,
+					"styleSheet": "Defaut",
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"stdRutas": {
+					"type": "input",
+					"top": 272,
+					"left": 200,
+					"width": 77,
+					"height": 13,
+					"dataSource": "vtNombreRuta",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 297,
+					"left": 375,
+					"width": 11,
+					"height": 14
+				},
+				"Variable1": {
+					"type": "dropdown",
+					"top": 297,
+					"left": 375,
+					"width": 12,
+					"height": 15,
+					"dataSource": "<>aWeeks",
+					"focusable": false,
+					"display": false,
+					"styleSheet": "Defaut",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 272,
+					"left": 301,
+					"width": 39,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Sentido:"
+				},
+				"Picture2": {
+					"type": "picture",
+					"top": 272,
+					"left": 425,
+					"width": 11,
+					"height": 14
+				},
+				"Variable2": {
+					"type": "dropdown",
+					"top": 271,
+					"left": 425,
+					"width": 12,
+					"height": 15,
+					"dataSource": "atSentido",
+					"focusable": false,
+					"display": false,
+					"styleSheet": "Defaut",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"stdSentido": {
+					"type": "input",
+					"top": 272,
+					"left": 345,
+					"width": 77,
+					"height": 13,
+					"dataSource": "vtSentido",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

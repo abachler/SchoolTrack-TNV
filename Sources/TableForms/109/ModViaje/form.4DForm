@@ -1,0 +1,273 @@
+﻿{
+	"windowTitle": "Selección de Viaje",
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Zona de Grupo1",
+	"rightMargin": -13,
+	"bottomMargin": -13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 357,
+					"left": 184,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 300,
+					"left": 0,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Picture1": {
+					"type": "picture",
+					"top": 44,
+					"left": 315,
+					"width": 11,
+					"height": 14
+				},
+				"bRecorrido": {
+					"type": "button",
+					"top": 44,
+					"left": 314,
+					"width": 13,
+					"height": 12,
+					"dataSource": "bRecorrido",
+					"display": false,
+					"method": "ObjectMethods/bRecorrido.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Picture1942": {
+					"type": "picture",
+					"top": 44,
+					"left": 129,
+					"width": 11,
+					"height": 14
+				},
+				"Zona de Grupo1": {
+					"type": "groupBox",
+					"top": 73,
+					"left": 13,
+					"width": 325,
+					"height": 208,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Viajes"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 44,
+					"left": 13,
+					"width": 28,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Ruta:"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 44,
+					"left": 194,
+					"width": 46,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Recorrido:"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 46,
+					"left": 53,
+					"width": 72,
+					"height": 8,
+					"dataSource": "vtNombreRuta",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 46,
+					"left": 240,
+					"width": 72,
+					"height": 8,
+					"dataSource": "vtNombreRec",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Área de plug-in1": {
+					"type": "plugin",
+					"top": 115,
+					"left": 18,
+					"width": 314,
+					"height": 158,
+					"dataSource": "xalp_Viajes",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Área de plug-in1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "pictureButton",
+					"top": 91,
+					"left": 306,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bDelViajes",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"englishCancelButtonBU": {
+					"type": "button",
+					"top": 3,
+					"left": 2,
+					"width": 82,
+					"height": 20,
+					"dataSource": "bBWR_Cancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Botón",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Line5": {
+					"type": "line",
+					"top": 0,
+					"left": 87,
+					"height": 26,
+					"stroke": "#AAAAAA"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 26,
+					"left": 2,
+					"width": 350,
+					"sizingX": "grow",
+					"stroke": "#AAAAAA"
+				},
+				"bRuta": {
+					"type": "button",
+					"top": 44,
+					"left": 126,
+					"width": 17,
+					"height": 14,
+					"dataSource": "bRuta",
+					"display": false,
+					"method": "ObjectMethods/bRuta.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

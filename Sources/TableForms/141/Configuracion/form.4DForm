@@ -1,0 +1,390 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Imagen1",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Rectángulo2": {
+					"type": "rectangle",
+					"top": 198,
+					"left": -4,
+					"width": 745,
+					"height": 184,
+					"fill": "#DFE4FF",
+					"stroke": "transparent"
+				},
+				"Imagen1": {
+					"type": "picture",
+					"top": 381,
+					"left": 0,
+					"width": 741,
+					"height": 35,
+					"pictureFormat": "scaled",
+					"picture": "Images/Imagen1.pict"
+				},
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 1,
+					"left": -2,
+					"width": 743,
+					"height": 193,
+					"stroke": "#FFFFFF"
+				}
+			}
+		},
+		{
+			"objects": {
+				"campos3": {
+					"type": "input",
+					"top": 301,
+					"left": 56,
+					"width": 35,
+					"height": 13,
+					"dataSource": "[xxSTR_MetadatosLocales:141]Largo:6",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"textFormat": "#########",
+					"method": "ObjectMethods/campos3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 203,
+					"left": 6,
+					"width": 27,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "País:"
+				},
+				"Imagen2": {
+					"type": "picture",
+					"top": 390,
+					"left": 705,
+					"width": 17,
+					"height": 18
+				},
+				"delete": {
+					"type": "picture",
+					"top": 391,
+					"left": 671,
+					"width": 15,
+					"height": 15,
+					"pictureFormat": "scaled"
+				},
+				"bAddField": {
+					"type": "button",
+					"top": 387,
+					"left": 700,
+					"width": 25,
+					"height": 22,
+					"dataSource": "bAddField",
+					"display": false,
+					"method": "ObjectMethods/bAddField.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"delete1": {
+					"type": "button",
+					"top": 387,
+					"left": 666,
+					"width": 25,
+					"height": 22,
+					"dataSource": "bDelField",
+					"display": false,
+					"method": "ObjectMethods/delete1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 203,
+					"left": 82,
+					"width": 235,
+					"height": 13,
+					"dataSource": "vs_CountryName",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 228,
+					"left": 6,
+					"width": 107,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Nombre del campo:"
+				},
+				"campos1": {
+					"type": "input",
+					"top": 228,
+					"left": 119,
+					"width": 606,
+					"height": 13,
+					"dataSource": "[xxSTR_MetadatosLocales:141]Etiqueta:3",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"method": "ObjectMethods/campos1.4dm",
+					"events": [
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 275,
+					"left": 6,
+					"width": 30,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Tipo:"
+				},
+				"campos2": {
+					"type": "dropdown",
+					"top": 273,
+					"left": 53,
+					"width": 249,
+					"height": 17,
+					"dataSource": "hlMeta_TipoCampo",
+					"dataSourceTypeHint": "integer",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/campos2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 301,
+					"left": 6,
+					"width": 30,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Largo:"
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 327,
+					"left": 6,
+					"width": 50,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Minimo:"
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 353,
+					"left": 6,
+					"width": 50,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Máximo:"
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 273,
+					"left": 331,
+					"width": 145,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Lista de valores asociada"
+				},
+				"campos6": {
+					"type": "input",
+					"top": 293,
+					"left": 331,
+					"width": 378,
+					"height": 77,
+					"dataSource": "[xxSTR_MetadatosLocales:141]ListaDeValores:7",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"method": "ObjectMethods/campos6.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"hl_countries": {
+					"type": "list",
+					"top": 2,
+					"left": 2,
+					"width": 159,
+					"height": 192,
+					"dataSource": "hl_countries",
+					"enterable": false,
+					"focusable": false,
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"fontSize": 11,
+					"method": "ObjectMethods/hl_countries.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"hl_Tablas": {
+					"type": "list",
+					"top": 2,
+					"left": 164,
+					"width": 159,
+					"height": 192,
+					"dataSource": "hl_Tablas",
+					"enterable": false,
+					"focusable": false,
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/hl_Tablas.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"hl_Campos": {
+					"type": "list",
+					"top": 2,
+					"left": 326,
+					"width": 412,
+					"height": 192,
+					"dataSource": "hl_Campos",
+					"enterable": false,
+					"focusable": false,
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"dragging": "custom",
+					"dropping": "custom",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/hl_Campos.4dm",
+					"events": [
+						"onClick",
+						"onDrop"
+					]
+				},
+				"campos4": {
+					"type": "input",
+					"top": 327,
+					"left": 56,
+					"width": 35,
+					"height": 13,
+					"dataSource": "[xxSTR_MetadatosLocales:141]ValorMinimo:8",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"textFormat": "###########,##",
+					"method": "ObjectMethods/campos4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"campos5": {
+					"type": "input",
+					"top": 353,
+					"left": 56,
+					"width": 35,
+					"height": 13,
+					"dataSource": "[xxSTR_MetadatosLocales:141]ValorMaximo:9",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"textFormat": "###########,##",
+					"method": "ObjectMethods/campos5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"campos": {
+					"type": "input",
+					"top": 203,
+					"left": 37,
+					"width": 35,
+					"height": 13,
+					"dataSource": "[xxSTR_MetadatosLocales:141]CodigoPais:1",
+					"styleSheet": "XS_DialogObjects",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Línea1": {
+					"type": "line",
+					"top": 195,
+					"left": -1,
+					"width": 742,
+					"height": 1,
+					"stroke": "#AAAAAA",
+					"startPoint": "bottomLeft"
+				},
+				"Línea2": {
+					"type": "line",
+					"top": 197,
+					"left": -1,
+					"width": 742,
+					"height": 1,
+					"stroke": "#AAAAAA",
+					"startPoint": "bottomLeft"
+				},
+				"campos7": {
+					"type": "input",
+					"top": 203,
+					"left": 378,
+					"width": 346,
+					"height": 11,
+					"dataSource": "[xxSTR_MetadatosLocales:141]LlavePrimaria:4",
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/campos7.4dm",
+					"events": [
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				}
+			}
+		}
+	]
+}

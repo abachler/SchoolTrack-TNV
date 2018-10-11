@@ -1,0 +1,266 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Forms",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Botón2",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 567,
+					"left": 184,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 510,
+					"left": 0,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Área de plug-in1": {
+					"type": "plugin",
+					"top": 136,
+					"left": 11,
+					"width": 536,
+					"height": 277,
+					"dataSource": "xALP_CFG_TranfBancaria",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Área de plug-in1.4dm",
+					"events": [
+						"onClick",
+						"onPluginArea"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 431,
+					"left": 409,
+					"width": 61,
+					"height": 23,
+					"dataSource": "btCancelar",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 431,
+					"left": 489,
+					"width": 61,
+					"height": 23,
+					"dataSource": "btAceptar",
+					"action": "accept",
+					"text": "Guardar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"co_1": {
+					"type": "radio",
+					"top": 92,
+					"left": 24,
+					"width": 77,
+					"height": 16,
+					"dataSource": "co_Personas",
+					"text": "Personas",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/co_1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"co_2": {
+					"type": "radio",
+					"top": 92,
+					"left": 104,
+					"width": 117,
+					"height": 16,
+					"dataSource": "co_Avisos",
+					"text": "Avisos de Cobranza",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/co_2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"co_3": {
+					"type": "radio",
+					"top": 92,
+					"left": 231,
+					"width": 77,
+					"height": 16,
+					"dataSource": "co_Familia",
+					"text": "Familia",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/co_3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 74,
+					"left": 10,
+					"width": 98,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Campos de la tabla"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 1,
+					"left": 7,
+					"width": 540,
+					"height": 52,
+					"textAlign": "center",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Configuración de campos disponibles para archivos de transferencia"
+				},
+				"co_4": {
+					"type": "radio",
+					"top": 92,
+					"left": 311,
+					"width": 77,
+					"height": 16,
+					"dataSource": "co_Cargos",
+					"text": "Cargos",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/co_4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"co_5": {
+					"type": "radio",
+					"top": 92,
+					"left": 384,
+					"width": 77,
+					"height": 16,
+					"dataSource": "co_Pagos",
+					"text": "Pagos",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/co_5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"co_6": {
+					"type": "radio",
+					"top": 92,
+					"left": 460,
+					"width": 77,
+					"height": 16,
+					"dataSource": "co_Boletas",
+					"text": "Boletas",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/co_6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"co_7": {
+					"type": "radio",
+					"top": 112,
+					"left": 24,
+					"width": 137,
+					"height": 16,
+					"dataSource": "co_DocPago",
+					"text": "Documentos de pago",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/co_7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"co_8": {
+					"type": "radio",
+					"top": 112,
+					"left": 144,
+					"width": 137,
+					"height": 16,
+					"dataSource": "co_CtasCtes",
+					"text": "Cuentas Corrientes",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/co_8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"co_9": {
+					"type": "radio",
+					"top": 112,
+					"left": 264,
+					"width": 137,
+					"height": 16,
+					"dataSource": "co_Alumnos",
+					"text": "Alumnos",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/co_9.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

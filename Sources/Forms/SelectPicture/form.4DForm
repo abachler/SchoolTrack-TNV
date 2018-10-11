@@ -1,0 +1,379 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Rectángulo",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 624,
+	"markerBreak": 635,
+	"markerFooter": 644,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onLosingFocus",
+		"onGettingFocus",
+		"onDrop",
+		"onBeforeKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectángulo": {
+					"type": "rectangle",
+					"top": 79,
+					"left": 123,
+					"width": 480,
+					"height": 480,
+					"fill": "#CCCCCC",
+					"stroke": "transparent"
+				},
+				"lb_Pictures": {
+					"type": "listbox",
+					"top": 1,
+					"left": 2,
+					"width": 120,
+					"height": 558,
+					"dataSource": "lb_Pictures",
+					"rowHeight": "80px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"borderStyle": "none",
+					"method": "ObjectMethods/lb_Pictures.4dm",
+					"events": [
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "ap_Pictures",
+							"dataSource": "ap_Pictures",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"pictureFormat": "truncatedCenter",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título1",
+								"text": "Título1",
+								"dataSource": "Título1",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "Columna1",
+							"dataSource": "al_PictRefs",
+							"width": 0,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título2",
+								"text": "Título2",
+								"dataSource": "Título2",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "Columna2",
+							"dataSource": "at_PictNames",
+							"width": 10,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título3",
+								"text": "Título3",
+								"dataSource": "Título3",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"vp_Picture": {
+					"type": "input",
+					"top": 109,
+					"left": 153,
+					"width": 420,
+					"height": 420,
+					"dataSource": "vp_Picture",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"pictureFormat": "truncatedCenter",
+					"dragging": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Rectángulo redondeado2": {
+					"type": "rectangle",
+					"top": 10,
+					"left": 127,
+					"width": 218,
+					"height": 26,
+					"sizingX": "move",
+					"stroke": "#AAAAAA",
+					"borderRadius": 5
+				},
+				"filter11": {
+					"type": "input",
+					"top": 17,
+					"left": 160,
+					"width": 158,
+					"height": 14,
+					"sizingX": "move",
+					"dataSource": "vs_Find",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"method": "ObjectMethods/filter11.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 42,
+					"left": 123,
+					"width": 480,
+					"height": 38,
+					"stroke": "#AAAAAA"
+				},
+				"vt_PictureName": {
+					"type": "input",
+					"top": 62,
+					"left": 127,
+					"width": 144,
+					"height": 12,
+					"dataSource": "vt_PictureName",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vl_PictureRef": {
+					"type": "input",
+					"top": 48,
+					"left": 127,
+					"width": 64,
+					"height": 12,
+					"dataSource": "vl_PictureRef",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"textAlign": "left",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "REF: ######",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vt_PictureDims": {
+					"type": "input",
+					"top": 47,
+					"left": 494,
+					"width": 104,
+					"height": 12,
+					"dataSource": "vt_PictureDims",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vl_PictureSize": {
+					"type": "input",
+					"top": 62,
+					"left": 494,
+					"width": 104,
+					"height": 12,
+					"dataSource": "vl_PictureSize",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "### ### ### bytes",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Línea": {
+					"type": "line",
+					"top": 1,
+					"left": 123,
+					"width": 1,
+					"height": 574,
+					"stroke": "#AAAAAA"
+				},
+				"bSelectPicture": {
+					"type": "button",
+					"top": 10,
+					"left": 474,
+					"width": 121,
+					"height": 26,
+					"dataSource": "bSelectPicture",
+					"action": "accept",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Seleccionar Imagen",
+					"style": "roundedBevel",
+					"events": [
+						"onClick"
+					]
+				},
+				"Imagen1": {
+					"type": "picture",
+					"top": 14,
+					"left": 130,
+					"width": 24,
+					"height": 18,
+					"pictureFormat": "scaled"
+				},
+				"Línea1": {
+					"type": "line",
+					"top": 13,
+					"left": 156,
+					"width": 1,
+					"height": 20,
+					"stroke": "#DDDDDD",
+					"startPoint": "bottomLeft"
+				},
+				"Botón invisible": {
+					"type": "button",
+					"top": 13,
+					"left": 129,
+					"width": 26,
+					"height": 20,
+					"dataSource": "Botón invisible",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón 3D": {
+					"type": "pictureButton",
+					"top": 10,
+					"left": 373,
+					"width": 38,
+					"height": 26,
+					"dataSource": "Botón 3D",
+					"columnCount": 1,
+					"rowCount": 3,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Botón 3D.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón": {
+					"type": "button",
+					"top": 589,
+					"left": 507,
+					"width": 101,
+					"height": 33,
+					"dataSource": "Botón",
+					"shortcutKey": "c",
+					"shortcutAccel": true,
+					"text": "Botón",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"method": "ObjectMethods/Botón.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Imagen4": {
+					"type": "picture",
+					"top": 16,
+					"left": 324,
+					"width": 14,
+					"height": 14,
+					"pictureFormat": "scaled",
+					"picture": "Images/Imagen4.gif"
+				}
+			}
+		}
+	]
+}

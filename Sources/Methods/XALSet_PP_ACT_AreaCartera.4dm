@@ -1,0 +1,212 @@
+//%attributes = {}
+  //XALSet_PP_ACT_AreaCartera
+
+ARRAY LONGINT:C221(aACT_ApdosDCarID;0)
+ARRAY LONGINT:C221(aACT_ApdosDCarIDDocPago;0)
+ARRAY DATE:C224(aACT_ApdosDCarFechaDoc;0)
+ARRAY TEXT:C222(aACT_ApdosDCarNumeroDoc;0)
+ARRAY REAL:C219(aACT_ApdosDCarMontoDoc;0)
+ARRAY TEXT:C222(aACT_ApdosDCarUbicacionDoc;0)
+ARRAY TEXT:C222(aACT_ApdosDCarEstado;0)
+ARRAY DATE:C224(aACT_ApdosDCarFechaVenc;0)
+ARRAY DATE:C224(aACT_ApdosDCarProtestadoel;0)
+ARRAY DATE:C224(aACT_ApdosDCarDepDesde;0)
+ARRAY DATE:C224(aACT_ApdosDCarDepHasta;0)
+ARRAY TEXT:C222(aACT_ApdosDCarTipoDoc;0)
+ARRAY TEXT:C222(aACT_ApdosDCarBancoDoc;0)
+ARRAY TEXT:C222(aACT_ApdosDCarBancoDoc;0)
+
+C_LONGINT:C283($Error)
+
+  //specify arrays to display
+$Error:=AL_SetArraysNam (xALP_DocsenCartera;1;1;"aACT_ApdosDCarFechaDoc")
+$Error:=AL_SetArraysNam (xALP_DocsenCartera;2;1;"aACT_ApdosDCarTipoDoc")
+$Error:=AL_SetArraysNam (xALP_DocsenCartera;3;1;"aACT_ApdosDCarBancoDoc")
+$Error:=AL_SetArraysNam (xALP_DocsenCartera;4;1;"aACT_ApdosDCarNumeroDoc")
+$Error:=AL_SetArraysNam (xALP_DocsenCartera;5;1;"aACT_ApdosDCarMontoDoc")
+$Error:=AL_SetArraysNam (xALP_DocsenCartera;6;1;"aACT_ApdosDCarUbicacionDoc")
+$Error:=AL_SetArraysNam (xALP_DocsenCartera;7;1;"aACT_ApdosDCarEstado")
+$Error:=AL_SetArraysNam (xALP_DocsenCartera;8;1;"aACT_ApdosDCarFechaVenc")
+$Error:=AL_SetArraysNam (xALP_DocsenCartera;9;1;"aACT_ApdosDCarDepDesde")
+$Error:=AL_SetArraysNam (xALP_DocsenCartera;10;1;"aACT_ApdosDCarDepHasta")
+$Error:=AL_SetArraysNam (xALP_DocsenCartera;11;1;"aACT_ApdosDCarProtestadoel")
+$Error:=AL_SetArraysNam (xALP_DocsenCartera;12;1;"aACT_ApdosDCarID")
+$Error:=AL_SetArraysNam (xALP_DocsenCartera;13;1;"aACT_ApdosDCarIDDocPago")
+$Error:=AL_SetArraysNam (xALP_DocsenCartera;14;1;"aACT_ApdosDCarRecNum")
+
+  //column 1 settings
+AL_SetHeaders (xALP_DocsenCartera;1;1;__ ("Fecha"))
+AL_SetFormat (xALP_DocsenCartera;1;"";0;2;0;0)
+AL_SetHdrStyle (xALP_DocsenCartera;1;"Tahoma";9;1)
+AL_SetFtrStyle (xALP_DocsenCartera;1;"Tahoma";9;0)
+AL_SetStyle (xALP_DocsenCartera;1;"Tahoma";9;0)
+AL_SetForeColor (xALP_DocsenCartera;1;"Black";0;"Black";0;"Black";0)
+AL_SetBackColor (xALP_DocsenCartera;1;"White";0;"White";0;"White";0)
+AL_SetEnterable (xALP_DocsenCartera;1;1)
+AL_SetEntryCtls (xALP_DocsenCartera;1;0)
+
+  //column 2 settings
+AL_SetHeaders (xALP_DocsenCartera;2;1;__ ("Tipo Doc."))
+AL_SetFormat (xALP_DocsenCartera;2;"";0;2;0;0)
+AL_SetHdrStyle (xALP_DocsenCartera;2;"Tahoma";9;1)
+AL_SetFtrStyle (xALP_DocsenCartera;2;"Tahoma";9;0)
+AL_SetStyle (xALP_DocsenCartera;2;"Tahoma";9;0)
+AL_SetForeColor (xALP_DocsenCartera;2;"Black";0;"Black";0;"Black";0)
+AL_SetBackColor (xALP_DocsenCartera;2;"White";0;"White";0;"White";0)
+AL_SetEnterable (xALP_DocsenCartera;2;1)
+AL_SetEntryCtls (xALP_DocsenCartera;2;0)
+
+  //column 3 settings
+AL_SetHeaders (xALP_DocsenCartera;3;1;__ ("Banco"))
+AL_SetFormat (xALP_DocsenCartera;3;"";0;2;0;0)
+AL_SetHdrStyle (xALP_DocsenCartera;3;"Tahoma";9;1)
+AL_SetFtrStyle (xALP_DocsenCartera;3;"Tahoma";9;0)
+AL_SetStyle (xALP_DocsenCartera;3;"Tahoma";9;0)
+AL_SetForeColor (xALP_DocsenCartera;3;"Black";0;"Black";0;"Black";0)
+AL_SetBackColor (xALP_DocsenCartera;3;"White";0;"White";0;"White";0)
+AL_SetEnterable (xALP_DocsenCartera;3;1)
+AL_SetEntryCtls (xALP_DocsenCartera;3;0)
+
+  //column 4 settings
+AL_SetHeaders (xALP_DocsenCartera;4;1;__ ("Nº de\rSerie"))
+AL_SetFormat (xALP_DocsenCartera;4;"";0;2;0;0)
+AL_SetHdrStyle (xALP_DocsenCartera;4;"Tahoma";9;1)
+AL_SetFtrStyle (xALP_DocsenCartera;4;"Tahoma";9;0)
+AL_SetStyle (xALP_DocsenCartera;4;"Tahoma";9;0)
+AL_SetForeColor (xALP_DocsenCartera;4;"Black";0;"Black";0;"Black";0)
+AL_SetBackColor (xALP_DocsenCartera;4;"White";0;"White";0;"White";0)
+AL_SetEnterable (xALP_DocsenCartera;4;1)
+AL_SetEntryCtls (xALP_DocsenCartera;4;0)
+
+  //column 5 settings
+AL_SetHeaders (xALP_DocsenCartera;5;1;__ ("Monto"))
+AL_SetFormat (xALP_DocsenCartera;5;"|Despliegue_ACT";0;2;0;0)
+AL_SetHdrStyle (xALP_DocsenCartera;5;"Tahoma";9;1)
+AL_SetFtrStyle (xALP_DocsenCartera;5;"Tahoma";9;0)
+AL_SetStyle (xALP_DocsenCartera;5;"Tahoma";9;0)
+AL_SetForeColor (xALP_DocsenCartera;5;"Black";0;"Black";0;"Black";0)
+AL_SetBackColor (xALP_DocsenCartera;5;"White";0;"White";0;"White";0)
+AL_SetEnterable (xALP_DocsenCartera;5;1)
+AL_SetEntryCtls (xALP_DocsenCartera;5;0)
+
+  //column 6 settings
+AL_SetHeaders (xALP_DocsenCartera;6;1;__ ("Ubicación"))
+AL_SetFormat (xALP_DocsenCartera;6;"";0;2;0;0)
+AL_SetHdrStyle (xALP_DocsenCartera;6;"Tahoma";9;1)
+AL_SetFtrStyle (xALP_DocsenCartera;6;"Tahoma";9;0)
+AL_SetStyle (xALP_DocsenCartera;6;"Tahoma";9;0)
+AL_SetForeColor (xALP_DocsenCartera;6;"Black";0;"Black";0;"Black";0)
+AL_SetBackColor (xALP_DocsenCartera;6;"White";0;"White";0;"White";0)
+AL_SetEnterable (xALP_DocsenCartera;6;1)
+AL_SetEntryCtls (xALP_DocsenCartera;6;0)
+
+  //column 7 settings
+AL_SetHeaders (xALP_DocsenCartera;7;1;__ ("Estado"))
+AL_SetFormat (xALP_DocsenCartera;7;"";0;2;0;0)
+AL_SetHdrStyle (xALP_DocsenCartera;7;"Tahoma";9;1)
+AL_SetFtrStyle (xALP_DocsenCartera;7;"Tahoma";9;0)
+AL_SetStyle (xALP_DocsenCartera;7;"Tahoma";9;0)
+AL_SetForeColor (xALP_DocsenCartera;7;"Black";0;"Black";0;"Black";0)
+AL_SetBackColor (xALP_DocsenCartera;7;"White";0;"White";0;"White";0)
+AL_SetEnterable (xALP_DocsenCartera;7;1)
+AL_SetEntryCtls (xALP_DocsenCartera;7;0)
+
+  //column 8 settings
+AL_SetHeaders (xALP_DocsenCartera;8;1;__ ("Vence"))
+AL_SetFormat (xALP_DocsenCartera;8;"";0;2;0;0)
+AL_SetHdrStyle (xALP_DocsenCartera;8;"Tahoma";9;1)
+AL_SetFtrStyle (xALP_DocsenCartera;8;"Tahoma";9;0)
+AL_SetStyle (xALP_DocsenCartera;8;"Tahoma";9;0)
+AL_SetForeColor (xALP_DocsenCartera;8;"Black";0;"Black";0;"Black";0)
+AL_SetBackColor (xALP_DocsenCartera;8;"White";0;"White";0;"White";0)
+AL_SetEnterable (xALP_DocsenCartera;8;1)
+AL_SetEntryCtls (xALP_DocsenCartera;8;0)
+
+  //column 9 settings
+AL_SetHeaders (xALP_DocsenCartera;9;1;__ ("Depositar\rdesde"))
+AL_SetFormat (xALP_DocsenCartera;9;"";0;2;0;0)
+AL_SetHdrStyle (xALP_DocsenCartera;9;"Tahoma";9;1)
+AL_SetFtrStyle (xALP_DocsenCartera;9;"Tahoma";9;0)
+AL_SetStyle (xALP_DocsenCartera;9;"Tahoma";9;0)
+AL_SetForeColor (xALP_DocsenCartera;9;"Black";0;"Black";0;"Black";0)
+AL_SetBackColor (xALP_DocsenCartera;9;"White";0;"White";0;"White";0)
+AL_SetEnterable (xALP_DocsenCartera;9;1)
+AL_SetEntryCtls (xALP_DocsenCartera;9;0)
+
+  //column 10 settings
+AL_SetHeaders (xALP_DocsenCartera;10;1;__ ("Depositar\rhasta"))
+AL_SetFormat (xALP_DocsenCartera;10;"";0;2;0;0)
+AL_SetHdrStyle (xALP_DocsenCartera;10;"Tahoma";9;1)
+AL_SetFtrStyle (xALP_DocsenCartera;10;"Tahoma";9;0)
+AL_SetStyle (xALP_DocsenCartera;10;"Tahoma";9;0)
+AL_SetForeColor (xALP_DocsenCartera;10;"Black";0;"Black";0;"Black";0)
+AL_SetBackColor (xALP_DocsenCartera;10;"White";0;"White";0;"White";0)
+AL_SetEnterable (xALP_DocsenCartera;10;1)
+AL_SetEntryCtls (xALP_DocsenCartera;10;0)
+
+  //column 11 settings
+AL_SetHeaders (xALP_DocsenCartera;11;1;__ ("Fecha\rProtesto"))
+AL_SetFormat (xALP_DocsenCartera;11;"";0;2;0;0)
+AL_SetHdrStyle (xALP_DocsenCartera;11;"Tahoma";9;1)
+AL_SetFtrStyle (xALP_DocsenCartera;11;"Tahoma";9;0)
+AL_SetStyle (xALP_DocsenCartera;11;"Tahoma";9;0)
+AL_SetForeColor (xALP_DocsenCartera;11;"Black";0;"Black";0;"Black";0)
+AL_SetBackColor (xALP_DocsenCartera;11;"White";0;"White";0;"White";0)
+AL_SetEnterable (xALP_DocsenCartera;11;1)
+AL_SetEntryCtls (xALP_DocsenCartera;11;0)
+
+  //column 12 settings
+AL_SetHeaders (xALP_DocsenCartera;12;1;"ID")
+AL_SetFormat (xALP_DocsenCartera;12;"";0;2;0;0)
+AL_SetHdrStyle (xALP_DocsenCartera;12;"Tahoma";9;1)
+AL_SetFtrStyle (xALP_DocsenCartera;12;"Tahoma";9;0)
+AL_SetStyle (xALP_DocsenCartera;12;"Tahoma";9;0)
+AL_SetForeColor (xALP_DocsenCartera;12;"Black";0;"Black";0;"Black";0)
+AL_SetBackColor (xALP_DocsenCartera;12;"White";0;"White";0;"White";0)
+AL_SetEnterable (xALP_DocsenCartera;12;1)
+AL_SetEntryCtls (xALP_DocsenCartera;12;0)
+
+  //column 13 settings
+AL_SetHeaders (xALP_DocsenCartera;13;1;"ID Doc Pago")
+AL_SetFormat (xALP_DocsenCartera;13;"";0;0;0;0)
+AL_SetHdrStyle (xALP_DocsenCartera;13;"Tahoma";9;1)
+AL_SetFtrStyle (xALP_DocsenCartera;13;"Tahoma";9;0)
+AL_SetStyle (xALP_DocsenCartera;13;"Tahoma";9;0)
+AL_SetForeColor (xALP_DocsenCartera;13;"Black";0;"Black";0;"Black";0)
+AL_SetBackColor (xALP_DocsenCartera;13;"White";0;"White";0;"White";0)
+AL_SetEnterable (xALP_DocsenCartera;13;1)
+AL_SetEntryCtls (xALP_DocsenCartera;13;0)
+
+  //column 14 settings
+AL_SetHeaders (xALP_DocsenCartera;14;1;"Rec Num Cartera")
+AL_SetFormat (xALP_DocsenCartera;14;"";0;0;0;0)
+AL_SetHdrStyle (xALP_DocsenCartera;14;"Tahoma";9;1)
+AL_SetFtrStyle (xALP_DocsenCartera;14;"Tahoma";9;0)
+AL_SetStyle (xALP_DocsenCartera;14;"Tahoma";9;0)
+AL_SetForeColor (xALP_DocsenCartera;14;"Black";0;"Black";0;"Black";0)
+AL_SetBackColor (xALP_DocsenCartera;14;"White";0;"White";0;"White";0)
+AL_SetEnterable (xALP_DocsenCartera;14;1)
+AL_SetEntryCtls (xALP_DocsenCartera;14;0)
+
+AL_SetWidths (xALP_DocsenCartera;1;11;65;65;79;50;60;70;120;60;60;60;60)
+
+  //general options
+ALP_SetDefaultAppareance (xALP_DocsenCartera;9;1;6;2;8)
+AL_SetColOpts (xALP_DocsenCartera;1;1;1;3;0)
+AL_SetRowOpts (xALP_DocsenCartera;0;1;0;0;1;0)
+AL_SetCellOpts (xALP_DocsenCartera;0;1;1)
+AL_SetMiscOpts (xALP_DocsenCartera;0;0;"\\";0;1)
+AL_SetMainCalls (xALP_DocsenCartera;"";"")
+AL_SetScroll (xALP_DocsenCartera;0;0)
+AL_SetEntryOpts (xALP_DocsenCartera;1;0;0;0;0;<>tXS_RS_DecimalSeparator)
+AL_SetDrgOpts (xALP_DocsenCartera;0;30;0)
+
+  //dragging options
+
+AL_SetDrgSrc (xALP_DocsenCartera;1;"";"";"")
+AL_SetDrgSrc (xALP_DocsenCartera;2;"";"";"")
+AL_SetDrgSrc (xALP_DocsenCartera;3;"";"";"")
+AL_SetDrgDst (xALP_DocsenCartera;1;"";"";"")
+AL_SetDrgDst (xALP_DocsenCartera;1;"";"";"")
+AL_SetDrgDst (xALP_DocsenCartera;1;"";"";"")
+

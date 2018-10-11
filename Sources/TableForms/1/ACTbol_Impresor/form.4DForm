@@ -1,0 +1,346 @@
+﻿{
+	"inheritedForm": "XS_MASTER_WZDDialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 626,
+	"height": 407,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón1": {
+					"type": "button",
+					"top": 377,
+					"left": 533,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bPrintBol",
+					"action": "accept",
+					"text": "Imprimir",
+					"styleSheet": "XS_DialogObjects",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 4,
+					"left": 161,
+					"width": 340,
+					"height": 46,
+					"stroke": "#FFFFFF",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Asistente para la Impresión de Documentos Tributarios"
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 377,
+					"left": 443,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Botón1",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable11": {
+					"type": "button",
+					"top": 479,
+					"left": 246,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bTrap",
+					"shortcutKey": "[Enter]",
+					"text": "Cancelar",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 474,
+					"left": 439,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 417,
+					"left": 255,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"ALP_Originales": {
+					"type": "plugin",
+					"top": 82,
+					"left": 163,
+					"width": 449,
+					"height": 174,
+					"dataSource": "ALP_Originales",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/ALP_Originales.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 79,
+					"left": 9,
+					"width": 143,
+					"height": 264,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "En el cuadro de la derecha se indican todos los bloques de documentos tributarios a imprimir.\rSeleccione, en la columna de extrema derecha, aquellos bloques que desea imprimir ahora."
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 262,
+					"left": 308,
+					"width": 165,
+					"height": 12,
+					"dataSource": "vtACT_Printer",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"b_Printer": {
+					"type": "button",
+					"top": 261,
+					"left": 307,
+					"width": 187,
+					"height": 13,
+					"dataSource": "b_Printer",
+					"display": false,
+					"method": "ObjectMethods/b_Printer.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Banco(5)5": {
+					"type": "picture",
+					"top": 260,
+					"left": 475,
+					"width": 19,
+					"height": 16
+				},
+				"cs_utilizaImpSel": {
+					"type": "checkbox",
+					"top": 259,
+					"left": 163,
+					"width": 142,
+					"height": 15,
+					"dataSource": "cs_utilizaImpSel",
+					"text": "Utilizar la siguiente impresora",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"multa0": {
+					"type": "groupBox",
+					"top": 285,
+					"left": 163,
+					"width": 449,
+					"height": 69,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Recargo por reimpresión de boletas"
+				},
+				"multa3": {
+					"type": "text",
+					"top": 322,
+					"left": 199,
+					"width": 31,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Ítem:"
+				},
+				"multa4Mod0": {
+					"type": "input",
+					"top": 322,
+					"left": 227,
+					"width": 248,
+					"height": 12,
+					"dataSource": "vtACTcfg_SelectedItemName",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/multa4Mod0.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"multa5": {
+					"type": "picture",
+					"top": 320,
+					"left": 476,
+					"width": 19,
+					"height": 16
+				},
+				"multa4Mod1": {
+					"type": "button",
+					"top": 321,
+					"left": 478,
+					"width": 15,
+					"height": 14,
+					"dataSource": "bItem",
+					"display": false,
+					"method": "ObjectMethods/multa4Mod1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"multa7": {
+					"type": "text",
+					"top": 322,
+					"left": 499,
+					"width": 34,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Monto:"
+				},
+				"multa4Mod2": {
+					"type": "input",
+					"top": 322,
+					"left": 535,
+					"width": 68,
+					"height": 12,
+					"dataSource": "vrACT_MontoMulta",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/multa4Mod2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"multa1": {
+					"type": "text",
+					"top": 302,
+					"left": 179,
+					"width": 291,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Se generará un cargo y un aviso considerando los siguientes datos:"
+				}
+			}
+		}
+	]
+}

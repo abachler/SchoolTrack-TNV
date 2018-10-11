@@ -1,0 +1,1 @@
+SN3_SetCheckByChecks (->cb_PublicarFotografias;"|";->cb_PublicarFotosAlumno;->cb_PublicarFotoPJ;->cb_PublicarFotoProfesores;->cb_PublicarFotoCompaneros)

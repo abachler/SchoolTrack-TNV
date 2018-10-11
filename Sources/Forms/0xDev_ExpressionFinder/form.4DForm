@@ -1,0 +1,444 @@
+﻿{
+	"formSizeAnchor": "lbCodeLines",
+	"rightMargin": 0,
+	"bottomMargin": 22,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texto": {
+					"type": "text",
+					"top": 161,
+					"left": 13,
+					"width": 159,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Nombre del método de parsing:"
+				},
+				"vt_ParsingMethod": {
+					"type": "input",
+					"top": 161,
+					"left": 181,
+					"width": 266,
+					"height": 14,
+					"dataSource": "vt_ParsingMethod",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/vt_ParsingMethod.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Botón 3D": {
+					"type": "button",
+					"top": 161,
+					"left": 982,
+					"width": 164,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "bParse",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Analizar código",
+					"style": "roundedBevel",
+					"method": "ObjectMethods/Botón 3D.4dm",
+					"events": [
+						"onValidate",
+						"onClick"
+					]
+				},
+				"Rectángulo": {
+					"type": "rectangle",
+					"top": 798,
+					"left": 0,
+					"width": 1154,
+					"height": 20,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"fill": "#DDDDDD",
+					"stroke": "#DDDDDD"
+				},
+				"Línea1": {
+					"type": "line",
+					"top": 798,
+					"left": 0,
+					"width": 1154,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"stroke": "#EEEEEE"
+				},
+				"Línea2": {
+					"type": "line",
+					"top": 797,
+					"left": 0,
+					"width": 1154,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"stroke": "#AAAAAA"
+				},
+				"lbCodeLines": {
+					"type": "listbox",
+					"top": 186,
+					"left": 229,
+					"width": 924,
+					"height": 611,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "lbCodeLines",
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "14px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "none",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "#DDDDDD",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"rowFillSource": "aColors",
+					"rowStyleSource": "aStyles",
+					"fontFamily": "Tahoma",
+					"fontSize": 9,
+					"borderStyle": "none",
+					"method": "ObjectMethods/lbCodeLines.4dm",
+					"events": [
+						"onDoubleClick"
+					],
+					"columns": [
+						{
+							"name": "aCodeLineNumbers",
+							"dataSource": "aCodeLineNumbers",
+							"width": 33,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título2",
+								"dataSource": "Título2",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						},
+						{
+							"name": "Columna1",
+							"dataSource": "aObjectCodeLines",
+							"width": 1024,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"entryFilter": "~\"\"",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onDoubleClick"
+							],
+							"header": {
+								"name": "Título1",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						}
+					]
+				},
+				"Línea": {
+					"type": "line",
+					"top": 186,
+					"left": 228,
+					"height": 611,
+					"stroke": "#AAAAAA"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 1121,
+					"height": 60,
+					"styleSheet": "XS_FormObjects",
+					"text": "Esta herramienta permite analizar todo el código de una aplicación (métodos proyecto, objeto formularios, base de datos y triggers), en búsqueda de contenidos complejos que las herramientas de 4D no proveen.\rSu correcta operatoria depende del método de parsing que se especifique. Para cada objeto de código se ejecutará el método de parsing especificado.\rEl método de parsing se debe encargar de agregar a los arreglos que se describen a continuación la información necesaria que será deplegada en la lista de objetos. En el recuadro de la derecha se muestra el código del objeto destacando las ocurrencias detectadas.\r\rLos arreglos a los cuales se debe asignar la información son los siguientes:\r"
+				},
+				"Botón 3D1": {
+					"type": "button",
+					"top": 157,
+					"left": 460,
+					"width": 44,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "bEdit",
+					"styleSheet": "XS_FormObjects",
+					"text": "Editar...",
+					"style": "roundedBevel",
+					"method": "ObjectMethods/Botón 3D1.4dm",
+					"events": [
+						"onValidate",
+						"onClick"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 71,
+					"left": 135,
+					"width": 434,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Recibe los IDs de los objetos en los detectó el código buscado por el parser"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 71,
+					"left": 13,
+					"width": 117,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "- aCodeObjectIds (&L):"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 86,
+					"left": 13,
+					"width": 117,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "- aCodeLineText (&L):"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 85,
+					"left": 135,
+					"width": 267,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Recibe el texto completo de la linea en la que se detectó el texto"
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 109,
+					"left": 12,
+					"width": 1094,
+					"height": 24,
+					"styleSheet": "XS_FormObjects",
+					"text": "Un ejemplo de como construir una método de parsing puede verse en el método 0xDEV_CodeAnalizer_Example.\r"
+				},
+				"lbObjects": {
+					"type": "listbox",
+					"top": 186,
+					"left": 1,
+					"width": 226,
+					"height": 611,
+					"sizingY": "grow",
+					"dataSource": "lbObjects",
+					"hideFocusRing": true,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"horizontalLineStroke": "#DDDDDD",
+					"verticalLineStroke": "#DDDDDD",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"alternateFill": "#EEEEEE",
+					"fontFamily": "Tahoma",
+					"fontSize": 9,
+					"borderStyle": "none",
+					"method": "ObjectMethods/lbObjects.4dm",
+					"events": [
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "aCodeObjectIds",
+							"dataSource": "aCodeObjectIds",
+							"width": 64,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"numberFormat": "#####; #####",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#EEEEEE",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "lbTitle_C1",
+								"text": "ID",
+								"dataSource": "lbTitle_C1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						},
+						{
+							"name": "aCodeObjectNames",
+							"dataSource": "aCodeObjectNames",
+							"width": 156,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#EEEEEE",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "lbTitle_C2",
+								"text": "Nombre del objeto",
+								"dataSource": "lbTitle_C2",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						},
+						{
+							"name": "aCodeLineText",
+							"dataSource": "aCodeLineText",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#EEEEEE",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título3",
+								"text": "Título3",
+								"dataSource": "Título3",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						}
+					]
+				},
+				"Línea3": {
+					"type": "line",
+					"top": 798,
+					"left": 113,
+					"height": 19,
+					"stroke": "#AAAAAA"
+				},
+				"Línea4": {
+					"type": "line",
+					"top": 798,
+					"left": 228,
+					"height": 19,
+					"stroke": "#AAAAAA"
+				},
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 798,
+					"left": -1,
+					"width": 114,
+					"height": 20,
+					"fill": "#FFC0C0",
+					"stroke": "#DDDDDD"
+				},
+				"Rectángulo2": {
+					"type": "rectangle",
+					"top": 798,
+					"left": 114,
+					"width": 114,
+					"height": 20,
+					"fill": "#C0FFFF",
+					"stroke": "#DDDDDD"
+				},
+				"counters": {
+					"type": "input",
+					"top": 802,
+					"left": 5,
+					"width": 105,
+					"height": 12,
+					"dataSource": "vl_ErrorCount",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"numberFormat": "##### Errores",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"counters1": {
+					"type": "input",
+					"top": 802,
+					"left": 115,
+					"width": 112,
+					"height": 12,
+					"dataSource": "vl_AlertCount",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"numberFormat": "##### Avisos",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

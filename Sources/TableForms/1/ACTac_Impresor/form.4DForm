@@ -1,0 +1,831 @@
+﻿{
+	"inheritedForm": "XS_MASTER_WZDDialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 626,
+	"height": 407,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Texto4": {
+					"type": "text",
+					"top": 4,
+					"left": 161,
+					"width": 372,
+					"height": 56,
+					"stroke": "#FFFFFF",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Asistente para la Impresión de Avisos de Cobranza"
+				},
+				"Variable255": {
+					"type": "input",
+					"top": 378,
+					"left": 574,
+					"width": 17,
+					"height": 11,
+					"sizingX": "move",
+					"dataSource": "vi_Step",
+					"fill": "transparent",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 553,
+					"width": 20,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "bPrev",
+					"shortcutKey": "[left arrow]",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 592,
+					"width": 20,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "bNext",
+					"shortcutKey": "[right arrow]",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 479,
+					"left": 28,
+					"width": 20,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "Nueva Variable501",
+					"shortcutKey": "+",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 478,
+					"left": 94,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable11": {
+					"type": "button",
+					"top": 479,
+					"left": 246,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bTrap",
+					"shortcutKey": "[Enter]",
+					"text": "Cancelar",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 475,
+					"left": 420,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 418,
+					"left": 236,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto5": {
+					"type": "text",
+					"top": 86,
+					"left": 170,
+					"width": 398,
+					"height": 273,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Este asistente le guiará en el proceso de impresión de avisos de cobranza.\r\rEn este proceso no se efectuarán recálculos sobre cargos incluídos en los avisos.\r\r"
+				}
+			}
+		},
+		{
+			"objects": {
+				"estandar1": {
+					"type": "radio",
+					"top": 96,
+					"left": 187,
+					"width": 352,
+					"height": 18,
+					"dataSource": "b1",
+					"text": "Imprimir avisos de cobranza previamente emitidos",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/estandar1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"estandar2": {
+					"type": "checkbox",
+					"top": 145,
+					"left": 227,
+					"width": 240,
+					"height": 14,
+					"dataSource": "bHidePrintSettings",
+					"text": "Ocultar ajustes de impresión antes de imprimir",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"estandar": {
+					"type": "text",
+					"top": 115,
+					"left": 211,
+					"width": 314,
+					"height": 33,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Imprime avisos de cobranza previamente emitidos, sin efectuar ningún recálculo y sin emitir ningún aviso."
+				},
+				"grange4": {
+					"type": "text",
+					"top": 79,
+					"left": 9,
+					"width": 143,
+					"height": 242,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Indique si desea imprimir o enviar por e-mail los avisos de cobranza."
+				},
+				"Texto10": {
+					"type": "text",
+					"top": 52,
+					"left": 163,
+					"width": 278,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Opciones"
+				},
+				"grange6": {
+					"type": "text",
+					"top": 211,
+					"left": 227,
+					"width": 295,
+					"height": 44,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Envía por e-mail los PDF de avisos de cobranza previamente emitidos, sin efectuar ningún recálculo y sin emitir ningún aviso.\rLos avisos son enviados a las direcciones de e-mail de los apoderados seleccionados a continuación."
+				},
+				"grange1": {
+					"type": "radio",
+					"top": 168,
+					"left": 187,
+					"width": 352,
+					"height": 18,
+					"dataSource": "b2",
+					"text": "Generar PDFs de avisos de cobranza previamente emitidos",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/grange1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"pdf": {
+					"type": "checkbox",
+					"top": 188,
+					"left": 227,
+					"width": 240,
+					"height": 14,
+					"dataSource": "bPDF2Mail",
+					"text": "Enviarlos por e-mail",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto": {
+					"type": "text",
+					"top": 267,
+					"left": 227,
+					"width": 88,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Enviar mail a:"
+				},
+				"r_opMail1_AC": {
+					"type": "radio",
+					"top": 283,
+					"left": 227,
+					"width": 130,
+					"height": 23,
+					"dataSource": "r_opMail1_AC",
+					"text": ":21007,31",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"r_opMail2_AA": {
+					"type": "radio",
+					"top": 283,
+					"left": 355,
+					"width": 136,
+					"height": 23,
+					"dataSource": "r_opMail2_AA",
+					"text": ":21007,30",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"r_opMail3_Ambos": {
+					"type": "radio",
+					"top": 283,
+					"left": 489,
+					"width": 129,
+					"height": 23,
+					"dataSource": "r_opMail3_Ambos",
+					"text": "Ambos",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"cs_opMail1_AC": {
+					"type": "checkbox",
+					"top": 283,
+					"left": 227,
+					"width": 130,
+					"height": 23,
+					"dataSource": "cs_opMail1_AC",
+					"text": ":21007,31",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"cs_opMail2_AA": {
+					"type": "checkbox",
+					"top": 283,
+					"left": 355,
+					"width": 136,
+					"height": 23,
+					"dataSource": "cs_opMail2_AA",
+					"text": ":21007,30",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"cs_opMail3Responsable": {
+					"type": "checkbox",
+					"top": 283,
+					"left": 489,
+					"width": 129,
+					"height": 23,
+					"dataSource": "cs_opMail3Responsable",
+					"text": "Responsable",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 422,
+					"left": 346,
+					"width": 420,
+					"height": 17,
+					"stroke": "#0000FF",
+					"text": "Objetos se muestran/ocultan dependiendo de cómo trabajan"
+				}
+			}
+		},
+		{
+			"objects": {
+				"mail1": {
+					"type": "text",
+					"top": 97,
+					"left": 179,
+					"width": 209,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Modelo para el envío"
+				},
+				"mail": {
+					"type": "text",
+					"top": 79,
+					"left": 9,
+					"width": 143,
+					"height": 110,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Seleccione un modelo para el envío de los avisos de cobranza."
+				},
+				"xALP_SelModeloAviso": {
+					"type": "plugin",
+					"top": 121,
+					"left": 179,
+					"width": 433,
+					"height": 233,
+					"sizingY": "grow",
+					"dataSource": "xALP_SelModeloAviso",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/xALP_SelModeloAviso.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"print1": {
+					"type": "text",
+					"top": 97,
+					"left": 179,
+					"width": 209,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Modelo para impresión"
+				},
+				"print": {
+					"type": "text",
+					"top": 79,
+					"left": 9,
+					"width": 143,
+					"height": 110,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Seleccione un modelo de impresión para los avisos de cobranza."
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 52,
+					"left": 163,
+					"width": 278,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Selección de modelo"
+				}
+			}
+		},
+		{
+			"objects": {
+				"manual": {
+					"type": "radio",
+					"top": 116,
+					"left": 209,
+					"width": 290,
+					"height": 17,
+					"dataSource": "f1",
+					"text": "Sólo para los avisos seleccionados en la lista",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/manual.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"manual(1)": {
+					"type": "radio",
+					"top": 174,
+					"left": 209,
+					"width": 231,
+					"height": 17,
+					"dataSource": "f2",
+					"text": "Para todos los avisos de la lista",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/manual(1).4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"manual(2)": {
+					"type": "radio",
+					"top": 234,
+					"left": 211,
+					"width": 261,
+					"height": 17,
+					"dataSource": "f3",
+					"text": "Para todos los avisos en la base de datos",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/manual(2).4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Alumnos1": {
+					"type": "text",
+					"top": 133,
+					"left": 219,
+					"width": 375,
+					"height": 33,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "El envío o impresión se hará sólo para los avisos que hayan sido explicitamente seleccionados entre los avisos listados en el Explorador de AccountTrack."
+				},
+				"Alumnos2": {
+					"type": "text",
+					"top": 191,
+					"left": 220,
+					"width": 375,
+					"height": 22,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "El envío o impresión será efectivo para todos los avisos  listados en el Explorador de AccountTrack."
+				},
+				"Texto27": {
+					"type": "text",
+					"top": 251,
+					"left": 221,
+					"width": 320,
+					"height": 22,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "El envío o impresión será efectivo para todos los avisos en la base de datos."
+				},
+				"Variable24": {
+					"type": "input",
+					"top": 174,
+					"left": 505,
+					"width": 117,
+					"height": 11,
+					"dataSource": "viACT_avisos2",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"stroke": "#AAAAAA",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "(### ### ##0 avisos)",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable25": {
+					"type": "input",
+					"top": 234,
+					"left": 505,
+					"width": 117,
+					"height": 11,
+					"dataSource": "viACT_avisos3",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"stroke": "#AAAAAA",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "(### ### ##0 avisos)",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable23": {
+					"type": "input",
+					"top": 116,
+					"left": 505,
+					"width": 117,
+					"height": 11,
+					"dataSource": "viACT_avisos1",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"stroke": "#AAAAAA",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "(### ### ##0 avisos)",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Apdos3": {
+					"type": "text",
+					"top": 79,
+					"left": 9,
+					"width": 143,
+					"height": 242,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Especifique cuales son los avisos de cobranza que desea enviar/imprimir.\r\rEn la página siguiente deberá confirmar el envío o impresión de los avisos de cobranza."
+				},
+				"Texto9": {
+					"type": "text",
+					"top": 52,
+					"left": 163,
+					"width": 278,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "¿Para cuales registros?"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto2": {
+					"type": "text",
+					"top": 443,
+					"left": 71,
+					"width": 227,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": ".Lucida Grande UI",
+					"fontSize": 12,
+					"text": "confirmación"
+				},
+				"Variable68": {
+					"type": "input",
+					"top": 86,
+					"left": 177,
+					"width": 430,
+					"height": 254,
+					"dataSource": "vtACT_ResumenAsistente",
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable67": {
+					"type": "button",
+					"top": 374,
+					"left": 421,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Nueva Variable5472",
+					"text": "Volver",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable67.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable65": {
+					"type": "button",
+					"top": 374,
+					"left": 505,
+					"width": 114,
+					"height": 20,
+					"dataSource": "bEmitir",
+					"action": "accept",
+					"text": "Imprimir avisos",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable65.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 438,
+					"left": 318,
+					"width": 66,
+					"height": 21,
+					"dataSource": "Botón1",
+					"shortcutKey": "h",
+					"shortcutAccel": true,
+					"text": "html",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 52,
+					"left": 163,
+					"width": 278,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Confirmación"
+				}
+			}
+		}
+	]
+}

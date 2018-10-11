@@ -1,0 +1,303 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Botón3",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Área de grupo1": {
+					"type": "groupBox",
+					"top": 316,
+					"left": 12,
+					"width": 369,
+					"height": 46,
+					"fontFamily": "Lucida Grande Bold",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"text": "Seleccione los niveles entre los que se filtrará el reporte"
+				},
+				"Menú desplegable1": {
+					"type": "dropdown",
+					"top": 336,
+					"left": 32,
+					"width": 126,
+					"height": 17,
+					"dataSource": "at_NivelDesdeInf",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Menú desplegable1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Menú desplegable2": {
+					"type": "dropdown",
+					"top": 336,
+					"left": 178,
+					"width": 128,
+					"height": 17,
+					"dataSource": "at_NivelHastaInf",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Menú desplegable2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón4": {
+					"type": "button",
+					"top": 382,
+					"left": 213,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Botón2",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 382,
+					"left": 301,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bGo",
+					"action": "accept",
+					"text": "Continuar",
+					"styleSheet": "XS_DialogObjects",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 338,
+					"left": 163,
+					"width": 28,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "y"
+				},
+				"li1": {
+					"type": "groupBox",
+					"top": 98,
+					"left": 12,
+					"width": 369,
+					"height": 205,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Seleccione los Estados del Proceso de Admisión"
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 123,
+					"left": 155,
+					"width": 120,
+					"height": 20,
+					"dataSource": "bSelTodo",
+					"text": "Seleccionar  Todos",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 123,
+					"left": 286,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bLimpiar",
+					"text": "Limpiar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Área de plug-in1": {
+					"type": "plugin",
+					"top": 164,
+					"left": 21,
+					"width": 352,
+					"height": 125,
+					"dataSource": "xALP_estados",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Área de plug-in1.4dm",
+					"events": [
+						"onClick",
+						"onPluginArea"
+					]
+				},
+				"li": {
+					"type": "groupBox",
+					"top": 22,
+					"left": 12,
+					"width": 369,
+					"height": 61,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Seleccione el período a consultar en el informe"
+				},
+				"li17": {
+					"type": "input",
+					"top": 49,
+					"left": 70,
+					"width": 101,
+					"height": 13,
+					"dataSource": "vt_Fecha1",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "&9##/##/####",
+					"method": "ObjectMethods/li17.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"li18": {
+					"type": "pictureButton",
+					"top": 47,
+					"left": 172,
+					"width": 17,
+					"height": 16,
+					"dataSource": "bCalendar1",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/li18.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"li19": {
+					"type": "text",
+					"top": 48,
+					"left": 192,
+					"width": 41,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Hasta el"
+				},
+				"li20": {
+					"type": "input",
+					"top": 49,
+					"left": 237,
+					"width": 101,
+					"height": 13,
+					"dataSource": "vt_Fecha2",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "&9##/##/####",
+					"method": "ObjectMethods/li20.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"bCalendar1": {
+					"type": "pictureButton",
+					"top": 48,
+					"left": 340,
+					"width": 17,
+					"height": 16,
+					"dataSource": "bCalendar2",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bCalendar1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 49,
+					"left": 23,
+					"width": 41,
+					"height": 14,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Desde el"
+				}
+			}
+		}
+	]
+}

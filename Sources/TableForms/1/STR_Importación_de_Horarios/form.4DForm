@@ -1,0 +1,525 @@
+﻿{
+	"inheritedForm": "XS_MASTER_ConfigDialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "bNext",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"custom": {
+					"type": "rectangle",
+					"top": 43,
+					"left": -5,
+					"width": 640,
+					"height": 520,
+					"stroke": "transparent"
+				},
+				"Variable255": {
+					"type": "input",
+					"top": 461,
+					"left": 554,
+					"width": 17,
+					"height": 11,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "vi_Step",
+					"fill": "transparent",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "pictureButton",
+					"top": 457,
+					"left": 533,
+					"width": 20,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bPrev",
+					"shortcutKey": "[left arrow]",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bNext": {
+					"type": "pictureButton",
+					"top": 457,
+					"left": 572,
+					"width": 20,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bNext",
+					"shortcutKey": "[right arrow]",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bNext.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 596,
+					"left": 28,
+					"width": 372,
+					"height": 51,
+					"stroke": "#FFFFFF",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Asistente para Importar Horarios."
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 454,
+					"left": 13,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Botón1",
+					"text": "Salir",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 9,
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"sinArchivo2": {
+					"type": "text",
+					"top": 425,
+					"left": 265,
+					"width": 320,
+					"height": 11,
+					"sizingY": "move",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Haga clic aquí para generar un archivo vacío con encabezados."
+				},
+				"sinArchivo3": {
+					"type": "button",
+					"top": 424,
+					"left": 265,
+					"width": 321,
+					"height": 13,
+					"sizingY": "move",
+					"dataSource": "bVacio",
+					"display": false,
+					"method": "ObjectMethods/sinArchivo3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable15": {
+					"type": "input",
+					"top": 57,
+					"left": 16,
+					"width": 553,
+					"height": 364,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vt_g2",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"entryFilter": "~\"\"",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"viTMT_CreaSesionesDesdeInicio": {
+					"type": "checkbox",
+					"top": 625,
+					"left": 28,
+					"width": 456,
+					"height": 16,
+					"dataSource": "viTMT_CreaSesionesDesdeInicio",
+					"text": "Crear sesiones desde el inicio del año al asignar horario",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"stroke": "#0000FF",
+					"method": "ObjectMethods/viTMT_CreaSesionesDesdeInicio.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Área de grupo2": {
+					"type": "groupBox",
+					"top": 190,
+					"left": 32,
+					"width": 525,
+					"height": 201,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Elimanción del horario anterior"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 69,
+					"left": 56,
+					"width": 118,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": ":21012,13"
+				},
+				"Área de grupo1": {
+					"type": "groupBox",
+					"top": 112,
+					"left": 32,
+					"width": 525,
+					"height": 65,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Formato del Archivo"
+				},
+				"Texto12": {
+					"type": "text",
+					"top": 132,
+					"left": 68,
+					"width": 229,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "El archivo con datos a importar fue creado en:"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 88,
+					"left": 56,
+					"width": 405,
+					"height": 13,
+					"dataSource": "vt_g1",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable9": {
+					"type": "button",
+					"top": 85,
+					"left": 468,
+					"width": 69,
+					"height": 20,
+					"dataSource": "bExplore",
+					"text": ":21012,8",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable9.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "radio",
+					"top": 132,
+					"left": 326,
+					"width": 83,
+					"height": 14,
+					"dataSource": "r1",
+					"text": ":21012,9",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable10": {
+					"type": "radio",
+					"top": 132,
+					"left": 412,
+					"width": 101,
+					"height": 14,
+					"dataSource": "r2",
+					"text": ":21012,10",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable10.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"conArchivo": {
+					"type": "text",
+					"top": 402,
+					"left": 41,
+					"width": 562,
+					"height": 32,
+					"textAlign": "left",
+					"fontFamily": "Lucida Grande Bold",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"text": "Presione la flecha derecha para comenzar la importación de los bloques para los  Horarios,  al finalizar  se  dará  la  opción  de  guardar  un registro  con  los bloques  no  importados."
+				},
+				"Casilla de selección2": {
+					"type": "checkbox",
+					"top": 156,
+					"left": 326,
+					"width": 181,
+					"height": 13,
+					"dataSource": "cb_TieneEncabezado",
+					"text": "El archivo contiene encabezados",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Casilla de selección2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"op1": {
+					"type": "radio",
+					"top": 224,
+					"left": 78,
+					"width": 177,
+					"height": 14,
+					"dataSource": "op1",
+					"text": "Todos",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"op2": {
+					"type": "radio",
+					"top": 254,
+					"left": 78,
+					"width": 330,
+					"height": 14,
+					"dataSource": "op2",
+					"text": "Solo asignaturas involucradas en la importación",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"viTMT_EliminaSesiones": {
+					"type": "checkbox",
+					"top": 346,
+					"left": 41,
+					"width": 507,
+					"height": 36,
+					"dataSource": "viTMT_EliminaSesiones",
+					"text": "Eliminar Sesiones Anteriores de las Asignaturas Relacionadas con el Horario a Eliminar",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"stroke": "#EE0000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 287,
+					"left": 360,
+					"width": 28,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "y"
+				},
+				"Menú desplegable1": {
+					"type": "dropdown",
+					"top": 287,
+					"left": 228,
+					"width": 126,
+					"height": 17,
+					"dataSource": "at_NivelDesdeInf",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Menú desplegable1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Menú desplegable2": {
+					"type": "dropdown",
+					"top": 288,
+					"left": 374,
+					"width": 128,
+					"height": 17,
+					"dataSource": "at_NivelHastaInf",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Menú desplegable2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"op3": {
+					"type": "radio",
+					"top": 287,
+					"left": 78,
+					"width": 133,
+					"height": 14,
+					"dataSource": "op3",
+					"text": "Entre los niveles",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"op4": {
+					"type": "radio",
+					"top": 318,
+					"left": 78,
+					"width": 133,
+					"height": 16,
+					"dataSource": "op4",
+					"text": "No eliminar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

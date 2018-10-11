@@ -1,0 +1,464 @@
+﻿{
+	"windowTitle": ":21024,1",
+	"inheritedForm": "XS_MASTER_ConfigDialogs",
+	"inheritedFormTable": 114,
+	"width": 558,
+	"height": 393,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDoubleClick",
+		"onDataChange",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text19": {
+					"type": "text",
+					"top": 60,
+					"left": 234,
+					"width": 50,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Código:"
+				},
+				"Text20": {
+					"type": "text",
+					"top": 81,
+					"left": 234,
+					"width": 46,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Nombre:"
+				},
+				"Text21": {
+					"type": "text",
+					"top": 198,
+					"left": 365,
+					"width": 77,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "días, renovable"
+				},
+				"Text22": {
+					"type": "text",
+					"top": 220,
+					"left": 235,
+					"width": 66,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Multa Diaria:"
+				},
+				"Text23": {
+					"type": "text",
+					"top": 243,
+					"left": 235,
+					"width": 62,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "después de:"
+				},
+				"Text24": {
+					"type": "text",
+					"top": 243,
+					"left": 336,
+					"width": 77,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "días de gracia"
+				},
+				"Text25": {
+					"type": "text",
+					"top": 220,
+					"left": 368,
+					"width": 30,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "pesos"
+				},
+				"Text26": {
+					"type": "text",
+					"top": 198,
+					"left": 235,
+					"width": 98,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Préstamo máximo:"
+				},
+				"lb_reglas": {
+					"type": "listbox",
+					"top": 49,
+					"left": 18,
+					"width": 182,
+					"height": 302,
+					"dataSource": "lb_reglas",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"method": "ObjectMethods/lb_reglas.4dm",
+					"events": [
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "Barras 2D1",
+							"dataSource": "<>aPrefDoc",
+							"width": 50,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						},
+						{
+							"name": "Barras 2D2",
+							"dataSource": "<>aPrefDocName",
+							"width": 132,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						}
+					]
+				},
+				"Field8": {
+					"type": "input",
+					"top": 59,
+					"left": 288,
+					"width": 45,
+					"height": 13,
+					"dataSource": "[xxBBL_ReglasParaItems:69]Codigo_regla:1",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"multiline": "no",
+					"entryFilter": "&@",
+					"method": "ObjectMethods/Field8.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field9": {
+					"type": "input",
+					"top": 81,
+					"left": 288,
+					"width": 212,
+					"height": 13,
+					"dataSource": "[xxBBL_ReglasParaItems:69]Nombre Regla:2",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"multiline": "no",
+					"entryFilter": "&@",
+					"method": "ObjectMethods/Field9.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field1039": {
+					"type": "input",
+					"top": 105,
+					"left": 286,
+					"width": 214,
+					"height": 14,
+					"dataSource": "[xxBBL_ReglasParaItems:69]Default:10",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "Aplicar por defecto a nuevos items",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Field1039.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field10": {
+					"type": "input",
+					"top": 198,
+					"left": 332,
+					"width": 28,
+					"height": 13,
+					"dataSource": "[xxBBL_ReglasParaItems:69]DiasPrestamo:3",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field11": {
+					"type": "input",
+					"top": 198,
+					"left": 450,
+					"width": 28,
+					"height": 13,
+					"dataSource": "[xxBBL_ReglasParaItems:69]Max_renovacione:6",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field12": {
+					"type": "input",
+					"top": 220,
+					"left": 303,
+					"width": 63,
+					"height": 13,
+					"dataSource": "[xxBBL_ReglasParaItems:69]Multa_diaria:5",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field13": {
+					"type": "input",
+					"top": 243,
+					"left": 303,
+					"width": 28,
+					"height": 13,
+					"dataSource": "[xxBBL_ReglasParaItems:69]Dias_gracia:4",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo1": {
+					"type": "input",
+					"top": 287,
+					"left": 236,
+					"width": 160,
+					"height": 16,
+					"dataSource": "[xxBBL_ReglasParaItems:69]Reserva_Permitida:9",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "Reservas Permitidas",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field14": {
+					"type": "input",
+					"top": 309,
+					"left": 311,
+					"width": 28,
+					"height": 13,
+					"dataSource": "[xxBBL_ReglasParaItems:69]Reserva_Caducan:8",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"eliminaRegla": {
+					"type": "button",
+					"top": 362,
+					"left": 18,
+					"width": 80,
+					"height": 18,
+					"text": "Eliminar",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/eliminaRegla.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable24": {
+					"type": "button",
+					"top": 362,
+					"left": 120,
+					"width": 80,
+					"height": 18,
+					"dataSource": "bNewRule",
+					"text": "Nueva regla",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Variable24.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Línea177": {
+					"type": "line",
+					"top": 43,
+					"left": 215,
+					"width": 1,
+					"height": 350,
+					"stroke": "#AAAAAA"
+				},
+				"Línea178": {
+					"type": "line",
+					"top": 166,
+					"left": 215,
+					"width": 343,
+					"height": 1,
+					"stroke": "#AAAAAA"
+				},
+				"Línea179": {
+					"type": "line",
+					"top": 282,
+					"left": 215,
+					"width": 343,
+					"stroke": "#AAAAAA"
+				},
+				"Invisible Button1": {
+					"type": "button",
+					"top": 714,
+					"left": 0,
+					"width": 119,
+					"height": 38,
+					"dataSource": "Invisible Button1",
+					"action": "accept",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text28": {
+					"type": "text",
+					"top": 309,
+					"left": 254,
+					"width": 47,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Caducan"
+				},
+				"Text29": {
+					"type": "text",
+					"top": 309,
+					"left": 347,
+					"width": 66,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "días después"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 198,
+					"left": 484,
+					"width": 28,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "veces"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,1 @@
+XS_Settings ("GetConfig&WizardsItems")

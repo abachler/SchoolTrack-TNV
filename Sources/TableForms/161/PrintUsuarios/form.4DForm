@@ -1,0 +1,143 @@
+﻿{
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onPrintingFooter",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable5": {
+					"type": "input",
+					"top": 13,
+					"left": 13,
+					"width": 100,
+					"height": 100,
+					"dataSource": "vLogo",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable11": {
+					"type": "input",
+					"top": 47,
+					"left": 131,
+					"width": 425,
+					"height": 19,
+					"dataSource": "<>gCustom",
+					"fill": "transparent",
+					"styleSheet": "XS_ReportSubtitle_14",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Área de plug-in1": {
+					"type": "plugin",
+					"top": 151,
+					"left": 20,
+					"width": 536,
+					"height": 75,
+					"dataSource": "xPLP_Fact",
+					"pluginAreaKind": "%PrntListPro",
+					"borderStyle": "none",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 286,
+					"left": 0,
+					"width": 576,
+					"height": 13,
+					"dataSource": "sPage",
+					"fill": "transparent",
+					"textAlign": "center",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 312,
+					"left": 13,
+					"width": 563,
+					"height": 13,
+					"dataSource": "sPrintDate",
+					"fill": "transparent",
+					"textAlign": "left",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto18": {
+					"type": "text",
+					"top": 19,
+					"left": 134,
+					"width": 422,
+					"height": 18,
+					"textAlign": "left",
+					"styleSheet": "XS_ReportTitle_18",
+					"fontWeight": "bold",
+					"text": "SchoolNet: Listado de Usuarios"
+				}
+			}
+		}
+	]
+}

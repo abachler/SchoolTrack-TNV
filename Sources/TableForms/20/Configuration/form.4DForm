@@ -1,0 +1,272 @@
+﻿{
+	"windowTitle": ":21010,86",
+	"inheritedFormTable": 114,
+	"windowMinWidth": 680,
+	"windowMinHeight": 428,
+	"width": 680,
+	"height": 428,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onHeader",
+		"onDoubleClick",
+		"onDataChange",
+		"onCloseBox",
+		"onUnload",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"bMostrarTodo": {
+					"type": "button",
+					"top": 12,
+					"left": 13,
+					"width": 93,
+					"height": 22,
+					"dataSource": "bMostrarTodo",
+					"action": "cancel",
+					"text": "Mostrar Todo",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"method": "ObjectMethods/bMostrarTodo.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"SearchPicker": {
+					"type": "subform",
+					"top": 8,
+					"left": 467,
+					"width": 207,
+					"height": 30,
+					"sizingY": "move",
+					"dataSourceTypeHint": "text",
+					"detailForm": "SearchPicker",
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/SearchPicker.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"lb_Materias": {
+					"type": "listbox",
+					"top": 42,
+					"left": 0,
+					"width": 680,
+					"height": 337,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"listboxType": "currentSelection",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"highlightSet": "MateriasSeleccionadas",
+					"table": 20,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#DDDDDD",
+					"verticalLineStroke": "#DDDDDD",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"alternateFill": "#F3F6FA",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"borderStyle": "none",
+					"method": "ObjectMethods/lb_Materias.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					],
+					"columns": [
+						{
+							"name": "Columna1",
+							"dataSource": "[xxSTR_Materias:20]NoSector:11",
+							"width": 90,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#F3F6FA",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "encabezadoOrden",
+								"text": "Orden",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Columna2",
+							"dataSource": "[xxSTR_Materias:20]Area:12",
+							"width": 286,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#F3F6FA",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "encabezadoSector",
+								"text": "Sector de aprendizaje",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Columna3",
+							"dataSource": "[xxSTR_Materias:20]Materia:2",
+							"width": 289,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#F3F6FA",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "encabezadoSubsector",
+								"text": "Subsector",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 513,
+					"left": 0,
+					"width": 104,
+					"height": 35,
+					"dataSource": "bClose",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"fontFamily": ".Lucida Grande UI",
+					"fontSize": 12,
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"eliminar": {
+					"type": "pictureButton",
+					"top": 389,
+					"left": 13,
+					"width": 32,
+					"height": 26,
+					"sizingY": "move",
+					"columnCount": 1,
+					"rowCount": 3,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/eliminar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón 3D2": {
+					"type": "pictureButton",
+					"top": 389,
+					"left": 44,
+					"width": 32,
+					"height": 26,
+					"sizingY": "move",
+					"dataSource": "bAddStyle",
+					"columnCount": 1,
+					"rowCount": 3,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Botón 3D2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón 3D3": {
+					"type": "pictureButton",
+					"top": 389,
+					"left": 84,
+					"width": 38,
+					"height": 26,
+					"sizingY": "move",
+					"dataSource": "bAddStyle",
+					"columnCount": 1,
+					"rowCount": 3,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Botón 3D3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Imagen31": {
+					"type": "picture",
+					"top": 378,
+					"left": -4,
+					"width": 684,
+					"height": 2,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"pictureFormat": "scaled"
+				}
+			}
+		},
+		null
+	]
+}

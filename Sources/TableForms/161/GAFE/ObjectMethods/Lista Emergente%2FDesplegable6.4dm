@@ -1,0 +1,1 @@
+GAFESettingsModificados:=(Self:C308->#0)

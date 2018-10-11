@@ -1,0 +1,595 @@
+﻿{
+	"windowTitle": ":21012,1",
+	"inheritedForm": "XS_BKGD_Forms",
+	"inheritedFormTable": 114,
+	"windowMinWidth": 800,
+	"windowMinHeight": 500,
+	"width": 998,
+	"height": 598,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onUnload",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onResize"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"barra": {
+					"type": "rectangle",
+					"top": -2,
+					"left": -1,
+					"width": 1001,
+					"height": 53,
+					"sizingX": "grow",
+					"stroke": "#AAAAAA"
+				},
+				"pestana": {
+					"type": "tab",
+					"top": 13,
+					"left": 0,
+					"width": 1015,
+					"height": 25,
+					"sizingX": "grow",
+					"labels": {
+						"$ref": "/SOURCES/lists.json#/0_dummyList"
+					},
+					"styleSheet": "Medium - 13",
+					"action": "gotoPage",
+					"method": "ObjectMethods/pestana.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"calendario": {
+					"type": "button",
+					"top": 56,
+					"left": 12,
+					"width": 238,
+					"height": 20,
+					"dataSource": "bCalendario",
+					"styleSheet": "Medium - 13",
+					"stroke": "#555555",
+					"text": "Botón",
+					"icon": "/RESOURCES/IconCalendar.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "custom",
+					"customBackgroundPicture": "var:",
+					"customOffset": 50,
+					"method": "ObjectMethods/calendario.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cerrar": {
+					"type": "button",
+					"top": 6,
+					"left": 1080,
+					"width": 99,
+					"height": 20,
+					"sizingX": "move",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cerrar (esc)",
+					"styleSheet": "Plain - 12",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Separador1": {
+					"type": "splitter",
+					"top": 75,
+					"left": 119,
+					"width": 1,
+					"height": 535,
+					"sizingX": "move",
+					"sizingY": "grow",
+					"dataSource": "Separador",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Separador1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Separador": {
+					"type": "splitter",
+					"top": 75,
+					"left": 317,
+					"width": 1,
+					"height": 535,
+					"sizingX": "move",
+					"sizingY": "grow",
+					"dataSource": "Separador",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Separador.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"hl_cursos1": {
+					"type": "list",
+					"top": 80,
+					"left": 1,
+					"width": 116,
+					"height": 518,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "hl_cursosAsistenciaSesiones",
+					"enterable": false,
+					"hideFocusRing": true,
+					"scrollbarVertical": "hidden",
+					"scrollbarHorizontal": "hidden",
+					"fill": "#FFFFFF",
+					"styleSheet": "Medium - 13",
+					"method": "ObjectMethods/hl_cursos1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"areaSubsectores": {
+					"type": "plugin",
+					"top": 80,
+					"left": 121,
+					"width": 196,
+					"height": 518,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "xALP_Subsectores",
+					"pluginAreaKind": "%AreaListPro",
+					"method": "ObjectMethods/areaSubsectores.4dm",
+					"events": [
+						"onClick",
+						"onPluginArea",
+						"onDataChange"
+					]
+				},
+				"areaInasistencias": {
+					"type": "plugin",
+					"top": 80,
+					"left": 319,
+					"width": 679,
+					"height": 518,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "xALP_Inasistencias",
+					"pluginAreaKind": "%AreaListPro",
+					"method": "ObjectMethods/areaInasistencias.4dm",
+					"events": [
+						"onClick",
+						"onPluginArea",
+						"onDataChange"
+					]
+				},
+				"Help": {
+					"type": "button",
+					"top": 54,
+					"left": 962,
+					"width": 25,
+					"height": 25,
+					"sizingX": "move",
+					"styleSheet": "XS_DialogObjects",
+					"style": "help",
+					"method": "ObjectMethods/Help.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 51,
+					"left": -1,
+					"width": 265,
+					"height": 554,
+					"sizingY": "grow",
+					"stroke": "transparent"
+				},
+				"Imagen100": {
+					"type": "picture",
+					"top": 51,
+					"left": 0,
+					"width": 264,
+					"height": 555,
+					"pictureFormat": "scaled",
+					"picture": "Images/Imagen100.gif"
+				},
+				"listaPeriodos": {
+					"type": "list",
+					"top": 55,
+					"left": 0,
+					"width": 264,
+					"height": 425,
+					"list": {
+						"$ref": "/SOURCES/lists.json#/0_dummyList"
+					},
+					"hideFocusRing": true,
+					"scrollbarVertical": "hidden",
+					"scrollbarHorizontal": "hidden",
+					"stroke": "#555555",
+					"styleSheet": "Plain - 13",
+					"borderStyle": "none",
+					"method": "ObjectMethods/listaPeriodos.4dm",
+					"events": [
+						"onClick",
+						"onSelectionChange"
+					]
+				},
+				"chkBox_IncidePctAsistencia": {
+					"type": "checkbox",
+					"top": 55,
+					"left": 730,
+					"width": 264,
+					"height": 19,
+					"text": "Inciden en el porcentaje de asistencia",
+					"styleSheet": "Medium - 13",
+					"stroke": "#555555",
+					"focusable": false,
+					"method": "ObjectMethods/chkBox_IncidePctAsistencia.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"listaSesiones": {
+					"type": "listbox",
+					"top": 80,
+					"left": 264,
+					"width": 733,
+					"height": 516,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"hideFocusRing": true,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"fill": "#FFFFFF",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"method": "ObjectMethods/listaSesiones.4dm",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onColumnResize"
+					],
+					"columns": [
+						{
+							"name": "profesor",
+							"width": 190,
+							"minWidth": 190,
+							"maxWidth": 190,
+							"enterable": false,
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "titulo1",
+								"text": "Profesor",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "asignatura",
+							"width": 400,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Titulo2",
+								"text": "Asignatura",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "fecha",
+							"width": 88,
+							"minWidth": 88,
+							"maxWidth": 88,
+							"enterable": false,
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título6",
+								"text": "Fecha",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "hora",
+							"width": 41,
+							"minWidth": 41,
+							"maxWidth": 41,
+							"enterable": false,
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Titulo7",
+								"text": "Hora",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "nivel",
+							"width": 105,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "titulo3",
+								"text": "Nivel",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "curso",
+							"width": 75,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "titulo4",
+								"text": "Curso",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "numeroNivel",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título5",
+								"text": "numeroNivel",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "idProfesor",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título9",
+								"text": "ID Profesor",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "email",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título8",
+								"text": "email",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"fechasDesde": {
+					"type": "button",
+					"top": 481,
+					"left": 24,
+					"width": 220,
+					"height": 20,
+					"visibility": "hidden",
+					"styleSheet": "Plain - 13",
+					"icon": "/RESOURCES/IconCalendar.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "custom",
+					"customOffset": 15,
+					"method": "ObjectMethods/fechasDesde.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"fechasHasta": {
+					"type": "button",
+					"top": 511,
+					"left": 24,
+					"width": 220,
+					"height": 20,
+					"visibility": "hidden",
+					"styleSheet": "Plain - 13",
+					"icon": "/RESOURCES/IconCalendar.png",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "custom",
+					"customOffset": 15,
+					"method": "ObjectMethods/fechasHasta.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"sinAsistencia": {
+					"type": "button",
+					"top": 57,
+					"left": 264,
+					"width": 214,
+					"height": 18,
+					"shortcutKey": "[Esc]",
+					"styleSheet": "Medium - 13",
+					"stroke": "#555555",
+					"text": "Sesiones sin registro de asistencia",
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Línea12": {
+					"type": "line",
+					"top": 80,
+					"left": 263,
+					"width": 755,
+					"sizingX": "grow",
+					"stroke": "#AAAAAA"
+				},
+				"Línea": {
+					"type": "line",
+					"top": 50,
+					"left": 263,
+					"width": 1,
+					"height": 555,
+					"sizingY": "grow",
+					"stroke": "#AAAAAA",
+					"startPoint": "bottomLeft"
+				},
+				"Línea1": {
+					"type": "line",
+					"top": 899,
+					"left": 516,
+					"width": 11,
+					"height": 13
+				}
+			}
+		}
+	]
+}

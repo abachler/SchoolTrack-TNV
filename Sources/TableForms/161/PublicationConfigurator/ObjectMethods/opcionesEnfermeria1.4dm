@@ -1,0 +1,1 @@
+SN3_SetCheckByChecks (->cb_PublicarEnfermeria;"|";->cb_PublicarVisitas;->cb_PublicarCM)

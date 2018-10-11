@@ -1,0 +1,1 @@
+VS_SaveTableProperties (vtXS_CountryCode;vtXS_LangageCode)

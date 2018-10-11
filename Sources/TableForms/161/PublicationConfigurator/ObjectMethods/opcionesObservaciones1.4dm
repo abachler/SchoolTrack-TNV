@@ -1,0 +1,1 @@
+SN3_SetCheckByChecks (->cb_PublicarObservaciones;"|";->cb_PublicarObsPJ;->cb_PublicarObsAsignaturas)

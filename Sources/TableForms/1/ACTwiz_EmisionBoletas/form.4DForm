@@ -1,0 +1,1290 @@
+﻿{
+	"inheritedForm": "XS_MASTER_WZDDialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 626,
+	"height": 407,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"emitir27": {
+					"type": "text",
+					"top": 4,
+					"left": 161,
+					"width": 382,
+					"height": 44,
+					"stroke": "#FFFFFF",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Asistente para la Emision de Documentos Tributarios"
+				},
+				"Variable3": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 554,
+					"width": 20,
+					"height": 20,
+					"dataSource": "bPrev",
+					"shortcutKey": "[left arrow]",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 594,
+					"width": 20,
+					"height": 20,
+					"dataSource": "bNext",
+					"shortcutKey": "[right arrow]",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 479,
+					"left": 28,
+					"width": 20,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "Nueva Variable501",
+					"shortcutKey": "+",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 442,
+					"left": 149,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable255": {
+					"type": "input",
+					"top": 378,
+					"left": 576,
+					"width": 17,
+					"height": 11,
+					"dataSource": "vi_PageNumber",
+					"fill": "transparent",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable11": {
+					"type": "button",
+					"top": 479,
+					"left": 246,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bTrap",
+					"shortcutKey": "[Enter]",
+					"text": "Cancelar",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 474,
+					"left": 439,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 417,
+					"left": 255,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"emitir26": {
+					"type": "text",
+					"top": 81,
+					"left": 170,
+					"width": 418,
+					"height": 171,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Este asistente le guiará en el proceso de emisión de documentos tributarios.\r\r\rLos documentos a emitir serán aquellos correspondientes a la categoría definida en la ficha del apoderado de cuentas. Si éste no tuviera una categoría definida se ocupará la categoría por defecto definida en Configuración/Documentos Tributarios.\r\rDurante el proceso de emisión el sistema automáticamente separará los montos afectos y exentos de IVA y emitirá documentos de acuerdo a la configuración de la categoría."
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 288,
+					"left": 170,
+					"width": 144,
+					"height": 13,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Fecha de Emisión:"
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 288,
+					"left": 306,
+					"width": 160,
+					"height": 13,
+					"dataSource": "vtACT_FEmisionBol",
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9##/##/####",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"fecha2": {
+					"type": "pictureButton",
+					"top": 286,
+					"left": 469,
+					"width": 17,
+					"height": 16,
+					"dataSource": "bCalendar1",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/fecha2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"FVenc0": {
+					"type": "text",
+					"top": 308,
+					"left": 170,
+					"width": 144,
+					"height": 13,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Fecha de Vencimiento:"
+				},
+				"FVenc1": {
+					"type": "input",
+					"top": 308,
+					"left": 306,
+					"width": 160,
+					"height": 13,
+					"dataSource": "vtACT_FVencimientoBol",
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9##/##/####",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/FVenc1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"FVenc2": {
+					"type": "pictureButton",
+					"top": 306,
+					"left": 469,
+					"width": 17,
+					"height": 16,
+					"dataSource": "bCalendar1",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/FVenc2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto8": {
+					"type": "text",
+					"top": 79,
+					"left": 9,
+					"width": 143,
+					"height": 242,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Determine si desea emitir documentos tributarios o recibos, o si desea reemplzar recibos emitidos anteriormente.\r\rPuede indicar, además, si desea ocultar los ajustes de impresión."
+				},
+				"Texto9": {
+					"type": "text",
+					"top": 442,
+					"left": 29,
+					"width": 227,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": ".Lucida Grande UI",
+					"fontSize": 12,
+					"text": "Tipo de accion"
+				},
+				"Texto10": {
+					"type": "text",
+					"top": 52,
+					"left": 163,
+					"width": 278,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Documentos Tributarios o Recibos"
+				},
+				"b1": {
+					"type": "radio",
+					"top": 117,
+					"left": 184,
+					"width": 352,
+					"height": 18,
+					"dataSource": "b1",
+					"text": "Emitir e imprimir documentos tributarios",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto11": {
+					"type": "text",
+					"top": 134,
+					"left": 208,
+					"width": 314,
+					"height": 33,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Emite documentos tributarios de acuerdo con lo indicado en la ficha del apoderado o usando la configuración por defecto si el apoderado no tuviera especificada una categoría de documentos tributarios."
+				},
+				"Variable10": {
+					"type": "checkbox",
+					"top": 186,
+					"left": 208,
+					"width": 240,
+					"height": 14,
+					"dataSource": "bHidePrintSettings",
+					"text": "Ocultar ajustes de impresión antes de imprimir",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"b3": {
+					"type": "radio",
+					"top": 506,
+					"left": 333,
+					"width": 352,
+					"height": 18,
+					"dataSource": "b3",
+					"text": "Reemplazar recibos",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 523,
+					"left": 357,
+					"width": 314,
+					"height": 33,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Reemplaza recibos por documentos tributarios de acuerdo a la especificación del apoderado. Si el apoderado no especifica una categoría se usará la definida por defecto en Configuración/Documentos Tributarios."
+				},
+				"b2": {
+					"type": "radio",
+					"top": 446,
+					"left": 333,
+					"width": 352,
+					"height": 18,
+					"dataSource": "b2",
+					"text": "Emitir e imprimir recibos",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 463,
+					"left": 357,
+					"width": 314,
+					"height": 33,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Emite recibos independientemente de la especificación del apoderado. Los recibos pueden ser reemplazados por documentos tributarios posteriormente."
+				},
+				"bGenerarCFDImx_0": {
+					"type": "checkbox",
+					"top": 240,
+					"left": 184,
+					"width": 240,
+					"height": 20,
+					"dataSource": "bGenerarCFDI",
+					"text": "Generar archivos CFDI al emitir los documentos",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/bGenerarCFDImx_0.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bGenerarCFDImx_2": {
+					"type": "text",
+					"top": 179,
+					"left": 9,
+					"width": 143,
+					"height": 102,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Además es posible definir si desea o no generar los archivos de texto para los comprobantes fiscales digitales marcando la opción correspondiente."
+				}
+			}
+		},
+		{
+			"objects": {
+				"emitir35": {
+					"type": "text",
+					"top": 74,
+					"left": 9,
+					"width": 143,
+					"height": 270,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Determine para cuáles registros desea realizar la emisión.\r\r• Si llamó este asistente desde apoderados, se buscarán los avisos de cobranza a partir de los apoderados seleccionados.\r\r• Si llamó este asistente desde pagos, se emitirán documentos para todos aquellos pagos que no tienen un documento tributario asociado.\r\r• Si llamó este asistente desde avisos de cobranza, los documentos tributarios serán emitidos directamente.\r\rUna vez que usted realice su selección, el sistema determinará, dentro de los registros que usted señale, cuales y que montos se deben documentar."
+				},
+				"emitir36": {
+					"type": "text",
+					"top": 52,
+					"left": 163,
+					"width": 278,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Para los siguientes registros..."
+				},
+				"f1": {
+					"type": "radio",
+					"top": 117,
+					"left": 184,
+					"width": 290,
+					"height": 17,
+					"dataSource": "f1",
+					"text": "Los seleccionados en la lista",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/f1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Alumnos1": {
+					"type": "text",
+					"top": 134,
+					"left": 194,
+					"width": 375,
+					"height": 33,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "La emisión se realizará para los registros seleccionados dentro de la lista."
+				},
+				"Variable23": {
+					"type": "input",
+					"top": 117,
+					"left": 480,
+					"width": 117,
+					"height": 11,
+					"dataSource": "viACT_registros1",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"stroke": "#AAAAAA",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "(# ###0 registros)",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"f2": {
+					"type": "radio",
+					"top": 177,
+					"left": 184,
+					"width": 231,
+					"height": 17,
+					"dataSource": "f2",
+					"text": "Todos los de la lista",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/f2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Alumnos2": {
+					"type": "text",
+					"top": 194,
+					"left": 195,
+					"width": 375,
+					"height": 22,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "La emisión se realizará para todos los registros de la lista."
+				},
+				"Variable24": {
+					"type": "input",
+					"top": 177,
+					"left": 480,
+					"width": 117,
+					"height": 11,
+					"dataSource": "viACT_registros2",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"stroke": "#AAAAAA",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "(# ###0 registros)",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"f3": {
+					"type": "radio",
+					"top": 467,
+					"left": 184,
+					"width": 211,
+					"height": 17,
+					"dataSource": "f3",
+					"text": "Todos los de la base de datos",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"focusable": false,
+					"method": "ObjectMethods/f3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto27": {
+					"type": "text",
+					"top": 484,
+					"left": 194,
+					"width": 320,
+					"height": 22,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "La emisión se realizará para todos los registros de la base de datos."
+				},
+				"Variable25": {
+					"type": "input",
+					"top": 467,
+					"left": 480,
+					"width": 117,
+					"height": 11,
+					"dataSource": "viACT_registros3",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"stroke": "#AAAAAA",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "(# ###0 registros)",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"acumular": {
+					"type": "radio",
+					"top": 151,
+					"left": 184,
+					"width": 151,
+					"height": 17,
+					"dataSource": "h1",
+					"text": "Documentos por período",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/acumular.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"acumular1": {
+					"type": "radio",
+					"top": 210,
+					"left": 192,
+					"width": 150,
+					"height": 15,
+					"dataSource": "s1",
+					"text": "Por mes",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"acumular2": {
+					"type": "radio",
+					"top": 210,
+					"left": 345,
+					"width": 150,
+					"height": 15,
+					"dataSource": "s2",
+					"text": "Por año",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"avisos3": {
+					"type": "text",
+					"top": 79,
+					"left": 9,
+					"width": 143,
+					"height": 253,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "En esta página deberá determinar como agregar avisos de cobranza en documentos tributarios."
+				},
+				"emitir21": {
+					"type": "text",
+					"top": 52,
+					"left": 163,
+					"width": 278,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Opciones de acumulación"
+				},
+				"acumular3": {
+					"type": "radio",
+					"top": 239,
+					"left": 184,
+					"width": 290,
+					"height": 17,
+					"dataSource": "h2",
+					"text": "Documentos por el total",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/acumular3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"acumular4": {
+					"type": "radio",
+					"top": 296,
+					"left": 184,
+					"width": 231,
+					"height": 17,
+					"dataSource": "h3",
+					"text": "Documento por aviso de cobranza",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/acumular4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"avisos2": {
+					"type": "line",
+					"top": 115,
+					"left": 184,
+					"width": 408
+				},
+				"pagosexp": {
+					"type": "text",
+					"top": 79,
+					"left": 9,
+					"width": 143,
+					"height": 253,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "En esta página deberá determinar como agregar pagos en documentos tributarios."
+				},
+				"avisos4": {
+					"type": "line",
+					"top": 143,
+					"left": 184,
+					"width": 408
+				},
+				"pagos4": {
+					"type": "input",
+					"top": 168,
+					"left": 194,
+					"width": 376,
+					"height": 22,
+					"dataSource": "vt_pagos1",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"impagos3": {
+					"type": "input",
+					"top": 168,
+					"left": 194,
+					"width": 376,
+					"height": 38,
+					"dataSource": "vt_impagos",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"total3": {
+					"type": "input",
+					"top": 168,
+					"left": 194,
+					"width": 376,
+					"height": 36,
+					"dataSource": "vt_total",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"pagos1": {
+					"type": "input",
+					"top": 256,
+					"left": 194,
+					"width": 376,
+					"height": 22,
+					"dataSource": "vt_pagos2",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"impagos4": {
+					"type": "input",
+					"top": 256,
+					"left": 194,
+					"width": 376,
+					"height": 37,
+					"dataSource": "vt_impagos1",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"total4": {
+					"type": "input",
+					"top": 256,
+					"left": 194,
+					"width": 376,
+					"height": 22,
+					"dataSource": "vt_total1",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"pagos2": {
+					"type": "input",
+					"top": 313,
+					"left": 194,
+					"width": 376,
+					"height": 22,
+					"dataSource": "vt_pagos3",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"impagos1": {
+					"type": "input",
+					"top": 313,
+					"left": 194,
+					"width": 376,
+					"height": 38,
+					"dataSource": "vt_impagos2",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"total1": {
+					"type": "input",
+					"top": 313,
+					"left": 194,
+					"width": 376,
+					"height": 22,
+					"dataSource": "vt_total2",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"avisos": {
+					"type": "radio",
+					"top": 88,
+					"left": 432,
+					"width": 109,
+					"height": 16,
+					"dataSource": "i1",
+					"text": "Montos impagos",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/avisos.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"avisos1": {
+					"type": "radio",
+					"top": 88,
+					"left": 184,
+					"width": 239,
+					"height": 26,
+					"dataSource": "i2",
+					"text": "Total del aviso (a excepción de aquellos pagos ya documentados)",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/avisos1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"emitirX11": {
+					"type": "radio",
+					"top": 121,
+					"left": 184,
+					"width": 91,
+					"height": 16,
+					"dataSource": "e1",
+					"text": "Por apoderado",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/emitirX11.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"emitirX22": {
+					"type": "radio",
+					"top": 121,
+					"left": 284,
+					"width": 71,
+					"height": 16,
+					"dataSource": "e2",
+					"text": "Por cuenta",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/emitirX22.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"emitirX33": {
+					"type": "radio",
+					"top": 121,
+					"left": 364,
+					"width": 91,
+					"height": 16,
+					"dataSource": "e3",
+					"text": "Para tercero",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/emitirX33.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"emitirX5": {
+					"type": "radio",
+					"top": 121,
+					"left": 444,
+					"width": 131,
+					"height": 16,
+					"dataSource": "e4",
+					"text": "Para público general",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/emitirX5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable65": {
+					"type": "button",
+					"top": 374,
+					"left": 315,
+					"width": 148,
+					"height": 20,
+					"dataSource": "bImprimir",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Terminar sin imprimir",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 374,
+					"left": 472,
+					"width": 148,
+					"height": 20,
+					"dataSource": "bImprimir",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Imprimir documentos",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 443,
+					"left": 71,
+					"width": 227,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": ".Lucida Grande UI",
+					"fontSize": 12,
+					"text": "confirmación"
+				},
+				"emitir28": {
+					"type": "text",
+					"top": 79,
+					"left": 9,
+					"width": 143,
+					"height": 242,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "AccountTrack está listo para la impresión de documentos tributarios.\r\rHaga clic en el botón Imprimir Documentos para iniciar el proceso de impresión.\r\rSi desea imprimir los documentos tributarios más tarde haga clic en el botón Terminar sin imprimir. De esta forma los documentos aparecerán en la lengueta Documentos Tributarios del explorador, pero el proceso de impresión no se llevará a cabo."
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 52,
+					"left": 163,
+					"width": 278,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Impresión"
+				},
+				"xALP_Docs2Print": {
+					"type": "plugin",
+					"top": 83,
+					"left": 167,
+					"width": 447,
+					"height": 269,
+					"dataSource": "xALP_Docs2Print",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/xALP_Docs2Print.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 441,
+					"left": 168,
+					"width": 138,
+					"height": 20,
+					"dataSource": "bEmitir",
+					"text": "Imprimir resumen",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bGenerarCFDImx_1": {
+					"type": "input",
+					"top": 352,
+					"left": 166,
+					"width": 448,
+					"height": 11,
+					"dataSource": "vtACT_ErrorStringForm",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

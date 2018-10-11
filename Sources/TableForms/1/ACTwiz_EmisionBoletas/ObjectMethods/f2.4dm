@@ -1,0 +1,1 @@
+COPY SET:C600("Selection2";"Selection")

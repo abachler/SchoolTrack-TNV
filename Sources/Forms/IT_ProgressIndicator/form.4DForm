@@ -1,0 +1,256 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Rect1",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onOutsideCall",
+		"onCloseBox",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Rect1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 542,
+					"height": 225,
+					"stroke": "#FFFFFF"
+				},
+				"Picture23": {
+					"type": "picture",
+					"top": 2,
+					"left": 3,
+					"width": 125,
+					"height": 75,
+					"pictureFormat": "tiled"
+				}
+			}
+		},
+		{
+			"objects": {
+				"vt_Message1": {
+					"type": "input",
+					"top": 13,
+					"left": 166,
+					"width": 356,
+					"height": 28,
+					"dataSource": "vt_ProgressMessage1",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Termómetro1": {
+					"type": "progress",
+					"top": 46,
+					"left": 166,
+					"width": 356,
+					"height": 12,
+					"dataSource": "vr_Progress1",
+					"continuousExecution": false,
+					"min": 0,
+					"max": 100,
+					"graduationStep": 1,
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vt_Message2": {
+					"type": "input",
+					"top": 96,
+					"left": 166,
+					"width": 356,
+					"height": 28,
+					"dataSource": "vt_ProgressMessage2",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Termómetro2": {
+					"type": "progress",
+					"top": 129,
+					"left": 166,
+					"width": 356,
+					"height": 12,
+					"dataSource": "vr_Progress2",
+					"continuousExecution": false,
+					"min": 0,
+					"max": 100,
+					"graduationStep": 1,
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vt_Message3": {
+					"type": "input",
+					"top": 158,
+					"left": 166,
+					"width": 356,
+					"height": 28,
+					"dataSource": "vt_ProgressMessage3",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Termómetro3": {
+					"type": "progress",
+					"top": 191,
+					"left": 166,
+					"width": 356,
+					"height": 12,
+					"dataSource": "vr_Progress3",
+					"continuousExecution": false,
+					"min": 0,
+					"max": 100,
+					"graduationStep": 1,
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable24": {
+					"type": "input",
+					"top": 64,
+					"left": 272,
+					"width": 59,
+					"height": 14,
+					"dataSource": "vElapsed",
+					"dataSourceTypeHint": "time",
+					"fill": "#FFFFFF",
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"timeFormat": "hh_mm_ss",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable23": {
+					"type": "input",
+					"top": 63,
+					"left": 435,
+					"width": 87,
+					"height": 14,
+					"dataSource": "vStrRemain",
+					"dataSourceTypeHint": "time",
+					"fill": "#FFFFFF",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"timeFormat": "hh_mm_ss",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text6": {
+					"type": "text",
+					"top": 63,
+					"left": 335,
+					"width": 96,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "restante estimado:"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 64,
+					"left": 166,
+					"width": 101,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Tiempo transcurrido:"
+				},
+				"Línea": {
+					"type": "line",
+					"top": 86,
+					"left": 167,
+					"width": 355,
+					"stroke": "#DDDDDD"
+				}
+			}
+		}
+	]
+}

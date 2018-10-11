@@ -1,0 +1,2009 @@
+﻿{
+	"windowTitle": ":21010,86",
+	"inheritedForm": "XS_MASTER_ConfigDialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Rectángulo1",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 44,
+					"left": 237,
+					"width": 623,
+					"height": 558,
+					"fill": "#EEEEEE",
+					"stroke": "#FFFFFF"
+				},
+				"hl_PaginasNiveles": {
+					"type": "tab",
+					"top": 49,
+					"left": 245,
+					"width": 607,
+					"height": 545,
+					"dataSource": "hl_PaginasNiveles",
+					"dataSourceTypeHint": "arrayText",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"method": "ObjectMethods/hl_PaginasNiveles.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"lb_ListaNiveles": {
+					"type": "listbox",
+					"top": 44,
+					"left": 0,
+					"width": 237,
+					"height": 536,
+					"dataSource": "lb_ListaNiveles",
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"rowStrokeSource": "aTextRGBColors",
+					"rowStyleSource": "aTextStyles",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"method": "ObjectMethods/lb_ListaNiveles.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "Columna1",
+							"dataSource": "<>aNivel",
+							"width": 221,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDoubleClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "vtLB_TitleC1",
+								"text": "Niveles",
+								"dataSource": "vtLB_TitleC1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Columna2",
+							"dataSource": "<>aNivNo",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título2",
+								"text": "Título2",
+								"dataSource": "Título2",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"Rectángulo2": {
+					"type": "rectangle",
+					"top": 580,
+					"left": 0,
+					"width": 238,
+					"height": 22,
+					"stroke": "#AAAAAA"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 586,
+					"left": 65,
+					"width": 46,
+					"height": 16,
+					"textAlign": "center",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"text": "Activo"
+				},
+				"Texto10": {
+					"type": "text",
+					"top": 586,
+					"left": 127,
+					"width": 46,
+					"height": 16,
+					"textAlign": "center",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Regular"
+				},
+				"Texto11": {
+					"type": "text",
+					"top": 586,
+					"left": 189,
+					"width": 46,
+					"height": 16,
+					"textAlign": "center",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Oficial"
+				},
+				"Texto12": {
+					"type": "text",
+					"top": 586,
+					"left": 4,
+					"width": 46,
+					"height": 16,
+					"stroke": "#AAAAAA",
+					"textAlign": "center",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"text": "Inactivo"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 75,
+					"left": 660,
+					"width": 47,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "ID Nivel:"
+				},
+				"Campo3": {
+					"type": "input",
+					"top": 75,
+					"left": 717,
+					"width": 40,
+					"height": 16,
+					"dataSource": "[xxSTR_Niveles:6]NoNivel:5",
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"cerrar": {
+					"type": "button",
+					"top": 685,
+					"left": 18,
+					"width": 217,
+					"height": 24,
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cerrar (CTRL/CMD-Escape)",
+					"method": "ObjectMethods/cerrar.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Group Box4": {
+					"type": "groupBox",
+					"top": 369,
+					"left": 300,
+					"width": 172,
+					"height": 159,
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Logo específico al nivel"
+				},
+				"nombreNivel": {
+					"type": "input",
+					"top": 106,
+					"left": 449,
+					"width": 257,
+					"height": 16,
+					"dataSource": "[xxSTR_Niveles:6]Nivel:1",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/nombreNivel.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"Field30": {
+					"type": "input",
+					"top": 133,
+					"left": 449,
+					"width": 257,
+					"height": 16,
+					"dataSource": "[xxSTR_Niveles:6]Nombre_Oficial_NIvel:21",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field30.4dm",
+					"events": [
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field24": {
+					"type": "input",
+					"top": 161,
+					"left": 449,
+					"width": 244,
+					"height": 16,
+					"dataSource": "[xxSTR_Niveles:6]Sección:9",
+					"stroke": "#0000FF",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"abreviacionInterna": {
+					"type": "input",
+					"top": 192,
+					"left": 478,
+					"width": 39,
+					"height": 16,
+					"dataSource": "[xxSTR_Niveles:6]Abreviatura:19",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "~\"A-Z;0-9\"",
+					"method": "ObjectMethods/abreviacionInterna.4dm",
+					"events": [
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text59": {
+					"type": "text",
+					"top": 161,
+					"left": 300,
+					"width": 155,
+					"height": 16,
+					"textAlign": "left",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"text": "Nombre del ciclo o sección:"
+				},
+				"Text61": {
+					"type": "text",
+					"top": 192,
+					"left": 300,
+					"width": 165,
+					"height": 16,
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"text": "Abreviaturas del nivel, Interna:"
+				},
+				"Text64": {
+					"type": "text",
+					"top": 702,
+					"left": 359,
+					"width": 67,
+					"height": 15,
+					"styleSheet": "Plain - 12",
+					"text": "Responsable:"
+				},
+				"Text65": {
+					"type": "text",
+					"top": 133,
+					"left": 300,
+					"width": 144,
+					"height": 16,
+					"textAlign": "left",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"text": "Nombre oficial del nivel:"
+				},
+				"Texto612": {
+					"type": "text",
+					"top": 106,
+					"left": 300,
+					"width": 147,
+					"height": 16,
+					"textAlign": "left",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"text": "Nombre interno del nivel:"
+				},
+				"abreviacionOficial": {
+					"type": "input",
+					"top": 192,
+					"left": 575,
+					"width": 39,
+					"height": 16,
+					"dataSource": "[xxSTR_Niveles:6]Abreviatura_Oficial:35",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "~\"A-Z;0-9;º;o\"",
+					"method": "ObjectMethods/abreviacionOficial.4dm",
+					"events": [
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field29": {
+					"type": "input",
+					"top": 703,
+					"left": 435,
+					"width": 302,
+					"height": 15,
+					"dataSource": "[xxSTR_Niveles:6]Director:13",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo81": {
+					"type": "input",
+					"top": 392,
+					"left": 325,
+					"width": 128,
+					"height": 128,
+					"dataSource": "[xxSTR_Niveles:6]Logo:49",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Campo81.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onGettingFocus",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto615": {
+					"type": "text",
+					"top": 192,
+					"left": 528,
+					"width": 40,
+					"height": 16,
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"text": "Oficial:"
+				},
+				"bHist": {
+					"type": "button",
+					"top": 502,
+					"left": 647,
+					"width": 110,
+					"height": 18,
+					"dataSource": "bHist",
+					"text": "Años anteriores",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/bHist.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 218,
+					"left": 300,
+					"width": 144,
+					"height": 16,
+					"textAlign": "left",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"text": "Fecha de inicio del ciclo:"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 218,
+					"left": 431,
+					"width": 77,
+					"height": 16,
+					"dataSource": "[xxSTR_Niveles:6]FechaInicio:29",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 218,
+					"left": 517,
+					"width": 100,
+					"height": 16,
+					"textAlign": "left",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"text": "Fecha de término:"
+				},
+				"Field2": {
+					"type": "input",
+					"top": 218,
+					"left": 622,
+					"width": 77,
+					"height": 16,
+					"dataSource": "[xxSTR_Niveles:6]FechaTermino:34",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"seleccionProfesor": {
+					"type": "button",
+					"top": 703,
+					"left": 739,
+					"width": 18,
+					"height": 15,
+					"styleSheet": "Plain - 12",
+					"textDecoration": "underline",
+					"stroke": "#0601FB",
+					"style": "custom",
+					"method": "ObjectMethods/seleccionProfesor.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"nombreSeccion": {
+					"type": "button",
+					"top": 160,
+					"left": 695,
+					"width": 14,
+					"height": 17,
+					"styleSheet": "Plain - 12",
+					"style": "custom",
+					"method": "ObjectMethods/nombreSeccion.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"NIvelSubAnual": {
+					"type": "input",
+					"top": 383,
+					"left": 485,
+					"width": 270,
+					"height": 28,
+					"dataSource": "[xxSTR_Niveles:6]Es_Nivel_SubAnual:50",
+					"fill": "transparent",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "Permitir a los alumnos cursar el nivel siguiente durante el mismo año escolar",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/NIvelSubAnual.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"ConflictoFechasPeriodos": {
+					"type": "text",
+					"top": 415,
+					"left": 507,
+					"width": 230,
+					"height": 88,
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"fontStyle": "italic",
+					"text": "Opción inactiva porque la configuración de períodos del nivel superior establece fechas de inico y término del ciclo en conflicto con las fechas establecidas para este nivel, o bien porque el nivel siguiente no está activado."
+				},
+				"Botón imagen1": {
+					"type": "pictureButton",
+					"top": 383,
+					"left": 745,
+					"width": 20,
+					"height": 20,
+					"dataSource": "Botón imagen1",
+					"columnCount": 1,
+					"rowCount": 4,
+					"loopBackToFirstFrame": true,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"method": "ObjectMethods/Botón imagen1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"List Box": {
+					"type": "listbox",
+					"top": 244,
+					"left": 293,
+					"width": 414,
+					"height": 112,
+					"dataSource": "lb_responsables",
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"alternateFill": "#F3F6FA",
+					"rowStyleSource": "alSTWA2_EstiloLB",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					],
+					"columns": [
+						{
+							"name": "col_funcionario",
+							"dataSource": "at_funcionarioNombre",
+							"width": 257,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#F3F6FA",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDoubleClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/col_funcionario.4dm",
+							"header": {
+								"name": "t_responsable",
+								"text": "Responsable",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "col_cargo",
+							"dataSource": "at_cargoFuncionario",
+							"width": 142,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#F3F6FA",
+							"textAlign": "left",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDoubleClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/col_cargo.4dm",
+							"header": {
+								"name": "t_cargo",
+								"text": "Cargo",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"buttonOrientacion": {
+					"type": "pictureButton",
+					"top": 244,
+					"left": 737,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bAddCons",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/buttonOrientacion.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"buttons(2)": {
+					"type": "pictureButton",
+					"top": 244,
+					"left": 715,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bDelLine",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/buttons(2).4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"GroupBox_Evaluacion": {
+					"type": "groupBox",
+					"top": 87,
+					"left": 269,
+					"width": 569,
+					"height": 295,
+					"stroke": "#000000",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Evaluación"
+				},
+				"Variable6361": {
+					"type": "dropdown",
+					"top": 114,
+					"left": 447,
+					"width": 384,
+					"height": 20,
+					"dataSource": "aEvStyleName",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"method": "ObjectMethods/Variable6361.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable126": {
+					"type": "dropdown",
+					"top": 224,
+					"left": 445,
+					"width": 386,
+					"height": 20,
+					"dataSource": "aStyleNames",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"method": "ObjectMethods/Variable126.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Campo1": {
+					"type": "input",
+					"top": 359,
+					"left": 287,
+					"width": 81,
+					"height": 16,
+					"dataSource": "[xxSTR_Niveles:6]PromediosGeneralesTruncados:11",
+					"fill": "transparent",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "Truncados",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Line9": {
+					"type": "line",
+					"top": 215,
+					"left": 270,
+					"width": 567,
+					"stroke": "#AAAAAA"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 285,
+					"left": 270,
+					"width": 567,
+					"stroke": "#AAAAAA"
+				},
+				"Texto19": {
+					"type": "text",
+					"top": 292,
+					"left": 274,
+					"width": 423,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Modo de calculo de promedios generales de alumnos:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 311,
+					"left": 288,
+					"width": 53,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"text": "Interno:"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 333,
+					"left": 288,
+					"width": 53,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"text": "Oficial:"
+				},
+				"Menú jerárquico desplegable1": {
+					"type": "dropdown",
+					"top": 308,
+					"left": 350,
+					"width": 472,
+					"height": 18,
+					"dataSource": "hl_ModoPromedioInterno",
+					"dataSourceTypeHint": "integer",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"method": "ObjectMethods/Menú jerárquico desplegable1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Menú jerárquico desplegable2": {
+					"type": "dropdown",
+					"top": 330,
+					"left": 350,
+					"width": 472,
+					"height": 18,
+					"dataSource": "hl_ModoPromedioOficial",
+					"dataSourceTypeHint": "integer",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"method": "ObjectMethods/Menú jerárquico desplegable2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"promocion": {
+					"type": "groupBox",
+					"top": 391,
+					"left": 269,
+					"width": 567,
+					"height": 174,
+					"stroke": "#000000",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Requisitos para promoción"
+				},
+				"promocion1": {
+					"type": "radio",
+					"top": 421,
+					"left": 281,
+					"width": 162,
+					"height": 19,
+					"dataSource": "r2",
+					"text": "Promoción automática",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"method": "ObjectMethods/promocion1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"promocion2": {
+					"type": "radio",
+					"top": 422,
+					"left": 458,
+					"width": 222,
+					"height": 18,
+					"dataSource": "r1",
+					"text": "Promoción condicionada a:",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"method": "ObjectMethods/promocion2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"promocion14": {
+					"type": "input",
+					"top": 517,
+					"left": 486,
+					"width": 27,
+					"height": 16,
+					"dataSource": "[xxSTR_Niveles:6]Minimo_asistencia:24",
+					"fill": "#FFFFFF",
+					"stroke": "#000099",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/promocion14.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"promocion15": {
+					"type": "input",
+					"top": 538,
+					"left": 292,
+					"width": 373,
+					"height": 16,
+					"dataSource": "[xxSTR_Niveles:6]AutoPromo_inasistencia:32",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "Por defecto, promover alumnos con asistencia insuficiente",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/promocion15.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"promocion4": {
+					"type": "text",
+					"top": 454,
+					"left": 333,
+					"width": 183,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"text": "sin asignaturas reprobadas"
+				},
+				"promocion7": {
+					"type": "text",
+					"top": 454,
+					"left": 550,
+					"width": 181,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"text": "y UNA asignatura reprobada"
+				},
+				"promocion13": {
+					"type": "text",
+					"top": 517,
+					"left": 281,
+					"width": 196,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"text": "Porcentaje de asistencia requerido:"
+				},
+				"promocion9": {
+					"type": "text",
+					"top": 476,
+					"left": 333,
+					"width": 186,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"text": "y DOS asignaturas reprobadas"
+				},
+				"promocion12": {
+					"type": "text",
+					"top": 476,
+					"left": 553,
+					"width": 173,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"text": "y TRES asignaturas reprobadas"
+				},
+				"promocion10": {
+					"type": "text",
+					"top": 477,
+					"left": 505,
+					"width": 12,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"text": "o"
+				},
+				"promocion16": {
+					"type": "line",
+					"top": 505,
+					"left": 269,
+					"width": 566,
+					"stroke": "#AAAAAA"
+				},
+				"promocion5": {
+					"type": "text",
+					"top": 454,
+					"left": 492,
+					"width": 12,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"text": "o"
+				},
+				"co_TextoPromocion": {
+					"type": "text",
+					"top": 620,
+					"left": 251,
+					"width": 441,
+					"height": 61,
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Por defecto todos los alumnos son promovidos al ciclo escolar siguiente.\r\rLa institución puede reprobar o promover a los alumnos manualmente en la página Situación Final del formulario Cursos."
+				},
+				"Texto": {
+					"type": "text",
+					"top": 620,
+					"left": 11,
+					"width": 238,
+					"height": 46,
+					"stroke": "#EE0000",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Texto promoción Colombia  --->>\r¡¡¡ NO BORRAR !!!!"
+				},
+				"promocion3": {
+					"type": "input",
+					"top": 454,
+					"left": 298,
+					"width": 28,
+					"height": 16,
+					"dataSource": "vs_Minimo0",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/promocion3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"promocion6": {
+					"type": "input",
+					"top": 454,
+					"left": 518,
+					"width": 28,
+					"height": 16,
+					"dataSource": "vs_Minimo1",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/promocion6.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"promocion8": {
+					"type": "input",
+					"top": 476,
+					"left": 298,
+					"width": 28,
+					"height": 16,
+					"dataSource": "vs_Minimo2",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/promocion8.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"promocion11": {
+					"type": "input",
+					"top": 476,
+					"left": 518,
+					"width": 28,
+					"height": 16,
+					"dataSource": "vs_Minimo3",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/promocion11.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1": {
+					"type": "radio",
+					"top": 160,
+					"left": 283,
+					"width": 526,
+					"height": 31,
+					"dataSource": "br_UseOfficialStyle",
+					"tooltip": "Los promedios oficiales son calculados en las asignaturas utilizando las propiedades y expresados en la escala de este estilo ",
+					"text": "Utilizar propiedades y expresar en la escala de este estilo",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "radio",
+					"top": 188,
+					"left": 283,
+					"width": 525,
+					"height": 22,
+					"dataSource": "br_UseSubjectStyle",
+					"tooltip": "Los promedios oficiales son calculados en las asignaturas utilizando las propiedades de los estilos de evaluación asignados a las asignaturas y convertidos a la escala de este estilo",
+					"text": "Utilizar propiedades de los estilos de las asignaturas y expresar en la escala de este estilo",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto20": {
+					"type": "text",
+					"top": 118,
+					"left": 274,
+					"width": 163,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"text": "Estilo de evaluación oficial:"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 228,
+					"left": 274,
+					"width": 168,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"text": "Estilo de evaluación interno:"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 251,
+					"left": 286,
+					"width": 545,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"text": "Los promedios internos son calculados utilizando las propiedas y expresados en la escala de este estilo"
+				},
+				"Texto21": {
+					"type": "text",
+					"top": 145,
+					"left": 274,
+					"width": 223,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"text": "Calculo de promedios oficiales:"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto2": {
+					"type": "text",
+					"top": 127,
+					"left": 300,
+					"width": 155,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"text": "Configuración de períodos:"
+				},
+				"Variable2": {
+					"type": "dropdown",
+					"top": 124,
+					"left": 459,
+					"width": 260,
+					"height": 20,
+					"dataSource": "hl_configuraciones",
+					"dataSourceTypeHint": "integer",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Group Box2": {
+					"type": "groupBox",
+					"top": 171,
+					"left": 299,
+					"width": 399,
+					"height": 109,
+					"stroke": "#000000",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": ":21010,201"
+				},
+				"Texto975": {
+					"type": "text",
+					"top": 205,
+					"left": 309,
+					"width": 169,
+					"height": 16,
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"text": "Modo de registro de asistencia:"
+				},
+				"Variable756": {
+					"type": "dropdown",
+					"top": 203,
+					"left": 476,
+					"width": 156,
+					"height": 18,
+					"dataSource": "at_AttendanceMode",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"method": "ObjectMethods/Variable756.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1000": {
+					"type": "text",
+					"top": 235,
+					"left": 309,
+					"width": 167,
+					"height": 16,
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"text": "Modo de registro de atrasos:"
+				},
+				"Variable774": {
+					"type": "dropdown",
+					"top": 233,
+					"left": 477,
+					"width": 77,
+					"height": 18,
+					"dataSource": "at_LatesMode",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"method": "ObjectMethods/Variable774.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 469,
+					"left": 329,
+					"width": 179,
+					"height": 18,
+					"dataSource": "bObservaciones",
+					"text": "Observaciones Evaluación",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable551": {
+					"type": "button",
+					"top": 470,
+					"left": 549,
+					"width": 149,
+					"height": 18,
+					"dataSource": "bSubjectOrder",
+					"text": "Orden de subsectores",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Variable551.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 281,
+					"left": 299,
+					"width": 400,
+					"height": 149,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Configuración de cantidad de eventos en calendario de asignaturas"
+				},
+				"ConflictoFechasPeriodos1": {
+					"type": "text",
+					"top": 430,
+					"left": 313,
+					"width": 379,
+					"height": 16,
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"fontStyle": "italic",
+					"text": "Para dejar el ingreso ilimitado de eventos, se debe agregar cero en cada casilla."
+				},
+				"EvtAsigbloqueo_LB": {
+					"type": "listbox",
+					"top": 307,
+					"left": 305,
+					"width": 389,
+					"height": 114,
+					"dataSource": "EvtAsigbloqueo_LB",
+					"movableRows": false,
+					"singleClickEdit": true,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"method": "ObjectMethods/EvtAsigbloqueo_LB.4dm",
+					"events": [
+						"onClick",
+						"onGettingFocus",
+						"onDataChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "at_EvtCalTipo",
+							"dataSource": "at_EvtCalTipo",
+							"width": 230,
+							"minWidth": 10,
+							"maxWidth": 230,
+							"resizable": false,
+							"enterable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "EvtAsigbloqueo_titulo1",
+								"text": "Encabezado1",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "al_EvtCalMaxDay",
+							"dataSource": "al_EvtCalMaxDay",
+							"width": 70,
+							"minWidth": 10,
+							"maxWidth": 70,
+							"resizable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "EvtAsigbloqueo_titulo2",
+								"text": "Encabezado2",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "al_EvtCalMaxWeek",
+							"dataSource": "al_EvtCalMaxWeek",
+							"width": 74,
+							"minWidth": 10,
+							"maxWidth": 74,
+							"resizable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "EvtAsigbloqueo_titulo3",
+								"text": "Encabezado3",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Campo4": {
+					"type": "input",
+					"top": 98,
+					"left": 314,
+					"width": 372,
+					"height": 16,
+					"dataSource": "[xxSTR_Niveles:6]EsNIvelActivo:30",
+					"fill": "transparent",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "Es Nivel Activo",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Campo4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 114,
+					"left": 338,
+					"width": 343,
+					"height": 110,
+					"stroke": "#EE0000",
+					"fontFamily": "Tahoma",
+					"fontSize": 10,
+					"fontWeight": "bold",
+					"text": "Sólo los niveles Activos aparecen en las listas seleccionables por los usuarios en la búsquedas y al momento de crear registros asociados a un nivel (cursos, asignaturas, etc.). \rSólo es posible importar alumnos en los niveles activos.\rInactivar un nivel no implica pérdida de información salvo al momento del cierre del año escolar ya que los alumnos de niveles inactivos no son promovidos ni se archiva la información relativa al año escolar corriente.\rUn nivel inactivo puede ser reactivado en cualquier momento."
+				},
+				"Campo5": {
+					"type": "input",
+					"top": 235,
+					"left": 314,
+					"width": 372,
+					"height": 16,
+					"dataSource": "[xxSTR_Niveles:6]EsNivelRegular:4",
+					"fill": "transparent",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "Es Nivel Regular",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Campo5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 251,
+					"left": 338,
+					"width": 343,
+					"height": 27,
+					"stroke": "#0000FF",
+					"fontFamily": "Tahoma",
+					"fontSize": 10,
+					"text": "Los alumnos que no cursan un nivel REGULAR no son considerados alumnos regulares de la institución. No serán considerados en la contabilización de alumnos en familias, en las búsquedas de hermanos mayores o menores, etc."
+				},
+				"Campo6": {
+					"type": "input",
+					"top": 295,
+					"left": 314,
+					"width": 372,
+					"height": 16,
+					"dataSource": "[xxSTR_Niveles:6]EsNivelOficial:15",
+					"fill": "transparent",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "Nivel Oficial",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Campo6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 314,
+					"left": 338,
+					"width": 343,
+					"height": 27,
+					"stroke": "#0000FF",
+					"fontFamily": "Tahoma",
+					"fontSize": 10,
+					"text": "Sólo los niveles oficiales son considerados en los procesos de generación de documentos oficiales destinados a los organismos gubernamentales, estaduales o distritales."
+				},
+				"Campo7": {
+					"type": "input",
+					"top": 360,
+					"left": 314,
+					"width": 372,
+					"height": 16,
+					"dataSource": "[xxSTR_Niveles:6]EsNivelSchoolNet:14",
+					"fill": "transparent",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "Nivel SchoolNet",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 375,
+					"left": 338,
+					"width": 343,
+					"height": 27,
+					"stroke": "#0000FF",
+					"fontFamily": "Tahoma",
+					"fontSize": 10,
+					"text": "Sólo los niveles SchoolNet pueden ser objeto de publicación en SchoolNet. La configuración de la información publicable para estos niveles debe establecerse en Configuración: SchoolNet"
+				},
+				"Campo8": {
+					"type": "input",
+					"top": 416,
+					"left": 314,
+					"width": 372,
+					"height": 16,
+					"dataSource": "[xxSTR_Niveles:6]EsNivelSchoolCenter:12",
+					"fill": "transparent",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "Nivel SchoolCenter",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 432,
+					"left": 338,
+					"width": 343,
+					"height": 14,
+					"stroke": "#0000FF",
+					"fontFamily": "Tahoma",
+					"fontSize": 10,
+					"text": "Sólo se enviará a SchoolCenter la información estadística de los niveles con este atributo seleccionado."
+				},
+				"Campo2": {
+					"type": "input",
+					"top": 462,
+					"left": 314,
+					"width": 372,
+					"height": 16,
+					"dataSource": "[xxSTR_Niveles:6]EsPostulable:45",
+					"fill": "transparent",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "En AdmissionTrack, los candidatos pueden postular a este nivel",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto9": {
+					"type": "text",
+					"top": 478,
+					"left": 338,
+					"width": 343,
+					"height": 14,
+					"stroke": "#0000FF",
+					"fontFamily": "Tahoma",
+					"fontSize": 10,
+					"text": "En AdmissionTrack, los candidatos sólo podrán postular a los niveles que tengan este atriibuto seleccionado"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto15": {
+					"type": "text",
+					"top": 171,
+					"left": 296,
+					"width": 116,
+					"height": 16,
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"text": ":21010,228"
+				},
+				"Texto16": {
+					"type": "text",
+					"top": 221,
+					"left": 296,
+					"width": 96,
+					"height": 16,
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"text": ":21010,229"
+				},
+				"Campo9": {
+					"type": "input",
+					"top": 171,
+					"left": 414,
+					"width": 62,
+					"height": 16,
+					"dataSource": "[xxSTR_Niveles:6]CHILE_CodigoDecretoEvaluacion:38",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Campo9.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo10": {
+					"type": "input",
+					"top": 195,
+					"left": 507,
+					"width": 63,
+					"height": 16,
+					"dataSource": "[xxSTR_Niveles:6]CHILE_CodigoDecretoPlanEstudio:39",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Campo10.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto17": {
+					"type": "text",
+					"top": 195,
+					"left": 296,
+					"width": 206,
+					"height": 16,
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"text": ":21010,230"
+				},
+				"Campo11": {
+					"type": "input",
+					"top": 221,
+					"left": 413,
+					"width": 64,
+					"height": 16,
+					"dataSource": "[xxSTR_Niveles:6]CHILE_CodigoPlanEstudio:40",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Campo11.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto18": {
+					"type": "text",
+					"top": 136,
+					"left": 296,
+					"width": 86,
+					"height": 16,
+					"stroke": "#000000",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"text": ":21010,233"
+				},
+				"Variable4": {
+					"type": "dropdown",
+					"top": 134,
+					"left": 378,
+					"width": 315,
+					"height": 17,
+					"dataSource": "hl_TipoEducacion",
+					"dataSourceTypeHint": "integer",
+					"choiceList": {
+						"$ref": "/SOURCES/lists.json#/cl_CodigosEnseñanza"
+					},
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"xALP_MetaDatos": {
+					"type": "plugin",
+					"top": 135,
+					"left": 302,
+					"width": 468,
+					"height": 384,
+					"dataSource": "xALP_MetaDatos",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/xALP_MetaDatos.4dm",
+					"events": [
+						"onClick",
+						"onPluginArea"
+					]
+				}
+			}
+		}
+	]
+}

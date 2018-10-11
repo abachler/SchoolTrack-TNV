@@ -1,0 +1,20 @@
+C_REAL:C285(vi_SelectedMonth)
+C_BOOLEAN:C305(vb_selectionMonth2Pay)
+C_BOOLEAN:C305(vb_selectionItems2Pay)
+C_BOOLEAN:C305(vb_selectionOrder2PayItems)
+C_BOOLEAN:C305(vb_importSoloCuadrado)
+C_BOOLEAN:C305(vb_crearCargoAut)
+C_TEXT:C284(vsACT_SelectedItemName)
+C_TEXT:C284(vt_ItemNames)
+C_REAL:C285(vlACT_selectedItemId)
+C_BOOLEAN:C305(vb_crearCargoAutCUP)
+vb_crearCargoAutCUP:=False:C215
+vlACT_selectedItemId:=0
+  //vt_ItemNames:=""
+vsACT_SelectedItemName:=""
+vb_crearCargoAut:=False:C215
+vb_importSoloCuadrado:=False:C215
+vb_selectionOrder2PayItems:=False:C215
+vb_selectionItems2Pay:=False:C215
+vb_selectionMonth2Pay:=False:C215
+vi_SelectedMonth:=0

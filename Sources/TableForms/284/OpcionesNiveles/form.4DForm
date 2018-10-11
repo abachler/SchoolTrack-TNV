@@ -1,0 +1,274 @@
+﻿{
+	"formSizeAnchor": "Rectángulo1",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 548,
+					"height": 304,
+					"fill": "automatic",
+					"stroke": "automatic"
+				},
+				"Imagen4": {
+					"type": "picture",
+					"top": 12,
+					"left": 24,
+					"width": 32,
+					"height": 32,
+					"pictureFormat": "scaled"
+				},
+				"vt_RetiroNivel2": {
+					"type": "input",
+					"top": 12,
+					"left": 76,
+					"width": 422,
+					"height": 52,
+					"dataSource": "vt_RetiroNivel",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"sinEval2": {
+					"type": "text",
+					"top": 72,
+					"left": 24,
+					"width": 490,
+					"height": 129,
+					"styleSheet": "Plain - 12",
+					"text": "Este Eje es utilizado en una o más matrices de evaluación para este nivel. \nSi lo inhabilita dispone de dos opciones:\n- Desvincular las Competencias asociadas al Eje conservándolas en las matrices de evaluación.\n- Inhabilitar las Competencias asociadas al Eje en las matrices correspondientes al nivel.\n\nLas dimensiones de aprendizaje serán automáticamente inhabilitadas en los niveles en los que el Eje no aplica (las Dimensiones no pueden no estar asociadas a un Eje).\n\n¿Que desea usted hacer?\n\n"
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 264,
+					"left": 27,
+					"width": 90,
+					"height": 22,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"text": "Cancelar",
+					"styleSheet": "Plain - 12",
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bDelete": {
+					"type": "button",
+					"top": 264,
+					"left": 173,
+					"width": 150,
+					"height": 22,
+					"dataSource": "bDelete",
+					"action": "accept",
+					"text": "Inahabilitar y eliminar",
+					"styleSheet": "Plain - 12",
+					"events": [
+						"onClick"
+					]
+				},
+				"bDesvincular": {
+					"type": "button",
+					"top": 264,
+					"left": 333,
+					"width": 170,
+					"height": 22,
+					"dataSource": "bDesvincular",
+					"action": "accept",
+					"text": "Conservar y desvincular",
+					"styleSheet": "Plain - 12",
+					"events": [
+						"onClick"
+					]
+				},
+				"conEval2": {
+					"type": "text",
+					"top": 72,
+					"left": 24,
+					"width": 490,
+					"height": 172,
+					"stroke": "#EE0000",
+					"styleSheet": "Plain - 12",
+					"text": "Este Eje es utilizado en una o más matrices de evaluación para este nivel y ya existen evaluaciones registradas en el Eje o en las Competencias asociadas\nSi lo inhabilita dispone de dos opciones:\n- Desvincular las Competencias asociadas al Eje conservándolas en las matrices de evaluación y conservando las evaluaciones registradas.\n- Inhabilitar las Competencias asociadas al Eje en las matrices correspondientes al nivel eliminando las evaluaciones registradas.\n\nLas dimensiones de aprendizaje serán automáticamente inhabilitadas en los niveles en los que el Eje no aplica (las Dimensiones no pueden no estar asociadas a un Eje).\n\n¿Que desea usted hacer?\n\n"
+				}
+			}
+		},
+		{
+			"objects": {
+				"sinEval1": {
+					"type": "text",
+					"top": 72,
+					"left": 24,
+					"width": 510,
+					"height": 129,
+					"styleSheet": "Plain - 12",
+					"text": "Esta Dimensión es utilizada en una o más matrices de evaluación para este nivel. \nSi la inhabilita dispone de dos opciones:\n- Desvincular las Competencias asociadas a la Dimensión conservándolas en las matrices de evaluación.\n- Inhabilitar las Competencias asociadas a la Dimensión en las matrices correspondientes al nivel.\n \n\n¿Que desea usted hacer?"
+				},
+				"bCancel1": {
+					"type": "button",
+					"top": 264,
+					"left": 31,
+					"width": 110,
+					"height": 22,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"text": "Cancelar",
+					"styleSheet": "Plain - 12",
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bDelete1": {
+					"type": "button",
+					"top": 264,
+					"left": 191,
+					"width": 150,
+					"height": 22,
+					"dataSource": "bDelete",
+					"action": "accept",
+					"text": "Inhabilitar y Eliminar",
+					"styleSheet": "Plain - 12",
+					"events": [
+						"onClick"
+					]
+				},
+				"bDesvincular1": {
+					"type": "button",
+					"top": 264,
+					"left": 351,
+					"width": 170,
+					"height": 22,
+					"dataSource": "bDesvincular",
+					"action": "accept",
+					"text": "Desvincular Competencias",
+					"styleSheet": "Plain - 12",
+					"events": [
+						"onClick"
+					]
+				},
+				"conEval1": {
+					"type": "text",
+					"top": 73,
+					"left": 24,
+					"width": 490,
+					"height": 164,
+					"stroke": "#EE0000",
+					"styleSheet": "Plain - 12",
+					"text": "Esta Dimensión es utilizada en una o más matrices de evaluación para este nivel y ya existen evaluaciones registradas en la Dimensión o en las Competencias asociadas\n\nSi la inhabilita dispone de dos opciones:\n- Desvincular las Competencias asociadas a la Dimensión conservándolas en las matrices de evaluación y conservando las evaluaciones registradas.\n- Inhabilitar las Competencias asociadas a la Dimensión en las matrices correspondientes al nivel eliminando las evaluaciones registradas.\n\nSi opta por eliminar las competencias, se eliminarán también las evaluaciones ya registradas. \n\n¿Que desea usted hacer?"
+				}
+			}
+		},
+		{
+			"objects": {
+				"sinEval": {
+					"type": "text",
+					"top": 80,
+					"left": 24,
+					"width": 490,
+					"height": 109,
+					"styleSheet": "Plain - 13",
+					"text": "Esta Competencia es utilizada en una o más matrices de evaluación. \rSi usted la inhabilita para este nivel la competencia será retirada de la matrices de evaluación correspondientes.\r\r¿Esta seguro(a) que desea inhabilitar la Competencia en este nivel?"
+				},
+				"sinEval3": {
+					"type": "button",
+					"top": 264,
+					"left": 273,
+					"width": 250,
+					"height": 22,
+					"dataSource": "bDesvincular",
+					"action": "accept",
+					"text": "Inhabilitar",
+					"styleSheet": "Plain - 13",
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel2": {
+					"type": "button",
+					"top": 264,
+					"left": 174,
+					"width": 90,
+					"height": 22,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"text": "Cancelar",
+					"styleSheet": "Plain - 13",
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"conEval": {
+					"type": "button",
+					"top": 264,
+					"left": 273,
+					"width": 250,
+					"height": 22,
+					"dataSource": "bDelete",
+					"action": "accept",
+					"text": "Inhabilitar y eliminar evaluaciones",
+					"styleSheet": "Plain - 13",
+					"events": [
+						"onClick"
+					]
+				},
+				"conEval3": {
+					"type": "text",
+					"top": 80,
+					"left": 23,
+					"width": 490,
+					"height": 109,
+					"stroke": "#EE0000",
+					"styleSheet": "Plain - 13",
+					"text": "Esta Competencia es utilizada en una o más matrices de evaluación y ya existen evaluaciones registradas.\rSi usted la inhabilita para este nivel la competencia será retirada de la matrices de evaluación correspondientes y las evaluaciones existentes eliminadas.\r\r¿Esta seguro(a) que desea inhabilitar la Competencia en este nivel?"
+				}
+			}
+		}
+	]
+}

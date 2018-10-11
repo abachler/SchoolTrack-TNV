@@ -1,0 +1,295 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "btn_cerrar",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDoubleClick",
+		"onDataChange",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"calcularDescuento": {
+					"type": "checkbox",
+					"top": 20,
+					"left": 13,
+					"width": 315,
+					"height": 16,
+					"text": "Calcular descuentos al ingresar pagos",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"method": "ObjectMethods/calcularDescuento.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"lb_tramosDctos": {
+					"type": "listbox",
+					"top": 50,
+					"left": 13,
+					"width": 320,
+					"height": 136,
+					"dataSource": "lb_tramosDctos",
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"events": [
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "Columna1",
+							"dataSource": "alACT_DXTdesde",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Columna1.4dm",
+							"header": {
+								"name": "Título1",
+								"text": "Desde",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "Columna2",
+							"dataSource": "alACT_DXThasta",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Columna2.4dm",
+							"header": {
+								"name": "Título2",
+								"text": "Hasta",
+								"dataSource": "Título2",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "Columna3",
+							"dataSource": "abACT_DXTesMontoFijo",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "popup",
+							"booleanFormat": "Fijo;Porcentaje",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Columna3.4dm",
+							"header": {
+								"name": "Título3",
+								"text": "Tipo Monto",
+								"dataSource": "Título3",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "Columna4",
+							"dataSource": "arACT_DXTvalor",
+							"width": 105,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Columna4.4dm",
+							"header": {
+								"name": "Título4",
+								"text": "Valor",
+								"dataSource": "Título4",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"rb_CalcularTodos": {
+					"type": "radio",
+					"top": 217,
+					"left": 33,
+					"width": 283,
+					"height": 16,
+					"text": "Todos los cargos",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"method": "ObjectMethods/rb_CalcularTodos.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"rb_CalcularitemsAfectos": {
+					"type": "radio",
+					"top": 237,
+					"left": 33,
+					"width": 283,
+					"height": 16,
+					"text": "Cargos afectos a descuentos o cargos",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"method": "ObjectMethods/rb_CalcularitemsAfectos.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"GeneraCargosSeparadosXCuenta": {
+					"type": "checkbox",
+					"top": 273,
+					"left": 13,
+					"width": 315,
+					"height": 16,
+					"text": "Generar descuentos separados para cada cuenta",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"method": "ObjectMethods/GeneraCargosSeparadosXCuenta.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_cerrar": {
+					"type": "button",
+					"top": 300,
+					"left": 255,
+					"width": 80,
+					"height": 18,
+					"dataSource": "btn_cerrar",
+					"action": "cancel",
+					"text": "Cerrar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/btn_cerrar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Imagen5": {
+					"type": "picture",
+					"top": 22,
+					"left": 299,
+					"width": 15,
+					"height": 15,
+					"sizingX": "move",
+					"pictureFormat": "scaled"
+				},
+				"bDeleteDimension": {
+					"type": "button",
+					"top": 20,
+					"left": 297,
+					"width": 18,
+					"height": 18,
+					"sizingX": "move",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/bDeleteDimension.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Imagen4": {
+					"type": "picture",
+					"top": 22,
+					"left": 319,
+					"width": 15,
+					"height": 15,
+					"sizingX": "move",
+					"pictureFormat": "scaled"
+				},
+				"bAddDimension": {
+					"type": "button",
+					"top": 20,
+					"left": 317,
+					"width": 18,
+					"height": 18,
+					"sizingX": "move",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/bAddDimension.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto": {
+					"type": "text",
+					"top": 196,
+					"left": 13,
+					"width": 240,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Calcular montos considerando"
+				},
+				"Línea": {
+					"type": "line",
+					"top": 266,
+					"left": 5,
+					"width": 342
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,1766 @@
+﻿{
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 13,
+	"markerBody": 32,
+	"markerBreak": 35,
+	"markerFooter": 35,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Imagen32": {
+					"type": "picture",
+					"top": -5,
+					"left": 0,
+					"width": 3601,
+					"height": 18,
+					"sizingX": "grow",
+					"pictureFormat": "scaled"
+				},
+				"S1_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 24,
+					"width": 61,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "ID_Asignatura : "
+				},
+				"S2_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 117,
+					"width": 49,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "ID_Alumno : "
+				},
+				"S3_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 198,
+					"width": 35,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "Año : "
+				},
+				"S4_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 265,
+					"width": 51,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "CicloEscolar : "
+				},
+				"S5_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 348,
+					"width": 105,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "Llave_principal : "
+				},
+				"S6_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 485,
+					"width": 280,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "Denominación_interna : "
+				},
+				"S7_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 797,
+					"width": 45,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "NoDeLista : "
+				},
+				"S8_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 874,
+					"width": 280,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "Apellidos_y_Nombres : "
+				},
+				"S9_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 1186,
+					"width": 35,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "Curso : "
+				},
+				"S10_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 1253,
+					"width": 51,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "Reprobada : "
+				},
+				"S11_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 1336,
+					"width": 50,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "Anual_Real : "
+				},
+				"S12_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 1418,
+					"width": 82,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "ExamenAnual_Real : "
+				},
+				"S13_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 1532,
+					"width": 80,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "ExamenExtra_Real : "
+				},
+				"S14_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 1644,
+					"width": 89,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "EvaluacionFinal_Real : "
+				},
+				"S15_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 1765,
+					"width": 113,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "EvaluacionFinalOficial_Real : "
+				},
+				"S16_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 1910,
+					"width": 51,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "Anual_Nota : "
+				},
+				"S17_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 1993,
+					"width": 56,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "Anual_Literal : "
+				},
+				"S18_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 2081,
+					"width": 88,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "ExamenAnual_Literal : "
+				},
+				"S19_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 2201,
+					"width": 86,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "ExamenExtra_Literal : "
+				},
+				"S20_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 2319,
+					"width": 95,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "EvaluacionFinal_Literal : "
+				},
+				"S21_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 2446,
+					"width": 119,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "EvaluacionFinalOficial_Literal : "
+				},
+				"S22_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 2597,
+					"width": 67,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "P01_Final_Real : "
+				},
+				"S23_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 2696,
+					"width": 73,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "P01_Final_Literal : "
+				},
+				"S24_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 2801,
+					"width": 67,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "P02_Final_Real : "
+				},
+				"S25_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 2900,
+					"width": 73,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "P02_Final_Literal : "
+				},
+				"S26_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 3005,
+					"width": 67,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "P03_Final_Real : "
+				},
+				"S27_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 3104,
+					"width": 73,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "P03_Final_Literal : "
+				},
+				"S28_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 3209,
+					"width": 67,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "P04_Final_Real : "
+				},
+				"S29_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 3308,
+					"width": 73,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "P04_Final_Literal : "
+				},
+				"S30_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 3413,
+					"width": 67,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "P05_Final_Real : "
+				},
+				"S31_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 3512,
+					"width": 73,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "P05_Final_Literal : "
+				},
+				"Rectángulo33": {
+					"type": "rectangle",
+					"top": 13,
+					"left": 0,
+					"width": 3601,
+					"height": 24,
+					"sizingX": "grow",
+					"stroke": "#FFFFFF"
+				},
+				"S1_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 24,
+					"width": 61,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_Calificaciones:208]ID_Asignatura:5",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S2_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 117,
+					"width": 49,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_Calificaciones:208]ID_Alumno:6",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S3_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 198,
+					"width": 35,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_Calificaciones:208]Año:3",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S4_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 265,
+					"width": 51,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_Calificaciones:208]NIvel_Numero:4",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S5_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 348,
+					"width": 105,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_Calificaciones:208]Llave_principal:1",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vt_NombreAsignatura": {
+					"type": "input",
+					"top": 17,
+					"left": 485,
+					"width": 271,
+					"height": 12,
+					"sizingX": "grow",
+					"dataSource": "vt_NombreAsignatura",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S7_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 797,
+					"width": 45,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_Calificaciones:208]NoDeLista:10",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S8_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 874,
+					"width": 280,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos:2]apellidos_y_nombres:40",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S9_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 1186,
+					"width": 35,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos:2]curso:20",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S10_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 1253,
+					"width": 51,
+					"height": 16,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_Calificaciones:208]Reprobada:9",
+					"fill": "transparent",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "Sí",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S11_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 1336,
+					"width": 50,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_Calificaciones:208]Anual_Real:11",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S12_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 1418,
+					"width": 82,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_Calificaciones:208]ExamenAnual_Real:16",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S13_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 1532,
+					"width": 80,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_Calificaciones:208]ExamenExtra_Real:21",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S14_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 1644,
+					"width": 89,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_Calificaciones:208]EvaluacionFinal_Real:26",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S15_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 1765,
+					"width": 113,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_Calificaciones:208]EvaluacionFinalOficial_Real:32",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S16_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 1910,
+					"width": 51,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_Calificaciones:208]Anual_Nota:12",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S17_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 1993,
+					"width": 56,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_Calificaciones:208]Anual_Literal:15",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S18_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 2081,
+					"width": 88,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_Calificaciones:208]ExamenAnual_Literal:20",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S19_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 2201,
+					"width": 86,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_Calificaciones:208]ExamenExtra_Literal:25",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S20_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 2319,
+					"width": 95,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_Calificaciones:208]EvaluacionFinal_Literal:30",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S21_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 2446,
+					"width": 119,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_Calificaciones:208]EvaluacionFinalOficial_Literal:36",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S22_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 2597,
+					"width": 67,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_Calificaciones:208]P01_Final_Real:112",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S23_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 2696,
+					"width": 73,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_Calificaciones:208]P01_Final_Literal:116",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S24_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 2801,
+					"width": 67,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_Calificaciones:208]P02_Final_Real:187",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S25_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 2900,
+					"width": 73,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_Calificaciones:208]P02_Final_Literal:191",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S26_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 3005,
+					"width": 67,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_Calificaciones:208]P03_Final_Real:262",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S27_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 3104,
+					"width": 73,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_Calificaciones:208]P03_Final_Literal:266",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S28_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 3209,
+					"width": 67,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_Calificaciones:208]P04_Final_Real:337",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S29_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 3308,
+					"width": 73,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_Calificaciones:208]P04_Final_Literal:341",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S30_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 3413,
+					"width": 67,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_Calificaciones:208]P05_Final_Real:412",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S31_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 3512,
+					"width": 73,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_Calificaciones:208]P05_Final_Literal:416",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Línea34": {
+					"type": "line",
+					"top": -5,
+					"left": 0,
+					"height": 42,
+					"stroke": "#A8A8A8"
+				},
+				"Línea35": {
+					"type": "line",
+					"top": -5,
+					"left": 3601,
+					"height": 42,
+					"sizingX": "move",
+					"stroke": "#A8A8A8"
+				},
+				"Línea36": {
+					"type": "line",
+					"top": -5,
+					"left": 3496,
+					"height": 42,
+					"stroke": "#A8A8A8"
+				},
+				"Separador2": {
+					"type": "button",
+					"top": -5,
+					"left": 3495,
+					"width": 3,
+					"height": 42,
+					"dataSource": "Separador2",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea37": {
+					"type": "line",
+					"top": -5,
+					"left": 3397,
+					"height": 42,
+					"stroke": "#A8A8A8"
+				},
+				"Separador3": {
+					"type": "button",
+					"top": -5,
+					"left": 3396,
+					"width": 3,
+					"height": 42,
+					"dataSource": "Separador3",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea38": {
+					"type": "line",
+					"top": -5,
+					"left": 3292,
+					"height": 42,
+					"stroke": "#A8A8A8"
+				},
+				"Separador4": {
+					"type": "button",
+					"top": -5,
+					"left": 3291,
+					"width": 3,
+					"height": 42,
+					"dataSource": "Separador4",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea39": {
+					"type": "line",
+					"top": -5,
+					"left": 3193,
+					"height": 42,
+					"stroke": "#A8A8A8"
+				},
+				"Separador5": {
+					"type": "button",
+					"top": -5,
+					"left": 3192,
+					"width": 3,
+					"height": 42,
+					"dataSource": "Separador5",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea40": {
+					"type": "line",
+					"top": -5,
+					"left": 3088,
+					"height": 42,
+					"stroke": "#A8A8A8"
+				},
+				"Separador6": {
+					"type": "button",
+					"top": -5,
+					"left": 3087,
+					"width": 3,
+					"height": 42,
+					"dataSource": "Separador6",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea41": {
+					"type": "line",
+					"top": -5,
+					"left": 2989,
+					"height": 42,
+					"stroke": "#A8A8A8"
+				},
+				"Separador7": {
+					"type": "button",
+					"top": -5,
+					"left": 2988,
+					"width": 3,
+					"height": 42,
+					"dataSource": "Separador7",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea42": {
+					"type": "line",
+					"top": -5,
+					"left": 2884,
+					"height": 42,
+					"stroke": "#A8A8A8"
+				},
+				"Separador8": {
+					"type": "button",
+					"top": -5,
+					"left": 2883,
+					"width": 3,
+					"height": 42,
+					"dataSource": "Separador8",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea43": {
+					"type": "line",
+					"top": -5,
+					"left": 2785,
+					"height": 42,
+					"stroke": "#A8A8A8"
+				},
+				"Separador9": {
+					"type": "button",
+					"top": -5,
+					"left": 2784,
+					"width": 3,
+					"height": 42,
+					"dataSource": "Separador9",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea44": {
+					"type": "line",
+					"top": -5,
+					"left": 2680,
+					"height": 42,
+					"stroke": "#A8A8A8"
+				},
+				"Separador10": {
+					"type": "button",
+					"top": -5,
+					"left": 2679,
+					"width": 3,
+					"height": 42,
+					"dataSource": "Separador10",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea45": {
+					"type": "line",
+					"top": -5,
+					"left": 2581,
+					"height": 42,
+					"stroke": "#A8A8A8"
+				},
+				"Separador11": {
+					"type": "button",
+					"top": -5,
+					"left": 2580,
+					"width": 3,
+					"height": 42,
+					"dataSource": "Separador11",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea46": {
+					"type": "line",
+					"top": -5,
+					"left": 2430,
+					"height": 42,
+					"stroke": "#A8A8A8"
+				},
+				"Separador12": {
+					"type": "button",
+					"top": -5,
+					"left": 2429,
+					"width": 3,
+					"height": 42,
+					"dataSource": "Separador12",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea47": {
+					"type": "line",
+					"top": -5,
+					"left": 2303,
+					"height": 42,
+					"stroke": "#A8A8A8"
+				},
+				"Separador13": {
+					"type": "button",
+					"top": -5,
+					"left": 2302,
+					"width": 3,
+					"height": 42,
+					"dataSource": "Separador13",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea48": {
+					"type": "line",
+					"top": -5,
+					"left": 2185,
+					"height": 42,
+					"stroke": "#A8A8A8"
+				},
+				"Separador14": {
+					"type": "button",
+					"top": -5,
+					"left": 2184,
+					"width": 3,
+					"height": 42,
+					"dataSource": "Separador14",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea49": {
+					"type": "line",
+					"top": -5,
+					"left": 2065,
+					"height": 42,
+					"stroke": "#A8A8A8"
+				},
+				"Separador15": {
+					"type": "button",
+					"top": -5,
+					"left": 2064,
+					"width": 3,
+					"height": 42,
+					"dataSource": "Separador15",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea50": {
+					"type": "line",
+					"top": -5,
+					"left": 1977,
+					"height": 42,
+					"stroke": "#A8A8A8"
+				},
+				"Separador16": {
+					"type": "button",
+					"top": -5,
+					"left": 1976,
+					"width": 3,
+					"height": 42,
+					"dataSource": "Separador16",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea51": {
+					"type": "line",
+					"top": -5,
+					"left": 1894,
+					"height": 42,
+					"stroke": "#A8A8A8"
+				},
+				"Separador17": {
+					"type": "button",
+					"top": -5,
+					"left": 1893,
+					"width": 3,
+					"height": 42,
+					"dataSource": "Separador17",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea52": {
+					"type": "line",
+					"top": -5,
+					"left": 1749,
+					"height": 42,
+					"stroke": "#A8A8A8"
+				},
+				"Separador18": {
+					"type": "button",
+					"top": -5,
+					"left": 1748,
+					"width": 3,
+					"height": 42,
+					"dataSource": "Separador18",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea53": {
+					"type": "line",
+					"top": -5,
+					"left": 1628,
+					"height": 42,
+					"stroke": "#A8A8A8"
+				},
+				"Separador19": {
+					"type": "button",
+					"top": -5,
+					"left": 1627,
+					"width": 3,
+					"height": 42,
+					"dataSource": "Separador19",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea54": {
+					"type": "line",
+					"top": -5,
+					"left": 1516,
+					"height": 42,
+					"stroke": "#A8A8A8"
+				},
+				"Separador20": {
+					"type": "button",
+					"top": -5,
+					"left": 1515,
+					"width": 3,
+					"height": 42,
+					"dataSource": "Separador20",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea55": {
+					"type": "line",
+					"top": -5,
+					"left": 1402,
+					"height": 42,
+					"stroke": "#A8A8A8"
+				},
+				"Separador21": {
+					"type": "button",
+					"top": -5,
+					"left": 1401,
+					"width": 3,
+					"height": 42,
+					"dataSource": "Separador21",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea56": {
+					"type": "line",
+					"top": -5,
+					"left": 1320,
+					"height": 42,
+					"stroke": "#A8A8A8"
+				},
+				"Separador22": {
+					"type": "button",
+					"top": -5,
+					"left": 1319,
+					"width": 3,
+					"height": 42,
+					"dataSource": "Separador22",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea57": {
+					"type": "line",
+					"top": -5,
+					"left": 1237,
+					"height": 42,
+					"stroke": "#A8A8A8"
+				},
+				"Separador23": {
+					"type": "button",
+					"top": -5,
+					"left": 1236,
+					"width": 3,
+					"height": 42,
+					"dataSource": "Separador23",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea58": {
+					"type": "line",
+					"top": -5,
+					"left": 1170,
+					"height": 42,
+					"stroke": "#A8A8A8"
+				},
+				"Separador24": {
+					"type": "button",
+					"top": -5,
+					"left": 1169,
+					"width": 3,
+					"height": 42,
+					"dataSource": "Separador24",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea59": {
+					"type": "line",
+					"top": -5,
+					"left": 858,
+					"height": 42,
+					"stroke": "#A8A8A8"
+				},
+				"Separador25": {
+					"type": "button",
+					"top": -5,
+					"left": 857,
+					"width": 3,
+					"height": 42,
+					"dataSource": "Separador25",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea60": {
+					"type": "line",
+					"top": -5,
+					"left": 781,
+					"height": 42,
+					"stroke": "#A8A8A8"
+				},
+				"Separador26": {
+					"type": "button",
+					"top": -5,
+					"left": 780,
+					"width": 3,
+					"height": 42,
+					"dataSource": "Separador26",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea61": {
+					"type": "line",
+					"top": -5,
+					"left": 469,
+					"height": 42,
+					"stroke": "#A8A8A8"
+				},
+				"Separador27": {
+					"type": "button",
+					"top": -5,
+					"left": 468,
+					"width": 3,
+					"height": 42,
+					"dataSource": "Separador27",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea62": {
+					"type": "line",
+					"top": -5,
+					"left": 332,
+					"height": 42,
+					"stroke": "#A8A8A8"
+				},
+				"Separador28": {
+					"type": "button",
+					"top": -5,
+					"left": 331,
+					"width": 3,
+					"height": 42,
+					"dataSource": "Separador28",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea63": {
+					"type": "line",
+					"top": -5,
+					"left": 249,
+					"height": 42,
+					"stroke": "#A8A8A8"
+				},
+				"Separador29": {
+					"type": "button",
+					"top": -5,
+					"left": 248,
+					"width": 3,
+					"height": 42,
+					"dataSource": "Separador29",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea64": {
+					"type": "line",
+					"top": -5,
+					"left": 182,
+					"height": 42,
+					"stroke": "#A8A8A8"
+				},
+				"Separador30": {
+					"type": "button",
+					"top": -5,
+					"left": 181,
+					"width": 3,
+					"height": 42,
+					"dataSource": "Separador30",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea65": {
+					"type": "line",
+					"top": -5,
+					"left": 101,
+					"height": 42,
+					"stroke": "#A8A8A8"
+				},
+				"Separador31": {
+					"type": "button",
+					"top": -5,
+					"left": 100,
+					"width": 3,
+					"height": 42,
+					"dataSource": "Separador31",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

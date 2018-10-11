@@ -1,0 +1,260 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Botón3",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Botón2": {
+					"type": "button",
+					"top": 327,
+					"left": 138,
+					"width": 76,
+					"height": 35,
+					"dataSource": "Botón1",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "CloseEnter",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 258,
+					"left": 428,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Botón1",
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"text": "Cerrar",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón4": {
+					"type": "button",
+					"top": 410,
+					"left": 206,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 353,
+					"left": 22,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				},
+				"Botón": {
+					"type": "button",
+					"top": 21,
+					"left": 293,
+					"width": 213,
+					"height": 18,
+					"dataSource": "Botón",
+					"display": false,
+					"method": "ObjectMethods/Botón.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 22,
+					"left": 293,
+					"width": 215,
+					"height": 14,
+					"stroke": "#000099",
+					"styleSheet": "XS_DialogObjects",
+					"textDecoration": "underline",
+					"text": "Copiar listado de alumnos al portapapeles"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 252,
+					"left": 42,
+					"width": 75,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "alumno(s)"
+				},
+				"vl_alumnos": {
+					"type": "input",
+					"top": 252,
+					"left": 13,
+					"width": 25,
+					"height": 14,
+					"dataSource": "vl_alumnos",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto": {
+					"type": "text",
+					"top": 270,
+					"left": 13,
+					"width": 362,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "La matriz sería aplicada a los alumnos en color verde."
+				},
+				"listado": {
+					"type": "listbox",
+					"top": 43,
+					"left": 13,
+					"width": 495,
+					"height": 202,
+					"dataSource": "listado",
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"staticColumnCount": 1,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"rowStrokeSource": "alACT_colores",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"columns": [
+						{
+							"name": "Columna3",
+							"dataSource": [
+								"atACT_alumnosCurso"
+							],
+							"width": 57,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDoubleClick"
+							],
+							"header": {
+								"name": "Título3",
+								"text": "Curso",
+								"dataSource": "Título3",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Columna1",
+							"dataSource": "atACT_alumnosNombres",
+							"width": 263,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDoubleClick"
+							],
+							"header": {
+								"name": "Título1",
+								"text": "Nombre",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Barras 2D1",
+							"dataSource": "atACT_alumnosMatrices",
+							"width": 160,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado1",
+								"text": "Matriz actual",
+								"dataSource": "Encabezado1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+}

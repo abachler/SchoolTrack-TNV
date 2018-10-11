@@ -1,0 +1,535 @@
+﻿{
+	"inheritedForm": "XS_MASTER_ConfigDialogs",
+	"inheritedFormTable": 114,
+	"width": 752,
+	"height": 520,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 590,
+					"left": 344,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 533,
+					"left": 160,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable1283": {
+					"type": "pictureButton",
+					"top": 52,
+					"left": 243,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bAddMatriz",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable1283.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable19": {
+					"type": "plugin",
+					"top": 76,
+					"left": 12,
+					"width": 247,
+					"height": 397,
+					"dataSource": "xALP_Matrices",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Variable19.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable30": {
+					"type": "plugin",
+					"top": 76,
+					"left": 280,
+					"width": 459,
+					"height": 110,
+					"dataSource": "xALP_ItemsMatriz",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Variable30.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable20": {
+					"type": "plugin",
+					"top": 273,
+					"left": 280,
+					"width": 459,
+					"height": 200,
+					"dataSource": "xALP_Items2",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Variable20.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto19": {
+					"type": "text",
+					"top": 54,
+					"left": 280,
+					"width": 202,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Items en la matriz de cargos"
+				},
+				"Texto21": {
+					"type": "text",
+					"top": 54,
+					"left": 14,
+					"width": 181,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Matrices de Cargo"
+				},
+				"Variable1284": {
+					"type": "pictureButton",
+					"top": 52,
+					"left": 221,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bDelMatrix",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable1284.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto91": {
+					"type": "text",
+					"top": 199,
+					"left": 257,
+					"width": 174,
+					"height": 11,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"text": "Monto afecto a recargos y descuentos"
+				},
+				"Texto92": {
+					"type": "text",
+					"top": 199,
+					"left": 579,
+					"width": 50,
+					"height": 11,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"text": "Recargos"
+				},
+				"Texto93": {
+					"type": "text",
+					"top": 216,
+					"left": 376,
+					"width": 55,
+					"height": 11,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"text": ":21501,6"
+				},
+				"Campo63": {
+					"type": "input",
+					"top": 199,
+					"left": 438,
+					"width": 102,
+					"height": 11,
+					"dataSource": "[ACT_Matrices:177]Monto_afecto:4",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Despliegue_ACT"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo64": {
+					"type": "input",
+					"top": 216,
+					"left": 438,
+					"width": 102,
+					"height": 11,
+					"dataSource": "[ACT_Matrices:177]Descuentos:7",
+					"fill": "#FFFFFF",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Despliegue_ACT"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo65": {
+					"type": "input",
+					"top": 199,
+					"left": 635,
+					"width": 102,
+					"height": 11,
+					"dataSource": "[ACT_Matrices:177]Recargos:6",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Despliegue_ACT"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo66": {
+					"type": "input",
+					"top": 216,
+					"left": 635,
+					"width": 102,
+					"height": 11,
+					"dataSource": "[ACT_Matrices:177]Monto_Neto:8",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Despliegue_ACT"
+					},
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Línea106": {
+					"type": "line",
+					"top": 42,
+					"left": 270,
+					"height": 481,
+					"stroke": "#AAAAAA",
+					"strokeWidth": 0.1
+				},
+				"Línea107": {
+					"type": "line",
+					"top": 239,
+					"left": 270,
+					"width": 509,
+					"stroke": "#AAAAAA",
+					"strokeWidth": 0.1
+				},
+				"Variable11": {
+					"type": "button",
+					"top": 538,
+					"left": 8,
+					"width": 66,
+					"height": 18,
+					"dataSource": "b_Close",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bSubir": {
+					"type": "pictureButton",
+					"top": 52,
+					"left": 699,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bSubir",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bSubir.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bBajar": {
+					"type": "pictureButton",
+					"top": 52,
+					"left": 721,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bBajar",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bBajar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 481,
+					"left": 279,
+					"width": 268,
+					"height": 11,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Los items en rojo corresponden a descuentos."
+				},
+				"Text2": {
+					"type": "text",
+					"top": 481,
+					"left": 571,
+					"width": 285,
+					"height": 11,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Los items en azul corresponden a cargos."
+				},
+				"Text3": {
+					"type": "text",
+					"top": 500,
+					"left": 279,
+					"width": 272,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"fontStyle": "italic",
+					"text": "Los items en italics corresponden a items porcentuales."
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 54,
+					"left": 445,
+					"width": 40,
+					"height": 13,
+					"dataSource": "vl_ItemsEnMatriz",
+					"fill": "transparent",
+					"textAlign": "left",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "#####",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "pictureButton",
+					"top": 52,
+					"left": 198,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bPrintMatrices",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 216,
+					"left": 593,
+					"width": 36,
+					"height": 11,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"text": "Total"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 253,
+					"left": 279,
+					"width": 252,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Lista de items de cargo y descuentos"
+				},
+				"Botón": {
+					"type": "button",
+					"top": 489,
+					"left": 14,
+					"width": 246,
+					"height": 22,
+					"dataSource": "Botón",
+					"text": "Asignacion automática...",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Botón.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

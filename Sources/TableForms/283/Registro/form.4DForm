@@ -1,0 +1,120 @@
+﻿{
+	"formSizeAnchor": "fondo",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"fondo": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 577,
+					"height": 236,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"pictureFormat": "scaled",
+					"picture": "Images/fondo.gif"
+				},
+				"textoMensaje": {
+					"type": "input",
+					"top": 15,
+					"left": 11,
+					"width": 549,
+					"height": 48,
+					"fill": "transparent",
+					"styleSheet": "Plain - 14",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"anotacion": {
+					"type": "input",
+					"top": 83,
+					"left": 21,
+					"width": 535,
+					"height": 110,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "[xShell_RecordNotes:283]Anotacion:8",
+					"styleSheet": "Plain - 13",
+					"styledText": true,
+					"storeDefaultStyle": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/anotacion.4dm",
+					"events": [
+						"onAfterKeystroke"
+					]
+				},
+				"botonCancelar": {
+					"type": "button",
+					"top": 203,
+					"left": 328,
+					"width": 112,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"action": "cancel",
+					"text": "Cancelar",
+					"styleSheet": "Plain - 12",
+					"events": [
+						"onClick"
+					]
+				},
+				"botonAceptar": {
+					"type": "button",
+					"top": 203,
+					"left": 447,
+					"width": 112,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"action": "accept",
+					"text": "Aceptar",
+					"styleSheet": "Plain - 12",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

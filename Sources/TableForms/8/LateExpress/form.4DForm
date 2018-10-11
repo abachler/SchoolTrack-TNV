@@ -1,0 +1,483 @@
+﻿{
+	"windowTitle": ":21002,1",
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Variable9",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onActivate",
+		"onDoubleClick",
+		"onLosingFocus",
+		"onGettingFocus",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 459,
+					"left": 189,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 402,
+					"left": 5,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Imagen11": {
+					"type": "picture",
+					"top": 40,
+					"left": 137,
+					"width": 11,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 92,
+					"left": 13,
+					"width": 149,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": ":21002,192"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 107,
+					"left": 289,
+					"width": 255,
+					"height": 243,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Este cuadro de diálogo permite registrar los atrasos de los alumnos de un curso.\r\rEl sistema propone automáticamente la fecha del día. Si desea ingresar atrasos en otra fecha, digítela.\r\rSi Ud. es profesor jefe, su curso aparecerá automáticamente seleccionado, en caso contrario, selecciónelo en la lista desplegable (mientras no lo haga no podrá ingresar a los alumnos)\r\rDigite en la zona alumno las primeras letras del apellido del alumno o su número de lista y presione en ENTER\r\rPara eliminar un atraso de la lista, presione la tecla SUPR.\r\rPara registrar definitivamente las atrasos de la lista, haga clic en el botón Guardar."
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 64,
+					"left": 57,
+					"width": 194,
+					"height": 13,
+					"dataSource": "dDate",
+					"dataSourceTypeHint": "date",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dateFormat": "systemLong",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 41,
+					"left": 57,
+					"width": 75,
+					"height": 13,
+					"dataSource": "sCurso",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 109,
+					"left": 13,
+					"width": 218,
+					"height": 13,
+					"dataSource": "sName",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable9": {
+					"type": "button",
+					"top": 360,
+					"left": 459,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bOK",
+					"shortcutKey": "[Return]",
+					"text": ":21002,172",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable9.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 360,
+					"left": 371,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": ":21002,157",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "plugin",
+					"top": 130,
+					"left": 13,
+					"width": 264,
+					"height": 250,
+					"dataSource": "xALP_Anot",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 64,
+					"left": 13,
+					"width": 38,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": ":21002,171"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 41,
+					"left": 13,
+					"width": 38,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": ":21002,9"
+				},
+				"Variable2": {
+					"type": "dropdown",
+					"top": 40,
+					"left": 136,
+					"width": 13,
+					"height": 17,
+					"dataSource": "<>aCursos",
+					"display": false,
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Imagen1": {
+					"type": "picture",
+					"top": 110,
+					"left": 244,
+					"width": 11,
+					"height": 11,
+					"pictureFormat": "scaled"
+				},
+				"Imagen2": {
+					"type": "picture",
+					"top": 110,
+					"left": 264,
+					"width": 11,
+					"height": 11,
+					"pictureFormat": "scaled"
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 107,
+					"left": 242,
+					"width": 16,
+					"height": 16,
+					"dataSource": "bdel",
+					"shortcutKey": "[Del]",
+					"display": false,
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 107,
+					"left": 259,
+					"width": 18,
+					"height": 16,
+					"dataSource": "bPut",
+					"shortcutKey": "[Enter]",
+					"display": false,
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text6": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 261,
+					"height": 16,
+					"stroke": "#000000",
+					"styleSheet": "XS_System",
+					"fontWeight": "bold",
+					"text": ":21002,195"
+				},
+				"Variable10": {
+					"type": "input",
+					"top": 41,
+					"left": 201,
+					"width": 31,
+					"height": 13,
+					"dataSource": "vi_TiempoAtraso",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable10.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"txtMinutosAtraso": {
+					"type": "text",
+					"top": 41,
+					"left": 151,
+					"width": 48,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Minutos:"
+				},
+				"minutos3": {
+					"type": "picture",
+					"top": 43,
+					"left": 239,
+					"width": 11,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"minutos2": {
+					"type": "button",
+					"top": 43,
+					"left": 237,
+					"width": 16,
+					"height": 16,
+					"dataSource": "bpopupMinutos",
+					"display": false,
+					"method": "ObjectMethods/minutos2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"vJustificacion": {
+					"type": "input",
+					"top": 43,
+					"left": 353,
+					"width": 166,
+					"height": 13,
+					"dataSource": "vJustificacion",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"tituloJustificacion": {
+					"type": "text",
+					"top": 43,
+					"left": 264,
+					"width": 86,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Motivo de Atraso:"
+				},
+				"imagenJustificacion": {
+					"type": "picture",
+					"top": 41,
+					"left": 525,
+					"width": 11,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"sel_justificacion": {
+					"type": "button",
+					"top": 41,
+					"left": 523,
+					"width": 16,
+					"height": 16,
+					"dataSource": "sel_justificacion",
+					"display": false,
+					"method": "ObjectMethods/sel_justificacion.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección2": {
+					"type": "checkbox",
+					"top": 64,
+					"left": 264,
+					"width": 112,
+					"height": 13,
+					"dataSource": "cb_justificarAtraso",
+					"text": "Justificar atraso",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

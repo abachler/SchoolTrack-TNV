@@ -1,0 +1,445 @@
+﻿{
+	"windowTitle": "Recorridos del Alumno",
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Variable9",
+	"rightMargin": -13,
+	"bottomMargin": -13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 479,
+					"left": 238,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 422,
+					"left": 54,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable8": {
+					"type": "input",
+					"top": 87,
+					"left": 691,
+					"width": 90,
+					"height": 143,
+					"dataSource": "vtSabado",
+					"fill": "#ECF5FF",
+					"stroke": "#EE0000",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Rectángulo2": {
+					"type": "rectangle",
+					"top": 234,
+					"left": 690,
+					"width": 92,
+					"height": 15,
+					"fill": "#ECF5FF"
+				},
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 68,
+					"left": 215,
+					"width": 567,
+					"height": 15,
+					"fill": "#ECF5FF"
+				},
+				"Variable1": {
+					"type": "dropdown",
+					"top": 68,
+					"left": 13,
+					"width": 197,
+					"height": 15,
+					"dataSource": "<>aCursos",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "plugin",
+					"top": 87,
+					"left": 13,
+					"width": 198,
+					"height": 305,
+					"dataSource": "xALP_ListaAlumnos",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 87,
+					"left": 216,
+					"width": 90,
+					"height": 305,
+					"dataSource": "vtLunes",
+					"fill": "#FFFFFF",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 87,
+					"left": 311,
+					"width": 90,
+					"height": 305,
+					"dataSource": "vtMartes",
+					"fill": "#ECF5FF",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 87,
+					"left": 406,
+					"width": 90,
+					"height": 305,
+					"dataSource": "vtMiercoles",
+					"fill": "#FFFFFF",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 87,
+					"left": 501,
+					"width": 90,
+					"height": 305,
+					"dataSource": "vtJueves",
+					"fill": "#ECF5FF",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 87,
+					"left": 596,
+					"width": 90,
+					"height": 305,
+					"dataSource": "vtViernes",
+					"fill": "#FFFFFF",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable9": {
+					"type": "input",
+					"top": 253,
+					"left": 691,
+					"width": 90,
+					"height": 139,
+					"dataSource": "vtDomingo",
+					"fill": "#FFFFFF",
+					"stroke": "#EE0000",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 70,
+					"left": 217,
+					"width": 88,
+					"height": 12,
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Lunes"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 70,
+					"left": 311,
+					"width": 90,
+					"height": 12,
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Martes"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 70,
+					"left": 405,
+					"width": 91,
+					"height": 12,
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Miercoles"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 70,
+					"left": 500,
+					"width": 91,
+					"height": 12,
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Jueves"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 70,
+					"left": 596,
+					"width": 90,
+					"height": 12,
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Viernes"
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 70,
+					"left": 691,
+					"width": 90,
+					"height": 12,
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Sábado"
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 236,
+					"left": 691,
+					"width": 91,
+					"height": 12,
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Domingo"
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 36,
+					"left": 13,
+					"width": 764,
+					"height": 25,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Para ver los recorridos en los que se encuentra inscrito un alumno, seleccione el curso y luego haga clic sobre el nombre del alumno en el listado.\rPara imprimir la Programación haga clic en el botón Impresora con el nombre del alumno seleccionado."
+				},
+				"BUCancelButtonBU": {
+					"type": "button",
+					"top": 3,
+					"left": 2,
+					"width": 82,
+					"height": 20,
+					"dataSource": "bBWR_Cancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Botón",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"frenchPrintButtonBU": {
+					"type": "button",
+					"top": 3,
+					"left": 90,
+					"width": 82,
+					"height": 20,
+					"dataSource": "bBWR_Print",
+					"shortcutKey": "p",
+					"shortcutAccel": true,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Botón",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/frenchPrintButtonBU.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Line5": {
+					"type": "line",
+					"top": 0,
+					"left": 87,
+					"height": 26,
+					"stroke": "#AAAAAA"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 26,
+					"left": 1,
+					"width": 796,
+					"sizingX": "grow",
+					"stroke": "#AAAAAA"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 0,
+					"left": 175,
+					"height": 26,
+					"stroke": "#AAAAAA"
+				}
+			}
+		}
+	]
+}

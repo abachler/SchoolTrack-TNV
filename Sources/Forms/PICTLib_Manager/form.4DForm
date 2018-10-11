@@ -1,0 +1,396 @@
+﻿{
+	"memorizeGeometry": true,
+	"formSizeAnchor": "Campo3",
+	"rightMargin": 0,
+	"bottomMargin": 65,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onUnload",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"imagenes": {
+					"type": "listbox",
+					"top": 47,
+					"left": 1,
+					"width": 448,
+					"height": 656,
+					"sizingY": "grow",
+					"listboxType": "currentSelection",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"headerHeight": "36px",
+					"highlightSet": "$ListboxSet0",
+					"table": 194,
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 13,
+					"borderStyle": "none",
+					"method": "ObjectMethods/imagenes.4dm",
+					"events": [
+						"onClick",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "Barras 2D1",
+							"dataSource": "[xShell_PictLibrary:194]Id_imagen:4",
+							"dataSourceTypeHint": "integer",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado1",
+								"text": "Id",
+								"dataSource": "Encabezado1",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "Barras 2D2",
+							"dataSource": "[xShell_PictLibrary:194]Nombre:2",
+							"width": 250,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado2",
+								"text": "Nombre",
+								"dataSource": "Encabezado2",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "Barras 2D3",
+							"dataSource": "[xShell_PictLibrary:194]usos:8",
+							"dataSourceTypeHint": "object",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado3",
+								"text": "Usos",
+								"dataSource": "Encabezado3",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						}
+					]
+				},
+				"Campo": {
+					"type": "input",
+					"top": 49,
+					"left": 452,
+					"width": 559,
+					"height": 589,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "[xShell_PictLibrary:194]pict:3",
+					"borderStyle": "none",
+					"focusable": false,
+					"hideFocusRing": true,
+					"pictureFormat": "truncatedCenter",
+					"dragging": "custom",
+					"dropping": "custom",
+					"method": "ObjectMethods/Campo.4dm",
+					"events": [
+						"onDrop",
+						"onDataChange"
+					]
+				},
+				"Campo1": {
+					"type": "input",
+					"top": 647,
+					"left": 462,
+					"width": 105,
+					"height": 14,
+					"dataSource": "[xShell_PictLibrary:194]Id_imagen:4",
+					"styleSheet": "Medium - 11",
+					"enterable": false,
+					"focusable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo2": {
+					"type": "input",
+					"top": 647,
+					"left": 572,
+					"width": 438,
+					"height": 14,
+					"sizingX": "grow",
+					"dataSource": "[xShell_PictLibrary:194]Nombre:2",
+					"styleSheet": "Medium - 11",
+					"enterable": false,
+					"focusable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo6": {
+					"type": "input",
+					"top": 648,
+					"left": 1118,
+					"width": 58,
+					"height": 14,
+					"sizingY": "move",
+					"dataSource": "[xShell_PictLibrary:194]ancho:5",
+					"styleSheet": "Plain - 11",
+					"enterable": false,
+					"focusable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo7": {
+					"type": "input",
+					"top": 648,
+					"left": 1227,
+					"width": 58,
+					"height": 14,
+					"sizingY": "move",
+					"dataSource": "[xShell_PictLibrary:194]alto:6",
+					"styleSheet": "Plain - 11",
+					"enterable": false,
+					"focusable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo8": {
+					"type": "input",
+					"top": 648,
+					"left": 1357,
+					"width": 51,
+					"height": 14,
+					"sizingY": "move",
+					"dataSource": "[xShell_PictLibrary:194]tamaño:7",
+					"styleSheet": "Plain - 11",
+					"enterable": false,
+					"focusable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 648,
+					"left": 1069,
+					"width": 43,
+					"height": 14,
+					"sizingY": "move",
+					"textAlign": "right",
+					"styleSheet": "Plain - 11",
+					"text": "Ancho:"
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 648,
+					"left": 1180,
+					"width": 43,
+					"height": 14,
+					"sizingY": "move",
+					"textAlign": "right",
+					"styleSheet": "Plain - 11",
+					"text": "Alto:"
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 648,
+					"left": 1292,
+					"width": 59,
+					"height": 14,
+					"sizingY": "move",
+					"textAlign": "right",
+					"styleSheet": "Plain - 11",
+					"text": "Tamaño:"
+				},
+				"Campo3": {
+					"type": "input",
+					"top": 49,
+					"left": 1014,
+					"width": 407,
+					"height": 589,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "[xShell_PictLibrary:194]usos:8",
+					"enterable": false,
+					"focusable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ruta1": {
+					"type": "input",
+					"top": 670,
+					"left": 538,
+					"width": 871,
+					"height": 14,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"dataSource": "[xShell_PictLibrary:194]rutaExterna:9",
+					"styleSheet": "Plain - 11",
+					"enterable": false,
+					"focusable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto": {
+					"type": "text",
+					"top": 15,
+					"left": 1027,
+					"width": 159,
+					"height": 17,
+					"styleSheet": "Medium - 13",
+					"text": "Usos"
+				},
+				"Separador": {
+					"type": "splitter",
+					"top": 1,
+					"left": 1012,
+					"width": 1,
+					"height": 637,
+					"sizingX": "move",
+					"sizingY": "grow",
+					"borderStyle": "solid",
+					"events": [
+						"onClick"
+					]
+				},
+				"ruta": {
+					"type": "text",
+					"top": 672,
+					"left": 462,
+					"width": 73,
+					"height": 14,
+					"sizingY": "move",
+					"styleSheet": "Plain - 11",
+					"text": "Ruta externa"
+				},
+				"SearchBox": {
+					"type": "subform",
+					"top": 8,
+					"left": 208,
+					"width": 225,
+					"height": 31,
+					"dataSourceTypeHint": "text",
+					"detailForm": "SearchBox",
+					"enterableInList": false,
+					"deletableInList": false,
+					"doubleClickInRowAction": "editSubrecord",
+					"doubleClickInEmptyAreaAction": "addSubrecord",
+					"selectionMode": "multiple",
+					"printFrame": "variable",
+					"method": "ObjectMethods/SearchBox.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange"
+					]
+				},
+				"Línea": {
+					"type": "line",
+					"top": 0,
+					"left": 450,
+					"height": 728,
+					"stroke": "#AAAAAA"
+				},
+				"Línea1": {
+					"type": "line",
+					"top": 639,
+					"left": 449,
+					"width": 1004,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"stroke": "#AAAAAA"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 15,
+					"left": 462,
+					"width": 159,
+					"height": 17,
+					"styleSheet": "Medium - 13",
+					"text": "Imagen"
+				},
+				"Línea2": {
+					"type": "line",
+					"top": 47,
+					"left": 451,
+					"width": 1483,
+					"sizingX": "grow",
+					"stroke": "#AAAAAA"
+				},
+				"Botón 3D": {
+					"type": "button",
+					"top": 10,
+					"left": 9,
+					"width": 38,
+					"height": 29,
+					"icon": "/RESOURCES/img/rueda de Tareas con menu.PNG",
+					"style": "custom",
+					"method": "ObjectMethods/Botón 3D.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

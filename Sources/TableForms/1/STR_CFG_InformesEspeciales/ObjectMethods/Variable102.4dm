@@ -1,0 +1,1 @@
+aForColor{aObjects}:=Self:C308->

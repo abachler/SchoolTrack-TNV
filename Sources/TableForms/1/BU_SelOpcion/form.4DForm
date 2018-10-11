@@ -1,0 +1,208 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Botón invisible4",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 202,
+					"left": 242,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 145,
+					"left": 58,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Botón invisible2": {
+					"type": "button",
+					"top": 91,
+					"left": 79,
+					"width": 67,
+					"height": 23,
+					"dataSource": "b_Alumnos",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón invisible3": {
+					"type": "button",
+					"top": 92,
+					"left": 172,
+					"width": 75,
+					"height": 23,
+					"dataSource": "b_Profesores",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón invisible4": {
+					"type": "button",
+					"top": 94,
+					"left": 269,
+					"width": 66,
+					"height": 21,
+					"dataSource": "bCerrar",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 14,
+					"left": 70,
+					"width": 264,
+					"height": 44,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Para inscribir a un alumno haga clic en el botón Alumnos.\rPara inscribir a un profesor haga clic en el botón Profesores.\rPara salir haga clic en el Bbotón Cerrar."
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 98,
+					"left": 89,
+					"width": 46,
+					"height": 11,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Alumnos"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 100,
+					"left": 178,
+					"width": 64,
+					"height": 11,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Funcionarios"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 99,
+					"left": 281,
+					"width": 39,
+					"height": 11,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Cerrar"
+				},
+				"marcomodulo4": {
+					"type": "picture",
+					"top": 13,
+					"left": 13,
+					"width": 48,
+					"height": 48,
+					"pictureFormat": "scaled"
+				},
+				"vpXS_IconModule": {
+					"type": "input",
+					"top": 21,
+					"left": 21,
+					"width": 32,
+					"height": 32,
+					"dataSource": "vpXS_IconModule",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onGettingFocus",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

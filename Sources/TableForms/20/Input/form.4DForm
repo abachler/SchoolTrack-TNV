@@ -1,0 +1,1228 @@
+﻿{
+	"windowTitle": "Subsector de aprendizaje",
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "lineaPie",
+	"rightMargin": 0,
+	"bottomMargin": -50,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDoubleClick",
+		"onDrop",
+		"onDataChange",
+		"onUnload",
+		"onAfterKeystroke",
+		"onLoadRecord"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Pestaña": {
+					"type": "tab",
+					"top": 10,
+					"left": -1,
+					"width": 738,
+					"height": 27,
+					"dataSourceTypeHint": "arrayText",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/Pestaña.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Imagen6": {
+					"type": "picture",
+					"top": -36,
+					"left": -54,
+					"width": 32,
+					"height": 22,
+					"pictureFormat": "scaled"
+				},
+				"siguiente": {
+					"type": "button",
+					"top": 569,
+					"left": 52,
+					"width": 18,
+					"height": 16,
+					"dataSource": "bNext",
+					"action": "nextRecord",
+					"fontFamily": ".Lucida Grande UI",
+					"fontSize": 12,
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/siguiente.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"anterior": {
+					"type": "button",
+					"top": 569,
+					"left": 34,
+					"width": 18,
+					"height": 16,
+					"dataSource": "bPrev",
+					"action": "previousRecord",
+					"fontFamily": ".Lucida Grande UI",
+					"fontSize": 12,
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/anterior.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"ultimo": {
+					"type": "button",
+					"top": 569,
+					"left": 70,
+					"width": 18,
+					"height": 16,
+					"dataSource": "bLast",
+					"action": "lastRecord",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 11,
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/ultimo.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"primero": {
+					"type": "button",
+					"top": 569,
+					"left": 14,
+					"width": 18,
+					"height": 16,
+					"dataSource": "bFirst",
+					"action": "firstRecord",
+					"fontFamily": ".Lucida Grande UI",
+					"fontSize": 12,
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/primero.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Imagen13": {
+					"type": "picture",
+					"top": 41,
+					"left": 1,
+					"width": 745,
+					"height": 2,
+					"pictureFormat": "scaled"
+				},
+				"lineaPie": {
+					"type": "line",
+					"top": 549,
+					"left": 1,
+					"width": 764,
+					"stroke": "#AAAAAA"
+				},
+				"listbox.niveles": {
+					"type": "listbox",
+					"top": 42,
+					"left": 0,
+					"width": 169,
+					"height": 506,
+					"dataSource": "lbNiveles",
+					"focusable": false,
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "38px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"headerHeight": "17px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "#DDDDDD",
+					"verticalLineStroke": "transparent",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"method": "ObjectMethods/listbox.niveles.4dm",
+					"events": [
+						"onClick",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "nivelNombre",
+							"width": 169,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"wordwrap": "normal",
+							"verticalAlign": "top",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						},
+						{
+							"name": "nivelNumero",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						}
+					]
+				},
+				"Botón": {
+					"type": "button",
+					"top": 564,
+					"left": 647,
+					"width": 107,
+					"height": 21,
+					"dataSource": "Botón",
+					"action": "accept",
+					"text": "Cerrar",
+					"method": "ObjectMethods/Botón.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Rectángulo": {
+					"type": "rectangle",
+					"top": -5,
+					"left": 782,
+					"width": 818,
+					"height": 562,
+					"fill": "#EE0000",
+					"stroke": "#EE0000"
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 483,
+					"left": 792,
+					"width": 72,
+					"height": 20,
+					"dataSource": "b_OK",
+					"shortcutKey": "[Enter]",
+					"text": "Cerrar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón invisible1": {
+					"type": "button",
+					"top": 523,
+					"left": 793,
+					"width": 203,
+					"height": 27,
+					"dataSource": "Botón invisible1",
+					"shortcutKey": "'",
+					"shortcutAccel": true,
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"nivelActual": {
+					"type": "input",
+					"top": 409,
+					"left": 792,
+					"width": 297,
+					"height": 17,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"lb_ContenidoObjeto": {
+					"type": "listbox",
+					"top": 32,
+					"left": 792,
+					"width": 297,
+					"height": 366,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 10,
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "objeto_Categorias",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						},
+						{
+							"name": "objeto_observaciones",
+							"width": 177,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						}
+					]
+				},
+				"categoriaActual": {
+					"type": "input",
+					"top": 434,
+					"left": 792,
+					"width": 220,
+					"height": 14,
+					"styleSheet": "Plain - 10",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"observacionActual": {
+					"type": "input",
+					"top": 454,
+					"left": 792,
+					"width": 220,
+					"height": 14,
+					"styleSheet": "Plain - 10",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto": {
+					"type": "text",
+					"top": 3,
+					"left": 793,
+					"width": 404,
+					"height": 21,
+					"stroke": "#FFFFFF",
+					"styleSheet": "Medium - 16",
+					"text": "NO BORRAR"
+				},
+				"objeto": {
+					"type": "input",
+					"top": 32,
+					"left": 1109,
+					"width": 473,
+					"height": 513,
+					"dataSource": "[xxSTR_Materias:20]ob_Observaciones:7",
+					"enterable": false,
+					"focusable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text2": {
+					"type": "text",
+					"top": 118,
+					"left": 101,
+					"width": 73,
+					"height": 13,
+					"stroke": "#555555",
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Subsector:"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 164,
+					"left": 97,
+					"width": 77,
+					"height": 13,
+					"stroke": "#555555",
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Abreviación:"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 72,
+					"left": 415,
+					"width": 62,
+					"height": 13,
+					"stroke": "#555555",
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Nº sector:"
+				},
+				"Text16": {
+					"type": "text",
+					"top": 95,
+					"left": 22,
+					"width": 152,
+					"height": 13,
+					"stroke": "#555555",
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Sector de aprendizaje:"
+				},
+				"Field6": {
+					"type": "input",
+					"top": 72,
+					"left": 182,
+					"width": 77,
+					"height": 14,
+					"dataSource": "[xxSTR_Materias:20]Codigo:10",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "~\"A-Z;0-9;-\"",
+					"method": "ObjectMethods/Field6.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field7": {
+					"type": "input",
+					"top": 72,
+					"left": 485,
+					"width": 23,
+					"height": 14,
+					"dataSource": "[xxSTR_Materias:20]NoSector:11",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"min": 1,
+					"max": 99,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field8": {
+					"type": "input",
+					"top": 95,
+					"left": 182,
+					"width": 544,
+					"height": 14,
+					"dataSource": "[xxSTR_Materias:20]Area:12",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field8.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field9": {
+					"type": "input",
+					"top": 118,
+					"left": 182,
+					"width": 544,
+					"height": 14,
+					"dataSource": "[xxSTR_Materias:20]Materia:2",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Field9.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo1": {
+					"type": "input",
+					"top": 141,
+					"left": 182,
+					"width": 544,
+					"height": 14,
+					"dataSource": "[xxSTR_Materias:20]Denominación_Interna:18",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Campo1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Field10": {
+					"type": "input",
+					"top": 164,
+					"left": 182,
+					"width": 82,
+					"height": 14,
+					"dataSource": "[xxSTR_Materias:20]Abreviatura:8",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "~\"A-Z;0-9;-; ;.;/\"",
+					"method": "ObjectMethods/Field10.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Combo Box": {
+					"type": "combo",
+					"top": 184,
+					"left": 180,
+					"width": 549,
+					"height": 22,
+					"dataSource": "<>at_SubjectStatsGroups",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/Combo Box.4dm",
+					"events": [
+						"onClick",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"Text9": {
+					"type": "text",
+					"top": 72,
+					"left": 66,
+					"width": 108,
+					"height": 13,
+					"stroke": "#555555",
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Código MINEDUC:"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 72,
+					"left": 515,
+					"width": 194,
+					"height": 12,
+					"stroke": "#555555",
+					"textAlign": "right",
+					"fontFamily": "Tahoma",
+					"fontSize": 10,
+					"text": "(para ordenamiento en informes internos)"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 187,
+					"left": 58,
+					"width": 116,
+					"height": 13,
+					"stroke": "#555555",
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Grupo estadístico:"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 141,
+					"left": 70,
+					"width": 104,
+					"height": 13,
+					"stroke": "#555555",
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Nombre interno:"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 239,
+					"left": 1,
+					"width": 173,
+					"height": 13,
+					"stroke": "#555555",
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Nombre largo del subsector:"
+				},
+				"Texto9": {
+					"type": "text",
+					"top": 214,
+					"left": 86,
+					"width": 88,
+					"height": 13,
+					"stroke": "#555555",
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Area en M.P.A:"
+				},
+				"Field11": {
+					"type": "input",
+					"top": 214,
+					"left": 182,
+					"width": 544,
+					"height": 14,
+					"dataSource": "[xxSTR_Materias:20]AreaMPA:4",
+					"styleSheet": "Plain - 12",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo2": {
+					"type": "input",
+					"top": 239,
+					"left": 182,
+					"width": 544,
+					"height": 28,
+					"dataSource": "[xxSTR_Materias:20]Materia_NombreLargo:20",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"asiganturas": {
+					"type": "listbox",
+					"top": 292,
+					"left": 0,
+					"width": 765,
+					"height": 256,
+					"listboxType": "currentSelection",
+					"focusable": false,
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"highlightSet": "$ListboxSet0",
+					"table": 18,
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 11,
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Barras 2D1",
+							"dataSource": "[Asignaturas:18]Curso:5",
+							"width": 63,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado3",
+								"text": "Curso",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "Barras 2D2",
+							"dataSource": "[Asignaturas:18]denominacion_interna:16",
+							"width": 411,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado4",
+								"text": "Denominación interna",
+								"dataSource": "Encabezado4",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "Barras 2D3",
+							"dataSource": "[Asignaturas:18]profesor_nombre:13",
+							"width": 156,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado5",
+								"text": "Profesor",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "Barras 2D4",
+							"dataSource": "[Asignaturas:18]Numero_de_alumnos:49",
+							"width": 135,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado6",
+								"text": "Alumnos",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 11
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Botón 3D": {
+					"type": "button",
+					"top": 519,
+					"left": 714,
+					"width": 38,
+					"height": 22,
+					"dataSource": "bMenu",
+					"icon": "/RESOURCES/Images/rueda de Tareas con menu.PNG",
+					"style": "custom",
+					"method": "ObjectMethods/Botón 3D.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Imagen15": {
+					"type": "picture",
+					"top": 42,
+					"left": 169,
+					"width": 2,
+					"height": 506,
+					"pictureFormat": "scaled"
+				},
+				"lb_observaciones": {
+					"type": "listbox",
+					"top": 42,
+					"left": 332,
+					"width": 433,
+					"height": 468,
+					"hideFocusRing": true,
+					"rowHeight": "38px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "#DDDDDD",
+					"verticalLineStroke": "transparent",
+					"verticalAlign": "top",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "observacion",
+							"width": 433,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"wordwrap": "normal",
+							"verticalAlign": "top",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange",
+								"onBeforeDataEntry"
+							],
+							"method": "ObjectMethods/observacion.4dm",
+							"header": {
+								"name": "encabezadoObservacion",
+								"text": "Observaciones",
+								"verticalAlign": "top"
+							}
+						}
+					]
+				},
+				"lb_Categoria": {
+					"type": "listbox",
+					"top": 42,
+					"left": 172,
+					"width": 157,
+					"height": 468,
+					"hideFocusRing": true,
+					"rowHeight": "38px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "#DDDDDD",
+					"verticalLineStroke": "transparent",
+					"verticalAlign": "top",
+					"method": "ObjectMethods/lb_Categoria.4dm",
+					"events": [
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "listaCategorias",
+							"width": 157,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"verticalAlign": "middle",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange",
+								"onBeforeDataEntry"
+							],
+							"method": "ObjectMethods/listaCategorias.4dm",
+							"header": {
+								"name": "Encabezado11",
+								"text": "Categoria",
+								"dataSource": "Encabezado9",
+								"verticalAlign": "top"
+							}
+						}
+					]
+				},
+				"eliminaObservacion": {
+					"type": "button",
+					"top": 518,
+					"left": 375,
+					"width": 32,
+					"height": 23,
+					"shortcutKey": "-",
+					"shortcutAccel": true,
+					"styleSheet": "Medium - 16",
+					"text": "—",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/eliminaObservacion.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 518,
+					"left": 177,
+					"width": 32,
+					"height": 23,
+					"dataSource": "Botón1",
+					"shortcutKey": "+",
+					"shortcutAccel": true,
+					"shortcutShift": true,
+					"fontFamily": "Helvetica Neue Medium",
+					"fontSize": 16,
+					"text": "+",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/Botón2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"eliminaCategoria": {
+					"type": "button",
+					"top": 518,
+					"left": 214,
+					"width": 32,
+					"height": 23,
+					"shortcutKey": "-",
+					"shortcutAccel": true,
+					"shortcutShift": true,
+					"fontFamily": "Helvetica Neue Medium",
+					"fontSize": 16,
+					"text": "—",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/eliminaCategoria.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón4": {
+					"type": "button",
+					"top": 518,
+					"left": 332,
+					"width": 32,
+					"height": 23,
+					"shortcutKey": "+",
+					"shortcutAccel": true,
+					"styleSheet": "Medium - 16",
+					"text": "+",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/Botón4.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"menuPeriodo": {
+					"type": "button",
+					"top": 299,
+					"left": 503,
+					"width": 205,
+					"height": 16,
+					"styleSheet": "Medium - 13",
+					"text": "Periodo",
+					"textPlacement": "left",
+					"style": "custom",
+					"method": "ObjectMethods/menuPeriodo.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón 3D4": {
+					"type": "button",
+					"top": 619,
+					"left": 595,
+					"width": 134,
+					"height": 20,
+					"dataSource": "bOpcionesAprendizajes",
+					"text": "Opciones de cálculo...",
+					"styleSheet": "Plain - 11",
+					"method": "ObjectMethods/Botón 3D4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"asignatura.mpa.enunciados": {
+					"type": "list",
+					"top": 318,
+					"left": 171,
+					"width": 591,
+					"height": 230,
+					"list": {
+						"$ref": "/SOURCES/lists.json#/0_dummyList"
+					},
+					"hideFocusRing": true,
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"dragging": "custom",
+					"dropping": "custom",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "none",
+					"method": "ObjectMethods/asignatura.mpa.enunciados.4dm",
+					"events": [
+						"onDrop",
+						"onSelectionChange"
+					]
+				},
+				"enunciadosMapa": {
+					"type": "list",
+					"top": 63,
+					"left": 171,
+					"width": 591,
+					"height": 230,
+					"list": {
+						"$ref": "/SOURCES/lists.json#/0_dummyList"
+					},
+					"hideFocusRing": true,
+					"selectionMode": "multiple",
+					"scrollbarVertical": "hidden",
+					"scrollbarHorizontal": "hidden",
+					"dragging": "custom",
+					"dropping": "custom",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "none",
+					"method": "ObjectMethods/enunciadosMapa.4dm",
+					"events": [
+						"onDrop",
+						"onSelectionChange"
+					]
+				},
+				"lb_matrices": {
+					"type": "listbox",
+					"top": 298,
+					"left": 0,
+					"width": 169,
+					"height": 250,
+					"focusable": false,
+					"hideFocusRing": true,
+					"rowHeight": "2em",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "#DDDDDD",
+					"verticalLineStroke": "#DDDDDD",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"method": "ObjectMethods/lb_matrices.4dm",
+					"events": [
+						"onClick",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "matrizNombre",
+							"width": 169,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"wordwrap": "normal",
+							"verticalAlign": "top",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12
+						},
+						{
+							"name": "matrizRecNum",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						}
+					]
+				},
+				"separadorHorizontal1": {
+					"type": "picture",
+					"top": 294,
+					"left": 0,
+					"width": 766,
+					"height": 2,
+					"pictureFormat": "scaled"
+				},
+				"separadorHorizontal2": {
+					"type": "picture",
+					"top": 297,
+					"left": 0,
+					"width": 766,
+					"height": 2,
+					"pictureFormat": "scaled"
+				},
+				"Imagen7": {
+					"type": "picture",
+					"top": 317,
+					"left": 170,
+					"width": 598,
+					"height": 2,
+					"pictureFormat": "scaled"
+				},
+				"Imagen2": {
+					"type": "picture",
+					"top": 42,
+					"left": 169,
+					"width": 2,
+					"height": 251,
+					"pictureFormat": "scaled"
+				},
+				"Imagen5": {
+					"type": "picture",
+					"top": 298,
+					"left": 169,
+					"width": 2,
+					"height": 249,
+					"pictureFormat": "scaled"
+				},
+				"Imagen4": {
+					"type": "picture",
+					"top": 63,
+					"left": 170,
+					"width": 596,
+					"height": 2,
+					"pictureFormat": "scaled"
+				},
+				"tituloArea": {
+					"type": "text",
+					"top": 44,
+					"left": 173,
+					"width": 540,
+					"height": 16,
+					"styleSheet": "Medium - 13",
+					"text": "tituloArea"
+				},
+				"tituloMatriz": {
+					"type": "text",
+					"top": 299,
+					"left": 173,
+					"width": 317,
+					"height": 16,
+					"styleSheet": "Medium - 13",
+					"text": "tituloMatriz"
+				},
+				"refPeriodo": {
+					"type": "input",
+					"top": 5,
+					"left": 654,
+					"width": 85,
+					"height": 16,
+					"visibility": "hidden",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Imagen17": {
+					"type": "picture",
+					"top": 192,
+					"left": 896,
+					"width": 16,
+					"height": 10,
+					"pictureFormat": "scaled",
+					"picture": "Images/Imagen17.gif"
+				},
+				"Imagen19": {
+					"type": "picture",
+					"top": 298,
+					"left": 711,
+					"width": 2,
+					"height": 19,
+					"pictureFormat": "scaled"
+				},
+				"Imagen9": {
+					"type": "picture",
+					"top": 298,
+					"left": 499,
+					"width": 2,
+					"height": 19,
+					"pictureFormat": "scaled"
+				},
+				"menuOpciones": {
+					"type": "button",
+					"top": 299,
+					"left": 719,
+					"width": 16,
+					"height": 16,
+					"textPlacement": "left",
+					"style": "custom",
+					"method": "ObjectMethods/menuOpciones.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

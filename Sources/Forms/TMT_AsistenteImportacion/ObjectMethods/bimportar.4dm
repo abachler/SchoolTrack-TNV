@@ -1,0 +1,5 @@
+C_LONGINT:C283($proc)
+$proc:=IT_UThermometer (1;0;"Ejecutando importación en el servidor, esto puede tardar varios minutos...")
+TMT_AsistImport_Importar ((opc_reemplazar_bloque=1);(opc_profesor=1);(opc_profesorFirmante=1);o_horarioOK)
+IT_UThermometer (-2;$proc)
+CD_Dlog (0;"Fin de la importación, por favor revise el resultado de esta en el botón <b>i</b> en la esquina superior derecha.")

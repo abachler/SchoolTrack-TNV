@@ -1,0 +1,1438 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Forms",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Botón1",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Rectángulo Redondeado3": {
+					"type": "rectangle",
+					"top": 333,
+					"left": 4,
+					"width": 783,
+					"height": 87,
+					"fill": "#E2FFDF",
+					"stroke": "#E2FFDF",
+					"borderRadius": 5
+				},
+				"Texto13": {
+					"type": "text",
+					"top": 353,
+					"left": 233,
+					"width": 322,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Imprimir el siguiente texto en la línea \"Cobro mensual por alumno, mes\""
+				},
+				"Texto12": {
+					"type": "text",
+					"top": 336,
+					"left": 203,
+					"width": 242,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Ítem sin categorías"
+				},
+				"Casilla de selección34": {
+					"type": "checkbox",
+					"top": 351,
+					"left": 216,
+					"width": 320,
+					"height": 17,
+					"dataSource": "cs_g01",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección34.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto14": {
+					"type": "text",
+					"top": 365,
+					"left": 233,
+					"width": 332,
+					"height": 31,
+					"styleSheet": "XS_FormObjects",
+					"text": "(sólo se imprimirá el monto en el total de la línea Menos exención sistema de becas)"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 391,
+					"left": 235,
+					"width": 323,
+					"height": 20,
+					"dataSource": "vt_TextoImprimir",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 9,
+					"borderStyle": "solid",
+					"spellcheck": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto11": {
+					"type": "text",
+					"top": 336,
+					"left": 13,
+					"width": 122,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Línea abono"
+				},
+				"Casilla de selección33": {
+					"type": "checkbox",
+					"top": 351,
+					"left": 26,
+					"width": 160,
+					"height": 15,
+					"dataSource": "cs_0212",
+					"text": "Imprimir palabra abono",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto15": {
+					"type": "text",
+					"top": 337,
+					"left": 562,
+					"width": 242,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Total de la beca al pagar, abonar y/o saldar"
+				},
+				"Casilla de selección35": {
+					"type": "checkbox",
+					"top": 355,
+					"left": 571,
+					"width": 215,
+					"height": 15,
+					"dataSource": "cs_g02",
+					"text": "Sumar al total de beca al pagar mes completo",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección36": {
+					"type": "checkbox",
+					"top": 371,
+					"left": 571,
+					"width": 160,
+					"height": 15,
+					"dataSource": "cs_g03",
+					"text": "Sumar al total de beca al abonar",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección37": {
+					"type": "checkbox",
+					"top": 388,
+					"left": 571,
+					"width": 160,
+					"height": 15,
+					"dataSource": "cs_g04",
+					"text": "Sumar al total de beca al saldar",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto16": {
+					"type": "text",
+					"top": 388,
+					"left": 23,
+					"width": 122,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Año de la matrícula"
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 386,
+					"left": 125,
+					"width": 73,
+					"height": 12,
+					"dataSource": "vt_AgnoBoleta",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 9,
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto17": {
+					"type": "text",
+					"top": 370,
+					"left": 13,
+					"width": 212,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Línea derechos de matrícula año escolar"
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 441,
+					"left": 684,
+					"width": 95,
+					"height": 22,
+					"dataSource": "bt_1",
+					"action": "accept",
+					"text": "Aceptar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 441,
+					"left": 581,
+					"width": 95,
+					"height": 22,
+					"dataSource": "bt_2",
+					"action": "cancel",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto18": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 773,
+					"height": 23,
+					"styleSheet": "XS_DialogsTitles",
+					"text": "Configuración de Documentos Tributarios para colegios subvencionados"
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 544,
+					"left": 424,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 487,
+					"left": 240,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				},
+				"Pestaña1": {
+					"type": "tab",
+					"top": 55,
+					"left": 0,
+					"width": 790,
+					"height": 272,
+					"dataSource": "hl_PaginasBolSub",
+					"dataSourceTypeHint": "arrayText",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Pestaña1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Rectángulo Redondeado1": {
+					"type": "rectangle",
+					"top": 94,
+					"left": 8,
+					"width": 191,
+					"height": 220,
+					"fill": "#EEEEEE",
+					"stroke": "#EEEEEE",
+					"borderRadius": 5
+				},
+				"Rectángulo Redondeado2": {
+					"type": "rectangle",
+					"top": 94,
+					"left": 200,
+					"width": 162,
+					"height": 220,
+					"fill": "#DFE4FF",
+					"stroke": "#DFE4FF",
+					"borderRadius": 5
+				},
+				"Rectángulo Redondeado4": {
+					"type": "rectangle",
+					"top": 94,
+					"left": 364,
+					"width": 227,
+					"height": 220,
+					"fill": "#E2FFDF",
+					"stroke": "#E2FFDF",
+					"borderRadius": 5
+				},
+				"Rectángulo Redondeado5": {
+					"type": "rectangle",
+					"top": 94,
+					"left": 593,
+					"width": 192,
+					"height": 220,
+					"fill": "#FFFFDF",
+					"stroke": "#FFFFDF",
+					"borderRadius": 5
+				}
+			}
+		},
+		{
+			"objects": {
+				"Casilla de selección1": {
+					"type": "checkbox",
+					"top": 116,
+					"left": 27,
+					"width": 160,
+					"height": 17,
+					"dataSource": "cs_0102",
+					"text": "Imprimir nombre del mes",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 97,
+					"left": 14,
+					"width": 122,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Línea mes"
+				},
+				"Casilla de selección2": {
+					"type": "checkbox",
+					"top": 136,
+					"left": 27,
+					"width": 130,
+					"height": 17,
+					"dataSource": "cs_0103",
+					"text": "Imprimir monto",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección3": {
+					"type": "checkbox",
+					"top": 156,
+					"left": 37,
+					"width": 160,
+					"height": 17,
+					"dataSource": "cs_0104",
+					"text": "Imprimir monto entre paréntesis",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 175,
+					"left": 36,
+					"width": 151,
+					"height": 24,
+					"stroke": "#EE0000",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"text": "(cuando se agrupan los meses no aparece el monto mensual)"
+				},
+				"Casilla de selección4": {
+					"type": "checkbox",
+					"top": 116,
+					"left": 228,
+					"width": 140,
+					"height": 17,
+					"dataSource": "cs_0105",
+					"text": "Imprimir monto",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 97,
+					"left": 215,
+					"width": 152,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Línea monto mensual"
+				},
+				"Casilla de selección5": {
+					"type": "checkbox",
+					"top": 116,
+					"left": 385,
+					"width": 200,
+					"height": 25,
+					"dataSource": "cs_0106",
+					"text": "Imprimir monto mensual de la beca (línea izquierda)",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 97,
+					"left": 372,
+					"width": 212,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Línea menos exención sistema de becas"
+				},
+				"Casilla de selección6": {
+					"type": "checkbox",
+					"top": 146,
+					"left": 385,
+					"width": 200,
+					"height": 25,
+					"dataSource": "cs_0107",
+					"text": "Imprimir monto total de la beca (línea izquierda)",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección7": {
+					"type": "checkbox",
+					"top": 176,
+					"left": 385,
+					"width": 200,
+					"height": 35,
+					"dataSource": "cs_0108",
+					"text": "Imprimir monto mensual de la beca y número de veces que la beca se repite (línea izquierda)",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección8": {
+					"type": "checkbox",
+					"top": 216,
+					"left": 385,
+					"width": 190,
+					"height": 35,
+					"dataSource": "cs_0109",
+					"text": "Imprimir monto mensual y monto total de la beca por separado (línea izquierda y línea derecha respectivamente)",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección9": {
+					"type": "checkbox",
+					"top": 256,
+					"left": 385,
+					"width": 206,
+					"height": 24,
+					"dataSource": "cs_0110",
+					"text": "Repetir el monto de la línea izquierda en la línea derecha",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección9.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección10": {
+					"type": "checkbox",
+					"top": 286,
+					"left": 385,
+					"width": 202,
+					"height": 25,
+					"dataSource": "cs_0111",
+					"text": "Imprimir monto pagado en la línea derecha",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección10.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto19": {
+					"type": "text",
+					"top": 97,
+					"left": 605,
+					"width": 153,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Observaciones en Pagos"
+				},
+				"Casilla de selección38": {
+					"type": "checkbox",
+					"top": 116,
+					"left": 608,
+					"width": 140,
+					"height": 17,
+					"dataSource": "cs_0112",
+					"text": "Imprimir observación",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto22": {
+					"type": "text",
+					"top": 135,
+					"left": 606,
+					"width": 171,
+					"height": 24,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"text": "&B = Porcentaje beca; &M = Monto dcto beca; &A = Año"
+				},
+				"Texto23": {
+					"type": "text",
+					"top": 161,
+					"left": 606,
+					"width": 151,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Observación alumnos sin beca:"
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 177,
+					"left": 608,
+					"width": 172,
+					"height": 27,
+					"dataSource": "vt_obsCompletoSBeca",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto24": {
+					"type": "text",
+					"top": 255,
+					"left": 606,
+					"width": 161,
+					"height": 54,
+					"stroke": "#076000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 9,
+					"text": "Para agregar el porcentaje de beca, el monto del descuento por beca o el año utilice los caracteres que aparecen en la parte superior del recuadro."
+				},
+				"Texto31": {
+					"type": "text",
+					"top": 211,
+					"left": 606,
+					"width": 151,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Observación alumnos con beca:"
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 227,
+					"left": 608,
+					"width": 172,
+					"height": 27,
+					"dataSource": "vt_obsCompletoCBeca",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Casilla de selección21": {
+					"type": "checkbox",
+					"top": 116,
+					"left": 27,
+					"width": 160,
+					"height": 17,
+					"dataSource": "cs_0201",
+					"text": "Imprimir palabra abono",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección11": {
+					"type": "checkbox",
+					"top": 136,
+					"left": 27,
+					"width": 160,
+					"height": 17,
+					"dataSource": "cs_0202",
+					"text": "Imprimir nombre del mes",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 97,
+					"left": 14,
+					"width": 122,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Línea mes"
+				},
+				"Casilla de selección12": {
+					"type": "checkbox",
+					"top": 156,
+					"left": 27,
+					"width": 130,
+					"height": 17,
+					"dataSource": "cs_0203",
+					"text": "Imprimir monto",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección13": {
+					"type": "checkbox",
+					"top": 176,
+					"left": 37,
+					"width": 160,
+					"height": 17,
+					"dataSource": "cs_0204",
+					"text": "Imprimir monto entre paréntesis",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección14": {
+					"type": "checkbox",
+					"top": 116,
+					"left": 228,
+					"width": 130,
+					"height": 17,
+					"dataSource": "cs_0205",
+					"text": "Imprimir monto",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 97,
+					"left": 215,
+					"width": 142,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Línea monto mensual"
+				},
+				"Casilla de selección15": {
+					"type": "checkbox",
+					"top": 116,
+					"left": 385,
+					"width": 200,
+					"height": 25,
+					"dataSource": "cs_0206",
+					"text": "Imprimir monto mensual de la beca (línea izquierda)",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección15.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 97,
+					"left": 372,
+					"width": 222,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Línea menos exención sistema de becas"
+				},
+				"Casilla de selección16": {
+					"type": "checkbox",
+					"top": 146,
+					"left": 385,
+					"width": 200,
+					"height": 25,
+					"dataSource": "cs_0207",
+					"text": "Imprimir monto total de la beca (línea izquierda)",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección16.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección17": {
+					"type": "checkbox",
+					"top": 176,
+					"left": 385,
+					"width": 200,
+					"height": 35,
+					"dataSource": "cs_0208",
+					"text": "Imprimir monto mensual de la beca y número de veces que la beca se repite (línea izquierda)",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección17.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección18": {
+					"type": "checkbox",
+					"top": 216,
+					"left": 385,
+					"width": 190,
+					"height": 35,
+					"dataSource": "cs_0209",
+					"text": "Imprimir monto mensual y monto total de la beca por separado (línea izquierda y línea derecha respectivamente)",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección18.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección19": {
+					"type": "checkbox",
+					"top": 256,
+					"left": 385,
+					"width": 200,
+					"height": 24,
+					"dataSource": "cs_0210",
+					"text": "Repetir el monto de la línea izquierda en la línea derecha",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección19.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección20": {
+					"type": "checkbox",
+					"top": 286,
+					"left": 385,
+					"width": 200,
+					"height": 25,
+					"dataSource": "cs_0211",
+					"text": "Imprimir monto pagado de colegiatura en la línea derecha",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección20.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto20": {
+					"type": "text",
+					"top": 97,
+					"left": 605,
+					"width": 153,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Observaciones en Pagos"
+				},
+				"Casilla de selección39": {
+					"type": "checkbox",
+					"top": 116,
+					"left": 608,
+					"width": 140,
+					"height": 17,
+					"dataSource": "cs_0213",
+					"text": "Imprimir observación",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto28": {
+					"type": "text",
+					"top": 255,
+					"left": 606,
+					"width": 161,
+					"height": 54,
+					"stroke": "#076000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Para agregar el porcentaje de beca, el monto del descuento por beca o el año utilice los caracteres que aparecen en la parte superior del recuadro."
+				},
+				"Texto26": {
+					"type": "text",
+					"top": 135,
+					"left": 606,
+					"width": 171,
+					"height": 24,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"text": "&B = Porcentaje beca; &M = Monto dcto beca; &A = Año; &S = Saldo abono"
+				},
+				"Texto32": {
+					"type": "text",
+					"top": 161,
+					"left": 606,
+					"width": 151,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Observación alumnos sin beca:"
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 177,
+					"left": 608,
+					"width": 172,
+					"height": 27,
+					"dataSource": "vt_obsAbonoSBeca",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto33": {
+					"type": "text",
+					"top": 211,
+					"left": 606,
+					"width": 151,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Observación alumnos con beca:"
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 227,
+					"left": 608,
+					"width": 172,
+					"height": 27,
+					"dataSource": "vt_obsAbonoCBeca",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Casilla de selección32": {
+					"type": "checkbox",
+					"top": 116,
+					"left": 27,
+					"width": 160,
+					"height": 17,
+					"dataSource": "cs_0301",
+					"text": "Imprimir palabra saldo",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección22": {
+					"type": "checkbox",
+					"top": 136,
+					"left": 27,
+					"width": 160,
+					"height": 17,
+					"dataSource": "cs_0302",
+					"text": "Imprimir nombre del mes",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 97,
+					"left": 14,
+					"width": 122,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Línea mes"
+				},
+				"Casilla de selección23": {
+					"type": "checkbox",
+					"top": 156,
+					"left": 27,
+					"width": 130,
+					"height": 17,
+					"dataSource": "cs_0303",
+					"text": "Imprimir monto",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección24": {
+					"type": "checkbox",
+					"top": 176,
+					"left": 37,
+					"width": 160,
+					"height": 17,
+					"dataSource": "cs_0304",
+					"text": "Imprimir monto entre paréntesis",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección25": {
+					"type": "checkbox",
+					"top": 116,
+					"left": 228,
+					"width": 130,
+					"height": 17,
+					"dataSource": "cs_0305",
+					"text": "Imprimir monto",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto9": {
+					"type": "text",
+					"top": 97,
+					"left": 215,
+					"width": 142,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Línea monto mensual"
+				},
+				"Casilla de selección26": {
+					"type": "checkbox",
+					"top": 116,
+					"left": 385,
+					"width": 200,
+					"height": 25,
+					"dataSource": "cs_0306",
+					"text": "Imprimir monto mensual de la beca (línea izquierda)",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección26.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto10": {
+					"type": "text",
+					"top": 97,
+					"left": 372,
+					"width": 222,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Línea menos exención sistema de becas"
+				},
+				"Casilla de selección27": {
+					"type": "checkbox",
+					"top": 146,
+					"left": 385,
+					"width": 200,
+					"height": 25,
+					"dataSource": "cs_0307",
+					"text": "Imprimir monto total de la beca (línea izquierda)",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección27.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección28": {
+					"type": "checkbox",
+					"top": 176,
+					"left": 385,
+					"width": 200,
+					"height": 35,
+					"dataSource": "cs_0308",
+					"text": "Imprimir monto mensual de la beca y número de veces que la beca se repite (línea izquierda)",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección28.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección29": {
+					"type": "checkbox",
+					"top": 216,
+					"left": 385,
+					"width": 190,
+					"height": 35,
+					"dataSource": "cs_0309",
+					"text": "Imprimir monto mensual y monto total de la beca por separado (línea izquierda y línea derecha respectivamente)",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección29.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección30": {
+					"type": "checkbox",
+					"top": 256,
+					"left": 385,
+					"width": 198,
+					"height": 24,
+					"dataSource": "cs_0310",
+					"text": "Repetir el monto de la línea izquierda en la línea derecha",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección30.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección31": {
+					"type": "checkbox",
+					"top": 286,
+					"left": 385,
+					"width": 200,
+					"height": 25,
+					"dataSource": "cs_0311",
+					"text": "Imprimir monto pagado de colegiatura en la línea derecha",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección31.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto21": {
+					"type": "text",
+					"top": 97,
+					"left": 605,
+					"width": 153,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Observaciones en Pagos"
+				},
+				"Casilla de selección40": {
+					"type": "checkbox",
+					"top": 116,
+					"left": 608,
+					"width": 140,
+					"height": 17,
+					"dataSource": "cs_0312",
+					"text": "Imprimir observación",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto30": {
+					"type": "text",
+					"top": 255,
+					"left": 606,
+					"width": 161,
+					"height": 54,
+					"stroke": "#076000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Para agregar el porcentaje de beca, el monto del descuento por beca o el año utilice los caracteres que aparecen en la parte superior del recuadro."
+				},
+				"Texto25": {
+					"type": "text",
+					"top": 135,
+					"left": 606,
+					"width": 171,
+					"height": 24,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"text": "&B = Porcentaje beca; &M = Monto dcto beca; &A = Año"
+				},
+				"Texto34": {
+					"type": "text",
+					"top": 161,
+					"left": 606,
+					"width": 151,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Observación alumnos sin beca:"
+				},
+				"Variable9": {
+					"type": "input",
+					"top": 177,
+					"left": 608,
+					"width": 172,
+					"height": 27,
+					"dataSource": "vt_obsSaldoSbeca",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto35": {
+					"type": "text",
+					"top": 211,
+					"left": 606,
+					"width": 151,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Observación alumnos con beca:"
+				},
+				"Variable10": {
+					"type": "input",
+					"top": 227,
+					"left": 608,
+					"width": 172,
+					"height": 27,
+					"dataSource": "vt_obsSaldoCBeca",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

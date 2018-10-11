@@ -1,0 +1,103 @@
+﻿{
+	"windowTitle": "Tablas y campos",
+	"rightMargin": 0,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"hl_tables": {
+					"type": "list",
+					"top": 1,
+					"left": 1,
+					"width": 227,
+					"height": 390,
+					"sizingY": "grow",
+					"dataSource": "hl_tables",
+					"hideFocusRing": true,
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/hl_tables.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail",
+						"onSelectionChange"
+					]
+				},
+				"hl_fields": {
+					"type": "list",
+					"top": 1,
+					"left": 230,
+					"width": 267,
+					"height": 390,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "hl_fields",
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/hl_fields.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Botón 3D": {
+					"type": "pictureButton",
+					"top": 400,
+					"left": 13,
+					"width": 38,
+					"height": 26,
+					"dataSource": "Botón 3D",
+					"columnCount": 1,
+					"rowCount": 3,
+					"loopBackToFirstFrame": true,
+					"switchBackWhenReleased": true,
+					"method": "ObjectMethods/Botón 3D.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

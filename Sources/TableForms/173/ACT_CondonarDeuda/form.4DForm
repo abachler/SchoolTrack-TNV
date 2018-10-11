@@ -1,0 +1,103 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Forms",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "btn_Cancelar",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"xALP_ACT_Condonacion": {
+					"type": "plugin",
+					"top": 13,
+					"left": 13,
+					"width": 530,
+					"height": 200,
+					"dataSource": "xALP_ACT_Condonacion",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/xALP_ACT_Condonacion.4dm",
+					"events": [
+						"onClick",
+						"onPluginArea"
+					]
+				},
+				"btn_Aceptar": {
+					"type": "button",
+					"top": 226,
+					"left": 370,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btn_Aceptar",
+					"text": "Aceptar",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/btn_Aceptar.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_Cancelar": {
+					"type": "button",
+					"top": 226,
+					"left": 463,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btn_Cancelar",
+					"action": "cancel",
+					"text": "Cancelar",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"cs_Neto": {
+					"type": "checkbox",
+					"top": 226,
+					"left": 13,
+					"width": 344,
+					"height": 20,
+					"dataSource": "cs_Neto",
+					"text": "Descontar monto condonado del monto neto del cargo",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

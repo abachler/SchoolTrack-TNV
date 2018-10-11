@@ -1,0 +1,16 @@
+//%attributes = {}
+  //WEB_GetFormVariable
+
+C_LONGINT:C283($el)
+C_TEXT:C284($0;$1;$objectName;$result)
+ARRAY TEXT:C222($aNames;0)
+ARRAY TEXT:C222($aValues;0)
+
+$objectName:=$1
+
+WEB GET VARIABLES:C683($aNames;$aValues)
+$el:=Find in array:C230($aNames;$objectName)
+If ($el>0)
+	$result:=$aValues{$el}
+End if 
+$0:=$result

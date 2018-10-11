@@ -1,0 +1,1 @@
+OBJECT SET VISIBLE:C603(bModelosC;False:C215)  //imagen pop up

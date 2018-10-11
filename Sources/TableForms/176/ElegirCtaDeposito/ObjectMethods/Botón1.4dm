@@ -1,0 +1,1 @@
+vlACT_SelectedCta:=AL_GetLine (xALP_CtasBancarias)

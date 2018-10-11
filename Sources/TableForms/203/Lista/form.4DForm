@@ -1,0 +1,956 @@
+﻿{
+	"rightMargin": 16,
+	"bottomMargin": 10,
+	"markerHeader": 13,
+	"markerBody": 32,
+	"markerBreak": 35,
+	"markerFooter": 35,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Imagen17": {
+					"type": "picture",
+					"top": -5,
+					"left": 0,
+					"width": 2142,
+					"height": 18,
+					"sizingX": "grow",
+					"pictureFormat": "scaled",
+					"picture": "Images/Imagen17.pict"
+				},
+				"S1_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 24,
+					"width": 109,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "Key : "
+				},
+				"S2_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 165,
+					"width": 62,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "ID_Asignatura : "
+				},
+				"S3_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 259,
+					"width": 184,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "Asignatura : "
+				},
+				"S4_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 475,
+					"width": 51,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "ID_Alumno : "
+				},
+				"S5_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 558,
+					"width": 183,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "Apellidos_y_Nombres : "
+				},
+				"S6_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 773,
+					"width": 74,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "Curso : "
+				},
+				"S7_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 879,
+					"width": 55,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "BIT_Periodo : "
+				},
+				"S8_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 966,
+					"width": 43,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "ID_Eje : "
+				},
+				"S9_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 1041,
+					"width": 62,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "ID_Dimension : "
+				},
+				"S10_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 1135,
+					"width": 71,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "ID_Competencia : "
+				},
+				"S11_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 1238,
+					"width": 178,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "Competencia : "
+				},
+				"S12_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 1448,
+					"width": 110,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "Periodo1_NativoLiteral : "
+				},
+				"S13_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 1590,
+					"width": 110,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "Periodo2_NativoLiteral : "
+				},
+				"S14_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 1732,
+					"width": 110,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "Periodo3_NativoLiteral : "
+				},
+				"S15_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 1874,
+					"width": 110,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "Periodo4_NativoLiteral : "
+				},
+				"S16_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 2016,
+					"width": 110,
+					"height": 11,
+					"sizingX": "grow",
+					"styleSheet": "XS_FormObjects",
+					"text": "Periodo5_NativoLiteral : "
+				},
+				"Rectángulo18": {
+					"type": "rectangle",
+					"top": 13,
+					"left": 0,
+					"width": 2142,
+					"height": 19,
+					"sizingX": "grow",
+					"stroke": "#FFFFFF"
+				},
+				"S1_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 24,
+					"width": 109,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_EvaluacionAprendizajes:203]Key:8",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S2_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 165,
+					"width": 62,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_EvaluacionAprendizajes:203]ID_Asignatura:1",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S3_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 259,
+					"width": 184,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Asignaturas:18]Asignatura:3",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S4_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 475,
+					"width": 51,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_EvaluacionAprendizajes:203]ID_Alumno:3",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S5_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 558,
+					"width": 183,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos:2]apellidos_y_nombres:40",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S6_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 773,
+					"width": 74,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos:2]curso:20",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S7_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 879,
+					"width": 55,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_EvaluacionAprendizajes:203]BIT_Periodo:10",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S8_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 966,
+					"width": 43,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_EvaluacionAprendizajes:203]ID_Eje:5",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S9_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 1041,
+					"width": 62,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_EvaluacionAprendizajes:203]ID_Dimension:6",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S10_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 1135,
+					"width": 71,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_EvaluacionAprendizajes:203]ID_Competencia:7",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S11_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 1238,
+					"width": 178,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[MPA_DefinicionCompetencias:187]Competencia:6",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S12_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 1448,
+					"width": 110,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_EvaluacionAprendizajes:203]Periodo1_NativoLiteral:13",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S13_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 1590,
+					"width": 110,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_EvaluacionAprendizajes:203]Periodo2_NativoLiteral:25",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S14_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 1732,
+					"width": 110,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_EvaluacionAprendizajes:203]Periodo3_NativoLiteral:37",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S15_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 1874,
+					"width": 110,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_EvaluacionAprendizajes:203]Periodo4_NativoLiteral:49",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S16_Campo": {
+					"type": "input",
+					"top": 17,
+					"left": 2016,
+					"width": 110,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[Alumnos_EvaluacionAprendizajes:203]Periodo5_NativoLiteral:66",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Línea19": {
+					"type": "line",
+					"top": -5,
+					"left": 0,
+					"height": 37,
+					"stroke": "#A8A8A8"
+				},
+				"Línea20": {
+					"type": "line",
+					"top": -5,
+					"left": 2142,
+					"height": 37,
+					"sizingX": "move",
+					"stroke": "#A8A8A8"
+				},
+				"Línea21": {
+					"type": "line",
+					"top": -5,
+					"left": 2000,
+					"height": 37,
+					"stroke": "#A8A8A8"
+				},
+				"Separador2": {
+					"type": "button",
+					"top": -5,
+					"left": 1999,
+					"width": 3,
+					"height": 37,
+					"dataSource": "Separador2",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea22": {
+					"type": "line",
+					"top": -5,
+					"left": 1858,
+					"height": 37,
+					"stroke": "#A8A8A8"
+				},
+				"Separador3": {
+					"type": "button",
+					"top": -5,
+					"left": 1857,
+					"width": 3,
+					"height": 37,
+					"dataSource": "Separador3",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea23": {
+					"type": "line",
+					"top": -5,
+					"left": 1716,
+					"height": 37,
+					"stroke": "#A8A8A8"
+				},
+				"Separador4": {
+					"type": "button",
+					"top": -5,
+					"left": 1715,
+					"width": 3,
+					"height": 37,
+					"dataSource": "Separador4",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea24": {
+					"type": "line",
+					"top": -5,
+					"left": 1574,
+					"height": 37,
+					"stroke": "#A8A8A8"
+				},
+				"Separador5": {
+					"type": "button",
+					"top": -5,
+					"left": 1573,
+					"width": 3,
+					"height": 37,
+					"dataSource": "Separador5",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea25": {
+					"type": "line",
+					"top": -5,
+					"left": 1432,
+					"height": 37,
+					"stroke": "#A8A8A8"
+				},
+				"Separador6": {
+					"type": "button",
+					"top": -5,
+					"left": 1431,
+					"width": 3,
+					"height": 37,
+					"dataSource": "Separador6",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea26": {
+					"type": "line",
+					"top": -5,
+					"left": 1222,
+					"height": 37,
+					"stroke": "#A8A8A8"
+				},
+				"Separador7": {
+					"type": "button",
+					"top": -5,
+					"left": 1221,
+					"width": 3,
+					"height": 37,
+					"dataSource": "Separador7",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea27": {
+					"type": "line",
+					"top": -5,
+					"left": 1119,
+					"height": 37,
+					"stroke": "#A8A8A8"
+				},
+				"Separador8": {
+					"type": "button",
+					"top": -5,
+					"left": 1118,
+					"width": 3,
+					"height": 37,
+					"dataSource": "Separador8",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea28": {
+					"type": "line",
+					"top": -5,
+					"left": 1025,
+					"height": 37,
+					"stroke": "#A8A8A8"
+				},
+				"Separador9": {
+					"type": "button",
+					"top": -5,
+					"left": 1024,
+					"width": 3,
+					"height": 37,
+					"dataSource": "Separador9",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea29": {
+					"type": "line",
+					"top": -5,
+					"left": 950,
+					"height": 37,
+					"stroke": "#A8A8A8"
+				},
+				"Separador10": {
+					"type": "button",
+					"top": -5,
+					"left": 949,
+					"width": 3,
+					"height": 37,
+					"dataSource": "Separador10",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea30": {
+					"type": "line",
+					"top": -5,
+					"left": 863,
+					"height": 37,
+					"stroke": "#A8A8A8"
+				},
+				"Separador11": {
+					"type": "button",
+					"top": -5,
+					"left": 862,
+					"width": 3,
+					"height": 37,
+					"dataSource": "Separador11",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea31": {
+					"type": "line",
+					"top": -5,
+					"left": 757,
+					"height": 37,
+					"stroke": "#A8A8A8"
+				},
+				"Separador12": {
+					"type": "button",
+					"top": -5,
+					"left": 756,
+					"width": 3,
+					"height": 37,
+					"dataSource": "Separador12",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea32": {
+					"type": "line",
+					"top": -5,
+					"left": 542,
+					"height": 37,
+					"stroke": "#A8A8A8"
+				},
+				"Separador13": {
+					"type": "button",
+					"top": -5,
+					"left": 541,
+					"width": 3,
+					"height": 37,
+					"dataSource": "Separador13",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea33": {
+					"type": "line",
+					"top": -5,
+					"left": 459,
+					"height": 37,
+					"stroke": "#A8A8A8"
+				},
+				"Separador14": {
+					"type": "button",
+					"top": -5,
+					"left": 458,
+					"width": 3,
+					"height": 37,
+					"dataSource": "Separador14",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea34": {
+					"type": "line",
+					"top": -5,
+					"left": 243,
+					"height": 37,
+					"stroke": "#A8A8A8"
+				},
+				"Separador15": {
+					"type": "button",
+					"top": -5,
+					"left": 242,
+					"width": 3,
+					"height": 37,
+					"dataSource": "Separador15",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea35": {
+					"type": "line",
+					"top": -5,
+					"left": 149,
+					"height": 37,
+					"stroke": "#A8A8A8"
+				},
+				"Separador16": {
+					"type": "button",
+					"top": -5,
+					"left": 148,
+					"width": 3,
+					"height": 37,
+					"dataSource": "Separador16",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,1 @@
+[ACT_CuentasCorrientes:175]PAT_titular:53:=[ACT_CuentasCorrientes:175]PAT_Apellidos:34+" "+[ACT_CuentasCorrientes:175]PAT_nombres:35

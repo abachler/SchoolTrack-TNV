@@ -1,0 +1,221 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Variable4",
+	"rightMargin": -13,
+	"bottomMargin": -13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 314,
+					"left": 439,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 257,
+					"left": 255,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable3": {
+					"type": "button",
+					"top": 153,
+					"left": 309,
+					"width": 80,
+					"height": 20,
+					"dataSource": "cdB_btn2",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Boton 2",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 153,
+					"left": 398,
+					"width": 80,
+					"height": 20,
+					"dataSource": "cdB_btn1",
+					"action": "cancel",
+					"shortcutKey": "[Return]",
+					"text": "Continuar",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"focusable": false,
+					"defaultButton": true,
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"marcomodulo4": {
+					"type": "picture",
+					"top": 13,
+					"left": 13,
+					"width": 48,
+					"height": 48,
+					"pictureFormat": "scaled"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 13,
+					"left": 67,
+					"width": 401,
+					"height": 16,
+					"dataSource": "vsBWR_CurrentModule",
+					"fill": "transparent",
+					"styleSheet": "XS_System",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vpXS_IconModule": {
+					"type": "input",
+					"top": 21,
+					"left": 21,
+					"width": 32,
+					"height": 32,
+					"dataSource": "vpXS_IconModule",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onGettingFocus",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 34,
+					"left": 66,
+					"width": 400,
+					"height": 44,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Esta es la primera vez que el módulo AccountTrack es utilizado.\rAccountTrack creará ahora las cuentas corrientes a partir de los alumnos.\r\rMarque las opciones deseadas y haga clic en el botón Continuar."
+				},
+				"Casilla de selección1": {
+					"type": "checkbox",
+					"top": 95,
+					"left": 68,
+					"width": 232,
+					"height": 16,
+					"dataSource": "cbCtasAfectasInteres",
+					"text": "Marcar todas las cuentas como afectas a intereses",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección2": {
+					"type": "checkbox",
+					"top": 113,
+					"left": 68,
+					"width": 302,
+					"height": 16,
+					"dataSource": "cbApdosAfectosInteres",
+					"text": "Marcar todos los apoderados de cuentas como afectos a intereses",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,895 @@
+﻿{
+	"inheritedForm": "XS_MASTER_ConfigDialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 660,
+	"height": 480,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"CFG_MISC_secciones": {
+					"type": "tab",
+					"top": 44,
+					"left": 13,
+					"width": 632,
+					"height": 427,
+					"dataSource": "CFG_MISC_secciones",
+					"dataSourceTypeHint": "arrayText",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				},
+				"cerrar": {
+					"type": "button",
+					"top": 536,
+					"left": 19,
+					"width": 103,
+					"height": 18,
+					"sizingY": "move",
+					"action": "accept",
+					"shortcutKey": "[Esc]",
+					"text": "cerrar (esc)",
+					"fontFamily": ".Helvetica Neue DeskInterface",
+					"fontSize": 12,
+					"focusable": false,
+					"method": "ObjectMethods/cerrar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Casilla de selección2": {
+					"type": "checkbox",
+					"top": 79,
+					"left": 27,
+					"width": 450,
+					"height": 18,
+					"dataSource": "<>viSTR_UtilizarObservaciones",
+					"text": "Utilizar listas de observaciones predefinidas cuando hayan sido configuradas",
+					"styleSheet": "Plain - 11",
+					"method": "ObjectMethods/Casilla de selección2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección": {
+					"type": "checkbox",
+					"top": 98,
+					"left": 27,
+					"width": 320,
+					"height": 22,
+					"dataSource": "<>viSTR_CambiaInasistenciaxAtraso",
+					"text": "Reemplazar inasistencias con atrasos automáticamente",
+					"styleSheet": "Plain - 11",
+					"method": "ObjectMethods/Casilla de selección.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Casilla de selección12": {
+					"type": "checkbox",
+					"top": 123,
+					"left": 27,
+					"width": 554,
+					"height": 18,
+					"dataSource": "<>viSTR_UD_NombresComun_Oficial",
+					"text": "Actualizar Nombre Común y Nombre Oficial de Alumnos cuando se modifiquen los apellidos o nombres",
+					"styleSheet": "Plain - 11",
+					"method": "ObjectMethods/Casilla de selección12.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Field4": {
+					"type": "input",
+					"top": 146,
+					"left": 27,
+					"width": 269,
+					"height": 18,
+					"dataSource": "[xxSTR_Constants:1]AutoAsigGrupo:25",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 11",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"textFormat": "Asignar grupo (alianza, color) automáticamente a:",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field5": {
+					"type": "input",
+					"top": 149,
+					"left": 327,
+					"width": 220,
+					"height": 17,
+					"dataSource": "[xxSTR_Constants:1]Grupo AL_FL:24",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 11",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"textFormat": "Alumnos;Familias",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección4": {
+					"type": "checkbox",
+					"top": 167,
+					"left": 27,
+					"width": 470,
+					"height": 18,
+					"dataSource": "<>viSTR_AsignarComunaDefecto",
+					"text": "Asignar como comuna por defecto la comuna del colegio a los nuevos registros",
+					"styleSheet": "Plain - 11",
+					"method": "ObjectMethods/Casilla de selección4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección10": {
+					"type": "checkbox",
+					"top": 190,
+					"left": 27,
+					"width": 247,
+					"height": 18,
+					"dataSource": "<>vlSTR_UsarSoloUnApellido",
+					"text": "Validar familiar con un sólo apellido",
+					"styleSheet": "Plain - 11",
+					"method": "ObjectMethods/Casilla de selección10.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"chk_motivoRetiro1": {
+					"type": "checkbox",
+					"top": 211,
+					"left": 27,
+					"width": 554,
+					"height": 18,
+					"dataSource": "<>viSTR_ForzarMotivoRetiro",
+					"text": "Motivo de retiro obligatorio",
+					"styleSheet": "Plain - 11",
+					"method": "ObjectMethods/chk_motivoRetiro1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"lbStatusAlumno": {
+					"type": "listbox",
+					"top": 242,
+					"left": 27,
+					"width": 480,
+					"height": 92,
+					"singleClickEdit": true,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "automatic",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"method": "ObjectMethods/lbStatusAlumno.4dm",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick",
+						"onAfterEdit"
+					],
+					"columns": [
+						{
+							"name": "statusAlumno",
+							"width": 190,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "tl_statusAlumno",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "statusAlumnoAlias",
+							"width": 190,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"textAlign": "left",
+							"verticalAlign": "middle",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange",
+								"onAfterEdit"
+							],
+							"header": {
+								"name": "tl_statusAluAlias",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "statusAlumnoVisible",
+							"width": 85,
+							"minWidth": 85,
+							"maxWidth": 85,
+							"resizable": false,
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange",
+								"onAfterEdit"
+							],
+							"header": {
+								"name": "tl_statusAluVisible",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Casilla de selección3": {
+					"type": "checkbox",
+					"top": 87,
+					"left": 33,
+					"width": 447,
+					"height": 18,
+					"dataSource": "<>viSTR_AutorizarPropEval",
+					"text": "Permitir que profesores configuren propiedades de evaluación de sus asignaturas",
+					"styleSheet": "Plain - 11",
+					"method": "ObjectMethods/Casilla de selección3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección5": {
+					"type": "checkbox",
+					"top": 133,
+					"left": 33,
+					"width": 407,
+					"height": 18,
+					"dataSource": "<>viSTR_FirmantesAutorizados",
+					"text": "Profesores \"firmantes\" tienen los mismos derechos que Profesores \"titulares\"",
+					"styleSheet": "Plain - 11",
+					"method": "ObjectMethods/Casilla de selección5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección13": {
+					"type": "checkbox",
+					"top": 110,
+					"left": 33,
+					"width": 601,
+					"height": 18,
+					"dataSource": "<>viSTR_NoModificarNotas",
+					"text": "No permitir que los profesores modifiquen calificaciones e inasistencias a clases cuando ya han sido registradas",
+					"styleSheet": "Plain - 11",
+					"method": "ObjectMethods/Casilla de selección13.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"chk_bloquearDias": {
+					"type": "checkbox",
+					"top": 157,
+					"left": 33,
+					"width": 531,
+					"height": 18,
+					"dataSource": "<>viSTR_puedeBloquearDiasCalendar",
+					"text": "Permitir que profesores bloqueen días de calendario",
+					"styleSheet": "Plain - 11",
+					"method": "ObjectMethods/chk_bloquearDias.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"chk_registrarInasistenciaDiaCompleto": {
+					"type": "checkbox",
+					"top": 171,
+					"left": 33,
+					"width": 601,
+					"height": 43,
+					"text": "SchoolTrack WebAccess: Permitir que al registrar inasistente la primera hora de clases se marque el día completo inasistente. (Asistencia por hora detallada)",
+					"styleSheet": "Plain - 11",
+					"method": "ObjectMethods/chk_registrarInasistenciaDiaCompleto.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Casilla de selección6": {
+					"type": "checkbox",
+					"top": 83,
+					"left": 28,
+					"width": 529,
+					"height": 18,
+					"dataSource": "<>viSTR_AutoLoadPictures",
+					"text": "Detectar y descargar fotografías automáticamente",
+					"styleSheet": "Plain - 11",
+					"method": "ObjectMethods/Casilla de selección6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 99,
+					"left": 50,
+					"width": 537,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Sólo se detectan las fotografías en formato PICT, almacenadas en la ruta correcta y con nombres que respeten la convención."
+				},
+				"Casilla de selección7": {
+					"type": "checkbox",
+					"top": 123,
+					"left": 28,
+					"width": 354,
+					"height": 18,
+					"dataSource": "<>viSTR_ReligionExtendida",
+					"text": "Usa sistema extendido de almacenamiento de datos religiosos",
+					"styleSheet": "Plain - 11",
+					"method": "ObjectMethods/Casilla de selección7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 123,
+					"left": 377,
+					"width": 128,
+					"height": 18,
+					"dataSource": "bDefinirEfemerides",
+					"text": "Definir Efemérides",
+					"styleSheet": "Plain - 11",
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"chk_usardiap": {
+					"type": "checkbox",
+					"top": 154,
+					"left": 28,
+					"width": 554,
+					"height": 18,
+					"dataSource": "<>viSTR_ColegioUsaDiap",
+					"text": "Permitir uso de módulo DIAP",
+					"styleSheet": "Plain - 11",
+					"method": "ObjectMethods/chk_usardiap.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"txt_BloqueoFechaEvt": {
+					"type": "text",
+					"top": 232,
+					"left": 28,
+					"width": 294,
+					"height": 15,
+					"fontFamily": "helvetica",
+					"fontSize": 11,
+					"text": "Bloquear el ingreso de eventos de asignaturas después del:"
+				},
+				"BloquearEventosHasta": {
+					"type": "input",
+					"top": 232,
+					"left": 329,
+					"width": 236,
+					"height": 15,
+					"dataSource": "<>d_FechaLimiteParaEventosAsig",
+					"dataSourceTypeHint": "date",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 11,
+					"contextMenu": "none",
+					"dateFormat": "systemLong",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/BloquearEventosHasta.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"chk_AtrasoInicio": {
+					"type": "checkbox",
+					"top": 184,
+					"left": 28,
+					"width": 554,
+					"height": 34,
+					"text": "Crear atraso de inicio de jornada al marcar un atraso en la primera hora de clases (Registro de asistencia por hora detallado)",
+					"styleSheet": "Plain - 11",
+					"method": "ObjectMethods/chk_AtrasoInicio.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"tl_CopyConfigEvalDisplay": {
+					"type": "text",
+					"top": 136,
+					"left": 39,
+					"width": 321,
+					"height": 14,
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Texto de ejemplo:"
+				},
+				"tl_OpcEvalGralDisplay": {
+					"type": "text",
+					"top": 116,
+					"left": 34,
+					"width": 396,
+					"height": 15,
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 11,
+					"text": "Personalizar la visualización de los nombres de las evaluaciones generales:"
+				},
+				"lb_selNivEvalGralDisplay": {
+					"type": "listbox",
+					"top": 154,
+					"left": 34,
+					"width": 199,
+					"height": 196,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "automatic",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 11,
+					"method": "ObjectMethods/lb_selNivEvalGralDisplay.4dm",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "SelAsigNiveles",
+							"width": 184,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "tl_displayNivelesAsig",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"lb_ConfigDisplayNomEvaGral": {
+					"type": "listbox",
+					"top": 154,
+					"left": 237,
+					"width": 384,
+					"height": 196,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "automatic",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 11,
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "nombreEvaGral",
+							"width": 184,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "tl_nombreEvaGral",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "displayEvaGral",
+							"width": 185,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "tl_displayEvaGral",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"btn_CopyConfigEvalDisplay": {
+					"type": "button",
+					"top": 135,
+					"left": 34,
+					"width": 326,
+					"height": 15,
+					"display": false,
+					"method": "ObjectMethods/btn_CopyConfigEvalDisplay.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Casilla de selección8": {
+					"type": "checkbox",
+					"top": 86,
+					"left": 34,
+					"width": 274,
+					"height": 18,
+					"dataSource": "<>viSTR_CreditoAsignatura",
+					"text": "Usar campo crédito para las asignaturas",
+					"styleSheet": "Plain - 11",
+					"method": "ObjectMethods/Casilla de selección8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"List Box": {
+					"type": "listbox",
+					"top": 95,
+					"left": 27,
+					"width": 600,
+					"height": 268,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "automatic",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "o_Niveles",
+							"width": 161,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Niveles Academicos",
+								"text": "Niveles Academicos",
+								"textAlign": "center",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "o_abNdeOrden",
+							"width": 73,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"controlType": "checkbox",
+							"textAlign": "center",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onDataChange"
+							],
+							"method": "ObjectMethods/o_abNdeOrden.4dm",
+							"header": {
+								"name": "Encabezado2",
+								"text": "N° de Orden",
+								"textAlign": "center",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "o_abCursoNombres",
+							"width": 104,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"controlType": "checkbox",
+							"textAlign": "center",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onDataChange"
+							],
+							"method": "ObjectMethods/o_abCursoNombres.4dm",
+							"header": {
+								"name": "Encabezado3",
+								"text": "Curso y Nombres",
+								"textAlign": "center",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "o_abNombres",
+							"width": 62,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"controlType": "checkbox",
+							"textAlign": "center",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onDataChange"
+							],
+							"method": "ObjectMethods/o_abNombres.4dm",
+							"header": {
+								"name": "Encabezado4",
+								"text": "Nombres",
+								"textAlign": "center",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "o_abUso",
+							"width": 83,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"controlType": "checkbox",
+							"textAlign": "center",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onDataChange"
+							],
+							"method": "ObjectMethods/o_abUso.4dm",
+							"header": {
+								"name": "Encabezado1",
+								"text": "Según Genero",
+								"textAlign": "center",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "o_abGenero",
+							"width": 102,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"controlType": "popup",
+							"booleanFormat": "Masculino;Femenino",
+							"textAlign": "center",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onDataChange",
+								"onBeforeDataEntry"
+							],
+							"method": "ObjectMethods/o_abGenero.4dm",
+							"header": {
+								"name": "Encabezado5",
+								"text": "Ordenado por",
+								"textAlign": "center",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 72,
+					"left": 27,
+					"width": 600,
+					"height": 15,
+					"stroke": "#000000",
+					"styleSheet": "Plain - 11",
+					"text": "Nómina de alumnos ordenada por:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 367,
+					"left": 27,
+					"width": 600,
+					"height": 31,
+					"stroke": "#000000",
+					"styleSheet": "Plain - 11",
+					"fontWeight": "bold",
+					"fontStyle": "italic",
+					"text": "Los Niveles Académicos que no presenten una configuración realizada, utilizaran la Configuración General por omisión."
+				},
+				"Text3": {
+					"type": "text",
+					"top": 394,
+					"left": 27,
+					"width": 600,
+					"height": 30,
+					"stroke": "#000000",
+					"styleSheet": "Plain - 11",
+					"fontStyle": "italic",
+					"text": "Para configurar un nivel debe de tener asignado un orden (N° de Orden, Curso y Nombres o Nombres). La opcion Según Genero es opcional."
+				},
+				"Text4": {
+					"type": "text",
+					"top": 422,
+					"left": 27,
+					"width": 600,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "Plain - 11",
+					"fontStyle": "italic",
+					"text": "N° de Orden: Ordenamiento por numero de lista."
+				},
+				"Text5": {
+					"type": "text",
+					"top": 436,
+					"left": 27,
+					"width": 600,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "Plain - 11",
+					"fontStyle": "italic",
+					"text": "Curso y Nombres: Ordenamiento por curso luego por apellidos y nombres."
+				},
+				"Text6": {
+					"type": "text",
+					"top": 449,
+					"left": 27,
+					"width": 600,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "Plain - 11",
+					"fontStyle": "italic",
+					"text": "Nombres: Ordenamiento por apellidos y nombres."
+				}
+			}
+		}
+	]
+}

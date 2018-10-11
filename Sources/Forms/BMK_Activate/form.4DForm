@@ -1,0 +1,141 @@
+﻿{
+	"rightMargin": 24,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texto": {
+					"type": "text",
+					"top": 20,
+					"left": 20,
+					"width": 449,
+					"height": 22,
+					"styleSheet": "XS_DialogsTitles",
+					"text": "Activación"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 62,
+					"left": 43,
+					"width": 411,
+					"height": 130,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Puede activar el registro de tiempos de ejecución para un comando o un conjunto de comandos incluidos en un script o bien activarlo para registrar los tiempos durante la ejecución de un método en el que se hayan incorporado las instrucciones de inicio y fin de registro.\r\r- BMK_LocalTimeExecution(True)\rInicializa el registro de tiempo de ejecución del método\r- BMK_LocalTimeExecution(False)\rRegistra el tiempo de ejecución del método\r"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 204,
+					"left": 43,
+					"width": 426,
+					"height": 52,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Si desea registrar los tiempos de ejecución de un comando ingrese el comando (o una serie de comandos) en la zona Script a a ejecutar y haga clic en el botón Activar Benchmark.\rCuando la tarea finalice se mostrará el resultado.\r\r\r"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 270,
+					"left": 42,
+					"width": 148,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Descripción de la Tarea:"
+				},
+				"vtBMK_taskName": {
+					"type": "input",
+					"top": 294,
+					"left": 45,
+					"width": 426,
+					"height": 36,
+					"dataSource": "vtBMK_taskName",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/vtBMK_taskName.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable": {
+					"type": "input",
+					"top": 376,
+					"left": 45,
+					"width": 409,
+					"height": 91,
+					"dataSource": "vtBMK_script",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 494,
+					"left": 43,
+					"width": 113,
+					"height": 21,
+					"dataSource": "bCancelBMK",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón": {
+					"type": "button",
+					"top": 488,
+					"left": 318,
+					"width": 153,
+					"height": 21,
+					"dataSource": "bOK",
+					"shortcutKey": "[Enter]",
+					"text": "Activar benchmark",
+					"styleSheet": "XS_DialogObjects",
+					"defaultButton": true,
+					"method": "ObjectMethods/Botón.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 349,
+					"left": 42,
+					"width": 89,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Comandos:"
+				}
+			}
+		}
+	]
+}

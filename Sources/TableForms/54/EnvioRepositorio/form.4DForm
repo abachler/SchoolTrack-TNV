@@ -1,0 +1,599 @@
+﻿{
+	"windowTitle": "Envío de Informe al Repositorio",
+	"width": 558,
+	"height": 692,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"ocultarHistorial": {
+					"type": "button",
+					"top": 2,
+					"left": 537,
+					"width": 26,
+					"height": 22,
+					"sizingX": "move",
+					"tooltip": "Ocultar historial de actualizaciones",
+					"styleSheet": "Plain - 12",
+					"style": "custom",
+					"method": "ObjectMethods/ocultarHistorial.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"mostrarHistorial": {
+					"type": "button",
+					"top": 2,
+					"left": 537,
+					"width": 26,
+					"height": 22,
+					"sizingX": "move",
+					"dataSource": "Botón 3D",
+					"tooltip": "Mostrar historial de actualizaciones",
+					"styleSheet": "Plain - 12",
+					"style": "custom",
+					"method": "ObjectMethods/mostrarHistorial.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Rectángulo": {
+					"type": "rectangle",
+					"top": 27,
+					"left": 558,
+					"width": 403,
+					"height": 665,
+					"sizingX": "move",
+					"sizingY": "grow",
+					"stroke": "#FFFFFF"
+				},
+				"Imagen-1": {
+					"type": "picture",
+					"top": 27,
+					"left": 558,
+					"width": 403,
+					"height": 339,
+					"sizingX": "move",
+					"pictureFormat": "scaled",
+					"picture": "Images/Imagen-1.gif"
+				},
+				"Cuadro de Grupo": {
+					"type": "groupBox",
+					"top": 726,
+					"left": 0,
+					"width": 543,
+					"height": 235,
+					"sizingY": "move",
+					"stroke": "#EE0000",
+					"styleSheet": "Medium - 12",
+					"text": "NoBorrar"
+				},
+				"Campo": {
+					"type": "input",
+					"top": 16,
+					"left": 128,
+					"width": 400,
+					"height": 113,
+					"sizingX": "grow",
+					"dataSource": "[xShell_Reports:54]Descripción:16",
+					"styleSheet": "Plain - 12",
+					"styledText": true,
+					"storeDefaultStyle": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Campo.4dm",
+					"events": [
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"listboxActualizaciones": {
+					"type": "listbox",
+					"top": 27,
+					"left": 559,
+					"width": 402,
+					"height": 339,
+					"sizingX": "move",
+					"sizingY": "grow",
+					"dataSource": "List Box",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"fill": "transparent",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"method": "ObjectMethods/listboxActualizaciones.4dm",
+					"events": [
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "fechaHora",
+							"width": 140,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						},
+						{
+							"name": "autor",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						},
+						{
+							"name": "tipoEvento",
+							"width": 142,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						},
+						{
+							"name": "comentariosActualizaciones",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						}
+					]
+				},
+				"Campo1": {
+					"type": "input",
+					"top": 179,
+					"left": 128,
+					"width": 400,
+					"height": 43,
+					"sizingX": "grow",
+					"dataSource": "[xShell_Reports:54]Tags:43",
+					"styleSheet": "Plain - 12",
+					"storeDefaultStyle": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Campo1.4dm",
+					"events": [
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"rutaPdf": {
+					"type": "input",
+					"top": 250,
+					"left": 128,
+					"width": 400,
+					"height": 15,
+					"sizingX": "grow",
+					"styleSheet": "Plain - 12",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/rutaPdf.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onDrop",
+						"onDragOver"
+					]
+				},
+				"comentariohistorial": {
+					"type": "input",
+					"top": 375,
+					"left": 559,
+					"width": 397,
+					"height": 286,
+					"sizingX": "move",
+					"sizingY": "move",
+					"fill": "transparent",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"versionMinima": {
+					"type": "input",
+					"top": 384,
+					"left": 128,
+					"width": 74,
+					"height": 15,
+					"dataSource": "[xShell_Reports:54]version_minimo:23",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9;.\"",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/versionMinima.4dm",
+					"events": [
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"build": {
+					"type": "input",
+					"top": 384,
+					"left": 446,
+					"width": 74,
+					"height": 15,
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9\"",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/build.4dm",
+					"events": [
+						"onAfterKeystroke"
+					]
+				},
+				"versionMaxima": {
+					"type": "input",
+					"top": 420,
+					"left": 128,
+					"width": 74,
+					"height": 15,
+					"dataSource": "[xShell_Reports:54]version_maximo:24",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9;.\"",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/versionMaxima.4dm",
+					"events": [
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"comentario": {
+					"type": "input",
+					"top": 453,
+					"left": 128,
+					"width": 400,
+					"height": 197,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"styleSheet": "Plain - 12",
+					"enterable": false,
+					"styledText": true,
+					"storeDefaultStyle": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"enviarInforme_actualizar": {
+					"type": "checkbox",
+					"top": 660,
+					"left": 128,
+					"width": 290,
+					"height": 22,
+					"tooltip": "Si se activa se sobreescribe la última versión del informe con las mismas restricciones de versión, pais, idioma e insititución",
+					"text": "Sobre-escribir versión con los mismos atributos",
+					"styleSheet": "Plain - 12",
+					"events": [
+						"onClick",
+						"onBeginDragOver"
+					]
+				},
+				"enviarInforme": {
+					"type": "button",
+					"top": 660,
+					"left": 446,
+					"width": 82,
+					"height": 22,
+					"sizingX": "move",
+					"sizingY": "move",
+					"text": "Enviar",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/enviarInforme.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"jsonColegios": {
+					"type": "input",
+					"top": 761,
+					"left": 16,
+					"width": 360,
+					"height": 16,
+					"sizingY": "move",
+					"styleSheet": "Medium - 12",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"uuidColegio": {
+					"type": "input",
+					"top": 791,
+					"left": 16,
+					"width": 100,
+					"height": 16,
+					"sizingY": "move",
+					"styleSheet": "Medium - 12",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"jsonComparacion": {
+					"type": "input",
+					"top": 822,
+					"left": 16,
+					"width": 360,
+					"height": 16,
+					"sizingY": "move",
+					"styleSheet": "Medium - 12",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 898,
+					"left": 34,
+					"width": 82,
+					"height": 22,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Botón",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "Medium - 12",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto": {
+					"type": "text",
+					"top": 16,
+					"left": 8,
+					"width": 100,
+					"height": 15,
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "Descripción"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 179,
+					"left": 8,
+					"width": 100,
+					"height": 15,
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "Palabras clave"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 283,
+					"left": 8,
+					"width": 100,
+					"height": 15,
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "País"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 315,
+					"left": 8,
+					"width": 100,
+					"height": 15,
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "Idioma"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 351,
+					"left": 8,
+					"width": 100,
+					"height": 15,
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "Institución\t"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 385,
+					"left": 8,
+					"width": 100,
+					"height": 15,
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "Versión mínima"
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 420,
+					"left": 8,
+					"width": 100,
+					"height": 15,
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "Versión máxima"
+				},
+				"pais": {
+					"type": "button",
+					"top": 281,
+					"left": 128,
+					"width": 400,
+					"height": 18,
+					"styleSheet": "Plain - 12",
+					"text": "pais",
+					"icon": "var:vBanderaPais",
+					"popupPlacement": "separated",
+					"textPlacement": "right",
+					"style": "custom",
+					"method": "ObjectMethods/pais.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"idioma": {
+					"type": "button",
+					"top": 313,
+					"left": 128,
+					"width": 400,
+					"height": 18,
+					"styleSheet": "Plain - 12",
+					"text": "idioma",
+					"icon": "var:vBanderaIDIOMA",
+					"popupPlacement": "separated",
+					"textPlacement": "right",
+					"style": "custom",
+					"method": "ObjectMethods/idioma.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"institucion": {
+					"type": "button",
+					"top": 349,
+					"left": 128,
+					"width": 400,
+					"height": 18,
+					"styleSheet": "Plain - 12",
+					"text": "institucion",
+					"textPlacement": "left",
+					"style": "custom",
+					"method": "ObjectMethods/institucion.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 251,
+					"left": 8,
+					"width": 100,
+					"height": 15,
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "Ruta PDF adjunto"
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 453,
+					"left": 8,
+					"width": 100,
+					"height": 72,
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "Cambios con respecto al informe en repositorio"
+				},
+				"Texto9": {
+					"type": "text",
+					"top": 6,
+					"left": 564,
+					"width": 403,
+					"height": 15,
+					"sizingX": "move",
+					"styleSheet": "Plain - 12",
+					"text": "Historial"
+				},
+				"Línea": {
+					"type": "line",
+					"top": 0,
+					"left": 558,
+					"height": 693,
+					"sizingX": "move",
+					"stroke": "#AAAAAA"
+				},
+				"Línea1": {
+					"type": "line",
+					"top": 27,
+					"left": 558,
+					"width": 404,
+					"sizingX": "move",
+					"stroke": "#AAAAAA"
+				},
+				"Línea2": {
+					"type": "line",
+					"top": 366,
+					"left": 558,
+					"width": 404,
+					"sizingX": "move",
+					"stroke": "#AAAAAA"
+				},
+				"texto10": {
+					"type": "text",
+					"top": 385,
+					"left": 222,
+					"width": 215,
+					"height": 15,
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "Forzar actualización con revisión:"
+				}
+			}
+		}
+	]
+}

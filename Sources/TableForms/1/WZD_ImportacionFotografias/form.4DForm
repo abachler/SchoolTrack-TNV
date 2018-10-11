@@ -1,0 +1,182 @@
+﻿{
+	"inheritedForm": "XS_MASTER_WZDDialogs",
+	"inheritedFormTable": 114,
+	"width": 628,
+	"height": 406,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onUnload",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Texto5": {
+					"type": "text",
+					"top": 10,
+					"left": 164,
+					"width": 391,
+					"height": 44,
+					"stroke": "#FFFFFF",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Importación de Fotografías"
+				},
+				"Botón5": {
+					"type": "button",
+					"top": 374,
+					"left": 435,
+					"width": 80,
+					"height": 18,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto1": {
+					"type": "text",
+					"top": 135,
+					"left": 51,
+					"width": 503,
+					"height": 143,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Este asistente permite la importación de fotografías desde archivos de imágenes. Los nombres de los archivos deben permitir identificar sin ambigüedad a la persona a la que corresponde la fotografía. \r\rLos archivos de imágenes deben haber sido nombrados utilizando alguno de los identificadores nacionales, el código interno o el identificador asignado automáticamente por SchoolTrack.\r\rEn los pasos siguientes en este asistente usted podrá seleccionar para qué personas se realiza la importación, el identificador utilizado, los formatos de origen aceptados durante la importación y el formato de imagen en que las fotografías serán almacenadas.\r"
+				},
+				"Botón4": {
+					"type": "button",
+					"top": 374,
+					"left": 528,
+					"width": 80,
+					"height": 18,
+					"dataSource": "bNext",
+					"action": "nextPage",
+					"text": "Continuar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto2": {
+					"type": "text",
+					"top": 138,
+					"left": 57,
+					"width": 134,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Importar fotografías para:"
+				},
+				"hl_TablasFotos": {
+					"type": "dropdown",
+					"top": 135,
+					"left": 197,
+					"width": 364,
+					"height": 18,
+					"dataSource": "hl_TablasFotos",
+					"dataSourceTypeHint": "integer",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/hl_TablasFotos.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Campos": {
+					"type": "text",
+					"top": 238,
+					"left": 57,
+					"width": 134,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Identificador del registro"
+				},
+				"Campos1": {
+					"type": "dropdown",
+					"top": 237,
+					"left": 198,
+					"width": 363,
+					"height": 18,
+					"dataSource": "hl_Fields",
+					"dataSourceTypeHint": "integer",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Campos1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 108,
+					"left": 198,
+					"width": 358,
+					"height": 26,
+					"styleSheet": "XS_DialogObjects",
+					"fontStyle": "italic",
+					"text": "Seleccione el tipo de registros para los que desea importar fotografías"
+				},
+				"Campos2": {
+					"type": "text",
+					"top": 199,
+					"left": 198,
+					"width": 358,
+					"height": 26,
+					"styleSheet": "XS_DialogObjects",
+					"fontStyle": "italic",
+					"text": "Seleccione el campo que corresponde para hacer el pareo entre los nombres de los archivos de imágen y los registros en SchoolTrack"
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 374,
+					"left": 527,
+					"width": 80,
+					"height": 18,
+					"dataSource": "bImport",
+					"action": "accept",
+					"text": "Importar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

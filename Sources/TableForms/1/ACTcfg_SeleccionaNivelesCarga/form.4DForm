@@ -1,0 +1,103 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Forms",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "btn_Acept",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pages": [
+		null,
+		{
+			"objects": {
+				"xALP_areaNivelesACT": {
+					"type": "plugin",
+					"top": 73,
+					"left": 13,
+					"width": 358,
+					"height": 269,
+					"dataSource": "xALP_areaNivelesACT",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/xALP_areaNivelesACT.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onPluginArea"
+					]
+				},
+				"btn_Acept": {
+					"type": "button",
+					"top": 351,
+					"left": 291,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btn_Acept",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Aceptar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_Cancel": {
+					"type": "button",
+					"top": 351,
+					"left": 200,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btn_Cancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 12,
+					"left": 14,
+					"width": 356,
+					"height": 63,
+					"textAlign": "center",
+					"fontSize": 16,
+					"fontWeight": "bold",
+					"text": "Selección de niveles para cálculo de número de hijo y número de cargas totales"
+				}
+			}
+		}
+	]
+}

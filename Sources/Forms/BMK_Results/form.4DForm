@@ -1,0 +1,469 @@
+﻿{
+	"rightMargin": 24,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Área de grupo": {
+					"type": "groupBox",
+					"top": 76,
+					"left": 17,
+					"width": 270,
+					"height": 151,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Ejecución local"
+				},
+				"vtBMK_taskName": {
+					"type": "input",
+					"top": 12,
+					"left": 17,
+					"width": 565,
+					"height": 44,
+					"dataSource": "vtBMK_taskName",
+					"fill": "transparent",
+					"styleSheet": "XS_ReportTitle_18",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto": {
+					"type": "text",
+					"top": 105,
+					"left": 32,
+					"width": 73,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Iteraciones"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 129,
+					"left": 32,
+					"width": 73,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Media"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 153,
+					"left": 32,
+					"width": 73,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Máximo"
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 178,
+					"left": 32,
+					"width": 73,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Mínimo"
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 203,
+					"left": 32,
+					"width": 133,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Tiempo total acumulado"
+				},
+				"vtBMK_Executions": {
+					"type": "input",
+					"top": 105,
+					"left": 170,
+					"width": 86,
+					"height": 14,
+					"dataSource": "vtBMK_Executions",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vtBMK_Mean": {
+					"type": "input",
+					"top": 129,
+					"left": 170,
+					"width": 86,
+					"height": 14,
+					"dataSource": "vtBMK_Mean",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vtBMK_Maximum": {
+					"type": "input",
+					"top": 153,
+					"left": 170,
+					"width": 86,
+					"height": 14,
+					"dataSource": "vtBMK_Maximum",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vtBMK_Minimum": {
+					"type": "input",
+					"top": 178,
+					"left": 170,
+					"width": 86,
+					"height": 14,
+					"dataSource": "vtBMK_Minimum",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vtBMK_LocalExecutionTime": {
+					"type": "input",
+					"top": 203,
+					"left": 170,
+					"width": 86,
+					"height": 14,
+					"dataSource": "vtBMK_LocalExecutionTime",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Área de grupo1": {
+					"type": "groupBox",
+					"top": 76,
+					"left": 296,
+					"width": 372,
+					"height": 152,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Triggers"
+				},
+				"bCopyPastboard": {
+					"type": "button",
+					"top": 249,
+					"left": 17,
+					"width": 149,
+					"height": 20,
+					"dataSource": "bCopyPastboard",
+					"shortcutKey": "c",
+					"shortcutAccel": true,
+					"text": "Copiar al portapapeles",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/bCopyPastboard.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bBMK_Close": {
+					"type": "button",
+					"top": 249,
+					"left": 313,
+					"width": 76,
+					"height": 20,
+					"dataSource": "bBMK_Close",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Terminar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/bBMK_Close.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bContinuar": {
+					"type": "button",
+					"top": 249,
+					"left": 398,
+					"width": 116,
+					"height": 20,
+					"dataSource": "bContinuar",
+					"action": "cancel",
+					"shortcutKey": "[Enter]",
+					"text": "Continuar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"bRestart": {
+					"type": "button",
+					"top": 249,
+					"left": 528,
+					"width": 140,
+					"height": 20,
+					"dataSource": "bRestart",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Inicializar contadores",
+					"styleSheet": "XS_DialogObjects",
+					"defaultButton": true,
+					"method": "ObjectMethods/bRestart.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"List Box": {
+					"type": "listbox",
+					"top": 100,
+					"left": 307,
+					"width": 350,
+					"height": 116,
+					"dataSource": "List Box",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"columns": [
+						{
+							"name": "atBMK_TriggerTable",
+							"dataSource": "atBMK_TriggerTable",
+							"width": 161,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "hdrBMK_tabla",
+								"text": "Tabla",
+								"dataSource": "hdrBMK_tabla",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "alBMK_TriggerExecutions",
+							"dataSource": "alBMK_TriggerExecutions",
+							"width": 57,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "hdrBMK_Iteraciones",
+								"text": "#",
+								"dataSource": "hdrBMK_Iteraciones",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "arBMK_TriggerExecutionMean",
+							"dataSource": "arBMK_TriggerExecutionMean",
+							"width": 44,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "hdrBMK_Mean",
+								"text": "Media",
+								"dataSource": "hdrBMK_Mean",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "alBMK_TriggerExecutionsTime",
+							"dataSource": "alBMK_TriggerExecutionsTime",
+							"width": 73,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "hdrBMK_Total",
+								"text": "Total",
+								"dataSource": "hdrBMK_Total",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto1": {
+					"type": "text",
+					"top": 28,
+					"left": 30,
+					"width": 73,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Iteraciones"
+				},
+				"◊vlBMK_TriggerExecutions": {
+					"type": "input",
+					"top": 28,
+					"left": 123,
+					"width": 86,
+					"height": 14,
+					"dataSource": "<>vlBMK_TriggerExecutions",
+					"fill": "transparent",
+					"textAlign": "left",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 53,
+					"left": 30,
+					"width": 73,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Media"
+				},
+				"vtBMK_MeanTriggerExecutions": {
+					"type": "input",
+					"top": 53,
+					"left": 123,
+					"width": 86,
+					"height": 14,
+					"dataSource": "vtBMK_MeanTriggerExecutions",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 78,
+					"left": 30,
+					"width": 94,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Total acumulado"
+				},
+				"vtBMK_TriggerExecutionTime": {
+					"type": "input",
+					"top": 78,
+					"left": 123,
+					"width": 86,
+					"height": 14,
+					"dataSource": "vtBMK_TriggerExecutionTime",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

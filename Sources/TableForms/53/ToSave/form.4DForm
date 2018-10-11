@@ -1,0 +1,296 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Forms",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Variable5",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerBody": 250,
+	"markerBreak": 250,
+	"markerFooter": 250,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 327,
+					"left": 184,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 270,
+					"left": 0,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 15,
+					"left": 7,
+					"width": 90,
+					"height": 14,
+					"stroke": "#000000",
+					"fontSize": 11,
+					"text": ":20103,22"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 38,
+					"left": 8,
+					"width": 94,
+					"height": 19,
+					"stroke": "#000000",
+					"fontSize": 11,
+					"text": ":20103,17"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 15,
+					"left": 128,
+					"width": 299,
+					"height": 15,
+					"dataSource": "vs_String1",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "checkbox",
+					"top": 58,
+					"left": 278,
+					"width": 152,
+					"height": 14,
+					"dataSource": "binstall",
+					"text": ":20103,23",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Field2": {
+					"type": "input",
+					"top": 64,
+					"left": 8,
+					"width": 235,
+					"height": 195,
+					"dataSource": "vt_text1",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "radio",
+					"top": 81,
+					"left": 293,
+					"width": 119,
+					"height": 14,
+					"dataSource": "r1",
+					"text": ":20103,24",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "radio",
+					"top": 98,
+					"left": 293,
+					"width": 119,
+					"height": 14,
+					"dataSource": "r2",
+					"text": ":20103,25",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"dev": {
+					"type": "checkbox",
+					"top": 156,
+					"left": 271,
+					"width": 142,
+					"height": 16,
+					"dataSource": "bSaveAsStandard",
+					"text": ":20103,26",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"dev2": {
+					"type": "dropdown",
+					"top": 192,
+					"left": 303,
+					"width": 145,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "atQR_Pais",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/dev2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 238,
+					"left": 270,
+					"width": 80,
+					"height": 18,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": ":20103,20",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 238,
+					"left": 368,
+					"width": 80,
+					"height": 18,
+					"dataSource": "Save",
+					"shortcutKey": "[Enter]",
+					"text": ":20103,27",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"dev1": {
+					"type": "text",
+					"top": 195,
+					"left": 272,
+					"width": 31,
+					"height": 13,
+					"sizingY": "move",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "País:"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,398 @@
+﻿{
+	"windowTitle": "Sala de Clases",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Variable1",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texto1": {
+					"type": "text",
+					"top": 21,
+					"left": 114,
+					"width": 40,
+					"height": 14,
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Sala:"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 44,
+					"left": 7,
+					"width": 147,
+					"height": 14,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Capacidad para acoger a"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 67,
+					"left": 64,
+					"width": 90,
+					"height": 14,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Observaciones:"
+				},
+				"Campo1": {
+					"type": "input",
+					"top": 21,
+					"left": 162,
+					"width": 407,
+					"height": 14,
+					"dataSource": "[TMT_Salas:167]NombreSala:2",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Campo1.4dm",
+					"events": [
+						"onHeader",
+						"onDataChange"
+					]
+				},
+				"Campo2": {
+					"type": "input",
+					"top": 44,
+					"left": 162,
+					"width": 38,
+					"height": 14,
+					"dataSource": "[TMT_Salas:167]Capacidad:3",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo3": {
+					"type": "input",
+					"top": 67,
+					"left": 162,
+					"width": 392,
+					"height": 78,
+					"dataSource": "[TMT_Salas:167]Observaciones:4",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 313,
+					"left": 398,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"text": "Cancelar",
+					"iconFrames": 4,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 313,
+					"left": 490,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bSave",
+					"shortcutKey": "[Enter]",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"text": "Guardar",
+					"iconFrames": 4,
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 44,
+					"left": 208,
+					"width": 69,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "alumnos"
+				},
+				"Texto22": {
+					"type": "text",
+					"top": 44,
+					"left": 270,
+					"width": 284,
+					"height": 14,
+					"stroke": "#AAAAAA",
+					"styleSheet": "XS_DialogObjects",
+					"text": "(deje en 0 si no desea controlar la capacidad)"
+				},
+				"Invisible Button1": {
+					"type": "button",
+					"top": 589,
+					"left": 13,
+					"width": 20,
+					"height": 20,
+					"dataSource": "Invisible Button1",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"List Box": {
+					"type": "listbox",
+					"top": 165,
+					"left": 20,
+					"width": 550,
+					"height": 136,
+					"dataSource": "List Box",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"columns": [
+						{
+							"name": "at_Salas_asignatura",
+							"dataSource": "at_Salas_asignatura",
+							"width": 206,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título1",
+								"text": "Asignatura",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "at_Salas_Curso",
+							"dataSource": "at_Salas_Curso",
+							"width": 58,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título2",
+								"text": "Curso",
+								"dataSource": "Título2",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "at_salas_dia",
+							"dataSource": "at_salas_dia",
+							"width": 79,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título3",
+								"text": "Dia",
+								"dataSource": "Título3",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "al_Salas_hora",
+							"dataSource": "al_Salas_hora",
+							"width": 42,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título4",
+								"text": "Hora",
+								"dataSource": "Título4",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "ad_Salas_Desde",
+							"dataSource": "ad_Salas_Desde",
+							"width": 75,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"dateFormat": "shortCentury",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título5",
+								"text": "Desde",
+								"dataSource": "Título5",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "ad_Salas_Hasta",
+							"dataSource": "ad_Salas_Hasta",
+							"width": 75,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"dateFormat": "shortCentury",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título6",
+								"text": "Hasta",
+								"dataSource": "Título6",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,1 @@
+BBLmarc_OpenInputer (->[BBL_Items:61]Fecha_de_edicion:10)

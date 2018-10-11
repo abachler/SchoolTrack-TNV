@@ -1,0 +1,2163 @@
+﻿{
+	"windowTitle": "Configuración de controles y exámenes",
+	"inheritedForm": "XS_BKGD_Forms",
+	"inheritedFormTable": 114,
+	"formSizeAnchor": "bOK",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onUnload",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Rectángulo": {
+					"type": "rectangle",
+					"top": 0,
+					"left": -1,
+					"width": 692,
+					"height": 603,
+					"stroke": "#AAAAAA"
+				},
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": -5,
+					"left": -1,
+					"width": 692,
+					"height": 59,
+					"fill": "#DDDDDD",
+					"stroke": "#AAAAAA"
+				},
+				"Pestaña": {
+					"type": "tab",
+					"top": 13,
+					"left": 9,
+					"width": 665,
+					"height": 22,
+					"dataSource": "Pestaña",
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						"Controles de fin de período",
+						"Bonificación",
+						"Examen anual",
+						"Examen extraordinario"
+					],
+					"styleSheet": "Plain - 13",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				},
+				"bOK": {
+					"type": "button",
+					"top": 614,
+					"left": 596,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bOK",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Aceptar",
+					"styleSheet": "Medium - 13",
+					"method": "ObjectMethods/bOK.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 614,
+					"left": 508,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "Medium - 13",
+					"events": [
+						"onClick"
+					]
+				},
+				"vs_MinimoExRecuperatorio": {
+					"type": "input",
+					"top": 563,
+					"left": 240,
+					"width": 55,
+					"height": 15,
+					"dataSource": "vs_MinimoExRecuperatorio",
+					"styleSheet": "Plain - 13",
+					"contextMenu": "none",
+					"method": "ObjectMethods/vs_MinimoExRecuperatorio.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vs_MinimoExRecuperatorio1": {
+					"type": "text",
+					"top": 561,
+					"left": 307,
+					"width": 367,
+					"height": 30,
+					"styleSheet": "Plain - 13",
+					"text": "puede rendir examen recuperatorio que se registra como calificación final"
+				},
+				"vi_UsarEXRecuperatorio": {
+					"type": "checkbox",
+					"top": 561,
+					"left": 25,
+					"width": 209,
+					"height": 18,
+					"dataSource": "vi_UsarEXRecuperatorio",
+					"text": "Si la Nota Final es inferior a:",
+					"styleSheet": "Medium - 13",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/vi_UsarEXRecuperatorio.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Rect√°ngulo2": {
+					"type": "rectangle",
+					"top": 682,
+					"left": -1,
+					"width": 1098,
+					"height": 286,
+					"fill": "#EE0000",
+					"stroke": "#EE0000"
+				},
+				"Texto": {
+					"type": "text",
+					"top": 692,
+					"left": 9,
+					"width": 668,
+					"height": 17,
+					"stroke": "#FFFFFF",
+					"fontWeight": "bold",
+					"text": "NO BORRAR"
+				},
+				"vr_MinimoExRecuperatorio": {
+					"type": "input",
+					"top": 729,
+					"left": 42,
+					"width": 115,
+					"height": 15,
+					"dataSource": "vr_MinimoExRecuperatorio",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 13",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_EX_INF_Especifico": {
+					"type": "input",
+					"top": 729,
+					"left": 453,
+					"width": 175,
+					"height": 15,
+					"dataSource": "vr_EX_INF_Especifico",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_EX_SUP_Especifico": {
+					"type": "input",
+					"top": 746,
+					"left": 453,
+					"width": 175,
+					"height": 15,
+					"dataSource": "vr_EX_SUP_Especifico",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_CorreccionNFEX_minimo": {
+					"type": "input",
+					"top": 771,
+					"left": 453,
+					"width": 175,
+					"height": 15,
+					"dataSource": "vr_CorreccionNFEX_minimo",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 13",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_CorreccionNFEX_resultado": {
+					"type": "input",
+					"top": 789,
+					"left": 453,
+					"width": 175,
+					"height": 15,
+					"dataSource": "vr_CorreccionNFEX_resultado",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 13",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_CalificacionEX": {
+					"type": "input",
+					"top": 813,
+					"left": 453,
+					"width": 195,
+					"height": 14,
+					"dataSource": "vr_CalificacionEX",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_NF_igual_EX_SUP": {
+					"type": "input",
+					"top": 830,
+					"left": 453,
+					"width": 195,
+					"height": 14,
+					"dataSource": "vr_NF_igual_EX_SUP",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_NF_igual_EX_INF": {
+					"type": "input",
+					"top": 847,
+					"left": 453,
+					"width": 195,
+					"height": 14,
+					"dataSource": "vr_NF_igual_EX_INF",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_CTRL_SUP_Especifico": {
+					"type": "input",
+					"top": 752,
+					"left": 198,
+					"width": 175,
+					"height": 14,
+					"dataSource": "vr_CTRL_SUP_Especifico",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_CTRL_INF_Especifico": {
+					"type": "input",
+					"top": 729,
+					"left": 198,
+					"width": 175,
+					"height": 14,
+					"dataSource": "vr_CTRL_INF_Especifico",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"enterable": false,
+					"focusable": false,
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_EXX_INF_Especifico": {
+					"type": "input",
+					"top": 729,
+					"left": 655,
+					"width": 175,
+					"height": 14,
+					"dataSource": "vr_EXX_INF_Especifico",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_EXX_SUP_Especifico": {
+					"type": "input",
+					"top": 745,
+					"left": 655,
+					"width": 175,
+					"height": 14,
+					"dataSource": "vr_EXX_SUP_Especifico",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_CalificacionEXX": {
+					"type": "input",
+					"top": 813,
+					"left": 655,
+					"width": 215,
+					"height": 14,
+					"dataSource": "vr_CalificacionEXX",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_NF_igual_EXX_SUP": {
+					"type": "input",
+					"top": 830,
+					"left": 655,
+					"width": 215,
+					"height": 14,
+					"dataSource": "vr_NF_igual_EXX_SUP",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_NF_igual_EXX_INF": {
+					"type": "input",
+					"top": 847,
+					"left": 655,
+					"width": 215,
+					"height": 14,
+					"dataSource": "vr_NF_igual_EXX_INF",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_CorreccionNFEXX_minimo": {
+					"type": "input",
+					"top": 771,
+					"left": 655,
+					"width": 195,
+					"height": 15,
+					"dataSource": "vr_CorreccionNFEXX_minimo",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 13",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_CorreccionNFEXX_resultado": {
+					"type": "input",
+					"top": 789,
+					"left": 655,
+					"width": 195,
+					"height": 15,
+					"dataSource": "vr_CorreccionNFEXX_resultado",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 13",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"refObjetoPeriodoComun": {
+					"type": "input",
+					"top": 839,
+					"left": 197,
+					"width": 202,
+					"height": 17,
+					"dataSourceTypeHint": "number",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"refObjetoPeriodo1": {
+					"type": "input",
+					"top": 858,
+					"left": 197,
+					"width": 202,
+					"height": 17,
+					"dataSourceTypeHint": "number",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"refObjetoPeriodo2": {
+					"type": "input",
+					"top": 877,
+					"left": 197,
+					"width": 202,
+					"height": 17,
+					"dataSourceTypeHint": "number",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"refObjetoPeriodo3": {
+					"type": "input",
+					"top": 896,
+					"left": 197,
+					"width": 202,
+					"height": 17,
+					"dataSourceTypeHint": "number",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"refObjetoPeriodo4": {
+					"type": "input",
+					"top": 915,
+					"left": 197,
+					"width": 202,
+					"height": 17,
+					"dataSourceTypeHint": "number",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"refObjetoPeriodo5": {
+					"type": "input",
+					"top": 934,
+					"left": 197,
+					"width": 202,
+					"height": 17,
+					"dataSourceTypeHint": "number",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"refObjetoRaiz": {
+					"type": "input",
+					"top": 817,
+					"left": 197,
+					"width": 202,
+					"height": 17,
+					"dataSourceTypeHint": "number",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"periodoSeleccionado": {
+					"type": "input",
+					"top": 796,
+					"left": 197,
+					"width": 202,
+					"height": 17,
+					"dataSourceTypeHint": "number",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 796,
+					"left": 8,
+					"width": 149,
+					"height": 17,
+					"text": "Periodo seleccionado"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 817,
+					"left": 9,
+					"width": 149,
+					"height": 17,
+					"text": "ref objeto raiz:"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 839,
+					"left": 6,
+					"width": 169,
+					"height": 17,
+					"text": "ref config periodo común:"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 877,
+					"left": 6,
+					"width": 169,
+					"height": 17,
+					"text": "ref config periodo2:"
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 858,
+					"left": 6,
+					"width": 169,
+					"height": 17,
+					"text": "ref config periodo1:"
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 895,
+					"left": 6,
+					"width": 169,
+					"height": 17,
+					"text": "ref config periodo3:"
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 914,
+					"left": 6,
+					"width": 169,
+					"height": 17,
+					"text": "ref config periodo4:"
+				},
+				"Texto9": {
+					"type": "text",
+					"top": 933,
+					"left": 6,
+					"width": 169,
+					"height": 17,
+					"text": "ref config periodo5:"
+				},
+				"Línea9": {
+					"type": "line",
+					"top": 538,
+					"left": 20,
+					"width": 648,
+					"stroke": "#AAAAAA",
+					"strokeDashArray": "1 1"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Línea4": {
+					"type": "line",
+					"top": 277,
+					"left": 359,
+					"height": 126,
+					"stroke": "#AAAAAA"
+				},
+				"CTRL_PondVariable14": {
+					"type": "text",
+					"top": 285,
+					"left": 70,
+					"width": 227,
+					"height": 14,
+					"styleSheet": "Plain - 12",
+					"text": "Si es inferior a la nota de presentación"
+				},
+				"c1_PonderacionConstante": {
+					"type": "radio",
+					"top": 223,
+					"left": 50,
+					"width": 167,
+					"height": 16,
+					"dataSource": "c1_PonderacionConstante",
+					"text": "Ponderación constante:",
+					"styleSheet": "Plain - 13",
+					"method": "ObjectMethods/c1_PonderacionConstante.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"c2_PonderacionVariable": {
+					"type": "radio",
+					"top": 264,
+					"left": 50,
+					"width": 174,
+					"height": 16,
+					"dataSource": "c2_PonderacionVariable",
+					"text": "Variable:",
+					"styleSheet": "Plain - 13",
+					"events": [
+						"onClick"
+					]
+				},
+				"CTRL_PondVariable15": {
+					"type": "text",
+					"top": 285,
+					"left": 406,
+					"width": 267,
+					"height": 14,
+					"styleSheet": "Plain - 12",
+					"text": "Si es superior o igual a la nota de presentación"
+				},
+				"t1_CTRL_INF_Ponderado": {
+					"type": "radio",
+					"top": 304,
+					"left": 78,
+					"width": 112,
+					"height": 16,
+					"dataSource": "t1_CTRL_INF_Ponderado",
+					"text": "Se pondera en:",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/t1_CTRL_INF_Ponderado.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"u1_CTRL_SUP_Ponderado": {
+					"type": "radio",
+					"top": 304,
+					"left": 416,
+					"width": 120,
+					"height": 16,
+					"dataSource": "u1_CTRL_SUP_Ponderado",
+					"text": "Se pondera en:",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/u1_CTRL_SUP_Ponderado.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"t2_CTRL_INF_Control": {
+					"type": "radio",
+					"top": 326,
+					"left": 78,
+					"width": 170,
+					"height": 16,
+					"dataSource": "t2_CTRL_INF_Control",
+					"text": "Final = Control",
+					"styleSheet": "Plain - 12",
+					"events": [
+						"onClick"
+					]
+				},
+				"t3_CTRL_INF_Presentacion": {
+					"type": "radio",
+					"top": 351,
+					"left": 78,
+					"width": 170,
+					"height": 16,
+					"dataSource": "t3_CTRL_INF_Presentacion",
+					"text": "Final = Presentación",
+					"styleSheet": "Plain - 12",
+					"events": [
+						"onClick"
+					]
+				},
+				"t4_CTRL_INF_Especifico": {
+					"type": "radio",
+					"top": 377,
+					"left": 78,
+					"width": 70,
+					"height": 16,
+					"dataSource": "t4_CTRL_INF_Especifico",
+					"text": "Final = ",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/t4_CTRL_INF_Especifico.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vs_CTRL_INF_Especifico": {
+					"type": "input",
+					"top": 379,
+					"left": 142,
+					"width": 55,
+					"height": 14,
+					"dataSource": "vs_CTRL_INF_Especifico",
+					"styleSheet": "Plain - 12",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"method": "ObjectMethods/vs_CTRL_INF_Especifico.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_CTRL_SUP_Ponderacion": {
+					"type": "input",
+					"top": 306,
+					"left": 542,
+					"width": 55,
+					"height": 14,
+					"dataSource": "vr_CTRL_SUP_Ponderacion",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Pct_2Dec"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"u2_CTRL_SUP_Control": {
+					"type": "radio",
+					"top": 326,
+					"left": 416,
+					"width": 170,
+					"height": 16,
+					"dataSource": "u2_CTRL_SUP_Control",
+					"text": "Final = Control",
+					"styleSheet": "Plain - 12",
+					"events": [
+						"onClick"
+					]
+				},
+				"u3_CTRL_SUP_Presentacion": {
+					"type": "radio",
+					"top": 351,
+					"left": 416,
+					"width": 170,
+					"height": 16,
+					"dataSource": "u3_CTRL_SUP_Presentacion",
+					"text": "Final = Presentación",
+					"styleSheet": "Plain - 12",
+					"events": [
+						"onClick"
+					]
+				},
+				"u4_CTRL_SUP_Especifico": {
+					"type": "radio",
+					"top": 377,
+					"left": 416,
+					"width": 69,
+					"height": 16,
+					"dataSource": "u4_CTRL_SUP_Especifico",
+					"text": "Final = ",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/u4_CTRL_SUP_Especifico.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vs_CTRL_SUP_Especifico": {
+					"type": "input",
+					"top": 380,
+					"left": 485,
+					"width": 55,
+					"height": 14,
+					"dataSource": "vs_CTRL_SUP_Especifico",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"method": "ObjectMethods/vs_CTRL_SUP_Especifico.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_Ctrl_PonderacionConstante": {
+					"type": "input",
+					"top": 225,
+					"left": 220,
+					"width": 55,
+					"height": 14,
+					"dataSource": "vr_Ctrl_PonderacionConstante",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Pct_2Dec"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_CTRL_INF_Ponderacion": {
+					"type": "input",
+					"top": 306,
+					"left": 191,
+					"width": 55,
+					"height": 14,
+					"dataSource": "vr_CTRL_INF_Ponderacion",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Pct_2Dec"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vi_UsarControlesFinPeriodo": {
+					"type": "checkbox",
+					"top": 88,
+					"left": 17,
+					"width": 284,
+					"height": 20,
+					"dataSource": "vi_UsarControlesFinPeriodo",
+					"text": "Utilizar control de fin de período",
+					"styleSheet": "Plain - 14",
+					"fontWeight": "bold",
+					"events": [
+						"onClick"
+					]
+				},
+				"EXP_tabPeriodos": {
+					"type": "tab",
+					"top": 159,
+					"left": 12,
+					"width": 665,
+					"height": 26,
+					"labels": {
+						"$ref": "/SOURCES/lists.json#/0_dummyList"
+					},
+					"styleSheet": "Plain - 13",
+					"method": "ObjectMethods/EXP_tabPeriodos.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"EXP_ConfiguracionPorPeriodo": {
+					"type": "checkbox",
+					"top": 115,
+					"left": 41,
+					"width": 329,
+					"height": 24,
+					"visibility": "hidden",
+					"dataSource": "EXP_ConfiguracionPorPeriodo",
+					"text": "Configurar independientemente para cada periodo",
+					"styleSheet": "Plain - 13",
+					"method": "ObjectMethods/EXP_ConfiguracionPorPeriodo.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"objOriginal": {
+					"type": "input",
+					"top": 901,
+					"left": 800,
+					"width": 235,
+					"height": 17,
+					"dataSourceTypeHint": "object",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"vi_UsarBonificacion": {
+					"type": "checkbox",
+					"top": 88,
+					"left": 17,
+					"width": 504,
+					"height": 20,
+					"dataSource": "vi_UsarBonificacion",
+					"text": "Utilizar bonificaciones sobre los resultados finales de los períodos",
+					"styleSheet": "Plain - 14",
+					"fontWeight": "bold",
+					"events": [
+						"onClick"
+					]
+				},
+				"texto4": {
+					"type": "text",
+					"top": 113,
+					"left": 37,
+					"width": 618,
+					"height": 72,
+					"styleSheet": "Plain - 12",
+					"text": "Puede utilizar esta opción para bonificar el promedio periódico del alumno en función de actividades extra-académicas, evaluación de participación en clases, etc.\nEsta bonificación deberá ser evaluada con la misma escala utilizada en el estilo de evaluación asociado a la asignatura."
+				},
+				"bonificacion_texto1": {
+					"type": "text",
+					"top": 210,
+					"left": 41,
+					"width": 587,
+					"height": 30,
+					"styleSheet": "Plain - 13",
+					"text": "Ponderaciones de la bonificación aplicables sobre el promedio final de cada período:"
+				},
+				"bonificacionP1_texto": {
+					"type": "text",
+					"top": 244,
+					"left": 2,
+					"width": 159,
+					"height": 15,
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"text": "Período 1"
+				},
+				"bonificacionP2_texto": {
+					"type": "text",
+					"top": 274,
+					"left": 2,
+					"width": 159,
+					"height": 15,
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"text": "Período 2"
+				},
+				"bonificacionP3_texto": {
+					"type": "text",
+					"top": 304,
+					"left": 2,
+					"width": 159,
+					"height": 15,
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"text": "Período 3"
+				},
+				"bonificacionP4_texto": {
+					"type": "text",
+					"top": 334,
+					"left": 2,
+					"width": 159,
+					"height": 15,
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"text": "Período 4"
+				},
+				"bonificacionP5_texto": {
+					"type": "text",
+					"top": 364,
+					"left": 2,
+					"width": 159,
+					"height": 15,
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"text": "Período 5"
+				},
+				"bonificacionP1": {
+					"type": "input",
+					"top": 244,
+					"left": 182,
+					"width": 51,
+					"height": 15,
+					"dataSource": "vrBonificacionP1",
+					"dataSourceTypeHint": "number",
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"contextMenu": "none",
+					"min": 0,
+					"max": 100,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"bonificacionP2": {
+					"type": "input",
+					"top": 274,
+					"left": 182,
+					"width": 51,
+					"height": 15,
+					"dataSource": "vrBonificacionP2",
+					"dataSourceTypeHint": "number",
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"contextMenu": "none",
+					"min": 0,
+					"max": 100,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"bonificacionP3": {
+					"type": "input",
+					"top": 304,
+					"left": 182,
+					"width": 51,
+					"height": 15,
+					"dataSource": "vrBonificacionP3",
+					"dataSourceTypeHint": "number",
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"contextMenu": "none",
+					"min": 0,
+					"max": 100,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"bonificacionP4": {
+					"type": "input",
+					"top": 334,
+					"left": 182,
+					"width": 51,
+					"height": 15,
+					"dataSource": "vrBonificacionP4",
+					"dataSourceTypeHint": "number",
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"contextMenu": "none",
+					"min": 0,
+					"max": 100,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"bonificacionP5": {
+					"type": "input",
+					"top": 364,
+					"left": 182,
+					"width": 51,
+					"height": 15,
+					"dataSource": "vrBonificacionP5",
+					"dataSourceTypeHint": "number",
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"contextMenu": "none",
+					"min": 0,
+					"max": 100,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"bonificacionP1_texto1": {
+					"type": "text",
+					"top": 244,
+					"left": 239,
+					"width": 19,
+					"height": 15,
+					"textAlign": "left",
+					"styleSheet": "Plain - 13",
+					"text": "%"
+				},
+				"bonificacionP2_texto1": {
+					"type": "text",
+					"top": 274,
+					"left": 239,
+					"width": 19,
+					"height": 15,
+					"textAlign": "left",
+					"styleSheet": "Plain - 13",
+					"text": "%"
+				},
+				"bonificacionP3_texto1": {
+					"type": "text",
+					"top": 304,
+					"left": 239,
+					"width": 19,
+					"height": 15,
+					"textAlign": "left",
+					"styleSheet": "Plain - 13",
+					"text": "%"
+				},
+				"bonificacionP4_texto1": {
+					"type": "text",
+					"top": 334,
+					"left": 239,
+					"width": 19,
+					"height": 15,
+					"textAlign": "left",
+					"styleSheet": "Plain - 13",
+					"text": "%"
+				},
+				"bonificacionP5_texto1": {
+					"type": "text",
+					"top": 364,
+					"left": 239,
+					"width": 19,
+					"height": 15,
+					"textAlign": "left",
+					"styleSheet": "Plain - 13",
+					"text": "%"
+				},
+				"bonificacion_AntesControl": {
+					"type": "checkbox",
+					"top": 423,
+					"left": 17,
+					"width": 539,
+					"height": 26,
+					"dataSource": "vi_bonificarAntesControl",
+					"text": "Aplicar la bonificación antes de integrar el control de fin de período",
+					"styleSheet": "Plain - 13",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"bonificacion_texto": {
+					"type": "text",
+					"top": 455,
+					"left": 37,
+					"width": 546,
+					"height": 29,
+					"stroke": "#555555",
+					"styleSheet": "Plain - 12",
+					"fontStyle": "italic",
+					"text": "Esta opción sólo aplica cuando hay bonificación registrada y la configuración del control de fin de período establece una ponderación constante"
+				},
+				"bonificacion_linea": {
+					"type": "line",
+					"top": 411,
+					"left": 20,
+					"width": 653,
+					"stroke": "#AAAAAA",
+					"strokeDashArray": "1 1"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Línea3": {
+					"type": "line",
+					"top": 199,
+					"left": 359,
+					"height": 111,
+					"stroke": "#AAAAAA"
+				},
+				"_EX_INF_Especifico": {
+					"type": "text",
+					"top": 199,
+					"left": 69,
+					"width": 247,
+					"height": 15,
+					"styleSheet": "Plain - 13",
+					"text": "Si es inferior a la nota de presentación"
+				},
+				"e1_PonderacionConstante": {
+					"type": "radio",
+					"top": 123,
+					"left": 50,
+					"width": 167,
+					"height": 16,
+					"dataSource": "e1_PonderacionConstante",
+					"text": "Ponderación constante:",
+					"styleSheet": "Plain - 13",
+					"method": "ObjectMethods/e1_PonderacionConstante.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"e2_PonderacionVariable": {
+					"type": "radio",
+					"top": 178,
+					"left": 50,
+					"width": 174,
+					"height": 16,
+					"dataSource": "e2_PonderacionVariable",
+					"text": "Variable:",
+					"styleSheet": "Plain - 13",
+					"events": [
+						"onClick"
+					]
+				},
+				"_EX_SUP_Especifico": {
+					"type": "text",
+					"top": 199,
+					"left": 386,
+					"width": 287,
+					"height": 15,
+					"styleSheet": "Plain - 13",
+					"text": "Si es superior o igual a la nota de presentación"
+				},
+				"f1_EX_INF_Ponderado": {
+					"type": "radio",
+					"top": 220,
+					"left": 78,
+					"width": 109,
+					"height": 15,
+					"dataSource": "f1_EX_INF_Ponderado",
+					"text": "Se pondera en:",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/f1_EX_INF_Ponderado.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"g1_EX_SUP_Ponderado": {
+					"type": "radio",
+					"top": 220,
+					"left": 403,
+					"width": 111,
+					"height": 15,
+					"dataSource": "g1_EX_SUP_Ponderado",
+					"text": "Se pondera en:",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/g1_EX_SUP_Ponderado.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"f2_EX_INF_Control": {
+					"type": "radio",
+					"top": 243,
+					"left": 78,
+					"width": 170,
+					"height": 15,
+					"dataSource": "f2_EX_INF_Control",
+					"text": "Final = Examen",
+					"styleSheet": "Plain - 12",
+					"events": [
+						"onClick"
+					]
+				},
+				"f3_EX_INF_Presentacion": {
+					"type": "radio",
+					"top": 267,
+					"left": 78,
+					"width": 170,
+					"height": 15,
+					"dataSource": "f3_EX_INF_Presentacion",
+					"text": "Final = Promedio del ciclo",
+					"styleSheet": "Plain - 12",
+					"events": [
+						"onClick"
+					]
+				},
+				"f4_EX_INF_Especifico": {
+					"type": "radio",
+					"top": 291,
+					"left": 78,
+					"width": 58,
+					"height": 15,
+					"dataSource": "f4_EX_INF_Especifico",
+					"text": "Final = ",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/f4_EX_INF_Especifico.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vs_EX_INF_Especifico": {
+					"type": "input",
+					"top": 293,
+					"left": 142,
+					"width": 55,
+					"height": 14,
+					"dataSource": "vs_EX_INF_Especifico",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"method": "ObjectMethods/vs_EX_INF_Especifico.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_EX_INF_Ponderacion": {
+					"type": "input",
+					"top": 220,
+					"left": 189,
+					"width": 55,
+					"height": 14,
+					"dataSource": "vr_EX_INF_Ponderacion",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Pct_2Dec"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_EX_SUP_Ponderacion": {
+					"type": "input",
+					"top": 221,
+					"left": 516,
+					"width": 55,
+					"height": 14,
+					"dataSource": "vr_EX_SUP_Ponderacion",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Pct_2Dec"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"g2_EX_SUP_Control": {
+					"type": "radio",
+					"top": 243,
+					"left": 403,
+					"width": 170,
+					"height": 15,
+					"dataSource": "g2_EX_SUP_Control",
+					"text": "Final = Examen",
+					"styleSheet": "Plain - 12",
+					"events": [
+						"onClick"
+					]
+				},
+				"g3_EX_SUP_Presentacion": {
+					"type": "radio",
+					"top": 267,
+					"left": 403,
+					"width": 170,
+					"height": 15,
+					"dataSource": "g3_EX_SUP_Presentacion",
+					"text": "Final = Promedio del ciclo",
+					"styleSheet": "Plain - 12",
+					"events": [
+						"onClick"
+					]
+				},
+				"g4_EX_SUP_Especifico": {
+					"type": "radio",
+					"top": 291,
+					"left": 403,
+					"width": 59,
+					"height": 15,
+					"dataSource": "g4_EX_SUP_Especifico",
+					"text": "Final = ",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/g4_EX_SUP_Especifico.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vs_EX_SUP_Especifico": {
+					"type": "input",
+					"top": 293,
+					"left": 467,
+					"width": 27,
+					"height": 14,
+					"dataSource": "vs_EX_SUP_Especifico",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"method": "ObjectMethods/vs_EX_SUP_Especifico.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_EX_PonderacionConstante": {
+					"type": "input",
+					"top": 125,
+					"left": 223,
+					"width": 55,
+					"height": 14,
+					"dataSource": "vr_EX_PonderacionConstante",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Pct_2Dec"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vi_UsarExamenes": {
+					"type": "checkbox",
+					"top": 88,
+					"left": 17,
+					"width": 291,
+					"height": 20,
+					"dataSource": "vi_UsarExamenes",
+					"text": "Utilizar examen de fin de ciclo escolar",
+					"styleSheet": "Medium - 14",
+					"fontWeight": "bold",
+					"events": [
+						"onClick"
+					]
+				},
+				"vi_EX_Reprobacion": {
+					"type": "checkbox",
+					"top": 145,
+					"left": 78,
+					"width": 515,
+					"height": 18,
+					"dataSource": "vi_EX_Reprobacion",
+					"text": "Si reprueba el examen, reprueba la asignatura con la calificación del examen.",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/vi_EX_Reprobacion.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vi_CorreccionNFEX": {
+					"type": "checkbox",
+					"top": 341,
+					"left": 50,
+					"width": 489,
+					"height": 18,
+					"dataSource": "vi_CorreccionNFEX",
+					"text": "Si el resultado ponderado de la nota de presentación y el examen es inferior a:",
+					"styleSheet": "Plain - 13",
+					"method": "ObjectMethods/vi_CorreccionNFEX.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vs_CorreccionNFEX_minimo": {
+					"type": "input",
+					"top": 343,
+					"left": 546,
+					"width": 55,
+					"height": 15,
+					"dataSource": "vs_CorreccionNFEX_minimo",
+					"styleSheet": "Plain - 13",
+					"contextMenu": "none",
+					"dragging": "none",
+					"method": "ObjectMethods/vs_CorreccionNFEX_minimo.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"_CorreccionNFEX_": {
+					"type": "text",
+					"top": 366,
+					"left": 69,
+					"width": 152,
+					"height": 15,
+					"styleSheet": "Plain - 13",
+					"text": "la nota final será igual a:"
+				},
+				"vs_CorreccionNFEX_resultado": {
+					"type": "input",
+					"top": 366,
+					"left": 223,
+					"width": 55,
+					"height": 15,
+					"dataSource": "vs_CorreccionNFEX_resultado",
+					"styleSheet": "Plain - 13",
+					"contextMenu": "none",
+					"dragging": "none",
+					"method": "ObjectMethods/vs_CorreccionNFEX_resultado.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Línea": {
+					"type": "line",
+					"top": 316,
+					"left": 50,
+					"width": 607,
+					"height": 1,
+					"strokeDashArray": "1 1",
+					"startPoint": "bottomLeft"
+				},
+				"Línea2": {
+					"type": "line",
+					"top": 396,
+					"left": 50,
+					"width": 607,
+					"height": 1,
+					"strokeDashArray": "1 1",
+					"startPoint": "bottomLeft"
+				},
+				"e3_ResultadoFijo": {
+					"type": "radio",
+					"top": 422,
+					"left": 50,
+					"width": 214,
+					"height": 16,
+					"dataSource": "e3_ResultadoFijo",
+					"text": "Según evaluación del examen",
+					"styleSheet": "Plain - 13",
+					"method": "ObjectMethods/e3_ResultadoFijo.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"resultadoFijoEX_etiqueta": {
+					"type": "text",
+					"top": 447,
+					"left": 78,
+					"width": 130,
+					"height": 14,
+					"textAlign": "left",
+					"styleSheet": "Plain - 12",
+					"text": "Si es superior o igual a:"
+				},
+				"vs_CalificacionEX": {
+					"type": "input",
+					"top": 446,
+					"left": 223,
+					"width": 55,
+					"height": 14,
+					"dataSource": "vs_CalificacionEX",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"method": "ObjectMethods/vs_CalificacionEX.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vs_NF_igual_EX_SUP": {
+					"type": "input",
+					"top": 446,
+					"left": 615,
+					"width": 55,
+					"height": 14,
+					"dataSource": "vs_NF_igual_EX_SUP",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"method": "ObjectMethods/vs_NF_igual_EX_SUP.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"resultadoFijoEX_etiqueta1": {
+					"type": "text",
+					"top": 476,
+					"left": 78,
+					"width": 183,
+					"height": 15,
+					"textAlign": "left",
+					"styleSheet": "Plain - 12",
+					"text": "si es inferior"
+				},
+				"a1_NF_igualEX_SUP": {
+					"type": "radio",
+					"top": 445,
+					"left": 291,
+					"width": 225,
+					"height": 15,
+					"dataSource": "a1_NF_igualEX_SUP",
+					"text": "Nota Final = Examen",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/a1_NF_igualEX_SUP.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"a2_NF_igualValorFijoSUP": {
+					"type": "radio",
+					"top": 445,
+					"left": 546,
+					"width": 64,
+					"height": 15,
+					"dataSource": "a2_NF_igualValorFijoSUP",
+					"text": "Igual a:",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/a2_NF_igualValorFijoSUP.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vs_NF_igual_EX_INF": {
+					"type": "input",
+					"top": 477,
+					"left": 615,
+					"width": 55,
+					"height": 14,
+					"dataSource": "vs_NF_igual_EX_INF",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"method": "ObjectMethods/vs_NF_igual_EX_INF.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"c1_NF_igualEX_INF": {
+					"type": "radio",
+					"top": 476,
+					"left": 291,
+					"width": 225,
+					"height": 15,
+					"dataSource": "c1_NF_igualEX_INF",
+					"text": "Nota Final = Examen",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/c1_NF_igualEX_INF.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"c2_NF_igualValorFijoINF": {
+					"type": "radio",
+					"top": 476,
+					"left": 546,
+					"width": 64,
+					"height": 15,
+					"dataSource": "c2_NF_igualValorFijoINF",
+					"text": "Igual a:",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/c2_NF_igualValorFijoINF.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea8": {
+					"type": "line",
+					"top": 524,
+					"left": 1,
+					"width": 689,
+					"stroke": "#AAAAAA"
+				}
+			}
+		},
+		{
+			"objects": {
+				"_EXX_INF_": {
+					"type": "text",
+					"top": 199,
+					"left": 69,
+					"width": 241,
+					"height": 15,
+					"styleSheet": "Plain - 13",
+					"text": "Si es inferior a la nota de presentación"
+				},
+				"x1_PonderacionConstante": {
+					"type": "radio",
+					"top": 123,
+					"left": 50,
+					"width": 166,
+					"height": 16,
+					"dataSource": "x1_PonderacionConstante",
+					"text": "Ponderación constante:",
+					"styleSheet": "Plain - 13",
+					"method": "ObjectMethods/x1_PonderacionConstante.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"x2_PonderacionVariable": {
+					"type": "radio",
+					"top": 178,
+					"left": 50,
+					"width": 194,
+					"height": 16,
+					"dataSource": "x2_PonderacionVariable",
+					"text": "Variable:",
+					"styleSheet": "Plain - 13",
+					"events": [
+						"onClick"
+					]
+				},
+				"_EXX_SUP_": {
+					"type": "text",
+					"top": 199,
+					"left": 386,
+					"width": 287,
+					"height": 15,
+					"styleSheet": "Plain - 13",
+					"text": "Si es superior o igual a la nota de presentación"
+				},
+				"y1_EXX_INF_Ponderado": {
+					"type": "radio",
+					"top": 220,
+					"left": 78,
+					"width": 113,
+					"height": 15,
+					"dataSource": "y1_EXX_INF_Ponderado",
+					"text": "Se pondera en:",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/y1_EXX_INF_Ponderado.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"z1_EXX_SUP_Ponderado": {
+					"type": "radio",
+					"top": 219,
+					"left": 403,
+					"width": 113,
+					"height": 16,
+					"dataSource": "z1_EXX_SUP_Ponderado",
+					"text": "Se pondera en:",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/z1_EXX_SUP_Ponderado.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"y2_EXX_INF_Control": {
+					"type": "radio",
+					"top": 243,
+					"left": 78,
+					"width": 190,
+					"height": 15,
+					"dataSource": "y2_EXX_INF_Control",
+					"text": "Final = Examen extraordinario",
+					"styleSheet": "Plain - 12",
+					"events": [
+						"onClick"
+					]
+				},
+				"y3_EXX_INF_Presentacion": {
+					"type": "radio",
+					"top": 267,
+					"left": 78,
+					"width": 170,
+					"height": 15,
+					"dataSource": "y3_EXX_INF_Presentacion",
+					"text": "Final = Promedio del ciclo",
+					"styleSheet": "Plain - 12",
+					"events": [
+						"onClick"
+					]
+				},
+				"y4_EXX_INF_Especifico": {
+					"type": "radio",
+					"top": 291,
+					"left": 78,
+					"width": 60,
+					"height": 15,
+					"dataSource": "y4_EXX_INF_Especifico",
+					"text": "Final = ",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/y4_EXX_INF_Especifico.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vs_EXX_INF_Especifico": {
+					"type": "input",
+					"top": 293,
+					"left": 142,
+					"width": 55,
+					"height": 14,
+					"dataSource": "vs_EXX_INF_Especifico",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"method": "ObjectMethods/vs_EXX_INF_Especifico.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_EXX_INF_Ponderacion": {
+					"type": "input",
+					"top": 220,
+					"left": 189,
+					"width": 55,
+					"height": 14,
+					"dataSource": "vr_EXX_INF_Ponderacion",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Pct_2Dec"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vr_EXX_SUP_Ponderacion": {
+					"type": "input",
+					"top": 221,
+					"left": 520,
+					"width": 55,
+					"height": 14,
+					"dataSource": "vr_EXX_SUP_Ponderacion",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Pct_2Dec"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"z2_EXX_SUP_Control": {
+					"type": "radio",
+					"top": 243,
+					"left": 403,
+					"width": 190,
+					"height": 15,
+					"dataSource": "z2_EXX_SUP_Control",
+					"text": "Final = Examen extraordinario",
+					"styleSheet": "Plain - 12",
+					"events": [
+						"onClick"
+					]
+				},
+				"z3_EXX_SUP_Presentacion": {
+					"type": "radio",
+					"top": 267,
+					"left": 403,
+					"width": 170,
+					"height": 15,
+					"dataSource": "z3_EXX_SUP_Presentacion",
+					"text": "Final = Promedio del ciclo",
+					"styleSheet": "Plain - 12",
+					"events": [
+						"onClick"
+					]
+				},
+				"z4_EXX_SUP_Especifico": {
+					"type": "radio",
+					"top": 291,
+					"left": 403,
+					"width": 60,
+					"height": 15,
+					"dataSource": "z4_EXX_SUP_Especifico",
+					"text": "Final = ",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/z4_EXX_SUP_Especifico.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vs_EXX_SUP_Especifico": {
+					"type": "input",
+					"top": 293,
+					"left": 467,
+					"width": 55,
+					"height": 14,
+					"dataSource": "vs_EXX_SUP_Especifico",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"method": "ObjectMethods/vs_EXX_SUP_Especifico.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vi_UsarExamenExtra": {
+					"type": "checkbox",
+					"top": 88,
+					"left": 17,
+					"width": 231,
+					"height": 20,
+					"dataSource": "vi_UsarExamenExtra",
+					"text": "Utilizar examen extraordinario",
+					"styleSheet": "Medium - 14",
+					"fontWeight": "bold"
+				},
+				"vi_EXX_Reprobacion": {
+					"type": "checkbox",
+					"top": 145,
+					"left": 78,
+					"width": 579,
+					"height": 18,
+					"dataSource": "vi_EXX_Reprobacion",
+					"text": "Si reprueba el examen, reprueba la asignatura con la calificación del examen extraordinario",
+					"styleSheet": "Plain - 13",
+					"method": "ObjectMethods/vi_EXX_Reprobacion.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vr_EXX_PonderacionConstante": {
+					"type": "input",
+					"top": 125,
+					"left": 223,
+					"width": 55,
+					"height": 14,
+					"dataSource": "vr_EXX_PonderacionConstante",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Pct_2Dec"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Línea1": {
+					"type": "line",
+					"top": 199,
+					"left": 359,
+					"height": 111,
+					"stroke": "#AAAAAA"
+				},
+				"vi_CorreccionNFEXX": {
+					"type": "checkbox",
+					"top": 340,
+					"left": 50,
+					"width": 489,
+					"height": 18,
+					"dataSource": "vi_CorreccionNFEXX",
+					"text": "Si el resultado ponderado de la nota de presentación y el examen es inferior a:",
+					"styleSheet": "Plain - 13",
+					"method": "ObjectMethods/vi_CorreccionNFEXX.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vs_CorreccionNFEXX_minimo": {
+					"type": "input",
+					"top": 343,
+					"left": 546,
+					"width": 55,
+					"height": 15,
+					"dataSource": "vs_CorreccionNFEXX_minimo",
+					"styleSheet": "Plain - 13",
+					"contextMenu": "none",
+					"dragging": "none",
+					"method": "ObjectMethods/vs_CorreccionNFEXX_minimo.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"_CorreccionNFEXX_": {
+					"type": "text",
+					"top": 366,
+					"left": 69,
+					"width": 150,
+					"height": 15,
+					"styleSheet": "Plain - 13",
+					"text": "la nota final será igual a:"
+				},
+				"vs_CorreccionNFEXX_resultado": {
+					"type": "input",
+					"top": 366,
+					"left": 223,
+					"width": 55,
+					"height": 15,
+					"dataSource": "vs_CorreccionNFEXX_resultado",
+					"styleSheet": "Plain - 13",
+					"contextMenu": "none",
+					"dragging": "none",
+					"method": "ObjectMethods/vs_CorreccionNFEXX_resultado.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Línea5": {
+					"type": "line",
+					"top": 316,
+					"left": 50,
+					"width": 607,
+					"height": 1,
+					"strokeDashArray": "1 1",
+					"startPoint": "bottomLeft"
+				},
+				"Línea6": {
+					"type": "line",
+					"top": 396,
+					"left": 50,
+					"width": 607,
+					"height": 1,
+					"strokeDashArray": "1 1",
+					"startPoint": "bottomLeft"
+				},
+				"x3_ResultadoFijo": {
+					"type": "radio",
+					"top": 422,
+					"left": 50,
+					"width": 214,
+					"height": 16,
+					"dataSource": "x3_ResultadoFijo",
+					"text": "Según evaluación del examen",
+					"styleSheet": "Plain - 13",
+					"method": "ObjectMethods/x3_ResultadoFijo.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"resultadoFijoEXX_etiqueta": {
+					"type": "text",
+					"top": 447,
+					"left": 78,
+					"width": 130,
+					"height": 14,
+					"textAlign": "left",
+					"styleSheet": "Plain - 12",
+					"text": "Si es superior o igual a:"
+				},
+				"vs_CalificacionEXX": {
+					"type": "input",
+					"top": 447,
+					"left": 223,
+					"width": 55,
+					"height": 14,
+					"dataSource": "vs_CalificacionEXX",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"method": "ObjectMethods/vs_CalificacionEXX.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vs_NF_igual_EXX_SUP": {
+					"type": "input",
+					"top": 446,
+					"left": 615,
+					"width": 55,
+					"height": 14,
+					"dataSource": "vs_NF_igual_EXX_SUP",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"method": "ObjectMethods/vs_NF_igual_EXX_SUP.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"resultadoFijoEXX_etiqueta3": {
+					"type": "text",
+					"top": 476,
+					"left": 78,
+					"width": 183,
+					"height": 15,
+					"textAlign": "left",
+					"styleSheet": "Plain - 12",
+					"text": "si es inferior"
+				},
+				"m1_NF_igualEXX_SUP": {
+					"type": "radio",
+					"top": 445,
+					"left": 291,
+					"width": 225,
+					"height": 15,
+					"dataSource": "m1_NF_igualEXX_SUP",
+					"text": "Nota Final = Examen extraordinario",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/m1_NF_igualEXX_SUP.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"m2_NF_igualValorFijoSUP": {
+					"type": "radio",
+					"top": 445,
+					"left": 546,
+					"width": 64,
+					"height": 15,
+					"dataSource": "m2_NF_igualValorFijoSUP",
+					"text": "Igual a:",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/m2_NF_igualValorFijoSUP.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vs_NF_igual_EXX_INF": {
+					"type": "input",
+					"top": 477,
+					"left": 615,
+					"width": 55,
+					"height": 14,
+					"dataSource": "vs_NF_igual_EXX_INF",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"method": "ObjectMethods/vs_NF_igual_EXX_INF.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"n1_NF_igualEXX_INF": {
+					"type": "radio",
+					"top": 476,
+					"left": 291,
+					"width": 225,
+					"height": 15,
+					"dataSource": "n1_NF_igualEXX_INF",
+					"text": "Nota Final = Examen extraordinario",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/n1_NF_igualEXX_INF.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"n2_NF_igualValorFijoINF": {
+					"type": "radio",
+					"top": 476,
+					"left": 546,
+					"width": 64,
+					"height": 15,
+					"dataSource": "n2_NF_igualValorFijoINF",
+					"text": "Igual a:",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/n2_NF_igualValorFijoINF.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea7": {
+					"type": "line",
+					"top": 524,
+					"left": 1,
+					"width": 689,
+					"stroke": "#AAAAAA"
+				}
+			}
+		}
+	]
+}

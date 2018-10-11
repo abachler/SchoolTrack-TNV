@@ -1,0 +1,279 @@
+﻿{
+	"rightMargin": 15,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 500,
+	"markerBreak": 506,
+	"markerFooter": 748,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Área de plug-in1": {
+					"type": "plugin",
+					"top": 198,
+					"left": 13,
+					"width": 550,
+					"height": 75,
+					"dataSource": "xPLP_Documentos",
+					"pluginAreaKind": "%PrntListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Área de plug-in1.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 15,
+					"left": 1,
+					"width": 576,
+					"height": 23,
+					"textAlign": "center",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Documentos a Ingresar"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 82,
+					"left": 13,
+					"width": 181,
+					"height": 14,
+					"dataSource": "vtACT_CtaoApdo",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 82,
+					"left": 203,
+					"width": 351,
+					"height": 14,
+					"dataSource": "vtACT_NombreCtaoApdo",
+					"fill": "transparent",
+					"textAlign": "left",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 102,
+					"left": 13,
+					"width": 172,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Fecha de Pago:"
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 102,
+					"left": 203,
+					"width": 271,
+					"height": 14,
+					"dataSource": "vdACT_FechaPago",
+					"fill": "transparent",
+					"textAlign": "left",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "!0&9##/##/##",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 710,
+					"left": 1,
+					"width": 576,
+					"height": 14,
+					"dataSource": "sPage",
+					"fill": "transparent",
+					"textAlign": "center",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 736,
+					"left": 14,
+					"width": 563,
+					"height": 14,
+					"dataSource": "sPrintDate",
+					"fill": "transparent",
+					"textAlign": "center",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 122,
+					"left": 13,
+					"width": 177,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Número de Documentos:"
+				},
+				"Cuotas": {
+					"type": "input",
+					"top": 121,
+					"left": 203,
+					"width": 30,
+					"height": 14,
+					"dataSource": "vlACT_Cuotas",
+					"fill": "transparent",
+					"textAlign": "left",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 173,
+					"left": 13,
+					"width": 191,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Detalle de los Documentos"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 142,
+					"left": 13,
+					"width": 177,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Monto Total Documentado:"
+				},
+				"Cuotas1": {
+					"type": "input",
+					"top": 141,
+					"left": 203,
+					"width": 180,
+					"height": 14,
+					"dataSource": "vrACT_MontoAPagarApdo",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"textAlign": "left",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": {
+						"$ref": "/SOURCES/filters.json#/Real_2DecIfNec"
+					},
+					"entryFilter": "&9",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

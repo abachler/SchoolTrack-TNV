@@ -1,0 +1,154 @@
+﻿{
+	"formSizeAnchor": "Aceptar",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectángulo": {
+					"type": "rectangle",
+					"top": -1,
+					"left": -2,
+					"width": 570,
+					"height": 140
+				},
+				"Texto": {
+					"type": "text",
+					"top": 20,
+					"left": 20,
+					"width": 517,
+					"height": 70,
+					"styleSheet": "Plain - 13",
+					"text": "De acuerdo a la regla aplicable al lector, <NombreCompleto> no debería obtener ningún préstamo hasta el <Fecha_Suspención>. \r\rPuede modificar la fecha de suspensión o no aplicarla."
+				},
+				"Campo": {
+					"type": "input",
+					"top": 102,
+					"left": 376,
+					"width": 142,
+					"height": 15,
+					"dataSource": "[BBL_Lectores:72]Fecha_Suspención:45",
+					"styleSheet": "Plain - 13",
+					"enterable": false,
+					"contextMenu": "none",
+					"dateFormat": "systemLong",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Cancelar": {
+					"type": "button",
+					"top": 150,
+					"left": 200,
+					"width": 228,
+					"height": 20,
+					"action": "cancel",
+					"text": "No aplicar suspension",
+					"styleSheet": "Plain - 13",
+					"method": "ObjectMethods/Cancelar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Aceptar": {
+					"type": "button",
+					"top": 150,
+					"left": 440,
+					"width": 108,
+					"height": 20,
+					"action": "accept",
+					"text": "Aceptar",
+					"styleSheet": "Plain - 13",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 102,
+					"left": 127,
+					"width": 242,
+					"height": 15,
+					"textAlign": "right",
+					"styleSheet": "Plain - 13",
+					"fontWeight": "bold",
+					"text": "Suspender los prestamos hasta el:"
+				},
+				"bCalendar1": {
+					"type": "pictureButton",
+					"top": 101,
+					"left": 522,
+					"width": 17,
+					"height": 16,
+					"dataSource": "bCalendar1",
+					"columnCount": 1,
+					"rowCount": 4,
+					"picture": "/RESOURCES/IconCalendar.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bCalendar1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

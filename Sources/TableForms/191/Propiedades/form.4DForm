@@ -1,0 +1,505 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Imagen1",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"hl_EstilosEvaluacion": {
+					"type": "dropdown",
+					"top": 287,
+					"left": 560,
+					"width": 23,
+					"height": 18,
+					"dataSource": "hl_EstilosEvaluacion",
+					"dataSourceTypeHint": "integer",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"method": "ObjectMethods/hl_EstilosEvaluacion.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"hl_AñosNiveles": {
+					"type": "list",
+					"top": 1,
+					"left": 1,
+					"width": 155,
+					"height": 412,
+					"dataSource": "hl_AñosNiveles",
+					"enterable": false,
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"fill": "#DFE4FF",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "solid",
+					"method": "ObjectMethods/hl_AñosNiveles.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text59": {
+					"type": "text",
+					"top": 97,
+					"left": 185,
+					"width": 135,
+					"height": 13,
+					"textAlign": "left",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Nombre del ciclo:"
+				},
+				"Text61": {
+					"type": "text",
+					"top": 138,
+					"left": 185,
+					"width": 168,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Abreviatura para cursos (interno):"
+				},
+				"Text64": {
+					"type": "text",
+					"top": 194,
+					"left": 185,
+					"width": 67,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": ":21010,208"
+				},
+				"Text65": {
+					"type": "text",
+					"top": 69,
+					"left": 185,
+					"width": 124,
+					"height": 13,
+					"textAlign": "left",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Nombre oficial del nivel:"
+				},
+				"seccion": {
+					"type": "picture",
+					"top": 96,
+					"left": 593,
+					"width": 11,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Texto612": {
+					"type": "text",
+					"top": 42,
+					"left": 185,
+					"width": 127,
+					"height": 13,
+					"textAlign": "left",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Nombre interno del nivel:"
+				},
+				"Texto615": {
+					"type": "text",
+					"top": 165,
+					"left": 185,
+					"width": 160,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Abreviatura para cursos (oficial):"
+				},
+				"editables1": {
+					"type": "input",
+					"top": 42,
+					"left": 325,
+					"width": 278,
+					"height": 13,
+					"dataSource": "[xxSTR_HistoricoNiveles:191]NombreInterno:5",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"editables": {
+					"type": "input",
+					"top": 70,
+					"left": 325,
+					"width": 278,
+					"height": 13,
+					"dataSource": "[xxSTR_HistoricoNiveles:191]NombreOficial:6",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo3": {
+					"type": "input",
+					"top": 98,
+					"left": 325,
+					"width": 266,
+					"height": 13,
+					"dataSource": "[xxSTR_HistoricoNiveles:191]NombreDeCiclo:14",
+					"styleSheet": "XS_DialogObjects",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"editables2": {
+					"type": "input",
+					"top": 138,
+					"left": 359,
+					"width": 38,
+					"height": 13,
+					"dataSource": "[xxSTR_HistoricoNiveles:191]AbreviacionNivel_Interna:12",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"editables3": {
+					"type": "input",
+					"top": 165,
+					"left": 359,
+					"width": 38,
+					"height": 13,
+					"dataSource": "[xxSTR_HistoricoNiveles:191]AbreviacionNivel_Oficial:13",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"editables4": {
+					"type": "input",
+					"top": 194,
+					"left": 267,
+					"width": 337,
+					"height": 13,
+					"dataSource": "[xxSTR_HistoricoNiveles:191]DirectorResponsable:15",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"editablesPeriodo": {
+					"type": "input",
+					"top": 234,
+					"left": 301,
+					"width": 78,
+					"height": 13,
+					"dataSource": "[xxSTR_HistoricoNiveles:191]InicioAgnoEscolar:17",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"editablesPeriodo1": {
+					"type": "input",
+					"top": 234,
+					"left": 437,
+					"width": 78,
+					"height": 13,
+					"dataSource": "[xxSTR_HistoricoNiveles:191]TerminoAgnoEscolar:18",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"editablesPeriodo2": {
+					"type": "input",
+					"top": 234,
+					"left": 584,
+					"width": 19,
+					"height": 13,
+					"dataSource": "[xxSTR_HistoricoNiveles:191]NumeroDePeriodos:16",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"min": 2,
+					"max": 5,
+					"method": "ObjectMethods/editablesPeriodo2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 481,
+					"left": 252,
+					"width": 81,
+					"height": 21,
+					"dataSource": "bClose",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cerrar",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Campo7": {
+					"type": "input",
+					"top": 13,
+					"left": 345,
+					"width": 258,
+					"height": 13,
+					"dataSource": "[xxSTR_HistoricoNiveles:191]Año:2",
+					"fill": "transparent",
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto765": {
+					"type": "text",
+					"top": 290,
+					"left": 185,
+					"width": 143,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Estilo de evaluación oficial:"
+				},
+				"vt_Text1": {
+					"type": "input",
+					"top": 289,
+					"left": 331,
+					"width": 228,
+					"height": 14,
+					"dataSource": "vt_Text1",
+					"styleSheet": "XS_FormObjects",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"hl_EstilosEvaluacionInt": {
+					"type": "dropdown",
+					"top": 311,
+					"left": 560,
+					"width": 23,
+					"height": 18,
+					"dataSource": "hl_EstilosEvaluacionInt",
+					"dataSourceTypeHint": "integer",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"method": "ObjectMethods/hl_EstilosEvaluacionInt.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 314,
+					"left": 185,
+					"width": 143,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Estilo de evaluación interno:"
+				},
+				"vt_Text2": {
+					"type": "input",
+					"top": 313,
+					"left": 331,
+					"width": 228,
+					"height": 14,
+					"dataSource": "vt_Text2",
+					"styleSheet": "XS_FormObjects",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 340,
+					"left": 185,
+					"width": 376,
+					"height": 65,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "El cambio de los estilos de asignados a este nivel puede causar modificaciones en las calificaciones registradas al editar los registros históricos.\r\rHágalo sólo si sabe exactamente lo que está haciendo."
+				},
+				"Imagen1": {
+					"type": "picture",
+					"top": 413,
+					"left": 0,
+					"width": 619,
+					"height": 35,
+					"pictureFormat": "scaled",
+					"picture": "Images/Imagen1.pict"
+				},
+				"Imagen2": {
+					"type": "picture",
+					"top": 422,
+					"left": 43,
+					"width": 17,
+					"height": 18
+				},
+				"Imagen3": {
+					"type": "picture",
+					"top": 423,
+					"left": 11,
+					"width": 15,
+					"height": 15,
+					"pictureFormat": "scaled"
+				},
+				"bAddNivel": {
+					"type": "button",
+					"top": 419,
+					"left": 38,
+					"width": 25,
+					"height": 22,
+					"dataSource": "bAddNivel",
+					"display": false,
+					"method": "ObjectMethods/bAddNivel.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón invisible2": {
+					"type": "button",
+					"top": 419,
+					"left": 7,
+					"width": 25,
+					"height": 22,
+					"dataSource": "bDelAño",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"texto": {
+					"type": "text",
+					"top": 234,
+					"left": 185,
+					"width": 109,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Inicio año académico:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 234,
+					"left": 385,
+					"width": 49,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Término:"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 234,
+					"left": 529,
+					"width": 49,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Períodos:"
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 253,
+					"left": 461,
+					"width": 143,
+					"height": 18,
+					"dataSource": "Botón2",
+					"text": "Editar Períodos Escolares...",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Botón2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable2": {
+					"type": "dropdown",
+					"top": 97,
+					"left": 592,
+					"width": 16,
+					"height": 14,
+					"dataSource": "<>aListSect",
+					"focusable": false,
+					"display": false,
+					"fontSize": 10,
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

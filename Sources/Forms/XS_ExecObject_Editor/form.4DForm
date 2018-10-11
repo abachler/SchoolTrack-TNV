@@ -1,0 +1,525 @@
+﻿{
+	"rightMargin": 16,
+	"bottomMargin": 10,
+	"markerHeader": 15,
+	"markerBody": 518,
+	"markerBreak": 538,
+	"markerFooter": 558,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texto": {
+					"type": "text",
+					"top": 30,
+					"left": 29,
+					"width": 123,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Nombre de referencia"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 64,
+					"left": 29,
+					"width": 43,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Método"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 29,
+					"left": 430,
+					"width": 60,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Icono Botón"
+				},
+				"lb_ExecObjects_CountrySelector": {
+					"type": "listbox",
+					"top": 181,
+					"left": 27,
+					"width": 184,
+					"height": 239,
+					"dataSource": "lb_ExecObjects_CountrySelector",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "none",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"rowStrokeSource": "al_ExecObjects_Colors",
+					"rowStyleSource": "al_ExecObjects_Styles",
+					"fontFamily": "Tahoma",
+					"fontSize": 9,
+					"method": "ObjectMethods/lb_ExecObjects_CountrySelector.4dm",
+					"events": [
+						"onDoubleClick"
+					],
+					"columns": [
+						{
+							"name": "Columna1",
+							"dataSource": "atXS_ExecObjects_Countries",
+							"width": 169,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título1",
+								"text": "Disponible para...",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						}
+					]
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 424,
+					"left": 25,
+					"width": 186,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"fontStyle": "italic",
+					"text": "Dobleclick para seleccionar o de-seleccionar"
+				},
+				"lbXS_ExecObjects_Aliases": {
+					"type": "listbox",
+					"top": 181,
+					"left": 262,
+					"width": 285,
+					"height": 116,
+					"dataSource": "lbXS_ExecObjects_Aliases",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 9,
+					"columns": [
+						{
+							"name": "Columna2",
+							"dataSource": "atXS_ExecObjects_LangageCodes",
+							"width": 56,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange",
+								"onDragOver"
+							],
+							"header": {
+								"name": "Título2",
+								"text": "Alias para País/Idioma",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						},
+						{
+							"name": "atXS_ExecObjects_Aliases",
+							"dataSource": "atXS_ExecObjects_Aliases",
+							"width": 214,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDoubleClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/atXS_ExecObjects_Aliases.4dm",
+							"header": {
+								"name": "Título3",
+								"text": "Título3",
+								"dataSource": "Título3",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						}
+					]
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 152,
+					"left": 264,
+					"width": 63,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Alias para:"
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 152,
+					"left": 29,
+					"width": 163,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Disponible para:"
+				},
+				"atXS_PaisesDisponibles": {
+					"type": "dropdown",
+					"top": 150,
+					"left": 326,
+					"width": 183,
+					"height": 18,
+					"dataSource": "atXS_PaisesDisponibles",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/atXS_PaisesDisponibles.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Campo": {
+					"type": "input",
+					"top": 29,
+					"left": 153,
+					"width": 210,
+					"height": 13,
+					"dataSource": "[XShell_ExecutableObjects:280]Object_Name:2",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Campo.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo1": {
+					"type": "input",
+					"top": 63,
+					"left": 153,
+					"width": 210,
+					"height": 13,
+					"dataSource": "[XShell_ExecutableObjects:280]Object_MethodName:3",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Campo1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable": {
+					"type": "input",
+					"top": 98,
+					"left": 57,
+					"width": 80,
+					"height": 13,
+					"dataSource": "vtXS_ExecObject_AliasLabel",
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo2": {
+					"type": "input",
+					"top": 98,
+					"left": 153,
+					"width": 210,
+					"height": 13,
+					"dataSource": "[XShell_ExecutableObjects:280]Object_Alias:5",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Campo2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 98,
+					"left": 29,
+					"width": 28,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Alias"
+				},
+				"bPreviewButton": {
+					"type": "pictureButton",
+					"top": 19,
+					"left": 505,
+					"width": 32,
+					"height": 32,
+					"dataSource": "bPreviewButton",
+					"columnCount": 1,
+					"rowCount": 4,
+					"loopBackToFirstFrame": true,
+					"frameDelay": 0.5,
+					"method": "ObjectMethods/bPreviewButton.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 463,
+					"left": 375,
+					"width": 84,
+					"height": 20,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Cancelar",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"events": [
+						"onClick"
+					]
+				},
+				"bAccept": {
+					"type": "button",
+					"top": 463,
+					"left": 465,
+					"width": 84,
+					"height": 20,
+					"dataSource": "bAccept",
+					"action": "cancel",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Aceptar",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"events": [
+						"onClick"
+					]
+				},
+				"Campo3": {
+					"type": "input",
+					"top": 53,
+					"left": 496,
+					"width": 51,
+					"height": 11,
+					"dataSource": "[XShell_ExecutableObjects:280]IconRef:10",
+					"fill": "transparent",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Botón imagen": {
+					"type": "pictureButton",
+					"top": 460,
+					"left": 28,
+					"width": 32,
+					"height": 26,
+					"dataSource": "Botón imagen",
+					"columnCount": 1,
+					"rowCount": 3,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Botón imagen.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 306,
+					"left": 260,
+					"width": 63,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Tip"
+				},
+				"lbXS_ExecObjects_Tip": {
+					"type": "listbox",
+					"top": 325,
+					"left": 262,
+					"width": 285,
+					"height": 116,
+					"dataSource": "lbXS_ExecObjects_Tip",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 9,
+					"columns": [
+						{
+							"name": "Columna3",
+							"dataSource": "atXS_ExecObjects_LangageCodes_T",
+							"width": 56,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange",
+								"onDragOver"
+							],
+							"header": {
+								"name": "Título4",
+								"text": "Alias para País/Idioma",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						},
+						{
+							"name": "atXS_ExecObjects_Tip",
+							"dataSource": "atXS_ExecObjects_Tip",
+							"width": 214,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDoubleClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/atXS_ExecObjects_Tip.4dm",
+							"header": {
+								"name": "Título5",
+								"text": "Título3",
+								"dataSource": "Título3",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						}
+					]
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 98,
+					"left": 430,
+					"width": 60,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Icono menú"
+				},
+				"bPreviewMenuIcon": {
+					"type": "pictureButton",
+					"top": 96,
+					"left": 513,
+					"width": 20,
+					"height": 20,
+					"dataSource": "bPreviewMenuIcon",
+					"columnCount": 1,
+					"rowCount": 1,
+					"frameDelay": 0.5,
+					"method": "ObjectMethods/bPreviewMenuIcon.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Campo4": {
+					"type": "input",
+					"top": 118,
+					"left": 496,
+					"width": 51,
+					"height": 11,
+					"dataSource": "[XShell_ExecutableObjects:280]MenuIconRef:15",
+					"fill": "transparent",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

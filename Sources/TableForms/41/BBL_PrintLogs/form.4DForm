@@ -1,0 +1,136 @@
+﻿{
+	"rightMargin": 15,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"xxlog": {
+					"type": "plugin",
+					"top": 68,
+					"left": 15,
+					"width": 551,
+					"height": 41,
+					"dataSource": "xxlog",
+					"pluginAreaKind": "%PrntListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/xxlog.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onPluginArea"
+					]
+				},
+				"Line2": {
+					"type": "line",
+					"top": 118,
+					"left": 17,
+					"width": 553,
+					"height": 1,
+					"stroke": "transparent",
+					"startPoint": "bottomLeft"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 12,
+					"left": 15,
+					"width": 113,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_Report_8",
+					"text": "MediaTrack"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 23,
+					"left": 15,
+					"width": 288,
+					"height": 11,
+					"dataSource": "<>gCustom",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "XS_Report_8",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 35,
+					"left": 15,
+					"width": 288,
+					"height": 11,
+					"dataSource": "vd_fecha",
+					"dataSourceTypeHint": "date",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "XS_Report_8",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "long",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 7,
+					"left": 379,
+					"width": 191,
+					"height": 23,
+					"textAlign": "right",
+					"fontFamily": "Lucida Grande Bold",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"text": "Bitácora"
+				}
+			}
+		}
+	]
+}

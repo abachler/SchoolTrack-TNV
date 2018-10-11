@@ -1,0 +1,10 @@
+$recNum:=Record number:C243([xxSTR_Niveles:6])
+LIST TO BLOB:C556(hl_observaciones;[xxSTR_Niveles:6]ObservacionesEvaluacion:22)
+$blob:=[xxSTR_Niveles:6]ObservacionesEvaluacion:22
+SAVE RECORD:C53([xxSTR_Niveles:6])
+READ WRITE:C146([xxSTR_Niveles:6])
+ALL RECORDS:C47([xxSTR_Niveles:6])
+APPLY TO SELECTION:C70([xxSTR_Niveles:6];[xxSTR_Niveles:6]ObservacionesEvaluacion:22:=$blob)
+UNLOAD RECORD:C212([xxSTR_Niveles:6])
+READ WRITE:C146([xxSTR_Niveles:6])
+GOTO RECORD:C242([xxSTR_Niveles:6];$recNum)

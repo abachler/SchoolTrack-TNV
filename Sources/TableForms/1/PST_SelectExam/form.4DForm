@@ -1,0 +1,189 @@
+﻿{
+	"windowTitle": ":21031,1",
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Text5",
+	"rightMargin": 0,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 398,
+					"left": 219,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 341,
+					"left": 35,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"exams2": {
+					"type": "plugin",
+					"top": 27,
+					"left": 0,
+					"width": 316,
+					"height": 232,
+					"dataSource": "xALP_Sections",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/exams2.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onPluginArea"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 383,
+					"left": 25,
+					"width": 68,
+					"height": 16,
+					"dataSource": "New Variable16690",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 268,
+					"left": 4,
+					"width": 9,
+					"height": 8,
+					"fill": "#EE0000",
+					"stroke": "#EE0000"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 266,
+					"left": 19,
+					"width": 84,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Sesiones copadas"
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 280,
+					"left": 4,
+					"width": 9,
+					"height": 8,
+					"fill": "#FF6600",
+					"stroke": "#FF6600"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 278,
+					"left": 19,
+					"width": 215,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Sesiones en el límite (si la selecciona)"
+				},
+				"Rectangle3": {
+					"type": "rectangle",
+					"top": 292,
+					"left": 4,
+					"width": 9,
+					"height": 8,
+					"fill": "#0000FF",
+					"stroke": "#0000FF"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 290,
+					"left": 19,
+					"width": 215,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Sesiones disponibles"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 305,
+					"left": 2,
+					"width": 314,
+					"height": 11,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "(en negritas la jornada actualmente asignada)"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 6,
+					"left": 1,
+					"width": 283,
+					"height": 11,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"text": "Doble clic para seleccionar un examen"
+				}
+			}
+		}
+	]
+}

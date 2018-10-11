@@ -1,0 +1,1 @@
+PREF_Set (0;"ACT_PrefGeneracionCFDIAlEmitir";String:C10(bGenerarCFDI))

@@ -1,0 +1,92 @@
+﻿{
+	"formSizeAnchor": "Botón invisible1",
+	"rightMargin": 20,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Lista jerárquica1": {
+					"type": "list",
+					"top": 0,
+					"left": 0,
+					"width": 237,
+					"height": 182,
+					"dataSource": "hl_recomendacionesEnfermeria",
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"dragging": "custom",
+					"dropping": "custom",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Lista jerárquica1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onDrop",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 183,
+					"left": 182,
+					"width": 34,
+					"height": 14,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"textDecoration": "underline",
+					"text": "Cerrar"
+				},
+				"Botón invisible1": {
+					"type": "button",
+					"top": 184,
+					"left": 174,
+					"width": 42,
+					"height": 13,
+					"dataSource": "Botón invisible1",
+					"action": "cancel",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

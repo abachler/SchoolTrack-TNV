@@ -1,0 +1,1 @@
+PREF_Set (0;"SaltarEstadosADT";String:C10(Self:C308->))

@@ -1,0 +1,82 @@
+﻿{
+	"width": 257,
+	"height": 182,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Área de plug-in1": {
+					"type": "plugin",
+					"top": 0,
+					"left": -1,
+					"width": 259,
+					"height": 166,
+					"dataSource": "xALP_Periodos",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onPluginArea"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 168,
+					"left": 216,
+					"width": 35,
+					"height": 13,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"textDecoration": "underline",
+					"text": "Cerrar"
+				},
+				"Botón invisible1": {
+					"type": "button",
+					"top": 169,
+					"left": 213,
+					"width": 38,
+					"height": 13,
+					"dataSource": "Botón invisible1",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible1.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

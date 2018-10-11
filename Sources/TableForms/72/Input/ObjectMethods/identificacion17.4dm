@@ -1,0 +1,5 @@
+Self:C308->:=ST_Format (Self:C308)
+[BBL_Lectores:72]NombreCompleto:3:=ST_ClearSpaces ([BBL_Lectores:72]Apellido_paterno:12+" "+[BBL_Lectores:72]Apellido_materno:13+" "+[BBL_Lectores:72]Nombres:11)
+[BBL_Lectores:72]NombreCompleto:3:=ST_Format (->[BBL_Lectores:72]NombreCompleto:3)
+[BBL_Lectores:72]Nombre_Comun:35:=ST_ClearSpaces ([BBL_Lectores:72]Nombres:11+" "+[BBL_Lectores:72]Apellido_materno:13)
+[BBL_Lectores:72]Nombre_Comun:35:=ST_Format (->[BBL_Lectores:72]Nombre_Comun:35)

@@ -1,0 +1,196 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowMinWidth": 300,
+	"windowMinHeight": 255,
+	"windowMaxHeight": 500,
+	"formSizeAnchor": "vtXS_multiLine",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onActivate",
+		"onDeactivate",
+		"onCloseBox",
+		"onUnload"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable3": {
+					"type": "button",
+					"top": 395,
+					"left": 23,
+					"width": 67,
+					"height": 24,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bReturn",
+					"shortcutKey": "[Return]",
+					"text": "return",
+					"display": false,
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 395,
+					"left": 94,
+					"width": 50,
+					"height": 23,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bEnter",
+					"shortcutKey": "[Enter]",
+					"text": "enter",
+					"display": false,
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 425,
+					"left": 22,
+					"width": 67,
+					"height": 24,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bCancelX",
+					"action": "cancel",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 452,
+					"left": 23,
+					"width": 67,
+					"height": 24,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bCancelX2",
+					"action": "cancel",
+					"shortcutKey": "w",
+					"shortcutAccel": true,
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 13,
+					"left": 13,
+					"width": 295,
+					"height": 16,
+					"dataSource": "vtXS_DrawerTitle",
+					"fill": "transparent",
+					"styleSheet": "XS_System",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Plug-in Area1": {
+					"type": "plugin",
+					"top": 36,
+					"left": 13,
+					"width": 300,
+					"height": 263,
+					"dataSource": "xALP_Choices",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Plug-in Area1.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vtXS_multiLine": {
+					"type": "text",
+					"top": 305,
+					"left": 13,
+					"width": 300,
+					"height": 13,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Seleccione y luego presione enter."
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 438,
+					"left": 94,
+					"width": 50,
+					"height": 23,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bEnter",
+					"shortcutKey": "[Esc]",
+					"text": "enter",
+					"display": false,
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

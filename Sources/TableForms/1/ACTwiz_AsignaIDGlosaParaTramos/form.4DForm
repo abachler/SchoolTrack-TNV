@@ -1,0 +1,502 @@
+﻿{
+	"inheritedForm": "XS_MASTER_WZDDialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 626,
+	"height": 407,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Texto4": {
+					"type": "text",
+					"top": 4,
+					"left": 161,
+					"width": 372,
+					"height": 51,
+					"stroke": "#FFFFFF",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Asistente para la Asignación de Glosa en Cargos por Tramo"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Cuadro de Grupo2": {
+					"type": "groupBox",
+					"top": 72,
+					"left": 6,
+					"width": 115,
+					"height": 42,
+					"styleSheet": "XS_FormObjects",
+					"text": "Filtros:"
+				},
+				"Cuadro de Grupo1": {
+					"type": "groupBox",
+					"top": 72,
+					"left": 124,
+					"width": 298,
+					"height": 42,
+					"styleSheet": "XS_FormObjects",
+					"text": "Utilizar la glosa del siguiente ítem al generar cargos por tramo:"
+				},
+				"Cuadro de Grupo": {
+					"type": "groupBox",
+					"top": 114,
+					"left": 5,
+					"width": 616,
+					"height": 248,
+					"styleSheet": "XS_FormObjects",
+					"text": "Selección de ítems a los cuales aplicar la glosa seleccionada:"
+				},
+				"img_itemGeneraTramo": {
+					"type": "picture",
+					"top": 92,
+					"left": 396,
+					"width": 19,
+					"height": 13
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 52,
+					"left": 163,
+					"width": 278,
+					"height": 14,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Opciones de Asignación"
+				},
+				"bProxima": {
+					"type": "pictureButton",
+					"top": 379,
+					"left": 592,
+					"width": 20,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"shortcutKey": "[right arrow]",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bProxima.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn_itemGeneraTramo": {
+					"type": "button",
+					"top": 90,
+					"left": 396,
+					"width": 19,
+					"height": 14,
+					"display": false,
+					"method": "ObjectMethods/btn_itemGeneraTramo.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"ACTcfg_itemGeneraTramoId": {
+					"type": "input",
+					"top": 93,
+					"left": 146,
+					"width": 19,
+					"height": 12,
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"cb_filtroAños": {
+					"type": "dropdown",
+					"top": 90,
+					"left": 33,
+					"width": 80,
+					"height": 16,
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/cb_filtroAños.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"ACTcfg_itemGeneraTramo": {
+					"type": "input",
+					"top": 92,
+					"left": 168,
+					"width": 228,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/ACTcfg_itemGeneraTramo.4dm",
+					"events": [
+						"onClick",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"chk_todos": {
+					"type": "checkbox",
+					"top": 83,
+					"left": 535,
+					"width": 81,
+					"height": 23,
+					"text": "Seleccionar todos los ítems",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/chk_todos.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"lb_items": {
+					"type": "listbox",
+					"top": 135,
+					"left": 10,
+					"width": 606,
+					"height": 218,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"headerHeight": "2em",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "automatic",
+					"fontFamily": "Tahoma",
+					"fontSize": 9,
+					"method": "ObjectMethods/lb_items.4dm",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "ab_asignable",
+							"width": 51,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"controlType": "checkbox",
+							"textAlign": "center",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado1",
+								"text": "Asignar",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						},
+						{
+							"name": "al_idCargo",
+							"width": 47,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado2",
+								"text": "Id ítem",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						},
+						{
+							"name": "at_glosaCargo",
+							"width": 220,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado3",
+								"text": "Glosa ítem",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						},
+						{
+							"name": "at_glosaTramo",
+							"width": 214,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado5",
+								"text": "Glosa utilizada al generar cargos por tramos",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						},
+						{
+							"name": "al_idTramo",
+							"width": 59,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado4",
+								"text": "Id utilizado\\en tramos",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						}
+					]
+				},
+				"Texto": {
+					"type": "text",
+					"top": 93,
+					"left": 132,
+					"width": 15,
+					"height": 10,
+					"styleSheet": "XS_FormObjects",
+					"text": "ID:"
+				},
+				"lbl_año": {
+					"type": "text",
+					"top": 92,
+					"left": 8,
+					"width": 29,
+					"height": 12,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Año:"
+				},
+				"lbl_nroPagina": {
+					"type": "input",
+					"top": 383,
+					"left": 574,
+					"width": 17,
+					"height": 12,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"t_selec": {
+					"type": "input",
+					"top": 107,
+					"left": 552,
+					"width": 28,
+					"height": 12,
+					"fill": "transparent",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 104,
+					"left": 582,
+					"width": 6,
+					"height": 15,
+					"fontWeight": "bold",
+					"text": "/"
+				},
+				"t_total": {
+					"type": "input",
+					"top": 107,
+					"left": 589,
+					"width": 28,
+					"height": 12,
+					"fill": "transparent",
+					"textAlign": "left",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"btnAceptar": {
+					"type": "button",
+					"top": 377,
+					"left": 535,
+					"width": 80,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"text": "Aceptar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/btnAceptar.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 52,
+					"left": 163,
+					"width": 278,
+					"height": 14,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Resumen de Asignación"
+				},
+				"txtResumen": {
+					"type": "input",
+					"top": 92,
+					"left": 8,
+					"width": 602,
+					"height": 268,
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"btnCancelar": {
+					"type": "button",
+					"top": 377,
+					"left": 435,
+					"width": 80,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"action": "accept",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/btnCancelar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

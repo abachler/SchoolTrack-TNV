@@ -1,0 +1,195 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Forms",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "lb_informes",
+	"rightMargin": 0,
+	"bottomMargin": 60,
+	"markerHeader": 15,
+	"markerBody": 338,
+	"markerBreak": 358,
+	"markerFooter": 378,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"lb_informes": {
+					"type": "listbox",
+					"top": 1,
+					"left": 0,
+					"width": 569,
+					"height": 231,
+					"listboxType": "currentSelection",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"headerHeight": "24px",
+					"highlightSet": "$ListboxSet0",
+					"table": 54,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"method": "ObjectMethods/lb_informes.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Barras 2D1",
+							"dataSource": "[xShell_Reports:54]ReportName:26",
+							"width": 250,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "nombre",
+								"text": "Informe",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Barras 2D2",
+							"dataSource": "DT_FechaISO_a_FechaHora ([xShell_Reports:54]timestampISO_modificacion:35)",
+							"width": 151,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "modificacion",
+								"text": "Fecha de modificación",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Barras 2D3",
+							"dataSource": "USR_GetUserName ([xShell_Reports:54]Modificacion_Usuario:39)",
+							"width": 153,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "modificadoPor",
+								"text": "Propietario",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"Variable25": {
+					"type": "button",
+					"top": 257,
+					"left": 16,
+					"width": 144,
+					"height": 22,
+					"dataSource": "bOpenDoc",
+					"action": "cancel",
+					"shortcutKey": "i",
+					"shortcutAccel": true,
+					"text": "Abrir documento…",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cancelar": {
+					"type": "button",
+					"top": 257,
+					"left": 346,
+					"width": 100,
+					"height": 22,
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"open": {
+					"type": "button",
+					"top": 257,
+					"left": 456,
+					"width": 100,
+					"height": 22,
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"text": "Abrir",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"defaultButton": true,
+					"method": "ObjectMethods/open.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

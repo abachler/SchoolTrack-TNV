@@ -1,0 +1,5771 @@
+﻿{
+	"inheritedForm": "XS_MASTER_ConfigDialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Pestaña1",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Variable11": {
+					"type": "button",
+					"top": 554,
+					"left": 11,
+					"width": 66,
+					"height": 18,
+					"dataSource": "b_Close",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"method": "ObjectMethods/Variable11.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Pestaña1": {
+					"type": "tab",
+					"top": 50,
+					"left": 0,
+					"width": 762,
+					"height": 417,
+					"dataSource": "vlACT_ConfigGenerales",
+					"dataSourceTypeHint": "arrayText",
+					"styleSheet": "XS_FormObjects",
+					"action": "gotoPage",
+					"method": "ObjectMethods/Pestaña1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Zona de Grupo8": {
+					"type": "groupBox",
+					"top": 224,
+					"left": 13,
+					"width": 229,
+					"height": 236,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Ingreso de pagos"
+				},
+				"Zona de Grupo7": {
+					"type": "groupBox",
+					"top": 157,
+					"left": 13,
+					"width": 229,
+					"height": 54,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Asignación de Matrices"
+				},
+				"Zona de Grupo9": {
+					"type": "groupBox",
+					"top": 90,
+					"left": 13,
+					"width": 229,
+					"height": 54,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Apoderados de cuenta"
+				},
+				"Variable3673": {
+					"type": "checkbox",
+					"top": 101,
+					"left": 21,
+					"width": 199,
+					"height": 38,
+					"dataSource": "viACT_ACTDecideApoderado",
+					"text": "AccountTrack define la condición de apoderado de cuenta",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable3673.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "checkbox",
+					"top": 168,
+					"left": 25,
+					"width": 209,
+					"height": 38,
+					"dataSource": "viACT_AsignarMatAdmision",
+					"text": "Permitir la asignación de matriz a cuentas en admisión",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección2": {
+					"type": "checkbox",
+					"top": 242,
+					"left": 24,
+					"width": 182,
+					"height": 16,
+					"dataSource": "cb_PermitePorCta",
+					"text": "Permitir ingreso de pagos por cuenta",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón de opción1": {
+					"type": "radio",
+					"top": 291,
+					"left": 31,
+					"width": 125,
+					"height": 18,
+					"dataSource": "cbDatosApdo",
+					"text": "Ingreso por apoderado",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Botón de opción1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón de opción2": {
+					"type": "radio",
+					"top": 310,
+					"left": 31,
+					"width": 109,
+					"height": 18,
+					"dataSource": "cbDatosCta",
+					"text": "Ingreso por cuenta",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Botón de opción2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección6": {
+					"type": "checkbox",
+					"top": 335,
+					"left": 24,
+					"width": 202,
+					"height": 16,
+					"dataSource": "cb_soloCuotasVencidas",
+					"text": "Sólo permitir el pago de montos vencidos",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "checkbox",
+					"top": 108,
+					"left": 263,
+					"width": 227,
+					"height": 16,
+					"dataSource": "cbNCtasAfectas",
+					"text": "Marcar nuevas cuentas como afectas a intereses",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 264,
+					"left": 34,
+					"width": 207,
+					"height": 22,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontStyle": "italic",
+					"text": "Al seleccionar una cuenta en el explorador el diálogo de ingreso de pagos se prepara para:"
+				},
+				"Zona de Grupo11": {
+					"type": "groupBox",
+					"top": 90,
+					"left": 250,
+					"width": 298,
+					"height": 207,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Nuevas cuentas y apoderados"
+				},
+				"Variable9": {
+					"type": "checkbox",
+					"top": 131,
+					"left": 263,
+					"width": 287,
+					"height": 16,
+					"dataSource": "cbNApdosAfectos",
+					"text": "Marcar nuevos apoderados de cuenta como afectos a intereses",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable9.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto16": {
+					"type": "text",
+					"top": 149,
+					"left": 281,
+					"width": 247,
+					"height": 44,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontStyle": "italic",
+					"text": "Los nuevos apoderados serán marcados como afectos a intereses sólo si no son actualmente apoderados de cuenta o ex apoderados de cuenta de otras cuentas."
+				},
+				"Variable21": {
+					"type": "input",
+					"top": 217,
+					"left": 357,
+					"width": 130,
+					"height": 12,
+					"dataSource": "vt_FormadePagoXDef",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"fontFamily": "Arial",
+					"fontSize": 9,
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"Variable12": {
+					"type": "checkbox",
+					"top": 191,
+					"left": 263,
+					"width": 287,
+					"height": 16,
+					"dataSource": "cbFPXDefecto",
+					"text": "Asignar el siguiente modo de pago a los nuevos apoderados",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable12.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btnFDPXDef": {
+					"type": "button",
+					"top": 238,
+					"left": 298,
+					"width": 202,
+					"height": 20,
+					"dataSource": "btnFDPXDef",
+					"text": "Aplicar forma de pago a todos ahora",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/btnFDPXDef.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Banco(5)2": {
+					"type": "picture",
+					"top": 214,
+					"left": 488,
+					"width": 19,
+					"height": 16
+				},
+				"bFormasdePago": {
+					"type": "button",
+					"top": 215,
+					"left": 355,
+					"width": 153,
+					"height": 16,
+					"dataSource": "bFormasdePago",
+					"display": false,
+					"method": "ObjectMethods/bFormasdePago.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto638": {
+					"type": "text",
+					"top": 217,
+					"left": 285,
+					"width": 73,
+					"height": 14,
+					"stroke": "#000000",
+					"fontFamily": "Arial",
+					"fontSize": 9,
+					"text": "Modo de Pago"
+				},
+				"Zona de Grupo22": {
+					"type": "groupBox",
+					"top": 90,
+					"left": 556,
+					"width": 193,
+					"height": 68,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Modos de Pago"
+				},
+				"csACTcfg_ModosPagoXCuenta": {
+					"type": "checkbox",
+					"top": 108,
+					"left": 565,
+					"width": 170,
+					"height": 36,
+					"dataSource": "csACTcfg_ModosPagoXCuenta",
+					"text": "Utilizar modos de pago por Cuenta Corriente",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/csACTcfg_ModosPagoXCuenta.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto44": {
+					"type": "text",
+					"top": 360,
+					"left": 24,
+					"width": 215,
+					"height": 25,
+					"styleSheet": "XS_FormObjects",
+					"text": "Asignar el siguiente correlativo                      al ingresar pagos por caja"
+				},
+				"lACT_correlativoPago": {
+					"type": "input",
+					"top": 360,
+					"left": 152,
+					"width": 48,
+					"height": 11,
+					"dataSource": "lACT_correlativoPago",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/lACT_correlativoPago.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Casilla de selección": {
+					"type": "checkbox",
+					"top": 389,
+					"left": 24,
+					"width": 200,
+					"height": 26,
+					"dataSource": "cb_noPagosConFechasAnteriores",
+					"text": "No permitir que se registren pagos con fechas anteriores al último pago ingresado",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Zona de Grupo24": {
+					"type": "groupBox",
+					"top": 305,
+					"left": 250,
+					"width": 499,
+					"height": 92,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Ingreso de porcentajes de división de cobro a relaciones familiares"
+				},
+				"Zona de Grupo21": {
+					"type": "groupBox",
+					"top": 157,
+					"left": 556,
+					"width": 193,
+					"height": 76,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Detalle de pagos"
+				},
+				"cs_MostrarDctos": {
+					"type": "checkbox",
+					"top": 171,
+					"left": 568,
+					"width": 162,
+					"height": 26,
+					"dataSource": "csACTcfg_MostrarDctos",
+					"text": "Desglosar cargos descontados en el detalle del pago",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/cs_MostrarDctos.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cs_AgruparDctos": {
+					"type": "checkbox",
+					"top": 196,
+					"left": 568,
+					"width": 282,
+					"height": 26,
+					"dataSource": "csACTcfg_AgruparDctosEnCaja",
+					"text": "Agrupar descuentos en caja",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/cs_AgruparDctos.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cb_SepararCargosXPct": {
+					"type": "checkbox",
+					"top": 321,
+					"left": 262,
+					"width": 443,
+					"height": 26,
+					"dataSource": "cb_SepararCargosXPct",
+					"text": "Separar cobros según porcentajes asignados a las relaciones familiares de cada cuenta corriente",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/cb_SepararCargosXPct.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cb_SepararACsXPct": {
+					"type": "checkbox",
+					"top": 341,
+					"left": 282,
+					"width": 443,
+					"height": 26,
+					"dataSource": "cb_SepararACsXPct",
+					"text": "Generar Avisos de Cobranza diferentes por cada relación familiar con porcentaje asignado",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/cb_SepararACsXPct.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cb_SepararDTsXPct": {
+					"type": "checkbox",
+					"top": 361,
+					"left": 282,
+					"width": 443,
+					"height": 26,
+					"dataSource": "cb_SepararDTsXPct",
+					"text": "Generar Documentos Tributarios diferentes por cada relación familiar con porcentaje asignado",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/cb_SepararDTsXPct.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cb_generarRcibosDesdeAC": {
+					"type": "checkbox",
+					"top": 419,
+					"left": 24,
+					"width": 200,
+					"height": 26,
+					"dataSource": "cb_generarRcibosDesdeAC",
+					"text": "Generar recibos de pago desde Avisos de Cobranza",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/cb_generarRcibosDesdeAC.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Zona de Grupo13": {
+					"type": "groupBox",
+					"top": 240,
+					"left": 405,
+					"width": 158,
+					"height": 146,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Logo"
+				},
+				"Zona de Grupo1": {
+					"type": "groupBox",
+					"top": 77,
+					"left": 13,
+					"width": 378,
+					"height": 158,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Datos Legales"
+				},
+				"Campo703": {
+					"type": "input",
+					"top": 100,
+					"left": 148,
+					"width": 236,
+					"height": 22,
+					"dataSource": "[ACT_RazonesSociales:279]razon_social:2",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Campo703.4dm",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"rs_rut": {
+					"type": "input",
+					"top": 132,
+					"left": 148,
+					"width": 236,
+					"height": 11,
+					"dataSource": "[ACT_RazonesSociales:279]RUT:3",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/rs_rut.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto689": {
+					"type": "text",
+					"top": 100,
+					"left": 23,
+					"width": 64,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Razón Social:"
+				},
+				"Texto690": {
+					"type": "text",
+					"top": 132,
+					"left": 23,
+					"width": 28,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "RUT:"
+				},
+				"Campo705": {
+					"type": "input",
+					"top": 151,
+					"left": 148,
+					"width": 236,
+					"height": 11,
+					"dataSource": "[ACT_RazonesSociales:279]representante_legal:4",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onGettingFocus",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"rs_rut_rp": {
+					"type": "input",
+					"top": 169,
+					"left": 148,
+					"width": 236,
+					"height": 11,
+					"dataSource": "[ACT_RazonesSociales:279]representante_legal_rut:5",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/rs_rut_rp.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto691": {
+					"type": "text",
+					"top": 151,
+					"left": 23,
+					"width": 111,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Representante Legal:"
+				},
+				"Texto692": {
+					"type": "text",
+					"top": 170,
+					"left": 23,
+					"width": 118,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "RUT Representante Legal:"
+				},
+				"Campo1": {
+					"type": "input",
+					"top": 188,
+					"left": 148,
+					"width": 236,
+					"height": 11,
+					"dataSource": "[ACT_RazonesSociales:279]giro:18",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Campo1.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo5": {
+					"type": "input",
+					"top": 208,
+					"left": 148,
+					"width": 236,
+					"height": 11,
+					"dataSource": "[ACT_RazonesSociales:279]codigo_actividad_economica:6",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Campo5.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"MultiRazon": {
+					"type": "checkbox",
+					"top": 91,
+					"left": 413,
+					"width": 157,
+					"height": 18,
+					"dataSource": "cs_MultiRazones",
+					"text": "Utilizar multi razones sociales",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/MultiRazon.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"MultiRazones": {
+					"type": "dropdown",
+					"top": 113,
+					"left": 429,
+					"width": 263,
+					"height": 15,
+					"dataSource": "atACTcfg_Razones",
+					"focusable": false,
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/MultiRazones.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"MultiRazones1": {
+					"type": "checkbox",
+					"top": 133,
+					"left": 429,
+					"width": 297,
+					"height": 18,
+					"dataSource": "cs_MultiRazonesReportes",
+					"text": "Permitir seleccionar razones sociales al generar reportes",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/MultiRazones1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Campo2": {
+					"type": "input",
+					"top": 181,
+					"left": 488,
+					"width": 243,
+					"height": 11,
+					"dataSource": "[ACT_RazonesSociales:279]contacto_nombre:14",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onGettingFocus",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo3": {
+					"type": "input",
+					"top": 200,
+					"left": 488,
+					"width": 243,
+					"height": 11,
+					"dataSource": "[ACT_RazonesSociales:279]contacto_eMail:15",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Campo3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo4": {
+					"type": "input",
+					"top": 219,
+					"left": 488,
+					"width": 243,
+					"height": 11,
+					"dataSource": "[ACT_RazonesSociales:279]contacto_telefono:16",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onGettingFocus",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo708": {
+					"type": "input",
+					"top": 254,
+					"left": 148,
+					"width": 236,
+					"height": 11,
+					"dataSource": "[ACT_RazonesSociales:279]direccion:7",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onGettingFocus",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo6": {
+					"type": "input",
+					"top": 272,
+					"left": 148,
+					"width": 76,
+					"height": 11,
+					"dataSource": "[ACT_RazonesSociales:279]Numero_exterior:36",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onGettingFocus",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo7": {
+					"type": "input",
+					"top": 272,
+					"left": 308,
+					"width": 76,
+					"height": 11,
+					"dataSource": "[ACT_RazonesSociales:279]Numero_interior:37",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onGettingFocus",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo707": {
+					"type": "input",
+					"top": 290,
+					"left": 148,
+					"width": 236,
+					"height": 11,
+					"dataSource": "[ACT_RazonesSociales:279]comuna:8",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onGettingFocus",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo711": {
+					"type": "input",
+					"top": 308,
+					"left": 148,
+					"width": 236,
+					"height": 11,
+					"dataSource": "[ACT_RazonesSociales:279]codigo_postal:9",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onGettingFocus",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo710": {
+					"type": "input",
+					"top": 326,
+					"left": 148,
+					"width": 236,
+					"height": 11,
+					"dataSource": "[ACT_RazonesSociales:279]ciudad:10",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onGettingFocus",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo8": {
+					"type": "input",
+					"top": 344,
+					"left": 148,
+					"width": 236,
+					"height": 11,
+					"dataSource": "[ACT_RazonesSociales:279]Región_estado:38",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onGettingFocus",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo712": {
+					"type": "input",
+					"top": 363,
+					"left": 148,
+					"width": 236,
+					"height": 11,
+					"dataSource": "[ACT_RazonesSociales:279]telefono:11",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onGettingFocus",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 188,
+					"left": 23,
+					"width": 61,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Giro:"
+				},
+				"Zona de Grupo2": {
+					"type": "groupBox",
+					"top": 239,
+					"left": 13,
+					"width": 378,
+					"height": 185,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Dirección y Teléfonos"
+				},
+				"Texto693": {
+					"type": "text",
+					"top": 254,
+					"left": 23,
+					"width": 64,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Dirección:"
+				},
+				"Texto695": {
+					"type": "text",
+					"top": 290,
+					"left": 23,
+					"width": 64,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Comuna:"
+				},
+				"Texto2560": {
+					"type": "text",
+					"top": 308,
+					"left": 23,
+					"width": 75,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Código Postal:"
+				},
+				"Texto2561": {
+					"type": "text",
+					"top": 326,
+					"left": 23,
+					"width": 64,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Ciudad:"
+				},
+				"Campo709": {
+					"type": "input",
+					"top": 382,
+					"left": 148,
+					"width": 236,
+					"height": 11,
+					"dataSource": "[ACT_RazonesSociales:279]fax:12",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onGettingFocus",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo713": {
+					"type": "input",
+					"top": 401,
+					"left": 148,
+					"width": 236,
+					"height": 11,
+					"dataSource": "[ACT_RazonesSociales:279]eMail:13",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Campo713.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto696": {
+					"type": "text",
+					"top": 363,
+					"left": 23,
+					"width": 64,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Teléfono:"
+				},
+				"Texto697": {
+					"type": "text",
+					"top": 382,
+					"left": 23,
+					"width": 64,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Fax:"
+				},
+				"Texto698": {
+					"type": "text",
+					"top": 401,
+					"left": 23,
+					"width": 64,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "eMail:"
+				},
+				"Campo81": {
+					"type": "input",
+					"top": 257,
+					"left": 425,
+					"width": 118,
+					"height": 118,
+					"dataSource": "[ACT_RazonesSociales:279]logo:17",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"method": "ObjectMethods/Campo81.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onGettingFocus",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Zona de Grupo14": {
+					"type": "groupBox",
+					"top": 244,
+					"left": 575,
+					"width": 168,
+					"height": 48,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Cuentas Bancarias"
+				},
+				"bCtas": {
+					"type": "button",
+					"top": 264,
+					"left": 593,
+					"width": 132,
+					"height": 20,
+					"dataSource": "bCtas",
+					"text": "Configurar",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/bCtas.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Zona de Grupo10": {
+					"type": "groupBox",
+					"top": 158,
+					"left": 405,
+					"width": 338,
+					"height": 82,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Contacto en el Colegio"
+				},
+				"Texto13": {
+					"type": "text",
+					"top": 181,
+					"left": 419,
+					"width": 124,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Nombre:"
+				},
+				"Texto14": {
+					"type": "text",
+					"top": 200,
+					"left": 419,
+					"width": 64,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "eMail:"
+				},
+				"Texto15": {
+					"type": "text",
+					"top": 219,
+					"left": 419,
+					"width": 64,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Teléfono:"
+				},
+				"Zona de Grupo20": {
+					"type": "groupBox",
+					"top": 77,
+					"left": 405,
+					"width": 338,
+					"height": 80,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Multi razones sociales"
+				},
+				"MultiRazones4": {
+					"type": "pictureButton",
+					"top": 90,
+					"left": 707,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bInsertLine",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/MultiRazones4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"MultiRazones5": {
+					"type": "pictureButton",
+					"top": 89,
+					"left": 724,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bDel",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/MultiRazones5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto40": {
+					"type": "text",
+					"top": 208,
+					"left": 23,
+					"width": 121,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Código Actividad Económica:"
+				},
+				"Texto50": {
+					"type": "text",
+					"top": 272,
+					"left": 23,
+					"width": 104,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Número:"
+				},
+				"Texto51": {
+					"type": "text",
+					"top": 272,
+					"left": 235,
+					"width": 73,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Número Interior:"
+				},
+				"Texto52": {
+					"type": "text",
+					"top": 344,
+					"left": 23,
+					"width": 64,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Región/Estado:"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Zona de Grupo48": {
+					"type": "groupBox",
+					"top": 90,
+					"left": 13,
+					"width": 208,
+					"height": 256,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Orden y agrupación de hermanos"
+				},
+				"Variable699": {
+					"type": "radio",
+					"top": 124,
+					"left": 41,
+					"width": 163,
+					"height": 15,
+					"dataSource": "gGroupByFamily",
+					"text": "Por pertenencia a misma famila",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable699.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable700": {
+					"type": "radio",
+					"top": 143,
+					"left": 41,
+					"width": 163,
+					"height": 15,
+					"dataSource": "gGroupByGardian",
+					"text": "Según apoderado de cuenta",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable700.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto537": {
+					"type": "text",
+					"top": 109,
+					"left": 21,
+					"width": 119,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Agrupar hermanos por:"
+				},
+				"Variable701": {
+					"type": "radio",
+					"top": 186,
+					"left": 41,
+					"width": 106,
+					"height": 15,
+					"dataSource": "nOrdenAscendiente",
+					"text": "De menor a mayor",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable701.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable702": {
+					"type": "radio",
+					"top": 204,
+					"left": 41,
+					"width": 99,
+					"height": 15,
+					"dataSource": "nOrdenDescendiente",
+					"text": "De mayor a menor",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable702.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto538": {
+					"type": "text",
+					"top": 170,
+					"left": 21,
+					"width": 175,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Asignar número de hermano:"
+				},
+				"Variable703": {
+					"type": "radio",
+					"top": 246,
+					"left": 41,
+					"width": 106,
+					"height": 15,
+					"dataSource": "oOrderbyBirthDate",
+					"text": "Fecha de nacimiento",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable703.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable704": {
+					"type": "radio",
+					"top": 264,
+					"left": 41,
+					"width": 49,
+					"height": 15,
+					"dataSource": "oOrderByClass",
+					"text": "Curso",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable704.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable705": {
+					"type": "button",
+					"top": 319,
+					"left": 23,
+					"width": 187,
+					"height": 18,
+					"dataSource": "bAsignNumber",
+					"text": "Ordenar hermanos por familia ahora",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable705.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto539": {
+					"type": "text",
+					"top": 233,
+					"left": 26,
+					"width": 75,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "basándose en:"
+				},
+				"Variable2353": {
+					"type": "checkbox",
+					"top": 108,
+					"left": 248,
+					"width": 187,
+					"height": 15,
+					"dataSource": "cbUsarDescuentosFamilia",
+					"text": "Aplicar descuentos por Nº de hijo",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable2353.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable0": {
+					"type": "checkbox",
+					"top": 131,
+					"left": 248,
+					"width": 187,
+					"height": 15,
+					"dataSource": "cbUsarDescuentosIndividual",
+					"text": "Aplicar descuentos individuales",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable0.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable10": {
+					"type": "checkbox",
+					"top": 154,
+					"left": 248,
+					"width": 227,
+					"height": 15,
+					"dataSource": "cbUsarDescuentosCargas",
+					"text": "Aplicar descuentos por hijos o cargas totales",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable10.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "checkbox",
+					"top": 200,
+					"left": 248,
+					"width": 178,
+					"height": 15,
+					"dataSource": "cbConsiderarDctoMaximo",
+					"text": "Aplicar descuentos por un máximo de:",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cbConsiderarDctoMaximo": {
+					"type": "input",
+					"top": 200,
+					"left": 424,
+					"width": 39,
+					"height": 11,
+					"dataSource": "vr_descuentoMaximo",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/cbConsiderarDctoMaximo.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable2352": {
+					"type": "checkbox",
+					"top": 509,
+					"left": 144,
+					"width": 187,
+					"height": 15,
+					"dataSource": "cbUsarDescuentosIngresos",
+					"text": "Aplicar descuentos según ingresos",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "checkbox",
+					"top": 489,
+					"left": 29,
+					"width": 187,
+					"height": 15,
+					"dataSource": "cbIncluirAdmision",
+					"text": "Incluir alumnos en admisión",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto18": {
+					"type": "text",
+					"top": 200,
+					"left": 466,
+					"width": 15,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "%"
+				},
+				"Botón invisible1": {
+					"type": "button",
+					"top": 288,
+					"left": 17,
+					"width": 190,
+					"height": 23,
+					"dataSource": "Botón invisible1",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto20": {
+					"type": "text",
+					"top": 287,
+					"left": 24,
+					"width": 183,
+					"height": 22,
+					"stroke": "#0000FF",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Seleccionar niveles para cálculo de número de hijo y cargas totales"
+				},
+				"Zona de Grupo23": {
+					"type": "groupBox",
+					"top": 265,
+					"left": 235,
+					"width": 508,
+					"height": 177,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Descuentos Individuales"
+				},
+				"Texto42": {
+					"type": "text",
+					"top": 284,
+					"left": 248,
+					"width": 341,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Permitir un máximo de       descuentos individuales por cada cuenta"
+				},
+				"lACTcfgdctos_maximoDescuento": {
+					"type": "input",
+					"top": 283,
+					"left": 341,
+					"width": 13,
+					"height": 11,
+					"dataSource": "lACTcfgdctos_maximoDescuento",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/lACTcfgdctos_maximoDescuento.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"lb_desctoIndividual": {
+					"type": "listbox",
+					"top": 300,
+					"left": 246,
+					"width": 487,
+					"height": 111,
+					"dataSource": "lb_desctoIndividual",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"headerHeight": "2em",
+					"fontFamily": "Tahoma",
+					"fontSize": 9,
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onAfterSort",
+						"onSelectionChange",
+						"onColumnMove",
+						"onRowMove",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "alACTcfg_Ids",
+							"dataSource": "alACTcfg_Ids",
+							"width": 25,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado1",
+								"text": "ID",
+								"dataSource": "Encabezado1",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						},
+						{
+							"name": "atACTcfg_Nombres",
+							"dataSource": "atACTcfg_Nombres",
+							"width": 140,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/atACTcfg_Nombres.4dm",
+							"header": {
+								"name": "Encabezado2",
+								"text": "Nombre",
+								"dataSource": "Encabezado2",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						},
+						{
+							"name": "arACTcfg_PctMax",
+							"dataSource": "arACTcfg_PctMax",
+							"width": 48,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"entryFilter": "&9",
+							"numberFormat": "|Pct_Int",
+							"textAlign": "center",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/arACTcfg_PctMax.4dm",
+							"header": {
+								"name": "Encabezado3",
+								"text": "% Máx.",
+								"dataSource": "Encabezado3",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						},
+						{
+							"name": "atACTcfg_Items",
+							"dataSource": "atACTcfg_Items",
+							"width": 160,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/atACTcfg_Items.4dm",
+							"header": {
+								"name": "Encabezado4",
+								"text": "Cargo",
+								"dataSource": "Encabezado4",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						},
+						{
+							"name": "Barras 2D1",
+							"dataSource": "abACTcfg_aplicaATotal",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "checkbox",
+							"textAlign": "center",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Barras 2D1.4dm",
+							"header": {
+								"name": "Encabezado6",
+								"text": "Aplicar a monto\\original",
+								"dataSource": "Encabezado6",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						},
+						{
+							"name": "alACTcfg_Items",
+							"dataSource": "alACTcfg_Items",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado5",
+								"text": "Encabezado5",
+								"dataSource": "Encabezado5",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						}
+					]
+				},
+				"Imagen8": {
+					"type": "picture",
+					"top": 283,
+					"left": 718,
+					"width": 15,
+					"height": 15,
+					"pictureFormat": "scaled"
+				},
+				"Imagen7": {
+					"type": "picture",
+					"top": 283,
+					"left": 695,
+					"width": 15,
+					"height": 15,
+					"pictureFormat": "scaled"
+				},
+				"bAddEje": {
+					"type": "button",
+					"top": 281,
+					"left": 715,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bAddEje",
+					"method": "ObjectMethods/bAddEje.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bDeleteEje": {
+					"type": "button",
+					"top": 281,
+					"left": 695,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bDeleteEje",
+					"method": "ObjectMethods/bDeleteEje.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto43": {
+					"type": "text",
+					"top": 417,
+					"left": 248,
+					"width": 341,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Se recomienda usar la configuración para generar descuentos en líneas separadas"
+				},
+				"cbUsarDescuentosXSeparado": {
+					"type": "checkbox",
+					"top": 177,
+					"left": 248,
+					"width": 267,
+					"height": 15,
+					"dataSource": "cbUsarDescuentosXSeparado",
+					"text": "Aplicar descuento sobre monto descontado",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/cbUsarDescuentosXSeparado.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Zona de Grupo6": {
+					"type": "groupBox",
+					"top": 90,
+					"left": 235,
+					"width": 354,
+					"height": 170,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Aplicación de descuentos"
+				},
+				"Texto0": {
+					"type": "text",
+					"top": 180,
+					"left": 438,
+					"width": 185,
+					"height": 12,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "(Individuales, nº cargas y cuenta)"
+				},
+				"Variable15": {
+					"type": "checkbox",
+					"top": 223,
+					"left": 248,
+					"width": 338,
+					"height": 15,
+					"dataSource": "cbCrearDctosEnLineasSeparadas",
+					"text": "Al generar deuda crear descuentos en líneas separadas",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable15.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Zona de Grupo25": {
+					"type": "groupBox",
+					"top": 89,
+					"left": 595,
+					"width": 148,
+					"height": 48,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Descuentos por tramo"
+				},
+				"dcto": {
+					"type": "button",
+					"top": 107,
+					"left": 613,
+					"width": 112,
+					"height": 20,
+					"text": "Configurar...",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/dcto.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Zona de Grupo5": {
+					"type": "groupBox",
+					"top": 80,
+					"left": 269,
+					"width": 237,
+					"height": 160,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Ordenamientos"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 113,
+					"left": 283,
+					"width": 215,
+					"height": 44,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontStyle": "italic",
+					"text": "Para la impresión y despliegue de los cargos dentro de avisos de cobranza y documentos tributarios puede elegir el orden:"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 184,
+					"left": 283,
+					"width": 215,
+					"height": 36,
+					"dataSource": "vtACT_DescOrdenes",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontStyle": "italic",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"boleta(2)": {
+					"type": "radio",
+					"top": 158,
+					"left": 284,
+					"width": 89,
+					"height": 18,
+					"dataSource": "mOrdenInterno",
+					"text": "Orden interno",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/boleta(2).4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"boleta(3)": {
+					"type": "radio",
+					"top": 158,
+					"left": 382,
+					"width": 108,
+					"height": 18,
+					"dataSource": "mCtaGlosa",
+					"text": "Por cuenta y glosa",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/boleta(3).4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"deuda(5)": {
+					"type": "input",
+					"top": 303,
+					"left": 507,
+					"width": 25,
+					"height": 11,
+					"dataSource": "viACT_DiaVencimiento",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/deuda(5).4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"deuda(5)1": {
+					"type": "input",
+					"top": 319,
+					"left": 507,
+					"width": 25,
+					"height": 11,
+					"dataSource": "viACT_DiaVencimiento2",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/deuda(5)1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 303,
+					"left": 272,
+					"width": 231,
+					"height": 11,
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"text": "La fecha de vencimiento (o primera fecha de pago) es"
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 319,
+					"left": 373,
+					"width": 130,
+					"height": 11,
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"text": "La segunda fecha de pago es"
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 335,
+					"left": 385,
+					"width": 118,
+					"height": 11,
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"text": "La tercera fecha de pago es"
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 351,
+					"left": 387,
+					"width": 116,
+					"height": 11,
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"text": "La cuarta fecha de pago es"
+				},
+				"Texto9": {
+					"type": "text",
+					"top": 303,
+					"left": 537,
+					"width": 192,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "días después de la fecha de emisión"
+				},
+				"Texto10": {
+					"type": "text",
+					"top": 319,
+					"left": 537,
+					"width": 227,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "días después de la fecha de vencimiento"
+				},
+				"Texto11": {
+					"type": "text",
+					"top": 335,
+					"left": 536,
+					"width": 219,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "días después de la segunda fecha de pago"
+				},
+				"Texto12": {
+					"type": "text",
+					"top": 351,
+					"left": 536,
+					"width": 219,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "días después de la tercera fecha de pago"
+				},
+				"deuda(5)2": {
+					"type": "input",
+					"top": 335,
+					"left": 507,
+					"width": 25,
+					"height": 11,
+					"dataSource": "viACT_DiaVencimiento3",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/deuda(5)2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"deuda(5)3": {
+					"type": "input",
+					"top": 351,
+					"left": 507,
+					"width": 25,
+					"height": 11,
+					"dataSource": "viACT_DiaVencimiento4",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/deuda(5)3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto633": {
+					"type": "text",
+					"top": 279,
+					"left": 274,
+					"width": 132,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Emitir y generar cargos el día: "
+				},
+				"deuda(4)": {
+					"type": "input",
+					"top": 279,
+					"left": 406,
+					"width": 19,
+					"height": 11,
+					"dataSource": "viACT_DiaDeuda",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"min": 1,
+					"max": 31,
+					"method": "ObjectMethods/deuda(4).4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto17": {
+					"type": "text",
+					"top": 279,
+					"left": 430,
+					"width": 132,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "del mes"
+				},
+				"Zona de Grupo3": {
+					"type": "groupBox",
+					"top": 250,
+					"left": 266,
+					"width": 483,
+					"height": 120,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Fechas"
+				},
+				"Zona de Grupo12": {
+					"type": "groupBox",
+					"top": 80,
+					"left": 525,
+					"width": 224,
+					"height": 44,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Varios"
+				},
+				"Email0": {
+					"type": "groupBox",
+					"top": 194,
+					"left": 525,
+					"width": 224,
+					"height": 46,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Envío de avisos de cobranza por mail"
+				},
+				"Casilla de selección5": {
+					"type": "checkbox",
+					"top": 98,
+					"left": 540,
+					"width": 181,
+					"height": 15,
+					"dataSource": "cb_EliminarCargos",
+					"text": "Eliminar cargos al eliminar aviso",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Zona de Grupo19": {
+					"type": "groupBox",
+					"top": 129,
+					"left": 525,
+					"width": 224,
+					"height": 62,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Visualización de montos"
+				},
+				"Texto28": {
+					"type": "text",
+					"top": 145,
+					"left": 557,
+					"width": 75,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Ver montos con"
+				},
+				"Texto29": {
+					"type": "text",
+					"top": 145,
+					"left": 670,
+					"width": 75,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "decimales."
+				},
+				"bDecimales1": {
+					"type": "input",
+					"top": 144,
+					"left": 629,
+					"width": 21,
+					"height": 11,
+					"dataSource": "vl_decimales",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"Banco(5)1": {
+					"type": "picture",
+					"top": 142,
+					"left": 650,
+					"width": 18,
+					"height": 18
+				},
+				"Botón invisible2": {
+					"type": "button",
+					"top": 143,
+					"left": 628,
+					"width": 39,
+					"height": 17,
+					"dataSource": "bDecimales",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto30": {
+					"type": "text",
+					"top": 161,
+					"left": 555,
+					"width": 161,
+					"height": 11,
+					"stroke": "#0000FF",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 8,
+					"text": "Nombre formato: |Despliegue_ACT"
+				},
+				"Texto31": {
+					"type": "text",
+					"top": 173,
+					"left": 555,
+					"width": 181,
+					"height": 11,
+					"stroke": "#0000FF",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 8,
+					"text": "Nombre formato pagos: |Despliegue_ACT_Pagos"
+				},
+				"Email1": {
+					"type": "button",
+					"top": 211,
+					"left": 552,
+					"width": 170,
+					"height": 18,
+					"dataSource": "bCuerpoMail",
+					"text": "Configuración correo...",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Email1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Zona de Grupo4": {
+					"type": "groupBox",
+					"top": 274,
+					"left": 13,
+					"width": 237,
+					"height": 186,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Impresión de avisos de cobranza"
+				},
+				"Zona de Grupo60": {
+					"type": "groupBox",
+					"top": 70,
+					"left": 13,
+					"width": 237,
+					"height": 205,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Emisión de avisos de cobranza"
+				},
+				"boleta(3)2": {
+					"type": "radio",
+					"top": 90,
+					"left": 130,
+					"width": 108,
+					"height": 18,
+					"dataSource": "bAvisoAlumno",
+					"text": "Por cuenta corriente",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/boleta(3)2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bAvModels": {
+					"type": "button",
+					"top": 372,
+					"left": 28,
+					"width": 210,
+					"height": 18,
+					"dataSource": "bAvModels",
+					"text": "Modelos...",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/bAvModels.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección3": {
+					"type": "checkbox",
+					"top": 291,
+					"left": 28,
+					"width": 211,
+					"height": 15,
+					"dataSource": "cb_ImprimirCerosAviso",
+					"text": "Imprimir líneas de monto cero",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección4": {
+					"type": "checkbox",
+					"top": 308,
+					"left": 28,
+					"width": 211,
+					"height": 15,
+					"dataSource": "cb_UsarCategorias",
+					"text": "Imprimir ítems usando categorías",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "checkbox",
+					"top": 128,
+					"left": 28,
+					"width": 201,
+					"height": 15,
+					"dataSource": "cb_IncluirSaldosAnteriores",
+					"text": "Incluir Saldos Anteriores",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"boleta(2)1": {
+					"type": "radio",
+					"top": 180,
+					"left": 28,
+					"width": 219,
+					"height": 15,
+					"dataSource": "vlACT_PagosApdo",
+					"text": "Utilizar todo el saldo disponible del apoderado",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/boleta(2)1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"boleta(3)1": {
+					"type": "radio",
+					"top": 197,
+					"left": 28,
+					"width": 218,
+					"height": 15,
+					"dataSource": "vlACT_PagosCta",
+					"text": "Utilizar sólo el saldo disponible de la cuenta",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/boleta(3)1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable13": {
+					"type": "checkbox",
+					"top": 147,
+					"left": 45,
+					"width": 205,
+					"height": 15,
+					"dataSource": "cb_CalcularParaTodosLosAvisos",
+					"text": "Calcular saldo anterior en todos los avisos",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable13.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable14": {
+					"type": "checkbox",
+					"top": 215,
+					"left": 28,
+					"width": 201,
+					"height": 15,
+					"dataSource": "cb_NoPrepagarAuto",
+					"text": "No prepagar automáticamente los avisos",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable14.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cbAgruparXAlumnoItem": {
+					"type": "radio",
+					"top": 354,
+					"left": 68,
+					"width": 171,
+					"height": 15,
+					"dataSource": "cbAgruparXAlumnoItem",
+					"text": "Por alumno e ítem",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/cbAgruparXAlumnoItem.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección8": {
+					"type": "checkbox",
+					"top": 324,
+					"left": 28,
+					"width": 211,
+					"height": 15,
+					"dataSource": "cb_AgruparCargos",
+					"text": "Agrupar cargos",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cbAgrupar": {
+					"type": "radio",
+					"top": 339,
+					"left": 68,
+					"width": 171,
+					"height": 15,
+					"dataSource": "cbAgrupar",
+					"text": "Por ítem",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/cbAgrupar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección7": {
+					"type": "checkbox",
+					"top": 395,
+					"left": 28,
+					"width": 211,
+					"height": 15,
+					"dataSource": "cb_GenerarPDF",
+					"text": "Generar PDFs automáticamente",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 166,
+					"left": 28,
+					"width": 109,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Al prepagar:"
+				},
+				"Texto41": {
+					"type": "text",
+					"top": 238,
+					"left": 28,
+					"width": 109,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Orden emisión:"
+				},
+				"Texto": {
+					"type": "text",
+					"top": 424,
+					"left": 28,
+					"width": 201,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "En la siguiente máquina:"
+				},
+				"Variable": {
+					"type": "input",
+					"top": 438,
+					"left": 28,
+					"width": 210,
+					"height": 11,
+					"dataSource": "vt_maquinaPDF",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Botón": {
+					"type": "button",
+					"top": 419,
+					"left": 165,
+					"width": 73,
+					"height": 16,
+					"dataSource": "bSame2",
+					"text": "Esta misma",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Botón.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"boleta(2)2": {
+					"type": "radio",
+					"top": 90,
+					"left": 28,
+					"width": 89,
+					"height": 18,
+					"dataSource": "bAvisoApoderado",
+					"text": "Por apoderado",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/boleta(2)2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Impresion(1)": {
+					"type": "radio",
+					"top": 242,
+					"left": 45,
+					"width": 73,
+					"height": 32,
+					"dataSource": "OrdenDefault",
+					"text": "Por defecto",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Impresion(1).4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Impresion(2)": {
+					"type": "radio",
+					"top": 241,
+					"left": 130,
+					"width": 112,
+					"height": 32,
+					"dataSource": "OrdenCurNivNom",
+					"text": "Por nivel / curso / apellidos y nombres",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Impresion(2).4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cs_GeneraAvisoPorFamilia": {
+					"type": "checkbox",
+					"top": 110,
+					"left": 45,
+					"width": 201,
+					"height": 15,
+					"dataSource": "cs_GeneraAvisoPorFamilia",
+					"text": "Separar avisos por familia",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/cs_GeneraAvisoPorFamilia.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Zona de Grupo15": {
+					"type": "groupBox",
+					"top": 80,
+					"left": 324,
+					"width": 422,
+					"height": 363,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Recargos y/o multas"
+				},
+				"vlACTcfg_Recargos1": {
+					"type": "tab",
+					"top": 94,
+					"left": 334,
+					"width": 402,
+					"height": 339,
+					"dataSource": "vlACTcfg_Recargos",
+					"dataSourceTypeHint": "arrayText",
+					"styleSheet": "XS_FormObjects"
+				},
+				"Zona de Grupo16": {
+					"type": "groupBox",
+					"top": 345,
+					"left": 13,
+					"width": 291,
+					"height": 98,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Tareas de inicio de día"
+				},
+				"Zona de Grupo18": {
+					"type": "groupBox",
+					"top": 222,
+					"left": 13,
+					"width": 291,
+					"height": 120,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Condonación de deudas"
+				},
+				"Zona de Grupo17": {
+					"type": "groupBox",
+					"top": 80,
+					"left": 13,
+					"width": 291,
+					"height": 139,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Alertas"
+				},
+				"cbAlertaEmisionAvisos": {
+					"type": "checkbox",
+					"top": 100,
+					"left": 23,
+					"width": 267,
+					"height": 36,
+					"dataSource": "cbAlertaEmisionAvisos",
+					"text": "Al detectar problemas durante la emisión de avisos de cobranza enviar un correo electrónico automáticamente utilizando los siguientes datos",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/cbAlertaEmisionAvisos.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"vtACT_To1": {
+					"type": "text",
+					"top": 144,
+					"left": 46,
+					"width": 22,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "A:"
+				},
+				"vtACT_CC1": {
+					"type": "text",
+					"top": 164,
+					"left": 46,
+					"width": 27,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "CC:"
+				},
+				"vtACT_BCC1": {
+					"type": "text",
+					"top": 185,
+					"left": 46,
+					"width": 27,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "BCC:"
+				},
+				"vtACTcfg_MailTo": {
+					"type": "input",
+					"top": 143,
+					"left": 76,
+					"width": 201,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "vtACTcfg_MailTo",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vtACTcfg_MailCC": {
+					"type": "input",
+					"top": 163,
+					"left": 76,
+					"width": 201,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "vtACTcfg_MailCC",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vtACTcfg_MailBCC": {
+					"type": "input",
+					"top": 184,
+					"left": 76,
+					"width": 201,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "vtACTcfg_MailBCC",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto24": {
+					"type": "text",
+					"top": 203,
+					"left": 43,
+					"width": 235,
+					"height": 13,
+					"stroke": "#0000FF",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontStyle": "italic",
+					"text": "Si es más de una dirección separar con ;"
+				},
+				"cbSolicitaMotivoCondonacion": {
+					"type": "checkbox",
+					"top": 240,
+					"left": 23,
+					"width": 281,
+					"height": 16,
+					"dataSource": "cbSolicitaMotivoCondonacion",
+					"text": "Solicitar motivo de condonación",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/cbSolicitaMotivoCondonacion.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cbCondonacionDescuento": {
+					"type": "checkbox",
+					"top": 260,
+					"left": 43,
+					"width": 241,
+					"height": 16,
+					"dataSource": "cbCondonacionDescuento",
+					"text": "Al hacer decuentos en caja",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/cbCondonacionDescuento.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cbCondonacionCargo": {
+					"type": "checkbox",
+					"top": 280,
+					"left": 43,
+					"width": 241,
+					"height": 16,
+					"dataSource": "cbCondonacionCargo",
+					"text": "Al eliminar cargos",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/cbCondonacionCargo.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cbCondonacionAviso": {
+					"type": "checkbox",
+					"top": 300,
+					"left": 43,
+					"width": 241,
+					"height": 16,
+					"dataSource": "cbCondonacionAviso",
+					"text": "Al eliminar avisos de cobranza",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/cbCondonacionAviso.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cb_condonaDesdeMenu": {
+					"type": "checkbox",
+					"top": 320,
+					"left": 43,
+					"width": 241,
+					"height": 16,
+					"dataSource": "cb_condonaDesdeMenu",
+					"text": "Al condonar desde el menú",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/cb_condonaDesdeMenu.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cbActualizaVencido": {
+					"type": "checkbox",
+					"top": 362,
+					"left": 32,
+					"width": 181,
+					"height": 16,
+					"dataSource": "cbActualizaVencido",
+					"text": "Actualizar montos vencidos de cargos",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/cbActualizaVencido.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cbActualizaTodosSaldos": {
+					"type": "checkbox",
+					"top": 382,
+					"left": 32,
+					"width": 241,
+					"height": 16,
+					"dataSource": "cbActualizaTodosSaldos",
+					"text": "Actualizar todos los saldos de apoderados y cuentas",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/cbActualizaTodosSaldos.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cbRecalcularAvisos": {
+					"type": "checkbox",
+					"top": 422,
+					"left": 32,
+					"width": 181,
+					"height": 16,
+					"dataSource": "cbRecalcularAvisos",
+					"text": "Recalcular avisos de cobranza",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/cbRecalcularAvisos.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cbVerificaIntegridadPagos1": {
+					"type": "checkbox",
+					"top": 402,
+					"left": 32,
+					"width": 281,
+					"height": 16,
+					"dataSource": "cbVerificaIntegridadPagos",
+					"text": "Verificar integridad de pagos ingresados el día anterior",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/cbVerificaIntegridadPagos1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cbMultaXCaja": {
+					"type": "checkbox",
+					"top": 131,
+					"left": 346,
+					"width": 387,
+					"height": 16,
+					"dataSource": "cbMultaXCaja",
+					"text": "Permitir la generación de recargos al ingresar pagos manualmente",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/cbMultaXCaja.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"multaCaja0": {
+					"type": "input",
+					"top": 178,
+					"left": 375,
+					"width": 268,
+					"height": 11,
+					"dataSource": "vtACTcfg_SelectedItemNCaja",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/multaCaja0.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"multaCaja2": {
+					"type": "radio",
+					"top": 210,
+					"left": 359,
+					"width": 228,
+					"height": 15,
+					"dataSource": "a_MultaCajaFija",
+					"text": "Considerar el monto del ítem seleccionado",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/multaCaja2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"multaCaja2_0": {
+					"type": "checkbox",
+					"top": 228,
+					"left": 369,
+					"width": 341,
+					"height": 24,
+					"dataSource": "cs_multiplicarMontoRXC",
+					"text": "Multiplicar el monto del recargo por cada día de atraso, para cada aviso de cobranza adeudado",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/multaCaja2_0.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"multaCaja2_0_0": {
+					"type": "checkbox",
+					"top": 258,
+					"left": 389,
+					"width": 230,
+					"height": 15,
+					"dataSource": "cs_considerarAvisosDesde",
+					"text": "Considerar sólo avisos adeudados desde la fecha:",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/multaCaja2_0_0.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"multaCaja2_0_1": {
+					"type": "input",
+					"top": 260,
+					"left": 618,
+					"width": 52,
+					"height": 11,
+					"dataSource": "vdACT_FechaRXC",
+					"dataSourceTypeHint": "date",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/Fecha"
+					},
+					"method": "ObjectMethods/multaCaja2_0_1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"multaCaja2_0_4": {
+					"type": "input",
+					"top": 287,
+					"left": 618,
+					"width": 32,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "vr_PctAvisosMorosos",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/multaCaja2_0_4.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"multaCaja2_0_3": {
+					"type": "checkbox",
+					"top": 278,
+					"left": 389,
+					"width": 228,
+					"height": 24,
+					"dataSource": "cs_considerarPCTAvisosMorosoRXC",
+					"text": "Considerar como avisos adeudados los que tengan un saldo mayor o igual al siguiente porcentaje",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/multaCaja2_0_3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"multaCaja3": {
+					"type": "radio",
+					"top": 314,
+					"left": 351,
+					"width": 342,
+					"height": 15,
+					"dataSource": "a_MultaCajaPorc",
+					"text": "Considerar el monto según el siguiente % del monto vencido seleccionado",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/multaCaja3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"multaCaja4": {
+					"type": "input",
+					"top": 314,
+					"left": 680,
+					"width": 32,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "vr_PctMontoMultaCaja",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"multaCaja5": {
+					"type": "checkbox",
+					"top": 339,
+					"left": 346,
+					"width": 347,
+					"height": 16,
+					"dataSource": "cbMultaCajaPermiteMod",
+					"text": "Permitir modificar el monto del recargo en la ventana de ingreso de pagos",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/multaCaja5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cbMultaXProtesto1": {
+					"type": "checkbox",
+					"top": 131,
+					"left": 346,
+					"width": 347,
+					"height": 16,
+					"dataSource": "cbMultaXProtesto",
+					"text": "Generar una multa al protestar un documento en cartera",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/cbMultaXProtesto1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"multaProt0": {
+					"type": "input",
+					"top": 178,
+					"left": 375,
+					"width": 268,
+					"height": 11,
+					"dataSource": "vtACTcfg_SelectedItemName",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/multaProt0.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"multaProt2": {
+					"type": "radio",
+					"top": 210,
+					"left": 359,
+					"width": 228,
+					"height": 15,
+					"dataSource": "b_MultaProtFija",
+					"text": "Considerar el monto del ítem seleccionado",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/multaProt2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"multaProt11": {
+					"type": "radio",
+					"top": 235,
+					"left": 359,
+					"width": 322,
+					"height": 15,
+					"dataSource": "b_MultaProtPorc",
+					"text": "Monto según el siguiente % del monto total del documento protestado",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/multaProt11.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"multaProt4": {
+					"type": "input",
+					"top": 235,
+					"left": 674,
+					"width": 32,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "vr_PctMontoMulta",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"multaProt5": {
+					"type": "checkbox",
+					"top": 286,
+					"left": 346,
+					"width": 287,
+					"height": 16,
+					"dataSource": "cbMultaPermiteMod",
+					"text": "Permitir modificar lo configurado en la ventana de protesto",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/multaProt5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"multaCaja8": {
+					"type": "text",
+					"top": 154,
+					"left": 369,
+					"width": 235,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Utilizando la configuración del siguiente ítem de cargo"
+				},
+				"multaCaja6": {
+					"type": "picture",
+					"top": 177,
+					"left": 644,
+					"width": 19,
+					"height": 16
+				},
+				"multaCaja1": {
+					"type": "button",
+					"top": 178,
+					"left": 644,
+					"width": 19,
+					"height": 14,
+					"dataSource": "bItem",
+					"display": false,
+					"method": "ObjectMethods/multaCaja1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"multaCaja7": {
+					"type": "text",
+					"top": 314,
+					"left": 710,
+					"width": 21,
+					"height": 11,
+					"stroke": "#0000FF",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 8,
+					"text": "%"
+				},
+				"multaProt6": {
+					"type": "text",
+					"top": 154,
+					"left": 369,
+					"width": 235,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Utilizando la configuración del siguiente ítem de cargo"
+				},
+				"multaProt7": {
+					"type": "picture",
+					"top": 177,
+					"left": 644,
+					"width": 19,
+					"height": 16
+				},
+				"multaProt1": {
+					"type": "button",
+					"top": 178,
+					"left": 644,
+					"width": 19,
+					"height": 14,
+					"dataSource": "bItem",
+					"display": false,
+					"method": "ObjectMethods/multaProt1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"multaProt8": {
+					"type": "text",
+					"top": 235,
+					"left": 704,
+					"width": 21,
+					"height": 11,
+					"stroke": "#0000FF",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 8,
+					"text": "%"
+				},
+				"multaCaja2_0_5": {
+					"type": "text",
+					"top": 287,
+					"left": 648,
+					"width": 21,
+					"height": 11,
+					"stroke": "#0000FF",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 8,
+					"text": "%"
+				},
+				"multaCaja2_0_2": {
+					"type": "pictureButton",
+					"top": 258,
+					"left": 673,
+					"width": 17,
+					"height": 16,
+					"dataSource": "bCalendarMXC",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/multaCaja2_0_2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"multaProt10": {
+					"type": "input",
+					"top": 178,
+					"left": 696,
+					"width": 38,
+					"height": 11,
+					"dataSource": "vlACTcfg_SelectedItemId",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"multaProt9": {
+					"type": "text",
+					"top": 178,
+					"left": 662,
+					"width": 22,
+					"height": 11,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"text": "ID:"
+				},
+				"multaCaja10": {
+					"type": "input",
+					"top": 178,
+					"left": 696,
+					"width": 38,
+					"height": 11,
+					"dataSource": "vlACTcfg_SelectedItemIdCaja",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"multaCaja9": {
+					"type": "text",
+					"top": 178,
+					"left": 662,
+					"width": 22,
+					"height": 11,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"text": "ID:"
+				},
+				"cbMultaAut1": {
+					"type": "checkbox",
+					"top": 131,
+					"left": 346,
+					"width": 410,
+					"height": 16,
+					"dataSource": "cbRecargoAut",
+					"text": "Generar multas automáticas mensuales al día siguiente del vencimiento",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/cbMultaAut1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"multaAut1": {
+					"type": "input",
+					"top": 178,
+					"left": 375,
+					"width": 268,
+					"height": 11,
+					"dataSource": "vtACTcfg_SelectedItemAut",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/multaAut1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"multaAut4": {
+					"type": "radio",
+					"top": 210,
+					"left": 359,
+					"width": 228,
+					"height": 15,
+					"dataSource": "c_RecAutFijo",
+					"text": "Considerar el monto del ítem seleccionado",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/multaAut4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"multaAut5": {
+					"type": "radio",
+					"top": 235,
+					"left": 359,
+					"width": 336,
+					"height": 15,
+					"dataSource": "c_RecAutPct",
+					"text": "Considerar el monto según el siguiente % calculado sobre el saldo del aviso",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/multaAut5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"multaAut6": {
+					"type": "input",
+					"top": 235,
+					"left": 690,
+					"width": 32,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "vr_PctMontoRecAut",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"multaAut8": {
+					"type": "checkbox",
+					"top": 310,
+					"left": 339,
+					"width": 285,
+					"height": 16,
+					"dataSource": "cs_CargoAfectoSeparado",
+					"text": "Generar recargos afectos y exentos separados",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/multaAut8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"multaAut11": {
+					"type": "checkbox",
+					"top": 370,
+					"left": 339,
+					"width": 345,
+					"height": 16,
+					"dataSource": "cs_GenerarMultaDia1",
+					"text": "Generar la segunda multa a partir del día 1 del siguiente mes",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/multaAut11.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"multaAut9": {
+					"type": "checkbox",
+					"top": 270,
+					"left": 339,
+					"width": 185,
+					"height": 16,
+					"dataSource": "cs_UtilizarFechaActual",
+					"text": "Utilizar fecha actual al generar la multa",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/multaAut9.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"multaAut10": {
+					"type": "checkbox",
+					"top": 270,
+					"left": 587,
+					"width": 185,
+					"height": 16,
+					"dataSource": "cs_GenerarMultaEnMismoAviso",
+					"text": "Generar multa en aviso original",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/multaAut10.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"multaAut12": {
+					"type": "checkbox",
+					"top": 330,
+					"left": 339,
+					"width": 139,
+					"height": 16,
+					"dataSource": "cs_maximoMultas",
+					"text": "Generar un máximo de ",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/multaAut12.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"multaAut13": {
+					"type": "input",
+					"top": 332,
+					"left": 464,
+					"width": 17,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "vl_MultasMaximas",
+					"dataSourceTypeHint": "number",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/multaAut13.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"multaAut0": {
+					"type": "text",
+					"top": 154,
+					"left": 369,
+					"width": 235,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Utilizando la configuración del siguiente ítem de cargo"
+				},
+				"multaAut2": {
+					"type": "picture",
+					"top": 177,
+					"left": 644,
+					"width": 19,
+					"height": 16
+				},
+				"multaAut3": {
+					"type": "button",
+					"top": 178,
+					"left": 644,
+					"width": 19,
+					"height": 14,
+					"dataSource": "bItem",
+					"display": false,
+					"method": "ObjectMethods/multaAut3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"multaAut7": {
+					"type": "text",
+					"top": 235,
+					"left": 719,
+					"width": 21,
+					"height": 11,
+					"stroke": "#0000FF",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 8,
+					"text": "%"
+				},
+				"multaAut14": {
+					"type": "text",
+					"top": 332,
+					"left": 485,
+					"width": 135,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "multa(s) por aviso de cobranza"
+				},
+				"multaAut16": {
+					"type": "input",
+					"top": 178,
+					"left": 696,
+					"width": 38,
+					"height": 11,
+					"dataSource": "vlACTcfg_SelectedItemAut",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"multaAut15": {
+					"type": "text",
+					"top": 178,
+					"left": 662,
+					"width": 22,
+					"height": 11,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"text": "ID:"
+				},
+				"multaAut17": {
+					"type": "input",
+					"top": 211,
+					"left": 664,
+					"width": 58,
+					"height": 11,
+					"dataSource": "vrACT_montoItem",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"multaAut19": {
+					"type": "text",
+					"top": 212,
+					"left": 625,
+					"width": 42,
+					"height": 11,
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Monto:"
+				},
+				"Botón invisible": {
+					"type": "button",
+					"top": 209,
+					"left": 623,
+					"width": 44,
+					"height": 16,
+					"dataSource": "Botón invisible",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"multaAut20": {
+					"type": "checkbox",
+					"top": 290,
+					"left": 587,
+					"width": 118,
+					"height": 16,
+					"dataSource": "cs_GenerarMultaAfecta",
+					"text": "Generar multa afecta",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/multaAut20.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"multaAut21": {
+					"type": "checkbox",
+					"top": 290,
+					"left": 339,
+					"width": 299,
+					"height": 16,
+					"dataSource": "cs_ConsiderarRecargo",
+					"text": "Calcular monto considerando multas generadas",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/multaAut21.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"multaAut01": {
+					"type": "checkbox",
+					"top": 350,
+					"left": 339,
+					"width": 279,
+					"height": 16,
+					"dataSource": "cs_multaSobreMontoAfecto",
+					"text": "Calcular recargo sobre monto neto (monto sin iva)",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/multaAut01.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cbRecargoAutXTramo0": {
+					"type": "checkbox",
+					"top": 131,
+					"left": 346,
+					"width": 410,
+					"height": 16,
+					"dataSource": "cbRecargoAutXTramo",
+					"text": "Generar multas automáticas en Avisos de Cobranza según la siguiente tabla",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/cbRecargoAutXTramo0.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"multaXTramo1": {
+					"type": "input",
+					"top": 178,
+					"left": 375,
+					"width": 268,
+					"height": 11,
+					"dataSource": "vtACTcfg_SelectedItemAutXTramo",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/multaXTramo1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"multaXTramo7": {
+					"type": "radio",
+					"top": 207,
+					"left": 524,
+					"width": 100,
+					"height": 15,
+					"dataSource": "fecha_multaDesdeFE",
+					"text": "Fecha de emisión",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/multaXTramo7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"multaXTramo8": {
+					"type": "radio",
+					"top": 207,
+					"left": 624,
+					"width": 140,
+					"height": 15,
+					"dataSource": "fecha_multaDesdeFV",
+					"text": "Fecha de Vencimiento",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/multaXTramo8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"multaXTramo14": {
+					"type": "radio",
+					"top": 385,
+					"left": 369,
+					"width": 120,
+					"height": 15,
+					"dataSource": "desde_multaUsandoFE",
+					"text": "Fecha de emisión",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/multaXTramo14.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"multaXTramo15": {
+					"type": "radio",
+					"top": 385,
+					"left": 524,
+					"width": 200,
+					"height": 15,
+					"dataSource": "desde_multaUsandoFV",
+					"text": "Fecha de Vencimiento",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/multaXTramo15.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"multaXTramo6": {
+					"type": "text",
+					"top": 207,
+					"left": 369,
+					"width": 150,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Calcular multas al día siguiente de:"
+				},
+				"multaXTramo13": {
+					"type": "text",
+					"top": 371,
+					"left": 369,
+					"width": 257,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "La primera multa se calcula con el mes y año de:"
+				},
+				"multaXTramo0": {
+					"type": "text",
+					"top": 154,
+					"left": 369,
+					"width": 235,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Utilizando la configuración del siguiente ítem de cargo"
+				},
+				"multaXTramo3": {
+					"type": "picture",
+					"top": 178,
+					"left": 644,
+					"width": 19,
+					"height": 16
+				},
+				"multaXTramo2": {
+					"type": "button",
+					"top": 178,
+					"left": 644,
+					"width": 19,
+					"height": 14,
+					"dataSource": "bItem",
+					"display": false,
+					"method": "ObjectMethods/multaXTramo2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"multaXTramo5": {
+					"type": "input",
+					"top": 178,
+					"left": 696,
+					"width": 38,
+					"height": 11,
+					"dataSource": "vrACTcfg_SelectedItemAutXTramo",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"multaXTramo4": {
+					"type": "text",
+					"top": 178,
+					"left": 662,
+					"width": 22,
+					"height": 11,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"text": "ID:"
+				},
+				"multaXTramo16": {
+					"type": "text",
+					"top": 406,
+					"left": 369,
+					"width": 357,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "(Las siguientes fechas serán calculadas a partir de la fecha de la multa anterior)"
+				},
+				"multaXTramo12": {
+					"type": "listbox",
+					"top": 252,
+					"left": 375,
+					"width": 268,
+					"height": 112,
+					"dataSource": "lb_multasAut",
+					"sortable": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 9,
+					"method": "ObjectMethods/multaXTramo12.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "Columna4",
+							"dataSource": "atACT_RecargosAutoDias",
+							"width": 90,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"entryFilter": "&9",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"textAlign": "center",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Columna4.4dm",
+							"header": {
+								"name": "Título4",
+								"text": "Los Días",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						},
+						{
+							"name": "Columna5",
+							"dataSource": "abACT_RecargosAutoTipoPct",
+							"width": 83,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "popup",
+							"booleanFormat": "Porcentaje;Fijo",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Columna5.4dm",
+							"header": {
+								"name": "Título5",
+								"text": "Tipo",
+								"dataSource": "Título2",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						},
+						{
+							"name": "Columna6",
+							"dataSource": "arACT_RecargosAutoValor",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Columna6.4dm",
+							"header": {
+								"name": "Título6",
+								"text": "% / Monto",
+								"dataSource": "Título3",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						},
+						{
+							"name": "arACT_RecargosAutoDias",
+							"dataSource": "arACT_RecargosAutoDias",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título9",
+								"text": "Título9",
+								"dataSource": "Título9",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						}
+					]
+				},
+				"multaXTramo17": {
+					"type": "picture",
+					"top": 231,
+					"left": 607,
+					"width": 15,
+					"height": 15,
+					"sizingX": "move",
+					"pictureFormat": "scaled"
+				},
+				"multaXTramo10": {
+					"type": "button",
+					"top": 229,
+					"left": 605,
+					"width": 18,
+					"height": 18,
+					"sizingX": "move",
+					"dataSource": "bDeleteConf",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"method": "ObjectMethods/multaXTramo10.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"multaXTramo18": {
+					"type": "picture",
+					"top": 231,
+					"left": 627,
+					"width": 15,
+					"height": 15,
+					"sizingX": "move",
+					"pictureFormat": "scaled"
+				},
+				"multaXTramo11": {
+					"type": "button",
+					"top": 229,
+					"left": 625,
+					"width": 18,
+					"height": 18,
+					"sizingX": "move",
+					"dataSource": "bAddConf",
+					"fontFamily": "Arial",
+					"fontSize": 12,
+					"method": "ObjectMethods/multaXTramo11.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"multaXTramo19": {
+					"type": "text",
+					"top": 229,
+					"left": 375,
+					"width": 177,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Calcular multas los días:"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Área de grupo2": {
+					"type": "groupBox",
+					"top": 172,
+					"left": 353,
+					"width": 396,
+					"height": 51,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Opciones predeterminadas de emisión"
+				},
+				"hl_Pagina1": {
+					"type": "tab",
+					"top": 223,
+					"left": 24,
+					"width": 550,
+					"height": 166,
+					"dataSource": "hl_Pagina1",
+					"dataSourceTypeHint": "arrayText",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/hl_Pagina1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Área de grupo3": {
+					"type": "groupBox",
+					"top": 85,
+					"left": 24,
+					"width": 315,
+					"height": 118,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Configuración general - Opciones predeterminadas"
+				},
+				"Área de grupo1": {
+					"type": "groupBox",
+					"top": 85,
+					"left": 353,
+					"width": 396,
+					"height": 78,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Configuración de menús - Opciones predeterminadas"
+				},
+				"vlACTp_Proximo": {
+					"type": "input",
+					"top": 111,
+					"left": 109,
+					"width": 77,
+					"height": 11,
+					"dataSource": "vlACTp_Proximo",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"method": "ObjectMethods/vlACTp_Proximo.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"vtACTp_Periodo": {
+					"type": "input",
+					"top": 111,
+					"left": 274,
+					"width": 57,
+					"height": 11,
+					"dataSource": "vtACTp_Periodo",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"cs_genPagare": {
+					"type": "checkbox",
+					"top": 133,
+					"left": 31,
+					"width": 133,
+					"height": 13,
+					"dataSource": "cs_genPagare",
+					"text": "Generar pagaré",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/cs_genPagare.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cs_imprimirPagare": {
+					"type": "checkbox",
+					"top": 152,
+					"left": 51,
+					"width": 157,
+					"height": 13,
+					"dataSource": "cs_imprimirPagare",
+					"text": "Imprimir pagaré",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/cs_imprimirPagare.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cs_genContrato": {
+					"type": "checkbox",
+					"top": 175,
+					"left": 31,
+					"width": 114,
+					"height": 13,
+					"dataSource": "cs_genContrato",
+					"text": "Imprimir contrato",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/cs_genContrato.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vtACTp_ModContrato": {
+					"type": "input",
+					"top": 175,
+					"left": 216,
+					"width": 97,
+					"height": 11,
+					"dataSource": "vtACTp_ModContrato",
+					"styleSheet": "XS_FormObjects",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vtACTp_ModPagare": {
+					"type": "input",
+					"top": 133,
+					"left": 216,
+					"width": 97,
+					"height": 11,
+					"dataSource": "vtACTp_ModPagare",
+					"styleSheet": "XS_FormObjects",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vlACTp_Dia": {
+					"type": "input",
+					"top": 116,
+					"left": 465,
+					"width": 20,
+					"height": 11,
+					"dataSource": "vlACTp_Dia",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"method": "ObjectMethods/vlACTp_Dia.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"Texto21": {
+					"type": "text",
+					"top": 111,
+					"left": 31,
+					"width": 79,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Número próximo:"
+				},
+				"Texto22": {
+					"type": "text",
+					"top": 111,
+					"left": 197,
+					"width": 84,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Período matrícula:"
+				},
+				"Texto23": {
+					"type": "text",
+					"top": 133,
+					"left": 138,
+					"width": 81,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Modelo pagaré:"
+				},
+				"Texto25": {
+					"type": "text",
+					"top": 175,
+					"left": 138,
+					"width": 84,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Modelo contrato:"
+				},
+				"Banco(5)8": {
+					"type": "picture",
+					"top": 132,
+					"left": 313,
+					"width": 19,
+					"height": 16
+				},
+				"Banco(5)9": {
+					"type": "picture",
+					"top": 173,
+					"left": 313,
+					"width": 19,
+					"height": 16
+				},
+				"Texto26": {
+					"type": "text",
+					"top": 117,
+					"left": 360,
+					"width": 104,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Día vencimiento:"
+				},
+				"vlACTp_Cuota": {
+					"type": "input",
+					"top": 136,
+					"left": 465,
+					"width": 20,
+					"height": 11,
+					"dataSource": "vlACTp_Cuota",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"method": "ObjectMethods/vlACTp_Cuota.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"vtACTp_AvisoMes": {
+					"type": "input",
+					"top": 194,
+					"left": 445,
+					"width": 57,
+					"height": 11,
+					"dataSource": "vtACTp_AvisoMes",
+					"styleSheet": "XS_FormObjects",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/vtACTp_AvisoMes.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"cargo5": {
+					"type": "input",
+					"top": 252,
+					"left": 281,
+					"width": 187,
+					"height": 11,
+					"dataSource": "vtACT_ItemCargo",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"method": "ObjectMethods/cargo5.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onAfterKeystroke",
+						"onAfterEdit"
+					]
+				},
+				"Texto27": {
+					"type": "text",
+					"top": 137,
+					"left": 360,
+					"width": 104,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Número de cuotas:"
+				},
+				"vtACTp_Regimen": {
+					"type": "input",
+					"top": 747,
+					"left": 136,
+					"width": 57,
+					"height": 11,
+					"dataSource": "vtACTp_Regimen",
+					"styleSheet": "XS_FormObjects",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/vtACTp_Regimen.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"Texto32": {
+					"type": "text",
+					"top": 748,
+					"left": 31,
+					"width": 105,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Régimen de estudio:"
+				},
+				"Banco(5)3": {
+					"type": "picture",
+					"top": 116,
+					"left": 654,
+					"width": 19,
+					"height": 17
+				},
+				"btn_dia": {
+					"type": "button",
+					"top": 116,
+					"left": 656,
+					"width": 16,
+					"height": 17,
+					"dataSource": "btn_dia",
+					"display": false,
+					"method": "ObjectMethods/btn_dia.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Banco(5)4": {
+					"type": "picture",
+					"top": 136,
+					"left": 654,
+					"width": 19,
+					"height": 17
+				},
+				"btn_numCuota": {
+					"type": "button",
+					"top": 136,
+					"left": 656,
+					"width": 16,
+					"height": 17,
+					"dataSource": "btn_numCuota",
+					"display": false,
+					"method": "ObjectMethods/btn_numCuota.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Banco(5)5": {
+					"type": "picture",
+					"top": 747,
+					"left": 325,
+					"width": 19,
+					"height": 17
+				},
+				"btn_regimen": {
+					"type": "button",
+					"top": 747,
+					"left": 327,
+					"width": 16,
+					"height": 17,
+					"dataSource": "btn_regimen",
+					"display": false,
+					"method": "ObjectMethods/btn_regimen.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Imagen2": {
+					"type": "picture",
+					"top": 116,
+					"left": 567,
+					"width": 14,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Imagen1": {
+					"type": "picture",
+					"top": 116,
+					"left": 589,
+					"width": 14,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Imagen3": {
+					"type": "picture",
+					"top": 136,
+					"left": 567,
+					"width": 14,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Imagen4": {
+					"type": "picture",
+					"top": 136,
+					"left": 589,
+					"width": 14,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Imagen5": {
+					"type": "picture",
+					"top": 667,
+					"left": 238,
+					"width": 14,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Imagen6": {
+					"type": "picture",
+					"top": 667,
+					"left": 260,
+					"width": 14,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Texto33": {
+					"type": "text",
+					"top": 100,
+					"left": 538,
+					"width": 100,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Agregar/Eliminar"
+				},
+				"Texto34": {
+					"type": "text",
+					"top": 100,
+					"left": 649,
+					"width": 40,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Menú"
+				},
+				"btn_dia1": {
+					"type": "button",
+					"top": 116,
+					"left": 565,
+					"width": 16,
+					"height": 17,
+					"dataSource": "btn_dia",
+					"display": false,
+					"method": "ObjectMethods/btn_dia1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn_dia2": {
+					"type": "button",
+					"top": 116,
+					"left": 589,
+					"width": 16,
+					"height": 17,
+					"dataSource": "btn_dia",
+					"display": false,
+					"method": "ObjectMethods/btn_dia2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn_dia3": {
+					"type": "button",
+					"top": 136,
+					"left": 565,
+					"width": 16,
+					"height": 17,
+					"dataSource": "btn_dia",
+					"display": false,
+					"method": "ObjectMethods/btn_dia3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn_dia4": {
+					"type": "button",
+					"top": 136,
+					"left": 589,
+					"width": 16,
+					"height": 17,
+					"dataSource": "btn_dia",
+					"display": false,
+					"method": "ObjectMethods/btn_dia4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn_dia5": {
+					"type": "button",
+					"top": 667,
+					"left": 236,
+					"width": 16,
+					"height": 17,
+					"dataSource": "btn_dia",
+					"display": false,
+					"method": "ObjectMethods/btn_dia5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn_dia6": {
+					"type": "button",
+					"top": 667,
+					"left": 260,
+					"width": 16,
+					"height": 17,
+					"dataSource": "btn_dia",
+					"display": false,
+					"method": "ObjectMethods/btn_dia6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"vt_agregado1": {
+					"type": "text",
+					"top": 117,
+					"left": 700,
+					"width": 49,
+					"height": 11,
+					"stroke": "#009900",
+					"styleSheet": "XS_FormObjects",
+					"text": "Agregado"
+				},
+				"vt_eliminado1": {
+					"type": "text",
+					"top": 117,
+					"left": 700,
+					"width": 49,
+					"height": 11,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Eliminado"
+				},
+				"vt_agregado2": {
+					"type": "text",
+					"top": 137,
+					"left": 700,
+					"width": 49,
+					"height": 11,
+					"stroke": "#009900",
+					"styleSheet": "XS_FormObjects",
+					"text": "Agregado"
+				},
+				"vt_eliminado2": {
+					"type": "text",
+					"top": 137,
+					"left": 700,
+					"width": 49,
+					"height": 11,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Eliminado"
+				},
+				"Texto35": {
+					"type": "text",
+					"top": 100,
+					"left": 360,
+					"width": 100,
+					"height": 11,
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Menú"
+				},
+				"Texto36": {
+					"type": "text",
+					"top": 100,
+					"left": 460,
+					"width": 80,
+					"height": 11,
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Valores"
+				},
+				"carrera5": {
+					"type": "plugin",
+					"top": 249,
+					"left": 50,
+					"width": 497,
+					"height": 133,
+					"dataSource": "ALP_Carreras",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onPluginArea"
+					]
+				},
+				"carrera4": {
+					"type": "pictureButton",
+					"top": 656,
+					"left": 508,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bDelCarrera",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/carrera4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable16": {
+					"type": "button",
+					"top": 173,
+					"left": 213,
+					"width": 118,
+					"height": 16,
+					"dataSource": "bPut",
+					"display": false,
+					"method": "ObjectMethods/Variable16.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable17": {
+					"type": "button",
+					"top": 132,
+					"left": 214,
+					"width": 118,
+					"height": 16,
+					"dataSource": "bPut",
+					"display": false,
+					"method": "ObjectMethods/Variable17.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"descuento5": {
+					"type": "plugin",
+					"top": 274,
+					"left": 50,
+					"width": 497,
+					"height": 108,
+					"dataSource": "ALP_Descuentos",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/descuento5.4dm",
+					"events": [
+						"onClick",
+						"onPluginArea"
+					]
+				},
+				"descuento0": {
+					"type": "text",
+					"top": 252,
+					"left": 254,
+					"width": 25,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Ítem:"
+				},
+				"cargo11": {
+					"type": "plugin",
+					"top": 274,
+					"left": 50,
+					"width": 497,
+					"height": 108,
+					"dataSource": "ALP_PCargos",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/cargo11.4dm",
+					"events": [
+						"onClick",
+						"onPluginArea"
+					]
+				},
+				"descuento1": {
+					"type": "input",
+					"top": 252,
+					"left": 281,
+					"width": 187,
+					"height": 11,
+					"dataSource": "vtACT_Item",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"method": "ObjectMethods/descuento1.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onAfterKeystroke",
+						"onAfterEdit"
+					]
+				},
+				"descuento4": {
+					"type": "pictureButton",
+					"top": 249,
+					"left": 527,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bDelDescuento",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/descuento4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"descuento2": {
+					"type": "picture",
+					"top": 252,
+					"left": 493,
+					"width": 11,
+					"height": 15,
+					"pictureFormat": "scaled"
+				},
+				"descuento3": {
+					"type": "button",
+					"top": 252,
+					"left": 489,
+					"width": 18,
+					"height": 15,
+					"dataSource": "bPut",
+					"display": false,
+					"method": "ObjectMethods/descuento3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"descuento7": {
+					"type": "text",
+					"top": 252,
+					"left": 50,
+					"width": 90,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Régimen de Estudio:"
+				},
+				"descuento9": {
+					"type": "picture",
+					"top": 252,
+					"left": 207,
+					"width": 19,
+					"height": 15
+				},
+				"descuento6": {
+					"type": "input",
+					"top": 252,
+					"left": 141,
+					"width": 67,
+					"height": 11,
+					"dataSource": "vtACT_RegimenDcto",
+					"styleSheet": "XS_FormObjects",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"descuento10": {
+					"type": "picture",
+					"top": 252,
+					"left": 467,
+					"width": 19,
+					"height": 15
+				},
+				"descuento11": {
+					"type": "button",
+					"top": 252,
+					"left": 469,
+					"width": 16,
+					"height": 15,
+					"dataSource": "btn_descuento",
+					"display": false,
+					"method": "ObjectMethods/descuento11.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto37": {
+					"type": "text",
+					"top": 100,
+					"left": 701,
+					"width": 40,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Estado"
+				},
+				"cargo4": {
+					"type": "text",
+					"top": 252,
+					"left": 254,
+					"width": 25,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Ítem:"
+				},
+				"cargo10": {
+					"type": "pictureButton",
+					"top": 249,
+					"left": 527,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bDelCargo",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/cargo10.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cargo9": {
+					"type": "picture",
+					"top": 252,
+					"left": 493,
+					"width": 11,
+					"height": 15,
+					"pictureFormat": "scaled"
+				},
+				"cargo8": {
+					"type": "button",
+					"top": 252,
+					"left": 489,
+					"width": 18,
+					"height": 15,
+					"dataSource": "bPut",
+					"display": false,
+					"method": "ObjectMethods/cargo8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cargo0": {
+					"type": "text",
+					"top": 252,
+					"left": 50,
+					"width": 90,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Régimen de Estudio:"
+				},
+				"cargo3": {
+					"type": "picture",
+					"top": 252,
+					"left": 207,
+					"width": 19,
+					"height": 15
+				},
+				"cargo1": {
+					"type": "input",
+					"top": 252,
+					"left": 141,
+					"width": 67,
+					"height": 11,
+					"dataSource": "vtACT_RegimenCargo",
+					"styleSheet": "XS_FormObjects",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"cargo7": {
+					"type": "picture",
+					"top": 252,
+					"left": 467,
+					"width": 19,
+					"height": 15
+				},
+				"cargo6": {
+					"type": "button",
+					"top": 252,
+					"left": 469,
+					"width": 16,
+					"height": 15,
+					"dataSource": "btn_cargo",
+					"display": false,
+					"method": "ObjectMethods/cargo6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"descuento8": {
+					"type": "button",
+					"top": 252,
+					"left": 139,
+					"width": 86,
+					"height": 15,
+					"dataSource": "btn_regimen",
+					"display": false,
+					"method": "ObjectMethods/descuento8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cargo2": {
+					"type": "button",
+					"top": 252,
+					"left": 139,
+					"width": 86,
+					"height": 15,
+					"dataSource": "btn_regimen",
+					"display": false,
+					"method": "ObjectMethods/cargo2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto38": {
+					"type": "text",
+					"top": 195,
+					"left": 360,
+					"width": 85,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Mes primer aviso:"
+				},
+				"Banco(5)6": {
+					"type": "picture",
+					"top": 194,
+					"left": 501,
+					"width": 19,
+					"height": 17
+				},
+				"btn_regimen1": {
+					"type": "button",
+					"top": 191,
+					"left": 442,
+					"width": 76,
+					"height": 17,
+					"dataSource": "btn_regimen",
+					"display": false,
+					"method": "ObjectMethods/btn_regimen1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"vlACTp_MatriculaYear": {
+					"type": "input",
+					"top": 195,
+					"left": 645,
+					"width": 48,
+					"height": 11,
+					"dataSource": "vlACTp_MatriculaYear",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto39": {
+					"type": "text",
+					"top": 195,
+					"left": 558,
+					"width": 85,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Año primer aviso:"
+				},
+				"yearMat": {
+					"type": "button",
+					"top": 191,
+					"left": 641,
+					"width": 66,
+					"height": 18,
+					"dataSource": "yearMat",
+					"display": false,
+					"method": "ObjectMethods/yearMat.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Banco(5)7": {
+					"type": "picture",
+					"top": 192,
+					"left": 692,
+					"width": 19,
+					"height": 16
+				},
+				"btn_estados": {
+					"type": "button",
+					"top": 369,
+					"left": 604,
+					"width": 120,
+					"height": 20,
+					"dataSource": "btn_estados",
+					"text": "Configurar estados...",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/btn_estados.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

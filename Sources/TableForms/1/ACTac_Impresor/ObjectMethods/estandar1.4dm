@@ -1,0 +1,7 @@
+OBJECT SET VISIBLE:C603(*;"print@";True:C214)
+OBJECT SET VISIBLE:C603(*;"mail@";False:C215)
+OBJECT SET TITLE:C194(bEmitir;__ ("Imprimir avisos"))
+_O_ENABLE BUTTON:C192(bHidePrintSettings)
+
+bPDF2Mail:=0
+OBJECT SET ENABLED:C1123(bPDF2Mail;False:C215)

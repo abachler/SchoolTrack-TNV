@@ -1,0 +1,109 @@
+﻿{
+	"inheritedFormTable": 175,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"li2": {
+					"type": "groupBox",
+					"top": 8,
+					"left": 18,
+					"width": 369,
+					"height": 263,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Seleccione Cuentas Corrientes"
+				},
+				"BT2": {
+					"type": "button",
+					"top": 240,
+					"left": 206,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Botón2",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/BT2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"BT3": {
+					"type": "button",
+					"top": 240,
+					"left": 294,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bGo",
+					"action": "accept",
+					"text": "Aceptar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/BT3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Área de plug-in1": {
+					"type": "plugin",
+					"top": 30,
+					"left": 23,
+					"width": 358,
+					"height": 202,
+					"dataSource": "xALP_cargaCtas",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "sunken",
+					"method": "ObjectMethods/Área de plug-in1.4dm",
+					"events": [
+						"onClick",
+						"onPluginArea"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,387 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Rectángulo1",
+	"rightMargin": 0,
+	"bottomMargin": 35,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"NextPrev": {
+					"type": "picture",
+					"top": 373,
+					"left": 556,
+					"width": 58,
+					"height": 19,
+					"sizingX": "move",
+					"pictureFormat": "scaled",
+					"picture": "Images/NextPrev.pict"
+				},
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 622,
+					"height": 365,
+					"stroke": "#FFFFFF"
+				},
+				"Rectángulo2": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 622,
+					"height": 365,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"stroke": "#FFFFFF"
+				},
+				"Imagen1": {
+					"type": "picture",
+					"top": 9,
+					"left": 9,
+					"width": 125,
+					"height": 51,
+					"pictureFormat": "scaled"
+				},
+				"Línea4": {
+					"type": "line",
+					"top": 69,
+					"left": 2,
+					"width": 619
+				},
+				"Línea73": {
+					"type": "line",
+					"top": 0,
+					"left": 152,
+					"height": 70
+				},
+				"Imagen24": {
+					"type": "picture",
+					"top": 11,
+					"left": 570,
+					"width": 31,
+					"height": 42,
+					"sizingX": "move",
+					"pictureFormat": "scaled",
+					"picture": "Images/Imagen24.pict"
+				},
+				"Imagen2": {
+					"type": "picture",
+					"top": 9,
+					"left": 9,
+					"width": 125,
+					"height": 51,
+					"pictureFormat": "scaled"
+				},
+				"Línea1": {
+					"type": "line",
+					"top": 69,
+					"left": 2,
+					"width": 619,
+					"sizingX": "grow"
+				},
+				"Línea2": {
+					"type": "line",
+					"top": 0,
+					"left": 152,
+					"height": 70
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 4,
+					"left": 161,
+					"width": 379,
+					"height": 66,
+					"stroke": "#000000",
+					"fontFamily": "Tahoma Negreta",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"text": "Asistente para el envio de boletines de asistencia para el proceso de pago de subvenciones"
+				},
+				"nextPrev(1)": {
+					"type": "input",
+					"top": 375,
+					"left": 576,
+					"width": 17,
+					"height": 12,
+					"sizingX": "move",
+					"dataSource": "vi_PageNumber",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 479,
+					"left": 28,
+					"width": 20,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bHandlePages",
+					"shortcutKey": "/",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 481,
+					"left": 420,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 424,
+					"left": 236,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto497": {
+					"type": "text",
+					"top": 90,
+					"left": 162,
+					"width": 414,
+					"height": 66,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Este asistente le permite preparar y enviar los datos requeridos por el Ministerio de Educación para el proceso de pago de Subvenciones.\r\r\rSeleccione una opción: \r"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 169,
+					"left": 188,
+					"width": 356,
+					"height": 11,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"textDecoration": "underline",
+					"text": "Generar y enviar los Boletines de Asistencia para el proceso de Subvenciones"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 199,
+					"left": 188,
+					"width": 260,
+					"height": 11,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"textDecoration": "underline",
+					"text": "Consultar los Boletines enviados en períodos anteriores"
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 166,
+					"left": 184,
+					"width": 360,
+					"height": 20,
+					"dataSource": "bPage2",
+					"display": false,
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 197,
+					"left": 184,
+					"width": 360,
+					"height": 20,
+					"dataSource": "Nueva Variable1942",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable3": {
+					"type": "dropdown",
+					"top": 97,
+					"left": 209,
+					"width": 108,
+					"height": 16,
+					"dataSource": "aMeses",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable13": {
+					"type": "input",
+					"top": 98,
+					"left": 320,
+					"width": 69,
+					"height": 11,
+					"dataSource": "<>GYEAR",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable26": {
+					"type": "plugin",
+					"top": 123,
+					"left": 163,
+					"width": 444,
+					"height": 222,
+					"dataSource": "xALP_DatosCursos",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 103,
+					"left": 16,
+					"width": 131,
+					"height": 231,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Seleccione el mes para el que desea generar el boletin.\r\rEl numero de días habiles del mes en cada curso es calculado sobre la base de la configuración del calendario.\rSi en algún curso el número de días es diferente a los demás por favor indíquelo. En este caso se generaránn y enviarán al Mineduc tantos boletines como cursos con diferente número de días hábiles existan.\r\rHaga clic en el botón página siguiente para continuar"
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 98,
+					"left": 163,
+					"width": 46,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Período:"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable5": {
+					"type": "plugin",
+					"top": 103,
+					"left": 163,
+					"width": 444,
+					"height": 252,
+					"dataSource": "xALP_FileSubvenciones",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

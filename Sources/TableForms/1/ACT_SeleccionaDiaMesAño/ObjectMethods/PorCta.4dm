@@ -1,0 +1,1 @@
+IT_SetButtonState ((Self:C308->=1);->cb_SoloActivas;->cb_Desglosar)

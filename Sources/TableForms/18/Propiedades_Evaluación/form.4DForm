@@ -1,0 +1,697 @@
+﻿{
+	"windowTitle": ":21005,1",
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "bOK",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onUnload",
+		"onOpenDetail",
+		"onCloseDetail"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"bCancel": {
+					"type": "button",
+					"top": 447,
+					"left": 447,
+					"width": 80,
+					"height": 18,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bOK": {
+					"type": "button",
+					"top": 447,
+					"left": 538,
+					"width": 80,
+					"height": 18,
+					"dataSource": "bOK",
+					"text": ":21005,19",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/bOK.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"finales3": {
+					"type": "line",
+					"top": 438,
+					"left": 1,
+					"width": 629,
+					"stroke": "#AAAAAA"
+				},
+				"Picture1940": {
+					"type": "picture",
+					"top": 451,
+					"left": 25,
+					"width": 11,
+					"height": 14
+				},
+				"t_moreOptions0": {
+					"type": "text",
+					"top": 451,
+					"left": 45,
+					"width": 95,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Más opciones..."
+				},
+				"btn_selmoreOpt": {
+					"type": "button",
+					"top": 450,
+					"left": 15,
+					"width": 150,
+					"height": 17,
+					"display": false,
+					"method": "ObjectMethods/btn_selmoreOpt.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"contexto": {
+					"type": "radio",
+					"top": 17,
+					"left": 164,
+					"width": 148,
+					"height": 15,
+					"dataSource": "r1",
+					"text": ":21005,78",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/contexto.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"contexto1": {
+					"type": "radio",
+					"top": 17,
+					"left": 317,
+					"width": 153,
+					"height": 15,
+					"dataSource": "r2",
+					"text": "Específica a cada período",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/contexto1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"periodos": {
+					"type": "input",
+					"top": 19,
+					"left": 475,
+					"width": 149,
+					"height": 13,
+					"dataSource": "vt_periodo",
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"textAlign": "left",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "plugin",
+					"top": 50,
+					"left": 15,
+					"width": 598,
+					"height": 247,
+					"dataSource": "xALP_CsdList2",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onPluginArea"
+					]
+				},
+				"Opciones consolidacion(1)": {
+					"type": "radio",
+					"top": 303,
+					"left": 25,
+					"width": 193,
+					"height": 18,
+					"dataSource": "m0",
+					"text": "Promediar resultados ya calculados",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Opciones consolidacion(1).4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Opciones consolidacion(4)": {
+					"type": "radio",
+					"top": 303,
+					"left": 230,
+					"width": 265,
+					"height": 18,
+					"dataSource": "m1",
+					"text": "Promediar resultados calculados sin aproximación",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Opciones consolidacion(4).4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"OPCION ponderacion1": {
+					"type": "radio",
+					"top": 340,
+					"left": 46,
+					"width": 119,
+					"height": 18,
+					"dataSource": "w0iguales",
+					"text": "Igual para todas",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/OPCION ponderacion1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"OPCION ponderacion": {
+					"type": "radio",
+					"top": 340,
+					"left": 218,
+					"width": 179,
+					"height": 18,
+					"dataSource": "w1coeficiente",
+					"text": "Multiplicado por un coeficiente",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/OPCION ponderacion.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"OPCION ponderacion2": {
+					"type": "radio",
+					"top": 362,
+					"left": 45,
+					"width": 308,
+					"height": 18,
+					"dataSource": "w2porcentaje",
+					"text": "Multiplicado por un factor de ponderación, calculando con:",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/OPCION ponderacion2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"ponderacion(2)": {
+					"type": "input",
+					"top": 365,
+					"left": 360,
+					"width": 17,
+					"height": 13,
+					"dataSource": "vi_DecimalesPonderacion",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/ponderacion(2).4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ponderacion": {
+					"type": "checkbox",
+					"top": 362,
+					"left": 513,
+					"width": 74,
+					"height": 19,
+					"dataSource": "bc_PonderacionTruncada",
+					"text": "Truncado",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/ponderacion.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Opciones consolidacion(3)": {
+					"type": "radio",
+					"top": 383,
+					"left": 25,
+					"width": 405,
+					"height": 18,
+					"dataSource": "m2",
+					"text": "Promediar todas las evaluaciones parciales de todas las asignaturas de origen",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Opciones consolidacion(3).4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"finales1": {
+					"type": "checkbox",
+					"top": 413,
+					"left": 25,
+					"width": 202,
+					"height": 18,
+					"dataSource": "bConsolidaExamenFinal",
+					"text": "Consolidar Exámenes Finales",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/finales1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"finales2": {
+					"type": "checkbox",
+					"top": 413,
+					"left": 236,
+					"width": 162,
+					"height": 18,
+					"dataSource": "bConsolidaNotasFinales",
+					"text": "Consolidar Notas Finales",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/finales2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cb_bloqueoPropDeEval": {
+					"type": "checkbox",
+					"top": 413,
+					"left": 409,
+					"width": 212,
+					"height": 18,
+					"dataSource": "cb_bloqueoPropDeEval",
+					"text": "Propiedades de Evaluación Bloquedas",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/cb_bloqueoPropDeEval.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable96": {
+					"type": "button",
+					"top": 504,
+					"left": 15,
+					"width": 263,
+					"height": 22,
+					"dataSource": "Nueva Variable6010",
+					"shortcutKey": "'",
+					"shortcutAccel": true,
+					"text": "manejo de opciones de calculo",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Variable96.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable637": {
+					"type": "button",
+					"top": 539,
+					"left": 15,
+					"width": 75,
+					"height": 20,
+					"dataSource": "bChoiceList",
+					"shortcutKey": "*",
+					"shortcutAccel": true,
+					"text": ":21005,88",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Variable637.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Línea1": {
+					"type": "line",
+					"top": 38,
+					"left": 1,
+					"width": 629,
+					"stroke": "#333333"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 139,
+					"left": 770,
+					"width": 284,
+					"height": 16,
+					"stroke": "#000000",
+					"styleSheet": "XS_System",
+					"fontWeight": "bold",
+					"text": ":21005,34"
+				},
+				"bLockedFlag": {
+					"type": "pictureButton",
+					"top": 12,
+					"left": 894,
+					"width": 10,
+					"height": 13,
+					"dataSource": "bLockedFlag",
+					"columnCount": 1,
+					"rowCount": 1,
+					"method": "ObjectMethods/bLockedFlag.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 323,
+					"left": 45,
+					"width": 233,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"fontStyle": "italic",
+					"text": "Peso relativo de las evaluaciones de origen:"
+				},
+				"ponderacion(3)": {
+					"type": "text",
+					"top": 365,
+					"left": 384,
+					"width": 122,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": " decimales adicionales"
+				},
+				"finales": {
+					"type": "line",
+					"top": 407,
+					"left": 1,
+					"width": 629,
+					"stroke": "#AAAAAA"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 18,
+					"left": 15,
+					"width": 145,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": ":21005,89"
+				},
+				"periodos1": {
+					"type": "button",
+					"top": 17,
+					"left": 474,
+					"width": 150,
+					"height": 17,
+					"dataSource": "bpopupPeriodos",
+					"display": false,
+					"method": "ObjectMethods/periodos1.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"FechaBloqueoParciales": {
+					"type": "listbox",
+					"top": 126,
+					"left": 21,
+					"width": 587,
+					"height": 245,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "automatic",
+					"fill": "#F3F6F9",
+					"alternateFill": "automatic",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "parciales",
+							"dataSource": "at_parciales",
+							"width": 600,
+							"minWidth": 10,
+							"maxWidth": 600,
+							"resizable": false,
+							"enterable": false,
+							"fill": "#F3F6F9",
+							"alternateFill": "automatic",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado1",
+								"text": "Parciales",
+								"dataSource": "Encabezado1",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"bconsolidar": {
+					"type": "button",
+					"top": 447,
+					"left": 21,
+					"width": 129,
+					"height": 18,
+					"dataSource": "bconsolidar",
+					"text": "Consolidaciones",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/bconsolidar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto": {
+					"type": "text",
+					"top": 20,
+					"left": 21,
+					"width": 587,
+					"height": 92,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Puede asignar una fecha límite para el ingreso de cada parcial de esta asignatura independiente por periodo. Esto no limita si otro tipo de evaluación (sub asignatura, asignatura hija) consolida en esta parcial.\r\rDejando vacía la fecha se elimina el límite, recuerde que existe también un límite global de ingreso desde la configuración de periodos.\r\rEsto también puede asignarlo de forma masiva (para varias asignaturas) desde el menú herramientas ejecutar."
+				}
+			}
+		},
+		{
+			"objects": {
+				"lb_ParcialesSubAsignaturas": {
+					"type": "listbox",
+					"top": 102,
+					"left": 38,
+					"width": 550,
+					"height": 265,
+					"singleClickEdit": true,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "automatic",
+					"fill": "#F3F6F9",
+					"alternateFill": "automatic",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "SA_nameDisplay",
+							"width": 535,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"fill": "#F3F6F9",
+							"alternateFill": "automatic",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "t_enc1_SA_Display",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"Picture1": {
+					"type": "picture",
+					"top": 58,
+					"left": 44,
+					"width": 11,
+					"height": 14
+				},
+				"t_selectorSubasig": {
+					"type": "text",
+					"top": 58,
+					"left": 68,
+					"width": 195,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects"
+				},
+				"btn_selSubAsig": {
+					"type": "button",
+					"top": 55,
+					"left": 38,
+					"width": 218,
+					"height": 21,
+					"display": false,
+					"method": "ObjectMethods/btn_selSubAsig.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"t_ParcialesSubAsigDisplay": {
+					"type": "text",
+					"top": 25,
+					"left": 38,
+					"width": 429,
+					"height": 16,
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"text": "Personalizar los nombres de las parciales de las subasignaturas."
+				}
+			}
+		}
+	]
+}

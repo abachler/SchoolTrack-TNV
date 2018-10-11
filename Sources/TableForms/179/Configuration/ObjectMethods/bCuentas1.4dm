@@ -1,0 +1,1 @@
+ACTcar_AsignaCtasContables ("asignaCta";->[xxACT_Items:179]ID:1;->[xxACT_Items:179]No_CCta_contable:22;->[xxACT_Items:179]CodAuxCCta:28;"plan de contra cuenta")

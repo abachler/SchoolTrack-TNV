@@ -1,0 +1,137 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Botón1",
+	"rightMargin": 15,
+	"bottomMargin": 15,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable6": {
+					"type": "input",
+					"top": 0,
+					"left": 0,
+					"width": 232,
+					"height": 96,
+					"dataSource": "vp_ModuleIconBack",
+					"dataSourceTypeHint": "picture",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"pictureFormat": "proportionalTopLeft",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PorcentajePago": {
+					"type": "input",
+					"top": 26,
+					"left": 155,
+					"width": 28,
+					"height": 12,
+					"dataSource": "vl_porcentaje_pago",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/PorcentajePago.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 56,
+					"left": 138,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Botón",
+					"action": "cancel",
+					"text": "Cancelar",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"BotónAceptarFDP": {
+					"type": "button",
+					"top": 56,
+					"left": 23,
+					"width": 80,
+					"height": 20,
+					"dataSource": "BotónAceptarFDP",
+					"action": "accept",
+					"text": "Aceptar",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/BotónAceptarFDP.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"titulo": {
+					"type": "text",
+					"top": 23,
+					"left": 34,
+					"width": 120,
+					"height": 18,
+					"styleSheet": "XS_FormObjects",
+					"text": "Ingrese porcentaje de pago:"
+				}
+			}
+		}
+	]
+}

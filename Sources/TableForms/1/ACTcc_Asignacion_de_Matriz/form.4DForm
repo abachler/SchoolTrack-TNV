@@ -1,0 +1,946 @@
+﻿{
+	"windowTitle": "Asignación de Matriz de cargos",
+	"inheritedForm": "XS_MASTER_WZDDialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Variable2",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerBody": 549,
+	"markerBreak": 569,
+	"markerFooter": 589,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Variable3": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 554,
+					"width": 20,
+					"height": 20,
+					"dataSource": "bPrev",
+					"shortcutKey": "[left arrow]",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 593,
+					"width": 20,
+					"height": 20,
+					"dataSource": "bNext",
+					"shortcutKey": "[right arrow]",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 4,
+					"left": 161,
+					"width": 390,
+					"height": 44,
+					"stroke": "#FFFFFF",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Asistente para la Asignación de Matrices de Cargo"
+				},
+				"Variable255": {
+					"type": "input",
+					"top": 378,
+					"left": 575,
+					"width": 17,
+					"height": 11,
+					"sizingX": "move",
+					"dataSource": "vi_Step",
+					"fill": "transparent",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 479,
+					"left": 28,
+					"width": 20,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "Nueva Variable501",
+					"shortcutKey": "+",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 478,
+					"left": 94,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable11": {
+					"type": "button",
+					"top": 479,
+					"left": 246,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bTrap",
+					"shortcutKey": "[Enter]",
+					"text": "Cancelar",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 474,
+					"left": 439,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 417,
+					"left": 255,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto5": {
+					"type": "text",
+					"top": 96,
+					"left": 170,
+					"width": 379,
+					"height": 221,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Este asistente le guiará paso a paso en el proceso de asignación de matrices de cargo a las cuentas corrientes.\r\rPara iniciar el proceso haga clic en el botón página siguiente.\r\rSi no desea asignar matrices de cargo ahora, cierre este asistente."
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto7": {
+					"type": "text",
+					"top": 79,
+					"left": 9,
+					"width": 143,
+					"height": 242,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Seleccione la matriz que desea asignar y a continuación  haga clic en el botón flecha siguiente.\r\rEn la página siguiente deberá especificar a cuales cuentas corrientes desea asignar la matriz seleccionada."
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 145,
+					"left": 226,
+					"width": 146,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Matriz de cargo a asignar"
+				},
+				"impresion3": {
+					"type": "input",
+					"top": 166,
+					"left": 228,
+					"width": 248,
+					"height": 11,
+					"dataSource": "vsACT_AsignedMatrix",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/impresion3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Matrixes": {
+					"type": "dropdown",
+					"top": 448,
+					"left": 439,
+					"width": 272,
+					"height": 15,
+					"dataSource": "atACT_MAtrixNameCopy",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Matrixes.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 52,
+					"left": 162,
+					"width": 420,
+					"height": 14,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Selección de la matriz de cargo a asignar"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 470,
+					"left": 223,
+					"width": 253,
+					"height": 11,
+					"dataSource": "vsACT_FrecFact",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 449,
+					"left": 222,
+					"width": 146,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Frecuencia de facturación"
+				},
+				"Imagen1": {
+					"type": "picture",
+					"top": 468,
+					"left": 476,
+					"width": 19,
+					"height": 16,
+					"pictureFormat": "scaled"
+				},
+				"Variable4": {
+					"type": "dropdown",
+					"top": 468,
+					"left": 222,
+					"width": 272,
+					"height": 15,
+					"dataSource": "<>atACT_FreqFacturacion",
+					"focusable": false,
+					"display": false,
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Impresion4": {
+					"type": "picture",
+					"top": 164,
+					"left": 477,
+					"width": 19,
+					"height": 16
+				},
+				"impresion2": {
+					"type": "button",
+					"top": 164,
+					"left": 480,
+					"width": 15,
+					"height": 14,
+					"dataSource": "bMatrizaAsignar",
+					"display": false,
+					"method": "ObjectMethods/impresion2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Alumnos1": {
+					"type": "text",
+					"top": 79,
+					"left": 9,
+					"width": 147,
+					"height": 176,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "En esta página del asistente usted debe determinar a cuales cuentas corrientes desea asignar la matriz seleccionada previamente \r\rPara ello, utilice los botones de opción y haga click en el botón flecha siguiente.\r\rEn la página siguiente deberá especificar como proceder si las cuentas corrientes ya tienen asignada una matriz."
+				},
+				"Alumnos3": {
+					"type": "text",
+					"top": 142,
+					"left": 213,
+					"width": 375,
+					"height": 22,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "La matriz de cargos seleccionada será asignada solo a aquellos alumnos que hayan sido explicitamente seleccionados en el Explorador de AccountTrack"
+				},
+				"Alumnos4": {
+					"type": "text",
+					"top": 198,
+					"left": 213,
+					"width": 375,
+					"height": 22,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "La matriz de cargos seleccionada será asignada solo a las cuentas corrientes listadas en el Explorador de AccountTrack"
+				},
+				"Texto27": {
+					"type": "text",
+					"top": 244,
+					"left": 213,
+					"width": 375,
+					"height": 22,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "La matriz de cargos seleccionada será asignada a todas las cuentas corrientes activas"
+				},
+				"Variable23": {
+					"type": "input",
+					"top": 125,
+					"left": 505,
+					"width": 117,
+					"height": 11,
+					"dataSource": "viACT_cuentas1",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"stroke": "#AAAAAA",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "(# ###0 cuentas)",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable24": {
+					"type": "input",
+					"top": 181,
+					"left": 505,
+					"width": 117,
+					"height": 11,
+					"dataSource": "viACT_cuentas2",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"stroke": "#AAAAAA",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "(# ###0 cuentas)",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable25": {
+					"type": "input",
+					"top": 227,
+					"left": 505,
+					"width": 117,
+					"height": 11,
+					"dataSource": "viACT_cuentas3",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"stroke": "#AAAAAA",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "(# ###0 cuentas)",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Alumnos2": {
+					"type": "text",
+					"top": 52,
+					"left": 162,
+					"width": 388,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Selección de las cuentas corrientes"
+				},
+				"Apdos1": {
+					"type": "text",
+					"top": 79,
+					"left": 9,
+					"width": 147,
+					"height": 176,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "En esta página del asistente usted debe determinar a las cuentas corrientes de cuales apoderados desea asignar la matriz seleccionada previamente \r\rPara ello, utilice los botones de opción y haga click en el botón flecha siguiente.\r\rEn la página siguiente deberá especificar como proceder si las cuentas corrientes ya tienen asignada una matriz."
+				},
+				"Apdos2": {
+					"type": "text",
+					"top": 52,
+					"left": 162,
+					"width": 388,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Selección de los apoderados"
+				},
+				"Apdos3": {
+					"type": "text",
+					"top": 142,
+					"left": 213,
+					"width": 375,
+					"height": 33,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "La matriz de cargos seleccionada será asignada solo a aquellas cuentas correspondientes a los apoderados que hayan sido explicitamente seleccionados en el Explorador de AccountTrack"
+				},
+				"Apdos4": {
+					"type": "text",
+					"top": 198,
+					"left": 213,
+					"width": 375,
+					"height": 22,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "La matriz de cargos seleccionada será asignada solo a las cuentas corrientes correspondientes a los apoderados listados en el Explorador de AccountTrack"
+				},
+				"manual": {
+					"type": "radio",
+					"top": 125,
+					"left": 203,
+					"width": 290,
+					"height": 17,
+					"dataSource": "f1",
+					"text": "Sólo a los alumnos seleccionados en la lista",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/manual.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"manual(1)": {
+					"type": "radio",
+					"top": 181,
+					"left": 203,
+					"width": 290,
+					"height": 17,
+					"dataSource": "f2",
+					"text": "A todos los alumnos de la lista",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/manual(1).4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"manual(2)": {
+					"type": "radio",
+					"top": 227,
+					"left": 203,
+					"width": 290,
+					"height": 17,
+					"dataSource": "f3",
+					"text": "A todos los alumnos activos",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/manual(2).4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto9": {
+					"type": "text",
+					"top": 52,
+					"left": 162,
+					"width": 388,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Opciones de reemplazo de matriz previamente asignada"
+				},
+				"Texto29": {
+					"type": "text",
+					"top": 184,
+					"left": 207,
+					"width": 323,
+					"height": 22,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "La nueva matriz será asignada solo si la cuenta corriente tiene asignada  actualmente esta matriz."
+				},
+				"Variable186": {
+					"type": "radio",
+					"top": 90,
+					"left": 194,
+					"width": 370,
+					"height": 15,
+					"dataSource": "r1",
+					"text": "No reemplazar si la cuenta tiene una matriz asignada",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/Variable186.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"r2": {
+					"type": "radio",
+					"top": 146,
+					"left": 194,
+					"width": 296,
+					"height": 15,
+					"dataSource": "r2",
+					"text": "Sólo a aquellos cuya matriz de cargo actual es:",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/r2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Reemplazo1": {
+					"type": "input",
+					"top": 169,
+					"left": 210,
+					"width": 248,
+					"height": 11,
+					"dataSource": "vsACT_AsignedMatrix2",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Reemplazo1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"r3": {
+					"type": "radio",
+					"top": 219,
+					"left": 194,
+					"width": 330,
+					"height": 16,
+					"dataSource": "r3",
+					"text": "Reemplazar cualquiera sea la matriz de cargo",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/r3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"oldmatrix(2)": {
+					"type": "dropdown",
+					"top": 447,
+					"left": 202,
+					"width": 216,
+					"height": 15,
+					"dataSource": "atACT_MAtrixNameCopy2",
+					"focusable": false,
+					"display": false,
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/oldmatrix(2).4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto28": {
+					"type": "text",
+					"top": 236,
+					"left": 207,
+					"width": 320,
+					"height": 22,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "La nueva matriz será asignada remplazando la matriz asignada, cualquera que ella sea."
+				},
+				"Variable26": {
+					"type": "input",
+					"top": 271,
+					"left": 352,
+					"width": 131,
+					"height": 11,
+					"dataSource": "viACT_cuentas",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "(# ###0 cuentas)",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 79,
+					"left": 9,
+					"width": 140,
+					"height": 154,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "En esta página del asistente usted debe determinar como proceder si las cuentas corrientes ya tienen una matriz asignada\r\rUtilice los botones de opción y haga click en el botón flecha siguiente para continuar."
+				},
+				"Texto31": {
+					"type": "text",
+					"top": 109,
+					"left": 208,
+					"width": 320,
+					"height": 22,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Si la cuenta ya tiene una matriz asignada esta será conservada y la matriz seleccionada en este asistente no será asignada."
+				},
+				"Texto32": {
+					"type": "text",
+					"top": 271,
+					"left": 195,
+					"width": 154,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "La nueva matriz será asignada a :"
+				},
+				"Texto33": {
+					"type": "text",
+					"top": 294,
+					"left": 193,
+					"width": 396,
+					"height": 77,
+					"stroke": "#EE0000",
+					"fontFamily": "Lucida Grande Bold",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"text": "El reemplazo de la matriz no tiene ningún efecto sobre los cargos ya emitidos. Una nueva Generación/Actualización de cargos con la nueva matriz regenerará los cargos para el período regenerado.\rLas cuentas que estén siendo utilizadas por otros procesos no serán modificadas."
+				},
+				"Reemplazo2": {
+					"type": "picture",
+					"top": 167,
+					"left": 459,
+					"width": 19,
+					"height": 16
+				},
+				"impresion1": {
+					"type": "button",
+					"top": 167,
+					"left": 461,
+					"width": 15,
+					"height": 14,
+					"dataSource": "bMatrizaReemplazar",
+					"display": false,
+					"method": "ObjectMethods/impresion1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable68": {
+					"type": "input",
+					"top": 86,
+					"left": 177,
+					"width": 426,
+					"height": 254,
+					"dataSource": "vtACT_ResumenAsistente",
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable67": {
+					"type": "button",
+					"top": 374,
+					"left": 406,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Nueva Variable5472",
+					"text": "Volver",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable67.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable65": {
+					"type": "button",
+					"top": 374,
+					"left": 502,
+					"width": 117,
+					"height": 20,
+					"dataSource": "bAsignar",
+					"action": "accept",
+					"text": "Asignar Matriz",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 52,
+					"left": 161,
+					"width": 278,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Confirmación"
+				}
+			}
+		}
+	]
+}

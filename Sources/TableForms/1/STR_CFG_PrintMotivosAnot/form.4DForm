@@ -1,0 +1,119 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 15,
+	"bottomMargin": 20,
+	"markerHeader": 129,
+	"markerBody": 212,
+	"markerBreak": 229,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Área de plug-in1": {
+					"type": "plugin",
+					"top": 135,
+					"left": 19,
+					"width": 552,
+					"height": 75,
+					"dataSource": "xPLP_MotivosAnot",
+					"pluginAreaKind": "%PrntListPro",
+					"borderStyle": "none",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable10": {
+					"type": "input",
+					"top": 12,
+					"left": 12,
+					"width": 113,
+					"height": 113,
+					"dataSource": "vLogo",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"method": "ObjectMethods/Variable10.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable11": {
+					"type": "input",
+					"top": 47,
+					"left": 131,
+					"width": 388,
+					"height": 19,
+					"dataSource": "<>gCustom",
+					"styleSheet": "XS_ReportSubtitle_14",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto18": {
+					"type": "text",
+					"top": 19,
+					"left": 134,
+					"width": 330,
+					"height": 18,
+					"textAlign": "left",
+					"styleSheet": "XS_ReportTitle_18",
+					"fontWeight": "bold",
+					"text": "Categorías y Motivos de Anotaciones"
+				}
+			}
+		}
+	]
+}

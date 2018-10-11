@@ -1,0 +1,375 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Forms",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "BIECursoC",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 452,
+					"left": 221,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 395,
+					"left": 37,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Picture9": {
+					"type": "picture",
+					"top": 37,
+					"left": 315,
+					"width": 19,
+					"height": 16
+				},
+				"BIECursoC2": {
+					"type": "dropdown",
+					"top": 37,
+					"left": 315,
+					"width": 18,
+					"height": 18,
+					"sizingX": "move",
+					"dataSource": "<>at_EventosCurso",
+					"focusable": false,
+					"display": false,
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/BIECursoC2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 63,
+					"left": 13,
+					"width": 76,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Observación"
+				},
+				"IECursoC1": {
+					"type": "input",
+					"top": 13,
+					"left": 81,
+					"width": 79,
+					"height": 14,
+					"dataSource": "[Cursos_Eventos:128]Fecha_Observación:2",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/IECursoC1.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"IECursoC2": {
+					"type": "input",
+					"top": 13,
+					"left": 313,
+					"width": 176,
+					"height": 14,
+					"dataSource": "[Cursos_Eventos:128]ProfesorJefe_Nombre:8",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/IECursoC2.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"IECursoC4": {
+					"type": "input",
+					"top": 37,
+					"left": 81,
+					"width": 229,
+					"height": 14,
+					"dataSource": "[Cursos_Eventos:128]Categoría:3",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/IECursoC4.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"IECursoC5": {
+					"type": "input",
+					"top": 37,
+					"left": 388,
+					"width": 340,
+					"height": 14,
+					"dataSource": "[Cursos_Eventos:128]Tema:4",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"IECursoC6": {
+					"type": "input",
+					"top": 63,
+					"left": 80,
+					"width": 630,
+					"height": 267,
+					"dataSource": "[Cursos_Eventos:128]Observacion:5",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/IECursoC6.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"BIECursoC1": {
+					"type": "button",
+					"top": 348,
+					"left": 477,
+					"width": 80,
+					"height": 20,
+					"dataSource": "b_EliminarEvcCurso",
+					"text": "Eliminar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/BIECursoC1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"BIECursoA": {
+					"type": "button",
+					"top": 348,
+					"left": 562,
+					"width": 80,
+					"height": 20,
+					"dataSource": "b_Cancelar",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"BIECursoC": {
+					"type": "button",
+					"top": 348,
+					"left": 648,
+					"width": 79,
+					"height": 20,
+					"dataSource": "bOK_EvCurso",
+					"shortcutKey": "[Enter]",
+					"text": "Guardar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"method": "ObjectMethods/BIECursoC.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Cursos_Eventos": {
+					"type": "input",
+					"top": 13,
+					"left": 582,
+					"width": 146,
+					"height": 14,
+					"dataSource": "[Cursos_Eventos:128]RegistradoPor_Nombre:7",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 54,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Fecha:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 13,
+					"left": 501,
+					"width": 77,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Registrado por:"
+				},
+				"Text58": {
+					"type": "text",
+					"top": 37,
+					"left": 14,
+					"width": 53,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Categoría"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 37,
+					"left": 350,
+					"width": 51,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Tema"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 13,
+					"left": 182,
+					"width": 137,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Nombre del Profesor Jefe"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,148 @@
+﻿{
+	"width": 640,
+	"height": 480,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectángulo": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 679,
+					"height": 506,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "#FFFFDF",
+					"stroke": "#FFFFDF"
+				},
+				"Variable": {
+					"type": "input",
+					"top": 8,
+					"left": 8,
+					"width": 625,
+					"height": 26,
+					"sizingX": "grow",
+					"dataSource": "vt_EncabezadoPopWindow",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vt_textoPopwindow": {
+					"type": "input",
+					"top": 38,
+					"left": 8,
+					"width": 615,
+					"height": 429,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vt_textoPopwindow",
+					"fill": "#FFFFDF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Botón": {
+					"type": "button",
+					"top": 586,
+					"left": 83,
+					"width": 188,
+					"height": 19,
+					"dataSource": "Botón",
+					"shortcutKey": "c",
+					"shortcutAccel": true,
+					"text": "copiar a portapapeles",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 584,
+					"left": 362,
+					"width": 132,
+					"height": 26,
+					"dataSource": "Botón1",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "cerrar",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Línea": {
+					"type": "line",
+					"top": 35,
+					"left": 0,
+					"width": 679,
+					"sizingX": "grow",
+					"stroke": "#AAAAAA"
+				}
+			}
+		}
+	]
+}

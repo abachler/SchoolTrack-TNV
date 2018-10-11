@@ -1,0 +1,1 @@
+IT_SetEnterable ((Self:C308->=1);0;->vi_AgnosDocTrib)

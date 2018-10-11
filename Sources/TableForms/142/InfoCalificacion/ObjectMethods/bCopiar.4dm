@@ -1,0 +1,1 @@
+SET TEXT TO PASTEBOARD:C523([xxSTR_InfoCalificaciones:142]Log:8)

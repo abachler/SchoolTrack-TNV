@@ -1,0 +1,198 @@
+﻿{
+	"windowTitle": "Selección de alumnos",
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"formSizeAnchor": "seleccionAlumnos",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 265,
+	"markerBreak": 265,
+	"markerFooter": 291,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDeactivate",
+		"onDoubleClick",
+		"onBeforeKeystroke",
+		"onDragOver",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"seleccionAlumnos": {
+					"type": "listbox",
+					"top": 42,
+					"left": 0,
+					"width": 362,
+					"height": 398,
+					"hideFocusRing": true,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#DDDDDD",
+					"verticalLineStroke": "#DDDDDD",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"rowStyleSource": "XCR_estiloSeleccionAlumnos_al",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"method": "ObjectMethods/seleccionAlumnos.4dm",
+					"events": [
+						"onClick",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "nombreAlumnos",
+							"width": 348,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título3",
+								"text": "Título3",
+								"dataSource": "Título3",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "nivelAlumnos",
+							"width": 21,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título1",
+								"text": "Título1",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "cursoAlumnos",
+							"width": 24,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título2",
+								"text": "Título2",
+								"dataSource": "Título2",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "recNumAlumnos",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título4",
+								"text": "Título4",
+								"dataSource": "Título4",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"cerrar": {
+					"type": "button",
+					"top": 562,
+					"left": 12,
+					"width": 78,
+					"height": 22,
+					"sizingY": "move",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "cerrar",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Línea": {
+					"type": "line",
+					"top": 42,
+					"left": 0,
+					"width": 361,
+					"sizingX": "grow",
+					"stroke": "#AAAAAA"
+				},
+				"botonInscribir": {
+					"type": "button",
+					"top": 12,
+					"left": 7,
+					"width": 338,
+					"height": 22,
+					"styleSheet": "Plain - 12",
+					"text": "Inscribir alumnos seleccionados en todos los períodos",
+					"textPlacement": "left",
+					"method": "ObjectMethods/botonInscribir.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

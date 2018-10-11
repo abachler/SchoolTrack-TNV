@@ -1,0 +1,31 @@
+abACT_BankModified{0}:=True:C214
+If (AT_SearchArray (->abACT_BankModified;"=")>0)
+	ACTcfg_SaveConfig (4)
+End if 
+
+AL_UpdateArrays (xALP_Bancos;0)
+ARRAY TEXT:C222(atACT_BankID;0)
+ARRAY TEXT:C222(atACT_BankName;0)
+ARRAY LONGINT:C221(alACT_BankRecNum;0)
+ARRAY BOOLEAN:C223(abACT_BankEstandar;0)
+ARRAY BOOLEAN:C223(abACT_BankModified;0)
+ARRAY TEXT:C222(atACT_BankNumConvenio;0)
+READ ONLY:C145([xxACT_Bancos:129])
+GET LIST ITEM:C378(hl_Paises;Selected list items:C379(hl_Paises);$itemRef;$country)
+vtACT_PaisBancos:=ST_GetWord ($country;1;":")
+QUERY:C277([xxACT_Bancos:129];[xxACT_Bancos:129]Pais:3=vtACT_PaisBancos)
+SELECTION TO ARRAY:C260([xxACT_Bancos:129]Nombre:1;atACT_BankName;[xxACT_Bancos:129]Codigo:2;atACT_BankID;[xxACT_Bancos:129]Estandar:4;abACT_BankEstandar;[xxACT_Bancos:129]mx_NumeroConvenio:5;atACT_BankNumConvenio)
+LONGINT ARRAY FROM SELECTION:C647([xxACT_Bancos:129];alACT_BankRecNum;"")
+ARRAY BOOLEAN:C223(abACT_BankModified;Size of array:C274(alACT_BankRecNum))
+AL_UpdateArrays (xALP_Bancos;-2)
+AL_SetLine (xALP_Bancos;0)
+For ($i;1;Size of array:C274(abACT_BankModified))
+	ARRAY LONGINT:C221($LongArray;2;0)
+	If (abACT_BankEstandar{$i})
+		$enterable:=Num:C11(<>lUSR_CurrentUserID<0)
+		AL_SetCellEnter (xALP_Bancos;1;$i;2;$i;$LongArray;$enterable)
+		AL_SetCellStyle (xALP_Bancos;1;$i;2;$i;$LongArray;2;"")
+	End if 
+End for 
+_O_DISABLE BUTTON:C193(bClearBank)
+_O_DISABLE BUTTON:C193(bEstandar)

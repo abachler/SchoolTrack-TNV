@@ -1,0 +1,565 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Forms",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Botón1",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón4": {
+					"type": "button",
+					"top": 624,
+					"left": 439,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 567,
+					"left": 255,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Área de plug-in4": {
+					"type": "plugin",
+					"top": 393,
+					"left": 419,
+					"width": 172,
+					"height": 92,
+					"dataSource": "xALP_Invalidos",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Área de plug-in2": {
+					"type": "plugin",
+					"top": 393,
+					"left": 13,
+					"width": 172,
+					"height": 92,
+					"dataSource": "xALP_NoIdent",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Área de plug-in3": {
+					"type": "plugin",
+					"top": 393,
+					"left": 217,
+					"width": 172,
+					"height": 92,
+					"dataSource": "xALP_MasdeUno",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 103,
+					"left": 261,
+					"width": 250,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Registros procesados:"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 120,
+					"left": 261,
+					"width": 250,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Nuevo número de apoderados con modo de pago PAC:"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 135,
+					"left": 261,
+					"width": 250,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Número de Ex Apoderados con modo de pago PAC:"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 150,
+					"left": 261,
+					"width": 250,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Registros no identificados:"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 105,
+					"left": 515,
+					"width": 56,
+					"height": 7,
+					"dataSource": "numProcesados",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 120,
+					"left": 515,
+					"width": 56,
+					"height": 7,
+					"dataSource": "numAprobados",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 135,
+					"left": 515,
+					"width": 56,
+					"height": 7,
+					"dataSource": "numRechazados",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 150,
+					"left": 515,
+					"width": 56,
+					"height": 7,
+					"dataSource": "numNoIdentif",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 165,
+					"left": 515,
+					"width": 56,
+					"height": 7,
+					"dataSource": "numMasdeUnApdo",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 352,
+					"left": 13,
+					"width": 172,
+					"height": 30,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Registros no identificados"
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 503,
+					"left": 511,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bOK",
+					"shortcutKey": "[Enter]",
+					"text": "Importar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto15": {
+					"type": "text",
+					"top": 352,
+					"left": 419,
+					"width": 172,
+					"height": 30,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Registros con identificador inválido"
+				},
+				"Texto16": {
+					"type": "text",
+					"top": 180,
+					"left": 261,
+					"width": 250,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Registros con identificador inválido:"
+				},
+				"Variable11": {
+					"type": "input",
+					"top": 180,
+					"left": 515,
+					"width": 56,
+					"height": 7,
+					"dataSource": "numInvalidos",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable15": {
+					"type": "input",
+					"top": 195,
+					"left": 515,
+					"width": 56,
+					"height": 7,
+					"dataSource": "numNoApdoCta",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Área de plug-in5": {
+					"type": "plugin",
+					"top": 252,
+					"left": 311,
+					"width": 280,
+					"height": 92,
+					"dataSource": "xALP_ApdoNoCta",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Área de plug-in1": {
+					"type": "plugin",
+					"top": 252,
+					"left": 13,
+					"width": 280,
+					"height": 92,
+					"dataSource": "xALP_Rechazados",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 228,
+					"left": 13,
+					"width": 282,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Número de Ex Apoderados con modo de pago PAC"
+				},
+				"Texto18": {
+					"type": "text",
+					"top": 73,
+					"left": 26,
+					"width": 55,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Archivo:"
+				},
+				"Variable13": {
+					"type": "input",
+					"top": 73,
+					"left": 83,
+					"width": 449,
+					"height": 13,
+					"dataSource": "vtACT_fileNameACT",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable14": {
+					"type": "input",
+					"top": 13,
+					"left": 6,
+					"width": 578,
+					"height": 44,
+					"dataSource": "vTitulo",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 352,
+					"left": 217,
+					"width": 172,
+					"height": 30,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Registros asociados a más de una persona"
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 228,
+					"left": 311,
+					"width": 279,
+					"height": 30,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Registros asociados a personas No apoderados de cuenta"
+				},
+				"Texto9": {
+					"type": "text",
+					"top": 165,
+					"left": 261,
+					"width": 250,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Registros asociados a más de una persona:"
+				},
+				"Texto10": {
+					"type": "text",
+					"top": 195,
+					"left": 261,
+					"width": 250,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Registros asociados a personas No apoderados de cuenta:"
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 503,
+					"left": 425,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCancelar",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 503,
+					"left": 13,
+					"width": 110,
+					"height": 20,
+					"dataSource": "bPrint",
+					"shortcutKey": "[Esc]",
+					"text": "Imprimir Reporte",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

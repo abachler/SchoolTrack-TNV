@@ -1,0 +1,275 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Variable3",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable25": {
+					"type": "dropdown",
+					"top": 58,
+					"left": 211,
+					"width": 155,
+					"height": 20,
+					"dataSource": "atSTR_Periodos_Nombre",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Variable25.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable1": {
+					"type": "dropdown",
+					"top": 101,
+					"left": 211,
+					"width": 155,
+					"height": 20,
+					"dataSource": "atSTR_Evaluaciones",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"fecha": {
+					"type": "input",
+					"top": 142,
+					"left": 211,
+					"width": 94,
+					"height": 15,
+					"dataSource": "vt_fechaEvaluacion",
+					"dataSourceTypeHint": "date",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/fecha.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"fecha1": {
+					"type": "input",
+					"top": 176,
+					"left": 211,
+					"width": 94,
+					"height": 15,
+					"dataSource": "vt_fechaEntrega",
+					"dataSourceTypeHint": "date",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/fecha1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Campo3": {
+					"type": "input",
+					"top": 237,
+					"left": 13,
+					"width": 354,
+					"height": 80,
+					"dataSource": "vt_Observaciones",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 342,
+					"left": 192,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bImprimir",
+					"shortcutKey": "[Enter]",
+					"text": "Imprimir",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"defaultButton": true,
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 342,
+					"left": 286,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCancel",
+					"text": ":21012,4",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 62,
+					"left": 13,
+					"width": 199,
+					"height": 13,
+					"stroke": "#000000",
+					"textAlign": "left",
+					"styleSheet": "XS_DialogObjects",
+					"text": ":21012,39"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 97,
+					"left": 13,
+					"width": 199,
+					"height": 31,
+					"stroke": "#000000",
+					"textAlign": "left",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Seleccione la evaluación sobre la cual desea obtener el informe"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 142,
+					"left": 13,
+					"width": 199,
+					"height": 13,
+					"stroke": "#000000",
+					"textAlign": "left",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Fecha evaluación"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 177,
+					"left": 13,
+					"width": 199,
+					"height": 13,
+					"stroke": "#000000",
+					"textAlign": "left",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Fecha de entrega"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 217,
+					"left": 13,
+					"width": 147,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Observaciones"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 10,
+					"left": 14,
+					"width": 347,
+					"height": 25,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"fontFamily": "Tahoma",
+					"fontSize": 20,
+					"fontWeight": "bold",
+					"text": "Estadísticas por evaluación"
+				},
+				"Variable2": {
+					"type": "pictureButton",
+					"top": 140,
+					"left": 309,
+					"width": 18,
+					"height": 18,
+					"dataSource": "BCalendar1",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "pictureButton",
+					"top": 174,
+					"left": 309,
+					"width": 18,
+					"height": 18,
+					"dataSource": "BCalendar1",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

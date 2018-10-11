@@ -1,0 +1,2251 @@
+﻿{
+	"inheritedForm": "XS_MASTER_WZDDialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 626,
+	"height": 407,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Variable6": {
+					"type": "button",
+					"top": 442,
+					"left": 149,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"display": false,
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable11": {
+					"type": "button",
+					"top": 479,
+					"left": 246,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bTrap",
+					"shortcutKey": "[Enter]",
+					"text": "Cancelar",
+					"display": false,
+					"method": "ObjectMethods/Variable11.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 553,
+					"width": 20,
+					"height": 20,
+					"dataSource": "bPrev",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 594,
+					"width": 20,
+					"height": 20,
+					"dataSource": "bNext",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable255": {
+					"type": "input",
+					"top": 378,
+					"left": 575,
+					"width": 17,
+					"height": 11,
+					"dataSource": "vi_NoPagina",
+					"fill": "transparent",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"emitir27": {
+					"type": "text",
+					"top": 4,
+					"left": 161,
+					"width": 442,
+					"height": 44,
+					"stroke": "#FFFFFF",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Asistente para la generación de modelos de archivos de transferencia"
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 507,
+					"left": 184,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 450,
+					"left": 0,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				},
+				"Botón invisible3": {
+					"type": "button",
+					"top": 495,
+					"left": 11,
+					"width": 26,
+					"height": 22,
+					"dataSource": "Botón invisible3",
+					"shortcutKey": "+",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón invisible3.4dm",
+					"events": [
+						"onClick",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"emitir1": {
+					"type": "text",
+					"top": 81,
+					"left": 170,
+					"width": 418,
+					"height": 130,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Este asistente le guiará en el proceso de generación de modelos de archivos de transferencia, usted podrá crear y modificar fácilmente modelos básicos de archivos de transferencia. \r\rPara comenzar a utilizar este asistente es necesario que consulte a personal de Colegium para que lo guíen paso a paso en el proceso."
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 233,
+					"left": 170,
+					"width": 168,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Tipo de modelo a generar:"
+				},
+				"Botón de opción2": {
+					"type": "radio",
+					"top": 223,
+					"left": 348,
+					"width": 98,
+					"height": 33,
+					"dataSource": "bto_Exportacion",
+					"text": "Exportación",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Botón de opción2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón de opción1": {
+					"type": "radio",
+					"top": 223,
+					"left": 448,
+					"width": 138,
+					"height": 33,
+					"dataSource": "bto_Importacion",
+					"text": "Importación",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Botón de opción1.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"bModelo2": {
+					"type": "picture",
+					"top": 171,
+					"left": 521,
+					"width": 19,
+					"height": 16
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 79,
+					"left": 9,
+					"width": 143,
+					"height": 242,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Determine si necesita crear un nuevo modelo de archivo de transferencia o si desea modificar un modelo de archivo existente.\r\rSi desea modificar un modelo existente deberá marcar la opción correspondiente y elegir el nombre del modelo desde la lista desplegable."
+				},
+				"tb2": {
+					"type": "radio",
+					"top": 117,
+					"left": 224,
+					"width": 352,
+					"height": 18,
+					"dataSource": "WTrf_tb2",
+					"text": "Nuevo modelo de archivo bancario",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/tb2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"vNombreOldModeloTB": {
+					"type": "input",
+					"top": 172,
+					"left": 353,
+					"width": 166,
+					"height": 11,
+					"dataSource": "vNombreOldModeloAB",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"texto22": {
+					"type": "text",
+					"top": 173,
+					"left": 249,
+					"width": 95,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Nombre del Modelo"
+				},
+				"Texto10": {
+					"type": "text",
+					"top": 52,
+					"left": 163,
+					"width": 328,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Nuevo documento o modificación de uno existente"
+				},
+				"Ptb1": {
+					"type": "radio",
+					"top": 97,
+					"left": 164,
+					"width": 412,
+					"height": 18,
+					"dataSource": "PWTrf_Ptb1",
+					"text": "Archivo de transferencia bancaria",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Ptb1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Pac1": {
+					"type": "radio",
+					"top": 217,
+					"left": 164,
+					"width": 412,
+					"height": 18,
+					"dataSource": "PWTrf_Pac1",
+					"text": "Archivo para Contabilidad",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Pac1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bModelo3": {
+					"type": "picture",
+					"top": 291,
+					"left": 521,
+					"width": 19,
+					"height": 16
+				},
+				"ac2": {
+					"type": "radio",
+					"top": 237,
+					"left": 224,
+					"width": 352,
+					"height": 18,
+					"dataSource": "WTrf_ac2",
+					"text": "Nuevo modelo de archivo para contabilidad",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/ac2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"vNombreOldModeloC": {
+					"type": "input",
+					"top": 292,
+					"left": 353,
+					"width": 166,
+					"height": 11,
+					"dataSource": "vNombreOldModeloC",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"texto2": {
+					"type": "text",
+					"top": 293,
+					"left": 249,
+					"width": 95,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Nombre del Modelo"
+				},
+				"tb3": {
+					"type": "radio",
+					"top": 147,
+					"left": 224,
+					"width": 352,
+					"height": 18,
+					"dataSource": "WTrf_tb3",
+					"text": "Modificar modelo de archivo bancario existente",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/tb3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"tb1": {
+					"type": "button",
+					"top": 171,
+					"left": 351,
+					"width": 189,
+					"height": 17,
+					"dataSource": "bModeloTB",
+					"display": false,
+					"method": "ObjectMethods/tb1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"ac3": {
+					"type": "radio",
+					"top": 267,
+					"left": 224,
+					"width": 352,
+					"height": 18,
+					"dataSource": "WTrf_ac3",
+					"text": "Modificar modelo de archivo de contabilidad",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/ac3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"ac1": {
+					"type": "button",
+					"top": 291,
+					"left": 351,
+					"width": 189,
+					"height": 17,
+					"dataSource": "bModelosC",
+					"display": false,
+					"method": "ObjectMethods/ac1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"emitir35": {
+					"type": "text",
+					"top": 74,
+					"left": 9,
+					"width": 143,
+					"height": 268,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Determine el tipo de archivo sobre el cual necesita trabajar."
+				},
+				"t1": {
+					"type": "radio",
+					"top": 152,
+					"left": 681,
+					"width": 230,
+					"height": 17,
+					"dataSource": "WTrf_Tipo1",
+					"text": "PAC",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Alumnos1": {
+					"type": "text",
+					"top": 474,
+					"left": 194,
+					"width": 375,
+					"height": 33,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "El nuevo archivo será para exportar según modo de pago Pago Automático de Cuentas."
+				},
+				"t2": {
+					"type": "radio",
+					"top": 212,
+					"left": 681,
+					"width": 231,
+					"height": 17,
+					"dataSource": "WTrf_Tipo2",
+					"text": "PAT",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Alumnos2": {
+					"type": "text",
+					"top": 534,
+					"left": 195,
+					"width": 375,
+					"height": 22,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "El nuevo archivo será para exportar según modo de pago Pago Automático con Tarjeta de Crédito."
+				},
+				"t3": {
+					"type": "radio",
+					"top": 272,
+					"left": 681,
+					"width": 231,
+					"height": 17,
+					"dataSource": "WTrf_Tipo3",
+					"text": "Cuponera",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto27": {
+					"type": "text",
+					"top": 594,
+					"left": 194,
+					"width": 320,
+					"height": 22,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "El nuevo archivo será para exportar según modo de pago Cuponera."
+				},
+				"Campo1": {
+					"type": "input",
+					"top": 399,
+					"left": 762,
+					"width": 1,
+					"height": 13,
+					"dataSource": "[xxACT_ArchivosBancarios:118]ID:1",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable12": {
+					"type": "input",
+					"top": 172,
+					"left": 679,
+					"width": 400,
+					"height": 24,
+					"dataSource": "vt_pg3_1",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable13": {
+					"type": "input",
+					"top": 232,
+					"left": 679,
+					"width": 400,
+					"height": 24,
+					"dataSource": "vt_pg3_2",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable14": {
+					"type": "input",
+					"top": 292,
+					"left": 679,
+					"width": 400,
+					"height": 24,
+					"dataSource": "vt_pg3_3",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable17": {
+					"type": "input",
+					"top": 52,
+					"left": 165,
+					"width": 335,
+					"height": 13,
+					"dataSource": "vsTipoArchivo",
+					"fill": "transparent",
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"atACT_FormasdePagoNew": {
+					"type": "dropdown",
+					"top": 133,
+					"left": 189,
+					"width": 142,
+					"height": 15,
+					"dataSource": "atACT_FormasdePagoNew",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/atACT_FormasdePagoNew.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable31": {
+					"type": "input",
+					"top": 157,
+					"left": 182,
+					"width": 400,
+					"height": 24,
+					"dataSource": "vt_pg3",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"total1": {
+					"type": "text",
+					"top": 136,
+					"left": 194,
+					"width": 376,
+					"height": 22,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Se generarán las columnas del archivo dependiendo del ancho de cada campo."
+				},
+				"acumular3": {
+					"type": "radio",
+					"top": 119,
+					"left": 184,
+					"width": 190,
+					"height": 17,
+					"dataSource": "PWTrf_h2",
+					"text": "Ancho Fijo",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/acumular3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"acumular": {
+					"type": "radio",
+					"top": 189,
+					"left": 184,
+					"width": 211,
+					"height": 17,
+					"dataSource": "PWTrf_h1",
+					"text": "Delimitado",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/acumular.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"acumular1": {
+					"type": "radio",
+					"top": 240,
+					"left": 202,
+					"width": 70,
+					"height": 15,
+					"dataSource": "WTrf_s1",
+					"text": "Tabulación",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/acumular1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"acumular4": {
+					"type": "radio",
+					"top": 240,
+					"left": 285,
+					"width": 80,
+					"height": 15,
+					"dataSource": "WTrf_s2",
+					"text": "Punto y Coma",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/acumular4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"pagosexp": {
+					"type": "text",
+					"top": 79,
+					"left": 9,
+					"width": 143,
+					"height": 253,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "En este paso deberá definir el tipo de archivo que desea generar.\r\rSi necesita generar el archivo como texto plano, indicando el largo de cada campo, deberá marcar la opción Ancho Fijo.\r\rSi necesita generar el archivo separado por algún caracter (tab, punto y coma o coma) deberá seleccionar la opción Delimitado y definir el caracter separador."
+				},
+				"pagos1": {
+					"type": "text",
+					"top": 206,
+					"left": 194,
+					"width": 376,
+					"height": 22,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Se generarán las columnas del archivo separadas por el caracter seleccionado a continuación"
+				},
+				"Texto21": {
+					"type": "text",
+					"top": 52,
+					"left": 163,
+					"width": 278,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Tipo de archivo"
+				},
+				"acumular2": {
+					"type": "radio",
+					"top": 240,
+					"left": 385,
+					"width": 49,
+					"height": 15,
+					"dataSource": "WTrf_s3",
+					"text": "Coma",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/acumular2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"acumular5": {
+					"type": "radio",
+					"top": 240,
+					"left": 445,
+					"width": 49,
+					"height": 15,
+					"dataSource": "WTrf_s4",
+					"text": "Otro",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/acumular5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable23": {
+					"type": "input",
+					"top": 240,
+					"left": 488,
+					"width": 44,
+					"height": 12,
+					"dataSource": "WTrf_s4_CaracterOtro",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Área de plug-in2": {
+					"type": "plugin",
+					"top": 118,
+					"left": 16,
+					"width": 593,
+					"height": 241,
+					"dataSource": "xALP_ExportBankFilesH",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Área de plug-in2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"cs_encabezado": {
+					"type": "checkbox",
+					"top": 79,
+					"left": 16,
+					"width": 145,
+					"height": 16,
+					"dataSource": "cs_encabezado",
+					"text": "El archivo tiene encabezado",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/cs_encabezado.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable1": {
+					"type": "pictureButton",
+					"top": 92,
+					"left": 592,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bInsertLine",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bDeleteLine1": {
+					"type": "pictureButton",
+					"top": 92,
+					"left": 568,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bDeleteLine",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bDeleteLine1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bSubirLineaExp1": {
+					"type": "pictureButton",
+					"top": 92,
+					"left": 524,
+					"width": 20,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "bSubirLineaExp",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bSubirLineaExp1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bBajarLineaExp1": {
+					"type": "pictureButton",
+					"top": 92,
+					"left": 546,
+					"width": 18,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "bBajarLineaExp",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bBajarLineaExp1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 52,
+					"left": 163,
+					"width": 278,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Encabezado del archivo"
+				},
+				"emitir2": {
+					"type": "text",
+					"top": 79,
+					"left": 189,
+					"width": 333,
+					"height": 22,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Si el archivo tiene encabezado marque la casilla de selección y cree las líneas (columnas) necesarias."
+				}
+			}
+		},
+		{
+			"objects": {
+				"Área de plug-in3": {
+					"type": "plugin",
+					"top": 118,
+					"left": 16,
+					"width": 593,
+					"height": 241,
+					"dataSource": "xALP_ExportBankFilesF",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Área de plug-in3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"cs_registroControl": {
+					"type": "checkbox",
+					"top": 79,
+					"left": 16,
+					"width": 164,
+					"height": 16,
+					"dataSource": "cs_registroControl",
+					"text": "El archivo tiene registro de control",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/cs_registroControl.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable2": {
+					"type": "pictureButton",
+					"top": 92,
+					"left": 592,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bInsertLine",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bDeleteLine2": {
+					"type": "pictureButton",
+					"top": 92,
+					"left": 568,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bDeleteLine",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bDeleteLine2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bSubirLineaExp2": {
+					"type": "pictureButton",
+					"top": 92,
+					"left": 524,
+					"width": 20,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "bSubirLineaExp",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bSubirLineaExp2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bBajarLineaExp2": {
+					"type": "pictureButton",
+					"top": 92,
+					"left": 546,
+					"width": 18,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "bBajarLineaExp",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bBajarLineaExp2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto9": {
+					"type": "text",
+					"top": 52,
+					"left": 163,
+					"width": 278,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Registro de control del archivo (pie)"
+				},
+				"emitir3": {
+					"type": "text",
+					"top": 79,
+					"left": 189,
+					"width": 323,
+					"height": 22,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Si el archivo tiene registro de control marque la casilla de selección y cree las líneas (columnas) necesarias."
+				}
+			}
+		},
+		{
+			"objects": {
+				"emitir28": {
+					"type": "text",
+					"top": 79,
+					"left": 4,
+					"width": 507,
+					"height": 33,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "En esta página usted necesita crear líneas y seleccionar la información asociada. Usted debe seleccionar la descripción, el formato, ingresar el largo, si corresponde, según el documento de desripción entregado por el banco, además debe ingresar el nombre del archivo"
+				},
+				"Área de plug-in1": {
+					"type": "plugin",
+					"top": 118,
+					"left": 16,
+					"width": 593,
+					"height": 241,
+					"dataSource": "xALP_ExportBankFiles",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Área de plug-in1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable264": {
+					"type": "pictureButton",
+					"top": 92,
+					"left": 592,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bInsertLine",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable264.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bDeleteLine": {
+					"type": "pictureButton",
+					"top": 92,
+					"left": 568,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bDeleteLine",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bDeleteLine.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bSubirLineaExp": {
+					"type": "pictureButton",
+					"top": 92,
+					"left": 524,
+					"width": 20,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "bSubirLineaExp",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bSubirLineaExp.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bBajarLineaExp": {
+					"type": "pictureButton",
+					"top": 92,
+					"left": 546,
+					"width": 18,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "bBajarLineaExp",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bBajarLineaExp.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable65": {
+					"type": "button",
+					"top": 374,
+					"left": 449,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCancelar",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable65.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 52,
+					"left": 163,
+					"width": 378,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Configuración de los registros del cuerpo del archivo"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 370,
+					"left": 10,
+					"width": 146,
+					"height": 11,
+					"textAlign": "left",
+					"styleSheet": "XS_FormObjects",
+					"text": "Nombre del archivo:"
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 370,
+					"left": 101,
+					"width": 254,
+					"height": 11,
+					"dataSource": "viNameFile",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto11": {
+					"type": "text",
+					"top": 389,
+					"left": 10,
+					"width": 66,
+					"height": 11,
+					"textAlign": "left",
+					"styleSheet": "XS_FormObjects",
+					"text": "Tipo Archivo:"
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 389,
+					"left": 74,
+					"width": 64,
+					"height": 11,
+					"dataSource": "viTypeFile",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 389,
+					"left": 142,
+					"width": 76,
+					"height": 11,
+					"textAlign": "left",
+					"styleSheet": "XS_FormObjects",
+					"text": "Formato Archivo:"
+				},
+				"Variable9": {
+					"type": "input",
+					"top": 388,
+					"left": 224,
+					"width": 131,
+					"height": 11,
+					"dataSource": "viFormatFile",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable10": {
+					"type": "button",
+					"top": 374,
+					"left": 365,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bVolver",
+					"text": "Volver",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable10.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 374,
+					"left": 533,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bGuardar",
+					"shortcutKey": "[Enter]",
+					"text": "Guardar",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Área de grupo3": {
+					"type": "groupBox",
+					"top": 130,
+					"left": 150,
+					"width": 317,
+					"height": 51,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Código de aprobación de los registros"
+				},
+				"Área de grupo2": {
+					"type": "groupBox",
+					"top": 72,
+					"left": 346,
+					"width": 277,
+					"height": 44,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Campo llave de importación"
+				},
+				"Área de grupo1": {
+					"type": "groupBox",
+					"top": 72,
+					"left": 150,
+					"width": 189,
+					"height": 56,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Registros de control"
+				},
+				"emitir4": {
+					"type": "text",
+					"top": 76,
+					"left": 4,
+					"width": 127,
+					"height": 242,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "En esta página usted necesita crear líneas y seleccionar la información asociada. Usted debe seleccionar la descripción, el formato, si corresponde ingresar el largo; todo esto según el documento de desripción recibido por parte del banco. Junto con el detalle de los campos usted ebe ingresar un nombre para identificar el archivo."
+				},
+				"Área de plug-in4": {
+					"type": "plugin",
+					"top": 188,
+					"left": 156,
+					"width": 453,
+					"height": 166,
+					"dataSource": "xALP_ImportPagos",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Área de plug-in4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable15": {
+					"type": "pictureButton",
+					"top": 159,
+					"left": 814,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bInsertLine",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable15.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bDeleteLine3": {
+					"type": "pictureButton",
+					"top": 159,
+					"left": 790,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bDeleteLine",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bDeleteLine3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bSubirLineaExp3": {
+					"type": "pictureButton",
+					"top": 159,
+					"left": 746,
+					"width": 18,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "bSubirLineaExp",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bSubirLineaExp3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bBajarLineaExp3": {
+					"type": "pictureButton",
+					"top": 159,
+					"left": 768,
+					"width": 18,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "bBajarLineaExp",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bBajarLineaExp3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable16": {
+					"type": "button",
+					"top": 374,
+					"left": 447,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCancelar",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable16.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"validar": {
+					"type": "button",
+					"top": 374,
+					"left": 532,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bGuardar",
+					"shortcutKey": "[Enter]",
+					"text": "Guardar",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/validar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto13": {
+					"type": "text",
+					"top": 370,
+					"left": 10,
+					"width": 146,
+					"height": 11,
+					"textAlign": "left",
+					"styleSheet": "XS_FormObjects",
+					"text": "Nombre del archivo:"
+				},
+				"Variable18": {
+					"type": "input",
+					"top": 370,
+					"left": 100,
+					"width": 254,
+					"height": 11,
+					"dataSource": "viNameFile",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "solid",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto14": {
+					"type": "text",
+					"top": 389,
+					"left": 10,
+					"width": 66,
+					"height": 11,
+					"textAlign": "left",
+					"styleSheet": "XS_FormObjects",
+					"text": "Tipo Archivo:"
+				},
+				"Variable19": {
+					"type": "input",
+					"top": 389,
+					"left": 73,
+					"width": 64,
+					"height": 11,
+					"dataSource": "viTypeFile",
+					"stroke": "#EE0000",
+					"textAlign": "left",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto15": {
+					"type": "text",
+					"top": 389,
+					"left": 142,
+					"width": 76,
+					"height": 11,
+					"textAlign": "left",
+					"styleSheet": "XS_FormObjects",
+					"text": "Formato Archivo:"
+				},
+				"Variable20": {
+					"type": "input",
+					"top": 388,
+					"left": 223,
+					"width": 131,
+					"height": 11,
+					"dataSource": "viFormatFile",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable21": {
+					"type": "button",
+					"top": 374,
+					"left": 361,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bVolver",
+					"text": "Volver",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable21.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección1": {
+					"type": "checkbox",
+					"top": 87,
+					"left": 156,
+					"width": 161,
+					"height": 15,
+					"dataSource": "cs_IEncabezado",
+					"text": "El archivo tiene encabezado",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Casilla de selección2": {
+					"type": "checkbox",
+					"top": 107,
+					"left": 156,
+					"width": 201,
+					"height": 15,
+					"dataSource": "cs_IPie",
+					"text": "El archivo tiene registro de control (pie)",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto16": {
+					"type": "text",
+					"top": 92,
+					"left": 349,
+					"width": 151,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Identificador a utilizar como llave:"
+				},
+				"Variable22": {
+					"type": "input",
+					"top": 94,
+					"left": 496,
+					"width": 103,
+					"height": 11,
+					"dataSource": "vIIdentificador",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Banco(5)1": {
+					"type": "picture",
+					"top": 93,
+					"left": 599,
+					"width": 21,
+					"height": 16
+				},
+				"Botón invisible2": {
+					"type": "button",
+					"top": 92,
+					"left": 494,
+					"width": 124,
+					"height": 15,
+					"dataSource": "bIIDentificador",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 155,
+					"left": 500,
+					"width": 100,
+					"height": 20,
+					"dataSource": "bTestImport",
+					"text": ":21502,18",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"genEjemplo2": {
+					"type": "text",
+					"top": 317,
+					"left": 14,
+					"width": 119,
+					"height": 34,
+					"sizingY": "move",
+					"stroke": "#009900",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Haga clic aquí para generar un archivo vacío con encabezados."
+				},
+				"genEjemplo1": {
+					"type": "button",
+					"top": 316,
+					"left": 13,
+					"width": 123,
+					"height": 37,
+					"sizingY": "move",
+					"dataSource": "bVacio",
+					"display": false,
+					"method": "ObjectMethods/genEjemplo1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"vt_ICodApr": {
+					"type": "input",
+					"top": 152,
+					"left": 319,
+					"width": 46,
+					"height": 12,
+					"dataSource": "vt_ICodApr",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/vt_ICodApr.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"texto3": {
+					"type": "text",
+					"top": 152,
+					"left": 155,
+					"width": 162,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Código de aprobación de los registros:"
+				},
+				"cs_usarComoTexto": {
+					"type": "checkbox",
+					"top": 147,
+					"left": 370,
+					"width": 96,
+					"height": 20,
+					"dataSource": "cs_usarComoTexto",
+					"text": "Utilizar código en formato texto",
+					"styleSheet": "XS_FormObjects",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable24": {
+					"type": "button",
+					"top": 606,
+					"left": 48,
+					"width": 21,
+					"height": 1,
+					"dataSource": "b_Close",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Plug-in Area1": {
+					"type": "plugin",
+					"top": 108,
+					"left": 16,
+					"width": 593,
+					"height": 246,
+					"dataSource": "xALP_DatosImportados",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 79,
+					"left": 16,
+					"width": 217,
+					"height": 23,
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Datos pre-importados"
+				},
+				"Variable25": {
+					"type": "button",
+					"top": 374,
+					"left": 533,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bVolver2",
+					"text": "Volver",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable25.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto17": {
+					"type": "text",
+					"top": 68,
+					"left": 288,
+					"width": 140,
+					"height": 11,
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"text": "Número de registros procesados:"
+				},
+				"Variable26": {
+					"type": "input",
+					"top": 67,
+					"left": 430,
+					"width": 36,
+					"height": 11,
+					"dataSource": "viNoRegistrosTotal",
+					"fill": "transparent",
+					"stroke": "#0A8800",
+					"textAlign": "left",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto18": {
+					"type": "text",
+					"top": 85,
+					"left": 496,
+					"width": 36,
+					"height": 11,
+					"textAlign": "left",
+					"styleSheet": "XS_FormObjects",
+					"text": "Monto:"
+				},
+				"Variable27": {
+					"type": "input",
+					"top": 84,
+					"left": 530,
+					"width": 76,
+					"height": 11,
+					"dataSource": "viMonto2Import",
+					"fill": "transparent",
+					"stroke": "#0A8800",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable28": {
+					"type": "button",
+					"top": 374,
+					"left": 448,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bImportar",
+					"text": "Importar",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Variable28.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto19": {
+					"type": "text",
+					"top": 68,
+					"left": 476,
+					"width": 56,
+					"height": 11,
+					"textAlign": "left",
+					"styleSheet": "XS_FormObjects",
+					"text": "Monto total:"
+				},
+				"Variable29": {
+					"type": "input",
+					"top": 67,
+					"left": 530,
+					"width": 76,
+					"height": 11,
+					"dataSource": "viMontoTotal",
+					"fill": "transparent",
+					"stroke": "#0A8800",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto20": {
+					"type": "text",
+					"top": 85,
+					"left": 227,
+					"width": 201,
+					"height": 11,
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"text": "Número de registros a proceso de importación:"
+				},
+				"Variable30": {
+					"type": "input",
+					"top": 84,
+					"left": 430,
+					"width": 36,
+					"height": 11,
+					"dataSource": "viNoRegistros2Import",
+					"fill": "transparent",
+					"stroke": "#0A8800",
+					"textAlign": "left",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

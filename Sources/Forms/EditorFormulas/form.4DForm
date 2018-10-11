@@ -1,0 +1,145 @@
+﻿{
+	"formSizeAnchor": "Botón",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Lista jerárquica1": {
+					"type": "list",
+					"top": 49,
+					"left": 19,
+					"width": 261,
+					"height": 221,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "hlQR_FieldList",
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"dragging": "custom",
+					"dropping": "custom",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"method": "ObjectMethods/Lista jerárquica1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDrop",
+						"onDataChange",
+						"onDragOver",
+						"onPrintingDetail"
+					]
+				},
+				"vt_formula": {
+					"type": "input",
+					"top": 285,
+					"left": 20,
+					"width": 808,
+					"height": 13,
+					"dataSource": "vt_formula",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vt_formula.4dm",
+					"events": [
+						"onLosingFocus",
+						"onDataChange"
+					]
+				},
+				"Botón": {
+					"type": "button",
+					"top": 312,
+					"left": 704,
+					"width": 124,
+					"height": 20,
+					"dataSource": "Botón",
+					"text": "Botón",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Lista jerárquica2": {
+					"type": "list",
+					"top": 49,
+					"left": 293,
+					"width": 261,
+					"height": 221,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "hl_operadores",
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"dragging": "custom",
+					"dropping": "custom",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"method": "ObjectMethods/Lista jerárquica2.4dm",
+					"events": [
+						"onDoubleClick",
+						"onDrop",
+						"onDragOver"
+					]
+				},
+				"hl_comandos": {
+					"type": "list",
+					"top": 49,
+					"left": 565,
+					"width": 263,
+					"height": 221,
+					"dataSource": "hl_comandos",
+					"enterable": false,
+					"hideFocusRing": true,
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/hl_comandos.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail",
+						"onMouseEnter"
+					]
+				}
+			}
+		}
+	]
+}

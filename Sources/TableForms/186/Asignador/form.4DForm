@@ -1,0 +1,261 @@
+﻿{
+	"windowTitle": "Asignación de Mapas de Progres",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "bAsign",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onOutsideCall",
+		"onDataChange",
+		"onDragOver"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"lb_asignaturasArea": {
+					"type": "listbox",
+					"top": 39,
+					"left": 20,
+					"width": 631,
+					"height": 137,
+					"dataSource": "lb_asignaturasArea",
+					"hideFocusRing": true,
+					"dragging": "custom",
+					"dropping": "custom",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"alternateFill": "#EEEEEE",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"method": "ObjectMethods/lb_asignaturasArea.4dm",
+					"events": [
+						"onValidate",
+						"onClick",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDrop",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onDragOver",
+						"onAfterKeystroke",
+						"onSelectionChange",
+						"onBeforeDataEntry",
+						"onHeaderClick",
+						"onAfterEdit"
+					],
+					"columns": [
+						{
+							"name": "Columna1",
+							"dataSource": "atMPA_AsignaturasArea",
+							"width": 616,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#EEEEEE",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título1",
+								"text": "Asignaturas del área",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"bSeleccionarTodas": {
+					"type": "checkbox",
+					"top": 185,
+					"left": 20,
+					"width": 414,
+					"height": 17,
+					"dataSource": "bSeleccionarTodas",
+					"text": "Asignar a todas las asignaturas del área",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/bSeleccionarTodas.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 334,
+					"left": 41,
+					"width": 603,
+					"height": 26,
+					"stroke": "#777777",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Sólo se asignarán las competencias a las asignaturas a los subsectores o asignaturas que no tengan ninguna asignación previa."
+				},
+				"r1_SoloSinAsignaciones": {
+					"type": "radio",
+					"top": 316,
+					"left": 20,
+					"width": 623,
+					"height": 18,
+					"dataSource": "r1_SoloSinAsignaciones",
+					"text": "Sólo a asignaturas sin asignaciones previas",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"stroke": "#009900",
+					"radioGroup": "Grupo1",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 389,
+					"left": 41,
+					"width": 603,
+					"height": 13,
+					"stroke": "#777777",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Sólo se asignarán las competencias, dimensiones y ejes de aprendizaje que no existan en asignaciones previas"
+				},
+				"r2_CompletarAsignaciones": {
+					"type": "radio",
+					"top": 371,
+					"left": 20,
+					"width": 623,
+					"height": 18,
+					"dataSource": "r2_CompletarAsignaciones",
+					"text": "Completar asignaciones previas",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"stroke": "#000099",
+					"radioGroup": "Grupo5",
+					"method": "ObjectMethods/r2_CompletarAsignaciones.4dm",
+					"events": [
+						"onLoad",
+						"onClick"
+					]
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 431,
+					"left": 41,
+					"width": 603,
+					"height": 26,
+					"stroke": "#777777",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Se eliminarán las competencias, dimensiones y ejes de aprendizaje sólo si ninguno de ellos ha sido evaluado y serán reemplazados por las competencias, dimensiones y ejes de aprendizajes del Mapa de progreso de Aprendizaje actual"
+				},
+				"r3_ReemplazarNoEvaluadas": {
+					"type": "radio",
+					"top": 413,
+					"left": 20,
+					"width": 623,
+					"height": 18,
+					"dataSource": "r3_ReemplazarNoEvaluadas",
+					"text": "Reemplazar asignaciones previas sólo si no se ha evaluado ninguna competencia",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"stroke": "#FF6600",
+					"radioGroup": "Grupo3",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 488,
+					"left": 41,
+					"width": 603,
+					"height": 39,
+					"stroke": "#777777",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Se eliminarán las competencias, dimensiones y ejes de aprendizaje INCUYENDO LAS EVALUACIONES EXISTENTES  y serán reemplazados por las competencias, dimensiones y ejes de aprendizajes del Mapa de progreso de Aprendizaje actual"
+				},
+				"r4_ReemplazarEvaluadas": {
+					"type": "radio",
+					"top": 468,
+					"left": 20,
+					"width": 623,
+					"height": 19,
+					"dataSource": "r4_ReemplazarEvaluadas",
+					"text": "Reemplazar asignaciones previas eliminando las evaluaciones existentes",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"stroke": "#EE0000",
+					"radioGroup": "Grupo4",
+					"method": "ObjectMethods/r4_ReemplazarEvaluadas.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancelar": {
+					"type": "button",
+					"top": 536,
+					"left": 450,
+					"width": 95,
+					"height": 18,
+					"dataSource": "bCancelar",
+					"action": "cancel",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"bAsign": {
+					"type": "button",
+					"top": 536,
+					"left": 556,
+					"width": 95,
+					"height": 18,
+					"dataSource": "bAsign",
+					"action": "accept",
+					"text": "Asignar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/bAsign.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 13,
+					"left": 20,
+					"width": 629,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Seleccione las asignaturas a las que desea asignar el Mapa de Progreso de Aprendizaje definido para esta Área:"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 209,
+					"left": 39,
+					"width": 610,
+					"height": 91,
+					"stroke": "#777777",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Sólo serán asignadas las competencias, dimensiones y ejes de aprendizajes que correspondan a los niveles o grados académicos en los que se imparten efectivamente las asignaturas seleccionadas. Cuando sea necesario se podrá afinar la asignación de competencias anualmente o por períodos escolares a dos niveles:\r- en la configuración de los subsectores o asignaturas por quienes estén autorizados a hacerlo\r- en las propiedades de evaluación de aprendizaje de cada una de las asignaturas por sus propios profesores, cuando se los haya autorizado.\rEsta operación sólo se aplica a las matrices de evaluación por omisión. Las demás matrices no se ven afectadas"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,169 @@
+﻿{
+	"formSizeAnchor": "fondo",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"fondo": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 732,
+					"height": 308,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"pictureFormat": "scaled",
+					"picture": "Images/fondo.gif"
+				}
+			}
+		},
+		{
+			"objects": {
+				"listboxAnotaciones": {
+					"type": "listbox",
+					"top": 0,
+					"left": 0,
+					"width": 240,
+					"height": 308,
+					"listboxType": "currentSelection",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"showHeaders": false,
+					"highlightSet": "$ListboxSet0",
+					"table": 283,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"method": "ObjectMethods/listboxAnotaciones.4dm",
+					"events": [
+						"onDisplayDetail",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "fechaAnotaciones",
+							"dataSource": "DT_FechaISO_a_FechaHora ([xShell_RecordNotes:283]DTS:6)",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						},
+						{
+							"name": "usuario",
+							"dataSource": "[xShell_RecordNotes:283]Usuario:5",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						}
+					]
+				},
+				"Campo": {
+					"type": "input",
+					"top": 6,
+					"left": 254,
+					"width": 462,
+					"height": 75,
+					"sizingX": "grow",
+					"dataSource": "[xShell_RecordNotes:283]DescripcionEvento:9",
+					"fill": "transparent",
+					"styleSheet": "Plain - 13",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"fecha_y_usuario": {
+					"type": "input",
+					"top": 74,
+					"left": 254,
+					"width": 463,
+					"height": 14,
+					"sizingX": "grow",
+					"fill": "transparent",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"anotacion": {
+					"type": "input",
+					"top": 95,
+					"left": 254,
+					"width": 462,
+					"height": 198,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "[xShell_RecordNotes:283]Anotacion:8",
+					"styleSheet": "Plain - 12",
+					"enterable": false,
+					"hideFocusRing": true,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

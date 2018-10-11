@@ -1,0 +1,543 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "usuarios",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onCloseBox",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"custom": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 2000,
+					"height": 2000,
+					"stroke": "transparent"
+				},
+				"Imagen2": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 900,
+					"height": 44,
+					"pictureFormat": "scaled"
+				},
+				"Línea3": {
+					"type": "line",
+					"top": 3,
+					"left": 77,
+					"height": 37,
+					"strokeDashArray": "1 1"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 8,
+					"left": 85,
+					"width": 441,
+					"height": 19,
+					"stroke": "#FFFFFF",
+					"fontFamily": "Arial",
+					"fontSize": 16,
+					"fontWeight": "bold",
+					"text": "SchoolNet: Google Apps Para la Educación"
+				},
+				"Imagen1": {
+					"type": "picture",
+					"top": 6,
+					"left": 22,
+					"width": 32,
+					"height": 32,
+					"pictureFormat": "scaled"
+				},
+				"programacion16": {
+					"type": "button",
+					"top": 76,
+					"left": 792,
+					"width": 122,
+					"height": 23,
+					"dataSource": "programacion",
+					"shortcutKey": "[Esc]",
+					"text": "Esc Close",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/programacion16.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 44,
+					"left": 0,
+					"width": 544,
+					"height": 560,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vp_FondoConfig",
+					"dataSourceTypeHint": "picture",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"usuarios": {
+					"type": "groupBox",
+					"top": 80,
+					"left": 13,
+					"width": 700,
+					"height": 455,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Generación de Usuarios y Acceso a Apps"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Lista Emergente/Desplegable4": {
+					"type": "dropdown",
+					"top": 158,
+					"left": 315,
+					"width": 384,
+					"height": 18,
+					"dataSource": "SN3_LoginTypeGAFE",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Lista Emergente%2FDesplegable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"usuarios5": {
+					"type": "text",
+					"top": 161,
+					"left": 23,
+					"width": 321,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Para el nombre de usuario de alumnos utilizar:"
+				},
+				"usuarios6": {
+					"type": "text",
+					"top": 189,
+					"left": 23,
+					"width": 118,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Habilitar Apps para:"
+				},
+				"ListNiveles1": {
+					"type": "listbox",
+					"top": 269,
+					"left": 138,
+					"width": 561,
+					"height": 216,
+					"dataSource": "ListNiveles",
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "transparent",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"alternateFill": "#F3F6FA",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"method": "ObjectMethods/ListNiveles1.4dm",
+					"events": [
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Columna4",
+							"dataSource": "SN3_GAFE_Alu_Niveles",
+							"width": 201,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#F3F6FA",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título4",
+								"text": "Nivel",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Columna5",
+							"dataSource": "SN3_GAFE_Alu_Mail",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "checkbox",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#F3F6FA",
+							"textAlign": "center",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Columna5.4dm",
+							"header": {
+								"name": "encabezadoMail",
+								"text": "Mail",
+								"dataSource": "vHeaderMail",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Columna6",
+							"dataSource": "SN3_GAFE_Alu_Drive",
+							"width": 195,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "checkbox",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#F3F6FA",
+							"textAlign": "center",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Columna6.4dm",
+							"header": {
+								"name": "encabezadoDrive",
+								"text": "Drive",
+								"dataSource": "vHeaderDrive",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"Casilla de selección3": {
+					"type": "checkbox",
+					"top": 215,
+					"left": 138,
+					"width": 164,
+					"height": 17,
+					"dataSource": "cb_GAFE_Prof",
+					"text": "Profesores",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Casilla de selección3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección4": {
+					"type": "checkbox",
+					"top": 188,
+					"left": 138,
+					"width": 164,
+					"height": 17,
+					"dataSource": "cb_GAFE_RelFam",
+					"text": "Relaciones Familiares",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Casilla de selección4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección5": {
+					"type": "checkbox",
+					"top": 242,
+					"left": 138,
+					"width": 164,
+					"height": 17,
+					"dataSource": "cb_GAFE_Alu",
+					"text": "Alumnos",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Casilla de selección5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"appsRelFam3": {
+					"type": "checkbox",
+					"top": 189,
+					"left": 322,
+					"width": 119,
+					"height": 16,
+					"dataSource": "cb_GAFE_RelFam_Mail",
+					"text": "Mail",
+					"fontFamily": "Arial",
+					"fontSize": 11,
+					"method": "ObjectMethods/appsRelFam3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"appsRelFam4": {
+					"type": "checkbox",
+					"top": 189,
+					"left": 461,
+					"width": 119,
+					"height": 16,
+					"dataSource": "cb_GAFE_RelFam_Drive",
+					"text": "Drive",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/appsRelFam4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"appsProf3": {
+					"type": "checkbox",
+					"top": 215,
+					"left": 322,
+					"width": 119,
+					"height": 16,
+					"dataSource": "cb_GAFE_Prof_Mail",
+					"text": "Mail",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/appsProf3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"appsProf4": {
+					"type": "checkbox",
+					"top": 215,
+					"left": 461,
+					"width": 119,
+					"height": 16,
+					"dataSource": "cb_GAFE_Prof_Drive",
+					"text": "Drive",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/appsProf4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 501,
+					"left": 609,
+					"width": 90,
+					"height": 20,
+					"dataSource": "bEnviar",
+					"text": "Enviar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"appsRelFam5": {
+					"type": "checkbox",
+					"top": 174,
+					"left": 779,
+					"width": 119,
+					"height": 16,
+					"dataSource": "cb_GAFE_RelFam_Cal",
+					"text": "Calendar",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"method": "ObjectMethods/appsRelFam5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"appsProf5": {
+					"type": "checkbox",
+					"top": 223,
+					"left": 779,
+					"width": 119,
+					"height": 16,
+					"dataSource": "cb_GAFE_Prof_Cal",
+					"text": "Calendar",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"method": "ObjectMethods/appsProf5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Lista Emergente/Desplegable5": {
+					"type": "dropdown",
+					"top": 104,
+					"left": 315,
+					"width": 384,
+					"height": 18,
+					"dataSource": "SN3_LoginTypeAluGAFE",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Lista Emergente%2FDesplegable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"usuarios7": {
+					"type": "text",
+					"top": 134,
+					"left": 23,
+					"width": 321,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Para el nombre de usuario de profesores utilizar:"
+				},
+				"Lista Emergente/Desplegable6": {
+					"type": "dropdown",
+					"top": 131,
+					"left": 315,
+					"width": 384,
+					"height": 18,
+					"dataSource": "SN3_LoginTypeProfGAFE",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Lista Emergente%2FDesplegable6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"usuarios8": {
+					"type": "text",
+					"top": 107,
+					"left": 23,
+					"width": 321,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Para el nombre de usuario de relaciones familiares utilizar:"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 58,
+					"left": 13,
+					"width": 113,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Dominio del colegio:"
+				},
+				"Variable": {
+					"type": "input",
+					"top": 58,
+					"left": 123,
+					"width": 590,
+					"height": 14,
+					"dataSource": "vt_GAFEDominio",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

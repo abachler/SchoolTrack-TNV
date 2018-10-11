@@ -1,0 +1,1 @@
+ACTcfgbol_OpcionesConfInicialDT ("CargaPropiedades")

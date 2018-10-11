@@ -1,0 +1,677 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Botón1",
+	"rightMargin": -13,
+	"bottomMargin": -13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 438,
+					"left": 200,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 381,
+					"left": 16,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Campo792": {
+					"type": "input",
+					"top": 155,
+					"left": 156,
+					"width": 205,
+					"height": 11,
+					"dataSource": "vsACT_CtaIntereses",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"Texto2776": {
+					"type": "text",
+					"top": 155,
+					"left": 13,
+					"width": 136,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Código plan de cuentas"
+				},
+				"Campo1": {
+					"type": "input",
+					"top": 187,
+					"left": 156,
+					"width": 205,
+					"height": 11,
+					"dataSource": "vsACT_CentroIntereses",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 187,
+					"left": 13,
+					"width": 136,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Código centro de costos"
+				},
+				"Imagen3": {
+					"type": "picture",
+					"top": 153,
+					"left": 363,
+					"width": 11,
+					"height": 14
+				},
+				"Imagen4": {
+					"type": "picture",
+					"top": 187,
+					"left": 363,
+					"width": 11,
+					"height": 14
+				},
+				"bCuentas": {
+					"type": "button",
+					"top": 155,
+					"left": 362,
+					"width": 13,
+					"height": 10,
+					"dataSource": "bCuentas",
+					"display": false,
+					"method": "ObjectMethods/bCuentas.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bCentros": {
+					"type": "button",
+					"top": 188,
+					"left": 362,
+					"width": 13,
+					"height": 10,
+					"dataSource": "bCentros",
+					"display": false,
+					"method": "ObjectMethods/bCentros.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Campo5": {
+					"type": "input",
+					"top": 223,
+					"left": 156,
+					"width": 205,
+					"height": 11,
+					"dataSource": "vsACT_CCtaIntereses",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 223,
+					"left": 13,
+					"width": 136,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Código plan de cuentas"
+				},
+				"Campo7": {
+					"type": "input",
+					"top": 255,
+					"left": 156,
+					"width": 205,
+					"height": 11,
+					"dataSource": "vsACT_CCentroIntereses",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 255,
+					"left": 13,
+					"width": 136,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Código centro de costos"
+				},
+				"Imagen5": {
+					"type": "picture",
+					"top": 221,
+					"left": 363,
+					"width": 11,
+					"height": 14
+				},
+				"Imagen6": {
+					"type": "picture",
+					"top": 255,
+					"left": 363,
+					"width": 11,
+					"height": 14
+				},
+				"bCuentas1": {
+					"type": "button",
+					"top": 223,
+					"left": 362,
+					"width": 13,
+					"height": 10,
+					"dataSource": "bCuentas",
+					"display": false,
+					"method": "ObjectMethods/bCuentas1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bCentros1": {
+					"type": "button",
+					"top": 256,
+					"left": 362,
+					"width": 13,
+					"height": 10,
+					"dataSource": "bCentros",
+					"display": false,
+					"method": "ObjectMethods/bCentros1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 142,
+					"left": 13,
+					"width": 146,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Cuenta en contabilidad"
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 210,
+					"left": 13,
+					"width": 170,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Contra cuenta en contabilidad"
+				},
+				"Campo10": {
+					"type": "input",
+					"top": 171,
+					"left": 156,
+					"width": 205,
+					"height": 11,
+					"dataSource": "vsACT_CodIntereses",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"Campo12": {
+					"type": "input",
+					"top": 239,
+					"left": 156,
+					"width": 205,
+					"height": 11,
+					"dataSource": "vsACT_CCodIntereses",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 171,
+					"left": 13,
+					"width": 134,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Código auxiliar"
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 239,
+					"left": 13,
+					"width": 134,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Código auxiliar"
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 348,
+					"height": 22,
+					"styleSheet": "XS_DialogsTitles",
+					"text": "Configuración de Intereses"
+				},
+				"Texto9": {
+					"type": "text",
+					"top": 56,
+					"left": 13,
+					"width": 125,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Glosa"
+				},
+				"Texto10": {
+					"type": "text",
+					"top": 76,
+					"left": 13,
+					"width": 125,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Glosa de Impresión"
+				},
+				"Campo2": {
+					"type": "input",
+					"top": 56,
+					"left": 107,
+					"width": 285,
+					"height": 11,
+					"dataSource": "vtACT_GlosaIntereses",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Campo2.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"Campo3": {
+					"type": "input",
+					"top": 76,
+					"left": 107,
+					"width": 285,
+					"height": 11,
+					"dataSource": "vtACT_GlosaImpIntereses",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 334,
+					"left": 222,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Botón1",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 334,
+					"left": 312,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Botón1",
+					"action": "accept",
+					"text": "Grabar",
+					"styleSheet": "XS_DialogObjects",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón de opción1": {
+					"type": "radio",
+					"top": 295,
+					"left": 13,
+					"width": 195,
+					"height": 13,
+					"dataSource": "b1",
+					"text": "En el mismo aviso del cargo que lo genera",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón de opción2": {
+					"type": "radio",
+					"top": 310,
+					"left": 13,
+					"width": 190,
+					"height": 13,
+					"dataSource": "b2",
+					"text": "En el aviso siguiente con saldo por pagar",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón de opción3": {
+					"type": "radio",
+					"top": 310,
+					"left": 215,
+					"width": 182,
+					"height": 13,
+					"dataSource": "b3",
+					"text": "En el último aviso con saldo por pagar",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón de opción4": {
+					"type": "radio",
+					"top": 295,
+					"left": 215,
+					"width": 123,
+					"height": 13,
+					"dataSource": "b4",
+					"text": "En un aviso nuevo",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto11": {
+					"type": "text",
+					"top": 282,
+					"left": 13,
+					"width": 200,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Ubicación de los intereses generados"
+				},
+				"Casilla de selección1": {
+					"type": "checkbox",
+					"top": 96,
+					"left": 107,
+					"width": 82,
+					"height": 16,
+					"dataSource": "cbACT_AfectoIVAIntereses",
+					"text": "Afecto a IVA",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección2": {
+					"type": "checkbox",
+					"top": 96,
+					"left": 207,
+					"width": 182,
+					"height": 16,
+					"dataSource": "cbACT_NoIncluirDocTrib",
+					"text": "No incluir en documentos tributarios",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección3": {
+					"type": "checkbox",
+					"top": 116,
+					"left": 13,
+					"width": 192,
+					"height": 16,
+					"dataSource": "cbACT_AgruparenAC",
+					"text": "Agrupar en avisos de cobranza",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección4": {
+					"type": "checkbox",
+					"top": 116,
+					"left": 207,
+					"width": 182,
+					"height": 16,
+					"dataSource": "cbACT_AgruparenDT",
+					"text": "Agrupar en documentos tributarios",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

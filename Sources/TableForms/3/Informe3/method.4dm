@@ -1,0 +1,53 @@
+If (Form event:C388=On Printing Detail:K2:18)
+	$err:=PL_SetArraysNam (xPL_PrblDis;1;6;"aPD";"aPD1";"aPD2";"aPD3";"aPD4";"aPD5")
+	PL_SetWidths (xPL_PrblDis;1;6;200;50;50;70;70;110)
+	PL_SetHdrOpts (xPL_PrblDis;2)
+	PL_SetHeight (xPL_PrblDis;1;1;0;0)
+	PL_SetHdrStyle (xPL_PrblDis;0;"Tahoma";9;1)
+	PL_SetStyle (xPL_PrblDis;0;"Tahoma";9;0)
+	PL_SetFormat (xPL_PrblDis;1;"";1;2)
+	PL_SetFormat (xPL_PrblDis;2;"### ###";2;2)
+	PL_SetFormat (xPL_PrblDis;3;"### ###";2;2)
+	PL_SetFormat (xPL_PrblDis;4;"### ###";2;2)
+	PL_SetFormat (xPL_PrblDis;5;"### ###";2;2)
+	PL_SetFormat (xPL_PrblDis;6;"";1;2)
+	PL_SetHeaders (xPL_PrblDis;1;6;"Alumno";"Anot. +";"Anot. -";"Castigos";"Suspensiones";"Condicionalidad")
+	PL_SetDividers (xPL_PrblDis;0.5;"Black";"Black";0;0.5;"Black";"Black";0)
+	PL_SetFrame (xPL_PrblDis;0.5;"Black";"Black";0;0.5;"Black";"Black";0)
+	PL_SetSort (xPL_PrblDis;2)
+	ARRAY INTEGER:C220(aCellSet;2;0)
+	For ($i;1;Size of array:C274(aPD))
+		If (aPD2{$i}>=iNegAnot)
+			PL_SetCellStyle (xPL_PrblDis;3;$i;3;$i;aCellSet;1;"Tahoma";9)
+		End if 
+		If (aPD3{$i}>=iDet)
+			PL_SetCellStyle (xPL_PrblDis;4;$i;4;$i;aCellSet;1;"Tahoma";9)
+		End if 
+		If (aPD4{$i}>=iSusp)
+			PL_SetCellStyle (xPL_PrblDis;5;$i;5;$i;aCellSet;1;"Tahoma";9)
+		End if 
+		If (aPD5{$i}#"")
+			PL_SetCellStyle (xPL_PrblDis;6;$i;6;$i;aCellSet;1;"Tahoma";9)
+		End if 
+	End for 
+	
+	$err:=PL_SetArraysNam (xPL_DestDis;1;6;"aDD";"aDD1";"aDD2";"aDD3";"aDD4";"aDD5")
+	PL_SetWidths (xPL_DestDis;1;6;200;50;50;70;70;110)
+	PL_SetHdrOpts (xPL_DestDis;2)
+	PL_SetHeight (xPL_DestDis;1;1;0;0)
+	PL_SetHdrStyle (xPL_DestDis;0;"Tahoma";9;1)
+	PL_SetStyle (xPL_DestDis;0;"Tahoma";9;0)
+	PL_SetStyle (xPL_DestDis;2;"Tahoma";9;1)
+	PL_SetFormat (xPL_DestDis;1;"";1;2)
+	PL_SetFormat (xPL_DestDis;2;"### ###";2;2)
+	PL_SetFormat (xPL_DestDis;3;"### ###";2;2)
+	PL_SetFormat (xPL_DestDis;4;"### ###";2;2)
+	PL_SetFormat (xPL_DestDis;5;"### ###";2;2)
+	PL_SetFormat (xPL_DestDis;6;"";1;2)
+	PL_SetHeaders (xPL_DestDis;1;6;"Alumno";"Anot. +";"Anot. -";"Castigos";"Suspensiones";"Condicionalidad")
+	PL_SetDividers (xPL_DestDis;0.5;"Black";"Black";0;0.5;"Black";"Black";0)
+	PL_SetFrame (xPL_DestDis;0.5;"Black";"Black";0;0.5;"Black";"Black";0)
+	PL_SetSort (xPL_DestDis;2)
+	
+End if 
+

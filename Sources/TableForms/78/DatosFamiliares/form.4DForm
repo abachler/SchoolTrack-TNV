@@ -1,0 +1,274 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"width": 350,
+	"height": 470,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Área de grupo1": {
+					"type": "groupBox",
+					"top": 9,
+					"left": 9,
+					"width": 331,
+					"height": 63,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Datos Familiares"
+				},
+				"Área de grupo3": {
+					"type": "groupBox",
+					"top": 77,
+					"left": 171,
+					"width": 168,
+					"height": 177,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Valores"
+				},
+				"Área de grupo2": {
+					"type": "groupBox",
+					"top": 77,
+					"left": 9,
+					"width": 161,
+					"height": 178,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Intereses"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 27,
+					"left": 17,
+					"width": 43,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Familia:"
+				},
+				"Campo1": {
+					"type": "input",
+					"top": 27,
+					"left": 101,
+					"width": 131,
+					"height": 12,
+					"dataSource": "[Familia:78]Nombre_de_la_familia:3",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Lista jerárquica1": {
+					"type": "list",
+					"top": 90,
+					"left": 20,
+					"width": 140,
+					"height": 156,
+					"dataSource": "hl_intereses",
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"dragging": "custom",
+					"dropping": "custom",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Lista jerárquica1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onDrop",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 47,
+					"left": 17,
+					"width": 79,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Situación Familiar:"
+				},
+				"Campo2": {
+					"type": "input",
+					"top": 47,
+					"left": 101,
+					"width": 131,
+					"height": 12,
+					"dataSource": "[Familia:78]Sit_Familiar:11",
+					"styleSheet": "XS_FormObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Lista jerárquica2": {
+					"type": "list",
+					"top": 90,
+					"left": 180,
+					"width": 140,
+					"height": 156,
+					"dataSource": "hl_valores",
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"dragging": "custom",
+					"dropping": "custom",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Lista jerárquica2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onDrop",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Área de grupo4": {
+					"type": "groupBox",
+					"top": 257,
+					"left": 171,
+					"width": 167,
+					"height": 176,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Preferencias"
+				},
+				"Área de grupo5": {
+					"type": "groupBox",
+					"top": 257,
+					"left": 9,
+					"width": 161,
+					"height": 178,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Hobbies"
+				},
+				"Lista jerárquica5": {
+					"type": "list",
+					"top": 270,
+					"left": 20,
+					"width": 140,
+					"height": 156,
+					"dataSource": "hl_hobbies",
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"dragging": "custom",
+					"dropping": "custom",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Lista jerárquica5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onDrop",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Lista jerárquica6": {
+					"type": "list",
+					"top": 270,
+					"left": 180,
+					"width": 140,
+					"height": 156,
+					"dataSource": "hl_preferencias",
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"dragging": "custom",
+					"dropping": "custom",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Lista jerárquica6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onDrop",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 447,
+					"left": 267,
+					"width": 65,
+					"height": 12,
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Cerrar"
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 444,
+					"left": 280,
+					"width": 54,
+					"height": 17,
+					"dataSource": "Botón invisible1",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

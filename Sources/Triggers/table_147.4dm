@@ -1,0 +1,1 @@
+TGR_xxACT_MonedaParidad 

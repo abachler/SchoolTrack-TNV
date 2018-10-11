@@ -1,0 +1,136 @@
+﻿{
+	"windowTitle": "Bienvenida a SchoolTrack",
+	"width": 359,
+	"height": 181,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 327,
+					"left": 184,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 270,
+					"left": 0,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectángulo4": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 359,
+					"height": 181,
+					"fill": "#EEEEEE",
+					"stroke": "#EEEEEE"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 11,
+					"left": 10,
+					"width": 330,
+					"height": 22,
+					"styleSheet": "XS_DialogsTitles",
+					"text": "Nueva base de datos"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 47,
+					"left": 10,
+					"width": 348,
+					"height": 78,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Esta es una base de datos nueva (no contiene ningún registro).\rPuede iniciar una base de nueva o bien importar datos exportados desde otra base de datos.\r\r¿Que desea usted hacer?"
+				},
+				"bImport1": {
+					"type": "button",
+					"top": 128,
+					"left": 160,
+					"width": 186,
+					"height": 20,
+					"dataSource": "bImport",
+					"action": "accept",
+					"fontSize": 11,
+					"text": "Importar datos...",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bCancel1": {
+					"type": "button",
+					"top": 152,
+					"left": 160,
+					"width": 186,
+					"height": 20,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"fontSize": 11,
+					"text": "Iniciar nueva base de datos",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

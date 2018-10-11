@@ -1,0 +1,1236 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Forms",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "bOK",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"hl_PaginasOpciones": {
+					"type": "tab",
+					"top": 19,
+					"left": 6,
+					"width": 588,
+					"height": 26,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "hl_PaginasOpciones",
+					"dataSourceTypeHint": "arrayText",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/hl_PaginasOpciones.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"P0_IdMatriz_fld": {
+					"type": "input",
+					"top": 8,
+					"left": 520,
+					"width": 73,
+					"height": 11,
+					"dataSource": "[MPA_AsignaturasMatrices:189]ID_Matriz:1",
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"RadioButtonsObjetos_Ejes": {
+					"type": "radio",
+					"top": 70,
+					"left": 29,
+					"width": 144,
+					"height": 16,
+					"dataSource": "r1_Ejes",
+					"text": "Ejes de aprendizaje",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/RadioButtonsObjetos_Ejes.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RadioButtonsObjetos_Dimensiones": {
+					"type": "radio",
+					"top": 70,
+					"left": 213,
+					"width": 184,
+					"height": 16,
+					"dataSource": "r2_Dimensiones",
+					"text": "Dimensiones de aprendizajes",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/RadioButtonsObjetos_Dimensiones.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RadioButtonsObjetos_Competencia": {
+					"type": "radio",
+					"top": 70,
+					"left": 437,
+					"width": 112,
+					"height": 16,
+					"dataSource": "r3_Competencias",
+					"text": "Competencias",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/RadioButtonsObjetos_Competencia.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Campo1": {
+					"type": "input",
+					"top": 48,
+					"left": 13,
+					"width": 388,
+					"height": 17,
+					"dataSource": "[MPA_AsignaturasMatrices:189]ResultadoFinalCalculado:7",
+					"fill": "transparent",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"textFormat": "Resultados finales (períodos y anual) calculados sobre la base de:",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Campo1.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"lb_Objetos6": {
+					"type": "line",
+					"top": 133,
+					"left": -14,
+					"width": 611,
+					"stroke": "#AAAAAA"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 668,
+					"left": 6,
+					"width": 533,
+					"height": 33,
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"text": "Si desea asignar ponderaciones a cada uno de los ejes de aprenizajes para calcular los resultados periódicos y finales de la asignatura, introdúzcalos en la columna ponderación. En caso contrario deje las celdas de la columna en 0"
+				},
+				"bOK": {
+					"type": "button",
+					"top": 495,
+					"left": 505,
+					"width": 80,
+					"height": 22,
+					"dataSource": "bOK",
+					"action": "accept",
+					"text": "Aceptar",
+					"styleSheet": "Plain - 13",
+					"method": "ObjectMethods/bOK.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 495,
+					"left": 415,
+					"width": 80,
+					"height": 22,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"text": "Cancelar",
+					"styleSheet": "Plain - 13",
+					"events": [
+						"onClick"
+					]
+				},
+				"cfg_ponderacionUnica": {
+					"type": "radio",
+					"top": 141,
+					"left": 102,
+					"width": 168,
+					"height": 16,
+					"dataSource": "p1_ponderacionConstante",
+					"text": "Igual en todos los periodos",
+					"styleSheet": "Plain - 12",
+					"stroke": "#000000",
+					"method": "ObjectMethods/cfg_ponderacionUnica.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cfg_ponderacionPeriodo": {
+					"type": "radio",
+					"top": 141,
+					"left": 295,
+					"width": 102,
+					"height": 16,
+					"dataSource": "p2_ponderacionVariable",
+					"text": "Según período",
+					"styleSheet": "Plain - 12",
+					"stroke": "#000000",
+					"method": "ObjectMethods/cfg_ponderacionPeriodo.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 144,
+					"left": 13,
+					"width": 79,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Ponderaciones:"
+				},
+				"bPopupPeriodos": {
+					"type": "button",
+					"top": 141,
+					"left": 447,
+					"width": 138,
+					"height": 20,
+					"dataSource": "bPopupPeriodos",
+					"styleSheet": "Plain - 12",
+					"text": "Botón",
+					"popupPlacement": "linked",
+					"style": "roundedBevel",
+					"method": "ObjectMethods/bPopupPeriodos.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"lb_ObjetosFinales": {
+					"type": "listbox",
+					"top": 181,
+					"left": 13,
+					"width": 572,
+					"height": 305,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"listboxType": "currentSelection",
+					"dataSource": "lb_ObjetosFinales",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "2em",
+					"table": 204,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"method": "ObjectMethods/lb_ObjetosFinales.4dm",
+					"events": [
+						"onDoubleClick",
+						"onLosingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onBeforeDataEntry"
+					],
+					"columns": [
+						{
+							"name": "enunciados",
+							"width": 452,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"wordwrap": "normal",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"verticalAlign": "top",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "HDR_objetos",
+								"text": "Competencias",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "ponderacion",
+							"dataSourceTypeHint": "number",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"numberFormat": "|Pct_2Dec",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "HDR_Ponderacion1",
+								"text": "Ponderaciones",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"RadioButtonsObjetos_Conversion2": {
+					"type": "input",
+					"top": 100,
+					"left": 29,
+					"width": 551,
+					"height": 18,
+					"dataSource": "[MPA_AsignaturasMatrices:189]Convertir_a_Notas:9",
+					"fill": "transparent",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"textFormat": "Utilizar resultados calculados de la evaluación de aprendizajes como calificaciones tradicionales",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/RadioButtonsObjetos_Conversion2.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"e1_Dimensiones": {
+					"type": "radio",
+					"top": 107,
+					"left": 35,
+					"width": 104,
+					"height": 16,
+					"dataSource": "e1_Dimensiones",
+					"text": "Dimensiones",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/e1_Dimensiones.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"e2_Competencias": {
+					"type": "radio",
+					"top": 107,
+					"left": 194,
+					"width": 112,
+					"height": 16,
+					"dataSource": "e2_Competencias",
+					"text": "Competencias",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/e2_Competencias.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"lb_Objetos7": {
+					"type": "line",
+					"top": 133,
+					"left": -14,
+					"width": 611,
+					"stroke": "#AAAAAA"
+				},
+				"j2_Evaluados": {
+					"type": "radio",
+					"top": 56,
+					"left": 389,
+					"width": 194,
+					"height": 16,
+					"dataSource": "j2_Evaluados",
+					"text": "Evaluados independientemente",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/j2_Evaluados.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"j1_Agrupacion": {
+					"type": "radio",
+					"top": 56,
+					"left": 13,
+					"width": 354,
+					"height": 16,
+					"dataSource": "j1_Agrupacion",
+					"text": "Utilizados sólo para agrupar Dimensiones y Competencias",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/j1_Agrupacion.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"j3_Calculados": {
+					"type": "radio",
+					"top": 82,
+					"left": 13,
+					"width": 277,
+					"height": 16,
+					"dataSource": "j3_Calculados",
+					"text": "Calculados sobre la base de evaluaciones de:",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/j3_Calculados.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bOK1": {
+					"type": "button",
+					"top": 495,
+					"left": 505,
+					"width": 80,
+					"height": 22,
+					"dataSource": "bOK",
+					"action": "accept",
+					"text": "Aceptar",
+					"styleSheet": "Plain - 13",
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel1": {
+					"type": "button",
+					"top": 495,
+					"left": 415,
+					"width": 80,
+					"height": 22,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"text": "Cancelar",
+					"styleSheet": "Plain - 13",
+					"events": [
+						"onClick"
+					]
+				},
+				"cfg_ponderacionUnica1": {
+					"type": "radio",
+					"top": 144,
+					"left": 111,
+					"width": 181,
+					"height": 16,
+					"dataSource": "p1_ponderacionConstante",
+					"text": "Igual en todos los periodos",
+					"styleSheet": "Plain - 12",
+					"stroke": "#000000",
+					"method": "ObjectMethods/cfg_ponderacionUnica1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cfg_ponderacionPeriodo1": {
+					"type": "radio",
+					"top": 144,
+					"left": 309,
+					"width": 109,
+					"height": 16,
+					"dataSource": "p2_ponderacionVariable",
+					"text": "Según período",
+					"styleSheet": "Plain - 12",
+					"stroke": "#000000",
+					"method": "ObjectMethods/cfg_ponderacionPeriodo1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 147,
+					"left": 13,
+					"width": 97,
+					"height": 15,
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"text": "Ponderaciones:"
+				},
+				"bPopupPeriodos1": {
+					"type": "button",
+					"top": 144,
+					"left": 447,
+					"width": 138,
+					"height": 20,
+					"dataSource": "bPopupPeriodos_Ejes",
+					"styleSheet": "Plain - 12",
+					"text": "Botón",
+					"iconFrames": 4,
+					"popupPlacement": "linked",
+					"style": "roundedBevel",
+					"method": "ObjectMethods/bPopupPeriodos1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"lb_Ejes": {
+					"type": "listbox",
+					"top": 180,
+					"left": 13,
+					"width": 572,
+					"height": 97,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"listboxType": "namedSelection",
+					"dataSource": "lb_Ejes",
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"selectionName": "Ejes",
+					"highlightSet": "EjeSeleccionado",
+					"table": 1,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"method": "ObjectMethods/lb_Ejes.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "Columna1",
+							"dataSource": "[MPA_DefinicionEjes:185]Nombre:3",
+							"width": 557,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "HDR_Ejes",
+								"text": "Título1",
+								"dataSource": "HDR_Ejes",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"lb_ObjetosEje": {
+					"type": "listbox",
+					"top": 287,
+					"left": 13,
+					"width": 572,
+					"height": 198,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"listboxType": "currentSelection",
+					"dataSource": "lb_ObjetosEje",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "2em",
+					"table": 204,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"method": "ObjectMethods/lb_ObjetosEje.4dm",
+					"events": [
+						"onDoubleClick",
+						"onLosingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onBeforeDataEntry"
+					],
+					"columns": [
+						{
+							"name": "enunciados1",
+							"width": 452,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"wordwrap": "normal",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"verticalAlign": "top",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "HDR_objetos1",
+								"text": "Competencias",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "ponderacion1",
+							"dataSourceTypeHint": "number",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"numberFormat": "|Pct_2Dec",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "HDR_Ponderacion2",
+								"text": "Ponderaciones",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"lb_Objetos5": {
+					"type": "line",
+					"top": 133,
+					"left": -13,
+					"width": 610,
+					"stroke": "#AAAAAA"
+				},
+				"D2_Evaluados": {
+					"type": "radio",
+					"top": 58,
+					"left": 351,
+					"width": 194,
+					"height": 16,
+					"dataSource": "D2_Evaluados",
+					"text": "Evaluadas independientemente",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/D2_Evaluados.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"D1_Agrupacion": {
+					"type": "radio",
+					"top": 58,
+					"left": 13,
+					"width": 314,
+					"height": 16,
+					"dataSource": "D1_Agrupacion",
+					"text": "Utilizadas sólo para agrupar Competencias",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/D1_Agrupacion.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"D3_Calculados": {
+					"type": "radio",
+					"top": 84,
+					"left": 13,
+					"width": 417,
+					"height": 16,
+					"dataSource": "D3_Calculados",
+					"text": "Calculadas sobre la base de evaluaciones de Competencias",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/D3_Calculados.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bOK2": {
+					"type": "button",
+					"top": 495,
+					"left": 505,
+					"width": 80,
+					"height": 22,
+					"dataSource": "bOK",
+					"action": "accept",
+					"text": "Aceptar",
+					"styleSheet": "Plain - 13",
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel2": {
+					"type": "button",
+					"top": 495,
+					"left": 415,
+					"width": 80,
+					"height": 22,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"text": "Cancelar",
+					"styleSheet": "Plain - 13",
+					"events": [
+						"onClick"
+					]
+				},
+				"cfg_ponderacionUnica2": {
+					"type": "radio",
+					"top": 145,
+					"left": 102,
+					"width": 188,
+					"height": 16,
+					"dataSource": "p1_ponderacionConstante",
+					"text": "Igual en todos los periodos",
+					"styleSheet": "Plain - 12",
+					"stroke": "#000000",
+					"method": "ObjectMethods/cfg_ponderacionUnica2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cfg_ponderacionPeriodo2": {
+					"type": "radio",
+					"top": 145,
+					"left": 310,
+					"width": 122,
+					"height": 16,
+					"dataSource": "p2_ponderacionVariable",
+					"text": "Según período",
+					"styleSheet": "Plain - 12",
+					"stroke": "#000000",
+					"method": "ObjectMethods/cfg_ponderacionPeriodo2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 147,
+					"left": 13,
+					"width": 88,
+					"height": 15,
+					"stroke": "#000000",
+					"styleSheet": "Plain - 12",
+					"text": "Ponderaciones:"
+				},
+				"bPopupPeriodos2": {
+					"type": "button",
+					"top": 144,
+					"left": 448,
+					"width": 138,
+					"height": 20,
+					"dataSource": "bPopupPeriodos_Dimensiones",
+					"styleSheet": "Plain - 12",
+					"text": "Botón",
+					"iconFrames": 4,
+					"popupPlacement": "linked",
+					"style": "roundedBevel",
+					"method": "ObjectMethods/bPopupPeriodos2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"lb_Dimensiones": {
+					"type": "listbox",
+					"top": 180,
+					"left": 13,
+					"width": 572,
+					"height": 97,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"listboxType": "namedSelection",
+					"dataSource": "lb_Dimensiones",
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"selectionName": "Dimensiones",
+					"highlightSet": "DimensionSeleccionada",
+					"table": 1,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"method": "ObjectMethods/lb_Dimensiones.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "Columna2",
+							"dataSource": "[MPA_DefinicionDimensiones:188]Dimensión:4",
+							"width": 557,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "HDR_Dimensiones",
+								"text": "Título1",
+								"dataSource": "HDR_Dimensiones",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"lb_ObjetosDimension": {
+					"type": "listbox",
+					"top": 287,
+					"left": 13,
+					"width": 572,
+					"height": 198,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"listboxType": "currentSelection",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "2em",
+					"table": 204,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"method": "ObjectMethods/lb_ObjetosDimension.4dm",
+					"events": [
+						"onDoubleClick",
+						"onLosingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onBeforeDataEntry"
+					],
+					"columns": [
+						{
+							"name": "enunciados2",
+							"width": 452,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"wordwrap": "normal",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"verticalAlign": "top",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "HDR_objetos2",
+								"text": "Competencias",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "ponderacion2",
+							"dataSourceTypeHint": "number",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"numberFormat": "|Pct_2Dec",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "HDR_Ponderacion3",
+								"text": "Ponderaciones",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"RadioButtonsObjetos_Ejes1": {
+					"type": "radio",
+					"top": 79,
+					"left": 29,
+					"width": 144,
+					"height": 16,
+					"dataSource": "r1_Ejes",
+					"text": "Ejes de aprendizaje",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/RadioButtonsObjetos_Ejes1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RadioButtonsObjetos_Dimensione1": {
+					"type": "radio",
+					"top": 79,
+					"left": 213,
+					"width": 204,
+					"height": 16,
+					"dataSource": "r2_Dimensiones",
+					"text": "Dimensiones de aprendizajes",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/RadioButtonsObjetos_Dimensione1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"RadioButtonsObjetos_Competenci1": {
+					"type": "radio",
+					"top": 79,
+					"left": 457,
+					"width": 112,
+					"height": 16,
+					"dataSource": "r3_Competencias",
+					"text": "Competencias",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/RadioButtonsObjetos_Competenci1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Campo2": {
+					"type": "input",
+					"top": 52,
+					"left": 13,
+					"width": 388,
+					"height": 17,
+					"dataSource": "[MPA_AsignaturasMatrices:189]ResultadoFinalCalculado:7",
+					"fill": "transparent",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "Resultados finales (períodos y anual) calculados sobre la base de:",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Campo2.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"RadioButtonsObjetos_Conversion1": {
+					"type": "input",
+					"top": 100,
+					"left": 29,
+					"width": 505,
+					"height": 17,
+					"dataSource": "[MPA_AsignaturasMatrices:189]Convertir_a_Notas:9",
+					"fill": "transparent",
+					"styleSheet": "Plain - 12",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "Utilizar resultado final de la evaluación de aprendizajes como nota oficial",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/RadioButtonsObjetos_Conversion1.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"bOK3": {
+					"type": "button",
+					"top": 133,
+					"left": 506,
+					"width": 80,
+					"height": 22,
+					"dataSource": "bOK",
+					"action": "accept",
+					"text": "Aceptar",
+					"styleSheet": "Plain - 13",
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel3": {
+					"type": "button",
+					"top": 133,
+					"left": 416,
+					"width": 80,
+					"height": 22,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"text": "Cancelar",
+					"styleSheet": "Plain - 13",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"bOK4": {
+					"type": "button",
+					"top": 133,
+					"left": 506,
+					"width": 80,
+					"height": 22,
+					"dataSource": "bOK",
+					"action": "accept",
+					"text": "Aceptar",
+					"styleSheet": "Plain - 13",
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel4": {
+					"type": "button",
+					"top": 133,
+					"left": 416,
+					"width": 80,
+					"height": 22,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"text": "Cancelar",
+					"styleSheet": "Plain - 13",
+					"events": [
+						"onClick"
+					]
+				},
+				"e1_Dimensiones1": {
+					"type": "radio",
+					"top": 107,
+					"left": 35,
+					"width": 104,
+					"height": 16,
+					"dataSource": "e1_Dimensiones",
+					"text": "Dimensiones",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/e1_Dimensiones1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"e2_Competencias1": {
+					"type": "radio",
+					"top": 107,
+					"left": 174,
+					"width": 112,
+					"height": 16,
+					"dataSource": "e2_Competencias",
+					"text": "Competencias",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/e2_Competencias1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"j2_Evaluados1": {
+					"type": "radio",
+					"top": 56,
+					"left": 381,
+					"width": 214,
+					"height": 16,
+					"dataSource": "j2_Evaluados",
+					"text": "Evaluados independientemente",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/j2_Evaluados1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"j1_Agrupacion1": {
+					"type": "radio",
+					"top": 56,
+					"left": 13,
+					"width": 354,
+					"height": 16,
+					"dataSource": "j1_Agrupacion",
+					"text": "Utilizados sólo para agrupar Dimensiones y Competencias",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/j1_Agrupacion1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"j3_Calculados1": {
+					"type": "radio",
+					"top": 82,
+					"left": 13,
+					"width": 277,
+					"height": 16,
+					"dataSource": "j3_Calculados",
+					"text": "Calculados sobre la base de evaluaciones de:",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/j3_Calculados1.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"bOK5": {
+					"type": "button",
+					"top": 133,
+					"left": 506,
+					"width": 80,
+					"height": 22,
+					"dataSource": "bOK",
+					"action": "accept",
+					"text": "Aceptar",
+					"styleSheet": "Plain - 13",
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel5": {
+					"type": "button",
+					"top": 133,
+					"left": 416,
+					"width": 80,
+					"height": 22,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"text": "Cancelar",
+					"styleSheet": "Plain - 13",
+					"events": [
+						"onClick"
+					]
+				},
+				"D2_Evaluados2": {
+					"type": "radio",
+					"top": 56,
+					"left": 371,
+					"width": 194,
+					"height": 16,
+					"dataSource": "D2_Evaluados",
+					"text": "Evaluadas independientemente",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/D2_Evaluados2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"D1_Agrupacion2": {
+					"type": "radio",
+					"top": 56,
+					"left": 13,
+					"width": 314,
+					"height": 16,
+					"dataSource": "D1_Agrupacion",
+					"text": "Utilizadas sólo para agrupar Competencias",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/D1_Agrupacion2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"D3_Calculados2": {
+					"type": "radio",
+					"top": 82,
+					"left": 13,
+					"width": 357,
+					"height": 16,
+					"dataSource": "D3_Calculados",
+					"text": "Calculadas sobre la base de evaluaciones de Competencias",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/D3_Calculados2.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

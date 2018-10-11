@@ -1,0 +1,445 @@
+﻿{
+	"inheritedForm": "XS_MASTER_WZDDialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 628,
+	"height": 406,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Texto5": {
+					"type": "text",
+					"top": 10,
+					"left": 164,
+					"width": 391,
+					"height": 44,
+					"stroke": "#FFFFFF",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Procesamiento de Fotografías"
+				},
+				"pages": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 533,
+					"width": 20,
+					"height": 20,
+					"dataSource": "bPrev",
+					"action": "previousPage",
+					"shortcutKey": "[left arrow]",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/pages.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"pages2": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 593,
+					"width": 20,
+					"height": 20,
+					"dataSource": "bNext",
+					"action": "nextPage",
+					"shortcutKey": "[right arrow]",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/pages2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"pages1": {
+					"type": "input",
+					"top": 377,
+					"left": 550,
+					"width": 47,
+					"height": 11,
+					"sizingX": "move",
+					"dataSource": "vt_PageNumber",
+					"fill": "transparent",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto1": {
+					"type": "text",
+					"top": 135,
+					"left": 51,
+					"width": 503,
+					"height": 160,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Este asistente permite procesar los archivos de fotografías de alumnos, padres, familias y profesores (las fotografías son normalmente almacenadas en carpetas que se encuentran en el directorio /Archivos/Fotografías/ que se encuentra junto a la base de datos).\r\rUtilizando este asistente podrá realizar las siguientes operaciones sobre los archivos fotográficos:\r\r\r          - escalar el tamaño de las fotografías\r          - exportar las fotografías a un directorio local\r"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 50,
+					"left": 164,
+					"width": 337,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Introducción"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto10": {
+					"type": "text",
+					"top": 50,
+					"left": 164,
+					"width": 219,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Escala"
+				},
+				"escala2": {
+					"type": "ruler",
+					"top": 185,
+					"left": 176,
+					"width": 345,
+					"height": 27,
+					"dataSource": "vl_Escala",
+					"continuousExecution": false,
+					"showGraduations": true,
+					"labelsPlacement": "bottom",
+					"max": 1000,
+					"graduationStep": 200,
+					"step": 10,
+					"numberFormat": "### ##0%",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/escala2.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"escala1": {
+					"type": "radio",
+					"top": 168,
+					"left": 176,
+					"width": 332,
+					"height": 13,
+					"dataSource": "r1_EscalaRelativa",
+					"text": "Escalar relativamente al tamaño original",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/escala1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"escala3": {
+					"type": "radio",
+					"top": 231,
+					"left": 176,
+					"width": 332,
+					"height": 13,
+					"dataSource": "r2_EscalaFija",
+					"text": "Escalar a un tamaño fijo (puntos)",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/escala3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"escala7": {
+					"type": "input",
+					"top": 266,
+					"left": 270,
+					"width": 61,
+					"height": 13,
+					"dataSource": "vl_Ancho",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"numberFormat": "####",
+					"min": 48,
+					"max": 2048,
+					"method": "ObjectMethods/escala7.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"escala8": {
+					"type": "input",
+					"top": 288,
+					"left": 270,
+					"width": 61,
+					"height": 13,
+					"dataSource": "vl_Alto",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"numberFormat": "####",
+					"min": 48,
+					"max": 2048,
+					"method": "ObjectMethods/escala8.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"escala5": {
+					"type": "radio",
+					"top": 266,
+					"left": 205,
+					"width": 60,
+					"height": 15,
+					"dataSource": "e1_Ancho",
+					"text": "Ancho:",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/escala5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"escala6": {
+					"type": "radio",
+					"top": 288,
+					"left": 205,
+					"width": 60,
+					"height": 15,
+					"dataSource": "e2_Alto",
+					"text": "Alto:",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/escala6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"escala4": {
+					"type": "text",
+					"top": 246,
+					"left": 195,
+					"width": 386,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Seleccione la dimensión principal e indique el tamaño en puntos."
+				},
+				"hl_TablasFotos": {
+					"type": "dropdown",
+					"top": 106,
+					"left": 168,
+					"width": 364,
+					"height": 18,
+					"dataSource": "hl_TablasFotos",
+					"dataSourceTypeHint": "integer",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/hl_TablasFotos.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 89,
+					"left": 169,
+					"width": 358,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Seleccione las fotografías que desea redimensionar"
+				},
+				"escala": {
+					"type": "text",
+					"top": 146,
+					"left": 169,
+					"width": 358,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Establezca la modalidad a utilizar para redimensionar las fotografías"
+				},
+				"escala9": {
+					"type": "radio",
+					"top": 341,
+					"left": 183,
+					"width": 332,
+					"height": 13,
+					"dataSource": "r3_SinCambios",
+					"text": "Sin cambios",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/escala9.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"escala11": {
+					"type": "input",
+					"top": 192,
+					"left": 527,
+					"width": 54,
+					"height": 13,
+					"dataSource": "vl_Escala",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"method": "ObjectMethods/escala11.4dm",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"bc_CopiaLocal": {
+					"type": "checkbox",
+					"top": 120,
+					"left": 168,
+					"width": 363,
+					"height": 16,
+					"dataSource": "bc_CopiaLocal",
+					"text": "Copiar las fotografías a un directorio local después de procesarlas",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/bc_CopiaLocal.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vt_DirectorioLocal": {
+					"type": "input",
+					"top": 145,
+					"left": 190,
+					"width": 414,
+					"height": 26,
+					"dataSource": "vt_DirectorioLocal",
+					"styleSheet": "XS_DialogObjects",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"respaldo": {
+					"type": "checkbox",
+					"top": 246,
+					"left": 168,
+					"width": 363,
+					"height": 16,
+					"dataSource": "bc_Respaldo",
+					"text": "Respaldar las fotografías antes de procesarlas",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"respaldo1": {
+					"type": "text",
+					"top": 265,
+					"left": 189,
+					"width": 415,
+					"height": 26,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Las fotografías serán respaldadas en el directorio /Archivos/Respaldo Fotografías <AñoMesDiaHoraMinutos> que se encuentra junto al archivo de base de datos"
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 335,
+					"left": 464,
+					"width": 140,
+					"height": 18,
+					"dataSource": "bOK",
+					"action": "accept",
+					"text": "Procesar Fotografías",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"aPictFormats1": {
+					"type": "dropdown",
+					"top": 179,
+					"left": 288,
+					"width": 89,
+					"height": 18,
+					"dataSource": "aPictFormats",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/aPictFormats1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto11": {
+					"type": "text",
+					"top": 182,
+					"left": 188,
+					"width": 95,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Almacenar como:"
+				}
+			}
+		}
+	]
+}

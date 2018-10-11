@@ -1,0 +1,339 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 735,
+	"height": 486,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 532,
+					"left": 257,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 527,
+					"left": 95,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				},
+				"ALP_CargosXPagar1": {
+					"type": "plugin",
+					"top": 77,
+					"left": 13,
+					"width": 309,
+					"height": 363,
+					"sizingY": "move",
+					"dataSource": "ALP_CargosXPagar",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/ALP_CargosXPagar1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onPluginArea",
+						"onPrintingDetail"
+					]
+				},
+				"order5": {
+					"type": "pictureButton",
+					"top": 52,
+					"left": 282,
+					"width": 18,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "bSubir",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/order5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"order6": {
+					"type": "pictureButton",
+					"top": 52,
+					"left": 304,
+					"width": 18,
+					"height": 18,
+					"sizingY": "move",
+					"dataSource": "bBajar",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/order6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"order4": {
+					"type": "checkbox",
+					"top": 52,
+					"left": 13,
+					"width": 262,
+					"height": 16,
+					"dataSource": "consideraMesSC",
+					"text": "Ordenar por meses los cargos",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/order4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"MultiRazones1": {
+					"type": "groupBox",
+					"top": 3,
+					"left": 13,
+					"width": 298,
+					"height": 46,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Razón Social"
+				},
+				"MultiRazones0": {
+					"type": "dropdown",
+					"top": 23,
+					"left": 21,
+					"width": 223,
+					"height": 15,
+					"dataSource": "atACTcfg_Razones",
+					"focusable": false,
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/MultiRazones0.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"MultiRazones2": {
+					"type": "checkbox",
+					"top": 23,
+					"left": 254,
+					"width": 51,
+					"height": 13,
+					"dataSource": "cs_todasRazones",
+					"text": "Todas",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/MultiRazones2.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Botón5": {
+					"type": "button",
+					"top": 453,
+					"left": 642,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCont1",
+					"action": "accept",
+					"text": "Continuar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón6": {
+					"type": "button",
+					"top": 453,
+					"left": 549,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Botón2",
+					"action": "cancel",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"ALP_CargosXPagar2": {
+					"type": "plugin",
+					"top": 37,
+					"left": 353,
+					"width": 369,
+					"height": 403,
+					"dataSource": "ALP_CargosXPagarO",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/ALP_CargosXPagar2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onPluginArea",
+						"onPrintingDetail"
+					]
+				},
+				"order7": {
+					"type": "pictureButton",
+					"top": 12,
+					"left": 682,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bSubir2",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/order7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"order8": {
+					"type": "pictureButton",
+					"top": 12,
+					"left": 704,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bBajar2",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/order8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Botón4": {
+					"type": "button",
+					"top": 453,
+					"left": 244,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCont2",
+					"action": "accept",
+					"text": "Continuar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón7": {
+					"type": "button",
+					"top": 453,
+					"left": 151,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Botón2",
+					"action": "cancel",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

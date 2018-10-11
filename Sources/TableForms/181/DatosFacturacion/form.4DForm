@@ -1,0 +1,175 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "btn_cancelar",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDoubleClick",
+		"onLosingFocus",
+		"onGettingFocus",
+		"onDataChange",
+		"onAfterKeystroke",
+		"onAfterEdit"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"rb_actual0": {
+					"type": "radio",
+					"top": 58,
+					"left": 30,
+					"width": 296,
+					"height": 30,
+					"dataSource": "rb_actual0",
+					"text": "Responsable actual (valor por defecto)",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"rb_otro1": {
+					"type": "radio",
+					"top": 78,
+					"left": 30,
+					"width": 116,
+					"height": 30,
+					"dataSource": "rb_otro1",
+					"text": "Otro apoderado",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"t_otroApoderado": {
+					"type": "input",
+					"top": 85,
+					"left": 145,
+					"width": 255,
+					"height": 13,
+					"dataSource": "t_otroApoderado",
+					"styleSheet": "XS_DialogObjects",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/t_otroApoderado.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"rb_otro2": {
+					"type": "radio",
+					"top": 98,
+					"left": 30,
+					"width": 116,
+					"height": 30,
+					"dataSource": "rb_otro2",
+					"text": "Otro tercero",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"t_otroTercero": {
+					"type": "input",
+					"top": 105,
+					"left": 145,
+					"width": 255,
+					"height": 13,
+					"dataSource": "t_otroTercero",
+					"styleSheet": "XS_DialogObjects",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/t_otroTercero.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"rb_publicoGeneral": {
+					"type": "radio",
+					"top": 118,
+					"left": 30,
+					"width": 116,
+					"height": 30,
+					"dataSource": "rb_publicoGeneral",
+					"text": "Público general",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"rb_noEmitir": {
+					"type": "radio",
+					"top": 138,
+					"left": 30,
+					"width": 156,
+					"height": 30,
+					"dataSource": "rb_noEmitir",
+					"text": "No emitir documentos",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_aceptar": {
+					"type": "button",
+					"top": 167,
+					"left": 230,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btn_aceptar",
+					"text": "Aceptar",
+					"method": "ObjectMethods/btn_aceptar.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_cancelar": {
+					"type": "button",
+					"top": 167,
+					"left": 320,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btn_cancelar",
+					"action": "cancel",
+					"text": "Cancelar",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto": {
+					"type": "text",
+					"top": 9,
+					"left": 0,
+					"width": 420,
+					"height": 23,
+					"textAlign": "center",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"text": "Datos de Facturación"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 42,
+					"left": 20,
+					"width": 376,
+					"height": 18,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Al emitir documentos utilizar la información de:"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,160 @@
+﻿{
+	"windowTitle": "Reinicio del servidor SchoolTrack",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "botonReiniciar",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"reinicioMinutos": {
+					"type": "radio",
+					"top": 68,
+					"left": 39,
+					"width": 153,
+					"height": 21,
+					"text": "Reiniciar servidor en: ",
+					"styleSheet": "Plain - 13",
+					"method": "ObjectMethods/reinicioMinutos.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"minutos": {
+					"type": "input",
+					"top": 72,
+					"left": 196,
+					"width": 37,
+					"height": 17,
+					"dataSource": "vl_minutos",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"desconectar": {
+					"type": "radio",
+					"top": 103,
+					"left": 39,
+					"width": 380,
+					"height": 31,
+					"text": "Desconectar todos los clientes y reiniciar",
+					"styleSheet": "Plain - 13",
+					"method": "ObjectMethods/desconectar.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"mensaje": {
+					"type": "input",
+					"top": 190,
+					"left": 39,
+					"width": 556,
+					"height": 76,
+					"dataSource": "vt_mensajeCierre",
+					"styleSheet": "Plain - 13",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"botonCancelar": {
+					"type": "button",
+					"top": 291,
+					"left": 315,
+					"width": 158,
+					"height": 22,
+					"action": "cancel",
+					"styleSheet": "Plain - 13",
+					"text": "No reiniciar ahora",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"events": [
+						"onClick"
+					]
+				},
+				"botonReiniciar": {
+					"type": "button",
+					"top": 291,
+					"left": 485,
+					"width": 110,
+					"height": 22,
+					"action": "accept",
+					"styleSheet": "Plain - 13",
+					"text": "Reiniciar",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto": {
+					"type": "text",
+					"top": 164,
+					"left": 20,
+					"width": 349,
+					"height": 15,
+					"styleSheet": "Plain - 13",
+					"text": "Mensaje de aviso a los usuarios conectados:"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 72,
+					"left": 242,
+					"width": 77,
+					"height": 17,
+					"text": "minutos"
+				},
+				"titulo": {
+					"type": "input",
+					"top": 13,
+					"left": 22,
+					"width": 573,
+					"height": 32,
+					"dataSource": "vt_Mensaje",
+					"fill": "transparent",
+					"styleSheet": "Medium - 13",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,809 @@
+﻿{
+	"windowTitle": "Horario de la asignatura",
+	"formSizeAnchor": "vt_alumnosAusentes",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 201,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"vt_EtiquetaSesiones": {
+					"type": "input",
+					"top": 198,
+					"left": 30,
+					"width": 372,
+					"height": 14,
+					"dataSource": "vt_EtiquetaSesiones",
+					"fill": "transparent",
+					"styleSheet": "XS_Lucida11",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo": {
+					"type": "input",
+					"top": 19,
+					"left": 108,
+					"width": 700,
+					"height": 14,
+					"sizingX": "grow",
+					"dataSource": "[Asignaturas:18]denominacion_interna:16",
+					"styleSheet": "XS_Lucida11",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo1": {
+					"type": "input",
+					"top": 42,
+					"left": 461,
+					"width": 347,
+					"height": 14,
+					"dataSource": "[Asignaturas:18]Curso:5",
+					"styleSheet": "XS_Lucida11",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo2": {
+					"type": "input",
+					"top": 42,
+					"left": 108,
+					"width": 294,
+					"height": 12,
+					"sizingX": "grow",
+					"dataSource": "[Asignaturas:18]profesor_nombre:13",
+					"styleSheet": "XS_Lucida11",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"lb_Sesiones": {
+					"type": "listbox",
+					"top": 223,
+					"left": 27,
+					"width": 375,
+					"height": 177,
+					"sizingX": "grow",
+					"dataSource": "lb_sesiones",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"fill": "#FFFFFF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"method": "ObjectMethods/lb_Sesiones.4dm",
+					"events": [
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "ad_FechaSesiones",
+							"dataSource": "ad_FechaSesiones",
+							"width": 261,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"dateFormat": "systemLong",
+							"fill": "#FFFFFF",
+							"textAlign": "left",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título1",
+								"text": "Fecha de la Sesion",
+								"dataSource": "Título1",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "al_Inasistencias",
+							"dataSource": "al_Inasistencias",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"fill": "#FFFFFF",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título2",
+								"text": "Inasistencias",
+								"dataSource": "Título2",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "al_recNumSesiones",
+							"dataSource": "al_RecNUmSesiones",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"visibility": "hidden",
+							"fill": "#FFFFFF",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título3",
+								"text": "Título3",
+								"dataSource": "Título3",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"TipoInfo_Actividades": {
+					"type": "button",
+					"top": 452,
+					"left": 7,
+					"width": 105,
+					"height": 14,
+					"dataSource": "b1_Actividades",
+					"shortcutKey": "[Esc]",
+					"fontFamily": "Tahoma",
+					"fontSize": 10,
+					"text": "Actividades",
+					"icon": "/RESOURCES/",
+					"textPlacement": "center",
+					"style": "toolbar",
+					"method": "ObjectMethods/TipoInfo_Actividades.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"TipoInfo_Contenidos": {
+					"type": "button",
+					"top": 452,
+					"left": 117,
+					"width": 105,
+					"height": 14,
+					"dataSource": "b2_Contenidos",
+					"shortcutKey": "[Esc]",
+					"fontFamily": "Tahoma",
+					"fontSize": 10,
+					"text": "Contenidos",
+					"icon": "/RESOURCES/",
+					"textPlacement": "center",
+					"style": "toolbar",
+					"method": "ObjectMethods/TipoInfo_Contenidos.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"TipoInfo_Observaciones": {
+					"type": "button",
+					"top": 452,
+					"left": 228,
+					"width": 104,
+					"height": 14,
+					"dataSource": "b3_Observaciones",
+					"shortcutKey": "[Esc]",
+					"fontFamily": "Tahoma",
+					"fontSize": 10,
+					"text": "Observaciones",
+					"icon": "/RESOURCES/",
+					"textPlacement": "center",
+					"style": "toolbar",
+					"method": "ObjectMethods/TipoInfo_Observaciones.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 19,
+					"left": 27,
+					"width": 73,
+					"height": 14,
+					"textAlign": "right",
+					"styleSheet": "XS_Lucida11",
+					"text": "Asignatura"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 42,
+					"left": 408,
+					"width": 45,
+					"height": 14,
+					"textAlign": "right",
+					"styleSheet": "XS_Lucida11",
+					"text": "Curso"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 42,
+					"left": 34,
+					"width": 53,
+					"height": 12,
+					"textAlign": "right",
+					"styleSheet": "XS_Lucida11",
+					"text": "Profesor"
+				},
+				"Línea": {
+					"type": "line",
+					"top": 413,
+					"left": 0,
+					"width": 827,
+					"stroke": "#AAAAAA"
+				},
+				"vt_info": {
+					"type": "input",
+					"top": 476,
+					"left": 27,
+					"width": 375,
+					"height": 144,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vt_info",
+					"styleSheet": "XS_Lucida11",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Línea1": {
+					"type": "line",
+					"top": 190,
+					"left": 0,
+					"width": 824,
+					"stroke": "#AAAAAA"
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 453,
+					"left": 422,
+					"width": 113,
+					"height": 14,
+					"sizingX": "move",
+					"styleSheet": "XS_Lucida11",
+					"text": "Alumnos Ausentes"
+				},
+				"vt_alumnosAusentes": {
+					"type": "input",
+					"top": 476,
+					"left": 422,
+					"width": 385,
+					"height": 144,
+					"sizingX": "move",
+					"sizingY": "grow",
+					"dataSource": "vt_alumnosAusentes",
+					"styleSheet": "XS_Lucida11",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vt_FechaSesion": {
+					"type": "input",
+					"top": 421,
+					"left": 27,
+					"width": 505,
+					"height": 14,
+					"dataSource": "vt_FechaSesion",
+					"fill": "transparent",
+					"styleSheet": "XS_Lucida11",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vt_EtiquetaAlumnos": {
+					"type": "input",
+					"top": 198,
+					"left": 429,
+					"width": 251,
+					"height": 14,
+					"dataSource": "vt_EtiquetaAlumnos",
+					"fill": "transparent",
+					"styleSheet": "XS_Lucida11",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Línea2": {
+					"type": "line",
+					"top": 71,
+					"left": 0,
+					"width": 824,
+					"stroke": "#AAAAAA"
+				},
+				"lb_asignaciones": {
+					"type": "listbox",
+					"top": 80,
+					"left": 27,
+					"width": 781,
+					"height": 97,
+					"sizingX": "grow",
+					"dataSource": "lb_asignaciones",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"fill": "#FFFFFF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"method": "ObjectMethods/lb_asignaciones.4dm",
+					"events": [
+						"onClick",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "at_DiasAsignados",
+							"dataSource": "at_DiasAsignados",
+							"width": 109,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"dateFormat": "systemLong",
+							"fill": "#FFFFFF",
+							"textAlign": "left",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título10",
+								"text": "Día",
+								"dataSource": "Título1",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "ai_HorasAsignadas",
+							"dataSource": "ai_HorasAsignadas",
+							"width": 44,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fill": "#FFFFFF",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título11",
+								"text": "Hora",
+								"dataSource": "Título2",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "at_SalasAsignadas",
+							"dataSource": "at_SalasAsignadas",
+							"width": 174,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fill": "#FFFFFF",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título7",
+								"text": "Sala",
+								"dataSource": "Título7",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "at_asignacionDesde",
+							"dataSource": "ad_asignacionDesde",
+							"width": 220,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"dateFormat": "systemLong",
+							"fill": "#FFFFFF",
+							"textAlign": "left",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título9",
+								"text": "Aplica Desde",
+								"dataSource": "Título9",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "at_asignacionHasta",
+							"dataSource": "ad_asignacionHasta",
+							"width": 220,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"dateFormat": "systemLong",
+							"fill": "#FFFFFF",
+							"textAlign": "left",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título8",
+								"text": "Aplica Hasta",
+								"dataSource": "Título8",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "al_recNumAsignaciones",
+							"dataSource": "al_recNumAsignaciones",
+							"width": 50,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"visibility": "hidden",
+							"fill": "#FFFFFF",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título6",
+								"text": "Título3",
+								"dataSource": "Título3",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"lb_alumnos": {
+					"type": "listbox",
+					"top": 223,
+					"left": 422,
+					"width": 386,
+					"height": 176,
+					"sizingX": "move",
+					"dataSource": "lb_Alumnos",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"method": "ObjectMethods/lb_alumnos.4dm",
+					"events": [
+						"onAfterSort"
+					],
+					"columns": [
+						{
+							"name": "atTMT_alumnos_nombres",
+							"dataSource": "atTMT_alumnos_nombres",
+							"width": 152,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "vl_ColumnaAlumnos",
+								"text": "Alumno",
+								"dataSource": "vl_ColumnaAlumnos",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "atTMT_alumnos_curso",
+							"dataSource": "atTMT_alumnos_curso",
+							"width": 50,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "vl_ColumnaCurso",
+								"text": "Curso",
+								"dataSource": "vl_ColumnaCurso",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "al_InasistenciasAlumno",
+							"dataSource": "al_InasistenciasAlumno",
+							"width": 85,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "vl_ColumnaAusencias",
+								"text": "Aus. Totales",
+								"dataSource": "vl_ColumnaAusencias",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "al_InasistenciasAsignacion",
+							"dataSource": "al_InasistenciasAsignacion",
+							"width": 85,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título4",
+								"text": "Aus. Sesiones",
+								"dataSource": "Titulo4",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "at_ApellidosNombres",
+							"dataSource": "at_ApellidosNombres",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "vl_ColumnaOrden",
+								"text": "Título11",
+								"dataSource": "vl_ColumnaOrden",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "al_TMT_IdAlumno",
+							"dataSource": "al_TMT_IdAlumno",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título5",
+								"text": "Título5",
+								"dataSource": "Título5",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+}

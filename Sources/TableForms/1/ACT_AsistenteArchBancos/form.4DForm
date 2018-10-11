@@ -1,0 +1,1340 @@
+﻿{
+	"inheritedForm": "XS_MASTER_WZDDialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 626,
+	"height": 407,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Texto4": {
+					"type": "text",
+					"top": 4,
+					"left": 161,
+					"width": 372,
+					"height": 46,
+					"stroke": "#FFFFFF",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Asistente para la Generación de Archivos Bancarios"
+				},
+				"Variable255": {
+					"type": "input",
+					"top": 378,
+					"left": 574,
+					"width": 17,
+					"height": 12,
+					"sizingX": "move",
+					"dataSource": "vi_Step",
+					"fill": "transparent",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 553,
+					"width": 20,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "bPrev",
+					"shortcutKey": "[left arrow]",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 592,
+					"width": 20,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "bNext",
+					"shortcutKey": "[right arrow]",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 479,
+					"left": 28,
+					"width": 20,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "Nueva Variable501",
+					"shortcutKey": "+",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 478,
+					"left": 94,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable11": {
+					"type": "button",
+					"top": 479,
+					"left": 246,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bTrap",
+					"shortcutKey": "[Enter]",
+					"text": "Cancelar",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 474,
+					"left": 439,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 417,
+					"left": 255,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				},
+				"vt_seleccion": {
+					"type": "text",
+					"top": 80,
+					"left": 13,
+					"width": 139,
+					"height": 191,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"text": "IMPORTANTE:\r\rEn la generación del archivo bancario sólo se considerarán los Avisos de Cobranza SELECCIONADOS en el explorador JUNTO con el período de tiempo que usted seleccione en este asistente. Además, para la generación de archivos bancarios tipo Cuponera, el archivo se generará según el número de cuotas cuponera del apoderado."
+				}
+			}
+		},
+		{
+			"objects": {
+				"li": {
+					"type": "groupBox",
+					"top": 226,
+					"left": 174,
+					"width": 402,
+					"height": 119,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "¿Para qué período de tiempo desea generar el/los informes?"
+				},
+				"Zona de Grupo4": {
+					"type": "groupBox",
+					"top": 162,
+					"left": 363,
+					"width": 213,
+					"height": 42,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Archivo de validación interno"
+				},
+				"Zona de Grupo2": {
+					"type": "groupBox",
+					"top": 162,
+					"left": 174,
+					"width": 182,
+					"height": 42,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Usar"
+				},
+				"Zona de Grupo1": {
+					"type": "groupBox",
+					"top": 80,
+					"left": 174,
+					"width": 402,
+					"height": 65,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Generar archivo de"
+				},
+				"Casilla de selección3": {
+					"type": "radio",
+					"top": 182,
+					"left": 188,
+					"width": 122,
+					"height": 15,
+					"dataSource": "cbMontoAPagar",
+					"text": "Monto a pagar",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección4": {
+					"type": "radio",
+					"top": 182,
+					"left": 282,
+					"width": 84,
+					"height": 15,
+					"dataSource": "cbMontoNeto",
+					"text": "Monto neto",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección7": {
+					"type": "checkbox",
+					"top": 182,
+					"left": 372,
+					"width": 152,
+					"height": 15,
+					"dataSource": "cbArchivoValidacion",
+					"text": "Generar archivo de validación",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"li1": {
+					"type": "radio",
+					"top": 251,
+					"left": 190,
+					"width": 150,
+					"height": 15,
+					"dataSource": "b1",
+					"text": "Para hoy",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/li1.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"li15": {
+					"type": "radio",
+					"top": 274,
+					"left": 190,
+					"width": 94,
+					"height": 15,
+					"dataSource": "b2",
+					"text": "Para el mes",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/li15.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 108,
+					"left": 354,
+					"width": 185,
+					"height": 14,
+					"dataSource": "vExportador",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 520,
+					"left": 294,
+					"width": 205,
+					"height": 14,
+					"dataSource": "vExportadorPAC",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 540,
+					"left": 294,
+					"width": 205,
+					"height": 14,
+					"dataSource": "vExportadorCUP",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Imagen2": {
+					"type": "picture",
+					"top": 108,
+					"left": 542,
+					"width": 11,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Imagen1": {
+					"type": "picture",
+					"top": 520,
+					"left": 502,
+					"width": 11,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Imagen3": {
+					"type": "picture",
+					"top": 540,
+					"left": 502,
+					"width": 11,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"bExportadores": {
+					"type": "button",
+					"top": 107,
+					"left": 352,
+					"width": 206,
+					"height": 15,
+					"dataSource": "bExportadores",
+					"display": false,
+					"method": "ObjectMethods/bExportadores.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón invisible2": {
+					"type": "button",
+					"top": 519,
+					"left": 292,
+					"width": 226,
+					"height": 15,
+					"dataSource": "bExportadoresPAC",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón invisible3": {
+					"type": "button",
+					"top": 539,
+					"left": 292,
+					"width": 226,
+					"height": 15,
+					"dataSource": "bExportadoresCUP",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"li4": {
+					"type": "text",
+					"top": 276,
+					"left": 437,
+					"width": 23,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Año"
+				},
+				"li5": {
+					"type": "input",
+					"top": 275,
+					"left": 462,
+					"width": 60,
+					"height": 12,
+					"dataSource": "viAño",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/li5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"li3": {
+					"type": "input",
+					"top": 275,
+					"left": 297,
+					"width": 111,
+					"height": 12,
+					"dataSource": "vt_Mes",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"li6": {
+					"type": "picture",
+					"top": 274,
+					"left": 406,
+					"width": 19,
+					"height": 16
+				},
+				"li2": {
+					"type": "button",
+					"top": 273,
+					"left": 295,
+					"width": 133,
+					"height": 15,
+					"dataSource": "bMes",
+					"display": false,
+					"method": "ObjectMethods/li2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"li16": {
+					"type": "radio",
+					"top": 297,
+					"left": 190,
+					"width": 63,
+					"height": 15,
+					"dataSource": "b3",
+					"text": "Entre el",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/li16.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"li17": {
+					"type": "input",
+					"top": 298,
+					"left": 255,
+					"width": 101,
+					"height": 12,
+					"dataSource": "vt_Fecha1",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/Fecha"
+					},
+					"method": "ObjectMethods/li17.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"li18": {
+					"type": "pictureButton",
+					"top": 296,
+					"left": 360,
+					"width": 17,
+					"height": 16,
+					"dataSource": "bCalendar1",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/li18.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"li19": {
+					"type": "text",
+					"top": 297,
+					"left": 381,
+					"width": 24,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "y el"
+				},
+				"li20": {
+					"type": "input",
+					"top": 298,
+					"left": 405,
+					"width": 101,
+					"height": 12,
+					"dataSource": "vt_Fecha2",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/Fecha"
+					},
+					"method": "ObjectMethods/li20.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"li21": {
+					"type": "pictureButton",
+					"top": 296,
+					"left": 510,
+					"width": 17,
+					"height": 16,
+					"dataSource": "bCalendar2",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/li21.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"li7": {
+					"type": "radio",
+					"top": 320,
+					"left": 190,
+					"width": 69,
+					"height": 15,
+					"dataSource": "b4",
+					"text": "Para el año",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/li7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"li8": {
+					"type": "input",
+					"top": 322,
+					"left": 265,
+					"width": 60,
+					"height": 12,
+					"dataSource": "viAño2",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/li8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección1": {
+					"type": "checkbox",
+					"top": 499,
+					"left": 190,
+					"width": 82,
+					"height": 16,
+					"dataSource": "cbPAT",
+					"text": "PAT",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección2": {
+					"type": "checkbox",
+					"top": 519,
+					"left": 190,
+					"width": 85,
+					"height": 16,
+					"dataSource": "cbPAC",
+					"text": "PAC",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección6": {
+					"type": "checkbox",
+					"top": 539,
+					"left": 190,
+					"width": 85,
+					"height": 16,
+					"dataSource": "cbCuponera",
+					"text": "Cuponera",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"atACT_formas_de_pago": {
+					"type": "dropdown",
+					"top": 107,
+					"left": 188,
+					"width": 142,
+					"height": 15,
+					"dataSource": "atACT_formas_de_pago",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/atACT_formas_de_pago.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Zona de Grupo5": {
+					"type": "groupBox",
+					"top": 180,
+					"left": 174,
+					"width": 242,
+					"height": 127,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Otras opciones para PAC"
+				},
+				"Zona de Grupo3": {
+					"type": "groupBox",
+					"top": 80,
+					"left": 174,
+					"width": 382,
+					"height": 97,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Fechas para PAC"
+				},
+				"pac": {
+					"type": "input",
+					"top": 106,
+					"left": 326,
+					"width": 101,
+					"height": 12,
+					"dataSource": "vt_Fecha3",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/Fecha"
+					},
+					"method": "ObjectMethods/pac.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"pac1": {
+					"type": "input",
+					"top": 128,
+					"left": 326,
+					"width": 31,
+					"height": 12,
+					"dataSource": "vl_DiaApdo",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/pac1.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"pac2": {
+					"type": "input",
+					"top": 128,
+					"left": 368,
+					"width": 31,
+					"height": 12,
+					"dataSource": "vl_MesApdo",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/pac2.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"pac3": {
+					"type": "input",
+					"top": 128,
+					"left": 410,
+					"width": 31,
+					"height": 12,
+					"dataSource": "vl_AñoApdo",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/pac3.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"pac4": {
+					"type": "pictureButton",
+					"top": 104,
+					"left": 431,
+					"width": 17,
+					"height": 16,
+					"dataSource": "bCalendarPac",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/pac4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 106,
+					"left": 190,
+					"width": 139,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Fecha de información al banco"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 128,
+					"left": 190,
+					"width": 107,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Fecha de cargo"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 128,
+					"left": 360,
+					"width": 10,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "/"
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 128,
+					"left": 402,
+					"width": 10,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "/"
+				},
+				"Casilla de selección5": {
+					"type": "checkbox",
+					"top": 150,
+					"left": 326,
+					"width": 176,
+					"height": 17,
+					"dataSource": "cb_DiaApdo",
+					"text": "Usar día asignado a cada apoderado",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección8": {
+					"type": "checkbox",
+					"top": 205,
+					"left": 186,
+					"width": 216,
+					"height": 17,
+					"dataSource": "cb_GenerarXDiaCargo",
+					"text": "Generar archivos separados por día de cargo",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección9": {
+					"type": "checkbox",
+					"top": 250,
+					"left": 186,
+					"width": 216,
+					"height": 37,
+					"dataSource": "cb_LoadUniFile",
+					"text": "Cargar archivo Universo antes de generar el archivo PAC",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 222,
+					"left": 190,
+					"width": 207,
+					"height": 32,
+					"stroke": "#EE0000",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"text": "Sólo disponible al marcar la opción Usar día asignado a cada apoderado"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable67": {
+					"type": "button",
+					"top": 374,
+					"left": 375,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Nueva Variable5472",
+					"text": "Volver",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable67.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable65": {
+					"type": "button",
+					"top": 374,
+					"left": 459,
+					"width": 160,
+					"height": 20,
+					"dataSource": "bEmitir",
+					"action": "accept",
+					"text": "Generar archivo(s)",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn_Internacional": {
+					"type": "radio",
+					"top": 313,
+					"left": 369,
+					"width": 211,
+					"height": 15,
+					"dataSource": "btn_Internacional",
+					"text": "Generar sólo para tarjetas internacionales",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/btn_Internacional.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_Nacional": {
+					"type": "radio",
+					"top": 313,
+					"left": 176,
+					"width": 211,
+					"height": 15,
+					"dataSource": "btn_Nacional",
+					"text": "Generar sólo para tarjetas nacionales",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/btn_Nacional.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"OtrasMonedas0": {
+					"type": "checkbox",
+					"top": 100,
+					"left": 176,
+					"width": 352,
+					"height": 15,
+					"dataSource": "vl_otrasMonedas",
+					"text": "Forzar la exportación de montos en moneda nacional",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"UF1": {
+					"type": "input",
+					"top": 87,
+					"left": 464,
+					"width": 61,
+					"height": 12,
+					"dataSource": "vt_FechaUF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/Fecha"
+					},
+					"method": "ObjectMethods/UF1.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"UF2": {
+					"type": "pictureButton",
+					"top": 85,
+					"left": 529,
+					"width": 17,
+					"height": 16,
+					"dataSource": "bCal",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/UF2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"UF0": {
+					"type": "text",
+					"top": 87,
+					"left": 176,
+					"width": 287,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Para los montos en UF se considerará la siguiente fecha:"
+				},
+				"OtrasMonedas1": {
+					"type": "input",
+					"top": 250,
+					"left": 13,
+					"width": 124,
+					"height": 92,
+					"dataSource": "vt_aviso",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 175,
+					"left": 172,
+					"width": 387,
+					"height": 28,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "AccountTrack está listo para comenzar la generación de archivos bancarios.\rEl/los archivos podrán ser encontrados en:"
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 202,
+					"left": 198,
+					"width": 377,
+					"height": 109,
+					"dataSource": "vtUbicacionArchivos",
+					"fill": "#FFFFFF",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 159,
+					"left": 172,
+					"width": 447,
+					"height": 14,
+					"stroke": "#EE0000",
+					"fontFamily": "Lucida Grande Bold",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"fontStyle": "italic",
+					"text": "(Estas opciones sólo operan para modelos de exportación generados con el asistente)"
+				},
+				"vl_ExportXAC": {
+					"type": "checkbox",
+					"top": 120,
+					"left": 176,
+					"width": 352,
+					"height": 15,
+					"dataSource": "vl_ExportXAC",
+					"text": "Exportar una línea por aviso de cobranza",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto9": {
+					"type": "text",
+					"top": 122,
+					"left": 360,
+					"width": 267,
+					"height": 14,
+					"stroke": "#0000FF",
+					"fontFamily": "Lucida Grande Bold",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"fontStyle": "italic",
+					"text": "(Opción habilitada sólo si no incluye saldo anterior)"
+				},
+				"vt_aviso2": {
+					"type": "input",
+					"top": 374,
+					"left": 13,
+					"width": 284,
+					"height": 12,
+					"dataSource": "vt_aviso2",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vl_SeleccionItem": {
+					"type": "checkbox",
+					"top": 140,
+					"left": 176,
+					"width": 192,
+					"height": 15,
+					"dataSource": "vl_SeleccionItem",
+					"text": "Seleccionar ítems a exportar",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"vl_ExportXCuentas": {
+					"type": "checkbox",
+					"top": 340,
+					"left": 176,
+					"width": 272,
+					"height": 15,
+					"dataSource": "vl_ExportXCuentas",
+					"text": "Utilizar formas de pago por cuenta corriente",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

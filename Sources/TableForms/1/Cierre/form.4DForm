@@ -1,0 +1,1009 @@
+﻿{
+	"inheritedForm": "XS_MASTER_WZDDialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 626,
+	"height": 407,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Texto4": {
+					"type": "text",
+					"top": 4,
+					"left": 161,
+					"width": 372,
+					"height": 44,
+					"stroke": "#FFFFFF",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Asistente para el Cierre de AccountTrack"
+				},
+				"Variable255": {
+					"type": "input",
+					"top": 378,
+					"left": 574,
+					"width": 17,
+					"height": 11,
+					"sizingX": "move",
+					"dataSource": "vi_Step",
+					"fill": "transparent",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 553,
+					"width": 20,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "bPrev",
+					"shortcutKey": "[left arrow]",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 592,
+					"width": 20,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "bNext",
+					"shortcutKey": "[right arrow]",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 479,
+					"left": 28,
+					"width": 20,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "Nueva Variable501",
+					"shortcutKey": "+",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 478,
+					"left": 94,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable11": {
+					"type": "button",
+					"top": 479,
+					"left": 246,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bTrap",
+					"shortcutKey": "[Enter]",
+					"text": "Cancelar",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 483,
+					"left": 485,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 426,
+					"left": 301,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable299": {
+					"type": "button",
+					"top": 373,
+					"left": 497,
+					"width": 119,
+					"height": 21,
+					"dataSource": "bDiagnostico",
+					"shortcutKey": "[Enter]",
+					"text": "Iniciar Diagnóstico",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable299.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable9": {
+					"type": "button",
+					"top": 342,
+					"left": 169,
+					"width": 119,
+					"height": 21,
+					"dataSource": "bTextFile",
+					"shortcutKey": "[Enter]",
+					"text": "Generar archivo...",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable9.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"vt1": {
+					"type": "text",
+					"top": 86,
+					"left": 6,
+					"width": 154,
+					"height": 143,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Si desea continuar, haga click en el botón \"Iniciar Diagnóstico\", en caso contrario, cierre esta ventana. \r"
+				},
+				"vt2": {
+					"type": "text",
+					"top": 86,
+					"left": 6,
+					"width": 154,
+					"height": 182,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"text": "En el recuadro a la derecha, se encuentran desglosados los pagos con problemas (en caso de haberlos). \rPuede generar un archivo de texto plano con el detalle para su corrección seleccionando el botón \"Generar Archivo\". \r\rEn caso contrario, puede continuar con el proceso de Cierre haciendo click en el botón flecha derecha.\" \r \r"
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 86,
+					"left": 170,
+					"width": 398,
+					"height": 258,
+					"dataSource": "vt_instrucciones",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 14,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"List Box1": {
+					"type": "listbox",
+					"top": 86,
+					"left": 170,
+					"width": 398,
+					"height": 252,
+					"dataSource": "lb_ErroresPagos",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"staticColumnCount": 4,
+					"selectionMode": "single",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"columns": [
+						{
+							"name": "Columna1",
+							"dataSource": "aQR_Longint1",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título1",
+								"text": "id Pago",
+								"dataSource": "vt_tit1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "Columna4",
+							"dataSource": "aQR_Date2",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título4",
+								"text": "Fecha Pago",
+								"dataSource": "vt_tit2",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "Columna2",
+							"dataSource": "aQR_Real4",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textFormat": "###.###.###",
+							"numberFormat": "|Despliegue_ACT_Pagos",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título2",
+								"text": "Monto Pago",
+								"dataSource": "vt_tit2",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "Columna3",
+							"dataSource": "aQR_Real3",
+							"width": 103,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textFormat": "|Despliegue_ACT_Pagos",
+							"numberFormat": "|Despliegue_ACT_Pagos",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título3",
+								"text": "Monto en Transacciones",
+								"dataSource": "vt_tit3",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable1": {
+					"type": "input",
+					"top": 93,
+					"left": 252,
+					"width": 110,
+					"height": 11,
+					"dataSource": "vs_Mes",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Botón invisible1": {
+					"type": "button",
+					"top": 91,
+					"left": 251,
+					"width": 132,
+					"height": 16,
+					"dataSource": "Botón invisible1",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Imagen2": {
+					"type": "picture",
+					"top": 93,
+					"left": 362,
+					"width": 19,
+					"height": 16
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 93,
+					"left": 182,
+					"width": 133,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Cerrar hasta"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 93,
+					"left": 387,
+					"width": 16,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "de"
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 93,
+					"left": 410,
+					"width": 51,
+					"height": 11,
+					"dataSource": "vl_Año",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 86,
+					"left": 6,
+					"width": 154,
+					"height": 156,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Haga click en la flecha derecha para continuar "
+				},
+				"Variable10": {
+					"type": "input",
+					"top": 126,
+					"left": 170,
+					"width": 398,
+					"height": 122,
+					"dataSource": "vt_infoCierre",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"textAlign": "center",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable64": {
+					"type": "input",
+					"top": 151,
+					"left": 175,
+					"width": 387,
+					"height": 36,
+					"dataSource": "<>vt_DataPath",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable84": {
+					"type": "input",
+					"top": 234,
+					"left": 175,
+					"width": 411,
+					"height": 76,
+					"dataSource": "vt_Backup",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 90,
+					"left": 163,
+					"width": 326,
+					"height": 70,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_Report_12",
+					"fontWeight": "bold",
+					"text": "El proceso de cierre de AccountTrack es irreversible."
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 109,
+					"left": 163,
+					"width": 402,
+					"height": 33,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Si se produce una interrupción durante el proceso de cierre de AccountTrack será necesario recomenzar el cierre utilizando un respaldo de su base de datos.\rLa base de datos en uso actualmente se encuentra en:"
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 192,
+					"left": 163,
+					"width": 388,
+					"height": 22,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"text": "AccountTrack hará un respaldo de su base de datos antes de iniciar el cierre.\rLa copia de su base de datos será creada en la siguiente ruta:"
+				},
+				"Texto15": {
+					"type": "text",
+					"top": 47,
+					"left": 163,
+					"width": 248,
+					"height": 16,
+					"stroke": "#009900",
+					"styleSheet": "XS_ReportSubtitle_14",
+					"text": "Respaldo"
+				},
+				"Texto9": {
+					"type": "text",
+					"top": 86,
+					"left": 6,
+					"width": 154,
+					"height": 156,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Haga click en la flecha derecha para continuar"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable523": {
+					"type": "checkbox",
+					"top": 86,
+					"left": 190,
+					"width": 259,
+					"height": 16,
+					"dataSource": "cb_EliminaHAvisos",
+					"text": "Eliminar avisos de cobranza anteriores al año",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable523.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable524": {
+					"type": "input",
+					"top": 86,
+					"left": 477,
+					"width": 31,
+					"height": 13,
+					"dataSource": "vi_AgnosAvisos",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable85": {
+					"type": "checkbox",
+					"top": 105,
+					"left": 190,
+					"width": 208,
+					"height": 16,
+					"dataSource": "cb_EliminaHPagos",
+					"text": "Eliminar pagos anteriores al año",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable85.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable116": {
+					"type": "input",
+					"top": 105,
+					"left": 477,
+					"width": 31,
+					"height": 13,
+					"dataSource": "vi_AgnosPagos",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vi_ClearOrientacion": {
+					"type": "checkbox",
+					"top": 124,
+					"left": 190,
+					"width": 278,
+					"height": 16,
+					"dataSource": "cb_EliminaHDocDep",
+					"text": "Eliminar documentos depositados anteriores al año",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/vi_ClearOrientacion.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable117": {
+					"type": "input",
+					"top": 124,
+					"left": 477,
+					"width": 31,
+					"height": 13,
+					"dataSource": "vi_AgnosDocDep",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable87": {
+					"type": "checkbox",
+					"top": 143,
+					"left": 190,
+					"width": 283,
+					"height": 16,
+					"dataSource": "cb_EliminaHDocTrib",
+					"text": "Eliminar documentos tributarios anteriores al año",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable87.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable118": {
+					"type": "input",
+					"top": 143,
+					"left": 477,
+					"width": 31,
+					"height": 13,
+					"dataSource": "vi_AgnosDocTrib",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto12": {
+					"type": "text",
+					"top": 47,
+					"left": 163,
+					"width": 248,
+					"height": 16,
+					"stroke": "#009900",
+					"styleSheet": "XS_ReportSubtitle_14",
+					"text": ":21011,85"
+				},
+				"Texto10": {
+					"type": "text",
+					"top": 86,
+					"left": 6,
+					"width": 154,
+					"height": 156,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Favor indicar los registros históricos que desea eliminar\r\rHaga click en la flecha derecha para continuar"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Casilla de selección1": {
+					"type": "checkbox",
+					"top": 88,
+					"left": 188,
+					"width": 242,
+					"height": 16,
+					"dataSource": "cb_InactivaEgresados",
+					"text": "Inactivar cuentas de alumnos egresados",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección2": {
+					"type": "checkbox",
+					"top": 108,
+					"left": 188,
+					"width": 242,
+					"height": 16,
+					"dataSource": "cb_InactivaRetirados",
+					"text": "Inactivar cuentas de alumnos retirados",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto389": {
+					"type": "text",
+					"top": 47,
+					"left": 163,
+					"width": 248,
+					"height": 16,
+					"stroke": "#009900",
+					"styleSheet": "XS_ReportSubtitle_14",
+					"text": "Inicializaciones"
+				},
+				"Texto390": {
+					"type": "text",
+					"top": 80,
+					"left": 9,
+					"width": 135,
+					"height": 209,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Por favor ponga particular atención a las opciones de inicialización que figuran en esta página"
+				},
+				"Variable119": {
+					"type": "button",
+					"top": 374,
+					"left": 429,
+					"width": 190,
+					"height": 20,
+					"dataSource": "bCerrar",
+					"text": "Comenzar proceso de cierre",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"stroke": "#EE0000",
+					"method": "ObjectMethods/Variable119.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección3": {
+					"type": "checkbox",
+					"top": 138,
+					"left": 188,
+					"width": 242,
+					"height": 16,
+					"dataSource": "cb_LimpiaMatrices",
+					"text": "Desasignar matrices a cuentas corrientes",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección4": {
+					"type": "checkbox",
+					"top": 158,
+					"left": 188,
+					"width": 262,
+					"height": 16,
+					"dataSource": "cb_LimpiaDesctoXCta",
+					"text": "Inicializar \"Descuento\" a 0 en cuentas corrientes",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 374,
+					"left": 339,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCerrar",
+					"text": "Volver",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#EE0000",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 166,
+					"left": 6,
+					"width": 154,
+					"height": 99,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Para continuar haga click en el botón \"Comenzar proceso de cierre\""
+				},
+				"Casilla de selección": {
+					"type": "checkbox",
+					"top": 198,
+					"left": 188,
+					"width": 230,
+					"height": 16,
+					"dataSource": "cb_inicializaUFields",
+					"text": "Inicializar campos propios de Accountrack",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección5": {
+					"type": "checkbox",
+					"top": 218,
+					"left": 188,
+					"width": 230,
+					"height": 16,
+					"dataSource": "cb_eliminaDocCarNulos",
+					"text": "Eliminar documentos en cartera nulos",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

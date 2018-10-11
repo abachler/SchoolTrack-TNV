@@ -1,0 +1,2313 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Forms",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Variable2",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Campo2": {
+					"type": "input",
+					"top": 160,
+					"left": 453,
+					"width": 263,
+					"height": 110,
+					"dataSource": "[Alumnos_ComplementoEvaluacion:209]Historico_HistorialCambios:88",
+					"fill": "#DDDDDD",
+					"styleSheet": "XS_FormObjects",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 536,
+					"left": 183,
+					"width": 75,
+					"height": 20,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "w",
+					"shortcutAccel": true,
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 536,
+					"left": 263,
+					"width": 75,
+					"height": 20,
+					"dataSource": "bSave",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Línea1": {
+					"type": "line",
+					"top": 0,
+					"left": 443,
+					"width": 1,
+					"height": 478,
+					"stroke": "#AAAAAA"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 12,
+					"left": 456,
+					"width": 110,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Observaciones"
+				},
+				"Campo3": {
+					"type": "input",
+					"top": 308,
+					"left": 453,
+					"width": 263,
+					"height": 99,
+					"dataSource": "[Asignaturas_Historico:84]Historial_de_Cambios:40",
+					"fill": "#DDDDDD",
+					"styleSheet": "XS_FormObjects",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 291,
+					"left": 453,
+					"width": 209,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Historial de cambios Asignatura"
+				},
+				"Línea2": {
+					"type": "line",
+					"top": 478,
+					"left": 0,
+					"width": 745,
+					"stroke": "#AAAAAA"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 34,
+					"left": 13,
+					"width": 80,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": ":21002,218"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 80,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Nombre Oficial:"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 82,
+					"left": 13,
+					"width": 80,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Sector:"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 125,
+					"left": 12,
+					"width": 90,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Horas Semanales:"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 125,
+					"left": 217,
+					"width": 130,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Horas efectivas en el año:"
+				},
+				"Text10": {
+					"type": "text",
+					"top": 103,
+					"left": 12,
+					"width": 90,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Grupo estadístico:"
+				},
+				"Línea5": {
+					"type": "line",
+					"top": 206,
+					"left": 1,
+					"width": 441,
+					"stroke": "#AAAAAA"
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 14,
+					"left": 112,
+					"width": 283,
+					"height": 14,
+					"dataSource": "vs_SubjectName",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"calificaciones14": {
+					"type": "input",
+					"top": 34,
+					"left": 111,
+					"width": 284,
+					"height": 14,
+					"dataSource": "[Asignaturas_Historico:84]Nombre_interno:3",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/calificaciones14.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"xestiloEvaluacion1": {
+					"type": "input",
+					"top": 58,
+					"left": 111,
+					"width": 261,
+					"height": 14,
+					"dataSource": "vt_Text2",
+					"styleSheet": "XS_DialogObjects",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"calificaciones15": {
+					"type": "input",
+					"top": 82,
+					"left": 111,
+					"width": 285,
+					"height": 14,
+					"dataSource": "[Asignaturas_Historico:84]Sector:38",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/calificaciones15.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"calificaciones16": {
+					"type": "input",
+					"top": 103,
+					"left": 111,
+					"width": 161,
+					"height": 14,
+					"dataSource": "[Asignaturas_Historico:84]Grupo_Estadistico:37",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/calificaciones16.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"calificaciones17": {
+					"type": "input",
+					"top": 103,
+					"left": 332,
+					"width": 64,
+					"height": 14,
+					"dataSource": "[Asignaturas_Historico:84]OrdenGeneral:42",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&\"0-9;-\"",
+					"method": "ObjectMethods/calificaciones17.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"calificaciones19": {
+					"type": "input",
+					"top": 125,
+					"left": 111,
+					"width": 47,
+					"height": 14,
+					"dataSource": "[Asignaturas_Historico:84]Horas_Semanales:35",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/calificaciones19.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"calificaciones18": {
+					"type": "input",
+					"top": 125,
+					"left": 353,
+					"width": 43,
+					"height": 14,
+					"dataSource": "[Asignaturas_Historico:84]Horas_Efectivas:36",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/calificaciones18.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"calificaciones_enActas": {
+					"type": "input",
+					"top": 147,
+					"left": 13,
+					"width": 105,
+					"height": 12,
+					"dataSource": "[Asignaturas_Historico:84]Incluida_En_Actas:7",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "En actas",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/calificaciones_enActas.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"calificaciones12": {
+					"type": "input",
+					"top": 147,
+					"left": 125,
+					"width": 57,
+					"height": 12,
+					"dataSource": "[Asignaturas_Historico:84]Electiva:10",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "Electiva",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/calificaciones12.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"calificaciones20": {
+					"type": "input",
+					"top": 147,
+					"left": 198,
+					"width": 126,
+					"height": 12,
+					"dataSource": "[Asignaturas_Historico:84]Promediable:6",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "Incide en promedio oficial",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/calificaciones20.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"calificaciones22": {
+					"type": "input",
+					"top": 147,
+					"left": 333,
+					"width": 108,
+					"height": 11,
+					"dataSource": "[Asignaturas_Historico:84]EnInformesInternos:43",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "En informes internos",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/calificaciones22.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"calificaciones24": {
+					"type": "input",
+					"top": 163,
+					"left": 12,
+					"width": 57,
+					"height": 12,
+					"dataSource": "[Asignaturas_Historico:84]Optativa:24",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "Optativa",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/calificaciones24.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"calificaciones23": {
+					"type": "input",
+					"top": 186,
+					"left": 111,
+					"width": 285,
+					"height": 14,
+					"dataSource": "[Asignaturas_Historico:84]Profesor_Nombre:13",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/calificaciones23.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vLabelP5": {
+					"type": "input",
+					"top": 234,
+					"left": 87,
+					"width": 27,
+					"height": 12,
+					"dataSource": "vLabelP1",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vLabelP6": {
+					"type": "input",
+					"top": 234,
+					"left": 120,
+					"width": 27,
+					"height": 12,
+					"dataSource": "vLabelP2",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vLabelP7": {
+					"type": "input",
+					"top": 234,
+					"left": 153,
+					"width": 27,
+					"height": 12,
+					"dataSource": "vLabelP3",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vLabelP8": {
+					"type": "input",
+					"top": 234,
+					"left": 186,
+					"width": 27,
+					"height": 12,
+					"dataSource": "vLabelP4",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vLabelP1": {
+					"type": "input",
+					"top": 234,
+					"left": 219,
+					"width": 27,
+					"height": 12,
+					"dataSource": "vLabelP5",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"calificaciones": {
+					"type": "input",
+					"top": 256,
+					"left": 87,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]P01_Final_Literal:116",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/calificaciones.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"calificaciones1": {
+					"type": "input",
+					"top": 256,
+					"left": 120,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]P02_Final_Literal:191",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/calificaciones1.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"calificaciones2": {
+					"type": "input",
+					"top": 256,
+					"left": 153,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]P03_Final_Literal:266",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/calificaciones2.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"calificaciones3": {
+					"type": "input",
+					"top": 256,
+					"left": 186,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]P04_Final_Literal:341",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/calificaciones3.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"calificaciones4": {
+					"type": "input",
+					"top": 256,
+					"left": 219,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]P05_Final_Literal:416",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/calificaciones4.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"calificaciones5": {
+					"type": "input",
+					"top": 256,
+					"left": 277,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]Anual_Literal:15",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/calificaciones5.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"calificaciones6": {
+					"type": "input",
+					"top": 256,
+					"left": 311,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]ExamenAnual_Literal:20",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/calificaciones6.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"calificaciones7": {
+					"type": "input",
+					"top": 256,
+					"left": 345,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]ExamenExtra_Literal:25",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/calificaciones7.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"calificaciones8": {
+					"type": "input",
+					"top": 256,
+					"left": 379,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]EvaluacionFinal_Literal:30",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/calificaciones8.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"calificaciones9": {
+					"type": "input",
+					"top": 256,
+					"left": 413,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]EvaluacionFinalOficial_Literal:36",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/calificaciones9.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"calificaciones21": {
+					"type": "input",
+					"top": 350,
+					"left": 147,
+					"width": 251,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]EvaluacionFinalOficial_Palabras:492",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"calificaciones11": {
+					"type": "input",
+					"top": 378,
+					"left": 15,
+					"width": 68,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]Reprobada:9",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "Reprobada",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/calificaciones11.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"recuperacion1": {
+					"type": "input",
+					"top": 378,
+					"left": 127,
+					"width": 121,
+					"height": 12,
+					"dataSource": "[Alumnos_ComplementoEvaluacion:209]Historico_RequiereRecuperacion:91",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "Requiere Recuperación",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/recuperacion1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"subsanacion1": {
+					"type": "input",
+					"top": 378,
+					"left": 307,
+					"width": 121,
+					"height": 12,
+					"dataSource": "[Alumnos_ComplementoEvaluacion:209]Historico_RequiereSubsanacion:92",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "Requiere Subsanación",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/subsanacion1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"recuperacion": {
+					"type": "input",
+					"top": 395,
+					"left": 127,
+					"width": 121,
+					"height": 12,
+					"dataSource": "[Alumnos_ComplementoEvaluacion:209]Historico_Recuperada:93",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "Recuperada",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/recuperacion.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"subsanacion": {
+					"type": "input",
+					"top": 395,
+					"left": 307,
+					"width": 121,
+					"height": 12,
+					"dataSource": "[Alumnos_ComplementoEvaluacion:209]Historico_Subsanada:94",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "Subsanada",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/subsanacion.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"aprobacionDiferida9": {
+					"type": "input",
+					"top": 420,
+					"left": 230,
+					"width": 24,
+					"height": 12,
+					"dataSource": "[Alumnos_ComplementoEvaluacion:209]Historico_Recuperacion_1:52",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/aprobacionDiferida9.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"aprobacionDiferida10": {
+					"type": "input",
+					"top": 420,
+					"left": 283,
+					"width": 24,
+					"height": 12,
+					"dataSource": "[Alumnos_ComplementoEvaluacion:209]Historico_Recuperacion_2:53",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/aprobacionDiferida10.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"aprobacionDiferida11": {
+					"type": "input",
+					"top": 420,
+					"left": 339,
+					"width": 24,
+					"height": 12,
+					"dataSource": "[Alumnos_ComplementoEvaluacion:209]Historico_Recuperacion_3:54",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/aprobacionDiferida11.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"aprobacionDiferida1": {
+					"type": "input",
+					"top": 446,
+					"left": 141,
+					"width": 69,
+					"height": 12,
+					"dataSource": "[Alumnos_ComplementoEvaluacion:209]Historico_FechaAprobacionDif:49",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/aprobacionDiferida1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"aprobacionDiferida15": {
+					"type": "input",
+					"top": 446,
+					"left": 305,
+					"width": 122,
+					"height": 12,
+					"dataSource": "[Alumnos_ComplementoEvaluacion:209]Info_Recuperacion:89",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/aprobacionDiferida15.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"aprobacionDiferida3": {
+					"type": "input",
+					"top": 464,
+					"left": 118,
+					"width": 126,
+					"height": 12,
+					"dataSource": "[Alumnos_ComplementoEvaluacion:209]Historico_ColegioAprobacion:50",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/aprobacionDiferida3.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"aprobacionDiferida5": {
+					"type": "input",
+					"top": 463,
+					"left": 312,
+					"width": 89,
+					"height": 12,
+					"dataSource": "[Alumnos_ComplementoEvaluacion:209]Historico_CondicionAprobacion:51",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/aprobacionDiferida5.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"calificaciones10": {
+					"type": "input",
+					"top": 28,
+					"left": 454,
+					"width": 262,
+					"height": 99,
+					"dataSource": "[Alumnos_ComplementoEvaluacion:209]Final_ObservacionesAcademicas:46",
+					"styleSheet": "XS_FormObjects",
+					"spellcheck": true,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 488,
+					"left": 565,
+					"width": 80,
+					"height": 18,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": ":21005,18",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 488,
+					"left": 653,
+					"width": 80,
+					"height": 18,
+					"dataSource": "bSave",
+					"action": "accept",
+					"text": ":21005,99",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"aprobacionDiferida8": {
+					"type": "text",
+					"top": 420,
+					"left": 15,
+					"width": 190,
+					"height": 12,
+					"stroke": "#000000",
+					"textAlign": "left",
+					"styleSheet": "XS_FormObjects",
+					"text": "Evaluaciones de recuperación o subsanación"
+				},
+				"aprobacionDiferida13": {
+					"type": "text",
+					"top": 420,
+					"left": 267,
+					"width": 10,
+					"height": 12,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "2"
+				},
+				"aprobacionDiferida14": {
+					"type": "text",
+					"top": 420,
+					"left": 320,
+					"width": 13,
+					"height": 12,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "3"
+				},
+				"Texto85": {
+					"type": "text",
+					"top": 350,
+					"left": 14,
+					"width": 154,
+					"height": 12,
+					"stroke": "#000000",
+					"textAlign": "left",
+					"styleSheet": "XS_FormObjects",
+					"text": "Nota final Oficial en palabras:"
+				},
+				"aprobacionDiferida12": {
+					"type": "text",
+					"top": 420,
+					"left": 214,
+					"width": 10,
+					"height": 12,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "1"
+				},
+				"aprobacionDiferida": {
+					"type": "text",
+					"top": 446,
+					"left": 15,
+					"width": 125,
+					"height": 12,
+					"stroke": "#000000",
+					"textAlign": "left",
+					"styleSheet": "XS_FormObjects",
+					"text": "Fecha de aprobación diferida:"
+				},
+				"aprobacionDiferida4": {
+					"type": "text",
+					"top": 462,
+					"left": 259,
+					"width": 48,
+					"height": 12,
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"text": "Condición:"
+				},
+				"Línea4": {
+					"type": "line",
+					"top": 372,
+					"left": 1,
+					"width": 442,
+					"stroke": "#AAAAAA"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 213,
+					"left": 12,
+					"width": 152,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Evaluaciones del ciclo escolar"
+				},
+				"vLabel": {
+					"type": "text",
+					"top": 234,
+					"left": 277,
+					"width": 27,
+					"height": 12,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"text": ":21002,227"
+				},
+				"vLabel1": {
+					"type": "text",
+					"top": 234,
+					"left": 311,
+					"width": 27,
+					"height": 12,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"text": ":21002,228"
+				},
+				"vLabel3": {
+					"type": "text",
+					"top": 234,
+					"left": 379,
+					"width": 27,
+					"height": 12,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"text": ":21002,229"
+				},
+				"vLabel4": {
+					"type": "text",
+					"top": 234,
+					"left": 413,
+					"width": 27,
+					"height": 12,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"text": ":21002,240"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 273,
+					"left": 14,
+					"width": 66,
+					"height": 12,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Nota:"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 325,
+					"left": 14,
+					"width": 50,
+					"height": 12,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Porcentaje:"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 290,
+					"left": 14,
+					"width": 66,
+					"height": 12,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Puntos:"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 307,
+					"left": 14,
+					"width": 66,
+					"height": 12,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Símbolos:"
+				},
+				"notasHistoricas(7)2": {
+					"type": "input",
+					"top": 273,
+					"left": 87,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]P01_Final_Nota:113",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/CalificacionesGenerico"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)3": {
+					"type": "input",
+					"top": 290,
+					"left": 87,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]P01_Final_Puntos:114",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/CalificacionesGenerico"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)4": {
+					"type": "input",
+					"top": 307,
+					"left": 87,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]P01_Final_Simbolo:115",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)5": {
+					"type": "input",
+					"top": 324,
+					"left": 87,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]P01_Final_Real:112",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/CalificacionesGenerico"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)7": {
+					"type": "input",
+					"top": 273,
+					"left": 120,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]P02_Final_Nota:188",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/CalificacionesGenerico"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)8": {
+					"type": "input",
+					"top": 290,
+					"left": 120,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]P02_Final_Puntos:189",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/CalificacionesGenerico"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)9": {
+					"type": "input",
+					"top": 307,
+					"left": 120,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]P02_Final_Simbolo:190",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)10": {
+					"type": "input",
+					"top": 324,
+					"left": 120,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]P02_Final_Real:187",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/CalificacionesGenerico"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)12": {
+					"type": "input",
+					"top": 273,
+					"left": 153,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]P03_Final_Nota:263",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/CalificacionesGenerico"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)13": {
+					"type": "input",
+					"top": 290,
+					"left": 153,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]P03_Final_Puntos:264",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/CalificacionesGenerico"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)14": {
+					"type": "input",
+					"top": 307,
+					"left": 153,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]P03_Final_Simbolo:265",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)15": {
+					"type": "input",
+					"top": 324,
+					"left": 153,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]P03_Final_Real:262",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/CalificacionesGenerico"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)17": {
+					"type": "input",
+					"top": 273,
+					"left": 186,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]P04_Final_Nota:338",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/CalificacionesGenerico"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)18": {
+					"type": "input",
+					"top": 290,
+					"left": 186,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]P04_Final_Puntos:339",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/CalificacionesGenerico"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)19": {
+					"type": "input",
+					"top": 307,
+					"left": 186,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]P04_Final_Simbolo:340",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)20": {
+					"type": "input",
+					"top": 324,
+					"left": 186,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]P04_Final_Real:337",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/CalificacionesGenerico"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)22": {
+					"type": "input",
+					"top": 273,
+					"left": 219,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]P05_Final_Nota:413",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/CalificacionesGenerico"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)23": {
+					"type": "input",
+					"top": 290,
+					"left": 219,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]P05_Final_Puntos:414",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/CalificacionesGenerico"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)24": {
+					"type": "input",
+					"top": 307,
+					"left": 219,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]P05_Final_Simbolo:415",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)25": {
+					"type": "input",
+					"top": 324,
+					"left": 219,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]P05_Final_Real:412",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/CalificacionesGenerico"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vLabel2": {
+					"type": "text",
+					"top": 234,
+					"left": 345,
+					"width": 27,
+					"height": 12,
+					"stroke": "#000000",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"text": "EXX"
+				},
+				"notasHistoricas(7)27": {
+					"type": "input",
+					"top": 273,
+					"left": 277,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]Anual_Nota:12",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/CalificacionesGenerico"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)28": {
+					"type": "input",
+					"top": 290,
+					"left": 277,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]Anual_Puntos:13",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/CalificacionesGenerico"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)29": {
+					"type": "input",
+					"top": 307,
+					"left": 277,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]Anual_Simbolo:14",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)30": {
+					"type": "input",
+					"top": 324,
+					"left": 277,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]Anual_Real:11",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/CalificacionesGenerico"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)32": {
+					"type": "input",
+					"top": 273,
+					"left": 311,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]ExamenAnual_Nota:17",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/CalificacionesGenerico"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)33": {
+					"type": "input",
+					"top": 290,
+					"left": 311,
+					"width": 30,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]ExamenAnual_Puntos:18",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/CalificacionesGenerico"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)34": {
+					"type": "input",
+					"top": 307,
+					"left": 311,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]ExamenAnual_Simbolo:19",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)35": {
+					"type": "input",
+					"top": 324,
+					"left": 311,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]ExamenAnual_Real:16",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/CalificacionesGenerico"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)37": {
+					"type": "input",
+					"top": 273,
+					"left": 345,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]ExamenExtra_Nota:22",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/CalificacionesGenerico"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)38": {
+					"type": "input",
+					"top": 290,
+					"left": 345,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]ExamenExtra_Puntos:23",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/CalificacionesGenerico"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)39": {
+					"type": "input",
+					"top": 307,
+					"left": 345,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]ExamenExtra_Simbolo:24",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)40": {
+					"type": "input",
+					"top": 324,
+					"left": 345,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]ExamenExtra_Real:21",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/CalificacionesGenerico"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)42": {
+					"type": "input",
+					"top": 273,
+					"left": 379,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]EvaluacionFinal_Nota:27",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/CalificacionesGenerico"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)43": {
+					"type": "input",
+					"top": 290,
+					"left": 379,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]EvaluacionFinal_Puntos:28",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/CalificacionesGenerico"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)44": {
+					"type": "input",
+					"top": 307,
+					"left": 379,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]EvaluacionFinal_Simbolo:29",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)45": {
+					"type": "input",
+					"top": 324,
+					"left": 379,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]EvaluacionFinal_Real:26",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/CalificacionesGenerico"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)47": {
+					"type": "input",
+					"top": 273,
+					"left": 413,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]EvaluacionFinalOficial_Nota:33",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/CalificacionesGenerico"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)48": {
+					"type": "input",
+					"top": 290,
+					"left": 413,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]EvaluacionFinalOficial_Puntos:34",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/CalificacionesGenerico"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)49": {
+					"type": "input",
+					"top": 307,
+					"left": 413,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]EvaluacionFinalOficial_Simbolo:35",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"notasHistoricas(7)50": {
+					"type": "input",
+					"top": 324,
+					"left": 413,
+					"width": 27,
+					"height": 12,
+					"dataSource": "[Alumnos_Calificaciones:208]EvaluacionFinalOficial_Real:32",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/CalificacionesGenerico"
+					},
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text22": {
+					"type": "text",
+					"top": 256,
+					"left": 14,
+					"width": 40,
+					"height": 12,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Literal:"
+				},
+				"Text14": {
+					"type": "text",
+					"top": 186,
+					"left": 13,
+					"width": 80,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Profesor:"
+				},
+				"aprobacionDiferida16": {
+					"type": "text",
+					"top": 446,
+					"left": 222,
+					"width": 83,
+					"height": 12,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Info Recuperación:"
+				},
+				"aprobacionDiferida2": {
+					"type": "text",
+					"top": 463,
+					"left": 15,
+					"width": 105,
+					"height": 12,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Colegio aprobación:"
+				},
+				"aprobacionDiferida6": {
+					"type": "picture",
+					"top": 464,
+					"left": 245,
+					"width": 11,
+					"height": 14
+				},
+				"aprobacionDiferida7": {
+					"type": "dropdown",
+					"top": 464,
+					"left": 244,
+					"width": 12,
+					"height": 15,
+					"dataSource": "<>aPrevSchool",
+					"focusable": false,
+					"display": false,
+					"styleSheet": "Defaut",
+					"method": "ObjectMethods/aprobacionDiferida7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 143,
+					"left": 460,
+					"width": 209,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Historial de cambios en el registro de calificaciones"
+				},
+				"Línea3": {
+					"type": "line",
+					"top": 438,
+					"left": 1,
+					"width": 442,
+					"stroke": "#AAAAAA"
+				},
+				"Línea6": {
+					"type": "line",
+					"top": 412,
+					"left": 1,
+					"width": 442,
+					"stroke": "#AAAAAA"
+				},
+				"xestiloEvaluacion2": {
+					"type": "dropdown",
+					"top": 55,
+					"left": 375,
+					"width": 23,
+					"height": 19,
+					"dataSource": "hl_EstilosEvaluacion",
+					"dataSourceTypeHint": "integer",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"method": "ObjectMethods/xestiloEvaluacion2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"estiloEvaluacion": {
+					"type": "text",
+					"top": 58,
+					"left": 13,
+					"width": 89,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Estilo evaluación:"
+				},
+				"msg": {
+					"type": "text",
+					"top": 490,
+					"left": 9,
+					"width": 547,
+					"height": 14,
+					"visibility": "hidden",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Seleccione el estilo de evaluación para continuar el registro"
+				},
+				"incide_en_asistencia": {
+					"type": "input",
+					"top": 163,
+					"left": 125,
+					"width": 111,
+					"height": 12,
+					"dataSource": "[Asignaturas_Historico:84]Incide_en_Asistencia:28",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": "Incide en asistencia",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 123,
+					"left": 919,
+					"width": 41,
+					"height": 16,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Orden"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 103,
+					"left": 292,
+					"width": 41,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Orden"
+				}
+			}
+		}
+	]
+}

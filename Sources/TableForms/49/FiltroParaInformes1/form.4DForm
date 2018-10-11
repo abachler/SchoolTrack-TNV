@@ -1,0 +1,239 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Botón3",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"li1": {
+					"type": "groupBox",
+					"top": 11,
+					"left": 12,
+					"width": 369,
+					"height": 188,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Seleccione los estados del Proceso de Admisión"
+				},
+				"Área de grupo1": {
+					"type": "groupBox",
+					"top": 394,
+					"left": 12,
+					"width": 369,
+					"height": 46,
+					"fontFamily": "Lucida Grande Bold",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"text": "Seleccione los niveles entre los que se filtrará el reporte"
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 32,
+					"left": 155,
+					"width": 120,
+					"height": 20,
+					"dataSource": "bSelTodo",
+					"text": "Seleccionar  Todos",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 32,
+					"left": 287,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bLimpiar",
+					"text": "Limpiar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Área de plug-in1": {
+					"type": "plugin",
+					"top": 60,
+					"left": 21,
+					"width": 352,
+					"height": 125,
+					"dataSource": "xALP_estados",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Área de plug-in1.4dm",
+					"events": [
+						"onClick",
+						"onPluginArea"
+					]
+				},
+				"Menú desplegable1": {
+					"type": "dropdown",
+					"top": 414,
+					"left": 32,
+					"width": 126,
+					"height": 17,
+					"dataSource": "at_NivelDesdeInf",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Menú desplegable1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Menú desplegable2": {
+					"type": "dropdown",
+					"top": 414,
+					"left": 178,
+					"width": 128,
+					"height": 17,
+					"dataSource": "at_NivelHastaInf",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Menú desplegable2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón4": {
+					"type": "button",
+					"top": 453,
+					"left": 208,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Botón2",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 453,
+					"left": 296,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bGo",
+					"action": "accept",
+					"text": "Continuar",
+					"styleSheet": "XS_DialogObjects",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 416,
+					"left": 163,
+					"width": 28,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "y"
+				},
+				"li2": {
+					"type": "groupBox",
+					"top": 203,
+					"left": 12,
+					"width": 369,
+					"height": 188,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Seleccione los campos opcionales a imprimir"
+				},
+				"Botón5": {
+					"type": "button",
+					"top": 224,
+					"left": 155,
+					"width": 120,
+					"height": 20,
+					"dataSource": "bSelTodo",
+					"text": "Seleccionar  Todos",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón6": {
+					"type": "button",
+					"top": 224,
+					"left": 287,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bLimpiar",
+					"text": "Limpiar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Área de plug-in2": {
+					"type": "plugin",
+					"top": 252,
+					"left": 21,
+					"width": 352,
+					"height": 125,
+					"dataSource": "xALP_camposop",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Área de plug-in2.4dm",
+					"events": [
+						"onClick",
+						"onPluginArea"
+					]
+				}
+			}
+		}
+	]
+}

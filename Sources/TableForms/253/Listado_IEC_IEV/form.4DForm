@@ -1,0 +1,415 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "lb_listaIECV",
+	"rightMargin": 15,
+	"bottomMargin": 15,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onCloseBox",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"vrACTiecv_muestraTodos": {
+					"type": "checkbox",
+					"top": 47,
+					"left": 15,
+					"width": 244,
+					"height": 18,
+					"dataSource": "vrACTiecv_muestraTodos",
+					"text": "Mostrar todos los libros",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/vrACTiecv_muestraTodos.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"lb_listaIECV": {
+					"type": "listbox",
+					"top": 65,
+					"left": 15,
+					"width": 620,
+					"height": 263,
+					"dataSource": "lb_listaIECV",
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 9,
+					"method": "ObjectMethods/lb_listaIECV.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "Columna1",
+							"dataSource": "alACTiecv_idDTE",
+							"width": 30,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título1",
+								"text": "ID",
+								"dataSource": "vt_titulo1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						},
+						{
+							"name": "Columna2",
+							"dataSource": "atACTiecv_dts",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título2",
+								"text": "Generación",
+								"dataSource": "vt_titulo2",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						},
+						{
+							"name": "Columna8",
+							"dataSource": "atACTiecv_rut",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título8",
+								"text": "RUT",
+								"dataSource": "Título8",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						},
+						{
+							"name": "Columna7",
+							"dataSource": "atACTiecv_periodo",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título7",
+								"text": "Período",
+								"dataSource": "vt_titulo3",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						},
+						{
+							"name": "Columna3",
+							"dataSource": "alACTiecv_operacion",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título3",
+								"text": "Operación",
+								"dataSource": "vt_titulo4",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						},
+						{
+							"name": "Columna4",
+							"dataSource": "atACTiecv_glosa",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título4",
+								"text": "Glosa Procesamiento",
+								"dataSource": "vt_titulo5",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						},
+						{
+							"name": "Barras 2D1",
+							"dataSource": "atACTiecv_codReemplazo",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado1",
+								"text": "Cód reemplazo",
+								"dataSource": "Encabezado1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						},
+						{
+							"name": "Columna5",
+							"dataSource": "apACTiecv_xml",
+							"width": 65,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"pictureFormat": "proportionalCenter",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"textAlign": "center",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título5",
+								"text": "Obtener XML",
+								"dataSource": "vt_titulo6",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						},
+						{
+							"name": "Columna6",
+							"dataSource": "apACTiecv_sii",
+							"width": 68,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"pictureFormat": "proportionalCenter",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"textAlign": "center",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título6",
+								"text": "Enviar al SII",
+								"dataSource": "vt_titulo7",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						},
+						{
+							"name": "alACTiecv_id",
+							"dataSource": "alACTiecv_id",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título9",
+								"text": "id",
+								"dataSource": "id",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						}
+					]
+				},
+				"Texto": {
+					"type": "text",
+					"top": 14,
+					"left": 15,
+					"width": 540,
+					"height": 22,
+					"textAlign": "center",
+					"styleSheet": "XS_DialogsTitles",
+					"text": "Información Electrónica de Compra y Venta"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 48,
+					"left": 465,
+					"width": 130,
+					"height": 11,
+					"stroke": "#000099",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"textDecoration": "underline",
+					"text": "Obtener estado DTE"
+				},
+				"btn_obtener": {
+					"type": "button",
+					"top": 47,
+					"left": 465,
+					"width": 130,
+					"height": 18,
+					"dataSource": "btn_obtener",
+					"display": false,
+					"method": "ObjectMethods/btn_obtener.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "pictureButton",
+					"top": 45,
+					"left": 617,
+					"width": 18,
+					"height": 18,
+					"sizingX": "move",
+					"dataSource": "bDelLinea",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"salidaEscape": {
+					"type": "button",
+					"top": 391,
+					"left": 347,
+					"width": 176,
+					"height": 77,
+					"dataSource": "salidaEscape",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"method": "ObjectMethods/salidaEscape.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 48,
+					"left": 305,
+					"width": 130,
+					"height": 11,
+					"stroke": "#000099",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"textDecoration": "underline",
+					"text": "Obtener Libro Boleta"
+				},
+				"btn_obtener1": {
+					"type": "button",
+					"top": 47,
+					"left": 305,
+					"width": 130,
+					"height": 18,
+					"dataSource": "btn_obtener",
+					"display": false,
+					"method": "ObjectMethods/btn_obtener1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

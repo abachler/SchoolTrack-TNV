@@ -1,0 +1,278 @@
+﻿{
+	"formSizeAnchor": "Rectángulo1",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 327,
+					"left": 184,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 270,
+					"left": 0,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 262,
+					"height": 179,
+					"fill": "#FFF0DF",
+					"stroke": "#FFF0DF"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 155,
+					"left": 183,
+					"width": 65,
+					"height": 12,
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Cerrar"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 43,
+					"left": 15,
+					"width": 74,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "<?[alumnos]RUT>:"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 109,
+					"left": 15,
+					"width": 96,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "<?[alumnos]noPasaporte>:"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 43,
+					"left": 122,
+					"width": 127,
+					"height": 10,
+					"dataSource": "vtSTR_RUT",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 65,
+					"left": 122,
+					"width": 127,
+					"height": 10,
+					"dataSource": "vtSTR_IDNacional2",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onLosingFocus"
+					]
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 152,
+					"left": 196,
+					"width": 54,
+					"height": 17,
+					"dataSource": "Botón invisible1",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"method": "ObjectMethods/bCancel.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 131,
+					"left": 15,
+					"width": 81,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "<?[alumnos]Codigo_Interno>:"
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 87,
+					"left": 122,
+					"width": 127,
+					"height": 10,
+					"dataSource": "vtSTR_IDNacional3",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onLosingFocus"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 109,
+					"left": 122,
+					"width": 127,
+					"height": 10,
+					"dataSource": "vtSTR_Pasaporte",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 131,
+					"left": 122,
+					"width": 127,
+					"height": 10,
+					"dataSource": "vtSTR_CodigoInterno",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "~\"A-Z;0-9;-;.;$;/;+;%\"",
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onLosingFocus"
+					]
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 65,
+					"left": 15,
+					"width": 126,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "<?[alumnos]IDNacional_2>:"
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 87,
+					"left": 15,
+					"width": 126,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "<?[alumnos]IDNacional_3>:"
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 151,
+					"left": 11,
+					"width": 169,
+					"height": 24,
+					"dataSource": "vMsg",
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 176,
+					"height": 14,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Documentos de Identidad"
+				}
+			}
+		}
+	]
+}

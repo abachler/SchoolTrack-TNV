@@ -1,0 +1,269 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Variable8",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onUnload",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 327,
+					"left": 184,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 270,
+					"left": 0,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"ReemXVacio": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 308,
+					"height": 59,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Este valor de lista se utiliza actualmente en uno o más registros de la base de datos.\rSi desea, puede reemplazarlo por otro valor seleccionándolo en la lista desplegable."
+				},
+				"Text2": {
+					"type": "text",
+					"top": 114,
+					"left": 13,
+					"width": 103,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Por:"
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 92,
+					"left": 13,
+					"width": 304,
+					"height": 14,
+					"dataSource": "sValue",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 137,
+					"left": 13,
+					"width": 289,
+					"height": 14,
+					"dataSource": "auxVal",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 166,
+					"left": 13,
+					"width": 120,
+					"height": 18,
+					"dataSource": "bDel",
+					"tooltip": "TBL_Borrar",
+					"action": "accept",
+					"text": "Eliminar de la lista",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 166,
+					"left": 155,
+					"width": 80,
+					"height": 18,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 166,
+					"left": 241,
+					"width": 80,
+					"height": 18,
+					"dataSource": "bReplace",
+					"tooltip": "TBL_Reemplazar",
+					"text": "Reemplazar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable9": {
+					"type": "dropdown",
+					"top": 214,
+					"left": 13,
+					"width": 309,
+					"height": 20,
+					"dataSource": "atblValues",
+					"display": false,
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Variable9.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Imagen11": {
+					"type": "picture",
+					"top": 136,
+					"left": 307,
+					"width": 11,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 75,
+					"left": 13,
+					"width": 103,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Reemplazar:"
+				},
+				"NoReemXVacio": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 312,
+					"height": 60,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Este valor de lista se utiliza actualmente en uno o más registros de la base de datos.\rEsta lista no permite reemplazar por un valor vacío. Por favor seleccione otro valor de la lista desplegable."
+				},
+				"Botón invisible1": {
+					"type": "button",
+					"top": 135,
+					"left": 306,
+					"width": 19,
+					"height": 18,
+					"dataSource": "Botón invisible1",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

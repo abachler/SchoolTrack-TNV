@@ -1,0 +1,210 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "bSave",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Campo3": {
+					"type": "input",
+					"top": 105,
+					"left": 20,
+					"width": 450,
+					"height": 112,
+					"dataSource": "[xxSTR_InfoCalificaciones:142]Log:8",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"bSave": {
+					"type": "button",
+					"top": 425,
+					"left": 406,
+					"width": 80,
+					"height": 20,
+					"action": "accept",
+					"text": "Guardar",
+					"styleSheet": "Plain - 12",
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 425,
+					"left": 314,
+					"width": 80,
+					"height": 20,
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "Plain - 12",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 231,
+					"left": 33,
+					"width": 45,
+					"height": 15,
+					"textAlign": "right",
+					"styleSheet": "Medium - 12",
+					"text": "Info 1:"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 293,
+					"left": 33,
+					"width": 45,
+					"height": 15,
+					"textAlign": "right",
+					"styleSheet": "Medium - 12",
+					"text": "Info 2:"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 355,
+					"left": 33,
+					"width": 45,
+					"height": 15,
+					"textAlign": "right",
+					"styleSheet": "Medium - 12",
+					"text": "Info 3:"
+				},
+				"Info1": {
+					"type": "input",
+					"top": 231,
+					"left": 86,
+					"width": 400,
+					"height": 42,
+					"dataSource": "[xxSTR_InfoCalificaciones:142]Info1:5",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Info2": {
+					"type": "input",
+					"top": 293,
+					"left": 86,
+					"width": 400,
+					"height": 42,
+					"dataSource": "[xxSTR_InfoCalificaciones:142]Info2:6",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Info3": {
+					"type": "input",
+					"top": 355,
+					"left": 86,
+					"width": 400,
+					"height": 42,
+					"dataSource": "[xxSTR_InfoCalificaciones:142]Info3:7",
+					"styleSheet": "Plain - 12",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"bCopiar": {
+					"type": "button",
+					"top": 425,
+					"left": 19,
+					"width": 90,
+					"height": 21,
+					"shortcutKey": "c",
+					"shortcutAccel": true,
+					"text": "Copiar",
+					"styleSheet": "Plain - 12",
+					"focusable": false,
+					"method": "ObjectMethods/bCopiar.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto": {
+					"type": "text",
+					"top": 83,
+					"left": 18,
+					"width": 472,
+					"height": 15,
+					"styleSheet": "Medium - 12",
+					"text": "Historial de modificaciones de la calificación"
+				},
+				"alumno": {
+					"type": "text",
+					"top": 20,
+					"left": 20,
+					"width": 461,
+					"height": 15,
+					"styleSheet": "Medium - 12",
+					"text": "alumno"
+				},
+				"calificación": {
+					"type": "text",
+					"top": 39,
+					"left": 20,
+					"width": 461,
+					"height": 15,
+					"stroke": "#777777",
+					"styleSheet": "Medium - 12",
+					"text": "calificación"
+				},
+				"infoAsociadaCampo": {
+					"type": "text",
+					"top": 61,
+					"left": 20,
+					"width": 461,
+					"height": 15,
+					"stroke": "#777777",
+					"styleSheet": "Medium - 12",
+					"text": "Info asociada al campo del log, cp muestra nota presentación"
+				}
+			}
+		}
+	]
+}

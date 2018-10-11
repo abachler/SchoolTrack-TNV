@@ -1,0 +1,452 @@
+﻿{
+	"rightMargin": 15,
+	"bottomMargin": 0,
+	"markerBody": 398,
+	"markerBreak": 398,
+	"markerFooter": 408,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texto10": {
+					"type": "text",
+					"top": 10,
+					"left": 103,
+					"width": 418,
+					"height": 20,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 16",
+					"text": "ACT_Cuentas_Contables"
+				},
+				"vNumReg": {
+					"type": "input",
+					"top": 10,
+					"left": 537,
+					"width": 100,
+					"height": 15,
+					"dataSource": "vNumReg",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vNumReg.4dm",
+					"events": [
+						"onLoad",
+						"onHeader",
+						"onPrintingBreak"
+					]
+				},
+				"Línea11": {
+					"type": "line",
+					"top": 0,
+					"left": 88,
+					"height": 398,
+					"sizingY": "grow"
+				},
+				"bPrimero": {
+					"type": "pictureButton",
+					"top": 10,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bPrimero",
+					"action": "firstRecord",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bAnterior": {
+					"type": "pictureButton",
+					"top": 65,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bAnterior",
+					"action": "previousRecord",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bSiguiente": {
+					"type": "pictureButton",
+					"top": 120,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bSiguiente",
+					"action": "nextRecord",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bUltimo": {
+					"type": "pictureButton",
+					"top": 175,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bUltimo",
+					"action": "lastRecord",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bSuprimir": {
+					"type": "pictureButton",
+					"top": 230,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bSuprimir",
+					"action": "deleteRecord",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancelar": {
+					"type": "pictureButton",
+					"top": 285,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bCancelar",
+					"action": "cancel",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidar": {
+					"type": "pictureButton",
+					"top": 340,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bValidar",
+					"action": "accept",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto12": {
+					"type": "text",
+					"top": 45,
+					"left": 115,
+					"width": 125,
+					"height": 15,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"text": "codigo_aux : "
+				},
+				"Texto13": {
+					"type": "text",
+					"top": 69,
+					"left": 115,
+					"width": 125,
+					"height": 15,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"text": "codigo_plan_cuenta : "
+				},
+				"Texto14": {
+					"type": "text",
+					"top": 93,
+					"left": 115,
+					"width": 125,
+					"height": 15,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"text": "glosa : "
+				},
+				"Texto15": {
+					"type": "text",
+					"top": 117,
+					"left": 115,
+					"width": 125,
+					"height": 15,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"text": "id : "
+				},
+				"Texto16": {
+					"type": "text",
+					"top": 141,
+					"left": 115,
+					"width": 125,
+					"height": 15,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"text": "id_centro_asociado : "
+				},
+				"Texto17": {
+					"type": "text",
+					"top": 165,
+					"left": 115,
+					"width": 125,
+					"height": 15,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"text": "id_cta_asociada : "
+				},
+				"Texto18": {
+					"type": "text",
+					"top": 189,
+					"left": 115,
+					"width": 125,
+					"height": 15,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"text": "id_tipo_cta : "
+				},
+				"codigo_aux": {
+					"type": "input",
+					"top": 45,
+					"left": 245,
+					"width": 390,
+					"height": 14,
+					"dataSource": "[ACT_Cuentas_Contables:286]codigo_aux:5",
+					"fill": "#FFFFFF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"codigo_plan_cuenta": {
+					"type": "input",
+					"top": 69,
+					"left": 245,
+					"width": 390,
+					"height": 14,
+					"dataSource": "[ACT_Cuentas_Contables:286]codigo_plan_cuenta:4",
+					"fill": "#FFFFFF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"glosa": {
+					"type": "input",
+					"top": 93,
+					"left": 245,
+					"width": 390,
+					"height": 14,
+					"dataSource": "[ACT_Cuentas_Contables:286]glosa:3",
+					"fill": "#FFFFFF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"id": {
+					"type": "input",
+					"top": 117,
+					"left": 245,
+					"width": 56,
+					"height": 14,
+					"dataSource": "[ACT_Cuentas_Contables:286]id:1",
+					"fill": "#FFFFFF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"id_centro_asociado": {
+					"type": "input",
+					"top": 141,
+					"left": 245,
+					"width": 56,
+					"height": 14,
+					"dataSource": "[ACT_Cuentas_Contables:286]id_centro_asociado:7",
+					"fill": "#FFFFFF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"id_cta_asociada": {
+					"type": "input",
+					"top": 165,
+					"left": 245,
+					"width": 56,
+					"height": 14,
+					"dataSource": "[ACT_Cuentas_Contables:286]id_cta_asociada:6",
+					"fill": "#FFFFFF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"id_tipo_cta": {
+					"type": "input",
+					"top": 189,
+					"left": 245,
+					"width": 56,
+					"height": 14,
+					"dataSource": "[ACT_Cuentas_Contables:286]id_tipo_cta:2",
+					"fill": "#FFFFFF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

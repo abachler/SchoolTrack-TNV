@@ -1,0 +1,699 @@
+﻿{
+	"formSizeAnchor": "vlimportaHorario",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"vlimportaHorario": {
+					"type": "tab",
+					"top": 11,
+					"left": 15,
+					"width": 1307,
+					"height": 771,
+					"dataSource": "vlimportaHorario",
+					"dataSourceTypeHint": "arrayText",
+					"styleSheet": "XS_DialogsTitles",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				},
+				"sepColOpc1": {
+					"type": "radio",
+					"top": 45,
+					"left": 208,
+					"width": 77,
+					"height": 18,
+					"dataSource": "sepColOpc1",
+					"text": "Tabulación",
+					"fontFamily": "Tahoma",
+					"fontSize": 10,
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"sepColOpc2": {
+					"type": "radio",
+					"top": 45,
+					"left": 310,
+					"width": 71,
+					"height": 18,
+					"dataSource": "sepColOpc2",
+					"text": "Coma (,)",
+					"fontFamily": "Tahoma",
+					"fontSize": 10,
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"sepColOpc3": {
+					"type": "radio",
+					"top": 45,
+					"left": 410,
+					"width": 109,
+					"height": 18,
+					"dataSource": "sepColOpc3",
+					"text": "Punto y coma (;)",
+					"fontFamily": "Tahoma",
+					"fontSize": 10,
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"at_cursos_selector": {
+					"type": "dropdown",
+					"top": 56,
+					"left": 827,
+					"width": 142,
+					"height": 25,
+					"dataSource": "at_cursos_selector",
+					"fontFamily": "Tahoma",
+					"fontSize": 14,
+					"method": "ObjectMethods/at_cursos_selector.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"tieneEncabezado": {
+					"type": "checkbox",
+					"top": 66,
+					"left": 32,
+					"width": 180,
+					"height": 21,
+					"text": "¿El archivo contiene encabezado?",
+					"fontFamily": "Tahoma",
+					"fontSize": 10,
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"vt_file": {
+					"type": "input",
+					"top": 89,
+					"left": 27,
+					"width": 402,
+					"height": 13,
+					"dataSource": "vt_file",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"bCargar": {
+					"type": "button",
+					"top": 85,
+					"left": 439,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCargar",
+					"text": "Cargar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/bCargar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"List Box": {
+					"type": "listbox",
+					"top": 112,
+					"left": 27,
+					"width": 942,
+					"height": 587,
+					"dataSource": "List Box",
+					"sortable": false,
+					"movableRows": false,
+					"dragging": "custom",
+					"dropping": "custom",
+					"rowHeight": "5em",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"headerHeight": "2em",
+					"selectionMode": "single",
+					"fill": "#FFFFFF",
+					"alternateFill": "#E2FFDF",
+					"fontFamily": "Tahoma",
+					"fontSize": 10,
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onAfterSort",
+						"onSelectionChange",
+						"onColumnMove",
+						"onRowMove",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "ai_num_hora",
+							"dataSource": "ai_num_hora",
+							"width": 35,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"fill": "#FFFFFF",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Tahoma",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado1",
+								"dataSource": "Encabezado1",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Tahoma",
+								"fontSize": 10,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "at_lbdia1",
+							"dataSource": "at_lbdia1",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"styledText": true,
+							"contextMenu": "none",
+							"fill": "#FFFFFF",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Tahoma",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado2",
+								"dataSource": "Encabezado2",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Tahoma",
+								"fontSize": 10,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "at_lbdia2",
+							"dataSource": "at_lbdia2",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"styledText": true,
+							"contextMenu": "none",
+							"fill": "#FFFFFF",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Tahoma",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado3",
+								"dataSource": "Encabezado3",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Tahoma",
+								"fontSize": 10,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "at_lbdia3",
+							"dataSource": "at_lbdia3",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"styledText": true,
+							"contextMenu": "none",
+							"fill": "#FFFFFF",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Tahoma",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado4",
+								"dataSource": "Encabezado4",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Tahoma",
+								"fontSize": 10,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "at_lbdia4",
+							"dataSource": "at_lbdia4",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"styledText": true,
+							"contextMenu": "none",
+							"fill": "#FFFFFF",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Tahoma",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado5",
+								"dataSource": "Encabezado5",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Tahoma",
+								"fontSize": 10,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "at_lbdia5",
+							"dataSource": "at_lbdia5",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"styledText": true,
+							"contextMenu": "none",
+							"fill": "#FFFFFF",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Tahoma",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado6",
+								"dataSource": "Encabezado6",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Tahoma",
+								"fontSize": 10,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "at_lbdia6",
+							"dataSource": "at_lbdia6",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"styledText": true,
+							"contextMenu": "none",
+							"fill": "#FFFFFF",
+							"alternateFill": "#E2FFDF",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Tahoma",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado7",
+								"dataSource": "Encabezado7",
+								"textAlign": "center",
+								"verticalAlign": "middle",
+								"fontFamily": "Tahoma",
+								"fontSize": 10,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"LB_BloquesSinAsignatura": {
+					"type": "listbox",
+					"top": 138,
+					"left": 989,
+					"width": 318,
+					"height": 218,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "automatic",
+					"fontFamily": "System Font Regular",
+					"fontSize": 10,
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "at_lbNFCurso",
+							"dataSource": "at_lbNFCurso",
+							"width": 70,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"alternateFill": "#E2FFDF",
+							"fontFamily": "tahoma",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "lb_asignotfound_title1",
+								"text": "Encabezado8",
+								"fontFamily": "System Font Regular",
+								"fontSize": 10
+							}
+						},
+						{
+							"name": "at_lbNFLlave",
+							"dataSource": "at_lbNFLlave",
+							"width": 233,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"alternateFill": "#E2FFDF",
+							"fontFamily": "Tahoma",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "lb_asignotfound_title2",
+								"text": "Encabezado9",
+								"fontFamily": "System Font Regular",
+								"fontSize": 10
+							}
+						}
+					]
+				},
+				"Botón": {
+					"type": "button",
+					"top": 376,
+					"left": 1058,
+					"width": 173,
+					"height": 27,
+					"text": "Identificar Asignatura",
+					"focusable": false,
+					"method": "ObjectMethods/Botón.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"LB_AsignaturasNivel": {
+					"type": "listbox",
+					"top": 445,
+					"left": 989,
+					"width": 318,
+					"height": 254,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "automatic",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 10,
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "at_lbGradeCurso",
+							"dataSource": "at_lbGradeCurso",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"alternateFill": "#E2FFDF",
+							"fontFamily": "Tahoma",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "lb_asignivel_title1",
+								"text": "Encabezado8",
+								"fontFamily": ".SF NS Text",
+								"fontSize": 10
+							}
+						},
+						{
+							"name": "at_lbGradeAbrevAsig",
+							"dataSource": "at_lbGradeAbrevAsig",
+							"width": 53,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"alternateFill": "#E2FFDF",
+							"fontFamily": ".SF NS Text",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "lb_asignivel_title4",
+								"text": "Encabezado8",
+								"fontFamily": ".SF NS Text",
+								"fontSize": 10
+							}
+						},
+						{
+							"name": "at_lbGradeAsig",
+							"dataSource": "at_lbGradeAsig",
+							"width": 150,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"alternateFill": "#E2FFDF",
+							"fontFamily": "Tahoma",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "lb_asignivel_title2",
+								"text": "Encabezado9",
+								"fontFamily": ".SF NS Text",
+								"fontSize": 10
+							}
+						},
+						{
+							"name": "at_lbGradeAsigProfe",
+							"dataSource": "at_lbGradeAsigProfe",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"alternateFill": "#E2FFDF",
+							"fontFamily": ".SF NS Text",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "lb_asignivel_title3",
+								"text": "Encabezado13",
+								"fontFamily": ".SF NS Text",
+								"fontSize": 10
+							}
+						},
+						{
+							"name": "al_lbGradeIdAsig",
+							"dataSource": "al_lbGradeIdAsig",
+							"width": 83,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"truncateMode": "none",
+							"fontFamily": ".SF NS Text",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado12",
+								"text": "Encabezado12",
+								"fontFamily": ".SF NS Text",
+								"fontSize": 10
+							}
+						}
+					]
+				},
+				"opc_reemplazar_bloque": {
+					"type": "checkbox",
+					"top": 712,
+					"left": 27,
+					"width": 280,
+					"height": 21,
+					"dataSource": "opc_reemplazar_bloque",
+					"text": "Reemplazar bloques existentes en el horario",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opc_profesor": {
+					"type": "checkbox",
+					"top": 729,
+					"left": 27,
+					"width": 430,
+					"height": 28,
+					"dataSource": "opc_profesor",
+					"text": "Reemplazar en las asignaturas el profesor por el que viene en el archivo (negrita).",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opc_profesorFirmante": {
+					"type": "checkbox",
+					"top": 755,
+					"left": 27,
+					"width": 336,
+					"height": 18,
+					"dataSource": "opc_profesorFirmante",
+					"text": "Reemplazar al profesor firmante por el que viene el en archivo.",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"bimportar": {
+					"type": "button",
+					"top": 753,
+					"left": 493,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bimportar",
+					"text": "Importar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/bimportar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btnlog": {
+					"type": "pictureButton",
+					"top": 50,
+					"left": 1287,
+					"width": 20,
+					"height": 20,
+					"dataSource": "btnlog",
+					"columnCount": 1,
+					"rowCount": 4,
+					"loopBackToFirstFrame": true,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"method": "ObjectMethods/btnlog.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto": {
+					"type": "text",
+					"top": 112,
+					"left": 995,
+					"width": 307,
+					"height": 17,
+					"fontFamily": "Tahoma",
+					"fontSize": 13,
+					"text": "Bloques no relacionados a asignaturas"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 423,
+					"left": 989,
+					"width": 307,
+					"height": 17,
+					"fontFamily": "Tahoma",
+					"fontSize": 13,
+					"text": "Asignaturas del Nivel"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 49,
+					"left": 32,
+					"width": 187,
+					"height": 14,
+					"fontFamily": "Tahoma",
+					"fontSize": 10,
+					"text": "Separador de columnas en el archivo:"
+				}
+			}
+		}
+	]
+}

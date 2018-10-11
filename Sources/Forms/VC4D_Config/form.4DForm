@@ -1,0 +1,403 @@
+﻿{
+	"windowTitle": "Linked servers",
+	"formSizeAnchor": "lb_servers",
+	"rightMargin": 24,
+	"bottomMargin": 40,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onDoubleClick",
+		"onCloseBox",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"lb_servers": {
+					"type": "listbox",
+					"top": 18,
+					"left": 17,
+					"width": 1096,
+					"height": 316,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"hideFocusRing": true,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 13,
+					"method": "ObjectMethods/lb_servers.4dm",
+					"events": [
+						"onDoubleClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "aliasServidor",
+							"width": 160,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "hdr_alias",
+								"text": "Alias",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "statusServer",
+							"width": 122,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "hdr_status",
+								"text": "Status",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "url",
+							"width": 335,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "hdr_URL",
+								"text": "URL",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "webServiceName",
+							"width": 192,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "hdr_webserviceName",
+								"text": "Webservice Name",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "namespace",
+							"width": 110,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "hdr_namespace",
+								"text": "Namespace",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "username",
+							"width": 101,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "hdr_username",
+								"text": "Usuario",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "password",
+							"width": 107,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "#FFFFFF",
+							"fontFamily": "%password",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "hdr_password",
+								"text": "Contraseña",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						}
+					]
+				},
+				"add": {
+					"type": "button",
+					"top": 341,
+					"left": 17,
+					"width": 26,
+					"height": 25,
+					"shortcutKey": "+",
+					"shortcutAccel": true,
+					"styleSheet": "Plain - 16",
+					"text": "+",
+					"style": "roundedBevel",
+					"method": "ObjectMethods/add.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"remove": {
+					"type": "button",
+					"top": 341,
+					"left": 50,
+					"width": 26,
+					"height": 25,
+					"shortcutKey": "+",
+					"shortcutAccel": true,
+					"styleSheet": "Plain - 16",
+					"text": "-",
+					"style": "roundedBevel",
+					"method": "ObjectMethods/remove.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		null,
+		{
+			"objects": {
+				"Imagen7": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 1138,
+					"height": 375,
+					"pictureFormat": "scaled",
+					"picture": "Images/Imagen7.gif"
+				},
+				"Botón invisible": {
+					"type": "button",
+					"top": 3,
+					"left": 0,
+					"width": 1136,
+					"height": 374,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Botón invisible",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"in_rectangle1": {
+					"type": "rectangle",
+					"top": 76,
+					"left": 381,
+					"width": 378,
+					"height": 221,
+					"sizingX": "move",
+					"sizingY": "move",
+					"fill": "#AAAAAA",
+					"stroke": "#AAAAAA",
+					"borderRadius": 5
+				},
+				"in_rectangle": {
+					"type": "rectangle",
+					"top": 74,
+					"left": 379,
+					"width": 378,
+					"height": 221,
+					"sizingX": "move",
+					"sizingY": "move",
+					"stroke": "#FFFFFF",
+					"borderRadius": 5
+				},
+				"in_aliasServidor": {
+					"type": "input",
+					"top": 115,
+					"left": 394,
+					"width": 351,
+					"height": 16,
+					"sizingX": "move",
+					"sizingY": "move",
+					"styleSheet": "Plain - 13",
+					"placeholder": "Alias del servidor",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"in_URL": {
+					"type": "input",
+					"top": 139,
+					"left": 394,
+					"width": 351,
+					"height": 16,
+					"sizingX": "move",
+					"sizingY": "move",
+					"styleSheet": "Plain - 13",
+					"placeholder": "URL",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"in_webServiceName": {
+					"type": "input",
+					"top": 163,
+					"left": 394,
+					"width": 351,
+					"height": 16,
+					"sizingX": "move",
+					"sizingY": "move",
+					"styleSheet": "Plain - 13",
+					"placeholder": "Webservice name",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"in_namespace": {
+					"type": "input",
+					"top": 186,
+					"left": 394,
+					"width": 351,
+					"height": 16,
+					"sizingX": "move",
+					"sizingY": "move",
+					"styleSheet": "Plain - 13",
+					"placeholder": "Namespace",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"in_username": {
+					"type": "input",
+					"top": 210,
+					"left": 394,
+					"width": 351,
+					"height": 16,
+					"sizingX": "move",
+					"sizingY": "move",
+					"styleSheet": "Plain - 13",
+					"placeholder": "User name",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"in_password": {
+					"type": "input",
+					"top": 234,
+					"left": 394,
+					"width": 351,
+					"height": 16,
+					"sizingX": "move",
+					"sizingY": "move",
+					"fontFamily": "%password",
+					"fontSize": 13,
+					"placeholder": "Password",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"in_ok": {
+					"type": "button",
+					"top": 262,
+					"left": 666,
+					"width": 80,
+					"height": 22,
+					"sizingX": "move",
+					"sizingY": "move",
+					"text": "OK",
+					"style": "roundedBevel",
+					"method": "ObjectMethods/in_ok.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"in_cancel": {
+					"type": "button",
+					"top": 262,
+					"left": 575,
+					"width": 80,
+					"height": 22,
+					"sizingX": "move",
+					"sizingY": "move",
+					"text": "Cancelar",
+					"style": "roundedBevel",
+					"method": "ObjectMethods/in_cancel.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"in_titulo": {
+					"type": "text",
+					"top": 84,
+					"left": 394,
+					"width": 351,
+					"height": 17,
+					"sizingX": "move",
+					"sizingY": "move",
+					"text": "Texto de ejemplo:"
+				}
+			}
+		}
+	]
+}

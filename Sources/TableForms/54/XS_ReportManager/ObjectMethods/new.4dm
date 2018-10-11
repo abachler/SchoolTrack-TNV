@@ -1,0 +1,2 @@
+QR_NewTemplate 
+QR_AjustesMenu 

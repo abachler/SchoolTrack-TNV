@@ -1,0 +1,258 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Botón1",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Botón1": {
+					"type": "button",
+					"top": 251,
+					"left": 476,
+					"width": 87,
+					"height": 22,
+					"dataSource": "Botón1",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Aceptar",
+					"styleSheet": "XS_DialogObjects",
+					"defaultButton": true,
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección1": {
+					"type": "checkbox",
+					"top": 53,
+					"left": 32,
+					"width": 258,
+					"height": 18,
+					"dataSource": "bcIncluyeAreas",
+					"text": "Incluir Sección para asignaturas áreas",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Casilla de selección1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección2": {
+					"type": "checkbox",
+					"top": 204,
+					"left": 32,
+					"width": 472,
+					"height": 18,
+					"dataSource": "bcImprimirSoloConLogros",
+					"text": "Imprimir Asignaturas sólo cuando hay Aprendizajes Esperados definidos",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección3": {
+					"type": "checkbox",
+					"top": 120,
+					"left": 54,
+					"width": 312,
+					"height": 18,
+					"dataSource": "bcOcultaEje",
+					"text": "ocultar si es igual al nombre de la Asignatura",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección4": {
+					"type": "checkbox",
+					"top": 99,
+					"left": 32,
+					"width": 289,
+					"height": 18,
+					"dataSource": "bcIncluyeEjes",
+					"text": "Incluir Sección para Ejes de Aprendizaje",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Casilla de selección4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección6": {
+					"type": "checkbox",
+					"top": 149,
+					"left": 33,
+					"width": 359,
+					"height": 18,
+					"dataSource": "bcIncluyeDimensiones",
+					"text": "Incluir Sección para Dimensiones de Aprendizaje",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Casilla de selección6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección7": {
+					"type": "checkbox",
+					"top": 168,
+					"left": 54,
+					"width": 412,
+					"height": 18,
+					"dataSource": "bcOcultaDimensiones",
+					"text": "ocultar cuando no hayan Dimensiones de aprendizaje asociadas",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 27,
+					"left": 32,
+					"width": 152,
+					"height": 15,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Reservar un espacio de: "
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 27,
+					"left": 193,
+					"width": 32,
+					"height": 15,
+					"dataSource": "vi_AltoEnzabezado",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"min": 30,
+					"max": 150,
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 27,
+					"left": 232,
+					"width": 236,
+					"height": 15,
+					"styleSheet": "XS_DialogObjects",
+					"text": "puntos para el encabezado"
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 251,
+					"left": 380,
+					"width": 87,
+					"height": 22,
+					"dataSource": "Botón2",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección8": {
+					"type": "checkbox",
+					"top": 71,
+					"left": 53,
+					"width": 503,
+					"height": 18,
+					"dataSource": "bcOcultaAreas",
+					"text": "ocultar si la Asignatura no está definida como área (imprime el nombre del sector)",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

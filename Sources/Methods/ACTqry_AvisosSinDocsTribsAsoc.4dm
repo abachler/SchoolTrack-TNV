@@ -1,0 +1,28 @@
+//%attributes = {}
+  //ACTqry_AvisosSinDocsTribsAsoc 
+SRACT_SelFecha (4)
+If (ok=1)
+	READ ONLY:C145([ACT_Avisos_de_Cobranza:124])
+	READ ONLY:C145([ACT_Transacciones:178])
+	READ ONLY:C145([ACT_Boletas:181])
+	READ ONLY:C145([ACT_Cargos:173])
+	READ ONLY:C145([ACT_Documentos_de_Cargo:174])
+	
+	QUERY:C277([ACT_Avisos_de_Cobranza:124];[ACT_Avisos_de_Cobranza:124]Fecha_Emision:4>=vd_fecha1;*)
+	QUERY:C277([ACT_Avisos_de_Cobranza:124]; & ;[ACT_Avisos_de_Cobranza:124]Fecha_Emision:4<=vd_fecha2)
+	KRL_RelateSelection (->[ACT_Documentos_de_Cargo:174]No_ComprobanteInterno:15;->[ACT_Avisos_de_Cobranza:124]ID_Aviso:1)
+	KRL_RelateSelection (->[ACT_Cargos:173]ID_Documento_de_Cargo:3;->[ACT_Documentos_de_Cargo:174]ID_Documento:1)
+	QUERY SELECTION:C341([ACT_Cargos:173];[ACT_Cargos:173]No_Incluir_en_DocTrib:50=False:C215;*)
+	QUERY SELECTION:C341([ACT_Cargos:173]; & ;[ACT_Cargos:173]Monto_Neto:5#0)
+	CREATE SET:C116([ACT_Cargos:173];"setCargosTodos")
+	KRL_RelateSelection (->[ACT_Transacciones:178]ID_Item:3;->[ACT_Cargos:173]ID:1)
+	KRL_RelateSelection (->[ACT_Boletas:181]ID:1;->[ACT_Transacciones:178]No_Boleta:9)
+	KRL_RelateSelection (->[ACT_Transacciones:178]No_Boleta:9;->[ACT_Boletas:181]ID:1)
+	KRL_RelateSelection (->[ACT_Cargos:173]ID:1;->[ACT_Transacciones:178]ID_Item:3)
+	CREATE SET:C116([ACT_Cargos:173];"setCargosEnBoleta")
+	DIFFERENCE:C122("setCargosTodos";"setCargosEnBoleta";"setCargosTodos")
+	USE SET:C118("setCargosTodos")
+	SET_ClearSets ("setCargosTodos";"setCargosEnBoleta")
+	KRL_RelateSelection (->[ACT_Documentos_de_Cargo:174]ID_Documento:1;->[ACT_Cargos:173]ID_Documento_de_Cargo:3)
+	KRL_RelateSelection (->[ACT_Avisos_de_Cobranza:124]ID_Aviso:1;->[ACT_Documentos_de_Cargo:174]No_ComprobanteInterno:15)
+End if 

@@ -1,0 +1,1 @@
+[ACT_CuentasCorrientes:175]PAC_titular_cuenta:46:=[ACT_CuentasCorrientes:175]PAC_apellidos:44+" "+[ACT_CuentasCorrientes:175]PAC_nombres:45

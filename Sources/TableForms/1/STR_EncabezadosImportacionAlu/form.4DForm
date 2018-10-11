@@ -1,0 +1,540 @@
+﻿{
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Cuadro de Grupo": {
+					"type": "groupBox",
+					"top": 21,
+					"left": 9,
+					"width": 785,
+					"height": 727,
+					"text": "Seleccione Campos para Importación de Alumnos"
+				},
+				"List Box": {
+					"type": "listbox",
+					"top": 75,
+					"left": 18,
+					"width": 246,
+					"height": 259,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "automatic",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Barras 2D1",
+							"dataSource": "at_nombreCampoAlumno",
+							"width": 166,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado1",
+								"text": "Nombre Campo"
+							}
+						},
+						{
+							"name": "Barras 2D7",
+							"dataSource": "ab_seleccionadoAlumno",
+							"width": 65,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "checkbox",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado7"
+							}
+						}
+					]
+				},
+				"List Box1": {
+					"type": "listbox",
+					"top": 75,
+					"left": 278,
+					"width": 246,
+					"height": 259,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "automatic",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Barras 2D2",
+							"dataSource": "at_nombreCampoApoAca",
+							"width": 166,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado2",
+								"text": "Nombre Campo"
+							}
+						},
+						{
+							"name": "Barras 2D3",
+							"dataSource": "ab_seleccionadoApoAca",
+							"width": 65,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "checkbox",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado3"
+							}
+						}
+					]
+				},
+				"List Box3": {
+					"type": "listbox",
+					"top": 75,
+					"left": 538,
+					"width": 246,
+					"height": 259,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "automatic",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Barras 2D6",
+							"dataSource": "at_nombreCampoApoCta",
+							"width": 166,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado6",
+								"text": "Nombre Campo"
+							}
+						},
+						{
+							"name": "Barras 2D8",
+							"dataSource": "ab_seleccionadoApoCta",
+							"width": 65,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "checkbox",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado8"
+							}
+						}
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 341,
+					"left": 135,
+					"width": 129,
+					"height": 19,
+					"text": "Seleccionar Todos",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 341,
+					"left": 395,
+					"width": 129,
+					"height": 19,
+					"text": "Seleccionar Todos",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 341,
+					"left": 655,
+					"width": 129,
+					"height": 19,
+					"text": "Seleccionar Todos",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"List Box2": {
+					"type": "listbox",
+					"top": 411,
+					"left": 18,
+					"width": 246,
+					"height": 259,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "automatic",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Barras 2D4",
+							"dataSource": "at_nombreCampoPadre",
+							"width": 166,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado4",
+								"text": "Nombre Campo"
+							}
+						},
+						{
+							"name": "Barras 2D5",
+							"dataSource": "ab_seleccionadoPadre",
+							"width": 65,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "checkbox",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado5"
+							}
+						}
+					]
+				},
+				"List Box4": {
+					"type": "listbox",
+					"top": 411,
+					"left": 278,
+					"width": 246,
+					"height": 259,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "automatic",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Barras 2D9",
+							"dataSource": "at_nombreCampoMadre",
+							"width": 166,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado9",
+								"text": "Nombre Campo"
+							}
+						},
+						{
+							"name": "Barras 2D10",
+							"dataSource": "ab_seleccionadoMadre",
+							"width": 65,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "checkbox",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado10"
+							}
+						}
+					]
+				},
+				"List Box5": {
+					"type": "listbox",
+					"top": 411,
+					"left": 538,
+					"width": 246,
+					"height": 259,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "automatic",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Barras 2D11",
+							"dataSource": "at_nombreCampoFamilia",
+							"width": 166,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado11",
+								"text": "Nombre Campo"
+							}
+						},
+						{
+							"name": "Barras 2D12",
+							"dataSource": "ab_seleccionadoFamilia",
+							"width": 65,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "checkbox",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado12"
+							}
+						}
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 676,
+					"left": 135,
+					"width": 129,
+					"height": 19,
+					"text": "Seleccionar Todos",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 676,
+					"left": 395,
+					"width": 129,
+					"height": 19,
+					"text": "Seleccionar Todos",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 676,
+					"left": 655,
+					"width": 129,
+					"height": 19,
+					"text": "Seleccionar Todos",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 710,
+					"left": 594,
+					"width": 91,
+					"height": 24,
+					"dataSource": "bExplore",
+					"text": "Exportar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 710,
+					"left": 693,
+					"width": 91,
+					"height": 24,
+					"dataSource": "bExplore",
+					"text": "Cerrar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto": {
+					"type": "text",
+					"top": 53,
+					"left": 18,
+					"width": 237,
+					"height": 17,
+					"text": "Alumno"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 54,
+					"left": 278,
+					"width": 237,
+					"height": 17,
+					"text": "Apoderado Académico"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 55,
+					"left": 538,
+					"width": 237,
+					"height": 17,
+					"text": "Apoderado de Cuentas"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 387,
+					"left": 18,
+					"width": 237,
+					"height": 17,
+					"text": "Padre"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 390,
+					"left": 278,
+					"width": 237,
+					"height": 17,
+					"text": "Madre"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 389,
+					"left": 538,
+					"width": 237,
+					"height": 17,
+					"text": "Familia"
+				}
+			}
+		}
+	]
+}

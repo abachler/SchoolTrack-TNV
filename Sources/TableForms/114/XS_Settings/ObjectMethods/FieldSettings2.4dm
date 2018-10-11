@@ -1,0 +1,2 @@
+
+XS_Settings ("SavePanelColumnSettings")

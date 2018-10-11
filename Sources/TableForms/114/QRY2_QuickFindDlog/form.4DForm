@@ -1,0 +1,311 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable3": {
+					"type": "listbox",
+					"top": 13,
+					"left": 11,
+					"width": 188,
+					"height": 278,
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"borderStyle": "sunken",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "Variable3_Column1",
+							"dataSource": "atVS_QFSourceFieldAlias",
+							"width": 10,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"Variable13": {
+					"type": "listbox",
+					"top": 13,
+					"left": 212,
+					"width": 244,
+					"height": 118,
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"borderStyle": "sunken",
+					"method": "ObjectMethods/Variable13.4dm",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "Variable13_Column1",
+							"dataSource": "aDelims",
+							"width": 10,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "2",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"texto": {
+					"type": "input",
+					"top": 142,
+					"left": 212,
+					"width": 244,
+					"height": 14,
+					"dataSource": "vtQRY_ValorLiteral",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/texto.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"combo": {
+					"type": "combo",
+					"top": 140,
+					"left": 212,
+					"width": 244,
+					"height": 17,
+					"dataSource": "popChoice",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/combo.4dm",
+					"events": [
+						"onClick",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onAfterKeystroke"
+					]
+				},
+				"boolean1": {
+					"type": "radio",
+					"top": 137,
+					"left": 212,
+					"width": 117,
+					"height": 22,
+					"dataSource": "boolean1",
+					"text": "Botón de opción",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/boolean1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"boolean2": {
+					"type": "radio",
+					"top": 138,
+					"left": 339,
+					"width": 117,
+					"height": 20,
+					"dataSource": "boolean2",
+					"text": "Botón de opción",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/boolean2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable431": {
+					"type": "input",
+					"top": 196,
+					"left": 212,
+					"width": 244,
+					"height": 65,
+					"dataSource": "vtext1",
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable18": {
+					"type": "button",
+					"top": 271,
+					"left": 284,
+					"width": 80,
+					"height": 20,
+					"dataSource": "b_Buscar",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"fontFamily": "Arial",
+					"fontSize": 11,
+					"text": "Cancelar",
+					"iconFrames": 4,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable19": {
+					"type": "button",
+					"top": 271,
+					"left": 376,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bSearch",
+					"shortcutKey": "[Return]",
+					"fontFamily": "Arial",
+					"fontSize": 11,
+					"text": "Buscar",
+					"iconFrames": 4,
+					"method": "ObjectMethods/Variable19.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Picture343": {
+					"type": "picture",
+					"top": 165,
+					"left": 309,
+					"width": 96,
+					"height": 24,
+					"pictureFormat": "scaled"
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 170,
+					"left": 211,
+					"width": 96,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Tipo de búsqueda:"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 301,
+					"left": 11,
+					"width": 444,
+					"height": 42,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Mantenga presionada la tecla ALT al pulsar el botón Buscar si desea incluir en la búsqueda los registros inactivos (alumnos retirados o egresados; ex-profesores; familias, relaciones familiares, cuentas corrientes inactivas, etc)."
+				}
+			}
+		}
+	]
+}

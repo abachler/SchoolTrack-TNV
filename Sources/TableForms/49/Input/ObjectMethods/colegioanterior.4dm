@@ -1,0 +1,36 @@
+IT_Clairvoyance (Self:C308;->aColegiosGrupo;"";True:C214)
+If (Form event:C388=On Losing Focus:K2:8)
+	If (Self:C308->#"")
+		$found:=Find in array:C230(aColegiosGrupo;Self:C308->)
+		If ($found=-1)
+			$r:=CD_Dlog (0;__ ("Este colegio no está en la lista de colegios del grupo.\r¿Desea Ud. agregarlo?");__ ("");__ ("Si");__ ("No"))
+			If ($r=1)
+				APPEND TO ARRAY:C911(aColegiosGrupo;Self:C308->)
+				SORT ARRAY:C229(aColegiosGrupo)
+				C_BLOB:C604(blob)
+				SET BLOB SIZE:C606(blob;0)
+				BLOB_Variables2Blob (->blob;0;->aColegiosGrupo)
+				PREF_SetBlob (0;"colegiosgrupo";blob)
+				SET BLOB SIZE:C606(blob;0)
+				READ WRITE:C146([xShell_List:39])
+				QUERY:C277([xShell_List:39];[xShell_List:39]Listname:1="Colegio Anterior")
+				ARRAY TEXT:C222(aTexts;0)
+				BLOB_Blob2Vars (->[xShell_List:39]Contents:9;0;->aTexts)
+				$found:=Find in array:C230(aTexts;Self:C308->)
+				If ($found=-1)
+					APPEND TO ARRAY:C911(aTexts;Self:C308->)
+					SORT ARRAY:C229(aTexts)
+					  //BLOB_Variables2Blob (->[xShell_List]Contents;0;->aTexts)
+					  //$arrPtr:=Get pointer([xShell_List]ArrayName1)
+					  //COPY ARRAY(aTexts;$arrPtr->)
+					  //SAVE RECORD([xShell_List])
+					  //20140107 ASM Ticket  128514
+					TBL_SaveListAndArrays (->aTexts)
+				End if 
+				ARRAY TEXT:C222(aTexts;0)
+				KRL_UnloadReadOnly (->[xShell_List:39])
+			End if 
+			POST KEY:C465(9)
+		End if 
+	End if 
+End if 

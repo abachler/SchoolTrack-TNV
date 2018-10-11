@@ -1,0 +1,1 @@
+vFechaHora:=String:C10(Current date:C33)+" a "+String:C10(Current time:C178)

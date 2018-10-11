@@ -1,0 +1,586 @@
+﻿{
+	"windowTitle": "Revisión de métodos no utilizados",
+	"formSizeAnchor": "lb_webservices",
+	"rightMargin": 0,
+	"bottomMargin": 150,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onUnload",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"lb_metodos": {
+					"type": "listbox",
+					"top": 0,
+					"left": 0,
+					"width": 240,
+					"height": 784,
+					"hideFocusRing": true,
+					"movableRows": false,
+					"dropping": "custom",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"headerHeight": "24px",
+					"showFooters": true,
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"method": "ObjectMethods/lb_metodos.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					],
+					"columns": [
+						{
+							"name": "metodos",
+							"width": 240,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDrop",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado1",
+								"text": "Lista de métodos inutilizados",
+								"dataSource": "Encabezado1",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pie1",
+								"dataSourceTypeHint": "number",
+								"variableCalculation": "count",
+								"timeFormat": "hh_mm_ss",
+								"fill": "#DDDDDD",
+								"fontFamily": "Helvetica Neue Medium",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"lb_comandos": {
+					"type": "listbox",
+					"top": 0,
+					"left": 241,
+					"width": 240,
+					"height": 784,
+					"hideFocusRing": true,
+					"dropping": "custom",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"headerHeight": "24px",
+					"showFooters": true,
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"method": "ObjectMethods/lb_comandos.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					],
+					"columns": [
+						{
+							"name": "comandos",
+							"width": 180,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onDoubleClick"
+							],
+							"header": {
+								"name": "Encabezado2",
+								"text": "Llamados en el código",
+								"fontFamily": "Helvetica Neue Medium",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "Pie2",
+								"dataSourceTypeHint": "number",
+								"variableCalculation": "count",
+								"timeFormat": "hh_mm_ss",
+								"fill": "#DDDDDD",
+								"fontFamily": "Helvetica Neue Medium",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "comandosObjeto",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado11",
+								"text": "Encabezado11",
+								"dataSource": "Encabezado11",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							},
+							"footer": {
+								"name": "Pie11",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"lb_ejecutables": {
+					"type": "listbox",
+					"top": 0,
+					"left": 482,
+					"width": 240,
+					"height": 784,
+					"hideFocusRing": true,
+					"dropping": "custom",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"headerHeight": "24px",
+					"showFooters": true,
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"method": "ObjectMethods/lb_ejecutables.4dm",
+					"events": [
+						"onDoubleClick"
+					],
+					"columns": [
+						{
+							"name": "ejecutables",
+							"width": 240,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado12",
+								"text": "Llamados en ejecutables",
+								"fontFamily": "Helvetica Neue Medium",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "Pie12",
+								"dataSourceTypeHint": "number",
+								"variableCalculation": "count",
+								"timeFormat": "hh_mm_ss",
+								"fill": "#DDDDDD",
+								"fontFamily": "Helvetica Neue Medium",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"lb_comandos1": {
+					"type": "listbox",
+					"top": 0,
+					"left": 722,
+					"width": 240,
+					"height": 784,
+					"hideFocusRing": true,
+					"dropping": "custom",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"headerHeight": "24px",
+					"showFooters": true,
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"method": "ObjectMethods/lb_comandos1.4dm",
+					"events": [
+						"onDoubleClick"
+					],
+					"columns": [
+						{
+							"name": "informes",
+							"width": 240,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado3",
+								"text": "Llamados en informes",
+								"dataSource": "Encabezado2",
+								"fontFamily": "Helvetica Neue Medium",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "Pie3",
+								"dataSourceTypeHint": "number",
+								"variableCalculation": "count",
+								"timeFormat": "hh_mm_ss",
+								"fill": "#DDDDDD",
+								"fontFamily": "Helvetica Neue Medium",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"lb_macros": {
+					"type": "listbox",
+					"top": 0,
+					"left": 963,
+					"width": 240,
+					"height": 784,
+					"hideFocusRing": true,
+					"dropping": "custom",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"headerHeight": "24px",
+					"showFooters": true,
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"method": "ObjectMethods/lb_macros.4dm",
+					"events": [
+						"onDoubleClick"
+					],
+					"columns": [
+						{
+							"name": "macros",
+							"width": 240,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado4",
+								"text": "Llamados en macros",
+								"fontFamily": "Helvetica Neue Medium",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "Pie4",
+								"dataSourceTypeHint": "number",
+								"variableCalculation": "count",
+								"timeFormat": "hh_mm_ss",
+								"fill": "#DDDDDD",
+								"fontFamily": "Helvetica Neue Medium",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"lb_webservices": {
+					"type": "listbox",
+					"top": 0,
+					"left": 1203,
+					"width": 260,
+					"height": 784,
+					"hideFocusRing": true,
+					"dropping": "custom",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"headerHeight": "24px",
+					"showFooters": true,
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"fill": "#000000",
+					"alternateFill": "automatic",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"method": "ObjectMethods/lb_webservices.4dm",
+					"events": [
+						"onDoubleClick"
+					],
+					"columns": [
+						{
+							"name": "webservices",
+							"width": 260,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado5",
+								"text": "Posibles web services",
+								"fontFamily": "Helvetica Neue Medium",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "Pie5",
+								"dataSourceTypeHint": "number",
+								"variableCalculation": "count",
+								"timeFormat": "hh_mm_ss",
+								"fill": "#DDDDDD",
+								"fontFamily": "Helvetica Neue Medium",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"refMenuContextual": {
+					"type": "input",
+					"top": 6,
+					"left": 1501,
+					"width": 127,
+					"height": 14,
+					"sizingX": "move",
+					"styleSheet": "Medium - 11",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"codigo1": {
+					"type": "listbox",
+					"top": 6,
+					"left": 1657,
+					"width": 913,
+					"height": 379,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"stroke": "#000000",
+					"fill": "#000000",
+					"alternateFill": "automatic",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "rutas",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						},
+						{
+							"name": "codigo",
+							"width": 793,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						}
+					]
+				},
+				"Termómetro": {
+					"type": "progress",
+					"top": 12,
+					"left": 194,
+					"width": 1,
+					"height": 1,
+					"dataSource": "Termómetro",
+					"continuousExecution": false,
+					"min": 0,
+					"max": 100,
+					"graduationStep": 10,
+					"step": 10,
+					"enterable": true
+				},
+				"Texto": {
+					"type": "text",
+					"top": 808,
+					"left": 5,
+					"width": 1387,
+					"height": 72,
+					"styleSheet": "Plain - 12",
+					"text": "Busca los métodos inutilizados en el menú Edición/Buscar métodos y variables globales sin utilizar, y arrastra la lista de métodos (no arrastrar las variables) sobre la columna Lista de métodos inutilizados. \rEsta herramienta analizará estos metodos para asegurarse que no sean llamados como literales en macros, script de informes, comandos de xShell (paneles, asistente, metodos en el explorador y comandos ejecutables) y métodos que responden a llamados SOAP.\r4D solo considera los llamados directos,  los métodos llamados desde menús o como cadena entre comillas en los comandos NEW PROCESS, EXECUTE ON SERVER, EXECUTE ON CLIENT, EXECUTE FORMULA y EXECUTE METHOD)\t"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 886,
+					"left": 5,
+					"width": 1385,
+					"height": 33,
+					"stroke": "#EE0000",
+					"fontWeight": "bold",
+					"text": "Utilizar con precaución: Es posible que 4D no detecte el llamado a algunos objetos nativos como columnas de listbox basadas en selecciones que llaman métodos asignados como fórmulas o nombres   de variables."
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectángulo": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1464,
+					"height": 33,
+					"fill": "#404040"
+				},
+				"uso_Referencias": {
+					"type": "listbox",
+					"top": 33,
+					"left": 0,
+					"width": 1463,
+					"height": 902,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "List Box1",
+					"hideFocusRing": true,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"headerHeight": "24px",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#000000",
+					"method": "ObjectMethods/uso_Referencias.4dm",
+					"events": [
+						"onDoubleClick",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "usoRuta",
+							"width": 20,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fontFamily": "Helvetica Neue Medium",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						},
+						{
+							"name": "usoLinea",
+							"width": 1443,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						}
+					]
+				},
+				"metodoactual": {
+					"type": "text",
+					"top": 6,
+					"left": 48,
+					"width": 1052,
+					"height": 15,
+					"stroke": "#FFFFFF",
+					"styleSheet": "Medium - 13",
+					"text": "metodoactual"
+				},
+				"Botón invisible": {
+					"type": "button",
+					"top": 1,
+					"left": 0,
+					"width": 33,
+					"height": 30,
+					"display": false,
+					"method": "ObjectMethods/Botón invisible.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Óvalo": {
+					"type": "oval",
+					"top": 4,
+					"left": 4,
+					"width": 24,
+					"height": 24,
+					"fill": "transparent",
+					"stroke": "#FFFFFF"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 7,
+					"left": 8,
+					"width": 15,
+					"height": 17,
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"styleSheet": "Medium - 13",
+					"text": "x"
+				}
+			}
+		}
+	]
+}

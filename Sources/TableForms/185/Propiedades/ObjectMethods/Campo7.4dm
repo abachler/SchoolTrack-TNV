@@ -1,0 +1,1 @@
+viEVLG_RequeridoEje:=Round:C94([MPA_DefinicionEjes:185]Escala_Maximo:18*[MPA_DefinicionEjes:185]PctParaAprobacion:16/100;0)

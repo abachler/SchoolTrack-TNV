@@ -1,0 +1,203 @@
+﻿{
+	"windowTitle": ":21021,1",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "RectRond1",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"RectRond1": {
+					"type": "rectangle",
+					"top": -1,
+					"left": -1,
+					"width": 365,
+					"height": 216,
+					"stroke": "transparent"
+				},
+				"Field1015": {
+					"type": "input",
+					"top": 1,
+					"left": 56,
+					"width": 295,
+					"height": 22,
+					"dataSource": "[BBL_FichasCatalograficas:81]Encabezado:2",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field1013": {
+					"type": "input",
+					"top": 26,
+					"left": 2,
+					"width": 49,
+					"height": 166,
+					"dataSource": "[BBL_FichasCatalograficas:81]Clasificación:3",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Field1014": {
+					"type": "input",
+					"top": 25,
+					"left": 62,
+					"width": 295,
+					"height": 166,
+					"dataSource": "[BBL_FichasCatalograficas:81]Texto Ficha:4",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 247,
+					"left": 101,
+					"width": 22,
+					"height": 16,
+					"dataSource": "bclosewindow",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 214,
+					"left": -2,
+					"width": 366,
+					"height": 30,
+					"fill": "#DDDDDD",
+					"stroke": "#DDDDDD"
+				},
+				"Botón imagen1": {
+					"type": "pictureButton",
+					"top": 219,
+					"left": 340,
+					"width": 20,
+					"height": 20,
+					"dataSource": "bNext",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchContinuously": true,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Botón imagen1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón imagen2": {
+					"type": "pictureButton",
+					"top": 219,
+					"left": 2,
+					"width": 20,
+					"height": 20,
+					"dataSource": "bPrev",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchContinuously": true,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Botón imagen2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,1 @@
+vtQRY_ValorLiteral:="1"

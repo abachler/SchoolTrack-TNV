@@ -1,0 +1,211 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Texto33",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Variable6": {
+					"type": "input",
+					"top": 0,
+					"left": 0,
+					"width": 653,
+					"height": 410,
+					"dataSource": "vp_ModuleIconBack",
+					"dataSourceTypeHint": "picture",
+					"fill": "#FFFFFF",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"pictureFormat": "proportionalTopLeft",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto_0": {
+					"type": "text",
+					"top": 20,
+					"left": 13,
+					"width": 439,
+					"height": 22,
+					"styleSheet": "XS_DialogsTitles",
+					"text": "Cambio masivo de tipo de Documento Tributario"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 68,
+					"left": 343,
+					"width": 200,
+					"height": 18,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Seleccione estado a asignar:"
+				},
+				"cs_todosCTD": {
+					"type": "radio",
+					"top": 98,
+					"left": 33,
+					"width": 290,
+					"height": 20,
+					"dataSource": "cs_todosCTD",
+					"text": "Reemplazar cualquiera sea el tipo de documento actual",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"atACT_tipoDoc2Asignar": {
+					"type": "dropdown",
+					"top": 98,
+					"left": 363,
+					"width": 220,
+					"height": 20,
+					"dataSource": "atACT_tipoDoc2Asignar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cs_particularCE_2": {
+					"type": "radio",
+					"top": 118,
+					"left": 33,
+					"width": 303,
+					"height": 20,
+					"dataSource": "cs_particularCTD",
+					"text": "Reemplazar sólo si el tipo de documento actual es:",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"atACT_tipoDocAModif": {
+					"type": "dropdown",
+					"top": 148,
+					"left": 26,
+					"width": 220,
+					"height": 20,
+					"dataSource": "atACT_tipoDocAModif",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn_aceptar": {
+					"type": "button",
+					"top": 148,
+					"left": 416,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btn_aceptar",
+					"text": "Aceptar",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/btn_aceptar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn_cancelar": {
+					"type": "button",
+					"top": 148,
+					"left": 503,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btn_cancelar",
+					"action": "cancel",
+					"text": "Cancelar",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto33": {
+					"type": "text",
+					"top": 188,
+					"left": 13,
+					"width": 570,
+					"height": 22,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "-El cambio se aplicará sólo a los registros seleccionados."
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 68,
+					"left": 13,
+					"width": 200,
+					"height": 18,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Registros a modificar:"
+				}
+			}
+		}
+	]
+}

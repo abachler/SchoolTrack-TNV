@@ -1,0 +1,1 @@
+PREF_Set (0;"ACT_AbrirArchivo";String:C10(r_abrirDcto))

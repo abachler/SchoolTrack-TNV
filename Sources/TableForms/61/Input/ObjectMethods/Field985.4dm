@@ -1,0 +1,1 @@
+IT_Clairvoyance (Self:C308;-><>at_DocType;"Tipo de registro")

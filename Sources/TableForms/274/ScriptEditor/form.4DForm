@@ -1,0 +1,159 @@
+﻿{
+	"formSizeAnchor": "bSave",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerBody": 480,
+	"markerBreak": 480,
+	"markerFooter": 480,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texto": {
+					"type": "text",
+					"top": 202,
+					"left": 2,
+					"width": 133,
+					"height": 66,
+					"styleSheet": "XS_FormObjects",
+					"fontStyle": "italic",
+					"text": "Cuando el código definido aquí  no exista en el respectivo script de SuperReport será insertado al inicio.\rSi el código ya existe se mantendrá tal cual."
+				},
+				"vt_Code": {
+					"type": "input",
+					"top": 2,
+					"left": 139,
+					"width": 370,
+					"height": 269,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vt_Code",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"hl_Scripts": {
+					"type": "list",
+					"top": 1,
+					"left": 1,
+					"width": 135,
+					"height": 196,
+					"sizingY": "grow",
+					"dataSource": "hl_Scripts",
+					"enterable": false,
+					"focusable": false,
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"fill": "#EAF0F6",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "solid",
+					"method": "ObjectMethods/hl_Scripts.4dm",
+					"events": [
+						"onSelectionChange"
+					]
+				},
+				"bSave": {
+					"type": "button",
+					"top": 281,
+					"left": 424,
+					"width": 90,
+					"height": 20,
+					"dataSource": "bSave",
+					"action": "accept",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Guardar",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"method": "ObjectMethods/bSave.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bRevert": {
+					"type": "button",
+					"top": 281,
+					"left": 12,
+					"width": 90,
+					"height": 20,
+					"dataSource": "bRevert",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Revertir",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"method": "ObjectMethods/bRevert.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea": {
+					"type": "line",
+					"top": 271,
+					"left": 2,
+					"width": 523,
+					"height": 1,
+					"stroke": "#AAAAAA"
+				},
+				"Línea1": {
+					"type": "line",
+					"top": 0,
+					"left": 137,
+					"height": 271,
+					"stroke": "#AAAAAA"
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 281,
+					"left": 329,
+					"width": 90,
+					"height": 20,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Cancelar",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

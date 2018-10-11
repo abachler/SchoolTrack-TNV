@@ -1,0 +1,331 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "cerrar",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerBody": 390,
+	"markerBreak": 390,
+	"markerFooter": 390,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"cerrar": {
+					"type": "button",
+					"top": 409,
+					"left": 373,
+					"width": 80,
+					"height": 20,
+					"text": "Cerrar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/cerrar.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vlbox": {
+					"type": "listbox",
+					"top": 18,
+					"left": 13,
+					"width": 440,
+					"height": 176,
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"method": "ObjectMethods/vlbox.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					],
+					"columns": [
+						{
+							"name": "eventos_Alumnos",
+							"width": 64,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "eventos_H1",
+								"text": "Alumnos",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "eventos_Asignatura",
+							"width": 180,
+							"minWidth": 30,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "eventos_H2",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "eventos_Evento",
+							"width": 196,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "eventos_H3",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Eventos_recNum",
+							"width": 125,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"bloqueos_DiaBloqueado": {
+					"type": "checkbox",
+					"top": 226,
+					"left": 13,
+					"width": 138,
+					"height": 17,
+					"text": "Bloquear todo el día",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/bloqueos_DiaBloqueado.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bloqueos_MotivoDia": {
+					"type": "input",
+					"top": 227,
+					"left": 155,
+					"width": 298,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"spellcheck": true,
+					"placeholder": "Motivo",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LB_bloqueos": {
+					"type": "listbox",
+					"top": 294,
+					"left": 13,
+					"width": 440,
+					"height": 95,
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"staticColumnCount": 3,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"method": "ObjectMethods/LB_bloqueos.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "bloqueos_motivo",
+							"width": 245,
+							"minWidth": 245,
+							"maxWidth": 245,
+							"resizable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDoubleClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "bloqueos_H1",
+								"dataSource": "CurEvthoraBlock_titulo1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "bloqueos_desde",
+							"width": 90,
+							"minWidth": 90,
+							"maxWidth": 90,
+							"resizable": false,
+							"timeFormat": "hh_mm",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "bloqueos_H2",
+								"dataSource": "CurEvthoraBlock_titulo2",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "bloqueos_Hasta",
+							"width": 90,
+							"minWidth": 90,
+							"maxWidth": 90,
+							"resizable": false,
+							"timeFormat": "hh_mm",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Bloqueos_H3",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"Texto": {
+					"type": "text",
+					"top": 274,
+					"left": 13,
+					"width": 439,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Bloqueo del registro de eventos a horas específicas"
+				},
+				"Línea": {
+					"type": "line",
+					"top": 213,
+					"left": 12,
+					"width": 441,
+					"stroke": "#AAAAAA",
+					"strokeDashArray": "1 1"
+				},
+				"Línea1": {
+					"type": "line",
+					"top": 253,
+					"left": 12,
+					"width": 441,
+					"stroke": "#AAAAAA",
+					"strokeDashArray": "1 1"
+				}
+			}
+		}
+	]
+}

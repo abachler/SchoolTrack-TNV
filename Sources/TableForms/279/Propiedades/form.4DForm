@@ -1,0 +1,220 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "bCancel",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texto3": {
+					"type": "text",
+					"top": 208,
+					"left": 369,
+					"width": 45,
+					"height": 12,
+					"stroke": "#0000FF",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Cerrar"
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 208,
+					"left": 362,
+					"width": 54,
+					"height": 17,
+					"dataSource": "Botón invisible1",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"method": "ObjectMethods/bCancel.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 208,
+					"left": 284,
+					"width": 52,
+					"height": 12,
+					"stroke": "#0000FF",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Guardar"
+				},
+				"bCancel1": {
+					"type": "button",
+					"top": 208,
+					"left": 282,
+					"width": 54,
+					"height": 17,
+					"dataSource": "Botón invisible1",
+					"shortcutKey": "[Return]",
+					"display": false,
+					"method": "ObjectMethods/bCancel1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"lb_propiedades": {
+					"type": "listbox",
+					"top": 39,
+					"left": 7,
+					"width": 409,
+					"height": 157,
+					"dataSource": "lb_propiedades",
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"staticColumnCount": 1,
+					"selectionMode": "single",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "transparent",
+					"fontFamily": "Tahoma",
+					"fontSize": 9,
+					"borderStyle": "solid",
+					"columns": [
+						{
+							"name": "atRS_Propiedad_RS",
+							"dataSource": "atRS_Propiedad_RS",
+							"width": 200,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "vt_propiedad",
+								"text": "Propiedad",
+								"dataSource": "vt_propiedad",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						},
+						{
+							"name": "atRS_Valor_RS",
+							"dataSource": "atRS_Valor_RS",
+							"width": 194,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onDataChange"
+							],
+							"header": {
+								"name": "vt_valor",
+								"text": "Valor",
+								"dataSource": "vt_valor",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9
+							}
+						}
+					]
+				},
+				"vtRS_Title": {
+					"type": "input",
+					"top": 13,
+					"left": 7,
+					"width": 404,
+					"height": 14,
+					"dataSource": "vtRS_Title",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"btn_enviaProp": {
+					"type": "button",
+					"top": 208,
+					"left": 7,
+					"width": 155,
+					"height": 20,
+					"dataSource": "btn_enviaProp",
+					"text": "Envía Propiedades",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/btn_enviaProp.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

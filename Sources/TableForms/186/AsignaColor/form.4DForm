@@ -1,0 +1,547 @@
+﻿{
+	"width": 940,
+	"height": 550,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Imagen10": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 975,
+					"height": 44,
+					"sizingX": "grow",
+					"pictureFormat": "scaled"
+				}
+			}
+		},
+		{
+			"objects": {
+				"title": {
+					"type": "input",
+					"top": 8,
+					"left": 81,
+					"width": 477,
+					"height": 22,
+					"sizingX": "grow",
+					"dataSource": "vtXS_PrefTitle",
+					"fill": "transparent",
+					"stroke": "#FFFFFF",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"lb_asignaturasArea": {
+					"type": "listbox",
+					"top": 63,
+					"left": 22,
+					"width": 246,
+					"height": 182,
+					"dataSource": "lb_asignaturasArea",
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"staticColumnCount": 1,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"alternateFill": "#EEEEEE",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"method": "ObjectMethods/lb_asignaturasArea.4dm",
+					"events": [
+						"onValidate",
+						"onClick",
+						"onDoubleClick",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDrop",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onDragOver",
+						"onUnload",
+						"onAfterKeystroke",
+						"onSelectionChange",
+						"onBeforeDataEntry",
+						"onAfterEdit"
+					],
+					"columns": [
+						{
+							"name": "lb_areaAprendizajes",
+							"dataSource": "at_areaAprendizajes",
+							"width": 231,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#EEEEEE",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDoubleClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/lb_areaAprendizajes.4dm",
+							"header": {
+								"name": "Título1",
+								"text": "Asignaturas del área",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"lb_ejesaprendizajes": {
+					"type": "listbox",
+					"top": 63,
+					"left": 270,
+					"width": 322,
+					"height": 182,
+					"dataSource": "lb_ejesaprendizajes",
+					"hideFocusRing": true,
+					"dragging": "custom",
+					"dropping": "custom",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"staticColumnCount": 1,
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"alternateFill": "#EEEEEE",
+					"rowFillSource": "al_colorEje",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"method": "ObjectMethods/lb_ejesaprendizajes.4dm",
+					"events": [
+						"onValidate",
+						"onClick",
+						"onDoubleClick",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDrop",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onDragOver",
+						"onAfterKeystroke",
+						"onSelectionChange",
+						"onBeforeDataEntry",
+						"onHeaderClick",
+						"onAfterEdit"
+					],
+					"columns": [
+						{
+							"name": "at_ejesAprendizajes",
+							"dataSource": "at_ejesAprendizajes",
+							"width": 247,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#EEEEEE",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDoubleClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/at_ejesAprendizajes.4dm",
+							"header": {
+								"name": "Título2",
+								"text": "Ejes de Aprendizaje",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "Barras 2D1",
+							"dataSource": "at_Etapa",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#EEEEEE",
+							"textAlign": "center",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado1",
+								"text": "Etapa",
+								"dataSource": "Encabezado1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"lb_dimaprendizajes": {
+					"type": "listbox",
+					"top": 63,
+					"left": 598,
+					"width": 322,
+					"height": 182,
+					"dataSource": "lb_dimaprendizajes",
+					"hideFocusRing": true,
+					"dragging": "custom",
+					"dropping": "custom",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"staticColumnCount": 1,
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"alternateFill": "#EEEEEE",
+					"rowFillSource": "al_colorDim",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"method": "ObjectMethods/lb_dimaprendizajes.4dm",
+					"events": [
+						"onValidate",
+						"onClick",
+						"onDoubleClick",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDrop",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onDragOver",
+						"onAfterKeystroke",
+						"onSelectionChange",
+						"onBeforeDataEntry",
+						"onHeaderClick",
+						"onAfterEdit"
+					],
+					"columns": [
+						{
+							"name": "at_dimAprendizajes",
+							"dataSource": "at_dimAprendizajes",
+							"width": 253,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#EEEEEE",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDoubleClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/at_dimAprendizajes.4dm",
+							"header": {
+								"name": "Título3",
+								"text": "Dimensiones de Aprendizaje",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "Barras 2D2",
+							"dataSource": "at_EtapaDim",
+							"width": 54,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#EEEEEE",
+							"textAlign": "center",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado2",
+								"text": "Etapa",
+								"dataSource": "Encabezado2",
+								"stroke": "#000000",
+								"textAlign": "center",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"vt_nivel": {
+					"type": "input",
+					"top": 258,
+					"left": 65,
+					"width": 110,
+					"height": 14,
+					"dataSource": "vt_nivel",
+					"styleSheet": "Plain - 12",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"lb_logrosaprendizajes": {
+					"type": "listbox",
+					"top": 278,
+					"left": 22,
+					"width": 898,
+					"height": 182,
+					"dataSource": "lb_logrosaprendizajes",
+					"hideFocusRing": true,
+					"dragging": "custom",
+					"dropping": "custom",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"staticColumnCount": 1,
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"alternateFill": "#EEEEEE",
+					"rowFillSource": "al_colorLogros",
+					"textAlign": "left",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"events": [
+						"onValidate",
+						"onClick",
+						"onDoubleClick",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDrop",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onDragOver",
+						"onAfterKeystroke",
+						"onSelectionChange",
+						"onBeforeDataEntry",
+						"onAfterEdit"
+					],
+					"columns": [
+						{
+							"name": "at_logrosAprendizajes",
+							"dataSource": "at_logrosAprendizajes",
+							"width": 883,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#EEEEEE",
+							"textAlign": "left",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDoubleClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/at_logrosAprendizajes.4dm",
+							"header": {
+								"name": "Título4",
+								"text": "Competencias de Aprendizaje",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"textAlign": "left",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 258,
+					"left": 23,
+					"width": 36,
+					"height": 15,
+					"textAlign": "right",
+					"styleSheet": "Plain - 12",
+					"text": "Etapa:"
+				},
+				"etapa1": {
+					"type": "button",
+					"top": 253,
+					"left": 65,
+					"width": 123,
+					"height": 19,
+					"dataSource": "bPopUpEtapas",
+					"iconFrames": 4,
+					"popupPlacement": "linked",
+					"style": "custom",
+					"method": "ObjectMethods/etapa1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea3": {
+					"type": "line",
+					"top": 3,
+					"left": 77,
+					"height": 37,
+					"strokeDashArray": "1 1"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 475,
+					"left": 23,
+					"width": 374,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"textDecoration": "underline",
+					"text": "Asignar, quitar color a Ejes de aprendizajes seleccionados."
+				},
+				"Botón invisible1": {
+					"type": "button",
+					"top": 473,
+					"left": 19,
+					"width": 350,
+					"height": 17,
+					"dataSource": "Botón invisible6",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 497,
+					"left": 23,
+					"width": 332,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"textDecoration": "underline",
+					"text": "Asignar, quitar color a Dimensiones de Aprendizajes seleccionados."
+				},
+				"Botón invisible2": {
+					"type": "button",
+					"top": 495,
+					"left": 19,
+					"width": 350,
+					"height": 17,
+					"dataSource": "Botón invisible6",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 519,
+					"left": 23,
+					"width": 357,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"textDecoration": "underline",
+					"text": "Asignar, quitar  color a Competencias de Aprendizajes seleccionados."
+				},
+				"Botón invisible3": {
+					"type": "button",
+					"top": 517,
+					"left": 19,
+					"width": 350,
+					"height": 17,
+					"dataSource": "Botón invisible6",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bCFG_ShowALL2": {
+					"type": "pictureButton",
+					"top": 6,
+					"left": 22,
+					"width": 32,
+					"height": 32,
+					"dataSource": "bCFG_ShowALL2",
+					"columnCount": 1,
+					"rowCount": 1,
+					"loopBackToFirstFrame": true,
+					"method": "ObjectMethods/bCFG_ShowALL2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

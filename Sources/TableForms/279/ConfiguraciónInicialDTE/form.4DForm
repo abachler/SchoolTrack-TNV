@@ -1,0 +1,634 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "btn_cancelar",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texto": {
+					"type": "text",
+					"top": 38,
+					"left": 13,
+					"width": 706,
+					"height": 30,
+					"textAlign": "center",
+					"styleSheet": "XS_DialogsTitles",
+					"text": "Configuración inicial para <vtACT_RS>"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 101,
+					"left": 13,
+					"width": 243,
+					"height": 20,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Enrolar Intranet"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 131,
+					"left": 13,
+					"width": 243,
+					"height": 20,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Agregar Contribuyente"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 161,
+					"left": 13,
+					"width": 243,
+					"height": 20,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Agregar Sucursal"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 191,
+					"left": 13,
+					"width": 243,
+					"height": 20,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Cargar firma"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 221,
+					"left": 13,
+					"width": 243,
+					"height": 20,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Asociar signatario"
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 251,
+					"left": 13,
+					"width": 243,
+					"height": 20,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Cargar Propiedades Contribuyente"
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 281,
+					"left": 13,
+					"width": 243,
+					"height": 20,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Cargar Código de Actividad Económica"
+				},
+				"Botón": {
+					"type": "button",
+					"top": 101,
+					"left": 309,
+					"width": 130,
+					"height": 20,
+					"dataSource": "Botón",
+					"text": "Enrolar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 131,
+					"left": 309,
+					"width": 130,
+					"height": 20,
+					"dataSource": "Botón",
+					"text": "Agregar Contribuyente",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 161,
+					"left": 309,
+					"width": 130,
+					"height": 20,
+					"dataSource": "Botón",
+					"text": "Agregar Sucursal",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 191,
+					"left": 309,
+					"width": 130,
+					"height": 20,
+					"dataSource": "Botón",
+					"text": "Cargar Firma",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón4": {
+					"type": "button",
+					"top": 221,
+					"left": 309,
+					"width": 130,
+					"height": 20,
+					"dataSource": "Botón",
+					"text": "Asociar Signatario",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón5": {
+					"type": "button",
+					"top": 251,
+					"left": 309,
+					"width": 130,
+					"height": 20,
+					"dataSource": "Botón",
+					"text": "Cargar Propiedades",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón6": {
+					"type": "button",
+					"top": 281,
+					"left": 309,
+					"width": 130,
+					"height": 20,
+					"dataSource": "Botón",
+					"text": "Cargar ACTECO",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Imagen0_1_1": {
+					"type": "picture",
+					"top": 101,
+					"left": 253,
+					"width": 14,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Imagen0_1_2": {
+					"type": "picture",
+					"top": 101,
+					"left": 255,
+					"width": 14,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Imagen0_2_1": {
+					"type": "picture",
+					"top": 131,
+					"left": 253,
+					"width": 14,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Imagen0_2_2": {
+					"type": "picture",
+					"top": 131,
+					"left": 255,
+					"width": 14,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Imagen0_3_1": {
+					"type": "picture",
+					"top": 161,
+					"left": 253,
+					"width": 14,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Imagen0_3_2": {
+					"type": "picture",
+					"top": 161,
+					"left": 255,
+					"width": 14,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Imagen0_4_1": {
+					"type": "picture",
+					"top": 191,
+					"left": 253,
+					"width": 14,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Imagen0_4_2": {
+					"type": "picture",
+					"top": 191,
+					"left": 255,
+					"width": 14,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Imagen0_5_1": {
+					"type": "picture",
+					"top": 221,
+					"left": 253,
+					"width": 14,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Imagen0_5_2": {
+					"type": "picture",
+					"top": 221,
+					"left": 255,
+					"width": 14,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Imagen0_6_1": {
+					"type": "picture",
+					"top": 251,
+					"left": 253,
+					"width": 14,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Imagen0_6_2": {
+					"type": "picture",
+					"top": 251,
+					"left": 255,
+					"width": 14,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Imagen0_7_1": {
+					"type": "picture",
+					"top": 281,
+					"left": 253,
+					"width": 14,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Imagen0_7_2": {
+					"type": "picture",
+					"top": 281,
+					"left": 255,
+					"width": 14,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 76,
+					"left": 13,
+					"width": 187,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Etapa"
+				},
+				"Texto9": {
+					"type": "text",
+					"top": 76,
+					"left": 233,
+					"width": 67,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Realizada"
+				},
+				"Texto10": {
+					"type": "text",
+					"top": 76,
+					"left": 309,
+					"width": 130,
+					"height": 14,
+					"textAlign": "center",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Realizar"
+				},
+				"Texto11": {
+					"type": "text",
+					"top": 76,
+					"left": 469,
+					"width": 130,
+					"height": 14,
+					"textAlign": "center",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Comentario"
+				},
+				"Variable": {
+					"type": "input",
+					"top": 101,
+					"left": 463,
+					"width": 260,
+					"height": 20,
+					"dataSource": "vtACT_Obs1",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 131,
+					"left": 463,
+					"width": 260,
+					"height": 20,
+					"dataSource": "vtACT_Obs2",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 161,
+					"left": 463,
+					"width": 260,
+					"height": 20,
+					"dataSource": "vtACT_Obs3",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 191,
+					"left": 463,
+					"width": 260,
+					"height": 20,
+					"dataSource": "vtACT_Obs4",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 221,
+					"left": 463,
+					"width": 260,
+					"height": 20,
+					"dataSource": "vtACT_Obs5",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 251,
+					"left": 463,
+					"width": 260,
+					"height": 20,
+					"dataSource": "vtACT_Obs6",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 281,
+					"left": 463,
+					"width": 260,
+					"height": 20,
+					"dataSource": "vtACT_Obs7",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"btn_aceptar": {
+					"type": "button",
+					"top": 395,
+					"left": 556,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btn_aceptar",
+					"action": "accept",
+					"text": "Aceptar",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn_cancelar": {
+					"type": "button",
+					"top": 315,
+					"left": 643,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btn_cancelar",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cerrar",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn_setPruebas": {
+					"type": "button",
+					"top": 315,
+					"left": 543,
+					"width": 90,
+					"height": 20,
+					"dataSource": "btn_setPruebas",
+					"shortcutKey": "[Esc]",
+					"text": "Set de Pruebas...",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/btn_setPruebas.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

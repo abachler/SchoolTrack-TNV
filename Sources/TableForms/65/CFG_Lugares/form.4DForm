@@ -1,0 +1,302 @@
+﻿{
+	"windowTitle": ":21024,1",
+	"inheritedForm": "XS_MASTER_ConfigDialogs",
+	"inheritedFormTable": 114,
+	"formSizeAnchor": "◊gBBL_BibliotecaPrincipal",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 402,
+					"left": 199,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 345,
+					"left": 15,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable67": {
+					"type": "input",
+					"top": 89,
+					"left": 13,
+					"width": 45,
+					"height": 14,
+					"dataSource": "sCode",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable67.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable68": {
+					"type": "input",
+					"top": 89,
+					"left": 64,
+					"width": 200,
+					"height": 14,
+					"dataSource": "sName",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable68.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable71": {
+					"type": "button",
+					"top": 86,
+					"left": 290,
+					"width": 70,
+					"height": 18,
+					"dataSource": "bAddPlace",
+					"text": "Modificar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Variable71.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable72": {
+					"type": "button",
+					"top": 86,
+					"left": 364,
+					"width": 70,
+					"height": 18,
+					"dataSource": "bDelPlace",
+					"text": "Eliminar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Variable72.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable69": {
+					"type": "listbox",
+					"top": 113,
+					"left": 13,
+					"width": 46,
+					"height": 182,
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"borderStyle": "sunken",
+					"method": "ObjectMethods/Variable69.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "Variable69_Column1",
+							"dataSource": "<>aPlaceCode",
+							"width": 10,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"Variable70": {
+					"type": "listbox",
+					"top": 113,
+					"left": 60,
+					"width": 375,
+					"height": 182,
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"borderStyle": "sunken",
+					"method": "ObjectMethods/Variable70.4dm",
+					"events": [
+						"onClick"
+					],
+					"columns": [
+						{
+							"name": "Variable70_Column1",
+							"dataSource": "<>aPlace",
+							"width": 10,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick"
+							],
+							"header": {
+								"name": "2",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"◊gBBL_BibliotecaPrincipal": {
+					"type": "input",
+					"top": 308,
+					"left": 392,
+					"width": 42,
+					"height": 13,
+					"dataSource": "<>gBBL_BibliotecaPrincipal",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/◊gBBL_BibliotecaPrincipal.4dm",
+					"events": [
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texte97": {
+					"type": "text",
+					"top": 308,
+					"left": 308,
+					"width": 82,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Lugar principal:"
+				},
+				"Invisible Button1": {
+					"type": "button",
+					"top": 414,
+					"left": 38,
+					"width": 119,
+					"height": 38,
+					"dataSource": "Invisible Button1",
+					"action": "accept",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

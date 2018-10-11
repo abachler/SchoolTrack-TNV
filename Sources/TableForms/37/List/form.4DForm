@@ -1,0 +1,214 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 750,
+	"height": 43,
+	"markerHeader": 21,
+	"markerBody": 36,
+	"markerBreak": 36,
+	"markerFooter": 36,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 20,
+					"left": 0,
+					"width": 750,
+					"height": 530,
+					"sizingX": "grow",
+					"stroke": "transparent"
+				},
+				"S1_Texto": {
+					"type": "text",
+					"top": 5,
+					"left": 7,
+					"width": 77,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Fecha y Hora "
+				},
+				"S3_Texto": {
+					"type": "text",
+					"top": 5,
+					"left": 160,
+					"width": 129,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Usuario"
+				},
+				"S4_Texto": {
+					"type": "text",
+					"top": 5,
+					"left": 295,
+					"width": 256,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Evento"
+				},
+				"S1_Campo": {
+					"type": "input",
+					"top": 25,
+					"left": 7,
+					"width": 139,
+					"height": 11,
+					"dataSource": "vt_DateTime",
+					"dataSourceTypeHint": "date",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 9,
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S3_Campo": {
+					"type": "input",
+					"top": 25,
+					"left": 160,
+					"width": 129,
+					"height": 9,
+					"dataSource": "[xShell_Logs:37]UserName:2",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S4_Campo": {
+					"type": "input",
+					"top": 25,
+					"left": 295,
+					"width": 450,
+					"height": 11,
+					"sizingX": "grow",
+					"dataSource": "[xShell_Logs:37]Event_Description:5",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Línea7": {
+					"type": "line",
+					"top": -2,
+					"left": 291,
+					"height": 552,
+					"stroke": "#A8A8A8"
+				},
+				"Línea9": {
+					"type": "line",
+					"top": -2,
+					"left": 150,
+					"height": 552,
+					"stroke": "#A8A8A8"
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 3,
+					"left": 4,
+					"width": 142,
+					"height": 16,
+					"dataSource": "Botón1",
+					"display": false,
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 3,
+					"left": 154,
+					"width": 136,
+					"height": 16,
+					"dataSource": "Botón1",
+					"display": false,
+					"method": "ObjectMethods/Botón2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

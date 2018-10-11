@@ -1,0 +1,1 @@
+CFG_XS_OpenPanel ("Web_Configuration")

@@ -1,0 +1,219 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Forms",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "cargar",
+	"rightMargin": 14,
+	"bottomMargin": 14,
+	"markerBody": 251,
+	"markerBreak": 251,
+	"markerFooter": 251,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onUnload",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"consultas": {
+					"type": "listbox",
+					"top": 28,
+					"left": 14,
+					"width": 409,
+					"height": 117,
+					"focusable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 13,
+					"borderStyle": "sunken",
+					"method": "ObjectMethods/consultas.4dm",
+					"events": [
+						"onClick",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "consultas_nombre",
+							"width": 395,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDoubleClick",
+								"onDataChange"
+							],
+							"header": {
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "consultas_recNum",
+							"width": 30,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado1",
+								"text": "Encabezado1",
+								"dataSource": "Encabezado1",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						}
+					]
+				},
+				"Field1": {
+					"type": "input",
+					"top": 172,
+					"left": 14,
+					"width": 395,
+					"height": 91,
+					"dataSource": "[xShell_Queries:53]Description:3",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 13",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"styledText": true,
+					"storeDefaultStyle": true,
+					"allowFontColorPicker": true,
+					"scrollbarVertical": "visible",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"eliminar": {
+					"type": "button",
+					"top": 283,
+					"left": 14,
+					"width": 80,
+					"height": 22,
+					"text": "Eliminar",
+					"styleSheet": "Plain - 13",
+					"stroke": "#000000",
+					"method": "ObjectMethods/eliminar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cancelar": {
+					"type": "button",
+					"top": 283,
+					"left": 250,
+					"width": 80,
+					"height": 22,
+					"tooltip": "Cancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "Plain - 13",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cargar": {
+					"type": "button",
+					"top": 283,
+					"left": 344,
+					"width": 80,
+					"height": 22,
+					"action": "accept",
+					"text": "Abrir",
+					"styleSheet": "Plain - 13",
+					"stroke": "#000000",
+					"method": "ObjectMethods/cargar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text11": {
+					"type": "text",
+					"top": 154,
+					"left": 14,
+					"width": 114,
+					"height": 16,
+					"stroke": "#000000",
+					"styleSheet": "Plain - 13",
+					"text": ":20103,17"
+				}
+			}
+		}
+	]
+}

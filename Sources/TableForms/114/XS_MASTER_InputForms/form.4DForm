@@ -1,0 +1,275 @@
+﻿{
+	"formSizeAnchor": "Imagen8",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onDataChange"
+	],
+	"pages": [
+		{
+			"objects": {
+				"cancelar": {
+					"type": "button",
+					"top": 3,
+					"left": 91,
+					"width": 82,
+					"height": 20,
+					"dataSource": "bBWR_Cancel",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"styleSheet": "XS_FormObjects",
+					"text": "Cancelar",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "custom",
+					"method": "ObjectMethods/cancelar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"guardar": {
+					"type": "button",
+					"top": 3,
+					"left": 2,
+					"width": 82,
+					"height": 20,
+					"dataSource": "bBWR_SaveRecord",
+					"styleSheet": "XS_FormObjects",
+					"text": "Guardar",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "custom",
+					"method": "ObjectMethods/guardar.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Imprimir": {
+					"type": "button",
+					"top": 3,
+					"left": 273,
+					"width": 82,
+					"height": 20,
+					"dataSource": "bBWR_Print",
+					"shortcutKey": "p",
+					"shortcutAccel": true,
+					"styleSheet": "XS_FormObjects",
+					"text": "Imprimir",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "custom",
+					"customBackgroundPicture": "var:0",
+					"method": "ObjectMethods/Imprimir.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Imagen10": {
+					"type": "picture",
+					"top": 3,
+					"left": 356,
+					"width": 13,
+					"height": 20,
+					"pictureFormat": "scaled"
+				},
+				"eliminar": {
+					"type": "button",
+					"top": 3,
+					"left": 378,
+					"width": 82,
+					"height": 20,
+					"dataSource": "bBWR_Delete",
+					"styleSheet": "XS_FormObjects",
+					"text": "Eliminar",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "custom",
+					"method": "ObjectMethods/eliminar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Line3": {
+					"type": "line",
+					"top": 1,
+					"left": 268,
+					"height": 26,
+					"stroke": "#AAAAAA"
+				},
+				"primeroRegistro": {
+					"type": "button",
+					"top": 3,
+					"left": 181,
+					"width": 20,
+					"height": 20,
+					"dataSource": "bBWR_FirstRecord",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Botón",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "custom",
+					"method": "ObjectMethods/primeroRegistro.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"registroAnterior": {
+					"type": "button",
+					"top": 3,
+					"left": 202,
+					"width": 20,
+					"height": 20,
+					"dataSource": "bBWR_PreviousRecord",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Botón",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "custom",
+					"method": "ObjectMethods/registroAnterior.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"registroSiguiente": {
+					"type": "button",
+					"top": 3,
+					"left": 224,
+					"width": 20,
+					"height": 20,
+					"dataSource": "bBWR_NextRecord",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Botón",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "custom",
+					"method": "ObjectMethods/registroSiguiente.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"ultimoRegistro": {
+					"type": "button",
+					"top": 3,
+					"left": 245,
+					"width": 20,
+					"height": 20,
+					"dataSource": "bBWR_LastRecord",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Botón",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "custom",
+					"method": "ObjectMethods/ultimoRegistro.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Line5": {
+					"type": "line",
+					"top": 0,
+					"left": 87,
+					"height": 26,
+					"stroke": "#AAAAAA"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 26,
+					"left": 0,
+					"width": 1023,
+					"sizingX": "grow",
+					"stroke": "#AAAAAA"
+				},
+				"Line4": {
+					"type": "line",
+					"top": 0,
+					"left": 374,
+					"height": 26,
+					"stroke": "#AAAAAA"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 0,
+					"left": 176,
+					"height": 26,
+					"stroke": "#AAAAAA"
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 4,
+					"left": 356,
+					"width": 13,
+					"height": 20,
+					"dataSource": "bBWR_PrintPopup",
+					"display": false,
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"cerrar": {
+					"type": "button",
+					"top": 3,
+					"left": 2,
+					"width": 82,
+					"height": 20,
+					"dataSource": "bBWR_CloseRecord",
+					"styleSheet": "XS_FormObjects",
+					"text": "Cerrar",
+					"iconFrames": 4,
+					"textPlacement": "right",
+					"style": "custom",
+					"method": "ObjectMethods/cerrar.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		null
+	]
+}

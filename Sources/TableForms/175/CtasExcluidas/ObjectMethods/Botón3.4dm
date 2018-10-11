@@ -1,0 +1,7 @@
+READ ONLY:C145([ACT_CuentasCorrientes:175])
+ALL RECORDS:C47([ACT_CuentasCorrientes:175])
+ONE RECORD SELECT:C189([ACT_CuentasCorrientes:175])
+FORM SET OUTPUT:C54([ACT_CuentasCorrientes:175];"CtasExPrint")
+PRINT SELECTION:C60([ACT_CuentasCorrientes:175])
+FORM SET OUTPUT:C54([ACT_CuentasCorrientes:175];"Output")
+REDUCE SELECTION:C351([ACT_CuentasCorrientes:175];0)

@@ -1,0 +1,273 @@
+﻿{
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 388,
+					"height": 211,
+					"fill": "#FFF0DF",
+					"stroke": "#FFF0DF"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto2": {
+					"type": "text",
+					"top": 90,
+					"left": 13,
+					"width": 112,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Nombre de usuario:"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 90,
+					"left": 174,
+					"width": 196,
+					"height": 14,
+					"dataSource": "SN3_ModUserLogin",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail",
+						"onMouseEnter"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 117,
+					"left": 174,
+					"width": 196,
+					"height": 14,
+					"dataSource": "SN3_ModUserPass",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke",
+						"onMouseEnter"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 144,
+					"left": 174,
+					"width": 196,
+					"height": 14,
+					"dataSource": "SN3_ModUserPassConfirm",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"Casilla de selección1": {
+					"type": "checkbox",
+					"top": 182,
+					"left": 13,
+					"width": 194,
+					"height": 13,
+					"dataSource": "cb_EnviarMail",
+					"text": "Enviar nuevos datos de acceso al usuario",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 178,
+					"left": 209,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bSend": {
+					"type": "button",
+					"top": 178,
+					"left": 295,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bModify",
+					"action": "accept",
+					"text": "Cambiar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/bSend.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 117,
+					"left": 13,
+					"width": 102,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Contraseña:"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 144,
+					"left": 13,
+					"width": 145,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Confirmación de contraseña:"
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 176,
+					"height": 14,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Cambio de Datos de Acceso"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 38,
+					"left": 13,
+					"width": 112,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Tipo de usuario:"
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 38,
+					"left": 174,
+					"width": 196,
+					"height": 14,
+					"dataSource": "SN3_ModUserType",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 64,
+					"left": 13,
+					"width": 112,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Apellidos y Nombres:"
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 64,
+					"left": 174,
+					"width": 196,
+					"height": 14,
+					"dataSource": "SN3_ModUserNames",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				}
+			}
+		}
+	]
+}

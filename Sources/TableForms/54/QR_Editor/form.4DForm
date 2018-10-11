@@ -1,0 +1,269 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Forms",
+	"inheritedFormTable": 114,
+	"formSizeAnchor": "Texto1",
+	"rightMargin": 13,
+	"bottomMargin": 33,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 586,
+					"left": 250,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 589,
+					"left": 66,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"xQR_ReportArea": {
+					"type": "plugin",
+					"top": 0,
+					"left": 0,
+					"width": 790,
+					"height": 240,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "xQR_ReportArea",
+					"pluginAreaKind": "%Report",
+					"dropping": "automatic",
+					"borderStyle": "solid",
+					"method": "ObjectMethods/xQR_ReportArea.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDrop",
+						"onPluginArea",
+						"onDataChange",
+						"onDragOver",
+						"onPrintingDetail"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 554,
+					"left": 4,
+					"width": 66,
+					"height": 21,
+					"dataSource": "Botón1",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Lista jerárquica1": {
+					"type": "list",
+					"top": 281,
+					"left": 7,
+					"width": 261,
+					"height": 223,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "hlQR_FieldList",
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"dragging": "custom",
+					"dropping": "custom",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"method": "ObjectMethods/Lista jerárquica1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDrop",
+						"onDataChange",
+						"onDragOver",
+						"onPrintingDetail"
+					]
+				},
+				"Popup/Lista desplegable1": {
+					"type": "dropdown",
+					"top": 254,
+					"left": 64,
+					"width": 204,
+					"height": 18,
+					"sizingX": "grow",
+					"dataSource": "atQR_TableFieldSelector",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Popup%2FLista desplegable1.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Hierarchical List2": {
+					"type": "list",
+					"top": 281,
+					"left": 283,
+					"width": 218,
+					"height": 223,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "hlQR_SortList",
+					"enterable": false,
+					"focusable": false,
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"dragging": "custom",
+					"dropping": "custom",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"method": "ObjectMethods/Hierarchical List2.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onDrop",
+						"onDragOver"
+					]
+				},
+				"Separador1": {
+					"type": "splitter",
+					"top": 244,
+					"left": 0,
+					"width": 790,
+					"height": 3,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Separador1",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 264,
+					"left": 513,
+					"width": 266,
+					"height": 240,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Arrastre los campos sobre el editor para agregar o insertar columnas en el informe.\r\rPara definir el ordenamiento arrastre los campos a la zona ordenamiento.\r\rPara definir las propiedades (color, fuente, calculos, etc.) de columnas, lineas y celdas, selecciónelas y utilice los botones o menus del editor. \rTambién puede utilizar los menus contextuales que se activan al hacer click del botón derecho, o CTRL-click si utilza un Macintosh, sobre columnas lineas o celdas"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 256,
+					"left": 7,
+					"width": 44,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Campos:"
+				},
+				"Separador2": {
+					"type": "splitter",
+					"top": 247,
+					"left": 274,
+					"width": 3,
+					"height": 275,
+					"sizingY": "grow",
+					"dataSource": "Separador2",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Separador3": {
+					"type": "splitter",
+					"top": 247,
+					"left": 506,
+					"width": 3,
+					"height": 275,
+					"sizingY": "grow",
+					"dataSource": "Separador2",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 256,
+					"left": 283,
+					"width": 92,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Ordenar por:"
+				}
+			}
+		}
+	]
+}

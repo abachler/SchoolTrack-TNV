@@ -1,0 +1,1 @@
+IT_SetButtonState ((Self:C308->=1);->cb_PublicarEPonderacion1;->cb_OcultaParcialesMadre1;->cb_HijasDesplegadas1)

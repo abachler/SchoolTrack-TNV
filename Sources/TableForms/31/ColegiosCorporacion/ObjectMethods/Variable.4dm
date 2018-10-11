@@ -1,0 +1,1 @@
+IT_SetButtonState ((Get edited text:C655#"");->bAddNewGroupSchool)

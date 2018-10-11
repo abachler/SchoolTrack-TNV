@@ -1,0 +1,6 @@
+AL_UpdateArrays (xALP_Vacunas;0)
+AT_Insert (1;1;->aVacuna_Edad;->aVacuna_Enfermedad;->aVacuna_SiNo;->aVacuna_Meses)
+AL_UpdateArrays (xALP_Vacunas;-2)
+GOTO OBJECT:C206(xALP_Vacunas)
+AL_GotoCell (xALP_Vacunas;1;1)
+AL_SetCellHigh (xALP_Vacunas;1;80)

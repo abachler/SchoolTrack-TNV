@@ -1,0 +1,2 @@
+vToSendText:=""
+vMsgText:=""

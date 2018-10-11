@@ -1,0 +1,1 @@
+CFG_XS_OpenPanel ("USR_EditAcces")

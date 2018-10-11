@@ -1,0 +1,7 @@
+AL_ExitCell (xALP_CtasBancarias)
+_O_DISABLE BUTTON:C193(bDelFP)
+AL_UpdateArrays (xALP_CtasBancarias;0)
+AT_Insert (0;1;->atACT_CtaColegioCod;->atACT_CtaColegioBanco;->atACT_CtaColegioCta)
+AL_UpdateArrays (xALP_CtasBancarias;-2)
+GOTO OBJECT:C206(xALP_CtasBancarias)
+AL_GotoCell (xALP_CtasBancarias;2;Size of array:C274(atACT_CtaColegioBanco))

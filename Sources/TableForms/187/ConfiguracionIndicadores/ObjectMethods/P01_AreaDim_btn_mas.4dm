@@ -1,0 +1,6 @@
+AL_ExitCell (xALP_Indicadores)
+AL_UpdateArrays (xALP_Indicadores;0)
+AT_Insert (0;1;->aiEVLG_Indicadores_Valor;->atEVLG_Indicadores_Descripcion;->atEVLG_Indicadores_Concepto)
+AL_UpdateArrays (xALP_Indicadores;-2)
+GOTO OBJECT:C206(xALP_Indicadores)
+AL_GotoCell (xALP_Indicadores;1;Size of array:C274(aiEVLG_Indicadores_Valor))

@@ -1,0 +1,256 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Botón1",
+	"rightMargin": -13,
+	"bottomMargin": -13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 244,
+					"left": 439,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 187,
+					"left": 255,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Botón de opción1": {
+					"type": "radio",
+					"top": 40,
+					"left": 26,
+					"width": 109,
+					"height": 16,
+					"dataSource": "b1",
+					"text": "Porcentuales",
+					"styleSheet": "XS_DialogObjects",
+					"radioGroup": "Grupo1",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón de opción2": {
+					"type": "radio",
+					"top": 40,
+					"left": 149,
+					"width": 109,
+					"height": 16,
+					"dataSource": "b2",
+					"text": "Fijos",
+					"styleSheet": "XS_DialogObjects",
+					"radioGroup": "Grupo1",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 68,
+					"left": 26,
+					"width": 144,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Para el mes de "
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 68,
+					"left": 257,
+					"width": 76,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "del año"
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 69,
+					"left": 104,
+					"width": 111,
+					"height": 13,
+					"dataSource": "vt_Mes",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Banco(5)1": {
+					"type": "picture",
+					"top": 67,
+					"left": 217,
+					"width": 19,
+					"height": 16
+				},
+				"Botón invisible2": {
+					"type": "button",
+					"top": 68,
+					"left": 104,
+					"width": 136,
+					"height": 14,
+					"dataSource": "bMes",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 68,
+					"left": 300,
+					"width": 101,
+					"height": 13,
+					"dataSource": "vl_Año",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 281,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Por favor indique el tipo de descuentos a realizar"
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 104,
+					"left": 319,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Botón1",
+					"action": "accept",
+					"text": "Continuar",
+					"styleSheet": "XS_DialogObjects",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 104,
+					"left": 226,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Botón2",
+					"action": "cancel",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 104,
+					"left": 13,
+					"width": 210,
+					"height": 22,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"fontStyle": "italic",
+					"text": "Las cuentas que estén siendo utilizadas por otros procesos no aparecerán en el listado."
+				}
+			}
+		}
+	]
+}

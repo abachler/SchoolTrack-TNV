@@ -1,0 +1,150 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Variable8",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"t_textoEliminaFDP": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 308,
+					"height": 54,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Este valor  se utiliza actualmente en uno o más registros de la base de datos.\rPara eliminarlo debe reemplazarlo por otro valor seleccionándolo en la lista desplegable."
+				},
+				"Text2": {
+					"type": "text",
+					"top": 114,
+					"left": 13,
+					"width": 103,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Por:"
+				},
+				"t_antiguoValor": {
+					"type": "input",
+					"top": 92,
+					"left": 13,
+					"width": 300,
+					"height": 13,
+					"dataSource": "t_antiguoValor",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"atACT_formasDePagoReemp": {
+					"type": "dropdown",
+					"top": 137,
+					"left": 13,
+					"width": 300,
+					"height": 18,
+					"dataSource": "atACT_formasDePagoReemp",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"method": "ObjectMethods/atACT_formasDePagoReemp.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 166,
+					"left": 104,
+					"width": 100,
+					"height": 20,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000"
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 166,
+					"left": 213,
+					"width": 100,
+					"height": 20,
+					"dataSource": "bReplace",
+					"text": "Reemplazar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text3": {
+					"type": "text",
+					"top": 75,
+					"left": 13,
+					"width": 103,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Reemplazar:"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,1 @@
+PICT_CampoFotografia (->[BBL_Lectores:72]Fotografia:32)

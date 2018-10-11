@@ -1,0 +1,1 @@
+OBJECT SET ENTERABLE:C238(SN3_Separador;(cb_UsarOtroChar=1))

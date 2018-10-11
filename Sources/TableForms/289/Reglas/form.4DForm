@@ -1,0 +1,411 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "btn_cerrar",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texto6": {
+					"type": "text",
+					"top": 62,
+					"left": 328,
+					"width": 73,
+					"height": 13,
+					"stroke": "#000099",
+					"styleSheet": "XS_DialogObjects",
+					"fontStyle": "italic",
+					"textDecoration": "underline",
+					"text": "Aplicar ahora"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 263,
+					"left": 20,
+					"width": 255,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Aplicar automáticamente los días"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 304,
+					"left": 20,
+					"width": 275,
+					"height": 14,
+					"stroke": "#000099",
+					"styleSheet": "XS_DialogObjects",
+					"textDecoration": "underline",
+					"text": "Ver alumnos activos no incluidos en la configuración"
+				},
+				"Texto": {
+					"type": "text",
+					"top": 62,
+					"left": 40,
+					"width": 140,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Reglas de asignación"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 23,
+					"left": 2,
+					"width": 493,
+					"height": 24,
+					"textAlign": "center",
+					"fontFamily": "Tahoma Bold",
+					"fontSize": 20,
+					"fontWeight": "bold",
+					"text": "Asignación Automática de Matrices de Cargo"
+				},
+				"lb_reglas": {
+					"type": "listbox",
+					"top": 82,
+					"left": 20,
+					"width": 458,
+					"height": 174,
+					"dataSource": "lb_reglas",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"method": "ObjectMethods/lb_reglas.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onDataChange",
+						"onAfterSort",
+						"onSelectionChange",
+						"onColumnMove",
+						"onRowMove",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Barras 2D1",
+							"dataSource": "atACT_ReglasMatricesNombre",
+							"width": 180,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado1",
+								"text": "Nombre",
+								"dataSource": "Encabezado1",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "Barras 2D2",
+							"dataSource": "atACT_ReglasMatricesMatriz",
+							"width": 180,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado2",
+								"text": "Matriz",
+								"dataSource": "Encabezado2",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "Barras 2D3",
+							"dataSource": "alACT_ReglasMatricesAlumnos",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000099",
+							"textAlign": "center",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"textDecoration": "underline",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado3",
+								"text": "#",
+								"dataSource": "Encabezado3",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "Barras 2D4",
+							"dataSource": "abACT_ReglasMatricesInactivo",
+							"width": 40,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"textAlign": "center",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado4",
+								"text": "Inactivo",
+								"dataSource": "Encabezado4",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "Barras 2D5",
+							"dataSource": "alACT_ReglasMatricesMatriz",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado5",
+								"text": "id Matriz",
+								"dataSource": "Encabezado5",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "alACT_ReglasMatricesID",
+							"dataSource": "alACT_ReglasMatricesID",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado6",
+								"text": "id",
+								"dataSource": "Encabezado6",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 174,
+					"left": 678,
+					"width": 90,
+					"height": 20,
+					"dataSource": "Botón1",
+					"text": "Guardar",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"method": "ObjectMethods/Botón2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable": {
+					"type": "input",
+					"top": 261,
+					"left": 184,
+					"width": 23,
+					"height": 13,
+					"dataSource": "lACT_ReglasMatricesDia",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Variable.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"lACT_QuitaMatriz": {
+					"type": "checkbox",
+					"top": 283,
+					"left": 20,
+					"width": 410,
+					"height": 15,
+					"dataSource": "lACT_QuitaMatriz",
+					"text": "Quitar matriz de cargo a las cuentas activas antes de aplicar configuración",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_cerrar": {
+					"type": "button",
+					"top": 301,
+					"left": 388,
+					"width": 90,
+					"height": 20,
+					"dataSource": "btn_cerrar",
+					"action": "cancel",
+					"text": "Cerrar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/btn_cerrar.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón": {
+					"type": "button",
+					"top": 303,
+					"left": 20,
+					"width": 273,
+					"height": 18,
+					"dataSource": "Botón",
+					"display": false,
+					"method": "ObjectMethods/Botón.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_aplicar": {
+					"type": "button",
+					"top": 58,
+					"left": 316,
+					"width": 90,
+					"height": 20,
+					"dataSource": "btn_aplicar",
+					"display": false,
+					"method": "ObjectMethods/btn_aplicar.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 263,
+					"left": 213,
+					"width": 186,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "de cada mes."
+				},
+				"Imagen6": {
+					"type": "picture",
+					"top": 61,
+					"left": 462,
+					"width": 15,
+					"height": 15,
+					"pictureFormat": "scaled"
+				},
+				"Imagen7": {
+					"type": "picture",
+					"top": 61,
+					"left": 442,
+					"width": 15,
+					"height": 15,
+					"pictureFormat": "scaled"
+				},
+				"bAddEje": {
+					"type": "button",
+					"top": 59,
+					"left": 460,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bAddEje",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/bAddEje.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bDeleteEje": {
+					"type": "button",
+					"top": 59,
+					"left": 440,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bDeleteEje",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/bDeleteEje.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn_escape": {
+					"type": "button",
+					"top": 389,
+					"left": 38,
+					"width": 109,
+					"height": 47,
+					"dataSource": "btn_escape",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón imagen1": {
+					"type": "pictureButton",
+					"top": 59,
+					"left": 20,
+					"width": 20,
+					"height": 20,
+					"dataSource": "Botón imagen1",
+					"columnCount": 1,
+					"rowCount": 4,
+					"loopBackToFirstFrame": true,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"method": "ObjectMethods/Botón imagen1.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

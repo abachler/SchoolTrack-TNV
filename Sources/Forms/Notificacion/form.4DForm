@@ -1,0 +1,194 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "boton1",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDeactivate",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"fondo": {
+					"type": "rectangle",
+					"top": -1,
+					"left": 0,
+					"width": 546,
+					"height": 101,
+					"stroke": "#AAAAAA"
+				},
+				"titulo": {
+					"type": "input",
+					"top": 17,
+					"left": 71,
+					"width": 462,
+					"height": 16,
+					"dataSource": "vt_titulo",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "Medium - 13",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"mensaje": {
+					"type": "input",
+					"top": 51,
+					"left": 85,
+					"width": 448,
+					"height": 31,
+					"dataSource": "vt_mensaje",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 13",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"multiline": "yes",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"cerrar_invisible": {
+					"type": "button",
+					"top": -2,
+					"left": 0,
+					"width": 546,
+					"height": 102,
+					"visibility": "hidden",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"method": "ObjectMethods/cerrar_invisible.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"boton3": {
+					"type": "button",
+					"top": 141,
+					"left": 71,
+					"width": 80,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "cdB_btn3",
+					"action": "cancel",
+					"text": "Boton 3",
+					"styleSheet": "Plain - 13",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/boton3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"boton2": {
+					"type": "button",
+					"top": 141,
+					"left": 360,
+					"width": 80,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "cdB_btn2",
+					"action": "cancel",
+					"text": "Boton 2",
+					"styleSheet": "Plain - 13",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/boton2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"boton1": {
+					"type": "button",
+					"top": 141,
+					"left": 453,
+					"width": 80,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "cdB_btn1",
+					"action": "cancel",
+					"text": "OK",
+					"styleSheet": "Plain - 13",
+					"focusable": false,
+					"defaultButton": true,
+					"method": "ObjectMethods/boton1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Imagen1": {
+					"type": "picture",
+					"top": 8,
+					"left": 8,
+					"width": 48,
+					"height": 48,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/img/alerta.png"
+				},
+				"noPreguntar": {
+					"type": "checkbox",
+					"top": 108,
+					"left": 71,
+					"width": 182,
+					"height": 21,
+					"dataSource": "vl_NoRepetirNotificacion",
+					"text": "No volver a preguntar",
+					"styleSheet": "Plain - 13",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

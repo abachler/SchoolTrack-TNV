@@ -1,0 +1,1294 @@
+﻿{
+	"inheritedForm": "XS_MASTER_WZDDialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 626,
+	"height": 407,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Texto1": {
+					"type": "text",
+					"top": 4,
+					"left": 161,
+					"width": 392,
+					"height": 22,
+					"stroke": "#FFFFFF",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Asistente para la Eliminación de Cargos"
+				},
+				"Variable1": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 554,
+					"width": 20,
+					"height": 20,
+					"dataSource": "bPrev",
+					"shortcutKey": "[left arrow]",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 593,
+					"width": 20,
+					"height": 20,
+					"dataSource": "bNext",
+					"shortcutKey": "[right arrow]",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 479,
+					"left": 28,
+					"width": 20,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "Nueva Variable501",
+					"shortcutKey": "+",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 478,
+					"left": 94,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 378,
+					"left": 575,
+					"width": 17,
+					"height": 11,
+					"sizingX": "move",
+					"dataSource": "vi_Step",
+					"fill": "transparent",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable12": {
+					"type": "button",
+					"top": 479,
+					"left": 246,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bTrap",
+					"shortcutKey": "[Enter]",
+					"text": "Cancelar",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 474,
+					"left": 439,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 417,
+					"left": 255,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto11": {
+					"type": "text",
+					"top": 96,
+					"left": 170,
+					"width": 379,
+					"height": 221,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Este asistente le guiará paso a paso en el proceso de eliminación de cargos de las cuentas corrientes.\r\rPara iniciar el proceso de eliminación de cargos haga clic en el botón página siguiente.\r\rSi no desea iniciar ahora la eliminación de cargos, cierre este asistente."
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto15": {
+					"type": "text",
+					"top": 79,
+					"left": 9,
+					"width": 133,
+					"height": 242,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "El primer paso en la eliminación de cargos es decidir que tipo de cargos desea eliminar.\r\rSeleccione las opciones disponibles y haga clic en el botón Flecha Derecha."
+				},
+				"b1": {
+					"type": "checkbox",
+					"top": 89,
+					"left": 226,
+					"width": 352,
+					"height": 28,
+					"dataSource": "b1",
+					"text": "Eliminar cargos según la matriz de cargos de las cuentas corrientes",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"method": "ObjectMethods/b1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "checkbox",
+					"top": 164,
+					"left": 226,
+					"width": 352,
+					"height": 38,
+					"dataSource": "b2",
+					"text": "Eliminar cargos según la definición de un item independiente de la matriz de cargos de las cuentas corrientes",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección1": {
+					"type": "checkbox",
+					"top": 233,
+					"left": 250,
+					"width": 65,
+					"height": 16,
+					"dataSource": "cbTodosb2",
+					"text": "Todos",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1567": {
+					"type": "dropdown",
+					"top": 231,
+					"left": 370,
+					"width": 176,
+					"height": 18,
+					"dataSource": "atACT_ItemNames2Charge",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Variable1567.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 235,
+					"left": 691,
+					"width": 156,
+					"height": 11,
+					"dataSource": "vsGlosab2",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"Variable7": {
+					"type": "checkbox",
+					"top": 429,
+					"left": 357,
+					"width": 352,
+					"height": 28,
+					"dataSource": "b3",
+					"text": "Eliminar cargos extraordinarios",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección2": {
+					"type": "checkbox",
+					"top": 475,
+					"left": 381,
+					"width": 65,
+					"height": 16,
+					"dataSource": "cbTodosb3",
+					"text": "Todos",
+					"styleSheet": "XS_FormObjects",
+					"focusable": false,
+					"method": "ObjectMethods/Casilla de selección2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable9": {
+					"type": "input",
+					"top": 477,
+					"left": 502,
+					"width": 156,
+					"height": 11,
+					"dataSource": "vsGlosab3",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable9.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 110,
+					"left": 251,
+					"width": 294,
+					"height": 44,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Se eliminarán aquellos cargos proyectados de acuerdo a la matriz de cargos de la cuenta corriente."
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 201,
+					"left": 250,
+					"width": 295,
+					"height": 22,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Se eliminarán aquellos cargos proyectados según la definición de un item no perteneciente a la matriz de cargos de la cuenta corriente."
+				},
+				"Texto16": {
+					"type": "text",
+					"top": 453,
+					"left": 376,
+					"width": 293,
+					"height": 15,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Se eliminarán los cargos extraordinarios."
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 329,
+					"left": 222,
+					"width": 347,
+					"height": 39,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Sólo serán eliminados los cargos que no hayan sido objeto de avisos de cobranza."
+				},
+				"Texto17": {
+					"type": "text",
+					"top": 52,
+					"left": 161,
+					"width": 388,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Selección del tipo de cargos a eliminar"
+				},
+				"Imagen3": {
+					"type": "picture",
+					"top": 233,
+					"left": 849,
+					"width": 19,
+					"height": 16
+				},
+				"Botón invisible4": {
+					"type": "button",
+					"top": 234,
+					"left": 849,
+					"width": 17,
+					"height": 14,
+					"dataSource": "bItems",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Imagen5": {
+					"type": "picture",
+					"top": 475,
+					"left": 660,
+					"width": 19,
+					"height": 16
+				},
+				"Botón invisible5": {
+					"type": "button",
+					"top": 475,
+					"left": 662,
+					"width": 17,
+					"height": 14,
+					"dataSource": "bItems",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto24": {
+					"type": "text",
+					"top": 102,
+					"left": 183,
+					"width": 167,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Periodo de eliminación"
+				},
+				"Texto23": {
+					"type": "text",
+					"top": 79,
+					"left": 9,
+					"width": 143,
+					"height": 242,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "En esta página del asistente usted debe especificar el período para el cual desea eliminar los cargos.\r\rPara pasar a la página siguiente  haga clic en el botón Flecha Derecha.  Si desea modificar las opciones seleccionadas anteriormente, haga clic en el botón Flecha Izquierda\r\rEn la página siguiente deberá determinar para que cuentas corrientes se eliminarán los cargos."
+				},
+				"Texto26": {
+					"type": "text",
+					"top": 52,
+					"left": 161,
+					"width": 388,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Período para la eliminación de cargos"
+				},
+				"Variable14": {
+					"type": "input",
+					"top": 122,
+					"left": 235,
+					"width": 96,
+					"height": 11,
+					"dataSource": "vs1",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable21": {
+					"type": "input",
+					"top": 122,
+					"left": 356,
+					"width": 64,
+					"height": 11,
+					"dataSource": "vdACT_AñoAviso",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable21.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable13": {
+					"type": "input",
+					"top": 148,
+					"left": 234,
+					"width": 96,
+					"height": 11,
+					"dataSource": "vs2",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable17": {
+					"type": "input",
+					"top": 148,
+					"left": 356,
+					"width": 64,
+					"height": 11,
+					"dataSource": "vdACT_AñoAviso2",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable17.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Imagen6": {
+					"type": "picture",
+					"top": 146,
+					"left": 332,
+					"width": 19,
+					"height": 16
+				},
+				"Imagen7": {
+					"type": "picture",
+					"top": 120,
+					"left": 332,
+					"width": 19,
+					"height": 16
+				},
+				"Botón invisible3": {
+					"type": "button",
+					"top": 121,
+					"left": 233,
+					"width": 116,
+					"height": 14,
+					"dataSource": "bMeses1",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón invisible6": {
+					"type": "button",
+					"top": 147,
+					"left": 233,
+					"width": 117,
+					"height": 14,
+					"dataSource": "bMeses2",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 122,
+					"left": 189,
+					"width": 69,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Desde:"
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 148,
+					"left": 189,
+					"width": 32,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Hasta:"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto27": {
+					"type": "text",
+					"top": 202,
+					"left": 219,
+					"width": 375,
+					"height": 22,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "La eliminación de cargos será efectiva para todas las cuentas corrientes activas"
+				},
+				"Apdos3": {
+					"type": "text",
+					"top": 103,
+					"left": 219,
+					"width": 375,
+					"height": 33,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "La eliminación de cargos será efectiva sólo para las cuentas corrientes correspondientes a los apoderados que usted haya seleccionado específicamente en la lista"
+				},
+				"Apdos5": {
+					"type": "text",
+					"top": 156,
+					"left": 219,
+					"width": 377,
+					"height": 22,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "La eliminación de cargos será efectiva para las cuentas corrientes correspondientes a todos los apoderados listados en el Explorador de AccountTrack"
+				},
+				"manual": {
+					"type": "radio",
+					"top": 86,
+					"left": 209,
+					"width": 290,
+					"height": 17,
+					"dataSource": "f1",
+					"text": "Solo para los alumnos seleccionados en lista",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/manual.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable23": {
+					"type": "input",
+					"top": 86,
+					"left": 505,
+					"width": 117,
+					"height": 11,
+					"dataSource": "viACT_cuentas1",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"stroke": "#DDDDDD",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "(# ###0 cuentas)",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"manual(1)": {
+					"type": "radio",
+					"top": 139,
+					"left": 209,
+					"width": 217,
+					"height": 17,
+					"dataSource": "f2",
+					"text": "Para todos los alumnos de la lista",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/manual(1).4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable24": {
+					"type": "input",
+					"top": 139,
+					"left": 505,
+					"width": 117,
+					"height": 11,
+					"dataSource": "viACT_cuentas2",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"stroke": "#DDDDDD",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "(# ###0 cuentas)",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"manual(2)": {
+					"type": "radio",
+					"top": 185,
+					"left": 209,
+					"width": 192,
+					"height": 17,
+					"dataSource": "f3",
+					"text": "Para todos los alumnos activos",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/manual(2).4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable25": {
+					"type": "input",
+					"top": 185,
+					"left": 505,
+					"width": 117,
+					"height": 11,
+					"dataSource": "viACT_cuentas3",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"stroke": "#DDDDDD",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "(# ###0 cuentas)",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"r1": {
+					"type": "radio",
+					"top": 240,
+					"left": 209,
+					"width": 292,
+					"height": 16,
+					"dataSource": "r1",
+					"text": "Cualquiera sea la matriz de cargos asignada",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/r1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable26": {
+					"type": "input",
+					"top": 240,
+					"left": 505,
+					"width": 117,
+					"height": 11,
+					"dataSource": "viACT_cuentas4",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "(# ###0 cuentas)",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"r2": {
+					"type": "radio",
+					"top": 283,
+					"left": 209,
+					"width": 296,
+					"height": 15,
+					"dataSource": "r2",
+					"text": "Solo a aquellos cuya matriz de cargo actual es:",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"method": "ObjectMethods/r2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Reemplazo3": {
+					"type": "input",
+					"top": 306,
+					"left": 225,
+					"width": 248,
+					"height": 11,
+					"dataSource": "vsACT_AsignedMatrix2",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable27": {
+					"type": "input",
+					"top": 304,
+					"left": 505,
+					"width": 117,
+					"height": 11,
+					"dataSource": "viACT_cuentas5",
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"textAlign": "left",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "(# ###0 cuentas)",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"replace(4)": {
+					"type": "input",
+					"top": 432,
+					"left": 238,
+					"width": 196,
+					"height": 11,
+					"dataSource": "vsACT_AsignedMatrix2",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"oldmatrix(1)": {
+					"type": "dropdown",
+					"top": 466,
+					"left": 241,
+					"width": 216,
+					"height": 15,
+					"dataSource": "atACT_MAtrixNameCopy3",
+					"focusable": false,
+					"display": false,
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/oldmatrix(1).4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Reemplazo4": {
+					"type": "picture",
+					"top": 304,
+					"left": 474,
+					"width": 19,
+					"height": 16
+				},
+				"impresion1": {
+					"type": "button",
+					"top": 304,
+					"left": 223,
+					"width": 269,
+					"height": 14,
+					"dataSource": "bMatrizaReemplazar",
+					"display": false,
+					"method": "ObjectMethods/impresion1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto29": {
+					"type": "text",
+					"top": 321,
+					"left": 219,
+					"width": 375,
+					"height": 33,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "La eliminación de cargos será efectiva para las cuentas corrientes seleccionadas más arriba que tengan asignada la matriz que usted seleccione"
+				},
+				"oldmatrix": {
+					"type": "picture",
+					"top": 428,
+					"left": 449,
+					"width": 19,
+					"height": 16
+				},
+				"Línea1": {
+					"type": "line",
+					"top": 230,
+					"left": 193,
+					"width": 398
+				},
+				"Alumnos1": {
+					"type": "text",
+					"top": 79,
+					"left": 9,
+					"width": 143,
+					"height": 242,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "En esta página del asistente usted debe determinar en que cuentas corrientes serán eliminados los cargos.\r\rPara pasar a la página siguiente  haga click en el botón Flecha adelante.  Si desea modificar las opciones seleccionadas anteriormente, haga click en el botón Flecha atrás\r\rEn la página siguiente deberá confirmar la eliminación de cargos con las opciones que usted haya seleccionado"
+				},
+				"Alumnos3": {
+					"type": "text",
+					"top": 103,
+					"left": 219,
+					"width": 375,
+					"height": 22,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "La eliminación de cargos será efectiva solo para las cuentas corrientes que usted haya seleccionado específicamente en la lista"
+				},
+				"Alumnos4": {
+					"type": "text",
+					"top": 156,
+					"left": 219,
+					"width": 375,
+					"height": 22,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "La eliminación de cargos será efectiva para todas las cuentas corrientes listadas en el Explorador de AccountTrack"
+				},
+				"Texto28": {
+					"type": "text",
+					"top": 255,
+					"left": 219,
+					"width": 375,
+					"height": 22,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "La eliminación de cargos será efectiva para las cuentas corrientes seleccionadas más arriba, cualquiera sea la matriz de cargos"
+				},
+				"Alumnos2": {
+					"type": "text",
+					"top": 52,
+					"left": 161,
+					"width": 278,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Selección de cuentas corrientes"
+				},
+				"Apdos1": {
+					"type": "text",
+					"top": 79,
+					"left": 9,
+					"width": 143,
+					"height": 242,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "En esta página del asistente usted debe determinar para las  cuentas corrientes de que apoderados serán eliminados los cargos.\r\rPara pasar a la página siguiente  haga click en el botón Flecha Adelante  Si desea modificar las opciones seleccionadas anteriormente, haga click en el botón Flecha Atrás.\r\rEn la página siguiente deberá confirmar la eliminación de cargos con las opciones que usted haya seleccionado."
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable68": {
+					"type": "input",
+					"top": 86,
+					"left": 177,
+					"width": 426,
+					"height": 219,
+					"dataSource": "vtACT_ResumenAsistente",
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"server": {
+					"type": "checkbox",
+					"top": 311,
+					"left": 175,
+					"width": 233,
+					"height": 15,
+					"dataSource": "bc_ExecuteOnServer",
+					"text": "Ejecutar proceso de eliminación en el servidor",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable67": {
+					"type": "button",
+					"top": 374,
+					"left": 416,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Nueva Variable5472",
+					"text": "Volver",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable67.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable65": {
+					"type": "button",
+					"top": 374,
+					"left": 505,
+					"width": 114,
+					"height": 20,
+					"dataSource": "Nueva Variable5384",
+					"action": "accept",
+					"text": "Eliminar cargos",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"server(1)1": {
+					"type": "text",
+					"top": 327,
+					"left": 190,
+					"width": 412,
+					"height": 33,
+					"stroke": "#666666",
+					"styleSheet": "XS_FormObjects",
+					"text": "La ejecución en el servidor es mucho más rápida y libera a su estación de esta tarea, pero puede aumentar ligeramente los tiempos de respuesta del servidor mientras se realiza el proceso."
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 52,
+					"left": 161,
+					"width": 278,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Confirmación"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 79,
+					"left": 9,
+					"width": 143,
+					"height": 242,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "AccountTrack está listo para iniciar el proceso de eliminación de cargos con las opciones que usted ha seleccionado (resumidas en el recuadro a la derecha).\r\rHaga clic en el botón Eliminar Cargos para iniciar ahora el proceso de eliminación.\r\rSi desea modificar las opciones seleccionadas haga clic en el botón Volver.\r\rSi no desea continuar ahora con la eliminación de cargos cierre este cuadro de diálogo."
+				}
+			}
+		}
+	]
+}

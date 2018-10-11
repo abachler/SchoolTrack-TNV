@@ -1,0 +1,693 @@
+﻿{
+	"windowTitle": ":21024,7",
+	"inheritedForm": "XS_MASTER_ConfigDialogs",
+	"inheritedFormTable": 114,
+	"formSizeAnchor": "fondo",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"fondo": {
+					"type": "rectangle",
+					"top": 41,
+					"left": 0,
+					"width": 781,
+					"height": 511,
+					"fill": "#EEEEEE",
+					"stroke": "#EEEEEE"
+				},
+				"lb_TiposDocumentos": {
+					"type": "listbox",
+					"top": 72,
+					"left": 1,
+					"width": 388,
+					"height": 216,
+					"dataSource": "lb_TiposDocumentos",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"dragging": "custom",
+					"dropping": "custom",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"rowStyleSource": "al_estiloPrefijos_registro",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"method": "ObjectMethods/lb_TiposDocumentos.4dm",
+					"events": [
+						"onClick",
+						"onDrop",
+						"onDragOver"
+					],
+					"columns": [
+						{
+							"name": "Columna7",
+							"dataSource": "<>atBBL_Media",
+							"width": 242,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onDoubleClick",
+								"onLosingFocus",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Columna7.4dm",
+							"header": {
+								"name": "Título9",
+								"text": "Tipo de documento",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Columna8",
+							"dataSource": "<>asBBL_AbrevMedia",
+							"width": 50,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"entryFilter": "~\"A-Z\"###",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onDoubleClick",
+								"onLosingFocus",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Columna8.4dm",
+							"header": {
+								"name": "Título10",
+								"text": "Prefijo",
+								"dataSource": "Título2",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Columna9",
+							"dataSource": "al_NumeroRegistrosMediaTrack",
+							"width": 81,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título11",
+								"text": "Registros",
+								"dataSource": "Título5",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Columna10",
+							"dataSource": "<>alBBL_IDMedia",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título12",
+								"text": "ID_media",
+								"dataSource": "Título3",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"lb_GruposLectores": {
+					"type": "listbox",
+					"top": 72,
+					"left": 391,
+					"width": 388,
+					"height": 216,
+					"dataSource": "lb_GruposLectores",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"dragging": "custom",
+					"dropping": "custom",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"rowStyleSource": "al_estiloPrefijos_lector",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"method": "ObjectMethods/lb_GruposLectores.4dm",
+					"events": [
+						"onClick",
+						"onDrop",
+						"onDragOver"
+					],
+					"columns": [
+						{
+							"name": "Grupos_lectores1",
+							"dataSource": "<>atBBL_GruposLectores",
+							"width": 242,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onDoubleClick",
+								"onLosingFocus",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Grupos_lectores1.4dm",
+							"header": {
+								"name": "Título13",
+								"text": "Grupo",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Prefijos_grupos_lectores1",
+							"dataSource": "<>asBBL_AbrevGruposLectores",
+							"width": 50,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"entryFilter": "~\"A-Z\"###",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onDoubleClick",
+								"onLosingFocus",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Prefijos_grupos_lectores1.4dm",
+							"header": {
+								"name": "Título14",
+								"text": "Prefijo",
+								"dataSource": "Título2",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Columna11",
+							"dataSource": "al_NumeroLectoresMediaTrack",
+							"width": 81,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título15",
+								"text": "Lectores",
+								"dataSource": "Título6",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Columna12",
+							"dataSource": "<>alBBL_GruposLectores",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título16",
+								"text": "ID_grupo",
+								"dataSource": "Título3",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"r1_IdentificadorInterno": {
+					"type": "radio",
+					"top": 340,
+					"left": 35,
+					"width": 319,
+					"height": 18,
+					"dataSource": "r1_IdentificadorInterno",
+					"text": "Número secuencial interno",
+					"styleSheet": "Ligth - 13",
+					"events": [
+						"onClick"
+					]
+				},
+				"l1_IdentificadorInterno": {
+					"type": "radio",
+					"top": 340,
+					"left": 421,
+					"width": 330,
+					"height": 18,
+					"dataSource": "l1_IdentificadorInterno",
+					"text": "Numero secuencial interno",
+					"styleSheet": "Ligth - 13",
+					"method": "ObjectMethods/l1_IdentificadorInterno.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"r2_NumeroRegistro": {
+					"type": "radio",
+					"top": 362,
+					"left": 35,
+					"width": 319,
+					"height": 18,
+					"dataSource": "r2_NumeroRegistro",
+					"text": "Número de registro",
+					"styleSheet": "Ligth - 13",
+					"events": [
+						"onClick"
+					]
+				},
+				"l2_IdentificadorNacional": {
+					"type": "radio",
+					"top": 362,
+					"left": 421,
+					"width": 330,
+					"height": 18,
+					"dataSource": "l2_IdentificadorNacional",
+					"text": "Identificador Nacional 1",
+					"styleSheet": "Ligth - 13",
+					"method": "ObjectMethods/l2_IdentificadorNacional.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Campo4": {
+					"type": "input",
+					"top": 382,
+					"left": 54,
+					"width": 262,
+					"height": 18,
+					"dataSource": "[xxBBL_Preferencias:65]Registros_NumeroModificable:7",
+					"fill": "transparent",
+					"styleSheet": "Ligth - 13",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"textFormat": "Número de registro editable",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"l3_IdentificadorNacional": {
+					"type": "radio",
+					"top": 384,
+					"left": 421,
+					"width": 330,
+					"height": 18,
+					"dataSource": "l3_IdentificadorNacional",
+					"text": "Identificador Nacional 2",
+					"styleSheet": "Ligth - 13",
+					"method": "ObjectMethods/l3_IdentificadorNacional.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bEstableceNumeroRegistro": {
+					"type": "checkbox",
+					"top": 406,
+					"left": 54,
+					"width": 200,
+					"height": 18,
+					"dataSource": "bEstableceNumeroRegistro",
+					"text": "Establecer próximo Número:",
+					"styleSheet": "Ligth - 13",
+					"method": "ObjectMethods/bEstableceNumeroRegistro.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"NextNumber": {
+					"type": "input",
+					"top": 408,
+					"left": 268,
+					"width": 98,
+					"height": 15,
+					"dataSource": "Mti_BarCode",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "Ligth - 12",
+					"borderStyle": "sunken",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"textFormat": "############",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/NextNumber.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"l4_IdentificadorNacional": {
+					"type": "radio",
+					"top": 406,
+					"left": 421,
+					"width": 330,
+					"height": 18,
+					"dataSource": "l4_IdentificadorNacional",
+					"text": "Identificador Nacional 3",
+					"styleSheet": "Ligth - 13",
+					"method": "ObjectMethods/l4_IdentificadorNacional.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Campo5": {
+					"type": "input",
+					"top": 441,
+					"left": 35,
+					"width": 346,
+					"height": 18,
+					"dataSource": "[xxBBL_Preferencias:65]Registro_BarCodeConPrefijo:32",
+					"fill": "transparent",
+					"styleSheet": "Ligth - 13",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"textFormat": "Anteponer prefijo correspondiente al tipo de documento",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Campo5.4dm",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onAfterEdit"
+					]
+				},
+				"Campo6": {
+					"type": "input",
+					"top": 441,
+					"left": 421,
+					"width": 342,
+					"height": 18,
+					"dataSource": "[xxBBL_Preferencias:65]Lector_BarCodeConPrefijo:35",
+					"fill": "transparent",
+					"styleSheet": "Ligth - 13",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"textFormat": "Anteponer prefijo correspondiente al grupo de lectores",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Campo6.4dm",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onAfterEdit"
+					]
+				},
+				"Botón": {
+					"type": "button",
+					"top": 647,
+					"left": 206,
+					"width": 139,
+					"height": 30,
+					"dataSource": "Botón",
+					"shortcutKey": "[Tab]",
+					"text": "Botón",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"method": "ObjectMethods/Botón.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 319,
+					"left": 405,
+					"width": 207,
+					"height": 16,
+					"styleSheet": "Ligth - 13",
+					"text": "Generar código de barra basado en:"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 319,
+					"left": 21,
+					"width": 207,
+					"height": 16,
+					"styleSheet": "Ligth - 13",
+					"text": "Generar código de barra basado en:"
+				},
+				"bTareasRegistros": {
+					"type": "button",
+					"top": 46,
+					"left": 346,
+					"width": 32,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "bTareasRegistros",
+					"styleSheet": "XS_FormObjects",
+					"icon": "/RESOURCES/Buttons/action-2.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"method": "ObjectMethods/bTareasRegistros.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bTareasLectores": {
+					"type": "button",
+					"top": 47,
+					"left": 735,
+					"width": 32,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "bTareasLectores",
+					"styleSheet": "XS_FormObjects",
+					"icon": "/RESOURCES/Buttons/action-2.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"method": "ObjectMethods/bTareasLectores.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Invisible Button2": {
+					"type": "button",
+					"top": 595,
+					"left": 13,
+					"width": 119,
+					"height": 38,
+					"dataSource": "Invisible Button1",
+					"action": "accept",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 49,
+					"left": 8,
+					"width": 129,
+					"height": 17,
+					"stroke": "#404040",
+					"styleSheet": "Medium - 14",
+					"text": "Documentos"
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 48,
+					"left": 398,
+					"width": 129,
+					"height": 17,
+					"stroke": "#404040",
+					"styleSheet": "Medium - 14",
+					"text": "Lectores"
+				},
+				"Línea1": {
+					"type": "line",
+					"top": 288,
+					"left": 0,
+					"width": 780,
+					"stroke": "#AAAAAA"
+				},
+				"Línea2": {
+					"type": "line",
+					"top": 474,
+					"left": 0,
+					"width": 779,
+					"stroke": "#AAAAAA"
+				},
+				"Texto": {
+					"type": "text",
+					"top": 486,
+					"left": 26,
+					"width": 727,
+					"height": 48,
+					"stroke": "#777777",
+					"styleSheet": "Ligth - 13",
+					"text": "Las modificaciones en la forma de generar los códigos de barra aplican por defecto solo para los nuevos documentos o nuevos lectores. Si desea regenerar codigos de barra con un nuevo formato puede hacerlo para un tipo de documento o un grupo de lectores o para todos los documentos o lectores usando la rueda de tareas correspondiente"
+				},
+				"Rectángulo": {
+					"type": "rectangle",
+					"top": 289,
+					"left": 1,
+					"width": 780,
+					"height": 20,
+					"fill": "#777777",
+					"stroke": "#777777"
+				},
+				"Línea": {
+					"type": "line",
+					"top": 42,
+					"left": 389,
+					"height": 433,
+					"stroke": "#AAAAAA"
+				},
+				"Texto10": {
+					"type": "text",
+					"top": 290,
+					"left": 8,
+					"width": 303,
+					"height": 17,
+					"stroke": "#FFFFFF",
+					"styleSheet": "Medium - 14",
+					"text": "Formato del código de barra de documentos"
+				},
+				"Texto11": {
+					"type": "text",
+					"top": 290,
+					"left": 398,
+					"width": 303,
+					"height": 17,
+					"stroke": "#FFFFFF",
+					"styleSheet": "Medium - 14",
+					"text": "Formato del código de barra de lectores"
+				}
+			}
+		}
+	]
+}

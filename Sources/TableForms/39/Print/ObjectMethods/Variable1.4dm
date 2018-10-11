@@ -1,0 +1,8 @@
+$err:=PL_SetArraysNam (xPL_PrintArea;1;1;"sElements")
+PL_SetWidths (xPL_PrintArea;1;1;564)
+PL_SetHeight (xPL_PrintArea;0;0;0;0)
+PL_SetColOpts (xPL_PrintArea;0;0)
+PL_SetHdrOpts (xPL_PrintArea;0;0)
+PL_SetStyle (xPL_PrintArea;0;"Tahoma";9;0)
+PL_SetFrame (xPL_PrintArea;1;"Black";"Black";0;0.25;"Gray";"Black";0)
+PL_SetDividers (xPL_PrintArea;1;"Black";"Black";0;0.25;"Gray";"Black";0)

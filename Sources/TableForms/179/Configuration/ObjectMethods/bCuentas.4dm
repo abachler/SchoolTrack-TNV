@@ -1,0 +1,1 @@
+ACTcar_AsignaCtasContables ("asignaCta";->[xxACT_Items:179]ID:1;->[xxACT_Items:179]No_de_Cuenta_Contable:15;->[xxACT_Items:179]CodAuxCta:27;"plan de cuenta")

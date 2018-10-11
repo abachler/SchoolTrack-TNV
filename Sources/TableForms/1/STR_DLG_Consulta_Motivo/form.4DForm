@@ -1,0 +1,174 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"formSizeAnchor": "Botón1",
+	"rightMargin": -13,
+	"bottomMargin": -13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 282,
+					"left": 252,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 225,
+					"left": 68,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Botón de opción1": {
+					"type": "radio",
+					"top": 74,
+					"left": 13,
+					"width": 384,
+					"height": 21,
+					"dataSource": "r1",
+					"text": "Sólo para las nuevas anotaciones",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón de opción2": {
+					"type": "radio",
+					"top": 117,
+					"left": 13,
+					"width": 384,
+					"height": 21,
+					"dataSource": "r2",
+					"text": "Aplicar también a las anotaciones ya registradas con este motivo",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 94,
+					"left": 28,
+					"width": 373,
+					"height": 22,
+					"styleSheet": "XS_FormObjects",
+					"text": "El puntaje es modificado, pero las anotaciones ya registradas con ese motivo conservan el puntaje definido previamente."
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 137,
+					"left": 28,
+					"width": 380,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Se asigna el nuevo puntaje a todas las anotaciones ya registradas con ese motivo."
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 163,
+					"left": 326,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Botón1",
+					"action": "accept",
+					"text": "Aceptar",
+					"styleSheet": "XS_FormObjects",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 163,
+					"left": 237,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Botón1",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 13,
+					"left": 20,
+					"width": 380,
+					"height": 52,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Usted modificó el puntaje del motivo de anotación.\rSi lo desea puede aplicar el nuevo puntaje a las anotaciones ya registradas o bien utilizar este nuevo puntaje sólo para las anotaciones con este motivo que se registren de ahora en adelante."
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,1025 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 610,
+	"height": 520,
+	"markerBody": 925,
+	"markerBreak": 945,
+	"markerFooter": 965,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onUnload",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"al_AgnosConcentracion1": {
+					"type": "dropdown",
+					"top": 13,
+					"left": 514,
+					"width": 82,
+					"height": 19,
+					"dataSource": "al_AgnosConcentracion",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/al_AgnosConcentracion1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bModAsignaturasH1": {
+					"type": "button",
+					"top": 454,
+					"left": 13,
+					"width": 178,
+					"height": 18,
+					"dataSource": "bModAsignaturasH",
+					"text": "Modificar Asignaturas Históricas",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/bModAsignaturasH1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 454,
+					"left": 205,
+					"width": 155,
+					"height": 18,
+					"dataSource": "Botón2",
+					"text": "Reconstruir Modelo",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 491,
+					"left": 418,
+					"width": 85,
+					"height": 18,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cerrar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 491,
+					"left": 510,
+					"width": 86,
+					"height": 18,
+					"dataSource": "bPrint",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Imprimir...",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Línea1": {
+					"type": "line",
+					"top": 480,
+					"left": 0,
+					"width": 609,
+					"height": 1,
+					"stroke": "#AAAAAA"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 16,
+					"left": 472,
+					"width": 29,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Año:"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Zona de Grupo7": {
+					"type": "groupBox",
+					"top": 119,
+					"left": 13,
+					"width": 289,
+					"height": 131,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Primer Año de Enseñanza Media"
+				},
+				"Zona de Grupo8": {
+					"type": "groupBox",
+					"top": 119,
+					"left": 308,
+					"width": 289,
+					"height": 131,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Segundo Año de Enseñanza Media"
+				},
+				"Zona de Grupo9": {
+					"type": "groupBox",
+					"top": 254,
+					"left": 13,
+					"width": 289,
+					"height": 129,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Tercer Año de Enseñanza Media"
+				},
+				"Zona de Grupo10": {
+					"type": "groupBox",
+					"top": 254,
+					"left": 308,
+					"width": 289,
+					"height": 129,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Cuarto Año de Enseñanza Media"
+				},
+				"Zona de Grupo6": {
+					"type": "groupBox",
+					"top": 24,
+					"left": 12,
+					"width": 584,
+					"height": 56,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Título del documento"
+				},
+				"Variable19": {
+					"type": "input",
+					"top": 46,
+					"left": 20,
+					"width": 567,
+					"height": 26,
+					"dataSource": "vt_TituloConcentracion",
+					"textAlign": "center",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable21": {
+					"type": "input",
+					"top": 146,
+					"left": 80,
+					"width": 212,
+					"height": 13,
+					"dataSource": "sAltSchool1",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"tooltip": "Sin título",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable22": {
+					"type": "input",
+					"top": 146,
+					"left": 375,
+					"width": 212,
+					"height": 13,
+					"dataSource": "sAltSchool2",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"tooltip": "Sin título",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable23": {
+					"type": "input",
+					"top": 167,
+					"left": 80,
+					"width": 212,
+					"height": 13,
+					"dataSource": "sAltCity1",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"tooltip": "Sin título",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable24": {
+					"type": "input",
+					"top": 167,
+					"left": 375,
+					"width": 212,
+					"height": 13,
+					"dataSource": "sAltCity2",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"tooltip": "Sin título",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable25": {
+					"type": "input",
+					"top": 188,
+					"left": 105,
+					"width": 186,
+					"height": 22,
+					"dataSource": "sAltCoop1",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"tooltip": "Sin título",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable26": {
+					"type": "input",
+					"top": 188,
+					"left": 400,
+					"width": 186,
+					"height": 22,
+					"dataSource": "sAltCoop2",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"tooltip": "Sin título",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable27": {
+					"type": "input",
+					"top": 218,
+					"left": 105,
+					"width": 186,
+					"height": 22,
+					"dataSource": "sAltPlan1",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"tooltip": "Sin título",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable28": {
+					"type": "input",
+					"top": 218,
+					"left": 400,
+					"width": 186,
+					"height": 22,
+					"dataSource": "sAltPlan2",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"tooltip": "Sin título",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable29": {
+					"type": "input",
+					"top": 281,
+					"left": 80,
+					"width": 212,
+					"height": 13,
+					"dataSource": "sAltSchool3",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"tooltip": "Sin título",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable30": {
+					"type": "input",
+					"top": 281,
+					"left": 375,
+					"width": 212,
+					"height": 13,
+					"dataSource": "sAltSchool4",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"tooltip": "Sin título",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable31": {
+					"type": "input",
+					"top": 302,
+					"left": 80,
+					"width": 212,
+					"height": 13,
+					"dataSource": "sAltCity3",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"tooltip": "Sin título",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable32": {
+					"type": "input",
+					"top": 302,
+					"left": 375,
+					"width": 212,
+					"height": 13,
+					"dataSource": "sAltCity4",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"tooltip": "Sin título",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable33": {
+					"type": "input",
+					"top": 323,
+					"left": 105,
+					"width": 186,
+					"height": 22,
+					"dataSource": "sAltCoop3",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"tooltip": "Sin título",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable34": {
+					"type": "input",
+					"top": 323,
+					"left": 400,
+					"width": 186,
+					"height": 22,
+					"dataSource": "sAltCoop4",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"tooltip": "Sin título",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable35": {
+					"type": "input",
+					"top": 352,
+					"left": 105,
+					"width": 186,
+					"height": 22,
+					"dataSource": "sAltPlan3",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"tooltip": "Sin título",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable36": {
+					"type": "input",
+					"top": 352,
+					"left": 400,
+					"width": 186,
+					"height": 22,
+					"dataSource": "sAltPlan4",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"tooltip": "Sin título",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Botón5": {
+					"type": "button",
+					"top": 455,
+					"left": 442,
+					"width": 155,
+					"height": 17,
+					"dataSource": "Botón2",
+					"text": "Ver Listas de Asignaturas",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable37": {
+					"type": "input",
+					"top": 485,
+					"left": 146,
+					"width": 12,
+					"height": 13,
+					"dataSource": "vi_DecAsistencia",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"min": 0,
+					"max": 2,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 145,
+					"left": 22,
+					"width": 40,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Colegio:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 166,
+					"left": 22,
+					"width": 40,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Ciudad:"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 188,
+					"left": 22,
+					"width": 80,
+					"height": 22,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Dec. o Res.Ex. Plan Estudio:"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 218,
+					"left": 22,
+					"width": 80,
+					"height": 22,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Dto Eval. y Promo:"
+				},
+				"Text21": {
+					"type": "text",
+					"top": 145,
+					"left": 317,
+					"width": 40,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Colegio:"
+				},
+				"Text22": {
+					"type": "text",
+					"top": 166,
+					"left": 317,
+					"width": 40,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Ciudad:"
+				},
+				"Text23": {
+					"type": "text",
+					"top": 188,
+					"left": 317,
+					"width": 80,
+					"height": 22,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Dec. o Res.Ex. Plan Estudio:"
+				},
+				"Text24": {
+					"type": "text",
+					"top": 218,
+					"left": 317,
+					"width": 80,
+					"height": 22,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Dto Eval. y Promo:"
+				},
+				"Text25": {
+					"type": "text",
+					"top": 280,
+					"left": 22,
+					"width": 40,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Colegio:"
+				},
+				"Text26": {
+					"type": "text",
+					"top": 301,
+					"left": 22,
+					"width": 40,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Ciudad:"
+				},
+				"Text27": {
+					"type": "text",
+					"top": 323,
+					"left": 22,
+					"width": 80,
+					"height": 22,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Dec. o Res.Ex. Plan Estudio:"
+				},
+				"Text28": {
+					"type": "text",
+					"top": 352,
+					"left": 22,
+					"width": 80,
+					"height": 22,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Dto Eval. y Promo:"
+				},
+				"Text29": {
+					"type": "text",
+					"top": 280,
+					"left": 317,
+					"width": 40,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Colegio:"
+				},
+				"Text30": {
+					"type": "text",
+					"top": 301,
+					"left": 317,
+					"width": 40,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Ciudad:"
+				},
+				"Text31": {
+					"type": "text",
+					"top": 323,
+					"left": 317,
+					"width": 80,
+					"height": 22,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Dec. o Res.Ex. Plan Estudio:"
+				},
+				"Text32": {
+					"type": "text",
+					"top": 352,
+					"left": 317,
+					"width": 80,
+					"height": 22,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Dto Eval. y Promo:"
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 392,
+					"left": 21,
+					"width": 566,
+					"height": 55,
+					"styleSheet": "XS_FormObjects",
+					"text": "Para imprimir el Certificado de Concentración de Notas SchoolTrack utiliza la configuración almacenada previamente para cada año.\rSi la concentración de notas no se imprime según lo esperado, es decir cuando faltan o sobran asignaturas o el orden no es el deseado, utillize el botón Reconstruir Modelo para actualizar las listas de asignaturas a imprimir. Al terminar la reconstrucción vera las listas de asignaturas de Formación Común y Formación diferenciada. Por simple arrastre podra reorganizar esas listas.\rSi encuentra errores en los nombres de asignaturas de años anteriores utilize el botón Modificar Asignaturas Históricas para corregirlos."
+				},
+				"Línea2": {
+					"type": "line",
+					"top": 388,
+					"left": 0,
+					"width": 609,
+					"height": 1,
+					"stroke": "#AAAAAA"
+				},
+				"Línea3": {
+					"type": "line",
+					"top": 86,
+					"left": 0,
+					"width": 609,
+					"height": 1,
+					"stroke": "#AAAAAA"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 89,
+					"left": 13,
+					"width": 574,
+					"height": 22,
+					"styleSheet": "XS_FormObjects",
+					"text": "SchoolTrack imprime por omisión la información almacenada en los registros actuales o históricos. Sólo si no existe tal información, ya sea porque se trata de registros históricos importados o por cualquier otra razón, se imprimirá la información ingresada en los siguientes recuadros"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 485,
+					"left": 13,
+					"width": 128,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Aproximar % asistencia a:"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 485,
+					"left": 164,
+					"width": 53,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "decimales"
+				},
+				"vt_msjConcent": {
+					"type": "text",
+					"top": 501,
+					"left": 13,
+					"width": 384,
+					"height": 11,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Los decretos y/o planes en azul no corresponden a los datos configurados para el nivel."
+				}
+			}
+		},
+		{
+			"objects": {
+				"lbObligatorias": {
+					"type": "listbox",
+					"top": 70,
+					"left": 13,
+					"width": 280,
+					"height": 316,
+					"dataSource": "lbObligatorias",
+					"dragging": "custom",
+					"dropping": "custom",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"fill": "#FFFFFF",
+					"fontFamily": "Arial",
+					"fontSize": 9,
+					"columns": [
+						{
+							"name": "Columna1",
+							"dataSource": "aPCAsgName",
+							"width": 265,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDrop",
+								"onDataChange",
+								"onDragOver"
+							],
+							"method": "ObjectMethods/Columna1.4dm",
+							"header": {
+								"name": "Título2",
+								"text": "Formación General",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"lbElectivas": {
+					"type": "listbox",
+					"top": 70,
+					"left": 317,
+					"width": 280,
+					"height": 316,
+					"dataSource": "lbElectivas",
+					"dragging": "custom",
+					"dropping": "custom",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"columns": [
+						{
+							"name": "aPEAsgName",
+							"dataSource": "aPEAsgName",
+							"width": 265,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 9,
+							"events": [
+								"onClick",
+								"onDrop",
+								"onDataChange",
+								"onDragOver"
+							],
+							"method": "ObjectMethods/aPEAsgName.4dm",
+							"header": {
+								"name": "Título1",
+								"text": "Formación Diferenciada",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 9,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"Botón4": {
+					"type": "button",
+					"top": 455,
+					"left": 442,
+					"width": 155,
+					"height": 17,
+					"dataSource": "Botón2",
+					"text": "Volver a los textos",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vl_OrdenAlfabetico": {
+					"type": "checkbox",
+					"top": 491,
+					"left": 14,
+					"width": 203,
+					"height": 14,
+					"dataSource": "vl_OrdenAlfabetico",
+					"text": "Ordenar asignaturas alfabéticamente",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/vl_OrdenAlfabetico.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bDel": {
+					"type": "button",
+					"top": 548,
+					"left": 31,
+					"width": 108,
+					"height": 26,
+					"dataSource": "bDel",
+					"shortcutKey": "[Del]",
+					"text": "Botón",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"method": "ObjectMethods/bDel.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 44,
+					"left": 13,
+					"width": 555,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Orden de asignaturas en Certificado de Concentración de Calificaciones"
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 391,
+					"left": 12,
+					"width": 584,
+					"height": 61,
+					"styleSheet": "XS_FormObjects",
+					"text": "En los recuadros se muestran todas las asignaturas cursadas por los alumnos de 1º a 4º año de enseñanza media en el año seleccionado.\rOrdene la lista arrastrando las asignaturas a la posición en que deben aparecer en la Concentración de Calificaciones. También puede cambiar las asignaturas de Formación Diferenciada a Formación común o inversamente sin que esto altere los atributos de las asignaturas.\rAunque esta lista muestra todas las asignaturas, en el documento impreso sólo aparecerán las asignaturas efectivamente cursadas por cada alumno."
+				}
+			}
+		}
+	]
+}

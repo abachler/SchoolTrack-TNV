@@ -1,0 +1,230 @@
+﻿{
+	"windowTitle": ":21012,1",
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Variable4",
+	"rightMargin": 13,
+	"bottomMargin": 74,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 493,
+					"left": 360,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 436,
+					"left": 176,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 304,
+					"left": 15,
+					"width": 87,
+					"height": 12,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 9,
+					"text": ":21012,2"
+				},
+				"Imagen25": {
+					"type": "picture",
+					"top": 304,
+					"left": 89,
+					"width": 11,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Variable1": {
+					"type": "plugin",
+					"top": 8,
+					"left": 8,
+					"width": 568,
+					"height": 288,
+					"dataSource": "xALP_Exim",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "dropdown",
+					"top": 303,
+					"left": 89,
+					"width": 13,
+					"height": 14,
+					"dataSource": "<>apExmAsig",
+					"display": false,
+					"styleSheet": "Medium - 13",
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 300,
+					"left": 299,
+					"width": 80,
+					"height": 18,
+					"dataSource": "bPrint",
+					"text": ":21012,3",
+					"styleSheet": "Defaut",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 300,
+					"left": 410,
+					"width": 80,
+					"height": 18,
+					"dataSource": "bCancel",
+					"shortcutKey": "[Esc]",
+					"text": ":21012,4",
+					"styleSheet": "Defaut",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 300,
+					"left": 496,
+					"width": 80,
+					"height": 18,
+					"dataSource": "bSave",
+					"shortcutKey": "s",
+					"shortcutAccel": true,
+					"text": ":21012,5",
+					"styleSheet": "Defaut",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable19": {
+					"type": "button",
+					"top": 415,
+					"left": 15,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCancel",
+					"shortcutKey": "w",
+					"shortcutAccel": true,
+					"text": ":21012,4",
+					"styleSheet": "Defaut",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 326,
+					"left": 11,
+					"width": 557,
+					"height": 55,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Para reasignar el número de registro interno de eximición, utilize la lista desplegable \r\"Reasignar Nº por\" para asignar por órden cronológico, alfabético, por curso o asignatura, o aleatoriamente. \rTambién puede modificar la numeración manualmente, presionando la tecla ALT y deplazando la línea con el mouse hacia arriba o hacia abajo. Si desea cambiar la fecha ingrese a la celda con un doble-clic y digítela."
+				}
+			}
+		}
+	]
+}

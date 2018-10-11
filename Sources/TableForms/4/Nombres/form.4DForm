@@ -1,0 +1,170 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Botón",
+	"rightMargin": 12,
+	"bottomMargin": 12,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Campo1": {
+					"type": "input",
+					"top": 12,
+					"left": 140,
+					"width": 347,
+					"height": 13,
+					"dataSource": "vtSTR_NombreComun",
+					"fill": "#FFFFFF",
+					"fontSize": 11,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 12,
+					"left": 22,
+					"width": 108,
+					"height": 13,
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Nombre común:"
+				},
+				"Botón": {
+					"type": "button",
+					"top": 38,
+					"left": 407,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCloseNombres",
+					"action": "cancel",
+					"shortcutKey": "[Return]",
+					"fontSize": 11,
+					"text": "Aceptar",
+					"iconFrames": 4,
+					"method": "ObjectMethods/Botón.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 112,
+					"left": 369,
+					"width": 124,
+					"height": 20,
+					"dataSource": "Botón",
+					"action": "cancel",
+					"shortcutKey": "w",
+					"shortcutAccel": true,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Cerrar",
+					"iconFrames": 4,
+					"style": "bevel",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 38,
+					"left": 315,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCloseNombres",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Cancelar",
+					"iconFrames": 4,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 144,
+					"left": 390,
+					"width": 80,
+					"height": 22,
+					"dataSource": "bCloseNombres",
+					"action": "cancel",
+					"shortcutKey": "[Enter]",
+					"fontSize": 11,
+					"text": "Aceptar",
+					"iconFrames": 4,
+					"style": "bevel",
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

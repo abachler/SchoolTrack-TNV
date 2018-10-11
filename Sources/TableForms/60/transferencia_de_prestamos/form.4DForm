@@ -1,0 +1,395 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "btn_transferir",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"custom": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 2000,
+					"height": 2000,
+					"stroke": "transparent"
+				},
+				"Imagen2": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 900,
+					"height": 44,
+					"pictureFormat": "scaled"
+				},
+				"Línea3": {
+					"type": "line",
+					"top": 3,
+					"left": 77,
+					"height": 37,
+					"strokeDashArray": "1 1"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 3,
+					"left": 85,
+					"width": 601,
+					"height": 60,
+					"stroke": "#FFFFFF",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "MediaTrack: Baja masiva de volúmenes"
+				},
+				"Imagen1": {
+					"type": "picture",
+					"top": 6,
+					"left": 22,
+					"width": 32,
+					"height": 32,
+					"pictureFormat": "tiled"
+				},
+				"Imagen3": {
+					"type": "picture",
+					"top": 352,
+					"left": 0,
+					"width": 300,
+					"height": 213,
+					"pictureFormat": "scaled"
+				}
+			}
+		},
+		{
+			"objects": {
+				"List Box": {
+					"type": "listbox",
+					"top": 116,
+					"left": 27,
+					"width": 813,
+					"height": 379,
+					"dataSource": "lb_prestamos",
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "transparent",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"events": [
+						"onDoubleClick",
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "Columna1",
+							"dataSource": "ad_fecha_hasta",
+							"width": 91,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"textAlign": "left",
+							"fontFamily": "Tahoma",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título1",
+								"text": "Prestado Hasta",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 10,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Columna2",
+							"dataSource": "at_usuario_original",
+							"width": 199,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"textAlign": "left",
+							"fontFamily": "Tahoma",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título2",
+								"text": "Usuario",
+								"dataSource": "Título2",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 10,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Columna5",
+							"dataSource": "at_titulo",
+							"width": 352,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"textAlign": "left",
+							"fontFamily": "Tahoma",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título5",
+								"text": "Título",
+								"dataSource": "Título5",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 10,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Columna3",
+							"dataSource": "al_numregistro",
+							"width": 93,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"textAlign": "right",
+							"fontFamily": "Tahoma",
+							"fontSize": 10,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Titulo4",
+								"text": "N° de Registro",
+								"dataSource": "Título4",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 10,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Columna4",
+							"dataSource": "ab_transferir",
+							"width": 65,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "checkbox",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"textAlign": "center",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título3",
+								"text": "Transferir",
+								"dataSource": "Título3",
+								"stroke": "#000000",
+								"textAlign": "center",
+								"fontFamily": "Tahoma",
+								"fontSize": 10,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 81,
+					"left": 27,
+					"width": 160,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Ingrese fecha de búsqueda:"
+				},
+				"vd_fecha_hasta": {
+					"type": "input",
+					"top": 81,
+					"left": 192,
+					"width": 131,
+					"height": 14,
+					"dataSource": "vd_fecha_hasta",
+					"dataSourceTypeHint": "date",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dateFormat": "systemShort blankIfNull",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/vd_fecha_hasta.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"btn_calendario": {
+					"type": "button",
+					"top": 80,
+					"left": 193,
+					"width": 132,
+					"height": 15,
+					"dataSource": "btn_calendario",
+					"display": false,
+					"method": "ObjectMethods/btn_calendario.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 81,
+					"left": 348,
+					"width": 184,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Usuario de Sistema a Transferir:"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 81,
+					"left": 858,
+					"width": 211,
+					"height": 14,
+					"dataSource": "vt_usr_name",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"btn_usr": {
+					"type": "button",
+					"top": 80,
+					"left": 857,
+					"width": 212,
+					"height": 15,
+					"dataSource": "btn_usr",
+					"display": false,
+					"method": "ObjectMethods/btn_usr.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_transferir": {
+					"type": "button",
+					"top": 534,
+					"left": 760,
+					"width": 80,
+					"height": 19,
+					"dataSource": "btn_transferir",
+					"text": "Transferir",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/btn_transferir.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vi_todo": {
+					"type": "checkbox",
+					"top": 92,
+					"left": 789,
+					"width": 14,
+					"height": 19,
+					"dataSource": "vi_todo",
+					"fontFamily": "Tahoma",
+					"fontSize": 10,
+					"method": "ObjectMethods/vi_todo.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto": {
+					"type": "text",
+					"top": 513,
+					"left": 22,
+					"width": 641,
+					"height": 40,
+					"textAlign": "left",
+					"styleSheet": "XS_DialogObjects",
+					"fontStyle": "italic",
+					"text": "Ejecutando esta acción quedarán asociados al usuario de sistema seleccionado, todos los volúmenes prestados cuya fecha de devolución es inferior o igual a la fecha de búsqueda. Si un volumen es devuelto o aparece simplemente se debe realizar la devolución desde el modo circulación."
+				},
+				"at_nom_usr_sys": {
+					"type": "dropdown",
+					"top": 77,
+					"left": 535,
+					"width": 173,
+					"height": 21,
+					"dataSource": "at_nom_usr_sys",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

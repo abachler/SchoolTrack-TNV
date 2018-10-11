@@ -1,0 +1,1 @@
+vi_selectedMonth:=<>atXS_MonthNames

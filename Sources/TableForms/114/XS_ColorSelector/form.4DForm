@@ -1,0 +1,82 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Imagen1",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Imagen1": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 160,
+					"height": 160,
+					"pictureFormat": "scaled"
+				},
+				"Rejilla de botones1": {
+					"type": "buttonGrid",
+					"top": 0,
+					"left": 0,
+					"width": 160,
+					"height": 160,
+					"dataSource": "bColor",
+					"columnCount": 16,
+					"rowCount": 16,
+					"method": "ObjectMethods/Rejilla de botones1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón invisible1": {
+					"type": "button",
+					"top": 200,
+					"left": 49,
+					"width": 44,
+					"height": 28,
+					"dataSource": "Botón invisible1",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

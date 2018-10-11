@@ -1,0 +1,478 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"formSizeAnchor": "vFecha",
+	"rightMargin": 30,
+	"bottomMargin": 5,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 373,
+					"height": 190,
+					"fill": "#FFF0DF",
+					"stroke": "#FFF0DF"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 7,
+					"left": 0,
+					"width": 373,
+					"height": 25,
+					"dataSource": "<>gCustom",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"textAlign": "center",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"nav3": {
+					"type": "button",
+					"top": 36,
+					"left": 307,
+					"width": 18,
+					"height": 21,
+					"dataSource": "bNext",
+					"styleSheet": "XS_DialogObjects",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/nav3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"nav2": {
+					"type": "button",
+					"top": 36,
+					"left": 289,
+					"width": 18,
+					"height": 21,
+					"dataSource": "bPrev",
+					"styleSheet": "XS_DialogObjects",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/nav2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"nav4": {
+					"type": "button",
+					"top": 36,
+					"left": 325,
+					"width": 18,
+					"height": 21,
+					"dataSource": "bLast",
+					"styleSheet": "XS_DialogObjects",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/nav4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"nav1": {
+					"type": "button",
+					"top": 36,
+					"left": 271,
+					"width": 18,
+					"height": 21,
+					"dataSource": "bFirst",
+					"styleSheet": "XS_DialogObjects",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/nav1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 172,
+					"left": 260,
+					"width": 83,
+					"height": 12,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Cerrar ventana"
+				},
+				"bCerrar": {
+					"type": "button",
+					"top": 172,
+					"left": 260,
+					"width": 83,
+					"height": 14,
+					"sizingY": "move",
+					"dataSource": "bCerrar",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"method": "ObjectMethods/bCerrar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"vFecha": {
+					"type": "input",
+					"top": 195,
+					"left": 170,
+					"width": 173,
+					"height": 12,
+					"dataSource": "vt_fecha",
+					"fill": "transparent",
+					"stroke": "#009900",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 40,
+					"left": 30,
+					"width": 240,
+					"height": 13,
+					"dataSource": "vTitulo",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 172,
+					"left": 30,
+					"width": 109,
+					"height": 12,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Ver horario completo"
+				},
+				"bHorario": {
+					"type": "button",
+					"top": 172,
+					"left": 30,
+					"width": 113,
+					"height": 14,
+					"sizingY": "move",
+					"dataSource": "bHorario",
+					"display": false,
+					"method": "ObjectMethods/bHorario.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 195,
+					"left": 30,
+					"width": 152,
+					"height": 11,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "El horario debe estar ingresado"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto1": {
+					"type": "text",
+					"top": 63,
+					"left": 30,
+					"width": 80,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Alumno:"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 103,
+					"left": 30,
+					"width": 80,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Asignatura:"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 123,
+					"left": 30,
+					"width": 80,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Profesor:"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 143,
+					"left": 30,
+					"width": 80,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Sala:"
+				},
+				"Campo1": {
+					"type": "input",
+					"top": 63,
+					"left": 144,
+					"width": 199,
+					"height": 13,
+					"dataSource": "[Alumnos:2]apellidos_y_nombres:40",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"focusable": false,
+					"spellcheck": true,
+					"contextMenu": "none"
+				},
+				"Campo2": {
+					"type": "input",
+					"top": 103,
+					"left": 144,
+					"width": 199,
+					"height": 13,
+					"dataSource": "[Asignaturas:18]denominacion_interna:16",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"focusable": false,
+					"spellcheck": true,
+					"contextMenu": "none"
+				},
+				"Campo3": {
+					"type": "input",
+					"top": 123,
+					"left": 144,
+					"width": 199,
+					"height": 13,
+					"dataSource": "[Profesores:4]Apellidos_y_nombres:28",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"focusable": false,
+					"spellcheck": true,
+					"contextMenu": "none"
+				},
+				"Campo4": {
+					"type": "input",
+					"top": 143,
+					"left": 144,
+					"width": 199,
+					"height": 13,
+					"dataSource": "[TMT_Salas:167]NombreSala:2",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"focusable": false,
+					"spellcheck": true,
+					"contextMenu": "none"
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 83,
+					"left": 30,
+					"width": 80,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Curso:"
+				},
+				"vCurso": {
+					"type": "input",
+					"top": 83,
+					"left": 144,
+					"width": 199,
+					"height": 13,
+					"dataSource": "vCurso",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto10": {
+					"type": "text",
+					"top": 83,
+					"left": 30,
+					"width": 80,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Asignatura:"
+				},
+				"Texto11": {
+					"type": "text",
+					"top": 63,
+					"left": 30,
+					"width": 80,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Profesor:"
+				},
+				"Texto12": {
+					"type": "text",
+					"top": 123,
+					"left": 30,
+					"width": 80,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Sala:"
+				},
+				"Campo6": {
+					"type": "input",
+					"top": 83,
+					"left": 144,
+					"width": 199,
+					"height": 13,
+					"dataSource": "[Asignaturas:18]denominacion_interna:16",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"focusable": false,
+					"spellcheck": true,
+					"contextMenu": "none"
+				},
+				"Campo7": {
+					"type": "input",
+					"top": 63,
+					"left": 144,
+					"width": 199,
+					"height": 13,
+					"dataSource": "[Profesores:4]Apellidos_y_nombres:28",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"focusable": false,
+					"spellcheck": true,
+					"contextMenu": "none"
+				},
+				"Campo8": {
+					"type": "input",
+					"top": 123,
+					"left": 144,
+					"width": 199,
+					"height": 13,
+					"dataSource": "[TMT_Salas:167]NombreSala:2",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"focusable": false,
+					"spellcheck": true,
+					"contextMenu": "none"
+				},
+				"Texto14": {
+					"type": "text",
+					"top": 103,
+					"left": 30,
+					"width": 80,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Curso:"
+				},
+				"vCurso1": {
+					"type": "input",
+					"top": 103,
+					"left": 144,
+					"width": 199,
+					"height": 13,
+					"dataSource": "vCurso",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

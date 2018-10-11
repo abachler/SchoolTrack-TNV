@@ -1,0 +1,1 @@
+Self:C308->:=Substring:C12(Self:C308->;1;40)

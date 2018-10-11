@@ -1,0 +1,14 @@
+$row:=AL_GetLine (xALP_EducAnterior)
+If ($row>0)
+	If (alADT_ColAnt_RecNums{$row}>=0)
+		READ WRITE:C146([STR_EducacionAnterior:87])
+		GOTO RECORD:C242([STR_EducacionAnterior:87];alADT_ColAnt_RecNums{$row})
+		DELETE RECORD:C58([STR_EducacionAnterior:87])
+		KRL_UnloadReadOnly (->[STR_EducacionAnterior:87])
+	End if 
+	AL_UpdateArrays (xALP_EducAnterior;0)
+	AT_Delete ($row;1;->atADT_ColAnt_Nombre;->atADT_ColAnt_Pais;->atADT_ColAnt_Nivel;->alADT_ColAnt_Año;->alADT_ColAnt_RecNums)
+	AL_UpdateArrays (xALP_EducAnterior;-2)
+	AL_SetLine (xALP_EducAnterior;0)
+	_O_DISABLE BUTTON:C193(bDelColAnt)
+End if 

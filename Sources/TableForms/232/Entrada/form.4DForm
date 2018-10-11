@@ -1,0 +1,382 @@
+﻿{
+	"rightMargin": 15,
+	"bottomMargin": 0,
+	"markerBody": 398,
+	"markerBreak": 398,
+	"markerFooter": 408,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texto8": {
+					"type": "text",
+					"top": 10,
+					"left": 103,
+					"width": 472,
+					"height": 16,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"text": "xShell_ExecCommands_Localized"
+				},
+				"vNumReg": {
+					"type": "input",
+					"top": 10,
+					"left": 591,
+					"width": 100,
+					"height": 15,
+					"dataSource": "vNumReg",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vNumReg.4dm",
+					"events": [
+						"onLoad",
+						"onHeader",
+						"onPrintingBreak"
+					]
+				},
+				"Línea9": {
+					"type": "line",
+					"top": 0,
+					"left": 88,
+					"height": 398,
+					"sizingY": "grow"
+				},
+				"bPrimero": {
+					"type": "pictureButton",
+					"top": 10,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bPrimero",
+					"action": "firstRecord",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bAnterior": {
+					"type": "pictureButton",
+					"top": 65,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bAnterior",
+					"action": "previousRecord",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bSiguiente": {
+					"type": "pictureButton",
+					"top": 120,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bSiguiente",
+					"action": "nextRecord",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bUltimo": {
+					"type": "pictureButton",
+					"top": 175,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bUltimo",
+					"action": "lastRecord",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bSuprimir": {
+					"type": "pictureButton",
+					"top": 230,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bSuprimir",
+					"action": "deleteRecord",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancelar": {
+					"type": "pictureButton",
+					"top": 285,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bCancelar",
+					"action": "cancel",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidar": {
+					"type": "pictureButton",
+					"top": 340,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"dataSource": "bValidar",
+					"action": "accept",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto10": {
+					"type": "text",
+					"top": 45,
+					"left": 115,
+					"width": 129,
+					"height": 16,
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"text": "Country_Code : "
+				},
+				"Texto11": {
+					"type": "text",
+					"top": 70,
+					"left": 115,
+					"width": 129,
+					"height": 16,
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"text": "Language_Code : "
+				},
+				"Texto12": {
+					"type": "text",
+					"top": 95,
+					"left": 115,
+					"width": 129,
+					"height": 16,
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"text": "Alias : "
+				},
+				"Texto13": {
+					"type": "text",
+					"top": 120,
+					"left": 115,
+					"width": 129,
+					"height": 16,
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"text": "Description : "
+				},
+				"Texto14": {
+					"type": "text",
+					"top": 193,
+					"left": 115,
+					"width": 129,
+					"height": 16,
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"text": "ID_ExecCommand : "
+				},
+				"Country_Code": {
+					"type": "input",
+					"top": 45,
+					"left": 249,
+					"width": 27,
+					"height": 16,
+					"dataSource": "[xShell_ExecCommands_Localized:232]Country_Code:1",
+					"fill": "#FFFFFF",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Language_Code": {
+					"type": "input",
+					"top": 70,
+					"left": 249,
+					"width": 27,
+					"height": 16,
+					"dataSource": "[xShell_ExecCommands_Localized:232]Language_Code:2",
+					"fill": "#FFFFFF",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Alias": {
+					"type": "input",
+					"top": 95,
+					"left": 249,
+					"width": 440,
+					"height": 16,
+					"dataSource": "[xShell_ExecCommands_Localized:232]Alias:3",
+					"fill": "#FFFFFF",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Description": {
+					"type": "input",
+					"top": 120,
+					"left": 249,
+					"width": 234,
+					"height": 64,
+					"dataSource": "[xShell_ExecCommands_Localized:232]Description:4",
+					"fill": "#FFFFFF",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ID_ExecCommand": {
+					"type": "input",
+					"top": 193,
+					"left": 249,
+					"width": 64,
+					"height": 16,
+					"dataSource": "[xShell_ExecCommands_Localized:232]ID_ExecCommand:6",
+					"fill": "#FFFFFF",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

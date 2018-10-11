@@ -1,0 +1,1 @@
+RELATE ONE:C42([Asignaturas:18];[Asignaturas:18]profesor_numero:4)

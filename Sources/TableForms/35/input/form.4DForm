@@ -1,0 +1,286 @@
+﻿{
+	"windowTitle": "Inscripción de Alumnos",
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Zona de Grupo3",
+	"rightMargin": -13,
+	"bottomMargin": -13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 569,
+					"left": 293,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 512,
+					"left": 109,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Zona de Grupo3": {
+					"type": "groupBox",
+					"top": 34,
+					"left": 567,
+					"width": 211,
+					"height": 447,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Selección de Alumnos"
+				},
+				"Zona de Grupo1": {
+					"type": "groupBox",
+					"top": 34,
+					"left": 13,
+					"width": 289,
+					"height": 145,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Recorridos"
+				},
+				"Zona de Grupo2": {
+					"type": "groupBox",
+					"top": 182,
+					"left": 13,
+					"width": 551,
+					"height": 301,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Nómina de Alumnos Inscritos"
+				},
+				"Área de plug-in2": {
+					"type": "plugin",
+					"top": 54,
+					"left": 20,
+					"width": 273,
+					"height": 117,
+					"dataSource": "xalp_ListaRec",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Área de plug-in2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ALP_Inscritos": {
+					"type": "plugin",
+					"top": 223,
+					"left": 21,
+					"width": 535,
+					"height": 250,
+					"dataSource": "xalp_Inscritos",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/ALP_Inscritos.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Zona de Grupo4": {
+					"type": "groupBox",
+					"top": 34,
+					"left": 310,
+					"width": 254,
+					"height": 151,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Instrucciones"
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 54,
+					"left": 320,
+					"width": 226,
+					"height": 120,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "1.- Seleccione el recorrido con clic sobre el nombre en la lista de la sección \"Recorridos\".\r2.- Seleccione un alumno desde la sección \"Selección de Alumnos\".\r3.- Arrástrelo hacia la sección Nómina de Alumnos inscritos.\rPara modificar un dato hacer doble clic directamente sobre éste en la sección \"Nómina de Alumnos Inscritos."
+				},
+				"Variable1": {
+					"type": "dropdown",
+					"top": 52,
+					"left": 574,
+					"width": 198,
+					"height": 17,
+					"dataSource": "<>aCursos",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "plugin",
+					"top": 72,
+					"left": 574,
+					"width": 196,
+					"height": 401,
+					"dataSource": "xALP_Trans1",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "pictureButton",
+					"top": 200,
+					"left": 515,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bPrintAL",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"buttons(2)": {
+					"type": "pictureButton",
+					"top": 200,
+					"left": 537,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bDelAL",
+					"tooltip": "delCdtaRec",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/buttons(2).4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"englishCancelButtonBU": {
+					"type": "button",
+					"top": 3,
+					"left": 2,
+					"width": 82,
+					"height": 20,
+					"dataSource": "bBWR_Cancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Botón",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Line1": {
+					"type": "line",
+					"top": 26,
+					"left": 0,
+					"width": 813,
+					"sizingX": "grow",
+					"stroke": "#AAAAAA"
+				},
+				"Line4": {
+					"type": "line",
+					"top": 0,
+					"left": 87,
+					"height": 26,
+					"stroke": "#AAAAAA"
+				}
+			}
+		}
+	]
+}

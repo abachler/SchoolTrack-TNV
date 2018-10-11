@@ -1,0 +1,10 @@
+//%attributes = {}
+KRL_UnloadReadOnly (->[BBL_Lectores:72])
+KRL_UnloadReadOnly (->[BBL_Registros:66])
+KRL_UnloadReadOnly (->[BBL_RegistrosAnaliticos:74])
+KRL_UnloadReadOnly (->[BBL_Prestamos:60])
+KRL_UnloadReadOnly (->[BBL_Transacciones:59])
+KRL_UnloadReadOnly (->[BBL_Reservas:115])
+KRL_UnloadReadOnly (->[BBL_Subscripciones:117])
+KRL_UnloadReadOnly (->[BBL_FichasCatalograficas:81])
+KRL_UnloadReadOnly (->[BBL_Items:61])

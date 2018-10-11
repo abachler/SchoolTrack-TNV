@@ -1,0 +1,483 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "btn_cerrar",
+	"rightMargin": 15,
+	"bottomMargin": 15,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Campo3": {
+					"type": "input",
+					"top": 309,
+					"left": 15,
+					"width": 319,
+					"height": 26,
+					"dataSource": "[xxACT_Items:179]utiliza_saldo:49",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"textFormat": "Utilizar saldos para generar montos (Solo para Tipo Monto en Porcentaje)",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"btn_cerrar": {
+					"type": "button",
+					"top": 348,
+					"left": 254,
+					"width": 80,
+					"height": 18,
+					"dataSource": "btn_cerrar",
+					"action": "cancel",
+					"text": "Cerrar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto": {
+					"type": "text",
+					"top": 266,
+					"left": 15,
+					"width": 59,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Valor ítem:"
+				},
+				"Campo1": {
+					"type": "input",
+					"top": 266,
+					"left": 76,
+					"width": 105,
+					"height": 14,
+					"dataSource": "[xxACT_Items:179]Monto:7",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"textFormat": {
+						"$ref": "/SOURCES/filters.json#/Despliegue_ACT"
+					},
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 286,
+					"left": 15,
+					"width": 59,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Moneda:"
+				},
+				"Campo2": {
+					"type": "input",
+					"top": 287,
+					"left": 76,
+					"width": 105,
+					"height": 14,
+					"dataSource": "[xxACT_Items:179]Moneda:10",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Imagen5": {
+					"type": "picture",
+					"top": 8,
+					"left": 299,
+					"width": 15,
+					"height": 15,
+					"sizingX": "move",
+					"pictureFormat": "scaled"
+				},
+				"bDeleteDimension": {
+					"type": "button",
+					"top": 6,
+					"left": 297,
+					"width": 18,
+					"height": 18,
+					"sizingX": "move",
+					"dataSource": "bDeleteDimension",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/bDeleteDimension.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Imagen4": {
+					"type": "picture",
+					"top": 8,
+					"left": 319,
+					"width": 15,
+					"height": 15,
+					"sizingX": "move",
+					"pictureFormat": "scaled"
+				},
+				"bAddDimension": {
+					"type": "button",
+					"top": 6,
+					"left": 317,
+					"width": 18,
+					"height": 18,
+					"sizingX": "move",
+					"dataSource": "bAddDimension",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/bAddDimension.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 206,
+					"left": 15,
+					"width": 319,
+					"height": 23,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"text": "El valor del tramo será aplicado al monto del ítem de cargo"
+				},
+				"img_itemGeneraTramo": {
+					"type": "picture",
+					"top": 240,
+					"left": 285,
+					"width": 19,
+					"height": 16
+				},
+				"btn_itemGeneraTramo": {
+					"type": "button",
+					"top": 240,
+					"left": 285,
+					"width": 19,
+					"height": 14,
+					"display": false,
+					"method": "ObjectMethods/btn_itemGeneraTramo.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"ACTcfg_itemGeneraTramoId": {
+					"type": "input",
+					"top": 242,
+					"left": 314,
+					"width": 25,
+					"height": 12,
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 222,
+					"left": 16,
+					"width": 286,
+					"height": 16,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Utilizar la glosa del siguiente item al generar tramos:"
+				},
+				"ACTcfg_itemGeneraTramo": {
+					"type": "input",
+					"top": 242,
+					"left": 16,
+					"width": 268,
+					"height": 12,
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/ACTcfg_itemGeneraTramo.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"lb_tramos": {
+					"type": "listbox",
+					"top": 64,
+					"left": 15,
+					"width": 320,
+					"height": 136,
+					"dataSource": "lb_tramos",
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"events": [
+						"onDataChange"
+					],
+					"columns": [
+						{
+							"name": "Columna5",
+							"dataSource": "alACT_ITid",
+							"width": 32,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título5",
+								"text": "ID",
+								"dataSource": "Título5",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "Columna1",
+							"dataSource": "alACT_ITdesde",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Columna1.4dm",
+							"header": {
+								"name": "Título1",
+								"text": "Desde",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "Columna2",
+							"dataSource": "alACT_IThasta",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Columna2.4dm",
+							"header": {
+								"name": "Título2",
+								"text": "Hasta",
+								"dataSource": "Título2",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "Columna3",
+							"dataSource": "abACT_ITesMontoFijo",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "popup",
+							"booleanFormat": "Fijo;Porcentaje",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Columna3.4dm",
+							"header": {
+								"name": "Título3",
+								"text": "Tipo Monto",
+								"dataSource": "Título3",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "Columna4",
+							"dataSource": "arACT_ITvalor",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Columna4.4dm",
+							"header": {
+								"name": "Título4",
+								"text": "Valor",
+								"dataSource": "Título4",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"cs_aplicaDescuento1": {
+					"type": "input",
+					"top": 45,
+					"left": 55,
+					"width": 295,
+					"height": 16,
+					"dataSource": "[xxACT_Items:179]Tramo_desc_sobre_desc:47",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"textFormat": "Aplicar descuentos posterior al cálculo de descuentos",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"cs_aplicaDescuento": {
+					"type": "input",
+					"top": 27,
+					"left": 35,
+					"width": 255,
+					"height": 16,
+					"dataSource": "[xxACT_Items:179]Aplicar_desctos_tramos:40",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"textFormat": "Aplicar descuentos a cargos por tramo",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Campo": {
+					"type": "input",
+					"top": 7,
+					"left": 15,
+					"width": 255,
+					"height": 16,
+					"dataSource": "[xxACT_Items:179]Utiliza_tramos:38",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"textFormat": "Generar montos dentro del mes del vencimiento",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Campo.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

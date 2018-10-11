@@ -1,0 +1,224 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "btn_Cancelar",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Campo1": {
+					"type": "input",
+					"top": 45,
+					"left": 74,
+					"width": 239,
+					"height": 14,
+					"dataSource": "[Personas:7]Apellidos_y_nombres:30",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 45,
+					"left": 13,
+					"width": 67,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Apoderado:"
+				},
+				"xALP_ACTpgs_Alumnos": {
+					"type": "plugin",
+					"top": 73,
+					"left": 13,
+					"width": 300,
+					"height": 99,
+					"dataSource": "xALP_ACTpgs_Alumnos",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onPluginArea"
+					]
+				},
+				"btn_Apoderado": {
+					"type": "radio",
+					"top": 181,
+					"left": 13,
+					"width": 157,
+					"height": 15,
+					"dataSource": "btn_Apoderado",
+					"text": "Crear para Apoderado",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_Cta": {
+					"type": "radio",
+					"top": 181,
+					"left": 196,
+					"width": 117,
+					"height": 15,
+					"dataSource": "btn_Cuenta",
+					"text": "Crear para Cuenta",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"vt_Obs": {
+					"type": "input",
+					"top": 236,
+					"left": 13,
+					"width": 300,
+					"height": 80,
+					"dataSource": "vt_Obs",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"li20": {
+					"type": "input",
+					"top": 209,
+					"left": 63,
+					"width": 101,
+					"height": 14,
+					"dataSource": "vdFechaObs",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "&9##/##/####",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/li20.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"li21": {
+					"type": "pictureButton",
+					"top": 208,
+					"left": 168,
+					"width": 17,
+					"height": 16,
+					"dataSource": "bCalFechaSimple",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/li21.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 210,
+					"left": 14,
+					"width": 42,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Fecha :"
+				},
+				"btn_Aceptar": {
+					"type": "button",
+					"top": 329,
+					"left": 146,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btn_Aceptar",
+					"text": "Aceptar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/btn_Aceptar.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_Cancelar": {
+					"type": "button",
+					"top": 329,
+					"left": 233,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btn_Cancelar",
+					"action": "cancel",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 5,
+					"left": 15,
+					"width": 298,
+					"height": 23,
+					"textAlign": "center",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Creación de Observaciones"
+				}
+			}
+		}
+	]
+}

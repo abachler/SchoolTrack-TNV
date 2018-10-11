@@ -1,0 +1,10 @@
+//%attributes = {"invisible":true}
+C_LONGINT:C283($1;$callerProcess)
+C_OBJECT:C1216(DOWNLOAD_CONTEXT)
+
+$callerProcess:=$1
+
+OB SET:C1220(DOWNLOAD_CONTEXT;"success";False:C215)
+VARIABLE TO VARIABLE:C635($callerProcess;DOWNLOAD_CONTEXT;DOWNLOAD_CONTEXT)
+
+POST OUTSIDE CALL:C329($callerProcess)

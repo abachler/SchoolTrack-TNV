@@ -1,0 +1,5 @@
+SN3_LoginTypeSel:=SN3_LoginType
+SN3_PasswordTypeSel:=SN3_PasswordType
+SN3_WhatUsersSel:=SN3_WhatUsers
+SN3_SaveUsersConfig 
+CANCEL:C270

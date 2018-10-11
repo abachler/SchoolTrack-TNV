@@ -1,0 +1,550 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "bSearch",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 400,
+					"left": 253,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 343,
+					"left": 69,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Orden11": {
+					"type": "input",
+					"top": 160,
+					"left": 38,
+					"width": 126,
+					"height": 13,
+					"dataSource": "vtOrden1",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Orden21": {
+					"type": "input",
+					"top": 180,
+					"left": 38,
+					"width": 126,
+					"height": 13,
+					"dataSource": "vtOrden2",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Orden31": {
+					"type": "input",
+					"top": 200,
+					"left": 38,
+					"width": 126,
+					"height": 13,
+					"dataSource": "vtOrden3",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Zona de Grupo5": {
+					"type": "groupBox",
+					"top": 139,
+					"left": 12,
+					"width": 321,
+					"height": 88,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Ordenamiento"
+				},
+				"Zona de Grupo4": {
+					"type": "groupBox",
+					"top": 3,
+					"left": 12,
+					"width": 161,
+					"height": 74,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold"
+				},
+				"Zona de Grupo3": {
+					"type": "groupBox",
+					"top": 85,
+					"left": 12,
+					"width": 321,
+					"height": 44,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Búsqueda de registros"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 104,
+					"left": 21,
+					"width": 71,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Nivel: desde"
+				},
+				"vNivel1": {
+					"type": "input",
+					"top": 105,
+					"left": 85,
+					"width": 81,
+					"height": 13,
+					"dataSource": "vNivel1",
+					"dataSourceTypeHint": "date",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 104,
+					"left": 190,
+					"width": 40,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "hasta"
+				},
+				"vNivel2": {
+					"type": "input",
+					"top": 105,
+					"left": 225,
+					"width": 81,
+					"height": 13,
+					"dataSource": "vNivel2",
+					"dataSourceTypeHint": "date",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Imagen348": {
+					"type": "picture",
+					"top": 105,
+					"left": 170,
+					"width": 11,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Imagen1": {
+					"type": "picture",
+					"top": 105,
+					"left": 310,
+					"width": 11,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Variable674": {
+					"type": "dropdown",
+					"top": 104,
+					"left": 84,
+					"width": 101,
+					"height": 16,
+					"dataSource": "<>aNivelB",
+					"focusable": false,
+					"display": false,
+					"styleSheet": "Plain - 13",
+					"method": "ObjectMethods/Variable674.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "dropdown",
+					"top": 104,
+					"left": 224,
+					"width": 101,
+					"height": 16,
+					"dataSource": "<>aNivelT",
+					"focusable": false,
+					"display": false,
+					"styleSheet": "Plain - 13",
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"vt_cantidad1": {
+					"type": "input",
+					"top": 43,
+					"left": 58,
+					"width": 31,
+					"height": 13,
+					"dataSource": "vt_cantidad1",
+					"dataSourceTypeHint": "date",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vt_cantidad1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vt_cantidad2": {
+					"type": "input",
+					"top": 43,
+					"left": 132,
+					"width": 31,
+					"height": 13,
+					"dataSource": "vt_cantidad2",
+					"dataSourceTypeHint": "date",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vt_cantidad2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Orden12": {
+					"type": "radio",
+					"top": 159,
+					"left": 21,
+					"width": 138,
+					"height": 15,
+					"dataSource": "btOrden1",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Orden22": {
+					"type": "radio",
+					"top": 179,
+					"left": 22,
+					"width": 138,
+					"height": 15,
+					"dataSource": "btOrden2",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Orden32": {
+					"type": "radio",
+					"top": 199,
+					"left": 22,
+					"width": 138,
+					"height": 15,
+					"dataSource": "btOrden3",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Separador1": {
+					"type": "splitter",
+					"top": 146,
+					"left": 172,
+					"width": 1,
+					"height": 79,
+					"dataSource": "Separador1",
+					"events": [
+						"onClick"
+					]
+				},
+				"OrdenA1": {
+					"type": "radio",
+					"top": 159,
+					"left": 203,
+					"width": 100,
+					"height": 18,
+					"dataSource": "OrdenA",
+					"text": "Ascendente",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"OrdenD1": {
+					"type": "radio",
+					"top": 179,
+					"left": 203,
+					"width": 100,
+					"height": 18,
+					"dataSource": "OrdenD",
+					"text": "Descendente",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección2": {
+					"type": "checkbox",
+					"top": 239,
+					"left": 13,
+					"width": 68,
+					"height": 18,
+					"dataSource": "cs_Exportar",
+					"text": "Exportar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"standardbuttons(2)1": {
+					"type": "button",
+					"top": 239,
+					"left": 185,
+					"width": 70,
+					"height": 18,
+					"dataSource": "bCancel",
+					"shortcutKey": "[Esc]",
+					"text": ":21012,4",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bSearch": {
+					"type": "button",
+					"top": 239,
+					"left": 263,
+					"width": 71,
+					"height": 18,
+					"dataSource": "bSearch",
+					"shortcutKey": "[Enter]",
+					"text": ":21012,49",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"method": "ObjectMethods/bSearch.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 43,
+					"left": 21,
+					"width": 37,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "desde"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 42,
+					"left": 96,
+					"width": 35,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "hasta"
+				},
+				"vtRango": {
+					"type": "input",
+					"top": 20,
+					"left": 18,
+					"width": 126,
+					"height": 13,
+					"dataSource": "vtRango",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vt_mensaje": {
+					"type": "input",
+					"top": 20,
+					"left": 178,
+					"width": 155,
+					"height": 49,
+					"dataSource": "vt_mensaje",
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"fontFamily": "Lucida Grande Bold",
+					"fontSize": 9,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

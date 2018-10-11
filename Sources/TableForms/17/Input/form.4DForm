@@ -1,0 +1,454 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Variable7",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 240,
+	"markerBreak": 240,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectángulo": {
+					"type": "rectangle",
+					"top": 541,
+					"left": 5,
+					"width": 207,
+					"height": 75
+				},
+				"Zona de Grupo3": {
+					"type": "groupBox",
+					"top": 176,
+					"left": 425,
+					"width": 285,
+					"height": 238,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Procesos autorizados"
+				},
+				"Zona de Grupo2": {
+					"type": "groupBox",
+					"top": 38,
+					"left": 425,
+					"width": 284,
+					"height": 128,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Módulos autorizados"
+				},
+				"Zona de Grupo1": {
+					"type": "groupBox",
+					"top": 38,
+					"left": 13,
+					"width": 403,
+					"height": 336,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Acceso a los datos"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 38,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Grupo:"
+				},
+				"Field1": {
+					"type": "input",
+					"top": 13,
+					"left": 57,
+					"width": 182,
+					"height": 13,
+					"dataSource": "[xShell_UserGroups:17]GroupName:2",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vtUSR_PropietaryName": {
+					"type": "input",
+					"top": 12,
+					"left": 398,
+					"width": 206,
+					"height": 13,
+					"dataSource": "[xShell_UserGroups:17]PropietaryName:9",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/vtUSR_PropietaryName.4dm",
+					"events": [
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"lb_privilegios": {
+					"type": "listbox",
+					"top": 62,
+					"left": 23,
+					"width": 381,
+					"height": 279,
+					"dataSource": "lb_privilegios",
+					"focusable": false,
+					"hideFocusRing": true,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "none",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"method": "ObjectMethods/lb_privilegios.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick"
+					],
+					"columns": [
+						{
+							"name": "<>aPictPriv",
+							"dataSource": "<>aPictPriv",
+							"width": 65,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						},
+						{
+							"name": "<>aTxtPriv",
+							"dataSource": "<>aTxtPriv",
+							"width": 301,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						}
+					]
+				},
+				"hl_AuthModules": {
+					"type": "list",
+					"top": 62,
+					"left": 436,
+					"width": 261,
+					"height": 72,
+					"dataSource": "hl_AuthModules",
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"method": "ObjectMethods/hl_AuthModules.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"hl_ExecPermissions": {
+					"type": "list",
+					"top": 195,
+					"left": 437,
+					"width": 261,
+					"height": 180,
+					"dataSource": "hl_ExecPermissions",
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"method": "ObjectMethods/hl_ExecPermissions.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección": {
+					"type": "checkbox",
+					"top": 377,
+					"left": 13,
+					"width": 323,
+					"height": 17,
+					"dataSource": "cb_LimitarBusquedas",
+					"text": "Resultados de las búsquedas limitados a registros relacionados",
+					"fontFamily": "Tahoma",
+					"fontSize": 10,
+					"method": "ObjectMethods/Casilla de selección.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección1": {
+					"type": "checkbox",
+					"top": 397,
+					"left": 13,
+					"width": 323,
+					"height": 17,
+					"dataSource": "cb_AccesoDashboards",
+					"text": "Permitir acceso a paneles de control",
+					"fontFamily": "Tahoma",
+					"fontSize": 10,
+					"method": "ObjectMethods/Casilla de selección1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Campo1": {
+					"type": "input",
+					"top": 428,
+					"left": 184,
+					"width": 51,
+					"height": 13,
+					"dataSource": "[xShell_UserGroups:17]Timeout_Minutes:12",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable6": {
+					"type": "button",
+					"top": 433,
+					"left": 538,
+					"width": 80,
+					"height": 18,
+					"dataSource": "b_Cancelar",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 433,
+					"left": 625,
+					"width": 80,
+					"height": 18,
+					"dataSource": "b_Guardar",
+					"action": "accept",
+					"shortcutKey": "s",
+					"shortcutAccel": true,
+					"text": "Guardar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 138,
+					"left": 434,
+					"width": 262,
+					"height": 22,
+					"stroke": "#0000FF",
+					"styleSheet": "Defaut",
+					"text": "Presione el botón derecho del ratón (CTRL-Click en Macintosh) para autorizar / restringir la utilización de módulos"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 379,
+					"left": 438,
+					"width": 262,
+					"height": 22,
+					"stroke": "#0000FF",
+					"styleSheet": "Defaut",
+					"text": "En negrillas los procesos comunes a todos los módulos. \rEn estilo normal los procesos propios al módulo seleccionado"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 347,
+					"left": 23,
+					"width": 262,
+					"height": 22,
+					"stroke": "#0000FF",
+					"styleSheet": "Defaut",
+					"text": "Haga clics sucesivos para cambiar los privilegios de acceso a los datos"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 13,
+					"left": 332,
+					"width": 67,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Propietario:"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 428,
+					"left": 16,
+					"width": 163,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Desconectar cliente después de: "
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 428,
+					"left": 243,
+					"width": 123,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "minutos de inactividad"
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 445,
+					"left": 16,
+					"width": 90,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"fontStyle": "italic",
+					"text": "0 = Ilimitado"
+				},
+				"Variable109": {
+					"type": "button",
+					"top": 8,
+					"left": 243,
+					"width": 24,
+					"height": 23,
+					"dataSource": "bPrint",
+					"tooltip": "Sin título",
+					"styleSheet": "XS_DialogObjects",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/Variable109.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Imagen20": {
+					"type": "picture",
+					"top": 586,
+					"left": 11,
+					"width": 16,
+					"height": 16,
+					"pictureFormat": "scaled"
+				},
+				"Imagen22": {
+					"type": "picture",
+					"top": 586,
+					"left": 33,
+					"width": 16,
+					"height": 16,
+					"pictureFormat": "scaled"
+				},
+				"Texto": {
+					"type": "text",
+					"top": 549,
+					"left": 13,
+					"width": 183,
+					"height": 17,
+					"text": "No Borrar"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,341 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Botón1",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 329,
+					"left": 199,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 272,
+					"left": 15,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"r1_Menores": {
+					"type": "radio",
+					"top": 13,
+					"left": 13,
+					"width": 120,
+					"height": 15,
+					"dataSource": "r1_Menores",
+					"text": "Hermanos Menores",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"r2_Mayores": {
+					"type": "radio",
+					"top": 13,
+					"left": 145,
+					"width": 119,
+					"height": 15,
+					"dataSource": "r2_Mayores",
+					"text": "Hermanos Mayores",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 48,
+					"left": 40,
+					"width": 45,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Desde:"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 74,
+					"left": 40,
+					"width": 45,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Hasta:"
+				},
+				"aNivelDesde": {
+					"type": "dropdown",
+					"top": 45,
+					"left": 83,
+					"width": 209,
+					"height": 18,
+					"dataSource": "aNivelDesde",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"aNIvelHasta": {
+					"type": "dropdown",
+					"top": 71,
+					"left": 83,
+					"width": 209,
+					"height": 18,
+					"dataSource": "aNIvelHasta",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección1": {
+					"type": "checkbox",
+					"top": 187,
+					"left": 13,
+					"width": 261,
+					"height": 14,
+					"dataSource": "bSearchSelection",
+					"text": "Buscar sólo para los alumnos de la lista",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Casilla de selección1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 213,
+					"left": 212,
+					"width": 80,
+					"height": 19,
+					"dataSource": "Botón1",
+					"action": "accept",
+					"text": "Buscar",
+					"styleSheet": "XS_DialogObjects",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 213,
+					"left": 117,
+					"width": 80,
+					"height": 19,
+					"dataSource": "Botón1",
+					"action": "cancel",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón de opción1": {
+					"type": "radio",
+					"top": 104,
+					"left": 14,
+					"width": 79,
+					"height": 15,
+					"dataSource": "s1_Damas",
+					"text": "Sólo damas",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón de opción2": {
+					"type": "radio",
+					"top": 104,
+					"left": 101,
+					"width": 99,
+					"height": 15,
+					"dataSource": "s2_Varones",
+					"text": "Sólo varones",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón de opción3": {
+					"type": "radio",
+					"top": 104,
+					"left": 206,
+					"width": 83,
+					"height": 15,
+					"dataSource": "s3_Indiferente",
+					"text": "Indiferente",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón de opción4": {
+					"type": "radio",
+					"top": 124,
+					"left": 14,
+					"width": 79,
+					"height": 15,
+					"dataSource": "act1_PorFamilia",
+					"text": "Por familia",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón de opción5": {
+					"type": "radio",
+					"top": 124,
+					"left": 101,
+					"width": 169,
+					"height": 15,
+					"dataSource": "act2_PorApoderado",
+					"text": "Por apoderado de cuentas",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección2": {
+					"type": "checkbox",
+					"top": 147,
+					"left": 13,
+					"width": 261,
+					"height": 14,
+					"dataSource": "bExcluirTramite",
+					"text": "Excluir alumnos en trámite",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección3": {
+					"type": "checkbox",
+					"top": 167,
+					"left": 13,
+					"width": 261,
+					"height": 14,
+					"dataSource": "bExcluirOyentes",
+					"text": "Excluir alumnos oyentes",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

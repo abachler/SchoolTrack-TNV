@@ -1,0 +1,169 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "opcion1",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onMouseMove",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Rectángulo": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 395,
+					"height": 555,
+					"stroke": "#FFFFFF"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectángulo2": {
+					"type": "rectangle",
+					"top": 0,
+					"left": -19,
+					"width": 437,
+					"height": 68,
+					"fill": "#EEEEEE",
+					"stroke": "#DDDDDD"
+				},
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 67,
+					"left": -21,
+					"width": 437,
+					"height": 77,
+					"stroke": "#AAAAAA"
+				},
+				"vtBBL_DetalleRegistro1": {
+					"type": "input",
+					"top": 71,
+					"left": 79,
+					"width": 309,
+					"height": 68,
+					"styleSheet": "Ligth - 14",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Botón": {
+					"type": "button",
+					"top": 245,
+					"left": 747,
+					"width": 76,
+					"height": 28,
+					"dataSource": "Botón",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Botón",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"vpBBL_imagen1": {
+					"type": "input",
+					"top": 71,
+					"left": 10,
+					"width": 60,
+					"height": 60,
+					"dataSourceTypeHint": "picture",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"opcion1": {
+					"type": "button",
+					"top": 68,
+					"left": -1,
+					"width": 396,
+					"height": 76,
+					"display": false,
+					"method": "ObjectMethods/opcion1.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onMouseEnter",
+						"onMouseLeave",
+						"onMouseMove"
+					]
+				},
+				"Texto": {
+					"type": "text",
+					"top": 5,
+					"left": 11,
+					"width": 375,
+					"height": 51,
+					"stroke": "#AAAAAA",
+					"styleSheet": "Ligth - 14",
+					"text": "Hay más de un coincidencia con el código de barra leído.\rPor favor seleccione el registro que le interesa:"
+				}
+			}
+		}
+	]
+}

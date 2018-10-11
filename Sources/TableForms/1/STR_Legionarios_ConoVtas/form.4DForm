@@ -1,0 +1,363 @@
+﻿{
+	"inheritedForm": "XS_MASTER_WZDDialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Botón2",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerBody": 373,
+	"markerBreak": 394,
+	"markerFooter": 414,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texto3": {
+					"type": "text",
+					"top": 216,
+					"left": 29,
+					"width": 563,
+					"height": 35,
+					"textAlign": "left",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Establecer la fecha y ciclo para la generación del próximo Cono de Ventas, en las tareas automáticas de inicio de día: "
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 241,
+					"left": 202,
+					"width": 88,
+					"height": 14,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Fecha del Cono"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 454,
+					"left": 76,
+					"width": 127,
+					"height": 14,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"text": "Ciclo de Generación"
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 237,
+					"left": 442,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Botón1",
+					"text": "Establecer",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 9,
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"li20": {
+					"type": "input",
+					"top": 241,
+					"left": 298,
+					"width": 101,
+					"height": 13,
+					"dataSource": "vt_Fecha",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9##/##/####",
+					"method": "ObjectMethods/li20.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"li21": {
+					"type": "pictureButton",
+					"top": 239,
+					"left": 404,
+					"width": 17,
+					"height": 16,
+					"dataSource": "bCalendar2",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/li21.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 333,
+					"left": 519,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Botón2",
+					"text": "Salir",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 9,
+					"method": "ObjectMethods/Botón2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 94,
+					"left": 29,
+					"width": 560,
+					"height": 41,
+					"dataSource": "vt_lastconfiggenCV",
+					"styleSheet": "XS_DialogObjects",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 76,
+					"left": 32,
+					"width": 193,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Última configuración registrada:"
+				},
+				"li1": {
+					"type": "input",
+					"top": 454,
+					"left": 192,
+					"width": 101,
+					"height": 13,
+					"dataSource": "vt_Ciclo",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9##/##/####",
+					"method": "ObjectMethods/li1.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Menú desplegable1": {
+					"type": "dropdown",
+					"top": 451,
+					"left": 297,
+					"width": 22,
+					"height": 19,
+					"dataSource": "at_ciclos",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Menú desplegable1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 300,
+					"left": 16,
+					"width": 80,
+					"height": 14,
+					"stroke": "#EE0000",
+					"fontFamily": "Lucida Grande Bold",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"text": "IMPORTANTE"
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 316,
+					"left": 12,
+					"width": 455,
+					"height": 50,
+					"stroke": "#EE0000",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 9,
+					"fontStyle": "italic",
+					"text": "Para el estado \"Automático\" del Cono de Ventas, la configuración de fecha que establece aquí o desde el webservice de la base de datos central es para generar un próximo Cono de Ventas de forma automática en las tareas de inicio de día del día  siguiente de la fecha establecida, no podrá establecer una fecha anterior a hoy para generarlo debido a que las tareas ya fueron realizadas."
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 10,
+					"left": 166,
+					"width": 397,
+					"height": 38,
+					"stroke": "#FFFFFF",
+					"fontFamily": "Lucida Grande Bold",
+					"fontSize": 15,
+					"fontWeight": "bold",
+					"text": "Configuración para la generación del Cono de Ventas"
+				},
+				"op1": {
+					"type": "radio",
+					"top": 152,
+					"left": 193,
+					"width": 117,
+					"height": 14,
+					"dataSource": "op1",
+					"text": "Automático",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"stroke": "#000000",
+					"method": "ObjectMethods/op1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"op2": {
+					"type": "radio",
+					"top": 152,
+					"left": 299,
+					"width": 55,
+					"height": 14,
+					"dataSource": "op2",
+					"text": "Manual",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/op2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 151,
+					"left": 29,
+					"width": 163,
+					"height": 14,
+					"textAlign": "left",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Estado del Cono de Ventas: "
+				},
+				"Texto9": {
+					"type": "text",
+					"top": 275,
+					"left": 29,
+					"width": 203,
+					"height": 14,
+					"textAlign": "left",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Generar Cono de Ventas de Hoy  : "
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 273,
+					"left": 229,
+					"width": 60,
+					"height": 20,
+					"dataSource": "Botón3",
+					"text": "Generar",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 9,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón4": {
+					"type": "button",
+					"top": 178,
+					"left": 481,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Botón4",
+					"text": "Establecer",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 9,
+					"method": "ObjectMethods/Botón4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto10": {
+					"type": "text",
+					"top": 181,
+					"left": 29,
+					"width": 123,
+					"height": 14,
+					"textAlign": "left",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "WSDL para la Fecha: "
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 181,
+					"left": 151,
+					"width": 321,
+					"height": 14,
+					"dataSource": "vt_WsFecha",
+					"fill": "transparent",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 9,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				}
+			}
+		}
+	]
+}

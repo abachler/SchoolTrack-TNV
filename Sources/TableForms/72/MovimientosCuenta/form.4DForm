@@ -1,0 +1,193 @@
+﻿{
+	"formSizeAnchor": "lbCuenta",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"lbCuenta": {
+					"type": "listbox",
+					"top": 26,
+					"left": 0,
+					"width": 601,
+					"height": 253,
+					"listboxType": "currentSelection",
+					"dataSource": "lbCuenta",
+					"movableRows": false,
+					"rowHeight": "28px",
+					"showHeaders": false,
+					"highlightSet": "ListboxSet0",
+					"table": 59,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"rowStrokeSource": "Choose:C955([BBL_Transacciones:59]is_Paiement:5 | ([BBL_Transacciones:59]Monto:2<0);<>vl_ColorTextoBoton_Rojo;<>vl_ColorTextoBoton_Normal)",
+					"rowFillSource": "0x00FFFFFF",
+					"fontFamily": "Helvetica Neue Light",
+					"fontSize": 11,
+					"columns": [
+						{
+							"name": "Columna1",
+							"dataSource": "[BBL_Transacciones:59]Fecha:3",
+							"dataSourceTypeHint": "date",
+							"width": 86,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue Light",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título1",
+								"text": "Título1",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue Light",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Columna2",
+							"dataSource": "[BBL_Transacciones:59]Glosa:6",
+							"width": 422,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue Light",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título2",
+								"text": "Título2",
+								"dataSource": "Título2",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue Light",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Columna3",
+							"dataSource": "[BBL_Transacciones:59]Monto:2",
+							"dataSourceTypeHint": "number",
+							"width": 78,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue Light",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título3",
+								"text": "Título3",
+								"dataSource": "Título3",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue Light",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"Botón 3D": {
+					"type": "button",
+					"top": 304,
+					"left": 0,
+					"width": 67,
+					"height": 41,
+					"dataSource": "Botón 3D",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"styleSheet": "Titulos condensado",
+					"text": "Cerrar",
+					"icon": "/RESOURCES/",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Encabezado": {
+					"type": "rectangle",
+					"top": -1,
+					"left": -1,
+					"width": 603,
+					"height": 27,
+					"fill": "#EEEEEE"
+				},
+				"botonCerrar": {
+					"type": "button",
+					"top": 6,
+					"left": 7,
+					"width": 40,
+					"height": 16,
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"styleSheet": "Ligth - 12",
+					"text": "Cerrar",
+					"style": "custom",
+					"method": "ObjectMethods/botonCerrar.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

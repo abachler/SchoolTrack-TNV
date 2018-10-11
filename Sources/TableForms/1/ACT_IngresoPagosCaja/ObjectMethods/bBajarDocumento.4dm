@@ -1,0 +1,9 @@
+$line:=AL_GetLine (ALP_AvisosAgrupadosXPagar)
+If ($line>0)
+	ACTpgs_ArreglosAgrupado ("BajarElemento")
+	AL_UpdateArrays (ALP_AvisosAgrupadosXPagar;0)
+	ACTpgs_OrdenaCargosAviso ($line;True:C214)
+	AL_UpdateArrays (ALP_AvisosAgrupadosXPagar;-2)
+End if 
+AL_SetLine (ALP_AvisosAgrupadosXPagar;$line+1)
+ACTpgs_LimpiaVarsInterfaz ("SeteaFlechas4")

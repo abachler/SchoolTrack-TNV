@@ -1,0 +1,1 @@
+OBJECT SET VISIBLE:C603(*;"telefono";(Self:C308->=1))

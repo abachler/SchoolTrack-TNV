@@ -1,0 +1,211 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "btn_cancelar",
+	"rightMargin": 15,
+	"bottomMargin": 15,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDoubleClick",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"btn_aceptar": {
+					"type": "button",
+					"top": 201,
+					"left": 88,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btn_aceptar",
+					"text": "Aceptar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/btn_aceptar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn_cancelar": {
+					"type": "button",
+					"top": 201,
+					"left": 174,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btn_cancelar",
+					"action": "cancel",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"vl_generarPorApdo": {
+					"type": "radio",
+					"top": 63,
+					"left": 30,
+					"width": 215,
+					"height": 20,
+					"dataSource": "vl_generarPorApdo",
+					"text": "Generar por Apoderado",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"vl_generarPorAC": {
+					"type": "radio",
+					"top": 38,
+					"left": 30,
+					"width": 236,
+					"height": 20,
+					"dataSource": "vl_generarPorAC",
+					"text": "Según emisión de Avisos de Cobranza",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn_ACSeleccionados": {
+					"type": "radio",
+					"top": 114,
+					"left": 30,
+					"width": 214,
+					"height": 20,
+					"dataSource": "btn_ACSeleccionados",
+					"text": "Avisos de Cobranza seleccionados",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn_ACListados": {
+					"type": "radio",
+					"top": 138,
+					"left": 30,
+					"width": 234,
+					"height": 20,
+					"dataSource": "btn_ACListados",
+					"text": "Avisos de Cobranza en el explorador",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto": {
+					"type": "text",
+					"top": 93,
+					"left": 15,
+					"width": 154,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Emtir Pagarés para:"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 20,
+					"left": 15,
+					"width": 154,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Emisión de Pagarés"
+				},
+				"vt_msjAS": {
+					"type": "input",
+					"top": 160,
+					"left": 30,
+					"width": 202,
+					"height": 38,
+					"dataSource": "vt_msjAS",
+					"fill": "transparent",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 10,
+					"fontStyle": "italic",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vt_msjAL": {
+					"type": "input",
+					"top": 160,
+					"left": 30,
+					"width": 204,
+					"height": 38,
+					"dataSource": "vt_msjAL",
+					"fill": "transparent",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 10,
+					"fontStyle": "italic",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

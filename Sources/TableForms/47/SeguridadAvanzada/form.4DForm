@@ -1,0 +1,289 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 364,
+	"height": 380,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Cuadro de Grupo": {
+					"type": "groupBox",
+					"top": 15,
+					"left": 12,
+					"width": 338,
+					"height": 113,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Creación de nombres de usuario"
+				},
+				"Cuadro de Grupo1": {
+					"type": "groupBox",
+					"top": 141,
+					"left": 12,
+					"width": 337,
+					"height": 109,
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Creación de Contraseñas"
+				},
+				"btn_opcion1": {
+					"type": "radio",
+					"top": 32,
+					"left": 23,
+					"width": 265,
+					"height": 24,
+					"text": "Nombre común",
+					"styleSheet": "XS_FormObjects",
+					"focusable": false,
+					"method": "ObjectMethods/btn_opcion1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_opcion2": {
+					"type": "radio",
+					"top": 52,
+					"left": 23,
+					"width": 285,
+					"height": 24,
+					"text": "Inicial del nombre más apellido paterno completo",
+					"styleSheet": "XS_FormObjects",
+					"focusable": false,
+					"method": "ObjectMethods/btn_opcion2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_opcion3": {
+					"type": "radio",
+					"top": 75,
+					"left": 23,
+					"width": 265,
+					"height": 24,
+					"text": "Inicial del apellido paterno más primer nombre completo",
+					"styleSheet": "XS_FormObjects",
+					"focusable": false,
+					"method": "ObjectMethods/btn_opcion3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Combo box": {
+					"type": "combo",
+					"top": 92,
+					"left": -17,
+					"width": 1,
+					"height": 1,
+					"events": [
+						"onDataChange"
+					]
+				},
+				"btn_opcion4": {
+					"type": "radio",
+					"top": 97,
+					"left": 24,
+					"width": 265,
+					"height": 24,
+					"text": "Primer nombre y apellido paterno",
+					"styleSheet": "XS_FormObjects",
+					"focusable": false,
+					"method": "ObjectMethods/btn_opcion4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Combo box1": {
+					"type": "combo",
+					"top": 170,
+					"left": 211,
+					"width": 44,
+					"height": 15,
+					"dataSource": "al_ListaMaxC",
+					"dataSourceTypeHint": "arrayNumber",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Combo box1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Combo box2": {
+					"type": "combo",
+					"top": 192,
+					"left": 211,
+					"width": 44,
+					"height": 15,
+					"dataSource": "al_ListaMinMAY",
+					"dataSourceTypeHint": "arrayNumber",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Combo box2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Combo box3": {
+					"type": "combo",
+					"top": 215,
+					"left": 211,
+					"width": 44,
+					"height": 15,
+					"dataSource": "al_ListaMinNum",
+					"dataSourceTypeHint": "arrayNumber",
+					"automaticInsertion": true,
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Combo box3.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Área de plug-in": {
+					"type": "plugin",
+					"top": 227,
+					"left": 569,
+					"width": 1,
+					"height": 1,
+					"events": [
+						"onPluginArea"
+					]
+				},
+				"Casilla_ProximoInicio": {
+					"type": "checkbox",
+					"top": 258,
+					"left": 16,
+					"width": 342,
+					"height": 28,
+					"text": "Cambiar contraseña en el próximo inicio de sesión de todos los usuarios",
+					"styleSheet": "XS_FormObjects",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Casilla_Creauser1": {
+					"type": "checkbox",
+					"top": 285,
+					"left": 16,
+					"width": 341,
+					"height": 28,
+					"text": "Crear usuario y contraseña automático al momento de crear profesor y/o funcionario",
+					"styleSheet": "XS_FormObjects",
+					"focusable": false,
+					"method": "ObjectMethods/Casilla_Creauser1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Casilla_enviacorreo": {
+					"type": "checkbox",
+					"top": 314,
+					"left": 36,
+					"width": 141,
+					"height": 24,
+					"text": "Enviar contraseña por correo",
+					"styleSheet": "XS_FormObjects",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 348,
+					"left": 149,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btn_Cancelar",
+					"text": "Cancelar",
+					"styleSheet": "XS_FormObjects",
+					"focusable": false,
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón": {
+					"type": "button",
+					"top": 348,
+					"left": 249,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btn_Aceptar",
+					"text": "Aceptar",
+					"styleSheet": "XS_FormObjects",
+					"focusable": false,
+					"method": "ObjectMethods/Botón.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto": {
+					"type": "text",
+					"top": 172,
+					"left": 29,
+					"width": 151,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "-Longitud mínima de la contraseña "
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 194,
+					"left": 29,
+					"width": 151,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "-Mínimo de caracteres mayúscula"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 217,
+					"left": 29,
+					"width": 145,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "-Mínimo de caracteres numéricos"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 172,
+					"left": 268,
+					"width": 91,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "maximo 15"
+				}
+			}
+		}
+	]
+}

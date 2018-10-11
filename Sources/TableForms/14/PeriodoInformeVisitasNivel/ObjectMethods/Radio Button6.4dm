@@ -1,0 +1,3 @@
+vPeriod:=7
+OBJECT SET ENTERABLE:C238(vt_FechaENF;True:C214)
+_O_ENABLE BUTTON:C192(bCalendar1)

@@ -1,0 +1,10 @@
+
+AL_ExitCell (xALP_FormasdePago)
+_O_DISABLE BUTTON:C193(bDelFP)
+AL_UpdateArrays (xALP_FormasdePago;0)
+  //AT_Insert (0;1;->atACT_FormasdePago;->atACT_FdPCodes;->atACT_FdPCtaContable;->atACT_FdPCentroCostos;->atACT_FdPCCtaContable;->atACT_FdPCCentroCostos;->atACT_FdPCtaCodAux;->atACT_FdPCCtaCodAux;->atACT_FdPCodInterno)
+ACTcfg_OpcionesFormasDePago ("InsertaNuevaFormaDePagoConf")
+AL_UpdateArrays (xALP_FormasdePago;-2)
+ACTcfg_OpcionesFormasDePago ("ColorFormasDePagoXDefecto")
+GOTO OBJECT:C206(xALP_FormasdePago)
+AL_GotoCell (xALP_FormasdePago;1;Size of array:C274(atACT_FormasdePago))

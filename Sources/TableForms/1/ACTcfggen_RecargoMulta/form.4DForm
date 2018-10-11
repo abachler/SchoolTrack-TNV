@@ -1,0 +1,135 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Rectángulo1",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onOutsideCall",
+		"onDeactivate",
+		"onCloseBox",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 182,
+					"height": 107,
+					"fill": "#FFF0DF",
+					"stroke": "#FFF0DF"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 37,
+					"left": 13,
+					"width": 74,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Monto recargo:"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 37,
+					"left": 100,
+					"width": 67,
+					"height": 12,
+					"dataSource": "vrACT_recargoMulta1",
+					"dataSourceTypeHint": "number",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"numberFormat": "&9",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 77,
+					"left": 95,
+					"width": 74,
+					"height": 17,
+					"dataSource": "Botón invisible1",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 80,
+					"left": 102,
+					"width": 65,
+					"height": 12,
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Cerrar"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 176,
+					"height": 14,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Recargo Primera Multa"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 57,
+					"left": 13,
+					"width": 74,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Moneda ítem:"
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 57,
+					"left": 100,
+					"width": 67,
+					"height": 12,
+					"dataSource": "vtACT_moneda",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

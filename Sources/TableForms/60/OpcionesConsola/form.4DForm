@@ -1,0 +1,629 @@
+﻿{
+	"formSizeAnchor": "Rectángulo1",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onUnload",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Barra": {
+					"type": "rectangle",
+					"top": -1,
+					"left": -1,
+					"width": 624,
+					"height": 77,
+					"sizingX": "grow",
+					"fill": "transparent",
+					"stroke": "#AAAAAA"
+				},
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 76,
+					"left": -1,
+					"width": 624,
+					"height": 417,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "automatic",
+					"stroke": "automatic"
+				},
+				"botonBarra1": {
+					"type": "radio",
+					"top": 43,
+					"left": 21,
+					"width": 120,
+					"height": 27,
+					"styleSheet": "Ligth - 16",
+					"text": "Titulo",
+					"icon": "/RESOURCES/",
+					"iconFrames": 1,
+					"style": "custom",
+					"method": "ObjectMethods/botonBarra1.4dm",
+					"events": [
+						"onClick",
+						"onMouseEnter",
+						"onMouseLeave"
+					]
+				},
+				"divisorBarra1": {
+					"type": "line",
+					"top": 44,
+					"left": 150,
+					"height": 25
+				},
+				"Imagen1": {
+					"type": "picture",
+					"top": 5,
+					"left": 11,
+					"width": 32,
+					"height": 32,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/img/light icons/magnifier.png"
+				},
+				"lineaSeparador": {
+					"type": "line",
+					"top": 37,
+					"left": 11,
+					"width": 592,
+					"sizingX": "grow",
+					"stroke": "#AAAAAA"
+				},
+				"titulo": {
+					"type": "text",
+					"top": 11,
+					"left": 51,
+					"width": 545,
+					"height": 18,
+					"stroke": "#777777",
+					"styleSheet": "Ligth - 16",
+					"text": "Opciones"
+				},
+				"pie_Boton1": {
+					"type": "button",
+					"top": 449,
+					"left": 501,
+					"width": 102,
+					"height": 23,
+					"sizingX": "move",
+					"sizingY": "move",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"styleSheet": "Ligth - 16",
+					"stroke": "#0000FF",
+					"text": "Cerrar",
+					"icon": "/RESOURCES/",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"lineaseparador3": {
+					"type": "line",
+					"top": 433,
+					"left": 0,
+					"width": 623,
+					"sizingX": "grow",
+					"sizingY": "move"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto": {
+					"type": "text",
+					"top": 99,
+					"left": 35,
+					"width": 233,
+					"height": 17,
+					"stroke": "#777777",
+					"styleSheet": "Ligth - 14",
+					"text": "Modo de búsqueda por omisión"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 122,
+					"left": 64,
+					"width": 408,
+					"height": 16,
+					"stroke": "#AAAAAA",
+					"styleSheet": "Ligth - 13",
+					"text": "Determina el modo de busqueda por defecto lectores"
+				},
+				"$l_LectorBuscarSobreNombre": {
+					"type": "checkbox",
+					"top": 143,
+					"left": 64,
+					"width": 381,
+					"height": 19,
+					"text": "Permitir la búsqueda por nombre en el modo seleccionado",
+					"fontFamily": "Helvetica Neue Light",
+					"fontSize": 13,
+					"stroke": "#000000",
+					"method": "ObjectMethods/$l_LectorBuscarSobreNombre.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 214,
+					"left": 35,
+					"width": 246,
+					"height": 17,
+					"stroke": "#777777",
+					"styleSheet": "Ligth - 14",
+					"text": "Búsquedas sobre nombres y apellidos"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 238,
+					"left": 64,
+					"width": 468,
+					"height": 16,
+					"stroke": "#AAAAAA",
+					"styleSheet": "Ligth - 13",
+					"text": "Determina la forma en que se realiza la búsqueda sobre el nombre completo del lector"
+				},
+				"$l_LectorPalabraCompleta": {
+					"type": "checkbox",
+					"top": 263,
+					"left": 64,
+					"width": 381,
+					"height": 19,
+					"text": "Buscar solo palabras completas",
+					"fontFamily": "Helvetica Neue Light",
+					"fontSize": 13,
+					"stroke": "#000000",
+					"method": "ObjectMethods/$l_LectorPalabraCompleta.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"lineaSeparador1": {
+					"type": "line",
+					"top": 182,
+					"left": 35,
+					"width": 553,
+					"sizingX": "grow"
+				},
+				"$l_LectorTipoBusquedaNombre": {
+					"type": "dropdown",
+					"top": 211,
+					"left": 283,
+					"width": 304,
+					"height": 20,
+					"styleSheet": "Ligth - 14",
+					"method": "ObjectMethods/$l_LectorTipoBusquedaNombre.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"$l_LectorModoBusqueda": {
+					"type": "dropdown",
+					"top": 96,
+					"left": 283,
+					"width": 304,
+					"height": 20,
+					"styleSheet": "Ligth - 14",
+					"method": "ObjectMethods/$l_LectorModoBusqueda.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto4": {
+					"type": "text",
+					"top": 98,
+					"left": 35,
+					"width": 213,
+					"height": 17,
+					"stroke": "#777777",
+					"styleSheet": "Ligth - 14",
+					"text": "Modo de búsqueda de ítems"
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 123,
+					"left": 64,
+					"width": 426,
+					"height": 32,
+					"stroke": "#AAAAAA",
+					"styleSheet": "Ligth - 13",
+					"text": "Determina el modo de busqueda por defecto ítems"
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 192,
+					"left": 35,
+					"width": 233,
+					"height": 17,
+					"stroke": "#777777",
+					"styleSheet": "Ligth - 14",
+					"text": "Búsquedas sobre Título"
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 214,
+					"left": 64,
+					"width": 488,
+					"height": 16,
+					"stroke": "#AAAAAA",
+					"styleSheet": "Ligth - 13",
+					"text": "Determina la forma en que se realiza la búsqueda sobre título"
+				},
+				"$l_ItemPalabraCompletaTitulo": {
+					"type": "checkbox",
+					"top": 239,
+					"left": 64,
+					"width": 541,
+					"height": 19,
+					"text": "Buscar solo palabras completas en título",
+					"styleSheet": "Ligth - 14",
+					"method": "ObjectMethods/$l_ItemPalabraCompletaTitulo.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto10": {
+					"type": "text",
+					"top": 272,
+					"left": 35,
+					"width": 233,
+					"height": 17,
+					"stroke": "#777777",
+					"styleSheet": "Ligth - 14",
+					"text": "Búsquedas sobre Autor"
+				},
+				"Texto11": {
+					"type": "text",
+					"top": 298,
+					"left": 64,
+					"width": 488,
+					"height": 16,
+					"stroke": "#AAAAAA",
+					"styleSheet": "Ligth - 13",
+					"text": "Determina la forma en que se realiza la búsqueda autor"
+				},
+				"$l_ItemPalabraCompletaAutor": {
+					"type": "checkbox",
+					"top": 323,
+					"left": 64,
+					"width": 541,
+					"height": 19,
+					"text": "Buscar solo palabras completas en autor",
+					"styleSheet": "Ligth - 14",
+					"method": "ObjectMethods/$l_ItemPalabraCompletaAutor.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"lineaSeparador2": {
+					"type": "line",
+					"top": 162,
+					"left": 35,
+					"width": 553,
+					"sizingX": "grow"
+				},
+				"Texto13": {
+					"type": "text",
+					"top": 357,
+					"left": 35,
+					"width": 233,
+					"height": 17,
+					"stroke": "#777777",
+					"styleSheet": "Ligth - 14",
+					"text": "Búsquedas sobre Materias"
+				},
+				"Texto14": {
+					"type": "text",
+					"top": 382,
+					"left": 64,
+					"width": 488,
+					"height": 16,
+					"stroke": "#AAAAAA",
+					"styleSheet": "Ligth - 13",
+					"text": "Determina la forma en que se realiza la búsqueda materias"
+				},
+				"$l_ItemPalabraCompletaMateria": {
+					"type": "checkbox",
+					"top": 407,
+					"left": 64,
+					"width": 541,
+					"height": 19,
+					"text": "Buscar solo palabras completas en materias",
+					"styleSheet": "Ligth - 14",
+					"method": "ObjectMethods/$l_ItemPalabraCompletaMateria.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"$l_ItemModoBusqueda": {
+					"type": "dropdown",
+					"top": 96,
+					"left": 283,
+					"width": 304,
+					"height": 20,
+					"styleSheet": "Ligth - 14",
+					"method": "ObjectMethods/$l_ItemModoBusqueda.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"$l_ItemTipoBusquedaTitulo": {
+					"type": "dropdown",
+					"top": 190,
+					"left": 283,
+					"width": 304,
+					"height": 20,
+					"styleSheet": "Ligth - 14",
+					"method": "ObjectMethods/$l_ItemTipoBusquedaTitulo.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"$l_ItemTipoBusquedaAutor": {
+					"type": "dropdown",
+					"top": 271,
+					"left": 283,
+					"width": 304,
+					"height": 20,
+					"styleSheet": "Ligth - 14",
+					"method": "ObjectMethods/$l_ItemTipoBusquedaAutor.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"$l_ItemTipoBusquedaMateria": {
+					"type": "dropdown",
+					"top": 356,
+					"left": 283,
+					"width": 304,
+					"height": 20,
+					"styleSheet": "Ligth - 14",
+					"method": "ObjectMethods/$l_ItemTipoBusquedaMateria.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto5": {
+					"type": "text",
+					"top": 195,
+					"left": 35,
+					"width": 213,
+					"height": 17,
+					"stroke": "#777777",
+					"styleSheet": "Ligth - 14",
+					"text": "Servidor de correo saliente"
+				},
+				"Texto9": {
+					"type": "text",
+					"top": 106,
+					"left": 35,
+					"width": 120,
+					"height": 17,
+					"stroke": "#777777",
+					"styleSheet": "Ligth - 14",
+					"text": "Cuenta de correo"
+				},
+				"Texto12": {
+					"type": "text",
+					"top": 228,
+					"left": 35,
+					"width": 213,
+					"height": 17,
+					"stroke": "#777777",
+					"styleSheet": "Ligth - 14",
+					"text": "Contraseña"
+				},
+				"$t_cuentaCorreo": {
+					"type": "input",
+					"top": 106,
+					"left": 264,
+					"width": 332,
+					"height": 17,
+					"fill": "transparent",
+					"styleSheet": "Ligth - 14",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/$t_cuentaCorreo.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"$t_contraseña": {
+					"type": "input",
+					"top": 228,
+					"left": 264,
+					"width": 332,
+					"height": 17,
+					"fill": "transparent",
+					"styleSheet": "Ligth - 14",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/$t_contraseña.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"$t_servidorCorreo": {
+					"type": "input",
+					"top": 195,
+					"left": 264,
+					"width": 212,
+					"height": 17,
+					"fill": "transparent",
+					"styleSheet": "Ligth - 14",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/$t_servidorCorreo.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto15": {
+					"type": "text",
+					"top": 294,
+					"left": 463,
+					"width": 63,
+					"height": 17,
+					"stroke": "#777777",
+					"styleSheet": "Ligth - 14",
+					"text": "Puerto"
+				},
+				"$l_puerto": {
+					"type": "input",
+					"top": 294,
+					"left": 533,
+					"width": 63,
+					"height": 17,
+					"dataSourceTypeHint": "number",
+					"fill": "transparent",
+					"styleSheet": "Ligth - 14",
+					"contextMenu": "none",
+					"numberFormat": "#####",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/$l_puerto.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"$l_utilizarSSL": {
+					"type": "checkbox",
+					"top": 294,
+					"left": 266,
+					"width": 136,
+					"height": 18,
+					"text": "Utilizar SSL",
+					"styleSheet": "Ligth - 14",
+					"method": "ObjectMethods/$l_utilizarSSL.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"$l_modoAutenticacion": {
+					"type": "dropdown",
+					"top": 258,
+					"left": 263,
+					"width": 334,
+					"height": 20,
+					"styleSheet": "Ligth - 14",
+					"method": "ObjectMethods/$l_modoAutenticacion.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto16": {
+					"type": "text",
+					"top": 261,
+					"left": 35,
+					"width": 213,
+					"height": 17,
+					"stroke": "#777777",
+					"styleSheet": "Ligth - 14",
+					"text": "Modo de autenticación"
+				},
+				"Texto17": {
+					"type": "text",
+					"top": 131,
+					"left": 67,
+					"width": 497,
+					"height": 32,
+					"stroke": "#AAAAAA",
+					"styleSheet": "Ligth - 13",
+					"text": "Indique sólo si especifica un servidor de correo saliente o si desea recibir las respuestas en esta cuenta"
+				},
+				"Texto18": {
+					"type": "text",
+					"top": 332,
+					"left": 70,
+					"width": 497,
+					"height": 80,
+					"stroke": "#AAAAAA",
+					"styleSheet": "Ligth - 13",
+					"text": "Si no especifica un servidor de correo saliente se utilizará el servidor de correo por defecto. El usuario recibirá una notificación desde mediatrack-NoReply@colegium.com\r\rSi tiene problemas para enviar las notificaciones usando su propio servidor de corrreo deje en blanco Servidor de correo saliente."
+				},
+				"lineaSeparador4": {
+					"type": "line",
+					"top": 177,
+					"left": 11,
+					"width": 592,
+					"sizingX": "grow",
+					"stroke": "#AAAAAA"
+				}
+			}
+		}
+	]
+}

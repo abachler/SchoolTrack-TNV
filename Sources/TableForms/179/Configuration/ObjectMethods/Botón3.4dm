@@ -1,0 +1,20 @@
+vbACT_ModGlosasExtra:=False:C215
+WDW_OpenFormWindow (->[xxACT_Items:179];"ExtraManager";0;4;"Glosas para cargos extraordinarios")
+DIALOG:C40([xxACT_Items:179];"ExtraManager")
+CLOSE WINDOW:C154
+If (vbACT_ModGlosasExtra)
+	READ WRITE:C146([xxACT_GlosasExtraordinarias:5])
+	ALL RECORDS:C47([xxACT_GlosasExtraordinarias:5])
+	DELETE SELECTION:C66([xxACT_GlosasExtraordinarias:5])
+	ARRAY TO SELECTION:C261(atACT_GlosasExtraGlosa;[xxACT_GlosasExtraordinarias:5]Glosa:1;atACT_GlosasExtraCta;[xxACT_GlosasExtraordinarias:5]No_de_Cuenta_Contable:2;atACT_GlosasExtraCentro;[xxACT_GlosasExtraordinarias:5]Centro_de_Costos:3;atACT_GlosasExtraCCta;[xxACT_GlosasExtraordinarias:5]No_CCta_contable:4;atACT_GlosasExtraCCentro;[xxACT_GlosasExtraordinarias:5]CCentro_de_costos:5;abACT_ImputacionUnica;[xxACT_GlosasExtraordinarias:5]Imputacion_Unica:6)
+	UNLOAD RECORD:C212([xxACT_GlosasExtraordinarias:5])
+	READ ONLY:C145([xxACT_GlosasExtraordinarias:5])
+	SORT ARRAY:C229(atACT_GlosasExtraGlosa;atACT_GlosasExtraCta;atACT_GlosasExtraCentro;atACT_GlosasExtraCCta;atACT_GlosasExtraCCentro;abACT_ImputacionUnica;>)
+	COPY ARRAY:C226(atACT_GlosasExtraGlosa;<>atACT_CargosExtraordinarios)
+	COPY ARRAY:C226(atACT_GlosasExtraCta;<>atACT_GlosasExtraCta)
+	COPY ARRAY:C226(atACT_GlosasExtraCentro;<>atACT_GlosasExtraCentro)
+	COPY ARRAY:C226(atACT_GlosasExtraCCta;<>atACT_GlosasExtraCCta)
+	COPY ARRAY:C226(atACT_GlosasExtraCCentro;<>atACT_GlosasExtraCCentro)
+	COPY ARRAY:C226(abACT_ImputacionUnica;<>abACT_ImputacionUnica)
+End if 
+AT_Initialize (->atACT_GlosasExtraGlosa;->atACT_GlosasExtraCta;->atACT_GlosasExtraCentro;->atACT_GlosasExtraCCta;->atACT_GlosasExtraCCentro;->abACT_ImputacionUnica;->apACT_ImputacUnicaPict)

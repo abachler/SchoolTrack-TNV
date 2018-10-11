@@ -1,0 +1,289 @@
+﻿{
+	"inheritedForm": "XS_MASTER_ConfigDialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 525,
+	"height": 320,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 380,
+					"left": 268,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 323,
+					"left": 84,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text10": {
+					"type": "text",
+					"top": 51,
+					"left": 13,
+					"width": 500,
+					"height": 72,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Durante estas jornadas el colegio es presentado a las familias de los candidatos sin relaciones previas con el colegio.\r\rDespués de ingresar el número de Presentaciones programadas y el máximo teórico de asistentes a cada jornada, defina para cada una de ellas la fecha y hora en que tendrán lugar."
+				},
+				"Variable7(1)": {
+					"type": "plugin",
+					"top": 133,
+					"left": 13,
+					"width": 500,
+					"height": 148,
+					"dataSource": "xALP_Presentations",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable257": {
+					"type": "input",
+					"top": 297,
+					"left": 474,
+					"width": 39,
+					"height": 12,
+					"dataSource": "viPST_MaxPerPresentation",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable258": {
+					"type": "input",
+					"top": 129,
+					"left": 745,
+					"width": 38,
+					"height": 12,
+					"dataSource": "viPST_NbPresentations",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/Variable258.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text250": {
+					"type": "text",
+					"top": 129,
+					"left": 613,
+					"width": 126,
+					"height": 12,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Número de presentaciones:"
+				},
+				"Text251": {
+					"type": "text",
+					"top": 297,
+					"left": 367,
+					"width": 126,
+					"height": 12,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Máximo de asistentes:"
+				},
+				"Variable259": {
+					"type": "button",
+					"top": 421,
+					"left": 26,
+					"width": 123,
+					"height": 17,
+					"dataSource": "bDelPresent",
+					"shortcutKey": "[Del]",
+					"display": false,
+					"method": "ObjectMethods/Variable259.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable200": {
+					"type": "checkbox",
+					"top": 291,
+					"left": 13,
+					"width": 280,
+					"height": 18,
+					"dataSource": "viPST_AutoAsigPresent",
+					"text": "Asignación automática a familias nuevas (modificable)",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2101": {
+					"type": "button",
+					"top": 441,
+					"left": 28,
+					"width": 121,
+					"height": 21,
+					"dataSource": "bDelPresent",
+					"shortcutKey": "d",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Variable2101.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 333,
+					"left": 306,
+					"width": 66,
+					"height": 18,
+					"dataSource": "b_Close",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bAddbPresentacion": {
+					"type": "pictureButton",
+					"top": 108,
+					"left": 474,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bAddbPresentacion",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bAddbPresentacion.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bDelPresentacion": {
+					"type": "pictureButton",
+					"top": 108,
+					"left": 495,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bDelPresentacion",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bDelPresentacion.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

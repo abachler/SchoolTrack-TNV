@@ -1,0 +1,460 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Botón15",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texto1": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 261,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Copiar desde"
+				},
+				"Hierarchical Pop-up Menu2": {
+					"type": "dropdown",
+					"top": 35,
+					"left": 385,
+					"width": 17,
+					"height": 15,
+					"sizingX": "move",
+					"dataSource": "hl_langages1",
+					"dataSourceTypeHint": "integer",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Hierarchical Pop-up Menu2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text29": {
+					"type": "text",
+					"top": 37,
+					"left": 199,
+					"width": 56,
+					"height": 13,
+					"sizingX": "move",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Idioma:"
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 37,
+					"left": 255,
+					"width": 128,
+					"height": 11,
+					"sizingX": "move",
+					"dataSource": "vtXS_LangageFrom",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text28": {
+					"type": "text",
+					"top": 37,
+					"left": 13,
+					"width": 25,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "País:"
+				},
+				"Hierarchical Pop-up Menu1": {
+					"type": "dropdown",
+					"top": 35,
+					"left": 171,
+					"width": 17,
+					"height": 15,
+					"dataSource": "hl_Paises1",
+					"dataSourceTypeHint": "integer",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Hierarchical Pop-up Menu1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "input",
+					"top": 37,
+					"left": 42,
+					"width": 128,
+					"height": 11,
+					"dataSource": "vtXS_CountryFrom",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 63,
+					"left": 13,
+					"width": 261,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Copiar hacia"
+				},
+				"Hierarchical Pop-up Menu3": {
+					"type": "dropdown",
+					"top": 85,
+					"left": 385,
+					"width": 17,
+					"height": 15,
+					"sizingX": "move",
+					"dataSource": "hl_langages2",
+					"dataSourceTypeHint": "integer",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Hierarchical Pop-up Menu3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 87,
+					"left": 199,
+					"width": 56,
+					"height": 13,
+					"sizingX": "move",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Idioma:"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 87,
+					"left": 255,
+					"width": 128,
+					"height": 11,
+					"sizingX": "move",
+					"dataSource": "vtXS_Langageto",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 87,
+					"left": 13,
+					"width": 25,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "País:"
+				},
+				"Hierarchical Pop-up Menu4": {
+					"type": "dropdown",
+					"top": 85,
+					"left": 171,
+					"width": 17,
+					"height": 15,
+					"dataSource": "hl_Paises2",
+					"dataSourceTypeHint": "integer",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Hierarchical Pop-up Menu4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 87,
+					"left": 42,
+					"width": 128,
+					"height": 11,
+					"dataSource": "vtXS_Countryto",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección1": {
+					"type": "checkbox",
+					"top": 143,
+					"left": 42,
+					"width": 204,
+					"height": 18,
+					"dataSource": "cb_CopyBlobs",
+					"text": "Copiar Blobs",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Casilla de selección1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 123,
+					"left": 13,
+					"width": 261,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Copiar que"
+				},
+				"Casilla de selección2": {
+					"type": "checkbox",
+					"top": 163,
+					"left": 42,
+					"width": 204,
+					"height": 18,
+					"dataSource": "cb_CopyFields",
+					"text": "Copiar Tablas y Campos",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Casilla de selección2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Casilla de selección3": {
+					"type": "checkbox",
+					"top": 183,
+					"left": 42,
+					"width": 204,
+					"height": 18,
+					"dataSource": "cb_CopyCommands",
+					"text": "Copiar Comandos Ejecutables",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Casilla de selección3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón15": {
+					"type": "button",
+					"top": 216,
+					"left": 322,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCopy",
+					"action": "accept",
+					"shortcutKey": "[Return]",
+					"text": "Aceptar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón16": {
+					"type": "button",
+					"top": 216,
+					"left": 235,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCancelar",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 260,
+					"left": 322,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCopy",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Aceptar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Casilla de selección4": {
+					"type": "checkbox",
+					"top": 102,
+					"left": 42,
+					"width": 159,
+					"height": 15,
+					"dataSource": "cb_CopiarATodosPaises",
+					"text": "Todos los paises",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Casilla de selección5": {
+					"type": "checkbox",
+					"top": 102,
+					"left": 255,
+					"width": 159,
+					"height": 15,
+					"dataSource": "cb_CopiarATodosLang",
+					"text": "Todos los idiomas",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Casilla de selección6": {
+					"type": "checkbox",
+					"top": 143,
+					"left": 217,
+					"width": 204,
+					"height": 18,
+					"dataSource": "cb_CopyRSRList",
+					"text": "Copiar Recursos Lista",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Casilla de selección6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Casilla de selección7": {
+					"type": "checkbox",
+					"top": 163,
+					"left": 217,
+					"width": 204,
+					"height": 18,
+					"dataSource": "cb_CopyRSRSTR",
+					"text": "Copiar Recursos STR#",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Casilla de selección7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Casilla de selección8": {
+					"type": "checkbox",
+					"top": 183,
+					"left": 217,
+					"width": 204,
+					"height": 18,
+					"dataSource": "cb_CopyRSRText",
+					"text": "Copiar Recursos TEXT",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Casilla de selección8.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

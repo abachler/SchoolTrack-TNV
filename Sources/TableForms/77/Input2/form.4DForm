@@ -1,0 +1,289 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "boton3",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"MessageACT": {
+					"type": "text",
+					"top": 87,
+					"left": 87,
+					"width": 366,
+					"height": 13,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"fontStyle": "italic",
+					"text": "La calidad de apoderado académico debe ser definida en SchoolTrack"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 13,
+					"left": 87,
+					"width": 417,
+					"height": 13,
+					"dataSource": "vApNme",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "checkbox",
+					"top": 60,
+					"left": 87,
+					"width": 155,
+					"height": 17,
+					"dataSource": "bAp1",
+					"text": "Apoderado académico",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "checkbox",
+					"top": 60,
+					"left": 277,
+					"width": 137,
+					"height": 17,
+					"dataSource": "bAp2",
+					"text": "Apoderado de cuentas",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"boton": {
+					"type": "button",
+					"top": 121,
+					"left": 13,
+					"width": 80,
+					"height": 18,
+					"dataSource": "b_Consultar",
+					"text": "Ver",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/boton.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"boton1": {
+					"type": "button",
+					"top": 121,
+					"left": 228,
+					"width": 80,
+					"height": 18,
+					"dataSource": "b_Eliminar",
+					"text": "Eliminar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/boton1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"boton2": {
+					"type": "button",
+					"top": 120,
+					"left": 332,
+					"width": 80,
+					"height": 18,
+					"dataSource": "b_Cancelar",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"boton3": {
+					"type": "button",
+					"top": 121,
+					"left": 424,
+					"width": 80,
+					"height": 18,
+					"dataSource": "b_Guardar",
+					"shortcutKey": "s",
+					"shortcutAccel": true,
+					"text": "Guardar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/boton3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "checkbox",
+					"top": 173,
+					"left": 277,
+					"width": 217,
+					"height": 17,
+					"dataSource": "aiACT_ChangeDeuda2NewAPdo",
+					"text": "Traspasar las deudas a este apoderado",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 13,
+					"left": 19,
+					"width": 60,
+					"height": 13,
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Apellidos:"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 37,
+					"left": 4,
+					"width": 75,
+					"height": 13,
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Parentesco:"
+				},
+				"MessageSTR": {
+					"type": "text",
+					"top": 87,
+					"left": 87,
+					"width": 366,
+					"height": 13,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"fontStyle": "italic",
+					"text": "La calidad de apoderado de cuentas debe ser definido en AccountTrack"
+				},
+				"Menú desplegable": {
+					"type": "dropdown",
+					"top": 33,
+					"left": 87,
+					"width": 417,
+					"height": 17,
+					"dataSource": "<>aParentesco",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Menú desplegable.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Campo1": {
+					"type": "input",
+					"top": 35,
+					"left": 277,
+					"width": 227,
+					"height": 13,
+					"dataSource": "[Familia_RelacionesFamiliares:77]Parentesco:6",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

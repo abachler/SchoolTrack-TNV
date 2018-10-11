@@ -1,0 +1,744 @@
+﻿{
+	"windowTitle": "Búsqueda de Ítems",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Rectángulo2",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Rectángulo": {
+					"type": "rectangle",
+					"top": 0,
+					"left": -2,
+					"width": 728,
+					"height": 430,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"stroke": "#FFFFFF"
+				},
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": -3,
+					"left": -2,
+					"width": 728,
+					"height": 27,
+					"sizingX": "grow",
+					"fill": "#EEEEEE",
+					"stroke": "#AAAAAA"
+				},
+				"Rectángulo2": {
+					"type": "rectangle",
+					"top": 429,
+					"left": -2,
+					"width": 728,
+					"height": 28,
+					"sizingY": "move",
+					"fill": "#EEEEEE",
+					"stroke": "#AAAAAA"
+				},
+				"separadorCondicion": {
+					"type": "line",
+					"top": 431,
+					"left": 327,
+					"height": 26,
+					"sizingY": "move",
+					"stroke": "#DDDDDD"
+				},
+				"Línea5": {
+					"type": "line",
+					"top": 430,
+					"left": 560,
+					"height": 26,
+					"sizingY": "move",
+					"stroke": "#AAAAAA"
+				},
+				"resultadoBusqueda": {
+					"type": "button",
+					"top": 433,
+					"left": 566,
+					"width": 152,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"styleSheet": "Plain - 11",
+					"text": "resultadoBusqueda",
+					"popupPlacement": "linked",
+					"style": "custom",
+					"method": "ObjectMethods/resultadoBusqueda.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Cuadro de Grupo": {
+					"type": "groupBox",
+					"top": 539,
+					"left": 1,
+					"width": 582,
+					"height": 158,
+					"sizingY": "move",
+					"stroke": "#EE0000",
+					"text": "No Borrar"
+				},
+				"Cerrar": {
+					"type": "button",
+					"top": 579,
+					"left": 11,
+					"width": 145,
+					"height": 22,
+					"sizingY": "move",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cerrar (ESC)",
+					"events": [
+						"onClick"
+					]
+				},
+				"validar": {
+					"type": "button",
+					"top": 579,
+					"left": 168,
+					"width": 145,
+					"height": 22,
+					"sizingY": "move",
+					"shortcutKey": "[Enter]",
+					"text": "validar (enter)",
+					"method": "ObjectMethods/validar.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"validar1": {
+					"type": "button",
+					"top": 579,
+					"left": 322,
+					"width": 145,
+					"height": 22,
+					"sizingY": "move",
+					"shortcutKey": "[Return]",
+					"text": "validar (return)",
+					"method": "ObjectMethods/validar1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"mostrarTodo": {
+					"type": "button",
+					"top": 605,
+					"left": 11,
+					"width": 145,
+					"height": 22,
+					"sizingY": "move",
+					"action": "cancel",
+					"shortcutKey": "m",
+					"shortcutAccel": true,
+					"text": "mostrarTodo (CMD-M)",
+					"method": "ObjectMethods/mostrarTodo.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"mostrarSeleccion": {
+					"type": "button",
+					"top": 605,
+					"left": 168,
+					"width": 190,
+					"height": 22,
+					"sizingY": "move",
+					"action": "cancel",
+					"shortcutKey": "m",
+					"shortcutAccel": true,
+					"shortcutAlt": true,
+					"text": "mostrarSeleccion (CMD+ALT-M)",
+					"method": "ObjectMethods/mostrarSeleccion.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"comparador": {
+					"type": "input",
+					"top": 610,
+					"left": 378,
+					"width": 150,
+					"height": 17,
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/comparador.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"añadirTodo": {
+					"type": "button",
+					"top": 631,
+					"left": 11,
+					"width": 145,
+					"height": 22,
+					"sizingY": "move",
+					"action": "cancel",
+					"shortcutKey": "j",
+					"shortcutAccel": true,
+					"text": "añadirTodo (CMD-J)",
+					"method": "ObjectMethods/añadirTodo.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"añadirSeleccion": {
+					"type": "button",
+					"top": 631,
+					"left": 168,
+					"width": 190,
+					"height": 22,
+					"sizingY": "move",
+					"action": "cancel",
+					"shortcutKey": "j",
+					"shortcutAccel": true,
+					"shortcutAlt": true,
+					"text": "añadirSeleccion (CMD+ALT-J)",
+					"method": "ObjectMethods/añadirSeleccion.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"menuRef": {
+					"type": "input",
+					"top": 663,
+					"left": 16,
+					"width": 385,
+					"height": 17,
+					"sizingY": "move",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"palabrascompletas": {
+					"type": "checkbox",
+					"top": 663,
+					"left": 408,
+					"width": 152,
+					"height": 16,
+					"text": "palabras completas",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"tipoBusqueda": {
+					"type": "text",
+					"top": 435,
+					"left": 10,
+					"width": 303,
+					"height": 13,
+					"styleSheet": "Plain - 11",
+					"text": "tipoBusqueda\t"
+				},
+				"modocomparacion": {
+					"type": "text",
+					"top": 435,
+					"left": 333,
+					"width": 223,
+					"height": 13,
+					"styleSheet": "Plain - 11",
+					"text": "modocomparacion"
+				}
+			}
+		},
+		{
+			"objects": {
+				"expresionBusqueda": {
+					"type": "input",
+					"top": 30,
+					"left": 85,
+					"width": 389,
+					"height": 37,
+					"sizingX": "grow",
+					"fontFamily": "Helvetica Neue UltraLight",
+					"fontSize": 32,
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/expresionBusqueda.4dm",
+					"events": [
+						"onGettingFocus",
+						"onAfterKeystroke"
+					]
+				},
+				"registro": {
+					"type": "input",
+					"top": 39,
+					"left": 486,
+					"width": 64,
+					"height": 19,
+					"sizingX": "move",
+					"fill": "transparent",
+					"styleSheet": "Ligth - 16",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"textFormat": "#########",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/registro.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"codigo": {
+					"type": "input",
+					"top": 39,
+					"left": 556,
+					"width": 83,
+					"height": 19,
+					"sizingX": "move",
+					"fill": "transparent",
+					"styleSheet": "Ligth - 16",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/codigo.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"clasificacion": {
+					"type": "input",
+					"top": 39,
+					"left": 647,
+					"width": 73,
+					"height": 19,
+					"sizingX": "move",
+					"fill": "transparent",
+					"styleSheet": "Ligth - 16",
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/clasificacion.4dm",
+					"events": [
+						"onGettingFocus",
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"List Box": {
+					"type": "listbox",
+					"top": 73,
+					"left": 1,
+					"width": 725,
+					"height": 356,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"listboxType": "currentSelection",
+					"focusable": false,
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"highlightSet": "$ListboxItems",
+					"table": 61,
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"method": "ObjectMethods/List Box.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onDataChange",
+						"onAfterSort",
+						"onSelectionChange",
+						"onColumnMove",
+						"onRowMove",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Barras 2D1",
+							"dataSource": "[BBL_Items:61]Clasificacion:2",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado1",
+								"text": "Clasificacion",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Barras 2D2",
+							"dataSource": "[BBL_Items:61]Primer_título:4",
+							"width": 363,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado2",
+								"text": "Titulo",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Barras 2D3",
+							"dataSource": "[BBL_Items:61]Primer_autor:6",
+							"width": 245,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado3",
+								"text": "Autor",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"Botón 3D1": {
+					"type": "button",
+					"top": 5,
+					"left": 45,
+					"width": 433,
+					"height": 17,
+					"sizingX": "grow",
+					"styleSheet": "Plain - 12",
+					"text": "Expresion",
+					"style": "toolbar",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón 3D2": {
+					"type": "button",
+					"top": 4,
+					"left": 487,
+					"width": 63,
+					"height": 17,
+					"sizingX": "move",
+					"styleSheet": "Plain - 12",
+					"text": "Registro",
+					"style": "toolbar",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón 3D3": {
+					"type": "button",
+					"top": 4,
+					"left": 559,
+					"width": 73,
+					"height": 17,
+					"sizingX": "move",
+					"styleSheet": "Plain - 12",
+					"text": "Código",
+					"style": "toolbar",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón 3D4": {
+					"type": "button",
+					"top": 4,
+					"left": 647,
+					"width": 73,
+					"height": 17,
+					"sizingX": "move",
+					"styleSheet": "Plain - 12",
+					"text": "Clasificacion",
+					"style": "toolbar",
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea1": {
+					"type": "line",
+					"top": 0,
+					"left": 483,
+					"height": 73,
+					"sizingX": "move",
+					"stroke": "#AAAAAA"
+				},
+				"Línea2": {
+					"type": "line",
+					"top": 0,
+					"left": 553,
+					"height": 73,
+					"sizingX": "move",
+					"stroke": "#AAAAAA"
+				},
+				"Línea3": {
+					"type": "line",
+					"top": 0,
+					"left": 643,
+					"height": 73,
+					"sizingX": "move",
+					"stroke": "#AAAAAA"
+				},
+				"Línea4": {
+					"type": "line",
+					"top": 23,
+					"left": 73,
+					"height": 50,
+					"stroke": "#DDDDDD"
+				},
+				"Botón 3D": {
+					"type": "button",
+					"top": 33,
+					"left": 11,
+					"width": 54,
+					"height": 32,
+					"dataSource": "Botón 3D",
+					"icon": "/RESOURCES/img/light icons/lupa.png",
+					"popupPlacement": "linked",
+					"style": "custom",
+					"method": "ObjectMethods/Botón 3D.4dm",
+					"events": [
+						"onClick",
+						"onLongClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"palabrasclaves": {
+					"type": "input",
+					"top": 27,
+					"left": 61,
+					"width": 649,
+					"height": 37,
+					"sizingX": "grow",
+					"fontFamily": "Helvetica Neue UltraLight",
+					"fontSize": 32,
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/palabrasclaves.4dm",
+					"events": [
+						"onGettingFocus",
+						"onAfterKeystroke"
+					]
+				},
+				"listboxMaterias": {
+					"type": "listbox",
+					"top": 73,
+					"left": -1,
+					"width": 236,
+					"height": 356,
+					"sizingY": "grow",
+					"listboxType": "currentSelection",
+					"movableRows": false,
+					"rowHeight": "24px",
+					"showHeaders": false,
+					"highlightSet": "$ListboxSetMaterias",
+					"table": 68,
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 13,
+					"borderStyle": "none",
+					"method": "ObjectMethods/listboxMaterias.4dm",
+					"events": [
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "Barras 2D7",
+							"dataSource": "[BBL_Thesaurus:68]Materia:13",
+							"width": 236,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							]
+						}
+					]
+				},
+				"List Box1": {
+					"type": "listbox",
+					"top": 73,
+					"left": 236,
+					"width": 490,
+					"height": 356,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"listboxType": "currentSelection",
+					"focusable": false,
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"highlightSet": "$ListboxItems",
+					"table": 61,
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 13,
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onAfterSort",
+						"onSelectionChange",
+						"onColumnMove",
+						"onRowMove",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "Barras 2D4",
+							"dataSource": "[BBL_Items:61]Clasificacion:2",
+							"width": 70,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado4",
+								"text": "Clasificacion",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "Barras 2D5",
+							"dataSource": "[BBL_Items:61]Primer_título:4",
+							"width": 221,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado5",
+								"text": "Titulo",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "Barras 2D6",
+							"dataSource": "[BBL_Items:61]Primer_autor:6",
+							"width": 245,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado6",
+								"text": "Autor",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						}
+					]
+				},
+				"Línea": {
+					"type": "line",
+					"top": 72,
+					"left": 0,
+					"width": 726,
+					"stroke": "#AAAAAA"
+				},
+				"Línea6": {
+					"type": "line",
+					"top": 72,
+					"left": 235,
+					"width": 1,
+					"height": 358,
+					"sizingY": "grow",
+					"stroke": "#AAAAAA"
+				}
+			}
+		}
+	]
+}

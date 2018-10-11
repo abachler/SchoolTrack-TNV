@@ -1,0 +1,427 @@
+﻿{
+	"formSizeAnchor": "Rectángulo1",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 282,
+					"height": 249,
+					"fill": "#FFF0DF",
+					"stroke": "#FFF0DF"
+				},
+				"opcionesEAnotaciones1": {
+					"type": "checkbox",
+					"top": 270,
+					"left": 0,
+					"width": 199,
+					"height": 17,
+					"dataSource": "cb_PublicarAnotObs1",
+					"text": "Observaciones",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesESuspensiones": {
+					"type": "checkbox",
+					"top": 270,
+					"left": 120,
+					"width": 199,
+					"height": 17,
+					"dataSource": "cb_PublicarSuspObs1",
+					"text": "Observaciones",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesEAnotaciones": {
+					"type": "checkbox",
+					"top": 292,
+					"left": 0,
+					"width": 199,
+					"height": 17,
+					"dataSource": "cb_PublicarAnotAutor1",
+					"text": "Profesor",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/opcionesEAnotaciones.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesESuspensiones1": {
+					"type": "checkbox",
+					"top": 292,
+					"left": 120,
+					"width": 199,
+					"height": 17,
+					"dataSource": "cb_PublicarSuspProfesor1",
+					"text": "Profesor",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/opcionesESuspensiones1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesEAnotaciones2": {
+					"type": "checkbox",
+					"top": 312,
+					"left": 15,
+					"width": 129,
+					"height": 16,
+					"dataSource": "cb_PublicarAMailProf1",
+					"text": "eMail del Profesor",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesESuspensiones2": {
+					"type": "checkbox",
+					"top": 312,
+					"left": 135,
+					"width": 129,
+					"height": 16,
+					"dataSource": "cb_PublicarSMailProf1",
+					"text": "eMail del Profesor",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesECastigos": {
+					"type": "checkbox",
+					"top": 350,
+					"left": 0,
+					"width": 199,
+					"height": 17,
+					"dataSource": "cb_PublicarCastigosObs1",
+					"text": "Observaciones",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesEAtrasos": {
+					"type": "checkbox",
+					"top": 350,
+					"left": 120,
+					"width": 199,
+					"height": 17,
+					"dataSource": "cb_PublicarAtrasosObs1",
+					"text": "Observaciones",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesECastigos1": {
+					"type": "checkbox",
+					"top": 372,
+					"left": 0,
+					"width": 199,
+					"height": 17,
+					"dataSource": "cb_PublicarCastigosProfesor1",
+					"text": "Profesor",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/opcionesECastigos1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesEAtrasos1": {
+					"type": "checkbox",
+					"top": 372,
+					"left": 120,
+					"width": 199,
+					"height": 17,
+					"dataSource": "cb_PublicarAtrasosInter1",
+					"text": "Atrasos intersesión",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesECastigos2": {
+					"type": "checkbox",
+					"top": 392,
+					"left": 15,
+					"width": 129,
+					"height": 16,
+					"dataSource": "cb_PublicarCMailProf1",
+					"text": "eMail del Profesor",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesECalificaciones": {
+					"type": "checkbox",
+					"top": 435,
+					"left": 0,
+					"width": 199,
+					"height": 16,
+					"dataSource": "cb_PublicarEEsfuerzo1",
+					"text": "Esfuerzo (*)",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesECalificaciones8": {
+					"type": "checkbox",
+					"top": 435,
+					"left": 134,
+					"width": 199,
+					"height": 16,
+					"dataSource": "cb_MostrarDetalle1",
+					"text": "Mostrar Detalles",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/opcionesECalificaciones8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesECalificaciones1": {
+					"type": "checkbox",
+					"top": 451,
+					"left": 0,
+					"width": 199,
+					"height": 16,
+					"dataSource": "cb_PublicarEParciales1",
+					"text": "Parciales",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesECalificaciones10": {
+					"type": "checkbox",
+					"top": 450,
+					"left": 149,
+					"width": 199,
+					"height": 16,
+					"dataSource": "cb_PublicarEPonderacion1",
+					"text": "Ponderación",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesECalificaciones2": {
+					"type": "checkbox",
+					"top": 467,
+					"left": 0,
+					"width": 199,
+					"height": 16,
+					"dataSource": "cb_PublicarECP1",
+					"text": "Control de Período (*)",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesECalificaciones9": {
+					"type": "checkbox",
+					"top": 465,
+					"left": 149,
+					"width": 199,
+					"height": 16,
+					"dataSource": "cb_OcultaParcialesMadre1",
+					"text": "Ocultar Parciales Madre",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesECalificaciones3": {
+					"type": "checkbox",
+					"top": 483,
+					"left": 0,
+					"width": 199,
+					"height": 16,
+					"dataSource": "cb_PublicarEPP1",
+					"text": "Promedios Periódicos",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesECalificaciones14": {
+					"type": "checkbox",
+					"top": 480,
+					"left": 149,
+					"width": 199,
+					"height": 16,
+					"dataSource": "cb_HijasDesplegadas1",
+					"text": "Hijas Desplegadas",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesECalificaciones4": {
+					"type": "checkbox",
+					"top": 499,
+					"left": 0,
+					"width": 199,
+					"height": 16,
+					"dataSource": "cb_PublicarEPA1",
+					"text": "Promedio Anual (*)",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesECalificaciones5": {
+					"type": "checkbox",
+					"top": 515,
+					"left": 0,
+					"width": 199,
+					"height": 16,
+					"dataSource": "cb_PublicarEExamen1",
+					"text": "Examen (*)",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesECalificaciones6": {
+					"type": "checkbox",
+					"top": 531,
+					"left": 0,
+					"width": 199,
+					"height": 16,
+					"dataSource": "cb_PublicarEEXX1",
+					"text": "Examen Extraordinario (*)",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"opcionesECalificaciones7": {
+					"type": "checkbox",
+					"top": 547,
+					"left": 0,
+					"width": 199,
+					"height": 16,
+					"dataSource": "cb_PublicarENF1",
+					"text": "Calificación Final",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 176,
+					"height": 13,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Opciones Adicionales"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 225,
+					"left": 203,
+					"width": 65,
+					"height": 11,
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Cerrar"
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 222,
+					"left": 236,
+					"width": 34,
+					"height": 17,
+					"dataSource": "Botón invisible1",
+					"shortcutKey": "[Return]",
+					"display": false,
+					"method": "ObjectMethods/bCancel.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"opcionesECalificaciones11": {
+					"type": "text",
+					"top": 420,
+					"left": 0,
+					"width": 187,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Columnas a mostrar"
+				},
+				"opcionesECalificaciones12": {
+					"type": "text",
+					"top": 420,
+					"left": 134,
+					"width": 118,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Para asignaturas hijas"
+				},
+				"opcionesECalificaciones13": {
+					"type": "text",
+					"top": 570,
+					"left": 0,
+					"width": 264,
+					"height": 33,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"fontStyle": "italic",
+					"text": "(*) La publicación de estas columnas depende de las configuraciones de asignatura para el alumno desplegado."
+				}
+			}
+		}
+	]
+}

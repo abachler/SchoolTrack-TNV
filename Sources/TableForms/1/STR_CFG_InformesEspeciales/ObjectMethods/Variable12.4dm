@@ -1,0 +1,1 @@
+bXcrParcial:=0

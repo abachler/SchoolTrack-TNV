@@ -1,0 +1,763 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Pestaña",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Imagen2": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 900,
+					"height": 44,
+					"pictureFormat": "scaled"
+				},
+				"Línea3": {
+					"type": "line",
+					"top": 3,
+					"left": 77,
+					"height": 37,
+					"strokeDashArray": "1 1"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 8,
+					"left": 85,
+					"width": 581,
+					"height": 19,
+					"stroke": "#FFFFFF",
+					"fontFamily": "Arial",
+					"fontSize": 16,
+					"fontWeight": "bold",
+					"text": "SchoolNet: Actualización de datos realizadas y pendientes"
+				},
+				"Imagen1": {
+					"type": "picture",
+					"top": 6,
+					"left": 22,
+					"width": 32,
+					"height": 32,
+					"pictureFormat": "scaled"
+				},
+				"Pestaña": {
+					"type": "tab",
+					"top": 46,
+					"left": 15,
+					"width": 772,
+					"height": 577,
+					"dataSource": "ActuaDatos_INFO_tabs",
+					"dataSourceTypeHint": "arrayText",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Pestaña.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"opc_1": {
+					"type": "radio",
+					"top": 86,
+					"left": 40,
+					"width": 157,
+					"height": 14,
+					"dataSource": "opc_1",
+					"text": "Actualizaciones",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/opc_1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"opc_2": {
+					"type": "radio",
+					"top": 108,
+					"left": 40,
+					"width": 158,
+					"height": 16,
+					"dataSource": "opc_2",
+					"text": "Pendientes",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/opc_2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"vb_Hoy": {
+					"type": "radio",
+					"top": 86,
+					"left": 330,
+					"width": 150,
+					"height": 15,
+					"dataSource": "vb_Hoy",
+					"text": "Para hoy",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"vb_Mes": {
+					"type": "radio",
+					"top": 108,
+					"left": 330,
+					"width": 93,
+					"height": 15,
+					"dataSource": "vb_Mes",
+					"text": "Para el mes",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"vl_Año2": {
+					"type": "input",
+					"top": 109,
+					"left": 568,
+					"width": 101,
+					"height": 14,
+					"dataSource": "vl_Año2",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vb_Año": {
+					"type": "radio",
+					"top": 131,
+					"left": 330,
+					"width": 80,
+					"height": 15,
+					"dataSource": "vb_Año",
+					"text": "Para el año",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"vl_Año": {
+					"type": "input",
+					"top": 132,
+					"left": 421,
+					"width": 101,
+					"height": 14,
+					"dataSource": "vl_Año",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"vb_Rango": {
+					"type": "radio",
+					"top": 154,
+					"left": 330,
+					"width": 73,
+					"height": 15,
+					"dataSource": "vb_Rango",
+					"text": "Entre el",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"vt_Fecha1": {
+					"type": "input",
+					"top": 155,
+					"left": 421,
+					"width": 101,
+					"height": 14,
+					"dataSource": "vt_Fecha1",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/vt_Fecha1.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"fecha2": {
+					"type": "pictureButton",
+					"top": 155,
+					"left": 526,
+					"width": 17,
+					"height": 16,
+					"dataSource": "bCalendar1",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/fecha2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 154,
+					"left": 547,
+					"width": 24,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "y el"
+				},
+				"vt_Fecha2": {
+					"type": "input",
+					"top": 155,
+					"left": 568,
+					"width": 101,
+					"height": 14,
+					"dataSource": "vt_Fecha2",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/vt_Fecha2.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"fecha1": {
+					"type": "pictureButton",
+					"top": 155,
+					"left": 676,
+					"width": 17,
+					"height": 16,
+					"dataSource": "bCalendar2",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/fecha1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"vt_Mes": {
+					"type": "input",
+					"top": 109,
+					"left": 421,
+					"width": 111,
+					"height": 14,
+					"dataSource": "vt_Mes",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"triangulo": {
+					"type": "picture",
+					"top": 107,
+					"left": 535,
+					"width": 19,
+					"height": 16
+				},
+				"bMes": {
+					"type": "button",
+					"top": 107,
+					"left": 421,
+					"width": 136,
+					"height": 17,
+					"dataSource": "bMes",
+					"display": false,
+					"method": "ObjectMethods/bMes.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"buscar": {
+					"type": "button",
+					"top": 151,
+					"left": 711,
+					"width": 56,
+					"height": 18,
+					"dataSource": "buscar",
+					"text": "buscar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/buscar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"usr_notificaciones_alu": {
+					"type": "listbox",
+					"top": 185,
+					"left": 26,
+					"width": 746,
+					"height": 426,
+					"dataSource": "usr_notificaciones_alu",
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"staticColumnCount": 4,
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"columns": [
+						{
+							"name": "at_alu_ape_nom",
+							"dataSource": "at_alu_ape_nom",
+							"width": 254,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título5",
+								"text": "Nombre Alumno(a)",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "at_alu_curso",
+							"dataSource": "at_alu_curso",
+							"width": 107,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título1",
+								"text": "Curso",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "at_alu_email",
+							"dataSource": "at_alu_email",
+							"width": 189,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título6",
+								"text": "email",
+								"dataSource": "Título2",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "ad_actua_date_alu_temp",
+							"dataSource": "ad_actua_date_alu_temp",
+							"width": 179,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título3",
+								"text": "Fecha de Actualización",
+								"dataSource": "Título3",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"usr_notificaciones_per": {
+					"type": "listbox",
+					"top": 185,
+					"left": 26,
+					"width": 746,
+					"height": 426,
+					"dataSource": "usr_notificaciones_per",
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"staticColumnCount": 3,
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"columns": [
+						{
+							"name": "Columna2",
+							"dataSource": "at_per_ape_nom",
+							"width": 311,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título2",
+								"text": "Nombre Apoderado(a)",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "Columna4",
+							"dataSource": "at_per_email",
+							"width": 228,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título4",
+								"text": "email",
+								"dataSource": "Título2",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "ad_actua_date_per_temp",
+							"dataSource": "ad_actua_date_per_temp",
+							"width": 190,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título7",
+								"text": "Fecha de Actualización",
+								"dataSource": "Título7",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"vt_Fecha3": {
+					"type": "input",
+					"top": 131,
+					"left": 516,
+					"width": 101,
+					"height": 14,
+					"dataSource": "vt_Fecha3",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"method": "ObjectMethods/vt_Fecha3.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"fecha3": {
+					"type": "pictureButton",
+					"top": 131,
+					"left": 621,
+					"width": 17,
+					"height": 16,
+					"dataSource": "bCalendar3",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/fecha3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Apo_Pend_txt": {
+					"type": "text",
+					"top": 109,
+					"left": 148,
+					"width": 242,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Comunicar de la actualización de datos disponible"
+				},
+				"advice_op1": {
+					"type": "radio",
+					"top": 89,
+					"left": 397,
+					"width": 157,
+					"height": 14,
+					"dataSource": "advice_op1",
+					"text": "Todos",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/advice_op1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"advice_op3": {
+					"type": "radio",
+					"top": 131,
+					"left": 397,
+					"width": 158,
+					"height": 16,
+					"dataSource": "advice_op3",
+					"text": "Sin actualizar desde",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/advice_op3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn_comunicar": {
+					"type": "button",
+					"top": 127,
+					"left": 658,
+					"width": 104,
+					"height": 22,
+					"dataSource": "btn_comunicar",
+					"text": "Comunicar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/btn_comunicar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Apo_cantidad_txt": {
+					"type": "text",
+					"top": 169,
+					"left": 28,
+					"width": 242,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Cantidad"
+				},
+				"advice_op2": {
+					"type": "radio",
+					"top": 109,
+					"left": 397,
+					"width": 157,
+					"height": 14,
+					"dataSource": "advice_op2",
+					"text": "Nunca Actualizados",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/advice_op2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

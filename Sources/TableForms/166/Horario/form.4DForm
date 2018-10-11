@@ -1,0 +1,947 @@
+﻿{
+	"windowTitle": "Horario",
+	"inheritedForm": "XS_BKGD_Forms",
+	"inheritedFormTable": 114,
+	"windowMinWidth": 800,
+	"windowMinHeight": 600,
+	"formSizeAnchor": "lbHorario",
+	"rightMargin": 0,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onActivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onResize",
+		"onMouseLeave",
+		"onMouseMove",
+		"onBeginDragOver"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"ciclo": {
+					"type": "dropdown",
+					"top": 4,
+					"left": 85,
+					"width": 48,
+					"height": 18,
+					"dataSource": "atSTR_NombresCiclos",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/ciclo.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"lbCeldasSeleccionadas": {
+					"type": "listbox",
+					"top": 7,
+					"left": 1296,
+					"width": 383,
+					"height": 492,
+					"sizingX": "grow",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"scrollbarVertical": "hidden",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "celdasColumna",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "columnasH",
+								"text": "columnas"
+							}
+						},
+						{
+							"name": "celdasFila",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "filasH",
+								"text": "filas"
+							}
+						},
+						{
+							"name": "celdasColorFondo",
+							"width": 80,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado2",
+								"text": "Encabezado2",
+								"dataSource": "Encabezado2"
+							}
+						},
+						{
+							"name": "celdasColorTexto",
+							"width": 143,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado5",
+								"text": "Encabezado5",
+								"dataSource": "Encabezado5"
+							}
+						}
+					]
+				},
+				"lbcursos": {
+					"type": "listbox",
+					"top": 29,
+					"left": 0,
+					"width": 191,
+					"height": 116,
+					"sizingY": "grow",
+					"focusable": false,
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"method": "ObjectMethods/lbcursos.4dm",
+					"events": [
+						"onClick",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "at_CursosEnHorario",
+							"dataSource": "at_CursosEnHorario",
+							"width": 191,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado1",
+								"text": "Cursos",
+								"dataSource": "Encabezado1"
+							}
+						}
+					]
+				},
+				"lbsalas": {
+					"type": "listbox",
+					"top": 29,
+					"left": 197,
+					"width": 187,
+					"height": 116,
+					"sizingY": "grow",
+					"dataSource": "lbsalas",
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"dragging": "custom",
+					"dropping": "custom",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"method": "ObjectMethods/lbsalas.4dm",
+					"events": [
+						"onClick",
+						"onDrop",
+						"onDataChange",
+						"onDragOver",
+						"onSelectionChange",
+						"onHeaderClick",
+						"onBeginDragOver"
+					],
+					"columns": [
+						{
+							"name": "salas_nombre",
+							"dataSource": "atTMT_Salas_Nombre",
+							"width": 188,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"events": [
+								"onClick",
+								"onDrop",
+								"onDataChange",
+								"onDragOver",
+								"onBeginDragOver"
+							],
+							"header": {
+								"name": "salas_Hdr",
+								"text": "Salas"
+							}
+						},
+						{
+							"name": "salas_capacidad",
+							"dataSource": "aiTMT_Salas_Capacidad",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"visibility": "hidden",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado3",
+								"text": "Encabezado3",
+								"dataSource": "Encabezado3"
+							}
+						},
+						{
+							"name": "salas_ID",
+							"dataSource": "alTMT_Salas_ID",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"visibility": "hidden",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado4",
+								"text": "Encabezado4",
+								"dataSource": "Encabezado4"
+							}
+						}
+					]
+				},
+				"lbAsignaturas": {
+					"type": "listbox",
+					"top": 29,
+					"left": 391,
+					"width": 719,
+					"height": 116,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "lbAsignaturas",
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"dragging": "custom",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"method": "ObjectMethods/lbAsignaturas.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onDragOver",
+						"onAlternateClick"
+					],
+					"columns": [
+						{
+							"name": "asignaturas_abreviacion",
+							"dataSource": "atSTK_Subsectores_ShortName",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "asignaturas_H1",
+								"text": "Abreviación"
+							}
+						},
+						{
+							"name": "asignaturas_nombre",
+							"dataSource": "atSTK_Subsectores_LongName",
+							"width": 300,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "asignaturas_nombre1",
+								"text": "Nombre de la asignatura"
+							}
+						},
+						{
+							"name": "asignaturas_curso",
+							"dataSource": "atTMT_Subsectores_Curso",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "asignaturas_H3",
+								"text": "Curso o grupo"
+							}
+						},
+						{
+							"name": "asignaturas_profesor",
+							"dataSource": "atSTK_Subsectores_teacherName",
+							"width": 219,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Asignaturas_H4",
+								"text": "Profesor"
+							}
+						},
+						{
+							"name": "asignaturas_ID",
+							"dataSource": "alSTK_IDSubsectores",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"visibility": "hidden",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "asignaturas_H5",
+								"text": "ID Asignatura"
+							}
+						}
+					]
+				},
+				"Separador": {
+					"type": "splitter",
+					"top": 150,
+					"left": 0,
+					"width": 1113,
+					"height": 2,
+					"dataSource": "Separador",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"lbHorario": {
+					"type": "listbox",
+					"top": 150,
+					"left": 0,
+					"width": 1109,
+					"height": 504,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "lbHorario",
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"dragging": "custom",
+					"dropping": "custom",
+					"rowHeight": "4em",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalAlign": "top",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 12,
+					"method": "ObjectMethods/lbHorario.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onDrop",
+						"onDataChange",
+						"onDragOver",
+						"onMouseLeave",
+						"onMouseMove",
+						"onAlternateClick",
+						"onScroll"
+					],
+					"columns": [
+						{
+							"name": "horario_hora",
+							"dataSource": "aiSTK_Hora",
+							"width": 50,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"verticalAlign": "middle",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "horario_",
+								"text": "Hora #",
+								"verticalAlign": "top",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Barras 2D1",
+							"dataSource": "atSTK_HoraAlias",
+							"width": 50,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado6",
+								"text": "Alias",
+								"verticalAlign": "top",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "horario_desde",
+							"dataSource": "alSTK_Desde",
+							"width": 50,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"timeFormat": "hh_mm",
+							"verticalAlign": "middle",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Horario",
+								"text": "Desde",
+								"verticalAlign": "top",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "horario_hasta",
+							"dataSource": "alSTK_hasta",
+							"width": 50,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"timeFormat": "hh_mm",
+							"verticalAlign": "middle",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "horario_H5",
+								"text": "Hasta",
+								"verticalAlign": "top",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "horario_lunes",
+							"dataSource": "atSTK_Day1",
+							"width": 160,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"styledText": true,
+							"contextMenu": "none",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDrop",
+								"onDataChange",
+								"onDragOver"
+							],
+							"header": {
+								"name": "Horario__H4",
+								"text": "Lunes",
+								"verticalAlign": "top",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "horario_martes",
+							"dataSource": "atSTK_Day2",
+							"width": 160,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"styledText": true,
+							"contextMenu": "none",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange",
+								"onDragOver"
+							],
+							"header": {
+								"name": "horario_H1",
+								"text": "Martes",
+								"verticalAlign": "top",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "horario_miercoles",
+							"dataSource": "atSTK_Day3",
+							"width": 160,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"styledText": true,
+							"contextMenu": "none",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange",
+								"onDragOver"
+							],
+							"header": {
+								"name": "horario_H6",
+								"text": "Miércoles",
+								"verticalAlign": "top",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "horario_jueves",
+							"dataSource": "atSTK_Day4",
+							"width": 160,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"styledText": true,
+							"contextMenu": "none",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "horario_H7",
+								"text": "Jueves",
+								"verticalAlign": "top",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "horario_viernes",
+							"dataSource": "atSTK_Day5",
+							"width": 160,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"styledText": true,
+							"contextMenu": "none",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "horario_h8",
+								"text": "Viernes",
+								"verticalAlign": "top",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "horario_sabado",
+							"dataSource": "atSTK_Day6",
+							"width": 160,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"styledText": true,
+							"contextMenu": "none",
+							"textAlign": "center",
+							"verticalAlign": "middle",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "horario_H9",
+								"text": "Sábado",
+								"verticalAlign": "top",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Barras 2D10",
+							"dataSource": "alSTK_Day1",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"verticalAlign": "top",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado13",
+								"text": "L",
+								"verticalAlign": "top",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Barras 2D11",
+							"dataSource": "alSTK_Day2",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"verticalAlign": "top",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado14",
+								"text": "M",
+								"verticalAlign": "top",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Barras 2D12",
+							"dataSource": "alSTK_Day3",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"verticalAlign": "top",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado15",
+								"text": "M",
+								"verticalAlign": "top",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Barras 2D13",
+							"dataSource": "alSTK_Day4",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"verticalAlign": "top",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado16",
+								"text": "J",
+								"verticalAlign": "top",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Barras 2D14",
+							"dataSource": "alSTK_Day5",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"verticalAlign": "top",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado17",
+								"text": "V",
+								"verticalAlign": "top",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Barras 2D15",
+							"dataSource": "alSTK_Day6",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"verticalAlign": "top",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado18",
+								"text": "S",
+								"verticalAlign": "top",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						},
+						{
+							"name": "Barras 2D16",
+							"dataSource": "alSTK_RefTipoHora",
+							"width": 79,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"visibility": "hidden",
+							"verticalAlign": "top",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 12,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado19",
+								"text": "tipoHora",
+								"verticalAlign": "top",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 515,
+					"left": 1130,
+					"width": 92,
+					"height": 25,
+					"dataSource": "Botón1",
+					"shortcutKey": "*",
+					"shortcutAccel": true,
+					"text": "redibujarHorario",
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bEliminar Sala_o_Asignacion": {
+					"type": "button",
+					"top": 597,
+					"left": 1129,
+					"width": 295,
+					"height": 25,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bEliminar",
+					"shortcutKey": "[Del]",
+					"text": "Eliminar (sala o asignacion)",
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"focusable": false,
+					"method": "ObjectMethods/bEliminar Sala_o_Asignacion.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 632,
+					"left": 1130,
+					"width": 110,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bclose",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cerrar",
+					"fontFamily": "Segoe UI",
+					"fontSize": 12,
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bTaskWheelHorario": {
+					"type": "button",
+					"top": 5,
+					"left": 1077,
+					"width": 32,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "bTaskWheelHorario",
+					"styleSheet": "XS_FormObjects",
+					"icon": "/RESOURCES/Buttons/action-2.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"method": "ObjectMethods/bTaskWheelHorario.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"ciclo1": {
+					"type": "text",
+					"top": 7,
+					"left": 19,
+					"width": 61,
+					"height": 13,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Semana:"
+				},
+				"rectanguloSeleccion": {
+					"type": "rectangle",
+					"top": 505,
+					"left": 1440,
+					"width": 72,
+					"height": 25,
+					"sizingY": "move",
+					"fill": "transparent",
+					"stroke": "#000E60",
+					"strokeWidth": 0.1
+				},
+				"txt_bloquesvigentes": {
+					"type": "text",
+					"top": 656,
+					"left": 767,
+					"width": 337,
+					"height": 17,
+					"textAlign": "right",
+					"fontWeight": "bold",
+					"fontStyle": "italic",
+					"text": "Mostrando solo bloques vigentes"
+				}
+			}
+		}
+	]
+}

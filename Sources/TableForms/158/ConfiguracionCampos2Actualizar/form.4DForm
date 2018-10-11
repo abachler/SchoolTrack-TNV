@@ -1,0 +1,223 @@
+﻿{
+	"rightMargin": 15,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"xALP_AreaTransferencia": {
+					"type": "plugin",
+					"top": 182,
+					"left": 35,
+					"width": 860,
+					"height": 400,
+					"dataSource": "xALP_AreaTransferencia",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "sunken",
+					"method": "ObjectMethods/xALP_AreaTransferencia.4dm",
+					"events": [
+						"onClick",
+						"onPluginArea"
+					]
+				},
+				"btn_Agregar": {
+					"type": "button",
+					"top": 151,
+					"left": 657,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btn_Agregar",
+					"text": "Agregar...",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/btn_Agregar.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_Eliminar": {
+					"type": "button",
+					"top": 151,
+					"left": 755,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btn_Eliminar",
+					"text": "Eliminar...",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/btn_Eliminar.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vtCM_Aplicacion": {
+					"type": "input",
+					"top": 13,
+					"left": 166,
+					"width": 168,
+					"height": 14,
+					"dataSource": "vtCM_Aplicacion",
+					"styleSheet": "XS_DialogObjects",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 11,
+					"left": 35,
+					"width": 125,
+					"height": 14,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Aplicación a agregar"
+				},
+				"btn_popUp": {
+					"type": "button",
+					"top": 11,
+					"left": 339,
+					"width": 20,
+					"height": 17,
+					"dataSource": "btn_popUp",
+					"text": ">",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/btn_popUp.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 594,
+					"left": 579,
+					"width": 61,
+					"height": 23,
+					"dataSource": "btCancelar",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 594,
+					"left": 639,
+					"width": 61,
+					"height": 23,
+					"dataSource": "btAceptar",
+					"text": "Guardar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"xALP_AreaTransferenciaTablas": {
+					"type": "plugin",
+					"top": 42,
+					"left": 35,
+					"width": 600,
+					"height": 120,
+					"dataSource": "xALP_AreaTransferenciaTablas",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "sunken",
+					"events": [
+						"onClick",
+						"onPluginArea"
+					]
+				},
+				"btn_Agregar1": {
+					"type": "button",
+					"top": 42,
+					"left": 647,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btn_Agregar",
+					"text": "Agregar...",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/btn_Agregar1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_Agregar2": {
+					"type": "button",
+					"top": 13,
+					"left": 365,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btn_Agregar",
+					"text": "Agregar...",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/btn_Agregar2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 594,
+					"left": 39,
+					"width": 101,
+					"height": 23,
+					"dataSource": "btnCargarArchivo",
+					"shortcutKey": "[Esc]",
+					"text": "CargarArchivo",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón4": {
+					"type": "button",
+					"top": 594,
+					"left": 159,
+					"width": 101,
+					"height": 23,
+					"dataSource": "btnGuardarLibreria",
+					"text": "Guardar Archivo",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón4.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

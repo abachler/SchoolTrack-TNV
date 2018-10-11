@@ -1,0 +1,360 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Botón2",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"ItemsMatricula": {
+					"type": "plugin",
+					"top": 51,
+					"left": 22,
+					"width": 309,
+					"height": 195,
+					"dataSource": "xAL_ACT_cfg_ItemsMatricula",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/ItemsMatricula.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ItemsMatricula1": {
+					"type": "pictureButton",
+					"top": 22,
+					"left": 315,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bInsertLineMat",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/ItemsMatricula1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"ItemsMatricula2": {
+					"type": "pictureButton",
+					"top": 22,
+					"left": 295,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bDeleteLineMat",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/ItemsMatricula2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"ItemsMatricula3": {
+					"type": "checkbox",
+					"top": 253,
+					"left": 22,
+					"width": 288,
+					"height": 20,
+					"dataSource": "cs_MatriculadoAuto",
+					"text": "Marcar campo Matriculado automáticamente al:",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/ItemsMatricula3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ItemsMatricula4": {
+					"type": "text",
+					"top": 257,
+					"left": 523,
+					"width": 287,
+					"height": 17,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Marcar campo Matriculado automáticamente al:"
+				},
+				"matriculaAuto1": {
+					"type": "checkbox",
+					"top": 315,
+					"left": 40,
+					"width": 300,
+					"height": 15,
+					"dataSource": "btn_pagoParcial",
+					"text": "Pagar parcialmente alguno de los ítems de la lista",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/matriculaAuto1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"matriculaAuto2": {
+					"type": "checkbox",
+					"top": 335,
+					"left": 40,
+					"width": 300,
+					"height": 15,
+					"dataSource": "btn_pagoCompleto",
+					"text": "Pagar completamente alguno de los ítems de la lista",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/matriculaAuto2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"matriculaAuto0": {
+					"type": "checkbox",
+					"top": 295,
+					"left": 40,
+					"width": 300,
+					"height": 15,
+					"dataSource": "btn_Emitido",
+					"text": "Emitir alguno de los ítems de la lista",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/matriculaAuto0.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 22,
+					"left": 22,
+					"width": 246,
+					"height": 23,
+					"styleSheet": "XS_DialogsTitles",
+					"text": "Ítems Matrícula"
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 493,
+					"left": 163,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btn_cancelar",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 493,
+					"left": 251,
+					"width": 80,
+					"height": 20,
+					"dataSource": "btn_aceptar",
+					"action": "accept",
+					"text": "Aceptar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"matriculaAuto3": {
+					"type": "checkbox",
+					"top": 275,
+					"left": 40,
+					"width": 300,
+					"height": 15,
+					"dataSource": "btn_Proyectado",
+					"text": "Proyectar alguno de los ítems de la lista",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/matriculaAuto3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ItemsMatricula5": {
+					"type": "text",
+					"top": 357,
+					"left": 43,
+					"width": 167,
+					"height": 17,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Considerar los cargos a partir de:"
+				},
+				"matriculaAuto4": {
+					"type": "input",
+					"top": 360,
+					"left": 210,
+					"width": 92,
+					"height": 12,
+					"dataSource": "vtACTcfg_Fecha",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": {
+						"$ref": "/SOURCES/filters.json#/Fecha"
+					},
+					"method": "ObjectMethods/matriculaAuto4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"matriculaAuto5": {
+					"type": "pictureButton",
+					"top": 358,
+					"left": 305,
+					"width": 17,
+					"height": 16,
+					"dataSource": "bCalendar1",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/matriculaAuto5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"ItemsMatricula6": {
+					"type": "text",
+					"top": 377,
+					"left": 83,
+					"width": 207,
+					"height": 17,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"fontStyle": "italic",
+					"text": "(recuerde cambiar esta fecha anualmente)"
+				},
+				"matriculaAuto6": {
+					"type": "button",
+					"top": 493,
+					"left": 23,
+					"width": 130,
+					"height": 20,
+					"dataSource": "btn_aplicar",
+					"shortcutKey": "[Esc]",
+					"text": "Aplicar configuración",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/matriculaAuto6.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"matriculaAuto7": {
+					"type": "checkbox",
+					"top": 415,
+					"left": 20,
+					"width": 320,
+					"height": 35,
+					"dataSource": "btn_noEmiteMatriculado",
+					"text": "No permitir la emisión de cargos del listado \" Ítems Matrícula\" si el alumno ya está matriculado",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/matriculaAuto7.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea1": {
+					"type": "line",
+					"top": 412,
+					"left": 5,
+					"width": 335,
+					"stroke": "#AAAAAA"
+				},
+				"matriculaAuto8": {
+					"type": "checkbox",
+					"top": 448,
+					"left": 20,
+					"width": 320,
+					"height": 35,
+					"dataSource": "btn_noEmiteAluXEgresar",
+					"text": "No permitir la emisión de cargos del listado \"Ítems Matrícula\" si el alumno está en el último nivel regular de SchoolTrack",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/matriculaAuto8.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"matriculaAuto9": {
+					"type": "checkbox",
+					"top": 390,
+					"left": 20,
+					"width": 320,
+					"height": 15,
+					"dataSource": "btn_asignaFechaMatriculado",
+					"text": "Asignar fecha de matrícula automáticamente",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/matriculaAuto9.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

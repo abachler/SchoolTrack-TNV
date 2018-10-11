@@ -1,0 +1,179 @@
+﻿{
+	"formSizeAnchor": "Rectángulo",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectángulo": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 1,
+					"width": 355,
+					"height": 145,
+					"stroke": "#FFFFFF"
+				},
+				"usaEvaluacionEspecial": {
+					"type": "checkbox",
+					"top": 21,
+					"left": 11,
+					"width": 208,
+					"height": 16,
+					"text": "Usa evaluaciones especiales",
+					"styleSheet": "Plain - 12",
+					"focusable": false,
+					"method": "ObjectMethods/usaEvaluacionEspecial.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"mostrarPTC": {
+					"type": "checkbox",
+					"top": 50,
+					"left": 11,
+					"width": 333,
+					"height": 16,
+					"text": "Mostrar promedio de todas las calificaciones parciales",
+					"styleSheet": "Plain - 12",
+					"focusable": false,
+					"method": "ObjectMethods/mostrarPTC.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"NoMostrarEnSTWA": {
+					"type": "checkbox",
+					"top": 78,
+					"left": 11,
+					"width": 289,
+					"height": 16,
+					"text": "No visible en SchoolTrack WebAccess",
+					"styleSheet": "Plain - 12",
+					"focusable": false,
+					"method": "ObjectMethods/NoMostrarEnSTWA.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Input_impHorarioCode": {
+					"type": "input",
+					"top": 107,
+					"left": 239,
+					"width": 49,
+					"height": 15,
+					"styleSheet": "Plain - 12",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Input_impHorarioCode.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Botón": {
+					"type": "button",
+					"top": 291,
+					"left": 9,
+					"width": 41,
+					"height": 24,
+					"dataSource": "Botón",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "ESC",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 291,
+					"left": 70,
+					"width": 41,
+					"height": 24,
+					"dataSource": "Botón",
+					"action": "cancel",
+					"shortcutKey": "[Return]",
+					"text": "CR",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 291,
+					"left": 131,
+					"width": 41,
+					"height": 24,
+					"dataSource": "Botón",
+					"action": "cancel",
+					"shortcutKey": "[Enter]",
+					"text": "Enter",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"lbl_impHorarioCode": {
+					"type": "text",
+					"top": 107,
+					"left": 32,
+					"width": 203,
+					"height": 15,
+					"styleSheet": "Plain - 12",
+					"text": "Código de Importación de Horario"
+				}
+			}
+		}
+	]
+}

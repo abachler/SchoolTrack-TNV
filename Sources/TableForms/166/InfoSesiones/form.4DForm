@@ -1,0 +1,773 @@
+﻿{
+	"formSizeAnchor": "vt_alumnosAusentes",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"vt_EtiquetaSesiones": {
+					"type": "input",
+					"top": 105,
+					"left": 30,
+					"width": 370,
+					"height": 14,
+					"dataSource": "vt_EtiquetaSesiones",
+					"fill": "transparent",
+					"styleSheet": "XS_Lucida11",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo": {
+					"type": "input",
+					"top": 44,
+					"left": 108,
+					"width": 393,
+					"height": 14,
+					"sizingX": "grow",
+					"dataSource": "[Asignaturas:18]denominacion_interna:16",
+					"styleSheet": "XS_Lucida11",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Campo1": {
+					"type": "input",
+					"top": 68,
+					"left": 108,
+					"width": 62,
+					"height": 14,
+					"sizingX": "move",
+					"dataSource": "[Asignaturas:18]Curso:5",
+					"styleSheet": "XS_Lucida11",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Campo2": {
+					"type": "input",
+					"top": 69,
+					"left": 248,
+					"width": 253,
+					"height": 14,
+					"sizingX": "grow",
+					"dataSource": "[Asignaturas:18]profesor_nombre:13",
+					"styleSheet": "XS_Lucida11",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"lb_Sesiones": {
+					"type": "listbox",
+					"top": 130,
+					"left": 19,
+					"width": 373,
+					"height": 176,
+					"sizingX": "grow",
+					"dataSource": "lb_sesiones",
+					"hideFocusRing": true,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"fill": "#FFFFFF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"method": "ObjectMethods/lb_Sesiones.4dm",
+					"events": [
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "ad_FechaSesiones",
+							"dataSource": "ad_FechaSesiones",
+							"width": 260,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"dateFormat": "systemLong",
+							"fill": "#FFFFFF",
+							"textAlign": "left",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título1",
+								"text": "Fecha de la Sesion",
+								"dataSource": "Título1",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "al_Inasistencias",
+							"dataSource": "al_Inasistencias",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fill": "#FFFFFF",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título2",
+								"text": "Inasistencias",
+								"dataSource": "Título2",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "al_recNumSesiones",
+							"dataSource": "al_RecNUmSesiones",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"visibility": "hidden",
+							"fill": "#FFFFFF",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título3",
+								"text": "Título3",
+								"dataSource": "Título3",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"vt_DiaYHora": {
+					"type": "input",
+					"top": 19,
+					"left": 108,
+					"width": 394,
+					"height": 14,
+					"sizingX": "grow",
+					"dataSource": "vt_DiaYHora",
+					"styleSheet": "XS_Lucida11",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"TipoInfo_Actividades": {
+					"type": "button",
+					"top": 358,
+					"left": 28,
+					"width": 104,
+					"height": 14,
+					"dataSource": "b1_Actividades",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"text": "Actividades",
+					"icon": "/RESOURCES/",
+					"textPlacement": "center",
+					"style": "toolbar",
+					"method": "ObjectMethods/TipoInfo_Actividades.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"TipoInfo_Contenidos": {
+					"type": "button",
+					"top": 358,
+					"left": 137,
+					"width": 104,
+					"height": 14,
+					"dataSource": "b2_Contenidos",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"text": "Contenidos",
+					"icon": "/RESOURCES/",
+					"textPlacement": "center",
+					"style": "toolbar",
+					"method": "ObjectMethods/TipoInfo_Contenidos.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"TipoInfo_Observaciones": {
+					"type": "button",
+					"top": 358,
+					"left": 247,
+					"width": 104,
+					"height": 14,
+					"dataSource": "b3_Observaciones",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"text": "Observaciones",
+					"icon": "/RESOURCES/",
+					"textPlacement": "center",
+					"style": "toolbar",
+					"method": "ObjectMethods/TipoInfo_Observaciones.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto": {
+					"type": "text",
+					"top": 19,
+					"left": 27,
+					"width": 73,
+					"height": 14,
+					"textAlign": "right",
+					"styleSheet": "XS_Lucida11",
+					"text": "Horario"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 44,
+					"left": 27,
+					"width": 73,
+					"height": 14,
+					"textAlign": "right",
+					"styleSheet": "XS_Lucida11",
+					"text": "Asignatura"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 68,
+					"left": 55,
+					"width": 45,
+					"height": 14,
+					"sizingX": "move",
+					"textAlign": "right",
+					"styleSheet": "XS_Lucida11",
+					"text": "Curso"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 69,
+					"left": 187,
+					"width": 53,
+					"height": 14,
+					"textAlign": "right",
+					"styleSheet": "XS_Lucida11",
+					"text": "Profesor"
+				},
+				"Línea": {
+					"type": "line",
+					"top": 319,
+					"left": 0,
+					"width": 837,
+					"stroke": "#AAAAAA"
+				},
+				"vt_info": {
+					"type": "input",
+					"top": 382,
+					"left": 19,
+					"width": 374,
+					"height": 143,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vt_info",
+					"styleSheet": "XS_Lucida11",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 19,
+					"left": 522,
+					"width": 45,
+					"height": 14,
+					"sizingX": "move",
+					"textAlign": "right",
+					"styleSheet": "XS_Lucida11",
+					"text": "Desde"
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 44,
+					"left": 522,
+					"width": 45,
+					"height": 14,
+					"sizingX": "move",
+					"textAlign": "right",
+					"styleSheet": "XS_Lucida11",
+					"text": "Hasta"
+				},
+				"SesionesDesde": {
+					"type": "input",
+					"top": 19,
+					"left": 574,
+					"width": 221,
+					"height": 14,
+					"sizingX": "move",
+					"dataSource": "[TMT_Horario:166]SesionesDesde:12",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_Lucida11",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dateFormat": "systemLong",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/SesionesDesde.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"SesionesHasta": {
+					"type": "input",
+					"top": 44,
+					"left": 574,
+					"width": 222,
+					"height": 14,
+					"sizingX": "move",
+					"dataSource": "[TMT_Horario:166]SesionesHasta:13",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_Lucida11",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dateFormat": "systemLong",
+					"method": "ObjectMethods/SesionesHasta.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Línea1": {
+					"type": "line",
+					"top": 98,
+					"left": 0,
+					"width": 841,
+					"stroke": "#AAAAAA"
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 359,
+					"left": 412,
+					"width": 113,
+					"height": 14,
+					"sizingX": "move",
+					"styleSheet": "XS_Lucida11",
+					"text": "Alumnos Ausentes"
+				},
+				"vt_alumnosAusentes": {
+					"type": "input",
+					"top": 382,
+					"left": 412,
+					"width": 385,
+					"height": 143,
+					"sizingX": "move",
+					"sizingY": "grow",
+					"dataSource": "vt_alumnosAusentes",
+					"styleSheet": "XS_Lucida11",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"vt_FechaSesion": {
+					"type": "input",
+					"top": 327,
+					"left": 27,
+					"width": 503,
+					"height": 14,
+					"dataSource": "vt_FechaSesion",
+					"fill": "transparent",
+					"styleSheet": "XS_Lucida11",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto9": {
+					"type": "text",
+					"top": 68,
+					"left": 521,
+					"width": 45,
+					"height": 14,
+					"sizingX": "move",
+					"textAlign": "right",
+					"styleSheet": "XS_Lucida11",
+					"text": "Sala"
+				},
+				"Campo3": {
+					"type": "input",
+					"top": 69,
+					"left": 574,
+					"width": 222,
+					"height": 14,
+					"sizingX": "move",
+					"dataSource": "[TMT_Horario:166]Sala:8",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_Lucida11",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none"
+				},
+				"vt_EtiquetaAlumnos": {
+					"type": "input",
+					"top": 105,
+					"left": 412,
+					"width": 250,
+					"height": 14,
+					"dataSource": "vt_EtiquetaAlumnos",
+					"fill": "transparent",
+					"styleSheet": "XS_Lucida11",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"bCerrar1": {
+					"type": "button",
+					"top": 652,
+					"left": 94,
+					"width": 113,
+					"height": 27,
+					"dataSource": "bCerrar",
+					"action": "cancel",
+					"shortcutKey": "s",
+					"shortcutAccel": true,
+					"text": "Cerrar",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bCerrar": {
+					"type": "button",
+					"top": 621,
+					"left": 94,
+					"width": 113,
+					"height": 27,
+					"dataSource": "bCerrar",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cerrar",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bCerrar2": {
+					"type": "button",
+					"top": 590,
+					"left": 94,
+					"width": 113,
+					"height": 27,
+					"dataSource": "bCerrar",
+					"action": "cancel",
+					"shortcutKey": "w",
+					"shortcutAccel": true,
+					"text": "Cerrar",
+					"fontFamily": "Tahoma",
+					"fontSize": 12,
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"lb_alumnos": {
+					"type": "listbox",
+					"top": 130,
+					"left": 412,
+					"width": 386,
+					"height": 176,
+					"sizingX": "move",
+					"dataSource": "lb_Alumnos",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "none",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"method": "ObjectMethods/lb_alumnos.4dm",
+					"events": [
+						"onAfterSort"
+					],
+					"columns": [
+						{
+							"name": "atTMT_alumnos_nombres",
+							"dataSource": "atTMT_alumnos_nombres",
+							"width": 152,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "vl_ColumnaAlumnos",
+								"text": "Alumno",
+								"dataSource": "vl_ColumnaAlumnos",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "atTMT_alumnos_curso",
+							"dataSource": "atTMT_alumnos_curso",
+							"width": 50,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "vl_ColumnaCurso",
+								"text": "Curso",
+								"dataSource": "vl_ColumnaCurso",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "al_InasistenciasAlumno",
+							"dataSource": "al_InasistenciasAlumno",
+							"width": 85,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "vl_ColumnaAusencias",
+								"text": "Aus. Totales",
+								"dataSource": "vl_ColumnaAusencias",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "al_InasistenciasAsignacion",
+							"dataSource": "al_InasistenciasAsignacion",
+							"width": 85,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título4",
+								"text": "Aus. Sesiones",
+								"dataSource": "Titulo4",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "at_ApellidosNombres",
+							"dataSource": "at_ApellidosNombres",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "vl_ColumnaOrden",
+								"text": "Título11",
+								"dataSource": "vl_ColumnaOrden",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "al_TMT_IdAlumno",
+							"dataSource": "al_TMT_IdAlumno",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título5",
+								"text": "Título5",
+								"dataSource": "Título5",
+								"stroke": "#000000",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 11
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+}

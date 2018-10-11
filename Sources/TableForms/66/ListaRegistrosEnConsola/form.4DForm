@@ -1,0 +1,133 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Rectángulo",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 53,
+	"markerBreak": 53,
+	"markerFooter": 53,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDisplayDetail",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectángulo": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 602,
+					"height": 54,
+					"stroke": "#FFFFFF"
+				},
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 604,
+					"height": 52,
+					"fill": "#DFFFFF",
+					"stroke": "#DFFFFF"
+				},
+				"Línea": {
+					"type": "line",
+					"top": 0,
+					"left": 412,
+					"height": 54,
+					"stroke": "#AAAAAA"
+				},
+				"Línea1": {
+					"type": "line",
+					"top": 52,
+					"left": 1,
+					"width": 599
+				},
+				"l_recNumPrestamo": {
+					"type": "text",
+					"top": 4,
+					"left": 630,
+					"width": 235,
+					"height": 15,
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"text": "l_recNumRegistro (NO BORRAR)"
+				},
+				"l_selectedRecord": {
+					"type": "text",
+					"top": 27,
+					"left": 630,
+					"width": 193,
+					"height": 15,
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"text": "l_selectedRecord (NO BORRAR)"
+				},
+				"numeroCopia": {
+					"type": "text",
+					"top": 5,
+					"left": 189,
+					"width": 214,
+					"height": 14,
+					"styleSheet": "Plain - 12",
+					"text": "numeroCopia"
+				},
+				"lugar": {
+					"type": "text",
+					"top": 20,
+					"left": 189,
+					"width": 214,
+					"height": 28,
+					"styleSheet": "Plain - 12",
+					"text": "lugar"
+				},
+				"notaAlerta": {
+					"type": "text",
+					"top": 2,
+					"left": 415,
+					"width": 180,
+					"height": 45,
+					"styleSheet": "Ligth - 12",
+					"text": "linea1"
+				},
+				"imagen": {
+					"type": "input",
+					"top": 0,
+					"left": 1,
+					"width": 182,
+					"height": 50,
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"hideFocusRing": true,
+					"pictureFormat": "proportionalCenter",
+					"dragging": "custom",
+					"method": "ObjectMethods/imagen.4dm",
+					"events": [
+						"onDisplayDetail"
+					]
+				},
+				"Botón invisible": {
+					"type": "button",
+					"top": 1,
+					"left": 1,
+					"width": 600,
+					"height": 50,
+					"dataSource": "Botón invisible",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

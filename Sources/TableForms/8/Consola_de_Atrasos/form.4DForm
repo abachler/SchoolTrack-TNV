@@ -1,0 +1,359 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "bModReport",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texto2": {
+					"type": "text",
+					"top": 12,
+					"left": 11,
+					"width": 185,
+					"height": 22,
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Registro de atrasos"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 47,
+					"left": 69,
+					"width": 120,
+					"height": 20,
+					"dataSource": "vFecha",
+					"dataSourceTypeHint": "date",
+					"fill": "transparent",
+					"stroke": "#000099",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 47,
+					"left": 215,
+					"width": 120,
+					"height": 20,
+					"dataSource": "vHora",
+					"dataSourceTypeHint": "time",
+					"fill": "transparent",
+					"stroke": "#000099",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"timeFormat": "hh_mm_ss",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Rut": {
+					"type": "input",
+					"top": 82,
+					"left": 104,
+					"width": 195,
+					"height": 13,
+					"dataSource": "vRut",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Rut.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"Variable8": {
+					"type": "plugin",
+					"top": 115,
+					"left": 11,
+					"width": 458,
+					"height": 215,
+					"dataSource": "xALP_Cond_Atrasos",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 82,
+					"left": 11,
+					"width": 85,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Código barra :"
+				},
+				"Campo81": {
+					"type": "input",
+					"top": 12,
+					"left": 379,
+					"width": 90,
+					"height": 85,
+					"dataSource": "[Alumnos:2]Fotografía:78",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onGettingFocus",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Impresion": {
+					"type": "checkbox",
+					"top": 340,
+					"left": 139,
+					"width": 98,
+					"height": 14,
+					"sizingX": "move",
+					"dataSource": "cbImprimirReport",
+					"text": "Imprimir Ticket",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Impresion.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 341,
+					"left": 252,
+					"width": 69,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"fontStyle": "italic",
+					"text": "Usando modelo"
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 341,
+					"left": 328,
+					"width": 125,
+					"height": 8,
+					"dataSource": "vtSTR_ReportModel",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"bModReport1": {
+					"type": "button",
+					"top": 340,
+					"left": 327,
+					"width": 142,
+					"height": 13,
+					"dataSource": "bModReport",
+					"display": false,
+					"method": "ObjectMethods/bModReport1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bModReport": {
+					"type": "picture",
+					"top": 338,
+					"left": 451,
+					"width": 19,
+					"height": 16
+				},
+				"registrar1": {
+					"type": "button",
+					"top": 411,
+					"left": 339,
+					"width": 109,
+					"height": 19,
+					"shortcutKey": "[Return]",
+					"text": "return",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"focusable": false,
+					"method": "ObjectMethods/registrar1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cerrar": {
+					"type": "button",
+					"top": 411,
+					"left": 11,
+					"width": 150,
+					"height": 19,
+					"shortcutKey": "[Esc]",
+					"text": "Cerrar",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"focusable": false,
+					"method": "ObjectMethods/cerrar.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"registrar": {
+					"type": "button",
+					"top": 450,
+					"left": 339,
+					"width": 109,
+					"height": 19,
+					"shortcutKey": "[Enter]",
+					"text": "enter",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"focusable": false,
+					"method": "ObjectMethods/registrar.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"registrar2": {
+					"type": "button",
+					"top": 489,
+					"left": 339,
+					"width": 109,
+					"height": 19,
+					"shortcutKey": "[Tab]",
+					"text": "tab",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"focusable": false,
+					"method": "ObjectMethods/registrar2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"bModReport2": {
+					"type": "picture",
+					"top": 80,
+					"left": 298,
+					"width": 19,
+					"height": 17
+				},
+				"bSearchOpt": {
+					"type": "button",
+					"top": 80,
+					"left": 298,
+					"width": 19,
+					"height": 17,
+					"dataSource": "bSearchOpt",
+					"display": false,
+					"method": "ObjectMethods/bSearchOpt.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"OptSearchSel": {
+					"type": "text",
+					"top": 97,
+					"left": 11,
+					"width": 185,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "opcion seleccionada"
+				},
+				"b_filtraretirados": {
+					"type": "checkbox",
+					"top": 341,
+					"left": 19,
+					"width": 121,
+					"height": 14,
+					"sizingX": "move",
+					"dataSource": "b_filtraretirados",
+					"text": "Filtrar Alumnos retirados",
+					"styleSheet": "XS_FormObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

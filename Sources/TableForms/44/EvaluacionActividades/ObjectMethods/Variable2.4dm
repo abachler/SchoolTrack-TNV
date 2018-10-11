@@ -1,0 +1,1 @@
+KRL_ReloadAsReadOnly (->[xxSTR_Constants:1])

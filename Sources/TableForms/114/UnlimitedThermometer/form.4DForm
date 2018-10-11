@@ -1,0 +1,81 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Rectangle1",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onMenuSelect",
+		"onCloseBox",
+		"onOpenDetail",
+		"onCloseDetail"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 537,
+					"height": 65,
+					"stroke": "#FFFFFF"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 8,
+					"left": 166,
+					"width": 352,
+					"height": 28,
+					"dataSource": "vThermoText",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"uthermometer": {
+					"type": "pictureButton",
+					"top": 40,
+					"left": 164,
+					"width": 360,
+					"height": 12,
+					"dataSource": "uthermometer",
+					"columnCount": 1,
+					"rowCount": 5,
+					"frameDelay": 0.25
+				},
+				"Picture23": {
+					"type": "picture",
+					"top": -4,
+					"left": 3,
+					"width": 125,
+					"height": 75,
+					"pictureFormat": "tiled"
+				}
+			}
+		}
+	]
+}

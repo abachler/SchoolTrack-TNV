@@ -1,0 +1,114 @@
+﻿{
+	"formSizeAnchor": "vtMSG_Detalle",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pages": [
+		{
+			"objects": {
+				"Rectángulo": {
+					"type": "rectangle",
+					"top": -3,
+					"left": -3,
+					"width": 483,
+					"height": 335,
+					"fill": "automatic"
+				}
+			}
+		},
+		{
+			"objects": {
+				"vtMSG_Detalle": {
+					"type": "input",
+					"top": 4,
+					"left": 6,
+					"width": 471,
+					"height": 325,
+					"dataSource": "vtMSG_Detalle",
+					"fill": "transparent",
+					"styleSheet": "XS_Lucida11",
+					"borderStyle": "none",
+					"enterable": false,
+					"hideFocusRing": true,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"bCopiar": {
+					"type": "button",
+					"top": 350,
+					"left": 30,
+					"width": 63,
+					"height": 22,
+					"dataSource": "bCopiar",
+					"shortcutKey": "c",
+					"shortcutAccel": true,
+					"text": "Copiar",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"method": "ObjectMethods/bCopiar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bCerrar": {
+					"type": "button",
+					"top": 359,
+					"left": 137,
+					"width": 62,
+					"height": 27,
+					"dataSource": "bCerrar",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cerrar",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

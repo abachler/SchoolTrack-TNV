@@ -1,0 +1,2 @@
+BBLitm_ActualizaFichasCatalogo 
+BBLmarc_UpdateMARCField (Self:C308)

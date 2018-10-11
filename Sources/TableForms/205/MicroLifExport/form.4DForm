@@ -1,0 +1,263 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Botón2",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón1": {
+					"type": "button",
+					"top": 328,
+					"left": 243,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 271,
+					"left": 59,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Área de grupo1": {
+					"type": "groupBox",
+					"top": 51,
+					"left": 13,
+					"width": 475,
+					"height": 91,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Selección de Registros"
+				},
+				"Botón de opción1": {
+					"type": "radio",
+					"top": 77,
+					"left": 26,
+					"width": 152,
+					"height": 14,
+					"dataSource": "fTodos",
+					"text": "Todos",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón de opción1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 78,
+					"left": 193,
+					"width": 274,
+					"height": 13,
+					"dataSource": "vt_RST",
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"fontStyle": "italic",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Botón de opción2": {
+					"type": "radio",
+					"top": 97,
+					"left": 26,
+					"width": 152,
+					"height": 14,
+					"dataSource": "fListado",
+					"text": "Listados en el Explorador",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón de opción2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 98,
+					"left": 193,
+					"width": 274,
+					"height": 13,
+					"dataSource": "vt_RSE",
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"fontStyle": "italic",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 118,
+					"left": 193,
+					"width": 274,
+					"height": 13,
+					"dataSource": "vt_RSB",
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"fontStyle": "italic",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Área de grupo2": {
+					"type": "groupBox",
+					"top": 147,
+					"left": 13,
+					"width": 474,
+					"height": 50,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Formato de Salida"
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 217,
+					"left": 407,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bOK",
+					"action": "accept",
+					"text": "Aceptar",
+					"styleSheet": "XS_DialogObjects",
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 217,
+					"left": 13,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Botón1",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón de opción3": {
+					"type": "radio",
+					"top": 173,
+					"left": 26,
+					"width": 152,
+					"height": 14,
+					"dataSource": "rMac",
+					"text": "Mac",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón de opción4": {
+					"type": "radio",
+					"top": 173,
+					"left": 187,
+					"width": 152,
+					"height": 14,
+					"dataSource": "rWin",
+					"text": "Windows",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 326,
+					"height": 22,
+					"styleSheet": "XS_DialogsTitles",
+					"text": "Exportación MicroLif"
+				},
+				"Botón de opción5": {
+					"type": "radio",
+					"top": 117,
+					"left": 26,
+					"width": 152,
+					"height": 14,
+					"dataSource": "fBuscar",
+					"text": "Buscar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón de opción5.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

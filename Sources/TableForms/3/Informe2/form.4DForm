@@ -1,0 +1,171 @@
+﻿{
+	"windowTitle": ":21001,93",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerBody": 248,
+	"markerBreak": 248,
+	"markerFooter": 248,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onActivate",
+		"onDeactivate",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 31,
+					"left": 2,
+					"width": 573,
+					"height": 16,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"styleSheet": "XS_ReportSubtitle_14",
+					"text": "INFORME DE JEFATURA DE CURSO <Curso>"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 98,
+					"left": 9,
+					"width": 205,
+					"height": 10,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_Report_9",
+					"fontWeight": "bold",
+					"text": ":21001,107"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 148,
+					"left": 8,
+					"width": 245,
+					"height": 10,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_Report_9",
+					"fontWeight": "bold",
+					"text": ":21001,108"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 77,
+					"left": 5,
+					"width": 233,
+					"height": 10,
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_Report_9",
+					"fontWeight": "bold",
+					"text": ":21001,109"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 3,
+					"left": 0,
+					"width": 576,
+					"height": 10,
+					"dataSource": "<>gCustom",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"styleSheet": "XS_Report_9",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 47,
+					"left": 2,
+					"width": 574,
+					"height": 10,
+					"dataSource": "sPeriod",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"textAlign": "center",
+					"styleSheet": "XS_Report_9",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "plugin",
+					"top": 113,
+					"left": 14,
+					"width": 550,
+					"height": 29,
+					"dataSource": "xPL_Dest",
+					"pluginAreaKind": "%PrntListPro",
+					"borderStyle": "none",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Variable4": {
+					"type": "plugin",
+					"top": 163,
+					"left": 14,
+					"width": 550,
+					"height": 52,
+					"dataSource": "xPL_Insuf",
+					"pluginAreaKind": "%PrntListPro",
+					"borderStyle": "none",
+					"events": [
+						"onLoad"
+					]
+				}
+			}
+		}
+	]
+}

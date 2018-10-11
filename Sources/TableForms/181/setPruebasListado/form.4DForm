@@ -1,0 +1,380 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "btn_cerrar",
+	"rightMargin": 15,
+	"bottomMargin": 15,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Área de grupo": {
+					"type": "groupBox",
+					"top": 557,
+					"left": 211,
+					"width": 261,
+					"height": 58,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Duplicar casos de prueba"
+				},
+				"lb_listadoSet": {
+					"type": "listbox",
+					"top": 33,
+					"left": 13,
+					"width": 580,
+					"height": 517,
+					"sizingY": "grow",
+					"dataSource": "lb_listadoSet",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"method": "ObjectMethods/lb_listadoSet.4dm",
+					"events": [
+						"onDoubleClick"
+					],
+					"columns": [
+						{
+							"name": "atACT_NumAtencion",
+							"dataSource": "atACT_NumAtencion",
+							"width": 110,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título1",
+								"text": "Número",
+								"dataSource": "Título1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "atACT_Descripcion",
+							"dataSource": "atACT_Descripcion",
+							"width": 330,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título2",
+								"text": "Descripción",
+								"dataSource": "Título2",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "atACT_Caso",
+							"dataSource": "atACT_Caso",
+							"width": 110,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título4",
+								"text": "Caso",
+								"dataSource": "Título4",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "atACT_Text",
+							"dataSource": "atACT_Text",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título3",
+								"text": "Título3",
+								"dataSource": "Título3",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"Imagen6": {
+					"type": "picture",
+					"top": 8,
+					"left": 577,
+					"width": 15,
+					"height": 15,
+					"pictureFormat": "scaled"
+				},
+				"Imagen7": {
+					"type": "picture",
+					"top": 8,
+					"left": 557,
+					"width": 15,
+					"height": 15,
+					"pictureFormat": "scaled"
+				},
+				"bAddEje": {
+					"type": "button",
+					"top": 6,
+					"left": 575,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bAddEje",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/bAddEje.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bDeleteEje": {
+					"type": "button",
+					"top": 6,
+					"left": 555,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bDeleteEje",
+					"styleSheet": "Plain - 12",
+					"method": "ObjectMethods/bDeleteEje.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn_cerrar": {
+					"type": "button",
+					"top": 584,
+					"left": 513,
+					"width": 80,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "btn_cerrar",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cerrar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn_generarArchivo": {
+					"type": "button",
+					"top": 557,
+					"left": 512,
+					"width": 80,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "btn_generarArchivo",
+					"text": "Enviar DTE",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/btn_generarArchivo.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn_eliminaBoletas": {
+					"type": "button",
+					"top": 557,
+					"left": 13,
+					"width": 120,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "btn_eliminaBoletas",
+					"text": "Eliminar boletas",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/btn_eliminaBoletas.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn_duplicaCaso": {
+					"type": "button",
+					"top": 584,
+					"left": 353,
+					"width": 80,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "btn_duplicaCaso",
+					"text": "Con D.T.",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/btn_duplicaCaso.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn_duplicaCaso1": {
+					"type": "button",
+					"top": 584,
+					"left": 233,
+					"width": 80,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "btn_duplicaCaso",
+					"text": "Sin D.T.",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/btn_duplicaCaso1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn_exporta": {
+					"type": "button",
+					"top": 644,
+					"left": 13,
+					"width": 80,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "btn_exporta",
+					"text": "Exportar",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"method": "ObjectMethods/btn_exporta.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"btn_importa": {
+					"type": "button",
+					"top": 8,
+					"left": 13,
+					"width": 80,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "btn_importa",
+					"text": "Importar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/btn_importa.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

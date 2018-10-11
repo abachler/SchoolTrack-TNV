@@ -1,0 +1,464 @@
+﻿{
+	"windowTitle": ":21011,1",
+	"inheritedForm": "XS_MASTER_WZDDialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 626,
+	"height": 407,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Variable255": {
+					"type": "input",
+					"top": 379,
+					"left": 583,
+					"width": 17,
+					"height": 11,
+					"sizingX": "move",
+					"dataSource": "vi_PageNumber",
+					"fill": "transparent",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 561,
+					"width": 20,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "bPrev",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 601,
+					"width": 20,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "bNext",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Línea4": {
+					"type": "line",
+					"top": 0,
+					"left": 0,
+					"width": 622,
+					"stroke": "#AAAAAA"
+				},
+				"Línea3": {
+					"type": "line",
+					"top": 0,
+					"left": 0,
+					"width": 622,
+					"sizingX": "grow",
+					"stroke": "#AAAAAA"
+				},
+				"Variable8": {
+					"type": "button",
+					"top": 479,
+					"left": 28,
+					"width": 20,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "Nueva Variable501",
+					"shortcutKey": "+",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Variable8.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 10,
+					"left": 163,
+					"width": 376,
+					"height": 44,
+					"sizingX": "grow",
+					"stroke": "#FFFFFF",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Asistente para la creación de la malla curricular"
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 474,
+					"left": 347,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 417,
+					"left": 163,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto497": {
+					"type": "text",
+					"top": 90,
+					"left": 162,
+					"width": 412,
+					"height": 273,
+					"sizingX": "grow",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Este asistente le permitirá determinar el plan de estudio para cada nivel de enseñanza básica y media.\r\rEn cada uno de los niveles defina  las subsectores que se impartirán, y las características de cada una de ellas:\r\r- Obligatoria, Electiva, Optativo\r- Estilo de evaluación\r- Selección según sexo\r- Incidencia en promedio final\r- Posición en informes de calificaciones internos\r\r\rSi lo desea podrá modificar más tarde las características de cada una de estas asignaturas."
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable6": {
+					"type": "plugin",
+					"top": 83,
+					"left": 11,
+					"width": 141,
+					"height": 269,
+					"dataSource": "xALP_subsectores",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Variable6.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 153,
+					"left": 165,
+					"width": 180,
+					"height": 13,
+					"dataSource": "vt_Nivel",
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable9": {
+					"type": "plugin",
+					"top": 178,
+					"left": 164,
+					"width": 456,
+					"height": 181,
+					"sizingX": "grow",
+					"dataSource": "xALP_PlanNivel",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Variable9.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 376,
+					"left": 7,
+					"width": 200,
+					"height": 18,
+					"sizingX": "move",
+					"dataSource": "bStandar",
+					"shortcutKey": "[Esc]",
+					"text": "Utilizar Malla Curricular estándar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable25": {
+					"type": "button",
+					"top": 457,
+					"left": 172,
+					"width": 135,
+					"height": 21,
+					"sizingY": "move",
+					"dataSource": "bAddAsignatura",
+					"shortcutKey": "[Help]",
+					"text": "Agregar a plan",
+					"display": false,
+					"method": "ObjectMethods/Variable25.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable26": {
+					"type": "button",
+					"top": 480,
+					"left": 172,
+					"width": 135,
+					"height": 21,
+					"sizingY": "move",
+					"dataSource": "bRemoveSubject",
+					"shortcutKey": "[Del]",
+					"text": "retirar del plan",
+					"display": false,
+					"method": "ObjectMethods/Variable26.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 78,
+					"left": 163,
+					"width": 456,
+					"height": 62,
+					"sizingX": "grow",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Arrastre los subsectores de aprendizaje que desea incluir en el plan de estudio y defina las características del subsector. Para agregar un subsector al plan de estudio haga clic en el botón o presione la tecla Insert.\rPara retirar un subsector del plan de estudios selecciónelo y presione la tecla Supr .\rRecuerde que podrá modificar el plan de estudio en cualquier momento utilizando la lengueta \"Asignaturas\" en el Explorador de SchoolTrack\r"
+				},
+				"Texto10": {
+					"type": "text",
+					"top": 154,
+					"left": 358,
+					"width": 124,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Plan de estudio igual que en:"
+				},
+				"Variable27": {
+					"type": "dropdown",
+					"top": 151,
+					"left": 479,
+					"width": 137,
+					"height": 17,
+					"dataSource": "hl_CopiarDesdeNivel",
+					"dataSourceTypeHint": "integer",
+					"fontFamily": "Geneva",
+					"fontSize": 9,
+					"method": "ObjectMethods/Variable27.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail",
+						"onUnload"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto1": {
+					"type": "text",
+					"top": 90,
+					"left": 162,
+					"width": 403,
+					"height": 260,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Este asistente esta listo para generar las asignaturas en los cursos de acuerdo a la configuración definida.\r\rSi desea generar las asignaturas ahora haga clic en el botón \"Terminar\".\rSi no desea hacerlo ahora haga clic en el botón \"Más tarde\".\r\r\rSi desea reutilizar este asistente más tarde puede llamarlo desde Herramientas/Asistentes."
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 374,
+					"left": 13,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bVolver",
+					"text": "Volver",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable41": {
+					"type": "button",
+					"top": 374,
+					"left": 452,
+					"width": 80,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "bLater",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Mas tarde",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Variable41.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable10": {
+					"type": "button",
+					"top": 374,
+					"left": 538,
+					"width": 80,
+					"height": 20,
+					"sizingX": "move",
+					"dataSource": "bFinish",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Terminar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"defaultButton": true,
+					"method": "ObjectMethods/Variable10.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

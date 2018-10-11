@@ -1,0 +1,5 @@
+If (Self:C308->=1)
+	_O_ENABLE BUTTON:C192(e1_Ancho)
+	_O_ENABLE BUTTON:C192(e2_Alto)
+	OBJECT SET ENTERABLE:C238(vl_Escala;False:C215)
+End if 

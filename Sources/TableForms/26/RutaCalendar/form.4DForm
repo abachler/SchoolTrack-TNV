@@ -1,0 +1,461 @@
+﻿{
+	"windowTitle": "Calendario de Ruta",
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Variable9",
+	"rightMargin": -13,
+	"bottomMargin": -13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 327,
+					"left": 184,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 270,
+					"left": 0,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Picture1942": {
+					"type": "picture",
+					"top": 47,
+					"left": 119,
+					"width": 11,
+					"height": 14
+				},
+				"Rectángulo2": {
+					"type": "rectangle",
+					"top": 149,
+					"left": 487,
+					"width": 91,
+					"height": 15,
+					"fill": "#ECF5FF"
+				},
+				"Variable5": {
+					"type": "dropdown",
+					"top": 46,
+					"left": 118,
+					"width": 12,
+					"height": 15,
+					"dataSource": "at_RutaName",
+					"focusable": false,
+					"display": false,
+					"styleSheet": "Defaut",
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 49,
+					"left": 44,
+					"width": 72,
+					"height": 8,
+					"dataSource": "vt_NombreRuta",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 65,
+					"left": 13,
+					"width": 565,
+					"height": 15,
+					"fill": "#ECF5FF"
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 82,
+					"left": 13,
+					"width": 90,
+					"height": 151,
+					"dataSource": "vt_Lunes",
+					"fill": "#FFFFFF",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 82,
+					"left": 108,
+					"width": 90,
+					"height": 150,
+					"dataSource": "vt_Martes",
+					"fill": "#ECF5FF",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 82,
+					"left": 203,
+					"width": 90,
+					"height": 150,
+					"dataSource": "vt_Miercoles",
+					"fill": "#FFFFFF",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 82,
+					"left": 298,
+					"width": 90,
+					"height": 150,
+					"dataSource": "vt_Jueves",
+					"fill": "#ECF5FF",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 82,
+					"left": 393,
+					"width": 90,
+					"height": 150,
+					"dataSource": "vt_Viernes",
+					"fill": "#FFFFFF",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 82,
+					"left": 488,
+					"width": 90,
+					"height": 65,
+					"dataSource": "vt_Sabado",
+					"fill": "#ECF5FF",
+					"stroke": "#EE0000",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable9": {
+					"type": "input",
+					"top": 166,
+					"left": 488,
+					"width": 90,
+					"height": 66,
+					"dataSource": "vt_Domingo",
+					"fill": "#FFFFFF",
+					"stroke": "#EE0000",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 67,
+					"left": 12,
+					"width": 90,
+					"height": 12,
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Lunes"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 67,
+					"left": 108,
+					"width": 90,
+					"height": 12,
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Martes"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 67,
+					"left": 203,
+					"width": 90,
+					"height": 12,
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Miercoles"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 67,
+					"left": 298,
+					"width": 90,
+					"height": 12,
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Jueves"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 67,
+					"left": 393,
+					"width": 90,
+					"height": 12,
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Viernes"
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 67,
+					"left": 488,
+					"width": 90,
+					"height": 12,
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Sábado"
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 151,
+					"left": 487,
+					"width": 90,
+					"height": 12,
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"text": "Domingo"
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 49,
+					"left": 13,
+					"width": 28,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Ruta"
+				},
+				"Texto9": {
+					"type": "text",
+					"top": 33,
+					"left": 277,
+					"width": 300,
+					"height": 24,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Para ver la programación de recorridos hacer clic en la lista desplegable.\rPara imprimir la programación hacer clic en el botón Impresora."
+				},
+				"englishCancelButtonBU": {
+					"type": "button",
+					"top": 3,
+					"left": 2,
+					"width": 82,
+					"height": 20,
+					"dataSource": "bBWR_Cancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Botón",
+					"iconFrames": 4,
+					"style": "custom",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"frenchPrintButtonBU": {
+					"type": "button",
+					"top": 3,
+					"left": 90,
+					"width": 82,
+					"height": 20,
+					"dataSource": "bBWR_Print",
+					"shortcutKey": "p",
+					"shortcutAccel": true,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Botón",
+					"iconFrames": 4,
+					"style": "custom",
+					"method": "ObjectMethods/frenchPrintButtonBU.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Line5": {
+					"type": "line",
+					"top": 0,
+					"left": 87,
+					"height": 26,
+					"stroke": "#AAAAAA"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 26,
+					"left": 0,
+					"width": 600,
+					"sizingX": "grow",
+					"stroke": "#AAAAAA"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 0,
+					"left": 175,
+					"height": 26,
+					"stroke": "#AAAAAA"
+				}
+			}
+		}
+	]
+}

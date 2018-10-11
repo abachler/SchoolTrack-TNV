@@ -1,0 +1,233 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "boton1",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"fondo": {
+					"type": "rectangle",
+					"top": -1,
+					"left": 0,
+					"width": 546,
+					"height": 121,
+					"stroke": "#AAAAAA"
+				},
+				"vpXS_IconModule1": {
+					"type": "input",
+					"top": 17,
+					"left": 25,
+					"width": 32,
+					"height": 32,
+					"dataSource": "vpXS_IconModule",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onGettingFocus",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"mensaje": {
+					"type": "input",
+					"top": 51,
+					"left": 85,
+					"width": 448,
+					"height": 15,
+					"dataSource": "vt_mensaje",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "Plain - 13",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"boton3": {
+					"type": "button",
+					"top": 133,
+					"left": 68,
+					"width": 80,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "cdB_btn3",
+					"action": "cancel",
+					"text": "Boton 3",
+					"styleSheet": "Plain - 13",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/boton3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"boton2": {
+					"type": "button",
+					"top": 134,
+					"left": 357,
+					"width": 80,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "cdB_btn2",
+					"action": "cancel",
+					"text": "Boton 2",
+					"styleSheet": "Plain - 13",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/boton2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"boton1": {
+					"type": "button",
+					"top": 134,
+					"left": 450,
+					"width": 80,
+					"height": 20,
+					"visibility": "hidden",
+					"dataSource": "cdB_btn1",
+					"action": "accept",
+					"text": "OK",
+					"styleSheet": "Plain - 13",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/boton1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"respuestaVariable": {
+					"type": "input",
+					"top": 84,
+					"left": 87,
+					"width": 420,
+					"height": 20,
+					"dataSource": "vt_respuesta",
+					"fill": "transparent",
+					"styleSheet": "Plain - 13",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/respuestaVariable.4dm",
+					"events": [
+						"onAfterKeystroke",
+						"onMouseEnter",
+						"onMouseLeave"
+					]
+				},
+				"titulo": {
+					"type": "input",
+					"top": 17,
+					"left": 71,
+					"width": 462,
+					"height": 16,
+					"dataSource": "vt_titulo",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "Medium - 13",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"respuestaTextoEjemplo": {
+					"type": "text",
+					"top": 84,
+					"left": 89,
+					"width": 399,
+					"height": 16,
+					"stroke": "#AAAAAA",
+					"styleSheet": "Medium - 13",
+					"text": "tesxto de ejemplo"
+				},
+				"respuestaListaAsociada": {
+					"type": "button",
+					"top": 82,
+					"left": 512,
+					"width": 14,
+					"height": 18,
+					"dataSource": "Botón 3D",
+					"style": "custom",
+					"customBackgroundPicture": "var:0",
+					"method": "ObjectMethods/respuestaListaAsociada.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

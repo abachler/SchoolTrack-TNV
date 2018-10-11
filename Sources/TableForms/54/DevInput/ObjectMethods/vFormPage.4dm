@@ -1,0 +1,1 @@
+vFormPage:=String:C10(FORM Get current page:C276;"Page #0")

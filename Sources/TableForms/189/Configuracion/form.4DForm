@@ -1,0 +1,448 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "xALP_LogrosAsignaturas",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"xALP_Banco": {
+					"type": "plugin",
+					"top": 54,
+					"left": 216,
+					"width": 518,
+					"height": 189,
+					"sizingX": "grow",
+					"dataSource": "xALP_Banco",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/xALP_Banco.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"xALP_LogrosAsignaturas": {
+					"type": "plugin",
+					"top": 299,
+					"left": 216,
+					"width": 518,
+					"height": 215,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "xALP_LogrosAsignaturas",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/xALP_LogrosAsignaturas.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Botón invisible1": {
+					"type": "button",
+					"top": 648,
+					"left": 60,
+					"width": 107,
+					"height": 28,
+					"dataSource": "bclose",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 8,
+					"left": 214,
+					"width": 200,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Matriz de Evaluación por defecto"
+				},
+				"Texto10": {
+					"type": "text",
+					"top": 255,
+					"left": 216,
+					"width": 121,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Matriz seleccionada:"
+				},
+				"hl_Periodos2": {
+					"type": "dropdown",
+					"top": 277,
+					"left": 325,
+					"width": 200,
+					"height": 17,
+					"dataSource": "hl_Periodos",
+					"dataSourceTypeHint": "integer",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/hl_Periodos2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto11": {
+					"type": "text",
+					"top": 280,
+					"left": 222,
+					"width": 95,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Mostrar competencias:"
+				},
+				"hl_Periodos1": {
+					"type": "dropdown",
+					"top": 32,
+					"left": 319,
+					"width": 200,
+					"height": 17,
+					"dataSource": "hl_Periodos2",
+					"dataSourceTypeHint": "integer",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/hl_Periodos1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 35,
+					"left": 216,
+					"width": 95,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Mostrar competencias:"
+				},
+				"Imagen3": {
+					"type": "picture",
+					"top": 8,
+					"left": 186,
+					"width": 15,
+					"height": 15,
+					"pictureFormat": "scaled"
+				},
+				"Imagen4": {
+					"type": "picture",
+					"top": 8,
+					"left": 167,
+					"width": 15,
+					"height": 15,
+					"pictureFormat": "scaled"
+				},
+				"bAddConfig": {
+					"type": "button",
+					"top": 8,
+					"left": 186,
+					"width": 17,
+					"height": 15,
+					"dataSource": "bAddConfig",
+					"display": false,
+					"method": "ObjectMethods/bAddConfig.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bDelConfig": {
+					"type": "button",
+					"top": 8,
+					"left": 167,
+					"width": 15,
+					"height": 15,
+					"dataSource": "bDelConfig",
+					"display": false,
+					"method": "ObjectMethods/bDelConfig.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 600,
+					"left": 60,
+					"width": 167,
+					"height": 28,
+					"dataSource": "Botón1",
+					"shortcutKey": "=",
+					"shortcutAccel": true,
+					"text": "Botón",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"focusable": false,
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea1": {
+					"type": "line",
+					"top": -16,
+					"left": 207,
+					"height": 545,
+					"sizingY": "grow",
+					"stroke": "#AAAAAA",
+					"strokeWidth": 2
+				},
+				"xALP_Configs": {
+					"type": "plugin",
+					"top": 28,
+					"left": 10,
+					"width": 194,
+					"height": 338,
+					"sizingY": "grow",
+					"dataSource": "xALP_Configs",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/xALP_Configs.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Línea2": {
+					"type": "line",
+					"top": 249,
+					"left": 208,
+					"width": 538,
+					"sizingX": "grow",
+					"stroke": "#AAAAAA"
+				},
+				"vtEVLG_InfoConfig": {
+					"type": "input",
+					"top": 373,
+					"left": 10,
+					"width": 191,
+					"height": 55,
+					"sizingY": "move",
+					"dataSource": "vtEVLG_InfoConfig",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 433,
+					"left": 6,
+					"width": 195,
+					"height": 11,
+					"sizingY": "move",
+					"styleSheet": "XS_FormObjects",
+					"text": "Matriz de evaluación por defecto:"
+				},
+				"vtMPA_MatrizDefecto": {
+					"type": "input",
+					"top": 448,
+					"left": 6,
+					"width": 191,
+					"height": 22,
+					"sizingY": "move",
+					"dataSource": "vtMPA_MatrizDefecto",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 474,
+					"left": 6,
+					"width": 195,
+					"height": 11,
+					"sizingY": "move",
+					"styleSheet": "XS_FormObjects",
+					"text": "Matriz de evaluación actual:"
+				},
+				"vtMPA_MatrizActual": {
+					"type": "input",
+					"top": 489,
+					"left": 6,
+					"width": 191,
+					"height": 22,
+					"sizingY": "move",
+					"dataSource": "vtMPA_MatrizActual",
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Línea3": {
+					"type": "line",
+					"top": 430,
+					"left": 0,
+					"width": 207,
+					"sizingY": "move",
+					"stroke": "#AAAAAA"
+				},
+				"Texto8": {
+					"type": "text",
+					"top": 8,
+					"left": 10,
+					"width": 140,
+					"height": 14,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Matrices de evaluación"
+				},
+				"vtMPA_MatrizActual1": {
+					"type": "input",
+					"top": 256,
+					"left": 339,
+					"width": 315,
+					"height": 13,
+					"sizingX": "grow",
+					"dataSource": "[MPA_AsignaturasMatrices:189]NombreMatriz:2",
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"bSetDefaultConfig": {
+					"type": "button",
+					"top": 6,
+					"left": 664,
+					"width": 70,
+					"height": 18,
+					"sizingX": "move",
+					"dataSource": "bSetDefaultConfig",
+					"text": "Utilizar...",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/bSetDefaultConfig.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bSetConfig": {
+					"type": "button",
+					"top": 253,
+					"left": 664,
+					"width": 70,
+					"height": 18,
+					"sizingX": "move",
+					"dataSource": "bSetConfig",
+					"text": "Utilizar...",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/bSetConfig.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

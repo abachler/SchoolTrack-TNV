@@ -1,0 +1,452 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "lb_Etapas",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerBody": 494,
+	"markerBreak": 514,
+	"markerFooter": 534,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onUnload",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectángulo": {
+					"type": "rectangle",
+					"top": 18,
+					"left": 112,
+					"width": 485,
+					"height": 15,
+					"stroke": "#FFFFFF"
+				},
+				"lb_asignaturasArea": {
+					"type": "listbox",
+					"top": 49,
+					"left": 314,
+					"width": 285,
+					"height": 196,
+					"dataSource": "lb_asignaturasArea",
+					"dragging": "custom",
+					"dropping": "custom",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"staticColumnCount": 1,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"method": "ObjectMethods/lb_asignaturasArea.4dm",
+					"events": [
+						"onClick",
+						"onDrop",
+						"onDragOver"
+					],
+					"columns": [
+						{
+							"name": "Columna2",
+							"dataSource": "atMPA_AsignaturasArea",
+							"width": 270,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título2",
+								"text": "Asignaturas en el área",
+								"dataSource": "Título2",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"lb_Asignaturas": {
+					"type": "listbox",
+					"top": 49,
+					"left": 20,
+					"width": 285,
+					"height": 196,
+					"dataSource": "lb_Asignaturas",
+					"dragging": "custom",
+					"dropping": "custom",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"staticColumnCount": 1,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"method": "ObjectMethods/lb_Asignaturas.4dm",
+					"events": [
+						"onClick",
+						"onDrop",
+						"onDragOver"
+					],
+					"columns": [
+						{
+							"name": "Columna1",
+							"dataSource": "<>aAsign",
+							"width": 270,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título1",
+								"text": "Asignaturas",
+								"dataSource": "Título1",
+								"fontFamily": "Tahoma",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"lb_Etapas": {
+					"type": "listbox",
+					"top": 278,
+					"left": 20,
+					"width": 580,
+					"height": 147,
+					"dataSource": "lb_Etapas",
+					"sortable": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"staticColumnCount": 1,
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"method": "ObjectMethods/lb_Etapas.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onDrop",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "lb_EtapasNombre",
+							"dataSource": "atMPA_EtapasArea",
+							"width": 285,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título3",
+								"text": "Nombre de la Etapa",
+								"dataSource": "Título3",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "lb_EtapasDesdeNivel",
+							"dataSource": "atMPA_NivelDesde",
+							"width": 140,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título4",
+								"text": "Desde nivel académico",
+								"dataSource": "Título4",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "lb_etapasHastaNivel",
+							"dataSource": "atMPA_NivelHasta",
+							"width": 140,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título5",
+								"text": "Hasta nivel académico",
+								"dataSource": "Título5",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "lb_etapasNumNivelDesde",
+							"dataSource": "alMPA_NivelDesde",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título6",
+								"text": "Título6",
+								"dataSource": "Título6",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "lb_etapasNumNivelHasta",
+							"dataSource": "alMPA_NivelHasta",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título7",
+								"text": "Título7",
+								"dataSource": "Título7",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"Texto": {
+					"type": "text",
+					"top": 262,
+					"left": 20,
+					"width": 579,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"fontStyle": "italic",
+					"text": "Arrastre las asignaturas para asignarlas y retirarlas del area"
+				},
+				"Campo2": {
+					"type": "input",
+					"top": 20,
+					"left": 113,
+					"width": 484,
+					"height": 14,
+					"dataSource": "[MPA_DefinicionAreas:186]AreaAsignatura:4",
+					"fill": "transparent",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"spellcheck": true,
+					"contextMenu": "none",
+					"method": "ObjectMethods/Campo2.4dm",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onLosingFocus",
+						"onGettingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 20,
+					"left": 20,
+					"width": 88,
+					"height": 14,
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Nombre del área:"
+				},
+				"bSave": {
+					"type": "button",
+					"top": 468,
+					"left": 296,
+					"width": 122,
+					"height": 20,
+					"dataSource": "bSave",
+					"shortcutKey": "[Enter]",
+					"text": "Guardar (enter)",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/bSave.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 468,
+					"left": 167,
+					"width": 119,
+					"height": 20,
+					"dataSource": "Botón1",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar (ESC)",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"ot_MensajeEntrada": {
+					"type": "text",
+					"top": 19,
+					"left": 114,
+					"width": 205,
+					"height": 14,
+					"stroke": "#AAAAAA",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Ingrese el nombre del área"
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 495,
+					"left": 167,
+					"width": 119,
+					"height": 23,
+					"dataSource": "Botón1",
+					"shortcutKey": "w",
+					"shortcutAccel": true,
+					"text": "Cancelar (CTRL-W)",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 529,
+					"left": 167,
+					"width": 119,
+					"height": 23,
+					"dataSource": "Botón1",
+					"shortcutKey": ".",
+					"shortcutAccel": true,
+					"text": "Cancelar (CTRL-.)",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón": {
+					"type": "button",
+					"top": 228,
+					"left": 641,
+					"width": 164,
+					"height": 23,
+					"dataSource": "Botón",
+					"shortcutKey": "[Del]",
+					"text": "Eliminar fila (delete)",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"method": "ObjectMethods/Botón.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

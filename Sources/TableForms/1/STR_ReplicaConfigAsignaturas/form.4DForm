@@ -1,0 +1,618 @@
+﻿{
+	"windowTitle": "Replicar configuración de Asig",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Imagen1": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 701,
+					"height": 69,
+					"pictureFormat": "scaled"
+				},
+				"Texto17": {
+					"type": "text",
+					"top": 2,
+					"left": 163,
+					"width": 384,
+					"height": 46,
+					"stroke": "#FFFFFF",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Replica de configuraciones de asignaturas"
+				},
+				"Imagen3": {
+					"type": "picture",
+					"top": 13,
+					"left": 655,
+					"width": 31,
+					"height": 42,
+					"pictureFormat": "scaled"
+				},
+				"bIconoWZD": {
+					"type": "pictureButton",
+					"top": 13,
+					"left": 59,
+					"width": 32,
+					"height": 32,
+					"dataSource": "bIconoWZD",
+					"columnCount": 1,
+					"rowCount": 1,
+					"loopBackToFirstFrame": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Línea5": {
+					"type": "line",
+					"top": 0,
+					"left": 152,
+					"height": 70,
+					"stroke": "#AAAAAA"
+				},
+				"vsBWR_CurrentModule1": {
+					"type": "input",
+					"top": 48,
+					"left": 13,
+					"width": 129,
+					"height": 17,
+					"dataSource": "vsBWR_CurrentModule",
+					"fill": "transparent",
+					"stroke": "#FFFFFF",
+					"textAlign": "center",
+					"fontFamily": "Arial",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Rectángulo": {
+					"type": "rectangle",
+					"top": 69,
+					"left": 0,
+					"width": 701,
+					"height": 585,
+					"stroke": "#FFFFFF"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto1": {
+					"type": "text",
+					"top": 158,
+					"left": 168,
+					"width": 505,
+					"height": 364,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Esta herramienta permite replicar la configuración de una o más asignaturas de un curso en uno o más cursos del mismo nivel. En el cuadro de selección de asignaturas a replicar sólo se muestran las asignaturas consolidantes (o asignaturas \"madres\"); las asignaturas que consolidan su evaluación en las anteriores (\"hijas\") son replicadas en el mismo proceso ya que hacen parte de las propiedades de las asignaturas consolidantes. \r\rSi la asignatura no existe en el curso de destino será creada con las mismas propiedades de la asignatura de origen. Si la asignatura de destino existe la configuración de propiedades de evaluación será reemplazada por la configuración de la asignatura de origen, incluyendo asignaturas hijas y subasignaturas, ponderaciones o coeficientes y opciones de examenes y controles de fin de período\r\rSi en la asignatura de destino existían subasignaturas estas serán eliminadas y, eventualmente se crearán subasignaturas con las mismas propiedades de las configuradas en las asignaturas de origen\r\rLas asignaturas y evaluaciones con el mismo nombre oficial en los cursos de destino serán conservadas pero sus propiedades de evaluación serán reemplazadas por las propiedades de las asignaturas de origen.\r\rLas evaluaciones que puedan existir en las asignaturas de destino serán preservadas pero si el estilo de evaluación de las asignaturas de origen no es compatible con el de las asignaturas de destino es posible que sea necesario registrarlas nuevamente.\r\rEsta operación puede tener un impacto mayor en los datos de asignaturas, cursos, alumnos y evaluación. Por ello le recomendamos planificar adecuadamente la replicación y, sobre todo, respaldar su base de datos antes de iniciar el proceso \r\t"
+				},
+				"Botón 3D1": {
+					"type": "button",
+					"top": 623,
+					"left": 566,
+					"width": 120,
+					"height": 20,
+					"dataSource": "Botón 3D1",
+					"action": "nextPage",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Continuar",
+					"style": "roundedBevel",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectángulo3": {
+					"type": "rectangle",
+					"top": 467,
+					"left": 30,
+					"width": 137,
+					"height": 157,
+					"fill": "transparent",
+					"stroke": "#AAAAAA"
+				},
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 124,
+					"left": 32,
+					"width": 651,
+					"height": 258,
+					"fill": "transparent",
+					"stroke": "#AAAAAA"
+				},
+				"Línea1": {
+					"type": "line",
+					"top": 124,
+					"left": 208,
+					"height": 255,
+					"stroke": "#AAAAAA"
+				},
+				"Línea2": {
+					"type": "line",
+					"top": 124,
+					"left": 347,
+					"height": 255,
+					"stroke": "#AAAAAA"
+				},
+				"lb_Niveles": {
+					"type": "listbox",
+					"top": 125,
+					"left": 34,
+					"width": 172,
+					"height": 256,
+					"dataSource": "lb_Niveles",
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"borderStyle": "none",
+					"method": "ObjectMethods/lb_Niveles.4dm",
+					"events": [
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "◊at_NombreNivelesActivos1",
+							"dataSource": "<>at_NombreNivelesActivos",
+							"width": 158,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título7",
+								"text": "Niveles académicos",
+								"dataSource": "Título1",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "◊al_NumeroNivelesActivos1",
+							"dataSource": "<>al_NumeroNivelesActivos",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título8",
+								"text": "Título2",
+								"dataSource": "Título2",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"lb_Cursos": {
+					"type": "listbox",
+					"top": 125,
+					"left": 210,
+					"width": 135,
+					"height": 256,
+					"dataSource": "lb_Cursos",
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"borderStyle": "none",
+					"method": "ObjectMethods/lb_Cursos.4dm",
+					"events": [
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "at_CursoOrigen1",
+							"dataSource": "at_CursoOrigen",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título9",
+								"text": "Cursos",
+								"dataSource": "Título1",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"lb_Asignaturas": {
+					"type": "listbox",
+					"top": 125,
+					"left": 349,
+					"width": 333,
+					"height": 256,
+					"dataSource": "lb_Asignaturas",
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"borderStyle": "none",
+					"method": "ObjectMethods/lb_Asignaturas.4dm",
+					"events": [
+						"onClick",
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "Columna1",
+							"dataSource": "at_AsignaturasOrigen",
+							"width": 320,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título10",
+								"text": "Asignaturas",
+								"dataSource": "Título3",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "al_RecNumAsignaturasOrigen1",
+							"dataSource": "al_RecNumAsignaturasOrigen",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título11",
+								"text": "Título5",
+								"dataSource": "Título5",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"Texto11": {
+					"type": "text",
+					"top": 388,
+					"left": 34,
+					"width": 399,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"fontStyle": "italic",
+					"text": "Seleccione el nivel, el curso y las asignaturas cuyas configuraciones desea replicar"
+				},
+				"Texto12": {
+					"type": "text",
+					"top": 388,
+					"left": 582,
+					"width": 97,
+					"height": 12,
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"textDecoration": "underline",
+					"text": "Seleccionar todas"
+				},
+				"Botón invisible3": {
+					"type": "button",
+					"top": 385,
+					"left": 566,
+					"width": 113,
+					"height": 16,
+					"dataSource": "Botón invisible1",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"lb_CursosDestino1": {
+					"type": "listbox",
+					"top": 467,
+					"left": 32,
+					"width": 134,
+					"height": 157,
+					"dataSource": "lb_CursosDestino",
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"borderStyle": "none",
+					"method": "ObjectMethods/lb_CursosDestino1.4dm",
+					"events": [
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "at_CursosDestino1",
+							"dataSource": "at_CursosDestino",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título12",
+								"text": "Cursos",
+								"dataSource": "Título3",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"Texto13": {
+					"type": "text",
+					"top": 90,
+					"left": 13,
+					"width": 303,
+					"height": 23,
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Origen de la configuración"
+				},
+				"Texto14": {
+					"type": "text",
+					"top": 430,
+					"left": 13,
+					"width": 303,
+					"height": 23,
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Replicar en:"
+				},
+				"Texto15": {
+					"type": "text",
+					"top": 468,
+					"left": 187,
+					"width": 458,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Seleccione los cursos o ingrese las letras de sección de los cursos que desea crear, separándolas con una coma:"
+				},
+				"vt_secciones1": {
+					"type": "input",
+					"top": 486,
+					"left": 194,
+					"width": 269,
+					"height": 14,
+					"dataSource": "vt_secciones",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"method": "ObjectMethods/vt_secciones1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texto16": {
+					"type": "text",
+					"top": 630,
+					"left": 70,
+					"width": 97,
+					"height": 12,
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"textDecoration": "underline",
+					"text": "Seleccionar todos"
+				},
+				"Botón invisible4": {
+					"type": "button",
+					"top": 627,
+					"left": 54,
+					"width": 113,
+					"height": 16,
+					"dataSource": "Botón invisible1",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"cb_InicializarProfesores1": {
+					"type": "checkbox",
+					"top": 524,
+					"left": 210,
+					"width": 449,
+					"height": 19,
+					"dataSource": "cb_InicializarProfesores",
+					"text": "Inicializar información relativa a profesores en asignaturas con el mismo nombre oficial",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"cb_InscribirAlumnos1": {
+					"type": "checkbox",
+					"top": 550,
+					"left": 210,
+					"width": 469,
+					"height": 19,
+					"dataSource": "cb_InscribirAlumnos",
+					"text": "Inscribir a los alumnos después de replicar las asignaturas",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"bReplicar": {
+					"type": "button",
+					"top": 623,
+					"left": 566,
+					"width": 120,
+					"height": 20,
+					"dataSource": "bReplicar",
+					"action": "accept",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Replicar asignaturas",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancelar1": {
+					"type": "button",
+					"top": 623,
+					"left": 459,
+					"width": 95,
+					"height": 20,
+					"dataSource": "bCancelar",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Cancelar",
+					"iconFrames": 4,
+					"style": "roundedBevel",
+					"events": [
+						"onClick"
+					]
+				},
+				"cb_RecalcularPromedios1": {
+					"type": "checkbox",
+					"top": 575,
+					"left": 210,
+					"width": 469,
+					"height": 19,
+					"dataSource": "cb_RecalcularPromedios",
+					"text": "Recalcular promedios después de replicar las asignaturas",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón 3D2": {
+					"type": "button",
+					"top": 623,
+					"left": 195,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Botón 3D1",
+					"action": "previousPage",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Atrás",
+					"style": "roundedBevel",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,330 @@
+﻿{
+	"formSizeAnchor": "Rectángulo",
+	"rightMargin": 0,
+	"bottomMargin": 48,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Cuadro de Grupo": {
+					"type": "groupBox",
+					"top": 530,
+					"left": -2,
+					"width": 618,
+					"height": 95,
+					"stroke": "#EE0000",
+					"styleSheet": "Medium - 16",
+					"text": "No Borrar"
+				},
+				"Rectángulo": {
+					"type": "rectangle",
+					"top": -4,
+					"left": -4,
+					"width": 616,
+					"height": 402,
+					"stroke": "#FFFFFF"
+				},
+				"List Box2": {
+					"type": "listbox",
+					"top": 92,
+					"left": 85,
+					"width": 505,
+					"height": 215,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "lb_erroresCompactacion",
+					"hideFocusRing": true,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Helvetica Neue",
+					"fontSize": 13,
+					"columns": [
+						{
+							"name": "numeroTabla",
+							"width": 50,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título3",
+								"text": "Tabla #",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "nombreTabla",
+							"width": 200,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado1",
+								"text": "Nombre de la tabla",
+								"dataSource": "Encabezado1",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "registrosAntes",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado2",
+								"text": "Antes",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "registrosDespues",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado3",
+								"text": "Después",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						},
+						{
+							"name": "diferencia",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Helvetica Neue",
+							"fontSize": 13,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Encabezado4",
+								"text": "Registros perdidos",
+								"stroke": "#000000",
+								"fontFamily": "Helvetica Neue",
+								"fontSize": 13
+							}
+						}
+					]
+				},
+				"bEnviaCorreo": {
+					"type": "button",
+					"top": 409,
+					"left": 13,
+					"width": 141,
+					"height": 22,
+					"sizingY": "move",
+					"text": "Reenviar Informe...",
+					"styleSheet": "Medium - 13",
+					"focusable": false,
+					"method": "ObjectMethods/bEnviaCorreo.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail",
+						"onMouseEnter"
+					]
+				},
+				"bExportar": {
+					"type": "button",
+					"top": 409,
+					"left": 159,
+					"width": 141,
+					"height": 22,
+					"sizingY": "move",
+					"text": "Exportar a Excel",
+					"styleSheet": "Medium - 13",
+					"focusable": false,
+					"method": "ObjectMethods/bExportar.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail",
+						"onMouseEnter"
+					]
+				},
+				"CerrarAplicacion": {
+					"type": "button",
+					"top": 409,
+					"left": 336,
+					"width": 141,
+					"height": 22,
+					"sizingY": "move",
+					"action": "quit",
+					"text": "Cerrar SchoolTrack",
+					"styleSheet": "Medium - 13",
+					"focusable": false,
+					"method": "ObjectMethods/CerrarAplicacion.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail",
+						"onMouseEnter"
+					]
+				},
+				"Continuar": {
+					"type": "button",
+					"top": 409,
+					"left": 489,
+					"width": 101,
+					"height": 22,
+					"sizingY": "move",
+					"action": "accept",
+					"text": "Continuar",
+					"styleSheet": "Medium - 13",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail",
+						"onMouseEnter"
+					]
+				},
+				"Variable": {
+					"type": "input",
+					"top": 569,
+					"left": 35,
+					"width": 297,
+					"height": 16,
+					"visibility": "hidden",
+					"dataSource": "vt_jsonPerdidaRegistros",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"correoColegium": {
+					"type": "button",
+					"top": 576,
+					"left": 355,
+					"width": 197,
+					"height": 21,
+					"shortcutKey": "*",
+					"shortcutAccel": true,
+					"text": "EnvioCorreoColegium",
+					"styleSheet": "Plain - 13",
+					"method": "ObjectMethods/correoColegium.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Imagen1": {
+					"type": "picture",
+					"top": 20,
+					"left": 14,
+					"width": 60,
+					"height": 60,
+					"pictureFormat": "scaled"
+				},
+				"Línea": {
+					"type": "line",
+					"top": 399,
+					"left": -8,
+					"width": 742,
+					"stroke": "#AAAAAA"
+				},
+				"textoApoyo": {
+					"type": "text",
+					"top": 324,
+					"left": 85,
+					"width": 505,
+					"height": 63,
+					"styleSheet": "Plain - 13",
+					"text": "textoApoyo"
+				},
+				"titulo": {
+					"type": "text",
+					"top": 36,
+					"left": 85,
+					"width": 441,
+					"height": 36,
+					"sizingX": "grow",
+					"styleSheet": "Medium - 14",
+					"text": "Se detectó pérdida de registros en algunas tablas después de la compactación, reparación o reconstrucción de la base de datos."
+				}
+			}
+		}
+	]
+}

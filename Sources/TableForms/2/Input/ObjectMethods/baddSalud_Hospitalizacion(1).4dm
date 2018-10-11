@@ -1,0 +1,11 @@
+
+AL_UpdateArrays (xALP_hospitalizaciones;0)
+INSERT IN ARRAY:C227(aHospFecha;1)
+INSERT IN ARRAY:C227(aHospDiagnostico;1)
+INSERT IN ARRAY:C227(aHospHasta;1)
+aHospFecha{1}:=Current date:C33(*)
+aHospHasta{1}:=Current date:C33(*)
+AL_UpdateArrays (xALP_hospitalizaciones;-2)
+GOTO OBJECT:C206(xALP_hospitalizaciones)
+AL_GotoCell (xALP_hospitalizaciones;1;1)
+AL_SetCellHigh (xALP_hospitalizaciones;1;80)

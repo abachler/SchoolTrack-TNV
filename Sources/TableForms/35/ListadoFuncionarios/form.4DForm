@@ -1,0 +1,261 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 160,
+	"markerBody": 181,
+	"markerBreak": 212,
+	"markerFooter": 212,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 140,
+					"left": 16,
+					"width": 550,
+					"height": 21,
+					"fill": "transparent"
+				},
+				"Rectángulo2": {
+					"type": "rectangle",
+					"top": 160,
+					"left": 16,
+					"width": 550,
+					"height": 22,
+					"fill": "transparent"
+				},
+				"Campo1": {
+					"type": "input",
+					"top": 165,
+					"left": 59,
+					"width": 219,
+					"height": 11,
+					"dataSource": "[BU_Rutas_Inscripciones:35]Nombre_y_Apellidos:9",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo2": {
+					"type": "input",
+					"top": 165,
+					"left": 289,
+					"width": 109,
+					"height": 11,
+					"dataSource": "[BU_Rutas:26]Nombre:9",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Campo3": {
+					"type": "input",
+					"top": 165,
+					"left": 407,
+					"width": 152,
+					"height": 11,
+					"dataSource": "[BU_Rutas_Recorridos:33]Nombre:3",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 165,
+					"left": 24,
+					"width": 29,
+					"height": 11,
+					"dataSource": "vl_Correlativo",
+					"fill": "transparent",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 146,
+					"left": 24,
+					"width": 22,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Nº"
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 146,
+					"left": 61,
+					"width": 162,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "FUNCIONARIOS"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 148,
+					"left": 291,
+					"width": 86,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "RUTA"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 147,
+					"left": 407,
+					"width": 148,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "RECORRIDO"
+				},
+				"Línea1": {
+					"type": "line",
+					"top": 140,
+					"left": 55,
+					"width": 1,
+					"height": 42,
+					"startPoint": "bottomLeft"
+				},
+				"Línea2": {
+					"type": "line",
+					"top": 140,
+					"left": 283,
+					"width": 1,
+					"height": 42,
+					"startPoint": "bottomLeft"
+				},
+				"Línea3": {
+					"type": "line",
+					"top": 140,
+					"left": 402,
+					"width": 1,
+					"height": 42,
+					"startPoint": "bottomLeft"
+				},
+				"Texto18": {
+					"type": "text",
+					"top": 13,
+					"left": 157,
+					"width": 263,
+					"height": 18,
+					"textAlign": "left",
+					"styleSheet": "XS_ReportTitle_18",
+					"fontWeight": "bold",
+					"text": "NOMINA DE FUNCIONARIOS"
+				},
+				"Variable10": {
+					"type": "input",
+					"top": 10,
+					"left": 37,
+					"width": 113,
+					"height": 113,
+					"dataSource": "vLogo",
+					"dataSourceTypeHint": "picture",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"method": "ObjectMethods/Variable10.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable11": {
+					"type": "input",
+					"top": 41,
+					"left": 154,
+					"width": 388,
+					"height": 19,
+					"dataSource": "<>gCustom",
+					"styleSheet": "XS_ReportSubtitle_14",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

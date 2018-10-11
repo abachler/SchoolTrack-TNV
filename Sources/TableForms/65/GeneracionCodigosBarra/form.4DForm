@@ -1,0 +1,321 @@
+﻿{
+	"formSizeAnchor": "boton.aceptar",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDeactivate",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Barra": {
+					"type": "rectangle",
+					"top": -1,
+					"left": -1,
+					"width": 684,
+					"height": 57,
+					"fill": "transparent",
+					"stroke": "#AAAAAA"
+				},
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 56,
+					"left": -1,
+					"width": 684,
+					"height": 537,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "automatic",
+					"stroke": "automatic"
+				},
+				"titulo": {
+					"type": "text",
+					"top": 18,
+					"left": 51,
+					"width": 545,
+					"height": 18,
+					"stroke": "#777777",
+					"styleSheet": "Ligth - 16",
+					"text": "Generación de códigos de barra"
+				},
+				"Imagen2": {
+					"type": "picture",
+					"top": 11,
+					"left": 5,
+					"width": 32,
+					"height": 32,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/img/bar-code.png"
+				},
+				"boton.aceptar": {
+					"type": "button",
+					"top": 427,
+					"left": 455,
+					"width": 190,
+					"height": 20,
+					"action": "accept",
+					"text": "Generar códigos de barra",
+					"styleSheet": "Medium - 13",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"boton.cancelar": {
+					"type": "button",
+					"top": 427,
+					"left": 335,
+					"width": 110,
+					"height": 20,
+					"action": "cancel",
+					"text": "Cancelar",
+					"styleSheet": "Medium - 13",
+					"focusable": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"anteponerPrefijo.Documento": {
+					"type": "checkbox",
+					"top": 198,
+					"left": 75,
+					"width": 493,
+					"height": 20,
+					"text": "Anteponer prefijo correspondiente al tipo de documento",
+					"styleSheet": "Ligth - 16",
+					"stroke": "#333333",
+					"method": "ObjectMethods/anteponerPrefijo.Documento.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"r1_IdentificadorInterno": {
+					"type": "radio",
+					"top": 118,
+					"left": 75,
+					"width": 459,
+					"height": 20,
+					"dataSource": "r1_IdentificadorInterno",
+					"text": "Número secuencial interno",
+					"styleSheet": "Ligth - 16",
+					"stroke": "#333333",
+					"method": "ObjectMethods/r1_IdentificadorInterno.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"r2_NumeroRegistro": {
+					"type": "radio",
+					"top": 158,
+					"left": 75,
+					"width": 459,
+					"height": 20,
+					"dataSource": "r2_NumeroRegistro",
+					"text": "Número de registro",
+					"styleSheet": "Ligth - 16",
+					"stroke": "#333333",
+					"method": "ObjectMethods/r2_NumeroRegistro.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"mensaje.documentos": {
+					"type": "text",
+					"top": 78,
+					"left": 35,
+					"width": 451,
+					"height": 19,
+					"styleSheet": "Medium - 16",
+					"text": "Generar código de barra de ^0 documentos basándose en:"
+				},
+				"incluirProtegidos.Documentos": {
+					"type": "checkbox",
+					"top": 248,
+					"left": 57,
+					"width": 493,
+					"height": 20,
+					"text": "Regenerar incluso ^0 código(s) de barras protegido(s)",
+					"styleSheet": "Ligth - 16",
+					"stroke": "#000000",
+					"method": "ObjectMethods/incluirProtegidos.Documentos.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"l1_IdentificadorInterno": {
+					"type": "radio",
+					"top": 118,
+					"left": 75,
+					"width": 330,
+					"height": 18,
+					"dataSource": "l1_IdentificadorInterno",
+					"text": "Numero secuencial interno",
+					"styleSheet": "Ligth - 16",
+					"stroke": "#333333",
+					"method": "ObjectMethods/l1_IdentificadorInterno.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"l2_IdentificadorNacional": {
+					"type": "radio",
+					"top": 158,
+					"left": 75,
+					"width": 330,
+					"height": 18,
+					"dataSource": "l2_IdentificadorNacional",
+					"text": "Identificador Nacional 1",
+					"styleSheet": "Ligth - 16",
+					"stroke": "#333333",
+					"method": "ObjectMethods/l2_IdentificadorNacional.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"l3_IdentificadorNacional": {
+					"type": "radio",
+					"top": 208,
+					"left": 75,
+					"width": 330,
+					"height": 18,
+					"dataSource": "l3_IdentificadorNacional",
+					"text": "Identificador Nacional 2",
+					"styleSheet": "Ligth - 16",
+					"stroke": "#333333",
+					"method": "ObjectMethods/l3_IdentificadorNacional.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"l4_IdentificadorNacional": {
+					"type": "radio",
+					"top": 258,
+					"left": 75,
+					"width": 330,
+					"height": 18,
+					"dataSource": "l4_IdentificadorNacional",
+					"text": "Identificador Nacional 3",
+					"styleSheet": "Ligth - 16",
+					"stroke": "#333333",
+					"method": "ObjectMethods/l4_IdentificadorNacional.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"mensaje.lectores": {
+					"type": "text",
+					"top": 78,
+					"left": 35,
+					"width": 416,
+					"height": 19,
+					"styleSheet": "Medium - 16",
+					"text": "Generar códigos de barra de ^0 lectores basándose en:"
+				},
+				"incluirProtegidos.Lectores": {
+					"type": "checkbox",
+					"top": 366,
+					"left": 57,
+					"width": 493,
+					"height": 20,
+					"text": "Regenerar incluso ^0 código(s) de barras protegido(s)",
+					"styleSheet": "Ligth - 16",
+					"stroke": "#404040",
+					"method": "ObjectMethods/incluirProtegidos.Lectores.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"l2_IdentificadorNacional.aviso": {
+					"type": "text",
+					"top": 179,
+					"left": 93,
+					"width": 530,
+					"height": 15,
+					"stroke": "#404040",
+					"styleSheet": "Ligth - 12",
+					"text": "l2_IdentificadorNacional.aviso"
+				},
+				"l3_IdentificadorNacional.aviso": {
+					"type": "text",
+					"top": 230,
+					"left": 93,
+					"width": 530,
+					"height": 15,
+					"stroke": "#404040",
+					"styleSheet": "Ligth - 12",
+					"text": "l3_IdentificadorNacional.aviso"
+				},
+				"l4_IdentificadorNacional.aviso": {
+					"type": "text",
+					"top": 281,
+					"left": 93,
+					"width": 530,
+					"height": 15,
+					"stroke": "#404040",
+					"styleSheet": "Ligth - 12",
+					"text": "l4_IdentificadorNacional.aviso"
+				},
+				"anteponerPrefijo.Lectores": {
+					"type": "checkbox",
+					"top": 308,
+					"left": 57,
+					"width": 493,
+					"height": 20,
+					"text": "Anteponer prefijo correspondiente al grupo del lector",
+					"styleSheet": "Ligth - 16",
+					"stroke": "#333333",
+					"method": "ObjectMethods/anteponerPrefijo.Lectores.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

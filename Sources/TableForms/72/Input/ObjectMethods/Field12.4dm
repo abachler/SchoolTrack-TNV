@@ -1,0 +1,1 @@
+BBLpat_ValidacionBarcode 

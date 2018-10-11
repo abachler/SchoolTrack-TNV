@@ -1,0 +1,242 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Rectángulo",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onLosingFocus",
+		"onBeforeKeystroke",
+		"onCloseBox",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Rectángulo": {
+					"type": "rectangle",
+					"top": -1,
+					"left": -1,
+					"width": 609,
+					"height": 320,
+					"fill": "automatic",
+					"stroke": "automatic"
+				},
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 257,
+					"left": -5,
+					"width": 616,
+					"height": 67,
+					"fill": "#DDDDDD",
+					"stroke": "#AAAAAA"
+				},
+				"Imagen1": {
+					"type": "picture",
+					"top": 20,
+					"left": 9,
+					"width": 64,
+					"height": 64,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Icons/server.icns"
+				},
+				"Botón2": {
+					"type": "button",
+					"top": 276,
+					"left": 20,
+					"width": 71,
+					"height": 22,
+					"dataSource": "bSalir",
+					"text": "Salir",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"method": "ObjectMethods/Botón2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto": {
+					"type": "text",
+					"top": 20,
+					"left": 81,
+					"width": 506,
+					"height": 156,
+					"styleSheet": "XS_DialogObjects",
+					"text": "La dirección de la interfaz de red (MAC address) del servidor actual es distinta de la dirección registrada actualmente.\r\rPuede utilizar este servidor de manera temporal y solo para pruebas. Los servicios web, MediaTrack, SchoolTrack Web Access y el envío de información a SchoolNet será desactivado\r\rSi desea utilizar este servidor como el nuevo servidor oficial para SchoolTrack Server, con todos los servicios web contratados activados, es necesario registrar este servidor.\r\rEl registro del servidor solo puede ser efectuado por un usuario autorizado."
+				},
+				"Botón": {
+					"type": "button",
+					"top": 276,
+					"left": 356,
+					"width": 231,
+					"height": 22,
+					"dataSource": "btestServer",
+					"text": "Solo para pruebas, sin servicios web",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"method": "ObjectMethods/Botón.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 276,
+					"left": 115,
+					"width": 231,
+					"height": 22,
+					"dataSource": "bnuevoServer",
+					"text": "Registrar como nuevo servidor oficial",
+					"styleSheet": "XS_DialogObjects",
+					"focusable": false,
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable": {
+					"type": "input",
+					"top": 201,
+					"left": 299,
+					"width": 238,
+					"height": 13,
+					"dataSource": "vt_nombreUsuario",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 201,
+					"left": 70,
+					"width": 208,
+					"height": 13,
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Nombre de usuario administrador: "
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 224,
+					"left": 70,
+					"width": 208,
+					"height": 13,
+					"textAlign": "right",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Contraseña: "
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 224,
+					"left": 299,
+					"width": 238,
+					"height": 13,
+					"dataSource": "vt_contraseña",
+					"styleSheet": "XS_DialogObjects",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onLosingFocus",
+						"onBeforeKeystroke",
+						"onAfterKeystroke",
+						"onAfterEdit"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto3": {
+					"type": "text",
+					"top": 20,
+					"left": 81,
+					"width": 506,
+					"height": 182,
+					"styleSheet": "XS_Lucida11",
+					"text": "No fue posible registrar este servidor debido a un error de red.\r\rPuede continuar utilizando este servidor como servidor oficial o como servidor de pruebas\r\rSi lo utiliza como servidor oficial los servicios web contratados (SchoolTrack Web Acces y Mediatrack y Schoolnet) serán activados normalmente si el servidor está conectado a Internet\r\rSi lo utiliza como servidor de pruebas, ninguno de los servicios web estará operativo. Recuerde que los clientes solo podrán conectarse al servidor de pruebas si la dirección de la interfaz de red ha sido correctamente registrada en Colegium.\r\rLa próxima vez que inicie SchoolTrack Server en un servidor distinto del servidor oficial registrado se le volverá a solicitar confirmación para usar el servidor como servidor oficial."
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 276,
+					"left": 356,
+					"width": 231,
+					"height": 22,
+					"dataSource": "btestServer",
+					"text": "Continuar como servidor de pruebas",
+					"styleSheet": "XS_Lucida11",
+					"focusable": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón4": {
+					"type": "button",
+					"top": 276,
+					"left": 115,
+					"width": 231,
+					"height": 22,
+					"dataSource": "bnuevoServerTemporal",
+					"text": "Continuar como servidor oficial",
+					"styleSheet": "XS_Lucida11",
+					"focusable": false,
+					"method": "ObjectMethods/Botón4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

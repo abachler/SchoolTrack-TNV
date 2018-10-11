@@ -1,0 +1,71 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Área de plug-in",
+	"rightMargin": 0,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Doble clic para": {
+					"type": "text",
+					"top": 5,
+					"left": 41,
+					"width": 103,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Doble clic para asignar."
+				},
+				"Área de plug-in": {
+					"type": "plugin",
+					"top": 23,
+					"left": 0,
+					"width": 183,
+					"height": 169,
+					"dataSource": "xALP_ComunicacionResultados",
+					"pluginAreaKind": "%AreaListPro",
+					"method": "ObjectMethods/Área de plug-in.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onPluginArea"
+					]
+				}
+			}
+		}
+	]
+}

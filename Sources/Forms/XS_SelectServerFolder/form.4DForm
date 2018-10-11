@@ -1,0 +1,141 @@
+﻿{
+	"formSizeAnchor": "Botón",
+	"rightMargin": 16,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onUnload",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"hl_Volumes1": {
+					"type": "list",
+					"top": 41,
+					"left": 1,
+					"width": 362,
+					"height": 377,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "hl_Volumes",
+					"enterable": false,
+					"hideFocusRing": true,
+					"scrollbarVertical": "hidden",
+					"scrollbarHorizontal": "hidden",
+					"dragging": "custom",
+					"fill": "#FFFFFF",
+					"styleSheet": "Plain - 13",
+					"borderStyle": "solid",
+					"method": "ObjectMethods/hl_Volumes1.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onSelectionChange",
+						"onExpand",
+						"onCollapse"
+					]
+				},
+				"Botón": {
+					"type": "button",
+					"top": 427,
+					"left": 253,
+					"width": 95,
+					"height": 22,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Botón",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": "Seleccionar",
+					"styleSheet": "Plain - 13",
+					"focusable": false,
+					"method": "ObjectMethods/Botón.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 427,
+					"left": 164,
+					"width": 80,
+					"height": 22,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Botón",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "Plain - 13",
+					"focusable": false,
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto": {
+					"type": "text",
+					"top": 5,
+					"left": 6,
+					"width": 350,
+					"height": 30,
+					"styleSheet": "Plain - 13",
+					"text": "Texto de ejemplo:"
+				},
+				"nuevaCarpeta": {
+					"type": "button",
+					"top": 427,
+					"left": 6,
+					"width": 140,
+					"height": 22,
+					"sizingX": "move",
+					"sizingY": "move",
+					"shortcutKey": "[Esc]",
+					"text": "Nueva Carpeta...",
+					"styleSheet": "Plain - 13",
+					"focusable": false,
+					"method": "ObjectMethods/nuevaCarpeta.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

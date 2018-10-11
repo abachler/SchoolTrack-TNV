@@ -1,0 +1,120 @@
+﻿{
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onTimer",
+		"onAfterKeystroke",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"lb_nombreParcialesSA": {
+					"type": "listbox",
+					"top": 19,
+					"left": 19,
+					"width": 587,
+					"height": 257,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"selectionMode": "single",
+					"scrollbarHorizontal": "automatic",
+					"events": [
+						"onClick",
+						"onDataChange",
+						"onSelectionChange",
+						"onHeaderClick"
+					],
+					"columns": [
+						{
+							"name": "parciales",
+							"width": 280,
+							"minWidth": 10,
+							"maxWidth": 600,
+							"resizable": false,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "t_lb1",
+								"text": "Parciales"
+							}
+						},
+						{
+							"name": "nombres",
+							"width": 292,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "t_lb2",
+								"text": "Nombre"
+							}
+						}
+					]
+				},
+				"Botón": {
+					"type": "button",
+					"top": 331,
+					"left": 404,
+					"width": 97,
+					"height": 29,
+					"text": "Cancelar",
+					"focusable": false,
+					"method": "ObjectMethods/Botón.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 331,
+					"left": 509,
+					"width": 97,
+					"height": 29,
+					"text": "Aplicar",
+					"focusable": false,
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"t_funcionalidad": {
+					"type": "text",
+					"top": 288,
+					"left": 19,
+					"width": 587,
+					"height": 37,
+					"fontFamily": ".SF NS Text",
+					"fontSize": 11,
+					"fontStyle": "italic"
+				}
+			}
+		}
+	]
+}

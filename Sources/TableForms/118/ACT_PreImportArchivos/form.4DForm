@@ -1,0 +1,346 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Forms",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Variable25",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 487,
+					"left": 184,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 430,
+					"left": 0,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable24": {
+					"type": "button",
+					"top": 606,
+					"left": 48,
+					"width": 21,
+					"height": 1,
+					"dataSource": "b_Close",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Plug-in Area1": {
+					"type": "plugin",
+					"top": 108,
+					"left": 16,
+					"width": 633,
+					"height": 246,
+					"dataSource": "xALP_DatosImportados",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable25": {
+					"type": "button",
+					"top": 374,
+					"left": 569,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bVolver2",
+					"text": "Continuar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable25.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto17": {
+					"type": "text",
+					"top": 68,
+					"left": 288,
+					"width": 140,
+					"height": 12,
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"text": "Número de registros procesados:"
+				},
+				"Variable26": {
+					"type": "input",
+					"top": 67,
+					"left": 430,
+					"width": 36,
+					"height": 12,
+					"dataSource": "viNoRegistrosTotal",
+					"fill": "transparent",
+					"stroke": "#0A8800",
+					"textAlign": "left",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto18": {
+					"type": "text",
+					"top": 85,
+					"left": 496,
+					"width": 36,
+					"height": 12,
+					"textAlign": "left",
+					"styleSheet": "XS_FormObjects",
+					"text": "Monto:"
+				},
+				"Variable27": {
+					"type": "input",
+					"top": 84,
+					"left": 530,
+					"width": 116,
+					"height": 12,
+					"dataSource": "viMonto2Import",
+					"fill": "transparent",
+					"stroke": "#0A8800",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable28": {
+					"type": "button",
+					"top": 374,
+					"left": 479,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bImportar",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"focusable": false,
+					"method": "ObjectMethods/Variable28.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto19": {
+					"type": "text",
+					"top": 68,
+					"left": 476,
+					"width": 56,
+					"height": 12,
+					"textAlign": "left",
+					"styleSheet": "XS_FormObjects",
+					"text": "Monto total:"
+				},
+				"Variable29": {
+					"type": "input",
+					"top": 67,
+					"left": 530,
+					"width": 116,
+					"height": 12,
+					"dataSource": "viMontoTotal",
+					"fill": "transparent",
+					"stroke": "#0A8800",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto20": {
+					"type": "text",
+					"top": 85,
+					"left": 227,
+					"width": 201,
+					"height": 12,
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"text": "Número de registros a proceso de importación:"
+				},
+				"Variable30": {
+					"type": "input",
+					"top": 84,
+					"left": 430,
+					"width": 36,
+					"height": 12,
+					"dataSource": "viNoRegistros2Import",
+					"fill": "transparent",
+					"stroke": "#0A8800",
+					"textAlign": "left",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "solid",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 19,
+					"left": 16,
+					"width": 617,
+					"height": 20,
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Importación - Datos pre importados"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 363,
+					"left": 16,
+					"width": 420,
+					"height": 15,
+					"stroke": "#0A8800",
+					"styleSheet": "XS_FormObjects",
+					"text": "Líneas de color verde: Registros a proceso de importación."
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 377,
+					"left": 16,
+					"width": 420,
+					"height": 15,
+					"stroke": "#EE0000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Líneas de color rojo: Registros rechazados."
+				},
+				"vt_mensajeDiferencia": {
+					"type": "input",
+					"top": 391,
+					"left": 16,
+					"width": 450,
+					"height": 11,
+					"dataSource": "vt_mensajeDiferencia",
+					"fill": "transparent",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,1123 @@
+﻿{
+	"windowTitle": ":21011,1",
+	"inheritedForm": "XS_MASTER_WZDDialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 626,
+	"height": 407,
+	"markerHeader": 15,
+	"markerBody": 439,
+	"markerBreak": 439,
+	"markerFooter": 439,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onUnload",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize"
+	],
+	"method": "method.4dm",
+	"pages": [
+		{
+			"objects": {
+				"Variable255": {
+					"type": "input",
+					"top": 379,
+					"left": 575,
+					"width": 17,
+					"height": 11,
+					"dataSource": "vi_PageNumber",
+					"fill": "transparent",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 490,
+					"left": 530,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 2,
+					"left": 163,
+					"width": 384,
+					"height": 44,
+					"stroke": "#FFFFFF",
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Asistente para la importación de datos de alumnos, familias, padres y apoderados"
+				},
+				"Botón3": {
+					"type": "button",
+					"top": 507,
+					"left": 357,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 450,
+					"left": 173,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable1353": {
+					"type": "button",
+					"top": 451,
+					"left": 106,
+					"width": 385,
+					"height": 29,
+					"dataSource": "bOpenHelpURL",
+					"display": false,
+					"method": "ObjectMethods/Variable1353.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 89,
+					"left": 171,
+					"width": 392,
+					"height": 26,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Este asistente le ayudará en el proceso de importación de datos de alumnos."
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 146,
+					"left": 171,
+					"width": 379,
+					"height": 52,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Antes de iniciar la importación asegúrese que el archivo que contiene los datos importados es de formato texto delimitado por tabulaciones."
+				},
+				"Texto15": {
+					"type": "text",
+					"top": 449,
+					"left": 107,
+					"width": 384,
+					"height": 26,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"textDecoration": "underline",
+					"text": ":21011,18"
+				},
+				"Variable9": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 554,
+					"width": 20,
+					"height": 20,
+					"dataSource": "bBack",
+					"action": "previousPage",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable10": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 593,
+					"width": 20,
+					"height": 20,
+					"dataSource": "bNext",
+					"action": "nextPage",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable10.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Picture Button1": {
+					"type": "pictureButton",
+					"top": 454,
+					"left": 80,
+					"width": 20,
+					"height": 20,
+					"dataSource": "Picture Button1",
+					"columnCount": 1,
+					"rowCount": 1,
+					"switchBackWhenReleased": true,
+					"method": "ObjectMethods/Picture Button1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto": {
+					"type": "text",
+					"top": 344,
+					"left": 171,
+					"width": 191,
+					"height": 14,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"textDecoration": "underline",
+					"text": "Descargar archivo con encabezados"
+				},
+				"Botón invisible": {
+					"type": "button",
+					"top": 338,
+					"left": 163,
+					"width": 191,
+					"height": 27,
+					"display": false,
+					"method": "ObjectMethods/Botón invisible.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto2": {
+					"type": "text",
+					"top": 55,
+					"left": 163,
+					"width": 402,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Seleccione un modelo de importación existente o configure uno nuevo"
+				},
+				"Variable256": {
+					"type": "radio",
+					"top": 119,
+					"left": 189,
+					"width": 277,
+					"height": 18,
+					"dataSource": "b1Mode",
+					"text": "Seleccionar un modelo de importación existente",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Variable256.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable257": {
+					"type": "radio",
+					"top": 175,
+					"left": 189,
+					"width": 252,
+					"height": 21,
+					"dataSource": "b2Mode",
+					"text": "Iniciar un nuevo proceso de importación",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Variable257.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable13": {
+					"type": "input",
+					"top": 315,
+					"left": 171,
+					"width": 409,
+					"height": 26,
+					"dataSource": "vt_errorStatus",
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable11": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 554,
+					"width": 20,
+					"height": 20,
+					"dataSource": "bBack",
+					"action": "previousPage",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable11.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable12": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 593,
+					"width": 20,
+					"height": 20,
+					"dataSource": "bNext",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable12.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto190": {
+					"type": "text",
+					"top": 100,
+					"left": 171,
+					"width": 377,
+					"height": 26,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Si desea utilizar un modelo de importación existente haga click en:"
+				},
+				"Texto191": {
+					"type": "text",
+					"top": 160,
+					"left": 171,
+					"width": 378,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Si desea iniciar un proceso de importación desde el principio haga click en:"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable214": {
+					"type": "button",
+					"top": 52,
+					"left": -233,
+					"width": 54,
+					"height": 16,
+					"dataSource": "bPreviousLine",
+					"text": ":21011,24",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "radio",
+					"top": 148,
+					"left": 208,
+					"width": 122,
+					"height": 16,
+					"dataSource": "b1Mac",
+					"text": "Macintosh",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable4.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "radio",
+					"top": 167,
+					"left": 208,
+					"width": 122,
+					"height": 16,
+					"dataSource": "b2Win",
+					"text": "Windows",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable20": {
+					"type": "radio",
+					"top": 187,
+					"left": 208,
+					"width": 122,
+					"height": 16,
+					"dataSource": "b2utf8",
+					"text": "UTF-8",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable20.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable14": {
+					"type": "input",
+					"top": 242,
+					"left": 207,
+					"width": 299,
+					"height": 26,
+					"dataSource": "vtIOstr_FilePath",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"method": "ObjectMethods/Variable14.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onLosingFocus",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7": {
+					"type": "button",
+					"top": 252,
+					"left": 513,
+					"width": 80,
+					"height": 18,
+					"dataSource": "bExplore",
+					"text": "Explorar...",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable8": {
+					"type": "input",
+					"top": 315,
+					"left": 171,
+					"width": 409,
+					"height": 26,
+					"dataSource": "vt_errorStatus",
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Texto14": {
+					"type": "text",
+					"top": 122,
+					"left": 181,
+					"width": 323,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "El archivo fue generado en un computador"
+				},
+				"Texto17": {
+					"type": "text",
+					"top": 220,
+					"left": 180,
+					"width": 246,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Ingrese la ubicación del archivo:"
+				},
+				"Variable15": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 554,
+					"width": 20,
+					"height": 20,
+					"dataSource": "bBack",
+					"action": "previousPage",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable15.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable16": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 593,
+					"width": 20,
+					"height": 20,
+					"dataSource": "bNext",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable16.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 55,
+					"left": 163,
+					"width": 392,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Origen y ubicación del archivo con los datos a importar"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Texto555": {
+					"type": "text",
+					"top": 299,
+					"left": 24,
+					"width": 370,
+					"height": 22,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Indica los campos empleados para comparar los datos existentes con los datos de importación. Si el registro existe, determine los campos que desea actualizar:"
+				},
+				"Variable213": {
+					"type": "button",
+					"top": 79,
+					"left": 7,
+					"width": 96,
+					"height": 18,
+					"dataSource": "bLoadTemplate",
+					"text": "Cargar Modelo...",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable213.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable216": {
+					"type": "button",
+					"top": 79,
+					"left": 111,
+					"width": 96,
+					"height": 18,
+					"dataSource": "bSaveTemplate",
+					"text": "Guardar Modelo...",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable216.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable258": {
+					"type": "input",
+					"top": 84,
+					"left": 456,
+					"width": 125,
+					"height": 11,
+					"dataSource": "vt_recordNum",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"textAlign": "center",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable19": {
+					"type": "plugin",
+					"top": 104,
+					"left": 6,
+					"width": 389,
+					"height": 189,
+					"dataSource": "xALP_FieldNames",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Variable19.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDoubleClick",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable196": {
+					"type": "plugin",
+					"top": 104,
+					"left": 425,
+					"width": 187,
+					"height": 189,
+					"dataSource": "xALP_RecordData",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Variable196.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable17": {
+					"type": "input",
+					"top": 313,
+					"left": 426,
+					"width": 189,
+					"height": 48,
+					"dataSource": "vtIOstr_FilePath",
+					"fill": "#FFFFFF",
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable164": {
+					"type": "pictureButton",
+					"top": 83,
+					"left": 427,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bPreviousLine",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable164.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable163": {
+					"type": "pictureButton",
+					"top": 83,
+					"left": 592,
+					"width": 18,
+					"height": 18,
+					"dataSource": "bNextLine",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable163.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 554,
+					"width": 20,
+					"height": 20,
+					"dataSource": "bBack",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable3.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "pictureButton",
+					"top": 374,
+					"left": 593,
+					"width": 20,
+					"height": 20,
+					"dataSource": "bNext",
+					"action": "nextPage",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto188": {
+					"type": "text",
+					"top": 78,
+					"left": 235,
+					"width": 160,
+					"height": 22,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Arrastre los datos a importar sobre los campos en el recuadro izquierdo."
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 55,
+					"left": 163,
+					"width": 347,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Asignación de los datos a importar a la tabla de alumnos"
+				},
+				"Imagen94": {
+					"type": "picture",
+					"top": 305,
+					"left": 10,
+					"width": 9,
+					"height": 12,
+					"pictureFormat": "scaled"
+				},
+				"Imagen95": {
+					"type": "picture",
+					"top": 326,
+					"left": 28,
+					"width": 10,
+					"height": 13,
+					"pictureFormat": "scaled"
+				},
+				"Imagen96": {
+					"type": "picture",
+					"top": 343,
+					"left": 29,
+					"width": 10,
+					"height": 13,
+					"pictureFormat": "scaled"
+				},
+				"Texto556": {
+					"type": "text",
+					"top": 326,
+					"left": 44,
+					"width": 345,
+					"height": 11,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Los campos marcados con este símbolo serán actualizados"
+				},
+				"Texto558": {
+					"type": "text",
+					"top": 343,
+					"left": 44,
+					"width": 345,
+					"height": 11,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Los campos marcados con este símbolo NO SERAN actualizados"
+				},
+				"Texto559": {
+					"type": "text",
+					"top": 299,
+					"left": 425,
+					"width": 137,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Archivo de importación:"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Variable6": {
+					"type": "input",
+					"top": 119,
+					"left": 203,
+					"width": 396,
+					"height": 13,
+					"dataSource": "vtIOstr_FilePath",
+					"fill": "#FFFFFF",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"rutaBD": {
+					"type": "input",
+					"top": 154,
+					"left": 202,
+					"width": 396,
+					"height": 13,
+					"fill": "#FFFFFF",
+					"stroke": "#EE0000",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1490": {
+					"type": "checkbox",
+					"top": 189,
+					"left": 205,
+					"width": 309,
+					"height": 15,
+					"dataSource": "bc_InscribirAlumnos",
+					"text": "Inscribir alumnos en asignaturas al finalizar la importación",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable580": {
+					"type": "checkbox",
+					"top": 208,
+					"left": 205,
+					"width": 284,
+					"height": 15,
+					"dataSource": "bc_SaveTemplate",
+					"text": "Guardar el modelo antes de inicar la importación",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable615": {
+					"type": "button",
+					"top": 373,
+					"left": 6,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bBack",
+					"action": "previousPage",
+					"shortcutKey": "[Esc]",
+					"text": "Atrás",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable615.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable18": {
+					"type": "button",
+					"top": 373,
+					"left": 384,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable290": {
+					"type": "button",
+					"top": 373,
+					"left": 474,
+					"width": 142,
+					"height": 20,
+					"dataSource": "bStart",
+					"action": "accept",
+					"text": "Iniciar importación",
+					"styleSheet": "XS_DialogObjects",
+					"defaultButton": true,
+					"method": "ObjectMethods/Variable290.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto343": {
+					"type": "text",
+					"top": 104,
+					"left": 189,
+					"width": 363,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "Se importarán los datos del archivo:"
+				},
+				"Texto344": {
+					"type": "text",
+					"top": 139,
+					"left": 188,
+					"width": 363,
+					"height": 13,
+					"stroke": "#000000",
+					"styleSheet": "XS_DialogObjects",
+					"text": "en la base de datos :"
+				},
+				"Texto11": {
+					"type": "text",
+					"top": 55,
+					"left": 163,
+					"width": 404,
+					"height": 13,
+					"stroke": "#009900",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Iniciar la importación de datos"
+				}
+			}
+		}
+	]
+}

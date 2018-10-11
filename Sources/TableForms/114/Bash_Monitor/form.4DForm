@@ -1,0 +1,298 @@
+﻿{
+	"windowTitle": "Bash Monitor",
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Área de plug-in1",
+	"rightMargin": -13,
+	"bottomMargin": -13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Texto1": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 289,
+					"height": 22,
+					"styleSheet": "XS_DialogsTitles",
+					"fontWeight": "bold",
+					"text": "Bash Monitor"
+				},
+				"Área de plug-in1": {
+					"type": "plugin",
+					"top": 153,
+					"left": 13,
+					"width": 663,
+					"height": 350,
+					"dataSource": "xALP_BashVariables",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Botón de opción1": {
+					"type": "radio",
+					"top": 61,
+					"left": 74,
+					"width": 69,
+					"height": 16,
+					"dataSource": "rVariables",
+					"text": "Variables",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Botón de opción1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón de opción2": {
+					"type": "radio",
+					"top": 61,
+					"left": 154,
+					"width": 89,
+					"height": 16,
+					"dataSource": "rArreglos",
+					"text": "Arreglos",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Botón de opción2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 63,
+					"left": 13,
+					"width": 57,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Ver:"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 89,
+					"left": 13,
+					"width": 89,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "del tipo:"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 89,
+					"left": 74,
+					"width": 136,
+					"height": 9,
+					"dataSource": "vtBash_Tipo",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"XS_PopUpDownArrow": {
+					"type": "picture",
+					"top": 89,
+					"left": 212,
+					"width": 11,
+					"height": 14,
+					"pictureFormat": "scaled"
+				},
+				"Botón invisible1": {
+					"type": "button",
+					"top": 87,
+					"left": 73,
+					"width": 152,
+					"height": 15,
+					"dataSource": "bTipo",
+					"display": false,
+					"method": "ObjectMethods/Botón invisible1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 115,
+					"left": 12,
+					"width": 116,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "En el pool:"
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 115,
+					"left": 179,
+					"width": 97,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Disponibles:"
+				},
+				"Texto6": {
+					"type": "text",
+					"top": 115,
+					"left": 360,
+					"width": 88,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Utilizadas:"
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 115,
+					"left": 73,
+					"width": 51,
+					"height": 9,
+					"dataSource": "vlBash_Pool",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 115,
+					"left": 246,
+					"width": 51,
+					"height": 9,
+					"dataSource": "vlBash_Disponibles",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 115,
+					"left": 427,
+					"width": 51,
+					"height": 9,
+					"dataSource": "vlBash_Utilizadas",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Imagen1": {
+					"type": "picture",
+					"top": 586,
+					"left": 211,
+					"width": 12,
+					"height": 12,
+					"pictureFormat": "scaled"
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 545,
+					"left": 396,
+					"width": 42,
+					"height": 20,
+					"dataSource": "Botón1",
+					"shortcutKey": "[Esc]",
+					"text": "Cerrar",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

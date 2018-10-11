@@ -1,0 +1,432 @@
+﻿{
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Botón3",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Botón3": {
+					"type": "button",
+					"top": 221,
+					"left": 296,
+					"width": 80,
+					"height": 20,
+					"dataSource": "bGo",
+					"action": "accept",
+					"text": "Continuar",
+					"styleSheet": "XS_DialogObjects",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Botón4": {
+					"type": "button",
+					"top": 221,
+					"left": 208,
+					"width": 80,
+					"height": 20,
+					"dataSource": "Botón2",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancelar",
+					"styleSheet": "XS_DialogObjects",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 174,
+					"left": 19,
+					"width": 142,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "Niveles entre"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 174,
+					"left": 232,
+					"width": 28,
+					"height": 11,
+					"styleSheet": "XS_FormObjects",
+					"text": "y"
+				},
+				"Menú desplegable1": {
+					"type": "dropdown",
+					"top": 172,
+					"left": 101,
+					"width": 126,
+					"height": 17,
+					"dataSource": "at_NivelDesdeInf",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Menú desplegable1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Menú desplegable2": {
+					"type": "dropdown",
+					"top": 172,
+					"left": 243,
+					"width": 128,
+					"height": 17,
+					"dataSource": "at_NivelHastaInf",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Menú desplegable2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"li14": {
+					"type": "groupBox",
+					"top": 149,
+					"left": 13,
+					"width": 358,
+					"height": 58,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Selecciones rango de niveles a consultar"
+				},
+				"li": {
+					"type": "groupBox",
+					"top": 12,
+					"left": 13,
+					"width": 358,
+					"height": 120,
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "¿Para qué período de tiempo desea generar el/los informes?"
+				},
+				"li1": {
+					"type": "radio",
+					"top": 39,
+					"left": 27,
+					"width": 150,
+					"height": 15,
+					"dataSource": "b1",
+					"text": "Para hoy",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/li1.4dm",
+					"events": [
+						"onLoad",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"li15": {
+					"type": "radio",
+					"top": 61,
+					"left": 27,
+					"width": 94,
+					"height": 15,
+					"dataSource": "b3",
+					"text": "Para el mes",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/li15.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"li4": {
+					"type": "text",
+					"top": 63,
+					"left": 274,
+					"width": 23,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Año"
+				},
+				"li5": {
+					"type": "input",
+					"top": 62,
+					"left": 299,
+					"width": 60,
+					"height": 13,
+					"dataSource": "viAño",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/li5.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"li7": {
+					"type": "radio",
+					"top": 84,
+					"left": 27,
+					"width": 90,
+					"height": 15,
+					"dataSource": "b5",
+					"text": "Para el año",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/li7.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"li8": {
+					"type": "text",
+					"top": 85,
+					"left": 132,
+					"width": 23,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "Año"
+				},
+				"li9": {
+					"type": "input",
+					"top": 84,
+					"left": 157,
+					"width": 60,
+					"height": 13,
+					"dataSource": "viAño2",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/li9.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"li16": {
+					"type": "radio",
+					"top": 107,
+					"left": 26,
+					"width": 63,
+					"height": 15,
+					"dataSource": "b6",
+					"text": "Entre el",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/li16.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"li17": {
+					"type": "input",
+					"top": 108,
+					"left": 92,
+					"width": 101,
+					"height": 13,
+					"dataSource": "vt_Fecha1",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9##/##/####",
+					"method": "ObjectMethods/li17.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"li18": {
+					"type": "pictureButton",
+					"top": 108,
+					"left": 197,
+					"width": 17,
+					"height": 16,
+					"dataSource": "bCalendar1",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/li18.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"li19": {
+					"type": "text",
+					"top": 107,
+					"left": 218,
+					"width": 24,
+					"height": 13,
+					"styleSheet": "XS_DialogObjects",
+					"text": "y el"
+				},
+				"li20": {
+					"type": "input",
+					"top": 108,
+					"left": 242,
+					"width": 101,
+					"height": 13,
+					"dataSource": "vt_Fecha2",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9##/##/####",
+					"method": "ObjectMethods/li20.4dm",
+					"events": [
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"li21": {
+					"type": "pictureButton",
+					"top": 108,
+					"left": 347,
+					"width": 17,
+					"height": 16,
+					"dataSource": "bCalendar2",
+					"columnCount": 1,
+					"rowCount": 4,
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/li21.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"li3": {
+					"type": "input",
+					"top": 62,
+					"left": 134,
+					"width": 111,
+					"height": 13,
+					"dataSource": "vt_Mes",
+					"fill": "#FFFFFF",
+					"styleSheet": "XS_DialogObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"li6": {
+					"type": "picture",
+					"top": 61,
+					"left": 243,
+					"width": 19,
+					"height": 16
+				},
+				"li2": {
+					"type": "button",
+					"top": 61,
+					"left": 132,
+					"width": 136,
+					"height": 16,
+					"dataSource": "bMes",
+					"display": false,
+					"method": "ObjectMethods/li2.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

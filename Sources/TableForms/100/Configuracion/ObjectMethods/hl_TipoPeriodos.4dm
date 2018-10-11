@@ -1,0 +1,6 @@
+CFG_STR_PeriodosEscolares_NEW ("SaveConfig")
+GET LIST ITEM:C378(Self:C308->;Selected list items:C379(Self:C308->);$itemRef;$itemText)
+CFG_STR_CreaPeriodosEscolares ($itemRef;[xxSTR_Periodos:100]ID:1;<>ginstitucion)
+SELECT LIST ITEMS BY POSITION:C381(hl_PeriodosEscolares;-1)
+OBJECT SET VISIBLE:C603(*;"Periodos@";False:C215)
+OBJECT SET VISIBLE:C603(*;"SubPeriodos@";False:C215)

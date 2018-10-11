@@ -1,0 +1,1 @@
+<>AsNmPtr:=->[Asignaturas:18]Asignatura:3

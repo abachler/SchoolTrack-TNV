@@ -1,0 +1,1 @@
+IT_SetButtonState ((((cs_Imprimir=1) | (cs_Exportar=1)) & (vt_CursoSeleccionado#""));->bOK)

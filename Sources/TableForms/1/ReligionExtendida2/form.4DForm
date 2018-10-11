@@ -1,0 +1,167 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "lb_Efemerides",
+	"rightMargin": 13,
+	"bottomMargin": 37,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Menú desplegable": {
+					"type": "dropdown",
+					"top": 13,
+					"left": 13,
+					"width": 348,
+					"height": 18,
+					"dataSource": "<>areligion",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Menú desplegable.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"lb_Efemerides": {
+					"type": "listbox",
+					"top": 40,
+					"left": 13,
+					"width": 348,
+					"height": 366,
+					"dataSource": "lb_Efemerides",
+					"hideFocusRing": true,
+					"sortable": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "single",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"fill": "#FFFFFF",
+					"alternateFill": "#F3F6FA",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"method": "ObjectMethods/lb_Efemerides.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onLosingFocus",
+						"onBeforeKeystroke",
+						"onDataChange",
+						"onRowMove",
+						"onBeforeDataEntry"
+					],
+					"columns": [
+						{
+							"name": "Columna1",
+							"dataSource": "aRelMetaDef",
+							"width": 333,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"fill": "#FFFFFF",
+							"alternateFill": "#F3F6FA",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDrop",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Título1",
+								"text": "Título1",
+								"dataSource": "Título1",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"bAddEfemeride": {
+					"type": "pictureButton",
+					"top": 410,
+					"left": 13,
+					"width": 23,
+					"height": 20,
+					"dataSource": "bAddEfemeride",
+					"columnCount": 1,
+					"rowCount": 3,
+					"picture": "/RESOURCES/MacAddMini.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bAddEfemeride.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"bDelEfemeride": {
+					"type": "pictureButton",
+					"top": 410,
+					"left": 35,
+					"width": 23,
+					"height": 20,
+					"dataSource": "bDelEfemeride",
+					"columnCount": 1,
+					"rowCount": 3,
+					"picture": "/RESOURCES/MacRemoveMini.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"method": "ObjectMethods/bDelEfemeride.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,1 @@
+PREF_Set (0;"Planilla_cbAsistencia"+<>gRolBD;String:C10(cbAsistencia))

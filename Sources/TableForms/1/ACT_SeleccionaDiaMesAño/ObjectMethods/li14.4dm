@@ -1,0 +1,1 @@
+PREF_Set (0;"ACT_InformeMorosidadCuentasActivas";String:C10(cb_SoloDeudas))

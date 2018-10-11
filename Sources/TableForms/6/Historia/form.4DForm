@@ -1,0 +1,127 @@
+﻿{
+	"windowTitle": ":21010,86",
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Subform1",
+	"rightMargin": 17,
+	"bottomMargin": 0,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onCloseBox",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Subform1": {
+					"type": "subform",
+					"top": 0,
+					"left": 0,
+					"width": 307,
+					"height": 146,
+					"dataSourceTypeHint": "text",
+					"table": 2,
+					"detailForm": "List/Input",
+					"listForm": "List/Input",
+					"scrollbarVertical": "visible",
+					"deletableInList": false,
+					"printFrame": "fixed"
+				},
+				"Variable1": {
+					"type": "button",
+					"top": 157,
+					"left": 12,
+					"width": 84,
+					"height": 15,
+					"dataSource": "bDelSF",
+					"action": "deleteSubrecord",
+					"shortcutKey": "d",
+					"shortcutAccel": true,
+					"shortcutShift": true,
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable2": {
+					"type": "button",
+					"top": 195,
+					"left": 65,
+					"width": 83,
+					"height": 15,
+					"dataSource": "bCloseW",
+					"action": "accept",
+					"shortcutKey": "w",
+					"shortcutAccel": true,
+					"text": ":21010,235",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 213,
+					"left": 66,
+					"width": 83,
+					"height": 15,
+					"dataSource": "bCloseEsc",
+					"action": "accept",
+					"shortcutKey": "[Esc]",
+					"text": ":21010,236",
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

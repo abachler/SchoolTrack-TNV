@@ -1,0 +1,2 @@
+SN3_SetCheckByChecks (->cb_PublicarCompaneros;"|";->cb_PublicarCompEMail;->cb_PublicarCompTelefono;->cb_PublicarCompCelular;->cb_PublicarCompDireccion;->cb_PublicarCompCumpleanos;->cb_PublicarCompEMailM;->cb_PublicarCompCelularM;->cb_PublicarCompEMailP;->cb_PublicarCompCelularP)
+IT_SetButtonState ((cb_PublicarSuspProfesor1=1);->cb_PublicarSMailProf1)

@@ -1,0 +1,2 @@
+vt_textomodificado:=vt_textooriginal
+CANCEL:C270

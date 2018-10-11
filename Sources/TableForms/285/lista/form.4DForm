@@ -1,0 +1,857 @@
+﻿{
+	"rightMargin": 16,
+	"bottomMargin": 10,
+	"markerHeader": 19,
+	"markerBody": 45,
+	"markerBreak": 48,
+	"markerFooter": 48,
+	"events": [
+		"onDisplayDetail"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Imagen13": {
+					"type": "picture",
+					"top": -5,
+					"left": 0,
+					"width": 2266,
+					"height": 24,
+					"sizingX": "grow",
+					"pictureFormat": "scaled",
+					"picture": "Images/Imagen13.pict"
+				},
+				"S1_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 324,
+					"width": 150,
+					"height": 13,
+					"sizingX": "grow",
+					"styleSheet": "Plain - 11",
+					"text": "Tabla y campo\t"
+				},
+				"S2_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 557,
+					"width": 59,
+					"height": 13,
+					"sizingX": "grow",
+					"styleSheet": "Plain - 11",
+					"text": "st_tabla : "
+				},
+				"S3_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 628,
+					"width": 66,
+					"height": 13,
+					"sizingX": "grow",
+					"styleSheet": "Plain - 11",
+					"text": "st_campo : "
+				},
+				"S4_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 705,
+					"width": 67,
+					"height": 13,
+					"sizingX": "grow",
+					"styleSheet": "Plain - 11",
+					"text": "st_tipo4D : "
+				},
+				"S5_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 784,
+					"width": 189,
+					"height": 13,
+					"sizingX": "grow",
+					"styleSheet": "Plain - 11",
+					"text": "condor_tabla : "
+				},
+				"S6_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 985,
+					"width": 200,
+					"height": 13,
+					"sizingX": "grow",
+					"styleSheet": "Plain - 11",
+					"text": "condor_columna : "
+				},
+				"S7_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 1199,
+					"width": 85,
+					"height": 13,
+					"sizingX": "grow",
+					"styleSheet": "Plain - 11",
+					"text": "condor_tipoSQL : "
+				},
+				"S8_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 1297,
+					"width": 177,
+					"height": 13,
+					"sizingX": "grow",
+					"styleSheet": "Plain - 11",
+					"text": "condor_tablaAtributo : "
+				},
+				"S9_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 1466,
+					"width": 152,
+					"height": 13,
+					"sizingX": "grow",
+					"styleSheet": "Plain - 11",
+					"text": "condor_tipoAtributo : "
+				},
+				"S10_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 1630,
+					"width": 217,
+					"height": 13,
+					"sizingX": "grow",
+					"styleSheet": "Plain - 11",
+					"text": "condor_valorAtributo : "
+				},
+				"S11_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 1859,
+					"width": 129,
+					"height": 13,
+					"sizingX": "grow",
+					"styleSheet": "Plain - 11",
+					"text": "dts : "
+				},
+				"S12_Texto": {
+					"type": "text",
+					"top": 0,
+					"left": 2003,
+					"width": 70,
+					"height": 13,
+					"sizingX": "grow",
+					"styleSheet": "Plain - 11",
+					"text": "Sincronizable"
+				},
+				"Rectángulo14": {
+					"type": "rectangle",
+					"top": 19,
+					"left": 0,
+					"width": 2266,
+					"height": 26,
+					"sizingX": "grow",
+					"stroke": "transparent"
+				},
+				"S6_Campo1": {
+					"type": "input",
+					"top": 23,
+					"left": 5,
+					"width": 300,
+					"height": 12,
+					"sizingX": "grow",
+					"dataSource": "[sync_diccionario:285]Auto_uuid:1",
+					"fill": "#FFFFFF",
+					"styleSheet": "Plain - 11",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"tablaCampo": {
+					"type": "input",
+					"top": 23,
+					"left": 324,
+					"width": 219,
+					"height": 12,
+					"sizingX": "grow",
+					"fill": "#FFFFFF",
+					"styleSheet": "Plain - 11",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/tablaCampo.4dm",
+					"events": [
+						"onDisplayDetail"
+					]
+				},
+				"S2_Campo": {
+					"type": "input",
+					"top": 23,
+					"left": 557,
+					"width": 59,
+					"height": 12,
+					"sizingX": "grow",
+					"dataSource": "[sync_diccionario:285]st_tabla:8",
+					"fill": "#FFFFFF",
+					"styleSheet": "Plain - 11",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S3_Campo": {
+					"type": "input",
+					"top": 23,
+					"left": 628,
+					"width": 66,
+					"height": 12,
+					"sizingX": "grow",
+					"dataSource": "[sync_diccionario:285]st_campo:9",
+					"fill": "#FFFFFF",
+					"styleSheet": "Plain - 11",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"tipo": {
+					"type": "input",
+					"top": 23,
+					"left": 705,
+					"width": 67,
+					"height": 12,
+					"sizingX": "grow",
+					"fill": "#FFFFFF",
+					"styleSheet": "Plain - 11",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDisplayDetail"
+					]
+				},
+				"S5_Campo": {
+					"type": "input",
+					"top": 23,
+					"left": 784,
+					"width": 189,
+					"height": 12,
+					"sizingX": "grow",
+					"dataSource": "[sync_diccionario:285]condor_tabla:2",
+					"fill": "#FFFFFF",
+					"styleSheet": "Plain - 11",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S6_Campo": {
+					"type": "input",
+					"top": 23,
+					"left": 985,
+					"width": 200,
+					"height": 12,
+					"sizingX": "grow",
+					"dataSource": "[sync_diccionario:285]condor_columna:3",
+					"fill": "#FFFFFF",
+					"styleSheet": "Plain - 11",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S7_Campo": {
+					"type": "input",
+					"top": 23,
+					"left": 1199,
+					"width": 85,
+					"height": 12,
+					"sizingX": "grow",
+					"dataSource": "[sync_diccionario:285]condor_tipoSQL:4",
+					"fill": "#FFFFFF",
+					"styleSheet": "Plain - 11",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S8_Campo": {
+					"type": "input",
+					"top": 23,
+					"left": 1297,
+					"width": 157,
+					"height": 12,
+					"sizingX": "grow",
+					"dataSource": "[sync_diccionario:285]condor_tablaAtributo:5",
+					"fill": "#FFFFFF",
+					"styleSheet": "Plain - 11",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S9_Campo": {
+					"type": "input",
+					"top": 23,
+					"left": 1466,
+					"width": 152,
+					"height": 12,
+					"sizingX": "grow",
+					"dataSource": "[sync_diccionario:285]condor_tipoAtributo:6",
+					"fill": "#FFFFFF",
+					"styleSheet": "Plain - 11",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S10_Campo": {
+					"type": "input",
+					"top": 23,
+					"left": 1630,
+					"width": 217,
+					"height": 12,
+					"sizingX": "grow",
+					"dataSource": "[sync_diccionario:285]condor_nombreAtributo:7",
+					"fill": "#FFFFFF",
+					"styleSheet": "Plain - 11",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S11_Campo": {
+					"type": "input",
+					"top": 23,
+					"left": 1859,
+					"width": 129,
+					"height": 12,
+					"sizingX": "grow",
+					"dataSource": "[sync_diccionario:285]dts:11",
+					"fill": "#FFFFFF",
+					"styleSheet": "Plain - 11",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S12_Campo": {
+					"type": "input",
+					"top": 23,
+					"left": 2003,
+					"width": 70,
+					"height": 14,
+					"sizingX": "grow",
+					"dataSource": "[sync_diccionario:285]sincronizable:12",
+					"fill": "transparent",
+					"styleSheet": "Plain - 11",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"textFormat": "Sí",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S11_Campo1": {
+					"type": "input",
+					"top": 23,
+					"left": 2082,
+					"width": 69,
+					"height": 12,
+					"sizingX": "grow",
+					"dataSource": "[sync_diccionario:285]pKey:13",
+					"fill": "#FFFFFF",
+					"styleSheet": "Plain - 11",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"S11_Campo2": {
+					"type": "input",
+					"top": 23,
+					"left": 2160,
+					"width": 49,
+					"height": 12,
+					"sizingX": "grow",
+					"dataSource": "[sync_diccionario:285]st_RefCampoIdRegistro:15",
+					"fill": "#FFFFFF",
+					"styleSheet": "Plain - 11",
+					"borderStyle": "none",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Línea15": {
+					"type": "line",
+					"top": -5,
+					"left": 0,
+					"height": 50,
+					"stroke": "#A8A8A8"
+				},
+				"Línea16": {
+					"type": "line",
+					"top": -5,
+					"left": 2266,
+					"height": 50,
+					"sizingX": "move",
+					"stroke": "#A8A8A8"
+				},
+				"Línea17": {
+					"type": "line",
+					"top": -5,
+					"left": 1994,
+					"height": 50,
+					"stroke": "#A8A8A8"
+				},
+				"Separador2": {
+					"type": "button",
+					"top": -5,
+					"left": 1993,
+					"width": 3,
+					"height": 50,
+					"dataSource": "Separador2",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea18": {
+					"type": "line",
+					"top": -5,
+					"left": 1851,
+					"height": 50,
+					"stroke": "#A8A8A8"
+				},
+				"Separador3": {
+					"type": "button",
+					"top": -5,
+					"left": 1850,
+					"width": 3,
+					"height": 50,
+					"dataSource": "Separador3",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea19": {
+					"type": "line",
+					"top": -5,
+					"left": 1623,
+					"height": 50,
+					"stroke": "#A8A8A8"
+				},
+				"Separador4": {
+					"type": "button",
+					"top": -5,
+					"left": 1622,
+					"width": 3,
+					"height": 50,
+					"dataSource": "Separador4",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea20": {
+					"type": "line",
+					"top": -5,
+					"left": 1457,
+					"height": 50,
+					"stroke": "#A8A8A8"
+				},
+				"Separador5": {
+					"type": "button",
+					"top": -5,
+					"left": 1456,
+					"width": 3,
+					"height": 50,
+					"dataSource": "Separador5",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea21": {
+					"type": "line",
+					"top": -5,
+					"left": 1290,
+					"height": 50,
+					"stroke": "#A8A8A8"
+				},
+				"Separador6": {
+					"type": "button",
+					"top": -5,
+					"left": 1289,
+					"width": 3,
+					"height": 50,
+					"dataSource": "Separador6",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea22": {
+					"type": "line",
+					"top": -5,
+					"left": 1191,
+					"height": 50,
+					"stroke": "#A8A8A8"
+				},
+				"Separador7": {
+					"type": "button",
+					"top": -5,
+					"left": 1190,
+					"width": 3,
+					"height": 50,
+					"dataSource": "Separador7",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea23": {
+					"type": "line",
+					"top": -5,
+					"left": 979,
+					"height": 50,
+					"stroke": "#A8A8A8"
+				},
+				"Separador8": {
+					"type": "button",
+					"top": -5,
+					"left": 978,
+					"width": 3,
+					"height": 50,
+					"dataSource": "Separador8",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea24": {
+					"type": "line",
+					"top": -5,
+					"left": 778,
+					"height": 50,
+					"stroke": "#A8A8A8"
+				},
+				"Separador9": {
+					"type": "button",
+					"top": -5,
+					"left": 777,
+					"width": 3,
+					"height": 50,
+					"dataSource": "Separador9",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea25": {
+					"type": "line",
+					"top": -5,
+					"left": 699,
+					"height": 50,
+					"stroke": "#A8A8A8"
+				},
+				"Separador10": {
+					"type": "button",
+					"top": -5,
+					"left": 698,
+					"width": 3,
+					"height": 50,
+					"dataSource": "Separador10",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea26": {
+					"type": "line",
+					"top": -5,
+					"left": 621,
+					"height": 50,
+					"stroke": "#A8A8A8"
+				},
+				"Separador11": {
+					"type": "button",
+					"top": -5,
+					"left": 620,
+					"width": 3,
+					"height": 50,
+					"dataSource": "Separador11",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea27": {
+					"type": "line",
+					"top": -5,
+					"left": 550,
+					"height": 50,
+					"stroke": "#A8A8A8"
+				},
+				"Separador12": {
+					"type": "button",
+					"top": -5,
+					"left": 549,
+					"width": 3,
+					"height": 50,
+					"dataSource": "Separador12",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"S6_Texto1": {
+					"type": "text",
+					"top": 0,
+					"left": 5,
+					"width": 200,
+					"height": 13,
+					"sizingX": "grow",
+					"styleSheet": "Plain - 11",
+					"text": "condor_columna : "
+				},
+				"Línea1": {
+					"type": "line",
+					"top": -4,
+					"left": 310,
+					"height": 50,
+					"stroke": "#A8A8A8"
+				},
+				"Separador1": {
+					"type": "button",
+					"top": -4,
+					"left": 309,
+					"width": 3,
+					"height": 50,
+					"dataSource": "Separador12",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"S11_Texto1": {
+					"type": "text",
+					"top": 0,
+					"left": 2082,
+					"width": 69,
+					"height": 13,
+					"sizingX": "grow",
+					"styleSheet": "Plain - 11",
+					"text": "Llave"
+				},
+				"S11_Texto2": {
+					"type": "text",
+					"top": 0,
+					"left": 2160,
+					"width": 49,
+					"height": 13,
+					"sizingX": "grow",
+					"styleSheet": "Plain - 11",
+					"text": "RefCampoID\t"
+				},
+				"Línea2": {
+					"type": "line",
+					"top": -5,
+					"left": 2074,
+					"height": 50,
+					"stroke": "#A8A8A8"
+				},
+				"Separador13": {
+					"type": "button",
+					"top": -5,
+					"left": 2073,
+					"width": 3,
+					"height": 50,
+					"dataSource": "Separador2",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Línea3": {
+					"type": "line",
+					"top": -5,
+					"left": 2154,
+					"height": 50,
+					"stroke": "#A8A8A8"
+				},
+				"Separador14": {
+					"type": "button",
+					"top": -5,
+					"left": 2153,
+					"width": 3,
+					"height": 50,
+					"dataSource": "Separador2",
+					"action": "automaticSplitter",
+					"display": false,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,1 @@
+vFecha:=Current date:C33

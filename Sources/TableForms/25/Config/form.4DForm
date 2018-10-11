@@ -1,0 +1,231 @@
+﻿{
+	"windowTitle": ":21002,1",
+	"inheritedForm": "XS_BKGD_Dialogs",
+	"inheritedFormTable": 114,
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "Variable3",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onResize",
+		"onSelectionChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Casilla de selección1": {
+					"type": "checkbox",
+					"top": 11,
+					"left": 58,
+					"width": 142,
+					"height": 15,
+					"dataSource": "bActas",
+					"text": "Asignaturas en Actas",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Casilla de selección2": {
+					"type": "checkbox",
+					"top": 11,
+					"left": 239,
+					"width": 76,
+					"height": 15,
+					"dataSource": "bPromediables",
+					"text": "Promediables",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Casilla de selección3": {
+					"type": "checkbox",
+					"top": 11,
+					"left": 354,
+					"width": 100,
+					"height": 15,
+					"dataSource": "bPC",
+					"text": "Formación común",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Casilla de selección4": {
+					"type": "checkbox",
+					"top": 13,
+					"left": 493,
+					"width": 118,
+					"height": 15,
+					"dataSource": "bPE",
+					"text": "Formación diferenciada",
+					"styleSheet": "XS_FormObjects",
+					"method": "ObjectMethods/Casilla de selección4.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable23": {
+					"type": "radio",
+					"top": 36,
+					"left": 58,
+					"width": 167,
+					"height": 11,
+					"dataSource": "r1",
+					"text": ":21002,231",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable23.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable24": {
+					"type": "radio",
+					"top": 36,
+					"left": 248,
+					"width": 167,
+					"height": 11,
+					"dataSource": "r2",
+					"text": ":21002,232",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"method": "ObjectMethods/Variable24.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable1": {
+					"type": "plugin",
+					"top": 61,
+					"left": 13,
+					"width": 599,
+					"height": 299,
+					"sizingY": "grow",
+					"dataSource": "xALP_HSubjects",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Botón1": {
+					"type": "button",
+					"top": 381,
+					"left": 12,
+					"width": 113,
+					"height": 19,
+					"sizingY": "move",
+					"dataSource": "Botón1",
+					"text": "Ordenar lista...",
+					"styleSheet": "XS_DialogObjects",
+					"method": "ObjectMethods/Botón1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable4": {
+					"type": "button",
+					"top": 380,
+					"left": 461,
+					"width": 70,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": ":21002,157",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable3": {
+					"type": "button",
+					"top": 380,
+					"left": 541,
+					"width": 70,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "bSave",
+					"action": "accept",
+					"shortcutKey": "[Enter]",
+					"text": ":21002,172",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"defaultButton": true,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 45,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Mostrar:"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,1 @@
+ACTcfg_OpcionesRecAutTabla ("ValidacionesClick")

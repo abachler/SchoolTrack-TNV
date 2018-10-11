@@ -1,0 +1,183 @@
+﻿{
+	"inheritedForm": "XS_MASTER_ConfigDialogs",
+	"inheritedFormTable": 114,
+	"width": 525,
+	"height": 320,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text10": {
+					"type": "text",
+					"top": 51,
+					"left": 13,
+					"width": 500,
+					"height": 66,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"text": "Durante las Jornadas de Visita, el Colegio es presentado a los niños que postulan al colegio.\r\rDespués de ingresar el número de sesiones para las Jornadas de Visita y el máximo teórico de asistentes a cada jornada, defina para cada una de ellas la fecha, hora y lugar donde se realizarán.\r"
+				},
+				"Text250": {
+					"type": "text",
+					"top": 129,
+					"left": 13,
+					"width": 141,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Numero de Jornadas de Visita: "
+				},
+				"Variable258": {
+					"type": "input",
+					"top": 129,
+					"left": 174,
+					"width": 38,
+					"height": 11,
+					"dataSource": "viPST_NumJornadasVisita",
+					"dataSourceTypeHint": "number",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"method": "ObjectMethods/Variable258.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Text251": {
+					"type": "text",
+					"top": 129,
+					"left": 367,
+					"width": 126,
+					"height": 11,
+					"stroke": "#000000",
+					"styleSheet": "XS_FormObjects",
+					"text": "Máximo de asistentes:"
+				},
+				"Variable257": {
+					"type": "input",
+					"top": 129,
+					"left": 474,
+					"width": 39,
+					"height": 11,
+					"dataSource": "viPST_MaxPerJornadaVisita",
+					"dataSourceTypeHint": "number",
+					"fill": "#FFFFFF",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable7(1)": {
+					"type": "plugin",
+					"top": 153,
+					"left": 13,
+					"width": 500,
+					"height": 128,
+					"dataSource": "xALP_JornadasVisita",
+					"pluginAreaKind": "%AreaListPro",
+					"borderStyle": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPluginArea",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Variable200": {
+					"type": "checkbox",
+					"top": 292,
+					"left": 13,
+					"width": 280,
+					"height": 18,
+					"dataSource": "viPST_AutoAsigJornadas",
+					"text": "Asignación Automática",
+					"styleSheet": "XS_FormObjects",
+					"stroke": "#000000",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Variable5": {
+					"type": "button",
+					"top": 335,
+					"left": 301,
+					"width": 66,
+					"height": 18,
+					"dataSource": "b_Close",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"display": false,
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	]
+}

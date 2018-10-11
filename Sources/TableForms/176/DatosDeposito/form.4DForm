@@ -1,0 +1,267 @@
+﻿{
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"formSizeAnchor": "bCancel",
+	"rightMargin": 13,
+	"bottomMargin": 13,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pages": [
+		{
+			"objects": {
+				"Botón2": {
+					"type": "button",
+					"top": 207,
+					"left": 184,
+					"width": 70,
+					"height": 34,
+					"dataSource": "Botón2",
+					"shortcutKey": "[F11]",
+					"shortcutAccel": true,
+					"display": false,
+					"method": "ObjectMethods/Botón2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"DelimRect": {
+					"type": "rectangle",
+					"top": 219,
+					"left": 117,
+					"width": 10,
+					"height": 10,
+					"fill": "transparent",
+					"stroke": "#EE0000",
+					"strokeWidth": 2
+				}
+			}
+		},
+		{
+			"objects": {
+				"Rectángulo1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 302,
+					"height": 169,
+					"fill": "#FFF0DF",
+					"stroke": "#FFF0DF"
+				},
+				"Texto7": {
+					"type": "text",
+					"top": 13,
+					"left": 13,
+					"width": 176,
+					"height": 14,
+					"stroke": "#0000FF",
+					"styleSheet": "XS_DialogObjects",
+					"fontWeight": "bold",
+					"text": "Depósito"
+				},
+				"Texto3": {
+					"type": "text",
+					"top": 137,
+					"left": 224,
+					"width": 65,
+					"height": 12,
+					"stroke": "#0000FF",
+					"textAlign": "right",
+					"styleSheet": "XS_FormObjects",
+					"fontWeight": "bold",
+					"textDecoration": "underline",
+					"text": "Cerrar"
+				},
+				"Texto1": {
+					"type": "text",
+					"top": 43,
+					"left": 16,
+					"width": 74,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Fecha Depósito:"
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 43,
+					"left": 123,
+					"width": 167,
+					"height": 12,
+					"dataSource": "[ACT_Documentos_de_Pago:176]Depositado_Fecha:42",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 65,
+					"left": 123,
+					"width": 167,
+					"height": 12,
+					"dataSource": "[ACT_Documentos_de_Pago:176]Depositado_Por:43",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"bCancel": {
+					"type": "button",
+					"top": 134,
+					"left": 237,
+					"width": 54,
+					"height": 17,
+					"dataSource": "Botón invisible1",
+					"display": false,
+					"method": "ObjectMethods/bCancel.4dm",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onPrintingDetail"
+					]
+				},
+				"Texto5": {
+					"type": "text",
+					"top": 65,
+					"left": 16,
+					"width": 103,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Depositado Por:"
+				},
+				"Variable3": {
+					"type": "input",
+					"top": 87,
+					"left": 123,
+					"width": 167,
+					"height": 12,
+					"dataSource": "[ACT_Documentos_de_Pago:176]Depositado_en_Banco:39",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"Variable4": {
+					"type": "input",
+					"top": 109,
+					"left": 123,
+					"width": 167,
+					"height": 12,
+					"dataSource": "[ACT_Documentos_de_Pago:176]Depositado_en_Cuenta:41",
+					"fill": "transparent",
+					"stroke": "#0000FF",
+					"styleSheet": "XS_FormObjects",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"focusable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail",
+						"onAfterKeystroke"
+					]
+				},
+				"Texto2": {
+					"type": "text",
+					"top": 87,
+					"left": 16,
+					"width": 103,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Depositado en Banco:"
+				},
+				"Texto4": {
+					"type": "text",
+					"top": 109,
+					"left": 16,
+					"width": 103,
+					"height": 12,
+					"styleSheet": "XS_FormObjects",
+					"text": "Depositado en Cuenta:"
+				}
+			}
+		}
+	]
+}

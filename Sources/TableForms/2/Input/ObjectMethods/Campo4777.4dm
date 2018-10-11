@@ -1,0 +1,1 @@
+  //it_Clairvoyance (Self;->◊aComuna;"Comunas")
